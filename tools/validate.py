@@ -93,7 +93,7 @@ def parse_syllabus(path):
         if section == 'extra':
             m = re.match(r'^\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*$', line)
             if m and m.group(1).strip() not in ('篇目', '---'):
-                extra.add(normalize_title(m.group(1)))
+                extra.add(canon_title(m.group(1)))
             continue
         # 高中表头：| # | 篇目 | 作者/ 出处 |
         m = re.match(r'^\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*$', line)
@@ -142,6 +142,17 @@ def normalize_title(s):
     s = re.sub(r'第[一二三四五六七八九十]$', '', s)      # 去「其一」异写
     s = re.sub(r'[（(][一二三四五六七八九十][）)]$', '', s)
     return s
+
+# 同一篇作品的两种通行标题。课标与教材用字不同，按别名对照而非强行改标题。
+TITLE_ALIAS = {
+    '凉州词': '凉州',          # 课标作「凉州」，教材作「凉州词（王翰）」
+}
+
+
+def canon_title(s):
+    """归一后再套用别名表。"""
+    n = normalize_title(s)
+    return TITLE_ALIAS.get(n, n)
 
 
 REQUIRED = ['id', 'title', 'author', 'lines', 'linesPunct',
@@ -211,11 +222,11 @@ def main():
         for line in ptxt.splitlines():
             m = re.match(r'^\|\s*\d+-\d+\s*\|\s*([^|]+?)\s*\|', line)
             if m:
-                pending_titles.add(normalize_title(m.group(1)))
-        have = {normalize_title(p['title']) for p in poems}
+                pending_titles.add(canon_title(m.group(1)))
+        have = {canon_title(p["title"]) for p in poems}
         for t in pending_titles:
             # 暂缓条目可能带括号副标题，只用主标题匹配
-            base = normalize_title(re.split(r'[（(]', t)[0])
+            base = canon_title(re.split(r'[（(]', t)[0])
             if base in have:
                 err('版权风险：%s 标记为 pending，却也出现在 poems/ 里' % t)
             else:
@@ -224,29 +235,29 @@ def main():
 
     norm_to_poem = {}
     for p in poems:
-        norm_to_poem.setdefault(normalize_title(p['title']), []).append(p)
+        norm_to_poem.setdefault(canon_title(p["title"]), []).append(p)
 
     # 课标里每条，都要在仓里找到（增量模式跳过，允许分批迁移）
     if not partial:
         for stage, idx, title, author in syllabus:
-            nt = normalize_title(title)
-            if nt in pending_ids or normalize_title(title) in pending_ids:
+            nt = canon_title(title)
+            if nt in pending_ids or canon_title(title) in pending_ids:
                 continue
             # 课标副标题含首句，用主标题兜底匹配
-            base = normalize_title(re.split(r'[（(]', title)[0])
+            base = canon_title(re.split(r'[（(]', title)[0])
             if base in norm_to_poem:
                 continue
             err('课标要求收录但缺失：%s %02d %s（%s）'
                 % (stage, idx, title, author))
     else:
-        covered = len({normalize_title(p['title']) for p in poems})
+        covered = len({canon_title(p["title"]) for p in poems})
         print('课标覆盖：%d / %d 篇（增量期，未齐属正常）\n'
               % (covered, len(syllabus)))
 
     # 仓里每篇，都要在课标里或教材拓展表里（不收来源不明的篇目）
-    syllabus_norms = {normalize_title(re.split(r'[（(]', t)[0]) for _, _, t, _ in syllabus}
+    syllabus_norms = {canon_title(re.split(r'[（(]', t)[0]) for _, _, t, _ in syllabus}
     for p in poems:
-        nt = normalize_title(p['title'])
+        nt = canon_title(p["title"])
         if nt in syllabus_norms:
             continue
         if nt in extra_titles:

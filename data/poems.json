@@ -50,15 +50,32 @@
       "dadaozhixing",
       "zijin",
       "xiaoshitan",
+      "yueyanglouji",
       "shiwei",
+      "zashuo4",
       "taohuayuanji",
+      "ailianshuo",
       "shihaoli",
       "daxiezhongshu",
       "suoyoujiayao",
       "jichengtiansi",
       "songshaoshu-wai",
+      "zuigongtingji",
       "yewang",
+      "loushiming",
       "masuo"
+    ],
+    "初中-9": [
+      "lvshi1",
+      "mengzi3",
+      "zhuangzi1",
+      "liji1",
+      "chushibiao",
+      "caoguilunzhan",
+      "huxinting",
+      "songdongyang",
+      "zouji",
+      "choulitian"
     ],
     "小学-1": [
       "gulangyuexing",
@@ -99,11 +116,13 @@
       "yeshusuojian",
       "dalinsitaohua",
       "shanxing",
+      "yijiangnan",
       "huichongchunjiang",
       "suojian",
       "zaofabaidicheng",
       "wangtianmenshan",
       "wangdongting",
+      "jiangpan",
       "qingming",
       "chuzhouxijian",
       "jueju-chiri",
@@ -134,8 +153,9 @@
       "qiqiao",
       "xiangcunsiyue",
       "congjunxing",
-      "liangzhouci-wangzhihuan",
+      "liangzhou-wanghan",
       "sishitianyuan-31",
+      "hanxiaqu",
       "shanjuqiuming",
       "jihai",
       "cunwan",
@@ -169,6 +189,7 @@
       "huanxisha-qishui",
       "langtaosha",
       "youyuanbuzhi",
+      "youziyin",
       "shihuiyin",
       "zhushi",
       "xijiangyue",
@@ -179,16 +200,34 @@
       "mashi"
     ],
     "高中-": [
+      "mengziyize",
+      "laozi8",
+      "lunyu12",
+      "shangshumihan",
+      "zhongyong",
       "linanchunyu",
       "shufen",
+      "wudailingguan",
+      "liuguolun",
+      "lantingjixu",
+      "quanxue",
+      "gudaishilun",
       "shengshenman",
+      "daxue",
+      "zilu-shizhe",
+      "jishi-jiangfanjueyu",
       "kezhi",
       "jiangjinjiu",
+      "quyuanliezhuan",
+      "shishuo",
+      "guiqulaixici",
       "guiyuantianju",
       "niannujiao-chibi",
       "niannujiao-gudong",
       "yangzhousman",
+      "baoranan",
       "niluonan",
+      "wuyi",
       "chunjianghuayue",
       "wanghaichao",
       "chaotianzi",
@@ -198,29 +237,47 @@
       "yongyule",
       "jiangchengzi-yimao",
       "shejiang",
+      "tengwanggexu",
       "yange-xing",
       "pipaxing",
       "dengyueyanglou",
       "dengkuai-ge",
+      "dengtaishan",
       "denggao",
       "duange",
+      "shizhongshan",
+      "liyun",
       "lisao",
+      "zhongshu-guotuotuo",
+      "dasijianyishu",
       "sumuzhe",
       "pusaman-wentingyun",
       "pusaman-zaoxiang",
       "yumeiren",
       "shuxiang",
       "shudaonan",
+      "jiantaishisi",
+      "jianzhukeshu",
       "hexinlao",
       "chibi",
+      "chibifu",
+      "guoqinlun",
+      "xiaoyaoyou",
       "jinse",
       "changting-songbei",
+      "epenggongfu",
+      "chenqingbiao",
       "qingyu-an",
-      "qiqiaoxian"
+      "jingnv",
+      "xiangjixuanzhi",
+      "qiqiaoxian",
+      "huanggangzhulouji"
     ]
   },
   "byId": {
+    "ailianshuo": "ailianshuo",
     "baixuege": "baixuege",
+    "baoranan": "baoranan",
     "beimingyouyu": "beimingyouyu",
     "biedongda": "biedongda",
     "bochuanguazhou": "bochuanguazhou",
@@ -228,14 +285,18 @@
     "bosuanzi-song": "bosuanzi-song",
     "cailianqu": "cailianqu",
     "caiwei": "caiwei",
+    "caoguilunzhan": "caoguilunzhan",
     "change": "change",
     "changting-songbei": "changting-songbei",
     "changxiangsi": "changxiangsi",
     "chaotianzi": "chaotianzi",
+    "chenqingbiao": "chenqingbiao",
     "chibi": "chibi",
     "chibi-du": "chibi-du",
+    "chibifu": "chibifu",
     "chilege": "chilege",
     "chishang": "chishang",
+    "choulitian": "choulitian",
     "chunjianghuayue": "chunjianghuayue",
     "chunri": "chunri",
     "chunwang": "chunwang",
@@ -243,6 +304,7 @@
     "chunyeluocheng": "chunyeluocheng",
     "chunyexiyu": "chunyexiyu",
     "chusai": "chusai",
+    "chushibiao": "chushibiao",
     "chuzhouxijian": "chuzhouxijian",
     "cibeigushanxia": "cibeigushanxia",
     "congjunxing": "congjunxing",
@@ -250,15 +312,19 @@
     "cunwan": "cunwan",
     "dadaozhixing": "dadaozhixing",
     "dalinsitaohua": "dalinsitaohua",
+    "dasijianyishu": "dasijianyishu",
     "daxiezhongshu": "daxiezhongshu",
+    "daxue": "daxue",
     "dengfeilaifeng": "dengfeilaifeng",
     "denggao": "denggao",
     "dengguanquelou": "dengguanquelou",
     "dengkuai-ge": "dengkuai-ge",
+    "dengtaishan": "dengtaishan",
     "dengyouzhoutai": "dengyouzhoutai",
     "dengyueyanglou": "dengyueyanglou",
     "duange": "duange",
     "duzuojingting": "duzuojingting",
+    "epenggongfu": "epenggongfu",
     "feng": "feng",
     "feng-mi": "feng-mi",
     "fengqiaoyebo": "fengqiaoyebo",
@@ -267,54 +333,75 @@
     "guancanghai": "guancanghai",
     "guanju": "guanju",
     "guanshu": "guanshu",
+    "gudaishilun": "gudaishilun",
+    "guiqulaixici": "guiqulaixici",
     "guiyuantianju": "guiyuantianju",
     "guizhixiang": "guizhixiang",
     "gulangyuexing": "gulangyuexing",
     "guogurenzhuang": "guogurenzhuang",
     "guolingyang": "guolingyang",
+    "guoqinlun": "guoqinlun",
     "guyuancao": "guyuancao",
     "hanshi": "hanshi",
+    "hanxiaqu": "hanxiaqu",
     "hexinlao": "hexinlao",
     "hua": "hua",
     "huaji": "huaji",
+    "huanggangzhulouji": "huanggangzhulouji",
     "huanghelou": "huanghelou",
     "huanghelou-cuiheng": "huanghelou-cuiheng",
     "huanxisha-qishui": "huanxisha-qishui",
     "huanxisha-yanque": "huanxisha-yanque",
     "huichongchunjiang": "huichongchunjiang",
     "huixiangyoushu": "huixiangyoushu",
+    "huxinting": "huxinting",
     "jiangchengzi-laofeng": "jiangchengzi-laofeng",
     "jiangchengzi-yimao": "jiangchengzi-yimao",
     "jiangjinjiu": "jiangjinjiu",
     "jiangnan": "jiangnan",
     "jiangnanchun": "jiangnanchun",
+    "jiangpan": "jiangpan",
     "jiangshangyuzhe": "jiangshangyuzhe",
     "jiangxue": "jiangxue",
     "jianjia": "jianjia",
+    "jiantaishisi": "jiantaishisi",
+    "jianzhukeshu": "jianzhukeshu",
     "jichengtiansi": "jichengtiansi",
     "jihai": "jihai",
     "jihai-jimao": "jihai-jimao",
     "jingcisi": "jingcisi",
+    "jingnv": "jingnv",
     "jingyesi": "jingyesi",
     "jinse": "jinse",
+    "jishi-jiangfanjueyu": "jishi-jiangfanjueyu",
     "jiuyuejiuri": "jiuyuejiuri",
     "jueju-chiri": "jueju-chiri",
     "jueju-huangli": "jueju-huangli",
     "kezhi": "kezhi",
     "langtaosha": "langtaosha",
+    "lantingjixu": "lantingjixu",
+    "laozi8": "laozi8",
+    "liangzhou-wanghan": "liangzhou-wanghan",
     "liangzhouci-wanghan": "liangzhouci-wanghan",
-    "liangzhouci-wangzhihuan": "liangzhouci-wangzhihuan",
+    "liji1": "liji1",
     "linanchunyu": "linanchunyu",
     "lipeng": "lipeng",
     "lisao": "lisao",
+    "liuguolun": "liuguolun",
+    "liyun": "liyun",
     "longpo": "longpo",
+    "loushiming": "loushiming",
     "luchai": "luchai",
+    "lunyu12": "lunyu12",
+    "lvshi1": "lvshi1",
     "maotanshangwu": "maotanshangwu",
     "maowu": "maowu",
     "mashi": "mashi",
     "masuo": "masuo",
     "meihua": "meihua",
     "mengyoutianmu": "mengyoutianmu",
+    "mengzi3": "mengzi3",
+    "mengziyize": "mengziyize",
     "minnong1": "minnong1",
     "minnong2": "minnong2",
     "momei": "momei",
@@ -336,9 +423,12 @@
     "qiqiao": "qiqiao",
     "qiqiaoxian": "qiqiaoxian",
     "qiuyejiangxiao": "qiuyejiangxiao",
+    "quanxue": "quanxue",
+    "quyuanliezhuan": "quyuanliezhuan",
     "saixiaqu": "saixiaqu",
     "sanqudaozhong": "sanqudaozhong",
     "sanxia": "sanxia",
+    "shangshumihan": "shangshumihan",
     "shanjuqiuming": "shanjuqiuming",
     "shanpoyang": "shanpoyang",
     "shanxing": "shanxing",
@@ -347,9 +437,11 @@
     "shier": "shier",
     "shihaoli": "shihaoli",
     "shihuiyin": "shihuiyin",
+    "shishuo": "shishuo",
     "shiwei": "shiwei",
     "shiwuzhongjunzheng": "shiwuzhongjunzheng",
     "shiyiwangyue": "shiyiwangyue",
+    "shizhongshan": "shizhongshan",
     "shizhuisai": "shizhuisai",
     "shudaonan": "shudaonan",
     "shufen": "shufen",
@@ -358,6 +450,7 @@
     "shuxiang": "shuxiang",
     "sishitianyuan-25": "sishitianyuan-25",
     "sishitianyuan-31": "sishitianyuan-31",
+    "songdongyang": "songdongyang",
     "songshaoshu": "songshaoshu",
     "songshaoshu-wai": "songshaoshu-wai",
     "songyuaner": "songyuaner",
@@ -367,6 +460,7 @@
     "suoyoujiayao": "suoyoujiayao",
     "suxinshi": "suxinshi",
     "taohuayuanji": "taohuayuanji",
+    "tengwanggexu": "tengwanggexu",
     "tianjingsha-qiusi": "tianjingsha-qiusi",
     "tiaotiaoqianniuxing": "tiaotiaoqianniuxing",
     "tilinandi": "tilinandi",
@@ -379,13 +473,17 @@
     "wangyue": "wangyue",
     "wenguanjun": "wenguanjun",
     "wenwangchangling": "wenwangchangling",
+    "wudailingguan": "wudailingguan",
     "wuti": "wuti",
+    "wuyi": "wuyi",
     "xiangcunsiyue": "xiangcunsiyue",
     "xiangjianhuan": "xiangjianhuan",
+    "xiangjixuanzhi": "xiangjixuanzhi",
     "xiangsi": "xiangsi",
     "xiaochi": "xiaochi",
     "xiaoerchuidiao": "xiaoerchuidiao",
     "xiaoshitan": "xiaoshitan",
+    "xiaoyaoyou": "xiaoyaoyou",
     "xiarijueju": "xiarijueju",
     "xijiangyue": "xijiangyue",
     "xinglunan": "xinglunan",
@@ -398,6 +496,7 @@
     "yesushansi": "yesushansi",
     "yewang": "yewang",
     "yeyujibei": "yeyujibei",
+    "yijiangnan": "yijiangnan",
     "yinhushang": "yinhushang",
     "yinjiujiusan": "yinjiujiusan",
     "yonge": "yonge",
@@ -405,38 +504,74 @@
     "yongyule": "yongyule",
     "youshanxincun": "youshanxincun",
     "youyuanbuzhi": "youyuanbuzhi",
+    "youziyin": "youziyin",
     "yuanri": "yuanri",
+    "yueyanglouji": "yueyanglouji",
     "yugezi": "yugezi",
     "yujiaao-qiusi": "yujiaao-qiusi",
     "yumeiren": "yumeiren",
     "yuzhusianshu": "yuzhusianshu",
     "zaochun": "zaochun",
     "zaofabaidicheng": "zaofabaidicheng",
+    "zashuo4": "zashuo4",
     "zengliujingwen": "zengliujingwen",
     "zengwang": "zengwang",
     "zengwanglun": "zengwanglun",
     "zhizibing": "zhizibing",
+    "zhongshu-guotuotuo": "zhongshu-guotuotuo",
+    "zhongyong": "zhongyong",
     "zhouyeshujian": "zhouyeshujian",
+    "zhuangzi1": "zhuangzi1",
     "zhuliguan": "zhuliguan",
     "zhushi": "zhushi",
-    "zijin": "zijin"
+    "zijin": "zijin",
+    "zilu-shizhe": "zilu-shizhe",
+    "zouji": "zouji",
+    "zuigongtingji": "zuigongtingji"
   },
   "byTheme": {
+    "war": [
+      "wuyi"
+    ],
     "七夕": [
       "qiqiao"
     ],
+    "与民同乐": [
+      "zuigongtingji"
+    ],
     "丰收": [
       "xijiangyue"
+    ],
+    "书信": [
+      "shangshumihan"
+    ],
+    "书法": [
+      "lantingjixu"
     ],
     "亡国": [
       "xiangjianhuan",
       "yumeiren"
     ],
+    "亲情": [
+      "youziyin",
+      "xiangjixuanzhi"
+    ],
     "人才": [
       "masuo"
     ],
     "修身": [
-      "suoyoujiayao"
+      "zashuo4",
+      "suoyoujiayao",
+      "liji1",
+      "lunyu12",
+      "zhongyong",
+      "quanxue",
+      "daxue",
+      "jiantaishisi"
+    ],
+    "借古讽今": [
+      "wudailingguan",
+      "liuguolun"
     ],
     "傍晚": [
       "cunwan"
@@ -447,11 +582,15 @@
     "元宵": [
       "qingyu-an"
     ],
+    "养生": [
+      "zhongshu-guotuotuo"
+    ],
     "写景": [
       "guancanghai",
       "sanxia",
       "jueju-huangli",
       "zhouyeshujian",
+      "jiangpan",
       "jueju-chiri",
       "mujiangyin",
       "wanghulou",
@@ -459,7 +598,9 @@
       "chunyexiyu",
       "niannujiao-gudong",
       "dengkuai-ge",
-      "sumuzhe"
+      "dengtaishan",
+      "sumuzhe",
+      "huanggangzhulouji"
     ],
     "农忙": [
       "xiangcunsiyue"
@@ -476,6 +617,8 @@
       "sanqudaozhong"
     ],
     "励志": [
+      "mengziyize",
+      "tengwanggexu",
       "shuxiang"
     ],
     "劳动": [
@@ -494,6 +637,7 @@
       "songshaoshu",
       "wenwangchangling",
       "songshaoshu-wai",
+      "lvshi1",
       "zengwanglun",
       "songyuaner",
       "huanghelou",
@@ -501,11 +645,17 @@
       "guogurenzhuang",
       "kezhi"
     ],
+    "变法": [
+      "dasijianyishu"
+    ],
     "变革": [
       "jihai"
     ],
     "叙事": [
       "pipaxing"
+    ],
+    "古典": [
+      "jingnv"
     ],
     "同情": [
       "shanpoyang",
@@ -513,6 +663,7 @@
       "pipaxing"
     ],
     "咏物": [
+      "ailianshuo",
       "gulangyuexing",
       "yonge",
       "hua",
@@ -535,7 +686,12 @@
       "jinse"
     ],
     "哀叹": [
-      "shiwei"
+      "shiwei",
+      "epenggongfu"
+    ],
+    "哲学": [
+      "zhongyong",
+      "daxue"
     ],
     "哲理": [
       "wanchun",
@@ -545,6 +701,8 @@
       "chibi-du",
       "beimingyouyu",
       "suoyoujiayao",
+      "zhuangzi1",
+      "choulitian",
       "hua",
       "dengguanquelou",
       "guyuancao",
@@ -557,9 +715,13 @@
       "chunri",
       "huanxisha-qishui",
       "youyuanbuzhi",
+      "laozi8",
+      "lantingjixu",
       "niluonan",
       "chunjianghuayue",
-      "chibi"
+      "chibi",
+      "chibifu",
+      "xiaoyaoyou"
     ],
     "喜悦": [
       "zaofabaidicheng",
@@ -599,13 +761,25 @@
       "lipeng"
     ],
     "孝亲": [
-      "mulanci"
+      "mulanci",
+      "chenqingbiao"
+    ],
+    "孟子": [
+      "mengzi3",
+      "mengziyize"
     ],
     "孤独": [
       "dengyouzhoutai",
       "yewang",
       "change",
       "duzuojingting"
+    ],
+    "学习": [
+      "zashuo4",
+      "liji1",
+      "lunyu12",
+      "quanxue",
+      "shishuo"
     ],
     "家国": [
       "chusai",
@@ -623,6 +797,7 @@
       "yuzhusianshu",
       "xiaoshitan",
       "daxiezhongshu",
+      "zuigongtingji",
       "wanglushanpubu",
       "jiangxue",
       "shanxing",
@@ -642,19 +817,34 @@
     "山行": [
       "sanqudaozhong"
     ],
+    "师道": [
+      "shishuo"
+    ],
     "幽静": [
       "luchai",
       "niaomingjian"
     ],
+    "庄子": [
+      "zhuangzi1",
+      "xiaoyaoyou"
+    ],
     "归隐": [
+      "guiqulaixici",
       "guiyuantianju"
     ],
     "志趣": [
       "huaji",
       "momei"
     ],
+    "忠君": [
+      "chushibiao"
+    ],
+    "忠贞": [
+      "quyuanliezhuan"
+    ],
     "忧国": [
       "chunwang",
+      "yueyanglouji",
       "dengyueyanglou"
     ],
     "忧民": [
@@ -673,7 +863,11 @@
       "chibi"
     ],
     "怀念": [
-      "huanxisha-yanque"
+      "huanxisha-yanque",
+      "xiangjixuanzhi"
+    ],
+    "怀才": [
+      "quyuanliezhuan"
     ],
     "思乡": [
       "yeyujibei",
@@ -734,9 +928,17 @@
       "linanchunyu",
       "jiangjinjiu"
     ],
+    "意志": [
+      "baoranan"
+    ],
     "感怀": [
       "dengyouzhoutai",
       "linanchunyu"
+    ],
+    "感恩": [
+      "chushibiao",
+      "songdongyang",
+      "chenqingbiao"
     ],
     "感慨": [
       "huixiangyoushu"
@@ -751,14 +953,18 @@
       "shiwuzhongjunzheng",
       "chunwang",
       "mulanci",
-      "yanmenshiweixing"
+      "yanmenshiweixing",
+      "caoguilunzhan"
     ],
     "执着": [
       "wuti"
     ],
     "抒怀": [
       "xinglunan",
-      "duange"
+      "choulitian",
+      "shangshumihan",
+      "duange",
+      "huanggangzhulouji"
     ],
     "抒情": [
       "daxiezhongshu"
@@ -769,6 +975,7 @@
       "dengfeilaifeng",
       "guancanghai",
       "yuzhusianshu",
+      "yueyanglouji",
       "mashi"
     ],
     "挽歌": [
@@ -777,10 +984,17 @@
     "推己及人": [
       "maowu"
     ],
+    "政治": [
+      "jishi-jiangfanjueyu"
+    ],
+    "文论": [
+      "gudaishilun"
+    ],
     "旷达": [
       "shuidiaogetou",
       "huanxisha-qishui",
-      "niannujiao-gudong"
+      "niannujiao-gudong",
+      "chibifu"
     ],
     "春天": [
       "wanchun",
@@ -790,7 +1004,9 @@
       "cunju",
       "jueju-huangli",
       "dalinsitaohua",
+      "yijiangnan",
       "huichongchunjiang",
+      "jiangpan",
       "jueju-chiri",
       "suxinshi",
       "zaochun",
@@ -818,6 +1034,9 @@
     "楚辞": [
       "lisao"
     ],
+    "母爱": [
+      "youziyin"
+    ],
     "民生": [
       "shiwuzhongjunzheng",
       "maotanshangwu",
@@ -830,16 +1049,21 @@
     ],
     "气节": [
       "guolingyang",
+      "mengzi3",
       "xiarijueju",
       "shihuiyin"
     ],
     "水滨": [
       "guanju"
     ],
+    "求学": [
+      "songdongyang"
+    ],
     "求贤": [
       "duange"
     ],
     "江南": [
+      "yijiangnan",
       "jiangnanchun"
     ],
     "清明": [
@@ -849,7 +1073,8 @@
       "yugezi"
     ],
     "游记": [
-      "xiaoshitan"
+      "xiaoshitan",
+      "dengtaishan"
     ],
     "炼意": [
       "bochuanguazhou"
@@ -866,6 +1091,7 @@
       "tilinandi",
       "wenguanjun",
       "shufen",
+      "wuyi",
       "guizhixiang",
       "yongyule",
       "pusaman-zaoxiang",
@@ -877,6 +1103,7 @@
       "jianjia",
       "zijin",
       "shejiang",
+      "jingnv",
       "qiqiaoxian"
     ],
     "牧歌": [
@@ -885,7 +1112,15 @@
     "理想": [
       "xinglunan",
       "dadaozhixing",
+      "zilu-shizhe",
+      "liyun",
       "lisao"
+    ],
+    "理据": [
+      "jianzhukeshu"
+    ],
+    "生死": [
+      "baoranan"
     ],
     "田园": [
       "youshanxincun",
@@ -904,10 +1139,12 @@
       "xijiangyue",
       "guogurenzhuang",
       "kezhi",
+      "guiqulaixici",
       "guiyuantianju"
     ],
     "登临": [
       "huanghelou-cuiheng",
+      "tengwanggexu",
       "dengyueyanglou",
       "denggao"
     ],
@@ -918,8 +1155,12 @@
       "xiangsi",
       "qingyu-an"
     ],
+    "知音": [
+      "lvshi1"
+    ],
     "礼制": [
-      "dadaozhixing"
+      "dadaozhixing",
+      "liyun"
     ],
     "神话": [
       "beimingyouyu",
@@ -954,10 +1195,16 @@
     "繁华": [
       "wanghaichao"
     ],
+    "纳谏": [
+      "jiantaishisi"
+    ],
     "羁旅": [
       "tianjingsha-qiusi",
       "fengqiaoyebo",
       "sujiandejiang"
+    ],
+    "考据": [
+      "shizhongshan"
     ],
     "自然": [
       "feng"
@@ -969,9 +1216,6 @@
       "qiqiao",
       "shiyiwangyue",
       "hanshi"
-    ],
-    "苍凉": [
-      "liangzhouci-wangzhihuan"
     ],
     "苦闷": [
       "niluonan"
@@ -987,26 +1231,52 @@
       "qiantanghuchunxing",
       "yinhushang"
     ],
+    "议论文": [
+      "wudailingguan",
+      "liuguolun",
+      "guoqinlun"
+    ],
+    "论语": [
+      "zilu-shizhe",
+      "jishi-jiangfanjueyu"
+    ],
+    "讽今": [
+      "guoqinlun"
+    ],
     "讽刺": [
       "tilinandi",
       "chaotianzi",
-      "yange-xing"
+      "yange-xing",
+      "shizhongshan"
     ],
     "讽喻": [
       "maotanshangwu",
       "boqinhuai",
       "masuo",
+      "zouji",
       "feng-mi",
-      "chaotianzi"
+      "chaotianzi",
+      "zhongshu-guotuotuo",
+      "epenggongfu"
     ],
     "访友": [
       "xunyinzhe"
     ],
+    "评论": [
+      "gudaishilun"
+    ],
     "读书": [
       "guanshu"
     ],
+    "谋略": [
+      "caoguilunzhan"
+    ],
+    "谏言": [
+      "jianzhukeshu"
+    ],
     "豪壮": [
-      "liangzhouci-wanghan"
+      "liangzhouci-wanghan",
+      "liangzhou-wanghan"
     ],
     "豪情": [
       "nangxiangzi",
@@ -1033,10 +1303,17 @@
       "chusai",
       "saixiaqu",
       "congjunxing",
-      "liangzhouci-wangzhihuan",
+      "liangzhou-wanghan",
+      "hanxiaqu",
       "changxiangsi",
       "caiwei",
       "yange-xing"
+    ],
+    "进言": [
+      "dasijianyishu"
+    ],
+    "进谏": [
+      "zouji"
     ],
     "追寻": [
       "jianjia"
@@ -1054,6 +1331,9 @@
       "bosuanzi-song",
       "changting-songbei"
     ],
+    "道德": [
+      "laozi8"
+    ],
     "遗嘱": [
       "shier"
     ],
@@ -1070,6 +1350,9 @@
       "huanxisha-yanque",
       "pusaman-wentingyun"
     ],
+    "陋室": [
+      "loushiming"
+    ],
     "隐居": [
       "shanjuqiuming"
     ],
@@ -1077,12 +1360,23 @@
       "zhuliguan",
       "yinjiujiusan"
     ],
+    "雅趣": [
+      "huxinting"
+    ],
     "雪": [
-      "saixiaqu"
+      "saixiaqu",
+      "hanxiaqu"
+    ],
+    "雪景": [
+      "huxinting"
     ],
     "音乐": [
       "chunyeluocheng",
       "lipeng"
+    ],
+    "高洁": [
+      "ailianshuo",
+      "loushiming"
     ],
     "黄河": [
       "langtaosha"
@@ -1092,7 +1386,7 @@
     ]
   },
   "contentVersion": "2026.10.02",
-  "count": 200,
+  "count": 253,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/使至塞上.md",
@@ -3868,6 +4162,71 @@
       "volume": "八年级下册"
     },
     {
+      "_path": "poems/初中/八年级上册/岳阳楼记.md",
+      "author": "范仲淹",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "先天下之忧而忧的政治抱负",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 8,
+      "id": "yueyanglouji",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "先天下之忧而忧后天下之乐而乐",
+        "不以物喜不以己悲",
+        "政通人和百废具兴",
+        "不以物喜不以己悲居庙堂之高则忧其民处江湖之远则忧其君"
+      ],
+      "linesPunct": [
+        "先天下之忧而忧，后天下之乐而乐。",
+        "不以物喜，不以己悲。",
+        "政通人和，百废具兴。",
+        "不以物喜，不以己悲；居庙堂之高则忧其民，处江湖之远则忧其君。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        3
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "忧国",
+        "抱负",
+        "宋文言"
+      ],
+      "technique": [
+        "对偶",
+        "对比",
+        "借景抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "忧国",
+        "抱负"
+      ],
+      "title": "岳阳楼记",
+      "volume": "八年级上册"
+    },
+    {
       "_path": "poems/初中/八年级下册课外诵读/式微.md",
       "author": "佚名",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -3920,6 +4279,70 @@
       ],
       "title": "式微",
       "volume": "八年级下册课外诵读"
+    },
+    {
+      "_path": "poems/初中/八年级下册/杂说.md",
+      "author": "韩愈",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "唐",
+      "emotion": "学习与思考的重要",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 8,
+      "id": "zashuo4",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "是故无冥明之察",
+        "是故无经无纬",
+        "是故无道无观",
+        "善哉答是"
+      ],
+      "linesPunct": [
+        "是故无冥明之察。",
+        "是故无经无纬。",
+        "是故无道无观。",
+        "善哉，答是。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "四",
+      "syllables": null,
+      "tags": [
+        "学习",
+        "修身",
+        "唐文言"
+      ],
+      "technique": [
+        "比喻",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "学习",
+        "修身"
+      ],
+      "title": "杂说",
+      "volume": "八年级下册"
     },
     {
       "_path": "poems/初中/八年级下册/桃花源记.md",
@@ -3983,6 +4406,70 @@
         "避世"
       ],
       "title": "桃花源记",
+      "volume": "八年级下册"
+    },
+    {
+      "_path": "poems/初中/八年级下册/爱莲说.md",
+      "author": "周敦颐",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "不媚世俗的君子之志",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 8,
+      "id": "ailianshuo",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "水陆草木之花可爱者甚蕃",
+        "予独爱莲之出淤泥而不染濯清涟而不妖",
+        "中通外直不蔓不枝香远益清亭亭净植",
+        "噫菊之爱陶后鲜有闻"
+      ],
+      "linesPunct": [
+        "水陆草木之花，可爱者甚蕃。",
+        "予独爱莲之出淤泥而不染，濯清涟而不妖。",
+        "中通外直，不蔓不枝，香远益清，亭亭净植。",
+        "噫！菊之爱，陶后鲜有闻。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        4,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "咏物",
+        "高洁",
+        "宋文言"
+      ],
+      "technique": [
+        "托物言志",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "咏物",
+        "高洁"
+      ],
+      "title": "爱莲说",
       "volume": "八年级下册"
     },
     {
@@ -4286,6 +4773,63 @@
       "volume": "八年级下册课外诵读"
     },
     {
+      "_path": "poems/初中/八年级上册/醉翁亭记.md",
+      "author": "欧阳修",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "与民同乐的旷达",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 8,
+      "id": "zuigongtingji",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "醉翁之意不在酒在乎山水之间也",
+        "山水之乐得之心而寓之酒也",
+        "人知从太守游而乐而不知太守之乐其乐也"
+      ],
+      "linesPunct": [
+        "醉翁之意不在酒，在乎山水之间也。",
+        "山水之乐，得之心而寓之酒也。",
+        "人知从太守游而乐，而不知太守之乐其乐也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "山水",
+        "与民同乐",
+        "宋文言"
+      ],
+      "technique": [
+        "对比",
+        "抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "山水",
+        "与民同乐"
+      ],
+      "title": "醉翁亭记",
+      "volume": "八年级上册"
+    },
+    {
       "_path": "poems/初中/八年级上册课外诵读/野望.md",
       "author": "王绩",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -4350,6 +4894,74 @@
       "volume": "八年级上册课外诵读"
     },
     {
+      "_path": "poems/初中/八年级下册/陋室铭.md",
+      "author": "刘禹锡",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "唐",
+      "emotion": "不慕荣利的君子之德",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 8,
+      "id": "loushiming",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "斯是陋室惟吾德馨",
+        "苔痕上阶绿草色入帘青",
+        "谈笑有鸿儒往来无白丁",
+        "无丝竹之乱耳无案牍之劳形",
+        "孔子云何陋之有"
+      ],
+      "linesPunct": [
+        "斯是陋室，惟吾德馨。",
+        "苔痕上阶绿，草色入帘青。",
+        "谈笑有鸿儒，往来无白丁。",
+        "无丝竹之乱耳，无案牍之劳形。",
+        "孔子云：何陋之有？"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "陋室",
+        "高洁",
+        "唐文言"
+      ],
+      "technique": [
+        "对比",
+        "引用",
+        "托物言志"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "陋室",
+        "高洁"
+      ],
+      "title": "陋室铭",
+      "volume": "八年级下册"
+    },
+    {
       "_path": "poems/初中/八年级下册/马说.md",
       "author": "韩愈",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -4402,6 +5014,588 @@
       ],
       "title": "马说",
       "volume": "八年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/《吕氏春秋》一则.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "战国",
+      "emotion": "知音难觅的悲慨",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 9,
+      "id": "lvshi1",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "伯牙鼓琴锺子期听之",
+        "方鼓琴而志在太山锺子期曰善哉乎鼓琴",
+        "善哉乎鼓琴巍巍乎若太山",
+        "少选之间而志在流水",
+        "锺子期死伯牙破琴绝弦终身不复鼓琴"
+      ],
+      "linesPunct": [
+        "伯牙鼓琴，锺子期听之。",
+        "方鼓琴而志在太山，锺子期曰：善哉乎鼓琴！",
+        "善哉乎鼓琴！巍巍乎若太山。",
+        "少选之间而志在流水。",
+        "锺子期死，伯牙破琴绝弦，终身不复鼓琴。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        1,
+        1,
+        3
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "伯牙鼓琴",
+      "syllables": null,
+      "tags": [
+        "知音",
+        "友情",
+        "战国文言"
+      ],
+      "technique": [
+        "比喻",
+        "侧面描写"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "知音",
+        "友情"
+      ],
+      "title": "《吕氏春秋》一则",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/《孟子》三则.md",
+      "author": "孟子",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "战国",
+      "emotion": "舍生取义与任重道远",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 9,
+      "id": "mengzi3",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "生亦我所欲也义亦我所欲也",
+        "富贵不能淫贫贱不能移威武不能屈",
+        "天将降大任于是人也"
+      ],
+      "linesPunct": [
+        "生，亦我所欲也；义，亦我所欲也。",
+        "富贵不能淫，贫贱不能移，威武不能屈。",
+        "天将降大任于是人也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        3,
+        3,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "孟子",
+        "气节",
+        "战国文言"
+      ],
+      "technique": [
+        "对比",
+        "排比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "孟子",
+        "气节"
+      ],
+      "title": "《孟子》三则",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/《庄子》一则.md",
+      "author": "庄子",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "战国",
+      "emotion": "逍遥与辩论的机智",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 9,
+      "id": "zhuangzi1",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "北冥有鱼其名为鲲",
+        "其翼若垂天之云",
+        "子非鱼安知鱼之乐"
+      ],
+      "linesPunct": [
+        "北冥有鱼，其名为鲲。",
+        "其翼若垂天之云。",
+        "子非鱼，安知鱼之乐？"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        1,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "庄子",
+        "哲理",
+        "战国文言"
+      ],
+      "technique": [
+        "比喻",
+        "对话"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "庄子",
+        "哲理"
+      ],
+      "title": "《庄子》一则",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/《礼记》一则.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "先秦",
+      "emotion": "学习与朋友的价值",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 9,
+      "id": "liji1",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "虽有嘉肴弗食不知其旨也",
+        "虽有至道弗学不知其善也",
+        "善哉答是"
+      ],
+      "linesPunct": [
+        "虽有嘉肴，弗食，不知其旨也。",
+        "虽有至道，弗学，不知其善也。",
+        "善哉，答是。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        3,
+        3,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "虽有嘉肴",
+      "syllables": null,
+      "tags": [
+        "修身",
+        "学习",
+        "先秦文言"
+      ],
+      "technique": [
+        "比喻",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "修身",
+        "学习"
+      ],
+      "title": "《礼记》一则",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/出师表.md",
+      "author": "诸葛亮",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "三国",
+      "emotion": "托孤尽忠的鞠躬尽瘁",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 9,
+      "id": "chushibiao",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "受任于败军之际奉命于危难之间",
+        "臣本布衣躬耕于南阳",
+        "将军向宠性行淑均"
+      ],
+      "linesPunct": [
+        "受任于败军之际，奉命于危难之间。",
+        "臣本布衣，躬耕于南阳。",
+        "将军向宠，性行淑均。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "忠君",
+        "感恩",
+        "三国文言"
+      ],
+      "technique": [
+        "对比",
+        "陈述"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "忠君",
+        "感恩"
+      ],
+      "title": "出师表",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/曹刿论战.md",
+      "author": "左丘明",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "先秦",
+      "emotion": "以寡敌众的战术智慧",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 9,
+      "id": "caoguilunzhan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "夫战勇气也",
+        "一鼓作气再而衰三而竭",
+        "夫大国之难不可不察也"
+      ],
+      "linesPunct": [
+        "夫战，勇气也。",
+        "一鼓作气，再而衰，三而竭。",
+        "夫大国之难，不可不察也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        3,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "战争",
+        "谋略",
+        "先秦文言"
+      ],
+      "technique": [
+        "对比",
+        "论证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "战争",
+        "谋略"
+      ],
+      "title": "曹刿论战",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/湖心亭看雪.md",
+      "author": "张岱",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "明",
+      "emotion": "雪夜西湖的清雅与认错的幽默",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 9,
+      "id": "huxinting",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "雾凇沆砀天与云与山与水上下一白",
+        "惟长堤一痕湖心亭一点与余舟一芥舟中人两三粒而已",
+        "余强饮三大白"
+      ],
+      "linesPunct": [
+        "雾凇沆砀，天与云与山与水，上下一白。",
+        "惟长堤一痕、湖心亭一点、与余舟一芥、舟中人两三粒而已。",
+        "余强饮三大白。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        3,
+        1,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "雪景",
+        "雅趣",
+        "明文言"
+      ],
+      "technique": [
+        "白描",
+        "夸张"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "雪景",
+        "雅趣"
+      ],
+      "title": "湖心亭看雪",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/送东阳马生序.md",
+      "author": "宋濂",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "明",
+      "emotion": "求学之艰与师友之益",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 9,
+      "id": "songdongyang",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "余幼时即嗜学",
+        "是故无贵无贱无长无少",
+        "况才之过于余者乎"
+      ],
+      "linesPunct": [
+        "余幼时即嗜学。",
+        "是故无贵无贱，无长无少。",
+        "况才之过于余者乎？"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        1,
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "节选",
+      "syllables": null,
+      "tags": [
+        "求学",
+        "感恩",
+        "明文言"
+      ],
+      "technique": [
+        "对比",
+        "陈述"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "求学",
+        "感恩"
+      ],
+      "title": "送东阳马生序",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/邹忌讽齐王纳谏.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "战国",
+      "emotion": "由己及人的进谏之道",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": 9,
+      "id": "zouji",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "吾妻之美我者私我也",
+        "时时齐国之闲也",
+        "由此观之四年之时也"
+      ],
+      "linesPunct": [
+        "吾妻之美我者，私我也。",
+        "时时齐国之闲也。",
+        "由此观之，四年之时也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        1,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "讽喻",
+        "进谏",
+        "战国文言"
+      ],
+      "technique": [
+        "比喻",
+        "对比",
+        "论证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "讽喻",
+        "进谏"
+      ],
+      "title": "邹忌讽齐王纳谏",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/酬乐天扬州初逢席上见赠.md",
+      "author": "刘禹锡",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "屡遭贬谪仍豁达乐观",
+      "examFreq": 0.9,
+      "form": "七言",
+      "grade": 9,
+      "id": "choulitian",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "巴山楚水凄凉地二十三年弃置身",
+        "怀旧空吟闻笛赋到乡翻似烂柯人",
+        "沉舟侧畔千帆过病树前头万木春"
+      ],
+      "linesPunct": [
+        "巴山楚水凄凉地，二十三年弃置身。",
+        "怀旧空吟闻笛赋，到乡翻似烂柯人。",
+        "沉舟侧畔千帆过，病树前头万木春。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "抒怀",
+        "哲理",
+        "唐七言"
+      ],
+      "technique": [
+        "对比",
+        "比喻",
+        "用典"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "抒怀",
+        "哲理"
+      ],
+      "title": "酬乐天扬州初逢席上见赠",
+      "volume": "九年级上册"
     },
     {
       "_path": "poems/小学/一年级上册/古朗月行.md",
@@ -6260,6 +7454,63 @@
       "volume": "三年级上册"
     },
     {
+      "_path": "poems/小学/三年级下册/忆江南.md",
+      "author": "白居易",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "对江南春色的深切怀念",
+      "examFreq": 0.7,
+      "form": "词",
+      "grade": 3,
+      "id": "yijiangnan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "江南好风景旧曾谙",
+        "日出江花红胜火春来江水绿如蓝",
+        "能不忆江南"
+      ],
+      "linesPunct": [
+        "江南好，风景旧曾谙。",
+        "日出江花红胜火，春来江水绿如蓝。",
+        "能不忆江南？"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "subtitle": "江南好",
+      "syllables": null,
+      "tags": [
+        "春天",
+        "江南",
+        "唐词"
+      ],
+      "technique": [
+        "比喻",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "春天",
+        "江南"
+      ],
+      "title": "忆江南",
+      "volume": "三年级下册"
+    },
+    {
       "_path": "poems/小学/三年级下册/惠崇春江晚景.md",
       "author": "苏轼",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -6525,6 +7776,60 @@
       ],
       "title": "望洞庭",
       "volume": "三年级上册"
+    },
+    {
+      "_path": "poems/小学/三年级下册/江畔独步寻花.md",
+      "author": "杜甫",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "春日江畔的闲适与对花的偏爱",
+      "examFreq": 0.7,
+      "form": "七言",
+      "grade": 3,
+      "id": "jiangpan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "黄师塔前江水东春光懒困倚微风",
+        "桃花一簇开无主可爱深红爱浅红"
+      ],
+      "linesPunct": [
+        "黄师塔前江水东，春光懒困倚微风。",
+        "桃花一簇开无主，可爱深红爱浅红。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "春天",
+        "写景",
+        "唐七言"
+      ],
+      "technique": [
+        "拟人",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "春天",
+        "写景"
+      ],
+      "title": "江畔独步寻花",
+      "volume": "三年级下册"
     },
     {
       "_path": "poems/小学/三年级下册/清明.md",
@@ -7933,24 +9238,24 @@
     },
     {
       "_path": "poems/小学/五年级下册/凉州词.md",
-      "author": "王之涣",
+      "author": "王翰",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 3,
+      "difficulty": 4,
       "dynasty": "唐",
-      "emotion": "边塞的苍凉与思乡",
-      "examFreq": 0.9,
+      "emotion": "将士出征前的豪迈与悲凉",
+      "examFreq": 0.7,
       "form": "七言",
       "grade": 5,
-      "id": "liangzhouci-wangzhihuan",
+      "id": "liangzhou-wanghan",
       "irregular": null,
       "license": "public-domain",
       "lines": [
-        "黄河远上白云间一片孤城万仞山",
-        "羌笛何须怨杨柳春风不度玉门关"
+        "葡萄美酒夜光杯欲饮琵琶马上催",
+        "醉卧沙场君莫笑古来征战几人回"
       ],
       "linesPunct": [
-        "黄河远上白云间，一片孤城万仞山。",
-        "羌笛何须怨杨柳，春风不度玉门关。"
+        "葡萄美酒夜光杯，欲饮琵琶马上催。",
+        "醉卧沙场君莫笑，古来征战几人回。"
       ],
       "pairs": [
         [
@@ -7964,23 +9269,23 @@
       ],
       "source": "S3+S1+S2",
       "stage": "小学",
-      "subtitle": null,
+      "subtitle": "葡萄美酒夜光杯",
       "syllables": 14,
       "tags": [
         "边塞",
-        "苍凉",
+        "豪壮",
         "唐七言"
       ],
       "technique": [
-        "比喻",
-        "反问"
+        "对比",
+        "夸张"
       ],
       "textbooks": [
         "统编"
       ],
       "theme": [
         "边塞",
-        "苍凉"
+        "豪壮"
       ],
       "title": "凉州词",
       "volume": "五年级下册"
@@ -8036,6 +9341,60 @@
         "劳动"
       ],
       "title": "四时田园杂兴",
+      "volume": "五年级下册"
+    },
+    {
+      "_path": "poems/小学/五年级下册/寒下曲.md",
+      "author": "卢纶",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "雪夜追击的英武",
+      "examFreq": 0.7,
+      "form": "五言",
+      "grade": 5,
+      "id": "hanxiaqu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "月黑雁飞高单于夜遁逃",
+        "欲将轻骑逐大雪满弓刀"
+      ],
+      "linesPunct": [
+        "月黑雁飞高，单于夜遁逃。",
+        "欲将轻骑逐，大雪满弓刀。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "边塞",
+        "雪",
+        "唐五言"
+      ],
+      "technique": [
+        "白描",
+        "侧面描写"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "边塞",
+        "雪"
+      ],
+      "title": "寒下曲",
       "volume": "五年级下册"
     },
     {
@@ -9762,6 +11121,63 @@
       "volume": "六年级下册"
     },
     {
+      "_path": "poems/小学/六年级下册/游子吟.md",
+      "author": "孟郊",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "母爱的深挚与游子的感恩",
+      "examFreq": 0.7,
+      "form": "六言",
+      "grade": 6,
+      "id": "youziyin",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "慈母手中线游子身上衣",
+        "临行密密缝意恐迟迟归",
+        "谁言寸草心报得三春晖"
+      ],
+      "linesPunct": [
+        "慈母手中线，游子身上衣。",
+        "临行密密缝，意恐迟迟归。",
+        "谁言寸草心，报得三春晖。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "亲情",
+        "母爱",
+        "唐六言"
+      ],
+      "technique": [
+        "比喻",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "亲情",
+        "母爱"
+      ],
+      "title": "游子吟",
+      "volume": "六年级下册"
+    },
+    {
       "_path": "poems/小学/六年级下册/石灰吟.md",
       "author": "于谦",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -10246,6 +11662,335 @@
       "volume": "六年级下册"
     },
     {
+      "_path": "poems/高中/选修（2026起默写）/《孟子》一则.md",
+      "author": "孟子",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "战国",
+      "emotion": "有为与坚持不懈",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "mengziyize",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "敢问夫子恶乎长",
+        "有为者辟若掘井掘井九轫而不及泉犹为弃井也"
+      ],
+      "linesPunct": [
+        "敢问夫子恶乎长？",
+        "有为者辟若掘井，掘井九轫而不及泉，犹为弃井也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        1,
+        3
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "孟子",
+        "励志",
+        "战国文言"
+      ],
+      "technique": [
+        "比喻",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "孟子",
+        "励志"
+      ],
+      "title": "《孟子》一则",
+      "volume": "选修（2026起默写）"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/《老子》八章.md",
+      "author": "老子",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "先秦",
+      "emotion": "老子的处世智慧",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "laozi8",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "上善若水水善利万物而不争",
+        "人法地地法天天法道道法自然",
+        "祸兮福之所倚福兮祸之所伏",
+        "知人者智自知者明胜人者有力自胜者强",
+        "信言不美美言不信"
+      ],
+      "linesPunct": [
+        "上善若水，水善利万物而不争。",
+        "人法地，地法天，天法道，道法自然。",
+        "祸兮福之所倚，福兮祸之所伏。",
+        "知人者智，自知者明。胜人者有力，自胜者强。",
+        "信言不美，美言不信。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        4,
+        2,
+        3,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "哲理",
+        "道德",
+        "先秦文言"
+      ],
+      "technique": [
+        "对比",
+        "比喻",
+        "论说"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "哲理",
+        "道德"
+      ],
+      "title": "《老子》八章",
+      "volume": "选修（2026起默写）"
+    },
+    {
+      "_path": "poems/高中/必修上册/《论语》十二章.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "先秦",
+      "emotion": "修身与为学之道的集中体现",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "lunyu12",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "学而时习之不亦说乎",
+        "有朋自远方来不亦乐乎",
+        "人不知而不愠不亦君子乎",
+        "吾日三省吾身为人谋而不忠乎与朋友交而不信乎传不习乎",
+        "温故而知新可以为师矣",
+        "学而不思则罔思而不学则殆",
+        "知之者不如好之者好之者不如乐之者",
+        "三人行必有我师焉择其善者而从之其不善者而改之",
+        "逝者如斯夫不舍昼夜"
+      ],
+      "linesPunct": [
+        "学而时习之，不亦说乎？",
+        "有朋自远方来，不亦乐乎？",
+        "人不知而不愠，不亦君子乎？",
+        "吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？",
+        "温故而知新，可以为师矣。",
+        "学而不思则罔，思而不学则殆。",
+        "知之者不如好之者，好之者不如乐之者。",
+        "三人行，必有我师焉。择其善者而从之，其不善者而改之。",
+        "逝者如斯夫，不舍昼夜。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "修身",
+        "学习",
+        "先秦文言"
+      ],
+      "technique": [
+        "对比",
+        "排比",
+        "引证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "修身",
+        "学习"
+      ],
+      "title": "《论语》十二章",
+      "volume": "必修上册"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/上枢密韩太尉书.md",
+      "author": "苏辙",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "求教与自荐的至诚",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "shangshumihan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "辙生好为文思之至深以为文出於",
+        "辙生十有九年矣"
+      ],
+      "linesPunct": [
+        "辙生好为文，思之至深。以为文出於。",
+        "辙生十有九年矣。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        1
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "书信",
+        "抒怀",
+        "宋文言"
+      ],
+      "technique": [
+        "议论",
+        "抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "书信",
+        "抒怀"
+      ],
+      "title": "上枢密韩太尉书",
+      "volume": "选修（2026起默写）"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/中庸.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "先秦",
+      "emotion": "中庸之道的修养方法",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "zhongyong",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "喜怒哀乐之未发谓之中发而皆中节谓之和",
+        "中也者天下之大本也和也者天下之达道也",
+        "博学之审问之慎思之明辨之笃行之",
+        "人十能之己千之果能此道矣愚夫愚妇亦能知与知之"
+      ],
+      "linesPunct": [
+        "喜怒哀乐之未发，谓之中；发而皆中节，谓之和。",
+        "中也者，天下之大本也；和也者，天下之达道也。",
+        "博学之，审问之，慎思之，明辨之，笃行之。",
+        "人十能之，己千之；果能此道矣，愚夫愚妇亦能知与知之。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        3,
+        3,
+        5,
+        3
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "修身",
+        "哲学",
+        "先秦文言"
+      ],
+      "technique": [
+        "对比",
+        "排比",
+        "论说"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "修身",
+        "哲学"
+      ],
+      "title": "中庸",
+      "volume": "选修（2026起默写）"
+    },
+    {
       "_path": "poems/高中/选择性必修下册/临安春雨初霁.md",
       "author": "陆游",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -10360,6 +12105,324 @@
       "volume": "选择性必修下册"
     },
     {
+      "_path": "poems/高中/选择性必修下册/五代史伶官传序.md",
+      "author": "欧阳修",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "忧劳兴国的道理",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "wudailingguan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "忧劳可以兴国逸豫可以亡身",
+        "国家安危之理存乎治乱",
+        "至于危而不治乱而不亡不可胜数"
+      ],
+      "linesPunct": [
+        "忧劳可以兴国，逸豫可以亡身。",
+        "国家安危之理，存乎治乱。",
+        "至于危而不治，乱而不亡，不可胜数。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        3
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "议论文",
+        "借古讽今",
+        "宋文言"
+      ],
+      "technique": [
+        "对比",
+        "论证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "议论文",
+        "借古讽今"
+      ],
+      "title": "五代史伶官传序",
+      "volume": "选择性必修下册"
+    },
+    {
+      "_path": "poems/高中/必修下册/六国论.md",
+      "author": "苏洵",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "借六国亡秦讽喻北宋苟安",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "liuguolun",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "六国破灭非兵不利战不善弊在赂秦",
+        "赂秦而力亏破灭之道也",
+        "以地事秦敌国不敢抗也",
+        "暴霜露斩荆棘以有尺寸之地"
+      ],
+      "linesPunct": [
+        "六国破灭，非兵不利，战不善，弊在赂秦。",
+        "赂秦而力亏，破灭之道也。",
+        "以地事秦，敌国不敢抗也。",
+        "暴霜露，斩荆棘，以有尺寸之地。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        4,
+        2,
+        2,
+        3
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "议论文",
+        "借古讽今",
+        "宋文言"
+      ],
+      "technique": [
+        "对比",
+        "论证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "议论文",
+        "借古讽今"
+      ],
+      "title": "六国论",
+      "volume": "必修下册"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/兰亭集序.md",
+      "author": "王羲之",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "晋",
+      "emotion": "宴集之乐与生死之叹",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "lantingjixu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "群贤毕至少长咸集",
+        "仰观宇宙之大俯察品类之盛",
+        "固知一死生为虚诞齐彭殇为妄作",
+        "后之览者亦将有感于斯文"
+      ],
+      "linesPunct": [
+        "群贤毕至，少长咸集。",
+        "仰观宇宙之大，俯察品类之盛。",
+        "固知一死生为虚诞，齐彭殇为妄作。",
+        "后之览者，亦将有感于斯文。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "书法",
+        "哲理",
+        "晋文言"
+      ],
+      "technique": [
+        "骈散结合",
+        "对比",
+        "抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "书法",
+        "哲理"
+      ],
+      "title": "兰亭集序",
+      "volume": "选修（2026起默写）"
+    },
+    {
+      "_path": "poems/高中/必修上册/劝学.md",
+      "author": "荀子",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "战国",
+      "emotion": "学习贵在积累与持之以恒",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "quanxue",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "君子曰学不可以已",
+        "青取之于蓝而青于蓝冰水为之而寒于水",
+        "故木受绳则直金就砺则利君子博学而日参省乎己则知明而行无过矣",
+        "蟹六跪而二螯非蛇鳝之穴无可寄托者",
+        "吾尝终日而思矣不如须臾之所学也"
+      ],
+      "linesPunct": [
+        "君子曰：学不可以已。",
+        "青，取之于蓝，而青于蓝；冰，水为之，而寒于水。",
+        "故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。",
+        "蟹六跪而二螯，非蛇鳝之穴无可寄托者。",
+        "吾尝终日而思矣，不如须臾之所学也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        1,
+        5,
+        4,
+        2,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "学习",
+        "修身",
+        "战国文言"
+      ],
+      "technique": [
+        "比喻",
+        "对比",
+        "论证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "学习",
+        "修身"
+      ],
+      "title": "劝学",
+      "volume": "必修上册"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/古代文论选段.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "先秦",
+      "emotion": "古代文学理论的精要",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "gudaishilun",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "诗者志之所之也",
+        "盖文章经国之大业",
+        "故曰《诗》可以群可以怨",
+        "词以境界为最上"
+      ],
+      "linesPunct": [
+        "诗者，志之所之也。",
+        "盖文章，经国之大业。",
+        "故曰：《诗》可以群，可以怨。",
+        "词以境界为最上。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "文论",
+        "评论",
+        "先秦文言"
+      ],
+      "technique": [
+        "议论",
+        "引证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "文论",
+        "评论"
+      ],
+      "title": "古代文论选段",
+      "volume": "选修（2026起默写）"
+    },
+    {
       "_path": "poems/高中/必修上册/声声慢.md",
       "author": "李清照",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -10415,6 +12478,179 @@
       ],
       "title": "声声慢",
       "volume": "必修上册"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/大学.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "先秦",
+      "emotion": "格物致知的修身路径",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "daxue",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "古之欲明明德于天下者先治其国",
+        "欲诚其意者先致其知致知在格物",
+        "物格而后知至知至而后意诚"
+      ],
+      "linesPunct": [
+        "古之欲明明德于天下者，先治其国。",
+        "欲诚其意者，先致其知。致知在格物。",
+        "物格而后知至，知至而后意诚。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "修身",
+        "哲学",
+        "先秦文言"
+      ],
+      "technique": [
+        "排比",
+        "论证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "修身",
+        "哲学"
+      ],
+      "title": "大学",
+      "volume": "选修（2026起默写）"
+    },
+    {
+      "_path": "poems/高中/选择性必修上册/子路、曾皙、冉有、公西华侍坐.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "先秦",
+      "emotion": "儒家理想中的政治生活",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "zilu-shizhe",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "莫春者春服既成冠者五六人童子六七人浴乎沂风乎舞雩咏而归",
+        "吾与点也",
+        "非吾徒也小子鸣鼓而攻之可也"
+      ],
+      "linesPunct": [
+        "莫春者，春服既成，冠者五六人，童子六七人，浴乎沂，风乎舞雩，咏而归。",
+        "吾与点也！",
+        "非吾徒也，小子鸣鼓而攻之可也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        7,
+        1,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "论语",
+        "理想",
+        "先秦文言"
+      ],
+      "technique": [
+        "描写",
+        "对比",
+        "引证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "论语",
+        "理想"
+      ],
+      "title": "子路、曾皙、冉有、公西华侍坐",
+      "volume": "选择性必修上册"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/季氏将伐颛臾.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "先秦",
+      "emotion": "维护鲁国政事的远见",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "jishi-jiangfanjueyu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "吾闻之也国有进言则可以谓之国民矣",
+        "且子季孙若小国",
+        "吾恐季孙之忧不在颛臾而在萧墙之内"
+      ],
+      "linesPunct": [
+        "吾闻之也：国有进言则可以谓之国民矣。",
+        "且子季孙若小国。",
+        "吾恐季孙之忧，不在颛臾，而在萧墙之内。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        1,
+        1,
+        3
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "论语",
+        "政治",
+        "先秦文言"
+      ],
+      "technique": [
+        "引证",
+        "对比",
+        "类比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "论语",
+        "政治"
+      ],
+      "title": "季氏将伐颛臾",
+      "volume": "选修（2026起默写）"
     },
     {
       "_path": "poems/高中/必修上册/客至.md",
@@ -10536,6 +12772,193 @@
       ],
       "title": "将进酒",
       "volume": "必修上册"
+    },
+    {
+      "_path": "poems/高中/必修上册/屈原列传.md",
+      "author": "司马迁",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "西汉",
+      "emotion": "懷才不遇的悲愤与不改其志",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "quyuanliezhuan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "推此志也虽与日月争光可也",
+        "怨灵修之浩荡兮终不察夫民心",
+        "众人莫不窃取其画"
+      ],
+      "linesPunct": [
+        "推此志也，虽与日月争光可也。",
+        "怨灵修之浩荡兮，终不察夫民心。",
+        "众人莫不窃取其画。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "怀才",
+        "忠贞",
+        "西汉文言"
+      ],
+      "technique": [
+        "对比",
+        "议论"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "怀才",
+        "忠贞"
+      ],
+      "title": "屈原列传",
+      "volume": "必修上册"
+    },
+    {
+      "_path": "poems/高中/必修下册/师说.md",
+      "author": "韩愈",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "唐",
+      "emotion": "尊师重道的学习观",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "shishuo",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "古之学者必有师师者所以传道受业解惑也",
+        "是故无贵无贱无长无少道之所存师之所存也",
+        "择师教之弟子习之遂成其材",
+        "是故弟子不必不如师师不必贤于弟子"
+      ],
+      "linesPunct": [
+        "古之学者必有师。师者，所以传道受业解惑也。",
+        "是故无贵无贱，无长无少，道之所存，师之所存也。",
+        "择师教之，弟子习之，遂成其材。",
+        "是故弟子不必不如师，师不必贤于弟子。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        4,
+        3,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "学习",
+        "师道",
+        "唐文言"
+      ],
+      "technique": [
+        "对比",
+        "排比",
+        "论证"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "学习",
+        "师道"
+      ],
+      "title": "师说",
+      "volume": "必修下册"
+    },
+    {
+      "_path": "poems/高中/选择性必修下册/归去来兮辞.md",
+      "author": "陶潜",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "晋",
+      "emotion": "归隐田园的决绝与自我陶醉",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "guiqulaixici",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "归去来兮田园将芜胡不归",
+        "既自以心为形役奚惆怅而独悲",
+        "悟已往之不谏知来者之可追",
+        "实迷途其未远觉今是而昨非"
+      ],
+      "linesPunct": [
+        "归去来兮，田园将芜胡不归？",
+        "既自以心为形役，奚惆怅而独悲？",
+        "悟已往之不谏，知来者之可追。",
+        "实迷途其未远，觉今是而昨非。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "田园",
+        "归隐",
+        "晋文言"
+      ],
+      "technique": [
+        "对比",
+        "抒情",
+        "象征"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "田园",
+        "归隐"
+      ],
+      "title": "归去来兮辞",
+      "volume": "选择性必修下册"
     },
     {
       "_path": "poems/高中/必修上册/归园田居.md",
@@ -10787,6 +13210,71 @@
       "volume": "选择性必修下册"
     },
     {
+      "_path": "poems/高中/选择性必修中册/报任安书.md",
+      "author": "司马迁",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "西汉",
+      "emotion": "司马迁的报恩之志与受刑之辱",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "baoranan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "人固有一死或重于泰山或轻于鸿毛",
+        "盖文王拘而演周易仲尼厄而作春秋",
+        "士为知己者用女为说己者容",
+        "奇文共欣赏疑义相与析"
+      ],
+      "linesPunct": [
+        "人固有一死，或重于泰山，或轻于鸿毛。",
+        "盖文王拘而演周易；仲尼厄而作春秋。",
+        "士为知己者用，女为说己者容。",
+        "奇文共欣赏，疑义相与析。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        3,
+        1,
+        2,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "生死",
+        "意志",
+        "西汉文言"
+      ],
+      "technique": [
+        "对比",
+        "议论",
+        "用典"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "生死",
+        "意志"
+      ],
+      "title": "报任安书",
+      "volume": "选择性必修中册"
+    },
+    {
       "_path": "poems/高中/选择性必修下册/拟行路难.md",
       "author": "鲍照",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -10842,6 +13330,63 @@
       ],
       "title": "拟行路难",
       "volume": "选择性必修下册"
+    },
+    {
+      "_path": "poems/高中/选择性必修上册/无衣.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "先秦",
+      "emotion": "同仇敌忾的豪情",
+      "examFreq": 0.9,
+      "form": "诗经",
+      "grade": null,
+      "id": "wuyi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "岂曰无衣与子同袍",
+        "岂曰无衣与子同裳",
+        "王于兴师修我戈矛"
+      ],
+      "linesPunct": [
+        "岂曰无衣？与子同袍。",
+        "岂曰无衣？与子同裳。",
+        "王于兴师，修我戈矛。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        1,
+        1,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "war",
+        "爱国",
+        "先秦诗经"
+      ],
+      "technique": [
+        "重章叠句",
+        "比兴"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "war",
+        "爱国"
+      ],
+      "title": "无衣",
+      "volume": "选择性必修上册"
     },
     {
       "_path": "poems/高中/选择性必修下册/春江花月夜.md",
@@ -11371,6 +13916,71 @@
       "volume": "必修上册"
     },
     {
+      "_path": "poems/高中/选修（2026起默写）/滕王阁序.md",
+      "author": "王勃",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "唐",
+      "emotion": "登临抒怀与怀才不遇",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "tengwanggexu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "落霞与孤鹜齐飞秋水共长天一色",
+        "渔舟唱晚响穷彭蠡之滨雁阵惊寒声断衡阳之浦",
+        "关山难越谁悲失路之人萍水相逢尽是他乡之客",
+        "勃三尺微命一介书生"
+      ],
+      "linesPunct": [
+        "落霞与孤鹜齐飞，秋水共长天一色。",
+        "渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。",
+        "关山难越，谁悲失路之人？萍水相逢，尽是他乡之客。",
+        "勃，三尺微命，一介书生。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "登临",
+        "励志",
+        "唐文言"
+      ],
+      "technique": [
+        "骈散结合",
+        "对仗",
+        "比喻"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "登临",
+        "励志"
+      ],
+      "title": "滕王阁序",
+      "volume": "选修（2026起默写）"
+    },
+    {
       "_path": "poems/高中/选择性必修中册/燕歌行.md",
       "author": "高适",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -11613,6 +14223,60 @@
       "volume": "选择性必修下册"
     },
     {
+      "_path": "poems/高中/选择性必修下册/登泰山记.md",
+      "author": "姚鼐",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "清",
+      "emotion": "泰山晚景的壮丽",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "dengtaishan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "苍山负雪明烛天南",
+        "山高月小水落石出"
+      ],
+      "linesPunct": [
+        "苍山负雪，明烛天南。",
+        "山高月小，水落石出。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "写景",
+        "游记",
+        "清文言"
+      ],
+      "technique": [
+        "白描",
+        "比喻"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "写景",
+        "游记"
+      ],
+      "title": "登泰山记",
+      "volume": "选择性必修下册"
+    },
+    {
       "_path": "poems/高中/必修上册/登高.md",
       "author": "杜甫",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -11734,6 +14398,128 @@
       "volume": "必修上册"
     },
     {
+      "_path": "poems/高中/选择性必修下册/石钟山记.md",
+      "author": "苏轼",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "实践出真知的哲理",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "shizhongshan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "而陋者乃以斧斤考击而求之",
+        "郦元之所见闻殆与余同",
+        "士大夫之见固陋如此"
+      ],
+      "linesPunct": [
+        "而陋者乃以斧斤考击而求之。",
+        "郦元之所见闻，殆与余同。",
+        "士大夫之见，固陋如此。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        1,
+        2,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "考据",
+        "讽刺",
+        "宋文言"
+      ],
+      "technique": [
+        "对比",
+        "论证",
+        "讽喻"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "考据",
+        "讽刺"
+      ],
+      "title": "石钟山记",
+      "volume": "选择性必修下册"
+    },
+    {
+      "_path": "poems/高中/选择性必修上册/礼运.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "先秦",
+      "emotion": "对大同世界的描述",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "liyun",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "大道之行也天下为公",
+        "选贤与能讲信修睦",
+        "故人不独亲其亲不独子其子",
+        "是谓大同"
+      ],
+      "linesPunct": [
+        "大道之行也，天下为公。",
+        "选贤与能，讲信修睦。",
+        "故人不独亲其亲，不独子其子。",
+        "是谓大同。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "礼制",
+        "理想",
+        "先秦文言"
+      ],
+      "technique": [
+        "排比",
+        "铺陈"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "礼制",
+        "理想"
+      ],
+      "title": "礼运",
+      "volume": "选择性必修上册"
+    },
+    {
       "_path": "poems/高中/必修上册/离骚.md",
       "author": "屈原",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -11796,6 +14582,118 @@
       ],
       "title": "离骚",
       "volume": "必修上册"
+    },
+    {
+      "_path": "poems/高中/选择性必修下册/种树郭橐驼传.md",
+      "author": "柳宗元",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "顺其自然的主张",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "zhongshu-guotuotuo",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "能顺木之性而深其根固其土则根荄繁茂",
+        "顺其性而养之则无灾害"
+      ],
+      "linesPunct": [
+        "能顺木之性而深其根，固其土，则根荄繁茂。",
+        "顺其性而养之，则无灾害。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        3,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "讽喻",
+        "养生",
+        "唐文言"
+      ],
+      "technique": [
+        "托物言志",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "讽喻",
+        "养生"
+      ],
+      "title": "种树郭橐驼传",
+      "volume": "选择性必修下册"
+    },
+    {
+      "_path": "poems/高中/必修下册/答司马谏议书.md",
+      "author": "王安石",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "推行新法的坚定与对君主的劝谏",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "dasijianyishu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "举先王之政过举而废旧者行政复议者",
+        "无乃圣明之误乎",
+        "至酌贪泉而觉爽处涸辙以犹欢"
+      ],
+      "linesPunct": [
+        "举先王之政，过举而废旧者，行政复议者。",
+        "无乃圣明之误乎？",
+        "至酌贪泉而觉爽，处涸辙以犹欢。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        3,
+        1,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "变法",
+        "进言",
+        "宋文言"
+      ],
+      "technique": [
+        "用典",
+        "对比",
+        "反问"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "变法",
+        "进言"
+      ],
+      "title": "答司马谏议书",
+      "volume": "必修下册"
     },
     {
       "_path": "poems/高中/选择性必修下册/苏幕遮.md",
@@ -12147,6 +15045,122 @@
       "volume": "必修上册"
     },
     {
+      "_path": "poems/高中/必修下册/谏太宗十思疏.md",
+      "author": "魏征",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "直言敢谏的忠贞与务实",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "jiantaishisi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "求全责备虽病不以为苦",
+        "忧懈怠则不能以终始",
+        "善求者无逸事善谏者无亡身"
+      ],
+      "linesPunct": [
+        "求全责备，虽病不以为苦。",
+        "忧懈怠则不能以终始。",
+        "善求者无逸事，善谏者无亡身。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        1,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "纳谏",
+        "修身",
+        "唐文言"
+      ],
+      "technique": [
+        "排比",
+        "对比",
+        "议论"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "纳谏",
+        "修身"
+      ],
+      "title": "谏太宗十思疏",
+      "volume": "必修下册"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/谏逐客书.md",
+      "author": "李斯",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "秦",
+      "emotion": "以理据谏的劝谏艺术",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "jianzhukeshu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "西取由余于戎东得百里奚于宛迎蹇叔于宋来邳豹于吴",
+        "今陛下致昆山之玉有随和之宝垂明月之珠",
+        "弃逐客而国不富贤者不译"
+      ],
+      "linesPunct": [
+        "西取由余于戎，东得百里奚于宛，迎蹇叔于宋，来邳豹于吴。",
+        "今陛下致昆山之玉，有随、和之宝，垂明月之珠。",
+        "弃逐客而国不富，贤者不译。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        4,
+        3,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "谏言",
+        "理据",
+        "秦文言"
+      ],
+      "technique": [
+        "论证",
+        "对比",
+        "铺陈"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "谏言",
+        "理据"
+      ],
+      "title": "谏逐客书",
+      "volume": "选修（2026起默写）"
+    },
+    {
       "_path": "poems/高中/选择性必修下册/贺新郎.md",
       "author": "刘克庄",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -12256,6 +15270,201 @@
       ],
       "title": "赤壁",
       "volume": "必修下册"
+    },
+    {
+      "_path": "poems/高中/必修下册/赤壁赋.md",
+      "author": "苏轼",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "由人生短暂转为旷达超脱",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "chibifu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "寄蜉蝣于天地渺沧海之一粟",
+        "哀吾生之须臾羡长江之无穷",
+        "逝者如斯而未尝往也盈虚者如彼而卒莫消长也",
+        "且夫天地之间物各有主苟非吾之所有虽一毫而莫取"
+      ],
+      "linesPunct": [
+        "寄蜉蝣于天地，渺沧海之一粟。",
+        "哀吾生之须臾，羡长江之无穷。",
+        "逝者如斯，而未尝往也；盈虚者如彼，而卒莫消长也。",
+        "且夫天地之间，物各有主，苟非吾之所有，虽一毫而莫取。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        3,
+        4
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "哲理",
+        "旷达",
+        "宋文言"
+      ],
+      "technique": [
+        "比喻",
+        "对比",
+        "议论"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "哲理",
+        "旷达"
+      ],
+      "title": "赤壁赋",
+      "volume": "必修下册"
+    },
+    {
+      "_path": "poems/高中/选择性必修上册/过秦论.md",
+      "author": "贾谊",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "西汉",
+      "emotion": "秦亡之因与以古讽今",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "guoqinlun",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "秦孝公据崤函之固拥雍州之地",
+        "蹑足行伍之间而倔起阡陌之中",
+        "因利乘便宰割天下分裂山河",
+        "销锋镝之啮镞而感慨系天下之意"
+      ],
+      "linesPunct": [
+        "秦孝公据崤函之固，拥雍州之地。",
+        "蹑足行伍之间，而倔起阡陌之中。",
+        "因利乘便，宰割天下，分裂山河。",
+        "销锋镝之啮镞，而感慨系天下之意。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "议论文",
+        "讽今",
+        "西汉文言"
+      ],
+      "technique": [
+        "对比",
+        "论证",
+        "比喻"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "议论文",
+        "讽今"
+      ],
+      "title": "过秦论",
+      "volume": "选择性必修上册"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/逍遥游.md",
+      "author": "庄子",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "战国",
+      "emotion": "自由自在的境界",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "xiaoyaoyou",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "北冥有鱼其名为鲲",
+        "鹏之背不知其几千里也怒而飞其翼若垂天之云",
+        "且夫水之积也不厚则其负大舟也无力",
+        "无己有蓬之心者犹有蓬之心也"
+      ],
+      "linesPunct": [
+        "北冥有鱼，其名为鲲。",
+        "鹏之背，不知其几千里也；怒而飞，其翼若垂天之云。",
+        "且夫水之积也不厚，则其负大舟也无力。",
+        "无己，有蓬之心者，犹有蓬之心也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "庄子",
+        "哲理",
+        "战国文言"
+      ],
+      "technique": [
+        "比喻",
+        "夸张",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "庄子",
+        "哲理"
+      ],
+      "title": "逍遥游",
+      "volume": "选修（2026起默写）"
     },
     {
       "_path": "poems/高中/选择性必修下册/锦瑟.md",
@@ -12372,6 +15581,122 @@
       "volume": "选择性必修下册"
     },
     {
+      "_path": "poems/高中/必修下册/阿房宫赋.md",
+      "author": "杜牧",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "秦亡之鉴与对后人的告诫",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "epenggongfu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "覆压三百余里隔离天日",
+        "使天下之人不敢言而敢怒",
+        "后人哀之而不鉴之亦使后人而复哀后人也"
+      ],
+      "linesPunct": [
+        "覆压三百余里，隔离天日。",
+        "使天下之人，不敢言而敢怒。",
+        "后人哀之而不鉴之，亦使后人而复哀后人也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "讽喻",
+        "哀叹",
+        "唐文言"
+      ],
+      "technique": [
+        "排比",
+        "夸张",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "讽喻",
+        "哀叹"
+      ],
+      "title": "阿房宫赋",
+      "volume": "必修下册"
+    },
+    {
+      "_path": "poems/高中/选择性必修下册/陈情表.md",
+      "author": "李密",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "晋",
+      "emotion": "至孝与忠心的两难",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "chenqingbiao",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "臣以险衅夙遭闵凶生孩六月慈父见背",
+        "臣欲奉诏奔驰则刘病日笃欲苟顺私情则告诉不许",
+        "臣之辛苦非独蜀之人士及二州牧伯所见明知皇天后土实所共鉴"
+      ],
+      "linesPunct": [
+        "臣以险衅夙遭闵凶，生孩六月，慈父见背。",
+        "臣欲奉诏奔驰，则刘病日笃；欲苟顺私情，则告诉不许。",
+        "臣之辛苦，非独蜀之人士及二州牧伯所见明知，皇天后土实所共鉴。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        3,
+        3,
+        3
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "孝亲",
+        "感恩",
+        "晋文言"
+      ],
+      "technique": [
+        "对比",
+        "抒情",
+        "议论"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "孝亲",
+        "感恩"
+      ],
+      "title": "陈情表",
+      "volume": "选择性必修下册"
+    },
+    {
       "_path": "poems/高中/必修上册/青玉案·元夕.md",
       "author": "辛弃疾",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -12429,6 +15754,121 @@
       "volume": "必修上册"
     },
     {
+      "_path": "poems/高中/必修上册/静女.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "先秦",
+      "emotion": "男子对心上人的爱慕",
+      "examFreq": 0.9,
+      "form": "诗经",
+      "grade": null,
+      "id": "jingnv",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "静女其姝俟我于城隅",
+        "爱而不见搔首踟蹰",
+        "静女其娈贻我彤管"
+      ],
+      "linesPunct": [
+        "静女其姝，俟我于城隅。",
+        "爱而不见，搔首踟蹰。",
+        "静女其娈，贻我彤管。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "爱情",
+        "古典",
+        "先秦诗经"
+      ],
+      "technique": [
+        "比兴",
+        "重章叠句"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱情",
+        "古典"
+      ],
+      "title": "静女",
+      "volume": "必修上册"
+    },
+    {
+      "_path": "poems/高中/必修下册/项脊轩志.md",
+      "author": "归有光",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "明",
+      "emotion": "对亡妻的深切怀念与人生感慨",
+      "examFreq": 0.9,
+      "form": "文言",
+      "grade": null,
+      "id": "xiangjixuanzhi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "庭有枇杷树吾妻死之年所手植也今已亭亭如盖矣",
+        "室西有古槐翳然有生意",
+        "后之视今亦由今之视昔悲夫"
+      ],
+      "linesPunct": [
+        "庭有枇杷树，吾妻死之年所手植也，今已亭亭如盖矣。",
+        "室西有古槐，翳然有生意。",
+        "后之视今，亦由今之视昔，悲夫！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        3,
+        2,
+        3
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "怀念",
+        "亲情",
+        "明文言"
+      ],
+      "technique": [
+        "白描",
+        "细节",
+        "抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "怀念",
+        "亲情"
+      ],
+      "title": "项脊轩志",
+      "volume": "必修下册"
+    },
+    {
       "_path": "poems/高中/必修上册/鹊桥仙.md",
       "author": "秦观",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
@@ -12484,6 +15924,61 @@
       ],
       "title": "鹊桥仙",
       "volume": "必修上册"
+    },
+    {
+      "_path": "poems/高中/选修（2026起默写）/黄冈竹楼记.md",
+      "author": "王禹偁",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "贬谪中的豁达与自守",
+      "examFreq": 0.8,
+      "form": "文言",
+      "grade": null,
+      "id": "huanggangzhulouji",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "万里赴戎机",
+        "黄州居士谪居之"
+      ],
+      "linesPunct": [
+        "万里赴戎机。",
+        "黄州居士，谪居之。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        1,
+        2
+      ],
+      "source": "S3+S1b+S2",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "写景",
+        "抒怀",
+        "宋文言"
+      ],
+      "technique": [
+        "白描",
+        "议论",
+        "抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "写景",
+        "抒怀"
+      ],
+      "title": "黄冈竹楼记",
+      "volume": "选修（2026起默写）"
     }
   ]
 }
