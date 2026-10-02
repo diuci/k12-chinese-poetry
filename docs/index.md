@@ -51,12 +51,12 @@
 
 | 册次 | 篇数 | 链接 |
 |---|---|---|
-| 一年级上册 | 6 | [查看](https://github.com/diuci/kebiaoyuwen/tree/main/poems/小学/一年级上册) |
-| 一年级下册 | 8 | [查看](https://github.com/diuci/kebiaoyuwen/tree/main/poems/小学/一年级下册) |
-| 二年级上册 | 7 | [查看](https://github.com/diuci/kebiaoyuwen/tree/main/poems/小学/二年级上册) |
-| 二年级下册 | 7 | [查看](https://github.com/diuci/kebiaoyuwen/tree/main/poems/小学/二年级下册) |
-| 三年级上册 | 9 | [查看](https://github.com/diuci/kebiaoyuwen/tree/main/poems/小学/三年级上册) |
-| 三年级下册 | 8 | [查看](https://github.com/diuci/kebiaoyuwen/tree/main/poems/小学/三年级下册) |
+| 一年级上册 | 6 | [查看](https://github.com/diuci/k12-chinese-poetry/tree/main/poems/小学/一年级上册) |
+| 一年级下册 | 8 | [查看](https://github.com/diuci/k12-chinese-poetry/tree/main/poems/小学/一年级下册) |
+| 二年级上册 | 7 | [查看](https://github.com/diuci/k12-chinese-poetry/tree/main/poems/小学/二年级上册) |
+| 二年级下册 | 7 | [查看](https://github.com/diuci/k12-chinese-poetry/tree/main/poems/小学/二年级下册) |
+| 三年级上册 | 9 | [查看](https://github.com/diuci/k12-chinese-poetry/tree/main/poems/小学/三年级上册) |
+| 三年级下册 | 8 | [查看](https://github.com/diuci/k12-chinese-poetry/tree/main/poems/小学/三年级下册) |
 
 ### 初中（7–9 年级）
 
@@ -134,4 +134,4 @@
 | 诗文原文 | **公有领域**（作者殁逾百年），自由使用 |
 | 注释 / 译文 / 赏析 / 选篇编排 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 
-使用时请署名"来源：kebiaoyuwen / 丢词大作战"。
+使用时请署名"来源：k12-chinese-poetry / 丢词大作战"。

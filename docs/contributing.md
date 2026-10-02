@@ -6,8 +6,8 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/diuci/kebiaoyuwen.git
-cd kebiaoyuwen
+git clone https://github.com/diuci/k12-chinese-poetry.git
+cd k12-chinese-poetry
 python tools/validate.py# 提交前必跑，全绿才能提交
 ```
 

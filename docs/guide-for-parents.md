@@ -103,7 +103,7 @@
 **Q: 可以拿来商用吗？**
 诗文原文是公有领域，随便用。我们写的注释、译文、赏析采用
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，
-**使用时署名"来源：kebiaoyuwen / 丢词大作战"** 即可。
+**使用时署名"来源：k12-chinese-poetry / 丢词大作战"** 即可。
 
 ## 给老师的
 

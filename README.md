@@ -1,13 +1,13 @@
-# 课标古诗文 · kebiaoyuwen
+# K12 中文古诗文 · k12-chinese-poetry
 
-> 小学到初中必背古诗词文，按《义务教育语文课程标准（2022年版）》附录 1 收录。
+> 小学到高中必背古诗文，以**应试**为核心。
 > 诗文原文为**公有领域**；注释、译文、赏析与选篇编排 © 丢词大作战，采用 **CC BY 4.0**。
 
-**English**: Chinese K-12 classical poetry & prose, curated from the 2022 National
-Curriculum Standard (Ministry of Education). Original texts are **public domain**;
-our annotations, translations and commentary are licensed **CC BY 4.0**.
+**English**: Chinese K-12 classical poetry and Classical Chinese prose, curated from
+the National Curriculum Standards (Ministry of Education). Original texts are
+**public domain**; our annotations, translations and commentary are **CC BY 4.0**.
 
-[![课标篇目](https://img.shields.io/badge/课标-135%20篇-0f766e)](docs/syllabus-2022.md)
+[![课标篇目](https://img.shields.io/badge/课标-207%20篇-0f766e)](docs/syllabus-2022.md)
 [![法律风险](https://img.shields.io/badge/版权风险-0%20风险-2ea44f)](pending/INDEX.md)
 [![许可](https://img.shields.io/badge/许可-CC%20BY%204.0-blue)](LICENSE)
 
@@ -15,7 +15,7 @@ our annotations, translations and commentary are licensed **CC BY 4.0**.
 
 ## 这是什么
 
-一个**纯 Markdown** 的中国义务教育阶段古诗文内容库，同时是三样东西的**单一事实源**：
+一个**纯 Markdown** 的中国K12 古诗文内容库，同时是三样东西的**单一事实源**：
 
 | 用途 | 说明 |
 |---|---|
@@ -23,13 +23,43 @@ our annotations, translations and commentary are licensed **CC BY 4.0**.
 | **数据源** | `tools/build.py` 把 Markdown 编成 `data/poems.json`，供游戏消费 |
 | **游戏内容** | 《丢词大作战》（[diuci.com](https://diuci.com)）的诗词玩法数据 |
 
-## 收录范围
+## 收录范围（K12 应试核心）
 
-- **课标必背 135 篇（段）**：1–6 年级 75 篇（均为诗歌），7–9 年级 60 篇（含短篇散文）
-- **教材拓展**：另收统编教材里出现、但不在课标 135 篇内的篇目（如《梅花》《画》），单独标注
+| 学段 | 篇数 | 依据 |
+|---|---|---|
+| 小学 1–6 年级 | 75 | 义务教育课标 2022 附录 1（均为诗歌） |
+| 初中 7–9 年级 | 60 | 同上（含短篇散文） |
+| 高中 | 72 | 高中课标 2017（文言文 32 + 诗词曲 40） |
+| **合计** | **207** | 其中**文言文 52 篇** |
 
-完整清单见 **[docs/syllabus-2022.md](docs/syllabus-2022.md)**，它是本仓的**契约文件**——
-`validate.py` 会逐条比对，任何漏收或多收都会让校验失败。
+另收**教材拓展**篇目（统编教材里有、但课标未列的，如《梅花》《画》），单独标注。
+
+清单见 **[docs/syllabus-2022.md](docs/syllabus-2022.md)**（义务教育）与
+**[docs/syllabus-2017.md](docs/syllabus-2017.md)**（高中）——
+它们是本仓的**契约文件**，`validate.py` 会逐条比对，漏收或多收即校验失败。
+
+> **注意命名**：`k12-chinese-poetry` 里的 `poetry` 只统称「诗文」。
+> 本仓**也收录文言文**（52 篇），但英文 `poetry` 与 `prose` 分属两个文学体裁，
+> 文言文两边都不属于——故不写 `prose`，以免被误读为「诗词+散文」。
+
+## 文言文怎么融入游戏
+
+段落动辄数百字，无法贴到地面、也无法判定联句。所以每篇文言文**抽出课标实际
+要求背诵的名句**作为游戏单元：
+
+| 出处 | 名句（多为对举） |
+|---|---|
+| 岳阳楼记 | 先天下之忧而忧，后天下之乐而乐 |
+| 滕王阁序 | 落霞与孤鹜齐飞，秋水共长天一色 |
+| 陋室铭 | 斯是陋室，惟吾德馨 |
+| 醉翁亭记 | 醉翁之意不在酒，在乎山水之间也 |
+
+名句多为**对举**，天然适配联句机制；且本来就是考点。`lines` 存名句、
+`pairs` 存配对，与诗词**完全同构**——游戏代码无需为古文写任何特殊分支。
+全文另存于正文，供学习使用。
+
+每篇另有 `recite` 字段标注背诵要求（`full` 全文 / `section` 段落 /
+`line` 名句 / `none` 只理解），直接对应中考「名句默写」与高考「语境默写」。
 
 ## 数据来源与版权
 
@@ -158,4 +188,4 @@ copyright: { text: public-domain, annotations: cc-by-4.0 }
 - **诗文原文**：公有领域（作者殁逾百年）
 - **注释 / 译文 / 赏析 / 选篇编排 / 代码**：[CC BY 4.0](LICENSE)
 
-使用时请署名"来源：kebiaoyuwen / 丢词大作战"。
+使用时请署名"来源：k12-chinese-poetry / 丢词大作战"。
