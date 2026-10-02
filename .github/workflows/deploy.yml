@@ -7,10 +7,8 @@ on:
       - 'poems/**'
       - 'docs/**'
       - 'site/**'
-      - 'data/poems.json'
-      - 'tools/build.py'
-      - 'tools/build-site.py'
-      - 'tools/gen-pinyin.py'
+      - 'data/**'
+      - 'tools/**'
       - 'package.json'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
@@ -52,7 +50,10 @@ jobs:
       - name: 构建站点
         run: npm run build
         env:
-          SITE_BASE: '/k12-chinese-poetry/'
+          # site/public/CNAME 绑定了自定义域名 k12.diuci.com，站点部署在域名**根路径**，
+          # 所以 base 必须是 '/'。若哪天改成项目页直连（diuci.github.io/k12-chinese-poetry/），
+          # 才把这个值改回 '/k12-chinese-poetry/'——两者不能同时成立，否则资源路径会多一层前缀而 404。
+          SITE_BASE: '/'
 
       - uses: actions/upload-pages-artifact@v3
         with:
