@@ -311,10 +311,16 @@
           3
         ]
       ],
+      "render_split": [
+        1,
+        1,
+        1,
+        1
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "咏物",
         "想象",
@@ -361,10 +367,14 @@
           1
         ]
       ],
+      "render_split": [
+        4,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "咏物",
         "童趣",
@@ -410,10 +420,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "山居",
         "访友",
@@ -459,10 +473,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "夏天",
         "荷",
@@ -509,10 +527,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": "其二",
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "田园",
         "劳动",
@@ -558,10 +580,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "春天",
         "惜春",
@@ -615,6 +641,12 @@
           3
         ]
       ],
+      "render_split": [
+        2,
+        1,
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
@@ -665,10 +697,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "童趣",
         "劳动",
@@ -714,10 +750,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "咏物",
         "哲理",
@@ -764,10 +804,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "咏物",
         "志趣",
@@ -814,10 +858,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "咏物",
         "相思",
@@ -863,10 +911,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "送别",
         "友情",
@@ -912,10 +964,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "思乡",
         "月亮",
@@ -962,10 +1018,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "咏物",
         "自然",
@@ -1012,10 +1072,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "春天",
         "咏物",
@@ -1062,10 +1126,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "夸张",
         "夜游",
@@ -1111,10 +1179,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "童趣",
         "垂钓",
@@ -1160,10 +1232,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": "其一",
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "田园",
         "劳动",
@@ -1217,6 +1293,12 @@
           3
         ]
       ],
+      "render_split": [
+        2,
+        2,
+        2,
+        1
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
@@ -1267,10 +1349,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "夏天",
         "荷",
@@ -1316,10 +1402,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "山水",
         "夸张",
@@ -1366,10 +1456,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "春天",
         "童趣",
@@ -1415,10 +1509,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "咏物",
         "冬天",
@@ -1465,10 +1563,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "冬天",
         "山水",
@@ -1515,10 +1617,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "哲理",
         "登高",
@@ -1564,10 +1670,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": "两个黄鹂鸣翠柳",
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "春天",
         "写景",
@@ -1613,10 +1723,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "夜晚",
         "写景",
@@ -1670,10 +1784,16 @@
           3
         ]
       ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "咏物",
         "哲理",
@@ -1720,10 +1840,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "初夏",
         "山行",
@@ -1769,10 +1893,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "思乡",
         "节日",
@@ -1818,10 +1946,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "节日",
         "春节",
@@ -1868,10 +2000,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "秋天",
         "思乡",
@@ -1917,10 +2053,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "春天",
         "哲理",
@@ -1966,10 +2106,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "秋天",
         "山水",
@@ -2015,10 +2159,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "春天",
         "哲理",
@@ -2064,10 +2212,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "童趣",
         "夏天",
@@ -2113,10 +2265,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "山水",
         "喜悦",
@@ -2162,10 +2318,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "山水",
         "壮阔",
@@ -2212,10 +2372,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "山水",
         "月夜",
@@ -2262,10 +2426,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "节日",
         "清明",
@@ -2311,10 +2479,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "山水",
         "闲适",
@@ -2360,10 +2532,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": "迟日江山丽",
-      "syllables": null,
+      "syllables": 10,
       "tags": [
         "春天",
         "写景",
@@ -2409,10 +2585,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "秋天",
         "勉励",
@@ -2459,10 +2639,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "夏天",
         "劳动",
@@ -2509,10 +2693,14 @@
           1
         ]
       ],
+      "render_split": [
+        2,
+        2
+      ],
       "source": "S3+S1+S2",
       "stage": "小学",
       "subtitle": null,
-      "syllables": null,
+      "syllables": 14,
       "tags": [
         "山水",
         "西湖",

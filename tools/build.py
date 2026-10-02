@@ -152,12 +152,20 @@ def build_record(md_path, fm, body):
                 pairs.append([int(mm.group(1)), int(mm.group(2))])
 
     form = scalar(fm, 'form')
+    # syllables：一联的字数（五言一联 10 字，七言一联 14 字）。
+    # 词、曲、杂言、文言不适用，留None。
     syllables = None
-    if form in ('五言', '七言'):
-        n = 5 if form == '五言' else 7
-        # 杂言 / 词 / 曲 / 文言 不做字数校验
-        if all(len(x) == n for x in lines):
-            syllables = n
+    if form == '五言':
+        syllables = 10
+    elif form == '七言':
+        syllables = 14
+
+    # 渲染层拆分：每整句在地面按逗号拆成几行（游戏贴花层用）
+    rs = scalar(fm, 'render_split')
+    render_split = [int(x) for x in rs] if rs else [1] * len(lines)
+    if len(render_split) != len(lines):
+        die('%s: render_split %d 项与 lines %d 句不匹配'
+            % (path.name, len(render_split), len(lines)))
 
     src = fm.get('source', '')
     crosscheck = ''
@@ -179,6 +187,7 @@ def build_record(md_path, fm, body):
         'linesPunct': [split_line_punct(x) for x in poem_lines],
         'pairs': pairs,
         'syllables': syllables,
+        'render_split': render_split,
         'theme': scalar(fm, 'theme', []) or [],
         'emotion': scalar(fm, 'emotion'),
         'technique': scalar(fm, 'technique', []) or [],
