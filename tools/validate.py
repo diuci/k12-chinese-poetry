@@ -30,6 +30,7 @@ ROOT = Path(__file__).resolve().parent.parent
 POEMS_DIR = ROOT / 'poems'
 PENDING_DIR = ROOT / 'pending'
 SYLLABUS = ROOT / 'docs' / 'syllabus-2022.md'
+SYLLABUS_HS = ROOT / 'docs' / 'syllabus-2017.md'
 DATA_JSON = ROOT / 'data' / 'poems.json'
 
 # 调色：仅在支持 ANSI 的终端着色
@@ -57,17 +58,19 @@ def warn(msg):
 
 
 # ---------------------------------------------------------------- 课标解析
-def parse_syllabus():
-    """从 docs/syllabus-2022.md 抽出 (学段, 编号, 标题) 列表，
-    以及「教材拓展」附表里的篇目。
+def parse_syllabus(path):
+    """从一份课标文档抽出 (分组, 编号, 标题, 作者) 列表。
 
-    只认三个 H2 标题下的表格行，这样页首说明与页尾附表不会混进课标正文。
-    返回 (课标条目, 教材拓展篇目集合)。
+    义务教育（syllabus-2022.md）与高中（syllabus-2017.md）用同一套表格格式：
+        | 1 | 江南（江南可采莲） | 汉乐府 |
+        | 1 | 劝学（学不可以已……用心躁也） | 《荀子》 |
+    高中文档没有「教材拓展」附表，故extra 恒为空集。
     """
-    text = SYLLABUS.read_text(encoding='utf-8')
+    text = path.read_text(encoding='utf-8')
     section = None
     rows = []
     extra = set()
+    in_wenyan_table = False        # 文言文分节表（必修/选择性必修/选修）
     for line in text.splitlines():
         if line.startswith('## '):
             if '1–6 年级' in line:
@@ -76,21 +79,33 @@ def parse_syllabus():
                 section = '初中'
             elif '教材内但不在课标' in line:
                 section = 'extra'
+            elif '文言文（32 篇）' in line:
+                section = '高中'
+                in_wenyan_table = True
+            elif '诗词曲（40 首）' in line:
+                section = '高中'
+                in_wenyan_table = False
             else:
                 section = None
             continue
         if not section:
             continue
         if section == 'extra':
-            # 附表：| 画 | 王维 | 一年级上册 |
             m = re.match(r'^\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*$', line)
             if m and m.group(1).strip() not in ('篇目', '---'):
                 extra.add(normalize_title(m.group(1)))
             continue
-        # | 1 | 江南（江南可采莲） | 汉乐府 |
+        # 高中表头：| # | 篇目 | 作者/ 出处 |
         m = re.match(r'^\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*$', line)
-        if m:
-            rows.append((section, int(m.group(1)), m.group(2).strip(), m.group(3).strip()))
+        if not m:
+            continue
+        title, author = m.group(2).strip(), m.group(3).strip()
+        # 跳过表头与分节行
+        if title.startswith('#') or set(title) <= set('-: '):
+            continue
+        if title in ('篇目', '段落'):
+            continue
+        rows.append((section, int(m.group(1)), title, author))
     return rows, extra
 
 
@@ -110,16 +125,21 @@ def load_poems():
 
 
 def normalize_title(s):
-    """归一标题用于匹配：去括号内容、去空白、去标点、去「其一/其二」。
+    """归一标题用于匹配，去掉一切不影响指称的成分。
 
-    课标写作「江南（江南可采莲）」，篇目文件写「江南」或「江南（汉乐府）」，
-    都要能对上。课标的《悯农》有两条（锄禾/春种），篇目文件写「悯农其一」
-    「悯农其二」，故把序号后缀也归一。
+    课标与篇目文件的写法差异很大，要都能对上：
+      「江南（江南可采莲）」 ↔「江南」        —— 去括号
+      「悯农（春种一粒粟）」 ↔「悯农其一」    —— 去序号后缀
+      「西江月·夜行黄沙道中」 ↔「西江月」     —— 词牌只留牌名
+      「清平乐·村居」       ↔「清平乐」      —— 同上
+      「渔歌子（西塞山前…）」 ↔「渔歌子」     —— 去括号
     """
-    s = re.sub(r'[（(].*?[）)]', '', s)      # 去括号
-    s = re.sub(r'[\s·・]', '', s)             # 去空白与间隔号
-    s = re.sub(r'[《》「」]', '', s)
-    s = re.sub(r'其[一二三四五六七八九十]$', '', s)   # 去「其一」「其二」
+    s = re.sub(r'[（(].*?[）)]', '', s)      # 去括号内容
+    s = re.sub(r'[·・].*$', '', s)            # 词牌副题：西江月·夜行… → 西江月
+    s = re.sub(r'[\s]', '', s)                # 去空白
+    s = re.sub(r'[《》「」]', '', s)          # 去书名号
+    s = re.sub(r'其[一二三四五六七八九十]$', '', s)      # 去「其一」
+    s = re.sub(r'第[一二三四五六七八九十]$', '', s)      # 去「其一」异写
     s = re.sub(r'[（(][一二三四五六七八九十][）)]$', '', s)
     return s
 
@@ -142,14 +162,24 @@ def main():
         err('缺少 docs/syllabus-2022.md（课标契约文件）')
         return report()
 
-    syllabus, extra_titles = parse_syllabus()
+    # 两份课标契约：义务教育（小学+初中）与 高中
+    syllabus, extra_titles = parse_syllabus(SYLLABUS)
     if not syllabus:
         err('无法从 docs/syllabus-2022.md 解析出课标条目')
         return report()
-    print('课标条目：小学 %d 篇 / 初中 %d 篇 / 合计 %d'
+    print('义务教育：小学 %d 篇 / 初中 %d 篇 / 合计 %d'
           % (sum(1 for s in syllabus if s[0] == '小学'),
              sum(1 for s in syllabus if s[0] == '初中'), len(syllabus)))
-    print('教材拓展：%d 篇（不在课标 135 内，但统编教材有）' % len(extra_titles))
+
+    if SYLLABUS_HS.exists():
+        hs, _ = parse_syllabus(SYLLABUS_HS)
+        print('高中课标：%d 篇' % len(hs))
+        syllabus += hs
+    else:
+        notes.append('尚未建 docs/syllabus-2017.md（高中课标契约），'
+                     '高中篇目暂不参与完整性比对')
+    print('课标合计：%d 篇' % len(syllabus))
+    print('教材拓展：%d 篇（不在课标内，但统编教材有）' % len(extra_titles))
 
     try:
         poems = load_poems()
