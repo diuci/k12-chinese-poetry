@@ -145,8 +145,15 @@ def normalize_title(s):
 
 
 REQUIRED = ['id', 'title', 'author', 'lines', 'linesPunct',
-            'theme', 'form', 'dynasty', 'stage', 'grade',
+            'theme', 'form', 'dynasty', 'stage',
             'source', 'license', 'difficulty']
+
+# 高中篇目不用 grade（1-9），改用 volume 表达册次，故单独校验
+REQUIRED_BY_STAGE = {
+    '小学': ['grade', 'volume'],
+    '初中': ['grade', 'volume'],
+    '高中': ['volume'],
+}
 
 
 def main():
@@ -282,6 +289,10 @@ def main():
     # -------------------------------------------------- 5/6/7. 字段与版权
     for p in poems:
         missing = [k for k in REQUIRED if p.get(k) in (None, [], '')]
+        # 学段特有字段
+        stage = p.get('stage')
+        if stage in REQUIRED_BY_STAGE:
+            missing += [k for k in REQUIRED_BY_STAGE[stage] if p.get(k) in (None, [])]
         if missing:
             err('%s: 缺必填字段 %s' % (p['title'], missing))
 
