@@ -1,7 +1,7 @@
 # 数据来源与许可
 
 本仓所有内容的来源均可溯源。每一篇的frontmatter 都带`source` 字段，
-本文件是各来源代号（S1–S7）的总说明。台账总表见 [PROVENANCE.md](../PROVENANCE.md)。
+本文件是各来源代号（S1–S8）的总说明。台账总表见 [PROVENANCE.md](../PROVENANCE.md)。
 
 ## 来源清单
 
@@ -67,6 +67,22 @@ MIT 许可，可商用。提供 5.5 万首唐诗、26 万首宋诗、2.1 万宋�
 
 用于给篇目打 `exam_freq` 分值，帮助学习者聚焦高频考点。
 **使用边界**：仅记录篇目名与出处，不转载试题全文。
+
+### S8 — Unicode Unihan（站点拼音注音）
+
+站点的汉字拼音取自 [Unicode Unihan 数据库](https://www.unicode.org/Public/UCD/latest/ucd/)
+的 `kMandarin` 字段，该字段读音来自**《通用规范汉字字典》**
+（商务印书馆辞书研究中心编，2013），与我国语文教学的通用读音一致。
+
+| 项 | 说明 |
+|---|---|
+| 许可 | [Unicode License](https://www.unicode.org/license.txt)，可自由使用与再分发 |
+| 规模 | 4.4 万字；本仓 1862 个用字 **100% 覆盖** |
+| 多音字 | 取第一个主读音。若需按语境修正，直接改 `data/pinyin.txt`（该文件已提交） |
+| 获取 | `python tools/gen-pinyin.py --fetch`（一次性下载 Unihan.zip，约 8MB） |
+
+**为什么要引外部数据**：手写拼音表必然有漏字与错误（初版手写表覆盖率仅 21%）。
+Unihan 是 Unicode 官方数据，权威、完整、可自动化，且许可允许商用。
 
 ## 交叉校验流程
 

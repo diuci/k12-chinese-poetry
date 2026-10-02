@@ -91,13 +91,14 @@ poems/小学/一年级上册/春晓.md# 按学段/册次组织的篇目（唯一
 
 ## 工具
 
-零依赖，纯 Python 3 标准库（无需 pip install）。
+内容工具零依赖，纯 Python 3 标准库（无需 pip install）。
 
 ```bash
-python tools/validate.py# 校验数据（提交前必跑）
-python tools/validate.py --partial  # 增量期校验，跳过"课标完整性"
 python tools/build.py             # 生成 data/poems.json + checksums.json
-python tools/build.py --check     # 只列出解析结果，不写文件
+python tools/validate.py          # 七项校验，须全绿
+python tools/validate.py --partial# 增量期校验，跳过"课标完整性"
+python tools/gen-index.py         # 生成 poems/索引.md
+python tools/gen-pinyin.py        # 生成拼音表（需先 --fetch 下载 Unihan）
 ```
 
 ### `validate.py` 的七项校验
@@ -166,10 +167,34 @@ copyright: { text: public-domain, annotations: cc-by-4.0 }
 
 ## 参与共建
 
-发现错字、想补注释译文、或想加新篇目，都欢迎提 PR。
-请先读 **[docs/contributing.md](docs/contributing.md)**，尤其是"如何校订一个字"的流程。
+发现错字、想补注释译文、或想加篇目，都欢迎提 PR。
+请先读 **[docs/contributing.md](docs/contributing.md)**。
 
-数据来源与版权要求比较严格，请勿直接粘贴商业站点的译文与赏析。
+⚠️ 数据来源与版权有严格要求，请勿直接粘贴商业站点的译文与赏析。
+
+## 网站
+
+学习站点在 `site/`，用 [VitePress](https://vitepress.dev/) 构建，部署到 GitHub Pages。
+
+```bash
+npm install      # 首次：安装 VitePress
+npm run dev      # 本地预览（自动先跑 build-site.py）
+npm run build    # 构建到 site/.vitepress/dist
+npm run preview  # 预览构建结果
+```
+
+| 页面 | 内容 |
+|---|---|
+| `/` | 253 篇总览，按**学段 / 主题 / 体裁**三轴筛选 |
+| `/poems/…` | 单篇页：原文（**带拼音**）+ 注释 + 译文 + 赏析 + 玩法数据 |
+| `/print` | A4 打印版，可装订成册 |
+| `/guide` | 家长指南 |
+| `/sources` | 数据来源与版权说明 |
+
+- **拼音**取自 Unicode Unihan 的 `kMandarin`（《通用规范汉字字典》读音），
+  1862 个用字 100% 覆盖
+- **打印样式**已适配：隐藏导航、保留拼音与注释译文
+- `tools/build-site.py` 从 `poems/` 生成站点副本，不改动源文件
 
 ## 关联项目
 

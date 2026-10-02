@@ -13,6 +13,12 @@ venv/
 # 站点
 site/.vitepress/dist/
 site/.vitepress/cache/
+node_modules/
+
+# Unihan 数据库（约 8MB，解压后 13MB）。
+# 由 python tools/gen-pinyin.py --fetch 下载后生成，属中间产物。
+# data/pinyin.txt 已提交，不需要这个目录。
+data/unihan/
 
 # 编辑器
 .vscode/
@@ -23,3 +29,4 @@ Thumbs.db
 
 # ⚠️ CNAME 是自定义域名的绑定文件，切勿删除或加入忽略规则。
 # GitHub Pages 依赖它把域名指向本仓；删掉会导致域名立即失效。
+# 注意：site/public/CNAME 必须提交（构建产物里才带得上域名）。

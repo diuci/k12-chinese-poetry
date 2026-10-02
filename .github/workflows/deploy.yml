@@ -1,0 +1,74 @@
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'poems/**'
+      - 'docs/**'
+      - 'site/**'
+      - 'data/poems.json'
+      - 'tools/build.py'
+      - 'tools/build-site.py'
+      - 'tools/gen-pinyin.py'
+      - 'package.json'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+# 只允许一次部署进行；不取消进行中的部署（生产站必须完整）
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci
+
+      - uses: actions/configure-pages@v5
+
+      - name: 构建内容数据
+        run: python tools/build.py && python tools/gen-index.py
+
+      - name: 校验数据
+        run: |
+          python tools/validate.py --partial
+          python tools/build-site.py
+
+      - name: 构建站点
+        run: npm run build
+        env:
+          SITE_BASE: '/k12-chinese-poetry/'
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/.vitepress/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: 部署完成提示
+        run: |
+          echo "站点已部署。若绑定了自定义域名 k12.diuci.com，"
+          echo "请把 site/public/CNAME 提交到仓库。"
