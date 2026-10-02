@@ -1,0 +1,11 @@
+# 默认按文本处理，明确 LF，避免 Windows 的 CRLF 污染 diff
+* text=auto eol=lf
+
+# 二进制
+*.png binary
+*.jpg binary
+*.webp binary
+*.woff2 binary
+
+# CNAME 是 GitHub Pages 的域名绑定文件，绝不能被当作生成物过滤
+CNAME -linguist-generated=false
