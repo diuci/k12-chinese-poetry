@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 构建产物（由 tools/build.py 生成，可重新生成）
+# 若希望游戏侧直接消费，可取消注释并提交
+# data/poems.json
+# data/checksums.json
+
+# 站点
+site/.vitepress/dist/
+site/.vitepress/cache/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ⚠️ CNAME 是自定义域名的绑定文件，切勿删除或加入忽略规则。
+# GitHub Pages 依赖它把域名指向本仓；删掉会导致域名立即失效。

@@ -1,0 +1,161 @@
+# 课标古诗文 · kebiaoyuwen
+
+> 小学到初中必背古诗词文，按《义务教育语文课程标准（2022年版）》附录 1 收录。
+> 诗文原文为**公有领域**；注释、译文、赏析与选篇编排 © 丢词大作战，采用 **CC BY 4.0**。
+
+**English**: Chinese K-12 classical poetry & prose, curated from the 2022 National
+Curriculum Standard (Ministry of Education). Original texts are **public domain**;
+our annotations, translations and commentary are licensed **CC BY 4.0**.
+
+[![课标篇目](https://img.shields.io/badge/课标-135%20篇-0f766e)](docs/syllabus-2022.md)
+[![法律风险](https://img.shields.io/badge/版权风险-0%20风险-2ea44f)](pending/INDEX.md)
+[![许可](https://img.shields.io/badge/许可-CC%20BY%204.0-blue)](LICENSE)
+
+---
+
+## 这是什么
+
+一个**纯 Markdown** 的中国义务教育阶段古诗文内容库，同时是三样东西的**单一事实源**：
+
+| 用途 | 说明 |
+|---|---|
+| **学习资料** | 每篇含原文、注释、译文、赏析，可直接阅读、打印、搜索 |
+| **数据源** | `tools/build.py` 把 Markdown 编成 `data/poems.json`，供游戏消费 |
+| **游戏内容** | 《丢词大作战》（[diuci.com](https://diuci.com)）的诗词玩法数据 |
+
+## 收录范围
+
+- **课标必背 135 篇（段）**：1–6 年级 75 篇（均为诗歌），7–9 年级 60 篇（含短篇散文）
+- **教材拓展**：另收统编教材里出现、但不在课标 135 篇内的篇目（如《梅花》《画》），单独标注
+
+完整清单见 **[docs/syllabus-2022.md](docs/syllabus-2022.md)**，它是本仓的**契约文件**——
+`validate.py` 会逐条比对，任何漏收或多收都会让校验失败。
+
+## 数据来源与版权
+
+七类来源交叉校验，每篇篇目都在 frontmatter 里记录来源代号。
+完整说明见 **[docs/sources.md](docs/sources.md)**，汇总台账见 **[PROVENANCE.md](PROVENANCE.md)**。
+
+> **法律风险为 0**：所收古诗文作者均已逝世逾百年，原文属公有领域；
+> 注释/译文/赏析为我们原创。仍在保护期内的作品（如秋瑾《满江红》）
+> **不收录**，仅在 [pending/](pending/INDEX.md) 登记，不进入构建产物。
+
+## 目录结构
+
+```
+poems/小学/一年级上册/春晓.md# 按学段/册次组织的篇目（唯一事实源）
+├── data/poems.json                # 构建产物（勿手改）
+├── data/checksums.json            # 内容哈希，游戏端校验用
+├── docs/
+│   ├── syllabus-2022.md           # ★ 课标 135 篇契约（校验基准）
+│   ├── sources.md                 # 数据来源与许可
+│   ├── index.md                   # 总览与学习路径
+│   ├── guide-for-parents.md       # 家长指南
+│   └── contributing.md            # 贡献规范
+├── tools/
+│   ├── build.py                   # Markdown → poems.json
+│   ├── validate.py                # 七项校验
+│   └── migrate.py                 # 从游戏内 poems.js 迁移用（一次性）
+└── pending/                       # ⏸️ 保护期内作品，暂不收录
+```
+
+## 工具
+
+零依赖，纯 Python 3 标准库（无需 pip install）。
+
+```bash
+python tools/validate.py# 校验数据（提交前必跑）
+python tools/validate.py --partial  # 增量期校验，跳过"课标完整性"
+python tools/build.py             # 生成 data/poems.json + checksums.json
+python tools/build.py --check     # 只列出解析结果，不写文件
+```
+
+### `validate.py` 的七项校验
+
+| # | 检查 | 失败示例 |
+|---|------|---------|
+| 1 | 课标完整性 | 课标要求收录但缺失 / 多收框架外作品 |
+| 2 | id 唯一性 | 两篇共用一个 id |
+| 3 | pairs 索引 | `pairs` 下标越界 |
+| 4 | 每联字数 | 标五言却不是 10 字/联（已知不规则可加 `irregular` 说明） |
+| 5 | 台账完整 | 缺 `source` / `license` |
+| 6 | **版权零风险** | `license != public-domain` 却出现在 `poems/` |
+| 7 | frontmatter | 必填字段缺失 |
+
+## 篇目格式
+
+每篇就是一个 Markdown 文件，**人读与机读同一份**，不需要维护两份数据：
+
+```markdown
+---
+id: chunxiao
+title: 春晓
+author: 孟浩然
+dynasty: 唐
+form: 五言
+stage: 小学
+grade: 1
+volume: 一年级下册
+theme: [春天, 惜春]
+emotion: 春日清晨的喜悦与怜惜
+technique: [拟人]
+difficulty: 1
+exam_freq: 0.95
+pairs: [0-1]                      # 联句配对（整句为单位）
+render_split: [2, 2]              # 地面渲染时按逗号拆行
+source: S3+S1+S2                  # 来源台账
+license: public-domain
+copyright: { text: public-domain, annotations: cc-by-4.0 }
+---
+
+# 春晓
+
+> 孟浩然 · 唐 · 五言 · 小学一年级 · 一年级下册
+
+春眠不觉晓，处处闻啼鸟。
+
+夜来风雨声，花落知多少。
+```
+
+### 字段说明
+
+| 字段 | 用途 |
+|------|------|
+| `id` | 稳定标识，联机同步与游戏内引用都用它|
+| `lines` | **整句**（剥离标点），联句与涂地的单位 |
+| `pairs` | 联句配对，`0-1` 表示第 1、2 句构成一联 |
+| `render_split` | 每整句在游戏地面按逗号拆成几行（渲染层用） |
+| `theme` / `emotion` | 主题与情感，玩法分类与着色 |
+| `difficulty` | 1–5 难度，用于匹配玩家水平 |
+| `exam_freq` | 中考出现频率估值，用于排序 |
+| `irregular` | 已知的不规则之处（如《咏鹅》首句三字重叠），声明后不算错误 |
+
+> **关于 `pairs` 与 `render_split`**：数据层以**整句**为单位（一句五言 =
+> 「两句五字」共 10 字），游戏地面为了排版好看会按逗号拆开。
+> `render_split` 就是这两层之间的桥。
+
+## 参与共建
+
+发现错字、想补注释译文、或想加新篇目，都欢迎提 PR。
+请先读 **[docs/contributing.md](docs/contributing.md)**，尤其是"如何校订一个字"的流程。
+
+数据来源与版权要求比较严格，请勿直接粘贴商业站点的译文与赏析。
+
+## 关联项目
+
+| 项目 | 说明 |
+|------|------|
+| [diuci.com](https://diuci.com) | 《丢词大作战》——用涂地射击玩诗词的 4v4 游戏 |
+| `inkwave-main` | 游戏主仓库，消费本仓 `data/poems.json` |
+
+## ⚠️ 部署注意
+
+若将本仓部署到 GitHub Pages，仓库内的 **CNAME 文件请勿删除或改写** ——
+删掉会导致自定义域名即时失效。
+
+## 许可
+
+- **诗文原文**：公有领域（作者殁逾百年）
+- **注释 / 译文 / 赏析 / 选篇编排 / 代码**：[CC BY 4.0](LICENSE)
+
+使用时请署名"来源：kebiaoyuwen / 丢词大作战"。
