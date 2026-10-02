@@ -1,5 +1,44 @@
 {
   "byGrade": {
+    "初中-7": [
+      "shizhuisai",
+      "guanju",
+      "shiwuzhongjunzheng",
+      "maotanshangwu",
+      "nangxiangzi",
+      "yeyujibei",
+      "tianjingsha-qiusi",
+      "shanpoyang",
+      "jihai-jimao",
+      "wuti",
+      "chunwang",
+      "wangyue",
+      "mulanci",
+      "cibeigushanxia",
+      "shuidiaogetou",
+      "jiangchengzi-laofeng",
+      "boqinhuai",
+      "huanxisha-yanque",
+      "yujiaao-qiusi",
+      "youshanxincun",
+      "dengyouzhoutai",
+      "dengfeilaifeng",
+      "baixuege",
+      "xiangjianhuan",
+      "pozhenzi",
+      "maowu",
+      "jianjia",
+      "xinglunan",
+      "guancanghai",
+      "chibi-du",
+      "guolingyang",
+      "songshaoshu",
+      "qiantanghuchunxing",
+      "wenwangchangling",
+      "yanmenshiweixing",
+      "yinjiujiusan",
+      "huanghelou-cuiheng"
+    ],
     "小学-1": [
       "gulangyuexing",
       "yonge",
@@ -120,46 +159,61 @@
     ]
   },
   "byId": {
+    "baixuege": "baixuege",
     "biedongda": "biedongda",
     "bochuanguazhou": "bochuanguazhou",
+    "boqinhuai": "boqinhuai",
     "bosuanzi-song": "bosuanzi-song",
     "cailianqu": "cailianqu",
     "caiwei": "caiwei",
     "change": "change",
     "changxiangsi": "changxiangsi",
+    "chibi-du": "chibi-du",
     "chilege": "chilege",
     "chishang": "chishang",
     "chunri": "chunri",
+    "chunwang": "chunwang",
     "chunxiao": "chunxiao",
     "chunyexiyu": "chunyexiyu",
     "chusai": "chusai",
     "chuzhouxijian": "chuzhouxijian",
+    "cibeigushanxia": "cibeigushanxia",
     "congjunxing": "congjunxing",
     "cunju": "cunju",
     "cunwan": "cunwan",
     "dalinsitaohua": "dalinsitaohua",
+    "dengfeilaifeng": "dengfeilaifeng",
     "dengguanquelou": "dengguanquelou",
+    "dengyouzhoutai": "dengyouzhoutai",
     "duzuojingting": "duzuojingting",
     "feng": "feng",
     "feng-mi": "feng-mi",
     "fengqiaoyebo": "fengqiaoyebo",
     "furonglou": "furonglou",
+    "guancanghai": "guancanghai",
+    "guanju": "guanju",
     "guanshu": "guanshu",
     "gulangyuexing": "gulangyuexing",
     "guogurenzhuang": "guogurenzhuang",
+    "guolingyang": "guolingyang",
     "guyuancao": "guyuancao",
     "hanshi": "hanshi",
     "hua": "hua",
     "huaji": "huaji",
     "huanghelou": "huanghelou",
+    "huanghelou-cuiheng": "huanghelou-cuiheng",
     "huanxisha-qishui": "huanxisha-qishui",
+    "huanxisha-yanque": "huanxisha-yanque",
     "huichongchunjiang": "huichongchunjiang",
     "huixiangyoushu": "huixiangyoushu",
+    "jiangchengzi-laofeng": "jiangchengzi-laofeng",
     "jiangnan": "jiangnan",
     "jiangnanchun": "jiangnanchun",
     "jiangshangyuzhe": "jiangshangyuzhe",
     "jiangxue": "jiangxue",
+    "jianjia": "jianjia",
     "jihai": "jihai",
+    "jihai-jimao": "jihai-jimao",
     "jingcisi": "jingcisi",
     "jingyesi": "jingyesi",
     "jiuyuejiuri": "jiuyuejiuri",
@@ -170,13 +224,19 @@
     "liangzhouci-wangzhihuan": "liangzhouci-wangzhihuan",
     "longpo": "longpo",
     "luchai": "luchai",
+    "maotanshangwu": "maotanshangwu",
+    "maowu": "maowu",
     "mashi": "mashi",
     "meihua": "meihua",
     "minnong1": "minnong1",
     "minnong2": "minnong2",
     "momei": "momei",
     "mujiangyin": "mujiangyin",
+    "mulanci": "mulanci",
+    "nangxiangzi": "nangxiangzi",
     "niaomingjian": "niaomingjian",
+    "pozhenzi": "pozhenzi",
+    "qiantanghuchunxing": "qiantanghuchunxing",
     "qingming": "qingming",
     "qingpingyue-cunju": "qingpingyue-cunju",
     "qiqiao": "qiqiao",
@@ -184,40 +244,56 @@
     "saixiaqu": "saixiaqu",
     "sanqudaozhong": "sanqudaozhong",
     "shanjuqiuming": "shanjuqiuming",
+    "shanpoyang": "shanpoyang",
     "shanxing": "shanxing",
     "shier": "shier",
     "shihuiyin": "shihuiyin",
+    "shiwuzhongjunzheng": "shiwuzhongjunzheng",
     "shiyiwangyue": "shiyiwangyue",
+    "shizhuisai": "shizhuisai",
     "shuhuyin": "shuhuyin",
+    "shuidiaogetou": "shuidiaogetou",
     "sishitianyuan-25": "sishitianyuan-25",
     "sishitianyuan-31": "sishitianyuan-31",
+    "songshaoshu": "songshaoshu",
     "songyuaner": "songyuaner",
     "sujiandejiang": "sujiandejiang",
     "suojian": "suojian",
     "suxinshi": "suxinshi",
+    "tianjingsha-qiusi": "tianjingsha-qiusi",
     "tiaotiaoqianniuxing": "tiaotiaoqianniuxing",
     "tilinandi": "tilinandi",
     "wangdongting": "wangdongting",
     "wanghulou": "wanghulou",
     "wanglushanpubu": "wanglushanpubu",
     "wangtianmenshan": "wangtianmenshan",
+    "wangyue": "wangyue",
     "wenguanjun": "wenguanjun",
+    "wenwangchangling": "wenwangchangling",
+    "wuti": "wuti",
     "xiangcunsiyue": "xiangcunsiyue",
+    "xiangjianhuan": "xiangjianhuan",
     "xiangsi": "xiangsi",
     "xiaochi": "xiaochi",
     "xiaoerchuidiao": "xiaoerchuidiao",
     "xiarijueju": "xiarijueju",
     "xijiangyue": "xijiangyue",
+    "xinglunan": "xinglunan",
     "xuemei": "xuemei",
     "xunyinzhe": "xunyinzhe",
+    "yanmenshiweixing": "yanmenshiweixing",
     "yeshusuojian": "yeshusuojian",
     "yesushansi": "yesushansi",
+    "yeyujibei": "yeyujibei",
     "yinhushang": "yinhushang",
+    "yinjiujiusan": "yinjiujiusan",
     "yonge": "yonge",
     "yongliu": "yongliu",
+    "youshanxincun": "youshanxincun",
     "youyuanbuzhi": "youyuanbuzhi",
     "yuanri": "yuanri",
     "yugezi": "yugezi",
+    "yujiaao-qiusi": "yujiaao-qiusi",
     "zaochun": "zaochun",
     "zaofabaidicheng": "zaofabaidicheng",
     "zengliujingwen": "zengliujingwen",
@@ -234,10 +310,14 @@
     "丰收": [
       "xijiangyue"
     ],
+    "亡国": [
+      "xiangjianhuan"
+    ],
     "傍晚": [
       "cunwan"
     ],
     "写景": [
+      "guancanghai",
       "jueju-huangli",
       "zhouyeshujian",
       "jueju-chiri",
@@ -273,6 +353,8 @@
       "zengliujingwen"
     ],
     "友情": [
+      "songshaoshu",
+      "wenwangchangling",
       "zengwanglun",
       "songyuaner",
       "huanghelou",
@@ -283,6 +365,7 @@
       "jihai"
     ],
     "同情": [
+      "shanpoyang",
       "jiangshangyuzhe"
     ],
     "咏物": [
@@ -303,6 +386,10 @@
       "mashi"
     ],
     "哲理": [
+      "cibeigushanxia",
+      "youshanxincun",
+      "dengfeilaifeng",
+      "chibi-du",
       "hua",
       "dengguanquelou",
       "guyuancao",
@@ -326,7 +413,11 @@
     "垂钓": [
       "xiaoerchuidiao"
     ],
+    "壮志": [
+      "pozhenzi"
+    ],
     "壮阔": [
+      "shizhuisai",
       "wangtianmenshan"
     ],
     "夏天": [
@@ -345,7 +436,11 @@
       "yesushansi",
       "wanglushanpubu"
     ],
+    "孝亲": [
+      "mulanci"
+    ],
     "孤独": [
+      "dengyouzhoutai",
       "change",
       "duzuojingting"
     ],
@@ -360,6 +455,7 @@
       "xunyinzhe"
     ],
     "山水": [
+      "wangyue",
       "wanglushanpubu",
       "jiangxue",
       "shanxing",
@@ -385,10 +481,25 @@
       "huaji",
       "momei"
     ],
+    "忧国": [
+      "chunwang"
+    ],
     "忧民": [
       "qiuyejiangxiao"
     ],
+    "怀古": [
+      "shanpoyang",
+      "boqinhuai",
+      "chibi-du"
+    ],
+    "怀念": [
+      "huanxisha-yanque"
+    ],
     "思乡": [
+      "yeyujibei",
+      "cibeigushanxia",
+      "yujiaao-qiusi",
+      "huanghelou-cuiheng",
       "jingyesi",
       "jiuyuejiuri",
       "yeshusuojian",
@@ -396,6 +507,9 @@
       "huixiangyoushu",
       "bochuanguazhou",
       "caiwei"
+    ],
+    "思亲": [
+      "shuidiaogetou"
     ],
     "思念": [
       "shiyiwangyue",
@@ -408,21 +522,48 @@
       "chunxiao"
     ],
     "想象": [
+      "yeyujibei",
       "gulangyuexing"
     ],
     "愁思": [
+      "tianjingsha-qiusi",
+      "xiangjianhuan",
       "sujiandejiang"
+    ],
+    "感怀": [
+      "dengyouzhoutai"
     ],
     "感慨": [
       "huixiangyoushu"
     ],
+    "战争": [
+      "shiwuzhongjunzheng",
+      "chunwang",
+      "mulanci",
+      "yanmenshiweixing"
+    ],
+    "执着": [
+      "wuti"
+    ],
+    "抒怀": [
+      "xinglunan"
+    ],
     "抱负": [
+      "jihai-jimao",
+      "wangyue",
+      "dengfeilaifeng",
+      "guancanghai",
       "mashi"
     ],
+    "推己及人": [
+      "maowu"
+    ],
     "旷达": [
+      "shuidiaogetou",
       "huanxisha-qishui"
     ],
     "春天": [
+      "qiantanghuchunxing",
       "chunxiao",
       "yongliu",
       "cunju",
@@ -453,14 +594,21 @@
       "wangdongting"
     ],
     "民生": [
+      "shiwuzhongjunzheng",
+      "maotanshangwu",
+      "maowu",
       "jiangshangyuzhe"
     ],
     "气势": [
       "langtaosha"
     ],
     "气节": [
+      "guolingyang",
       "xiarijueju",
       "shihuiyin"
+    ],
+    "水滨": [
+      "guanju"
     ],
     "江南": [
       "jiangnanchun"
@@ -475,6 +623,10 @@
       "bochuanguazhou"
     ],
     "爱国": [
+      "nangxiangzi",
+      "jiangchengzi-laofeng",
+      "pozhenzi",
+      "guolingyang",
       "xiarijueju",
       "jihai",
       "shier",
@@ -482,10 +634,20 @@
       "tilinandi",
       "wenguanjun"
     ],
+    "爱情": [
+      "guanju",
+      "wuti",
+      "jianjia"
+    ],
     "牧歌": [
       "chilege"
     ],
+    "理想": [
+      "xinglunan"
+    ],
     "田园": [
+      "youshanxincun",
+      "yinjiujiusan",
       "minnong2",
       "jiangnan",
       "minnong1",
@@ -498,6 +660,9 @@
       "xijiangyue",
       "guogurenzhuang"
     ],
+    "登临": [
+      "huanghelou-cuiheng"
+    ],
     "登高": [
       "dengguanquelou"
     ],
@@ -507,6 +672,9 @@
     "神话": [
       "change",
       "tiaotiaoqianniuxing"
+    ],
+    "离京": [
+      "jihai-jimao"
     ],
     "秋天": [
       "yeshusuojian",
@@ -525,6 +693,7 @@
       "zhizibing"
     ],
     "羁旅": [
+      "tianjingsha-qiusi",
       "fengqiaoyebo",
       "sujiandejiang"
     ],
@@ -550,12 +719,15 @@
       "jingcisi"
     ],
     "西湖": [
+      "qiantanghuchunxing",
       "yinhushang"
     ],
     "讽刺": [
       "tilinandi"
     ],
     "讽喻": [
+      "maotanshangwu",
+      "boqinhuai",
       "feng-mi"
     ],
     "访友": [
@@ -567,13 +739,21 @@
     "豪壮": [
       "liangzhouci-wanghan"
     ],
+    "豪情": [
+      "nangxiangzi"
+    ],
     "豪迈": [
+      "jiangchengzi-laofeng",
       "biedongda"
     ],
     "赞主人": [
       "shuhuyin"
     ],
     "边塞": [
+      "shizhuisai",
+      "yujiaao-qiusi",
+      "baixuege",
+      "yanmenshiweixing",
       "liangzhouci-wanghan",
       "chusai",
       "saixiaqu",
@@ -582,7 +762,13 @@
       "changxiangsi",
       "caiwei"
     ],
+    "追寻": [
+      "jianjia"
+    ],
     "送别": [
+      "baixuege",
+      "songshaoshu",
+      "wenwangchangling",
       "zengwanglun",
       "biedongda",
       "furonglou",
@@ -597,8 +783,14 @@
       "chuzhouxijian",
       "yugezi"
     ],
+    "闺情": [
+      "huanxisha-yanque"
+    ],
     "隐居": [
       "shanjuqiuming"
+    ],
+    "隐逸": [
+      "yinjiujiusan"
     ],
     "雪": [
       "saixiaqu"
@@ -608,8 +800,2202 @@
     ]
   },
   "contentVersion": "2026.10.02",
-  "count": 106,
+  "count": 143,
   "poems": [
+    {
+      "_path": "poems/初中/七年级上册/使至塞上.md",
+      "author": "王维",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "出使边塞的雄壮与孤寂",
+      "examFreq": 1.0,
+      "form": "五言",
+      "grade": 7,
+      "id": "shizhuisai",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "单车欲问边属国过居延",
+        "征蓬出汉塞归雁入胡天",
+        "大漠孤烟直长河落日圆",
+        "萧关逢候骑都护在燕然"
+      ],
+      "linesPunct": [
+        "单车欲问边，属国过居延。",
+        "征蓬出汉塞，归雁入胡天。",
+        "大漠孤烟直，长河落日圆。",
+        "萧关逢候骑，都护在燕然。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "边塞",
+        "壮阔",
+        "唐五言"
+      ],
+      "technique": [
+        "比喻",
+        "炼字"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "边塞",
+        "壮阔"
+      ],
+      "title": "使至塞上",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/关雎.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "先秦",
+      "emotion": "对美好爱情的向往",
+      "examFreq": 0.9,
+      "form": "诗经",
+      "grade": 7,
+      "id": "guanju",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "关关雎鸠在河之洲",
+        "窈窕淑女君子好逑"
+      ],
+      "linesPunct": [
+        "关关雎鸠，在河之洲。",
+        "窈窕淑女，君子好逑。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "爱情",
+        "水滨",
+        "先秦诗经"
+      ],
+      "technique": [
+        "比兴",
+        "叠词"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱情",
+        "水滨"
+      ],
+      "title": "关雎",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/十五从军征.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "汉",
+      "emotion": "战乱与徭役的悲苦",
+      "examFreq": 0.6,
+      "form": "乐府",
+      "grade": 7,
+      "id": "shiwuzhongjunzheng",
+      "irregular": "第二句为节选合并，两句原文：「勿从俱死生，必使六尺之孤」与「无家可归依」；教材节选时并为一句",
+      "license": "public-domain",
+      "lines": [
+        "十五从军征八岁开姓名",
+        "虽有战死与儿死者无家可归依"
+      ],
+      "linesPunct": [
+        "十五从军征，八岁开姓名。",
+        "虽有战死与儿死者，无家可归依。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "战争",
+        "民生",
+        "汉乐府"
+      ],
+      "technique": [
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "战争",
+        "民生"
+      ],
+      "title": "十五从军征",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/卖炭翁.md",
+      "author": "白居易",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "对宫市巧取豪夺的愤慨",
+      "examFreq": 0.8,
+      "form": "七言",
+      "grade": 7,
+      "id": "maotanshangwu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "可怜身上衣正单心忧炭贱愿天寒",
+        "卖炭得钱何所营身上衣裳口中食"
+      ],
+      "linesPunct": [
+        "可怜身上衣正单，心忧炭贱愿天寒。",
+        "卖炭得钱何所营？身上衣裳口中食。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "民生",
+        "讽喻",
+        "唐七言"
+      ],
+      "technique": [
+        "对比",
+        "细节"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "民生",
+        "讽喻"
+      ],
+      "title": "卖炭翁",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/南乡子.md",
+      "author": "辛弃疾",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "渴望收复失地的壮志",
+      "examFreq": 0.9,
+      "form": "词",
+      "grade": 7,
+      "id": "nangxiangzi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "何处望神州满眼风光北固楼千古兴亡多少事悠悠",
+        "不尽长江滚滚流",
+        "年少万兜鍪坐断东南战未休",
+        "天下英雄谁敌手曹刘",
+        "生子当如孙仲谋"
+      ],
+      "linesPunct": [
+        "何处望神州？满眼风光北固楼。千古兴亡多少事？悠悠。",
+        "不尽长江滚滚流。",
+        "年少万兜鍪，坐断东南战未休。",
+        "天下英雄谁敌手？曹刘。",
+        "生子当如孙仲谋。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "何处望神州",
+      "syllables": null,
+      "tags": [
+        "爱国",
+        "豪情",
+        "宋词"
+      ],
+      "technique": [
+        "对比",
+        "典故"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱国",
+        "豪情"
+      ],
+      "title": "南乡子",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/夜雨寄北.md",
+      "author": "李商隐",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "跨越时空的相思",
+      "examFreq": 1.0,
+      "form": "七言",
+      "grade": 7,
+      "id": "yeyujibei",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "君问归期未有期巴山夜雨涨秋池",
+        "何当共剪西窗烛却话巴山夜雨时"
+      ],
+      "linesPunct": [
+        "君问归期未有期，巴山夜雨涨秋池。",
+        "何当共剪西窗烛，却话巴山夜雨时。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "思乡",
+        "想象",
+        "唐七言"
+      ],
+      "technique": [
+        "想象",
+        "虚实结合"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "思乡",
+        "想象"
+      ],
+      "title": "夜雨寄北",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/天净沙.md",
+      "author": "马致远",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "元",
+      "emotion": "漂泊无依的深切悲愁",
+      "examFreq": 1.0,
+      "form": "曲",
+      "grade": 7,
+      "id": "tianjingsha-qiusi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "枯藤老树昏鸦小桥流水人家",
+        "古道西风瘦马夕阳西下",
+        "断肠人在天涯"
+      ],
+      "linesPunct": [
+        "枯藤老树昏鸦，小桥流水人家。",
+        "古道西风瘦马，夕阳西下。",
+        "断肠人在天涯。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "秋思",
+      "syllables": null,
+      "tags": [
+        "羁旅",
+        "愁思",
+        "元曲"
+      ],
+      "technique": [
+        "意象叠加",
+        "白描"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "羁旅",
+        "愁思"
+      ],
+      "title": "天净沙",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/山坡羊.md",
+      "author": "张养浩",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "元",
+      "emotion": "对人民疾苦的深切同情",
+      "examFreq": 0.8,
+      "form": "曲",
+      "grade": 7,
+      "id": "shanpoyang",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "峰峦如聚波涛如怒山河表里潼关路",
+        "望西都意踌躇",
+        "伤心秦汉经行处宫阙万间都做了土",
+        "兴百姓苦亡百姓苦"
+      ],
+      "linesPunct": [
+        "峰峦如聚，波涛如怒，山河表里潼关路。",
+        "望西都，意踌躇。",
+        "伤心秦汉经行处，宫阙万间都做了土。",
+        "兴，百姓苦；亡，百姓苦。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        3,
+        2,
+        2,
+        3
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "潼关怀古",
+      "syllables": null,
+      "tags": [
+        "怀古",
+        "同情",
+        "元曲"
+      ],
+      "technique": [
+        "对比",
+        "议论"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "怀古",
+        "同情"
+      ],
+      "title": "山坡羊",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/己亥杂诗.md",
+      "author": "龚自珍",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "清",
+      "emotion": "辞别京城的复杂心情",
+      "examFreq": 0.9,
+      "form": "七言",
+      "grade": 7,
+      "id": "jihai-jimao",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "浩荡离愁白日斜吟鞭东指即天涯",
+        "落红不是无情物化作春泥更护花"
+      ],
+      "linesPunct": [
+        "浩荡离愁白日斜，吟鞭东指即天涯。",
+        "落红不是无情物，化作春泥更护花。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "浩荡离愁白日斜",
+      "syllables": 14,
+      "tags": [
+        "离京",
+        "抱负",
+        "清七言"
+      ],
+      "technique": [
+        "象征",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "离京",
+        "抱负"
+      ],
+      "title": "己亥杂诗",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/无题.md",
+      "author": "李商隐",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "至死不渝的执着",
+      "examFreq": 0.9,
+      "form": "七言",
+      "grade": 7,
+      "id": "wuti",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "相见时难别亦难东风无力百花残",
+        "春蚕到死丝方尽蜡炬成灰泪始干"
+      ],
+      "linesPunct": [
+        "相见时难别亦难，东风无力百花残。",
+        "春蚕到死丝方尽，蜡炬成灰泪始干。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "相见时难别亦难",
+      "syllables": 14,
+      "tags": [
+        "爱情",
+        "执着",
+        "唐七言"
+      ],
+      "technique": [
+        "比兴",
+        "用典"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱情",
+        "执着"
+      ],
+      "title": "无题",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/春望.md",
+      "author": "杜甫",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "战乱中的忧国伤时",
+      "examFreq": 1.0,
+      "form": "五言",
+      "grade": 7,
+      "id": "chunwang",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "国破山河在城春草木深",
+        "感时花溅泪恨别鸟惊心",
+        "烽火连三月家书抵万金",
+        "白头搔更短浑欲不胜簪"
+      ],
+      "linesPunct": [
+        "国破山河在，城春草木深。",
+        "感时花溅泪，恨别鸟惊心。",
+        "烽火连三月，家书抵万金。",
+        "白头搔更短，浑欲不胜簪。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "战争",
+        "忧国",
+        "唐五言"
+      ],
+      "technique": [
+        "对比",
+        "拟人"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "战争",
+        "忧国"
+      ],
+      "title": "春望",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/望岳.md",
+      "author": "杜甫",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "登临望岳的雄心壮志",
+      "examFreq": 1.0,
+      "form": "五言",
+      "grade": 7,
+      "id": "wangyue",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "岱宗夫如何齐鲁青未了",
+        "造化钟神秀阴阳割昏晓",
+        "荡胸生曾云决眦入归鸟",
+        "会当凌绝顶一览众山小"
+      ],
+      "linesPunct": [
+        "岱宗夫如何？齐鲁青未了。",
+        "造化钟神秀，阴阳割昏晓。",
+        "荡胸生曾云，决眦入归鸟。",
+        "会当凌绝顶，一览众山小。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "山水",
+        "抱负",
+        "唐五言"
+      ],
+      "technique": [
+        "对比",
+        "夸张"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "山水",
+        "抱负"
+      ],
+      "title": "望岳",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/木兰辞.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "北朝",
+      "emotion": "代父从军的英勇与对家的眷恋",
+      "examFreq": 0.9,
+      "form": "乐府",
+      "grade": 7,
+      "id": "mulanci",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "万里赴戎机关山度若飞",
+        "朔气传金柝寒光照铁衣",
+        "将军百战死壮士十年归"
+      ],
+      "linesPunct": [
+        "万里赴戎机，关山度若飞。",
+        "朔气传金柝，寒光照铁衣。",
+        "将军百战死，壮士十年归。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "战争",
+        "孝亲",
+        "北朝乐府"
+      ],
+      "technique": [
+        "排比",
+        "复沓"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "战争",
+        "孝亲"
+      ],
+      "title": "木兰辞",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/次北固山下.md",
+      "author": "王湾",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "唐",
+      "emotion": "思乡与哲思交织",
+      "examFreq": 0.8,
+      "form": "五言",
+      "grade": 7,
+      "id": "cibeigushanxia",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "客路青山外行舟绿水前",
+        "潮平两岸阔风正一帆悬",
+        "海日生残夜江春入旧年",
+        "乡书何处达归雁洛阳边"
+      ],
+      "linesPunct": [
+        "客路青山外，行舟绿水前。",
+        "潮平两岸阔，风正一帆悬。",
+        "海日生残夜，江春入旧年。",
+        "乡书何处达？归雁洛阳边。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "思乡",
+        "哲理",
+        "唐五言"
+      ],
+      "technique": [
+        "比喻",
+        "炼字"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "思乡",
+        "哲理"
+      ],
+      "title": "次北固山下",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/水调歌头.md",
+      "author": "苏轼",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "思念弟弟的旷达情怀",
+      "examFreq": 1.0,
+      "form": "词",
+      "grade": 7,
+      "id": "shuidiaogetou",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "但愿人长久千里共婵娟"
+      ],
+      "linesPunct": [
+        "但愿人长久，千里共婵娟。"
+      ],
+      "pairs": [],
+      "render_split": [
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "明月几时有",
+      "syllables": null,
+      "tags": [
+        "思亲",
+        "旷达",
+        "宋词"
+      ],
+      "technique": [
+        "想象",
+        "议论"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "思亲",
+        "旷达"
+      ],
+      "title": "水调歌头",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/江城子.md",
+      "author": "苏轼",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "出猎的豪迈与报国壮志",
+      "examFreq": 0.9,
+      "form": "词",
+      "grade": 7,
+      "id": "jiangchengzi-laofeng",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "老夫聊发少年狂左牵黄右擎苍",
+        "锦帽貂裘千骑卷平冈",
+        "为报倾城随太守亲射虎看孙郎"
+      ],
+      "linesPunct": [
+        "老夫聊发少年狂，左牵黄，右擎苍。",
+        "锦帽貂裘，千骑卷平冈。",
+        "为报倾城随太守，亲射虎，看孙郎。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        3,
+        2,
+        3
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "密州出猎",
+      "syllables": null,
+      "tags": [
+        "豪迈",
+        "爱国",
+        "宋词"
+      ],
+      "technique": [
+        "典故",
+        "夸张"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "豪迈",
+        "爱国"
+      ],
+      "title": "江城子",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/泊秦淮.md",
+      "author": "杜牧",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "对权贵苟安的愤慨",
+      "examFreq": 0.9,
+      "form": "七言",
+      "grade": 7,
+      "id": "boqinhuai",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "烟笼寒水月笼沙夜泊秦淮近酒家",
+        "商女不知亡国恨隔江犹唱后庭花"
+      ],
+      "linesPunct": [
+        "烟笼寒水月笼沙，夜泊秦淮近酒家。",
+        "商女不知亡国恨，隔江犹唱后庭花。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "怀古",
+        "讽喻",
+        "唐七言"
+      ],
+      "technique": [
+        "议论",
+        "借景抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "怀古",
+        "讽喻"
+      ],
+      "title": "泊秦淮",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/浣溪沙.md",
+      "author": "晏殊",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "追忆往事的惆怅",
+      "examFreq": 0.9,
+      "form": "词",
+      "grade": 7,
+      "id": "huanxisha-yanque",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "一曲新词酒一杯去年天气旧亭台夕阳西下几时回",
+        "无可奈何花落去似曾相识燕归来小园香径独徘徊"
+      ],
+      "linesPunct": [
+        "一曲新词酒一杯，去年天气旧亭台。夕阳西下几时回？",
+        "无可奈何花落去，似曾相识燕归来。小园香径独徘徊。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "一曲新词酒一杯",
+      "syllables": null,
+      "tags": [
+        "闺情",
+        "怀念",
+        "宋词"
+      ],
+      "technique": [
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "闺情",
+        "怀念"
+      ],
+      "title": "浣溪沙",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/渔家傲.md",
+      "author": "范仲淹",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "戍边思乡的复杂心境",
+      "examFreq": 1.0,
+      "form": "词",
+      "grade": 7,
+      "id": "yujiaao-qiusi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "塞下秋来风景异衡阳雁去无留意",
+        "四面边声连角起",
+        "千嶂里长烟落日孤城闭",
+        "浊酒一杯家万里燕然未勒归无计",
+        "羌管悠悠霜满地人不寐将军白发征夫泪"
+      ],
+      "linesPunct": [
+        "塞下秋来风景异，衡阳雁去无留意。",
+        "四面边声连角起。",
+        "千嶂里，长烟落日孤城闭。",
+        "浊酒一杯家万里，燕然未勒归无计。",
+        "羌管悠悠霜满地，人不寐，将军白发征夫泪。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        1,
+        2,
+        2,
+        3
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "秋思",
+      "syllables": null,
+      "tags": [
+        "边塞",
+        "思乡",
+        "宋词"
+      ],
+      "technique": [
+        "对比",
+        "白描"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "边塞",
+        "思乡"
+      ],
+      "title": "渔家傲",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/游山西村.md",
+      "author": "陆游",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "重获希望的开朗",
+      "examFreq": 0.9,
+      "form": "七言",
+      "grade": 7,
+      "id": "youshanxincun",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "莫笑农家腊酒浑丰年留客足鸡豚",
+        "山重水复疑无路柳暗花明又一村",
+        "箫鼓追随春社近衣冠简朴古风存",
+        "从今若许闲乘月拄杖无时夜叩门"
+      ],
+      "linesPunct": [
+        "莫笑农家腊酒浑，丰年留客足鸡豚。",
+        "山重水复疑无路，柳暗花明又一村。",
+        "箫鼓追随春社近，衣冠简朴古风存。",
+        "从今若许闲乘月，拄杖无时夜叩门。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "田园",
+        "哲理",
+        "宋七言"
+      ],
+      "technique": [
+        "对比",
+        "议论"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "田园",
+        "哲理"
+      ],
+      "title": "游山西村",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/登幽州台歌.md",
+      "author": "陈子昂",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "唐",
+      "emotion": "孤高失意的悲愤",
+      "examFreq": 0.9,
+      "form": "杂言",
+      "grade": 7,
+      "id": "dengyouzhoutai",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "前不见古人后不见来者",
+        "念天地之悠悠独怆然而涕下"
+      ],
+      "linesPunct": [
+        "前不见古人，后不见来者。",
+        "念天地之悠悠，独怆然而涕下。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "感怀",
+        "孤独",
+        "唐杂言"
+      ],
+      "technique": [
+        "反复",
+        "直抒"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "感怀",
+        "孤独"
+      ],
+      "title": "登幽州台歌",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/登飞来峰.md",
+      "author": "王安石",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "宋",
+      "emotion": "高瞻远瞩的抱负",
+      "examFreq": 0.9,
+      "form": "七言",
+      "grade": 7,
+      "id": "dengfeilaifeng",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "飞来山上千寻塔闻说鸡鸣见日升",
+        "不畏浮云遮望眼自缘身在最高层"
+      ],
+      "linesPunct": [
+        "飞来山上千寻塔，闻说鸡鸣见日升。",
+        "不畏浮云遮望眼，自缘身在最高层。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "哲理",
+        "抱负",
+        "宋七言"
+      ],
+      "technique": [
+        "比喻",
+        "象征"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "哲理",
+        "抱负"
+      ],
+      "title": "登飞来峰",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/白雪歌送武判官归京.md",
+      "author": "岑参",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "雪中送别的苍茫与深情",
+      "examFreq": 0.8,
+      "form": "七言",
+      "grade": 7,
+      "id": "baixuege",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "北风卷地白草折胡天八月即飞雪",
+        "忽如一夜春风来千树万树梨花开",
+        "轮台东门送君去去时雪满天山路"
+      ],
+      "linesPunct": [
+        "北风卷地白草折，胡天八月即飞雪。",
+        "忽如一夜春风来，千树万树梨花开。",
+        "轮台东门送君去，去时雪满天山路。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "边塞",
+        "送别",
+        "唐七言"
+      ],
+      "technique": [
+        "比喻",
+        "夸张"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "边塞",
+        "送别"
+      ],
+      "title": "白雪歌送武判官归京",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/相见欢.md",
+      "author": "李煜",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "南唐",
+      "emotion": "亡国之君的深沉哀愁",
+      "examFreq": 0.9,
+      "form": "词",
+      "grade": 7,
+      "id": "xiangjianhuan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "无言独上西楼月如钩",
+        "寂寞梧桐深院锁清秋",
+        "剪不断理还乱是离愁",
+        "别是一般滋味在心头"
+      ],
+      "linesPunct": [
+        "无言独上西楼，月如钩。",
+        "寂寞梧桐深院锁清秋。",
+        "剪不断，理还乱，是离愁。",
+        "别是一般滋味在心头。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        1,
+        3,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "无言独上西楼",
+      "syllables": null,
+      "tags": [
+        "亡国",
+        "愁思",
+        "南唐词"
+      ],
+      "technique": [
+        "意象叠加"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "亡国",
+        "愁思"
+      ],
+      "title": "相见欢",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/破阵子.md",
+      "author": "辛弃疾",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "报国杀敌的壮志",
+      "examFreq": 1.0,
+      "form": "词",
+      "grade": 7,
+      "id": "pozhenzi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "醉里挑灯看剑梦回吹角连营",
+        "八百里分麾下炙五十弦翻塞外声",
+        "沙场秋点兵",
+        "马作的卢飞快弓如霹雳弦惊",
+        "了却君王天下事赢得生前身后名",
+        "可怜白发生"
+      ],
+      "linesPunct": [
+        "醉里挑灯看剑，梦回吹角连营。",
+        "八百里分麾下炙，五十弦翻塞外声。",
+        "沙场秋点兵。",
+        "马作的卢飞快，弓如霹雳弦惊。",
+        "了却君王天下事，赢得生前身后名。",
+        "可怜白发生！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "为陈同甫赋壮词以寄",
+      "syllables": null,
+      "tags": [
+        "爱国",
+        "壮志",
+        "宋词"
+      ],
+      "technique": [
+        "对比",
+        "夸张"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱国",
+        "壮志"
+      ],
+      "title": "破阵子",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/茅屋为秋风所破歌.md",
+      "author": "杜甫",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "唐",
+      "emotion": "穷困中的推己及人",
+      "examFreq": 0.7,
+      "form": "杂言",
+      "grade": 7,
+      "id": "maowu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "安得广厦千万间大庇天下寒士俱欢颜",
+        "风雨不动安如山"
+      ],
+      "linesPunct": [
+        "安得广厦千万间，大庇天下寒士俱欢颜。",
+        "风雨不动安如山。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "民生",
+        "推己及人",
+        "唐杂言"
+      ],
+      "technique": [
+        "对比",
+        "议论"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "民生",
+        "推己及人"
+      ],
+      "title": "茅屋为秋风所破歌",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/蒹葭.md",
+      "author": "佚名",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "先秦",
+      "emotion": "对爱慕者的执着追寻",
+      "examFreq": 0.8,
+      "form": "诗经",
+      "grade": 7,
+      "id": "jianjia",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "蒹葭苍苍白露为霜",
+        "所谓伊人在水一方"
+      ],
+      "linesPunct": [
+        "蒹葭苍苍，白露为霜。",
+        "所谓伊人，在水一方。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "爱情",
+        "追寻",
+        "先秦诗经"
+      ],
+      "technique": [
+        "比兴",
+        "重章叠句"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱情",
+        "追寻"
+      ],
+      "title": "蒹葭",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/行路难.md",
+      "author": "李白",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "政治失意的苦闷与坚持",
+      "examFreq": 0.9,
+      "form": "杂言",
+      "grade": 7,
+      "id": "xinglunan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "金樽清酒斗十千玉盘珍羞直万钱",
+        "停杯投箸不能食拔剑四顾心茫然",
+        "长风破浪会有时直挂云帆济沧海"
+      ],
+      "linesPunct": [
+        "金樽清酒斗十千，玉盘珍羞直万钱。",
+        "停杯投箸不能食，拔剑四顾心茫然。",
+        "长风破浪会有时，直挂云帆济沧海。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "其一",
+      "syllables": null,
+      "tags": [
+        "抒怀",
+        "理想",
+        "唐杂言"
+      ],
+      "technique": [
+        "比兴",
+        "象征"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "抒怀",
+        "理想"
+      ],
+      "title": "行路难",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/观沧海.md",
+      "author": "曹操",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "汉",
+      "emotion": "辽阔壮阔的胸襟与抱负",
+      "examFreq": 0.9,
+      "form": "乐府",
+      "grade": 7,
+      "id": "guancanghai",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "东临碣石以观沧海",
+        "水何澹澹山岛竦峙",
+        "树木丛生百草丰茂",
+        "秋风萧瑟洪波涌起",
+        "日月之行若出其中",
+        "星汉灿烂若出其里"
+      ],
+      "linesPunct": [
+        "东临碣石，以观沧海。",
+        "水何澹澹，山岛竦峙。",
+        "树木丛生，百草丰茂。",
+        "秋风萧瑟，洪波涌起。",
+        "日月之行，若出其中。",
+        "星汉灿烂，若出其里。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "写景",
+        "抱负",
+        "汉乐府"
+      ],
+      "technique": [
+        "虚实结合",
+        "夸张"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "写景",
+        "抱负"
+      ],
+      "title": "观沧海",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/赤壁.md",
+      "author": "杜牧",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "怀古伤今的感慨",
+      "examFreq": 0.9,
+      "form": "七言",
+      "grade": 7,
+      "id": "chibi-du",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "折戟沉沙铁未销自将磨洗认前朝",
+        "东风不与周郎便铜雀春深锁二乔"
+      ],
+      "linesPunct": [
+        "折戟沉沙铁未销，自将磨洗认前朝。",
+        "东风不与周郎便，铜雀春深锁二乔。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "怀古",
+        "哲理",
+        "唐七言"
+      ],
+      "technique": [
+        "议论",
+        "借景抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "怀古",
+        "哲理"
+      ],
+      "title": "赤壁",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/过零丁洋.md",
+      "author": "文天祥",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "舍生取义的浩然正气",
+      "examFreq": 1.0,
+      "form": "七言",
+      "grade": 7,
+      "id": "guolingyang",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "辛苦遭逢起一经干戈寥落四周星",
+        "山河破碎风飘絮身世浮沉雨打萍",
+        "惶恐滩头说惶恐零丁洋里叹零丁",
+        "人生自古谁无死留取丹心照汗青"
+      ],
+      "linesPunct": [
+        "辛苦遭逢起一经，干戈寥落四周星。",
+        "山河破碎风飘絮，身世浮沉雨打萍。",
+        "惶恐滩头说惶恐，零丁洋里叹零丁。",
+        "人生自古谁无死？留取丹心照汗青。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "爱国",
+        "气节",
+        "宋七言"
+      ],
+      "technique": [
+        "对比",
+        "象征"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱国",
+        "气节"
+      ],
+      "title": "过零丁洋",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/送杜少府之任蜀州.md",
+      "author": "王勃",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "豁达乐观的送别",
+      "examFreq": 0.9,
+      "form": "五言",
+      "grade": 7,
+      "id": "songshaoshu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "城阙辅三秦风烟望五津",
+        "与君离别意同是宦游人",
+        "海内存知己天涯若比邻",
+        "无为在歧路儿女共沾巾"
+      ],
+      "linesPunct": [
+        "城阙辅三秦，风烟望五津。",
+        "与君离别意，同是宦游人。",
+        "海内存知己，天涯若比邻。",
+        "无为在歧路，儿女共沾巾。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "送别",
+        "友情",
+        "唐五言"
+      ],
+      "technique": [
+        "对偶",
+        "直抒胸臆"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "送别",
+        "友情"
+      ],
+      "title": "送杜少府之任蜀州",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/钱塘湖春行.md",
+      "author": "白居易",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "早春西湖的喜悦",
+      "examFreq": 0.8,
+      "form": "七言",
+      "grade": 7,
+      "id": "qiantanghuchunxing",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "孤山寺北贾亭西水面初平云脚低",
+        "几处早莺争暖树谁家新燕啄春泥",
+        "乱花渐欲迷人眼浅草才能没马蹄",
+        "最爱湖东行不足绿杨阴里白沙堤"
+      ],
+      "linesPunct": [
+        "孤山寺北贾亭西，水面初平云脚低。",
+        "几处早莺争暖树，谁家新燕啄春泥。",
+        "乱花渐欲迷人眼，浅草才能没马蹄。",
+        "最爱湖东行不足，绿杨阴里白沙堤。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "春天",
+        "西湖",
+        "唐七言"
+      ],
+      "technique": [
+        "比喻",
+        "白描"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "春天",
+        "西湖"
+      ],
+      "title": "钱塘湖春行",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/闻王昌龄左迁龙标遥有此寄.md",
+      "author": "李白",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "对友人被贬的牵挂",
+      "examFreq": 0.9,
+      "form": "七言",
+      "grade": 7,
+      "id": "wenwangchangling",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "杨花落尽子规啼闻道龙标过五溪",
+        "我寄愁心与明月随君直到夜郎西"
+      ],
+      "linesPunct": [
+        "杨花落尽子规啼，闻道龙标过五溪。",
+        "我寄愁心与明月，随君直到夜郎西。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "送别",
+        "友情",
+        "唐七言"
+      ],
+      "technique": [
+        "想象",
+        "比兴"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "送别",
+        "友情"
+      ],
+      "title": "闻王昌龄左迁龙标遥有此寄",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/雁门太守行.md",
+      "author": "李贺",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "将士浴血报国的悲壮",
+      "examFreq": 0.8,
+      "form": "七言",
+      "grade": 7,
+      "id": "yanmenshiweixing",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "黑云压城城欲摧甲光向日金鳞开",
+        "角声满天秋色里塞上燕脂凝夜紫",
+        "半卷红旗临易水霜重鼓寒声不起"
+      ],
+      "linesPunct": [
+        "黑云压城城欲摧，甲光向日金鳞开。",
+        "角声满天秋色里，塞上燕脂凝夜紫。",
+        "半卷红旗临易水，霜重鼓寒声不起。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "战争",
+        "边塞",
+        "唐七言"
+      ],
+      "technique": [
+        "比喻",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "战争",
+        "边塞"
+      ],
+      "title": "雁门太守行",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/饮酒.md",
+      "author": "陶潜",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "晋",
+      "emotion": "超脱物欲的淡泊",
+      "examFreq": 0.9,
+      "form": "五言",
+      "grade": 7,
+      "id": "yinjiujiusan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "结庐在人境而无车马喧",
+        "问君何能尔心远地自偏",
+        "采菊东篱下悠然见南山",
+        "山气日夕佳飞鸟相与还",
+        "此中有真意欲辨已忘言"
+      ],
+      "linesPunct": [
+        "结庐在人境，而无车马喧。",
+        "问君何能尔？心远地自偏。",
+        "采菊东篱下，悠然见南山。",
+        "山气日夕佳，飞鸟相与还。",
+        "此中有真意，欲辨已忘言。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "其五",
+      "syllables": 10,
+      "tags": [
+        "田园",
+        "隐逸",
+        "晋五言"
+      ],
+      "technique": [
+        "象征",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "田园",
+        "隐逸"
+      ],
+      "title": "饮酒",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/黄鹤楼.md",
+      "author": "崔颢",
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "登临吊古的苍凉",
+      "examFreq": 0.9,
+      "form": "七言",
+      "grade": 7,
+      "id": "huanghelou-cuiheng",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "昔人已乘黄鹤去此地空余黄鹤楼",
+        "黄鹤一去不复返白云千载空悠悠",
+        "晴川历历汉阳树芳草萋萋鹦鹉洲",
+        "日暮乡关何处是烟波江上使人愁"
+      ],
+      "linesPunct": [
+        "昔人已乘黄鹤去，此地空余黄鹤楼。",
+        "黄鹤一去不复返，白云千载空悠悠。",
+        "晴川历历汉阳树，芳草萋萋鹦鹉洲。",
+        "日暮乡关何处是？烟波江上使人愁。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "登临",
+        "思乡",
+        "唐七言"
+      ],
+      "technique": [
+        "对比",
+        "虚实结合"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "登临",
+        "思乡"
+      ],
+      "title": "黄鹤楼",
+      "volume": "七年级上册"
+    },
     {
       "_path": "poems/小学/一年级上册/古朗月行.md",
       "author": "李白",

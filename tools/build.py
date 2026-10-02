@@ -96,20 +96,36 @@ def scalar(fm, key, default=None, required=False, path=''):
 def extract_poem_lines(body):
     """从正文抽出正文段落（不含标题、注释、译文、赏析等章节）。
 
-    约定：正文是文档里紧跟 H1 标题之后、第一个 H2 之前的段落。
+    约定：正文是文档里 H1 标题之后的**第一个内容章节**。该章节可能没有
+    标题（小学：正文直接跟在 H1 与元信息引用行之后），也可能有标题
+    （初中/高中：「## 必背全文」「## 必背名句」）。所以规则是——
+    H1 之后的第一个 H2 若还没收集到任何正文段落，就当作正文的开始标记；
+    一旦收集过内容，后续的 H2 就是章节结束。
+
     这样单篇文件既是人读的文章，也是机器的数据源。
     """
     lines = []
-    started = False
+    started = False          # 已遇到 H1
+    in_body = False           # 已进入正文区域
     for raw in body.splitlines():
         s = raw.strip()
+        if not s:
+            continue
         if s.startswith('# '):
             started = True
             continue
-        if s.startswith('##'):
-            break                      # 到下一个章节就停
-        if not started or not s or MD_NOISE.match(raw):
+        if not started:
             continue
+        if s.startswith('## '):
+            if in_body:
+                break            # 已在正文里，遇到下一个 H2 即结束
+            in_body = True        # 第一个 H2 = 正文开始标记
+            continue
+        if s.startswith('>'):
+            continue             # 引用行是元信息（作者/朝代/册次）
+        if MD_NOISE.match(raw):
+            continue
+        in_body = True            # 无标题的正文：内容行本身就是开始
         lines.append(s)
     return lines
 

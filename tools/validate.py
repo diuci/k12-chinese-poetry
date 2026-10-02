@@ -144,7 +144,7 @@ def normalize_title(s):
     return s
 
 
-REQUIRED = ['id', 'title', 'author', 'lines', 'linesPunct', 'pairs',
+REQUIRED = ['id', 'title', 'author', 'lines', 'linesPunct',
             'theme', 'form', 'dynasty', 'stage', 'grade',
             'source', 'license', 'difficulty']
 
@@ -255,6 +255,10 @@ def main():
             for i in pair:
                 if not (0 <= i < n):
                     err('%s: pairs 下标 %d 越界（共 %d 句）' % (p['title'], i, n))
+        # pairs 为空是合法的：只有一句时无处可配（如《水调歌头》名句）
+        if n >= 2 and not p['pairs']:
+            notes.append('%s：%d 句但无 pairs（无法联句，仅作 solo 单元）'
+                         % (p['title'], n))
 
     # -------------------------------------------------- 4. 字数匹配
     # 以「联」为单位校验：五言一联 = 10 字，七言一联 = 14 字。
