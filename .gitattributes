@@ -7,5 +7,6 @@
 *.webp binary
 *.woff2 binary
 
-# CNAME 是 GitHub Pages 的域名绑定文件，绝不能被当作生成物过滤
+# CNAME 位于站点仓 diuci/k12-site，本仓不含 CNAME。
+# 保留规则以防站点文件被误挪回本仓时丢失绑定标记。
 CNAME -linguist-generated=false

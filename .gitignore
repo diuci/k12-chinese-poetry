@@ -5,15 +5,21 @@ __pycache__/
 .venv/
 venv/
 
+# Node（本仓已不含站点代码，此项仅防误装）
+node_modules/
+
 # 构建产物（由 tools/build.py 生成，可重新生成）
 # 若希望游戏侧直接消费，可取消注释并提交
 # data/poems.json
 # data/checksums.json
 
-# 站点
-site/.vitepress/dist/
-site/.vitepress/cache/
-node_modules/
+# 站点相关已迁至 diuci/k12-site，本仓不再包含站点代码。
+# 以下为迁出前遗留在本地的旧站点文件，仅作本地备份，不入库。
+site/
+package.json
+package-lock.json
+tools/build-site.py
+.github/
 
 # Unihan 数据库（约 8MB，解压后 13MB）。
 # 由 python tools/gen-pinyin.py --fetch 下载后生成，属中间产物。
@@ -26,7 +32,3 @@ data/unihan/
 *.swp
 .DS_Store
 Thumbs.db
-
-# ⚠️ CNAME 是自定义域名的绑定文件，切勿删除或加入忽略规则。
-# GitHub Pages 依赖它把域名指向本仓；删掉会导致域名立即失效。
-# 注意：site/public/CNAME 必须提交（构建产物里才带得上域名）。

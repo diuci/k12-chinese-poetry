@@ -15,13 +15,14 @@ the National Curriculum Standards (Ministry of Education). Original texts are
 
 ## 这是什么
 
-一个**纯 Markdown** 的中国K12 古诗文内容库，同时是三样东西的**单一事实源**：
+一个**纯 Markdown** 的中国K12 古诗文内容库，是学习站点与游戏的**单一事实源**：
 
-| 用途 | 说明 |
+| 消费者 | 说明 |
 |---|---|
-| **学习资料** | 每篇含原文、注释、译文、赏析，可直接阅读、打印、搜索 |
-| **数据源** | `tools/build.py` 把 Markdown 编成 `data/poems.json`，供游戏消费 |
-| **游戏内容** | 《丢词大作战》（[diuci.com](https://diuci.com)）的诗词玩法数据 |
+| **学习站点** | [k12.diuci.com](https://k12.diuci.com)（[diuci/k12-site](https://github.com/diuci/k12-site)）——原文、注释、译文、赏析，可阅读、打印、搜索 |
+| **游戏内容** | 《丢词大作战》（[diuci.com](https://diuci.com)）的诗词玩法数据，经 `tools/build.py` 编译为 `data/poems.json` |
+
+本仓只存放内容与内容工具；站点代码、游戏代码各自独立成仓。
 
 ## 收录范围（K12 应试核心）
 
@@ -85,9 +86,13 @@ poems/小学/一年级上册/春晓.md# 按学段/册次组织的篇目（唯一
 ├── tools/
 │   ├── build.py                   # Markdown → poems.json
 │   ├── validate.py                # 七项校验
+│   ├── gen-pinyin.py              # 生成 data/pinyin.txt
 │   └── migrate.py                 # 从游戏内 poems.js 迁移用（一次性）
 └── pending/                       # ⏸️ 保护期内作品，暂不收录
 ```
+
+> **本仓只管内容。** 站点代码在 [diuci/k12-site](https://github.com/diuci/k12-site)，
+> 由它在 CI 中检出本仓并生成页面。
 
 ## 工具
 
@@ -174,14 +179,12 @@ copyright: { text: public-domain, annotations: cc-by-4.0 }
 
 ## 网站
 
-学习站点在 `site/`，用 [VitePress](https://vitepress.dev/) 构建，部署到 GitHub Pages。
+学习站点：**<https://k12.diuci.com>**
 
-```bash
-npm install      # 首次：安装 VitePress
-npm run dev      # 本地预览（自动先跑 build-site.py）
-npm run build    # 构建到 site/.vitepress/dist
-npm run preview  # 预览构建结果
-```
+站点代码在独立仓库 **[diuci/k12-site](https://github.com/diuci/k12-site)**，
+用 [VitePress](https://vitepress.dev/) 构建，部署到 GitHub Pages。
+它在 CI 中检出本仓的 `poems/` 与 `data/`，再生成站点页面——内容与呈现彻底分离，
+因此站点侧可以自由加入样式、广告与埋点，而不会影响内容仓的授权边界。
 
 | 页面 | 内容 |
 |---|---|
@@ -194,19 +197,16 @@ npm run preview  # 预览构建结果
 - **拼音**取自 Unicode Unihan 的 `kMandarin`（《通用规范汉字字典》读音），
   1862 个用字 100% 覆盖
 - **打印样式**已适配：隐藏导航、保留拼音与注释译文
-- `tools/build-site.py` 从 `poems/` 生成站点副本，不改动源文件
+- 站点侧的 `tools/build-site.py` 从本仓 `poems/` 生成站点副本，**不改动源文件**；
+  通过环境变量 `CONTENT_ROOT` 指定内容仓位置
 
 ## 关联项目
 
 | 项目 | 说明 |
 |------|------|
+| [k12.diuci.com](https://k12.diuci.com) | 学习站点（[diuci/k12-site](https://github.com/diuci/k12-site)） |
 | [diuci.com](https://diuci.com) | 《丢词大作战》——用涂地射击玩诗词的 4v4 游戏 |
 | `inkwave-main` | 游戏主仓库，消费本仓 `data/poems.json` |
-
-## ⚠️ 部署注意
-
-若将本仓部署到 GitHub Pages，仓库内的 **CNAME 文件请勿删除或改写** ——
-删掉会导致自定义域名即时失效。
 
 ## 许可
 
