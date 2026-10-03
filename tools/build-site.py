@@ -17,14 +17,15 @@
 """
 
 import json
+import os
 import re
 import shutil
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(os.environ.get('CONTENT_ROOT') or Path(__file__).resolve().parent.parent)
 POEMS = ROOT / 'poems'
-SITE = ROOT / 'site'
+SITE = Path(__file__).resolve().parent.parent / 'site'
 DATA = ROOT / 'data' / 'poems.json'
 
 SITE_POEMS = SITE / 'poems'
