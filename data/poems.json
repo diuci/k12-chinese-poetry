@@ -155,7 +155,7 @@
       "congjunxing",
       "liangzhou-wanghan",
       "sishitianyuan-31",
-      "hanxiaqu",
+      "saixiaqu-g5",
       "shanjuqiuming",
       "jihai",
       "cunwan",
@@ -343,7 +343,6 @@
     "guoqinlun": "guoqinlun",
     "guyuancao": "guyuancao",
     "hanshi": "hanshi",
-    "hanxiaqu": "hanxiaqu",
     "hexinlao": "hexinlao",
     "hua": "hua",
     "huaji": "huaji",
@@ -426,6 +425,7 @@
     "quanxue": "quanxue",
     "quyuanliezhuan": "quyuanliezhuan",
     "saixiaqu": "saixiaqu",
+    "saixiaqu-g5": "saixiaqu-g5",
     "sanqudaozhong": "sanqudaozhong",
     "sanxia": "sanxia",
     "shangshumihan": "shangshumihan",
@@ -1304,7 +1304,7 @@
       "saixiaqu",
       "congjunxing",
       "liangzhou-wanghan",
-      "hanxiaqu",
+      "saixiaqu-g5",
       "changxiangsi",
       "caiwei",
       "yange-xing"
@@ -1365,7 +1365,7 @@
     ],
     "雪": [
       "saixiaqu",
-      "hanxiaqu"
+      "saixiaqu-g5"
     ],
     "雪景": [
       "huxinting"
@@ -9344,7 +9344,7 @@
       "volume": "五年级下册"
     },
     {
-      "_path": "poems/小学/五年级下册/寒下曲.md",
+      "_path": "poems/小学/五年级下册/塞下曲.md",
       "author": "卢纶",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
@@ -9353,7 +9353,7 @@
       "examFreq": 0.7,
       "form": "五言",
       "grade": 5,
-      "id": "hanxiaqu",
+      "id": "saixiaqu-g5",
       "irregular": null,
       "license": "public-domain",
       "lines": [
@@ -9394,7 +9394,7 @@
         "边塞",
         "雪"
       ],
-      "title": "寒下曲",
+      "title": "塞下曲",
       "volume": "五年级下册"
     },
     {
