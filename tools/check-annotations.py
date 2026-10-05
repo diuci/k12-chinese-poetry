@@ -49,22 +49,28 @@ def load_content():
 
 
 def poem_records():
+    """诗的正文一律以 data/poems.json 为准。
+
+    别去解析 md：小学篇目的正文直接跟在 H1 后面，初中/高中包在
+    「## 必背全文 / ## 必背名句」里，两种结构不一样，从 md 里抠正文
+    会漏掉后一种——护栏就会把明明在诗里的字判成「不在诗里」。
+    """
+    import json
+    src = ROOT / 'data' / 'poems.json'
     out = []
-    for pf in sorted(POEMS.rglob('*.md')):
-        t = pf.read_text(encoding='utf-8')
-        mi = re.search(r'^id:\s*(\S+)\s*$', t, re.M)
-        mi2 = re.search(r'^title:\s*(.+?)\s*$', t, re.M)
-        mi3 = re.search(r'^stage:\s*(.+?)\s*$', t, re.M)
-        if not mi:
-            continue
-        # 正文：poem-body 之外，取首个 ## 之前的汉字；这里用标题+全文汉字兜底
-        body = re.sub(r'^---.*?^---', '', t, flags=re.S | re.M)
+    if not src.exists():
+        return out
+    for p in json.loads(src.read_text(encoding='utf-8'))['poems']:
         out.append({
-            'id': mi.group(1),
-            'title': (mi2.group(1) if mi2 else pf.stem),
-            'stage': (mi3.group(1) if mi3 else '?'),
-            'file': pf,
-            'text': ''.join(CJK.findall(body.split('## ')[0])),
+            'id': p['id'],
+            'title': p.get('title', ''),
+            'stage': p.get('stage', '?'),
+            'file': None,
+            # 注释词允许出自标题/副标题——「三衢」「九月九日」这类词不在诗里，
+            # 却是理解全诗的钥匙，不该被判成编造
+            'text': ''.join(CJK.findall(
+                (p.get('title') or '') + (p.get('subtitle') or '')
+                + ''.join(p.get('lines') or []))),
         })
     return out
 
