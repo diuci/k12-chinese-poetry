@@ -4282,10 +4282,10 @@
     },
     {
       "_path": "poems/初中/八年级下册/杂说.md",
-      "author": "韩愈",
+      "author": "佚名",
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
-      "dynasty": "唐",
+      "dynasty": "先秦",
       "emotion": "学习与思考的重要",
       "examFreq": 0.9,
       "form": "文言",
@@ -4323,7 +4323,7 @@
       ],
       "source": "S3+S1+S2",
       "stage": "初中",
-      "subtitle": "四",
+      "subtitle": "《礼记·学记》节选",
       "syllables": null,
       "tags": [
         "学习",
@@ -11885,11 +11885,11 @@
       "irregular": null,
       "license": "public-domain",
       "lines": [
-        "辙生好为文思之至深以为文出於",
+        "辙生好为文思之至深以为文出於六经",
         "辙生十有九年矣"
       ],
       "linesPunct": [
-        "辙生好为文，思之至深。以为文出於。",
+        "辙生好为文，思之至深。以为文出於六经。",
         "辙生十有九年矣。"
       ],
       "pairs": [
