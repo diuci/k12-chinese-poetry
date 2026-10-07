@@ -7,20 +7,22 @@
 
     课标 135 篇  ⇄  poems/ 实际篇目  →  逐条比对
 
-七项校验（任何一项失败即 exit 1）：
-    1. 课标完整性   —— 漏收 / 多收
-    2. id唯一性     —— 全库 id 不重复
-    3. pairs 索引   —— 下标必须在 lines 范围内
-    4. 字数匹配     —— form 声明与实际句长一致
-    5. 台账完整     —— 缺 source / license 的篇目
-    6. 版权零风险   —— 非公有领域的内容不得混入 poems/
-    7. frontmatter  —— 必填字段齐全
+八项校验（任何一项失败即 exit 1）：
+    1. 课标完整性     —— 漏收 / 多收
+    2. id 唯一性      —— 全库 id 不重复
+    3. pairs 索引     —— 下标必须在 lines 范围内
+    4. 字数匹配       —— form 声明与实际句长一致
+    5. 台账完整       —— 缺 source / license 的篇目
+    6. 版权核验       —— 非公有领域的内容不得混入 poems/
+    7. frontmatter    —— 必填字段齐全
+    8. 公有领域证据   —— 每篇都有可核验的作者卒年（卒年 + 50 年保护期）
 
 用法：
     python tools/validate.py            # 完整校验（要求 135 篇齐）
     python tools/validate.py --partial  # 增量期校验：跳过"课标完整性"
 """
 
+import datetime
 import json
 import re
 import sys
@@ -32,6 +34,10 @@ PENDING_DIR = ROOT / 'pending'
 SYLLABUS = ROOT / 'docs' / 'syllabus-2022.md'
 SYLLABUS_HS = ROOT / 'docs' / 'syllabus-2017.md'
 DATA_JSON = ROOT / 'data' / 'poems.json'
+
+# 我国《著作权法》：自然人作品的保护期为作者终生及其死亡后第五十年的 12 月 31 日。
+# 即作者卒年 <= 当前年 - 50 才算进入公有领域。这不是文档里的说法，是下面要跑的规则。
+COPYRIGHT_YEARS = 50
 
 # 调色：仅在支持 ANSI 的终端着色
 class C:
@@ -167,7 +173,66 @@ REQUIRED_BY_STAGE = {
 }
 
 
+def check_public_domain(poems, this_year):
+    """逐篇核验公有领域证据，返回问题列表（不直接报错，便于自检单独调用）。
+
+    卒年不详的（佚名、汉乐府、北朝民歌等）用 authorEraEnd —— 作品活动年代的上限，
+    按同一条 50 年规则判：上限也远在保护期外，才允许放行。
+    """
+    cutoff = this_year - COPYRIGHT_YEARS
+    problems = []
+    for p in poems:
+        died = p.get('authorDied')
+        era = p.get('authorEraEnd')
+        if not isinstance(died, int) and not isinstance(era, int):
+            problems.append('%s: 缺 authorDied / authorEraEnd，无法论证公有领域'
+                            '（跑 python tools/apply-author-years.py）' % p.get('title'))
+            continue
+        year = died if isinstance(died, int) else era
+        if year > cutoff:
+            problems.append('版权风险：%s 的作者卒年 %d 距今年未满 %d 年，仍在保护期内，'
+                            '不得收录（应放 pending/ 并取得授权）'
+                            % (p.get('title'), year, COPYRIGHT_YEARS))
+    return problems
+
+
+def selftest():
+    """这条校验自己会不会漏：坏样本必须被抓到，好样本不能误报。"""
+    year = 2026
+    problems = []
+
+    cases = [
+        ('1999 年卒（保护期到 2049）应当被拒',
+         [{'title': '假作A', 'authorDied': 1999, 'authorEraEnd': None}], True),
+        ('没有卒年证据的应当被拒',
+         [{'title': '假作B', 'authorDied': None, 'authorEraEnd': None}], True),
+        ('恰好届满 50 年的应当放行',
+         [{'title': '假作C', 'authorDied': year - COPYRIGHT_YEARS, 'authorEraEnd': None}], False),
+        ('差一年才届满的应当被拒',
+         [{'title': '假作D', 'authorDied': year - COPYRIGHT_YEARS + 1, 'authorEraEnd': None}], True),
+        ('佚名走 authorEraEnd 应当放行',
+         [{'title': '假作E', 'authorDied': None, 'authorEraEnd': 220}], False),
+        ('公元前卒年应当放行',
+         [{'title': '假作F', 'authorDied': -278, 'authorEraEnd': None}], False),
+    ]
+    for label, poems, should_fail in cases:
+        got = bool(check_public_domain(poems, year))
+        if got != should_fail:
+            problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
+
+    if problems:
+        print('[!!] validate --selftest 失败：', file=sys.stderr)
+        for x in problems:
+            print('  - ' + x, file=sys.stderr)
+        return 1
+    print('[ok] validate --selftest 通过（保护期内被拒、缺证据被拒、恰好届满放行、'
+          '差一年被拒、佚名走年代上限、公元前卒年放行都试到了）')
+    return 0
+
+
 def main():
+    if '--selftest' in sys.argv:
+        return selftest()
     partial = '--partial' in sys.argv
     print('%s丢词大作战 · 内容仓校验%s' % (C.BOLD, C.END))
     if partial:
@@ -318,6 +383,13 @@ def main():
         elif 'S3' not in src:
             warn('%s: source 为 %r，未引用 S3(chinese-poetry)，'
                  '请确认正文出处' % (p['title'], src))
+
+    # -------------------------------------------------- 8. 公有领域证据（卒年）
+    pd_problems = check_public_domain(poems, datetime.date.today().year)
+    for m in pd_problems:
+        err(m)
+    if not pd_problems:
+        print('公有领域证据：%d 篇全部可核验（卒年 + %d 年保护期）' % (len(poems), COPYRIGHT_YEARS))
 
     #-------------------------------------------------- 构建产物一致性
     if DATA_JSON.exists():

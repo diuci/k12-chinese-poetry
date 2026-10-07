@@ -1,0 +1,10 @@
+{
+  "name": "k12-chinese-poetry",
+  "upstreamCopyrights": [],
+  "vendorDirs": [],
+  "corpusFiles": [
+    "data/poems.json"
+  ],
+  "contactEmail": "hi@diuci.com",
+  "legalLink": null
+}

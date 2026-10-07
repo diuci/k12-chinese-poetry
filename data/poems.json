@@ -1385,12 +1385,14 @@
       "yangzhousman"
     ]
   },
-  "contentVersion": "2026.10.02",
+  "contentVersion": "2026.10.03",
   "count": 253,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/使至塞上.md",
       "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -1455,6 +1457,8 @@
     {
       "_path": "poems/初中/七年级上册/关雎.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "先秦",
@@ -1509,6 +1513,8 @@
     {
       "_path": "poems/初中/七年级上册/十五从军征.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "汉",
@@ -1562,6 +1568,8 @@
     {
       "_path": "poems/初中/七年级下册/卖炭翁.md",
       "author": "白居易",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -1616,6 +1624,8 @@
     {
       "_path": "poems/初中/九年级上册/南乡子.md",
       "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -1683,6 +1693,8 @@
     {
       "_path": "poems/初中/七年级下册/夜雨寄北.md",
       "author": "李商隐",
+      "authorDied": 858,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -1737,6 +1749,8 @@
     {
       "_path": "poems/初中/九年级下册/天净沙.md",
       "author": "马致远",
+      "authorDied": 1321,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "元",
@@ -1794,6 +1808,8 @@
     {
       "_path": "poems/初中/九年级下册/山坡羊.md",
       "author": "张养浩",
+      "authorDied": 1329,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "元",
@@ -1858,6 +1874,8 @@
     {
       "_path": "poems/初中/九年级下册/己亥杂诗.md",
       "author": "龚自珍",
+      "authorDied": 1841,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "清",
@@ -1912,6 +1930,8 @@
     {
       "_path": "poems/初中/九年级上册/无题.md",
       "author": "李商隐",
+      "authorDied": 858,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -1966,6 +1986,8 @@
     {
       "_path": "poems/初中/七年级课外诵读/春夜洛城闻笛.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -2020,6 +2042,8 @@
     {
       "_path": "poems/初中/七年级上册/春望.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -2084,6 +2108,8 @@
     {
       "_path": "poems/初中/七年级课外诵读/晚春.md",
       "author": "韩愈",
+      "authorDied": 824,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -2138,6 +2164,8 @@
     {
       "_path": "poems/初中/七年级下册/望岳.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -2202,6 +2230,8 @@
     {
       "_path": "poems/初中/七年级下册/木兰辞.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "北朝",
@@ -2259,6 +2289,8 @@
     {
       "_path": "poems/初中/七年级上册/次北固山下.md",
       "author": "王湾",
+      "authorDied": 751,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -2323,6 +2355,8 @@
     {
       "_path": "poems/初中/九年级上册/水调歌头.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -2369,6 +2403,8 @@
     {
       "_path": "poems/初中/九年级上册/江城子.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
@@ -2426,6 +2462,8 @@
     {
       "_path": "poems/初中/七年级下册/泊秦淮.md",
       "author": "杜牧",
+      "authorDied": 852,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -2480,6 +2518,8 @@
     {
       "_path": "poems/初中/九年级上册/浣溪沙.md",
       "author": "晏殊",
+      "authorDied": 1055,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -2533,6 +2573,8 @@
     {
       "_path": "poems/初中/九年级上册/渔家傲.md",
       "author": "范仲淹",
+      "authorDied": 1052,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -2600,6 +2642,8 @@
     {
       "_path": "poems/初中/七年级下册/游山西村.md",
       "author": "陆游",
+      "authorDied": 1210,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -2664,6 +2708,8 @@
     {
       "_path": "poems/初中/七年级下册/登幽州台歌.md",
       "author": "陈子昂",
+      "authorDied": 702,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -2718,6 +2764,8 @@
     {
       "_path": "poems/初中/七年级下册/登飞来峰.md",
       "author": "王安石",
+      "authorDied": 1086,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -2772,6 +2820,8 @@
     {
       "_path": "poems/初中/七年级上册/白雪歌送武判官归京.md",
       "author": "岑参",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -2829,6 +2879,8 @@
     {
       "_path": "poems/初中/九年级上册/相见欢.md",
       "author": "李煜",
+      "authorDied": 978,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "南唐",
@@ -2892,6 +2944,8 @@
     {
       "_path": "poems/初中/九年级上册/破阵子.md",
       "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -2966,6 +3020,8 @@
     {
       "_path": "poems/初中/七年级课外诵读/竹里馆.md",
       "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -3020,6 +3076,8 @@
     {
       "_path": "poems/初中/七年级上册/茅屋为秋风所破歌.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -3074,6 +3132,8 @@
     {
       "_path": "poems/初中/七年级上册/蒹葭.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "先秦",
@@ -3128,6 +3188,8 @@
     {
       "_path": "poems/初中/九年级上册/行路难.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -3185,6 +3247,8 @@
     {
       "_path": "poems/初中/七年级上册/观沧海.md",
       "author": "曹操",
+      "authorDied": 220,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "汉",
@@ -3259,6 +3323,8 @@
     {
       "_path": "poems/初中/七年级下册/赤壁.md",
       "author": "杜牧",
+      "authorDied": 852,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -3313,6 +3379,8 @@
     {
       "_path": "poems/初中/九年级下册/过零丁洋.md",
       "author": "文天祥",
+      "authorDied": 1283,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -3377,6 +3445,8 @@
     {
       "_path": "poems/初中/七年级上册/送杜少府之任蜀州.md",
       "author": "王勃",
+      "authorDied": 676,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -3441,6 +3511,8 @@
     {
       "_path": "poems/初中/七年级课外诵读/逢入京使.md",
       "author": "岑参",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -3495,6 +3567,8 @@
     {
       "_path": "poems/初中/七年级下册/钱塘湖春行.md",
       "author": "白居易",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -3559,6 +3633,8 @@
     {
       "_path": "poems/初中/七年级上册/闻王昌龄左迁龙标遥有此寄.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -3613,6 +3689,8 @@
     {
       "_path": "poems/初中/七年级下册/雁门太守行.md",
       "author": "李贺",
+      "authorDied": 816,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -3670,6 +3748,8 @@
     {
       "_path": "poems/初中/七年级上册/饮酒.md",
       "author": "陶潜",
+      "authorDied": 427,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "晋",
@@ -3737,6 +3817,8 @@
     {
       "_path": "poems/初中/七年级上册/黄鹤楼.md",
       "author": "崔颢",
+      "authorDied": 754,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -3801,6 +3883,8 @@
     {
       "_path": "poems/初中/八年级上册/三峡.md",
       "author": "郦道元",
+      "authorDied": 527,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "北魏",
@@ -3858,6 +3942,8 @@
     {
       "_path": "poems/初中/八年级上册/与朱元思书.md",
       "author": "吴均",
+      "authorDied": 520,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "南朝",
@@ -3915,6 +4001,8 @@
     {
       "_path": "poems/初中/八年级下册/北冥有鱼.md",
       "author": "庄子",
+      "authorDied": -286,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "战国",
@@ -3979,6 +4067,8 @@
     {
       "_path": "poems/初中/八年级下册/大道之行也.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -4043,6 +4133,8 @@
     {
       "_path": "poems/初中/八年级下册课外诵读/子衿.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "先秦",
@@ -4097,6 +4189,8 @@
     {
       "_path": "poems/初中/八年级下册/小石潭记.md",
       "author": "柳宗元",
+      "authorDied": 819,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -4164,6 +4258,8 @@
     {
       "_path": "poems/初中/八年级上册/岳阳楼记.md",
       "author": "范仲淹",
+      "authorDied": 1052,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
@@ -4229,6 +4325,8 @@
     {
       "_path": "poems/初中/八年级下册课外诵读/式微.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -4283,6 +4381,8 @@
     {
       "_path": "poems/初中/八年级下册/杂说.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "先秦",
@@ -4347,6 +4447,8 @@
     {
       "_path": "poems/初中/八年级下册/桃花源记.md",
       "author": "陶潜",
+      "authorDied": 427,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "晋",
@@ -4411,6 +4513,8 @@
     {
       "_path": "poems/初中/八年级下册/爱莲说.md",
       "author": "周敦颐",
+      "authorDied": 1073,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
@@ -4475,6 +4579,8 @@
     {
       "_path": "poems/初中/八年级下册/石壕吏.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -4529,6 +4635,8 @@
     {
       "_path": "poems/初中/八年级上册/答谢中书书.md",
       "author": "陶弘景",
+      "authorDied": 536,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "南朝",
@@ -4593,6 +4701,8 @@
     {
       "_path": "poems/初中/八年级下册/虽有嘉肴.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -4657,6 +4767,8 @@
     {
       "_path": "poems/初中/八年级上册/记承天寺夜游.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -4711,6 +4823,8 @@
     {
       "_path": "poems/初中/八年级下册课外诵读/送杜少府之任蜀州.md",
       "author": "王勃",
+      "authorDied": 676,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -4775,6 +4889,8 @@
     {
       "_path": "poems/初中/八年级上册/醉翁亭记.md",
       "author": "欧阳修",
+      "authorDied": 1072,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -4832,6 +4948,8 @@
     {
       "_path": "poems/初中/八年级上册课外诵读/野望.md",
       "author": "王绩",
+      "authorDied": 644,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -4896,6 +5014,8 @@
     {
       "_path": "poems/初中/八年级下册/陋室铭.md",
       "author": "刘禹锡",
+      "authorDied": 842,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -4964,6 +5084,8 @@
     {
       "_path": "poems/初中/八年级下册/马说.md",
       "author": "韩愈",
+      "authorDied": 824,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -5018,6 +5140,8 @@
     {
       "_path": "poems/初中/九年级下册/《吕氏春秋》一则.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "战国",
@@ -5085,6 +5209,8 @@
     {
       "_path": "poems/初中/九年级下册/《孟子》三则.md",
       "author": "孟子",
+      "authorDied": -289,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "战国",
@@ -5142,6 +5268,8 @@
     {
       "_path": "poems/初中/九年级下册/《庄子》一则.md",
       "author": "庄子",
+      "authorDied": -286,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "战国",
@@ -5199,6 +5327,8 @@
     {
       "_path": "poems/初中/九年级下册/《礼记》一则.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -5256,6 +5386,8 @@
     {
       "_path": "poems/初中/九年级下册/出师表.md",
       "author": "诸葛亮",
+      "authorDied": 234,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "三国",
@@ -5313,6 +5445,8 @@
     {
       "_path": "poems/初中/九年级下册/曹刿论战.md",
       "author": "左丘明",
+      "authorDied": -422,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -5370,6 +5504,8 @@
     {
       "_path": "poems/初中/九年级下册/湖心亭看雪.md",
       "author": "张岱",
+      "authorDied": 1679,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "明",
@@ -5427,6 +5563,8 @@
     {
       "_path": "poems/初中/九年级下册/送东阳马生序.md",
       "author": "宋濂",
+      "authorDied": 1381,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "明",
@@ -5484,6 +5622,8 @@
     {
       "_path": "poems/初中/九年级下册/邹忌讽齐王纳谏.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "战国",
@@ -5542,6 +5682,8 @@
     {
       "_path": "poems/初中/九年级上册/酬乐天扬州初逢席上见赠.md",
       "author": "刘禹锡",
+      "authorDied": 842,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -5600,6 +5742,8 @@
     {
       "_path": "poems/小学/一年级上册/古朗月行.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -5664,6 +5808,8 @@
     {
       "_path": "poems/小学/一年级上册/咏鹅.md",
       "author": "骆宾王",
+      "authorDied": 684,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "唐",
@@ -5717,6 +5863,8 @@
     {
       "_path": "poems/小学/一年级下册/寻隐者不遇.md",
       "author": "贾岛",
+      "authorDied": 843,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "唐",
@@ -5770,6 +5918,8 @@
     {
       "_path": "poems/小学/一年级下册/小池.md",
       "author": "杨万里",
+      "authorDied": 1206,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -5824,6 +5974,8 @@
     {
       "_path": "poems/小学/一年级上册/悯农其二.md",
       "author": "李绅",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "唐",
@@ -5877,6 +6029,8 @@
     {
       "_path": "poems/小学/一年级下册/春晓.md",
       "author": "孟浩然",
+      "authorDied": 740,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "唐",
@@ -5930,6 +6084,8 @@
     {
       "_path": "poems/小学/一年级上册/江南.md",
       "author": "汉乐府",
+      "authorDied": null,
+      "authorEraEnd": 220,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "汉",
@@ -5994,6 +6150,8 @@
     {
       "_path": "poems/小学/一年级下册/池上.md",
       "author": "白居易",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "唐",
@@ -6047,6 +6205,8 @@
     {
       "_path": "poems/小学/一年级上册/画.md",
       "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "唐",
@@ -6101,6 +6261,8 @@
     {
       "_path": "poems/小学/一年级下册/画鸡.md",
       "author": "唐寅",
+      "authorDied": 1524,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "明",
@@ -6155,6 +6317,8 @@
     {
       "_path": "poems/小学/一年级下册/相思.md",
       "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -6208,6 +6372,8 @@
     {
       "_path": "poems/小学/一年级下册/赠汪伦.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "唐",
@@ -6261,6 +6427,8 @@
     {
       "_path": "poems/小学/一年级下册/静夜思.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "唐",
@@ -6315,6 +6483,8 @@
     {
       "_path": "poems/小学/一年级上册/风.md",
       "author": "李峤",
+      "authorDied": 719,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -6369,6 +6539,8 @@
     {
       "_path": "poems/小学/二年级下册/咏柳.md",
       "author": "贺知章",
+      "authorDied": 744,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -6423,6 +6595,8 @@
     {
       "_path": "poems/小学/二年级上册/夜宿山寺.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -6476,6 +6650,8 @@
     {
       "_path": "poems/小学/二年级上册/小儿垂钓.md",
       "author": "胡令能",
+      "authorDied": 805,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -6529,6 +6705,8 @@
     {
       "_path": "poems/小学/二年级下册/悯农其一.md",
       "author": "李绅",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -6582,6 +6760,8 @@
     {
       "_path": "poems/小学/二年级上册/敕勒歌.md",
       "author": "北朝民歌",
+      "authorDied": null,
+      "authorEraEnd": 560,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "南北朝",
@@ -6646,6 +6826,8 @@
     {
       "_path": "poems/小学/二年级下册/晓出净慈寺送林子方.md",
       "author": "杨万里",
+      "authorDied": 1206,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -6699,6 +6881,8 @@
     {
       "_path": "poems/小学/二年级上册/望庐山瀑布.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -6753,6 +6937,8 @@
     {
       "_path": "poems/小学/二年级下册/村居.md",
       "author": "高鼎",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "清",
@@ -6806,6 +6992,8 @@
     {
       "_path": "poems/小学/二年级上册/梅花.md",
       "author": "王安石",
+      "authorDied": 1086,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -6860,6 +7048,8 @@
     {
       "_path": "poems/小学/二年级上册/江雪.md",
       "author": "柳宗元",
+      "authorDied": 819,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -6914,6 +7104,8 @@
     {
       "_path": "poems/小学/二年级上册/登鹳雀楼.md",
       "author": "王之涣",
+      "authorDied": 742,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -6967,6 +7159,8 @@
     {
       "_path": "poems/小学/二年级下册/绝句.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -7020,6 +7214,8 @@
     {
       "_path": "poems/小学/二年级下册/舟夜书所见.md",
       "author": "查慎行",
+      "authorDied": 1721,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "清",
@@ -7073,6 +7269,8 @@
     {
       "_path": "poems/小学/二年级下册/赋得古原草送别.md",
       "author": "白居易",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -7137,6 +7335,8 @@
     {
       "_path": "poems/小学/三年级下册/三衢道中.md",
       "author": "曾几",
+      "authorDied": 1166,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -7190,6 +7390,8 @@
     {
       "_path": "poems/小学/三年级下册/九月九日忆山东兄弟.md",
       "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -7243,6 +7445,8 @@
     {
       "_path": "poems/小学/三年级下册/元日.md",
       "author": "王安石",
+      "authorDied": 1086,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -7297,6 +7501,8 @@
     {
       "_path": "poems/小学/三年级上册/夜书所见.md",
       "author": "叶绍翁",
+      "authorDied": null,
+      "authorEraEnd": 1270,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -7350,6 +7556,8 @@
     {
       "_path": "poems/小学/三年级下册/大林寺桃花.md",
       "author": "白居易",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -7403,6 +7611,8 @@
     {
       "_path": "poems/小学/三年级上册/山行.md",
       "author": "杜牧",
+      "authorDied": 852,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -7456,6 +7666,8 @@
     {
       "_path": "poems/小学/三年级下册/忆江南.md",
       "author": "白居易",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -7513,6 +7725,8 @@
     {
       "_path": "poems/小学/三年级下册/惠崇春江晚景.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -7566,6 +7780,8 @@
     {
       "_path": "poems/小学/三年级上册/所见.md",
       "author": "袁枚",
+      "authorDied": 1797,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 1,
       "dynasty": "清",
@@ -7619,6 +7835,8 @@
     {
       "_path": "poems/小学/三年级上册/早发白帝城.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -7672,6 +7890,8 @@
     {
       "_path": "poems/小学/三年级上册/望天门山.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -7726,6 +7946,8 @@
     {
       "_path": "poems/小学/三年级上册/望洞庭.md",
       "author": "刘禹锡",
+      "authorDied": 842,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -7780,6 +8002,8 @@
     {
       "_path": "poems/小学/三年级下册/江畔独步寻花.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -7834,6 +8058,8 @@
     {
       "_path": "poems/小学/三年级下册/清明.md",
       "author": "杜牧",
+      "authorDied": 852,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -7887,6 +8113,8 @@
     {
       "_path": "poems/小学/三年级下册/滁州西涧.md",
       "author": "韦应物",
+      "authorDied": 792,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -7940,6 +8168,8 @@
     {
       "_path": "poems/小学/三年级下册/绝句.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -7993,6 +8223,8 @@
     {
       "_path": "poems/小学/三年级上册/赠刘景文.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -8047,6 +8279,8 @@
     {
       "_path": "poems/小学/三年级上册/采莲曲.md",
       "author": "王昌龄",
+      "authorDied": 757,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -8101,6 +8335,8 @@
     {
       "_path": "poems/小学/三年级上册/饮湖上初晴后雨.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -8155,6 +8391,8 @@
     {
       "_path": "poems/小学/四年级上册/凉州词.md",
       "author": "王翰",
+      "authorDied": 726,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -8209,6 +8447,8 @@
     {
       "_path": "poems/小学/四年级上册/出塞.md",
       "author": "王昌龄",
+      "authorDied": 757,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -8263,6 +8503,8 @@
     {
       "_path": "poems/小学/四年级上册/别董大.md",
       "author": "高适",
+      "authorDied": 765,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -8317,6 +8559,8 @@
     {
       "_path": "poems/小学/四年级下册/四时田园杂兴.md",
       "author": "范成大",
+      "authorDied": 1193,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -8370,6 +8614,8 @@
     {
       "_path": "poems/小学/四年级下册/塞下曲.md",
       "author": "卢纶",
+      "authorDied": 780,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -8424,6 +8670,8 @@
     {
       "_path": "poems/小学/四年级下册/墨梅.md",
       "author": "王冕",
+      "authorDied": 1359,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "元",
@@ -8477,6 +8725,8 @@
     {
       "_path": "poems/小学/四年级上册/夏日绝句.md",
       "author": "李清照",
+      "authorDied": 1155,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -8531,6 +8781,8 @@
     {
       "_path": "poems/小学/四年级上册/嫦娥.md",
       "author": "李商隐",
+      "authorDied": 858,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -8584,6 +8836,8 @@
     {
       "_path": "poems/小学/四年级下册/宿新市徐公店.md",
       "author": "杨万里",
+      "authorDied": 1206,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -8638,6 +8892,8 @@
     {
       "_path": "poems/小学/四年级上册/暮江吟.md",
       "author": "白居易",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -8692,6 +8948,8 @@
     {
       "_path": "poems/小学/四年级下册/清平乐.md",
       "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -8755,6 +9013,8 @@
     {
       "_path": "poems/小学/四年级下册/独坐敬亭山.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -8809,6 +9069,8 @@
     {
       "_path": "poems/小学/四年级下册/芙蓉楼送辛渐.md",
       "author": "王昌龄",
+      "authorDied": 757,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -8863,6 +9125,8 @@
     {
       "_path": "poems/小学/四年级下册/蜂.md",
       "author": "罗隐",
+      "authorDied": 909,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -8917,6 +9181,8 @@
     {
       "_path": "poems/小学/四年级上册/雪梅.md",
       "author": "卢梅坡",
+      "authorDied": null,
+      "authorEraEnd": 1300,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -8971,6 +9237,8 @@
     {
       "_path": "poems/小学/四年级上册/题西林壁.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -9025,6 +9293,8 @@
     {
       "_path": "poems/小学/四年级上册/鹿柴.md",
       "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -9079,6 +9349,8 @@
     {
       "_path": "poems/小学/五年级上册/乞巧.md",
       "author": "林杰",
+      "authorDied": null,
+      "authorEraEnd": 900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -9132,6 +9404,8 @@
     {
       "_path": "poems/小学/五年级下册/乡村四月.md",
       "author": "翁卷",
+      "authorDied": null,
+      "authorEraEnd": 1225,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -9185,6 +9459,8 @@
     {
       "_path": "poems/小学/五年级下册/从军行.md",
       "author": "王昌龄",
+      "authorDied": 757,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -9239,6 +9515,8 @@
     {
       "_path": "poems/小学/五年级下册/凉州词.md",
       "author": "王翰",
+      "authorDied": 726,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -9293,6 +9571,8 @@
     {
       "_path": "poems/小学/五年级下册/四时田园杂兴.md",
       "author": "范成大",
+      "authorDied": 1193,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -9346,6 +9626,8 @@
     {
       "_path": "poems/小学/五年级下册/塞下曲.md",
       "author": "卢纶",
+      "authorDied": 780,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -9400,6 +9682,8 @@
     {
       "_path": "poems/小学/五年级上册/山居秋暝.md",
       "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -9464,6 +9748,8 @@
     {
       "_path": "poems/小学/五年级上册/己亥杂诗.md",
       "author": "龚自珍",
+      "authorDied": 1841,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "清",
@@ -9517,6 +9803,8 @@
     {
       "_path": "poems/小学/五年级下册/村晚.md",
       "author": "雷震",
+      "authorDied": null,
+      "authorEraEnd": 1300,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -9571,6 +9859,8 @@
     {
       "_path": "poems/小学/五年级上册/枫桥夜泊.md",
       "author": "张继",
+      "authorDied": null,
+      "authorEraEnd": 800,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -9625,6 +9915,8 @@
     {
       "_path": "poems/小学/五年级上册/渔歌子.md",
       "author": "张志和",
+      "authorDied": 810,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -9679,6 +9971,8 @@
     {
       "_path": "poems/小学/五年级上册/示儿.md",
       "author": "陆游",
+      "authorDied": 1210,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -9733,6 +10027,8 @@
     {
       "_path": "poems/小学/五年级下册/秋夜将晓出篱门迎凉有感.md",
       "author": "陆游",
+      "authorDied": 1210,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -9787,6 +10083,8 @@
     {
       "_path": "poems/小学/五年级下册/稚子弄冰.md",
       "author": "杨万里",
+      "authorDied": 1206,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -9841,6 +10139,8 @@
     {
       "_path": "poems/小学/五年级上册/观书有感.md",
       "author": "朱熹",
+      "authorDied": 1200,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "宋",
@@ -9895,6 +10195,8 @@
     {
       "_path": "poems/小学/五年级下册/送元二使安西.md",
       "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -9949,6 +10251,8 @@
     {
       "_path": "poems/小学/五年级上册/长歌行.md",
       "author": "汉乐府",
+      "authorDied": null,
+      "authorEraEnd": 220,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "汉",
@@ -10016,6 +10320,8 @@
     {
       "_path": "poems/小学/五年级上册/长相思.md",
       "author": "纳兰性德",
+      "authorDied": 1685,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "清",
@@ -10069,6 +10375,8 @@
     {
       "_path": "poems/小学/五年级上册/题临安邸.md",
       "author": "林升",
+      "authorDied": null,
+      "authorEraEnd": 1300,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -10123,6 +10431,8 @@
     {
       "_path": "poems/小学/五年级下册/鸟鸣涧.md",
       "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 2,
       "dynasty": "唐",
@@ -10177,6 +10487,8 @@
     {
       "_path": "poems/小学/五年级下册/黄鹤楼送孟浩然之广陵.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -10231,6 +10543,8 @@
     {
       "_path": "poems/小学/六年级上册/书湖阴先生壁.md",
       "author": "王安石",
+      "authorDied": 1086,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -10285,6 +10599,8 @@
     {
       "_path": "poems/小学/六年级上册/六月二十七日望湖楼醉书.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -10339,6 +10655,8 @@
     {
       "_path": "poems/小学/六年级下册/十五夜望月.md",
       "author": "王建",
+      "authorDied": 830,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -10392,6 +10710,8 @@
     {
       "_path": "poems/小学/六年级下册/卜算子.md",
       "author": "王观",
+      "authorDied": null,
+      "authorEraEnd": 1150,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -10456,6 +10776,8 @@
     {
       "_path": "poems/小学/六年级上册/回乡偶书.md",
       "author": "贺知章",
+      "authorDied": 744,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -10510,6 +10832,8 @@
     {
       "_path": "poems/小学/六年级上册/宿建德江.md",
       "author": "孟浩然",
+      "authorDied": 740,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -10564,6 +10888,8 @@
     {
       "_path": "poems/小学/六年级下册/寒食.md",
       "author": "韩翃",
+      "authorDied": 788,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -10617,6 +10943,8 @@
     {
       "_path": "poems/小学/六年级下册/早春呈水部张十八员外.md",
       "author": "韩愈",
+      "authorDied": 824,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -10671,6 +10999,8 @@
     {
       "_path": "poems/小学/六年级下册/春夜喜雨.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -10735,6 +11065,8 @@
     {
       "_path": "poems/小学/六年级上册/春日.md",
       "author": "朱熹",
+      "authorDied": 1200,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -10789,6 +11121,8 @@
     {
       "_path": "poems/小学/六年级下册/江上渔者.md",
       "author": "范仲淹",
+      "authorDied": 1052,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -10843,6 +11177,8 @@
     {
       "_path": "poems/小学/六年级上册/江南春.md",
       "author": "杜牧",
+      "authorDied": 852,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -10897,6 +11233,8 @@
     {
       "_path": "poems/小学/六年级下册/泊船瓜洲.md",
       "author": "王安石",
+      "authorDied": 1086,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -10951,6 +11289,8 @@
     {
       "_path": "poems/小学/六年级下册/浣溪沙.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -11015,6 +11355,8 @@
     {
       "_path": "poems/小学/六年级上册/浪淘沙.md",
       "author": "刘禹锡",
+      "authorDied": 842,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -11069,6 +11411,8 @@
     {
       "_path": "poems/小学/六年级下册/游园不值.md",
       "author": "叶绍翁",
+      "authorDied": null,
+      "authorEraEnd": 1270,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -11123,6 +11467,8 @@
     {
       "_path": "poems/小学/六年级下册/游子吟.md",
       "author": "孟郊",
+      "authorDied": 814,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -11180,6 +11526,8 @@
     {
       "_path": "poems/小学/六年级下册/石灰吟.md",
       "author": "于谦",
+      "authorDied": 1457,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "明",
@@ -11234,6 +11582,8 @@
     {
       "_path": "poems/小学/六年级下册/竹石.md",
       "author": "郑燮",
+      "authorDied": 1765,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "清",
@@ -11288,6 +11638,8 @@
     {
       "_path": "poems/小学/六年级上册/西江月.md",
       "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "宋",
@@ -11352,6 +11704,8 @@
     {
       "_path": "poems/小学/六年级上册/过故人庄.md",
       "author": "孟浩然",
+      "authorDied": 740,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -11415,6 +11769,8 @@
     {
       "_path": "poems/小学/六年级下册/迢迢牵牛星.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "汉",
@@ -11482,6 +11838,8 @@
     {
       "_path": "poems/小学/六年级下册/采薇.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -11546,6 +11904,8 @@
     {
       "_path": "poems/小学/六年级下册/闻官军收河南河北.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -11610,6 +11970,8 @@
     {
       "_path": "poems/小学/六年级下册/马诗.md",
       "author": "李贺",
+      "authorDied": 816,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 3,
       "dynasty": "唐",
@@ -11664,6 +12026,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/《孟子》一则.md",
       "author": "孟子",
+      "authorDied": -289,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "战国",
@@ -11718,6 +12082,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/《老子》八章.md",
       "author": "老子",
+      "authorDied": -470,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "先秦",
@@ -11786,6 +12152,8 @@
     {
       "_path": "poems/高中/必修上册/《论语》十二章.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "先秦",
@@ -11874,6 +12242,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/上枢密韩太尉书.md",
       "author": "苏辙",
+      "authorDied": 1112,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -11928,6 +12298,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/中庸.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "先秦",
@@ -11993,6 +12365,8 @@
     {
       "_path": "poems/高中/选择性必修下册/临安春雨初霁.md",
       "author": "陆游",
+      "authorDied": 1210,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -12050,6 +12424,8 @@
     {
       "_path": "poems/高中/选择性必修下册/书愤.md",
       "author": "陆游",
+      "authorDied": 1210,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -12107,6 +12483,8 @@
     {
       "_path": "poems/高中/选择性必修下册/五代史伶官传序.md",
       "author": "欧阳修",
+      "authorDied": 1072,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -12164,6 +12542,8 @@
     {
       "_path": "poems/高中/必修下册/六国论.md",
       "author": "苏洵",
+      "authorDied": 1066,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
@@ -12228,6 +12608,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/兰亭集序.md",
       "author": "王羲之",
+      "authorDied": 361,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "晋",
@@ -12293,6 +12675,8 @@
     {
       "_path": "poems/高中/必修上册/劝学.md",
       "author": "荀子",
+      "authorDied": -238,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "战国",
@@ -12361,6 +12745,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/古代文论选段.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "先秦",
@@ -12425,6 +12811,8 @@
     {
       "_path": "poems/高中/必修上册/声声慢.md",
       "author": "李清照",
+      "authorDied": 1155,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -12482,6 +12870,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/大学.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -12539,6 +12929,8 @@
     {
       "_path": "poems/高中/选择性必修上册/子路、曾皙、冉有、公西华侍坐.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -12597,6 +12989,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/季氏将伐颛臾.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -12655,6 +13049,8 @@
     {
       "_path": "poems/高中/必修上册/客至.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -12712,6 +13108,8 @@
     {
       "_path": "poems/高中/必修上册/将进酒.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -12776,6 +13174,8 @@
     {
       "_path": "poems/高中/必修上册/屈原列传.md",
       "author": "司马迁",
+      "authorDied": -86,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "西汉",
@@ -12833,6 +13233,8 @@
     {
       "_path": "poems/高中/必修下册/师说.md",
       "author": "韩愈",
+      "authorDied": 824,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -12898,6 +13300,8 @@
     {
       "_path": "poems/高中/选择性必修下册/归去来兮辞.md",
       "author": "陶潜",
+      "authorDied": 427,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "晋",
@@ -12963,6 +13367,8 @@
     {
       "_path": "poems/高中/必修上册/归园田居.md",
       "author": "陶潜",
+      "authorDied": 427,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "晋",
@@ -13027,6 +13433,8 @@
     {
       "_path": "poems/高中/必修上册/念奴娇·赤壁怀古.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
@@ -13091,6 +13499,8 @@
     {
       "_path": "poems/高中/选择性必修下册/念奴娇·过洞庭.md",
       "author": "张孝祥",
+      "authorDied": 1170,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
@@ -13155,6 +13565,8 @@
     {
       "_path": "poems/高中/选择性必修下册/扬州慢.md",
       "author": "姜夔",
+      "authorDied": 1221,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -13212,6 +13624,8 @@
     {
       "_path": "poems/高中/选择性必修中册/报任安书.md",
       "author": "司马迁",
+      "authorDied": -86,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "西汉",
@@ -13277,6 +13691,8 @@
     {
       "_path": "poems/高中/选择性必修下册/拟行路难.md",
       "author": "鲍照",
+      "authorDied": 466,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "南朝宋",
@@ -13334,6 +13750,8 @@
     {
       "_path": "poems/高中/选择性必修上册/无衣.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -13391,6 +13809,8 @@
     {
       "_path": "poems/高中/选择性必修下册/春江花月夜.md",
       "author": "张若虚",
+      "authorDied": 720,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -13448,6 +13868,8 @@
     {
       "_path": "poems/高中/选择性必修下册/望海潮.md",
       "author": "柳永",
+      "authorDied": 1053,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
@@ -13512,6 +13934,8 @@
     {
       "_path": "poems/高中/选择性必修下册/朝天子·咏喇叭.md",
       "author": "王磐",
+      "authorDied": null,
+      "authorEraEnd": 1530,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "明",
@@ -13569,6 +13993,8 @@
     {
       "_path": "poems/高中/选择性必修中册/李凭箜篌引.md",
       "author": "李贺",
+      "authorDied": 816,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -13626,6 +14052,8 @@
     {
       "_path": "poems/高中/必修下册/桂枝香·金陵怀古.md",
       "author": "王安石",
+      "authorDied": 1086,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -13683,6 +14111,8 @@
     {
       "_path": "poems/高中/必修上册/梦游天姥吟留别.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -13740,6 +14170,8 @@
     {
       "_path": "poems/高中/必修下册/永遇乐·京口北固亭怀古.md",
       "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
@@ -13804,6 +14236,8 @@
     {
       "_path": "poems/高中/必修下册/江城子.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -13861,6 +14295,8 @@
     {
       "_path": "poems/高中/必修上册/涉江采芙蓉.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "汉",
@@ -13918,6 +14354,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/滕王阁序.md",
       "author": "王勃",
+      "authorDied": 676,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -13983,6 +14421,8 @@
     {
       "_path": "poems/高中/选择性必修中册/燕歌行.md",
       "author": "高适",
+      "authorDied": 765,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -14040,6 +14480,8 @@
     {
       "_path": "poems/高中/必修上册/琵琶行.md",
       "author": "白居易",
+      "authorDied": 846,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -14104,6 +14546,8 @@
     {
       "_path": "poems/高中/必修上册/登岳阳楼.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -14168,6 +14612,8 @@
     {
       "_path": "poems/高中/选择性必修下册/登快阁.md",
       "author": "黄庭坚",
+      "authorDied": 1105,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -14225,6 +14671,8 @@
     {
       "_path": "poems/高中/选择性必修下册/登泰山记.md",
       "author": "姚鼐",
+      "authorDied": 1815,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "清",
@@ -14279,6 +14727,8 @@
     {
       "_path": "poems/高中/必修上册/登高.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -14343,6 +14793,8 @@
     {
       "_path": "poems/高中/必修上册/短歌行.md",
       "author": "曹操",
+      "authorDied": 220,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "汉",
@@ -14400,6 +14852,8 @@
     {
       "_path": "poems/高中/选择性必修下册/石钟山记.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -14458,6 +14912,8 @@
     {
       "_path": "poems/高中/选择性必修上册/礼运.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "先秦",
@@ -14522,6 +14978,8 @@
     {
       "_path": "poems/高中/必修上册/离骚.md",
       "author": "屈原",
+      "authorDied": -278,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "战国",
@@ -14586,6 +15044,8 @@
     {
       "_path": "poems/高中/选择性必修下册/种树郭橐驼传.md",
       "author": "柳宗元",
+      "authorDied": 819,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -14640,6 +15100,8 @@
     {
       "_path": "poems/高中/必修下册/答司马谏议书.md",
       "author": "王安石",
+      "authorDied": 1086,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -14698,6 +15160,8 @@
     {
       "_path": "poems/高中/选择性必修下册/苏幕遮.md",
       "author": "周邦彦",
+      "authorDied": 1121,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -14755,6 +15219,8 @@
     {
       "_path": "poems/高中/选择性必修下册/菩萨蛮.md",
       "author": "温庭筠",
+      "authorDied": 866,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -14812,6 +15278,8 @@
     {
       "_path": "poems/高中/必修上册/菩萨蛮·书江西造口壁.md",
       "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -14869,6 +15337,8 @@
     {
       "_path": "poems/高中/必修下册/虞美人.md",
       "author": "李煜",
+      "authorDied": 978,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "南唐",
@@ -14926,6 +15396,8 @@
     {
       "_path": "poems/高中/必修上册/蜀相.md",
       "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -14983,6 +15455,8 @@
     {
       "_path": "poems/高中/必修上册/蜀道难.md",
       "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "唐",
@@ -15047,6 +15521,8 @@
     {
       "_path": "poems/高中/必修下册/谏太宗十思疏.md",
       "author": "魏征",
+      "authorDied": 643,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -15105,6 +15581,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/谏逐客书.md",
       "author": "李斯",
+      "authorDied": -208,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "秦",
@@ -15163,6 +15641,8 @@
     {
       "_path": "poems/高中/选择性必修下册/贺新郎.md",
       "author": "刘克庄",
+      "authorDied": 1269,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -15220,6 +15700,8 @@
     {
       "_path": "poems/高中/必修下册/赤壁.md",
       "author": "杜牧",
+      "authorDied": 852,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -15274,6 +15756,8 @@
     {
       "_path": "poems/高中/必修下册/赤壁赋.md",
       "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
@@ -15339,6 +15823,8 @@
     {
       "_path": "poems/高中/选择性必修上册/过秦论.md",
       "author": "贾谊",
+      "authorDied": -168,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "西汉",
@@ -15404,6 +15890,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/逍遥游.md",
       "author": "庄子",
+      "authorDied": -286,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "战国",
@@ -15469,6 +15957,8 @@
     {
       "_path": "poems/高中/选择性必修下册/锦瑟.md",
       "author": "李商隐",
+      "authorDied": 858,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -15526,6 +16016,8 @@
     {
       "_path": "poems/高中/选择性必修下册/长亭送别.md",
       "author": "王实甫",
+      "authorDied": null,
+      "authorEraEnd": 1340,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "元",
@@ -15583,6 +16075,8 @@
     {
       "_path": "poems/高中/必修下册/阿房宫赋.md",
       "author": "杜牧",
+      "authorDied": 852,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "唐",
@@ -15641,6 +16135,8 @@
     {
       "_path": "poems/高中/选择性必修下册/陈情表.md",
       "author": "李密",
+      "authorDied": 287,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "晋",
@@ -15699,6 +16195,8 @@
     {
       "_path": "poems/高中/必修上册/青玉案·元夕.md",
       "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -15756,6 +16254,8 @@
     {
       "_path": "poems/高中/必修上册/静女.md",
       "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "先秦",
@@ -15813,6 +16313,8 @@
     {
       "_path": "poems/高中/必修下册/项脊轩志.md",
       "author": "归有光",
+      "authorDied": 1571,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "明",
@@ -15871,6 +16373,8 @@
     {
       "_path": "poems/高中/必修上册/鹊桥仙.md",
       "author": "秦观",
+      "authorDied": 1100,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
@@ -15928,6 +16432,8 @@
     {
       "_path": "poems/高中/选修（2026起默写）/黄冈竹楼记.md",
       "author": "王禹偁",
+      "authorDied": 1001,
+      "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",

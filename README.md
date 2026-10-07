@@ -67,9 +67,12 @@ the National Curriculum Standards (Ministry of Education). Original texts are
 七类来源交叉校验，每篇篇目都在 frontmatter 里记录来源代号。
 完整说明见 **[docs/sources.md](docs/sources.md)**，汇总台账见 **[PROVENANCE.md](PROVENANCE.md)**。
 
-> **法律风险为 0**：所收古诗文作者均已逝世逾百年，原文属公有领域；
-> 注释/译文/赏析为我们原创。仍在保护期内的作品（如秋瑾《满江红》）
-> **不收录**，仅在 [pending/](pending/INDEX.md) 登记，不进入构建产物。
+> **公有领域逐篇核验**：判定只有一条——作者卒年 ≤ 当前年 − 50（《著作权法》
+> 自然人作品保护期）。每篇 frontmatter 记 `authorDied`，佚名类记年代上限
+> `authorEraEnd`，作者总表见 `data/authors.json`。`tools/validate.py` 第 8 项
+> 逐篇核验，不满足即构建失败。仍在保护期内的作品**不收录原文**，
+> 仅在 [pending/](pending/INDEX.md) 登记。我们不做「绝对安全」这类担保——
+> 能做的是把每一篇的依据摆出来，让任何人可以复核。
 
 ## 目录结构
 
@@ -115,8 +118,9 @@ python tools/gen-pinyin.py        # 生成拼音表（需先 --fetch 下载 Unih
 | 3 | pairs 索引 | `pairs` 下标越界 |
 | 4 | 每联字数 | 标五言却不是 10 字/联（已知不规则可加 `irregular` 说明） |
 | 5 | 台账完整 | 缺 `source` / `license` |
-| 6 | **版权零风险** | `license != public-domain` 却出现在 `poems/` |
+| 6 | **版权核验** | `license != public-domain` 却出现在 `poems/` |
 | 7 | frontmatter | 必填字段缺失 |
+| 8 | **公有领域证据** | 作者卒年晚于「当前年 − 50」，或缺 `authorDied` |
 
 ## 篇目格式
 
@@ -210,7 +214,8 @@ copyright: { text: public-domain, annotations: cc-by-4.0 }
 
 ## 许可
 
-- **诗文原文**：公有领域（作者殁逾百年）
-- **注释 / 译文 / 赏析 / 选篇编排 / 代码**：[CC BY 4.0](LICENSE)
+- **诗文原文**：公有领域（作者卒年 ≤ 当前年 − 50，逐篇可核验）
+- **注释 / 译文 / 赏析 / 选篇编排**：[CC BY 4.0](LICENSE)
+- **本仓脚本**：MIT，见 [LICENSE](LICENSE) 与 [tools/](tools/)
 
 使用时请署名"来源：k12-chinese-poetry / 丢词大作战"。

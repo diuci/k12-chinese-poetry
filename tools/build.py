@@ -167,6 +167,16 @@ def build_record(md_path, fm, body):
             if mm:
                 pairs.append([int(mm.group(1)), int(mm.group(2))])
 
+    # 公有领域证据：作者卒年，或佚名/乐府/民歌的年代上限。
+    # 缺这个字段就不许构建——「这篇是公有领域」必须是可核验的事实，
+    # 不能只是文档里的口头承诺。
+    died_raw = fm.get('authorDied')
+    era_raw = fm.get('authorEraEnd')
+    if died_raw in (None, '') and era_raw in (None, ''):
+        die('%s: 缺 authorDied / authorEraEnd，无法论证公有领域（跑 python tools/apply-author-years.py）', rel)
+    author_died = int(died_raw) if died_raw not in (None, '') else None
+    author_era = int(era_raw) if era_raw not in (None, '') else None
+
     form = scalar(fm, 'form')
     # syllables：一联的字数（五言一联 10 字，七言一联 14 字）。
     # 词、曲、杂言、文言不适用，留None。
@@ -194,6 +204,8 @@ def build_record(md_path, fm, body):
         'subtitle': scalar(fm, 'subtitle'),
         'author': scalar(fm, 'author', required=True, path=str(rel)),
         'dynasty': scalar(fm, 'dynasty'),
+        'authorDied': author_died,
+        'authorEraEnd': author_era,
         'form': form,
         'stage': scalar(fm, 'stage'),
         'grade': scalar(fm, 'grade'),
@@ -251,7 +263,7 @@ def main():
             by_theme.setdefault(t, []).append(r['id'])
 
     payload = {
-        'contentVersion': '2026.10.02',
+        'contentVersion': '2026.10.03',
         'count': len(records),
         'byId': by_id,
         'byGrade': by_grade,
