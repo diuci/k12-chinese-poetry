@@ -491,6 +491,28 @@ def main():
         else:
             err(text)
 
+    # -------------------------------------------------- 2.7 render_split 与逗号段数
+    # 约定：render_split[i] = 第 i 句按逗号能拆成几段（migrate.py 生成时就是这个算法）。
+    # 数值与正文不符，游戏贴花层就会把一句拆错行。
+    rs_bad = []
+    for p in poems:
+        punct = p.get('linesPunct') or []
+        rs = p.get('render_split') or []
+        if len(punct) != len(rs):
+            continue
+        for i, (ln, want) in enumerate(zip(punct, rs)):
+            segs = len([x for x in ln.rstrip('。！？；').split('，') if x.strip()])
+            if max(1, segs) != want:
+                rs_bad.append('%s 第%d句（记 %d，按逗号应为 %d）' % (p['title'], i + 1, want, max(1, segs)))
+    if rs_bad:
+        key = 'render_split:mismatch'
+        text = 'render_split 与逗号段数不符：%d 处。例：%s' % (len(rs_bad), '；'.join(rs_bad[:4]))
+        if key in known:
+            seen_defects.add(key)
+            notes.append('已知未修（%s 处理）：%s' % (known[key]['phase'], text))
+        else:
+            err(text)
+
     # -------------------------------------------------- 3. pairs 索引合法
     for p in poems:
         n = len(p['lines'])

@@ -2,10 +2,10 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。",
   "generated": "2026-10-07",
   "stats": {
-    "attested": 5,
-    "partial": 7,
-    "notfound": 2,
-    "nosource": 0
+    "attested": 15,
+    "partial": 4,
+    "notfound": 0,
+    "nosource": 1
   },
   "results": [
     {
@@ -18,73 +18,31 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": [
-        "作者",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "variantNotes": []
     },
     {
       "id": "guanju",
       "title": "关雎",
       "author": "佚名",
       "stage": "初中",
-      "page": "中國文學批評史/周秦兩漢文學批評史/章1",
-      "url": "https://zh.wikisource.org/wiki/%E4%B8%AD%E5%9C%8B%E6%96%87%E5%AD%B8%E6%89%B9%E8%A9%95%E5%8F%B2/%E5%91%A8%E7%A7%A6%E5%85%A9%E6%BC%A2%E6%96%87%E5%AD%B8%E6%89%B9%E8%A9%95%E5%8F%B2/%E7%AB%A01",
+      "page": "詩經/關雎",
+      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E9%97%9C%E9%9B%8E",
       "lines": 2,
-      "hit": 0,
-      "miss": [
-        {
-          "line": "关关雎鸠在河之洲",
-          "nearest": null
-        },
-        {
-          "line": "窈窕淑女君子好逑",
-          "nearest": null
-        }
-      ],
-      "variantNotes": [
-        "作者",
-        "作是骈文",
-        "作是制诰文",
-        "作是古文",
-        "作家或作品的裁判",
-        "作者如或是未死的今",
-        "作品",
-        "作者",
-        "作者",
-        "作家与作品的裁判",
-        "作家的研考",
-        "作品的辨证四种"
-      ]
+      "hit": 2,
+      "miss": [],
+      "variantNotes": []
     },
     {
-      "id": "shiwuzhongjunzheng",
+      "id": "shiwucongjunzheng",
       "title": "十五从军征",
       "author": "佚名",
       "stage": "初中",
       "page": "十五從軍征",
       "url": "https://zh.wikisource.org/wiki/%E5%8D%81%E4%BA%94%E5%BE%9E%E8%BB%8D%E5%BE%81",
-      "lines": 2,
-      "hit": 0,
-      "miss": [
-        {
-          "line": "十五从军征八岁开姓名",
-          "nearest": null
-        },
-        {
-          "line": "虽有战死与儿死者无家可归依",
-          "nearest": null
-        }
-      ],
-      "variantNotes": [
-        "作饭",
-        "作羹",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "lines": 8,
+      "hit": 8,
+      "miss": [],
+      "variantNotes": []
     },
     {
       "id": "chunwang",
@@ -94,24 +52,9 @@
       "page": "春望",
       "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%9C%9B",
       "lines": 4,
-      "hit": 3,
-      "miss": [
-        {
-          "line": "国破山河在城春草木深",
-          "nearest": {
-            "line": "国破山河在城春草木深",
-            "source": "百科数据项国破山河在城春一作荒草木深感时",
-            "ratio": 0.667
-          }
-        }
-      ],
-      "variantNotes": [
-        "作者",
-        "本作品收录于",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "hit": 4,
+      "miss": [],
+      "variantNotes": []
     },
     {
       "id": "cibeigushanxia",
@@ -123,13 +66,7 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": [
-        "作者",
-        "本作品收录于",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "variantNotes": []
     },
     {
       "id": "baixuege",
@@ -141,71 +78,32 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": [
-        "作者",
-        "本作品收录于",
-        "本作品收录于",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "variantNotes": []
     },
     {
       "id": "maowu",
       "title": "茅屋为秋风所破歌",
       "author": "杜甫",
       "stage": "初中",
-      "page": "茅屋為秋風所破歌",
-      "url": "https://zh.wikisource.org/wiki/%E8%8C%85%E5%B1%8B%E7%82%BA%E7%A7%8B%E9%A2%A8%E6%89%80%E7%A0%B4%E6%AD%8C",
+      "page": null,
+      "url": null,
       "lines": 2,
-      "hit": 1,
-      "miss": [
-        {
-          "line": "安得广厦千万间大庇天下寒士俱欢颜",
-          "nearest": {
-            "line": "安得广厦千万间大庇天下寒士俱欢颜",
-            "source": "夜沾湿何由彻安得广厦千万间大庇天下寒士俱具欢颜风雨不",
-            "ratio": 0.762
-          }
-        }
-      ],
-      "variantNotes": [
-        "作者",
-        "本作品收录于",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "hit": 0,
+      "miss": [],
+      "variantNotes": [],
+      "error": "URLError: <urlopen error [WinError 10054] 远程主机强迫关闭了一个现有的连接。>"
     },
     {
       "id": "jianjia",
       "title": "蒹葭",
       "author": "佚名",
       "stage": "初中",
-      "page": "宋文鑑 (四庫全書本)/卷092",
-      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%96%87%E9%91%91%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7092",
+      "page": "詩經/蒹葭",
+      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E8%92%B9%E8%91%AD",
       "lines": 2,
-      "hit": 1,
-      "miss": [
-        {
-          "line": "所谓伊人在水一方",
-          "nearest": null
-        }
-      ],
-      "variantNotes": [
-        "作犹曰达于",
-        "作非徒区区之楚事不",
-        "作奚取于",
-        "作非楚人之绪则不录",
-        "作尉时熟于",
-        "作颂果有行义如叚",
-        "作也伏羲象之而八卦",
-        "一作昔",
-        "一作识",
-        "一作坐",
-        "作身与事接不容伪妄",
-        "作后序止有四十八字"
-      ]
+      "hit": 2,
+      "miss": [],
+      "variantNotes": []
     },
     {
       "id": "guancanghai",
@@ -215,100 +113,42 @@
       "page": "觀滄海",
       "url": "https://zh.wikisource.org/wiki/%E8%A7%80%E6%BB%84%E6%B5%B7",
       "lines": 6,
-      "hit": 5,
-      "miss": [
-        {
-          "line": "树木丛生百草丰茂",
-          "nearest": {
-            "line": "树木丛生百草丰茂",
-            "source": "何澹澹山岛竦峙树木丛一作聚生百草丰茂",
-            "ratio": 0.615
-          }
-        }
-      ],
-      "variantNotes": [
-        "作者",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "hit": 6,
+      "miss": [],
+      "variantNotes": []
     },
     {
       "id": "wenwangchangling",
       "title": "闻王昌龄左迁龙标遥有此寄",
       "author": "李白",
       "stage": "初中",
-      "page": "古今詩刪 (四庫全書本)/卷21",
-      "url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E4%BB%8A%E8%A9%A9%E5%88%AA%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B721",
+      "page": "聞王昌齡左遷龍標遙有此寄",
+      "url": "https://zh.wikisource.org/wiki/%E8%81%9E%E7%8E%8B%E6%98%8C%E9%BD%A1%E5%B7%A6%E9%81%B7%E9%BE%8D%E6%A8%99%E9%81%99%E6%9C%89%E6%AD%A4%E5%AF%84",
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": [
-        "作邉愁独怜京国人南",
-        "作长安",
-        "作灰",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "variantNotes": []
     },
     {
       "id": "yinjiujiusan",
       "title": "饮酒",
       "author": "陶潜",
       "stage": "初中",
-      "page": "箋註陶淵明集 (四部叢刊本)/卷第三",
-      "url": "https://zh.wikisource.org/wiki/%E7%AE%8B%E8%A8%BB%E9%99%B6%E6%B7%B5%E6%98%8E%E9%9B%86%20%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89",
+      "page": "飲酒二十首",
+      "url": "https://zh.wikisource.org/wiki/%E9%A3%B2%E9%85%92%E4%BA%8C%E5%8D%81%E9%A6%96",
       "lines": 5,
-      "hit": 1,
+      "hit": 4,
       "miss": [
         {
           "line": "结庐在人境而无车马喧",
           "nearest": {
             "line": "结庐在人境而无车马喧",
-            "source": "年辈附丽于宋其五结庐𪪏在人境而无车马喧问",
+            "source": "载不相违其五编辑结庐𪪏在人境而无车马喧问",
             "ratio": 0.667
-          }
-        },
-        {
-          "line": "问君何能尔心远地自偏",
-          "nearest": {
-            "line": "问君何能尔心远地自偏",
-            "source": "庐𪪏在人境而无车马喧问君何能尔心逺地自偏",
-            "ratio": 0.6
-          }
-        },
-        {
-          "line": "采菊东篱下悠然见南山",
-          "nearest": {
-            "line": "采菊东篱下悠然见南山",
-            "source": "喧问君何能尔心逺地自偏采菊东篱下悠然见山",
-            "ratio": 0.6
-          }
-        },
-        {
-          "line": "此中有真意欲辨已忘言",
-          "nearest": {
-            "line": "此中有真意欲辨已忘言",
-            "source": "相与还此中有真意欲辩已&8203;忘言王",
-            "ratio": 0.6
           }
         }
       ],
-      "variantNotes": [
-        "作者",
-        "作但题甲子而",
-        "作也渊明以乙巳秋为",
-        "作镇军参军经曲阿",
-        "一作涂口按江图自沙阳",
-        "作与从弟敬逺",
-        "作结",
-        "作建威",
-        "作苦常",
-        "作此来三四星火頺",
-        "作诗云九十行",
-        "作是篇"
-      ]
+      "variantNotes": []
     },
     {
       "id": "huanghelou-cuiheng",
@@ -318,24 +158,9 @@
       "page": "黃鶴樓 (崔顥)",
       "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E9%B6%B4%E6%A8%93%20%28%E5%B4%94%E9%A1%A5%29",
       "lines": 4,
-      "hit": 3,
-      "miss": [
-        {
-          "line": "昔人已乘黄鹤去此地空余黄鹤楼",
-          "nearest": {
-            "line": "昔人已乘黄鹤去此地空余黄鹤楼",
-            "source": "分类数据项昔人已乘黄鹤一作白云去此地空余馀黄鹤楼",
-            "ratio": 0.737
-          }
-        }
-      ],
-      "variantNotes": [
-        "作者",
-        "本作品收录于",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "hit": 4,
+      "miss": [],
+      "variantNotes": []
     },
     {
       "id": "maotanshangwu",
@@ -356,38 +181,109 @@
           }
         }
       ],
-      "variantNotes": [
-        "作者",
-        "本作品收录于",
-        "作品在全世界都属于",
-        "作者逝世已经超过",
-        "作品于"
-      ]
+      "variantNotes": []
     },
     {
       "id": "yeyujibei",
       "title": "夜雨寄北",
       "author": "李商隐",
       "stage": "初中",
-      "page": "全唐詩/卷539",
-      "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E5%94%90%E8%A9%A9/%E5%8D%B7539",
+      "page": "夜雨寄北",
+      "url": "https://zh.wikisource.org/wiki/%E5%A4%9C%E9%9B%A8%E5%AF%84%E5%8C%97",
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": [
-        "作者",
-        "作楚冤魂",
-        "作去年花",
-        "作章台走马声",
-        "作都统",
-        "作牙爪",
-        "作烛",
-        "作诔",
-        "作杏花媒",
-        "作屋",
-        "作重楼",
-        "作帝家"
-      ]
+      "variantNotes": []
+    },
+    {
+      "id": "wangyue",
+      "title": "望岳",
+      "author": "杜甫",
+      "stage": "初中",
+      "page": "望嶽 (岱宗夫如何)",
+      "url": "https://zh.wikisource.org/wiki/%E6%9C%9B%E5%B6%BD%20%28%E5%B2%B1%E5%AE%97%E5%A4%AB%E5%A6%82%E4%BD%95%29",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": []
+    },
+    {
+      "id": "mulanci",
+      "title": "木兰辞",
+      "author": "佚名",
+      "stage": "初中",
+      "page": "國語文學史/第一編 漢魏六朝的平民文學",
+      "url": "https://zh.wikisource.org/wiki/%E5%9C%8B%E8%AA%9E%E6%96%87%E5%AD%B8%E5%8F%B2/%E7%AC%AC%E4%B8%80%E7%B7%A8%20%E6%BC%A2%E9%AD%8F%E5%85%AD%E6%9C%9D%E7%9A%84%E5%B9%B3%E6%B0%91%E6%96%87%E5%AD%B8",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": []
+    },
+    {
+      "id": "boqinhuai",
+      "title": "泊秦淮",
+      "author": "杜牧",
+      "stage": "初中",
+      "page": "泊秦淮",
+      "url": "https://zh.wikisource.org/wiki/%E6%B3%8A%E7%A7%A6%E6%B7%AE",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": []
+    },
+    {
+      "id": "youshanxincun",
+      "title": "游山西村",
+      "author": "陆游",
+      "stage": "初中",
+      "page": "兩宋名賢小集 (四庫全書本)/卷113",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%A9%E5%AE%8B%E5%90%8D%E8%B3%A2%E5%B0%8F%E9%9B%86%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7113",
+      "lines": 4,
+      "hit": 2,
+      "miss": [
+        {
+          "line": "箫鼓追随春社近衣冠简朴古风存",
+          "nearest": null
+        },
+        {
+          "line": "从今若许闲乘月拄杖无时夜叩门",
+          "nearest": null
+        }
+      ],
+      "variantNotes": []
+    },
+    {
+      "id": "dengyouzhoutai",
+      "title": "登幽州台歌",
+      "author": "陈子昂",
+      "stage": "初中",
+      "page": "登幽州臺歌",
+      "url": "https://zh.wikisource.org/wiki/%E7%99%BB%E5%B9%BD%E5%B7%9E%E8%87%BA%E6%AD%8C",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": []
+    },
+    {
+      "id": "dengfeilaifeng",
+      "title": "登飞来峰",
+      "author": "王安石",
+      "stage": "初中",
+      "page": "登飛來峰",
+      "url": "https://zh.wikisource.org/wiki/%E7%99%BB%E9%A3%9B%E4%BE%86%E5%B3%B0",
+      "lines": 2,
+      "hit": 1,
+      "miss": [
+        {
+          "line": "飞来山上千寻塔闻说鸡鸣见日升",
+          "nearest": {
+            "line": "飞来山上千寻塔闻说鸡鸣见日升",
+            "source": "川集姊妹计划:数据项飞来峰上千寻塔闻说鸡鸣见日升",
+            "ratio": 0.684
+          }
+        }
+      ],
+      "variantNotes": []
     }
   ]
 }

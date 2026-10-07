@@ -166,7 +166,7 @@ def nearest(line, txt):
     return {'line': line, 'source': best[1], 'ratio': round(best[0], 3)}
 
 
-def candidates(title, author, dynasty, table):
+def candidates(title, author, dynasty, table, lines=None):
     """候选页面排序：标题含篇名 +3，含作者 +2，同名不同物 -8。"""
     base = M.norm_base(title)
     want = M.norm_author(author)
@@ -176,6 +176,12 @@ def candidates(title, author, dynasty, table):
     if dynasty:
         queries.append('%s %s' % (title, dynasty))
         queries.append('%s (%s)' % (title, dynasty))
+    # 用正文里的句子去搜：标题撞车的篇目（无衣、天净沙、论语）靠标题搜到的多半是别的书，
+    # 拿句子搜才找得到真正收这篇的页。维基文库的检索简繁互通，简体句子也能命中繁体页。
+    if lines:
+        probe = max(lines, key=len)[:14] if lines else ''
+        if len(probe) >= 6:
+            queries.append(probe)
     seen, out = set(), []
     for q in queries:
         for c in search_pages(q):
@@ -223,7 +229,7 @@ def main():
                'miss': [], 'variantNotes': []}
         try:
             best = None
-            for cand in candidates(title, author, p.get('dynasty'), table)[:3]:
+            for cand in candidates(title, author, p.get('dynasty'), table, lines)[:4]:
                 real, raw = page_text(cand)
                 txt, notes = clean(raw, table)
                 if '消歧义' in txt[:400] or '重定向' in txt[:40]:
