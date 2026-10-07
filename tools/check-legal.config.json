@@ -6,5 +6,15 @@
     "data/poems.json"
   ],
   "contactEmail": "hi@diuci.com",
-  "legalLink": null
+  "legalLink": null,
+  "phraseScan": [
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "PROVENANCE.md",
+    "docs/",
+    "pending/",
+    "site/",
+    "data/authors.json"
+  ]
 }
