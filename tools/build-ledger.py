@@ -189,7 +189,7 @@ def main():
         item = {'key': pr['key'], 'text': pr['text'],
                 'phase': d['phase'] if d else '未登记',
                 'reason': d.get('reason', '') if d else ''}
-        if pr['key'].startswith('shared:'):
+        if pr['key'].startswith('shared:') or pr['key'].startswith('alias:'):
             item['phase'] = '正常'
             note_rows.append(item)
         else:

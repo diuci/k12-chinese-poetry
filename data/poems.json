@@ -35,7 +35,6 @@
       "guancanghai",
       "chibi-du",
       "guolingyang",
-      "songshaoshu",
       "fengrujinshi",
       "qiantanghuchunxing",
       "wenwangchangling",
@@ -52,7 +51,6 @@
       "xiaoshitan",
       "yueyanglouji",
       "shiwei",
-      "zashuo4",
       "taohuayuanji",
       "ailianshuo",
       "shihaoli",
@@ -153,9 +151,7 @@
       "qiqiao",
       "xiangcunsiyue",
       "congjunxing",
-      "liangzhou-wanghan",
       "sishitianyuan-31",
-      "saixiaqu-g5",
       "shanjuqiuming",
       "jihai",
       "cunwan",
@@ -259,7 +255,6 @@
       "jiantaishisi",
       "jianzhukeshu",
       "hexinlao",
-      "chibi",
       "chibifu",
       "guoqinlun",
       "xiaoyaoyou",
@@ -291,7 +286,6 @@
     "changxiangsi": "changxiangsi",
     "chaotianzi": "chaotianzi",
     "chenqingbiao": "chenqingbiao",
-    "chibi": "chibi",
     "chibi-du": "chibi-du",
     "chibifu": "chibifu",
     "chilege": "chilege",
@@ -380,7 +374,6 @@
     "langtaosha": "langtaosha",
     "lantingjixu": "lantingjixu",
     "laozi8": "laozi8",
-    "liangzhou-wanghan": "liangzhou-wanghan",
     "liangzhouci-wanghan": "liangzhouci-wanghan",
     "liji1": "liji1",
     "linanchunyu": "linanchunyu",
@@ -425,7 +418,6 @@
     "quanxue": "quanxue",
     "quyuanliezhuan": "quyuanliezhuan",
     "saixiaqu": "saixiaqu",
-    "saixiaqu-g5": "saixiaqu-g5",
     "sanqudaozhong": "sanqudaozhong",
     "sanxia": "sanxia",
     "shangshumihan": "shangshumihan",
@@ -451,7 +443,6 @@
     "sishitianyuan-25": "sishitianyuan-25",
     "sishitianyuan-31": "sishitianyuan-31",
     "songdongyang": "songdongyang",
-    "songshaoshu": "songshaoshu",
     "songshaoshu-wai": "songshaoshu-wai",
     "songyuaner": "songyuaner",
     "sujiandejiang": "sujiandejiang",
@@ -513,7 +504,6 @@
     "yuzhusianshu": "yuzhusianshu",
     "zaochun": "zaochun",
     "zaofabaidicheng": "zaofabaidicheng",
-    "zashuo4": "zashuo4",
     "zengliujingwen": "zengliujingwen",
     "zengwang": "zengwang",
     "zengwanglun": "zengwanglun",
@@ -560,7 +550,6 @@
       "masuo"
     ],
     "修身": [
-      "zashuo4",
       "suoyoujiayao",
       "liji1",
       "lunyu12",
@@ -634,7 +623,6 @@
       "zengliujingwen"
     ],
     "友情": [
-      "songshaoshu",
       "wenwangchangling",
       "songshaoshu-wai",
       "lvshi1",
@@ -719,7 +707,6 @@
       "lantingjixu",
       "niluonan",
       "chunjianghuayue",
-      "chibi",
       "chibifu",
       "xiaoyaoyou"
     ],
@@ -775,7 +762,6 @@
       "duzuojingting"
     ],
     "学习": [
-      "zashuo4",
       "liji1",
       "lunyu12",
       "quanxue",
@@ -859,8 +845,7 @@
       "wanghaichao",
       "guizhixiang",
       "yongyule",
-      "shuxiang",
-      "chibi"
+      "shuxiang"
     ],
     "怀念": [
       "huanxisha-yanque",
@@ -1275,8 +1260,7 @@
       "jianzhukeshu"
     ],
     "豪壮": [
-      "liangzhouci-wanghan",
-      "liangzhou-wanghan"
+      "liangzhouci-wanghan"
     ],
     "豪情": [
       "nangxiangzi",
@@ -1303,8 +1287,6 @@
       "chusai",
       "saixiaqu",
       "congjunxing",
-      "liangzhou-wanghan",
-      "saixiaqu-g5",
       "changxiangsi",
       "caiwei",
       "yange-xing"
@@ -1320,7 +1302,6 @@
     ],
     "送别": [
       "baixuege",
-      "songshaoshu",
       "wenwangchangling",
       "songshaoshu-wai",
       "zengwanglun",
@@ -1364,8 +1345,7 @@
       "huxinting"
     ],
     "雪": [
-      "saixiaqu",
-      "saixiaqu-g5"
+      "saixiaqu"
     ],
     "雪景": [
       "huxinting"
@@ -1386,7 +1366,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 253,
+  "count": 248,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/使至塞上.md",
@@ -1984,7 +1964,7 @@
       "volume": "九年级上册"
     },
     {
-      "_path": "poems/初中/七年级课外诵读/春夜洛城闻笛.md",
+      "_path": "poems/初中/七年级下册课外诵读/春夜洛城闻笛.md",
       "author": "李白",
       "authorDied": 762,
       "authorEraEnd": null,
@@ -2037,7 +2017,7 @@
         "音乐"
       ],
       "title": "春夜洛城闻笛",
-      "volume": "七年级课外诵读"
+      "volume": "七年级下册课外诵读"
     },
     {
       "_path": "poems/初中/七年级上册/春望.md",
@@ -2106,7 +2086,7 @@
       "volume": "七年级上册"
     },
     {
-      "_path": "poems/初中/七年级课外诵读/晚春.md",
+      "_path": "poems/初中/七年级下册课外诵读/晚春.md",
       "author": "韩愈",
       "authorDied": 824,
       "authorEraEnd": null,
@@ -2159,7 +2139,7 @@
         "哲理"
       ],
       "title": "晚春",
-      "volume": "七年级课外诵读"
+      "volume": "七年级下册课外诵读"
     },
     {
       "_path": "poems/初中/七年级下册/望岳.md",
@@ -3018,7 +2998,7 @@
       "volume": "九年级上册"
     },
     {
-      "_path": "poems/初中/七年级课外诵读/竹里馆.md",
+      "_path": "poems/初中/七年级下册课外诵读/竹里馆.md",
       "author": "王维",
       "authorDied": 761,
       "authorEraEnd": null,
@@ -3071,7 +3051,7 @@
         "月亮"
       ],
       "title": "竹里馆",
-      "volume": "七年级课外诵读"
+      "volume": "七年级下册课外诵读"
     },
     {
       "_path": "poems/初中/七年级上册/茅屋为秋风所破歌.md",
@@ -3443,73 +3423,7 @@
       "volume": "九年级下册"
     },
     {
-      "_path": "poems/初中/七年级上册/送杜少府之任蜀州.md",
-      "author": "王勃",
-      "authorDied": 676,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "豁达乐观的送别",
-      "examFreq": 0.9,
-      "form": "五言",
-      "grade": 7,
-      "id": "songshaoshu",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "城阙辅三秦风烟望五津",
-        "与君离别意同是宦游人",
-        "海内存知己天涯若比邻",
-        "无为在歧路儿女共沾巾"
-      ],
-      "linesPunct": [
-        "城阙辅三秦，风烟望五津。",
-        "与君离别意，同是宦游人。",
-        "海内存知己，天涯若比邻。",
-        "无为在歧路，儿女共沾巾。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "render_split": [
-        2,
-        2,
-        2,
-        2
-      ],
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": 10,
-      "tags": [
-        "送别",
-        "友情",
-        "唐五言"
-      ],
-      "technique": [
-        "对偶",
-        "直抒胸臆"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "送别",
-        "友情"
-      ],
-      "title": "送杜少府之任蜀州",
-      "volume": "七年级上册"
-    },
-    {
-      "_path": "poems/初中/七年级课外诵读/逢入京使.md",
+      "_path": "poems/初中/七年级下册课外诵读/逢入京使.md",
       "author": "岑参",
       "authorDied": 770,
       "authorEraEnd": null,
@@ -3562,7 +3476,7 @@
         "边塞"
       ],
       "title": "逢入京使",
-      "volume": "七年级课外诵读"
+      "volume": "七年级下册课外诵读"
     },
     {
       "_path": "poems/初中/七年级下册/钱塘湖春行.md",
@@ -4379,72 +4293,6 @@
       "volume": "八年级下册课外诵读"
     },
     {
-      "_path": "poems/初中/八年级下册/杂说.md",
-      "author": "佚名",
-      "authorDied": null,
-      "authorEraEnd": 1900,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 5,
-      "dynasty": "先秦",
-      "emotion": "学习与思考的重要",
-      "examFreq": 0.9,
-      "form": "文言",
-      "grade": 8,
-      "id": "zashuo4",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "是故无冥明之察",
-        "是故无经无纬",
-        "是故无道无观",
-        "善哉答是"
-      ],
-      "linesPunct": [
-        "是故无冥明之察。",
-        "是故无经无纬。",
-        "是故无道无观。",
-        "善哉，答是。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "render_split": [
-        1,
-        1,
-        1,
-        2
-      ],
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": "《礼记·学记》节选",
-      "syllables": null,
-      "tags": [
-        "学习",
-        "修身",
-        "唐文言"
-      ],
-      "technique": [
-        "比喻",
-        "对比"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "学习",
-        "修身"
-      ],
-      "title": "杂说",
-      "volume": "八年级下册"
-    },
-    {
       "_path": "poems/初中/八年级下册/桃花源记.md",
       "author": "陶潜",
       "authorDied": 427,
@@ -4714,36 +4562,35 @@
       "irregular": null,
       "license": "public-domain",
       "lines": [
-        "虽有嘉肴弗食不知其旨也",
-        "虽有至道弗学不知其善也",
-        "是故无冥明之察",
-        "善哉答是"
+        "虽有嘉肴弗食不知其旨也虽有至道弗学不知其善也",
+        "是故学然后知不足教然后知困",
+        "知不足然后能自反也知困然后能自强也",
+        "故曰教学相长也",
+        "《兑命》曰\"学学半\"其此之谓乎"
       ],
       "linesPunct": [
-        "虽有嘉肴，弗食，不知其旨也。",
-        "虽有至道，弗学，不知其善也。",
-        "是故无冥明之察。",
-        "善哉，答是。"
+        "虽有嘉肴，弗食，不知其旨也；虽有至道，弗学，不知其善也。",
+        "是故学然后知不足，教然后知困。",
+        "知不足，然后能自反也；知困，然后能自强也。",
+        "故曰：教学相长也。",
+        "《兑命》曰\"学学半\"，其此之谓乎！"
       ],
       "pairs": [
         [
-          0,
-          1
-        ],
-        [
-          2,
-          3
+          1,
+          2
         ]
       ],
       "render_split": [
-        3,
-        3,
+        5,
+        2,
+        4,
         1,
         2
       ],
       "source": "S3+S1+S2",
       "stage": "初中",
-      "subtitle": null,
+      "subtitle": "《礼记·学记》节选",
       "syllables": null,
       "tags": [
         "修身",
@@ -5097,26 +4944,29 @@
       "irregular": null,
       "license": "public-domain",
       "lines": [
-        "千里马常有而伯乐不常有",
-        "其真无马邪其真不知马也"
+        "世有伯乐然后有千里马千里马常有而伯乐不常有故虽有名马祗辱于奴隶人之手骈死于槽枥之间不以千里称也",
+        "马之千里者一食或尽粟一石食马者不知其能千里而食也是马也虽有千里之能食不饱力不足才美不外见且欲与常马等不可得安求其能千里也",
+        "策之不以其道食之不能尽其材鸣之而不能通其意执策而临之曰\"天下无马\"呜呼其真无马邪其真不知马也"
       ],
       "linesPunct": [
-        "千里马常有，而伯乐不常有。",
-        "其真无马邪？其真不知马也！"
+        "世有伯乐，然后有千里马。千里马常有，而伯乐不常有。故虽有名马，祗辱于奴隶人之手，骈死于槽枥之间，不以千里称也。",
+        "马之千里者，一食或尽粟一石。食马者不知其能千里而食也。是马也，虽有千里之能，食不饱，力不足，才美不外见，且欲与常马等不可得，安求其能千里也？",
+        "策之不以其道，食之不能尽其材，鸣之而不能通其意，执策而临之，曰：\"天下无马！\"呜呼！其真无马邪？其真不知马也！"
       ],
       "pairs": [
         [
-          0,
-          1
+          1,
+          2
         ]
       ],
       "render_split": [
-        2,
-        1
+        6,
+        8,
+        5
       ],
       "source": "S3+S1+S2",
       "stage": "初中",
-      "subtitle": null,
+      "subtitle": "杂说（四）",
       "syllables": null,
       "tags": [
         "讽喻",
@@ -9513,62 +9363,6 @@
       "volume": "五年级下册"
     },
     {
-      "_path": "poems/小学/五年级下册/凉州词.md",
-      "author": "王翰",
-      "authorDied": 726,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "将士出征前的豪迈与悲凉",
-      "examFreq": 0.7,
-      "form": "七言",
-      "grade": 5,
-      "id": "liangzhou-wanghan",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "葡萄美酒夜光杯欲饮琵琶马上催",
-        "醉卧沙场君莫笑古来征战几人回"
-      ],
-      "linesPunct": [
-        "葡萄美酒夜光杯，欲饮琵琶马上催。",
-        "醉卧沙场君莫笑，古来征战几人回。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "render_split": [
-        2,
-        2
-      ],
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "subtitle": "葡萄美酒夜光杯",
-      "syllables": 14,
-      "tags": [
-        "边塞",
-        "豪壮",
-        "唐七言"
-      ],
-      "technique": [
-        "对比",
-        "夸张"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "边塞",
-        "豪壮"
-      ],
-      "title": "凉州词",
-      "volume": "五年级下册"
-    },
-    {
       "_path": "poems/小学/五年级下册/四时田园杂兴.md",
       "author": "范成大",
       "authorDied": 1193,
@@ -9621,62 +9415,6 @@
         "劳动"
       ],
       "title": "四时田园杂兴",
-      "volume": "五年级下册"
-    },
-    {
-      "_path": "poems/小学/五年级下册/塞下曲.md",
-      "author": "卢纶",
-      "authorDied": 780,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "雪夜追击的英武",
-      "examFreq": 0.7,
-      "form": "五言",
-      "grade": 5,
-      "id": "saixiaqu-g5",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "月黑雁飞高单于夜遁逃",
-        "欲将轻骑逐大雪满弓刀"
-      ],
-      "linesPunct": [
-        "月黑雁飞高，单于夜遁逃。",
-        "欲将轻骑逐，大雪满弓刀。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "render_split": [
-        2,
-        2
-      ],
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "subtitle": null,
-      "syllables": 10,
-      "tags": [
-        "边塞",
-        "雪",
-        "唐五言"
-      ],
-      "technique": [
-        "白描",
-        "侧面描写"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "边塞",
-        "雪"
-      ],
-      "title": "塞下曲",
       "volume": "五年级下册"
     },
     {
@@ -15696,62 +15434,6 @@
       ],
       "title": "贺新郎",
       "volume": "选择性必修下册"
-    },
-    {
-      "_path": "poems/高中/必修下册/赤壁.md",
-      "author": "杜牧",
-      "authorDied": 852,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "怀古伤今的感慨",
-      "examFreq": 0.9,
-      "form": "七言",
-      "grade": null,
-      "id": "chibi",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "折戟沉沙铁未销自将磨洗认前朝",
-        "东风不与周郎便铜雀春深锁二乔"
-      ],
-      "linesPunct": [
-        "折戟沉沙铁未销，自将磨洗认前朝。",
-        "东风不与周郎便，铜雀春深锁二乔。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "render_split": [
-        2,
-        2
-      ],
-      "source": "S3+S1b+S2",
-      "stage": "高中",
-      "subtitle": null,
-      "syllables": 14,
-      "tags": [
-        "怀古",
-        "哲理",
-        "唐七言"
-      ],
-      "technique": [
-        "议论",
-        "借景抒情"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "怀古",
-        "哲理"
-      ],
-      "title": "赤壁",
-      "volume": "必修下册"
     },
     {
       "_path": "poems/高中/必修下册/赤壁赋.md",

@@ -117,6 +117,23 @@ def is_person_author(author):
     return 1 <= len(s) <= 6
 
 
+ALIASES_PATH = __import__('pathlib').Path(__file__).resolve().parents[1] / 'data' / 'title-aliases.json'
+
+
+def load_title_aliases():
+    """课标篇名 ⇄ 教材通名 的对照表（如课标「杂说（四）」= 教材《马说》）。
+
+    别名必须显式登记在 data/title-aliases.json，不许硬编码进匹配器——
+    硬编码的别名没人复核，等于给匹配器开了个后门。"""
+    if not ALIASES_PATH.exists():
+        return {}
+    data = __import__('json').loads(ALIASES_PATH.read_text(encoding='utf-8'))
+    out = {}
+    for item in data.get('aliases', []):
+        out.setdefault(norm_base(item['syllabusTitle']), []).append(item)
+    return out
+
+
 def match_syllabus(poems, syllabus):
     """返回 (assignments, problems)。
 
@@ -126,6 +143,8 @@ def match_syllabus(poems, syllabus):
     """
     problems = []
     pk = [poem_keys(p) for p in poems]
+    alias_table = load_title_aliases()
+    used_alias = {}
 
     candidates = []  # (strength, entry_index, poem_index)
     for ei, (stage, idx, title, author) in enumerate(syllabus):
@@ -134,6 +153,8 @@ def match_syllabus(poems, syllabus):
         want_author = norm_author(author) if is_person_author(author) else ''
         base = norm_base(title)
         full = norm_full(re.sub(r'[（(][^）)]*[）)]', '', title))
+        alias_items = [a for a in alias_table.get(base, [])
+                       if not a.get('author') or norm_author(a['author']) == want_author or not want_author]
         found = []
         for pi, k in enumerate(pk):
             strength = 0
@@ -143,6 +164,9 @@ def match_syllabus(poems, syllabus):
                 strength = 3
             elif full and full in k['full']:
                 strength = 2
+            elif alias_items and any(norm_full(a['repoTitle']) in k['full'] or norm_base(a['repoTitle']) == k['base'] for a in alias_items):
+                strength = 2
+                used_alias[ei] = alias_items[0]
             elif base and base == k['base']:
                 strength = 1
             if not strength:
@@ -181,6 +205,10 @@ def match_syllabus(poems, syllabus):
         if ei in taken_entry:
             pi, strength = taken_entry[ei]
             assignments.append((ei, poems[pi], strength))
+            if ei in used_alias:
+                a = used_alias[ei]
+                problems.append({'key': 'alias:%s-%02d' % (stage, idx),
+                                 'text': '篇名对照：课标「%s」= 仓内《%s》（%s）' % (title, poems[pi]['title'], a['reason'])})
             if strength == 1:
                 problems.append({'key': 'weak:%s-%02d' % (stage, idx),
                                   'text': '弱匹配：%s %02d「%s」只对上主干标题，仓内《%s》——副题或首句没有核对，缺篇会被漏检' % (stage, idx, title, poems[pi]['title'])})

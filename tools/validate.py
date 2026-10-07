@@ -188,6 +188,19 @@ REQUIRED = ['id', 'title', 'author', 'lines', 'linesPunct',
             'source', 'license', 'difficulty']
 
 # 高中篇目不用 grade（1-9），改用 volume 表达册次，故单独校验
+# 册次必须与学段对得上。册次写错，站点的「按册浏览」会把课文挂到错误的课本上；
+# 「七年级课外诵读」这种含糊写法更是看不出到底挂在哪一册。
+VOLUME_PATTERNS = {
+    '小学': r'^[一二三四五六]年级(上册|下册)$',
+    '初中': r'^[七八九]年级(上册|下册|上册课外诵读|下册课外诵读)$',
+    '高中': r'^(必修[上下]册|选择性必修[上中下]册|选修（2026起默写）)$',
+}
+VOLUME_HINT = {
+    '小学': '一~六年级上册/下册',
+    '初中': '七~九年级上册/下册，或某册的课外古诗词诵读',
+    '高中': '必修上下册 / 选择性必修上下中册',
+}
+
 REQUIRED_BY_STAGE = {
     '小学': ['grade', 'volume'],
     '初中': ['grade', 'volume'],
@@ -273,6 +286,22 @@ def selftest_match():
     if any(k.startswith('missing:') for k in keys(p6)):
         bad.append('共用被误报成缺失：%s' % ' / '.join(x['text'] for x in p6))
 
+    # 7) 篇名对照表：课标「杂说（四）」必须能对上仓内《马说》，而且必须点名。
+    _a, p7 = match.match_syllabus(
+        [poem('ms1', '马说', '韩愈', ['世有伯乐，然后有千里马'])],
+        [('初中', 52, '杂说（四）', '韩愈')])
+    if any(k.startswith('missing:') for k in keys(p7)):
+        bad.append('篇名对照没生效：课标「杂说（四）」对不上仓内《马说》')
+    if 'alias:初中-52' not in keys(p7):
+        bad.append('篇名对照没点名：用了别名却不报告，别名就成了暗门')
+
+    # 8) 别名不许替「同名不同人」开后门：作者对不上就不许靠别名硬配。
+    _a, p8 = match.match_syllabus(
+        [poem('ms2', '马说', '假托者', ['世有伯乐，然后有千里马'])],
+        [('初中', 52, '杂说（四）', '韩愈')])
+    if not any(k.startswith('missing:') for k in keys(p8)):
+        bad.append('别名后门：作者对不上却靠别名配上了')
+
     return bad
 
 
@@ -307,9 +336,10 @@ def selftest():
         for x in problems:
             print('  - ' + x, file=sys.stderr)
         return 1
-    print('[ok] validate --selftest 通过（保护期内被拒、缺证据被拒、恰好届满放行、差一年被拒、'
+    print('[ok] validate --selftest 通过：保护期内被拒、缺证据被拒、恰好届满放行、差一年被拒、'
           '佚名走年代上限、公元前卒年放行、词牌顶替被抓、同名不同作者被抓、缺全文被抓、'
-          '好样本不误报、重复收录被抓、课标共用不误报缺失都试到了）')
+          '好样本不误报、重复收录被抓、课标共用不误报缺失、篇名对照生效且点名、'
+          '别名不许替作者不符开后门——都试到了')
     return 0
 
 
@@ -390,7 +420,7 @@ def main():
     known = load_known_defects()
     seen_defects = set()
     for pr in match_problems:
-        if pr['key'].startswith('shared:'):
+        if pr['key'].startswith('shared:') or pr['key'].startswith('alias:'):
             notes.append(pr['text'])
             continue
         if pr['key'] in known:
@@ -520,6 +550,17 @@ def main():
         elif 'S3' not in src:
             warn('%s: source 为 %r，未引用 S3(chinese-poetry)，'
                  '请确认正文出处' % (p['title'], src))
+
+        # 册次 ⇄ 学段一致性
+        vol = (p.get('volume') or '').strip()
+        pat = VOLUME_PATTERNS.get(stage)
+        if pat is None:
+            err('%s: stage 为 %r，不是小学/初中/高中' % (p['title'], stage))
+        elif not vol:
+            err('%s: 缺 volume（册次）' % p['title'])
+        elif not re.match(pat, vol):
+            err('%s: 册次「%s」与学段 %s 不匹配（应为 %s）'
+                % (p['title'], vol, stage, VOLUME_HINT[stage]))
 
     # -------------------------------------------------- 8. 公有领域证据（卒年）
     pd_problems = check_public_domain(poems, datetime.date.today().year)

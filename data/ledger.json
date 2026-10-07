@@ -1,25 +1,24 @@
 {
   "summary": {
     "generated": "2026-10-07",
-    "poemCount": 253,
+    "poemCount": 248,
     "syllabusCount": 207,
     "syllabusPrimary": 135,
     "syllabusSenior": 72,
     "categoryCounts": {
-      "课标·义务教育": 130,
-      "教材拓展": 45,
-      "重复副本": 5,
-      "来源不明": 1,
+      "课标·义务教育": 131,
+      "教材拓展": 44,
+      "重复副本": 1,
       "课标·高中": 72
     },
     "stageCounts": {
-      "初中": 71,
-      "小学": 110,
-      "高中": 72
+      "初中": 69,
+      "小学": 108,
+      "高中": 71
     },
     "matchStrengths": {
       "3": 113,
-      "2": 89,
+      "2": 90,
       "1": 0
     },
     "problems": [
@@ -60,12 +59,6 @@
         "reason": "秋瑾 1907 年卒，1957-12-31 已过保护期，可以收录；本篇尚未建文件"
       },
       {
-        "key": "missing:初中-52",
-        "text": "课标要求收录但缺失：初中 52 杂说（四）（韩愈）",
-        "phase": "P4",
-        "reason": "课标初中 52 即《马说》；仓内 杂说.md 的正文不是韩愈的文字，另有一份只有名句的 马说.md"
-      },
-      {
         "key": "fulltext:高中-03",
         "text": "缺全文/收错篇：高中 03「屈原列传（屈平疾王听之不聪也……虽与日月争光可也）」要求含「屈平疾王听之不聪也」，仓内《屈原列传》的正文里没有（仓内正文：推此志也虽与日月争光可也怨灵修之浩荡兮终不察夫民心众人莫不窃取其画）",
         "phase": "P3",
@@ -86,6 +79,12 @@
     ],
     "notes": [
       {
+        "key": "alias:初中-52",
+        "text": "篇名对照：课标「杂说（四）」= 仓内《马说》（义务教育课标（2022）附录1 第 52 条作「杂说（四）」，统编教材八下第 23 课篇名为《马说》，同一篇。）",
+        "phase": "正常",
+        "reason": ""
+      },
+      {
         "key": "shared:高中-01",
         "text": "同一篇被两条课标条目共用：高中 01「《论语》十二章」与仓内《《论语》十二章》——两份课标各列一次，属正常，但必须点名",
         "phase": "正常",
@@ -94,32 +93,6 @@
     ],
     "unregisteredProblems": [],
     "duplicates": [
-      {
-        "ids": [
-          "songshaoshu",
-          "songshaoshu-wai"
-        ],
-        "title": "送杜少府之任蜀州",
-        "key": "duplicate:songshaoshu|songshaoshu-wai",
-        "paths": [
-          "poems/初中/七年级上册/送杜少府之任蜀州.md",
-          "poems/初中/八年级下册课外诵读/送杜少府之任蜀州.md"
-        ],
-        "phase": "P2"
-      },
-      {
-        "ids": [
-          "chibi",
-          "chibi-du"
-        ],
-        "title": "赤壁",
-        "key": "duplicate:chibi|chibi-du",
-        "paths": [
-          "poems/初中/七年级下册/赤壁.md",
-          "poems/高中/必修下册/赤壁.md"
-        ],
-        "phase": "P2"
-      },
       {
         "ids": [
           "dadaozhixing",
@@ -131,43 +104,17 @@
           "poems/初中/八年级下册/大道之行也.md",
           "poems/高中/选择性必修上册/礼运.md"
         ],
-        "phase": "P2"
-      },
-      {
-        "ids": [
-          "liangzhou-wanghan",
-          "liangzhouci-wanghan"
-        ],
-        "title": "凉州词",
-        "key": "duplicate:liangzhou-wanghan|liangzhouci-wanghan",
-        "paths": [
-          "poems/小学/五年级下册/凉州词.md",
-          "poems/小学/四年级上册/凉州词.md"
-        ],
-        "phase": "P2"
-      },
-      {
-        "ids": [
-          "saixiaqu",
-          "saixiaqu-g5"
-        ],
-        "title": "塞下曲",
-        "key": "duplicate:saixiaqu|saixiaqu-g5",
-        "paths": [
-          "poems/小学/五年级下册/塞下曲.md",
-          "poems/小学/四年级下册/塞下曲.md"
-        ],
-        "phase": "P2"
+        "phase": "正常"
       }
     ],
     "gapCounts": {
       "缺背诵要求": 105,
-      "无必背名句小节": 155,
-      "无异文记录": 253,
+      "无必背名句小节": 153,
+      "无异文记录": 246,
       "缺全文（课标首句找不到）": 6,
-      "课标要求但仓内缺失": 4,
-      "重复副本": 5,
-      "来源不明": 1
+      "课标要求但仓内缺失": 3,
+      "重复副本": 1,
+      "来源不明": 0
     }
   },
   "rows": [
@@ -418,48 +365,6 @@
         "无异文记录"
       ],
       "path": "poems/初中/七年级下册/木兰辞.md"
-    },
-    {
-      "id": "songshaoshu",
-      "title": "送杜少府之任蜀州",
-      "subtitle": null,
-      "author": "王勃",
-      "dynasty": "唐",
-      "authorDied": 676,
-      "authorEraEnd": null,
-      "license": "public-domain",
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "grade": 7,
-      "volume": "七年级上册",
-      "form": "五言",
-      "category": "课标·义务教育",
-      "syllabusGroup": "初中",
-      "syllabusNo": 7,
-      "syllabusTitle": "送杜少府之任蜀州（城阙辅三秦）",
-      "matchStrength": 3,
-      "recite": "full",
-      "lineCount": 4,
-      "charCount": 40,
-      "sections": [
-        "必背全文",
-        "注释",
-        "玩法数据",
-        "译文",
-        "赏析"
-      ],
-      "hasNotes": true,
-      "hasTranslation": true,
-      "hasAppreciation": true,
-      "hasFamous": false,
-      "hasPlay": true,
-      "hasVariant": false,
-      "pairsCount": 2,
-      "flags": [
-        "无「必背名句」小节",
-        "无异文记录"
-      ],
-      "path": "poems/初中/七年级上册/送杜少府之任蜀州.md"
     },
     {
       "id": "dengyouzhoutai",
@@ -1721,7 +1626,7 @@
       "source": "S3+S1+S2",
       "stage": "初中",
       "grade": 7,
-      "volume": "七年级课外诵读",
+      "volume": "七年级下册课外诵读",
       "form": "七言",
       "category": "教材拓展",
       "syllabusGroup": "教材拓展",
@@ -1748,7 +1653,7 @@
         "无「必背名句」小节",
         "无异文记录"
       ],
-      "path": "poems/初中/七年级课外诵读/春夜洛城闻笛.md"
+      "path": "poems/初中/七年级下册课外诵读/春夜洛城闻笛.md"
     },
     {
       "id": "fengrujinshi",
@@ -1762,7 +1667,7 @@
       "source": "S3+S1+S2",
       "stage": "初中",
       "grade": 7,
-      "volume": "七年级课外诵读",
+      "volume": "七年级下册课外诵读",
       "form": "七言",
       "category": "教材拓展",
       "syllabusGroup": "教材拓展",
@@ -1789,7 +1694,7 @@
         "无「必背名句」小节",
         "无异文记录"
       ],
-      "path": "poems/初中/七年级课外诵读/逢入京使.md"
+      "path": "poems/初中/七年级下册课外诵读/逢入京使.md"
     },
     {
       "id": "wanchun",
@@ -1803,7 +1708,7 @@
       "source": "S3+S1+S2",
       "stage": "初中",
       "grade": 7,
-      "volume": "七年级课外诵读",
+      "volume": "七年级下册课外诵读",
       "form": "七言",
       "category": "教材拓展",
       "syllabusGroup": "教材拓展",
@@ -1830,7 +1735,7 @@
         "无「必背名句」小节",
         "无异文记录"
       ],
-      "path": "poems/初中/七年级课外诵读/晚春.md"
+      "path": "poems/初中/七年级下册课外诵读/晚春.md"
     },
     {
       "id": "zhuliguan",
@@ -1844,7 +1749,7 @@
       "source": "S3+S1+S2",
       "stage": "初中",
       "grade": 7,
-      "volume": "七年级课外诵读",
+      "volume": "七年级下册课外诵读",
       "form": "五言",
       "category": "教材拓展",
       "syllabusGroup": "教材拓展",
@@ -1871,7 +1776,48 @@
         "无「必背名句」小节",
         "无异文记录"
       ],
-      "path": "poems/初中/七年级课外诵读/竹里馆.md"
+      "path": "poems/初中/七年级下册课外诵读/竹里馆.md"
+    },
+    {
+      "id": "songshaoshu-wai",
+      "title": "送杜少府之任蜀州",
+      "subtitle": null,
+      "author": "王勃",
+      "dynasty": "唐",
+      "authorDied": 676,
+      "authorEraEnd": null,
+      "license": "public-domain",
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "grade": 8,
+      "volume": "八年级下册课外诵读",
+      "form": "五言",
+      "category": "课标·义务教育",
+      "syllabusGroup": "初中",
+      "syllabusNo": 7,
+      "syllabusTitle": "送杜少府之任蜀州（城阙辅三秦）",
+      "matchStrength": 3,
+      "recite": "full",
+      "lineCount": 4,
+      "charCount": 40,
+      "sections": [
+        "必背全文",
+        "注释",
+        "译文",
+        "赏析"
+      ],
+      "hasNotes": true,
+      "hasTranslation": true,
+      "hasAppreciation": true,
+      "hasFamous": false,
+      "hasPlay": false,
+      "hasVariant": false,
+      "pairsCount": 2,
+      "flags": [
+        "无「必背名句」小节",
+        "无异文记录"
+      ],
+      "path": "poems/初中/八年级下册课外诵读/送杜少府之任蜀州.md"
     },
     {
       "id": "taohuayuanji",
@@ -1992,6 +1938,47 @@
         "无异文记录"
       ],
       "path": "poems/初中/八年级上册/三峡.md"
+    },
+    {
+      "id": "masuo",
+      "title": "马说",
+      "subtitle": "杂说（四）",
+      "author": "韩愈",
+      "dynasty": "唐",
+      "authorDied": 824,
+      "authorEraEnd": null,
+      "license": "public-domain",
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "grade": 8,
+      "volume": "八年级下册",
+      "form": "文言",
+      "category": "课标·义务教育",
+      "syllabusGroup": "初中",
+      "syllabusNo": 52,
+      "syllabusTitle": "杂说（四）",
+      "matchStrength": 2,
+      "recite": "full",
+      "lineCount": 3,
+      "charCount": 153,
+      "sections": [
+        "异文",
+        "必背全文",
+        "注释",
+        "译文",
+        "赏析"
+      ],
+      "hasNotes": true,
+      "hasTranslation": true,
+      "hasAppreciation": true,
+      "hasFamous": false,
+      "hasPlay": false,
+      "hasVariant": true,
+      "pairsCount": 1,
+      "flags": [
+        "无「必背名句」小节"
+      ],
+      "path": "poems/初中/八年级下册/马说.md"
     },
     {
       "id": "loushiming",
@@ -2316,46 +2303,6 @@
       "path": "poems/初中/八年级下册/大道之行也.md"
     },
     {
-      "id": "masuo",
-      "title": "马说",
-      "subtitle": null,
-      "author": "韩愈",
-      "dynasty": "唐",
-      "authorDied": 824,
-      "authorEraEnd": null,
-      "license": "public-domain",
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "grade": 8,
-      "volume": "八年级下册",
-      "form": "文言",
-      "category": "教材拓展",
-      "syllabusGroup": "教材拓展",
-      "syllabusNo": null,
-      "syllabusTitle": "马说",
-      "matchStrength": null,
-      "recite": "section",
-      "lineCount": 2,
-      "charCount": 22,
-      "sections": [
-        "必背名句",
-        "注释",
-        "译文",
-        "赏析"
-      ],
-      "hasNotes": true,
-      "hasTranslation": true,
-      "hasAppreciation": true,
-      "hasFamous": true,
-      "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
-      "path": "poems/初中/八年级下册/马说.md"
-    },
-    {
       "id": "shihaoli",
       "title": "石壕吏",
       "subtitle": null,
@@ -2436,51 +2383,9 @@
       "path": "poems/初中/八年级下册课外诵读/式微.md"
     },
     {
-      "id": "songshaoshu-wai",
-      "title": "送杜少府之任蜀州",
-      "subtitle": null,
-      "author": "王勃",
-      "dynasty": "唐",
-      "authorDied": 676,
-      "authorEraEnd": null,
-      "license": "public-domain",
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "grade": 8,
-      "volume": "八年级下册课外诵读",
-      "form": "五言",
-      "category": "重复副本",
-      "syllabusGroup": "重复副本",
-      "syllabusNo": null,
-      "syllabusTitle": "送杜少府之任蜀州",
-      "matchStrength": null,
-      "recite": "full",
-      "lineCount": 4,
-      "charCount": 40,
-      "sections": [
-        "必背全文",
-        "注释",
-        "译文",
-        "赏析"
-      ],
-      "hasNotes": true,
-      "hasTranslation": true,
-      "hasAppreciation": true,
-      "hasFamous": false,
-      "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 2,
-      "flags": [
-        "无「必背名句」小节",
-        "无异文记录",
-        "与另一篇原文完全相同"
-      ],
-      "path": "poems/初中/八年级下册课外诵读/送杜少府之任蜀州.md"
-    },
-    {
       "id": "suoyoujiayao",
       "title": "虽有嘉肴",
-      "subtitle": null,
+      "subtitle": "《礼记·学记》节选",
       "author": "佚名",
       "dynasty": "先秦",
       "authorDied": null,
@@ -2497,9 +2402,10 @@
       "syllabusTitle": "虽有嘉肴",
       "matchStrength": null,
       "recite": "full",
-      "lineCount": 4,
-      "charCount": 33,
+      "lineCount": 5,
+      "charCount": 74,
       "sections": [
+        "异文",
         "必背全文",
         "注释",
         "译文",
@@ -2510,11 +2416,10 @@
       "hasAppreciation": true,
       "hasFamous": false,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 2,
+      "hasVariant": true,
+      "pairsCount": 1,
       "flags": [
-        "无「必背名句」小节",
-        "无异文记录"
+        "无「必背名句」小节"
       ],
       "path": "poems/初中/八年级下册/虽有嘉肴.md"
     },
@@ -2598,48 +2503,6 @@
         "无异文记录"
       ],
       "path": "poems/初中/八年级上册/与朱元思书.md"
-    },
-    {
-      "id": "zashuo4",
-      "title": "杂说",
-      "subtitle": "《礼记·学记》节选",
-      "author": "佚名",
-      "dynasty": "先秦",
-      "authorDied": null,
-      "authorEraEnd": 1900,
-      "license": "public-domain",
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "grade": 8,
-      "volume": "八年级下册",
-      "form": "文言",
-      "category": "来源不明",
-      "syllabusGroup": null,
-      "syllabusNo": null,
-      "syllabusTitle": null,
-      "matchStrength": null,
-      "recite": "full",
-      "lineCount": 4,
-      "charCount": 23,
-      "sections": [
-        "必背全文",
-        "注释",
-        "译文",
-        "赏析"
-      ],
-      "hasNotes": true,
-      "hasTranslation": true,
-      "hasAppreciation": true,
-      "hasFamous": false,
-      "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 2,
-      "flags": [
-        "无「必背名句」小节",
-        "无异文记录",
-        "既不在课标也不在教材拓展表"
-      ],
-      "path": "poems/初中/八年级下册/杂说.md"
     },
     {
       "id": "zijin",
@@ -5008,6 +4871,47 @@
       "path": "poems/小学/三年级上册/赠刘景文.md"
     },
     {
+      "id": "liangzhouci-wanghan",
+      "title": "凉州词",
+      "subtitle": null,
+      "author": "王翰",
+      "dynasty": "唐",
+      "authorDied": 726,
+      "authorEraEnd": null,
+      "license": "public-domain",
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "grade": 4,
+      "volume": "四年级上册",
+      "form": "七言",
+      "category": "课标·义务教育",
+      "syllabusGroup": "小学",
+      "syllabusNo": 11,
+      "syllabusTitle": "凉州（葡萄美酒夜光杯）",
+      "matchStrength": 3,
+      "recite": "",
+      "lineCount": 2,
+      "charCount": 28,
+      "sections": [
+        "注释",
+        "译文",
+        "赏析"
+      ],
+      "hasNotes": true,
+      "hasTranslation": true,
+      "hasAppreciation": true,
+      "hasFamous": false,
+      "hasPlay": false,
+      "hasVariant": false,
+      "pairsCount": 1,
+      "flags": [
+        "缺背诵要求 recite",
+        "无「必背名句」小节",
+        "无异文记录"
+      ],
+      "path": "poems/小学/四年级上册/凉州词.md"
+    },
+    {
       "id": "chusai",
       "title": "出塞",
       "subtitle": null,
@@ -5170,6 +5074,47 @@
         "无异文记录"
       ],
       "path": "poems/小学/四年级上册/别董大.md"
+    },
+    {
+      "id": "saixiaqu",
+      "title": "塞下曲",
+      "subtitle": null,
+      "author": "卢纶",
+      "dynasty": "唐",
+      "authorDied": 780,
+      "authorEraEnd": null,
+      "license": "public-domain",
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "grade": 4,
+      "volume": "四年级下册",
+      "form": "五言",
+      "category": "课标·义务教育",
+      "syllabusGroup": "小学",
+      "syllabusNo": 32,
+      "syllabusTitle": "塞下曲（月黑雁飞高）",
+      "matchStrength": 3,
+      "recite": "",
+      "lineCount": 2,
+      "charCount": 20,
+      "sections": [
+        "注释",
+        "译文",
+        "赏析"
+      ],
+      "hasNotes": true,
+      "hasTranslation": true,
+      "hasAppreciation": true,
+      "hasFamous": false,
+      "hasPlay": false,
+      "hasVariant": false,
+      "pairsCount": 1,
+      "flags": [
+        "缺背诵要求 recite",
+        "无「必背名句」小节",
+        "无异文记录"
+      ],
+      "path": "poems/小学/四年级下册/塞下曲.md"
     },
     {
       "id": "feng-mi",
@@ -5459,48 +5404,6 @@
       "path": "poems/小学/四年级下册/独坐敬亭山.md"
     },
     {
-      "id": "liangzhouci-wanghan",
-      "title": "凉州词",
-      "subtitle": null,
-      "author": "王翰",
-      "dynasty": "唐",
-      "authorDied": 726,
-      "authorEraEnd": null,
-      "license": "public-domain",
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "grade": 4,
-      "volume": "四年级上册",
-      "form": "七言",
-      "category": "重复副本",
-      "syllabusGroup": "重复副本",
-      "syllabusNo": null,
-      "syllabusTitle": "凉州词",
-      "matchStrength": null,
-      "recite": "",
-      "lineCount": 2,
-      "charCount": 28,
-      "sections": [
-        "注释",
-        "译文",
-        "赏析"
-      ],
-      "hasNotes": true,
-      "hasTranslation": true,
-      "hasAppreciation": true,
-      "hasFamous": false,
-      "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "缺背诵要求 recite",
-        "无「必背名句」小节",
-        "无异文记录",
-        "与另一篇原文完全相同"
-      ],
-      "path": "poems/小学/四年级上册/凉州词.md"
-    },
-    {
       "id": "mujiangyin",
       "title": "暮江吟",
       "subtitle": null,
@@ -5581,48 +5484,6 @@
         "无异文记录"
       ],
       "path": "poems/小学/四年级下册/清平乐.md"
-    },
-    {
-      "id": "saixiaqu",
-      "title": "塞下曲",
-      "subtitle": null,
-      "author": "卢纶",
-      "dynasty": "唐",
-      "authorDied": 780,
-      "authorEraEnd": null,
-      "license": "public-domain",
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "grade": 4,
-      "volume": "四年级下册",
-      "form": "五言",
-      "category": "重复副本",
-      "syllabusGroup": "重复副本",
-      "syllabusNo": null,
-      "syllabusTitle": "塞下曲",
-      "matchStrength": null,
-      "recite": "",
-      "lineCount": 2,
-      "charCount": 20,
-      "sections": [
-        "注释",
-        "译文",
-        "赏析"
-      ],
-      "hasNotes": true,
-      "hasTranslation": true,
-      "hasAppreciation": true,
-      "hasFamous": false,
-      "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "缺背诵要求 recite",
-        "无「必背名句」小节",
-        "无异文记录",
-        "与另一篇原文完全相同"
-      ],
-      "path": "poems/小学/四年级下册/塞下曲.md"
     },
     {
       "id": "suxinshi",
@@ -5789,46 +5650,6 @@
       "path": "poems/小学/五年级上册/山居秋暝.md"
     },
     {
-      "id": "liangzhou-wanghan",
-      "title": "凉州词",
-      "subtitle": "葡萄美酒夜光杯",
-      "author": "王翰",
-      "dynasty": "唐",
-      "authorDied": 726,
-      "authorEraEnd": null,
-      "license": "public-domain",
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "grade": 5,
-      "volume": "五年级下册",
-      "form": "七言",
-      "category": "课标·义务教育",
-      "syllabusGroup": "小学",
-      "syllabusNo": 11,
-      "syllabusTitle": "凉州（葡萄美酒夜光杯）",
-      "matchStrength": 3,
-      "recite": "line",
-      "lineCount": 2,
-      "charCount": 28,
-      "sections": [
-        "必背名句",
-        "注释",
-        "译文",
-        "赏析"
-      ],
-      "hasNotes": true,
-      "hasTranslation": true,
-      "hasAppreciation": true,
-      "hasFamous": true,
-      "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
-      "path": "poems/小学/五年级下册/凉州词.md"
-    },
-    {
       "id": "songyuaner",
       "title": "送元二使安西",
       "subtitle": null,
@@ -5991,46 +5812,6 @@
         "无异文记录"
       ],
       "path": "poems/小学/五年级上册/渔歌子.md"
-    },
-    {
-      "id": "saixiaqu-g5",
-      "title": "塞下曲",
-      "subtitle": null,
-      "author": "卢纶",
-      "dynasty": "唐",
-      "authorDied": 780,
-      "authorEraEnd": null,
-      "license": "public-domain",
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "grade": 5,
-      "volume": "五年级下册",
-      "form": "五言",
-      "category": "课标·义务教育",
-      "syllabusGroup": "小学",
-      "syllabusNo": 32,
-      "syllabusTitle": "塞下曲（月黑雁飞高）",
-      "matchStrength": 3,
-      "recite": "line",
-      "lineCount": 2,
-      "charCount": 20,
-      "sections": [
-        "必背名句",
-        "注释",
-        "译文",
-        "赏析"
-      ],
-      "hasNotes": true,
-      "hasTranslation": true,
-      "hasAppreciation": true,
-      "hasFamous": true,
-      "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
-      "path": "poems/小学/五年级下册/塞下曲.md"
     },
     {
       "id": "shier",
@@ -10478,48 +10259,6 @@
         "无异文记录"
       ],
       "path": "poems/高中/选择性必修下册/朝天子·咏喇叭.md"
-    },
-    {
-      "id": "chibi",
-      "title": "赤壁",
-      "subtitle": null,
-      "author": "杜牧",
-      "dynasty": "唐",
-      "authorDied": 852,
-      "authorEraEnd": null,
-      "license": "public-domain",
-      "source": "S3+S1b+S2",
-      "stage": "高中",
-      "grade": null,
-      "volume": "必修下册",
-      "form": "七言",
-      "category": "重复副本",
-      "syllabusGroup": "重复副本",
-      "syllabusNo": null,
-      "syllabusTitle": "赤壁",
-      "matchStrength": null,
-      "recite": "full",
-      "lineCount": 2,
-      "charCount": 28,
-      "sections": [
-        "必背全文",
-        "注释",
-        "译文",
-        "赏析"
-      ],
-      "hasNotes": true,
-      "hasTranslation": true,
-      "hasAppreciation": true,
-      "hasFamous": false,
-      "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无「必背名句」小节",
-        "无异文记录",
-        "与另一篇原文完全相同"
-      ],
-      "path": "poems/高中/必修下册/赤壁.md"
     }
   ]
 }
