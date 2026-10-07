@@ -769,6 +769,36 @@ def main():
         err('背诵要求与收录范围矛盾：%d 篇写着 recite=full 但仓内只有节选，要么补全文，要么改 recite，要么登记理由：%s'
             % (len(conflicts), '；'.join(conflicts[:4])))
 
+    # -------------------------------------------------- 2.14 必背名句必须能在全文里逐字找到
+    # 有「## 全文」小节的篇，必背名句必须是全文里出现过的句子。
+    # 为什么这条要紧：学生看到的是一句「必背名句」和一段「全文」。两者对不上，
+    # 他要么背了一句全文里没有的话，要么照着全文默写、结果和名句答案不一样——考场上这就是丢分。
+    # 比对只比字面，不比标点：全文里「国破山河在，城春草木深」和名句「国破山河在城春草木深」是同一句。
+    # 只比字面，不比标点。标点清单列不全：全文里用的是直角引号还是弯引号，是抄来的格式，不是内容。
+    # 所以反过来做——只留字，其余全删。这样「惠子谓庄子曰：「魏王…」」和「惠子谓庄子曰："魏王…"」算同一句。
+    def _strip_punct(t):
+        return re.sub(r'[\W_]+', '', t or '', flags=re.UNICODE)
+    broken_lines = []
+    for p in poems:
+        full = p.get('fullLines') or []
+        if not full:
+            continue
+        ftxt = _strip_punct(''.join(full))
+        for ln in (p.get('lines') or []):
+            key = _strip_punct(ln)
+            if key and key not in ftxt:
+                broken_lines.append((p['id'], p['title'], ln))
+    unregistered = []
+    for pid, title, ln in broken_lines:
+        key = 'fullline:' + pid
+        if key in known:
+            seen_defects.add(key)
+        else:
+            unregistered.append('%s：必背句「%s」在这篇的全文里找不到' % (title, ln[:20]))
+    if unregistered:
+        err('必背名句与全文对不上：%d 处。补全文、改名句，或在 known-defects 里写明为什么允许对不上：%s'
+            % (len(unregistered), '；'.join(unregistered[:6])))
+
     # -------------------------------------------------- 3. pairs 索引合法
     for p in poems:
         n = len(p['lines'])

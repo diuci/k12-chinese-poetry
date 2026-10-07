@@ -45,10 +45,23 @@ python tools/validate.py --selftest
 python tools/check-duplicates.py
 python tools/check-contamination.py
 python tools/check-text-sources.py
+python tools/build-textbook-lessons.py --report
+python tools/apply-textbook-status.py --write
 python tools/build-ledger.py
 python tools/build-textbook-table.py
+python tools/fix-meta-lines.py --check
 node tools/check-legal.mjs
 ```
+
+链条里每一环都是护栏。两个容易踩的坑，都踩过：
+
+- `check-text-sources.py --limit N` 是试跑，**不许覆盖正式表**（现在试跑写到 `data/text-sources.partial.json`）。
+  以前 `--limit 3` 跑一次，正式表从 251 篇变成 3 篇，不报错，后面所有读这张表的检查安静地读到残缺数据。
+- `apply-textbook-status.py` 的结论全部来自 `data/volume-findings.json`，所以必须先跑 `build-textbook-lessons.py --report` 再跑它；
+  顺序反了就会拿旧结论写 frontmatter。
+
+补全文用的 `tools/fetch-fulltext.py` 不是护栏，是取料工具：它只写候选到 `data/fulltext-candidates.json`，
+候选全文进仓之前必须有人逐篇看过——它只证明「仓里的必背句在这一页里找得到」，不证明「这一页整页都是这一篇」。
 
 任何一条非 0 退出，这次变更就不算完成。
 
