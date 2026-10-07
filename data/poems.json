@@ -52,6 +52,7 @@
       "yueyanglouji",
       "shiwei",
       "taohuayuanji",
+      "yujiaao-tianjie",
       "ailianshuo",
       "shihaoli",
       "daxiezhongshu",
@@ -71,6 +72,7 @@
       "chushibiao",
       "caoguilunzhan",
       "huxinting",
+      "manjianghong-xiaozhujinghua",
       "songdongyang",
       "zouji",
       "choulitian"
@@ -151,6 +153,7 @@
       "qiqiao",
       "xiangcunsiyue",
       "congjunxing",
+      "liangzhouci-wangzhihuan",
       "sishitianyuan-31",
       "shanjuqiuming",
       "jihai",
@@ -375,6 +378,7 @@
     "lantingjixu": "lantingjixu",
     "laozi8": "laozi8",
     "liangzhouci-wanghan": "liangzhouci-wanghan",
+    "liangzhouci-wangzhihuan": "liangzhouci-wangzhihuan",
     "liji1": "liji1",
     "linanchunyu": "linanchunyu",
     "lipeng": "lipeng",
@@ -386,6 +390,7 @@
     "luchai": "luchai",
     "lunyu12": "lunyu12",
     "lvshi1": "lvshi1",
+    "manjianghong-xiaozhujinghua": "manjianghong-xiaozhujinghua",
     "maotanshangwu": "maotanshangwu",
     "maowu": "maowu",
     "mashi": "mashi",
@@ -500,6 +505,7 @@
     "yueyanglouji": "yueyanglouji",
     "yugezi": "yugezi",
     "yujiaao-qiusi": "yujiaao-qiusi",
+    "yujiaao-tianjie": "yujiaao-tianjie",
     "yumeiren": "yumeiren",
     "yuzhusianshu": "yuzhusianshu",
     "zaochun": "zaochun",
@@ -771,6 +777,9 @@
       "chusai",
       "congjunxing"
     ],
+    "家国之痛": [
+      "manjianghong-xiaozhujinghua"
+    ],
     "家庭": [
       "qingpingyue-cunju"
     ],
@@ -961,6 +970,7 @@
       "guancanghai",
       "yuzhusianshu",
       "yueyanglouji",
+      "manjianghong-xiaozhujinghua",
       "mashi"
     ],
     "挽歌": [
@@ -1015,6 +1025,9 @@
     ],
     "月夜": [
       "wangdongting"
+    ],
+    "梦境": [
+      "yujiaao-tianjie"
     ],
     "楚辞": [
       "lisao"
@@ -1202,6 +1215,9 @@
       "shiyiwangyue",
       "hanshi"
     ],
+    "苍凉": [
+      "liangzhouci-wangzhihuan"
+    ],
     "苦闷": [
       "niluonan"
     ],
@@ -1266,6 +1282,9 @@
       "nangxiangzi",
       "niannujiao-chibi"
     ],
+    "豪放": [
+      "yujiaao-tianjie"
+    ],
     "豪迈": [
       "jiangchengzi-laofeng",
       "biedongda",
@@ -1287,6 +1306,7 @@
       "chusai",
       "saixiaqu",
       "congjunxing",
+      "liangzhouci-wangzhihuan",
       "changxiangsi",
       "caiwei",
       "yange-xing"
@@ -1366,7 +1386,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 248,
+  "count": 251,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/使至塞上.md",
@@ -4359,6 +4379,82 @@
       "volume": "八年级下册"
     },
     {
+      "_path": "poems/初中/八年级上册课外诵读/渔家傲.md",
+      "author": "李清照",
+      "authorDied": 1155,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "对现实的疲惫与不肯认命",
+      "examFreq": 0.7,
+      "form": "词",
+      "grade": 8,
+      "id": "yujiaao-tianjie",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "天接云涛连晓雾星河欲转千帆舞",
+        "仿佛梦魂归帝所",
+        "闻天语殷勤问我归何处",
+        "我报路长嗟日暮学诗谩有惊人句",
+        "九万里风鹏正举",
+        "风休住蓬舟吹取三山去"
+      ],
+      "linesPunct": [
+        "天接云涛连晓雾，星河欲转千帆舞。",
+        "仿佛梦魂归帝所。",
+        "闻天语，殷勤问我归何处。",
+        "我报路长嗟日暮，学诗谩有惊人句。",
+        "九万里风鹏正举。",
+        "风休住，蓬舟吹取三山去！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "render_split": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "source": "S1+S2",
+      "stage": "初中",
+      "subtitle": "天接云涛连晓雾",
+      "syllables": null,
+      "tags": [
+        "梦境",
+        "豪放",
+        "宋词"
+      ],
+      "technique": [
+        "想象",
+        "用典"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "梦境",
+        "豪放"
+      ],
+      "title": "渔家傲",
+      "volume": "八年级上册课外诵读"
+    },
+    {
       "_path": "poems/初中/八年级下册/爱莲说.md",
       "author": "周敦颐",
       "authorDied": 1073,
@@ -5408,6 +5504,92 @@
         "雅趣"
       ],
       "title": "湖心亭看雪",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/满江红.md",
+      "author": "秋瑾",
+      "authorDied": 1907,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "清",
+      "emotion": "不甘与孤独",
+      "examFreq": 0.8,
+      "form": "词",
+      "grade": 9,
+      "id": "manjianghong-xiaozhujinghua",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "小住京华早又是中秋佳节",
+        "为篱下黄花开遍秋容如拭",
+        "四面歌残终破楚八年风味徒思浙",
+        "苦将侬强派作蛾眉殊未屑",
+        "身不得男儿列心却比男儿烈",
+        "算平生肝胆因人常热",
+        "俗子胸襟谁识我英雄末路当磨折",
+        "莽红尘何处觅知音青衫湿"
+      ],
+      "linesPunct": [
+        "小住京华，早又是中秋佳节。",
+        "为篱下黄花开遍，秋容如拭。",
+        "四面歌残终破楚，八年风味徒思浙。",
+        "苦将侬强派作蛾眉，殊未屑！",
+        "身不得，男儿列，心却比，男儿烈。",
+        "算平生肝胆，因人常热。",
+        "俗子胸襟谁识我？英雄末路当磨折。",
+        "莽红尘何处觅知音？青衫湿！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "render_split": [
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        1
+      ],
+      "source": "S1+S2",
+      "stage": "初中",
+      "subtitle": "小住京华",
+      "syllables": null,
+      "tags": [
+        "抱负",
+        "家国",
+        "清词"
+      ],
+      "technique": [
+        "对比",
+        "直抒"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "抱负",
+        "家国之痛"
+      ],
+      "title": "满江红",
       "volume": "九年级下册"
     },
     {
@@ -9360,6 +9542,62 @@
         "家国"
       ],
       "title": "从军行",
+      "volume": "五年级下册"
+    },
+    {
+      "_path": "poems/小学/五年级下册/凉州词.md",
+      "author": "王之涣",
+      "authorDied": 742,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "唐",
+      "emotion": "戍边者的孤寂与克制",
+      "examFreq": 0.8,
+      "form": "七言",
+      "grade": 5,
+      "id": "liangzhouci-wangzhihuan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "黄河远上白云间一片孤城万仞山",
+        "羌笛何须怨杨柳春风不度玉门关"
+      ],
+      "linesPunct": [
+        "黄河远上白云间，一片孤城万仞山。",
+        "羌笛何须怨杨柳，春风不度玉门关。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "render_split": [
+        2,
+        2
+      ],
+      "source": "S1+S2",
+      "stage": "小学",
+      "subtitle": "黄河远上白云间",
+      "syllables": 14,
+      "tags": [
+        "边塞",
+        "苍凉",
+        "唐七言"
+      ],
+      "technique": [
+        "夸张",
+        "反衬"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "边塞",
+        "苍凉"
+      ],
+      "title": "凉州词",
       "volume": "五年级下册"
     },
     {
