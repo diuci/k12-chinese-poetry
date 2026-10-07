@@ -250,6 +250,11 @@ def main():
 
     ensure_dict()
     overrides = load_overrides()
+    # 强制页名这张表也会过期：篇目改名或删掉了，键还留着，就会静默地不生效。
+    live = {p['id'] for p in poems}
+    dead = sorted(k for k in overrides if k not in live)
+    if dead:
+        print('!! source-overrides.json 里有对不上任何篇目的键（过期，必须删）：%s' % '、'.join(dead))
     table = load_t2s()
     poems = V.load_poems()
     if stage:
