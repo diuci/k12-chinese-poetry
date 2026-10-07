@@ -178,6 +178,35 @@ def body_section_names(body):
     return [m.group(1).strip() for m in re.finditer(r'^##\s+(.+)$', body, re.M)]
 
 
+# 正文起点只许是诗本身。
+# 把「收录范围」这类说明小节写在最前面，会被 extract_poem_lines 当成正文开始标记，
+# 于是说明文字被当成诗的句子。以前只有写了 render_split 的篇目才会暴露（对不上才报错），
+# 没写的就静默把说明当正文——这种检查不能靠运气。
+ALLOWED_BODY_SECTIONS = ('必背名句', '必背全文', '全文')
+
+
+def body_start_section(body):
+    """正文是从哪个小节名开始的；如果正文前面没有小节（短篇直接写在篇名下），返回 None。
+
+    判据必须和 extract_poem_lines 一致：只有「第一个 H2 之前一行正文都没有」时，
+    那个 H2 才是正文开始标记。满江红那种正文写在篇名下、第一个 H2 是「注释」的，
+    不是问题——照第一个 H2 一刀切会把好样本误杀。
+    """
+    for raw in body.splitlines():
+        s = raw.strip()
+        if not s or s.startswith('# ') or s.startswith('>'):
+            continue
+        # 顺序必须和 extract_poem_lines 一致：先认 H2，再判噪声。
+        # MD_NOISE 的 # 会把 H2 一起吞掉，先判噪声就等于这道护栏永远不触发。
+        if s.startswith('## '):
+            name = s[3:].strip()
+            return name if name not in ALLOWED_BODY_SECTIONS else None
+        if MD_NOISE.match(raw):
+            continue
+        return None
+    return None
+
+
 def has_full_text(body):
     """仓内是否收录了这篇的全文正文。口径：
 
@@ -199,6 +228,11 @@ def build_record(md_path, fm, body):
     lines = [x for x in lines if x]
     if not lines:
         die('%s: 剥离标点后正文为空', rel)
+
+    guard = body_start_section(body)
+    if guard:
+        die('%s: 正文起点是「%s」小节，说明文字会被当成诗的句子；把它挪到正文小节之后'
+            % (rel, guard))
 
     # 背诵用的全文，与游戏单元分开存（见 extract_full_lines 的说明）
     full_body = extract_full_lines(body)

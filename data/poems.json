@@ -16430,30 +16430,36 @@
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 5,
       "dynasty": "宋",
-      "emotion": "繁华与怀古",
+      "emotion": "繁华与赞叹",
       "examFreq": 0.8,
       "form": "词",
-      "fullLines": [],
-      "fullLinesPunct": [],
+      "fullLines": [
+        "东南形胜三吴都会钱塘自古繁华烟柳画桥风帘翠幕参差十万人家云树绕堤沙怒涛卷霜雪天堑无涯市列珠玑户盈罗绮竞豪奢",
+        "重湖叠巘清嘉有三秋桂子十里荷花羌管弄晴菱歌泛夜嬉嬉钓叟莲娃千骑拥高牙乘醉听箫鼓吟赏烟霞异日图将好景归去凤池夸"
+      ],
+      "fullLinesPunct": [
+        "东南形胜，三吴都会，钱塘自古繁华。烟柳画桥，风帘翠幕，参差十万人家。云树绕堤沙，怒涛卷霜雪，天堑无涯。市列珠玑，户盈罗绮，竞豪奢。",
+        "重湖叠巘清嘉，有三秋桂子，十里荷花。羌管弄晴，菱歌泛夜，嬉嬉钓叟莲娃。千骑拥高牙，乘醉听箫鼓，吟赏烟霞。异日图将好景，归去凤池夸。"
+      ],
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 23,
       "gaokaoSince": 2023,
       "grade": null,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "id": "wanghaichao",
       "irregular": null,
       "license": "public-domain",
       "lines": [
         "东南形胜三吴都会钱塘自古繁华",
-        "烟柳画桥风帘翠幕参差十万人家",
-        "羌管弄晴画檐风细",
-        "千骑拥高牙乘醉听箫鼓"
+        "云树绕堤沙怒涛卷霜雪天堑无涯",
+        "重湖叠巘清嘉有三秋桂子十里荷花",
+        "羌管弄晴菱歌泛夜嬉嬉钓叟莲娃"
       ],
       "linesPunct": [
         "东南形胜，三吴都会，钱塘自古繁华。",
-        "烟柳画桥，风帘翠幕，参差十万人家。",
-        "羌管弄晴，画檐风细。",
-        "千骑拥高牙，乘醉听箫鼓。"
+        "云树绕堤沙，怒涛卷霜雪，天堑无涯。",
+        "重湖叠巘清嘉，有三秋桂子，十里荷花。",
+        "羌管弄晴，菱歌泛夜，嬉嬉钓叟莲娃。"
       ],
       "pairs": [
         [
@@ -16469,11 +16475,11 @@
       "render_split": [
         3,
         3,
-        2,
-        2
+        3,
+        3
       ],
       "render_split_reason": null,
-      "source": "S3+S1b+S2",
+      "source": "S3+S1b+S2+S10",
       "stage": "高中",
       "subtitle": "东南形胜",
       "syllables": null,
