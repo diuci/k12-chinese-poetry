@@ -2,68 +2,60 @@
   "byGrade": {
     "初中-7": [
       "lunyu12-cz",
-      "shizhuisai",
-      "guanju",
-      "shiwucongjunzheng",
-      "maotanshangwu",
-      "nangxiangzi",
       "yeyujibei",
       "tianjingsha-qiusi",
       "shanpoyang",
       "jihai-jimao",
       "wuti",
       "chunyeluocheng",
-      "chunwang",
       "wanchun",
       "wangyue",
       "mulanci",
       "cibeigushanxia",
       "shuidiaogetou",
-      "jiangchengzi-laofeng",
       "boqinhuai",
-      "huanxisha-yanque",
-      "yujiaao-qiusi",
       "youshanxincun",
+      "ailianshuo",
       "dengyouzhoutai",
       "dengfeilaifeng",
-      "baixuege",
       "xiangjianhuan",
-      "pozhenzi",
       "zhuliguan",
-      "maowu",
-      "jianjia",
       "xinglunan",
       "guancanghai",
-      "chibi-du",
       "guolingyang",
       "fengrujinshi",
-      "qiantanghuchunxing",
       "wenwangchangling",
-      "yanmenshiweixing",
-      "yinjiujiusan",
-      "huanghelou-cuiheng"
+      "loushiming"
     ],
     "初中-8": [
       "sanxia",
       "yuzhusianshu",
+      "shizhuisai",
+      "guanju",
       "beimingyouyu",
+      "maotanshangwu",
       "dadaozhixing",
       "zijin",
       "xiaoshitan",
-      "yueyanglouji",
       "shiwei",
+      "chunwang",
       "taohuayuanji",
+      "huanxisha-yanque",
       "yujiaao-tianjie",
-      "ailianshuo",
       "shihaoli",
       "daxiezhongshu",
+      "maowu",
+      "jianjia",
       "suoyoujiayao",
       "jichengtiansi",
+      "chibi-du",
       "songshaoshu-wai",
-      "zuigongtingji",
       "yewang",
-      "loushiming",
-      "masuo"
+      "qiantanghuchunxing",
+      "yanmenshiweixing",
+      "yinjiujiusan",
+      "masuo",
+      "huanghelou-cuiheng"
     ],
     "初中-9": [
       "lvshi1",
@@ -71,12 +63,20 @@
       "zhuangzi1",
       "liji1",
       "chushibiao",
+      "shiwucongjunzheng",
+      "nangxiangzi",
+      "yueyanglouji",
       "caoguilunzhan",
+      "jiangchengzi-laofeng",
+      "yujiaao-qiusi",
       "huxinting",
       "manjianghong-xiaozhujinghua",
+      "baixuege",
+      "pozhenzi",
       "songdongyang",
       "zouji",
-      "choulitian"
+      "choulitian",
+      "zuigongtingji"
     ],
     "小学-1": [
       "gulangyuexing",
@@ -165,9 +165,9 @@
       "qiuyejiangxiao",
       "zhizibing",
       "guanshu",
-      "songyuaner",
       "zengwang",
       "changxiangsi",
+      "wenguanjun",
       "tilinandi",
       "niaomingjian",
       "huanghelou"
@@ -195,8 +195,8 @@
       "xijiangyue",
       "guogurenzhuang",
       "tiaotiaoqianniuxing",
+      "songyuaner",
       "caiwei",
-      "wenguanjun",
       "mashi"
     ],
     "高中-": [
@@ -636,10 +636,10 @@
       "songshaoshu-wai",
       "lvshi1",
       "zengwanglun",
-      "songyuaner",
       "huanghelou",
       "bosuanzi-song",
       "guogurenzhuang",
+      "songyuaner",
       "kezhi"
     ],
     "变法": [
@@ -698,9 +698,9 @@
       "cibeigushanxia",
       "youshanxincun",
       "dengfeilaifeng",
-      "chibi-du",
       "beimingyouyu",
       "suoyoujiayao",
+      "chibi-du",
       "zhuangzi1",
       "choulitian",
       "hua",
@@ -871,13 +871,13 @@
       "quyuanliezhuan"
     ],
     "思乡": [
-      "shiwucongjunzheng",
       "yeyujibei",
       "chunyeluocheng",
       "cibeigushanxia",
-      "yujiaao-qiusi",
       "fengrujinshi",
       "huanghelou-cuiheng",
+      "shiwucongjunzheng",
+      "yujiaao-qiusi",
       "jingyesi",
       "jiuyuejiuri",
       "yeshusuojian",
@@ -952,10 +952,10 @@
       "shihaoli"
     ],
     "战争": [
-      "shiwucongjunzheng",
-      "chunwang",
       "mulanci",
+      "chunwang",
       "yanmenshiweixing",
+      "shiwucongjunzheng",
       "caoguilunzhan"
     ],
     "执着": [
@@ -1045,8 +1045,8 @@
     ],
     "民生": [
       "maotanshangwu",
-      "maowu",
       "shihaoli",
+      "maowu",
       "jiangshangyuzhe"
     ],
     "气势": [
@@ -1085,16 +1085,16 @@
       "bochuanguazhou"
     ],
     "爱国": [
+      "guolingyang",
       "nangxiangzi",
       "jiangchengzi-laofeng",
       "pozhenzi",
-      "guolingyang",
       "xiarijueju",
       "jihai",
       "shier",
       "qiuyejiangxiao",
-      "tilinandi",
       "wenguanjun",
+      "tilinandi",
       "shufen",
       "wuyi",
       "yongyule",
@@ -1102,10 +1102,10 @@
       "hexinlao"
     ],
     "爱情": [
-      "guanju",
       "wuti",
-      "jianjia",
+      "guanju",
       "zijin",
+      "jianjia",
       "shejiang",
       "jingnv",
       "qiqiaoxian"
@@ -1128,9 +1128,9 @@
     ],
     "田园": [
       "youshanxincun",
-      "yinjiujiusan",
       "taohuayuanji",
       "yewang",
+      "yinjiujiusan",
       "minnong2",
       "jiangnan",
       "minnong1",
@@ -1257,8 +1257,8 @@
       "shizhongshan"
     ],
     "讽喻": [
-      "maotanshangwu",
       "boqinhuai",
+      "maotanshangwu",
       "masuo",
       "zouji",
       "feng-mi",
@@ -1303,11 +1303,11 @@
       "shuhuyin"
     ],
     "边塞": [
+      "fengrujinshi",
       "shizhuisai",
+      "yanmenshiweixing",
       "yujiaao-qiusi",
       "baixuege",
-      "fengrujinshi",
-      "yanmenshiweixing",
       "liangzhouci-wanghan",
       "chusai",
       "saixiaqu",
@@ -1327,15 +1327,15 @@
       "jianjia"
     ],
     "送别": [
-      "baixuege",
       "wenwangchangling",
       "songshaoshu-wai",
+      "baixuege",
       "zengwanglun",
       "biedongda",
       "furonglou",
-      "songyuaner",
       "huanghelou",
       "bosuanzi-song",
+      "songyuaner",
       "changting-songbei"
     ],
     "道德": [
@@ -1536,408 +1536,7 @@
       "volume": "七年级上册"
     },
     {
-      "_path": "poems/初中/七年级上册/使至塞上.md",
-      "author": "王维",
-      "authorDied": 761,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "出使边塞的雄壮与孤寂",
-      "examFreq": 1.0,
-      "form": "五言",
-      "fullLines": [
-        "单车欲问边属国过居延",
-        "征蓬出汉塞归雁入胡天",
-        "大漠孤烟直长河落日圆",
-        "萧关逢候骑都护在燕然"
-      ],
-      "fullLinesPunct": [
-        "单车欲问边，属国过居延。",
-        "征蓬出汉塞，归雁入胡天。",
-        "大漠孤烟直，长河落日圆。",
-        "萧关逢候骑，都护在燕然。"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": true,
-      "id": "shizhuisai",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "单车欲问边属国过居延",
-        "征蓬出汉塞归雁入胡天",
-        "大漠孤烟直长河落日圆",
-        "萧关逢候骑都护在燕然"
-      ],
-      "linesPunct": [
-        "单车欲问边，属国过居延。",
-        "征蓬出汉塞，归雁入胡天。",
-        "大漠孤烟直，长河落日圆。",
-        "萧关逢候骑，都护在燕然。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": 10,
-      "tags": [
-        "边塞",
-        "壮阔",
-        "唐五言"
-      ],
-      "technique": [
-        "比喻",
-        "炼字"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "边塞",
-        "壮阔"
-      ],
-      "title": "使至塞上",
-      "volume": "七年级上册"
-    },
-    {
-      "_path": "poems/初中/七年级上册/关雎.md",
-      "author": "佚名",
-      "authorDied": null,
-      "authorEraEnd": 1900,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 3,
-      "dynasty": "先秦",
-      "emotion": "对美好爱情的向往",
-      "examFreq": 0.9,
-      "form": "诗经",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": false,
-      "id": "guanju",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "关关雎鸠在河之洲",
-        "窈窕淑女君子好逑"
-      ],
-      "linesPunct": [
-        "关关雎鸠，在河之洲。",
-        "窈窕淑女，君子好逑。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "line",
-      "render_split": [
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "爱情",
-        "水滨",
-        "先秦诗经"
-      ],
-      "technique": [
-        "比兴",
-        "叠词"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "爱情",
-        "水滨"
-      ],
-      "title": "关雎",
-      "volume": "七年级上册"
-    },
-    {
-      "_path": "poems/初中/七年级上册/十五从军征.md",
-      "author": "佚名",
-      "authorDied": null,
-      "authorEraEnd": 220,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "汉",
-      "emotion": "老兵归乡的荒凉",
-      "examFreq": 0.7,
-      "form": "乐府",
-      "fullLines": [
-        "十五从军征八十始得归",
-        "道逢乡里人家中有阿谁",
-        "遥看是君家松柏冢累累",
-        "兔从狗窦入雉从梁上飞",
-        "中庭生旅谷井上生旅葵",
-        "舂谷持作饭采葵持作羹",
-        "羹饭一时熟不知贻阿谁",
-        "出门东向看泪落沾我衣"
-      ],
-      "fullLinesPunct": [
-        "十五从军征，八十始得归。",
-        "道逢乡里人，家中有阿谁？",
-        "遥看是君家，松柏冢累累。",
-        "兔从狗窦入，雉从梁上飞。",
-        "中庭生旅谷，井上生旅葵。",
-        "舂谷持作饭，采葵持作羹。",
-        "羹饭一时熟，不知贻阿谁。",
-        "出门东向看，泪落沾我衣。"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": true,
-      "id": "shiwucongjunzheng",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "十五从军征八十始得归",
-        "道逢乡里人家中有阿谁",
-        "遥看是君家松柏冢累累",
-        "兔从狗窦入雉从梁上飞",
-        "中庭生旅谷井上生旅葵",
-        "舂谷持作饭采葵持作羹",
-        "羹饭一时熟不知贻阿谁",
-        "出门东向看泪落沾我衣"
-      ],
-      "linesPunct": [
-        "十五从军征，八十始得归。",
-        "道逢乡里人，家中有阿谁？",
-        "遥看是君家，松柏冢累累。",
-        "兔从狗窦入，雉从梁上飞。",
-        "中庭生旅谷，井上生旅葵。",
-        "舂谷持作饭，采葵持作羹。",
-        "羹饭一时熟，不知贻阿谁。",
-        "出门东向看，泪落沾我衣。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ],
-        [
-          4,
-          5
-        ],
-        [
-          6,
-          7
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S1+S2+S3",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "战争",
-        "思乡",
-        "汉乐府"
-      ],
-      "technique": [
-        "白描",
-        "叙事"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "战争",
-        "思乡"
-      ],
-      "title": "十五从军征",
-      "volume": "七年级上册"
-    },
-    {
-      "_path": "poems/初中/七年级下册/卖炭翁.md",
-      "author": "白居易",
-      "authorDied": 846,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "对宫市巧取豪夺的愤慨",
-      "examFreq": 0.8,
-      "form": "七言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": false,
-      "id": "maotanshangwu",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "可怜身上衣正单心忧炭贱愿天寒",
-        "卖炭得钱何所营身上衣裳口中食"
-      ],
-      "linesPunct": [
-        "可怜身上衣正单，心忧炭贱愿天寒。",
-        "卖炭得钱何所营？身上衣裳口中食。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        2,
-        1
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": 14,
-      "tags": [
-        "民生",
-        "讽喻",
-        "唐七言"
-      ],
-      "technique": [
-        "对比",
-        "细节"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "民生",
-        "讽喻"
-      ],
-      "title": "卖炭翁",
-      "volume": "七年级下册"
-    },
-    {
-      "_path": "poems/初中/九年级上册/南乡子.md",
-      "author": "辛弃疾",
-      "authorDied": 1207,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "宋",
-      "emotion": "渴望收复失地的壮志",
-      "examFreq": 0.9,
-      "form": "词",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": false,
-      "id": "nangxiangzi",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "何处望神州满眼风光北固楼千古兴亡多少事悠悠",
-        "不尽长江滚滚流",
-        "年少万兜鍪坐断东南战未休",
-        "天下英雄谁敌手曹刘",
-        "生子当如孙仲谋"
-      ],
-      "linesPunct": [
-        "何处望神州？满眼风光北固楼。千古兴亡多少事？悠悠。",
-        "不尽长江滚滚流。",
-        "年少万兜鍪，坐断东南战未休。",
-        "天下英雄谁敌手？曹刘。",
-        "生子当如孙仲谋。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        1,
-        1,
-        2,
-        1,
-        1
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": "何处望神州",
-      "syllables": null,
-      "tags": [
-        "爱国",
-        "豪情",
-        "宋词"
-      ],
-      "technique": [
-        "对比",
-        "典故"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "爱国",
-        "豪情"
-      ],
-      "title": "南乡子",
-      "volume": "九年级上册"
-    },
-    {
-      "_path": "poems/初中/七年级下册/夜雨寄北.md",
+      "_path": "poems/初中/七年级上册/夜雨寄北.md",
       "author": "李商隐",
       "authorDied": 858,
       "authorEraEnd": null,
@@ -2004,10 +1603,10 @@
         "想象"
       ],
       "title": "夜雨寄北",
-      "volume": "七年级下册"
+      "volume": "七年级上册"
     },
     {
-      "_path": "poems/初中/九年级下册/天净沙.md",
+      "_path": "poems/初中/七年级上册/天净沙.md",
       "author": "马致远",
       "authorDied": 1321,
       "authorEraEnd": null,
@@ -2079,7 +1678,7 @@
         "愁思"
       ],
       "title": "天净沙",
-      "volume": "九年级下册"
+      "volume": "七年级上册"
     },
     {
       "_path": "poems/初中/九年级下册/山坡羊.md",
@@ -2166,7 +1765,7 @@
       "volume": "九年级下册"
     },
     {
-      "_path": "poems/初中/九年级下册/己亥杂诗.md",
+      "_path": "poems/初中/七年级下册/己亥杂诗.md",
       "author": "龚自珍",
       "authorDied": 1841,
       "authorEraEnd": null,
@@ -2227,7 +1826,7 @@
         "抱负"
       ],
       "title": "己亥杂诗",
-      "volume": "九年级下册"
+      "volume": "七年级下册"
     },
     {
       "_path": "poems/初中/九年级上册/无题.md",
@@ -2362,90 +1961,6 @@
       ],
       "title": "春夜洛城闻笛",
       "volume": "七年级下册课外诵读"
-    },
-    {
-      "_path": "poems/初中/七年级上册/春望.md",
-      "author": "杜甫",
-      "authorDied": 770,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "战乱中的忧国伤时",
-      "examFreq": 1.0,
-      "form": "五言",
-      "fullLines": [
-        "国破山河在城春草木深",
-        "感时花溅泪恨别鸟惊心",
-        "烽火连三月家书抵万金",
-        "白头搔更短浑欲不胜簪"
-      ],
-      "fullLinesPunct": [
-        "国破山河在，城春草木深。",
-        "感时花溅泪，恨别鸟惊心。",
-        "烽火连三月，家书抵万金。",
-        "白头搔更短，浑欲不胜簪。"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": true,
-      "id": "chunwang",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "国破山河在城春草木深",
-        "感时花溅泪恨别鸟惊心",
-        "烽火连三月家书抵万金",
-        "白头搔更短浑欲不胜簪"
-      ],
-      "linesPunct": [
-        "国破山河在，城春草木深。",
-        "感时花溅泪，恨别鸟惊心。",
-        "烽火连三月，家书抵万金。",
-        "白头搔更短，浑欲不胜簪。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": 10,
-      "tags": [
-        "战争",
-        "忧国",
-        "唐五言"
-      ],
-      "technique": [
-        "对比",
-        "拟人"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "战争",
-        "忧国"
-      ],
-      "title": "春望",
-      "volume": "七年级上册"
     },
     {
       "_path": "poems/初中/七年级下册课外诵读/晚春.md",
@@ -2869,73 +2384,6 @@
       "volume": "九年级上册"
     },
     {
-      "_path": "poems/初中/九年级上册/江城子.md",
-      "author": "苏轼",
-      "authorDied": 1101,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 5,
-      "dynasty": "宋",
-      "emotion": "出猎的豪迈与报国壮志",
-      "examFreq": 0.9,
-      "form": "词",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": false,
-      "id": "jiangchengzi-laofeng",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "老夫聊发少年狂左牵黄右擎苍",
-        "锦帽貂裘千骑卷平冈",
-        "为报倾城随太守亲射虎看孙郎"
-      ],
-      "linesPunct": [
-        "老夫聊发少年狂，左牵黄，右擎苍。",
-        "锦帽貂裘，千骑卷平冈。",
-        "为报倾城随太守，亲射虎，看孙郎。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        3,
-        2,
-        3
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": "密州出猎",
-      "syllables": null,
-      "tags": [
-        "豪迈",
-        "爱国",
-        "宋词"
-      ],
-      "technique": [
-        "典故",
-        "夸张"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "豪迈",
-        "爱国"
-      ],
-      "title": "江城子",
-      "volume": "九年级上册"
-    },
-    {
       "_path": "poems/初中/七年级下册/泊秦淮.md",
       "author": "杜牧",
       "authorDied": 852,
@@ -3004,164 +2452,6 @@
       ],
       "title": "泊秦淮",
       "volume": "七年级下册"
-    },
-    {
-      "_path": "poems/初中/九年级上册/浣溪沙.md",
-      "author": "晏殊",
-      "authorDied": 1055,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "宋",
-      "emotion": "追忆往事的惆怅",
-      "examFreq": 0.9,
-      "form": "词",
-      "fullLines": [
-        "一曲新词酒一杯去年天气旧亭台夕阳西下几时回",
-        "无可奈何花落去似曾相识燕归来小园香径独徘徊"
-      ],
-      "fullLinesPunct": [
-        "一曲新词酒一杯，去年天气旧亭台。夕阳西下几时回？",
-        "无可奈何花落去，似曾相识燕归来。小园香径独徘徊。"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": true,
-      "id": "huanxisha-yanque",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "一曲新词酒一杯去年天气旧亭台夕阳西下几时回",
-        "无可奈何花落去似曾相识燕归来小园香径独徘徊"
-      ],
-      "linesPunct": [
-        "一曲新词酒一杯，去年天气旧亭台。夕阳西下几时回？",
-        "无可奈何花落去，似曾相识燕归来。小园香径独徘徊。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": "一曲新词酒一杯",
-      "syllables": null,
-      "tags": [
-        "闺情",
-        "怀念",
-        "宋词"
-      ],
-      "technique": [
-        "对比"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "闺情",
-        "怀念"
-      ],
-      "title": "浣溪沙",
-      "volume": "九年级上册"
-    },
-    {
-      "_path": "poems/初中/九年级上册/渔家傲.md",
-      "author": "范仲淹",
-      "authorDied": 1052,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "宋",
-      "emotion": "戍边思乡的复杂心境",
-      "examFreq": 1.0,
-      "form": "词",
-      "fullLines": [
-        "塞下秋来风景异衡阳雁去无留意",
-        "四面边声连角起",
-        "千嶂里长烟落日孤城闭",
-        "浊酒一杯家万里燕然未勒归无计",
-        "羌管悠悠霜满地人不寐将军白发征夫泪"
-      ],
-      "fullLinesPunct": [
-        "塞下秋来风景异，衡阳雁去无留意。",
-        "四面边声连角起。",
-        "千嶂里，长烟落日孤城闭。",
-        "浊酒一杯家万里，燕然未勒归无计。",
-        "羌管悠悠霜满地，人不寐，将军白发征夫泪。"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": true,
-      "id": "yujiaao-qiusi",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "塞下秋来风景异衡阳雁去无留意",
-        "四面边声连角起",
-        "千嶂里长烟落日孤城闭",
-        "浊酒一杯家万里燕然未勒归无计",
-        "羌管悠悠霜满地人不寐将军白发征夫泪"
-      ],
-      "linesPunct": [
-        "塞下秋来风景异，衡阳雁去无留意。",
-        "四面边声连角起。",
-        "千嶂里，长烟落日孤城闭。",
-        "浊酒一杯家万里，燕然未勒归无计。",
-        "羌管悠悠霜满地，人不寐，将军白发征夫泪。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        1,
-        2,
-        2,
-        3
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": "秋思",
-      "syllables": null,
-      "tags": [
-        "边塞",
-        "思乡",
-        "宋词"
-      ],
-      "technique": [
-        "对比",
-        "白描"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "边塞",
-        "思乡"
-      ],
-      "title": "渔家傲",
-      "volume": "九年级上册"
     },
     {
       "_path": "poems/初中/七年级下册/游山西村.md",
@@ -3245,6 +2535,80 @@
         "哲理"
       ],
       "title": "游山西村",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/爱莲说.md",
+      "author": "周敦颐",
+      "authorDied": 1073,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "不媚世俗的君子之志",
+      "examFreq": 0.9,
+      "form": "文言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": false,
+      "id": "ailianshuo",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "水陆草木之花可爱者甚蕃",
+        "予独爱莲之出淤泥而不染濯清涟而不妖",
+        "中通外直不蔓不枝香远益清亭亭净植",
+        "噫菊之爱陶后鲜有闻"
+      ],
+      "linesPunct": [
+        "水陆草木之花，可爱者甚蕃。",
+        "予独爱莲之出淤泥而不染，濯清涟而不妖。",
+        "中通外直，不蔓不枝，香远益清，亭亭净植。",
+        "噫！菊之爱，陶后鲜有闻。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        2,
+        4,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "咏物",
+        "高洁",
+        "宋文言"
+      ],
+      "technique": [
+        "托物言志",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "咏物",
+        "高洁"
+      ],
+      "title": "爱莲说",
       "volume": "七年级下册"
     },
     {
@@ -3388,73 +2752,6 @@
       "volume": "七年级下册"
     },
     {
-      "_path": "poems/初中/七年级上册/白雪歌送武判官归京.md",
-      "author": "岑参",
-      "authorDied": 770,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "雪中送别的苍茫与深情",
-      "examFreq": 0.8,
-      "form": "七言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": false,
-      "id": "baixuege",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "北风卷地白草折胡天八月即飞雪",
-        "忽如一夜春风来千树万树梨花开",
-        "轮台东门送君去去时雪满天山路"
-      ],
-      "linesPunct": [
-        "北风卷地白草折，胡天八月即飞雪。",
-        "忽如一夜春风来，千树万树梨花开。",
-        "轮台东门送君去，去时雪满天山路。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": 14,
-      "tags": [
-        "边塞",
-        "送别",
-        "唐七言"
-      ],
-      "technique": [
-        "比喻",
-        "夸张"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "边塞",
-        "送别"
-      ],
-      "title": "白雪歌送武判官归京",
-      "volume": "七年级上册"
-    },
-    {
       "_path": "poems/初中/九年级上册/相见欢.md",
       "author": "李煜",
       "authorDied": 978,
@@ -3538,104 +2835,6 @@
       "volume": "九年级上册"
     },
     {
-      "_path": "poems/初中/九年级上册/破阵子.md",
-      "author": "辛弃疾",
-      "authorDied": 1207,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "宋",
-      "emotion": "报国杀敌的壮志",
-      "examFreq": 1.0,
-      "form": "词",
-      "fullLines": [
-        "醉里挑灯看剑梦回吹角连营",
-        "八百里分麾下炙五十弦翻塞外声",
-        "沙场秋点兵",
-        "马作的卢飞快弓如霹雳弦惊",
-        "了却君王天下事赢得生前身后名",
-        "可怜白发生"
-      ],
-      "fullLinesPunct": [
-        "醉里挑灯看剑，梦回吹角连营。",
-        "八百里分麾下炙，五十弦翻塞外声。",
-        "沙场秋点兵。",
-        "马作的卢飞快，弓如霹雳弦惊。",
-        "了却君王天下事，赢得生前身后名。",
-        "可怜白发生！"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": true,
-      "id": "pozhenzi",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "醉里挑灯看剑梦回吹角连营",
-        "八百里分麾下炙五十弦翻塞外声",
-        "沙场秋点兵",
-        "马作的卢飞快弓如霹雳弦惊",
-        "了却君王天下事赢得生前身后名",
-        "可怜白发生"
-      ],
-      "linesPunct": [
-        "醉里挑灯看剑，梦回吹角连营。",
-        "八百里分麾下炙，五十弦翻塞外声。",
-        "沙场秋点兵。",
-        "马作的卢飞快，弓如霹雳弦惊。",
-        "了却君王天下事，赢得生前身后名。",
-        "可怜白发生！"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ],
-        [
-          4,
-          5
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        2,
-        1,
-        2,
-        2,
-        1
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": "为陈同甫赋壮词以寄",
-      "syllables": null,
-      "tags": [
-        "爱国",
-        "壮志",
-        "宋词"
-      ],
-      "technique": [
-        "对比",
-        "夸张"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "爱国",
-        "壮志"
-      ],
-      "title": "破阵子",
-      "volume": "九年级上册"
-    },
-    {
       "_path": "poems/初中/七年级下册课外诵读/竹里馆.md",
       "author": "王维",
       "authorDied": 761,
@@ -3704,154 +2903,6 @@
       ],
       "title": "竹里馆",
       "volume": "七年级下册课外诵读"
-    },
-    {
-      "_path": "poems/初中/七年级上册/茅屋为秋风所破歌.md",
-      "author": "杜甫",
-      "authorDied": 770,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 5,
-      "dynasty": "唐",
-      "emotion": "穷困中的推己及人",
-      "examFreq": 0.7,
-      "form": "杂言",
-      "fullLines": [
-        "八月秋高风怒号卷我屋上三重茅茅飞渡江洒江郊高者挂罥长林梢下者飘转沉塘坳",
-        "南村群童欺我老无力忍能对面为盗贼公然抱茅入竹去唇焦口燥呼不得归来倚杖自叹息",
-        "俄顷风定云墨色秋天漠漠向昏黑布衾多年冷似铁娇儿恶卧踏里裂床头屋漏无干处雨脚如麻未断绝自经丧乱少睡眠长夜沾湿何由彻",
-        "安得广厦千万间大庇天下寒士俱欢颜风雨不动安如山呜呼何时眼前突兀见此屋吾庐独破受冻死亦足"
-      ],
-      "fullLinesPunct": [
-        "八月秋高风怒号，卷我屋上三重茅。茅飞渡江洒江郊，高者挂罥长林梢，下者飘转沉塘坳。",
-        "南村群童欺我老无力，忍能对面为盗贼。公然抱茅入竹去，唇焦口燥呼不得，归来倚杖自叹息。",
-        "俄顷风定云墨色，秋天漠漠向昏黑。布衾多年冷似铁，娇儿恶卧踏里裂。床头屋漏无干处，雨脚如麻未断绝。自经丧乱少睡眠，长夜沾湿何由彻！",
-        "安得广厦千万间，大庇天下寒士俱欢颜！风雨不动安如山。呜呼！何时眼前突兀见此屋，吾庐独破受冻死亦足！"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": true,
-      "id": "maowu",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "八月秋高风怒号卷我屋上三重茅",
-        "床头屋漏无干处雨脚如麻未断绝",
-        "安得广厦千万间大庇天下寒士俱欢颜风雨不动安如山",
-        "何时眼前突兀见此屋吾庐独破受冻死亦足"
-      ],
-      "linesPunct": [
-        "八月秋高风怒号，卷我屋上三重茅。",
-        "床头屋漏无干处，雨脚如麻未断绝。",
-        "安得广厦千万间，大庇天下寒士俱欢颜，风雨不动安如山！",
-        "何时眼前突兀见此屋，吾庐独破受冻死亦足！"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        2,
-        2,
-        3,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "民生",
-        "推己及人",
-        "唐杂言"
-      ],
-      "technique": [
-        "对比",
-        "议论"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "民生",
-        "推己及人"
-      ],
-      "title": "茅屋为秋风所破歌",
-      "volume": "七年级上册"
-    },
-    {
-      "_path": "poems/初中/七年级上册/蒹葭.md",
-      "author": "佚名",
-      "authorDied": null,
-      "authorEraEnd": 1900,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 3,
-      "dynasty": "先秦",
-      "emotion": "对爱慕者的执着追寻",
-      "examFreq": 0.8,
-      "form": "诗经",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": false,
-      "id": "jianjia",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "蒹葭苍苍白露为霜",
-        "所谓伊人在水一方"
-      ],
-      "linesPunct": [
-        "蒹葭苍苍，白露为霜。",
-        "所谓伊人，在水一方。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "line",
-      "render_split": [
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "爱情",
-        "追寻",
-        "先秦诗经"
-      ],
-      "technique": [
-        "比兴",
-        "重章叠句"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "爱情",
-        "追寻"
-      ],
-      "title": "蒹葭",
-      "volume": "七年级上册"
     },
     {
       "_path": "poems/初中/九年级上册/行路难.md",
@@ -4019,76 +3070,6 @@
       "volume": "七年级上册"
     },
     {
-      "_path": "poems/初中/七年级下册/赤壁.md",
-      "author": "杜牧",
-      "authorDied": 852,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "怀古伤今的感慨",
-      "examFreq": 0.9,
-      "form": "七言",
-      "fullLines": [
-        "折戟沉沙铁未销自将磨洗认前朝",
-        "东风不与周郎便铜雀春深锁二乔"
-      ],
-      "fullLinesPunct": [
-        "折戟沉沙铁未销，自将磨洗认前朝。",
-        "东风不与周郎便，铜雀春深锁二乔。"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": true,
-      "id": "chibi-du",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "折戟沉沙铁未销自将磨洗认前朝",
-        "东风不与周郎便铜雀春深锁二乔"
-      ],
-      "linesPunct": [
-        "折戟沉沙铁未销，自将磨洗认前朝。",
-        "东风不与周郎便，铜雀春深锁二乔。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": 14,
-      "tags": [
-        "怀古",
-        "哲理",
-        "唐七言"
-      ],
-      "technique": [
-        "议论",
-        "借景抒情"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "怀古",
-        "哲理"
-      ],
-      "title": "赤壁",
-      "volume": "七年级下册"
-    },
-    {
       "_path": "poems/初中/九年级下册/过零丁洋.md",
       "author": "文天祥",
       "authorDied": 1283,
@@ -4233,80 +3214,6 @@
       "volume": "七年级下册课外诵读"
     },
     {
-      "_path": "poems/初中/七年级下册/钱塘湖春行.md",
-      "author": "白居易",
-      "authorDied": 846,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "早春西湖的喜悦",
-      "examFreq": 0.8,
-      "form": "七言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": false,
-      "id": "qiantanghuchunxing",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "孤山寺北贾亭西水面初平云脚低",
-        "几处早莺争暖树谁家新燕啄春泥",
-        "乱花渐欲迷人眼浅草才能没马蹄",
-        "最爱湖东行不足绿杨阴里白沙堤"
-      ],
-      "linesPunct": [
-        "孤山寺北贾亭西，水面初平云脚低。",
-        "几处早莺争暖树，谁家新燕啄春泥。",
-        "乱花渐欲迷人眼，浅草才能没马蹄。",
-        "最爱湖东行不足，绿杨阴里白沙堤。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        2,
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": 14,
-      "tags": [
-        "春天",
-        "西湖",
-        "唐七言"
-      ],
-      "technique": [
-        "比喻",
-        "白描"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "春天",
-        "西湖"
-      ],
-      "title": "钱塘湖春行",
-      "volume": "七年级下册"
-    },
-    {
       "_path": "poems/初中/七年级上册/闻王昌龄左迁龙标遥有此寄.md",
       "author": "李白",
       "authorDied": 762,
@@ -4377,118 +3284,51 @@
       "volume": "七年级上册"
     },
     {
-      "_path": "poems/初中/七年级下册/雁门太守行.md",
-      "author": "李贺",
-      "authorDied": 816,
+      "_path": "poems/初中/七年级下册/陋室铭.md",
+      "author": "刘禹锡",
+      "authorDied": 842,
       "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
+      "difficulty": 5,
       "dynasty": "唐",
-      "emotion": "将士浴血报国的悲壮",
-      "examFreq": 0.8,
-      "form": "七言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": false,
-      "id": "yanmenshiweixing",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "黑云压城城欲摧甲光向日金鳞开",
-        "角声满天秋色里塞上燕脂凝夜紫",
-        "半卷红旗临易水霜重鼓寒声不起"
-      ],
-      "linesPunct": [
-        "黑云压城城欲摧，甲光向日金鳞开。",
-        "角声满天秋色里，塞上燕脂凝夜紫。",
-        "半卷红旗临易水，霜重鼓寒声不起。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": 14,
-      "tags": [
-        "战争",
-        "边塞",
-        "唐七言"
-      ],
-      "technique": [
-        "比喻",
-        "对比"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "战争",
-        "边塞"
-      ],
-      "title": "雁门太守行",
-      "volume": "七年级下册"
-    },
-    {
-      "_path": "poems/初中/七年级上册/饮酒.md",
-      "author": "陶潜",
-      "authorDied": 427,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "晋",
-      "emotion": "超脱物欲的淡泊",
+      "emotion": "不慕荣利的君子之德",
       "examFreq": 0.9,
-      "form": "五言",
+      "form": "文言",
       "fullLines": [
-        "结庐在人境而无车马喧",
-        "问君何能尔心远地自偏",
-        "采菊东篱下悠然见南山",
-        "山气日夕佳飞鸟相与还",
-        "此中有真意欲辨已忘言"
+        "斯是陋室惟吾德馨",
+        "苔痕上阶绿草色入帘青",
+        "谈笑有鸿儒往来无白丁",
+        "无丝竹之乱耳无案牍之劳形",
+        "孔子云何陋之有"
       ],
       "fullLinesPunct": [
-        "结庐在人境，而无车马喧。",
-        "问君何能尔？心远地自偏。",
-        "采菊东篱下，悠然见南山。",
-        "山气日夕佳，飞鸟相与还。",
-        "此中有真意，欲辨已忘言。"
+        "斯是陋室，惟吾德馨。",
+        "苔痕上阶绿，草色入帘青。",
+        "谈笑有鸿儒，往来无白丁。",
+        "无丝竹之乱耳，无案牍之劳形。",
+        "孔子云：何陋之有？"
       ],
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
       "grade": 7,
       "hasFulltext": true,
-      "id": "yinjiujiusan",
+      "id": "loushiming",
       "irregular": null,
       "license": "public-domain",
       "lines": [
-        "结庐在人境而无车马喧",
-        "问君何能尔心远地自偏",
-        "采菊东篱下悠然见南山",
-        "山气日夕佳飞鸟相与还",
-        "此中有真意欲辨已忘言"
+        "斯是陋室惟吾德馨",
+        "苔痕上阶绿草色入帘青",
+        "谈笑有鸿儒往来无白丁",
+        "无丝竹之乱耳无案牍之劳形",
+        "孔子云何陋之有"
       ],
       "linesPunct": [
-        "结庐在人境，而无车马喧。",
-        "问君何能尔？心远地自偏。",
-        "采菊东篱下，悠然见南山。",
-        "山气日夕佳，飞鸟相与还。",
-        "此中有真意，欲辨已忘言。"
+        "斯是陋室，惟吾德馨。",
+        "苔痕上阶绿，草色入帘青。",
+        "谈笑有鸿儒，往来无白丁。",
+        "无丝竹之乱耳，无案牍之劳形。",
+        "孔子云：何陋之有？"
       ],
       "pairs": [
         [
@@ -4503,90 +3343,6 @@
       "recite": "full",
       "render_split": [
         2,
-        1,
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": "其五",
-      "syllables": 10,
-      "tags": [
-        "田园",
-        "隐逸",
-        "晋五言"
-      ],
-      "technique": [
-        "象征",
-        "对比"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "田园",
-        "隐逸"
-      ],
-      "title": "饮酒",
-      "volume": "七年级上册"
-    },
-    {
-      "_path": "poems/初中/七年级上册/黄鹤楼.md",
-      "author": "崔颢",
-      "authorDied": 754,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "登临吊古的苍凉",
-      "examFreq": 0.9,
-      "form": "七言",
-      "fullLines": [
-        "昔人已乘黄鹤去此地空余黄鹤楼",
-        "黄鹤一去不复返白云千载空悠悠",
-        "晴川历历汉阳树芳草萋萋鹦鹉洲",
-        "日暮乡关何处是烟波江上使人愁"
-      ],
-      "fullLinesPunct": [
-        "昔人已乘黄鹤去，此地空余黄鹤楼。",
-        "黄鹤一去不复返，白云千载空悠悠。",
-        "晴川历历汉阳树，芳草萋萋鹦鹉洲。",
-        "日暮乡关何处是？烟波江上使人愁。"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 7,
-      "hasFulltext": true,
-      "id": "huanghelou-cuiheng",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "昔人已乘黄鹤去此地空余黄鹤楼",
-        "黄鹤一去不复返白云千载空悠悠",
-        "晴川历历汉阳树芳草萋萋鹦鹉洲",
-        "日暮乡关何处是烟波江上使人愁"
-      ],
-      "linesPunct": [
-        "昔人已乘黄鹤去，此地空余黄鹤楼。",
-        "黄鹤一去不复返，白云千载空悠悠。",
-        "晴川历历汉阳树，芳草萋萋鹦鹉洲。",
-        "日暮乡关何处是？烟波江上使人愁。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
         2,
         2,
         2,
@@ -4596,25 +3352,26 @@
       "source": "S3+S1+S2",
       "stage": "初中",
       "subtitle": null,
-      "syllables": 14,
+      "syllables": null,
       "tags": [
-        "登临",
-        "思乡",
-        "唐七言"
+        "陋室",
+        "高洁",
+        "唐文言"
       ],
       "technique": [
         "对比",
-        "虚实结合"
+        "引用",
+        "托物言志"
       ],
       "textbooks": [
         "统编"
       ],
       "theme": [
-        "登临",
-        "思乡"
+        "陋室",
+        "高洁"
       ],
-      "title": "黄鹤楼",
-      "volume": "七年级上册"
+      "title": "陋室铭",
+      "volume": "七年级下册"
     },
     {
       "_path": "poems/初中/八年级上册/三峡.md",
@@ -4776,6 +3533,154 @@
       "volume": "八年级上册"
     },
     {
+      "_path": "poems/初中/八年级上册/使至塞上.md",
+      "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "出使边塞的雄壮与孤寂",
+      "examFreq": 1.0,
+      "form": "五言",
+      "fullLines": [
+        "单车欲问边属国过居延",
+        "征蓬出汉塞归雁入胡天",
+        "大漠孤烟直长河落日圆",
+        "萧关逢候骑都护在燕然"
+      ],
+      "fullLinesPunct": [
+        "单车欲问边，属国过居延。",
+        "征蓬出汉塞，归雁入胡天。",
+        "大漠孤烟直，长河落日圆。",
+        "萧关逢候骑，都护在燕然。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "shizhuisai",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "单车欲问边属国过居延",
+        "征蓬出汉塞归雁入胡天",
+        "大漠孤烟直长河落日圆",
+        "萧关逢候骑都护在燕然"
+      ],
+      "linesPunct": [
+        "单车欲问边，属国过居延。",
+        "征蓬出汉塞，归雁入胡天。",
+        "大漠孤烟直，长河落日圆。",
+        "萧关逢候骑，都护在燕然。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "边塞",
+        "壮阔",
+        "唐五言"
+      ],
+      "technique": [
+        "比喻",
+        "炼字"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "边塞",
+        "壮阔"
+      ],
+      "title": "使至塞上",
+      "volume": "八年级上册"
+    },
+    {
+      "_path": "poems/初中/八年级下册/关雎.md",
+      "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "先秦",
+      "emotion": "对美好爱情的向往",
+      "examFreq": 0.9,
+      "form": "诗经",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": false,
+      "id": "guanju",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "关关雎鸠在河之洲",
+        "窈窕淑女君子好逑"
+      ],
+      "linesPunct": [
+        "关关雎鸠，在河之洲。",
+        "窈窕淑女，君子好逑。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "line",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "爱情",
+        "水滨",
+        "先秦诗经"
+      ],
+      "technique": [
+        "比兴",
+        "叠词"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱情",
+        "水滨"
+      ],
+      "title": "关雎",
+      "volume": "八年级下册"
+    },
+    {
       "_path": "poems/初中/八年级下册/北冥有鱼.md",
       "author": "庄子",
       "authorDied": -286,
@@ -4847,6 +3752,70 @@
         "哲理"
       ],
       "title": "北冥有鱼",
+      "volume": "八年级下册"
+    },
+    {
+      "_path": "poems/初中/八年级下册/卖炭翁.md",
+      "author": "白居易",
+      "authorDied": 846,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "对宫市巧取豪夺的愤慨",
+      "examFreq": 0.8,
+      "form": "七言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": false,
+      "id": "maotanshangwu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "可怜身上衣正单心忧炭贱愿天寒",
+        "卖炭得钱何所营身上衣裳口中食"
+      ],
+      "linesPunct": [
+        "可怜身上衣正单，心忧炭贱愿天寒。",
+        "卖炭得钱何所营？身上衣裳口中食。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        1
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "民生",
+        "讽喻",
+        "唐七言"
+      ],
+      "technique": [
+        "对比",
+        "细节"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "民生",
+        "讽喻"
+      ],
+      "title": "卖炭翁",
       "volume": "八年级下册"
     },
     {
@@ -5084,81 +4053,6 @@
       "volume": "八年级下册"
     },
     {
-      "_path": "poems/初中/八年级上册/岳阳楼记.md",
-      "author": "范仲淹",
-      "authorDied": 1052,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 5,
-      "dynasty": "宋",
-      "emotion": "先天下之忧而忧的政治抱负",
-      "examFreq": 0.9,
-      "form": "文言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 8,
-      "hasFulltext": false,
-      "id": "yueyanglouji",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "先天下之忧而忧后天下之乐而乐",
-        "不以物喜不以己悲",
-        "政通人和百废具兴",
-        "不以物喜不以己悲居庙堂之高则忧其民处江湖之远则忧其君"
-      ],
-      "linesPunct": [
-        "先天下之忧而忧，后天下之乐而乐。",
-        "不以物喜，不以己悲。",
-        "政通人和，百废具兴。",
-        "不以物喜，不以己悲；居庙堂之高则忧其民，处江湖之远则忧其君。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        2,
-        2,
-        2,
-        3
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "忧国",
-        "抱负",
-        "宋文言"
-      ],
-      "technique": [
-        "对偶",
-        "对比",
-        "借景抒情"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "忧国",
-        "抱负"
-      ],
-      "title": "岳阳楼记",
-      "volume": "八年级上册"
-    },
-    {
       "_path": "poems/初中/八年级下册课外诵读/式微.md",
       "author": "佚名",
       "authorDied": null,
@@ -5221,6 +4115,90 @@
       ],
       "title": "式微",
       "volume": "八年级下册课外诵读"
+    },
+    {
+      "_path": "poems/初中/八年级上册/春望.md",
+      "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "战乱中的忧国伤时",
+      "examFreq": 1.0,
+      "form": "五言",
+      "fullLines": [
+        "国破山河在城春草木深",
+        "感时花溅泪恨别鸟惊心",
+        "烽火连三月家书抵万金",
+        "白头搔更短浑欲不胜簪"
+      ],
+      "fullLinesPunct": [
+        "国破山河在，城春草木深。",
+        "感时花溅泪，恨别鸟惊心。",
+        "烽火连三月，家书抵万金。",
+        "白头搔更短，浑欲不胜簪。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "chunwang",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "国破山河在城春草木深",
+        "感时花溅泪恨别鸟惊心",
+        "烽火连三月家书抵万金",
+        "白头搔更短浑欲不胜簪"
+      ],
+      "linesPunct": [
+        "国破山河在，城春草木深。",
+        "感时花溅泪，恨别鸟惊心。",
+        "烽火连三月，家书抵万金。",
+        "白头搔更短，浑欲不胜簪。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "战争",
+        "忧国",
+        "唐五言"
+      ],
+      "technique": [
+        "对比",
+        "拟人"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "战争",
+        "忧国"
+      ],
+      "title": "春望",
+      "volume": "八年级上册"
     },
     {
       "_path": "poems/初中/八年级下册/桃花源记.md",
@@ -5319,6 +4297,75 @@
       "volume": "八年级下册"
     },
     {
+      "_path": "poems/初中/八年级上册/浣溪沙.md",
+      "author": "晏殊",
+      "authorDied": 1055,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "追忆往事的惆怅",
+      "examFreq": 0.9,
+      "form": "词",
+      "fullLines": [
+        "一曲新词酒一杯去年天气旧亭台夕阳西下几时回",
+        "无可奈何花落去似曾相识燕归来小园香径独徘徊"
+      ],
+      "fullLinesPunct": [
+        "一曲新词酒一杯，去年天气旧亭台。夕阳西下几时回？",
+        "无可奈何花落去，似曾相识燕归来。小园香径独徘徊。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "huanxisha-yanque",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "一曲新词酒一杯去年天气旧亭台夕阳西下几时回",
+        "无可奈何花落去似曾相识燕归来小园香径独徘徊"
+      ],
+      "linesPunct": [
+        "一曲新词酒一杯，去年天气旧亭台。夕阳西下几时回？",
+        "无可奈何花落去，似曾相识燕归来。小园香径独徘徊。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "一曲新词酒一杯",
+      "syllables": null,
+      "tags": [
+        "闺情",
+        "怀念",
+        "宋词"
+      ],
+      "technique": [
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "闺情",
+        "怀念"
+      ],
+      "title": "浣溪沙",
+      "volume": "八年级上册"
+    },
+    {
       "_path": "poems/初中/八年级上册课外诵读/渔家傲.md",
       "author": "李清照",
       "authorDied": 1155,
@@ -5401,80 +4448,6 @@
       ],
       "title": "渔家傲",
       "volume": "八年级上册课外诵读"
-    },
-    {
-      "_path": "poems/初中/八年级下册/爱莲说.md",
-      "author": "周敦颐",
-      "authorDied": 1073,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 5,
-      "dynasty": "宋",
-      "emotion": "不媚世俗的君子之志",
-      "examFreq": 0.9,
-      "form": "文言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 8,
-      "hasFulltext": false,
-      "id": "ailianshuo",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "水陆草木之花可爱者甚蕃",
-        "予独爱莲之出淤泥而不染濯清涟而不妖",
-        "中通外直不蔓不枝香远益清亭亭净植",
-        "噫菊之爱陶后鲜有闻"
-      ],
-      "linesPunct": [
-        "水陆草木之花，可爱者甚蕃。",
-        "予独爱莲之出淤泥而不染，濯清涟而不妖。",
-        "中通外直，不蔓不枝，香远益清，亭亭净植。",
-        "噫！菊之爱，陶后鲜有闻。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        2,
-        2,
-        4,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "咏物",
-        "高洁",
-        "宋文言"
-      ],
-      "technique": [
-        "托物言志",
-        "对比"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "咏物",
-        "高洁"
-      ],
-      "title": "爱莲说",
-      "volume": "八年级下册"
     },
     {
       "_path": "poems/初中/八年级下册/石壕吏.md",
@@ -5613,6 +4586,154 @@
       ],
       "title": "答谢中书书",
       "volume": "八年级上册"
+    },
+    {
+      "_path": "poems/初中/八年级下册/茅屋为秋风所破歌.md",
+      "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "唐",
+      "emotion": "穷困中的推己及人",
+      "examFreq": 0.7,
+      "form": "杂言",
+      "fullLines": [
+        "八月秋高风怒号卷我屋上三重茅茅飞渡江洒江郊高者挂罥长林梢下者飘转沉塘坳",
+        "南村群童欺我老无力忍能对面为盗贼公然抱茅入竹去唇焦口燥呼不得归来倚杖自叹息",
+        "俄顷风定云墨色秋天漠漠向昏黑布衾多年冷似铁娇儿恶卧踏里裂床头屋漏无干处雨脚如麻未断绝自经丧乱少睡眠长夜沾湿何由彻",
+        "安得广厦千万间大庇天下寒士俱欢颜风雨不动安如山呜呼何时眼前突兀见此屋吾庐独破受冻死亦足"
+      ],
+      "fullLinesPunct": [
+        "八月秋高风怒号，卷我屋上三重茅。茅飞渡江洒江郊，高者挂罥长林梢，下者飘转沉塘坳。",
+        "南村群童欺我老无力，忍能对面为盗贼。公然抱茅入竹去，唇焦口燥呼不得，归来倚杖自叹息。",
+        "俄顷风定云墨色，秋天漠漠向昏黑。布衾多年冷似铁，娇儿恶卧踏里裂。床头屋漏无干处，雨脚如麻未断绝。自经丧乱少睡眠，长夜沾湿何由彻！",
+        "安得广厦千万间，大庇天下寒士俱欢颜！风雨不动安如山。呜呼！何时眼前突兀见此屋，吾庐独破受冻死亦足！"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "maowu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "八月秋高风怒号卷我屋上三重茅",
+        "床头屋漏无干处雨脚如麻未断绝",
+        "安得广厦千万间大庇天下寒士俱欢颜风雨不动安如山",
+        "何时眼前突兀见此屋吾庐独破受冻死亦足"
+      ],
+      "linesPunct": [
+        "八月秋高风怒号，卷我屋上三重茅。",
+        "床头屋漏无干处，雨脚如麻未断绝。",
+        "安得广厦千万间，大庇天下寒士俱欢颜，风雨不动安如山！",
+        "何时眼前突兀见此屋，吾庐独破受冻死亦足！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "民生",
+        "推己及人",
+        "唐杂言"
+      ],
+      "technique": [
+        "对比",
+        "议论"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "民生",
+        "推己及人"
+      ],
+      "title": "茅屋为秋风所破歌",
+      "volume": "八年级下册"
+    },
+    {
+      "_path": "poems/初中/八年级下册/蒹葭.md",
+      "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "先秦",
+      "emotion": "对爱慕者的执着追寻",
+      "examFreq": 0.8,
+      "form": "诗经",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": false,
+      "id": "jianjia",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "蒹葭苍苍白露为霜",
+        "所谓伊人在水一方"
+      ],
+      "linesPunct": [
+        "蒹葭苍苍，白露为霜。",
+        "所谓伊人，在水一方。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "line",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "爱情",
+        "追寻",
+        "先秦诗经"
+      ],
+      "technique": [
+        "比兴",
+        "重章叠句"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱情",
+        "追寻"
+      ],
+      "title": "蒹葭",
+      "volume": "八年级下册"
     },
     {
       "_path": "poems/初中/八年级下册/虽有嘉肴.md",
@@ -5764,6 +4885,76 @@
       "volume": "八年级上册"
     },
     {
+      "_path": "poems/初中/八年级上册/赤壁.md",
+      "author": "杜牧",
+      "authorDied": 852,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "怀古伤今的感慨",
+      "examFreq": 0.9,
+      "form": "七言",
+      "fullLines": [
+        "折戟沉沙铁未销自将磨洗认前朝",
+        "东风不与周郎便铜雀春深锁二乔"
+      ],
+      "fullLinesPunct": [
+        "折戟沉沙铁未销，自将磨洗认前朝。",
+        "东风不与周郎便，铜雀春深锁二乔。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "chibi-du",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "折戟沉沙铁未销自将磨洗认前朝",
+        "东风不与周郎便铜雀春深锁二乔"
+      ],
+      "linesPunct": [
+        "折戟沉沙铁未销，自将磨洗认前朝。",
+        "东风不与周郎便，铜雀春深锁二乔。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "怀古",
+        "哲理",
+        "唐七言"
+      ],
+      "technique": [
+        "议论",
+        "借景抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "怀古",
+        "哲理"
+      ],
+      "title": "赤壁",
+      "volume": "八年级上册"
+    },
+    {
       "_path": "poems/初中/八年级下册课外诵读/送杜少府之任蜀州.md",
       "author": "王勃",
       "authorDied": 676,
@@ -5846,73 +5037,6 @@
       ],
       "title": "送杜少府之任蜀州",
       "volume": "八年级下册课外诵读"
-    },
-    {
-      "_path": "poems/初中/八年级上册/醉翁亭记.md",
-      "author": "欧阳修",
-      "authorDied": 1072,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "宋",
-      "emotion": "与民同乐的旷达",
-      "examFreq": 0.9,
-      "form": "文言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 8,
-      "hasFulltext": false,
-      "id": "zuigongtingji",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "醉翁之意不在酒在乎山水之间也",
-        "山水之乐得之心而寓之酒也",
-        "人知从太守游而乐而不知太守之乐其乐也"
-      ],
-      "linesPunct": [
-        "醉翁之意不在酒，在乎山水之间也。",
-        "山水之乐，得之心而寓之酒也。",
-        "人知从太守游而乐，而不知太守之乐其乐也。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "初中",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "山水",
-        "与民同乐",
-        "宋文言"
-      ],
-      "technique": [
-        "对比",
-        "抒情"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "山水",
-        "与民同乐"
-      ],
-      "title": "醉翁亭记",
-      "volume": "八年级上册"
     },
     {
       "_path": "poems/初中/八年级上册课外诵读/野望.md",
@@ -5999,51 +5123,192 @@
       "volume": "八年级上册课外诵读"
     },
     {
-      "_path": "poems/初中/八年级下册/陋室铭.md",
-      "author": "刘禹锡",
-      "authorDied": 842,
+      "_path": "poems/初中/八年级上册/钱塘湖春行.md",
+      "author": "白居易",
+      "authorDied": 846,
       "authorEraEnd": null,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 5,
+      "difficulty": 4,
       "dynasty": "唐",
-      "emotion": "不慕荣利的君子之德",
+      "emotion": "早春西湖的喜悦",
+      "examFreq": 0.8,
+      "form": "七言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": false,
+      "id": "qiantanghuchunxing",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "孤山寺北贾亭西水面初平云脚低",
+        "几处早莺争暖树谁家新燕啄春泥",
+        "乱花渐欲迷人眼浅草才能没马蹄",
+        "最爱湖东行不足绿杨阴里白沙堤"
+      ],
+      "linesPunct": [
+        "孤山寺北贾亭西，水面初平云脚低。",
+        "几处早莺争暖树，谁家新燕啄春泥。",
+        "乱花渐欲迷人眼，浅草才能没马蹄。",
+        "最爱湖东行不足，绿杨阴里白沙堤。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "春天",
+        "西湖",
+        "唐七言"
+      ],
+      "technique": [
+        "比喻",
+        "白描"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "春天",
+        "西湖"
+      ],
+      "title": "钱塘湖春行",
+      "volume": "八年级上册"
+    },
+    {
+      "_path": "poems/初中/八年级上册/雁门太守行.md",
+      "author": "李贺",
+      "authorDied": 816,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "将士浴血报国的悲壮",
+      "examFreq": 0.8,
+      "form": "七言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": false,
+      "id": "yanmenshiweixing",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "黑云压城城欲摧甲光向日金鳞开",
+        "角声满天秋色里塞上燕脂凝夜紫",
+        "半卷红旗临易水霜重鼓寒声不起"
+      ],
+      "linesPunct": [
+        "黑云压城城欲摧，甲光向日金鳞开。",
+        "角声满天秋色里，塞上燕脂凝夜紫。",
+        "半卷红旗临易水，霜重鼓寒声不起。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "战争",
+        "边塞",
+        "唐七言"
+      ],
+      "technique": [
+        "比喻",
+        "对比"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "战争",
+        "边塞"
+      ],
+      "title": "雁门太守行",
+      "volume": "八年级上册"
+    },
+    {
+      "_path": "poems/初中/八年级上册/饮酒.md",
+      "author": "陶潜",
+      "authorDied": 427,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "晋",
+      "emotion": "超脱物欲的淡泊",
       "examFreq": 0.9,
-      "form": "文言",
+      "form": "五言",
       "fullLines": [
-        "斯是陋室惟吾德馨",
-        "苔痕上阶绿草色入帘青",
-        "谈笑有鸿儒往来无白丁",
-        "无丝竹之乱耳无案牍之劳形",
-        "孔子云何陋之有"
+        "结庐在人境而无车马喧",
+        "问君何能尔心远地自偏",
+        "采菊东篱下悠然见南山",
+        "山气日夕佳飞鸟相与还",
+        "此中有真意欲辨已忘言"
       ],
       "fullLinesPunct": [
-        "斯是陋室，惟吾德馨。",
-        "苔痕上阶绿，草色入帘青。",
-        "谈笑有鸿儒，往来无白丁。",
-        "无丝竹之乱耳，无案牍之劳形。",
-        "孔子云：何陋之有？"
+        "结庐在人境，而无车马喧。",
+        "问君何能尔？心远地自偏。",
+        "采菊东篱下，悠然见南山。",
+        "山气日夕佳，飞鸟相与还。",
+        "此中有真意，欲辨已忘言。"
       ],
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
       "grade": 8,
       "hasFulltext": true,
-      "id": "loushiming",
+      "id": "yinjiujiusan",
       "irregular": null,
       "license": "public-domain",
       "lines": [
-        "斯是陋室惟吾德馨",
-        "苔痕上阶绿草色入帘青",
-        "谈笑有鸿儒往来无白丁",
-        "无丝竹之乱耳无案牍之劳形",
-        "孔子云何陋之有"
+        "结庐在人境而无车马喧",
+        "问君何能尔心远地自偏",
+        "采菊东篱下悠然见南山",
+        "山气日夕佳飞鸟相与还",
+        "此中有真意欲辨已忘言"
       ],
       "linesPunct": [
-        "斯是陋室，惟吾德馨。",
-        "苔痕上阶绿，草色入帘青。",
-        "谈笑有鸿儒，往来无白丁。",
-        "无丝竹之乱耳，无案牍之劳形。",
-        "孔子云：何陋之有？"
+        "结庐在人境，而无车马喧。",
+        "问君何能尔？心远地自偏。",
+        "采菊东篱下，悠然见南山。",
+        "山气日夕佳，飞鸟相与还。",
+        "此中有真意，欲辨已忘言。"
       ],
       "pairs": [
         [
@@ -6058,35 +5323,34 @@
       "recite": "full",
       "render_split": [
         2,
+        1,
         2,
         2,
-        2,
-        1
+        2
       ],
       "render_split_reason": null,
       "source": "S3+S1+S2",
       "stage": "初中",
-      "subtitle": null,
-      "syllables": null,
+      "subtitle": "其五",
+      "syllables": 10,
       "tags": [
-        "陋室",
-        "高洁",
-        "唐文言"
+        "田园",
+        "隐逸",
+        "晋五言"
       ],
       "technique": [
-        "对比",
-        "引用",
-        "托物言志"
+        "象征",
+        "对比"
       ],
       "textbooks": [
         "统编"
       ],
       "theme": [
-        "陋室",
-        "高洁"
+        "田园",
+        "隐逸"
       ],
-      "title": "陋室铭",
-      "volume": "八年级下册"
+      "title": "饮酒",
+      "volume": "八年级上册"
     },
     {
       "_path": "poems/初中/八年级下册/马说.md",
@@ -6162,6 +5426,90 @@
       ],
       "title": "马说",
       "volume": "八年级下册"
+    },
+    {
+      "_path": "poems/初中/八年级上册/黄鹤楼.md",
+      "author": "崔颢",
+      "authorDied": 754,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "登临吊古的苍凉",
+      "examFreq": 0.9,
+      "form": "七言",
+      "fullLines": [
+        "昔人已乘黄鹤去此地空余黄鹤楼",
+        "黄鹤一去不复返白云千载空悠悠",
+        "晴川历历汉阳树芳草萋萋鹦鹉洲",
+        "日暮乡关何处是烟波江上使人愁"
+      ],
+      "fullLinesPunct": [
+        "昔人已乘黄鹤去，此地空余黄鹤楼。",
+        "黄鹤一去不复返，白云千载空悠悠。",
+        "晴川历历汉阳树，芳草萋萋鹦鹉洲。",
+        "日暮乡关何处是？烟波江上使人愁。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "huanghelou-cuiheng",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "昔人已乘黄鹤去此地空余黄鹤楼",
+        "黄鹤一去不复返白云千载空悠悠",
+        "晴川历历汉阳树芳草萋萋鹦鹉洲",
+        "日暮乡关何处是烟波江上使人愁"
+      ],
+      "linesPunct": [
+        "昔人已乘黄鹤去，此地空余黄鹤楼。",
+        "黄鹤一去不复返，白云千载空悠悠。",
+        "晴川历历汉阳树，芳草萋萋鹦鹉洲。",
+        "日暮乡关何处是？烟波江上使人愁。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "登临",
+        "思乡",
+        "唐七言"
+      ],
+      "technique": [
+        "对比",
+        "虚实结合"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "登临",
+        "思乡"
+      ],
+      "title": "黄鹤楼",
+      "volume": "八年级上册"
     },
     {
       "_path": "poems/初中/九年级下册/《吕氏春秋》一则.md",
@@ -6517,6 +5865,270 @@
       "volume": "九年级下册"
     },
     {
+      "_path": "poems/初中/九年级下册/十五从军征.md",
+      "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 220,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "汉",
+      "emotion": "老兵归乡的荒凉",
+      "examFreq": 0.7,
+      "form": "乐府",
+      "fullLines": [
+        "十五从军征八十始得归",
+        "道逢乡里人家中有阿谁",
+        "遥看是君家松柏冢累累",
+        "兔从狗窦入雉从梁上飞",
+        "中庭生旅谷井上生旅葵",
+        "舂谷持作饭采葵持作羹",
+        "羹饭一时熟不知贻阿谁",
+        "出门东向看泪落沾我衣"
+      ],
+      "fullLinesPunct": [
+        "十五从军征，八十始得归。",
+        "道逢乡里人，家中有阿谁？",
+        "遥看是君家，松柏冢累累。",
+        "兔从狗窦入，雉从梁上飞。",
+        "中庭生旅谷，井上生旅葵。",
+        "舂谷持作饭，采葵持作羹。",
+        "羹饭一时熟，不知贻阿谁。",
+        "出门东向看，泪落沾我衣。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "shiwucongjunzheng",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "十五从军征八十始得归",
+        "道逢乡里人家中有阿谁",
+        "遥看是君家松柏冢累累",
+        "兔从狗窦入雉从梁上飞",
+        "中庭生旅谷井上生旅葵",
+        "舂谷持作饭采葵持作羹",
+        "羹饭一时熟不知贻阿谁",
+        "出门东向看泪落沾我衣"
+      ],
+      "linesPunct": [
+        "十五从军征，八十始得归。",
+        "道逢乡里人，家中有阿谁？",
+        "遥看是君家，松柏冢累累。",
+        "兔从狗窦入，雉从梁上飞。",
+        "中庭生旅谷，井上生旅葵。",
+        "舂谷持作饭，采葵持作羹。",
+        "羹饭一时熟，不知贻阿谁。",
+        "出门东向看，泪落沾我衣。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S1+S2+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "战争",
+        "思乡",
+        "汉乐府"
+      ],
+      "technique": [
+        "白描",
+        "叙事"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "战争",
+        "思乡"
+      ],
+      "title": "十五从军征",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/南乡子.md",
+      "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "渴望收复失地的壮志",
+      "examFreq": 0.9,
+      "form": "词",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": false,
+      "id": "nangxiangzi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "何处望神州满眼风光北固楼千古兴亡多少事悠悠",
+        "不尽长江滚滚流",
+        "年少万兜鍪坐断东南战未休",
+        "天下英雄谁敌手曹刘",
+        "生子当如孙仲谋"
+      ],
+      "linesPunct": [
+        "何处望神州？满眼风光北固楼。千古兴亡多少事？悠悠。",
+        "不尽长江滚滚流。",
+        "年少万兜鍪，坐断东南战未休。",
+        "天下英雄谁敌手？曹刘。",
+        "生子当如孙仲谋。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "何处望神州",
+      "syllables": null,
+      "tags": [
+        "爱国",
+        "豪情",
+        "宋词"
+      ],
+      "technique": [
+        "对比",
+        "典故"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱国",
+        "豪情"
+      ],
+      "title": "南乡子",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/岳阳楼记.md",
+      "author": "范仲淹",
+      "authorDied": 1052,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "先天下之忧而忧的政治抱负",
+      "examFreq": 0.9,
+      "form": "文言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": false,
+      "id": "yueyanglouji",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "先天下之忧而忧后天下之乐而乐",
+        "不以物喜不以己悲",
+        "政通人和百废具兴",
+        "不以物喜不以己悲居庙堂之高则忧其民处江湖之远则忧其君"
+      ],
+      "linesPunct": [
+        "先天下之忧而忧，后天下之乐而乐。",
+        "不以物喜，不以己悲。",
+        "政通人和，百废具兴。",
+        "不以物喜，不以己悲；居庙堂之高则忧其民，处江湖之远则忧其君。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        2,
+        2,
+        3
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "忧国",
+        "抱负",
+        "宋文言"
+      ],
+      "technique": [
+        "对偶",
+        "对比",
+        "借景抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "忧国",
+        "抱负"
+      ],
+      "title": "岳阳楼记",
+      "volume": "九年级上册"
+    },
+    {
       "_path": "poems/初中/九年级下册/曹刿论战.md",
       "author": "左丘明",
       "authorDied": -422,
@@ -6609,7 +6221,163 @@
       "volume": "九年级下册"
     },
     {
-      "_path": "poems/初中/九年级下册/湖心亭看雪.md",
+      "_path": "poems/初中/九年级下册/江城子.md",
+      "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "出猎的豪迈与报国壮志",
+      "examFreq": 0.9,
+      "form": "词",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": false,
+      "id": "jiangchengzi-laofeng",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "老夫聊发少年狂左牵黄右擎苍",
+        "锦帽貂裘千骑卷平冈",
+        "为报倾城随太守亲射虎看孙郎"
+      ],
+      "linesPunct": [
+        "老夫聊发少年狂，左牵黄，右擎苍。",
+        "锦帽貂裘，千骑卷平冈。",
+        "为报倾城随太守，亲射虎，看孙郎。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        3,
+        2,
+        3
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "密州出猎",
+      "syllables": null,
+      "tags": [
+        "豪迈",
+        "爱国",
+        "宋词"
+      ],
+      "technique": [
+        "典故",
+        "夸张"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "豪迈",
+        "爱国"
+      ],
+      "title": "江城子",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/渔家傲.md",
+      "author": "范仲淹",
+      "authorDied": 1052,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "戍边思乡的复杂心境",
+      "examFreq": 1.0,
+      "form": "词",
+      "fullLines": [
+        "塞下秋来风景异衡阳雁去无留意",
+        "四面边声连角起",
+        "千嶂里长烟落日孤城闭",
+        "浊酒一杯家万里燕然未勒归无计",
+        "羌管悠悠霜满地人不寐将军白发征夫泪"
+      ],
+      "fullLinesPunct": [
+        "塞下秋来风景异，衡阳雁去无留意。",
+        "四面边声连角起。",
+        "千嶂里，长烟落日孤城闭。",
+        "浊酒一杯家万里，燕然未勒归无计。",
+        "羌管悠悠霜满地，人不寐，将军白发征夫泪。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "yujiaao-qiusi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "塞下秋来风景异衡阳雁去无留意",
+        "四面边声连角起",
+        "千嶂里长烟落日孤城闭",
+        "浊酒一杯家万里燕然未勒归无计",
+        "羌管悠悠霜满地人不寐将军白发征夫泪"
+      ],
+      "linesPunct": [
+        "塞下秋来风景异，衡阳雁去无留意。",
+        "四面边声连角起。",
+        "千嶂里，长烟落日孤城闭。",
+        "浊酒一杯家万里，燕然未勒归无计。",
+        "羌管悠悠霜满地，人不寐，将军白发征夫泪。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        1,
+        2,
+        2,
+        3
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "秋思",
+      "syllables": null,
+      "tags": [
+        "边塞",
+        "思乡",
+        "宋词"
+      ],
+      "technique": [
+        "对比",
+        "白描"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "边塞",
+        "思乡"
+      ],
+      "title": "渔家傲",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/湖心亭看雪.md",
       "author": "张岱",
       "authorDied": 1679,
       "authorEraEnd": null,
@@ -6673,7 +6441,7 @@
         "雅趣"
       ],
       "title": "湖心亭看雪",
-      "volume": "九年级下册"
+      "volume": "九年级上册"
     },
     {
       "_path": "poems/初中/九年级下册/满江红.md",
@@ -6767,6 +6535,171 @@
         "家国之痛"
       ],
       "title": "满江红",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/白雪歌送武判官归京.md",
+      "author": "岑参",
+      "authorDied": 770,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "雪中送别的苍茫与深情",
+      "examFreq": 0.8,
+      "form": "七言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": false,
+      "id": "baixuege",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "北风卷地白草折胡天八月即飞雪",
+        "忽如一夜春风来千树万树梨花开",
+        "轮台东门送君去去时雪满天山路"
+      ],
+      "linesPunct": [
+        "北风卷地白草折，胡天八月即飞雪。",
+        "忽如一夜春风来，千树万树梨花开。",
+        "轮台东门送君去，去时雪满天山路。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "边塞",
+        "送别",
+        "唐七言"
+      ],
+      "technique": [
+        "比喻",
+        "夸张"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "边塞",
+        "送别"
+      ],
+      "title": "白雪歌送武判官归京",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/破阵子.md",
+      "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "报国杀敌的壮志",
+      "examFreq": 1.0,
+      "form": "词",
+      "fullLines": [
+        "醉里挑灯看剑梦回吹角连营",
+        "八百里分麾下炙五十弦翻塞外声",
+        "沙场秋点兵",
+        "马作的卢飞快弓如霹雳弦惊",
+        "了却君王天下事赢得生前身后名",
+        "可怜白发生"
+      ],
+      "fullLinesPunct": [
+        "醉里挑灯看剑，梦回吹角连营。",
+        "八百里分麾下炙，五十弦翻塞外声。",
+        "沙场秋点兵。",
+        "马作的卢飞快，弓如霹雳弦惊。",
+        "了却君王天下事，赢得生前身后名。",
+        "可怜白发生！"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "pozhenzi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "醉里挑灯看剑梦回吹角连营",
+        "八百里分麾下炙五十弦翻塞外声",
+        "沙场秋点兵",
+        "马作的卢飞快弓如霹雳弦惊",
+        "了却君王天下事赢得生前身后名",
+        "可怜白发生"
+      ],
+      "linesPunct": [
+        "醉里挑灯看剑，梦回吹角连营。",
+        "八百里分麾下炙，五十弦翻塞外声。",
+        "沙场秋点兵。",
+        "马作的卢飞快，弓如霹雳弦惊。",
+        "了却君王天下事，赢得生前身后名。",
+        "可怜白发生！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": "为陈同甫赋壮词以寄",
+      "syllables": null,
+      "tags": [
+        "爱国",
+        "壮志",
+        "宋词"
+      ],
+      "technique": [
+        "对比",
+        "夸张"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱国",
+        "壮志"
+      ],
+      "title": "破阵子",
       "volume": "九年级下册"
     },
     {
@@ -7012,6 +6945,73 @@
         "哲理"
       ],
       "title": "酬乐天扬州初逢席上见赠",
+      "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/九年级上册/醉翁亭记.md",
+      "author": "欧阳修",
+      "authorDied": 1072,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "与民同乐的旷达",
+      "examFreq": 0.9,
+      "form": "文言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": false,
+      "id": "zuigongtingji",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "醉翁之意不在酒在乎山水之间也",
+        "山水之乐得之心而寓之酒也",
+        "人知从太守游而乐而不知太守之乐其乐也"
+      ],
+      "linesPunct": [
+        "醉翁之意不在酒，在乎山水之间也。",
+        "山水之乐，得之心而寓之酒也。",
+        "人知从太守游而乐，而不知太守之乐其乐也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "山水",
+        "与民同乐",
+        "宋文言"
+      ],
+      "technique": [
+        "对比",
+        "抒情"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "山水",
+        "与民同乐"
+      ],
+      "title": "醉翁亭记",
       "volume": "九年级上册"
     },
     {
@@ -12036,70 +12036,6 @@
       "volume": "五年级上册"
     },
     {
-      "_path": "poems/小学/五年级下册/送元二使安西.md",
-      "author": "王维",
-      "authorDied": 761,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 3,
-      "dynasty": "唐",
-      "emotion": "送别中的深挚与安慰",
-      "examFreq": 0.9,
-      "form": "七言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 5,
-      "hasFulltext": true,
-      "id": "songyuaner",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "渭城朝雨浥轻尘客舍青青柳色新",
-        "劝君更尽一杯酒西出阳关无故人"
-      ],
-      "linesPunct": [
-        "渭城朝雨浥轻尘，客舍青青柳色新。",
-        "劝君更尽一杯酒，西出阳关无故人。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "subtitle": null,
-      "syllables": 14,
-      "tags": [
-        "送别",
-        "友情",
-        "唐七言"
-      ],
-      "technique": [
-        "白描",
-        "比喻"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "送别",
-        "友情"
-      ],
-      "title": "送元二使安西",
-      "volume": "五年级下册"
-    },
-    {
       "_path": "poems/小学/五年级上册/长歌行.md",
       "author": "汉乐府",
       "authorDied": null,
@@ -12238,6 +12174,80 @@
       ],
       "title": "长相思",
       "volume": "五年级上册"
+    },
+    {
+      "_path": "poems/小学/五年级下册/闻官军收河南河北.md",
+      "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "唐",
+      "emotion": "闻捷后狂喜难抑的欣喜",
+      "examFreq": 0.8,
+      "form": "七言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 5,
+      "hasFulltext": true,
+      "id": "wenguanjun",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "剑外忽传收蓟北初闻涕泪满衣裳",
+        "却看妻子愁何在漫卷诗书喜欲狂",
+        "白日放歌须纵酒青春作伴好还乡",
+        "即从巴峡穿巫峡便下襄阳向洛阳"
+      ],
+      "linesPunct": [
+        "剑外忽传收蓟北，初闻涕泪满衣裳。",
+        "却看妻子愁何在，漫卷诗书喜欲狂。",
+        "白日放歌须纵酒，青春作伴好还乡。",
+        "即从巴峡穿巫峡，便下襄阳向洛阳。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "爱国",
+        "喜悦",
+        "唐七言"
+      ],
+      "technique": [
+        "夸张",
+        "拟人"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱国",
+        "喜悦"
+      ],
+      "title": "闻官军收河南河北",
+      "volume": "五年级下册"
     },
     {
       "_path": "poems/小学/五年级上册/题临安邸.md",
@@ -13903,6 +13913,70 @@
       "volume": "六年级下册"
     },
     {
+      "_path": "poems/小学/六年级下册/送元二使安西.md",
+      "author": "王维",
+      "authorDied": 761,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "唐",
+      "emotion": "送别中的深挚与安慰",
+      "examFreq": 0.9,
+      "form": "七言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 6,
+      "hasFulltext": true,
+      "id": "songyuaner",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "渭城朝雨浥轻尘客舍青青柳色新",
+        "劝君更尽一杯酒西出阳关无故人"
+      ],
+      "linesPunct": [
+        "渭城朝雨浥轻尘，客舍青青柳色新。",
+        "劝君更尽一杯酒，西出阳关无故人。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "送别",
+        "友情",
+        "唐七言"
+      ],
+      "technique": [
+        "白描",
+        "比喻"
+      ],
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "送别",
+        "友情"
+      ],
+      "title": "送元二使安西",
+      "volume": "六年级下册"
+    },
+    {
       "_path": "poems/小学/六年级下册/采薇.md",
       "author": "佚名",
       "authorDied": null,
@@ -13974,80 +14048,6 @@
         "思乡"
       ],
       "title": "采薇",
-      "volume": "六年级下册"
-    },
-    {
-      "_path": "poems/小学/六年级下册/闻官军收河南河北.md",
-      "author": "杜甫",
-      "authorDied": 770,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 3,
-      "dynasty": "唐",
-      "emotion": "闻捷后狂喜难抑的欣喜",
-      "examFreq": 0.8,
-      "form": "七言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 6,
-      "hasFulltext": true,
-      "id": "wenguanjun",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "剑外忽传收蓟北初闻涕泪满衣裳",
-        "却看妻子愁何在漫卷诗书喜欲狂",
-        "白日放歌须纵酒青春作伴好还乡",
-        "即从巴峡穿巫峡便下襄阳向洛阳"
-      ],
-      "linesPunct": [
-        "剑外忽传收蓟北，初闻涕泪满衣裳。",
-        "却看妻子愁何在，漫卷诗书喜欲狂。",
-        "白日放歌须纵酒，青春作伴好还乡。",
-        "即从巴峡穿巫峡，便下襄阳向洛阳。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "subtitle": null,
-      "syllables": 14,
-      "tags": [
-        "爱国",
-        "喜悦",
-        "唐七言"
-      ],
-      "technique": [
-        "夸张",
-        "拟人"
-      ],
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "爱国",
-        "喜悦"
-      ],
-      "title": "闻官军收河南河北",
       "volume": "六年级下册"
     },
     {
@@ -14690,7 +14690,7 @@
       "volume": "选择性必修下册"
     },
     {
-      "_path": "poems/高中/选择性必修下册/书愤.md",
+      "_path": "poems/高中/选择性必修中册/书愤.md",
       "author": "陆游",
       "authorDied": 1210,
       "authorEraEnd": null,
@@ -14754,10 +14754,10 @@
         "悲愤"
       ],
       "title": "书愤",
-      "volume": "选择性必修下册"
+      "volume": "选择性必修中册"
     },
     {
-      "_path": "poems/高中/选择性必修下册/五代史伶官传序.md",
+      "_path": "poems/高中/选择性必修中册/五代史伶官传序.md",
       "author": "欧阳修",
       "authorDied": 1072,
       "authorEraEnd": null,
@@ -14850,7 +14850,7 @@
         "借古讽今"
       ],
       "title": "五代史伶官传序",
-      "volume": "选择性必修下册"
+      "volume": "选择性必修中册"
     },
     {
       "_path": "poems/高中/必修下册/六国论.md",
@@ -15363,7 +15363,7 @@
       "volume": "选修（2026起默写）"
     },
     {
-      "_path": "poems/高中/选择性必修上册/子路、曾皙、冉有、公西华侍坐.md",
+      "_path": "poems/高中/必修下册/子路、曾皙、冉有、公西华侍坐.md",
       "author": "佚名",
       "authorDied": null,
       "authorEraEnd": 1900,
@@ -15453,7 +15453,7 @@
         "理想"
       ],
       "title": "子路、曾皙、冉有、公西华侍坐",
-      "volume": "选择性必修上册"
+      "volume": "必修下册"
     },
     {
       "_path": "poems/高中/选修（2026起默写）/季氏将伐颛臾.md",
@@ -15549,7 +15549,7 @@
       "volume": "选修（2026起默写）"
     },
     {
-      "_path": "poems/高中/必修上册/客至.md",
+      "_path": "poems/高中/选择性必修下册/客至.md",
       "author": "杜甫",
       "authorDied": 770,
       "authorEraEnd": null,
@@ -15613,10 +15613,10 @@
         "友情"
       ],
       "title": "客至",
-      "volume": "必修上册"
+      "volume": "选择性必修下册"
     },
     {
-      "_path": "poems/高中/必修上册/将进酒.md",
+      "_path": "poems/高中/选择性必修上册/将进酒.md",
       "author": "李白",
       "authorDied": 762,
       "authorEraEnd": null,
@@ -15687,10 +15687,10 @@
         "愁绪"
       ],
       "title": "将进酒",
-      "volume": "必修上册"
+      "volume": "选择性必修上册"
     },
     {
-      "_path": "poems/高中/必修上册/屈原列传.md",
+      "_path": "poems/高中/选择性必修中册/屈原列传.md",
       "author": "司马迁",
       "authorDied": -86,
       "authorEraEnd": null,
@@ -15802,10 +15802,10 @@
         "忠贞"
       ],
       "title": "屈原列传",
-      "volume": "必修上册"
+      "volume": "选择性必修中册"
     },
     {
-      "_path": "poems/高中/必修下册/师说.md",
+      "_path": "poems/高中/必修上册/师说.md",
       "author": "韩愈",
       "authorDied": 824,
       "authorEraEnd": null,
@@ -15892,7 +15892,7 @@
         "师道"
       ],
       "title": "师说",
-      "volume": "必修下册"
+      "volume": "必修上册"
     },
     {
       "_path": "poems/高中/选择性必修下册/归去来兮辞.md",
@@ -16150,7 +16150,7 @@
       "volume": "必修上册"
     },
     {
-      "_path": "poems/高中/选择性必修下册/念奴娇·过洞庭.md",
+      "_path": "poems/高中/必修下册/念奴娇·过洞庭.md",
       "author": "张孝祥",
       "authorDied": 1170,
       "authorEraEnd": null,
@@ -16221,7 +16221,7 @@
         "旷达"
       ],
       "title": "念奴娇·过洞庭",
-      "volume": "选择性必修下册"
+      "volume": "必修下册"
     },
     {
       "_path": "poems/高中/选择性必修下册/扬州慢.md",
@@ -16518,7 +16518,7 @@
       "volume": "选择性必修上册"
     },
     {
-      "_path": "poems/高中/选择性必修下册/春江花月夜.md",
+      "_path": "poems/高中/选择性必修上册/春江花月夜.md",
       "author": "张若虚",
       "authorDied": 720,
       "authorEraEnd": null,
@@ -16582,7 +16582,7 @@
         "思乡"
       ],
       "title": "春江花月夜",
-      "volume": "选择性必修下册"
+      "volume": "选择性必修上册"
     },
     {
       "_path": "poems/高中/选择性必修下册/望海潮.md",
@@ -16954,7 +16954,7 @@
       "volume": "必修上册"
     },
     {
-      "_path": "poems/高中/必修下册/永遇乐·京口北固亭怀古.md",
+      "_path": "poems/高中/必修上册/永遇乐·京口北固亭怀古.md",
       "author": "辛弃疾",
       "authorDied": 1207,
       "authorEraEnd": null,
@@ -17035,10 +17035,10 @@
         "爱国"
       ],
       "title": "永遇乐·京口北固亭怀古",
-      "volume": "必修下册"
+      "volume": "必修上册"
     },
     {
-      "_path": "poems/高中/必修下册/江城子.md",
+      "_path": "poems/高中/选择性必修上册/江城子.md",
       "author": "苏轼",
       "authorDied": 1101,
       "authorEraEnd": null,
@@ -17110,7 +17110,7 @@
         "思念"
       ],
       "title": "江城子",
-      "volume": "必修下册"
+      "volume": "选择性必修上册"
     },
     {
       "_path": "poems/高中/必修上册/涉江采芙蓉.md",
@@ -17422,7 +17422,7 @@
       "volume": "必修上册"
     },
     {
-      "_path": "poems/高中/必修上册/登岳阳楼.md",
+      "_path": "poems/高中/必修下册/登岳阳楼.md",
       "author": "杜甫",
       "authorDied": 770,
       "authorEraEnd": null,
@@ -17503,7 +17503,7 @@
         "忧国"
       ],
       "title": "登岳阳楼",
-      "volume": "必修上册"
+      "volume": "必修下册"
     },
     {
       "_path": "poems/高中/选择性必修下册/登快阁.md",
@@ -17573,7 +17573,7 @@
       "volume": "选择性必修下册"
     },
     {
-      "_path": "poems/高中/选择性必修下册/登泰山记.md",
+      "_path": "poems/高中/必修上册/登泰山记.md",
       "author": "姚鼐",
       "authorDied": 1815,
       "authorEraEnd": null,
@@ -17668,7 +17668,7 @@
         "游记"
       ],
       "title": "登泰山记",
-      "volume": "选择性必修下册"
+      "volume": "必修上册"
     },
     {
       "_path": "poems/高中/必修上册/登高.md",
@@ -17993,7 +17993,7 @@
       "volume": "选择性必修上册"
     },
     {
-      "_path": "poems/高中/必修上册/离骚.md",
+      "_path": "poems/高中/选择性必修下册/离骚.md",
       "author": "屈原",
       "authorDied": -278,
       "authorEraEnd": null,
@@ -18064,7 +18064,7 @@
         "理想"
       ],
       "title": "离骚",
-      "volume": "必修上册"
+      "volume": "选择性必修下册"
     },
     {
       "_path": "poems/高中/选择性必修下册/种树郭橐驼传.md",
@@ -18483,7 +18483,7 @@
       "volume": "必修上册"
     },
     {
-      "_path": "poems/高中/必修下册/虞美人.md",
+      "_path": "poems/高中/必修上册/虞美人.md",
       "author": "李煜",
       "authorDied": 978,
       "authorEraEnd": null,
@@ -18555,10 +18555,10 @@
         "愁思"
       ],
       "title": "虞美人",
-      "volume": "必修下册"
+      "volume": "必修上册"
     },
     {
-      "_path": "poems/高中/必修上册/蜀相.md",
+      "_path": "poems/高中/选择性必修下册/蜀相.md",
       "author": "杜甫",
       "authorDied": 770,
       "authorEraEnd": null,
@@ -18630,10 +18630,10 @@
         "励志"
       ],
       "title": "蜀相",
-      "volume": "必修上册"
+      "volume": "选择性必修下册"
     },
     {
-      "_path": "poems/高中/必修上册/蜀道难.md",
+      "_path": "poems/高中/选择性必修下册/蜀道难.md",
       "author": "李白",
       "authorDied": 762,
       "authorEraEnd": null,
@@ -18704,7 +18704,7 @@
         "夸张"
       ],
       "title": "蜀道难",
-      "volume": "必修上册"
+      "volume": "选择性必修下册"
     },
     {
       "_path": "poems/高中/必修下册/谏太宗十思疏.md",
@@ -18955,7 +18955,7 @@
       "volume": "选择性必修下册"
     },
     {
-      "_path": "poems/高中/必修下册/赤壁赋.md",
+      "_path": "poems/高中/必修上册/赤壁赋.md",
       "author": "苏轼",
       "authorDied": 1101,
       "authorEraEnd": null,
@@ -19039,10 +19039,10 @@
         "旷达"
       ],
       "title": "赤壁赋",
-      "volume": "必修下册"
+      "volume": "必修上册"
     },
     {
-      "_path": "poems/高中/选择性必修上册/过秦论.md",
+      "_path": "poems/高中/选择性必修中册/过秦论.md",
       "author": "贾谊",
       "authorDied": -168,
       "authorEraEnd": null,
@@ -19136,7 +19136,7 @@
         "讽今"
       ],
       "title": "过秦论",
-      "volume": "选择性必修上册"
+      "volume": "选择性必修中册"
     },
     {
       "_path": "poems/高中/选修（2026起默写）/逍遥游.md",
@@ -19231,7 +19231,7 @@
       "volume": "选修（2026起默写）"
     },
     {
-      "_path": "poems/高中/选择性必修下册/锦瑟.md",
+      "_path": "poems/高中/选择性必修中册/锦瑟.md",
       "author": "李商隐",
       "authorDied": 858,
       "authorEraEnd": null,
@@ -19303,7 +19303,7 @@
         "哀伤"
       ],
       "title": "锦瑟",
-      "volume": "选择性必修下册"
+      "volume": "选择性必修中册"
     },
     {
       "_path": "poems/高中/选择性必修下册/长亭送别.md",
@@ -19679,7 +19679,7 @@
       "volume": "必修上册"
     },
     {
-      "_path": "poems/高中/必修下册/项脊轩志.md",
+      "_path": "poems/高中/选择性必修下册/项脊轩志.md",
       "author": "归有光",
       "authorDied": 1571,
       "authorEraEnd": null,
@@ -19775,7 +19775,7 @@
         "亲情"
       ],
       "title": "项脊轩志",
-      "volume": "必修下册"
+      "volume": "选择性必修下册"
     },
     {
       "_path": "poems/高中/必修上册/鹊桥仙.md",
