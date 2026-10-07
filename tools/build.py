@@ -295,6 +295,7 @@ def build_record(md_path, fm, body):
         'grade': scalar(fm, 'grade'),
         'volume': scalar(fm, 'volume'),
         'textbooks': scalar(fm, 'textbooks', ['统编']) or ['统编'],
+        'textbookStatus': scalar(fm, 'textbookStatus'),
         'lines': lines,
         'linesPunct': [split_line_punct(x) for x in poem_lines],
         'fullLines': full_lines,

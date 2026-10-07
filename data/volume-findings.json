@@ -2,11 +2,12 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-08",
   "counts": {
-    "match": 184,
+    "match": 189,
     "volume-mismatch": 0,
     "title-collision": 3,
-    "absent": 53,
-    "claimed-absent-but-present": 4
+    "absent": 52,
+    "claimed-absent-but-present": 0,
+    "title-variant": 2
   },
   "findings": [
     {
@@ -88,6 +89,20 @@
       "volume": "七年级下册",
       "textbookVolume": "七年级下册",
       "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "mulanci",
+      "title": "木兰辞",
+      "author": "佚名",
+      "stage": "初中",
+      "status": "title-variant",
+      "repoVolume": "七年级下册",
+      "textbookVolume": "七年级下册",
+      "textbookTitle": "9木兰诗",
+      "textbookLesson": "9",
+      "evidence": 1.0,
+      "linesHit": 6,
+      "officiallyConfirmed": false
     },
     {
       "id": "boqinhuai",
@@ -920,6 +935,20 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "jihai",
+      "title": "己亥杂诗",
+      "author": "龚自珍",
+      "stage": "小学",
+      "status": "title-variant",
+      "repoVolume": "五年级上册",
+      "textbookVolume": "五年级上册",
+      "textbookTitle": "已亥杂诗",
+      "textbookLesson": "课号未定（合课或课外诵读）",
+      "evidence": 1.0,
+      "linesHit": 2,
+      "officiallyConfirmed": false
+    },
+    {
       "id": "fengqiaoyebo",
       "title": "枫桥夜泊",
       "author": "张继",
@@ -1580,6 +1609,16 @@
       "textbookLesson": "15.1"
     },
     {
+      "id": "jianzhukeshu",
+      "title": "谏逐客书",
+      "author": "李斯",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修下册",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "11.1"
+    },
+    {
       "id": "epenggongfu",
       "title": "阿房宫赋",
       "author": "杜牧",
@@ -1590,62 +1629,6 @@
       "textbookLesson": "16.1"
     },
     {
-      "id": "laozi8",
-      "title": "《老子》八章",
-      "author": "老子",
-      "stage": "高中",
-      "status": "claimed-absent-but-present",
-      "repoVolume": "选修（2026起默写）",
-      "textbookVolume": "选择性必修上册",
-      "textbookLesson": "6.1",
-      "evidence": 0.2,
-      "linesHit": 1,
-      "officiallyConfirmed": true,
-      "textbookTitle": "6.1《老子》四章"
-    },
-    {
-      "id": "lantingjixu",
-      "title": "兰亭集序",
-      "author": "王羲之",
-      "stage": "高中",
-      "status": "claimed-absent-but-present",
-      "repoVolume": "选修（2026起默写）",
-      "textbookVolume": "选择性必修下册",
-      "textbookLesson": "10.1",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookTitle": "10.1兰亭集序"
-    },
-    {
-      "id": "daxue",
-      "title": "大学",
-      "author": "佚名",
-      "stage": "高中",
-      "status": "claimed-absent-but-present",
-      "repoVolume": "选修（2026起默写）",
-      "textbookVolume": "选择性必修上册",
-      "textbookLesson": "5.2",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookTitle": "5.2*大学之道"
-    },
-    {
-      "id": "jianzhukeshu",
-      "title": "谏逐客书",
-      "author": "李斯",
-      "stage": "高中",
-      "status": "claimed-absent-but-present",
-      "repoVolume": "选修（2026起默写）",
-      "textbookVolume": "必修下册",
-      "textbookLesson": "11.1",
-      "evidence": 0.3333333333333333,
-      "linesHit": 1,
-      "officiallyConfirmed": true,
-      "textbookTitle": "11.1谏逐客书"
-    },
-    {
       "id": "lunyu12",
       "title": "《论语》十二章",
       "author": "佚名",
@@ -1654,6 +1637,16 @@
       "volume": "选择性必修上册",
       "textbookVolume": "选择性必修上册",
       "textbookLesson": "5.1"
+    },
+    {
+      "id": "daxue",
+      "title": "大学",
+      "author": "佚名",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修上册",
+      "textbookVolume": "选择性必修上册",
+      "textbookLesson": "5.2"
     },
     {
       "id": "jiangjinjiu",
@@ -1704,6 +1697,16 @@
       "volume": "选择性必修下册",
       "textbookVolume": "选择性必修下册",
       "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "lantingjixu",
+      "title": "兰亭集序",
+      "author": "王羲之",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修下册",
+      "textbookVolume": "选择性必修下册",
+      "textbookLesson": "10.1"
     },
     {
       "id": "kezhi",
@@ -1943,13 +1946,6 @@
   ],
   "absent": [
     {
-      "id": "mulanci",
-      "title": "木兰辞",
-      "author": "佚名",
-      "stage": "初中",
-      "repoVolume": "七年级下册"
-    },
-    {
       "id": "lvshi1",
       "title": "《吕氏春秋》一则",
       "author": "佚名",
@@ -2139,13 +2135,6 @@
       "repoVolume": "五年级上册"
     },
     {
-      "id": "jihai",
-      "title": "己亥杂诗",
-      "author": "龚自珍",
-      "stage": "小学",
-      "repoVolume": "五年级上册"
-    },
-    {
       "id": "yugezi",
       "title": "渔歌子",
       "author": "张志和",
@@ -2263,6 +2252,13 @@
       "author": "辛弃疾",
       "stage": "高中",
       "repoVolume": "必修上册"
+    },
+    {
+      "id": "laozi8",
+      "title": "《老子》八章",
+      "author": "老子",
+      "stage": "高中",
+      "repoVolume": "选择性必修上册"
     },
     {
       "id": "liyun",

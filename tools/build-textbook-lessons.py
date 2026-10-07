@@ -190,6 +190,21 @@ def check_claimed(p, alle, hit_ratio, findings):
                        'textbookTitle': e.get('raw', '')})
 
 
+def similar(a, b):
+    """名字差一两个字，不等于「教材里没有这篇」。
+    实测两例：仓内《木兰辞》/教材「木兰诗」；仓内 己亥杂诗 / 镜像目录「已亥杂诗」（镜像把「己」写成「已」）。
+    只按整名对，这两篇都会被判成教材不收。"""
+    if not a or not b or len(a) < 2 or len(b) < 2:
+        return False
+    if a == b or a.startswith(b) or b.startswith(a):
+        return True
+    if abs(len(a) - len(b)) > 1:
+        return False
+    if len(a) == len(b):
+        return sum(1 for x, y in zip(a, b) if x != y) <= 1
+    return a[:-1] == b or a[1:] == b or b[:-1] == a or b[1:] == a
+
+
 def audit(data):
     """仓内每篇的 volume 字段 vs 教材目录表。
 
@@ -254,6 +269,25 @@ def audit(data):
         found = candidates(title)
         same_stage = [(v, e) for v, e in found if T.stage_of(v) == p.get('stage')]
         if not same_stage:
+            # 同名没有，退一步找名字差一两个字的，再拿正文核验——验不上才算「教材没有」
+            near = [(v, e) for v, e in alle
+                    if T.stage_of(v) == p.get('stage') and similar(title, norm_title(e['title']))]
+            best = None
+            for v, e in near:
+                ratio, hit = hit_ratio(p, e.get('url'))
+                if best is None or ratio > best[2]:
+                    best = (v, e, ratio, hit)
+            if best and (best[3] >= 2 or best[2] >= 0.5):
+                v, e, ratio, hit = best
+                hits.append((p['title'], v, e.get('lesson') or '诵读'))
+                findings.append({'id': p['id'], 'title': p['title'], 'author': p.get('author'),
+                               'stage': p.get('stage'), 'status': 'title-variant',
+                               'repoVolume': raw_vol, 'textbookVolume': v,
+                               'textbookTitle': e.get('raw', ''),
+                               'textbookLesson': e.get('lesson') or '课号未定（合课或课外诵读）',
+                               'evidence': ratio, 'linesHit': hit,
+                               'officiallyConfirmed': bool(e.get('confirmed'))})
+                continue
             absent.append((p['stage'], raw_vol, p['title'], p.get('author')))
             missing.append({'id': p['id'], 'title': p['title'], 'author': p.get('author'),
                           'stage': p.get('stage'), 'repoVolume': raw_vol})
@@ -316,12 +350,20 @@ def audit(data):
         'counts': {'match': len(hits), 'volume-mismatch': len(mism),
                    'title-collision': len(unverified), 'absent': len(absent),
                    'claimed-absent-but-present': len([x for x in findings
-                                                      if x['status'] == 'claimed-absent-but-present'])},
+                                                      if x['status'] == 'claimed-absent-but-present']),
+                   'title-variant': len([x for x in findings if x['status'] == 'title-variant'])},
         'findings': findings,
         'titleCollision': collisions,
         'absent': missing,
     }, ensure_ascii=False, indent=2), encoding='utf-8')
 
+    variants = [x for x in findings if x['status'] == 'title-variant']
+    print()
+    print('仓内篇名与教材篇名差一两个字、正文核验是同一篇：%d 篇' % len(variants))
+    for x in variants:
+        print('  %-4s %-14s 教材名=%-12s 册=%-10s %d 句对上' % (
+              x['stage'], x['title'], x['textbookTitle'],
+              x['textbookVolume'], x['linesHit']))
     claimed = [x for x in findings if x['status'] == 'claimed-absent-but-present']
     print()
     print('仓里写着「教材不收」、教材目录里却有这篇：%d 篇' % len(claimed))
@@ -335,7 +377,7 @@ def audit(data):
         print('  %-4s %-26s %-8s 仓内=%s' % (stage, title, author or '', vol))
     return mism, unverified, absent
 
-def report(mism, collisions, missing, hits):
+def report(mism, collisions, missing, hits, variants, claimed):
     """把核对结论写成文档：数字全部从 findings 里来，不手抄。"""
     out = []
     out.append('# 教材册次核对')
@@ -365,7 +407,14 @@ def report(mism, collisions, missing, hits):
     out.append('| 册次一致 | %d |' % len(hits))
     out.append('| 册次不一致（正文核验过） | %d |' % len(mism))
     out.append('| 同名不同诗（教材收的是另一首） | %d |' % len(collisions))
+    out.append('| 仓内篇名与教材篇名差一两个字、正文核验是同一篇 | %d |' % len(variants))
     out.append('| 教材目录里没有这篇 | %d |' % len(missing))
+    out.append('| 仓里写着「教材不收」、教材目录里却有这篇 | %d |' % len(claimed))
+    out.append('')
+    out.append('每篇 frontmatter 的 `textbookStatus` 就是这张表的结论落进篇目文件，三种取值：')
+    out.append('统编教材收录 / 统编教材未收（课标要求） / 统编教材收的是同名另一篇。')
+    out.append('校验器会拿这张表逐篇核对篇内写的状态，对不上就报错（validate.py 2.16）。')
+    out.append('站点要显示这个状态：「课标要背但教材不教」和「教材收了另一首同名的」都是学生必须知道的事。')
     out.append('')
     out.append('## 册次不一致的篇目')
     out.append('')
@@ -398,12 +447,25 @@ def report(mism, collisions, missing, hits):
     for m in sorted(missing, key=lambda x: (x['stage'], x['repoVolume'], x['title'])):
         out.append('| %s | %s | %s | %s |' % (m['stage'], m['title'], m.get('author') or '', m['repoVolume']))
     out.append('')
+    out.append('## 篇名不同但正文是同一篇（不是两篇，别当成同名不同诗）')
+    out.append('')
+    out.append('| 学段 | 仓内篇名 | 教材篇名 | 教材册次 | 教材课号 | 正文核验 |')
+    out.append('|---|---|---|---|---|---|')
+    for v in sorted(variants, key=lambda x: (x['stage'], x['title'])):
+        out.append('| %s | %s | %s | %s | %s | %s 句 |' % (
+                   v['stage'], v['title'], v['textbookTitle'], v['textbookVolume'],
+                   v['textbookLesson'], v['linesHit']))
+    out.append('')
+    out.append('仓内《木兰辞》就是统编七年级下册第 9 课的《木兰诗》，只差一个字，正文 6 句全对上。')
+    out.append('小学五年级上册的《己亥杂诗》（九州生气恃风雷）在教材目录页上写作「已亥杂诗」——那是镜像页的错字，')
+    out.append('不是另一首诗。教材正文作「不拘一格降人**材**」（维基文库《己亥雜詩》同），仓内已按这两条来源改从「人材」，见篇内异文。')
+    out.append('')
     out.append('## 核对过程中撞到的两件事')
     out.append('')
-    out.append('**一、统编教材的《论语》十二章是两套不同的章。** 七年级上册第 12 课那套以「子曰：学而时习之」开头，')
+    out.append('**一、统编教材的《论语》十二章是两套不同的章（已处理：拆成两份）。** 七年级上册第 12 课那套以「子曰：学而时习之」开头，')
     out.append('选择性必修上册第 5 课那套以「子曰：君子食无求饱」开头——**篇名相同，内容不同**。')
-    out.append('仓里只有一份，挂在高中，正文用的是七年级上册那套。')
-    out.append('这意味着：按初中教材背的人和按高中教材背的人，背的不是同一批句子。必须拆成两份，各挂各的学段。')
+    out.append('仓里原来只有一份，挂在高中，正文用的还是旧人教版的十二则组合，两套都不是。')
+    out.append('这意味着：按初中教材背的人和按高中教材背的人，背的不是同一批句子。已拆成两份，各挂各的学段。')
     out.append('')
     out.append('**二、目录页反映的是 2024 年修订后的统编教材。** 七年级上册里出现了「往事依依」「我的白鸽」「狼」这些新课，')
     out.append('课号整体比 2018 版后移一位。仓里的册次是按 2018 版写的，所以「不一致」里有一部分是教材改版造成的。')
@@ -422,7 +484,9 @@ def main():
         f = json.loads((ROOT / 'data' / 'volume-findings.json').read_text(encoding='utf-8'))
         mism = [x for x in f['findings'] if x['status'] == 'volume-mismatch']
         hits = [x for x in f['findings'] if x['status'] == 'match']
-        n = report(mism, f['titleCollision'], f['absent'], hits)
+        variants = [x for x in f['findings'] if x['status'] == 'title-variant']
+        claimed = [x for x in f['findings'] if x['status'] == 'claimed-absent-but-present']
+        n = report(mism, f['titleCollision'], f['absent'], hits, variants, claimed)
         print('已写 docs/textbook-audit.md（%d 行）' % n)
         return 0
     if '--audit' in sys.argv:

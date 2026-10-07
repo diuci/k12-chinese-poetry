@@ -177,6 +177,7 @@ def main():
             'stage': p.get('stage'),
             'grade': p.get('grade'),
             'volume': p.get('volume'),
+            'textbookStatus': p.get('textbookStatus'),
             'form': p.get('form'),
             'category': category,
             'syllabusGroup': group,
@@ -258,6 +259,11 @@ def main():
             '课标要求但仓内缺失': sum(1 for x in problem_rows if x['key'].startswith('missing:')),
             '重复副本': counts.get('重复副本', 0),
             '来源不明': counts.get('来源不明', 0),
+            # 统编教材到底收没收（结论从 data/volume-findings.json 来，见 docs/textbook-audit.md）
+            '统编教材收录': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收录'),
+            '统编教材未收（课标要求）': sum(1 for r in rows if r.get('textbookStatus') == '统编教材未收（课标要求）'),
+            '统编教材收的是同名另一篇': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收的是同名另一篇'),
+            '没有教材收录状态': sum(1 for r in rows if not r.get('textbookStatus')),
         },
     }
 

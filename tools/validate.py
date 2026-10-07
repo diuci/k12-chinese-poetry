@@ -600,6 +600,56 @@ def main():
     if unsourced:
         err('这几篇挂着统编教材的册次，篇内却没写教材课号出处：%s' % '、'.join(unsourced))
 
+    # -------------------------------------------------- 2.16 教材收录状态必须和核对结论一致
+    # data/volume-findings.json 是教材目录核对的结论表。每篇 frontmatter 的 textbookStatus
+    # 必须和这张表对得上。没有这一条，核对结论就只是一份没人读的文档：
+    # 篇目文件说「这篇教材收了」，核对表说没有，站点照篇目文件显示，学生照着背错。
+    TS_COLLECTED = '统编教材收录'
+    TS_NOT = '统编教材未收（课标要求）'
+    TS_CLASH = '统编教材收的是同名另一篇'
+    vf_path = ROOT / 'data' / 'volume-findings.json'
+    if not vf_path.exists():
+        err('缺 data/volume-findings.json：先跑 python tools/build-textbook-lessons.py --report')
+    else:
+        vf = json.loads(vf_path.read_text(encoding='utf-8'))
+        found = {x['id']: x['status'] for x in vf.get('findings', [])}
+        for x in vf.get('absent', []):
+            found[x['id']] = 'absent'
+        for x in vf.get('titleCollision', []):
+            found[x['id']] = 'title-collision'
+        no_status, wrong_status, unfixed = [], [], []
+        for p in poems:
+            st = p.get('textbookStatus')
+            if not st:
+                no_status.append(p['title'])
+                continue
+            if st not in (TS_COLLECTED, TS_NOT, TS_CLASH):
+                wrong_status.append('%s 的 textbookStatus 取值非法：%r' % (p['title'], st))
+                continue
+            status = found.get(p['id'])
+            if status == 'volume-mismatch':
+                unfixed.append(p['title'])
+                continue
+            if p.get('volume') == '选修（2026起默写）':
+                expect = TS_NOT
+            elif status in ('match', 'title-variant', 'claimed-absent-but-present'):
+                expect = TS_COLLECTED
+            elif status == 'title-collision':
+                expect = TS_CLASH
+            elif status == 'absent':
+                expect = TS_NOT
+            else:
+                expect = None
+            if expect and st != expect:
+                wrong_status.append('%s：篇内写「%s」，教材核对结论是「%s」' % (p['title'], st, expect))
+        if no_status:
+            err('%d 篇没有 textbookStatus（跑 python tools/apply-textbook-status.py --write）：%s'
+                % (len(no_status), '、'.join(no_status[:8])))
+        if wrong_status:
+            err('textbookStatus 与教材核对结论不一致：%s' % '；'.join(wrong_status[:8]))
+        if unfixed:
+            err('教材核对发现册次不一致但还没改：%s' % '、'.join(unfixed[:8]))
+
     assigned_ids = {p['id'] for _e, p, _s in assignments}
     extra_ids = {p['id'] for p in poems if canon_title(p['title']) in extra_titles}
 
