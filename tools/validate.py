@@ -34,6 +34,10 @@ PENDING_DIR = ROOT / 'pending'
 SYLLABUS = ROOT / 'docs' / 'syllabus-2022.md'
 SYLLABUS_HS = ROOT / 'docs' / 'syllabus-2017.md'
 DATA_JSON = ROOT / 'data' / 'poems.json'
+KNOWN_DEFECTS = ROOT / 'data' / 'known-defects.json'
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import match  # noqa: E402  课标 ⇄ 仓内 匹配器（与 build-ledger.py 共用一份）
 
 # 我国《著作权法》：自然人作品的保护期为作者终生及其死亡后第五十年的 12 月 31 日。
 # 即作者卒年 <= 当前年 - 50 才算进入公有领域。这不是文档里的说法，是下面要跑的规则。
@@ -61,6 +65,24 @@ def err(msg):
 
 def warn(msg):
     warnings.append(msg)
+
+
+def load_known_defects():
+    """已知未修的登记表。
+
+    容忍必须写下来：每一条都要有 key、理由、负责阶段。校验器对登记过的缺陷降级为提示，
+    对没登记的直接报错；登记过但问题已经消失的也报错——防止这张表变成永久垃圾桶。
+    """
+    if not KNOWN_DEFECTS.exists():
+        return {}
+    data = json.loads(KNOWN_DEFECTS.read_text(encoding='utf-8'))
+    out = {}
+    for d in data.get('defects', []):
+        if not d.get('key') or not d.get('reason') or not d.get('phase'):
+            err('已知未修登记不完整（缺 key/reason/phase）：%s' % json.dumps(d, ensure_ascii=False))
+            continue
+        out[d['key']] = d
+    return out
 
 
 # ---------------------------------------------------------------- 课标解析
@@ -196,6 +218,64 @@ def check_public_domain(poems, this_year):
     return problems
 
 
+def selftest_match():
+    """匹配器自己会不会漏：坏样本必须被抓到，好样本不能误报。"""
+    bad = []
+
+    def poem(pid, title, author, lines, subtitle=None):
+        return {'id': pid, 'title': title, 'author': author, 'lines': lines, 'subtitle': subtitle}
+
+    def keys(problems):
+        return {p['key'] for p in problems}
+
+    # 1) 词牌顶替：仓内只有《念奴娇·赤壁怀古》，课标另一条《念奴娇·过洞庭》必须报缺失。
+    #    旧匹配器就是在这里放过去的——归一把「·过洞庭」砍掉了。
+    _a, p1 = match.match_syllabus(
+        [poem('nnj1', '念奴娇·赤壁怀古', '苏轼', ['大江东去，浪淘尽，千古风流人物'])],
+        [('高中', 26, '念奴娇·赤壁怀古', '苏轼'), ('高中', 33, '念奴娇·过洞庭', '张孝祥')])
+    if 'missing:高中-33' not in keys(p1):
+        bad.append('词牌顶替没抓到：仓内缺《念奴娇·过洞庭》，匹配器却放过了')
+
+    # 2) 同名不同作者：王翰的《凉州词》不许顶掉王之涣那首。
+    _a, p2 = match.match_syllabus(
+        [poem('lz1', '凉州词', '王翰', ['葡萄美酒夜光杯，欲饮琵琶马上催'])],
+        [('小学', 8, '凉州词（黄河远上白云间）', '王之涣')])
+    if 'missing:小学-08' not in keys(p2):
+        bad.append('同名不同作者没抓到：王翰《凉州词》把王之涣那首顶掉了')
+
+    # 3) 只有名句、没有全文：课标标注的首句在正文里找不到，必须报。
+    _a, p3 = match.match_syllabus(
+        [poem('sdt1', '水调歌头', '苏轼', ['但愿人长久，千里共婵娟'])],
+        [('初中', 31, '水调歌头（明月几时有）', '苏轼')])
+    if 'fulltext:初中-31' not in keys(p3):
+        bad.append('缺全文没抓到：仓内只有名句「但愿人长久」，匹配器却算它收到了')
+
+    # 4) 全文齐的不许误报。
+    _a, p4 = match.match_syllabus(
+        [poem('sdt2', '水调歌头', '苏轼', ['明月几时有，把酒问青天', '但愿人长久，千里共婵娟'])],
+        [('初中', 31, '水调歌头（明月几时有）', '苏轼')])
+    if p4:
+        bad.append('好样本被误报：%s' % ' / '.join(x['text'] for x in p4))
+
+    # 5) 重复收录必须抓到。
+    dup = match.find_duplicates([
+        poem('x1', '赤壁', '杜牧', ['折戟沉沙铁未销，自将磨洗认前朝']),
+        poem('x2', '赤壁', '杜牧', ['折戟沉沙铁未销，自将磨洗认前朝'])])
+    if len(dup) != 1:
+        bad.append('重复收录没抓到：两份一模一样的《赤壁》，find_duplicates 返回 %d 组' % len(dup))
+
+    # 6) 同一篇被两份课标各列一次：只许报「共用」，不许报缺失。
+    _a, p6 = match.match_syllabus(
+        [poem('ly1', '《论语》十二章', '佚名', ['学而时习之，不亦说乎'])],
+        [('初中', 41, '《论语》十二章', '《论语》'), ('高中', 1, '《论语》十二章', '《论语》')])
+    if 'shared:高中-01' not in keys(p6):
+        bad.append('共用例外没生效：%s' % ' / '.join(x['text'] for x in p6))
+    if any(k.startswith('missing:') for k in keys(p6)):
+        bad.append('共用被误报成缺失：%s' % ' / '.join(x['text'] for x in p6))
+
+    return bad
+
+
 def selftest():
     """这条校验自己会不会漏：坏样本必须被抓到，好样本不能误报。"""
     year = 2026
@@ -220,13 +300,16 @@ def selftest():
         if got != should_fail:
             problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
 
+    problems.extend(selftest_match())
+
     if problems:
         print('[!!] validate --selftest 失败：', file=sys.stderr)
         for x in problems:
             print('  - ' + x, file=sys.stderr)
         return 1
-    print('[ok] validate --selftest 通过（保护期内被拒、缺证据被拒、恰好届满放行、'
-          '差一年被拒、佚名走年代上限、公元前卒年放行都试到了）')
+    print('[ok] validate --selftest 通过（保护期内被拒、缺证据被拒、恰好届满放行、差一年被拒、'
+          '佚名走年代上限、公元前卒年放行、词牌顶替被抓、同名不同作者被抓、缺全文被抓、'
+          '好样本不误报、重复收录被抓、课标共用不误报缺失都试到了）')
     return 0
 
 
@@ -298,38 +381,92 @@ def main():
                 pending_ids.add(t)
         print('暂缓收录：%d 篇（不在比对范围）\n' % len(pending_ids))
 
-    norm_to_poem = {}
-    for p in poems:
-        norm_to_poem.setdefault(canon_title(p["title"]), []).append(p)
+    # ------------------------------------- 2.5 课标 ⇄ 仓内：1:1 匹配 + 账目闭合
+    # 旧做法用归一标题判断收没收到，而归一把词牌副题与括号里的首句一起砍掉，
+    # 课标条目因此互相顶替：实测王翰《凉州词》把王之涣那首整个顶掉了，
+    # 校验器一直说「齐了」，而王之涣那首全仓一个字都没有。
+    # 匹配规则统一放在 tools/match.py，validate 与 build-ledger 共用一份，不许两边漂移。
+    assignments, match_problems = match.match_syllabus(poems, syllabus)
+    known = load_known_defects()
+    seen_defects = set()
+    for pr in match_problems:
+        if pr['key'].startswith('shared:'):
+            notes.append(pr['text'])
+            continue
+        if pr['key'] in known:
+            seen_defects.add(pr['key'])
+            notes.append('已知未修（%s 处理）：%s' % (known[pr['key']]['phase'], pr['text']))
+        elif partial:
+            warn(pr['text'] + '（增量模式）')
+        else:
+            err(pr['text'])
+    assigned_ids = {p['id'] for _e, p, _s in assignments}
+    extra_ids = {p['id'] for p in poems if canon_title(p['title']) in extra_titles}
 
-    # 课标里每条，都要在仓里找到（增量模式跳过，允许分批迁移）
-    if not partial:
-        for stage, idx, title, author in syllabus:
-            nt = canon_title(title)
-            if nt in pending_ids or canon_title(title) in pending_ids:
-                continue
-            # 课标副标题含首句，用主标题兜底匹配
-            base = canon_title(re.split(r'[（(]', title)[0])
-            if base in norm_to_poem:
-                continue
-            err('课标要求收录但缺失：%s %02d %s（%s）'
-                % (stage, idx, title, author))
+    # 归类口径与 build-ledger.py 完全一致：课标命中 → 重复副本 → 教材拓展 → 来源不明。
+    # 重复副本不算「来源不明」：它的病是重复，不是没出处，记一次就够。
+    import hashlib
+    fingerprint = lambda p: hashlib.sha256(''.join(p['lines']).encode('utf-8')).hexdigest()
+    assigned_fp = {}
+    for _e, p, _s in assignments:
+        assigned_fp.setdefault(fingerprint(p), p)
+
+    dup_copies, dup_copy_ids, extra_only, unknown = [], set(), set(), []
+    for p in poems:
+        if p['id'] in assigned_ids:
+            continue
+        if fingerprint(p) in assigned_fp:
+            dup_copies.append(p)
+            dup_copy_ids.add(p['id'])
+            other = assigned_fp[fingerprint(p)]
+            key = 'duplicate:' + '|'.join(sorted([p['id'], other['id']]))
+            if key in known:
+                seen_defects.add(key)
+                notes.append('已知未修（%s 处理）：%s 是《%s》的重复副本（%s）'
+                            % (known[key]['phase'], p['title'], other['title'], p['_path']))
+            else:
+                warn('%s 是《%s》的重复副本（%s）' % (p['title'], other['title'], p['_path']))
+            continue
+        if p['id'] in extra_ids:
+            extra_only.add(p['id'])
+            notes.append('%s：教材拓展篇目（不在课标内）' % p['title'])
+            continue
+        unknown.append(p)
+        key = 'unknown:' + p['id']
+        if key in known:
+            seen_defects.add(key)
+            notes.append('已知未修（%s 处理）：来源不明：%s（%s）' % (known[key]['phase'], p['title'], p['_path']))
+        else:
+            warn('来源不明：%s 既不在课标里，也不在教材拓展表里（%s）' % (p['title'], p['_path']))
+
+    # 账目闭合：课标命中 + 教材拓展 + 来源不明 必须正好等于仓内篇数。
+    # 不闭合就说明有一篇没人认领，或者一篇被算了两遍——这种账最容易糊过去。
+    total = len(assigned_ids) + len(extra_only) + len(dup_copies) + len(unknown)
+    if total != len(poems):
+        err('账目不闭合：课标命中 %d + 教材拓展 %d + 重复副本 %d + 来源不明 %d = %d，仓内 %d 篇'
+            % (len(assigned_ids), len(extra_only), len(dup_copies), len(unknown), total, len(poems)))
     else:
-        covered = len({canon_title(p["title"]) for p in poems})
-        print('课标覆盖：%d / %d 篇（增量期，未齐属正常）\n'
-              % (covered, len(syllabus)))
+        print('账目闭合：课标命中 %d 篇 + 教材拓展 %d 篇 + 重复副本 %d 篇 + 来源不明 %d 篇 = 仓内 %d 篇\n'
+              % (len(assigned_ids), len(extra_only), len(dup_copies), len(unknown), len(poems)))
 
-    # 仓里每篇，都要在课标里或教材拓展表里（不收来源不明的篇目）
-    syllabus_norms = {canon_title(re.split(r'[（(]', t)[0]) for _, _, t, _ in syllabus}
-    for p in poems:
-        nt = canon_title(p["title"])
-        if nt in syllabus_norms:
-            continue
-        if nt in extra_titles:
-            notes.append('%s：教材拓展篇目（不在课标 135 内）' % p['title'])
-            continue
-        warn('来源不明：%s 既不在课标 135 篇，也不在教材拓展表里（%s）'
-             % (p['title'], p['_path']))
+    # 重复收录：原文指纹完全相同。同一节选在两份课标里各列一次（如《礼运》与《大道之行也》）
+    # 也必须登记在 known-defects 里写明理由，不许静默放过。
+    for group in match.find_duplicates(poems):
+        key = 'duplicate:' + '|'.join(sorted(p['id'] for p in group))
+        text = '重复收录：%s（%d 份原文完全相同：%s）' % (group[0]['title'], len(group),
+                                             '、'.join(p['_path'] for p in group))
+        if key in known:
+            seen_defects.add(key)
+            notes.append('已知未修（%s 处理）：%s' % (known[key]['phase'], text))
+        else:
+            err(text)
+
+    # 登记必须对得上现实：登记过的问题如果已经消失，说明这条登记过期了，
+    # 必须删掉——否则这张表迟早变成永久垃圾桶，什么都能往里扔。
+    for key, d in known.items():
+        if key not in seen_defects:
+            err('已知未修登记过期：%s（%s）——问题已经不见了，请从 data/known-defects.json 删掉这条'
+                % (key, d.get('title', '')))
 
     # -------------------------------------------------- 3. pairs 索引合法
     for p in poems:

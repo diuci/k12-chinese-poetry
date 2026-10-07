@@ -6,9 +6,11 @@
   机器版 -> data/ledger.json
   人读版 -> docs/ledger.md
 
-铁律：台账里的每一个数字都由脚本算出来，不许手抄、不许手写。
-      docs/index.md 里手写的「拓展 11 篇」与校验器算出的 45 篇互相矛盾，
-      这份工具就是要消灭这种东西。
+铁律一：台账里的每一个数字都由脚本算出来，不许手抄、不许手写。
+        docs/index.md 里手写的「拓展 11 篇」与校验器算出的 45 篇互相矛盾，
+        这份工具就是要消灭这种东西。
+铁律二：匹配口径与 validate.py 完全同源（都用 tools/match.py）。两边口径不一致，
+        台账和校验器就会互相打脸。
 
 用法：
   python tools/build-ledger.py            # 生成台账 + 打印账目闭合
@@ -26,12 +28,13 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
+import match as M  # noqa: E402
 import validate as V  # noqa: E402
 
 
 def body_sections(path):
     """篇目正文里出现了哪些 ## 小节。"""
-    text = path.read_text(encoding='utf-8')
+    text = path.read_text(encoding='utf-8').replace('\r\n', '\n')
     if text.startswith('---'):
         cut = text.find('\n---', 3)
         if cut > 0:
@@ -46,7 +49,7 @@ def body_sections(path):
 
 def frontmatter(path):
     """篇目的 frontmatter 键值（只取标量，够台账用）。"""
-    text = path.read_text(encoding='utf-8')
+    text = path.read_text(encoding='utf-8').replace('\r\n', '\n')
     if not text.startswith('---'):
         return {}
     cut = text.find('\n---', 3)
@@ -61,15 +64,6 @@ def frontmatter(path):
     return out
 
 
-def strip_frontmatter(path):
-    text = path.read_text(encoding='utf-8')
-    if text.startswith('---'):
-        cut = text.find('\n---', 3)
-        if cut > 0:
-            text = text[cut + 4:]
-    return text
-
-
 def main():
     quiet = '--quiet' in sys.argv
 
@@ -78,42 +72,58 @@ def main():
     syll_h, _ = V.parse_syllabus(V.SYLLABUS_HS)
     syllabus = syll_o + syll_h
 
-    norm_map = {}
-    for p in poems:
-        norm_map.setdefault(V.canon_title(p['title']), []).append(p)
-
-    # 课标条目 -> 仓内篇目。一篇课标条目在仓里对应多篇时，每篇都算命中。
+    assignments, problems = M.match_syllabus(poems, syllabus)
     matched = {}
-    unmatched_syllabus = []
-    for stage, idx, title, author in syllabus:
-        base = V.canon_title(title.split('（')[0].split('(')[0])
-        hit = norm_map.get(base) or norm_map.get(V.canon_title(title))
-        if hit:
-            for p in hit:
-                matched[p['id']] = (stage, idx, title, author)
-        else:
-            unmatched_syllabus.append((stage, idx, title, author))
+    for ei, p, strength in assignments:
+        stage, idx, title, author = syllabus[ei]
+        matched[p['id']] = (stage, idx, title, author, strength)
+
+    known = {}
+    if V.KNOWN_DEFECTS.exists():
+        for d in json.loads(V.KNOWN_DEFECTS.read_text(encoding='utf-8')).get('defects', []):
+            known[d['key']] = d
+
+    dup_groups = []
+    for g in M.find_duplicates(poems):
+        ids = sorted(p['id'] for p in g)
+        key = 'duplicate:' + '|'.join(ids)
+        dup_groups.append({'ids': ids, 'title': g[0]['title'], 'key': key,
+                           'paths': [p['_path'] for p in g],
+                           'phase': known.get(key, {}).get('phase', '未登记')})
+
+    # 归类口径与 validate.py 完全一致：课标命中 → 重复副本 → 教材拓展 → 来源不明。
+    # 两边口径不一致，台账和校验器就会互相打脸。
+    import hashlib
+    def fingerprint(p):
+        return hashlib.sha256(''.join(p.get('lines') or []).encode('utf-8')).hexdigest()
+    assigned_fp = {}
+    for _ei, p, _s in assignments:
+        assigned_fp.setdefault(fingerprint(p), p)
+    dup_ids = {p['id'] for p in poems if p['id'] not in matched and fingerprint(p) in assigned_fp}
+    extra_ids = {p['id'] for p in poems if V.canon_title(p['title']) in extra}
 
     rows = []
     for p in poems:
         path = ROOT / p['_path']
         sec = body_sections(path)
+        fm = frontmatter(path)
         lines = p.get('lines') or []
         chars = sum(len(x) for x in lines)
         syl = matched.get(p['id'])
         if syl:
-            group, no, stitle, sauthor = syl
+            group, no, stitle, sauthor, strength = syl
             category = '课标·义务教育' if group in ('小学', '初中') else '课标·高中'
-        elif V.canon_title(p['title']) in extra:
+        elif p['id'] in dup_ids:
+            group, no, stitle, sauthor = ('重复副本', None, p['title'], p['author'])
+            category = '重复副本'
+        elif p['id'] in extra_ids:
             group, no, stitle, sauthor = ('教材拓展', None, p['title'], p['author'])
             category = '教材拓展'
         else:
             group, no, stitle, sauthor = (None, None, None, None)
             category = '来源不明'
 
-        fm = frontmatter(path)
         recite = fm.get('recite') or p.get('recite') or ''
-
         flags = []
         if not recite:
             flags.append('缺背诵要求 recite')
@@ -125,6 +135,8 @@ def main():
             flags.append('有 %d 句但无 pairs' % len(lines))
         if category == '来源不明':
             flags.append('既不在课标也不在教材拓展表')
+        if category == '重复副本':
+            flags.append('与另一篇原文完全相同')
 
         rows.append({
             'id': p['id'],
@@ -144,6 +156,7 @@ def main():
             'syllabusGroup': group,
             'syllabusNo': no,
             'syllabusTitle': stitle,
+            'matchStrength': syl[4] if syl else None,
             'recite': recite,
             'lineCount': len(lines),
             'charCount': chars,
@@ -169,16 +182,19 @@ def main():
     for r in rows:
         stage_counts[r['stage']] = stage_counts.get(r['stage'], 0) + 1
 
-    matched_poems = len({r['id'] for r in rows if r['category'].startswith('课标')})
-
-    # 一条课标条目对应仓内多篇：这不是错，但必须点名，否则「207 条 vs 208 篇」
-    # 这种对不上的账就只能靠猜。
-    by_syllabus = {}
-    for r in rows:
-        if r['syllabusNo'] is not None:
-            by_syllabus.setdefault((r['syllabusGroup'], r['syllabusNo'], r['syllabusTitle']), []).append(r['title'])
-    duplicates = [{'group': k[0], 'no': k[1], 'syllabusTitle': k[2], 'repoTitles': v}
-                  for k, v in sorted(by_syllabus.items()) if len(v) > 1]
+    problem_rows = []
+    note_rows = []
+    for pr in problems:
+        d = known.get(pr['key'])
+        item = {'key': pr['key'], 'text': pr['text'],
+                'phase': d['phase'] if d else '未登记',
+                'reason': d.get('reason', '') if d else ''}
+        if pr['key'].startswith('shared:'):
+            item['phase'] = '正常'
+            note_rows.append(item)
+        else:
+            problem_rows.append(item)
+    unregistered = [x for x in problem_rows if x['phase'] == '未登记']
 
     summary = {
         'generated': date.today().isoformat(),
@@ -188,14 +204,18 @@ def main():
         'syllabusSenior': len(syll_h),
         'categoryCounts': counts,
         'stageCounts': stage_counts,
-        'syllabusEntriesMatched': matched_poems,
-        'missingFromRepo': [{'stage': s, 'no': i, 'title': t, 'author': a}
-                            for s, i, t, a in unmatched_syllabus],
-        'duplicateSyllabusEntries': duplicates,
+        'matchStrengths': {str(s): sum(1 for r in rows if r['matchStrength'] == s) for s in (3, 2, 1)},
+        'problems': problem_rows,
+        'notes': note_rows,
+        'unregisteredProblems': unregistered,
+        'duplicates': dup_groups,
         'gapCounts': {
             '缺背诵要求': sum(1 for r in rows if '缺背诵要求 recite' in r['flags']),
             '无必背名句小节': sum(1 for r in rows if '无「必背名句」小节' in r['flags']),
             '无异文记录': sum(1 for r in rows if '无异文记录' in r['flags']),
+            '缺全文（课标首句找不到）': sum(1 for x in problem_rows if x['key'].startswith('fulltext:')),
+            '课标要求但仓内缺失': sum(1 for x in problem_rows if x['key'].startswith('missing:')),
+            '重复副本': counts.get('重复副本', 0),
             '来源不明': counts.get('来源不明', 0),
         },
     }
@@ -208,30 +228,25 @@ def main():
         print('仓内篇目：%d 篇（%s）' % (len(rows), ' / '.join('%s %d' % (k, v) for k, v in sorted(stage_counts.items()))))
         print('课标条目：%d 条（义务教育 %d + 高中 %d）' % (len(syllabus), len(syll_o), len(syll_h)))
         print('归类：' + ' · '.join('%s %d 篇' % (k, v) for k, v in sorted(counts.items())))
+        print('匹配强度：首句 %d · 完整标题 %d · 仅主干标题 %d'
+              % (summary['matchStrengths']['3'], summary['matchStrengths']['2'], summary['matchStrengths']['1']))
+        total = sum(counts.values())
+        print('账目闭合：' + ' + '.join('%s %d' % (k, v) for k, v in sorted(counts.items()))
+              + ' = %d，仓内 %d' % (total, len(rows)))
         print()
-        total = matched_poems + counts.get('教材拓展', 0) + counts.get('来源不明', 0)
-        print('账目闭合：课标命中 %d + 拓展 %d + 来源不明 %d = %d，仓内 %d'
-              % (matched_poems, counts.get('教材拓展', 0), counts.get('来源不明', 0), total, len(rows)))
-        if unmatched_syllabus:
-            print()
-            print('课标要求但仓内没有：%d 篇' % len(unmatched_syllabus))
-            for s, i, t, a in unmatched_syllabus:
-                print('  · %s %02d %s（%s）' % (s, i, t, a))
-        if duplicates:
-            print()
-            print('一条课标条目对应仓内多篇（%d 处）：' % len(duplicates))
-            for d in duplicates:
-                print('  · %s %02d「%s」→ 仓内 %s' % (d['group'], d['no'], d['syllabusTitle'], '、'.join(d['repoTitles'])))
+        print('问题 %d 条（未登记 %d 条）：' % (len(problem_rows), len(unregistered)))
+        for x in problem_rows:
+            print('  [%s] %s' % (x['phase'], x['text']))
         print()
         print('缺口：')
         for k, v in summary['gapCounts'].items():
-            print('  %s：%d 篇' % (k, v))
+            print('  %s：%d' % (k, v))
 
     write_markdown(summary, rows, ROOT / 'docs' / 'ledger.md')
     if not quiet:
         print()
         print('已写 data/ledger.json（%d 行）与 docs/ledger.md' % len(rows))
-    return 0
+    return 1 if unregistered else 0
 
 
 def write_markdown(summary, rows, out):
@@ -239,7 +254,8 @@ def write_markdown(summary, rows, out):
     L.append('# 内容台账（自动生成）')
     L.append('')
     L.append('> 由 `python tools/build-ledger.py` 生成于 %s。**不要手改本文件**：' % summary['generated'])
-    L.append('> 要改台账就改 poems/ 里的篇目或两份课标契约，然后重新生成。机器版在 data/ledger.json。')
+    L.append('> 要改台账就改 poems/ 里的篇目、两份课标契约或 data/known-defects.json，然后重新生成。')
+    L.append('> 机器版在 data/ledger.json。匹配口径与 tools/validate.py 同源（tools/match.py）。')
     L.append('')
     L.append('## 账目闭合')
     L.append('')
@@ -247,30 +263,26 @@ def write_markdown(summary, rows, out):
     L.append('|---|---|')
     L.append('| 仓内篇目 | %d |' % summary['poemCount'])
     L.append('| 课标条目合计 | %d（义务教育 %d + 高中 %d） |' % (summary['syllabusCount'], summary['syllabusPrimary'], summary['syllabusSenior']))
-    L.append('| 课标条目在仓内命中 | %d 篇 |' % summary['syllabusEntriesMatched'])
     for k in sorted(summary['categoryCounts']):
         L.append('| %s | %d 篇 |' % (k, summary['categoryCounts'][k]))
-    L.append('| 课标要求但仓内缺失 | %d 篇 |' % len(summary['missingFromRepo']))
+    L.append('| 合计 | %d 篇 |' % sum(summary['categoryCounts'].values()))
     L.append('')
-    L.append('「命中篇数」可以大于「课标条目数」：一篇课标条目在仓里对应多篇时（如课标「凉州」')
-    L.append('对应仓内《凉州词（王翰）》与《凉州（王翰）》）每篇都算命中。两边对不上的每一篇')
-    L.append('都必须能在下面的明细里找到归类，找不到就是漏了。')
+    L.append('匹配强度分布：首句对上 %d 篇、完整标题对上 %d 篇、只对上主干标题 %d 篇。'
+             % (summary['matchStrengths']['3'], summary['matchStrengths']['2'], summary['matchStrengths']['1']))
+    L.append('只对上主干标题的那批最危险：副题与首句都没核对，缺篇会被漏检。')
     L.append('')
-    if summary['missingFromRepo']:
-        L.append('### 课标要求但仓内缺失')
-        L.append('')
-        for m in summary['missingFromRepo']:
-            L.append('- %s %02d %s（%s）' % (m['stage'], m['no'], m['title'], m['author']))
-        L.append('')
-    if summary['duplicateSyllabusEntries']:
-        L.append('### 一条课标条目对应仓内多篇')
-        L.append('')
-        for d in summary['duplicateSyllabusEntries']:
-            L.append('- %s %02d「%s」→ 仓内 %s' % (d['group'], d['no'], d['syllabusTitle'], '、'.join(d['repoTitles'])))
-        L.append('')
+    L.append('## 问题清单（每一条都必须有登记与负责阶段）')
+    L.append('')
+    L.append('| 负责阶段 | 问题 |')
+    L.append('|---|---|')
+    for x in summary['problems']:
+        L.append('| %s | %s |' % (x['phase'], x['text']))
+    if not summary['problems']:
+        L.append('| — | 无 |')
+    L.append('')
     L.append('## 缺口统计')
     L.append('')
-    L.append('| 缺口 | 篇数 |')
+    L.append('| 缺口 | 数量 |')
     L.append('|---|---|')
     for k in sorted(summary['gapCounts']):
         L.append('| %s | %d |' % (k, summary['gapCounts'][k]))
