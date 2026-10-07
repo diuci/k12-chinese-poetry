@@ -85,6 +85,25 @@ def load_known_defects():
     return out
 
 
+# ---------------------------------------------------------------- 背诵要求
+RECITE_VALUES = ('full', 'section', 'line', 'none')
+
+
+def find_missing_recite(poems):
+    """返回 recite 缺失或取值非法的篇目描述列表。
+
+    单独做成函数是为了能在 --selftest 里喂坏例子：一个空过的检查比没有检查更危险。
+    """
+    out = []
+    for p in poems:
+        r = p.get('recite')
+        if not r:
+            out.append('%s（%s）：缺 recite' % (p['title'], p.get('stage')))
+        elif r not in RECITE_VALUES:
+            out.append('%s：recite 取值非法（%r）' % (p['title'], r))
+    return out
+
+
 # ---------------------------------------------------------------- 课标解析
 def parse_syllabus(path):
     """从一份课标文档抽出 (分组, 编号, 标题, 作者) 列表。
@@ -149,6 +168,7 @@ def load_poems():
         text = md.read_text(encoding='utf-8')
         fm, body = build.parse_frontmatter(text, md)
         poems.append(build.build_record(md, fm, body))
+    build.apply_gaokao_groups(poems)
     return poems
 
 
@@ -329,6 +349,19 @@ def selftest():
         if got != should_fail:
             problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
 
+    recite_cases = [
+        ('缺 recite 的应当被拒',
+         [{'title': '假作G', 'recite': None}], True),
+        ('recite 取值非法（写成中文「全文」）的应当被拒',
+         [{'title': '假作H', 'recite': '全文'}], True),
+        ('recite 取值合法的应当放行',
+         [{'title': '假作I', 'recite': 'full'}], False),
+    ]
+    for label, poems, should_fail in recite_cases:
+        got = bool(find_missing_recite(poems))
+        if got != should_fail:
+            problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
+
     problems.extend(selftest_match())
 
     if problems:
@@ -339,7 +372,8 @@ def selftest():
     print('[ok] validate --selftest 通过：保护期内被拒、缺证据被拒、恰好届满放行、差一年被拒、'
           '佚名走年代上限、公元前卒年放行、词牌顶替被抓、同名不同作者被抓、缺全文被抓、'
           '好样本不误报、重复收录被抓、课标共用不误报缺失、篇名对照生效且点名、'
-          '别名不许替作者不符开后门——都试到了')
+          '别名不许替作者不符开后门、背诵要求缺失被拒、背诵要求取值非法被拒、'
+          '背诵要求合法不误报——都试到了')
     return 0
 
 
@@ -430,6 +464,49 @@ def main():
             warn(pr['text'] + '（增量模式）')
         else:
             err(pr['text'])
+    # -------------------------------------------------- 2.9 课标学段 ⇄ 篇目学段
+    # 课标把某篇列在 A 学段、统编教材却把它放进 B 学段的课本，这种情形真实存在（现有两处）：
+    #   初中 41《论语》十二章 —— 统编放在高中必修上册
+    #   高中 09 山居秋暝     —— 统编放在小学五年级上册第 21 课《古诗三首》
+    # 跨学段覆盖必须点名登记，不许静默通过：否则站点的「按学段浏览」会少一篇，
+    # 而校验器还会说「课标齐了」。
+    for idx, p, _s in assignments:
+        sec, no, stitle, _a = syllabus[idx]
+        if sec != p['stage']:
+            key = 'stage-cross:%s-%02d' % (sec, no)
+            text = ('课标 %s %02d「%s」由%s篇目《%s》覆盖（%s）'
+                    % (sec, no, stitle, p['stage'], p['title'], p['_path']))
+            if key in known:
+                seen_defects.add(key)
+                notes.append('已知未修（%s 处理）：%s' % (known[key]['phase'], text))
+            else:
+                err(text + '——学段不一致且未登记')
+
+    # -------------------------------------------------- 2.10 高考默写范围按届区分
+    # 2025 及以前 = 60 篇（必修 10 + 选择性必修 10 + 诗词曲 40）；
+    # 2026 起 = 72 篇（加入选修 12 篇）。分组从课标表算，不许在篇目文件里手写。
+    import build as _build  # noqa: E402
+    gg = _build.load_gaokao_groups()
+    gcount = {}
+    for _g, _n in gg.values():
+        gcount[_g] = gcount.get(_g, 0) + 1
+    want = {'必修': 10, '选择性必修': 10, '选修': 12, '诗词曲': 40}
+    if gcount != want:
+        err('高中课标分组计数不对：%s（应为 %s）' % (gcount, want))
+    until2025 = sum(1 for _g, _n in gg.values() if _g != '选修')
+    if until2025 != 60:
+        err('2025 及以前的高考默写范围按课标分组算出 %d 篇，应为 60 篇' % until2025)
+    no_since = [p['title'] for p in poems if p.get('stage') == '高中' and not p.get('gaokaoSince')]
+    if no_since:
+        err('高中篇目缺 gaokaoSince（从哪一届起在默写范围内）：%s' % '、'.join(no_since[:6]))
+    bad_since = [p['title'] for p in poems if p.get('gaokaoSince') not in (None, 2023, 2026)]
+    if bad_since:
+        err('gaokaoSince 取值非法（只许 2023 或 2026）：%s' % '、'.join(bad_since[:6]))
+    wrong_vol = [p['title'] for p in poems
+                 if p.get('gaokaoGroup') == '选修' and p.get('volume') != '选修（2026起默写）']
+    if wrong_vol:
+        err('课标选修 12 篇的册次必须是「选修（2026起默写）」：%s' % '、'.join(wrong_vol))
+
     assigned_ids = {p['id'] for _e, p, _s in assignments}
     extra_ids = {p['id'] for p in poems if canon_title(p['title']) in extra_titles}
 
@@ -512,6 +589,15 @@ def main():
             notes.append('已知未修（%s 处理）：%s' % (known[key]['phase'], text))
         else:
             err(text)
+
+    # -------------------------------------------------- 2.8 背诵要求字段必须存在且取值合法
+    # recite 决定学古诗站给不给「背诵」标签、给哪种：
+    #   full    全篇背诵        section 节选范围背诵      line 只背名句      none 不要求背诵
+    # 缺这个字段不是小事：站点会当成「没有背诵要求」，家长看不到这篇到底要不要背。
+    bad_recite = find_missing_recite(poems)
+    if bad_recite:
+        err("背诵要求缺失或取值非法：%d 篇。例：%s"
+            % (len(bad_recite), '；'.join(bad_recite[:4])))
 
     # -------------------------------------------------- 3. pairs 索引合法
     for p in poems:

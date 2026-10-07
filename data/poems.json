@@ -1411,6 +1411,9 @@
         "大漠孤烟直，长河落日圆。",
         "萧关逢候骑，都护在燕然。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "shizhuisai",
       "irregular": null,
@@ -1437,6 +1440,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -1479,6 +1483,9 @@
       "form": "诗经",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "guanju",
       "irregular": null,
@@ -1497,6 +1504,7 @@
           1
         ]
       ],
+      "recite": "line",
       "render_split": [
         2,
         2
@@ -1555,6 +1563,9 @@
         "羹饭一时熟，不知贻阿谁。",
         "出门东向看，泪落沾我衣。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "shiwucongjunzheng",
       "irregular": null,
@@ -1597,6 +1608,7 @@
           7
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -1643,6 +1655,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "maotanshangwu",
       "irregular": null,
@@ -1661,6 +1676,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         1
@@ -1701,6 +1717,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "nangxiangzi",
       "irregular": null,
@@ -1729,6 +1748,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         1,
         1,
@@ -1778,6 +1798,9 @@
         "君问归期未有期，巴山夜雨涨秋池。",
         "何当共剪西窗烛，却话巴山夜雨时。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "yeyujibei",
       "irregular": null,
@@ -1796,6 +1819,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -1844,6 +1868,9 @@
         "古道西风瘦马，夕阳西下。",
         "断肠人在天涯。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "tianjingsha-qiusi",
       "irregular": null,
@@ -1864,6 +1891,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -1915,6 +1943,9 @@
         "伤心秦汉经行处，宫阙万间都做了土。",
         "兴，百姓苦；亡，百姓苦。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "shanpoyang",
       "irregular": null,
@@ -1941,6 +1972,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         3,
         2,
@@ -1983,6 +2015,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "jihai-jimao",
       "irregular": null,
@@ -2001,6 +2036,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2
@@ -2041,6 +2077,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "wuti",
       "irregular": null,
@@ -2059,6 +2098,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2
@@ -2105,6 +2145,9 @@
         "谁家玉笛暗飞声，散入春风满洛城。",
         "此夜曲中闻折柳，何人不起故园情。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "chunyeluocheng",
       "irregular": null,
@@ -2123,6 +2166,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -2173,6 +2217,9 @@
         "烽火连三月，家书抵万金。",
         "白头搔更短，浑欲不胜簪。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "chunwang",
       "irregular": null,
@@ -2199,6 +2246,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -2247,6 +2295,9 @@
         "草树知春不久归，百般红紫斗芳菲。",
         "杨花榆荚无才思，惟解漫天作雪飞。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "wanchun",
       "irregular": null,
@@ -2265,6 +2316,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -2315,6 +2367,9 @@
         "荡胸生曾云，决眦入归鸟。",
         "会当凌绝顶，一览众山小。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "wangyue",
       "irregular": null,
@@ -2341,6 +2396,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         1,
         2,
@@ -2399,6 +2455,9 @@
         "爷娘闻女来，出郭相扶将；阿姊闻妹来，当户理红妆；小弟闻姊来，磨刀霍霍向猪羊。开我东阁门，坐我西阁床。脱我战时袍，著我旧时裳。当窗理云鬓，对镜帖花黄。出门看火伴，火伴皆惊忙：同行十二年，不知木兰是女郎。",
         "雄兔脚扑朔，雌兔眼迷离；双兔傍地走，安能辨我是雄雌？"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "mulanci",
       "irregular": null,
@@ -2433,6 +2492,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -2487,6 +2547,9 @@
         "海日生残夜，江春入旧年。",
         "乡书何处达？归雁洛阳边。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "cibeigushanxia",
       "irregular": null,
@@ -2513,6 +2576,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -2561,6 +2625,9 @@
         "明月几时有？把酒问青天。不知天上宫阙，今夕是何年。我欲乘风归去，又恐琼楼玉宇，高处不胜寒。起舞弄清影，何似在人间。",
         "转朱阁，低绮户，照无眠。不应有恨，何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "shuidiaogetou",
       "irregular": null,
@@ -2589,6 +2656,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         1,
         2,
@@ -2632,6 +2700,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "jiangchengzi-laofeng",
       "irregular": null,
@@ -2652,6 +2723,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         2,
@@ -2699,6 +2771,9 @@
         "烟笼寒水月笼沙，夜泊秦淮近酒家。",
         "商女不知亡国恨，隔江犹唱后庭花。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "boqinhuai",
       "irregular": null,
@@ -2717,6 +2792,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -2763,6 +2839,9 @@
         "一曲新词酒一杯，去年天气旧亭台。夕阳西下几时回？",
         "无可奈何花落去，似曾相识燕归来。小园香径独徘徊。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "huanxisha-yanque",
       "irregular": null,
@@ -2781,6 +2860,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -2832,6 +2912,9 @@
         "浊酒一杯家万里，燕然未勒归无计。",
         "羌管悠悠霜满地，人不寐，将军白发征夫泪。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "yujiaao-qiusi",
       "irregular": null,
@@ -2860,6 +2943,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         1,
@@ -2913,6 +2997,9 @@
         "箫鼓追随春社近，衣冠简朴古风存。",
         "从今若许闲乘月，拄杖无时夜叩门。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "youshanxincun",
       "irregular": null,
@@ -2939,6 +3026,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -2987,6 +3075,9 @@
         "前不见古人，后不见来者。",
         "念天地之悠悠，独怆然而涕下。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "dengyouzhoutai",
       "irregular": null,
@@ -3005,6 +3096,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -3051,6 +3143,9 @@
         "飞来山上千寻塔，闻说鸡鸣见日升。",
         "不畏浮云遮望眼，自缘身在最高层。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "dengfeilaifeng",
       "irregular": null,
@@ -3069,6 +3164,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -3109,6 +3205,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "baixuege",
       "irregular": null,
@@ -3129,6 +3228,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -3180,6 +3280,9 @@
         "剪不断，理还乱，是离愁。",
         "别是一般滋味在心头。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "xiangjianhuan",
       "irregular": null,
@@ -3206,6 +3309,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         1,
@@ -3261,6 +3365,9 @@
         "了却君王天下事，赢得生前身后名。",
         "可怜白发生！"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "pozhenzi",
       "irregular": null,
@@ -3295,6 +3402,7 @@
           5
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -3345,6 +3453,9 @@
         "独坐幽篁里，弹琴复长啸。",
         "深林人不知，明月来相照。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "zhuliguan",
       "irregular": null,
@@ -3363,6 +3474,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -3413,6 +3525,9 @@
         "俄顷风定云墨色，秋天漠漠向昏黑。布衾多年冷似铁，娇儿恶卧踏里裂。床头屋漏无干处，雨脚如麻未断绝。自经丧乱少睡眠，长夜沾湿何由彻！",
         "安得广厦千万间，大庇天下寒士俱欢颜！风雨不动安如山。呜呼！何时眼前突兀见此屋，吾庐独破受冻死亦足！"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "maowu",
       "irregular": null,
@@ -3439,6 +3554,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -3481,6 +3597,9 @@
       "form": "诗经",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "jianjia",
       "irregular": null,
@@ -3499,6 +3618,7 @@
           1
         ]
       ],
+      "recite": "line",
       "render_split": [
         2,
         2
@@ -3539,6 +3659,9 @@
       "form": "杂言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "xinglunan",
       "irregular": null,
@@ -3559,6 +3682,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -3614,6 +3738,9 @@
         "日月之行，若出其中。",
         "星汉灿烂，若出其里。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "guancanghai",
       "irregular": null,
@@ -3648,6 +3775,7 @@
           5
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -3698,6 +3826,9 @@
         "折戟沉沙铁未销，自将磨洗认前朝。",
         "东风不与周郎便，铜雀春深锁二乔。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "chibi-du",
       "irregular": null,
@@ -3716,6 +3847,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -3756,6 +3888,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "guolingyang",
       "irregular": null,
@@ -3782,6 +3917,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -3830,6 +3966,9 @@
         "故园东望路漫漫，双袖龙钟泪不干。",
         "马上相逢无纸笔，凭君传语报平安。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "fengrujinshi",
       "irregular": null,
@@ -3848,6 +3987,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -3888,6 +4028,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "qiantanghuchunxing",
       "irregular": null,
@@ -3914,6 +4057,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -3962,6 +4106,9 @@
         "杨花落尽子规啼，闻道龙标过五溪。",
         "我寄愁心与明月，随君直到夜郎西。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "wenwangchangling",
       "irregular": null,
@@ -3980,6 +4127,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -4020,6 +4168,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "yanmenshiweixing",
       "irregular": null,
@@ -4040,6 +4191,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -4093,6 +4245,9 @@
         "山气日夕佳，飞鸟相与还。",
         "此中有真意，欲辨已忘言。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "yinjiujiusan",
       "irregular": null,
@@ -4121,6 +4276,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         1,
@@ -4174,6 +4330,9 @@
         "晴川历历汉阳树，芳草萋萋鹦鹉洲。",
         "日暮乡关何处是？烟波江上使人愁。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 7,
       "id": "huanghelou-cuiheng",
       "irregular": null,
@@ -4200,6 +4359,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -4242,6 +4402,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "sanxia",
       "irregular": null,
@@ -4262,6 +4425,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         2,
@@ -4311,6 +4475,9 @@
         "水皆缥碧，千丈见底。游鱼细石，直视无碍。急湍甚箭，猛浪若奔。",
         "夹岸高山，皆生寒树，负势竞上，互相轩邈，争高直指，千百成峰。泉水激石，泠泠作响；好鸟相鸣，嘤嘤成韵。蝉则千转不穷，猿则百叫无绝。鸢飞戾天者，望峰息心；经纶世务者，窥谷忘反。横柯上蔽，在昼犹昏；疏条交映，有时见日。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "yuzhusianshu",
       "irregular": null,
@@ -4345,6 +4512,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -4389,6 +4557,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "beimingyouyu",
       "irregular": null,
@@ -4415,6 +4586,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -4457,6 +4629,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "dadaozhixing",
       "irregular": null,
@@ -4483,6 +4658,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -4525,6 +4701,9 @@
       "form": "诗经",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "zijin",
       "irregular": null,
@@ -4543,6 +4722,7 @@
           1
         ]
       ],
+      "recite": "line",
       "render_split": [
         2,
         2
@@ -4595,6 +4775,9 @@
         "坐潭上，四面竹树环合，寂寥无人，凄神寒骨，悄怆幽邃。以其境过清，不可久居，乃记之而去。",
         "同游者：吴武陵，龚古，余弟宗玄。隶而从者，崔氏二小生，曰恕己，曰奉壹。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "xiaoshitan",
       "irregular": null,
@@ -4629,6 +4812,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         4,
         2,
@@ -4673,6 +4857,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "yueyanglouji",
       "irregular": null,
@@ -4699,6 +4886,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -4742,6 +4930,9 @@
       "form": "诗经",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "shiwei",
       "irregular": null,
@@ -4760,6 +4951,7 @@
           1
         ]
       ],
+      "recite": "line",
       "render_split": [
         3,
         2
@@ -4812,6 +5004,9 @@
         "既出，得其船，便扶向路，处处志之。及郡下，诣太守，说如此。太守即遣人随其往，寻向所志，遂迷，不复得路。",
         "南阳刘子骥，高尚士也，闻之，欣然规往。未果，寻病终。后遂无问津者。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "taohuayuanji",
       "irregular": null,
@@ -4846,6 +5041,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         5,
         3,
@@ -4890,6 +5086,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "yujiaao-tianjie",
       "irregular": null,
@@ -4924,6 +5123,7 @@
           5
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         1,
@@ -4968,6 +5168,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "ailianshuo",
       "irregular": null,
@@ -4994,6 +5197,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -5036,6 +5240,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "shihaoli",
       "irregular": null,
@@ -5054,6 +5261,7 @@
           1
         ]
       ],
+      "recite": "none",
       "render_split": [
         2,
         2
@@ -5094,6 +5302,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "daxiezhongshu",
       "irregular": null,
@@ -5120,6 +5331,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -5174,6 +5386,9 @@
         "故曰：教学相长也。",
         "《兑命》曰\"学学半\"，其此之谓乎！"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "suoyoujiayao",
       "irregular": null,
@@ -5198,6 +5413,7 @@
           2
         ]
       ],
+      "recite": "full",
       "render_split": [
         5,
         2,
@@ -5241,6 +5457,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "jichengtiansi",
       "irregular": null,
@@ -5259,6 +5478,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         1
@@ -5309,6 +5529,9 @@
         "海内存知己，天涯若比邻。",
         "无为在歧路，儿女共沾巾。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "songshaoshu-wai",
       "irregular": null,
@@ -5335,6 +5558,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -5377,6 +5601,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "zuigongtingji",
       "irregular": null,
@@ -5397,6 +5624,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -5448,6 +5676,9 @@
         "牧人驱犊返，猎马带禽归。",
         "相顾无相识，长歌怀采薇。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "yewang",
       "irregular": null,
@@ -5474,6 +5705,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -5528,6 +5760,9 @@
         "无丝竹之乱耳，无案牍之劳形。",
         "孔子云：何陋之有？"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "loushiming",
       "irregular": null,
@@ -5556,6 +5791,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -5608,6 +5844,9 @@
         "马之千里者，一食或尽粟一石。食马者不知其能千里而食也。是马也，虽有千里之能，食不饱，力不足，才美不外见，且欲与常马等不可得，安求其能千里也？",
         "策之不以其道，食之不能尽其材，鸣之而不能通其意，执策而临之，曰：\"天下无马！\"呜呼！其真无马邪？其真不知马也！"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 8,
       "id": "masuo",
       "irregular": null,
@@ -5628,6 +5867,7 @@
           2
         ]
       ],
+      "recite": "full",
       "render_split": [
         6,
         8,
@@ -5669,6 +5909,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "lvshi1",
       "irregular": null,
@@ -5697,6 +5940,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -5740,6 +5984,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "mengzi3",
       "irregular": null,
@@ -5760,6 +6007,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         3,
@@ -5801,6 +6049,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "zhuangzi1",
       "irregular": null,
@@ -5821,6 +6072,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         1,
@@ -5870,6 +6122,9 @@
         "虽有至道，弗学，不知其善也。",
         "善哉，答是。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "liji1",
       "irregular": null,
@@ -5890,6 +6145,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         3,
         3,
@@ -5931,6 +6187,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "chushibiao",
       "irregular": null,
@@ -5951,6 +6210,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -6000,6 +6260,9 @@
         "公与之乘，战于长勺。公将鼓之。刿曰：\"未可。\"齐人三鼓。刿曰：\"可矣。\"齐师败绩。公将驰之。刿曰：\"未可。\"下视其辙，登轼而望之，曰：\"可矣。\"遂逐齐师。",
         "既克，公问其故。对曰：\"夫战，勇气也。一鼓作气，再而衰，三而竭。彼竭我盈，故克之。夫大国，难测也，惧有伏焉。吾视其辙乱，望其旗靡，故逐之。\""
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "caoguilunzhan",
       "irregular": null,
@@ -6034,6 +6297,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         3,
@@ -6078,6 +6342,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "huxinting",
       "irregular": null,
@@ -6098,6 +6365,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         1,
@@ -6139,6 +6407,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "manjianghong-xiaozhujinghua",
       "irregular": null,
@@ -6181,6 +6452,7 @@
           7
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -6227,6 +6499,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "songdongyang",
       "irregular": null,
@@ -6261,6 +6536,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         5,
         2,
@@ -6313,6 +6589,9 @@
         "于是入朝见威王，曰：\"臣诚知不如徐公美。臣之妻私臣，臣之妾畏臣，臣之客欲有求于臣，皆以美于徐公。今齐地方千里，百二十城，宫妇左右莫不私王，朝廷之臣莫不畏王，四境之内莫不有求于王。由此观之，王之蔽甚矣。\"",
         "王曰：\"善。\"乃下令：\"群臣吏民能面刺寡人之过者，受上赏；上书谏寡人者，受中赏；能谤讥于市朝，闻寡人之耳者，受下赏。\"令初下，群臣进谏，门庭若市；数月之后，时时而间进；期年之后，虽欲言，无可进者。燕、赵、韩、魏闻之，皆朝于齐。此所谓战胜于朝廷。"
       ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "zouji",
       "irregular": null,
@@ -6347,6 +6626,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         4,
@@ -6392,6 +6672,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 9,
       "id": "choulitian",
       "irregular": null,
@@ -6412,6 +6695,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -6454,6 +6738,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "gulangyuexing",
       "irregular": null,
@@ -6480,6 +6767,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -6522,6 +6810,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "yonge",
       "irregular": "首句「鹅鹅鹅」为三字重叠，不足五言，故一联 8 字（传为五言古诗的变例）",
@@ -6540,6 +6831,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         4,
         2
@@ -6579,6 +6871,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "xunyinzhe",
       "irregular": null,
@@ -6597,6 +6892,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -6636,6 +6932,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "xiaochi",
       "irregular": null,
@@ -6654,6 +6953,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -6694,6 +6994,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "minnong2",
       "irregular": null,
@@ -6712,6 +7015,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -6751,6 +7055,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "chunxiao",
       "irregular": null,
@@ -6769,6 +7076,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -6808,6 +7116,9 @@
       "form": "杂言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "jiangnan",
       "irregular": null,
@@ -6834,6 +7145,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         1,
@@ -6876,6 +7188,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "chishang",
       "irregular": null,
@@ -6894,6 +7209,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -6933,6 +7249,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "hua",
       "irregular": null,
@@ -6951,6 +7270,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -6991,6 +7311,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "huaji",
       "irregular": null,
@@ -7009,6 +7332,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7049,6 +7373,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "xiangsi",
       "irregular": null,
@@ -7067,6 +7394,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7106,6 +7434,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "zengwanglun",
       "irregular": null,
@@ -7124,6 +7455,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7163,6 +7495,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "jingyesi",
       "irregular": null,
@@ -7181,6 +7516,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7221,6 +7557,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 1,
       "id": "feng",
       "irregular": null,
@@ -7239,6 +7578,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7279,6 +7619,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "yongliu",
       "irregular": null,
@@ -7297,6 +7640,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7337,6 +7681,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "yesushansi",
       "irregular": null,
@@ -7355,6 +7702,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7394,6 +7742,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "xiaoerchuidiao",
       "irregular": null,
@@ -7412,6 +7763,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7451,6 +7803,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "minnong1",
       "irregular": null,
@@ -7469,6 +7824,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7508,6 +7864,9 @@
       "form": "杂言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "chilege",
       "irregular": null,
@@ -7534,6 +7893,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -7576,6 +7936,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "jingcisi",
       "irregular": null,
@@ -7594,6 +7957,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7633,6 +7997,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "wanglushanpubu",
       "irregular": null,
@@ -7651,6 +8018,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7691,6 +8059,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "cunju",
       "irregular": null,
@@ -7709,6 +8080,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7748,6 +8120,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "meihua",
       "irregular": null,
@@ -7766,6 +8141,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7806,6 +8182,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "jiangxue",
       "irregular": null,
@@ -7824,6 +8203,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7864,6 +8244,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "dengguanquelou",
       "irregular": null,
@@ -7882,6 +8265,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7921,6 +8305,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "jueju-huangli",
       "irregular": null,
@@ -7939,6 +8326,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -7978,6 +8366,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "zhouyeshujian",
       "irregular": null,
@@ -7996,6 +8387,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8035,6 +8427,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 2,
       "id": "guyuancao",
       "irregular": null,
@@ -8061,6 +8456,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -8103,6 +8499,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "sanqudaozhong",
       "irregular": null,
@@ -8121,6 +8520,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8160,6 +8560,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "jiuyuejiuri",
       "irregular": null,
@@ -8178,6 +8581,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8217,6 +8621,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "yuanri",
       "irregular": null,
@@ -8235,6 +8642,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8275,6 +8683,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "yeshusuojian",
       "irregular": null,
@@ -8293,6 +8704,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8332,6 +8744,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "dalinsitaohua",
       "irregular": null,
@@ -8350,6 +8765,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8389,6 +8805,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "shanxing",
       "irregular": null,
@@ -8407,6 +8826,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8446,6 +8866,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "yijiangnan",
       "irregular": null,
@@ -8466,6 +8889,7 @@
           1
         ]
       ],
+      "recite": "line",
       "render_split": [
         2,
         2,
@@ -8507,6 +8931,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "huichongchunjiang",
       "irregular": null,
@@ -8525,6 +8952,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8564,6 +8992,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "suojian",
       "irregular": null,
@@ -8582,6 +9013,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8621,6 +9053,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "zaofabaidicheng",
       "irregular": null,
@@ -8639,6 +9074,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8678,6 +9114,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "wangtianmenshan",
       "irregular": null,
@@ -8696,6 +9135,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8736,6 +9176,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "wangdongting",
       "irregular": null,
@@ -8754,6 +9197,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8794,6 +9238,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "jiangpan",
       "irregular": null,
@@ -8812,6 +9259,7 @@
           1
         ]
       ],
+      "recite": "line",
       "render_split": [
         2,
         2
@@ -8852,6 +9300,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "qingming",
       "irregular": null,
@@ -8870,6 +9321,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8909,6 +9361,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "chuzhouxijian",
       "irregular": null,
@@ -8927,6 +9382,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -8966,6 +9422,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "jueju-chiri",
       "irregular": null,
@@ -8984,6 +9443,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9023,6 +9483,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "zengliujingwen",
       "irregular": null,
@@ -9041,6 +9504,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9081,6 +9545,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "cailianqu",
       "irregular": null,
@@ -9099,6 +9566,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9139,6 +9607,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 3,
       "id": "yinhushang",
       "irregular": null,
@@ -9157,6 +9628,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9197,6 +9669,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "liangzhouci-wanghan",
       "irregular": null,
@@ -9215,6 +9690,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9255,6 +9731,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "chusai",
       "irregular": null,
@@ -9273,6 +9752,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9313,6 +9793,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "biedongda",
       "irregular": null,
@@ -9331,6 +9814,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9371,6 +9855,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "sishitianyuan-25",
       "irregular": null,
@@ -9389,6 +9876,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9428,6 +9916,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "saixiaqu",
       "irregular": null,
@@ -9446,6 +9937,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9486,6 +9978,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "momei",
       "irregular": null,
@@ -9504,6 +9999,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9543,6 +10039,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "xiarijueju",
       "irregular": null,
@@ -9561,6 +10060,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9601,6 +10101,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "change",
       "irregular": null,
@@ -9619,6 +10122,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9658,6 +10162,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "suxinshi",
       "irregular": null,
@@ -9676,6 +10183,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9716,6 +10224,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "mujiangyin",
       "irregular": null,
@@ -9734,6 +10245,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9774,6 +10286,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "qingpingyue-cunju",
       "irregular": null,
@@ -9800,6 +10315,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -9841,6 +10357,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "duzuojingting",
       "irregular": null,
@@ -9859,6 +10378,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9899,6 +10419,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "furonglou",
       "irregular": null,
@@ -9917,6 +10440,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -9957,6 +10481,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "feng-mi",
       "irregular": null,
@@ -9975,6 +10502,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10015,6 +10543,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "xuemei",
       "irregular": null,
@@ -10033,6 +10564,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10073,6 +10605,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "longpo",
       "irregular": null,
@@ -10091,6 +10626,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10131,6 +10667,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 4,
       "id": "luchai",
       "irregular": null,
@@ -10149,6 +10688,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10189,6 +10729,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "qiqiao",
       "irregular": null,
@@ -10207,6 +10750,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10246,6 +10790,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "xiangcunsiyue",
       "irregular": null,
@@ -10264,6 +10811,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10303,6 +10851,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "congjunxing",
       "irregular": null,
@@ -10321,6 +10872,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10361,6 +10913,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "liangzhouci-wangzhihuan",
       "irregular": null,
@@ -10379,6 +10934,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10419,6 +10975,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "sishitianyuan-31",
       "irregular": null,
@@ -10437,6 +10996,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10476,6 +11036,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "shanjuqiuming",
       "irregular": null,
@@ -10502,6 +11065,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -10544,6 +11108,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "jihai",
       "irregular": null,
@@ -10562,6 +11129,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10601,6 +11169,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "cunwan",
       "irregular": null,
@@ -10619,6 +11190,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10659,6 +11231,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "fengqiaoyebo",
       "irregular": null,
@@ -10677,6 +11252,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10717,6 +11293,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "yugezi",
       "irregular": null,
@@ -10735,6 +11314,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         3
@@ -10775,6 +11355,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "shier",
       "irregular": null,
@@ -10793,6 +11376,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10833,6 +11417,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "qiuyejiangxiao",
       "irregular": null,
@@ -10851,6 +11438,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10891,6 +11479,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "zhizibing",
       "irregular": null,
@@ -10909,6 +11500,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -10949,6 +11541,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "guanshu",
       "irregular": null,
@@ -10967,6 +11562,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11007,6 +11603,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "songyuaner",
       "irregular": null,
@@ -11025,6 +11624,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11065,6 +11665,9 @@
       "form": "杂言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "zengwang",
       "irregular": null,
@@ -11093,6 +11696,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -11136,6 +11740,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "changxiangsi",
       "irregular": null,
@@ -11154,6 +11761,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         4,
         4
@@ -11193,6 +11801,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "tilinandi",
       "irregular": null,
@@ -11211,6 +11822,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11251,6 +11863,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "niaomingjian",
       "irregular": null,
@@ -11269,6 +11884,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11309,6 +11925,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 5,
       "id": "huanghelou",
       "irregular": null,
@@ -11327,6 +11946,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11367,6 +11987,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "shuhuyin",
       "irregular": null,
@@ -11385,6 +12008,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11425,6 +12049,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "wanghulou",
       "irregular": null,
@@ -11443,6 +12070,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11483,6 +12111,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "shiyiwangyue",
       "irregular": null,
@@ -11501,6 +12132,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11540,6 +12172,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "bosuanzi-song",
       "irregular": null,
@@ -11566,6 +12201,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         1,
@@ -11608,6 +12244,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "huixiangyoushu",
       "irregular": null,
@@ -11626,6 +12265,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11666,6 +12306,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "sujiandejiang",
       "irregular": null,
@@ -11684,6 +12327,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11724,6 +12368,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "hanshi",
       "irregular": null,
@@ -11742,6 +12389,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11781,6 +12429,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "zaochun",
       "irregular": null,
@@ -11799,6 +12450,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11839,6 +12491,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "chunyexiyu",
       "irregular": null,
@@ -11865,6 +12520,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -11907,6 +12563,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "chunri",
       "irregular": null,
@@ -11925,6 +12584,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -11965,6 +12625,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "jiangshangyuzhe",
       "irregular": null,
@@ -11983,6 +12646,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -12023,6 +12687,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "jiangnanchun",
       "irregular": null,
@@ -12041,6 +12708,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -12081,6 +12749,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "bochuanguazhou",
       "irregular": null,
@@ -12099,6 +12770,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -12139,6 +12811,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "huanxisha-qishui",
       "irregular": null,
@@ -12165,6 +12840,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         1,
@@ -12207,6 +12883,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "langtaosha",
       "irregular": null,
@@ -12225,6 +12904,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -12265,6 +12945,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "youyuanbuzhi",
       "irregular": null,
@@ -12283,6 +12966,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -12323,6 +13007,9 @@
       "form": "六言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "youziyin",
       "irregular": null,
@@ -12343,6 +13030,7 @@
           1
         ]
       ],
+      "recite": "line",
       "render_split": [
         2,
         2,
@@ -12384,6 +13072,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "shihuiyin",
       "irregular": null,
@@ -12402,6 +13093,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -12442,6 +13134,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "zhushi",
       "irregular": null,
@@ -12460,6 +13155,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -12500,6 +13196,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "xijiangyue",
       "irregular": null,
@@ -12526,6 +13225,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -12568,6 +13268,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "guogurenzhuang",
       "irregular": null,
@@ -12594,6 +13297,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -12635,6 +13339,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "tiaotiaoqianniuxing",
       "irregular": null,
@@ -12663,6 +13370,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -12706,6 +13414,9 @@
       "form": "四言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "caiwei",
       "irregular": null,
@@ -12732,6 +13443,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -12774,6 +13486,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "wenguanjun",
       "irregular": null,
@@ -12800,6 +13515,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -12842,6 +13558,9 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
       "grade": 6,
       "id": "mashi",
       "irregular": null,
@@ -12860,6 +13579,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2
@@ -12908,6 +13628,9 @@
         "\"敢问何谓浩然之气？\"曰：\"难言也。其为气也，至大至刚，以直养而无害，则塞于天地之间。其为气也，配义与道；无是，馁也。是集义所生者，非义袭而取之也。行有不慊于心，则馁矣。我故曰，告子未尝知义，以其外之也。必有事焉，而勿正，心勿忘，勿助长也。无若宋人然：宋人有闵其苗之不长而揠之者，芒芒然归，谓其人曰：'今日病矣！予助苗长矣！'其子趋而往视之，苗则槁矣。天下之不助苗长者寡矣。以为无益而舍之者，不耘苗者也；助之长者，揠苗者也——非徒无益，而又害之。\"",
         "\"何谓知言？\"曰：\"诐辞知其所蔽，淫辞知其所陷，邪辞知其所离，遁辞知其所穷。生于其心，害于其政；发于其政，害于其事。圣人复起，必从吾言矣。\"（公孙丑曰：）\"宰我、子贡善为说辞，冉牛、闵子、颜渊善言德行。孔子兼之，曰：'我于辞命，则不能也。'\""
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 25,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "mengziyize",
       "irregular": null,
@@ -12944,6 +13667,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         1,
         2,
@@ -13008,6 +13732,9 @@
         "知人者智，自知者明。胜人者有力，自胜者强。知足者富，强行者有志。不失其所者久，死而不亡者寿。（第三十三章）",
         "信言不美，美言不信。善者不辩，辩者不善。知者不博，博者不知。圣人不积，既以为人己愈有，既以与人己愈多。天之道，利而不害；圣人之道，为而不争。（第八十一章）"
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 21,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "laozi8",
       "irregular": null,
@@ -13036,6 +13763,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         4,
@@ -13106,6 +13834,9 @@
         "子曰：\"三军可夺帅也，匹夫不可夺志也。\"（《子罕》）",
         "子夏曰：\"博学而笃志，切问而近思，仁在其中矣。\"（《子张》）"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 1,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "lunyu12",
       "irregular": null,
@@ -13150,6 +13881,7 @@
           7
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -13208,6 +13940,9 @@
         "且夫人之学也，不志其大，虽多而何为？辙之来也，于山见终南、嵩、华之高，于水见黄河之大且深，于人见欧阳公，而犹以为未见太尉也。故愿得观贤人之光耀，闻一言以自壮，然后可以尽天下之大观而无憾者矣。",
         "辙年少，未能通习吏事。向之来，非有取于斗升之禄，偶然得之，非其所乐。然幸得赐归待选，使得优游数年之间，将归益治其文，且学为政。太尉苟以为可教而辱教之，又幸矣！"
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 31,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "shangshumihan",
       "irregular": null,
@@ -13242,6 +13977,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         2,
@@ -13292,6 +14028,9 @@
         "喜怒哀乐之未发，谓之中；发而皆中节，谓之和。中也者，天下之大本也；和也者，天下之达道也。致中和，天地位焉，万物育焉。",
         "博学之，审问之，慎思之，明辨之，笃行之。有弗学，学之弗能，弗措也；有弗问，问之弗知，弗措也；有弗思，思之弗得，弗措也；有弗辨，辨之弗明，弗措也；有弗行，行之弗笃，弗措也。人一能之己百之，人十能之己千之。果能此道矣，虽愚必明，虽柔必强。"
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 24,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "zhongyong",
       "irregular": null,
@@ -13318,6 +14057,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         3,
@@ -13361,6 +14101,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 32,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "linanchunyu",
       "irregular": null,
@@ -13381,6 +14124,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -13422,6 +14166,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 31,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "shufen",
       "irregular": null,
@@ -13442,6 +14189,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -13495,6 +14243,9 @@
         "故方其盛也，举天下之豪杰，莫能与之争；及其衰也，数十伶人困之，而身死国灭，为天下笑。夫祸患常积于忽微，而智勇多困于所溺，岂独伶人也哉！",
         "作《伶官传》。"
       ],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 18,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "wudailingguan",
       "irregular": null,
@@ -13529,6 +14280,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         2,
@@ -13585,6 +14337,9 @@
         "呜呼！以赂秦之地封天下之谋臣，以事秦之心礼天下之奇才，并力西向，则吾恐秦人食之不得下咽也。悲夫！有如此之势，而为秦人积威之所劫，日削月割，以趋于亡。为国者无使为积威之所劫哉！",
         "夫六国与秦皆诸侯，其势弱于秦，而犹有可以不赂而胜之之势。苟以天下之大，下而从六国破亡之故事，是又在六国下矣！"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 7,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "liuguolun",
       "irregular": null,
@@ -13619,6 +14374,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         4,
         2,
@@ -13671,6 +14427,9 @@
         "夫人之相与，俯仰一世。或取诸怀抱，悟言一室之内；或因寄所托，放浪形骸之外。虽趣舍万殊，静躁不同，当其欣于所遇，暂得于己，快然自足，不知老之将至。及其所之既倦，情随事迁，感慨系之矣。向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀。况修短随化，终期于尽。古人云：\"死生亦大矣。\"岂不痛哉！",
         "每览昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。固知一死生为虚诞，齐彭殇为妄作。后之视今，亦犹今之视昔。悲夫！故列叙时人，录其所述，虽世殊事异，所以兴怀，其致一也。后之览者，亦将有感于斯文。"
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 28,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "lantingjixu",
       "irregular": null,
@@ -13697,6 +14456,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -13748,6 +14508,9 @@
         "吾尝终日而思矣，不如须臾之所学也；吾尝跂而望矣，不如登高之博见也。登高而招，臂非加长也，而见者远；顺风而呼，声非加疾也，而闻者彰。假舆马者，非利足也，而致千里；假舟楫者，非能水也，而绝江河。君子生非异也，善假于物也。",
         "积土成山，风雨兴焉；积水成渊，蛟龙生焉；积善成德，而神明自得，圣心备焉。故不积跬步，无以至千里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而舍之，朽木不折；锲而不舍，金石可镂。蚓无爪牙之利，筋骨之强，上食埃土，下饮黄泉，用心一也。蟹六跪而二螯，非蛇鳝之穴无可寄托者，用心躁也。"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 2,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "quanxue",
       "irregular": null,
@@ -13776,6 +14539,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         1,
         5,
@@ -13836,6 +14600,9 @@
         "【人间词话】一、词以境界为最上。有境界则自成高格，自有名句。五代北宋之词所以独绝者在此。",
         "【人间词话】二六、古今之成大事业、大学问者，必经过三种之境界：\"昨夜西风凋碧树，独上高楼，望尽天涯路。\"此第一境也。\"衣带渐宽终不悔，为伊消得人憔悴。\"此第二境也。\"众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。\"此第三境也。此等语皆非大词人不能道。然遽以此意解释诸词，恐为晏欧诸公所不许也。"
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 32,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "gudaishilun",
       "irregular": null,
@@ -13866,6 +14633,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         3,
@@ -13919,6 +14687,9 @@
         "三杯两盏淡酒，怎敌他、晚来风急？",
         "梧桐更兼细雨，到黄昏、点点滴滴。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 30,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "shengshenman",
       "irregular": null,
@@ -13939,6 +14710,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         3,
         2,
@@ -13986,6 +14758,9 @@
         "大学之道，在明明德，在亲民，在止于至善。知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。物有本末，事有终始。知所先后，则近道矣。",
         "古之欲明明德于天下者，先治其国；欲治其国者，先齐其家；欲齐其家者，先修其身；欲修其身者，先正其心；欲正其心者，先诚其意；欲诚其意者，先致其知；致知在格物。物格而后知至，知至而后意诚，意诚而后心正，心正而后身修，身修而后家齐，家齐而后国治，国治而后天下平。自天子以至于庶人，壹是皆以修身为本。"
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 23,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "daxue",
       "irregular": null,
@@ -14006,6 +14781,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -14055,6 +14831,9 @@
         "子路率尔而对曰：\"千乘之国，摄乎大国之间，加之以师旅，因之以饥馑；由也为之，比及三年，可使有勇，且知方也。\"夫子哂之。\"求，尔何如？\"对曰：\"方六七十，如五六十，求也为之，比及三年，可使足民。如其礼乐，以俟君子。\" \"赤，尔何如？\"对曰：\"非曰能之，愿学焉。宗庙之事，如会同，端章甫，愿为小相焉。\" \"点，尔何如？\"鼓瑟希，铿尔，舍瑟而作，对曰：\"异乎三子者之撰。\"子曰：\"何伤乎？亦各言其志也！\"曰：\"莫春者，春服既成，冠者五六人，童子六七人，浴乎沂，风乎舞雩，咏而归。\"夫子喟然叹曰：\"吾与点也！\"",
         "三子者出，曾皙后。曾皙曰：\"夫三子者之言何如？\"子曰：\"亦各言其志也已矣。\"曰：\"夫子何哂由也？\"曰：\"为国以礼，其言不让，是故哂之。唯求则非邦也与？安见方六七十如五六十而非邦也者？唯赤则非邦也与？宗庙会同，非诸侯而何？赤也为之小，孰能为之大？\""
       ],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 11,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "zilu-shizhe",
       "irregular": null,
@@ -14089,6 +14868,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         4,
@@ -14142,6 +14922,9 @@
         "冉有曰：\"夫子欲之，吾二臣者皆不欲也。\"孔子曰：\"求！周任有言曰：'陈力就列，不能者止。'危而不持，颠而不扶，则将焉用彼相矣？且尔言过矣。虎兕出于柙，龟玉毁于椟中，是谁之过与？\"",
         "冉有曰：\"今夫颛臾，固而近于费。今不取，后世必为子孙忧。\"孔子曰：\"求！君子疾夫舍曰欲之而必为之辞。丘也闻有国有家者，不患寡而患不均，不患贫而患不安。盖均无贫，和无寡，安无倾。夫如是，故远人不服，则修文德以来之。既来之，则安之。今由与求也，相夫子，远人不服而不能来也，邦分崩离析而不能守也，而谋动干戈于邦内。吾恐季孙之忧，不在颛臾，而在萧墙之内也。\""
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 22,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "jishi-jiangfanjueyu",
       "irregular": null,
@@ -14176,6 +14959,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         3,
@@ -14221,6 +15005,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 15,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "kezhi",
       "irregular": null,
@@ -14241,6 +15028,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -14282,6 +15070,9 @@
       "form": "乐府",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 12,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "jiangjinjiu",
       "irregular": null,
@@ -14308,6 +15099,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -14378,6 +15170,9 @@
         "屈原既死之后，楚有宋玉、唐勒、景差之徒者，皆好辞而以赋见称；然皆祖屈原之从容辞令，终莫敢直谏。其后楚日以削，数十年竟为秦所灭。自屈原沉汨罗后百有余年，汉有贾生，为长沙王太傅，过湘水，投书以吊屈原。",
         "太史公曰：余读《离骚》、《天问》、《招魂》、《哀郢》，悲其志。适长沙，观屈原所自沉渊，未尝不垂涕，想见其为人。及见贾生吊之，又怪屈原以彼其材，游诸侯，何国不容，而自令若是。读《服鸟赋》，同死生，轻去就，又爽然自失矣。"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 3,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "quyuanliezhuan",
       "irregular": null,
@@ -14414,6 +15209,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         4,
         3,
@@ -14471,6 +15267,9 @@
         "圣人无常师。孔子师郯子、苌弘、师襄、老聃。郯子之徒，其贤不及孔子。孔子曰：三人行，则必有我师。是故弟子不必不如师，师不必贤于弟子，闻道有先后，术业有专攻，如是而已。",
         "李氏子蟠，年十七，好古文，六艺经传皆通习之，不拘于时，学于余。余嘉其能行古道，作《师说》以贻之。"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 5,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "shishuo",
       "irregular": null,
@@ -14499,6 +15298,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         4,
@@ -14555,6 +15355,9 @@
         "归去来兮，请息交以绝游。世与我而相违，复驾言兮焉求？悦亲戚之情话，乐琴书以消忧。农人告余以春及，将有事于西畴。或命巾车，或棹孤舟。既窈窕以寻壑，亦崎岖而经丘。木欣欣以向荣，泉涓涓而始流。善万物之得时，感吾生之行休。",
         "已矣乎！寓形宇内复几时？曷不委心任去留？胡为乎遑遑欲何之？富贵非吾愿，帝乡不可期。怀良辰以孤往，或植杖而耘耔。登东皋以舒啸，临清流而赋诗。聊乘化以归尽，乐夫天命复奚疑！"
       ],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 16,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "guiqulaixici",
       "irregular": null,
@@ -14581,6 +15384,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -14634,6 +15438,9 @@
         "羁鸟恋旧林，池鱼思故渊。",
         "开荒南野际，守拙归园田。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 6,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "guiyuantianju",
       "irregular": null,
@@ -14660,6 +15467,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -14712,6 +15520,9 @@
         "江山如画，一时多少豪杰。",
         "羽扇纶巾，谈笑间，樯橹灰飞烟灭。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 26,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "niannujiao-chibi",
       "irregular": null,
@@ -14738,6 +15549,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         3,
         3,
@@ -14780,6 +15592,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 33,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "niannujiao-gudong",
       "irregular": null,
@@ -14806,6 +15621,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -14848,6 +15664,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 38,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "yangzhousman",
       "irregular": null,
@@ -14868,6 +15687,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -14909,6 +15729,9 @@
       "form": "文言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 12,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "baoranan",
       "irregular": null,
@@ -14943,6 +15766,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         2,
@@ -14988,6 +15812,9 @@
       "form": "杂言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 7,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "niluonan",
       "irregular": null,
@@ -15008,6 +15835,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -15057,6 +15885,9 @@
         "岂曰无衣？与子同裳。",
         "王于兴师，修我戈矛。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 2,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "wuyi",
       "irregular": null,
@@ -15077,6 +15908,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         1,
         1,
@@ -15118,6 +15950,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 8,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "chunjianghuayue",
       "irregular": null,
@@ -15138,6 +15973,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -15179,6 +16015,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 23,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "wanghaichao",
       "irregular": null,
@@ -15205,6 +16044,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         3,
@@ -15251,6 +16091,9 @@
       "fullLinesPunct": [
         "喇叭，唢呐，曲儿小腔儿大。官船来往乱如麻，全仗你抬声价。军听了军愁，民听了民怕。哪里去辨甚么真共假？眼见的吹翻了这家，吹伤了那家，只吹的水尽鹅飞罢！"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 40,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "chaotianzi",
       "irregular": null,
@@ -15279,6 +16122,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         2,
@@ -15322,6 +16166,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 19,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "lipeng",
       "irregular": null,
@@ -15342,6 +16189,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -15383,6 +16231,9 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 24,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "guizhixiang",
       "irregular": null,
@@ -15403,6 +16254,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         2,
@@ -15444,6 +16296,9 @@
       "form": "乐府",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 11,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "mengyoutianmu",
       "irregular": null,
@@ -15464,6 +16319,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -15515,6 +16371,9 @@
         "想当年，金戈铁马，气吞万里如虎。",
         "凭谁问：廉颇老矣，尚能饭否？"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 34,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "yongyule",
       "irregular": null,
@@ -15541,6 +16400,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -15591,6 +16451,9 @@
         "千里孤坟，无处话凄凉。",
         "纵使相逢应不识，尘满面，鬓如霜。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 25,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "jiangchengzi-yimao",
       "irregular": null,
@@ -15611,6 +16474,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         3,
         2,
@@ -15660,6 +16524,9 @@
         "采之欲遗谁？所思在远道。",
         "还顾望旧乡，长路漫浩浩。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 4,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "shejiang",
       "irregular": null,
@@ -15680,6 +16547,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         1,
@@ -15739,6 +16607,9 @@
         "呜呼！胜地不常，盛筵难再。兰亭已矣，梓泽丘墟。临别赠言，幸承恩于伟饯；登高作赋，是所望于群公。敢竭鄙怀，恭疏短引。一言均赋，四韵俱成。请洒潘江，各倾陆海云尔。",
         "滕王高阁临江渚，佩玉鸣鸾罢歌舞。画栋朝飞南浦云，珠帘暮卷西山雨。闲云潭影日悠悠，物换星移几度秋。阁中帝子今何在？槛外长江空自流。"
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 29,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "tengwanggexu",
       "irregular": null,
@@ -15765,6 +16636,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         3,
@@ -15808,6 +16680,9 @@
       "form": "乐府",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 13,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "yange-xing",
       "irregular": null,
@@ -15828,6 +16703,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -15869,6 +16745,9 @@
       "form": "乐府",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 18,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "pipaxing",
       "irregular": null,
@@ -15895,6 +16774,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         1,
@@ -15947,6 +16827,9 @@
         "亲朋无一字，老病有孤舟。",
         "戎马关山北，凭轩涕泗流。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 17,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "dengyueyanglou",
       "irregular": null,
@@ -15973,6 +16856,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -16015,6 +16899,9 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 27,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "dengkuai-ge",
       "irregular": null,
@@ -16035,6 +16922,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -16090,6 +16978,9 @@
         "山多石，少土。石苍黑色，多平方，少圜。少杂树，多松，生石罅，皆平顶。冰雪，无瀑水，无鸟兽音迹。至日观数里内无树，而雪与人膝齐。",
         "桐城姚鼐记。"
       ],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 20,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "dengtaishan",
       "irregular": null,
@@ -16124,6 +17015,7 @@
           5
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         1,
@@ -16178,6 +17070,9 @@
         "万里悲秋常作客，百年多病独登台。",
         "艰难苦恨繁霜鬓，潦倒新停浊酒杯。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 16,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "denggao",
       "irregular": null,
@@ -16204,6 +17099,7 @@
           3
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -16246,6 +17142,9 @@
       "form": "乐府",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 5,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "duange",
       "irregular": null,
@@ -16266,6 +17165,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         3,
@@ -16315,6 +17215,9 @@
         "元丰七年六月丁丑，余自齐安舟行适临汝，而长子迈将赴饶之德兴尉，送之至湖口，因得观所谓石钟者。寺僧使小童持斧，于乱石间择其一二扣之，硿硿焉。余固笑而不信也。至莫夜月明，独与迈乘小舟，至绝壁下。大石侧立千尺，如猛兽奇鬼，森然欲搏人；而山上栖鹘，闻人声亦惊起，磔磔云霄间；又有若老人咳且笑于山谷中者，或曰此鹳鹤也。余方心动欲还，而大声发于水上，噌吰如钟鼓不绝。舟人大恐。徐而察之，则山下皆石穴罅，不知其浅深，微波入焉，涵淡澎湃而为此也。舟回至两山间，将入港口，有大石当中流，可坐百人，空中而多窍，与风水相吞吐，有窾坎镗鞳之声，与向之噌吰者相应，如乐作焉。因笑谓迈曰：\"汝识之乎？噌吰者，周景王之无射也；窾坎镗鞳者，魏庄子之歌钟也。古之人不余欺也！\"",
         "事不目见耳闻，而臆断其有无，可乎？郦元之所见闻，殆与余同，而言之不详；士大夫终不肯以小舟夜泊绝壁之下，故莫能知；而渔工水师虽知而不能言。此世所以不传也。而陋者乃以斧斤考击而求之，自以为得其实。余是以记之，盖叹郦元之简，而笑李渤之陋也。"
       ],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 19,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "shizhongshan",
       "irregular": null,
@@ -16349,6 +17252,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         4,
         2,
@@ -16398,6 +17302,9 @@
       "fullLinesPunct": [
         "大道之行也，天下为公。选贤与能，讲信修睦。故人不独亲其亲，不独子其子，使老有所终，壮有所用，幼有所长，矜寡孤独废疾者皆有所养。男有分，女有归。货恶其弃于地也，不必藏于己；力恶其不出于身也，不必为己。是故谋闭而不兴，盗窃乱贼而不作，故外户而不闭。是谓大同。"
       ],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 14,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "liyun",
       "irregular": null,
@@ -16424,6 +17331,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -16466,6 +17374,9 @@
       "form": "骚体",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 3,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "lisao",
       "irregular": null,
@@ -16492,6 +17403,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -16546,6 +17458,9 @@
         "问者曰：\"以子之道，移之官理，可乎？\"驼曰：\"我知种树而已，官理，非吾业也。然吾居乡，见长人者好烦其令，若甚怜焉，而卒以祸。旦暮吏来而呼曰：'官命促尔耕，勖尔植，督尔获，早缫而绪，早织而缕，字而幼孩，遂而鸡豚。'鸣鼓而聚之，击木而召之。吾小人辍飧饔以劳吏者，且不得暇，又何以蕃吾生而安吾性耶？故病且怠。若是，则与吾业者其亦有类乎？\"",
         "问者曰：\"嘻，不亦善夫！吾问养树，得养人术。\"传其事以为官戒也。"
       ],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 17,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "zhongshu-guotuotuo",
       "irregular": null,
@@ -16580,6 +17495,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         5,
@@ -16634,6 +17550,9 @@
         "人习于苟且非一日，士大夫多以不恤国事、同俗自媚于众为善，上乃欲变此，而某不量敌之众寡，欲出力助上以抗之，则众何为而不汹汹然？盘庚之迁，胥怨者民也，非特朝廷士大夫而已。盘庚不为怨者故改其度，度义而后动，是而不见可悔故也。如君实责我以在位久，未能助上大有为，以膏泽斯民，则某知罪矣；如曰今日当一切不事事，守前所为而已，则非某之所敢知。",
         "无由会晤，不任区区向往之至！"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 8,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "dasijianyishu",
       "irregular": null,
@@ -16668,6 +17587,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -16721,6 +17641,9 @@
         "叶上初阳干宿雨，水面清圆，一一风荷举。",
         "故乡遥，何日去？家住吴门，久作长安旅。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 29,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "sumuzhe",
       "irregular": null,
@@ -16741,6 +17664,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         3,
         3,
@@ -16790,6 +17714,9 @@
         "懒起画蛾眉，弄妆梳洗迟。",
         "照花前后镜，花面交相映。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 20,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "pusaman-wentingyun",
       "irregular": null,
@@ -16810,6 +17737,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -16859,6 +17787,9 @@
         "西北望长安，可怜无数山。",
         "青山遮不住，毕竟东流去。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 35,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "pusaman-zaoxiang",
       "irregular": null,
@@ -16879,6 +17810,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -16928,6 +17860,9 @@
         "小楼昨夜又东风，故国不堪回首月明中。",
         "问君能有几多愁？恰似一江春水向东流。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 22,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "yumeiren",
       "irregular": null,
@@ -16948,6 +17883,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         1,
         2,
@@ -16997,6 +17933,9 @@
         "三顾频烦天下计，两朝开济老臣心。",
         "出师未捷身先死，长使英雄泪满襟。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 14,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "shuxiang",
       "irregular": null,
@@ -17017,6 +17956,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -17058,6 +17998,9 @@
       "form": "乐府",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 10,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "shudaonan",
       "irregular": null,
@@ -17084,6 +18027,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         2,
@@ -17134,6 +18078,9 @@
         "凡百元首，承天景命，莫不殷忧而道著，功成而德衰。有善始者实繁，能克终者盖寡。岂其取之易守之难乎？昔取之而有余，今守之而不足，何也？夫在殷忧，必竭诚以待下；既得志，则纵情以傲物。竭诚则吴越为一体，傲物则骨肉为行路。虽董之以严刑，震之以威怒，终苟免而不怀仁，貌恭而不心服。怨不在大，可畏惟人；载舟覆舟，所宜深慎；奔车朽索，其可忽乎！",
         "君人者，诚能见可欲则思知足以自戒，将有作则思知止以安人，念高危则思谦冲而自牧，惧满溢则思江海下百川，乐盘游则思三驱以为度，忧懈怠则思慎始而敬终，虑壅蔽则思虚心以纳下，惧谗邪则思正身以黜恶，恩所加则思无因喜以谬赏，罚所及则思无以怒而滥刑。总此十思，宏兹九德，简能而任之，择善而从之，则智者尽其谋，勇者竭其力，仁者播其惠，信者效其忠。文武争驰，君臣无事，可以尽豫游之乐，可以养松乔之寿，鸣琴垂拱，不言而化。何必劳神苦思，代下司职，役聪明之耳目，亏无为之大道哉！"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 4,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "jiantaishisi",
       "irregular": null,
@@ -17162,6 +18109,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         4,
         3,
@@ -17216,6 +18164,9 @@
         "臣闻地广者粟多，国大者人众，兵强则士勇。是以泰山不让土壤，故能成其大；河海不择细流，故能就其深；王者不却众庶，故能明其德。是以地无四方，民无异国，四时充美，鬼神降福，此五帝三王之所以无敌也。今乃弃黔首以资敌国，却宾客以业诸侯，使天下之士退而不敢西向，裹足不入秦，此所谓藉寇兵而赍盗粮者也。",
         "夫物不产于秦，可宝者多；士不产于秦，而愿忠者众。今逐客以资敌国，损民以益雠，内自虚而外树怨于诸侯，求国之无危，不可得也。"
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 27,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "jianzhukeshu",
       "irregular": null,
@@ -17236,6 +18187,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         4,
         3,
@@ -17284,6 +18236,9 @@
         "国脉微如缕。问长缨何时入手，缚将戎主？未必人间无好汉，谁与宽些尺度？试看取当年韩五。岂有谷城公付授，也不干曾遇骊山母。谈笑起，两河路。",
         "少时棋柝曾联句。叹而今登楼揽镜，事机频误。闻说北风吹面急，边上冲梯屡舞。君莫道投鞭虚语，自古一贤能制难，有金汤便可无张许？快投笔，莫题柱。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 37,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "hexinlao",
       "irregular": null,
@@ -17312,6 +18267,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         1,
         2,
@@ -17368,6 +18324,9 @@
         "苏子曰：\"客亦知夫水与月乎？逝者如斯，而未尝往也；盈虚者如彼，而卒莫消长也。盖将自其变者而观之，则天地曾不能以一瞬；自其不变者而观之，则物与我皆无尽也，而又何羡乎！且夫天地之间，物各有主，苟非吾之所有，虽一毫而莫取。惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭，是造物者之无尽藏也，而吾与子之所共适。\"",
         "客喜而笑，洗盏更酌。肴核既尽，杯盘狼籍。相与枕藉乎舟中，不知东方之既白。"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 9,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "chibifu",
       "irregular": null,
@@ -17394,6 +18353,7 @@
           3
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -17449,6 +18409,9 @@
         "始皇既没，余威震于殊俗。然陈涉瓮牖绳枢之子，氓隶之人，而迁徙之徒也；才能不及中人，非有仲尼、墨翟之贤，陶朱、猗顿之富；蹑足行伍之间，而倔起阡陌之中，率疲弊之卒，将数百之众，转而攻秦。斩木为兵，揭竿为旗，天下云集响应，赢粮而景从。山东豪俊遂并起而亡秦族矣。",
         "且夫天下非小弱也，雍州之地，崤函之固，自若也。陈涉之位，非尊于齐、楚、燕、赵、韩、魏、宋、卫、中山之君也；锄耰棘矜，非铦于钩戟长铩也；谪戍之众，非抗于九国之师也；深谋远虑，行军用兵之道，非及向时之士也。然而成败异变，功业相反，何也？试使山东之国与陈涉度长絜大，比权量力，则不可同年而语矣。然秦以区区之地，致万乘之势，序八州而朝同列，百有余年矣。然后以六合为家，崤函为宫。一夫作难而七庙隳，身死人手，为天下笑者，何也？仁义不施而攻守之势异也。"
       ],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 13,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "guoqinlun",
       "irregular": null,
@@ -17483,6 +18446,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         4,
         2,
@@ -17532,6 +18496,9 @@
       "fullLinesPunct": [
         "惠子谓庄子曰：\"魏王贻我大瓠之种，我树之成而实五石。以盛水浆，其坚不能自举也。剖之以为瓢，则瓠落无所容。非不呺然大也，吾为其无用而掊之。\"庄子曰：\"夫子固拙于用大矣。宋人有善为不龟手之药者，世世以洴澼絖为事。客闻之，请买其方百金。聚族而谋曰：'我世世为洴澼絖，不过数金；今一朝而鬻技百金，请与之。'客得之，以说吴王。越有难，吴王使之将。冬，与越人水战，大败越人，裂地而封之。能不龟手一也，或以封，或不免于洴澼絖，则所用之异也。今子有五石之瓠，何不虑以为大樽而浮乎江湖，而忧其瓠落无所容？则夫子犹有蓬之心也夫！\""
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 26,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "xiaoyaoyou",
       "irregular": null,
@@ -17568,6 +18535,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         1,
@@ -17622,6 +18590,9 @@
         "沧海月明珠有泪，蓝田日暖玉生烟。",
         "此情可待成追忆，只是当时已惘然。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 21,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "jinse",
       "irregular": null,
@@ -17642,6 +18613,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -17683,6 +18655,9 @@
       "form": "曲",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 39,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "changting-songbei",
       "irregular": null,
@@ -17703,6 +18678,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         1,
@@ -17754,6 +18730,9 @@
         "嗟乎！一人之心，千万人之心也。秦爱纷奢，人亦念其家。奈何取之尽锱铢，用之如泥沙？使负栋之柱，多于南亩之农夫；架梁之椽，多于机上之工女；钉头磷磷，多于在庾之粟粒；瓦缝参差，多于周身之帛缕；直栏横槛，多于九土之城郭；管弦呕哑，多于市人之言语。使天下之人，不敢言而敢怒。独夫之心，日益骄固。戍卒叫，函谷举，楚人一炬，可怜焦土！",
         "呜呼！灭六国者六国也，非秦也；族秦者秦也，非天下也。嗟乎！使六国各爱其人，则足以拒秦；使秦复爱六国之人，则递三世可至万世而为君，谁得而族灭也？秦人不暇自哀，而后人哀之；后人哀之而不鉴之，亦使后人而复哀后人也。"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 6,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "epenggongfu",
       "irregular": null,
@@ -17774,6 +18753,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         2,
@@ -17826,6 +18806,9 @@
         "伏惟圣朝以孝治天下，凡在故老，犹蒙矜育，况臣孤苦，特为尤甚。且臣少仕伪朝，历职郎署，本图宦达，不矜名节。今臣亡国贱俘，至微至陋，过蒙拔擢，宠命优渥，岂敢盘桓，有所希冀！但以刘日薄西山，气息奄奄，人命危浅，朝不虑夕。臣无祖母，无以至今日；祖母无臣，无以终余年。母孙二人，更相为命，是以区区不能废远。",
         "臣密今年四十有四，祖母刘今年九十有六，是臣尽节于陛下之日长，报养刘之日短也。乌鸟私情，愿乞终养。臣之辛苦，非独蜀之人士及二州牧伯所见明知，皇天后土实所共鉴。愿陛下矜悯愚诚，听臣微志，庶刘侥幸，保卒余年。臣生当陨首，死当结草。臣不胜犬马怖惧之情，谨拜表以闻。"
       ],
+      "gaokaoGroup": "选择性必修",
+      "gaokaoNo": 15,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "chenqingbiao",
       "irregular": null,
@@ -17846,6 +18829,7 @@
           1
         ]
       ],
+      "recite": "section",
       "render_split": [
         3,
         3,
@@ -17896,6 +18880,9 @@
         "宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。",
         "众里寻他千百度。蓦然回首，那人却在，灯火阑珊处。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 36,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "qingyu-an",
       "irregular": null,
@@ -17916,6 +18903,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         1,
         3,
@@ -17965,6 +18953,9 @@
         "爱而不见，搔首踟蹰。",
         "静女其娈，贻我彤管。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 1,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "jingnv",
       "irregular": null,
@@ -17985,6 +18976,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         2,
         2,
@@ -18040,6 +19032,9 @@
         "余既为此志，后五年，吾妻来归，时至轩中，从余问古事，或凭几学书。吾妻归宁，述诸小妹语曰：\"闻姊家有阁子，且何谓阁子也？\"其后六年，吾妻死，室坏不修。其后二年，余久卧病无聊，乃使人复葺南阁子，其制稍异于前。然自后余多在外，不常居。",
         "庭有枇杷树，吾妻死之年所手植也，今已亭亭如盖矣。"
       ],
+      "gaokaoGroup": "必修",
+      "gaokaoNo": 10,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "xiangjixuanzhi",
       "irregular": null,
@@ -18074,6 +19069,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         3,
@@ -18127,6 +19123,9 @@
         "金风玉露一相逢，便胜却人间无数。",
         "两情若是久长时，又岂在朝朝暮暮。"
       ],
+      "gaokaoGroup": "诗词曲",
+      "gaokaoNo": 28,
+      "gaokaoSince": 2023,
       "grade": null,
       "id": "qiqiaoxian",
       "irregular": null,
@@ -18147,6 +19146,7 @@
           1
         ]
       ],
+      "recite": "full",
       "render_split": [
         3,
         2,
@@ -18200,6 +19200,9 @@
         "吾闻竹工云：\"竹之为瓦，仅十稔；若重覆之，得二十稔。\"噫！吾以至道乙未岁，自翰林出滁上；丙申，移广陵；丁酉，又入西掖；戊戌岁除日，有齐安之命；己亥闰三月到郡。四年之间，奔走不暇，未知明年又在何处，岂惧竹楼之易朽乎！幸后之人与我同志，嗣而葺之，庶斯楼之不朽也。",
         "咸平二年八月十五日记。"
       ],
+      "gaokaoGroup": "选修",
+      "gaokaoNo": 30,
+      "gaokaoSince": 2026,
       "grade": null,
       "id": "huanggangzhulouji",
       "irregular": null,
@@ -18234,6 +19237,7 @@
           5
         ]
       ],
+      "recite": "section",
       "render_split": [
         2,
         3,
@@ -18264,7 +19268,7 @@
         "抒怀"
       ],
       "title": "黄冈竹楼记",
-      "volume": "选择性必修下册"
+      "volume": "选修（2026起默写）"
     }
   ]
 }

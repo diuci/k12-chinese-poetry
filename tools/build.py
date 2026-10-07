@@ -257,9 +257,71 @@ def build_record(md_path, fm, body):
         'source': str(src),
         'license': scalar(fm, 'license', 'public-domain'),
         'copyright': scalar(fm, 'copyright', 'public-domain') or 'public-domain',
+        'recite': scalar(fm, 'recite'),
+        'gaokaoGroup': None,
+        'gaokaoNo': None,
+        'gaokaoSince': None,
         'irregular': scalar(fm, 'irregular'),
         '_path': str(rel).replace('\\', '/'),
     }
+
+
+# ---------------------------------------------------------------- 高考默写范围
+# 高中课标 72 篇分四组：必修 10 / 选择性必修 10 / 选修 12 / 诗词曲 40。
+# 实际默写范围按届不同：2025 及以前 = 60 篇（不含选修 12），2026 起 = 72 篇全范围。
+# 分组只从 docs/syllabus-2017.md 的表里读，不在篇目文件里手写——课标是唯一事实源。
+GAOKAO_GROUPS = ('必修', '选择性必修', '选修', '诗词曲')
+GAOKAO_SINCE = {'必修': 2023, '选择性必修': 2023, '诗词曲': 2023, '选修': 2026}
+
+
+def load_gaokao_groups():
+    """读 docs/syllabus-2017.md，返回 {规范化标题: (分组, 编号)}。"""
+    sub = {'（一）必修（10 篇）': '必修', '（二）选择性必修（10 篇）': '选择性必修',
+           '（三）选修（12 篇）': '选修'}
+    out = {}
+    group = None
+    for line in (ROOT / 'docs' / 'syllabus-2017.md').read_text(encoding='utf-8').splitlines():
+        if line.startswith('### '):
+            group = sub.get(line[4:].strip(), group)
+            continue
+        if line.startswith('## 二、诗词曲'):
+            group = '诗词曲'
+            continue
+        if line.startswith('## ') or line.startswith('# '):
+            group = None
+            continue
+        m = re.match(r'^\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*$', line)
+        if not m or not group:
+            continue
+        title = re.sub(r'（[^）]*）', '', m.group(2)).strip()
+        out[title] = (group, int(m.group(1)))
+    return out
+
+
+def apply_gaokao_groups(records):
+    """给高中篇目回填 gaokaoGroup / gaokaoNo / gaokaoSince。
+
+    2025 及以前 = 必修 10 + 选择性必修 10 + 诗词曲 40 = 60 篇；2026 起加入选修 12 篇 = 72 篇。
+    build.main 与 validate.load_poems 都调这一个函数，两边不许各写一份。
+    """
+    groups = load_gaokao_groups()
+    unmatched = []
+    for r in records:
+        if r.get('stage') != '高中':
+            continue
+        keys = [r['title']]
+        if r.get('subtitle'):
+            keys.append(r['title'] + '·' + r['subtitle'])
+            keys.append(r['title'] + r['subtitle'])
+        hit = next((groups[k] for k in keys if k in groups), None)
+        if hit is None:
+            unmatched.append('%s（%s）' % (r['title'], r['_path']))
+            continue
+        r['gaokaoGroup'], r['gaokaoNo'] = hit
+        r['gaokaoSince'] = GAOKAO_SINCE[hit[0]]
+    if unmatched:
+        die('高中篇目对不上课标分组：%s——课标表里没有同名条目，或篇目标题写歪了'
+            % '、'.join(unmatched))
 
 
 def main():
@@ -282,6 +344,9 @@ def main():
 
     # 稳定排序：学段→ 年级 → 标题，保证每次构建产物一致
     records.sort(key=lambda r: (str(r.get('stage') or ''), r.get('grade') or 0, r['title']))
+
+    apply_gaokao_groups(records)
+
 
     # 索引
     by_id = {r['id']: r['id'] for r in records}

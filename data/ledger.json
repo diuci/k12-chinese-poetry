@@ -17,48 +17,11 @@
       "高中": 71
     },
     "matchStrengths": {
-      "3": 116,
-      "2": 90,
+      "3": 119,
+      "2": 87,
       "1": 0
     },
-    "problems": [
-      {
-        "key": "fulltext:初中-06",
-        "text": "缺全文/收错篇：初中 06「木兰辞（唧唧复唧唧）」要求含「唧唧复唧唧」，仓内《木兰辞》的正文里没有（仓内正文：万里赴戎机关山度若飞朔气传金柝寒光照铁衣将军百战死壮士十年归）",
-        "phase": "P3",
-        "reason": "只有必背名句，没有全文（唧唧复唧唧…）"
-      },
-      {
-        "key": "fulltext:初中-16",
-        "text": "缺全文/收错篇：初中 16「茅屋为秋风所破歌（八月秋高风怒号）」要求含「八月秋高风怒号」，仓内《茅屋为秋风所破歌》的正文里没有（仓内正文：安得广厦千万间大庇天下寒士俱欢颜风雨不动安如山）",
-        "phase": "P3",
-        "reason": "只有必背名句，没有全文"
-      },
-      {
-        "key": "fulltext:初中-31",
-        "text": "缺全文/收错篇：初中 31「水调歌头（明月几时有）」要求含「明月几时有」，仓内《水调歌头》的正文里没有（仓内正文：但愿人长久千里共婵娟）",
-        "phase": "P3",
-        "reason": "只有必背名句，没有全文"
-      },
-      {
-        "key": "fulltext:高中-03",
-        "text": "缺全文/收错篇：高中 03「屈原列传（屈平疾王听之不聪也……虽与日月争光可也）」要求含「屈平疾王听之不聪也」，仓内《屈原列传》的正文里没有（仓内正文：推此志也虽与日月争光可也怨灵修之浩荡兮终不察夫民心众人莫不窃取其画）",
-        "phase": "P3",
-        "reason": "只有必背名句，课标要求的节选范围（屈平疾王听之不聪也…）不在仓内正文里"
-      },
-      {
-        "key": "fulltext:高中-12",
-        "text": "缺全文/收错篇：高中 12「报任安书（古者富贵而名摩灭……难为俗人言也）」要求含「古者富贵而名摩灭」，仓内《报任安书》的正文里没有（仓内正文：人固有一死或重于泰山或轻于鸿毛盖文王拘而演周易仲尼厄而作春秋士为知己者用女为说己）",
-        "phase": "P3",
-        "reason": "只有必背名句，课标要求的节选范围（古者富贵而名摩灭…）不在仓内正文里"
-      },
-      {
-        "key": "fulltext:高中-26",
-        "text": "缺全文/收错篇：高中 26「逍遥游（惠子谓庄子曰……则夫子犹有蓬之心也夫）」要求含「惠子谓庄子曰」，仓内《逍遥游》的正文里没有（仓内正文：北冥有鱼其名为鲲鹏之背不知其几千里也怒而飞其翼若垂天之云且夫水之积也不厚则其负大）",
-        "phase": "P3",
-        "reason": "仓内收的是「北冥有鱼」段，高中课标默写范围是「惠子谓庄子曰…」段，节选范围不符"
-      }
-    ],
+    "problems": [],
     "notes": [
       {
         "key": "alias:初中-52",
@@ -90,10 +53,10 @@
       }
     ],
     "gapCounts": {
-      "缺背诵要求": 105,
-      "无必背名句小节": 156,
-      "无异文记录": 246,
-      "缺全文（课标首句找不到）": 6,
+      "缺背诵要求": 0,
+      "无必背名句小节": 157,
+      "无异文记录": 202,
+      "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
       "重复副本": 1,
       "来源不明": 0
@@ -183,15 +146,15 @@
       "path": "poems/初中/七年级上册/蒹葭.md"
     },
     {
-      "id": "shiwuzhongjunzheng",
+      "id": "shiwucongjunzheng",
       "title": "十五从军征",
       "subtitle": null,
       "author": "佚名",
       "dynasty": "汉",
       "authorDied": null,
-      "authorEraEnd": 1900,
+      "authorEraEnd": 220,
       "license": "public-domain",
-      "source": "S3+S1+S2",
+      "source": "S1+S2+S3",
       "stage": "初中",
       "grade": 7,
       "volume": "七年级上册",
@@ -201,25 +164,25 @@
       "syllabusNo": 3,
       "syllabusTitle": "十五从军征（十五从军征）",
       "matchStrength": 3,
-      "recite": "line",
-      "lineCount": 2,
-      "charCount": 23,
+      "recite": "full",
+      "lineCount": 8,
+      "charCount": 80,
       "sections": [
-        "必背名句",
+        "异文",
+        "必背全文",
         "注释",
-        "玩法数据",
         "译文",
         "赏析"
       ],
       "hasNotes": true,
       "hasTranslation": true,
       "hasAppreciation": true,
-      "hasFamous": true,
-      "hasPlay": true,
-      "hasVariant": false,
-      "pairsCount": 1,
+      "hasFamous": false,
+      "hasPlay": false,
+      "hasVariant": true,
+      "pairsCount": 4,
       "flags": [
-        "无异文记录"
+        "无「必背名句」小节"
       ],
       "path": "poems/初中/七年级上册/十五从军征.md"
     },
@@ -325,14 +288,15 @@
       "syllabusGroup": "初中",
       "syllabusNo": 6,
       "syllabusTitle": "木兰辞（唧唧复唧唧）",
-      "matchStrength": 2,
+      "matchStrength": 3,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 30,
+      "lineCount": 6,
+      "charCount": 62,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
-        "玩法数据",
         "译文",
         "赏析"
       ],
@@ -340,12 +304,10 @@
       "hasTranslation": true,
       "hasAppreciation": true,
       "hasFamous": true,
-      "hasPlay": true,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasPlay": false,
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/初中/七年级下册/木兰辞.md"
     },
     {
@@ -701,14 +663,15 @@
       "syllabusGroup": "初中",
       "syllabusNo": 16,
       "syllabusTitle": "茅屋为秋风所破歌（八月秋高风怒号）",
-      "matchStrength": 2,
+      "matchStrength": 3,
       "recite": "section",
-      "lineCount": 2,
-      "charCount": 23,
+      "lineCount": 4,
+      "charCount": 69,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
-        "玩法数据",
         "译文",
         "赏析"
       ],
@@ -716,12 +679,10 @@
       "hasTranslation": true,
       "hasAppreciation": true,
       "hasFamous": true,
-      "hasPlay": true,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasPlay": false,
+      "hasVariant": true,
+      "pairsCount": 2,
+      "flags": [],
       "path": "poems/初中/七年级上册/茅屋为秋风所破歌.md"
     },
     {
@@ -1282,14 +1243,15 @@
       "syllabusGroup": "初中",
       "syllabusNo": 31,
       "syllabusTitle": "水调歌头（明月几时有）",
-      "matchStrength": 2,
+      "matchStrength": 3,
       "recite": "section",
-      "lineCount": 1,
-      "charCount": 10,
+      "lineCount": 5,
+      "charCount": 58,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
-        "玩法数据",
         "译文",
         "赏析"
       ],
@@ -1297,12 +1259,10 @@
       "hasTranslation": true,
       "hasAppreciation": true,
       "hasFamous": true,
-      "hasPlay": true,
-      "hasVariant": false,
-      "pairsCount": 0,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasPlay": false,
+      "hasVariant": true,
+      "pairsCount": 2,
+      "flags": [],
       "path": "poems/初中/九年级上册/水调歌头.md"
     },
     {
@@ -1861,9 +1821,11 @@
       "syllabusTitle": "桃花源记",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 4,
-      "charCount": 39,
+      "lineCount": 6,
+      "charCount": 77,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -1874,11 +1836,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/初中/八年级下册/桃花源记.md"
     },
     {
@@ -2063,9 +2023,11 @@
       "syllabusTitle": "小石潭记",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 5,
-      "charCount": 38,
+      "lineCount": 6,
+      "charCount": 69,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2076,11 +2038,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/初中/八年级下册/小石潭记.md"
     },
     {
@@ -2506,9 +2466,11 @@
       "syllabusTitle": "与朱元思书",
       "matchStrength": null,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 24,
+      "lineCount": 6,
+      "charCount": 66,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2519,11 +2481,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/初中/八年级上册/与朱元思书.md"
     },
     {
@@ -2666,9 +2626,11 @@
       "syllabusTitle": "曹刿论战",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 25,
+      "lineCount": 6,
+      "charCount": 53,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2679,11 +2641,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/初中/九年级下册/曹刿论战.md"
     },
     {
@@ -2867,9 +2827,11 @@
       "syllabusTitle": "邹忌讽齐王纳谏",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 25,
+      "lineCount": 6,
+      "charCount": 93,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2880,11 +2842,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/初中/九年级下册/邹忌讽齐王纳谏.md"
     },
     {
@@ -2947,9 +2907,11 @@
       "syllabusTitle": "送东阳马生序（节选）",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 24,
+      "lineCount": 6,
+      "charCount": 154,
       "sections": [
+        "全文（教材节选部分）",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2960,11 +2922,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/初中/九年级下册/送东阳马生序.md"
     },
     {
@@ -3026,7 +2986,7 @@
       "syllabusNo": 1,
       "syllabusTitle": "江南（江南可采莲）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 35,
       "sections": [
@@ -3042,7 +3002,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3067,7 +3026,7 @@
       "syllabusNo": 4,
       "syllabusTitle": "咏鹅（鹅鹅鹅）",
       "matchStrength": 2,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 18,
       "sections": [
@@ -3083,7 +3042,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3108,7 +3066,7 @@
       "syllabusNo": 5,
       "syllabusTitle": "风（解落三秋叶）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3124,7 +3082,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3149,7 +3106,7 @@
       "syllabusNo": 10,
       "syllabusTitle": "春晓（春眠不觉晓）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3165,7 +3122,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3190,7 +3146,7 @@
       "syllabusNo": 17,
       "syllabusTitle": "静夜思（床前明月光）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3206,7 +3162,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3231,7 +3186,7 @@
       "syllabusNo": 18,
       "syllabusTitle": "古朗月行（小时不识月）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 40,
       "sections": [
@@ -3247,7 +3202,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3272,7 +3226,7 @@
       "syllabusNo": 20,
       "syllabusTitle": "赠汪伦（李白乘舟将欲行）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -3288,7 +3242,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3313,7 +3266,7 @@
       "syllabusNo": 38,
       "syllabusTitle": "池上（小娃撑小艇）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3329,7 +3282,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3354,7 +3306,7 @@
       "syllabusNo": 41,
       "syllabusTitle": "悯农（锄禾日当午）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3370,7 +3322,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3395,7 +3346,7 @@
       "syllabusNo": 44,
       "syllabusTitle": "寻隐者不遇（松下问童子）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3411,7 +3362,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3436,7 +3386,7 @@
       "syllabusNo": 63,
       "syllabusTitle": "小池（泉眼无声惜细流）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -3452,7 +3402,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3477,7 +3426,7 @@
       "syllabusNo": null,
       "syllabusTitle": "画",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3493,7 +3442,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3518,7 +3466,7 @@
       "syllabusNo": null,
       "syllabusTitle": "画鸡",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -3534,7 +3482,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3559,7 +3506,7 @@
       "syllabusNo": null,
       "syllabusTitle": "相思",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3575,7 +3522,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3600,7 +3546,7 @@
       "syllabusNo": 3,
       "syllabusTitle": "敕勒歌（敕勒川）",
       "matchStrength": 2,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 27,
       "sections": [
@@ -3616,7 +3562,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3641,7 +3586,7 @@
       "syllabusNo": 6,
       "syllabusTitle": "咏柳（碧玉妆成一树高）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -3657,7 +3602,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3682,7 +3626,7 @@
       "syllabusNo": 9,
       "syllabusTitle": "登鹳雀楼（白日依山尽）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3698,7 +3642,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3723,7 +3666,7 @@
       "syllabusNo": 19,
       "syllabusTitle": "望庐山瀑布（日照香炉生紫烟）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -3739,7 +3682,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3764,7 +3706,7 @@
       "syllabusNo": 25,
       "syllabusTitle": "绝句（两个黄鹂鸣翠柳）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -3780,7 +3722,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3805,7 +3746,7 @@
       "syllabusNo": 37,
       "syllabusTitle": "赋得古原草送别（离离原上草）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 40,
       "sections": [
@@ -3821,7 +3762,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3846,7 +3786,7 @@
       "syllabusNo": 40,
       "syllabusTitle": "小儿垂钓（蓬头稚子学垂纶）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -3862,7 +3802,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3887,7 +3826,7 @@
       "syllabusNo": 42,
       "syllabusTitle": "悯农（春种一粒粟）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3903,7 +3842,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3928,7 +3866,7 @@
       "syllabusNo": 43,
       "syllabusTitle": "江雪（千山鸟飞绝）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -3944,7 +3882,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -3969,7 +3906,7 @@
       "syllabusNo": 64,
       "syllabusTitle": "晓出净慈寺送林子方（毕竟西湖六月中）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -3985,7 +3922,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4010,7 +3946,7 @@
       "syllabusNo": 75,
       "syllabusTitle": "村居（草长莺飞二月天）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4026,7 +3962,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4051,7 +3986,7 @@
       "syllabusNo": null,
       "syllabusTitle": "梅花",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -4067,7 +4002,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4092,7 +4026,7 @@
       "syllabusNo": null,
       "syllabusTitle": "夜宿山寺",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -4108,7 +4042,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4133,7 +4066,7 @@
       "syllabusNo": null,
       "syllabusTitle": "舟夜书所见",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -4149,7 +4082,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4174,7 +4106,7 @@
       "syllabusNo": 16,
       "syllabusTitle": "九月九日忆山东兄弟（独在异乡为异客）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4190,7 +4122,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4215,7 +4146,7 @@
       "syllabusNo": 22,
       "syllabusTitle": "早发白帝城（朝辞白帝彩云间）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4231,7 +4162,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4256,7 +4186,7 @@
       "syllabusNo": 23,
       "syllabusTitle": "望天门山（天门中断楚江开）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4272,7 +4202,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4297,7 +4226,7 @@
       "syllabusNo": 27,
       "syllabusTitle": "绝句（迟日江山丽）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -4313,7 +4242,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4378,7 +4306,7 @@
       "syllabusNo": 30,
       "syllabusTitle": "滁州西涧（独怜幽草涧边生）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4394,7 +4322,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4419,7 +4346,7 @@
       "syllabusNo": 35,
       "syllabusTitle": "望洞庭（湖光秋月两相和）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4435,7 +4362,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4500,7 +4426,7 @@
       "syllabusNo": 45,
       "syllabusTitle": "山行（远上寒山石径斜）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4516,7 +4442,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4541,7 +4466,7 @@
       "syllabusNo": 46,
       "syllabusTitle": "清明（清明时节雨纷纷）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4557,7 +4482,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4582,7 +4506,7 @@
       "syllabusNo": 50,
       "syllabusTitle": "元日（爆竹声中一岁除）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4598,7 +4522,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4623,7 +4546,7 @@
       "syllabusNo": 54,
       "syllabusTitle": "饮湖上初晴后雨（水光潋滟晴方好）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4639,7 +4562,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4664,7 +4586,7 @@
       "syllabusNo": 55,
       "syllabusTitle": "惠崇春江晚景（竹外桃花三两枝）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4680,7 +4602,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4705,7 +4626,7 @@
       "syllabusNo": 58,
       "syllabusTitle": "三衢道中（梅子黄时日日晴）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4721,7 +4642,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4746,7 +4666,7 @@
       "syllabusNo": 73,
       "syllabusTitle": "所见（牧童骑黄牛）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -4762,7 +4682,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4787,7 +4706,7 @@
       "syllabusNo": null,
       "syllabusTitle": "采莲曲",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4803,7 +4722,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4828,7 +4746,7 @@
       "syllabusNo": null,
       "syllabusTitle": "大林寺桃花",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4844,7 +4762,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4869,7 +4786,7 @@
       "syllabusNo": null,
       "syllabusTitle": "夜书所见",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4885,7 +4802,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4910,7 +4826,7 @@
       "syllabusNo": null,
       "syllabusTitle": "赠刘景文",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4926,7 +4842,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4951,7 +4866,7 @@
       "syllabusNo": 11,
       "syllabusTitle": "凉州（葡萄美酒夜光杯）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -4967,7 +4882,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -4992,7 +4906,7 @@
       "syllabusNo": 12,
       "syllabusTitle": "出塞（秦时明月汉时关）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5008,7 +4922,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5033,7 +4946,7 @@
       "syllabusNo": 13,
       "syllabusTitle": "芙蓉楼送辛渐（寒雨连江夜入吴）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5049,7 +4962,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5074,7 +4986,7 @@
       "syllabusNo": 14,
       "syllabusTitle": "鹿柴（空山不见人）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -5090,7 +5002,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5115,7 +5026,7 @@
       "syllabusNo": 24,
       "syllabusTitle": "别董大（千里黄云白日曛）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5131,7 +5042,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5156,7 +5066,7 @@
       "syllabusNo": 32,
       "syllabusTitle": "塞下曲（月黑雁飞高）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -5172,7 +5082,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5197,7 +5106,7 @@
       "syllabusNo": 48,
       "syllabusTitle": "蜂（不论平地与山尖）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5213,7 +5122,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5238,7 +5146,7 @@
       "syllabusNo": 56,
       "syllabusTitle": "题西林壁（横看成岭侧成峰）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5254,7 +5162,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5279,7 +5186,7 @@
       "syllabusNo": 57,
       "syllabusTitle": "夏日绝句（生当作人杰）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -5295,7 +5202,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5320,7 +5226,7 @@
       "syllabusNo": 62,
       "syllabusTitle": "四时田园杂兴（梅子金黄杏子肥）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5336,7 +5242,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5361,7 +5266,7 @@
       "syllabusNo": 70,
       "syllabusTitle": "墨梅（我家洗砚池头树）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5377,7 +5282,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5402,7 +5306,7 @@
       "syllabusNo": null,
       "syllabusTitle": "嫦娥",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5418,7 +5322,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5443,7 +5346,7 @@
       "syllabusNo": null,
       "syllabusTitle": "独坐敬亭山",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -5459,7 +5362,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5484,7 +5386,7 @@
       "syllabusNo": null,
       "syllabusTitle": "暮江吟",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5500,7 +5402,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5525,7 +5426,7 @@
       "syllabusNo": null,
       "syllabusTitle": "清平乐",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 46,
       "sections": [
@@ -5541,7 +5442,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5566,7 +5466,7 @@
       "syllabusNo": null,
       "syllabusTitle": "宿新市徐公店",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5582,7 +5482,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5607,7 +5506,7 @@
       "syllabusNo": null,
       "syllabusTitle": "雪梅",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5623,7 +5522,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5648,7 +5546,7 @@
       "syllabusNo": 2,
       "syllabusTitle": "长歌行（青青园中葵）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 5,
       "charCount": 50,
       "sections": [
@@ -5664,7 +5562,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5729,7 +5626,7 @@
       "syllabusNo": 9,
       "syllabusTitle": "山居秋暝",
       "matchStrength": 2,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 40,
       "sections": [
@@ -5745,7 +5642,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5770,7 +5666,7 @@
       "syllabusNo": 15,
       "syllabusTitle": "送元二使安西（渭城朝雨浥轻尘）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5786,7 +5682,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5811,7 +5706,7 @@
       "syllabusNo": 21,
       "syllabusTitle": "黄鹤楼送孟浩然之广陵（故人西辞黄鹤楼）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5827,7 +5722,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5852,7 +5746,7 @@
       "syllabusNo": 29,
       "syllabusTitle": "枫桥夜泊（月落乌啼霜满天）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5868,7 +5762,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5893,7 +5786,7 @@
       "syllabusNo": 31,
       "syllabusTitle": "渔歌子（西塞山前白鹭飞）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 27,
       "sections": [
@@ -5909,7 +5802,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5934,7 +5826,7 @@
       "syllabusNo": 59,
       "syllabusTitle": "示儿（死去元知万事空）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5950,7 +5842,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -5975,7 +5866,7 @@
       "syllabusNo": 60,
       "syllabusTitle": "秋夜将晓出篱门迎凉有感（三万里河东入海）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -5991,7 +5882,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6016,7 +5906,7 @@
       "syllabusNo": 61,
       "syllabusTitle": "四时田园杂兴（昼出耘田夜绩麻）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6032,7 +5922,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6057,7 +5946,7 @@
       "syllabusNo": 66,
       "syllabusTitle": "观书有感（半亩方塘一鉴开）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6073,7 +5962,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6098,7 +5986,7 @@
       "syllabusNo": 67,
       "syllabusTitle": "题临安邸（山外青山楼外楼）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6114,7 +6002,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6139,7 +6026,7 @@
       "syllabusNo": 69,
       "syllabusTitle": "乡村四月（绿遍山原白满川）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6155,7 +6042,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6180,7 +6066,7 @@
       "syllabusNo": 74,
       "syllabusTitle": "己亥杂诗（九州生气恃风雷）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6196,7 +6082,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6221,7 +6106,7 @@
       "syllabusNo": null,
       "syllabusTitle": "长相思",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 36,
       "sections": [
@@ -6237,7 +6122,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6262,7 +6146,7 @@
       "syllabusNo": null,
       "syllabusTitle": "从军行",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6278,7 +6162,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6303,7 +6186,7 @@
       "syllabusNo": null,
       "syllabusTitle": "村晚",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6319,7 +6202,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6344,7 +6226,7 @@
       "syllabusNo": null,
       "syllabusTitle": "鸟鸣涧",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -6360,7 +6242,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6385,7 +6266,7 @@
       "syllabusNo": null,
       "syllabusTitle": "乞巧",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6401,7 +6282,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6426,7 +6306,7 @@
       "syllabusNo": null,
       "syllabusTitle": "稚子弄冰",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6442,7 +6322,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6467,7 +6346,7 @@
       "syllabusNo": 7,
       "syllabusTitle": "回乡偶书（少小离家老大回）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6483,7 +6362,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6508,7 +6386,7 @@
       "syllabusNo": 26,
       "syllabusTitle": "春夜喜雨（好雨知时节）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 40,
       "sections": [
@@ -6524,7 +6402,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6589,7 +6466,7 @@
       "syllabusNo": 34,
       "syllabusTitle": "早春呈水部张十八员外（天街小雨润如酥）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6605,7 +6482,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6630,7 +6506,7 @@
       "syllabusNo": 36,
       "syllabusTitle": "浪淘沙（九曲黄河万里沙）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6646,7 +6522,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6671,7 +6546,7 @@
       "syllabusNo": 47,
       "syllabusTitle": "江南春（千里莺啼绿映红）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6687,7 +6562,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6712,7 +6586,7 @@
       "syllabusNo": 49,
       "syllabusTitle": "江上渔者（江上往来人）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -6728,7 +6602,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6753,7 +6626,7 @@
       "syllabusNo": 51,
       "syllabusTitle": "泊船瓜洲（京口瓜洲一水间）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6769,7 +6642,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6794,7 +6666,7 @@
       "syllabusNo": 52,
       "syllabusTitle": "书湖阴先生壁（茅檐长扫净无苔）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6810,7 +6682,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6835,7 +6706,7 @@
       "syllabusNo": 53,
       "syllabusTitle": "六月二十七日望湖楼醉书（黑云翻墨未遮山）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6851,7 +6722,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6876,7 +6746,7 @@
       "syllabusNo": 65,
       "syllabusTitle": "春日（胜日寻芳泗水滨）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6892,7 +6762,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6917,7 +6786,7 @@
       "syllabusNo": 68,
       "syllabusTitle": "游园不值（应怜屐齿印苍苔）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6933,7 +6802,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6958,7 +6826,7 @@
       "syllabusNo": 71,
       "syllabusTitle": "石灰吟（千锤万凿出深山）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -6974,7 +6842,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -6999,7 +6866,7 @@
       "syllabusNo": 72,
       "syllabusTitle": "竹石（咬定青山不放松）",
       "matchStrength": 3,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -7015,7 +6882,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7040,7 +6906,7 @@
       "syllabusNo": null,
       "syllabusTitle": "卜算子",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 44,
       "sections": [
@@ -7056,7 +6922,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7081,7 +6946,7 @@
       "syllabusNo": null,
       "syllabusTitle": "采薇",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 32,
       "sections": [
@@ -7097,7 +6962,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7122,7 +6986,7 @@
       "syllabusNo": null,
       "syllabusTitle": "过故人庄",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 40,
       "sections": [
@@ -7138,7 +7002,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7163,7 +7026,7 @@
       "syllabusNo": null,
       "syllabusTitle": "寒食",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -7179,7 +7042,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7204,7 +7066,7 @@
       "syllabusNo": null,
       "syllabusTitle": "浣溪沙",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 42,
       "sections": [
@@ -7220,7 +7082,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7245,7 +7106,7 @@
       "syllabusNo": null,
       "syllabusTitle": "马诗",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -7261,7 +7122,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7286,7 +7146,7 @@
       "syllabusNo": null,
       "syllabusTitle": "十五夜望月",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 28,
       "sections": [
@@ -7302,7 +7162,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7327,7 +7186,7 @@
       "syllabusNo": null,
       "syllabusTitle": "宿建德江",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 2,
       "charCount": 20,
       "sections": [
@@ -7343,7 +7202,6 @@
       "hasVariant": false,
       "pairsCount": 1,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7368,7 +7226,7 @@
       "syllabusNo": null,
       "syllabusTitle": "迢迢牵牛星",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 5,
       "charCount": 50,
       "sections": [
@@ -7384,7 +7242,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7409,7 +7266,7 @@
       "syllabusNo": null,
       "syllabusTitle": "闻官军收河南河北",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 56,
       "sections": [
@@ -7425,7 +7282,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7450,7 +7306,7 @@
       "syllabusNo": null,
       "syllabusTitle": "西江月",
       "matchStrength": null,
-      "recite": "",
+      "recite": "full",
       "lineCount": 4,
       "charCount": 50,
       "sections": [
@@ -7466,7 +7322,6 @@
       "hasVariant": false,
       "pairsCount": 2,
       "flags": [
-        "缺背诵要求 recite",
         "无「必背名句」小节",
         "无异文记录"
       ],
@@ -7537,6 +7392,7 @@
       "charCount": 124,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -7547,11 +7403,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 4,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/必修上册/《论语》十二章.md"
     },
     {
@@ -7578,6 +7432,7 @@
       "charCount": 85,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -7588,11 +7443,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/必修上册/劝学.md"
     },
     {
@@ -7696,10 +7549,11 @@
       "syllabusTitle": "屈原列传（屈平疾王听之不聪也……虽与日月争光可也）",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 33,
+      "lineCount": 7,
+      "charCount": 107,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -7710,11 +7564,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/必修上册/屈原列传.md"
     },
     {
@@ -7737,10 +7589,11 @@
       "syllabusTitle": "谏太宗十思疏",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 31,
+      "lineCount": 5,
+      "charCount": 110,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -7751,11 +7604,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 2,
+      "flags": [],
       "path": "poems/高中/必修下册/谏太宗十思疏.md"
     },
     {
@@ -7859,10 +7710,11 @@
       "syllabusTitle": "师说",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 4,
-      "charCount": 65,
+      "lineCount": 5,
+      "charCount": 91,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -7873,11 +7725,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/必修下册/师说.md"
     },
     {
@@ -7904,6 +7754,7 @@
       "charCount": 39,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -7914,11 +7765,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/必修下册/阿房宫赋.md"
     },
     {
@@ -7982,10 +7831,11 @@
       "syllabusTitle": "六国论",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 4,
-      "charCount": 47,
+      "lineCount": 6,
+      "charCount": 117,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -7996,11 +7846,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/必修下册/六国论.md"
     },
     {
@@ -8103,10 +7951,11 @@
       "syllabusTitle": "答司马谏议书",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 36,
+      "lineCount": 6,
+      "charCount": 77,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8117,11 +7966,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/必修下册/答司马谏议书.md"
     },
     {
@@ -8148,6 +7995,7 @@
       "charCount": 66,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8158,11 +8006,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/必修下册/赤壁赋.md"
     },
     {
@@ -8225,10 +8071,11 @@
       "syllabusTitle": "项脊轩志",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 43,
+      "lineCount": 6,
+      "charCount": 75,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8239,11 +8086,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/必修下册/项脊轩志.md"
     },
     {
@@ -8306,10 +8151,11 @@
       "syllabusTitle": "子路、曾皙、冉有、公西华侍坐",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 44,
+      "lineCount": 6,
+      "charCount": 94,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8320,11 +8166,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选择性必修上册/子路、曾皙、冉有、公西华侍坐.md"
     },
     {
@@ -8347,10 +8191,11 @@
       "syllabusTitle": "报任安书（古者富贵而名摩灭……难为俗人言也）",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 4,
-      "charCount": 52,
+      "lineCount": 6,
+      "charCount": 121,
       "sections": [
-        "全文",
+        "全文（课标默写范围）",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8361,11 +8206,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选择性必修中册/报任安书.md"
     },
     {
@@ -8428,10 +8271,11 @@
       "syllabusTitle": "过秦论（上）",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 4,
-      "charCount": 52,
+      "lineCount": 6,
+      "charCount": 105,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8442,11 +8286,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选择性必修上册/过秦论.md"
     },
     {
@@ -8513,6 +8355,7 @@
       "charCount": 33,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8523,11 +8366,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修上册/礼运.md"
     },
     {
@@ -8595,6 +8436,7 @@
       "charCount": 64,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8605,11 +8447,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修下册/陈情表.md"
     },
     {
@@ -8717,6 +8557,7 @@
       "charCount": 48,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8727,11 +8568,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修下册/归去来兮辞.md"
     },
     {
@@ -8795,10 +8634,11 @@
       "syllabusTitle": "种树郭橐驼传",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 2,
-      "charCount": 27,
+      "lineCount": 6,
+      "charCount": 77,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8809,11 +8649,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选择性必修下册/种树郭橐驼传.md"
     },
     {
@@ -8876,10 +8714,11 @@
       "syllabusTitle": "五代史伶官传序",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 36,
+      "lineCount": 6,
+      "charCount": 71,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8890,11 +8729,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选择性必修下册/五代史伶官传序.md"
     },
     {
@@ -8957,10 +8794,11 @@
       "syllabusTitle": "石钟山记",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 31,
+      "lineCount": 6,
+      "charCount": 86,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -8971,11 +8809,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选择性必修下册/石钟山记.md"
     },
     {
@@ -8998,10 +8834,11 @@
       "syllabusTitle": "登泰山记",
       "matchStrength": 2,
       "recite": "full",
-      "lineCount": 2,
-      "charCount": 16,
+      "lineCount": 6,
+      "charCount": 59,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9012,11 +8849,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选择性必修下册/登泰山记.md"
     },
     {
@@ -9125,6 +8960,7 @@
       "charCount": 62,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9135,11 +8971,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/《老子》八章.md"
     },
     {
@@ -9162,10 +8996,11 @@
       "syllabusTitle": "季氏将伐颛臾",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 39,
+      "lineCount": 6,
+      "charCount": 81,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9176,11 +9011,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/季氏将伐颛臾.md"
     },
     {
@@ -9248,6 +9081,7 @@
       "charCount": 40,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9258,11 +9092,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/大学.md"
     },
     {
@@ -9369,6 +9201,7 @@
       "charCount": 73,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9379,11 +9212,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/中庸.md"
     },
     {
@@ -9447,10 +9278,11 @@
       "syllabusTitle": "《孟子》一则（敢问夫子恶乎长……则不能也）",
       "matchStrength": 3,
       "recite": "section",
-      "lineCount": 2,
-      "charCount": 27,
+      "lineCount": 7,
+      "charCount": 75,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9461,11 +9293,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/《孟子》一则.md"
     },
     {
@@ -9512,7 +9342,7 @@
     {
       "id": "xiaoyaoyou",
       "title": "逍遥游",
-      "subtitle": null,
+      "subtitle": "五石之瓠",
       "author": "庄子",
       "dynasty": "战国",
       "authorDied": -286,
@@ -9529,10 +9359,11 @@
       "syllabusTitle": "逍遥游（惠子谓庄子曰……则夫子犹有蓬之心也夫）",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 4,
-      "charCount": 57,
+      "lineCount": 7,
+      "charCount": 100,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9543,11 +9374,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/逍遥游.md"
     },
     {
@@ -9614,6 +9443,7 @@
       "charCount": 52,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9624,11 +9454,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/谏逐客书.md"
     },
     {
@@ -9655,6 +9483,7 @@
       "charCount": 45,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9665,11 +9494,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/兰亭集序.md"
     },
     {
@@ -9778,6 +9605,7 @@
       "charCount": 63,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9788,11 +9616,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/滕王阁序.md"
     },
     {
@@ -9807,7 +9633,7 @@
       "source": "S3+S1b+S2",
       "stage": "高中",
       "grade": null,
-      "volume": "选修（2026起默写）",
+      "volume": "选择性必修下册",
       "form": "文言",
       "category": "课标·高中",
       "syllabusGroup": "高中",
@@ -9815,10 +9641,11 @@
       "syllabusTitle": "黄冈竹楼记",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 2,
-      "charCount": 12,
+      "lineCount": 6,
+      "charCount": 77,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9829,11 +9656,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/黄冈竹楼记.md"
     },
     {
@@ -9897,10 +9722,11 @@
       "syllabusTitle": "上枢密韩太尉书",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 2,
-      "charCount": 23,
+      "lineCount": 6,
+      "charCount": 100,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9911,11 +9737,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 3,
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/上枢密韩太尉书.md"
     },
     {
@@ -9965,7 +9789,7 @@
       "author": "佚名",
       "dynasty": "先秦",
       "authorDied": null,
-      "authorEraEnd": 1900,
+      "authorEraEnd": 1927,
       "license": "public-domain",
       "source": "S3+S1b+S2",
       "stage": "高中",
@@ -9978,11 +9802,14 @@
       "syllabusTitle": "古代文论选段",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 4,
-      "charCount": 33,
+      "lineCount": 6,
+      "charCount": 54,
       "sections": [
         "全文",
+        "异文",
         "必背名句",
+        "收录范围（第六段：王国维《人间词话》）",
+        "旧文本裁定",
         "注释",
         "译文",
         "赏析"
@@ -9992,11 +9819,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选修（2026起默写）/古代文论选段.md"
     },
     {
@@ -10222,9 +10047,11 @@
       "syllabusTitle": "贺新郎（国脉微如缕）",
       "matchStrength": 3,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 30,
+      "lineCount": 5,
+      "charCount": 50,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -10235,11 +10062,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 2,
+      "flags": [],
       "path": "poems/高中/选择性必修下册/贺新郎.md"
     },
     {
@@ -10342,9 +10167,11 @@
       "syllabusTitle": "朝天子·咏喇叭",
       "matchStrength": 2,
       "recite": "section",
-      "lineCount": 3,
-      "charCount": 29,
+      "lineCount": 5,
+      "charCount": 54,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -10355,11 +10182,9 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "hasVariant": true,
+      "pairsCount": 2,
+      "flags": [],
       "path": "poems/高中/选择性必修下册/朝天子·咏喇叭.md"
     }
   ]
