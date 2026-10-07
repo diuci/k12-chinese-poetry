@@ -167,6 +167,11 @@ def main():
             'hasFamous': '必背名句' in sec,
             'hasPlay': '玩法数据' in sec,
             'hasVariant': '异文' in sec,
+            # 「有全文」按 build.py 抽出来的全文正文算，不按小节标题叫什么算：
+            # 短篇的正文直接写在篇名下面，没有「## 全文」这个标题，但它就是全文。
+            # 只看标题会把 49 篇短篇误报成「没有全文」。
+            # 口径只有一处实现：build.py::has_full_text。台账直接用它导出的字段。
+            'hasFulltext': bool(p.get('hasFulltext')),
             'pairsCount': len(p.get('pairs') or []),
             'flags': flags,
             'path': p['_path'],
@@ -211,8 +216,10 @@ def main():
         'duplicates': dup_groups,
         'gapCounts': {
             '缺背诵要求': sum(1 for r in rows if '缺背诵要求 recite' in r['flags']),
-            '无必背名句小节': sum(1 for r in rows if '无「必背名句」小节' in r['flags']),
-            '无异文记录': sum(1 for r in rows if '无异文记录' in r['flags']),
+            '只有必背名句（节选收录）': sum(1 for r in rows if not r['hasFulltext']),
+            '仓内有全文正文': sum(1 for r in rows if r['hasFulltext']),
+            '无异文记录': sum(1 for r in rows if not r['hasVariant']),
+            # （旧口径：按 flag 数无异文；现改用 hasVariant，与明细列同源）
             '缺全文（课标首句找不到）': sum(1 for x in problem_rows if x['key'].startswith('fulltext:')),
             '课标要求但仓内缺失': sum(1 for x in problem_rows if x['key'].startswith('missing:')),
             '重复副本': counts.get('重复副本', 0),
@@ -289,15 +296,16 @@ def write_markdown(summary, rows, out):
     L.append('')
     L.append('## 明细')
     L.append('')
-    L.append('| 学段 | 册次 | 编号 | 篇目 | 作者 | 体裁 | 背诵要求 | 句 | 字 | 名句 | 玩法 | 归类 |')
-    L.append('|---|---|---|---|---|---|---|---|---|---|---|---|')
+    L.append('| 学段 | 册次 | 编号 | 篇目 | 作者 | 体裁 | 背诵要求 | 句 | 字 | 名句 | 全文 | 玩法 | 异文 | 归类 |')
+    L.append('|---|---|---|---|---|---|---|---|---|---|---|---|---|---|')
     for r in rows:
-        L.append('| %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |' % (
+        L.append('| %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |' % (
             r['stage'] or '', r['volume'] or '',
             ('%02d' % r['syllabusNo']) if r['syllabusNo'] is not None else '—',
             r['title'], r['author'], r['form'] or '', r['recite'] or '**缺**',
             r['lineCount'], r['charCount'],
-            '有' if r['hasFamous'] else '—', '有' if r['hasPlay'] else '—', r['category']))
+            '有' if r['hasFamous'] else '—', '有' if r['hasFulltext'] else '—',
+            '有' if r['hasPlay'] else '—', '有' if r['hasVariant'] else '—', r['category']))
     L.append('')
     out.write_text('\n'.join(L) + '\n', encoding='utf-8')
 

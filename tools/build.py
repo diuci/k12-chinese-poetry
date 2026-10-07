@@ -169,6 +169,26 @@ def split_line_punct(s):
     return s.strip()
 
 
+def body_section_names(body):
+    """篇目文件里的 H2 小节名列表。
+
+    「这篇到底收没收到全文」这件事只能按小节结构判断，而且必须只有一处实现：
+    台账和校验器都读同一个字段，不许各自数一遍。
+    """
+    return [m.group(1).strip() for m in re.finditer(r'^##\s+(.+)$', body, re.M)]
+
+
+def has_full_text(body):
+    """仓内是否收录了这篇的全文正文。口径：
+
+      · 有「全文」或「必背全文」小节 → 有；
+      · 没有「必背名句」小节 → 正文直接写在篇名下面，短篇的正文就是全文 → 有；
+      · 只有「必背名句」小节 → 本篇收的是节选 → 没有。
+    """
+    secs = body_section_names(body)
+    return ('全文' in secs) or ('必背全文' in secs) or ('必背名句' not in secs)
+
+
 def build_record(md_path, fm, body):
     rel = md_path.relative_to(ROOT)
     poem_lines = extract_poem_lines(body)
@@ -249,6 +269,7 @@ def build_record(md_path, fm, body):
         'syllables': syllables,
         'render_split': render_split,
         'render_split_reason': scalar(fm, 'render_split_reason'),
+        'hasFulltext': has_full_text(body),
         'theme': scalar(fm, 'theme', []) or [],
         'emotion': scalar(fm, 'emotion'),
         'technique': scalar(fm, 'technique', []) or [],

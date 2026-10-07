@@ -67,21 +67,61 @@ def warn(msg):
     warnings.append(msg)
 
 
-def load_known_defects():
-    """已知未修的登记表。
+# 内容冻结之后，登记表只许留两种条目：
+#   正常 —— 不是缺陷，是设计如此（比如同一篇原文的重复副本被保留）；
+#   口径 —— 不是缺陷，是我们做出的判断（比如课标学段与教材学段不一致，决定不复制第二份）。
+# 不再接受「P3 处理」「P6 处理」这类「以后再说」：内容冻结了，以后就是现在。
+DEFECT_PHASES = ('正常', '口径')
+DEFECT_REQUIRED = ('key', 'title', 'reason', 'phase', 'added')
 
-    容忍必须写下来：每一条都要有 key、理由、负责阶段。校验器对登记过的缺陷降级为提示，
-    对没登记的直接报错；登记过但问题已经消失的也报错——防止这张表变成永久垃圾桶。
+
+def defect_schema_problems(defects):
+    """登记表本身的体检。返回问题列表（空表 = 干净）。
+
+    容忍必须写下来：每一条都要有 key、标题、理由、阶段、登记日期，阶段只能取固定几个词。
+    校验器对登记过的缺陷降级为提示，对没登记的直接报错；
+    登记过但问题已经消失的也报错——防止这张表变成永久垃圾桶。
     """
+    out = []
+    seen = set()
+    for d in defects:
+        missing = [k for k in DEFECT_REQUIRED if not d.get(k)]
+        if missing:
+            out.append('登记不完整（缺 %s）：%s' % ('/'.join(missing), json.dumps(d, ensure_ascii=False)))
+            continue
+        if d['phase'] not in DEFECT_PHASES:
+            out.append('登记阶段取值非法（%r，只许 %s）：%s' % (d['phase'], '/'.join(DEFECT_PHASES), d['key']))
+        if d['key'] in seen:
+            out.append('登记 key 重复：%s' % d['key'])
+        seen.add(d['key'])
+    return out
+
+
+def load_known_defects():
     if not KNOWN_DEFECTS.exists():
         return {}
     data = json.loads(KNOWN_DEFECTS.read_text(encoding='utf-8'))
+    for problem in defect_schema_problems(data.get('defects', [])):
+        err('已知未修登记有问题：' + problem)
     out = {}
     for d in data.get('defects', []):
-        if not d.get('key') or not d.get('reason') or not d.get('phase'):
-            err('已知未修登记不完整（缺 key/reason/phase）：%s' % json.dumps(d, ensure_ascii=False))
+        if not d.get('key'):
             continue
         out[d['key']] = d
+    return out
+
+
+# -------------------------------------------------- 背诵要求与收录范围是否自相矛盾
+def find_fulltext_conflicts(poems):
+    """背诵要求写着「全文」，仓里却只收了节选。
+
+    这类矛盾不会让构建失败，也不会让链接出错，但它直接决定「按这篇去背书够不够」：
+    学生照着 recite=full 去背，背的却只是名句那几句，考试按全文默写就会丢分。
+    """
+    out = []
+    for p in poems:
+        if p.get('recite') == 'full' and not p.get('hasFulltext'):
+            out.append('%s（%s·%s）' % (p['title'], p.get('stage'), p.get('volume')))
     return out
 
 
@@ -383,6 +423,28 @@ def selftest():
         if got != should_fail:
             problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
 
+    full_cases = [
+        ('recite=full 但只有节选应当被拒', [{'id': 'f1', 'title': 'T', 'stage': '初中', 'volume': 'V', 'recite': 'full', 'hasFulltext': False}], True),
+        ('recite=full 且有全文应当放行', [{'id': 'f2', 'title': 'T', 'stage': '初中', 'volume': 'V', 'recite': 'full', 'hasFulltext': True}], False),
+        ('recite=section 只有节选是合法的', [{'id': 'f3', 'title': 'T', 'stage': '初中', 'volume': 'V', 'recite': 'section', 'hasFulltext': False}], False),
+    ]
+    for label, ps, should_fail in full_cases:
+        got = bool(find_fulltext_conflicts(ps))
+        if got != should_fail:
+            problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
+
+    defect_cases = [
+        ('缺 reason 的应当被拒', [{'key': 'x1', 'title': 'T', 'phase': '口径', 'added': '2026-01-01'}], True),
+        ('阶段写「P6 处理」的应当被拒', [{'key': 'x2', 'title': 'T', 'reason': 'r', 'phase': 'P6 处理', 'added': '2026-01-01'}], True),
+        ('key 重复的应当被拒', [{'key': 'x3', 'title': 'T', 'reason': 'r', 'phase': '口径', 'added': '2026-01-01'},
+                              {'key': 'x3', 'title': 'T2', 'reason': 'r', 'phase': '正常', 'added': '2026-01-01'}], True),
+        ('写全了的应当放行', [{'key': 'x4', 'title': 'T', 'reason': 'r', 'phase': '口径', 'added': '2026-01-01'}], False),
+    ]
+    for label, ds, should_fail in defect_cases:
+        got = bool(defect_schema_problems(ds))
+        if got != should_fail:
+            problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
+
     problems.extend(selftest_match())
 
     if problems:
@@ -394,7 +456,7 @@ def selftest():
           '佚名走年代上限、公元前卒年放行、词牌顶替被抓、同名不同作者被抓、缺全文被抓、'
           '好样本不误报、重复收录被抓、课标共用不误报缺失、篇名对照生效且点名、'
           '别名不许替作者不符开后门、背诵要求缺失被拒、背诵要求取值非法被拒、'
-          '背诵要求合法不误报、玩法悬案被拒、玩法可用作出不误报——都试到了')
+          '背诵要求合法不误报、玩法悬案被拒、玩法可用作出不误报、登记表缺字段被拒、登记表阶段非法被拒、登记表 key 重复被拒、登记表写全不误报、背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报——都试到了')
     return 0
 
 
@@ -635,6 +697,17 @@ def main():
     if unplayable:
         err('玩法悬案：%d 篇做不出玩法单元，必须补做或在登记表里写明「为什么不做」：%s'
             % (len(unplayable), '；'.join(unplayable[:4])))
+
+    # --------------------------------- 2.12 背诵要求 ⇄ 收录范围不许自相矛盾
+    conflicts = find_fulltext_conflicts(poems)
+    for p in poems:
+        if p.get('recite') == 'full' and not p.get('hasFulltext'):
+            key = 'fulltext-required:' + p['id']
+            if key in known:
+                seen_defects.add(key)
+    if conflicts:
+        err('背诵要求与收录范围矛盾：%d 篇写着 recite=full 但仓内只有节选，要么补全文，要么改 recite，要么登记理由：%s'
+            % (len(conflicts), '；'.join(conflicts[:4])))
 
     # -------------------------------------------------- 3. pairs 索引合法
     for p in poems:
