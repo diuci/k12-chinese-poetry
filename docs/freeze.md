@@ -2,11 +2,12 @@
 
 > 本文件所有数字都由 `tools/build-ledger.py` 与 `tools/check-text-sources.py` 的产物读出，不是手写的。
 > 要改数字就重跑脚本，不要改本文件。
+> 指纹用 git blob id，不用文件 sha256：按文件算哈希会因换行符不同而两边对不上。
 
 | 项 | 值 |
 |---|---|
 | tag | `content-v1` |
-| 冻结 tag 指向哪个提交 | 用 `git rev-parse content-v1` 查，本文件不写死哈希——写死就会自己过期 |
+| 冻结时 HEAD | `a1e564e` |
 | 仓内篇目 | 251 篇（初中 71 / 小学 109 / 高中 71） |
 | 课标条目 | 207 条（义务教育 135 + 高中 72） |
 | 归类闭合 | 课标·义务教育 134 + 课标·高中 72 + 教材拓展 44 + 重复副本 1 + 来源不明 0 = 251 |
@@ -23,14 +24,14 @@
 
 ## 产物指纹
 
-| 文件 | 字节 | sha256（前 16 位） |
+| 文件 | 字节（git blob） | git blob id |
 |---|---|---|
-| `data/poems.json` | 604452 | `20c665a395ee3f7f` |
-| `data/ledger.json` | 280037 | `de2279296e67e896` |
-| `data/text-sources.json` | 98168 | `22670493e4d54bce` |
-| `data/known-defects.json` | 2170 | `0499346643d270c4` |
-| `data/source-overrides.json` | 4934 | `bad8dc4e68c6ae00` |
-| `data/overlap-verdicts.json` | 789 | `2c092b3f7b15f3db` |
+| `data/poems.json` | 584668 | `85e0eaf2b90a234639c7019253ddcd0e1f7c70e3` |
+| `data/ledger.json` | 269590 | `be9b2046f5f5054648686d1e8e5ec5ca6c1c9d3c` |
+| `data/text-sources.json` | 94799 | `0e01f63f60778289f93437be25543a5aaebd7c70` |
+| `data/known-defects.json` | 2144 | `9a3ccc43c6ea392ee8e9e26a894a4985477513cb` |
+| `data/source-overrides.json` | 4771 | `edef0e67cf0e504b52aaa1bffdfa4d4334ebd9ae` |
+| `data/overlap-verdicts.json` | 777 | `788e0bd7358dcab7e6a7143d4affd652dd513630` |
 
 ## 冻结时仍然承认的三件事
 
