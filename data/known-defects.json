@@ -22,13 +22,7 @@
       "phase": "P3",
       "added": "2026-10-06"
     },
-    {
-      "key": "fulltext:高中-03",
-      "title": "屈原列传",
-      "reason": "只有必背名句，课标要求的节选范围（屈平疾王听之不聪也…）不在仓内正文里",
-      "phase": "P3",
-      "added": "2026-10-06"
-    },
+    
     {
       "key": "fulltext:高中-12",
       "title": "报任安书",
@@ -36,13 +30,7 @@
       "phase": "P3",
       "added": "2026-10-06"
     },
-    {
-      "key": "fulltext:高中-26",
-      "title": "逍遥游",
-      "reason": "仓内收的是「北冥有鱼」段，高中课标默写范围是「惠子谓庄子曰…」段，节选范围不符",
-      "phase": "P3",
-      "added": "2026-10-06"
-    },
+    
     {
       "key": "duplicate:dadaozhixing|liyun",
       "title": "大道之行也 / 礼运",

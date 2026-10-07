@@ -221,7 +221,7 @@ def build_record(md_path, fm, body):
     render_split = [int(x) for x in rs] if rs else [1] * len(lines)
     if len(render_split) != len(lines):
         die('%s: render_split %d 项与 lines %d 句不匹配'
-            % (path.name, len(render_split), len(lines)))
+            % (rel, len(render_split), len(lines)))
 
     src = fm.get('source', '')
     crosscheck = ''
