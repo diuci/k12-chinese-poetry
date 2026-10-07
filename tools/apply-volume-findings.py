@@ -59,7 +59,10 @@ def main():
     data = json.loads(POEMS.read_text(encoding='utf-8'))['poems']
     by_id = {p['id']: p for p in data}
     f = json.loads(FINDINGS.read_text(encoding='utf-8'))
-    todo = [x for x in f['findings'] if x['status'] == 'volume-mismatch']
+    # 两种都要改：仓里册次写错的，和仓里写着「教材不收」、教材目录里却有这篇的。
+    # 后者以前被审计直接跳过，假话就藏在里面。
+    todo = [x for x in f['findings']
+            if x['status'] in ('volume-mismatch', 'claimed-absent-but-present')]
     moved, skipped = [], []
     for x in todo:
         p = by_id.get(x['id'])

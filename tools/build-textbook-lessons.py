@@ -155,6 +155,41 @@ def build():
     return data
 
 
+def strip_chapters(t):
+    """「《老子》八章」与「《老子》四章」是同一篇的不同选段，不是两篇。
+    只按整名对，教材收四章、课标要求八章的这类篇目会一律被判成「教材里没有」。"""
+    return re.sub(r'[一二三四五六七八九十0-9]+(章|则|首|篇)$', '', t)
+
+
+def check_claimed(p, alle, hit_ratio, findings):
+    """仓里写着「教材不收」的篇目，去整张目录表里找一遍（跨学段也找）。"""
+    t = norm_title(p['title'])
+    ts = strip_chapters(t)
+    cands = []
+    for v, e in alle:
+        et = norm_title(e['title'])
+        ets = strip_chapters(et)
+        if et == t or et.startswith(t) or t.startswith(et) or (ts and ts == ets):
+            cands.append((v, e))
+    # 判据比册次核对松一档：这批篇目多是节选，句子少，而且教材用字可能本来就不同
+    # （谏逐客书 仓内作「求丕豹」，统编必修下册作「来丕豹」——一句都对不上恰恰是要查的地方）。
+    # 所以：两句以上对上，或过半对上，或课号有人教社官方印证且至少一句对上。
+    best = None
+    for v, e in cands:
+        ratio, hit = hit_ratio(p, e.get('url'))
+        if best is None or ratio > best[2]:
+            best = (v, e, ratio, hit)
+    if best and (best[3] >= 2 or best[2] >= 0.5 or (best[1].get('confirmed') and best[3] >= 1)):
+        v, e, ratio, hit = best
+        findings.append({'id': p['id'], 'title': p['title'], 'author': p.get('author'),
+                       'stage': p.get('stage'), 'status': 'claimed-absent-but-present',
+                       'repoVolume': p.get('volume'), 'textbookVolume': v,
+                       'textbookLesson': e.get('lesson') or '课号未定（合课或课外诵读）',
+                       'evidence': ratio, 'linesHit': hit,
+                       'officiallyConfirmed': bool(e.get('confirmed')),
+                       'textbookTitle': e.get('raw', '')})
+
+
 def audit(data):
     """仓内每篇的 volume 字段 vs 教材目录表。
 
@@ -210,6 +245,9 @@ def audit(data):
     for p in poems:
         raw_vol = p.get('volume') or ''
         if raw_vol == T.NO_TEXTBOOK_VOLUME:
+            # 仓里写着「教材不收」的，以前直接跳过——可假话恰恰藏在这里：
+            # 兰亭集序 写着教材不收，统编选择性必修下册第 10.1 课就是它。
+            check_claimed(p, alle, hit_ratio, findings)
             continue
         vol = raw_vol.replace('课外诵读', '').strip()
         title = norm_title(p['title'])
@@ -276,12 +314,22 @@ def audit(data):
                 'officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。',
         'generated': time.strftime('%Y-%m-%d'),
         'counts': {'match': len(hits), 'volume-mismatch': len(mism),
-                   'title-collision': len(unverified), 'absent': len(absent)},
+                   'title-collision': len(unverified), 'absent': len(absent),
+                   'claimed-absent-but-present': len([x for x in findings
+                                                      if x['status'] == 'claimed-absent-but-present'])},
         'findings': findings,
         'titleCollision': collisions,
         'absent': missing,
     }, ensure_ascii=False, indent=2), encoding='utf-8')
 
+    claimed = [x for x in findings if x['status'] == 'claimed-absent-but-present']
+    print()
+    print('仓里写着「教材不收」、教材目录里却有这篇：%d 篇' % len(claimed))
+    for x in claimed:
+        print('  %-4s %-18s 仓内=%-16s 教材=%-10s 课号=%-8s %d 句对上 %s' % (
+              x['stage'], x['title'], x['repoVolume'], x['textbookVolume'],
+              x['textbookLesson'], x['linesHit'], '【官方印证】' if x['officiallyConfirmed'] else ''))
+    print()
     print('同学段里连同名课文都没有：%d 篇' % len(absent))
     for stage, vol, title, author in absent:
         print('  %-4s %-26s %-8s 仓内=%s' % (stage, title, author or '', vol))

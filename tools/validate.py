@@ -585,10 +585,20 @@ def main():
     bad_since = [p['title'] for p in poems if p.get('gaokaoSince') not in (None, 2023, 2026)]
     if bad_since:
         err('gaokaoSince 取值非法（只许 2023 或 2026）：%s' % '、'.join(bad_since[:6]))
-    wrong_vol = [p['title'] for p in poems
-                 if p.get('gaokaoGroup') == '选修' and p.get('volume') != '选修（2026起默写）']
-    if wrong_vol:
-        err('课标选修 12 篇的册次必须是「选修（2026起默写）」：%s' % '、'.join(wrong_vol))
+    # 课标「选修 12」这一组以前一律挂在「选修（2026起默写）」目录，隐含的意思是「统编教材没有这一课」。
+    # 核对教材目录之后这个假设破了：兰亭集序 在选必下 10.1、大学 在选必上 5.2、
+    # 《老子》八章 在选必上 6.1、谏逐客书 在必修下 11.1——四篇教材里都有这一课。
+    # 所以规则改成：要么挂「选修（2026起默写）」，要么挂教材里那一册；
+    # 挂教材册的，必须在篇内「收录范围」写明教材课号，不许空口说。
+    unsourced = []
+    for p in poems:
+        if p.get('gaokaoGroup') != '选修' or p.get('volume') == '选修（2026起默写）':
+            continue
+        ptxt = (ROOT / p['_path']).read_text(encoding='utf-8')
+        if '## 收录范围' not in ptxt or not re.search(r'统编教材《语文》[^。]*第 ?[\d.]+ ?课', ptxt):
+            unsourced.append(p['title'])
+    if unsourced:
+        err('这几篇挂着统编教材的册次，篇内却没写教材课号出处：%s' % '、'.join(unsourced))
 
     assigned_ids = {p['id'] for _e, p, _s in assignments}
     extra_ids = {p['id'] for p in poems if canon_title(p['title']) in extra_titles}

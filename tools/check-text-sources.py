@@ -437,7 +437,12 @@ def main():
             len(rec.get('variants') or []), rec['page'] or '找不到来源页'))
         time.sleep(0.10)
 
-    OUT.write_text(json.dumps({
+    # --limit / --stage 是试跑用的，试跑不许覆盖正式表。
+    # 刚才顺手跑了个 --limit 3，data/text-sources.json 当场从 252 篇变成 3 篇——
+    # 这种覆盖不会报错，只会让后面所有读这张表的检查安静地读到残缺数据。
+    filtered = bool(limit) or stage is not None
+    target = (ROOT / 'data' / 'text-sources.partial.json') if filtered else OUT
+    target.write_text(json.dumps({
         'note': '每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。'
                 '繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。'
                 'variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。'
@@ -452,7 +457,10 @@ def main():
     print('出处核对：%d 全对上 / %d 部分对上 / %d 一句都对不上 / %d 找不到来源页'
           % (stats['attested'], stats['partial'], stats['notfound'], stats['nosource']))
     print('带 {{另}} 夹注异文的篇目：%d 篇' % stats['withVariants'])
-    print('已写 data/text-sources.json')
+    if filtered:
+        print('试跑模式：结果写到 data/text-sources.partial.json，正式表 data/text-sources.json 未动')
+    else:
+        print('已写 data/text-sources.json')
     return 0
 
 

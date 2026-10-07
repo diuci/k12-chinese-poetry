@@ -2,67 +2,42 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-08",
   "counts": {
-    "match": 133,
-    "volume-mismatch": 49,
-    "title-collision": 4,
-    "absent": 53
+    "match": 184,
+    "volume-mismatch": 0,
+    "title-collision": 3,
+    "absent": 53,
+    "claimed-absent-but-present": 4
   },
   "findings": [
     {
-      "id": "shizhuisai",
-      "title": "使至塞上",
-      "author": "王维",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级上册",
-      "textbookVolume": "八年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20917_langdu.html"
-    },
-    {
-      "id": "guanju",
-      "title": "关雎",
+      "id": "lunyu12-cz",
+      "title": "《论语》十二章",
       "author": "佚名",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级上册",
-      "textbookVolume": "八年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21013_langdu.html"
+      "status": "match",
+      "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "12"
     },
     {
-      "id": "shiwucongjunzheng",
-      "title": "十五从军征",
-      "author": "佚名",
+      "id": "yeyujibei",
+      "title": "夜雨寄北",
+      "author": "李商隐",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级上册",
-      "textbookVolume": "九年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 8,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21232_langdu.html"
+      "status": "match",
+      "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "chunwang",
-      "title": "春望",
-      "author": "杜甫",
+      "id": "tianjingsha-qiusi",
+      "title": "天净沙",
+      "author": "马致远",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级上册",
-      "textbookVolume": "八年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20939_langdu.html"
+      "status": "match",
+      "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "cibeigushanxia",
@@ -73,48 +48,6 @@
       "volume": "七年级上册",
       "textbookVolume": "七年级上册",
       "textbookLesson": "课号未定（合课或课外诵读）"
-    },
-    {
-      "id": "baixuege",
-      "title": "白雪歌送武判官归京",
-      "author": "岑参",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级上册",
-      "textbookVolume": "九年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21233_langdu.html"
-    },
-    {
-      "id": "maowu",
-      "title": "茅屋为秋风所破歌",
-      "author": "杜甫",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级上册",
-      "textbookVolume": "八年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21032_langdu.html"
-    },
-    {
-      "id": "jianjia",
-      "title": "蒹葭",
-      "author": "佚名",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级上册",
-      "textbookVolume": "八年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21012_langdu.html"
     },
     {
       "id": "guancanghai",
@@ -137,60 +70,14 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "yinjiujiusan",
-      "title": "饮酒",
-      "author": "陶潜",
+      "id": "jihai-jimao",
+      "title": "己亥杂诗",
+      "author": "龚自珍",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级上册",
-      "textbookVolume": "八年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 5,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20938_langdu.html"
-    },
-    {
-      "id": "huanghelou-cuiheng",
-      "title": "黄鹤楼",
-      "author": "崔颢",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级上册",
-      "textbookVolume": "八年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20916_langdu.html"
-    },
-    {
-      "id": "maotanshangwu",
-      "title": "卖炭翁",
-      "author": "白居易",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级下册",
-      "textbookVolume": "八年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21033_langdu.html"
-    },
-    {
-      "id": "yeyujibei",
-      "title": "夜雨寄北",
-      "author": "李商隐",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级下册",
-      "textbookVolume": "七年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20034_langdu.html"
+      "status": "match",
+      "volume": "七年级下册",
+      "textbookVolume": "七年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "wangyue",
@@ -223,6 +110,16 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "ailianshuo",
+      "title": "爱莲说",
+      "author": "周敦颐",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级下册",
+      "textbookVolume": "七年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "dengyouzhoutai",
       "title": "登幽州台歌",
       "author": "陈子昂",
@@ -243,46 +140,14 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "chibi-du",
-      "title": "赤壁",
-      "author": "杜牧",
+      "id": "loushiming",
+      "title": "陋室铭",
+      "author": "刘禹锡",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级下册",
-      "textbookVolume": "八年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20941_langdu.html"
-    },
-    {
-      "id": "qiantanghuchunxing",
-      "title": "钱塘湖春行",
-      "author": "白居易",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级下册",
-      "textbookVolume": "八年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20919_langdu.html"
-    },
-    {
-      "id": "yanmenshiweixing",
-      "title": "雁门太守行",
-      "author": "李贺",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "七年级下册",
-      "textbookVolume": "八年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20940_langdu.html"
+      "status": "match",
+      "volume": "七年级下册",
+      "textbookVolume": "七年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "chunyeluocheng",
@@ -325,18 +190,14 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "nangxiangzi",
-      "title": "南乡子",
-      "author": "辛弃疾",
+      "id": "yueyanglouji",
+      "title": "岳阳楼记",
+      "author": "范仲淹",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "九年级上册",
-      "textbookVolume": "九年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 5,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21234_langdu.html"
+      "status": "match",
+      "volume": "九年级上册",
+      "textbookVolume": "九年级上册",
+      "textbookLesson": "11"
     },
     {
       "id": "wuti",
@@ -359,60 +220,14 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "jiangchengzi-laofeng",
-      "title": "江城子",
-      "author": "苏轼",
+      "id": "huxinting",
+      "title": "湖心亭看雪",
+      "author": "张岱",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "九年级上册",
-      "textbookVolume": "九年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21217_langdu.html"
-    },
-    {
-      "id": "huanxisha-yanque",
-      "title": "浣溪沙",
-      "author": "晏殊",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "九年级上册",
-      "textbookVolume": "八年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20943_langdu.html"
-    },
-    {
-      "id": "yujiaao-qiusi",
-      "title": "渔家傲",
-      "author": "范仲淹",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "九年级上册",
-      "textbookVolume": "九年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 5,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21216_langdu.html"
-    },
-    {
-      "id": "pozhenzi",
-      "title": "破阵子",
-      "author": "辛弃疾",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "九年级上册",
-      "textbookVolume": "九年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 6,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21218_langdu.html"
+      "status": "match",
+      "volume": "九年级上册",
+      "textbookVolume": "九年级上册",
+      "textbookLesson": "13"
     },
     {
       "id": "xinglunan",
@@ -435,6 +250,16 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "zuigongtingji",
+      "title": "醉翁亭记",
+      "author": "欧阳修",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级上册",
+      "textbookVolume": "九年级上册",
+      "textbookLesson": "12"
+    },
+    {
       "id": "chushibiao",
       "title": "出师表",
       "author": "诸葛亮",
@@ -445,18 +270,24 @@
       "textbookLesson": "23"
     },
     {
-      "id": "tianjingsha-qiusi",
-      "title": "天净沙",
-      "author": "马致远",
+      "id": "shiwucongjunzheng",
+      "title": "十五从军征",
+      "author": "佚名",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "九年级下册",
-      "textbookVolume": "七年级上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20006_langdu.html"
+      "status": "match",
+      "volume": "九年级下册",
+      "textbookVolume": "九年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "nangxiangzi",
+      "title": "南乡子",
+      "author": "辛弃疾",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级下册",
+      "textbookVolume": "九年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "shanpoyang",
@@ -469,20 +300,6 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "jihai-jimao",
-      "title": "己亥杂诗",
-      "author": "龚自珍",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "九年级下册",
-      "textbookVolume": "七年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20858_langdu.html"
-    },
-    {
       "id": "caoguilunzhan",
       "title": "曹刿论战",
       "author": "左丘明",
@@ -493,23 +310,49 @@
       "textbookLesson": "20"
     },
     {
-      "id": "huxinting",
-      "title": "湖心亭看雪",
-      "author": "张岱",
+      "id": "jiangchengzi-laofeng",
+      "title": "江城子",
+      "author": "苏轼",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "九年级下册",
-      "textbookVolume": "九年级上册",
-      "textbookLesson": "13",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21113_langdu.html"
+      "status": "match",
+      "volume": "九年级下册",
+      "textbookVolume": "九年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "yujiaao-qiusi",
+      "title": "渔家傲",
+      "author": "范仲淹",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级下册",
+      "textbookVolume": "九年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "manjianghong-xiaozhujinghua",
       "title": "满江红",
       "author": "秋瑾",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级下册",
+      "textbookVolume": "九年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "baixuege",
+      "title": "白雪歌送武判官归京",
+      "author": "岑参",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级下册",
+      "textbookVolume": "九年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "pozhenzi",
+      "title": "破阵子",
+      "author": "辛弃疾",
       "stage": "初中",
       "status": "match",
       "volume": "九年级下册",
@@ -567,18 +410,34 @@
       "textbookLesson": "12"
     },
     {
-      "id": "yueyanglouji",
-      "title": "岳阳楼记",
-      "author": "范仲淹",
+      "id": "shizhuisai",
+      "title": "使至塞上",
+      "author": "王维",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "八年级上册",
-      "textbookVolume": "九年级上册",
-      "textbookLesson": "11",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21111_langdu.html"
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "chunwang",
+      "title": "春望",
+      "author": "杜甫",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "huanxisha-yanque",
+      "title": "浣溪沙",
+      "author": "晏殊",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "daxiezhongshu",
@@ -601,18 +460,54 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "zuigongtingji",
-      "title": "醉翁亭记",
-      "author": "欧阳修",
+      "id": "chibi-du",
+      "title": "赤壁",
+      "author": "杜牧",
       "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "八年级上册",
-      "textbookVolume": "九年级上册",
-      "textbookLesson": "12",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21112_langdu.html"
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "qiantanghuchunxing",
+      "title": "钱塘湖春行",
+      "author": "白居易",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "yanmenshiweixing",
+      "title": "雁门太守行",
+      "author": "李贺",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "yinjiujiusan",
+      "title": "饮酒",
+      "author": "陶潜",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "huanghelou-cuiheng",
+      "title": "黄鹤楼",
+      "author": "崔颢",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "yujiaao-tianjie",
@@ -635,9 +530,29 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "guanju",
+      "title": "关雎",
+      "author": "佚名",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "beimingyouyu",
       "title": "北冥有鱼",
       "author": "庄子",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "maotanshangwu",
+      "title": "卖炭翁",
+      "author": "白居易",
       "stage": "初中",
       "status": "match",
       "volume": "八年级下册",
@@ -675,23 +590,29 @@
       "textbookLesson": "9"
     },
     {
-      "id": "ailianshuo",
-      "title": "爱莲说",
-      "author": "周敦颐",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "八年级下册",
-      "textbookVolume": "七年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20862_langdu.html"
-    },
-    {
       "id": "shihaoli",
       "title": "石壕吏",
       "author": "杜甫",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "maowu",
+      "title": "茅屋为秋风所破歌",
+      "author": "杜甫",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "jianjia",
+      "title": "蒹葭",
+      "author": "佚名",
       "stage": "初中",
       "status": "match",
       "volume": "八年级下册",
@@ -707,20 +628,6 @@
       "volume": "八年级下册",
       "textbookVolume": "八年级下册",
       "textbookLesson": "课号未定（合课或课外诵读）"
-    },
-    {
-      "id": "loushiming",
-      "title": "陋室铭",
-      "author": "刘禹锡",
-      "stage": "初中",
-      "status": "volume-mismatch",
-      "repoVolume": "八年级下册",
-      "textbookVolume": "七年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 5,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20861_langdu.html"
     },
     {
       "id": "masuo",
@@ -1103,18 +1010,14 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "songyuaner",
-      "title": "送元二使安西",
-      "author": "王维",
+      "id": "wenguanjun",
+      "title": "闻官军收河南河北",
+      "author": "杜甫",
       "stage": "小学",
-      "status": "volume-mismatch",
-      "repoVolume": "五年级下册",
-      "textbookVolume": "六年级下册",
-      "textbookLesson": "2",
-      "evidence": 1.0,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/xiaoxue/liunianji/1449_langdu.html"
+      "status": "match",
+      "volume": "五年级下册",
+      "textbookVolume": "五年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "shuhuyin",
@@ -1297,6 +1200,16 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "songyuaner",
+      "title": "送元二使安西",
+      "author": "王维",
+      "stage": "小学",
+      "status": "match",
+      "volume": "六年级下册",
+      "textbookVolume": "六年级下册",
+      "textbookLesson": "2"
+    },
+    {
       "id": "caiwei",
       "title": "采薇",
       "author": "佚名",
@@ -1305,20 +1218,6 @@
       "volume": "六年级下册",
       "textbookVolume": "六年级下册",
       "textbookLesson": "1"
-    },
-    {
-      "id": "wenguanjun",
-      "title": "闻官军收河南河北",
-      "author": "杜甫",
-      "stage": "小学",
-      "status": "volume-mismatch",
-      "repoVolume": "六年级下册",
-      "textbookVolume": "五年级下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/xiaoxue/wunianji/1164_langdu.html"
     },
     {
       "id": "mashi",
@@ -1471,46 +1370,14 @@
       "textbookLesson": "9.3"
     },
     {
-      "id": "kezhi",
-      "title": "客至",
-      "author": "杜甫",
+      "id": "shishuo",
+      "title": "师说",
+      "author": "韩愈",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修上册",
-      "textbookVolume": "选择性必修下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30525_langdu.html"
-    },
-    {
-      "id": "jiangjinjiu",
-      "title": "将进酒",
-      "author": "李白",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修上册",
-      "textbookVolume": "选择性必修上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30318_langdu.html"
-    },
-    {
-      "id": "quyuanliezhuan",
-      "title": "屈原列传",
-      "author": "司马迁",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修上册",
-      "textbookVolume": "选择性必修中册",
-      "textbookLesson": "9",
-      "evidence": 0.8571428571428571,
-      "linesHit": 6,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30414_langdu.html"
+      "status": "match",
+      "volume": "必修上册",
+      "textbookVolume": "必修上册",
+      "textbookLesson": "10.2"
     },
     {
       "id": "guiyuantianju",
@@ -1543,6 +1410,16 @@
       "textbookLesson": "8.1"
     },
     {
+      "id": "yongyule",
+      "title": "永遇乐·京口北固亭怀古",
+      "author": "辛弃疾",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修上册",
+      "textbookVolume": "必修上册",
+      "textbookLesson": "9.2"
+    },
+    {
       "id": "shejiang",
       "title": "涉江采芙蓉",
       "author": "佚名",
@@ -1563,18 +1440,14 @@
       "textbookLesson": "8.3"
     },
     {
-      "id": "dengyueyanglou",
-      "title": "登岳阳楼",
-      "author": "杜甫",
+      "id": "dengtaishan",
+      "title": "登泰山记",
+      "author": "姚鼐",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修上册",
-      "textbookVolume": "必修下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30226_langdu.html"
+      "status": "match",
+      "volume": "必修上册",
+      "textbookVolume": "必修上册",
+      "textbookLesson": "16.2"
     },
     {
       "id": "denggao",
@@ -1597,46 +1470,24 @@
       "textbookLesson": "7.1"
     },
     {
-      "id": "lisao",
-      "title": "离骚",
-      "author": "屈原",
+      "id": "yumeiren",
+      "title": "虞美人",
+      "author": "李煜",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修上册",
-      "textbookVolume": "选择性必修下册",
-      "textbookLesson": "1.2",
-      "evidence": 0.5,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30502_langdu.html"
+      "status": "match",
+      "volume": "必修上册",
+      "textbookVolume": "必修上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "shuxiang",
-      "title": "蜀相",
-      "author": "杜甫",
+      "id": "chibifu",
+      "title": "赤壁赋",
+      "author": "苏轼",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修上册",
-      "textbookVolume": "选择性必修下册",
-      "textbookLesson": "3.2",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30505_langdu.html"
-    },
-    {
-      "id": "shudaonan",
-      "title": "蜀道难",
-      "author": "李白",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修上册",
-      "textbookVolume": "选择性必修下册",
-      "textbookLesson": "3.1",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30504_langdu.html"
+      "status": "match",
+      "volume": "必修上册",
+      "textbookVolume": "必修上册",
+      "textbookLesson": "16.1"
     },
     {
       "id": "jingnv",
@@ -1669,18 +1520,24 @@
       "textbookLesson": "16.2"
     },
     {
-      "id": "shishuo",
-      "title": "师说",
-      "author": "韩愈",
+      "id": "zilu-shizhe",
+      "title": "子路、曾皙、冉有、公西华侍坐",
+      "author": "佚名",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修下册",
-      "textbookVolume": "必修上册",
-      "textbookLesson": "10.2",
-      "evidence": 1.0,
-      "linesHit": 5,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30118_langdu.html"
+      "status": "match",
+      "volume": "必修下册",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "1.1"
+    },
+    {
+      "id": "niannujiao-gudong",
+      "title": "念奴娇·过洞庭",
+      "author": "张孝祥",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修下册",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "guizhixiang",
@@ -1693,32 +1550,14 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "yongyule",
-      "title": "永遇乐·京口北固亭怀古",
-      "author": "辛弃疾",
+      "id": "dengyueyanglou",
+      "title": "登岳阳楼",
+      "author": "杜甫",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修下册",
-      "textbookVolume": "必修上册",
-      "textbookLesson": "9.2",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30116_langdu.html"
-    },
-    {
-      "id": "jiangchengzi-yimao",
-      "title": "江城子",
-      "author": "苏轼",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修下册",
-      "textbookVolume": "选择性必修上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30319_langdu.html"
+      "status": "match",
+      "volume": "必修下册",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "dasijianyishu",
@@ -1731,20 +1570,6 @@
       "textbookLesson": "15.2"
     },
     {
-      "id": "yumeiren",
-      "title": "虞美人",
-      "author": "李煜",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修下册",
-      "textbookVolume": "必修上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30136_langdu.html"
-    },
-    {
       "id": "jiantaishisi",
       "title": "谏太宗十思疏",
       "author": "魏征",
@@ -1753,20 +1578,6 @@
       "volume": "必修下册",
       "textbookVolume": "必修下册",
       "textbookLesson": "15.1"
-    },
-    {
-      "id": "chibifu",
-      "title": "赤壁赋",
-      "author": "苏轼",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修下册",
-      "textbookVolume": "必修上册",
-      "textbookLesson": "16.1",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": true,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30125_langdu.html"
     },
     {
       "id": "epenggongfu",
@@ -1779,32 +1590,80 @@
       "textbookLesson": "16.1"
     },
     {
-      "id": "xiangjixuanzhi",
-      "title": "项脊轩志",
-      "author": "归有光",
+      "id": "laozi8",
+      "title": "《老子》八章",
+      "author": "老子",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "必修下册",
-      "textbookVolume": "选择性必修下册",
-      "textbookLesson": "9.2",
-      "evidence": 1.0,
-      "linesHit": 6,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30516_langdu.html"
+      "status": "claimed-absent-but-present",
+      "repoVolume": "选修（2026起默写）",
+      "textbookVolume": "选择性必修上册",
+      "textbookLesson": "6.1",
+      "evidence": 0.2,
+      "linesHit": 1,
+      "officiallyConfirmed": true,
+      "textbookTitle": "6.1《老子》四章"
     },
     {
-      "id": "zilu-shizhe",
-      "title": "子路、曾皙、冉有、公西华侍坐",
+      "id": "lantingjixu",
+      "title": "兰亭集序",
+      "author": "王羲之",
+      "stage": "高中",
+      "status": "claimed-absent-but-present",
+      "repoVolume": "选修（2026起默写）",
+      "textbookVolume": "选择性必修下册",
+      "textbookLesson": "10.1",
+      "evidence": 1.0,
+      "linesHit": 4,
+      "officiallyConfirmed": false,
+      "textbookTitle": "10.1兰亭集序"
+    },
+    {
+      "id": "daxue",
+      "title": "大学",
       "author": "佚名",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "选择性必修上册",
-      "textbookVolume": "必修下册",
-      "textbookLesson": "1.1",
+      "status": "claimed-absent-but-present",
+      "repoVolume": "选修（2026起默写）",
+      "textbookVolume": "选择性必修上册",
+      "textbookLesson": "5.2",
       "evidence": 1.0,
-      "linesHit": 6,
+      "linesHit": 3,
+      "officiallyConfirmed": false,
+      "textbookTitle": "5.2*大学之道"
+    },
+    {
+      "id": "jianzhukeshu",
+      "title": "谏逐客书",
+      "author": "李斯",
+      "stage": "高中",
+      "status": "claimed-absent-but-present",
+      "repoVolume": "选修（2026起默写）",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "11.1",
+      "evidence": 0.3333333333333333,
+      "linesHit": 1,
       "officiallyConfirmed": true,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30201_langdu.html"
+      "textbookTitle": "11.1谏逐客书"
+    },
+    {
+      "id": "lunyu12",
+      "title": "《论语》十二章",
+      "author": "佚名",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修上册",
+      "textbookVolume": "选择性必修上册",
+      "textbookLesson": "5.1"
+    },
+    {
+      "id": "jiangjinjiu",
+      "title": "将进酒",
+      "author": "李白",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修上册",
+      "textbookVolume": "选择性必修上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "wuyi",
@@ -1817,18 +1676,24 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "guoqinlun",
-      "title": "过秦论",
-      "author": "贾谊",
+      "id": "chunjianghuayue",
+      "title": "春江花月夜",
+      "author": "张若虚",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "选择性必修上册",
-      "textbookVolume": "选择性必修中册",
-      "textbookLesson": "11.1",
-      "evidence": 1.0,
-      "linesHit": 6,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30416_langdu.html"
+      "status": "match",
+      "volume": "选择性必修上册",
+      "textbookVolume": "选择性必修上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "jiangchengzi-yimao",
+      "title": "江城子",
+      "author": "苏轼",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修上册",
+      "textbookVolume": "选择性必修上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "linanchunyu",
@@ -1841,32 +1706,14 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "shufen",
-      "title": "书愤",
-      "author": "陆游",
+      "id": "kezhi",
+      "title": "客至",
+      "author": "杜甫",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "选择性必修下册",
-      "textbookVolume": "选择性必修中册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30426_langdu.html"
-    },
-    {
-      "id": "wudailingguan",
-      "title": "五代史伶官传序",
-      "author": "欧阳修",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "选择性必修下册",
-      "textbookVolume": "选择性必修中册",
-      "textbookLesson": "11.2",
-      "evidence": 1.0,
-      "linesHit": 6,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30417_langdu.html"
+      "status": "match",
+      "volume": "选择性必修下册",
+      "textbookVolume": "选择性必修下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "guiqulaixici",
@@ -1877,20 +1724,6 @@
       "volume": "选择性必修下册",
       "textbookVolume": "选择性必修下册",
       "textbookLesson": "10.2"
-    },
-    {
-      "id": "niannujiao-gudong",
-      "title": "念奴娇·过洞庭",
-      "author": "张孝祥",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "选择性必修下册",
-      "textbookVolume": "必修下册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 4,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30228_langdu.html"
     },
     {
       "id": "yangzhousman",
@@ -1913,20 +1746,6 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "chunjianghuayue",
-      "title": "春江花月夜",
-      "author": "张若虚",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "选择性必修下册",
-      "textbookVolume": "选择性必修上册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 0.6666666666666666,
-      "linesHit": 2,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30317_langdu.html"
-    },
-    {
       "id": "wanghaichao",
       "title": "望海潮",
       "author": "柳永",
@@ -1947,20 +1766,6 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
-      "id": "dengtaishan",
-      "title": "登泰山记",
-      "author": "姚鼐",
-      "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "选择性必修下册",
-      "textbookVolume": "必修上册",
-      "textbookLesson": "16.2",
-      "evidence": 1.0,
-      "linesHit": 6,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30126_langdu.html"
-    },
-    {
       "id": "shizhongshan",
       "title": "石钟山记",
       "author": "苏轼",
@@ -1969,6 +1774,16 @@
       "volume": "选择性必修下册",
       "textbookVolume": "选择性必修下册",
       "textbookLesson": "12"
+    },
+    {
+      "id": "lisao",
+      "title": "离骚",
+      "author": "屈原",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修下册",
+      "textbookVolume": "选择性必修下册",
+      "textbookLesson": "1.2"
     },
     {
       "id": "zhongshu-guotuotuo",
@@ -1981,18 +1796,24 @@
       "textbookLesson": "11"
     },
     {
-      "id": "jinse",
-      "title": "锦瑟",
-      "author": "李商隐",
+      "id": "shuxiang",
+      "title": "蜀相",
+      "author": "杜甫",
       "stage": "高中",
-      "status": "volume-mismatch",
-      "repoVolume": "选择性必修下册",
-      "textbookVolume": "选择性必修中册",
-      "textbookLesson": "课号未定（合课或课外诵读）",
-      "evidence": 1.0,
-      "linesHit": 3,
-      "officiallyConfirmed": false,
-      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30425_langdu.html"
+      "status": "match",
+      "volume": "选择性必修下册",
+      "textbookVolume": "选择性必修下册",
+      "textbookLesson": "3.2"
+    },
+    {
+      "id": "shudaonan",
+      "title": "蜀道难",
+      "author": "李白",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修下册",
+      "textbookVolume": "选择性必修下册",
+      "textbookLesson": "3.1"
     },
     {
       "id": "chenqingbiao",
@@ -2003,6 +1824,46 @@
       "volume": "选择性必修下册",
       "textbookVolume": "选择性必修下册",
       "textbookLesson": "9.1"
+    },
+    {
+      "id": "xiangjixuanzhi",
+      "title": "项脊轩志",
+      "author": "归有光",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修下册",
+      "textbookVolume": "选择性必修下册",
+      "textbookLesson": "9.2"
+    },
+    {
+      "id": "shufen",
+      "title": "书愤",
+      "author": "陆游",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修中册",
+      "textbookVolume": "选择性必修中册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "wudailingguan",
+      "title": "五代史伶官传序",
+      "author": "欧阳修",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修中册",
+      "textbookVolume": "选择性必修中册",
+      "textbookLesson": "11.2"
+    },
+    {
+      "id": "quyuanliezhuan",
+      "title": "屈原列传",
+      "author": "司马迁",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修中册",
+      "textbookVolume": "选择性必修中册",
+      "textbookLesson": "9"
     },
     {
       "id": "lipeng",
@@ -2018,6 +1879,26 @@
       "id": "yange-xing",
       "title": "燕歌行",
       "author": "高适",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修中册",
+      "textbookVolume": "选择性必修中册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "guoqinlun",
+      "title": "过秦论",
+      "author": "贾谊",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修中册",
+      "textbookVolume": "选择性必修中册",
+      "textbookLesson": "11.1"
+    },
+    {
+      "id": "jinse",
+      "title": "锦瑟",
+      "author": "李商隐",
       "stage": "高中",
       "status": "match",
       "volume": "选择性必修中册",
@@ -2058,17 +1939,6 @@
         "四年级上册"
       ],
       "evidence": "最高只有 0/2 句对上"
-    },
-    {
-      "id": "lunyu12",
-      "title": "《论语》十二章",
-      "author": "佚名",
-      "stage": "高中",
-      "repoVolume": "必修上册",
-      "sameTitleVolumes": [
-        "选择性必修上册"
-      ],
-      "evidence": "最高只有 0/9 句对上"
     }
   ],
   "absent": [
