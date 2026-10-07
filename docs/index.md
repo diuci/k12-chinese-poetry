@@ -19,6 +19,7 @@
 - 想知道数据从哪来 → [sources.md](sources.md)
 - 想知道内容冻结在哪一条、冻结时账目是多少 → [freeze.md](freeze.md)
 - 想知道冻结之后怎么改一篇内容 → [change-process.md](change-process.md)
+- 想知道版本差异怎么处理、考证要写下什么 → [variants.md](variants.md)
 
 ---
 

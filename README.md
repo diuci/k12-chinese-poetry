@@ -65,7 +65,7 @@ the National Curriculum Standards (Ministry of Education). Original texts are
 ## 数据来源与版权
 
 七类来源交叉校验，每篇篇目都在 frontmatter 里记录来源代号。
-完整说明见 **[docs/sources.md](docs/sources.md)**，汇总台账见 **[PROVENANCE.md](PROVENANCE.md)**，冻结快照见 **[docs/freeze.md](docs/freeze.md)**，冻结后的变更流程见 **[docs/change-process.md](docs/change-process.md)**。
+完整说明见 **[docs/sources.md](docs/sources.md)**，汇总台账见 **[PROVENANCE.md](PROVENANCE.md)**，冻结快照见 **[docs/freeze.md](docs/freeze.md)**，冻结后的变更流程见 **[docs/change-process.md](docs/change-process.md)**，版本差异（异文）怎么处理与考证规则见 **[docs/variants.md](docs/variants.md)**。
 
 > **公有领域逐篇核验**：判定只有一条——作者卒年 ≤ 当前年 − 50（《著作权法》
 > 自然人作品保护期）。每篇 frontmatter 记 `authorDied`，佚名类记年代上限
@@ -85,6 +85,7 @@ poems/小学/一年级上册/春晓.md# 按学段/册次组织的篇目（唯一
 │   ├── sources.md                 # 数据来源与许可
 │   ├── freeze.md                  # 内容冻结快照（content-v1 的账目与指纹）
 │   ├── change-process.md          # 冻结之后改内容的流程
+│   ├── variants.md                # 异文考证：版本差异怎么处理、要写下什么
 │   ├── index.md                   # 总览与学习路径
 │   ├── guide-for-parents.md       # 家长指南
 │   └── contributing.md            # 贡献规范

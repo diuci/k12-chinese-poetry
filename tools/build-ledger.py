@@ -17,6 +17,7 @@
   python tools/build-ledger.py --quiet    # 只生成文件
 """
 import json
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -45,6 +46,24 @@ def body_sections(path):
             name = line[3:].strip()
             have[name] = have.get(name, 0) + 1
     return have
+
+
+def section_text(path, name):
+    """某个 ## 小节的正文（到下一个 ## 为止）。台账要数异文条目的完成度，
+    光知道「有没有这个小节」不够，得看见里面的条目。"""
+    text = path.read_text(encoding='utf-8').replace('\r\n', '\n')
+    if text.startswith('---'):
+        cut = text.find('\n---', 3)
+        if cut > 0:
+            text = text[cut + 4:]
+    out, in_sec = [], False
+    for line in text.splitlines():
+        if line.startswith('## '):
+            in_sec = line[3:].strip() == name
+            continue
+        if in_sec:
+            out.append(line)
+    return '\n'.join(out)
 
 
 def frontmatter(path):
@@ -123,6 +142,13 @@ def main():
             group, no, stitle, sauthor = (None, None, None, None)
             category = '来源不明'
 
+        # 异文条目的完成度：一条合格的异文要有「出处」和「取舍」（docs/variants.md）。
+        # 只数条目数，不当成错误——现在绝大多数条目还没有出处，这是进度，不是缺陷。
+        vtext = section_text(path, '异文').strip()
+        ventries = [x.strip() for x in re.split(r'\n(?=- )', vtext) if x.strip().startswith('- ')] if vtext else []
+        v_with_source = sum(1 for x in ventries if '出处' in x)
+        v_with_choice = sum(1 for x in ventries if '取舍' in x)
+
         recite = fm.get('recite') or p.get('recite') or ''
         flags = []
         if not recite:
@@ -167,6 +193,9 @@ def main():
             'hasFamous': '必背名句' in sec,
             'hasPlay': '玩法数据' in sec,
             'hasVariant': '异文' in sec,
+            'variantEntries': len(ventries),
+            'variantWithSource': v_with_source,
+            'variantWithChoice': v_with_choice,
             # 「有全文」按 build.py 抽出来的全文正文算，不按小节标题叫什么算：
             # 短篇的正文直接写在篇名下面，没有「## 全文」这个标题，但它就是全文。
             # 只看标题会把 49 篇短篇误报成「没有全文」。
@@ -219,6 +248,11 @@ def main():
             '只有必背名句（节选收录）': sum(1 for r in rows if not r['hasFulltext']),
             '仓内有全文正文': sum(1 for r in rows if r['hasFulltext']),
             '无异文记录': sum(1 for r in rows if not r['hasVariant']),
+            # 异文考证的完成度（docs/variants.md）：条目总数 / 带出处 / 带取舍 / 缺出处
+            '异文条目总数': sum(r['variantEntries'] for r in rows),
+            '异文条目带出处': sum(r['variantWithSource'] for r in rows),
+            '异文条目带取舍': sum(r['variantWithChoice'] for r in rows),
+            '异文条目缺出处': sum(r['variantEntries'] - r['variantWithSource'] for r in rows),
             # （旧口径：按 flag 数无异文；现改用 hasVariant，与明细列同源）
             '缺全文（课标首句找不到）': sum(1 for x in problem_rows if x['key'].startswith('fulltext:')),
             '课标要求但仓内缺失': sum(1 for x in problem_rows if x['key'].startswith('missing:')),

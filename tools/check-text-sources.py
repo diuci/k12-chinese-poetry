@@ -12,6 +12,8 @@
      以及「某某判决书」「某某有限公司」这类同名不同物的页；
   3. 取页面正文，繁体转简体（OpenCC TSCharacters 字表，Apache-2.0）；
   4. 剥掉页面里的「一作某」夹注（顺手记下来，那正是异文线索）；
+  5. 另取一份 wikitext，解析 `{{另|甲|乙}}` 夹注——维基文库的异文是结构化的，
+     渲染后异文藏在鼠标悬停才显示的 span 里，只读渲染文本等于把异文全丢掉。
   5. 把仓内每一句（剥标点）拿去页面里找，记下对上的句数。
 
 这一步不替你改正文，它只把「对不上」的篇目摊出来。
@@ -112,6 +114,70 @@ def page_text(title):
     txt = re.sub(r'<[^>]+>', ' ', html)
     txt = re.sub(r'&[a-z]+;', ' ', txt)
     return parse.get('title', title), txt
+
+
+def page_wikitext(title):
+    d = http_json({'action': 'parse', 'page': title, 'prop': 'wikitext',
+                   'format': 'json', 'redirects': 1})
+    parse = d.get('parse') or {}
+    return parse.get('title', title), parse.get('wikitext', {}).get('*', '')
+
+
+# 维基文库的异文夹注：{{另|三|吳}} = 正文作「三」，另一本作「吳」。
+# 渲染后它变成一个带悬停提示的 span，剥标签只剩主文——所以必须读 wikitext。
+ALT_TEMPLATE = re.compile(r'\{\{\s*另\s*\|([^|{}]+)\|([^{}]+?)\}\}')
+
+
+def strip_markup(text):
+    """剥模板、链接、标签、引号空白，只留正文用来看上下文。"""
+    for _ in range(4):
+        new = re.sub(r'\{\{[^{}]*\}\}', '', text)
+        if new == text:
+            break
+        text = new
+    text = re.sub(r'\[\[(?:[^\]|]*\|)?([^\]]*)\]\]', r'\1', text)
+    text = re.sub(r'<[^>]+>', '', text)
+    return re.sub(r'[\s\x27\u201c\u201d\u2018\u2019]+', '', text)
+
+
+def alt_variants(wiki, table, page):
+    """从 wikitext 里抽 {{另|甲|乙}} 夹注，繁→简，带上下文。
+
+    做法：先把每个夹注换成一个纯字符哨兵（\x00编号\x00），再整页剥 markup，
+    最后在干净文本里找哨兵取上下文。两侧直接开窗会把标签从中间切断，
+    留下「oem>:」「edition=yes}}」这种残渣；用 find(本字) 定位又会撞到
+    同一个字在别处的出现。哨兵两头都不踩。
+    """
+    marks = []
+
+    def repl(m):
+        a = to_simplified(m.group(1).strip(), table)
+        b = to_simplified(re.sub(r'[、,，].*$', '', m.group(2).strip()), table)
+        idx = len(marks)
+        marks.append((a, b))
+        return '\x00%d\x00' % idx
+
+    stripped = strip_markup(ALT_TEMPLATE.sub(repl, wiki))
+    out, seen = [], set()
+    for idx, (a, b) in enumerate(marks):
+        if not a or not b or a == b:
+            continue
+        if len(a) > 6 or len(b) > 6:
+            continue
+        if not re.match(r'^[\u4e00-\u9fff]+$', a) or not re.match(r'^[\u4e00-\u9fff]+$', b):
+            continue
+        token = '\x00%d\x00' % idx
+        pos = stripped.find(token)
+        ctx = stripped[max(0, pos - 16):pos + 30] if pos >= 0 else ''
+        # 哨兵换回正文用字；窗口里别的夹注也换成它们各自的本字，读起来才是连贯的一句
+        ctx = re.sub(r'\x00(\d+)\x00', lambda mm: marks[int(mm.group(1))][0], ctx)
+        ctx = ctx.replace('\x00', '')   # 窗口边缘可能把哨兵切成半截
+        key = (a, b, ctx)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append({'ours': a, 'other': b, 'context': ctx, 'page': page})
+    return out
 
 
 def search_pages(query):
@@ -256,20 +322,23 @@ def main():
     ensure_dict()
     overrides = load_overrides()
     table = load_t2s()
-    poems = V.load_poems()
+    all_poems = V.load_poems()
+    poems = all_poems
     if stage:
         poems = [p for p in poems if p.get('stage') == stage]
     if limit:
         poems = poems[:limit]
 
     # 强制页名这张表也会过期：篇目改名或删掉了，键还留着，就会静默地不生效。
-    live = {p['id'] for p in poems}
+    # 这张表看的是全仓，不能被 --limit / --stage 的过滤带偏：
+    # --limit 6 跑过一次，22 个好好的键全被报成「过期，必须删」。
+    live = {p['id'] for p in all_poems}
     dead = sorted(k for k in overrides if k not in live)
     if dead:
         print('!! source-overrides.json 里有对不上任何篇目的键（过期，必须删）：%s' % '、'.join(dead))
 
     results = []
-    stats = {'attested': 0, 'partial': 0, 'notfound': 0, 'nosource': 0}
+    stats = {'attested': 0, 'partial': 0, 'notfound': 0, 'nosource': 0, 'withVariants': 0}
     for n, p in enumerate(poems, 1):
         title = p['title']
         author = p.get('author') or ''
@@ -277,7 +346,7 @@ def main():
         lines = [x for x in lines if x]
         rec = {'id': p['id'], 'title': title, 'author': author, 'stage': p.get('stage'),
                'page': None, 'url': None, 'lines': len(lines), 'hit': 0,
-               'miss': [], 'variantNotes': []}
+               'miss': [], 'variantNotes': [], 'variants': []}
         try:
             best = None
             ov = overrides.get(p['id'])
@@ -286,6 +355,7 @@ def main():
                 if ov.get('union'):
                     joined = []
                     vnotes = []
+                    valts = []
                     for pg in pages:
                         try:
                             real, raw = page_text(pg)
@@ -294,6 +364,11 @@ def main():
                             vnotes.extend(nn)
                         except Exception:
                             continue
+                        try:
+                            r2, w2 = page_wikitext(pg)
+                            valts.extend(alt_variants(w2, table, r2))
+                        except Exception:
+                            pass
                     txt_all = ''.join(joined)
                     hit = sum(1 for ln in lines if ln and line_in(ln, txt_all))
                     best = {'page': ' + '.join(pages), 'hit': hit, 'notes': vnotes, 'len': len(txt_all), 'txt': txt_all}
@@ -307,6 +382,7 @@ def main():
                     rec['url'] = 'https://zh.wikisource.org/wiki/' + urllib.parse.quote(pages[0])
                     rec['hit'] = best['hit']
                     rec['variantNotes'] = best['notes'][:12]
+                    rec['variants'] = valts[:40]
                     rec['override'] = ov.get('note', '')
                     results.append(rec)
                     continue
@@ -329,6 +405,11 @@ def main():
                 rec['url'] = 'https://zh.wikisource.org/wiki/' + urllib.parse.quote(best['page'])
                 rec['hit'] = best['hit']
                 rec['variantNotes'] = best['notes'][:12]
+                try:
+                    _, w2 = page_wikitext(best['page'])
+                    rec['variants'] = alt_variants(w2, table, best['page'])[:40]
+                except Exception:
+                    rec['variants'] = []
                 src_txt = best['txt']
                 rec['miss'] = []
                 for ln in lines:
@@ -347,17 +428,21 @@ def main():
         except Exception as exc:
             rec['error'] = '%s: %s' % (type(exc).__name__, exc)
             stats['nosource'] += 1
+        if rec.get('variants'):
+            stats['withVariants'] += 1
         results.append(rec)
         flag = 'ok' if rec['hit'] == rec['lines'] and rec['lines'] else '!!'
-        print('[%3d/%3d] %s %s（%s）  %d/%d 句对上  %s' % (
+        print('[%3d/%3d] %s %s（%s）  %d/%d 句对上  夹注异文 %d 条  %s' % (
             n, len(poems), flag, title, author, rec['hit'], rec['lines'],
-            rec['page'] or '找不到来源页'))
+            len(rec.get('variants') or []), rec['page'] or '找不到来源页'))
         time.sleep(0.10)
 
     OUT.write_text(json.dumps({
         'note': '每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。'
                 '繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。'
-                'variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。',
+                'variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。'
+                'variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，'
+                'other 是别本用字，context 是上下文，page 是页名——考证时按页可核。',
         'generated': time.strftime('%Y-%m-%d'),
         'stats': stats,
         'results': results,
@@ -366,6 +451,7 @@ def main():
     print()
     print('出处核对：%d 全对上 / %d 部分对上 / %d 一句都对不上 / %d 找不到来源页'
           % (stats['attested'], stats['partial'], stats['notfound'], stats['nosource']))
+    print('带 {{另}} 夹注异文的篇目：%d 篇' % stats['withVariants'])
     print('已写 data/text-sources.json')
     return 0
 
