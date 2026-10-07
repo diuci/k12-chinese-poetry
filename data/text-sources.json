@@ -1,0 +1,167 @@
+{
+  "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。",
+  "generated": "2026-10-07",
+  "stats": {
+    "attested": 5,
+    "partial": 3,
+    "notfound": 4,
+    "nosource": 0
+  },
+  "results": [
+    {
+      "id": "shizhuisai",
+      "title": "使至塞上",
+      "author": "王维",
+      "query": "使至塞上 王维",
+      "page": "使至塞上",
+      "url": "https://zh.wikisource.org/wiki/%E4%BD%BF%E8%87%B3%E5%A1%9E%E4%B8%8A",
+      "lines": 4,
+      "hit": 4,
+      "miss": []
+    },
+    {
+      "id": "guanju",
+      "title": "关雎",
+      "author": "佚名",
+      "query": "关雎",
+      "page": "詩經/關雎",
+      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E9%97%9C%E9%9B%8E",
+      "lines": 2,
+      "hit": 2,
+      "miss": []
+    },
+    {
+      "id": "shiwuzhongjunzheng",
+      "title": "十五从军征",
+      "author": "佚名",
+      "query": "十五从军征",
+      "page": "十五從軍征",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%81%E4%BA%94%E5%BE%9E%E8%BB%8D%E5%BE%81",
+      "lines": 2,
+      "hit": 0,
+      "miss": [
+        "十五从军征八岁开姓名",
+        "虽有战死与儿死者无家可归依"
+      ]
+    },
+    {
+      "id": "chunwang",
+      "title": "春望",
+      "author": "杜甫",
+      "query": "春望 杜甫",
+      "page": "春望",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%9C%9B",
+      "lines": 4,
+      "hit": 3,
+      "miss": [
+        "国破山河在城春草木深"
+      ]
+    },
+    {
+      "id": "cibeigushanxia",
+      "title": "次北固山下",
+      "author": "王湾",
+      "query": "次北固山下 王湾",
+      "page": "次北固山下",
+      "url": "https://zh.wikisource.org/wiki/%E6%AC%A1%E5%8C%97%E5%9B%BA%E5%B1%B1%E4%B8%8B",
+      "lines": 4,
+      "hit": 4,
+      "miss": []
+    },
+    {
+      "id": "baixuege",
+      "title": "白雪歌送武判官归京",
+      "author": "岑参",
+      "query": "白雪歌送武判官归京 岑参",
+      "page": "白雪歌送武判官歸京",
+      "url": "https://zh.wikisource.org/wiki/%E7%99%BD%E9%9B%AA%E6%AD%8C%E9%80%81%E6%AD%A6%E5%88%A4%E5%AE%98%E6%AD%B8%E4%BA%AC",
+      "lines": 3,
+      "hit": 3,
+      "miss": []
+    },
+    {
+      "id": "maowu",
+      "title": "茅屋为秋风所破歌",
+      "author": "杜甫",
+      "query": "茅屋为秋风所破歌 杜甫",
+      "page": "茅屋為秋風所破歌",
+      "url": "https://zh.wikisource.org/wiki/%E8%8C%85%E5%B1%8B%E7%82%BA%E7%A7%8B%E9%A2%A8%E6%89%80%E7%A0%B4%E6%AD%8C",
+      "lines": 2,
+      "hit": 1,
+      "miss": [
+        "安得广厦千万间大庇天下寒士俱欢颜"
+      ]
+    },
+    {
+      "id": "jianjia",
+      "title": "蒹葭",
+      "author": "佚名",
+      "query": "蒹葭",
+      "page": "詩經/蒹葭",
+      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E8%92%B9%E8%91%AD",
+      "lines": 2,
+      "hit": 2,
+      "miss": []
+    },
+    {
+      "id": "guancanghai",
+      "title": "观沧海",
+      "author": "曹操",
+      "query": "观沧海 曹操",
+      "page": "觀滄海",
+      "url": "https://zh.wikisource.org/wiki/%E8%A7%80%E6%BB%84%E6%B5%B7",
+      "lines": 6,
+      "hit": 5,
+      "miss": [
+        "树木丛生百草丰茂"
+      ]
+    },
+    {
+      "id": "wenwangchangling",
+      "title": "闻王昌龄左迁龙标遥有此寄",
+      "author": "李白",
+      "query": "闻王昌龄左迁龙标遥有此寄 李白",
+      "page": "聞王昌齡左遷龍標遙有此寄",
+      "url": "https://zh.wikisource.org/wiki/%E8%81%9E%E7%8E%8B%E6%98%8C%E9%BD%A1%E5%B7%A6%E9%81%B7%E9%BE%8D%E6%A8%99%E9%81%99%E6%9C%89%E6%AD%A4%E5%AF%84",
+      "lines": 2,
+      "hit": 0,
+      "miss": [
+        "杨花落尽子规啼闻道龙标过五溪",
+        "我寄愁心与明月随君直到夜郎西"
+      ]
+    },
+    {
+      "id": "yinjiujiusan",
+      "title": "饮酒",
+      "author": "陶潜",
+      "query": "饮酒 陶潜",
+      "page": "陶詩的深度",
+      "url": "https://zh.wikisource.org/wiki/%E9%99%B6%E8%A9%A9%E7%9A%84%E6%B7%B1%E5%BA%A6",
+      "lines": 5,
+      "hit": 0,
+      "miss": [
+        "结庐在人境而无车马喧",
+        "问君何能尔心远地自偏",
+        "采菊东篱下悠然见南山",
+        "山气日夕佳飞鸟相与还",
+        "此中有真意欲辨已忘言"
+      ]
+    },
+    {
+      "id": "huanghelou-cuiheng",
+      "title": "黄鹤楼",
+      "author": "崔颢",
+      "query": "黄鹤楼 崔颢",
+      "page": "黃鶴樓",
+      "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E9%B6%B4%E6%A8%93",
+      "lines": 4,
+      "hit": 0,
+      "miss": [
+        "昔人已乘黄鹤去此地空余黄鹤楼",
+        "黄鹤一去不复返白云千载空悠悠",
+        "晴川历历汉阳树芳草萋萋鹦鹉洲",
+        "日暮乡关何处是烟波江上使人愁"
+      ]
+    }
+  ]
+}

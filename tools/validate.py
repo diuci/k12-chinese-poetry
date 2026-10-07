@@ -491,13 +491,6 @@ def main():
         else:
             err(text)
 
-    # 登记必须对得上现实：登记过的问题如果已经消失，说明这条登记过期了，
-    # 必须删掉——否则这张表迟早变成永久垃圾桶，什么都能往里扔。
-    for key, d in known.items():
-        if key not in seen_defects:
-            err('已知未修登记过期：%s（%s）——问题已经不见了，请从 data/known-defects.json 删掉这条'
-                % (key, d.get('title', '')))
-
     # -------------------------------------------------- 3. pairs 索引合法
     for p in poems:
         n = len(p['lines'])
@@ -528,6 +521,41 @@ def main():
             notes.append('%s（已知不规则：%s）' % (msg, p['irregular']))
         else:
             warn(msg + '（请核对正文）')
+
+    # -------------------------------------------------- 4.5 全文占位符
+    # 「## 全文」下面写一句「完整原文待补」不算有全文。课标把这些篇目列在默写范围里，
+    # 只有名句等于没备齐——学生按我们的页面去默写，写出来的是半篇。
+    placeholder_files = []
+    for p in poems:
+        raw_all = (ROOT / p['_path']).read_text(encoding='utf-8')
+        body_all = raw_all
+        if raw_all.startswith('---'):
+            cut_all = raw_all.find('\n---', 3)
+            if cut_all > 0:
+                body_all = raw_all[cut_all + 4:]
+        in_sec = False
+        saw_section = False
+        have = []
+        for raw in body_all.splitlines():
+            s = raw.strip()
+            if s.startswith('## '):
+                in_sec = s[3:].strip() in ('必背全文', '全文')
+                if in_sec:
+                    saw_section = True
+                continue
+            if not in_sec or not s or s.startswith('>'):
+                continue
+            have.append(s)
+        if saw_section and (not have or any('待补' in x for x in have)):
+            placeholder_files.append(p['_path'])
+    if placeholder_files:
+        key = 'placeholder:fulltext'
+        text = '全文占位符：%d 篇的「必背全文/全文」小节是空的或写着「完整原文待补」，而课标要求这些篇目默写。例：%s' % (len(placeholder_files), '、'.join(placeholder_files[:4]))
+        if key in known:
+            seen_defects.add(key)
+            notes.append('已知未修（%s 处理）：%s' % (known[key]['phase'], text))
+        else:
+            err(text)
 
     # -------------------------------------------------- 5/6/7. 字段与版权
     for p in poems:
@@ -579,6 +607,14 @@ def main():
             print('data/poems.json 与 poems/ 一致（%d 篇）' % built['count'])
     else:
         notes.append('尚未构建 data/poems.json（跑 python tools/build.py 生成）')
+
+    # 登记必须对得上现实：登记过的问题如果已经消失，说明这条登记过期了，
+    # 必须删掉——否则这张表迟早变成永久垃圾桶，什么都能往里扔。
+    # 放在所有检查之后：登记是在这些检查里被「认领」的，早一步比对就会误报过期。
+    for key, d in known.items():
+        if key not in seen_defects:
+            err('已知未修登记过期：%s（%s）——问题已经不见了，请从 data/known-defects.json 删掉这条'
+                % (key, d.get('title', '')))
 
     return report()
 

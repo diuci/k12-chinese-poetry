@@ -130,6 +130,31 @@ def extract_poem_lines(body):
     return lines
 
 
+def extract_full_lines(body):
+    """抽「## 必背全文」/「## 全文」小节里的段落，作为背诵用的全文。
+
+    为什么要单独抽：游戏单元要短（一句、一联），背诵要整篇。
+    高中有 32 篇只有必背名句，全文小节里写的是「完整原文待补」——
+    而课标把这些篇目列在默写范围里，只有名句等于没备齐。
+    全文与游戏单元分开存，补全文就不会把游戏的句子单位撑长。
+    """
+    out = []
+    in_sec = False
+    for raw in body.splitlines():
+        s = raw.strip()
+        if s.startswith('## '):
+            in_sec = s[3:].strip() in ('必背全文', '全文')
+            continue
+        if not in_sec or not s:
+            continue
+        if s.startswith('>'):
+            continue
+        if MD_NOISE.match(raw):
+            continue
+        out.append(s)
+    return out
+
+
 def strip_punct(s):
     out = []
     for ch in s:
@@ -154,6 +179,11 @@ def build_record(md_path, fm, body):
     lines = [x for x in lines if x]
     if not lines:
         die('%s: 剥离标点后正文为空', rel)
+
+    # 背诵用的全文，与游戏单元分开存（见 extract_full_lines 的说明）
+    full_body = extract_full_lines(body)
+    full_lines = [strip_punct(x) for x in full_body]
+    full_lines = [x for x in full_lines if x]
 
     # pairs 形如 "0-1,2-3"，用短横线避免 YAML 里的逗号歧义
     pairs = []
@@ -213,6 +243,8 @@ def build_record(md_path, fm, body):
         'textbooks': scalar(fm, 'textbooks', ['统编']) or ['统编'],
         'lines': lines,
         'linesPunct': [split_line_punct(x) for x in poem_lines],
+        'fullLines': full_lines,
+        'fullLinesPunct': [split_line_punct(x) for x in full_body],
         'pairs': pairs,
         'syllables': syllables,
         'render_split': render_split,
