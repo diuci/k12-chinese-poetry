@@ -20,6 +20,7 @@
 - 想知道内容冻结在哪一条、冻结时账目是多少 → [freeze.md](freeze.md)
 - 想知道冻结之后怎么改一篇内容 → [change-process.md](change-process.md)
 - 想知道版本差异怎么处理、考证要写下什么 → [variants.md](variants.md)
+- 想知道每篇写的「教材第几册」是怎么核对的、哪里对不上 → [textbook-audit.md](textbook-audit.md)
 
 ---
 
