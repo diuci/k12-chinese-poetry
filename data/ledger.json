@@ -55,7 +55,7 @@
     "gapCounts": {
       "缺背诵要求": 0,
       "无必背名句小节": 157,
-      "无异文记录": 202,
+      "无异文记录": 201,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
       "重复副本": 1,
@@ -3430,6 +3430,7 @@
       "lineCount": 2,
       "charCount": 20,
       "sections": [
+        "出处核对",
         "注释",
         "译文",
         "赏析"
@@ -3470,6 +3471,7 @@
       "lineCount": 2,
       "charCount": 28,
       "sections": [
+        "出处核对",
         "注释",
         "译文",
         "赏析"
@@ -6310,6 +6312,8 @@
       "lineCount": 2,
       "charCount": 28,
       "sections": [
+        "出处核对",
+        "异文",
         "注释",
         "译文",
         "赏析"
@@ -6319,11 +6323,10 @@
       "hasAppreciation": true,
       "hasFamous": false,
       "hasPlay": false,
-      "hasVariant": false,
+      "hasVariant": true,
       "pairsCount": 1,
       "flags": [
-        "无「必背名句」小节",
-        "无异文记录"
+        "无「必背名句」小节"
       ],
       "path": "poems/小学/五年级下册/稚子弄冰.md"
     },
@@ -9440,7 +9443,7 @@
       "matchStrength": 2,
       "recite": "section",
       "lineCount": 3,
-      "charCount": 52,
+      "charCount": 92,
       "sections": [
         "全文",
         "异文",
@@ -9633,7 +9636,7 @@
       "source": "S3+S1b+S2",
       "stage": "高中",
       "grade": null,
-      "volume": "选择性必修下册",
+      "volume": "选修（2026起默写）",
       "form": "文言",
       "category": "课标·高中",
       "syllabusGroup": "高中",

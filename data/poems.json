@@ -656,6 +656,9 @@
       "jiangshangyuzhe",
       "pipaxing"
     ],
+    "咏史": [
+      "guizhixiang"
+    ],
     "咏物": [
       "ailianshuo",
       "gulangyuexing",
@@ -1090,7 +1093,6 @@
       "wenguanjun",
       "shufen",
       "wuyi",
-      "guizhixiang",
       "yongyule",
       "pusaman-zaoxiang",
       "hexinlao"
@@ -16438,11 +16440,17 @@
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "宋",
-      "emotion": "怀古伤今与收复之志",
+      "emotion": "凭高吊古的冷峻",
       "examFreq": 0.8,
       "form": "词",
-      "fullLines": [],
-      "fullLinesPunct": [],
+      "fullLines": [
+        "登临送目正故国晚秋天气初肃千里澄江似练翠峰如簇征帆去棹残阳里背西风酒旗斜矗彩舟云淡星河鹭起画图难足",
+        "念往昔繁华竞逐叹门外楼头悲恨相续千古凭高对此谩嗟荣辱六朝旧事随流水但寒烟衰草凝绿至今商女时时犹唱后庭遗曲"
+      ],
+      "fullLinesPunct": [
+        "登临送目，正故国晚秋，天气初肃。千里澄江似练，翠峰如簇。征帆去棹残阳里，背西风、酒旗斜矗。彩舟云淡，星河鹭起，画图难足。",
+        "念往昔、繁华竞逐，叹门外楼头，悲恨相续。千古凭高对此，谩嗟荣辱。六朝旧事随流水，但寒烟衰草凝绿。至今商女，时时犹唱，后庭遗曲。"
+      ],
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 24,
       "gaokaoSince": 2023,
@@ -16453,12 +16461,12 @@
       "lines": [
         "登临送目正故国晚秋天气初肃",
         "千里澄江似练翠峰如簇",
-        "王师北定中原日家祭无忘告乃翁"
+        "至今商女时时犹唱后庭遗曲"
       ],
       "linesPunct": [
         "登临送目，正故国晚秋，天气初肃。",
         "千里澄江似练，翠峰如簇。",
-        "王师北定中原日，家祭无忘告乃翁。"
+        "至今商女，时时犹唱，后庭遗曲。"
       ],
       "pairs": [
         [
@@ -16470,7 +16478,7 @@
       "render_split": [
         3,
         2,
-        2
+        3
       ],
       "render_split_reason": null,
       "source": "S3+S1b+S2",
@@ -16479,19 +16487,20 @@
       "syllables": null,
       "tags": [
         "怀古",
-        "爱国",
+        "咏史",
         "宋词"
       ],
       "technique": [
         "比喻",
-        "议论"
+        "议论",
+        "用典"
       ],
       "textbooks": [
         "统编"
       ],
       "theme": [
         "怀古",
-        "爱国"
+        "咏史"
       ],
       "title": "桂枝香·金陵怀古",
       "volume": "必修下册"

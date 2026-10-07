@@ -22,14 +22,21 @@
 → 误报 9 处。因为库里大量是同一原文的不同选段
   （庄子一则 / 北冥有鱼 / 逍遥游都出自《逍遥游》；
    礼记一则 / 虽有嘉肴 / 杂说都出自《学记》），
-  也有跨作者化用——陆游《示儿》原句引王安石《桂枝香》，
-  宋濂《送东阳马生序》引韩愈《师说》，这些是语文课会讲的写法。
+  也有跨作者化用——宋濂《送东阳马生序》引韩愈《师说》，这些是语文课会讲的写法。
+
+  ⚠️ 这里原先举的「陆游《示儿》原句引王安石《桂枝香》」是**错的**：那不是化用，
+  是《桂枝香》的篇目文件里混进了《示儿》的结尾两句，注释、译文、赏析全建在这两句上。
+  2026-10-07 查出并整篇重写，见该篇「旧文本裁定」。例子留着当反面教材：
+  「看起来像化用」不等于「是化用」，每一处被点名的重叠都要逐对裁定。
 
 关键问题：**「半个字面来自他作」这件事，本身不足以判定串篇。**
 陆游引王安石和张冠李戴，在数据上长得一模一样。
 所以这里只负责把重叠摆出来，不替人下结论。
 
-需要人工核的只有一处：《黄冈竹楼记》。它整页只有两句，
+每一处被点名的重叠都要在 data/overlap-verdicts.json 里有一条裁定；没有裁定且重叠过半即 exit 1。
+裁定表里的键若对不上当前检出的重叠（篇目改名或删了），工具会报「裁定过期」。
+
+旧版说明（保留）：需要人工核的曾有一处《黄冈竹楼记》，它整页只有两句，
 其中一句是《木兰辞》的名句，而另一句「黄州居士，谪居之」
 是否为该文原句，需要拿纸本校对——离线无法确认，故不改写。
 
@@ -121,6 +128,19 @@ if '--selftest' in sys.argv:
 poems = json.loads(DATA.read_text(encoding='utf-8'))['poems']
 recs = analyse(poems)
 
+VERD_PATH = ROOT / 'data' / 'overlap-verdicts.json'
+verdicts = {}
+if VERD_PATH.exists():
+    verdicts = {v['pair']: v for v in json.loads(VERD_PATH.read_text(encoding='utf-8')).get('verdicts', [])}
+seen, unadjudicated = set(), []
+for p, q, n, tot in recs:
+    key = '|'.join(sorted([p['id'], q['id']]))
+    if key in verdicts:
+        seen.add(key)
+    elif n / tot >= 0.5:
+        unadjudicated.append('%s《%s》↔ %s《%s》：%d/%d 句重叠，没有裁定' % (p['id'], p['title'], q['id'], q['title'], n, tot))
+stale = sorted(k for k in verdicts if k not in seen)
+
 print('=== 跨作者内容重叠（需人工确认，非报错） ===')
 print('篇数 %d' % len(poems))
 print('')
@@ -131,7 +151,22 @@ if recs:
               % (warn, p['id'], p['title'], p['author'], n, tot,
                  q['title'], q['author'], flag))
     print('')
-    print('%s 共 %d 处。这些可能是化用（合法），也可能是串篇（错误），需人工过。'
-          % (warn, len(recs)))
+    print('%s 共 %d 处，其中已裁定 %d 处（见 data/overlap-verdicts.json）。' % (warn, len(recs), len(seen)))
+    for v in verdicts.values():
+        if v['pair'] in seen:
+            print('    [裁定] %s → %s：%s' % (v['pair'], v['verdict'], v['reason']))
 else:
     print('%s 没有跨作者重叠' % ok)
+
+if unadjudicated:
+    print('')
+    print('[!!] 有 %d 处重叠比例过半却没有裁定：' % len(unadjudicated))
+    for x in unadjudicated:
+        print('    ' + x)
+if stale:
+    print('')
+    print('[!!] 裁定过期：data/overlap-verdicts.json 里这些键对不上当前检出的重叠，必须删或改：')
+    for x in stale:
+        print('    ' + x)
+if unadjudicated or stale:
+    sys.exit(1)
