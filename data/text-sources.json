@@ -1,11 +1,12 @@
 {
-  "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。",
-  "generated": "2026-10-07",
+  "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
+  "generated": "2026-10-08",
   "stats": {
-    "attested": 217,
-    "partial": 31,
+    "attested": 218,
+    "partial": 30,
     "notfound": 3,
-    "nosource": 0
+    "nosource": 0,
+    "withVariants": 68
   },
   "results": [
     {
@@ -18,7 +19,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "guanju",
@@ -30,7 +32,27 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "逑",
+          "other": "仇",
+          "context": "鳩，在河之洲。:窈窕淑女，君子好逑。:參差荇菜，左右流之。:窈窕淑女，寤寐求之。:求之",
+          "page": "詩經/關雎"
+        },
+        {
+          "ours": "不",
+          "other": "弗",
+          "context": "之。:窈窕淑女，寤寐求之。:求之不得，寤寐思服。:悠哉悠哉，輾轉反側。:參差荇菜，左右采",
+          "page": "詩經/關雎"
+        },
+        {
+          "ours": "芼",
+          "other": "薅",
+          "context": "淑女，琴瑟友之。:參差荇菜，左右芼之。:窈窕淑女，鐘鼓樂之。===注釋===*按王先謙《",
+          "page": "詩經/關雎"
+        }
+      ]
     },
     {
       "id": "shiwucongjunzheng",
@@ -42,7 +64,8 @@
       "lines": 8,
       "hit": 8,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "chunwang",
@@ -54,7 +77,15 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "春",
+          "other": "荒",
+          "context": "國破山河在，城春草木深。感時花濺淚，恨別鳥驚心。烽火連三月，家書抵萬金",
+          "page": "春望"
+        }
+      ]
     },
     {
       "id": "cibeigushanxia",
@@ -66,7 +97,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "baixuege",
@@ -78,7 +110,27 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "角",
+          "other": "雕",
+          "context": "珠簾濕羅幕，狐裘不煖錦衾薄。將軍角弓不得控，都護鐵衣冷难著。瀚海闌干百丈冰，愁雲慘",
+          "page": "白雪歌送武判官歸京"
+        },
+        {
+          "ours": "难",
+          "other": "犹",
+          "context": "。將軍角弓不得控，都護鐵衣冷难著。瀚海闌干百丈冰，愁雲慘澹萬里凝。中軍置酒飲歸客，",
+          "page": "白雪歌送武判官歸京"
+        },
+        {
+          "ours": "百丈",
+          "other": "千尺",
+          "context": "控，都護鐵衣冷难著。瀚海闌干百丈冰，愁雲慘澹萬里凝。中軍置酒飲歸客，胡琴琵琶與羌笛。紛",
+          "page": "白雪歌送武判官歸京"
+        }
+      ]
     },
     {
       "id": "maowu",
@@ -90,7 +142,27 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "洒",
+          "other": "满",
+          "context": "風怒號，卷我屋上三重茅。茅飛度江洒江郊，高者挂罥長林梢，下者飄轉沈塘坳。南村羣童欺我",
+          "page": "茅屋為秋風所破歌"
+        },
+        {
+          "ours": "塘",
+          "other": "堂",
+          "context": "江郊，高者挂罥長林梢，下者飄轉沈塘坳。南村羣童欺我老無力，忍能對面爲盜賊。公然抱茅入竹去",
+          "page": "茅屋為秋風所破歌"
+        },
+        {
+          "ours": "似",
+          "other": "象",
+          "context": "墨色，秋天漠漠向昏黑。布衾多年冷似鐵，嬌兒惡臥踏裏裂。牀頭屋漏無乾處，雨脚如麻未斷絕。自",
+          "page": "茅屋為秋風所破歌"
+        }
+      ]
     },
     {
       "id": "jianjia",
@@ -102,7 +174,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "萋萋",
+          "other": "凄凄",
+          "context": "長。溯游從之，宛在水中央。:蒹葭萋萋，白露未晞。所謂伊人，在水之湄。溯洄從之，道阻且躋。溯",
+          "page": "詩經/蒹葭"
+        }
+      ]
     },
     {
       "id": "guancanghai",
@@ -114,7 +194,15 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "丛",
+          "other": "聚",
+          "context": "觀滄海。水何澹澹，山島竦峙。樹木丛生，百草豐茂。秋風蕭瑟，洪波湧起。日月之行，若出其中；",
+          "page": "觀滄海"
+        }
+      ]
     },
     {
       "id": "wenwangchangling",
@@ -126,7 +214,21 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "杨花落尽",
+          "other": "扬州花落",
+          "context": "杨花落尽子規啼，聞道龍標過五溪。我寄愁心與明月，隨风直到夜",
+          "page": "聞王昌齡左遷龍標遙有此寄"
+        },
+        {
+          "ours": "风",
+          "other": "君",
+          "context": "道龍標過五溪。我寄愁心與明月，隨风直到夜郎西。Category:唐詩Category:七",
+          "page": "聞王昌齡左遷龍標遙有此寄"
+        }
+      ]
     },
     {
       "id": "yinjiujiusan",
@@ -138,7 +240,8 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "huanghelou-cuiheng",
@@ -150,7 +253,15 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "黄鹤",
+          "other": "白云",
+          "context": "昔人已乘黄鹤去，此地空餘黃鶴樓。黃鶴一去不復返，白雲千載空悠悠。晴",
+          "page": "黃鶴樓 (崔顥)"
+        }
+      ]
     },
     {
       "id": "maotanshangwu",
@@ -162,7 +273,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yeyujibei",
@@ -174,7 +286,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "当",
+          "other": "时",
+          "context": "君問歸期未有期巴山夜雨漲秋池何当共剪西窗燭卻話巴山夜雨時君問歸期未有期巴山夜雨漲秋池何",
+          "page": "夜雨寄北"
+        }
+      ]
     },
     {
       "id": "wangyue",
@@ -186,7 +306,15 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "曾",
+          "other": "层",
+          "context": "鍾;}-神秀，陰陽割昏曉。盪胸生曾雲，決眥入歸鳥。會當凌絕頂，一覽衆山小。",
+          "page": "望嶽 (岱宗夫如何)"
+        }
+      ]
     },
     {
       "id": "mulanci",
@@ -198,7 +326,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "boqinhuai",
@@ -210,7 +339,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "youshanxincun",
@@ -231,7 +361,8 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "dengyouzhoutai",
@@ -243,7 +374,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "dengfeilaifeng",
@@ -264,7 +396,8 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "chibi-du",
@@ -276,7 +409,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "未",
+          "other": "半",
+          "context": "折戟沉沙鐵未銷，自將磨洗認前朝。東風不與周郎便，銅雀春深鎖二喬《三",
+          "page": "赤壁"
+        }
+      ]
     },
     {
       "id": "qiantanghuchunxing",
@@ -288,7 +429,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yanmenshiweixing",
@@ -300,7 +442,21 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "日",
+          "other": "月",
+          "context": "黑雲壓城城欲摧，甲光向日金鱗開。角聲滿天秋色裏，塞上燕脂凝夜紫。半卷紅旗臨",
+          "page": "雁門太守行"
+        },
+        {
+          "ours": "上",
+          "other": "土",
+          "context": "日金鱗開。角聲滿天秋色裏，塞上燕脂凝夜紫。半卷紅旗臨易水，霜重鼓寒聲不起。報君黃金臺",
+          "page": "雁門太守行"
+        }
+      ]
     },
     {
       "id": "chunyeluocheng",
@@ -312,7 +468,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "wanchun",
@@ -324,7 +481,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "只",
+          "other": "祗",
+          "context": "。慢綠妖紅半不存。慢或作漫。榆莢只能隨柳絮，等閑撩亂走空園。==其二==草樹知春不久歸，",
+          "page": "晚春 (韓愈)"
+        }
+      ]
     },
     {
       "id": "zhuliguan",
@@ -336,7 +501,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "fengrujinshi",
@@ -348,7 +514,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "nangxiangzi",
@@ -360,7 +527,8 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "wuti",
@@ -372,7 +540,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shuidiaogetou",
@@ -384,7 +553,8 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jiangchengzi-laofeng",
@@ -396,7 +566,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "huanxisha-yanque",
@@ -408,7 +579,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yujiaao-qiusi",
@@ -420,7 +592,8 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xiangjianhuan",
@@ -432,7 +605,15 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "般",
+          "other": "番",
+          "context": ":剪不斷，理還亂，是離愁。別是一般滋味在心頭。Category:詞Category:相見",
+          "page": "相見歡 (李煜)"
+        }
+      ]
     },
     {
       "id": "pozhenzi",
@@ -444,7 +625,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xinglunan",
@@ -456,7 +638,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "choulitian",
@@ -468,7 +651,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "lvshi1",
@@ -503,7 +687,8 @@
         "一本作以",
         "一作资",
         "一作以不"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "mengzi3",
@@ -516,6 +701,7 @@
       "hit": 3,
       "miss": [],
       "variantNotes": [],
+      "variants": [],
       "override": "三则分别出自告子上（舍生取义）、告子下（天将降大任）、滕文公下（富贵不能淫），必须跨章合并。"
     },
     {
@@ -533,7 +719,63 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "扶",
+          "other": "抉",
+          "context": "「鵬之徙於南冥也，水擊三千里，摶扶搖而上者九萬里，去以六月息者也。」野馬也，塵埃也，生物",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "鸴",
+          "other": "学",
+          "context": "莫之夭閼者，而後乃今將圖南。蜩與鸴鳩笑之曰：「我決起而飛，枪榆枋，時則不至，而控於地",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "枪",
+          "other": "抢",
+          "context": "與鸴鳩笑之曰：「我決起而飛，枪榆枋，時則不至，而控於地而已矣，奚以之九萬里而南爲？」",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "太",
+          "other": "泰",
+          "context": "其名爲鯤。有鳥焉，其名爲鵬，背若太山，翼若垂天之雲，摶扶搖羊角而上者九萬里，絕雲氣，",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "扶",
+          "other": "抉",
+          "context": "，背若太山，翼若垂天之雲，摶扶搖羊角而上者九萬里，絕雲氣，負青天，然後圖南，且適南冥",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "境",
+          "other": "竟",
+          "context": "不加沮，定乎內外之分，辯乎榮辱之境，斯已矣。彼其於世，未數數然也，雖然，猶有未樹也。夫列",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "有",
+          "other": "又",
+          "context": "也。夫列子御風而行，泠然善也，旬有五日而後反。彼於致福者，未數數然也。此雖免乎行，猶有所",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "秕",
+          "other": "粃",
+          "context": "旱金石流、土山焦而不熱，是其塵垢秕穅，將猶陶鑄堯、舜者也，孰肯以物爲事？」宋人資章甫而適",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "牦",
+          "other": "斄",
+          "context": "避高下，中於機辟，死於罔罟。今夫牦牛，其大若垂天之雲，此能爲大矣，而不能執鼠。今子有大樹",
+          "page": "莊子/逍遙遊"
+        }
+      ]
     },
     {
       "id": "liji1",
@@ -550,7 +792,8 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "chushibiao",
@@ -562,7 +805,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "tianjingsha-qiusi",
@@ -574,7 +818,15 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "人家",
+          "other": "平沙",
+          "context": "枯藤、老樹、昏鴉。小橋、流水、人家。古道、西風、瘦馬。夕陽西下，斷腸人在天涯。Categ",
+          "page": "天淨沙·秋思"
+        }
+      ]
     },
     {
       "id": "shanpoyang",
@@ -591,7 +843,8 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jihai-jimao",
@@ -605,7 +858,8 @@
       "miss": [],
       "variantNotes": [
         "又作山中老树"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "caoguilunzhan",
@@ -626,7 +880,8 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "huxinting",
@@ -638,7 +893,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "manjianghong-xiaozhujinghua",
@@ -650,7 +906,8 @@
       "lines": 8,
       "hit": 8,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "guolingyang",
@@ -662,7 +919,27 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "寥",
+          "other": "落",
+          "context": "辛苦遭逢起一經，干戈寥落四周星。山河破碎風飘絮，身世浮沉雨打萍。惶恐灘",
+          "page": "過零丁洋"
+        },
+        {
+          "ours": "浮沉",
+          "other": "飘摇",
+          "context": "四周星。山河破碎風飘絮，身世浮沉雨打萍。惶恐灘頭說惶恐，零丁洋裏歎零丁。人生自古誰無死",
+          "page": "過零丁洋"
+        },
+        {
+          "ours": "丹心",
+          "other": "声名",
+          "context": "洋裏歎零丁。人生自古誰無死？留取丹心照汗青汗青，謂歷史也。古以火炙竹簡，使有汁如汗，書事於",
+          "page": "過零丁洋"
+        }
+      ]
     },
     {
       "id": "songdongyang",
@@ -674,7 +951,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zouji",
@@ -686,7 +964,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "sanxia",
@@ -698,7 +977,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yuzhusianshu",
@@ -713,7 +993,8 @@
       "variantNotes": [
         "一作筠",
         "一作诎"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "yueyanglouji",
@@ -725,7 +1006,21 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "曜",
+          "other": "耀",
+          "context": "不開；陰風怒號，濁浪排空；日星隱曜，山岳潛形；商旅不行，檣傾楫摧；薄暮冥冥，虎嘯猿啼。登",
+          "page": "岳陽樓記"
+        },
+        {
+          "ours": "欤",
+          "other": "乎",
+          "context": "先天下之憂而憂，後天下之樂而樂」欤！噫！微斯人，吾誰與歸？時九月十五日。Category",
+          "page": "岳陽樓記"
+        }
+      ]
     },
     {
       "id": "daxiezhongshu",
@@ -737,7 +1032,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jichengtiansi",
@@ -749,7 +1045,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "中",
+          "other": "上",
+          "context": "相與步於中庭。庭下如積水空明，水中藻荇交橫，蓋竹柏影也。何夜無月？何處無竹柏？但少閑人如",
+          "page": "記承天寺夜遊"
+        }
+      ]
     },
     {
       "id": "zuigongtingji",
@@ -761,7 +1065,15 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "让",
+          "other": "酿",
+          "context": "",
+          "page": "醉翁亭記"
+        }
+      ]
     },
     {
       "id": "yujiaao-tianjie",
@@ -773,7 +1085,15 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "取",
+          "other": "往",
+          "context": "。九萬里風鵬正舉。風休住，蓬舟吹取三山去。===漁家傲(雪裏已知春信至)===雪裏已知春",
+          "page": "漁家傲 (李清照)"
+        }
+      ]
     },
     {
       "id": "yewang",
@@ -794,7 +1114,15 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "秋",
+          "other": "春",
+          "context": "東皐薄暮望，徙倚欲何依。樹樹皆秋色，山山唯落暉。牧人驅犢返，獵馬帶禽歸。相顧無相識，長",
+          "page": "野望 (王績)"
+        }
+      ]
     },
     {
       "id": "beimingyouyu",
@@ -806,7 +1134,63 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "扶",
+          "other": "抉",
+          "context": "「鵬之徙於南冥也，水擊三千里，摶扶搖而上者九萬里，去以六月息者也。」野馬也，塵埃也，生物",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "鸴",
+          "other": "学",
+          "context": "莫之夭閼者，而後乃今將圖南。蜩與鸴鳩笑之曰：「我決起而飛，枪榆枋，時則不至，而控於地",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "枪",
+          "other": "抢",
+          "context": "與鸴鳩笑之曰：「我決起而飛，枪榆枋，時則不至，而控於地而已矣，奚以之九萬里而南爲？」",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "太",
+          "other": "泰",
+          "context": "其名爲鯤。有鳥焉，其名爲鵬，背若太山，翼若垂天之雲，摶扶搖羊角而上者九萬里，絕雲氣，",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "扶",
+          "other": "抉",
+          "context": "，背若太山，翼若垂天之雲，摶扶搖羊角而上者九萬里，絕雲氣，負青天，然後圖南，且適南冥",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "境",
+          "other": "竟",
+          "context": "不加沮，定乎內外之分，辯乎榮辱之境，斯已矣。彼其於世，未數數然也，雖然，猶有未樹也。夫列",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "有",
+          "other": "又",
+          "context": "也。夫列子御風而行，泠然善也，旬有五日而後反。彼於致福者，未數數然也。此雖免乎行，猶有所",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "秕",
+          "other": "粃",
+          "context": "旱金石流、土山焦而不熱，是其塵垢秕穅，將猶陶鑄堯、舜者也，孰肯以物爲事？」宋人資章甫而適",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "牦",
+          "other": "斄",
+          "context": "避高下，中於機辟，死於罔罟。今夫牦牛，其大若垂天之雲，此能爲大矣，而不能執鼠。今子有大樹",
+          "page": "莊子/逍遙遊"
+        }
+      ]
     },
     {
       "id": "dadaozhixing",
@@ -818,7 +1202,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xiaoshitan",
@@ -830,7 +1215,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "taohuayuanji",
@@ -851,7 +1237,111 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "元",
+          "other": "康",
+          "context": "",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "缘溪行",
+          "other": "从溪而行",
+          "context": "爲業《藝文類聚》無此二字，亦通。缘溪行，忘路之遠近。忽逢桃花林，夾《藝文類聚》「夾」下有「兩",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "鲜美",
+          "other": "芬暧",
+          "context": "逢桃花林，夾岸數百步中無雜樹，芳鲜美，落英繽紛。漁人甚異之。復前行，欲窮其林。林盡水源，",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "船",
+          "other": "舡",
+          "context": "ans:彷彿}-若有光。便舍船，从口入，初極狹，纔通人。复行数十步，豁然開朗。土地平曠",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "从口",
+          "other": "步",
+          "context": "彷彿}-若有光。便舍船，从口入，初極狹，纔通人。复行数十步，豁然開朗。土地平曠，屋舍",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "复行数十步",
+          "other": "行四五十步",
+          "context": "6，从口入，初極狹，纔通人。复行数十步，豁然開朗。土地平曠，屋舍俨然。有良田、美池",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "然",
+          "other": "连接",
+          "context": "，豁然開朗。土地平曠，屋舍俨然。有良田、美池、桑竹之屬。阡陌交通，鷄犬相聞自「土地",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "著",
+          "other": "着",
+          "context": "鷄犬相聞」。其中往來種作，男女衣著，悉如外人。黃髮垂髫，并怡然自樂自「其中往",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "垂髫",
+          "other": "髫齓",
+          "context": "，男女衣著，悉如外人。黃髮垂髫，并怡然自樂自「其中往來種作」至「並怡然自樂」",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "并",
+          "other": "并足",
+          "context": "11，悉如外人。黃髮垂髫，并怡然自樂自「其中往來種作」至「並怡然自樂」：《藝文類",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "时乱",
+          "other": "难",
+          "context": "，李注本無「爲」字。。自云先世避时乱《藝文類聚》無「自」字、「時」字，《太平御覽》無「自",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "船",
+          "other": "舡",
+          "context": "：「不足爲外人道也。」既出，得其船，便扶向路，處處誌之。及郡下，詣太守，説如此。",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "规",
+          "other": "亲",
+          "context": "不復得路。，高尚士也。聞之，欣然规往曾本、蘇寫本云，一本有遊焉二字。。未果，尋病終。後",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "长",
+          "other": "良",
+          "context": "。桑竹垂餘蔭，菽稷隨時藝。春蠶收长絲，秋熟靡王稅。荒路曖交通，鷄犬互鳴吠。俎豆猶古法，",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "游",
+          "other": "迎",
+          "context": "，衣裳無新製。童孺縱行歌，斑白歡游詣。草榮識節和，木衰知風厲。雖無紀曆誌，四時自成歲。",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "蔽",
+          "other": "闭",
+          "context": "一朝敞神界。淳薄既異源，旋復還幽蔽。借問游方士，焉測尘嚣外？願言躡輕風，高舉尋",
+          "page": "桃花源記"
+        },
+        {
+          "ours": "尘嚣外",
+          "other": "尘外地",
+          "context": "蔽。借問游方士，焉測尘嚣外？願言躡輕風，高舉尋吾契。",
+          "page": "桃花源記"
+        }
+      ]
     },
     {
       "id": "ailianshuo",
@@ -863,7 +1353,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shihaoli",
@@ -875,7 +1366,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "suoyoujiayao",
@@ -896,7 +1388,8 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "loushiming",
@@ -908,7 +1401,8 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "masuo",
@@ -920,7 +1414,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zijin",
@@ -932,7 +1427,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shiwei",
@@ -949,7 +1445,8 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "songshaoshu-wai",
@@ -963,7 +1460,8 @@
       "miss": [],
       "variantNotes": [
         "一作知"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "gulangyuexing",
@@ -975,7 +1473,33 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "青",
+          "other": "白",
+          "context": "月，呼作白玉盤。又疑瑤臺鏡，飛在青雲端。仙人垂兩足，桂樹作團團。白兔擣藥成，問言2",
+          "page": "古朗月行"
+        },
+        {
+          "ours": "作",
+          "other": "何",
+          "context": "飛在青雲端。仙人垂兩足，桂樹作團團。白兔擣藥成，問言与谁餐。蟾蜍蝕圓影，大明夜已殘",
+          "page": "古朗月行"
+        },
+        {
+          "ours": "与谁",
+          "other": "谁与",
+          "context": "桂樹作團團。白兔擣藥成，問言与谁餐。蟾蜍蝕圓影，大明夜已殘。羿昔落九烏，天人清且安。陰",
+          "page": "古朗月行"
+        },
+        {
+          "ours": "凄",
+          "other": "恻",
+          "context": "此淪惑，去去不足觀。憂來其如何，凄愴摧心肝。Category:唐詩Category:詠月",
+          "page": "古朗月行"
+        }
+      ]
     },
     {
       "id": "yonge",
@@ -987,7 +1511,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "minnong2",
@@ -999,7 +1524,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jiangnan",
@@ -1011,7 +1537,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "hua",
@@ -1034,7 +1561,8 @@
       ],
       "variantNotes": [
         "又作两绝云"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "feng",
@@ -1046,7 +1574,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xunyinzhe",
@@ -1058,7 +1587,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xiaochi",
@@ -1070,7 +1600,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "chunxiao",
@@ -1082,7 +1613,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "chishang",
@@ -1094,7 +1626,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "huaji",
@@ -1115,7 +1648,8 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xiangsi",
@@ -1127,7 +1661,21 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "春",
+          "other": "秋",
+          "context": "紅豆生南國，春來發几枝。愿 𫖸君多采擷，此物最相思。Catego",
+          "page": "相思"
+        },
+        {
+          "ours": "几",
+          "other": "故",
+          "context": "紅豆生南國，春來發几枝。愿 𫖸君多采擷，此物最相思。Category:唐詩",
+          "page": "相思"
+        }
+      ]
     },
     {
       "id": "zengwanglun",
@@ -1139,7 +1687,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jingyesi",
@@ -1151,7 +1700,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yeshusuojian",
@@ -1163,7 +1713,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shanxing",
@@ -1175,7 +1726,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "suojian",
@@ -1187,7 +1739,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zaofabaidicheng",
@@ -1199,7 +1752,21 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "尽",
+          "other": "住",
+          "context": "間，千里江陵一日還。兩岸猿聲啼不尽，轻舟已过萬重山。Category:唐詩Category",
+          "page": "早發白帝城"
+        },
+        {
+          "ours": "轻舟已过",
+          "other": "须臾过却",
+          "context": "江陵一日還。兩岸猿聲啼不尽，轻舟已过萬重山。Category:唐詩Category:七言絕",
+          "page": "早發白帝城"
+        }
+      ]
     },
     {
       "id": "wangtianmenshan",
@@ -1211,7 +1778,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "至",
+          "other": "直",
+          "context": "天門中斷楚江開，碧水東流至此迴。兩岸青山相對出，孤帆一片日邊來。Category",
+          "page": "望天門山"
+        }
+      ]
     },
     {
       "id": "wangdongting",
@@ -1223,7 +1798,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zengliujingwen",
@@ -1235,7 +1811,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "cailianqu",
@@ -1247,7 +1824,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yinhushang",
@@ -1259,7 +1837,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "sanqudaozhong",
@@ -1271,7 +1850,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jiuyuejiuri",
@@ -1283,7 +1863,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yuanri",
@@ -1295,7 +1876,21 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "春",
+          "other": "东",
+          "context": "爆竹聲中一歲除，春風送暖入屠蘇。千門萬戶曈曈日，总把新桃換舊符。Cat",
+          "page": "元日 (王安石)"
+        },
+        {
+          "ours": "总把",
+          "other": "争插",
+          "context": "風送暖入屠蘇。千門萬戶曈曈日，总把新桃換舊符。Category:千家詩",
+          "page": "元日 (王安石)"
+        }
+      ]
     },
     {
       "id": "dalinsitaohua",
@@ -1307,7 +1902,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yijiangnan",
@@ -1319,7 +1915,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "huichongchunjiang",
@@ -1331,7 +1928,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jiangpan",
@@ -1352,7 +1950,8 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "qingming",
@@ -1364,7 +1963,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "chuzhouxijian",
@@ -1376,7 +1976,27 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "幽",
+          "other": "芳",
+          "context": "獨憐幽草澗邊生，上有黃鸝深树鳴。春潮帶雨晚來急，野渡",
+          "page": "滁州西澗"
+        },
+        {
+          "ours": "生",
+          "other": "行",
+          "context": "獨憐幽草澗邊生，上有黃鸝深树鳴。春潮帶雨晚來急，野渡無人舟自橫。",
+          "page": "滁州西澗"
+        },
+        {
+          "ours": "树",
+          "other": "处",
+          "context": "憐幽草澗邊生，上有黃鸝深树鳴。春潮帶雨晚來急，野渡無人舟自橫。Category:",
+          "page": "滁州西澗"
+        }
+      ]
     },
     {
       "id": "jueju-chiri",
@@ -1388,7 +2008,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yesushansi",
@@ -1400,7 +2021,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xiaoerchuidiao",
@@ -1412,7 +2034,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "侧",
+          "other": "倒",
+          "context": "蓬頭稚子學垂綸侧坐莓苔草映身路人借問遙招手怕得魚驚不應人Categor",
+          "page": "小兒垂釣"
+        }
+      ]
     },
     {
       "id": "chilege",
@@ -1424,7 +2054,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "wanglushanpubu",
@@ -1436,7 +2067,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "meihua",
@@ -1448,7 +2080,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jiangxue",
@@ -1460,7 +2093,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "dengguanquelou",
@@ -1472,7 +2106,21 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "雀",
+          "other": "鹊",
+          "context": "",
+          "page": "登鸛雀樓 (王之渙)"
+        },
+        {
+          "ours": "层",
+          "other": "重",
+          "context": "》注「一作徹」欲窮千里目，更上一层樓。thumb|汉语普通话朗读Category:代表作",
+          "page": "登鸛雀樓 (王之渙)"
+        }
+      ]
     },
     {
       "id": "yongliu",
@@ -1486,7 +2134,8 @@
       "miss": [],
       "variantNotes": [
         "一作柳枝词"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "minnong1",
@@ -1498,7 +2147,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jingcisi",
@@ -1510,7 +2160,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "cunju",
@@ -1522,7 +2173,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jueju-huangli",
@@ -1534,7 +2186,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zhouyeshujian",
@@ -1546,7 +2199,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "guyuancao",
@@ -1558,7 +2212,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "qiqiao",
@@ -1570,7 +2225,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shanjuqiuming",
@@ -1582,7 +2238,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jihai",
@@ -1605,7 +2262,8 @@
       ],
       "variantNotes": [
         "又作山中老树"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "fengqiaoyebo",
@@ -1619,7 +2277,8 @@
       "miss": [],
       "variantNotes": [
         "一作夜泊枫江"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "yugezi",
@@ -1631,7 +2290,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shier",
@@ -1643,7 +2303,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "guanshu",
@@ -1655,7 +2316,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zengwang",
@@ -1667,7 +2329,8 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "changxiangsi",
@@ -1679,7 +2342,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "tilinandi",
@@ -1691,7 +2355,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xiangcunsiyue",
@@ -1711,7 +2376,8 @@
         "一作福",
         "一作风光",
         "一作阁"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "congjunxing",
@@ -1723,7 +2389,21 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "玉",
+          "other": "雁",
+          "context": "青海長雲暗雪山，孤城遙望玉門關。黃沙百戰穿金甲，不破樓蘭终不還。Catego",
+          "page": "從軍行 (青海長雲暗雪山)"
+        },
+        {
+          "ours": "终",
+          "other": "竟",
+          "context": "門關。黃沙百戰穿金甲，不破樓蘭终不還。Category:唐詩Category:七言絕句",
+          "page": "從軍行 (青海長雲暗雪山)"
+        }
+      ]
     },
     {
       "id": "liangzhouci-wangzhihuan",
@@ -1735,7 +2415,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "sishitianyuan-31",
@@ -1747,7 +2428,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "cunwan",
@@ -1767,7 +2449,8 @@
         "一作福",
         "一作风光",
         "一作阁"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "qiuyejiangxiao",
@@ -1779,7 +2462,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zhizibing",
@@ -1792,7 +2476,7 @@
       "hit": 0,
       "miss": [
         {
-          "line": "稚子金盆脱晓冰彩丝穿取当银铮",
+          "line": "稚子金盆脱晓冰彩丝穿取当银钲",
           "nearest": null
         },
         {
@@ -1802,7 +2486,8 @@
       ],
       "variantNotes": [
         "又作阴"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "songyuaner",
@@ -1814,7 +2499,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "niaomingjian",
@@ -1826,7 +2512,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "huanghelou",
@@ -1838,7 +2525,21 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "碧",
+          "other": "绿",
+          "context": "樓，煙花三月下揚州。孤帆遠影碧山盡，唯見長江天際流。thumb|汉语普通话朗读C",
+          "page": "黃鶴樓送孟浩然之廣陵"
+        },
+        {
+          "ours": "山",
+          "other": "空",
+          "context": "花三月下揚州。孤帆遠影碧山盡，唯見長江天際流。thumb|汉语普通话朗读Cate",
+          "page": "黃鶴樓送孟浩然之廣陵"
+        }
+      ]
     },
     {
       "id": "shuhuyin",
@@ -1850,7 +2551,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "wanghulou",
@@ -1862,7 +2564,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "huixiangyoushu",
@@ -1874,7 +2577,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "sujiandejiang",
@@ -1886,7 +2590,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "烟",
+          "other": "幽",
+          "context": "移舟泊烟渚，日暮客愁新。野曠天低樹，江清月近人。Categor",
+          "page": "宿建德江"
+        }
+      ]
     },
     {
       "id": "chunri",
@@ -1898,7 +2610,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jiangnanchun",
@@ -1910,7 +2623,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "langtaosha",
@@ -1922,7 +2636,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xijiangyue",
@@ -1934,7 +2649,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "guogurenzhuang",
@@ -1955,7 +2671,8 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shiyiwangyue",
@@ -1967,7 +2684,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "bosuanzi-song",
@@ -1979,7 +2697,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "hanshi",
@@ -1991,7 +2710,33 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "寒食",
+          "other": "寒食日即事",
+          "context": "",
+          "page": "寒食 (韓翃)"
+        },
+        {
+          "ours": "城无",
+          "other": "风何",
+          "context": "春城无處不飞花，寒食東風御柳斜。日暮漢宮傳蠟燭，轻",
+          "page": "寒食 (韓翃)"
+        },
+        {
+          "ours": "日暮",
+          "other": "一夜",
+          "context": "處不飞花，寒食東風御柳斜。日暮漢宮傳蠟燭，轻煙散入五侯家。Category:唐詩",
+          "page": "寒食 (韓翃)"
+        },
+        {
+          "ours": "轻",
+          "other": "青",
+          "context": "食東風御柳斜。日暮漢宮傳蠟燭，轻煙散入五侯家。Category:唐詩Category:",
+          "page": "寒食 (韓翃)"
+        }
+      ]
     },
     {
       "id": "zaochun",
@@ -2003,7 +2748,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "烟",
+          "other": "花",
+          "context": "遙看近卻無。最是一年春好處，絕勝烟柳滿皇都。莫道官忙身老大，即無年少逐春心。憑君先到江头",
+          "page": "早春呈水部張十八員外二首"
+        }
+      ]
     },
     {
       "id": "chunyexiyu",
@@ -2015,7 +2768,15 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "乃",
+          "other": "及",
+          "context": "好雨知時節，當春乃發生。隨風潛入夜，潤物細無聲。野徑雲俱黑，江船火獨明。",
+          "page": "春夜喜雨"
+        }
+      ]
     },
     {
       "id": "jiangshangyuzhe",
@@ -2027,7 +2788,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "bochuanguazhou",
@@ -2048,7 +2810,8 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "huanxisha-qishui",
@@ -2062,7 +2825,8 @@
       "miss": [],
       "variantNotes": [
         "又作二首"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "youyuanbuzhi",
@@ -2074,7 +2838,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "youziyin",
@@ -2086,7 +2851,15 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "谁言",
+          "other": "难将",
+          "context": "身上衣。臨行密密縫，意恐遲遲歸。谁言寸草心，報得三春暉。Category:唐詩",
+          "page": "遊子吟 (孟郊)"
+        }
+      ]
     },
     {
       "id": "shihuiyin",
@@ -2103,7 +2876,8 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zhushi",
@@ -2115,7 +2889,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "tiaotiaoqianniuxing",
@@ -2132,7 +2907,8 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "caiwei",
@@ -2144,7 +2920,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "wenguanjun",
@@ -2158,7 +2935,8 @@
       "miss": [],
       "variantNotes": [
         "一作收两河"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "mashi",
@@ -2170,7 +2948,39 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "星",
+          "other": "精",
+          "context": "赤驥最承恩。此馬非凡馬，房星本是星。向前敲瘦骨，猶自帶銅聲。大漠山如雪，燕山月似鉤。",
+          "page": "馬詩"
+        },
+        {
+          "ours": "山",
+          "other": "沙",
+          "context": "。向前敲瘦骨，猶自帶銅聲。大漠山如雪，燕山月似鉤。何當金絡腦，快走踏清秋？飢臥骨查牙，",
+          "page": "馬詩"
+        },
+        {
+          "ours": "去",
+          "other": "死",
+          "context": "騎。吾聞果下馬，羈策任蠻兒。飂叔去悤悤，如今不豢龍。夜来霜壓棧，駿骨折西風。催榜渡乌江",
+          "page": "馬詩"
+        },
+        {
+          "ours": "乌江",
+          "other": "江东",
+          "context": "。夜来霜壓棧，駿骨折西風。催榜渡乌江，神騅泣向風。君王今解劍，何處逐英雄？内馬賜宫人，",
+          "page": "馬詩"
+        },
+        {
+          "ours": "君",
+          "other": "吾",
+          "context": "西風。催榜渡乌江，神騅泣向風。君王今解劍，何處逐英雄？内馬賜宫人，銀韀刺騏驎。午時鹽坂",
+          "page": "馬詩"
+        }
+      ]
     },
     {
       "id": "liangzhouci-wanghan",
@@ -2182,7 +2992,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "chusai",
@@ -2194,7 +3005,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "biedongda",
@@ -2206,7 +3018,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xiarijueju",
@@ -2218,7 +3031,21 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "作",
+          "other": "为",
+          "context": "生當作人傑，死亦为鬼雄。至今思，不肯過。",
+          "page": "烏江 (李清照)"
+        },
+        {
+          "ours": "为",
+          "other": "作",
+          "context": "生當作人傑，死亦为鬼雄。至今思，不肯過。",
+          "page": "烏江 (李清照)"
+        }
+      ]
     },
     {
       "id": "change",
@@ -2230,7 +3057,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "mujiangyin",
@@ -2242,7 +3070,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "xuemei",
@@ -2256,7 +3085,8 @@
       "miss": [],
       "variantNotes": [
         "一作阁"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "longpo",
@@ -2268,7 +3098,15 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "各不同",
+          "other": "总不同",
+          "context": "橫看成嶺側成峰，遠近高低各不同。不識廬山真面目，祇 只緣身在此山中。",
+          "page": "題西林壁 (蘇軾)"
+        }
+      ]
     },
     {
       "id": "luchai",
@@ -2280,7 +3118,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "sishitianyuan-25",
@@ -2292,7 +3131,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "saixiaqu",
@@ -2306,7 +3146,8 @@
       "miss": [],
       "variantNotes": [
         "一作卢纶诗"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "momei",
@@ -2318,7 +3159,27 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "我",
+          "other": "吾",
+          "context": "我家洗硯池头樹，花開淡墨痕。不要人誇好颜色，只留清氣",
+          "page": "墨梅"
+        },
+        {
+          "ours": "头",
+          "other": "边",
+          "context": "我家洗硯池头樹，花開淡墨痕。不要人誇好颜色，只留清氣滿乾坤。===",
+          "page": "墨梅"
+        },
+        {
+          "ours": "好颜色",
+          "other": "颜色好",
+          "context": "池头樹，花開淡墨痕。不要人誇好颜色，只留清氣滿乾坤。====另：《列朝詩集》版====我",
+          "page": "墨梅"
+        }
+      ]
     },
     {
       "id": "suxinshi",
@@ -2330,7 +3191,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "qingpingyue-cunju",
@@ -2342,7 +3204,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "duzuojingting",
@@ -2354,7 +3217,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "furonglou",
@@ -2366,7 +3230,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "feng-mi",
@@ -2378,7 +3243,8 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "lunyu12",
@@ -2391,6 +3257,50 @@
       "hit": 9,
       "miss": [],
       "variantNotes": [],
+      "variants": [
+        {
+          "ours": "也已",
+          "other": "也已矣",
+          "context": "而愼於言，就有道而正焉：可謂好學也已。」一之十五子貢曰：「貧而無諂，富而無驕，何如？」子曰",
+          "page": "論語/學而第一"
+        },
+        {
+          "ours": "贫而乐",
+          "other": "贫而乐道",
+          "context": "無驕，何如？」子曰：「可也。未若贫而乐，富而好禮者也」。子貢曰：「《詩》云：『如切如磋，如琢",
+          "page": "論語/學而第一"
+        },
+        {
+          "ours": "是亦为政",
+          "other": "是亦为政也",
+          "context": "無法判定引用究竟在何處終止。}}是亦为政，奚其爲爲政？」二之二二子曰：「人而無信，不知其可也。",
+          "page": "論語/爲政第二"
+        },
+        {
+          "ours": "逝",
+          "other": "选",
+          "context": "也？」子曰：「何爲其然也？君子可逝袁金平、李麗珠根據出土文獻與之對應句作「君子可選」，認",
+          "page": "論語/雍也第六"
+        },
+        {
+          "ours": "擧一隅",
+          "other": "擧一隅而示之",
+          "context": "之八子曰：「不憤不啟；不悱不發。擧一隅，不以三隅反，则不复也。」七之九子食於有喪者之側，未嘗飽",
+          "page": "論語/述而第七"
+        },
+        {
+          "ours": "则不复也",
+          "other": "则吾不复也",
+          "context": "；不悱不發。擧一隅，不以三隅反，则不复也。」七之九子食於有喪者之側，未嘗飽也。子於是日哭，則不",
+          "page": "論語/述而第七"
+        },
+        {
+          "ours": "艺",
+          "other": "执",
+          "context": "。」七之十七子所雅言：「詩、書、艺黄尚明根據「執」「埶」二字相混指出這裏的「執」應該讀爲",
+          "page": "論語/述而第七"
+        }
+      ],
       "override": "本篇是《论语》六章的合选，没有单页收全，必须跨页合并。"
     },
     {
@@ -2412,7 +3322,21 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "至",
+          "other": "致",
+          "context": "自得，聖心備焉。故不積跬步，無以至千里；不積小流，無以成江海。騏驥一躍，不能十歩；駑馬十",
+          "page": "荀子/勸學篇"
+        },
+        {
+          "ours": "六",
+          "other": "八",
+          "context": "-{蚓}-與螾同，蚯蚓也。}}蟹六跪而二螯，非-{蛇}-鱔之穴無可寄-{託}-者，用心躁",
+          "page": "荀子/勸學篇"
+        }
+      ]
     },
     {
       "id": "shengshenman",
@@ -2424,7 +3348,57 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "最",
+          "other": "正",
+          "context": "0慘慘戚戚。乍暖還寒時候，最難將息。三杯兩盏淡酒，怎敵他、晚來風急",
+          "page": "聲聲慢 (李清照)"
+        },
+        {
+          "ours": "盏",
+          "other": "杯",
+          "context": "還寒時候，最難將息。三杯兩盏淡酒，怎敵他、晚來風急？雁過也，正傷心",
+          "page": "聲聲慢 (李清照)"
+        },
+        {
+          "ours": "他",
+          "other": "它",
+          "context": "難將息。三杯兩盏淡酒，怎敵他、晚來風急？雁過也，正傷心，卻是舊時相識。",
+          "page": "聲聲慢 (李清照)"
+        },
+        {
+          "ours": "晚",
+          "other": "晓",
+          "context": "。三杯兩盏淡酒，怎敵他、晚來風急？雁過也，正傷心，卻是舊時相識。滿地黃花",
+          "page": "聲聲慢 (李清照)"
+        },
+        {
+          "ours": "急",
+          "other": "力",
+          "context": "3淡酒，怎敵他、晚來風急？雁過也，正傷心，卻是舊時相識。滿地黃花堆積。憔悴",
+          "page": "聲聲慢 (李清照)"
+        },
+        {
+          "ours": "正",
+          "other": "纵",
+          "context": "4、晚來風急？雁過也，正傷心，卻是舊時相識。滿地黃花堆積。憔悴損，如今有誰8",
+          "page": "聲聲慢 (李清照)"
+        },
+        {
+          "ours": "堪",
+          "other": "忺",
+          "context": "。滿地黃花堆積。憔悴損，如今有誰堪摘？守著窗兒，獨自怎生得黑？梧桐更兼細雨，到黃昏、",
+          "page": "聲聲慢 (李清照)"
+        },
+        {
+          "ours": "著",
+          "other": "定",
+          "context": "積。憔悴損，如今有誰堪摘？守著窗兒，獨自怎生得黑？梧桐更兼細雨，到黃昏、點點滴滴。這",
+          "page": "聲聲慢 (李清照)"
+        }
+      ]
     },
     {
       "id": "kezhi",
@@ -2436,7 +3410,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jiangjinjiu",
@@ -2453,7 +3428,111 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "到",
+          "other": "倒",
+          "context": "君不見，之水天上來，奔流到海不復回！君不見，高堂明鏡悲白髮，朝如青4",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "回",
+          "other": "还",
+          "context": "見，之水天上來，奔流到海不復回！君不見，高堂明鏡悲白髮，朝如青丝暮成雪",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "高堂",
+          "other": "床头",
+          "context": "奔流到海不復回！君不見，高堂明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "青",
+          "other": "春",
+          "context": "！君不見，高堂明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡，莫使金樽空對月。，從",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "丝",
+          "other": "云",
+          "context": "見，高堂明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡，莫使金樽空對月。，從敦煌「",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "成",
+          "other": "如",
+          "context": "明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡，莫使金樽空對月。，從敦煌「伯256",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "千",
+          "other": "黄",
+          "context": "從敦煌「伯2567」唐詩選殘卷。千金散盡還復來。烹羊宰牛且爲樂，會須一飲三百杯。，。（將",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "杯",
+          "other": "君",
+          "context": "，會須一飲三百杯。，。（將）進酒杯莫停。与君歌一曲，請君爲我倾耳聽。敦煌「伯25",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "与",
+          "other": "为",
+          "context": "百杯。，。（將）進酒杯莫停。与君歌一曲，請君爲我倾耳聽。敦煌「伯2567」唐詩選",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "倾",
+          "other": "侧",
+          "context": "莫停。与君歌一曲，請君爲我倾耳聽。敦煌「伯2567」唐詩選殘卷此句作「請君為我傾」",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "圣贤",
+          "other": "贤圣",
+          "context": "」。，但願長醉不复醒。古來圣贤皆寂寞，惟有飲者留其名。昔时宴，斗酒十千恣歡",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "寂寞",
+          "other": "死尽",
+          "context": "長醉不复醒。古來圣贤皆寂寞，惟有飲者留其名。昔时宴，斗酒十千恣歡謔。主人",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "昔时",
+          "other": "昔日",
+          "context": "1皆寂寞，惟有飲者留其名。昔时宴，斗酒十千恣歡謔。主人何为言少錢？径須沽",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "何为",
+          "other": "何用",
+          "context": "昔时宴，斗酒十千恣歡謔。主人何为言少錢？径須沽取对君酌。五花馬，千金裘。",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "径",
+          "other": "且",
+          "context": "十千恣歡謔。主人何为言少錢？径須沽取对君酌。五花馬，千金裘。呼兒將出換美酒，",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "对",
+          "other": "共",
+          "context": "人何为言少錢？径須沽取对君酌。五花馬，千金裘。呼兒將出換美酒，与尔同銷萬",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "与尔",
+          "other": "为汝",
+          "context": "五花馬，千金裘。呼兒將出換美酒，与尔同銷萬古愁。----Category:酒詩Categ",
+          "page": "將進酒 (李白)"
+        }
+      ]
     },
     {
       "id": "quyuanliezhuan",
@@ -2474,7 +3553,8 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "guiyuantianju",
@@ -2488,6 +3568,182 @@
       "miss": [],
       "variantNotes": [
         "一作树木残根"
+      ],
+      "variants": [
+        {
+          "ours": "羁",
+          "other": "羇",
+          "context": "愛丘山。誤落塵網中，一去三十年。羁鳥恋舊林，池魚思故淵。開荒南野際，守拙歸園田。",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "恋",
+          "other": "眷",
+          "context": "誤落塵網中，一去三十年。羁鳥恋舊林，池魚思故淵。開荒南野際，守拙歸園田。方宅",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "野",
+          "other": "亩",
+          "context": "鳥恋舊林，池魚思故淵。開荒南野際，守拙歸園田。方宅十餘畝，草屋八九間，榆柳蔭",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "宅",
+          "other": "泽",
+          "context": "。開荒南野際，守拙歸園田。方宅十餘畝，草屋八九間，榆柳蔭後簷，桃李羅堂前",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "屋",
+          "other": "舍",
+          "context": "，守拙歸園田。方宅十餘畝，草屋八九間，榆柳蔭後簷，桃李羅堂前。曖曖遠人村，依",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "李",
+          "other": "竹",
+          "context": "屋八九間，榆柳蔭後簷，桃李羅堂前。曖曖遠人村，依依墟里煙；狗吠深巷中，雞鳴桑樹",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "巅",
+          "other": "颠",
+          "context": "依依墟里煙；狗吠深巷中，雞鳴桑樹巅。戶庭無塵雜，虛室有餘閑。久在樊籠里，復得返",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "得",
+          "other": "安",
+          "context": "，虛室有餘閑。久在樊籠里，復得返自然。===其二===野外罕人事，窮巷寡輪鞅",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "荆",
+          "other": "柴",
+          "context": "罕人事，窮巷寡輪鞅；白日掩荆扉，对酒絕塵想。時復墟里人，披草共來往",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "对酒",
+          "other": "虚室",
+          "context": "寡輪鞅；白日掩荆扉，对酒絕塵想。時復墟里人，披草共來往；相見無1",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "里人",
+          "other": "曲中",
+          "context": "12扉，对酒絕塵想。時復墟里人，披草共來往；相見無杂言，但道桑麻長。桑",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "草",
+          "other": "衣",
+          "context": "13絕塵想。時復墟里人，披草共來往；相見無杂言，但道桑麻長。桑麻日已長，我",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "杂",
+          "other": "别",
+          "context": "14，披草共來往；相見無杂言，但道桑麻長。桑麻日已長，我土日已廣，常恐霜",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "土",
+          "other": "志",
+          "context": "言，但道桑麻長。桑麻日已長，我土日已廣，常恐霜霰至，零落同草莽。===其三===種豆",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "晨兴",
+          "other": "侵晨",
+          "context": "三===種豆南山下，草盛豆苗稀，晨兴理荒穢，带月荷鋤歸。道狹草木長，夕露沾我",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "带",
+          "other": "戴",
+          "context": "下，草盛豆苗稀，晨兴理荒穢，带月荷鋤歸。道狹草木長，夕露沾我衣，衣沾不足",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "木",
+          "other": "不",
+          "context": "理荒穢，带月荷鋤歸。道狹草木長，夕露沾我衣，衣沾不足惜，但使願无違。=",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "衣沾",
+          "other": "我衣",
+          "context": "。道狹草木長，夕露沾我衣，衣沾不足惜，但使願无違。===其四===久去山澤遊",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "无",
+          "other": "莫",
+          "context": "露沾我衣，衣沾不足惜，但使願无違。===其四===久去山澤遊，浪莽林野娛。試攜子侄",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "处",
+          "other": "所",
+          "context": "徘徊丘壠間，依依昔人居；井竈有遺处，桑竹殘朽株曾本云，一作樹木殘根株。。借問採薪",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "竹",
+          "other": "麻",
+          "context": "依依昔人居；井竈有遺处，桑竹殘朽株曾本云，一作樹木殘根株。。借問採薪者，此人皆焉",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "没",
+          "other": "殁",
+          "context": "薪者，此人皆焉如？薪者向我言，死没無復餘。一世異朝市，此语真不虛。人生似幻化，終",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "语",
+          "other": "言",
+          "context": "死没無復餘。一世異朝市，此语真不虛。人生似幻化，終當歸空無。===其五==",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "空",
+          "other": "虚",
+          "context": "26真不虛。人生似幻化，終當歸空無。===其五===怅恨獨策還，崎嶇歷榛曲。",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "怅",
+          "other": "恨",
+          "context": "當歸空無。===其五===怅恨獨策還，崎嶇歷榛曲。山涧清且淺，遇以濯吾",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "山涧",
+          "other": "涧水",
+          "context": "=怅恨獨策還，崎嶇歷榛曲。山涧清且淺，遇以濯吾足。漉我新熟酒，隻32",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "遇",
+          "other": "可",
+          "context": "還，崎嶇歷榛曲。山涧清且淺，遇以濯吾足。漉我新熟酒，隻鸡招近局。",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "局",
+          "other": "属",
+          "context": "漉我新熟酒，隻鸡招近局。日入室中暗，荊薪代明燭。歡來苦夕短，已",
+          "page": "歸園田居"
+        },
+        {
+          "ours": "代",
+          "other": "继",
+          "context": "局。日入室中暗，荊薪代明燭。歡來苦夕短，已復至天旭。註釋Category:",
+          "page": "歸園田居"
+        }
       ]
     },
     {
@@ -2500,7 +3756,15 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "间",
+          "other": "生",
+          "context": "國神遊，多情應是、笑我生華髮。人间如夢，一尊還酹江月。洪邁《容齋續筆·卷八》〈詩詞改字〉",
+          "page": "念奴嬌 (蘇軾)"
+        }
+      ]
     },
     {
       "id": "mengyoutianmu",
@@ -2514,7 +3778,8 @@
       "miss": [],
       "variantNotes": [
         "一作别东鲁诸"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "shejiang",
@@ -2526,7 +3791,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "pipaxing",
@@ -2540,6 +3806,224 @@
       "miss": [],
       "variantNotes": [
         "一作水下难"
+      ],
+      "variants": [
+        {
+          "ours": "送客",
+          "other": "送客至",
+          "context": "，予左遷九江郡司馬。明年秋，送客湓浦口，聞舟船中夜彈琵琶者，聽其音，錚錚然有京都聲",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "舟船中",
+          "other": "舟中",
+          "context": "郡司馬。明年秋，送客湓浦口，聞舟船中夜彈琵琶者，聽其音，錚錚然有京都聲。問其人，本长安倡女",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "都",
+          "other": "邑",
+          "context": "夜彈琵琶者，聽其音，錚錚然有京都聲。問其人，本长安倡女，嘗學琵琶於穆、曹二善才，年長色衰，",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "悯默",
+          "other": "悯然",
+          "context": "賈人婦。遂命酒，使快彈數曲，曲罷悯默，自叙少小時歡樂事，今漂淪，轉徙於江湖間。予出官二年，",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "行",
+          "other": "引",
+          "context": "贈之。凡六百一十六言，命曰《琵琶行》。:潯陽江頭夜送客，楓葉荻花秋瑟瑟。:主人下馬客在",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "瑟瑟",
+          "other": "索索",
+          "context": "》。:潯陽江頭夜送客，楓葉荻花秋瑟瑟。:主人下馬客在船，舉酒欲飲無管絃。:醉不成歡慘將別，",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "抱",
+          "other": "把",
+          "context": "迴燈重開宴。:千呼萬喚始出來，猶抱琵琶半遮面。:轉軸撥絃三两聲，未成曲調先有情。:絃",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "两",
+          "other": "五",
+          "context": "猶抱琵琶半遮面。:轉軸撥絃三两聲，未成曲調先有情。:絃絃掩抑聲聲思，似訴平生不得9",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "意",
+          "other": "志",
+          "context": "。:絃絃掩抑聲聲思，似訴平生不得意。:低眉信手續續彈，說盡心中無限事。:輕攏慢-{zh:",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "切切",
+          "other": "窃窃",
+          "context": "绿腰。:大絃嘈嘈如急雨，小絃切切如私語。:嘈嘈切切错杂彈，大珠小珠落玉盤。:",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "切切",
+          "other": "窃窃",
+          "context": "急雨，小絃切切如私語。:嘈嘈切切错杂彈，大珠小珠落玉盤。:間關鶯語花底滑，幽咽",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "错杂",
+          "other": "杂错",
+          "context": "絃切切如私語。:嘈嘈切切错杂彈，大珠小珠落玉盤。:間關鶯語花底滑，幽咽泉流。",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "泉流",
+          "other": "流泉",
+          "context": "珠落玉盤。:間關鶯語花底滑，幽咽泉流。:冰泉冷澀絃凝絕，凝絕不通聲暂歇。:別",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "冰",
+          "other": "水",
+          "context": "間關鶯語花底滑，幽咽泉流。:冰泉冷澀絃凝絕，凝絕不通聲暂歇。:別有幽愁",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "暂",
+          "other": "渐",
+          "context": "冰泉冷澀絃凝絕，凝絕不通聲暂歇。:別有幽愁恨生，此時無聲勝有聲。:銀18",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "愁",
+          "other": "情",
+          "context": "，凝絕不通聲暂歇。:別有幽愁恨生，此時無聲勝有聲。:銀瓶乍破水漿迸，鐵騎突",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "瓶",
+          "other": "缾",
+          "context": "17恨生，此時無聲勝有聲。:銀瓶乍破水漿迸，鐵騎突出刀槍鳴。:曲終收撥當心畫，四絃一",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "船",
+          "other": "舟",
+          "context": "收撥當心畫，四絃一聲如裂帛。:東船西舫悄無言，唯见江心秋月白。:沉吟放撥插絃中，",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "见",
+          "other": "有",
+          "context": "裂帛。:東船西舫悄無言，唯见江心秋月白。:沉吟放撥插絃中，整頓衣裳起斂容。:自言",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "在",
+          "other": "近",
+          "context": "衣裳起斂容。:自言本是京城女，家在蝦陵下住。:十三學得琵琶成，名屬教坊第一部。:曲罷",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "伏",
+          "other": "服",
+          "context": "教坊第一部。:曲罷曾教善才伏，妝成每被秋娘妬。:五陵年少爭纏頭，一曲紅綃不知數。",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "云",
+          "other": "银",
+          "context": "少爭纏頭，一曲紅綃不知數。:鈿頭云篦擊節碎，血色羅裙翻酒汙。:今年歡笑復明年，秋月春風",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "鞍",
+          "other": "车",
+          "context": "姨死，暮去朝來顏色故。:門前冷落鞍馬稀，老大嫁作商人婦。:商人重利輕别离，前27",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "别离",
+          "other": "离别",
+          "context": "稀，老大嫁作商人婦。:商人重利輕别离，前月浮梁買茶去。:去來江口守空船，船月明",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "月",
+          "other": "年",
+          "context": "商人婦。:商人重利輕别离，前月浮梁買茶去。:去來江口守空船，船月明江水寒。:夜",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "月明",
+          "other": "明月",
+          "context": "浮梁買茶去。:去來江口守空船，船月明江水寒。:夜深忽夢少年事，梦啼妆泪紅闌干。:我聞琵琶",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "梦啼妆泪",
+          "other": "啼妆泪落",
+          "context": "28江水寒。:夜深忽夢少年事，梦啼妆泪紅闌干。:我聞琵琶已歎息，又聞此語重唧唧。:同是天涯",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "逢",
+          "other": "悲",
+          "context": "此語重唧唧。:同是天涯淪落人，相逢何必曾相識。:我從去年辞帝京，謫居卧病潯陽",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "辞",
+          "other": "离",
+          "context": "相逢何必曾相識。:我從去年辞帝京，謫居卧病潯陽城。:潯陽地僻無音樂，終歲",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "卧病",
+          "other": "病卧",
+          "context": "識。:我從去年辞帝京，謫居卧病潯陽城。:潯陽地僻無音樂，終歲不聞絲竹聲。:住近",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "地僻",
+          "other": "小处",
+          "context": "帝京，謫居卧病潯陽城。:潯陽地僻無音樂，終歲不聞絲竹聲。:住近湓江地低，黃蘆苦竹繞宅",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "血",
+          "other": "哭",
+          "context": "繞宅生。:其間旦暮聞何物，杜鵑啼血猿哀鳴。:春江花朝秋月夜，往往取酒還独傾。:豈",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "独",
+          "other": "自",
+          "context": "鳴。:春江花朝秋月夜，往往取酒還独傾。:豈無山歌與村笛，呕哑嘲哳難為聽。:今",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "呕哑",
+          "other": "欧哑",
+          "context": "還独傾。:豈無山歌與村笛，呕哑嘲哳難為聽。:今夜聞君琵琶語，如聽仙樂耳暫明。",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "座",
+          "other": "就",
+          "context": "淒不似向前聲，滿座重聞皆掩泣。:座中泣下誰最多，江州司馬青衫濕。==注释==Ca",
+          "page": "琵琶行"
+        },
+        {
+          "ours": "下",
+          "other": "泪",
+          "context": "，滿座重聞皆掩泣。:座中泣下誰最多，江州司馬青衫濕。==注释==Category",
+          "page": "琵琶行"
+        }
       ]
     },
     {
@@ -2552,7 +4036,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "denggao",
@@ -2564,7 +4049,27 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "清",
+          "other": "涛",
+          "context": "風急天高猿嘯哀，渚清沙白鳥飛回。無邊落木蕭蕭下，不盡長江滚滚來。萬里悲",
+          "page": "登高"
+        },
+        {
+          "ours": "滚滚",
+          "other": "衮衮",
+          "context": "鳥飛回。無邊落木蕭蕭下，不盡長江滚滚來。萬里悲秋常作客，百年多病獨登臺。艱難苦恨繁霜鬢，",
+          "page": "登高"
+        },
+        {
+          "ours": "秋常",
+          "other": "歌长",
+          "context": "蕭蕭下，不盡長江滚滚來。萬里悲秋常作客，百年多病獨登臺。艱難苦恨繁霜鬢，潦倒新停濁酒杯。",
+          "page": "登高"
+        }
+      ]
     },
     {
       "id": "duange",
@@ -2576,7 +4081,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "lisao",
@@ -2597,7 +4103,8 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "pusaman-zaoxiang",
@@ -2609,7 +4116,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shuxiang",
@@ -2621,7 +4129,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shudaonan",
@@ -2633,7 +4142,117 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "吁嚱",
+          "other": "嚱吁",
+          "context": "噫吁嚱！危乎高哉！道之難，難於上青天！及，開國何茫然！爾來四",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "不",
+          "other": "乃不",
+          "context": "及，開國何茫然！爾來四萬八千歲，不與塞通人煙。西當有鳥道，可以橫絶巅。地崩山摧壯",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "可",
+          "other": "何",
+          "context": "，不與塞通人煙。西當有鳥道，可以橫絶巅。地崩山摧壯士死，然後天梯石棧相鉤連。",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "巅",
+          "other": "颠",
+          "context": "通人煙。西當有鳥道，可以橫絶巅。地崩山摧壯士死，然後天梯石棧相鉤連。上有，下有衝",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "相",
+          "other": "方",
+          "context": "。地崩山摧壯士死，然後天梯石棧相鉤連。上有，下有衝波逆折之回川。黃鶴之飛尚，猿猱欲度愁",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "膺",
+          "other": "心",
+          "context": "折縈巖巒。捫參歷井仰脅息，以手撫膺坐長叹。问君西遊何时還？畏途巉巖不可攀。但",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "问君",
+          "other": "征人",
+          "context": "仰脅息，以手撫膺坐長叹。问君西遊何时還？畏途巉巖不可攀。但見悲鸟號12",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "时",
+          "other": "当",
+          "context": "撫膺坐長叹。问君西遊何时還？畏途巉巖不可攀。但見悲鸟號古木，雄飛繞",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "悲鸟",
+          "other": "鸟",
+          "context": "时還？畏途巉巖不可攀。但見悲鸟號古木，雄飛繞林間。又聞子規啼敦煌殘卷無",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "古",
+          "other": "枯",
+          "context": "？畏途巉巖不可攀。但見悲鸟號古木，雄飛繞林間。又聞子規啼敦煌殘卷無「夜」字。",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "林",
+          "other": "花",
+          "context": "但見悲鸟號古木，雄飛繞林間。又聞子規啼敦煌殘卷無「夜」字。道之難，難於上青天",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "夜月",
+          "other": "月落",
+          "context": "",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "飞",
+          "other": "崩",
+          "context": "！連峯去天不盈尺，枯松倒挂倚絶壁。飞湍瀑流爭喧豗，砯崖轉石萬壑雷。其險也1",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "也",
+          "other": "又玄",
+          "context": "喧豗，砯崖轉石萬壑雷。其險也若此，嗟爾遠道之人胡爲乎來哉？崢嶸而崔嵬，一夫",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "若",
+          "other": "如",
+          "context": "17崖轉石萬壑雷。其險也若此，嗟爾遠道之人胡爲乎來哉？崢嶸而崔嵬，一夫當關，萬",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "夫",
+          "other": "人",
+          "context": "乎來哉？崢嶸而崔嵬，一夫當關，萬夫莫開。所守或匪亲，化爲狼與豺。朝避猛虎，夕避長",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "亲",
+          "other": "人",
+          "context": "夫當關，萬夫莫開。所守或匪亲，化爲狼與豺。朝避猛虎，夕避長蛇。磨牙吮血，殺人如麻",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "长咨",
+          "other": "令人",
+          "context": "家。道之難，難於上青天，側身西望长咨嗟！Category:代表作品Category:唐詩",
+          "page": "蜀道難 (李白)"
+        }
+      ]
     },
     {
       "id": "qingyu-an",
@@ -2645,7 +4264,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jingnv",
@@ -2657,7 +4277,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "qiqiaoxian",
@@ -2669,7 +4290,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "liuguolun",
@@ -2681,7 +4303,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shishuo",
@@ -2693,7 +4316,8 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "guizhixiang",
@@ -2703,14 +4327,41 @@
       "page": "桂枝香",
       "url": "https://zh.wikisource.org/wiki/%E6%A1%82%E6%9E%9D%E9%A6%99",
       "lines": 3,
-      "hit": 2,
-      "miss": [
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
         {
-          "line": "王师北定中原日家祭无忘告乃翁",
-          "nearest": null
+          "ours": "征",
+          "other": "归",
+          "context": "作「瀟灑」。澄江似練，翠峰如簇。征白香詞譜箋作「征」。帆去棹残白香詞譜箋作「殘」。陽",
+          "page": "桂枝香"
+        },
+        {
+          "ours": "残",
+          "other": "斜",
+          "context": "征白香詞譜箋作「征」。帆去棹残白香詞譜箋作「殘」。陽里白香詞譜箋作「裏」。，背西風，",
+          "page": "桂枝香"
+        },
+        {
+          "ours": "随",
+          "other": "如",
+          "context": "詞譜箋作「漫」。嗟榮辱。六朝舊事随白香詞譜箋作「隨」。流水，但寒煙、衰白香詞譜箋作「",
+          "page": "桂枝香"
+        },
+        {
+          "ours": "衰",
+          "other": "芳",
+          "context": "香詞譜箋作「隨」。流水，但寒煙、衰白香詞譜箋作「衰」。草凝綠。至今商女，時時猶唱，《",
+          "page": "桂枝香"
+        },
+        {
+          "ours": "唱",
+          "other": "歌",
+          "context": "「衰」。草凝綠。至今商女，時時猶唱，《後庭》遺曲。==附註==Category:詞",
+          "page": "桂枝香"
         }
-      ],
-      "variantNotes": []
+      ]
     },
     {
       "id": "yongyule",
@@ -2722,7 +4373,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jiangchengzi-yimao",
@@ -2734,7 +4386,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "dasijianyishu",
@@ -2757,7 +4410,8 @@
       ],
       "variantNotes": [
         "又作文粗道其"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "yumeiren",
@@ -2769,19 +4423,46 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jiantaishisi",
       "title": "谏太宗十思疏",
       "author": "魏征",
       "stage": "高中",
-      "page": "全唐文/卷0139",
-      "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E5%94%90%E6%96%87/%E5%8D%B70139",
+      "page": "唐史演義/017",
+      "url": "https://zh.wikisource.org/wiki/%E5%94%90%E5%8F%B2%E6%BC%94%E7%BE%A9/017",
       "lines": 5,
-      "hit": 5,
-      "miss": [],
-      "variantNotes": []
+      "hit": 1,
+      "miss": [
+        {
+          "line": "臣闻求木之长者必固其根本欲流之远者必浚其泉源思国之安者必积其德义",
+          "nearest": null
+        },
+        {
+          "line": "源不深而望流之远根不固而求木之长德不厚而思国之治",
+          "nearest": null
+        },
+        {
+          "line": "怨不在大可畏惟人载舟覆舟所宜深慎",
+          "nearest": {
+            "line": "怨不在大可畏惟人载舟覆舟所宜深慎",
+            "source": "恭而不心服怨不在大所畏惟人载舟覆复舟所宜审慎诚能见可",
+            "ratio": 0.667
+          }
+        },
+        {
+          "line": "忧懈怠则思慎始而敬终虑壅蔽则思虚心以纳下",
+          "nearest": {
+            "line": "忧懈怠则思慎始而敬终虑壅蔽则思虚心以纳下",
+            "source": "盘游则思三驱以为度懮懈怠则思慎始而敬终虑壅蔽则思虚心以纳下惧",
+            "ratio": 0.76
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "chibifu",
@@ -2793,7 +4474,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "epenggongfu",
@@ -2805,7 +4487,33 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "啄",
+          "other": "琢",
+          "context": "一樓，十步一閣。廊腰縵迴，簷牙高啄。各抱地勢，鈎心鬬角。盤盤焉，囷囷焉，蜂房水渦，矗",
+          "page": "阿房宮賦"
+        },
+        {
+          "ours": "鬬",
+          "other": "斗",
+          "context": "迴，簷牙高啄。各抱地勢，鈎心鬬角。盤盤焉，囷囷焉，蜂房水渦，矗不知其幾千萬落。長橋臥",
+          "page": "阿房宮賦"
+        },
+        {
+          "ours": "剽",
+          "other": "取",
+          "context": "收藏，之經營，之精英，幾世幾年，剽掠其人，倚疊如山。一旦不能有，輸來其間。鼎鐺玉石，金塊",
+          "page": "阿房宮賦"
+        },
+        {
+          "ours": "叫",
+          "other": "呌",
+          "context": "而敢怒。獨夫之心，日益驕固。戍卒叫，舉。人一炬，可憐焦土。嗚呼！滅六國者，六國也，非也。",
+          "page": "阿房宮賦"
+        }
+      ]
     },
     {
       "id": "xiangjixuanzhi",
@@ -2822,7 +4530,15 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "遂",
+          "other": "逐",
+          "context": "又雜植蘭桂竹木於庭，舊時欄楯，亦遂增勝。借書滿架，偃仰嘯歌，冥然兀坐，萬籟有聲；而庭階寂",
+          "page": "項脊軒志"
+        }
+      ]
     },
     {
       "id": "mengziyize",
@@ -2834,7 +4550,8 @@
       "lines": 7,
       "hit": 7,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "laozi8",
@@ -2859,7 +4576,8 @@
         "一作伤人以下",
         "一作破成一作",
         "一作辅非既曰"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "shangshumihan",
@@ -2871,7 +4589,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zhongyong",
@@ -2890,7 +4609,8 @@
       ],
       "variantNotes": [
         "一作到"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "lantingjixu",
@@ -2911,7 +4631,15 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "怏",
+          "other": "快",
+          "context": "躁不同，當其欣扵所遇，暫得扵己，怏然自足，不知老之将至。及其所之既惓，情随事遷，感慨係之",
+          "page": "蘭亭集序"
+        }
+      ]
     },
     {
       "id": "gudaishilun",
@@ -2927,6 +4655,7 @@
         "又作有",
         "又作有"
       ],
+      "variants": [],
       "override": "六段来自六种文论，必须跨页合并。"
     },
     {
@@ -2939,7 +4668,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jishi-jiangfanjueyu",
@@ -2951,7 +4681,15 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "求",
+          "other": "成",
+          "context": "吾見其人矣，吾聞其語矣。『隱居以求蔡偉認爲「求」爲「成」字之訛。蔡偉：《據安大簡〈仲尼曰",
+          "page": "論語/季氏第十六"
+        }
+      ]
     },
     {
       "id": "tengwanggexu",
@@ -2972,7 +4710,249 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "豫章",
+          "other": "南昌",
+          "context": "而罷。——《唐摭言》（卷五）}}豫章故郡，洪都新府。星分翼軫，地接衡廬。襟三江而帶五湖",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "地",
+          "other": "镇",
+          "context": "豫章故郡，洪都新府。星分翼軫，地接衡廬。襟三江而帶五湖，控蠻荊而引甌越。物華天寶，龍光",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "彩",
+          "other": "采",
+          "context": "靈，徐孺下陳蕃之榻。雄州霧列，俊彩星馳。臺隍枕夷夏之交，賓主盡東南之美。都督閻公之雅望，",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "假",
+          "other": "沐",
+          "context": "宇文新州之懿範，襜帷暫駐。十旬休假，勝友如雲。千里逢迎，高朋滿座。騰蛟起鳳，孟學士之",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "座",
+          "other": "席",
+          "context": "4，勝友如雲。千里逢迎，高朋滿座。騰蛟起鳳，孟學士之詞宗；紫電青霜，王將軍之武庫。",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "宗",
+          "other": "府",
+          "context": "朋滿座。騰蛟起鳳，孟學士之詞宗；紫電青霜，王將軍之武庫。家君作宰，路出名區。童子何知",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "饯",
+          "other": "践",
+          "context": "作宰，路出名區。童子何知？躬逢勝饯。時维九月，序屬三秋。潦水盡而寒潭清，煙光凝而暮山",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "维",
+          "other": "惟",
+          "context": "名區。童子何知？躬逢勝饯。時维九月，序屬三秋。潦水盡而寒潭清，煙光凝而暮山紫。儼驂-",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "天",
+          "other": "仙",
+          "context": "，訪風景於崇阿。臨帝子之長洲，得天人之舊館。层台耸翠，上出重霄；飛閣",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "层",
+          "other": "曾",
+          "context": "臨帝子之長洲，得天人之舊館。层台耸翠，上出重霄；飛閣流丹，下臨無",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "台",
+          "other": "峦",
+          "context": "長洲，得天人之舊館。层台耸翠，上出重霄；飛閣流丹，下臨無地。鶴汀",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "耸",
+          "other": "矫",
+          "context": "天人之舊館。层台耸翠，上出重霄；飛閣流丹，下臨無地。鶴汀鳧渚，窮",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "流",
+          "other": "翔",
+          "context": "11耸翠，上出重霄；飛閣流丹，下臨無地。鶴汀鳧渚，窮島嶼之縈廻；桂殿蘭宮，1",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "即",
+          "other": "列",
+          "context": "汀鳧渚，窮島嶼之縈廻；桂殿蘭宮，即崗巒之體勢。披繡闥，俯雕甍。山原曠其盈視",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "原",
+          "other": "源",
+          "context": "之體勢。披繡闥，俯雕甍。山原曠其盈視，川澤纡其駭矚。閭閻撲地，鐘鳴鼎食之家",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "纡",
+          "other": "呼",
+          "context": "5甍。山原曠其盈視，川澤纡其駭矚。閭閻撲地，鐘鳴鼎食之家；舸艦弥津，青雀",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "弥",
+          "other": "迷",
+          "context": "矚。閭閻撲地，鐘鳴鼎食之家；舸艦弥津，青雀黃龍之舳。云销雨霽，彩徹",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "舳",
+          "other": "轴",
+          "context": "之家；舸艦弥津，青雀黃龍之舳。云销雨霽，彩徹区明。落霞與孤23",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "云",
+          "other": "虹",
+          "context": "弥津，青雀黃龍之舳。云销雨霽，彩徹区明。落霞與孤鹜齊飛，秋",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "销",
+          "other": "消",
+          "context": "津，青雀黃龍之舳。云销雨霽，彩徹区明。落霞與孤鹜齊飛，秋水共長天",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "区明",
+          "other": "云衢",
+          "context": "9。云销雨霽，彩徹区明。落霞與孤鹜齊飛，秋水共長天一色。漁舟唱",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "鹜",
+          "other": "雾",
+          "context": "1雨霽，彩徹区明。落霞與孤鹜齊飛，秋水共長天一色。漁舟唱晚，響窮彭蠡之濱；",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "唱",
+          "other": "喝",
+          "context": "23齊飛，秋水共長天一色。漁舟唱晚，響窮彭蠡之濱；鴈陣驚寒，聲斷衡陽之浦。遙襟",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "襟",
+          "other": "矝",
+          "context": "之濱；鴈陣驚寒，聲斷衡陽之浦。遙襟甫暢，逸興遄飛。爽籟發而清風生，纖歌凝而",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "甫",
+          "other": "吟",
+          "context": "陣驚寒，聲斷衡陽之浦。遙襟甫暢，逸興遄飛。爽籟發而清風生，纖歌凝而白雲遏。",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "生",
+          "other": "起",
+          "context": "26暢，逸興遄飛。爽籟發而清風生，纖歌凝而白雲遏。睢園綠竹，氣凌彭澤之樽",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "凌",
+          "other": "浮",
+          "context": "，纖歌凝而白雲遏。睢園綠竹，氣凌彭澤之樽；鄴水朱華，光照臨川之筆。四美具，二難",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "樽",
+          "other": "罇",
+          "context": "雲遏。睢園綠竹，氣凌彭澤之樽；鄴水朱華，光照臨川之筆。四美具，二難并。窮睇眄於中",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "目",
+          "other": "指",
+          "context": "來，識盈虛之有數。望長安於日下，目吳會於雲間。地勢極而南溟深，天柱高而北辰遠。關山難越",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "悲",
+          "other": "非",
+          "context": "深，天柱高而北辰遠。關山難越，誰悲失路之人；萍水相逢，盡是他鄉之客。懷帝閽而不見",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "萍",
+          "other": "沟",
+          "context": "。關山難越，誰悲失路之人；萍水相逢，盡是他鄉之客。懷帝閽而不見，奉宣室以何",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "以",
+          "other": "而",
+          "context": "是他鄉之客。懷帝閽而不見，奉宣室以何年？嗟乎！时運不齐，命涂多37",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "时",
+          "other": "大",
+          "context": "不見，奉宣室以何年？嗟乎！时運不齐，命涂多舛。馮唐易老，李廣難",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "齐",
+          "other": "济",
+          "context": "以何年？嗟乎！时運不齐，命涂多舛。馮唐易老，李廣難封。屈賈誼於",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "涂",
+          "other": "途",
+          "context": "？嗟乎！时運不齐，命涂多舛。馮唐易老，李廣難封。屈賈誼於長沙，非無聖",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "舛",
+          "other": "绪",
+          "context": "34運不齐，命涂多舛。馮唐易老，李廣難封。屈賈誼於長沙，非無聖主；竄梁鴻",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "安贫",
+          "other": "见机",
+          "context": "竄梁鴻於海曲，豈乏明時？所賴君子安贫，達人知命。老當益壯，寧移白首之心；窮且",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "移",
+          "other": "知",
+          "context": "安贫，達人知命。老當益壯，寧移白首之心；窮且益堅，不墜青雲之志。酌貪泉",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "且",
+          "other": "当",
+          "context": "老當益壯，寧移白首之心；窮且益堅，不墜青雲之志。酌貪泉而觉爽，處涸轍",
+          "page": "滕王閣序"
+        },
+        {
+          "ours": "志",
+          "other": "望",
+          "context": "之心；窮且益堅，不墜青雲之志。酌貪泉而觉爽，處涸轍以犹欢。北海雖",
+          "page": "滕王閣序"
+        }
+      ]
     },
     {
       "id": "jianzhukeshu",
@@ -2988,7 +4968,8 @@
         "一作修使",
         "一作分",
         "一作福"
-      ]
+      ],
+      "variants": []
     },
     {
       "id": "xiaoyaoyou",
@@ -3000,7 +4981,63 @@
       "lines": 7,
       "hit": 7,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "扶",
+          "other": "抉",
+          "context": "「鵬之徙於南冥也，水擊三千里，摶扶搖而上者九萬里，去以六月息者也。」野馬也，塵埃也，生物",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "鸴",
+          "other": "学",
+          "context": "莫之夭閼者，而後乃今將圖南。蜩與鸴鳩笑之曰：「我決起而飛，枪榆枋，時則不至，而控於地",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "枪",
+          "other": "抢",
+          "context": "與鸴鳩笑之曰：「我決起而飛，枪榆枋，時則不至，而控於地而已矣，奚以之九萬里而南爲？」",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "太",
+          "other": "泰",
+          "context": "其名爲鯤。有鳥焉，其名爲鵬，背若太山，翼若垂天之雲，摶扶搖羊角而上者九萬里，絕雲氣，",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "扶",
+          "other": "抉",
+          "context": "，背若太山，翼若垂天之雲，摶扶搖羊角而上者九萬里，絕雲氣，負青天，然後圖南，且適南冥",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "境",
+          "other": "竟",
+          "context": "不加沮，定乎內外之分，辯乎榮辱之境，斯已矣。彼其於世，未數數然也，雖然，猶有未樹也。夫列",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "有",
+          "other": "又",
+          "context": "也。夫列子御風而行，泠然善也，旬有五日而後反。彼於致福者，未數數然也。此雖免乎行，猶有所",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "秕",
+          "other": "粃",
+          "context": "旱金石流、土山焦而不熱，是其塵垢秕穅，將猶陶鑄堯、舜者也，孰肯以物爲事？」宋人資章甫而適",
+          "page": "莊子/逍遙遊"
+        },
+        {
+          "ours": "牦",
+          "other": "斄",
+          "context": "避高下，中於機辟，死於罔罟。今夫牦牛，其大若垂天之雲，此能爲大矣，而不能執鼠。今子有大樹",
+          "page": "莊子/逍遙遊"
+        }
+      ]
     },
     {
       "id": "huanggangzhulouji",
@@ -3021,7 +5058,8 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zilu-shizhe",
@@ -3033,7 +5071,33 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "而",
+          "other": "如",
+          "context": "益之。子曰：「非吾徒也！小子鳴鼓而攻之，可也。」十一之十七柴也愚，參也魯，師也辟，由也喭",
+          "page": "論語/先進第十一"
+        },
+        {
+          "ours": "哂",
+          "other": "讯",
+          "context": "三年，可使有勇，且知方也。」夫子哂之。「求，爾何如？」對曰：「方六七十，如五六十，求也爲",
+          "page": "論語/先進第十一"
+        },
+        {
+          "ours": "而",
+          "other": "如",
+          "context": "點，爾何如？」鼓瑟希，鏗爾，舍瑟而作；對曰：「異乎三子者之撰。」子曰：「何傷乎？亦各言其",
+          "page": "論語/先進第十一"
+        },
+        {
+          "ours": "哂",
+          "other": "讯",
+          "context": "亦各言其志也已矣。」曰：「夫子何哂由也？」曰：「爲國以禮，其言不讓，是故哂之。」「唯求則",
+          "page": "論語/先進第十一"
+        }
+      ]
     },
     {
       "id": "wuyi",
@@ -3045,7 +5109,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "liyun",
@@ -3057,7 +5122,21 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "我",
+          "other": "吾",
+          "context": "成也。」孔子曰：「呜呼哀哉！我觀周道，幽、厲傷之。吾舍魯，何適矣？魯之郊、禘，非禮也",
+          "page": "禮記/禮運"
+        },
+        {
+          "ours": "皇",
+          "other": "凰",
+          "context": "地出醴泉，山出器車，河出馬圖，鳳皇麒麟，皆在郊棷，龜龍在宫沼，其餘鳥獸之卵胎，皆可俯而闚",
+          "page": "禮記/禮運"
+        }
+      ]
     },
     {
       "id": "guoqinlun",
@@ -3069,7 +5148,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "linanchunyu",
@@ -3081,7 +5161,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shufen",
@@ -3093,7 +5174,15 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "洲",
+          "other": "州",
+          "context": "作囏}}中原北望氣如山樓船夜雪瓜洲渡鐵馬秋風大散關塞上長城空自許鏡中衰鬢已先斑《出師》一",
+          "page": "書憤 (陸游)"
+        }
+      ]
     },
     {
       "id": "wudailingguan",
@@ -3105,7 +5194,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "guiqulaixici",
@@ -3117,7 +5207,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "niannujiao-gudong",
@@ -3129,7 +5220,8 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "yangzhousman",
@@ -3141,7 +5233,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "niluonan",
@@ -3153,7 +5246,231 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "巵",
+          "other": "卮",
+          "context": "===一===奉君金巵之美酒，瑇瑁玉匣之雕琴。七彩芙蓉之羽帳，九華蒲萄之",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "瑇",
+          "other": "玳",
+          "context": "==一===奉君金巵之美酒，瑇瑁玉匣之雕琴。七彩芙蓉之羽帳，九華蒲萄之錦衾。紅顏零落",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "光",
+          "other": "花",
+          "context": "華蒲萄之錦衾。紅顏零落歲將暮，寒光宛轉時欲沉。願君裁悲且减思，聽我抵節行路吟。不見柏",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "减",
+          "other": "灭",
+          "context": "，寒光宛轉時欲沉。願君裁悲且减思，聽我抵節行路吟。不見柏梁銅雀上，寧聞古時清吹音。=",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "斵",
+          "other": "斫",
+          "context": "=二===洛陽名工鑄為金博山，千斵復萬鏤，上刻秦女攜手仙。承君清夜之歡娛，列置帳里明燭前",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "罗",
+          "other": "绮",
+          "context": "===璇閨玉墀上椒閣，文窗繡戶垂罗幕。中有一人字金蘭，被服纖羅蕴芳藿。春燕差池風散",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "蕴",
+          "other": "采",
+          "context": "6幕。中有一人字金蘭，被服纖羅蕴芳藿。春燕差池風散梅，開帏對景弄禽雀",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "差池",
+          "other": "参差",
+          "context": "字金蘭，被服纖羅蕴芳藿。春燕差池風散梅，開帏對景弄禽雀。含歌攬",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "帏",
+          "other": "帐",
+          "context": "蕴芳藿。春燕差池風散梅，開帏對景弄禽雀。含歌攬泪恒抱愁，",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "景",
+          "other": "影",
+          "context": "藿。春燕差池風散梅，開帏對景弄禽雀。含歌攬泪恒抱愁，人生幾時",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "禽",
+          "other": "春",
+          "context": "8風散梅，開帏對景弄禽雀。含歌攬泪恒抱愁，人生幾時得為樂。寧",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "歌",
+          "other": "泪",
+          "context": "帏對景弄禽雀。含歌攬泪恒抱愁，人生幾時得為樂。寧作野中之双",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "泪",
+          "other": "涕",
+          "context": "10弄禽雀。含歌攬泪恒抱愁，人生幾時得為樂。寧作野中之双鳧，不願雲",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "恒抱愁",
+          "other": "不能言",
+          "context": "禽雀。含歌攬泪恒抱愁，人生幾時得為樂。寧作野中之双鳧，不願雲間16",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "之双",
+          "other": "双飞",
+          "context": "14，人生幾時得為樂。寧作野中之双鳧，不願雲間之别鶴。===四===瀉水置平地，各",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "之别",
+          "other": "别翅",
+          "context": "樂。寧作野中之双鳧，不願雲間之别鶴。===四===瀉水置平地，各自東西南北流。人生亦",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "尽",
+          "other": "山",
+          "context": "枯死春滿道。君不見城上日，今暝沒尽去。明朝復更出。今我何時當得然，一去永滅入黃泉。人生",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "蹲蹲",
+          "other": "撙撙",
+          "context": "。舉頭四顧望，但見松柏園。荊棘鬱蹲蹲，中有一鳥名杜鵑，言是古時蜀帝魂。聲音哀苦鳴不息，羽",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "啄",
+          "other": "逐",
+          "context": "鳴不息，羽毛憔悴似人髠。飛走樹間啄蟲蟻，豈憶往日天子尊？念此死生變化非常理，中心21",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "恻怆",
+          "other": "怆恻",
+          "context": "天子尊？念此死生變化非常理，中心恻怆不能言。===八===中庭五株桃，一株先作花。陽春",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "妖冶",
+          "other": "沃若",
+          "context": "==中庭五株桃，一株先作花。陽春妖冶二三月，從風簸蕩落西家。西家思婦見悲惋，零淚霑",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "悲",
+          "other": "之",
+          "context": "三月，從風簸蕩落西家。西家思婦見悲惋，零淚霑衣撫心叹。初送我君出戶時，何言",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "言",
+          "other": "意",
+          "context": "撫心叹。初送我君出戶時，何言淹留節回換？床席生塵明鏡垢，纖腰瘦削髮蓬亂。人",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "剉",
+          "other": "锉",
+          "context": "，惆悵徙倚至夜半。===九===剉蘖染黃絲，黃絲歷亂不可治。昔我與君始相值，",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "蘖",
+          "other": "檗",
+          "context": "倚至夜半。===九===剉蘖染黃絲，黃絲歷亂不可治。昔我與君始相值，爾時自謂",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "昔我",
+          "other": "我昔",
+          "context": "蘖染黃絲，黃絲歷亂不可治。昔我與君始相值，爾時自謂可君意。結帶與我言，死生好",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "我",
+          "other": "君",
+          "context": "君始相值，爾時自謂可君意。結帶與我言，死生好惡不相置。今日見我顏色衰，意中错漠與先",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "错漠",
+          "other": "索寞",
+          "context": "好惡不相置。今日見我顏色衰，意中错漠與先異。還君玉釵瑇瑁簪，不忍見之益35",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "玉",
+          "other": "金",
+          "context": "顏色衰，意中错漠與先異。還君玉釵瑇瑁簪，不忍見之益悲思。===十===",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "瑇",
+          "other": "玳",
+          "context": "中错漠與先異。還君玉釵瑇瑁簪，不忍見之益悲思。===十===君不見蕣華",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "悲",
+          "other": "愁",
+          "context": "33釵瑇瑁簪，不忍見之益悲思。===十===君不見蕣華不終朝，須臾奄冉零",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "奄",
+          "other": "淹",
+          "context": "=十===君不見蕣華不終朝，須臾奄冉零落銷。盛年妖艷浮華輩，不久亦當詣冢頭。一去無還期",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "得",
+          "other": "能",
+          "context": "夕暮，差得亡憂消愁怖。胡為惆悵不得已，難盡此曲令君忤。===十二===今年陽初花滿林，",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "朝悲",
+          "other": "悲朝",
+          "context": "閨中孀居獨宿有貞名。亦-{云}-朝悲泣闲房，又聞暮思淚霑裳。形容憔悴非昔悅，蓬鬢衰",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "宁",
+          "other": "能",
+          "context": "山遠望得留顏。將死胡馬迹，宁見妻子難。男兒生世轗軻欲何道，綿憂摧抑起長叹。",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "累累",
+          "other": "垒垒",
+          "context": "47其中。歌妓舞女今誰在，高墳累累滿山隅。長袖紛紛徒競世，非我昔時千金軀。隨酒逐樂任意",
+          "page": "拟行路难"
+        },
+        {
+          "ours": "须",
+          "other": "得",
+          "context": "願樽中九醞滿，莫惜床頭百個錢。直须優遊卒一歲，何勞辛苦事百年。",
+          "page": "拟行路难"
+        }
+      ]
     },
     {
       "id": "chunjianghuayue",
@@ -3170,7 +5487,27 @@
           "nearest": null
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "里",
+          "other": "顷",
+          "context": "平，海上明月共潮生。灩灩隨波千萬里，何處春江無月明？江流宛轉遶芳甸，月照花林皆似霰。空裏",
+          "page": "春江花月夜 (張若虛)"
+        },
+        {
+          "ours": "妆",
+          "other": "玉",
+          "context": "明月樓？可憐樓上月徘徊，應照離人妆鏡臺。玉戶簾中卷不去，擣衣砧上拂還來。此時相望不相",
+          "page": "春江花月夜 (張若虛)"
+        },
+        {
+          "ours": "玉",
+          "other": "遮",
+          "context": "樓上月徘徊，應照離人妆鏡臺。玉戶簾中卷不去，擣衣砧上拂還來。此時相望不相聞，願逐月華",
+          "page": "春江花月夜 (張若虛)"
+        }
+      ]
     },
     {
       "id": "wanghaichao",
@@ -3180,14 +5517,59 @@
       "page": "望海潮 (柳永)",
       "url": "https://zh.wikisource.org/wiki/%E6%9C%9B%E6%B5%B7%E6%BD%AE%20%28%E6%9F%B3%E6%B0%B8%29",
       "lines": 4,
-      "hit": 3,
-      "miss": [
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
         {
-          "line": "羌管弄晴画檐风细",
-          "nearest": null
+          "ours": "三",
+          "other": "江",
+          "context": "東南形勝，三吴都會，錢塘自古繁華。煙柳畫橋，風簾翠幕，參差2",
+          "page": "望海潮 (柳永)"
+        },
+        {
+          "ours": "吴",
+          "other": "湖",
+          "context": "東南形勝，三吴都會，錢塘自古繁華。煙柳畫橋，風簾翠幕，參差十3",
+          "page": "望海潮 (柳永)"
+        },
+        {
+          "ours": "十",
+          "other": "千",
+          "context": "古繁華。煙柳畫橋，風簾翠幕，參差十万人家。雲樹繞堤沙，怒濤卷霜雪，天塹無涯。市列珠",
+          "page": "望海潮 (柳永)"
+        },
+        {
+          "ours": "万",
+          "other": "里",
+          "context": "。煙柳畫橋，風簾翠幕，參差十万人家。雲樹繞堤沙，怒濤卷霜雪，天塹無涯。市列珠璣，戶",
+          "page": "望海潮 (柳永)"
+        },
+        {
+          "ours": "霜雪",
+          "other": "雪屋",
+          "context": "万人家。雲樹繞堤沙，怒濤卷霜雪，天塹無涯。市列珠璣，戶盈羅綺，競豪奢。重湖疊巘清5",
+          "page": "望海潮 (柳永)"
+        },
+        {
+          "ours": "嘉",
+          "other": "佳",
+          "context": "璣，戶盈羅綺，競豪奢。重湖疊巘清嘉。有三秋桂子，十里荷花。羌管弄晴，菱歌泛夜，嬉嬉釣",
+          "page": "望海潮 (柳永)"
+        },
+        {
+          "ours": "管",
+          "other": "笛",
+          "context": "嘉。有三秋桂子，十里荷花。羌管弄晴，菱歌泛夜，嬉嬉釣叟蓮娃。千騎擁高牙。乘醉聽簫",
+          "page": "望海潮 (柳永)"
+        },
+        {
+          "ours": "醉",
+          "other": "时",
+          "context": "夜，嬉嬉釣叟蓮娃。千騎擁高牙。乘醉聽簫鼓，吟賞煙霞。異日圖將好景，（歸去）鳳池誇。",
+          "page": "望海潮 (柳永)"
         }
-      ],
-      "variantNotes": []
+      ]
     },
     {
       "id": "chaotianzi",
@@ -3199,7 +5581,8 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "dengkuai-ge",
@@ -3211,7 +5594,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "dengtaishan",
@@ -3232,7 +5616,8 @@
           }
         }
       ],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shizhongshan",
@@ -3244,7 +5629,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zhongshu-guotuotuo",
@@ -3256,7 +5642,8 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "sumuzhe",
@@ -3268,7 +5655,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "pusaman-wentingyun",
@@ -3280,7 +5668,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "hexinlao",
@@ -3292,7 +5681,8 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "jinse",
@@ -3304,7 +5694,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "changting-songbei",
@@ -3316,7 +5707,8 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "chenqingbiao",
@@ -3328,7 +5720,33 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "伯叔",
+          "other": "叔伯",
+          "context": "歲不行；零丁孤苦，至于成立。既無伯叔，終鮮兄弟；門衰祚薄，晚有兒息。外無期功強近之親，內無",
+          "page": "陳情表 (西晉)"
+        },
+        {
+          "ours": "孑",
+          "other": "独",
+          "context": "強近之親，內無應門五尺之僮；煢煢孑立，形影相弔。而劉夙嬰疾病，常在床蓐；臣侍湯藥，未曾廢",
+          "page": "陳情表 (西晉)"
+        },
+        {
+          "ours": "特",
+          "other": "将",
+          "context": "才；臣以供養無主，辭不赴命。詔書特下，拜臣郎中；尋蒙國恩，除臣洗馬。猥以微賤，當侍東宮，",
+          "page": "陳情表 (西晉)"
+        },
+        {
+          "ours": "伪",
+          "other": "荒",
+          "context": "育；況臣孤苦，特為尤甚。且臣少仕伪朝，歷職郎署，本圖宦達，不矜名節。今臣亡國賤俘，至微至",
+          "page": "陳情表 (西晉)"
+        }
+      ]
     },
     {
       "id": "baoranan",
@@ -3340,7 +5758,33 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "慎",
+          "other": "顺",
+          "context": "拜言。少卿足下：曩者辱賜書，教以慎於接物，推賢進士爲務。意氣懃懃懇懇，若望-{仆}-不相",
+          "page": "報任少卿書"
+        },
+        {
+          "ours": "发",
+          "other": "见",
+          "context": "，行若由夷，終不可以爲榮，適足以发笑而自點耳。書辭宜答，會東從上來，又迫賤事，相見日淺，",
+          "page": "報任少卿書"
+        },
+        {
+          "ours": "二亲",
+          "other": "父母",
+          "context": "不得已也。今-{仆}-不幸，蚤失二亲，無兄弟之親，獨身孤立，少卿視-{仆}-於妻子何如哉？",
+          "page": "報任少卿書"
+        },
+        {
+          "ours": "行事",
+          "other": "事",
+          "context": "能之辭，網羅天下放失舊聞，略考其行事，綜其終始，稽其成敗興壞之紀，上計，下至于茲，爲十表，",
+          "page": "報任少卿書"
+        }
+      ]
     },
     {
       "id": "lipeng",
@@ -3352,7 +5796,21 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "山",
+          "other": "白",
+          "context": "吳絲蜀桐張高秋，空山凝雲頹不流。江娥啼竹素女愁，李憑中國彈箜篌。崑山玉",
+          "page": "李憑箜篌引"
+        },
+        {
+          "ours": "江",
+          "other": "湘",
+          "context": "蜀桐張高秋，空山凝雲頹不流。江娥啼竹素女愁，李憑中國彈箜篌。崑山玉碎鳳凰叫，芙蓉泣露",
+          "page": "李憑箜篌引"
+        }
+      ]
     },
     {
       "id": "yange-xing",
@@ -3364,7 +5822,69 @@
       "lines": 3,
       "hit": 3,
       "miss": [],
-      "variantNotes": []
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "御史大夫张公",
+          "other": "元戎",
+          "context": "開元二十六年，客有從御史大夫张公出塞而還者，作《燕歌行》以示適，感征戍之事，因而和焉。",
+          "page": "燕歌行 (高適)"
+        },
+        {
+          "ours": "东",
+          "other": "西",
+          "context": "感征戍之事，因而和焉。漢家煙塵在东北，漢將辭家破殘賊。男兒本自重橫行，天子非常赐顏色",
+          "page": "燕歌行 (高適)"
+        },
+        {
+          "ours": "赐",
+          "other": "借",
+          "context": "破殘賊。男兒本自重橫行，天子非常赐顏色。摐金伐鼓下榆關，旌旆逶迤碣石間。校尉羽書飛瀚海，",
+          "page": "燕歌行 (高適)"
+        },
+        {
+          "ours": "腓",
+          "other": "衰",
+          "context": "生，美人帳下猶歌舞。大漠窮秋塞草腓，孤城落日鬬兵稀。身當恩遇恒輕敵，力盡關山未解圍。",
+          "page": "燕歌行 (高適)"
+        },
+        {
+          "ours": "恒",
+          "other": "常",
+          "context": "腓，孤城落日鬬兵稀。身當恩遇恒輕敵，力盡關山未解圍。鐵衣遠戍辛勤久，玉筯應啼別離後。",
+          "page": "燕歌行 (高適)"
+        },
+        {
+          "ours": "庭",
+          "other": "风",
+          "context": "婦城南欲斷腸，征人薊北空回首。邊庭飄颻那可度，絕域蒼茫更何有。殺氣三时作陣",
+          "page": "燕歌行 (高適)"
+        },
+        {
+          "ours": "度",
+          "other": "越",
+          "context": "征人薊北空回首。邊庭飄颻那可度，絕域蒼茫更何有。殺氣三时作陣雲，寒声",
+          "page": "燕歌行 (高適)"
+        },
+        {
+          "ours": "茫",
+          "other": "黄",
+          "context": "。邊庭飄颻那可度，絕域蒼茫更何有。殺氣三时作陣雲，寒声一夜傳刁斗。相",
+          "page": "燕歌行 (高適)"
+        },
+        {
+          "ours": "时",
+          "other": "日",
+          "context": "，絕域蒼茫更何有。殺氣三时作陣雲，寒声一夜傳刁斗。相看白刃紛紛，死節從來豈",
+          "page": "燕歌行 (高適)"
+        },
+        {
+          "ours": "声",
+          "other": "风",
+          "context": "更何有。殺氣三时作陣雲，寒声一夜傳刁斗。相看白刃紛紛，死節從來豈顧勳。君不見沙場",
+          "page": "燕歌行 (高適)"
+        }
+      ]
     }
   ]
 }

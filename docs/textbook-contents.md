@@ -1,6 +1,6 @@
 # 逐册工作台（自动生成）
 
-> 由 `python tools/build-textbook-table.py` 生成于 2026-10-07。数据源是 data/ledger.json，台账又来自 poems/ 与两份课标契约。**不要手改本文件**。
+> 由 `python tools/build-textbook-table.py` 生成于 2026-10-08。数据源是 data/ledger.json，台账又来自 poems/ 与两份课标契约。**不要手改本文件**。
 
 ## 口径
 
