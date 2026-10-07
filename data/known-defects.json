@@ -1,35 +1,11 @@
 {
   "说明": "已知未修的登记表。校验器对登记过的缺陷降级为提示，对没登记的直接报错；登记过但问题已经消失的也报错。每一条必须有 key、title、reason、phase。修完就删掉这条。",
   "defects": [
-    {
-      "key": "fulltext:初中-06",
-      "title": "木兰辞",
-      "reason": "只有必背名句，没有全文（唧唧复唧唧…）",
-      "phase": "P3",
-      "added": "2026-10-06"
-    },
-    {
-      "key": "fulltext:初中-16",
-      "title": "茅屋为秋风所破歌",
-      "reason": "只有必背名句，没有全文",
-      "phase": "P3",
-      "added": "2026-10-06"
-    },
-    {
-      "key": "fulltext:初中-31",
-      "title": "水调歌头（明月几时有）",
-      "reason": "只有必背名句，没有全文",
-      "phase": "P3",
-      "added": "2026-10-06"
-    },
     
-    {
-      "key": "fulltext:高中-12",
-      "title": "报任安书",
-      "reason": "只有必背名句，课标要求的节选范围（古者富贵而名摩灭…）不在仓内正文里",
-      "phase": "P3",
-      "added": "2026-10-06"
-    },
+    
+    
+    
+    
     
     {
       "key": "duplicate:dadaozhixing|liyun",
