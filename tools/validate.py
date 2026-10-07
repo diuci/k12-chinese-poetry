@@ -793,8 +793,11 @@ def main():
         src = p.get('source') or ''
         if not src or src == 'null':
             err('%s: 缺 source（台账字段，见 docs/sources.md）' % p['title'])
-        elif 'S3' not in src:
-            warn('%s: source 为 %r，未引用 S3(chinese-poetry)，'
+        # 正文来源必须能追到一个可核对的文本库。S3 是 chinese-poetry，S9 是维基文库。
+        # 先秦与文言长篇 S3 根本没有（《论语》《左传》不在那个库里），只认 S3 会把
+        # 有出处的篇目一路报警；报警多了就等于没有报警。
+        elif 'S3' not in src and 'S9' not in src:
+            warn('%s: source 为 %r，既未引用 S3(chinese-poetry) 也未引用 S9(维基文库)，'
                  '请确认正文出处' % (p['title'], src))
 
         # 册次 ⇄ 学段一致性

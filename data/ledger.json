@@ -1,24 +1,24 @@
 {
   "summary": {
     "generated": "2026-10-08",
-    "poemCount": 251,
+    "poemCount": 252,
     "syllabusCount": 207,
     "syllabusPrimary": 135,
     "syllabusSenior": 72,
     "categoryCounts": {
-      "课标·义务教育": 134,
+      "课标·义务教育": 135,
       "教材拓展": 44,
       "重复副本": 1,
       "课标·高中": 72
     },
     "stageCounts": {
-      "初中": 71,
+      "初中": 72,
       "小学": 109,
       "高中": 71
     },
     "matchStrengths": {
       "3": 119,
-      "2": 87,
+      "2": 88,
       "1": 0
     },
     "problems": [],
@@ -26,12 +26,6 @@
       {
         "key": "alias:初中-52",
         "text": "篇名对照：课标「杂说（四）」= 仓内《马说》（义务教育课标（2022）附录1 第 52 条作「杂说（四）」，统编教材八下第 23 课篇名为《马说》，同一篇。）",
-        "phase": "正常",
-        "reason": ""
-      },
-      {
-        "key": "shared:高中-01",
-        "text": "同一篇被两条课标条目共用：高中 01「《论语》十二章」与仓内《《论语》十二章》——两份课标各列一次，属正常，但必须点名",
         "phase": "正常",
         "reason": ""
       }
@@ -55,12 +49,12 @@
     "gapCounts": {
       "缺背诵要求": 0,
       "只有必背名句（节选收录）": 51,
-      "仓内有全文正文": 200,
+      "仓内有全文正文": 201,
       "无异文记录": 199,
-      "异文条目总数": 416,
-      "异文条目带出处": 44,
-      "异文条目带取舍": 0,
-      "异文条目缺出处": 372,
+      "异文条目总数": 419,
+      "异文条目带出处": 51,
+      "异文条目带取舍": 7,
+      "异文条目缺出处": 368,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
       "重复副本": 1,
@@ -1704,6 +1698,52 @@
         "无异文记录"
       ],
       "path": "poems/初中/九年级下册/己亥杂诗.md"
+    },
+    {
+      "id": "lunyu12-cz",
+      "title": "《论语》十二章",
+      "subtitle": null,
+      "author": "佚名",
+      "dynasty": "先秦",
+      "authorDied": null,
+      "authorEraEnd": 1900,
+      "license": "public-domain",
+      "source": "S9+S1+S2+S10",
+      "stage": "初中",
+      "grade": 7,
+      "volume": "七年级上册",
+      "form": "文言",
+      "category": "课标·义务教育",
+      "syllabusGroup": "初中",
+      "syllabusNo": 41,
+      "syllabusTitle": "《论语》十二章",
+      "matchStrength": 2,
+      "recite": "full",
+      "lineCount": 12,
+      "charCount": 237,
+      "sections": [
+        "全文",
+        "异文",
+        "必背名句",
+        "收录范围",
+        "注释",
+        "考点",
+        "译文",
+        "赏析"
+      ],
+      "hasNotes": true,
+      "hasTranslation": true,
+      "hasAppreciation": true,
+      "hasFamous": true,
+      "hasPlay": false,
+      "hasVariant": true,
+      "variantEntries": 5,
+      "variantWithSource": 4,
+      "variantWithChoice": 3,
+      "hasFulltext": true,
+      "pairsCount": 6,
+      "flags": [],
+      "path": "poems/初中/七年级上册/《论语》十二章.md"
     },
     {
       "id": "chunyeluocheng",
@@ -8109,10 +8149,10 @@
       "authorDied": null,
       "authorEraEnd": 1900,
       "license": "public-domain",
-      "source": "S3+S1b+S2",
+      "source": "S9+S1b+S2+S10",
       "stage": "高中",
       "grade": null,
-      "volume": "必修上册",
+      "volume": "选择性必修上册",
       "form": "文言",
       "category": "课标·高中",
       "syllabusGroup": "高中",
@@ -8120,13 +8160,15 @@
       "syllabusTitle": "《论语》十二章",
       "matchStrength": 2,
       "recite": "full",
-      "lineCount": 9,
-      "charCount": 124,
+      "lineCount": 12,
+      "charCount": 222,
       "sections": [
         "全文",
         "异文",
         "必背名句",
+        "收录范围",
         "注释",
+        "考点",
         "译文",
         "赏析"
       ],
@@ -8136,13 +8178,13 @@
       "hasFamous": true,
       "hasPlay": false,
       "hasVariant": true,
-      "variantEntries": 7,
-      "variantWithSource": 1,
-      "variantWithChoice": 0,
+      "variantEntries": 5,
+      "variantWithSource": 4,
+      "variantWithChoice": 4,
       "hasFulltext": true,
-      "pairsCount": 4,
+      "pairsCount": 6,
       "flags": [],
-      "path": "poems/高中/必修上册/《论语》十二章.md"
+      "path": "poems/高中/选择性必修上册/《论语》十二章.md"
     },
     {
       "id": "quanxue",

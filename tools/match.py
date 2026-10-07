@@ -178,18 +178,21 @@ def match_syllabus(poems, syllabus):
                     strength = 2
                 else:
                     continue
-            candidates.append((strength, ei, pi))
+            # 学段相同优先。《论语》十二章在两份课标里各列一次，统编教材也确实在两个学段
+            # 各有一课（七年级上册第 12 课、选择性必修上册第 5 课），仓里两份各对各的。
+            # 不排这一位，高中那条课标会去占初中那份，然后报「学段不一致」。
+            candidates.append((strength, ei, pi, 1 if stage == poems[pi].get('stage') else 0))
 
     # 强匹配先占位，一篇只许被占一次；例外：两条课标条目本来就是同一篇
     # （如《论语》十二章在义务教育与高中两份课标里各列一次），允许共用同一篇。
-    candidates.sort(key=lambda c: (-c[0], c[1], c[2]))
+    candidates.sort(key=lambda c: (-c[0], -c[3], c[1], c[2]))
     taken_poem = {}
     taken_entry = {}
     entry_keys = {}
     for ei, (_s, _i, _t, _a) in enumerate(syllabus):
         entry_keys[ei] = (norm_base(_t), norm_author(_a) if is_person_author(_a) else '')
     shared = []
-    for strength, ei, pi in candidates:
+    for strength, ei, pi, _same_stage in candidates:
         if ei in taken_entry:
             continue
         if pi in taken_poem:
