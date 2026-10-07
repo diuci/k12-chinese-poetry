@@ -85,6 +85,20 @@ def load_known_defects():
     return out
 
 
+# ---------------------------------------------------------------- 玩法可用性
+def find_unplayable(poems):
+    """返回做不出玩法单元的篇目描述。
+
+    玩法单元要两句才能配一对；pairs 为空就是「这篇在游戏里做不出东西」。
+    以前这类篇目被静默跳过，台账上没人说为什么不做——那就是悬案。
+    """
+    out = []
+    for p in poems:
+        if not p.get('pairs'):
+            out.append('%s（%s，%d 句）：pairs 为空，做不出玩法单元' % (p['title'], p.get('stage'), len(p['lines'])))
+    return out
+
+
 # ---------------------------------------------------------------- 背诵要求
 RECITE_VALUES = ('full', 'section', 'line', 'none')
 
@@ -362,6 +376,13 @@ def selftest():
         if got != should_fail:
             problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
 
+    play_cases = [('pairs 为空的应当被拒', [{'title': '假作J', 'stage': '小学', 'lines': ['甲', '乙'], 'pairs': []}], True),
+                  ('有成对的应当放行', [{'title': '假作K', 'stage': '小学', 'lines': ['甲', '乙'], 'pairs': [[0, 1]]}], False)]
+    for label, ps, should_fail in play_cases:
+        got = bool(find_unplayable(ps))
+        if got != should_fail:
+            problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
+
     problems.extend(selftest_match())
 
     if problems:
@@ -373,7 +394,7 @@ def selftest():
           '佚名走年代上限、公元前卒年放行、词牌顶替被抓、同名不同作者被抓、缺全文被抓、'
           '好样本不误报、重复收录被抓、课标共用不误报缺失、篇名对照生效且点名、'
           '别名不许替作者不符开后门、背诵要求缺失被拒、背诵要求取值非法被拒、'
-          '背诵要求合法不误报——都试到了')
+          '背诵要求合法不误报、玩法悬案被拒、玩法可用作出不误报——都试到了')
     return 0
 
 
@@ -580,6 +601,10 @@ def main():
         for i, (ln, want) in enumerate(zip(punct, rs)):
             segs = len([x for x in ln.rstrip('。！？；').split('，') if x.strip()])
             if max(1, segs) != want:
+                if p.get('render_split_reason'):
+                    notes.append('%s 第%d句 render_split 与逗号段数不符，篇内已写明理由：%s'
+                                 % (p['title'], i + 1, p['render_split_reason']))
+                    continue
                 rs_bad.append('%s 第%d句（记 %d，按逗号应为 %d）' % (p['title'], i + 1, want, max(1, segs)))
     if rs_bad:
         key = 'render_split:mismatch'
@@ -598,6 +623,18 @@ def main():
     if bad_recite:
         err("背诵要求缺失或取值非法：%d 篇。例：%s"
             % (len(bad_recite), '；'.join(bad_recite[:4])))
+
+    # -------------------------------------------------- 2.11 玩法可用性不许有悬案
+    unplayable = find_unplayable(poems)
+    for p in poems:
+        if not p.get('pairs'):
+            key = 'nopair:' + p['id']
+            if key in known:
+                seen_defects.add(key)
+
+    if unplayable:
+        err('玩法悬案：%d 篇做不出玩法单元，必须补做或在登记表里写明「为什么不做」：%s'
+            % (len(unplayable), '；'.join(unplayable[:4])))
 
     # -------------------------------------------------- 3. pairs 索引合法
     for p in poems:

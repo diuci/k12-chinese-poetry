@@ -248,6 +248,7 @@ def build_record(md_path, fm, body):
         'pairs': pairs,
         'syllables': syllables,
         'render_split': render_split,
+        'render_split_reason': scalar(fm, 'render_split_reason'),
         'theme': scalar(fm, 'theme', []) or [],
         'emotion': scalar(fm, 'emotion'),
         'technique': scalar(fm, 'technique', []) or [],

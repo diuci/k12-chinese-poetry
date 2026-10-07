@@ -120,6 +120,16 @@ def search_pages(query):
     return [x['title'] for x in d.get('query', {}).get('search', [])]
 
 
+# ---------------------------------------------------------------- 强制页名
+OVERRIDES_PATH = ROOT / 'data' / 'source-overrides.json'
+
+
+def load_overrides():
+    if not OVERRIDES_PATH.exists():
+        return {}
+    return json.loads(OVERRIDES_PATH.read_text(encoding='utf-8')).get('overrides', {})
+
+
 def clean(text, table):
     """繁→简、剥标点空白。返回 (清洗后文本, 夹注列表)。
 
@@ -142,10 +152,39 @@ def line_in(line, txt):
         i, j = txt.find(head), txt.rfind(tail)
         if i >= 0 and j > i and (j - i) <= len(line) + 16:
             return 'annotated'
+    # 夹注很长时（「孤城遥望玉一作「雁」门关」）head/tail 会被夹注本身打断。
+    # 再退一档：整句的字必须按顺序出现在一个够短的窗口里——只认顺序，不认连续。
+    if len(line) >= 6 and subseq_window(line, txt):
+        return 'subseq'
+
     near = nearest(line, txt)
     if near and near['ratio'] >= 0.82:
         return 'near'
     return None
+
+
+def subseq_window(line, txt, slack=28):
+    """句子的字必须按顺序出现在 txt 的一个窗口里（窗口最多 len(line)+slack）。
+
+    维基文库把异文夹在正文中间，整句和 head/tail 都会被打断；只认顺序能救回一批，
+    但窗口卡死在句子长度附近，不至于把整页当成命中。
+    """
+    L = len(line)
+    if L < 6 or len(txt) < L:
+        return False
+    span = L + slack
+    for i in range(0, max(1, len(txt) - L + 1)):
+        pos = i
+        ok = True
+        for ch in line:
+            pos = txt.find(ch, pos)
+            if pos < 0 or pos - i > span:
+                ok = False
+                break
+            pos += 1
+        if ok:
+            return True
+    return False
 
 
 def nearest(line, txt):
@@ -210,6 +249,7 @@ def main():
             stage = sys.argv[i + 1]
 
     ensure_dict()
+    overrides = load_overrides()
     table = load_t2s()
     poems = V.load_poems()
     if stage:
@@ -229,7 +269,40 @@ def main():
                'miss': [], 'variantNotes': []}
         try:
             best = None
-            for cand in candidates(title, author, p.get('dynasty'), table, lines)[:4]:
+            ov = overrides.get(p['id'])
+            if ov:
+                pages = ov['pages']
+                if ov.get('union'):
+                    joined = []
+                    vnotes = []
+                    for pg in pages:
+                        try:
+                            real, raw = page_text(pg)
+                            tt, nn = clean(raw, table)
+                            joined.append(tt)
+                            vnotes.extend(nn)
+                        except Exception:
+                            continue
+                    txt_all = ''.join(joined)
+                    hit = sum(1 for ln in lines if ln and line_in(ln, txt_all))
+                    best = {'page': ' + '.join(pages), 'hit': hit, 'notes': vnotes, 'len': len(txt_all), 'txt': txt_all}
+                    if best['hit'] == len(lines):
+                        stats['attested'] += 1
+                    elif best['hit']:
+                        stats['partial'] += 1
+                    else:
+                        stats['notfound'] += 1
+                    rec['page'] = best['page']
+                    rec['url'] = 'https://zh.wikisource.org/wiki/' + urllib.parse.quote(pages[0])
+                    rec['hit'] = best['hit']
+                    rec['variantNotes'] = best['notes'][:12]
+                    rec['override'] = ov.get('note', '')
+                    results.append(rec)
+                    continue
+                cand_list = pages
+            else:
+                cand_list = candidates(title, author, p.get('dynasty'), table, lines)[:4]
+            for cand in cand_list:
                 real, raw = page_text(cand)
                 txt, notes = clean(raw, table)
                 if '消歧义' in txt[:400] or '重定向' in txt[:40]:
