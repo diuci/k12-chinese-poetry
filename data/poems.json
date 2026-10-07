@@ -3,7 +3,7 @@
     "初中-7": [
       "shizhuisai",
       "guanju",
-      "shiwuzhongjunzheng",
+      "shiwucongjunzheng",
       "maotanshangwu",
       "nangxiangzi",
       "yeyujibei",
@@ -436,7 +436,7 @@
     "shihuiyin": "shihuiyin",
     "shishuo": "shishuo",
     "shiwei": "shiwei",
-    "shiwuzhongjunzheng": "shiwuzhongjunzheng",
+    "shiwucongjunzheng": "shiwucongjunzheng",
     "shiyiwangyue": "shiyiwangyue",
     "shizhongshan": "shizhongshan",
     "shizhuisai": "shizhuisai",
@@ -864,6 +864,7 @@
       "quyuanliezhuan"
     ],
     "思乡": [
+      "shiwucongjunzheng",
       "yeyujibei",
       "chunyeluocheng",
       "cibeigushanxia",
@@ -944,7 +945,7 @@
       "shihaoli"
     ],
     "战争": [
-      "shiwuzhongjunzheng",
+      "shiwucongjunzheng",
       "chunwang",
       "mulanci",
       "yanmenshiweixing",
@@ -1036,7 +1037,6 @@
       "youziyin"
     ],
     "民生": [
-      "shiwuzhongjunzheng",
       "maotanshangwu",
       "maowu",
       "shihaoli",
@@ -1528,55 +1528,104 @@
       "_path": "poems/初中/七年级上册/十五从军征.md",
       "author": "佚名",
       "authorDied": null,
-      "authorEraEnd": 1900,
+      "authorEraEnd": 220,
       "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
       "difficulty": 4,
       "dynasty": "汉",
-      "emotion": "战乱与徭役的悲苦",
-      "examFreq": 0.6,
+      "emotion": "老兵归乡的荒凉",
+      "examFreq": 0.7,
       "form": "乐府",
-      "fullLines": [],
-      "fullLinesPunct": [],
+      "fullLines": [
+        "十五从军征八十始得归",
+        "道逢乡里人家中有阿谁",
+        "遥看是君家松柏冢累累",
+        "兔从狗窦入雉从梁上飞",
+        "中庭生旅谷井上生旅葵",
+        "舂谷持作饭采葵持作羹",
+        "羹饭一时熟不知贻阿谁",
+        "出门东向看泪落沾我衣"
+      ],
+      "fullLinesPunct": [
+        "十五从军征，八十始得归。",
+        "道逢乡里人，家中有阿谁？",
+        "遥看是君家，松柏冢累累。",
+        "兔从狗窦入，雉从梁上飞。",
+        "中庭生旅谷，井上生旅葵。",
+        "舂谷持作饭，采葵持作羹。",
+        "羹饭一时熟，不知贻阿谁。",
+        "出门东向看，泪落沾我衣。"
+      ],
       "grade": 7,
-      "id": "shiwuzhongjunzheng",
-      "irregular": "第二句为节选合并，两句原文：「勿从俱死生，必使六尺之孤」与「无家可归依」；教材节选时并为一句",
+      "id": "shiwucongjunzheng",
+      "irregular": null,
       "license": "public-domain",
       "lines": [
-        "十五从军征八岁开姓名",
-        "虽有战死与儿死者无家可归依"
+        "十五从军征八十始得归",
+        "道逢乡里人家中有阿谁",
+        "遥看是君家松柏冢累累",
+        "兔从狗窦入雉从梁上飞",
+        "中庭生旅谷井上生旅葵",
+        "舂谷持作饭采葵持作羹",
+        "羹饭一时熟不知贻阿谁",
+        "出门东向看泪落沾我衣"
       ],
       "linesPunct": [
-        "十五从军征，八岁开姓名。",
-        "虽有战死与儿死者，无家可归依。"
+        "十五从军征，八十始得归。",
+        "道逢乡里人，家中有阿谁？",
+        "遥看是君家，松柏冢累累。",
+        "兔从狗窦入，雉从梁上飞。",
+        "中庭生旅谷，井上生旅葵。",
+        "舂谷持作饭，采葵持作羹。",
+        "羹饭一时熟，不知贻阿谁。",
+        "出门东向看，泪落沾我衣。"
       ],
       "pairs": [
         [
           0,
           1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
         ]
       ],
       "render_split": [
         2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
         2
       ],
-      "source": "S3+S1+S2",
+      "source": "S1+S2+S3",
       "stage": "初中",
       "subtitle": null,
       "syllables": null,
       "tags": [
         "战争",
-        "民生",
+        "思乡",
         "汉乐府"
       ],
       "technique": [
-        "对比"
+        "白描",
+        "叙事"
       ],
       "textbooks": [
         "统编"
       ],
       "theme": [
         "战争",
-        "民生"
+        "思乡"
       ],
       "title": "十五从军征",
       "volume": "七年级上册"
