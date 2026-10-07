@@ -2,9 +2,9 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。",
   "generated": "2026-10-07",
   "stats": {
-    "attested": 211,
-    "partial": 35,
-    "notfound": 5,
+    "attested": 217,
+    "partial": 31,
+    "notfound": 3,
     "nosource": 0
   },
   "results": [
@@ -510,21 +510,13 @@
       "title": "《孟子》三则",
       "author": "孟子",
       "stage": "初中",
-      "page": "孟子/告子上",
+      "page": "孟子/告子上 + 孟子/告子下 + 孟子/滕文公下",
       "url": "https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90/%E5%91%8A%E5%AD%90%E4%B8%8A",
       "lines": 3,
-      "hit": 1,
-      "miss": [
-        {
-          "line": "富贵不能淫贫贱不能移威武不能屈",
-          "nearest": null
-        },
-        {
-          "line": "天将降大任于是人也",
-          "nearest": null
-        }
-      ],
-      "variantNotes": []
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "override": "三则分别出自告子上（舍生取义）、告子下（天将降大任）、滕文公下（富贵不能淫），必须跨章合并。"
     },
     {
       "id": "zhuangzi1",
@@ -923,24 +915,11 @@
       "title": "马说",
       "author": "韩愈",
       "stage": "初中",
-      "page": "昌黎先生集/卷十八",
-      "url": "https://zh.wikisource.org/wiki/%E6%98%8C%E9%BB%8E%E5%85%88%E7%94%9F%E9%9B%86/%E5%8D%B7%E5%8D%81%E5%85%AB",
+      "page": "雜說四首",
+      "url": "https://zh.wikisource.org/wiki/%E9%9B%9C%E8%AA%AA%E5%9B%9B%E9%A6%96",
       "lines": 3,
-      "hit": 0,
-      "miss": [
-        {
-          "line": "世有伯乐然后有千里马千里马常有而伯乐不常有故虽有名马祗辱于奴隶人之手骈死于槽枥之间不以千里称也",
-          "nearest": null
-        },
-        {
-          "line": "马之千里者一食或尽粟一石食马者不知其能千里而食也是马也虽有千里之能食不饱力不足才美不外见且欲与常马等不可得安求其能千里也",
-          "nearest": null
-        },
-        {
-          "line": "策之不以其道食之不能尽其材鸣之而不能通其意执策而临之曰\"天下无马\"呜呼其真无马邪其真不知马也",
-          "nearest": null
-        }
-      ],
+      "hit": 3,
+      "miss": [],
       "variantNotes": []
     },
     {
@@ -2862,41 +2841,24 @@
       "title": "《老子》八章",
       "author": "老子",
       "stage": "高中",
-      "page": "老子翼 (四庫全書本)/卷3",
-      "url": "https://zh.wikisource.org/wiki/%E8%80%81%E5%AD%90%E7%BF%BC%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B73",
+      "page": "老子翼 (四庫全書本)/全覽",
+      "url": "https://zh.wikisource.org/wiki/%E8%80%81%E5%AD%90%E7%BF%BC%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%85%A8%E8%A6%BD",
       "lines": 5,
-      "hit": 1,
-      "miss": [
-        {
-          "line": "上善若水水善利万物而不争",
-          "nearest": null
-        },
-        {
-          "line": "人法地地法天天法道道法自然",
-          "nearest": null
-        },
-        {
-          "line": "知人者智自知者明胜人者有力自胜者强",
-          "nearest": null
-        },
-        {
-          "line": "信言不美美言不信",
-          "nearest": null
-        }
-      ],
+      "hit": 5,
+      "miss": [],
       "variantNotes": [
         "一作下知有之",
-        "一作名遂",
-        "一作孝子",
-        "一作海一作忽",
-        "一作澹兮其若",
-        "一作飘兮其若",
-        "一作故",
-        "一作而王处一",
-        "一作嘘古本作",
-        "一作是谓",
-        "一作言以",
-        "一作天下"
+        "一作纯小明为",
+        "一作失本一作",
+        "一作掩袭之袭",
+        "一作扔夫音符",
+        "一作财货盗竽",
+        "一作国汉人避",
+        "一作嗌不嗄黄",
+        "一作复柢一作",
+        "一作伤人以下",
+        "一作破成一作",
+        "一作辅非既曰"
       ]
     },
     {
@@ -2956,31 +2918,16 @@
       "title": "古代文论选段",
       "author": "佚名",
       "stage": "高中",
-      "page": "中國文學批評史/魏晉六朝文學批評史/章01",
-      "url": "https://zh.wikisource.org/wiki/%E4%B8%AD%E5%9C%8B%E6%96%87%E5%AD%B8%E6%89%B9%E8%A9%95%E5%8F%B2/%E9%AD%8F%E6%99%89%E5%85%AD%E6%9C%9D%E6%96%87%E5%AD%B8%E6%89%B9%E8%A9%95%E5%8F%B2/%E7%AB%A001",
+      "page": "詩經/序 + 典論/論文 + 詩品 + 與元九書 + 人間詞話 + 鄭板橋集",
+      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E5%BA%8F",
       "lines": 6,
-      "hit": 2,
-      "miss": [
-        {
-          "line": "故曰诗可以群可以怨",
-          "nearest": null
-        },
-        {
-          "line": "感人心者莫先乎情",
-          "nearest": null
-        },
-        {
-          "line": "意在笔先者定则也",
-          "nearest": null
-        },
-        {
-          "line": "词以境界为最上",
-          "nearest": null
-        }
-      ],
+      "hit": 6,
+      "miss": [],
       "variantNotes": [
-        "一作无或讥焉"
-      ]
+        "又作有",
+        "又作有"
+      ],
+      "override": "六段来自六种文论，必须跨页合并。"
     },
     {
       "id": "daxue",
@@ -2999,44 +2946,12 @@
       "title": "季氏将伐颛臾",
       "author": "佚名",
       "stage": "高中",
-      "page": "文章辨體彚選 (四庫全書本)/全覽2",
-      "url": "https://zh.wikisource.org/wiki/%E6%96%87%E7%AB%A0%E8%BE%A8%E9%AB%94%E5%BD%9A%E9%81%B8%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%85%A8%E8%A6%BD2",
+      "page": "論語/季氏第十六",
+      "url": "https://zh.wikisource.org/wiki/%E8%AB%96%E8%AA%9E/%E5%AD%A3%E6%B0%8F%E7%AC%AC%E5%8D%81%E5%85%AD",
       "lines": 6,
-      "hit": 0,
-      "miss": [
-        {
-          "line": "陈力就列不能者止",
-          "nearest": null
-        },
-        {
-          "line": "危而不持颠而不扶则将焉用彼相矣",
-          "nearest": null
-        },
-        {
-          "line": "虎兕出于柙龟玉毁于椟中是谁之过与",
-          "nearest": null
-        },
-        {
-          "line": "不患寡而患不均不患贫而患不安",
-          "nearest": null
-        },
-        {
-          "line": "远人不服则修文德以来之",
-          "nearest": null
-        },
-        {
-          "line": "吾恐季孙之忧不在颛臾而在萧墙之内也",
-          "nearest": null
-        }
-      ],
-      "variantNotes": [
-        "一作咨",
-        "一作尔",
-        "一作幡",
-        "一作象",
-        "一作花",
-        "一作川"
-      ]
+      "hit": 6,
+      "miss": [],
+      "variantNotes": []
     },
     {
       "id": "tengwanggexu",
@@ -3067,21 +2982,8 @@
       "page": "全秦文",
       "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E7%A7%A6%E6%96%87",
       "lines": 3,
-      "hit": 1,
-      "miss": [
-        {
-          "line": "西取由余于戎东得百里奚于宛迎蹇叔于宋来邳豹于吴",
-          "nearest": {
-            "line": "西取由余于戎东得百里奚于宛迎蹇叔于宋来邳豹于吴",
-            "source": "公求士西取由余于於戎东得百里奚于於宛迎蹇叔于於宋求丕豹公孙支于於晋",
-            "ratio": 0.714
-          }
-        },
-        {
-          "line": "弃逐客而国不富贤者不译",
-          "nearest": null
-        }
-      ],
+      "hit": 3,
+      "miss": [],
       "variantNotes": [
         "一作修使",
         "一作分",

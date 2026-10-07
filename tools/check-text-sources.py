@@ -173,10 +173,14 @@ def subseq_window(line, txt, slack=28):
     if L < 6 or len(txt) < L:
         return False
     span = L + slack
-    for i in range(0, max(1, len(txt) - L + 1)):
-        pos = i
+    # 只在「句首那个字出现的地方」起窗口：整页逐位扫是 O(页长×句长)，
+    # 四库全书那种十几万字的页跑不完。锚在首字上，句首被夹注打断的情况仍然能认（首字本身必须连续）。
+    head = line[0]
+    i = txt.find(head)
+    while i >= 0:
+        pos = i + 1
         ok = True
-        for ch in line:
+        for ch in line[1:]:
             pos = txt.find(ch, pos)
             if pos < 0 or pos - i > span:
                 ok = False
@@ -184,6 +188,7 @@ def subseq_window(line, txt, slack=28):
             pos += 1
         if ok:
             return True
+        i = txt.find(head, i + 1)
     return False
 
 
@@ -250,17 +255,18 @@ def main():
 
     ensure_dict()
     overrides = load_overrides()
-    # 强制页名这张表也会过期：篇目改名或删掉了，键还留着，就会静默地不生效。
-    live = {p['id'] for p in poems}
-    dead = sorted(k for k in overrides if k not in live)
-    if dead:
-        print('!! source-overrides.json 里有对不上任何篇目的键（过期，必须删）：%s' % '、'.join(dead))
     table = load_t2s()
     poems = V.load_poems()
     if stage:
         poems = [p for p in poems if p.get('stage') == stage]
     if limit:
         poems = poems[:limit]
+
+    # 强制页名这张表也会过期：篇目改名或删掉了，键还留着，就会静默地不生效。
+    live = {p['id'] for p in poems}
+    dead = sorted(k for k in overrides if k not in live)
+    if dead:
+        print('!! source-overrides.json 里有对不上任何篇目的键（过期，必须删）：%s' % '、'.join(dead))
 
     results = []
     stats = {'attested': 0, 'partial': 0, 'notfound': 0, 'nosource': 0}
