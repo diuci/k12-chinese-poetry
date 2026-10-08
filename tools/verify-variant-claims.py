@@ -76,7 +76,7 @@ def load_records():
     return {r['id']: r for r in json.loads(SRC.read_text(encoding='utf-8'))['results']}
 
 
-def main(write=False):
+def main(write=False, refresh=False):
     C = importlib.util.module_from_spec(SPEC)
     SPEC.loader.exec_module(C)
     records = load_records()
@@ -99,7 +99,16 @@ def main(write=False):
         # 来源页只取一次：以前每条异文都重新取一遍页，98 条就是几百次请求。
         texts, labels = [], []
         table = C.load_t2s()
-        need = any(VM.search(x.strip()) and '出处' not in x.strip() for x in re.split(r'\n(?=- )', body))
+        # 取不取页要按「这一篇有没有条目要核」决定。--refresh 核的是已经写着「仓内没核到」的条目，
+        # 那些条目带着「出处」二字，以前这个判断认不出来，于是页一张都不取、labels 是空的，
+        # 结果给整篇写下「在 没有来源页 里找不到」这种废话——曹刿论战 就是这么被写坏的。
+        def needs(x):
+            x = x.strip()
+            if not (x.startswith('- ') and VM.search(x)):
+                return False
+            return '出处' not in x or (refresh and '出处：仓内没核到' in x)
+
+        need = any(needs(x) for x in re.split(r'\n(?=- )', body))
         if need:
             for pg in (rec.get('page') or '').split(' + '):
                 try:
@@ -120,7 +129,13 @@ def main(write=False):
         for ln in re.split(r'\n(?=- )', body):
             s = ln.rstrip()
             stripped = s.strip()
-            if stripped.startswith('- ') and VM.search(stripped) and '出处' not in stripped:
+            # --refresh：来源页换了、探针修好了，以前写的「仓内没核到」要能重新核一遍。
+            # 不刷新就会永远留着一句过期的结论——曹刿论战 就是例子：比对页早就从《左氏博議》
+            # 换成单页《曹劌論戰》，条目里还写着在评论集里找不到。
+            stale = '出处：仓内没核到' in stripped
+            if stripped.startswith('- ') and VM.search(stripped) and ('出处' not in stripped or (refresh and stale)):
+                if stale:
+                    s = re.sub(r'\s*出处：仓内没核到[^。]*。?\s*$', '', s).rstrip('。')
                 claim = claim_of(stripped)
                 if not claim:
                     out.append(s)
@@ -138,7 +153,12 @@ def main(write=False):
                     changed = True
                     print('  [没核到] %-20s 「%s」' % (md.stem, claim))
             out.append(s)
+        # 小节末尾的空行要照原样留着。以前 join 完直接接回去，
+        # 下一个 ## 就粘在上一行末尾（望海潮、桂枝香、古代文论选段、《论语》十二章 四处），
+        # 整节被吞进上一节，台账的分母跟着错。
         new_body = '\n'.join(out)
+        tail = len(body) - len(body.rstrip('\n'))
+        new_body = new_body.rstrip('\n') + '\n' * max(1, tail)
         if changed and write:
             t = t[:m.start(1)] + new_body + t[m.end(1):]
             md.write_text(t, encoding='utf-8')
@@ -174,4 +194,4 @@ def selftest():
 
 if '--selftest' in sys.argv:
     sys.exit(selftest())
-main(write='--write' in sys.argv)
+main(write='--write' in sys.argv, refresh='--refresh' in sys.argv)
