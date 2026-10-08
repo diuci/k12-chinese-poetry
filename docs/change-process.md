@@ -47,6 +47,7 @@ python tools/check-contamination.py
 python tools/check-text-sources.py
 python tools/build-textbook-lessons.py --report
 python tools/apply-textbook-status.py --write
+python tools/build-ledger.py --selftest
 python tools/build-ledger.py
 python tools/build-textbook-table.py
 python tools/fix-meta-lines.py --check
