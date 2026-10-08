@@ -20373,13 +20373,19 @@
       "emotion": "离别的依依不舍",
       "examFreq": 0.8,
       "form": "曲",
-      "fullLines": [],
-      "fullLinesPunct": [],
+      "fullLines": [
+        "【端正好】碧云天黄花地西风紧北雁南飞晓来谁染霜林醉总是离人泪",
+        "【滚绣毬】恨相见得迟怨归去得疾柳丝长玉骢难系恨不得倩疏林挂住斜晖马儿迍迍行车儿快快随却告了相思回避破题儿又早别离听得一声去也松了金钏遥望见十里长亭减了玉肌此恨谁知"
+      ],
+      "fullLinesPunct": [
+        "【端正好】碧云天。黄花地。西风紧北雁南飞。晓来谁染霜林醉。总是离人泪。",
+        "【滚绣毬】恨相见得迟。怨归去得疾。柳丝长玉骢难系。恨不得倩疏林挂住斜晖。马儿迍迍行。车儿快快随。却告了相思回避。破题儿又早别离。听得一声去也松了金钏。遥望见十里长亭减了玉肌。此恨谁知。"
+      ],
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 39,
       "gaokaoSince": 2023,
       "grade": null,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "id": "changting-songbei",
       "irregular": null,
       "license": "public-domain",
