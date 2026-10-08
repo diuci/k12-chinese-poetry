@@ -208,11 +208,30 @@ def clean(text, table):
     return re.sub(r'\s', '', text), notes
 
 
+# 同一个字的另一个写法（不是繁简，是异体）：维基文库写作「一瓢飮」「飮水」「于於」，
+# 教材与仓里写作「一瓢饮」「饮水」「于」。比对时必须认这两个是同一个字，否则整句判成找不到。
+VARIANT_GLYPHS = {'飮': '饮', '於': '于', '说': '说', '説': '说'}
+
+
+def _nopunct(t):
+    t = re.sub(r'[\W_]+', '', t or '', flags=re.UNICODE)
+    return ''.join(VARIANT_GLYPHS.get(c, c) for c in t)
+
+
 def line_in(line, txt):
     """一句在不在来源里。除了整句直接命中，还认「夹注打断」：
     维基文库常把异文夹在正文里（「城春一作荒草木深」），直接找整句会漏。"""
     if line in txt:
         return 'exact'
+    # 有的页面正文一个标点都不带（论语各章就是「子曰学而时习之不亦说乎有朋自远方来…」），
+    # 带标点的句子直接找必然找不到，head/tail 也会被标点本身打断。去标点再比一次：只比字，不比标点。
+    sl, st = _nopunct(line), _nopunct(txt)
+    if sl and sl in st:
+        return 'unpunct'
+    # 去标点之后仍然可能被夹注打断（「于於我如浮云」：别本的「於」夹在正文里）。
+    # 再退一档：字必须按顺序出现在一个够短的窗口里。
+    if len(sl) >= 6 and subseq_window(sl, st, slack=40):
+        return 'unpunct-subseq'
     if len(line) >= 6:
         head, tail = line[:3], line[-3:]
         i, j = txt.find(head), txt.rfind(tail)
