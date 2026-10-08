@@ -4,86 +4,110 @@
   "stats": {
     "attested": 218,
     "partial": 30,
-    "notfound": 3,
+    "notfound": 4,
     "nosource": 0,
     "withVariants": 68
   },
   "results": [
     {
-      "id": "shizhuisai",
-      "title": "使至塞上",
-      "author": "王维",
+      "id": "lunyu12-cz",
+      "title": "《论语》十二章",
+      "author": "佚名",
       "stage": "初中",
-      "page": "使至塞上",
-      "url": "https://zh.wikisource.org/wiki/%E4%BD%BF%E8%87%B3%E5%A1%9E%E4%B8%8A",
-      "lines": 4,
-      "hit": 4,
-      "miss": [],
+      "page": "中國文學批評史/周秦兩漢文學批評史/章1",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%AD%E5%9C%8B%E6%96%87%E5%AD%B8%E6%89%B9%E8%A9%95%E5%8F%B2/%E5%91%A8%E7%A7%A6%E5%85%A9%E6%BC%A2%E6%96%87%E5%AD%B8%E6%89%B9%E8%A9%95%E5%8F%B2/%E7%AB%A01",
+      "lines": 12,
+      "hit": 0,
+      "miss": [
+        {
+          "line": "学而时习之不亦说乎有朋自远方来不亦乐乎人不知而不愠不亦君子乎",
+          "nearest": null
+        },
+        {
+          "line": "吾日三省吾身为人谋而不忠乎与朋友交而不信乎传不习乎",
+          "nearest": null
+        },
+        {
+          "line": "吾十有五而志于学三十而立四十而不惑五十而知天命六十而耳顺七十而从心所欲不逾矩",
+          "nearest": null
+        },
+        {
+          "line": "温故而知新可以为师矣",
+          "nearest": null
+        },
+        {
+          "line": "学而不思则罔思而不学则殆",
+          "nearest": null
+        },
+        {
+          "line": "一箪食一瓢饮在陋巷人不堪其忧回也不改其乐",
+          "nearest": null
+        },
+        {
+          "line": "知之者不如好之者好之者不如乐之者",
+          "nearest": null
+        },
+        {
+          "line": "饭疏食饮水曲肱而枕之乐亦在其中矣不义而富且贵于我如浮云",
+          "nearest": null
+        },
+        {
+          "line": "三人行必有我师焉择其善者而从之其不善者而改之",
+          "nearest": null
+        },
+        {
+          "line": "逝者如斯夫不舍昼夜",
+          "nearest": null
+        },
+        {
+          "line": "三军可夺帅也匹夫不可夺志也",
+          "nearest": null
+        },
+        {
+          "line": "博学而笃志切问而近思仁在其中矣",
+          "nearest": null
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
     {
-      "id": "guanju",
-      "title": "关雎",
-      "author": "佚名",
+      "id": "yeyujibei",
+      "title": "夜雨寄北",
+      "author": "李商隐",
       "stage": "初中",
-      "page": "詩經/關雎",
-      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E9%97%9C%E9%9B%8E",
+      "page": "夜雨寄北",
+      "url": "https://zh.wikisource.org/wiki/%E5%A4%9C%E9%9B%A8%E5%AF%84%E5%8C%97",
       "lines": 2,
       "hit": 2,
       "miss": [],
       "variantNotes": [],
       "variants": [
         {
-          "ours": "逑",
-          "other": "仇",
-          "context": "鳩，在河之洲。:窈窕淑女，君子好逑。:參差荇菜，左右流之。:窈窕淑女，寤寐求之。:求之",
-          "page": "詩經/關雎"
-        },
-        {
-          "ours": "不",
-          "other": "弗",
-          "context": "之。:窈窕淑女，寤寐求之。:求之不得，寤寐思服。:悠哉悠哉，輾轉反側。:參差荇菜，左右采",
-          "page": "詩經/關雎"
-        },
-        {
-          "ours": "芼",
-          "other": "薅",
-          "context": "淑女，琴瑟友之。:參差荇菜，左右芼之。:窈窕淑女，鐘鼓樂之。===注釋===*按王先謙《",
-          "page": "詩經/關雎"
+          "ours": "当",
+          "other": "时",
+          "context": "君問歸期未有期巴山夜雨漲秋池何当共剪西窗燭卻話巴山夜雨時君問歸期未有期巴山夜雨漲秋池何",
+          "page": "夜雨寄北"
         }
       ]
     },
     {
-      "id": "shiwucongjunzheng",
-      "title": "十五从军征",
-      "author": "佚名",
+      "id": "tianjingsha-qiusi",
+      "title": "天净沙",
+      "author": "马致远",
       "stage": "初中",
-      "page": "十五從軍征",
-      "url": "https://zh.wikisource.org/wiki/%E5%8D%81%E4%BA%94%E5%BE%9E%E8%BB%8D%E5%BE%81",
-      "lines": 8,
-      "hit": 8,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "chunwang",
-      "title": "春望",
-      "author": "杜甫",
-      "stage": "初中",
-      "page": "春望",
-      "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%9C%9B",
-      "lines": 4,
-      "hit": 4,
+      "page": "天淨沙·秋思",
+      "url": "https://zh.wikisource.org/wiki/%E5%A4%A9%E6%B7%A8%E6%B2%99%C2%B7%E7%A7%8B%E6%80%9D",
+      "lines": 3,
+      "hit": 3,
       "miss": [],
       "variantNotes": [],
       "variants": [
         {
-          "ours": "春",
-          "other": "荒",
-          "context": "國破山河在，城春草木深。感時花濺淚，恨別鳥驚心。烽火連三月，家書抵萬金",
-          "page": "春望"
+          "ours": "人家",
+          "other": "平沙",
+          "context": "枯藤、老樹、昏鴉。小橋、流水、人家。古道、西風、瘦馬。夕陽西下，斷腸人在天涯。Categ",
+          "page": "天淨沙·秋思"
         }
       ]
     },
@@ -99,90 +123,6 @@
       "miss": [],
       "variantNotes": [],
       "variants": []
-    },
-    {
-      "id": "baixuege",
-      "title": "白雪歌送武判官归京",
-      "author": "岑参",
-      "stage": "初中",
-      "page": "白雪歌送武判官歸京",
-      "url": "https://zh.wikisource.org/wiki/%E7%99%BD%E9%9B%AA%E6%AD%8C%E9%80%81%E6%AD%A6%E5%88%A4%E5%AE%98%E6%AD%B8%E4%BA%AC",
-      "lines": 3,
-      "hit": 3,
-      "miss": [],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "角",
-          "other": "雕",
-          "context": "珠簾濕羅幕，狐裘不煖錦衾薄。將軍角弓不得控，都護鐵衣冷难著。瀚海闌干百丈冰，愁雲慘",
-          "page": "白雪歌送武判官歸京"
-        },
-        {
-          "ours": "难",
-          "other": "犹",
-          "context": "。將軍角弓不得控，都護鐵衣冷难著。瀚海闌干百丈冰，愁雲慘澹萬里凝。中軍置酒飲歸客，",
-          "page": "白雪歌送武判官歸京"
-        },
-        {
-          "ours": "百丈",
-          "other": "千尺",
-          "context": "控，都護鐵衣冷难著。瀚海闌干百丈冰，愁雲慘澹萬里凝。中軍置酒飲歸客，胡琴琵琶與羌笛。紛",
-          "page": "白雪歌送武判官歸京"
-        }
-      ]
-    },
-    {
-      "id": "maowu",
-      "title": "茅屋为秋风所破歌",
-      "author": "杜甫",
-      "stage": "初中",
-      "page": "茅屋為秋風所破歌",
-      "url": "https://zh.wikisource.org/wiki/%E8%8C%85%E5%B1%8B%E7%82%BA%E7%A7%8B%E9%A2%A8%E6%89%80%E7%A0%B4%E6%AD%8C",
-      "lines": 4,
-      "hit": 4,
-      "miss": [],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "洒",
-          "other": "满",
-          "context": "風怒號，卷我屋上三重茅。茅飛度江洒江郊，高者挂罥長林梢，下者飄轉沈塘坳。南村羣童欺我",
-          "page": "茅屋為秋風所破歌"
-        },
-        {
-          "ours": "塘",
-          "other": "堂",
-          "context": "江郊，高者挂罥長林梢，下者飄轉沈塘坳。南村羣童欺我老無力，忍能對面爲盜賊。公然抱茅入竹去",
-          "page": "茅屋為秋風所破歌"
-        },
-        {
-          "ours": "似",
-          "other": "象",
-          "context": "墨色，秋天漠漠向昏黑。布衾多年冷似鐵，嬌兒惡臥踏裏裂。牀頭屋漏無乾處，雨脚如麻未斷絕。自",
-          "page": "茅屋為秋風所破歌"
-        }
-      ]
-    },
-    {
-      "id": "jianjia",
-      "title": "蒹葭",
-      "author": "佚名",
-      "stage": "初中",
-      "page": "詩經/蒹葭",
-      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E8%92%B9%E8%91%AD",
-      "lines": 2,
-      "hit": 2,
-      "miss": [],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "萋萋",
-          "other": "凄凄",
-          "context": "長。溯游從之，宛在水中央。:蒹葭萋萋，白露未晞。所謂伊人，在水之湄。溯洄從之，道阻且躋。溯",
-          "page": "詩經/蒹葭"
-        }
-      ]
     },
     {
       "id": "guancanghai",
@@ -231,70 +171,19 @@
       ]
     },
     {
-      "id": "yinjiujiusan",
-      "title": "饮酒",
-      "author": "陶潜",
+      "id": "jihai-jimao",
+      "title": "己亥杂诗",
+      "author": "龚自珍",
       "stage": "初中",
-      "page": "飲酒二十首",
-      "url": "https://zh.wikisource.org/wiki/%E9%A3%B2%E9%85%92%E4%BA%8C%E5%8D%81%E9%A6%96",
-      "lines": 5,
-      "hit": 5,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "huanghelou-cuiheng",
-      "title": "黄鹤楼",
-      "author": "崔颢",
-      "stage": "初中",
-      "page": "黃鶴樓 (崔顥)",
-      "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E9%B6%B4%E6%A8%93%20%28%E5%B4%94%E9%A1%A5%29",
-      "lines": 4,
-      "hit": 4,
-      "miss": [],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "黄鹤",
-          "other": "白云",
-          "context": "昔人已乘黄鹤去，此地空餘黃鶴樓。黃鶴一去不復返，白雲千載空悠悠。晴",
-          "page": "黃鶴樓 (崔顥)"
-        }
-      ]
-    },
-    {
-      "id": "maotanshangwu",
-      "title": "卖炭翁",
-      "author": "白居易",
-      "stage": "初中",
-      "page": "賣炭翁",
-      "url": "https://zh.wikisource.org/wiki/%E8%B3%A3%E7%82%AD%E7%BF%81",
+      "page": "己亥雜詩",
+      "url": "https://zh.wikisource.org/wiki/%E5%B7%B1%E4%BA%A5%E9%9B%9C%E8%A9%A9",
       "lines": 2,
       "hit": 2,
       "miss": [],
-      "variantNotes": [],
+      "variantNotes": [
+        "又作山中老树"
+      ],
       "variants": []
-    },
-    {
-      "id": "yeyujibei",
-      "title": "夜雨寄北",
-      "author": "李商隐",
-      "stage": "初中",
-      "page": "夜雨寄北",
-      "url": "https://zh.wikisource.org/wiki/%E5%A4%9C%E9%9B%A8%E5%AF%84%E5%8C%97",
-      "lines": 2,
-      "hit": 2,
-      "miss": [],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "当",
-          "other": "时",
-          "context": "君問歸期未有期巴山夜雨漲秋池何当共剪西窗燭卻話巴山夜雨時君問歸期未有期巴山夜雨漲秋池何",
-          "page": "夜雨寄北"
-        }
-      ]
     },
     {
       "id": "wangyue",
@@ -365,6 +254,19 @@
       "variants": []
     },
     {
+      "id": "ailianshuo",
+      "title": "爱莲说",
+      "author": "周敦颐",
+      "stage": "初中",
+      "page": "愛蓮說",
+      "url": "https://zh.wikisource.org/wiki/%E6%84%9B%E8%93%AE%E8%AA%AA",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "dengyouzhoutai",
       "title": "登幽州台歌",
       "author": "陈子昂",
@@ -400,63 +302,17 @@
       "variants": []
     },
     {
-      "id": "chibi-du",
-      "title": "赤壁",
-      "author": "杜牧",
+      "id": "loushiming",
+      "title": "陋室铭",
+      "author": "刘禹锡",
       "stage": "初中",
-      "page": "赤壁",
-      "url": "https://zh.wikisource.org/wiki/%E8%B5%A4%E5%A3%81",
-      "lines": 2,
-      "hit": 2,
-      "miss": [],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "未",
-          "other": "半",
-          "context": "折戟沉沙鐵未銷，自將磨洗認前朝。東風不與周郎便，銅雀春深鎖二喬《三",
-          "page": "赤壁"
-        }
-      ]
-    },
-    {
-      "id": "qiantanghuchunxing",
-      "title": "钱塘湖春行",
-      "author": "白居易",
-      "stage": "初中",
-      "page": "錢塘湖春行",
-      "url": "https://zh.wikisource.org/wiki/%E9%8C%A2%E5%A1%98%E6%B9%96%E6%98%A5%E8%A1%8C",
-      "lines": 4,
-      "hit": 4,
+      "page": "陋室銘",
+      "url": "https://zh.wikisource.org/wiki/%E9%99%8B%E5%AE%A4%E9%8A%98",
+      "lines": 5,
+      "hit": 5,
       "miss": [],
       "variantNotes": [],
       "variants": []
-    },
-    {
-      "id": "yanmenshiweixing",
-      "title": "雁门太守行",
-      "author": "李贺",
-      "stage": "初中",
-      "page": "雁門太守行",
-      "url": "https://zh.wikisource.org/wiki/%E9%9B%81%E9%96%80%E5%A4%AA%E5%AE%88%E8%A1%8C",
-      "lines": 3,
-      "hit": 3,
-      "miss": [],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "日",
-          "other": "月",
-          "context": "黑雲壓城城欲摧，甲光向日金鱗開。角聲滿天秋色裏，塞上燕脂凝夜紫。半卷紅旗臨",
-          "page": "雁門太守行"
-        },
-        {
-          "ours": "上",
-          "other": "土",
-          "context": "日金鱗開。角聲滿天秋色裏，塞上燕脂凝夜紫。半卷紅旗臨易水，霜重鼓寒聲不起。報君黃金臺",
-          "page": "雁門太守行"
-        }
-      ]
     },
     {
       "id": "chunyeluocheng",
@@ -518,17 +374,30 @@
       "variants": []
     },
     {
-      "id": "nangxiangzi",
-      "title": "南乡子",
-      "author": "辛弃疾",
+      "id": "yueyanglouji",
+      "title": "岳阳楼记",
+      "author": "范仲淹",
       "stage": "初中",
-      "page": "南鄉子 (辛棄疾)",
-      "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E9%84%89%E5%AD%90%20%28%E8%BE%9B%E6%A3%84%E7%96%BE%29",
-      "lines": 5,
-      "hit": 5,
+      "page": "岳陽樓記",
+      "url": "https://zh.wikisource.org/wiki/%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98",
+      "lines": 4,
+      "hit": 4,
       "miss": [],
       "variantNotes": [],
-      "variants": []
+      "variants": [
+        {
+          "ours": "曜",
+          "other": "耀",
+          "context": "不開；陰風怒號，濁浪排空；日星隱曜，山岳潛形；商旅不行，檣傾楫摧；薄暮冥冥，虎嘯猿啼。登",
+          "page": "岳陽樓記"
+        },
+        {
+          "ours": "欤",
+          "other": "乎",
+          "context": "先天下之憂而憂，後天下之樂而樂」欤！噫！微斯人，吾誰與歸？時九月十五日。Category",
+          "page": "岳陽樓記"
+        }
+      ]
     },
     {
       "id": "wuti",
@@ -557,40 +426,14 @@
       "variants": []
     },
     {
-      "id": "jiangchengzi-laofeng",
-      "title": "江城子",
-      "author": "苏轼",
+      "id": "huxinting",
+      "title": "湖心亭看雪",
+      "author": "张岱",
       "stage": "初中",
-      "page": "江城子 (蘇軾)/江城子 (密州出獵)",
-      "url": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E8%98%87%E8%BB%BE%29/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E5%AF%86%E5%B7%9E%E5%87%BA%E7%8D%B5%29",
+      "page": "湖心亭看雪",
+      "url": "https://zh.wikisource.org/wiki/%E6%B9%96%E5%BF%83%E4%BA%AD%E7%9C%8B%E9%9B%AA",
       "lines": 3,
       "hit": 3,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "huanxisha-yanque",
-      "title": "浣溪沙",
-      "author": "晏殊",
-      "stage": "初中",
-      "page": "浣溪沙 (晏殊)",
-      "url": "https://zh.wikisource.org/wiki/%E6%B5%A3%E6%BA%AA%E6%B2%99%20%28%E6%99%8F%E6%AE%8A%29",
-      "lines": 2,
-      "hit": 2,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "yujiaao-qiusi",
-      "title": "渔家傲",
-      "author": "范仲淹",
-      "stage": "初中",
-      "page": "漁家傲 (范仲淹)",
-      "url": "https://zh.wikisource.org/wiki/%E6%BC%81%E5%AE%B6%E5%82%B2%20%28%E8%8C%83%E4%BB%B2%E6%B7%B9%29",
-      "lines": 5,
-      "hit": 5,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -614,19 +457,6 @@
           "page": "相見歡 (李煜)"
         }
       ]
-    },
-    {
-      "id": "pozhenzi",
-      "title": "破阵子",
-      "author": "辛弃疾",
-      "stage": "初中",
-      "page": "破陣子 (辛棄疾)",
-      "url": "https://zh.wikisource.org/wiki/%E7%A0%B4%E9%99%A3%E5%AD%90%20%28%E8%BE%9B%E6%A3%84%E7%96%BE%29",
-      "lines": 6,
-      "hit": 6,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
     },
     {
       "id": "xinglunan",
@@ -653,6 +483,26 @@
       "miss": [],
       "variantNotes": [],
       "variants": []
+    },
+    {
+      "id": "zuigongtingji",
+      "title": "醉翁亭记",
+      "author": "欧阳修",
+      "stage": "初中",
+      "page": "醉翁亭記",
+      "url": "https://zh.wikisource.org/wiki/%E9%86%89%E7%BF%81%E4%BA%AD%E8%A8%98",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "让",
+          "other": "酿",
+          "context": "",
+          "page": "醉翁亭記"
+        }
+      ]
     },
     {
       "id": "lvshi1",
@@ -809,24 +659,30 @@
       "variants": []
     },
     {
-      "id": "tianjingsha-qiusi",
-      "title": "天净沙",
-      "author": "马致远",
+      "id": "shiwucongjunzheng",
+      "title": "十五从军征",
+      "author": "佚名",
       "stage": "初中",
-      "page": "天淨沙·秋思",
-      "url": "https://zh.wikisource.org/wiki/%E5%A4%A9%E6%B7%A8%E6%B2%99%C2%B7%E7%A7%8B%E6%80%9D",
-      "lines": 3,
-      "hit": 3,
+      "page": "十五從軍征",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%81%E4%BA%94%E5%BE%9E%E8%BB%8D%E5%BE%81",
+      "lines": 8,
+      "hit": 8,
       "miss": [],
       "variantNotes": [],
-      "variants": [
-        {
-          "ours": "人家",
-          "other": "平沙",
-          "context": "枯藤、老樹、昏鴉。小橋、流水、人家。古道、西風、瘦馬。夕陽西下，斷腸人在天涯。Categ",
-          "page": "天淨沙·秋思"
-        }
-      ]
+      "variants": []
+    },
+    {
+      "id": "nangxiangzi",
+      "title": "南乡子",
+      "author": "辛弃疾",
+      "stage": "初中",
+      "page": "南鄉子 (辛棄疾)",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E9%84%89%E5%AD%90%20%28%E8%BE%9B%E6%A3%84%E7%96%BE%29",
+      "lines": 5,
+      "hit": 5,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shanpoyang",
@@ -844,21 +700,6 @@
         }
       ],
       "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "jihai-jimao",
-      "title": "己亥杂诗",
-      "author": "龚自珍",
-      "stage": "初中",
-      "page": "己亥雜詩",
-      "url": "https://zh.wikisource.org/wiki/%E5%B7%B1%E4%BA%A5%E9%9B%9C%E8%A9%A9",
-      "lines": 2,
-      "hit": 2,
-      "miss": [],
-      "variantNotes": [
-        "又作山中老树"
-      ],
       "variants": []
     },
     {
@@ -884,14 +725,27 @@
       "variants": []
     },
     {
-      "id": "huxinting",
-      "title": "湖心亭看雪",
-      "author": "张岱",
+      "id": "jiangchengzi-laofeng",
+      "title": "江城子",
+      "author": "苏轼",
       "stage": "初中",
-      "page": "湖心亭看雪",
-      "url": "https://zh.wikisource.org/wiki/%E6%B9%96%E5%BF%83%E4%BA%AD%E7%9C%8B%E9%9B%AA",
+      "page": "江城子 (蘇軾)/江城子 (密州出獵)",
+      "url": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E8%98%87%E8%BB%BE%29/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E5%AF%86%E5%B7%9E%E5%87%BA%E7%8D%B5%29",
       "lines": 3,
       "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "yujiaao-qiusi",
+      "title": "渔家傲",
+      "author": "范仲淹",
+      "stage": "初中",
+      "page": "漁家傲 (范仲淹)",
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%81%E5%AE%B6%E5%82%B2%20%28%E8%8C%83%E4%BB%B2%E6%B7%B9%29",
+      "lines": 5,
+      "hit": 5,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -905,6 +759,51 @@
       "url": "https://zh.wikisource.org/wiki/%E6%BB%BF%E6%B1%9F%E7%B4%85%20%28%E7%A7%8B%E7%91%BE%29",
       "lines": 8,
       "hit": 8,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "baixuege",
+      "title": "白雪歌送武判官归京",
+      "author": "岑参",
+      "stage": "初中",
+      "page": "白雪歌送武判官歸京",
+      "url": "https://zh.wikisource.org/wiki/%E7%99%BD%E9%9B%AA%E6%AD%8C%E9%80%81%E6%AD%A6%E5%88%A4%E5%AE%98%E6%AD%B8%E4%BA%AC",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "角",
+          "other": "雕",
+          "context": "珠簾濕羅幕，狐裘不煖錦衾薄。將軍角弓不得控，都護鐵衣冷难著。瀚海闌干百丈冰，愁雲慘",
+          "page": "白雪歌送武判官歸京"
+        },
+        {
+          "ours": "难",
+          "other": "犹",
+          "context": "。將軍角弓不得控，都護鐵衣冷难著。瀚海闌干百丈冰，愁雲慘澹萬里凝。中軍置酒飲歸客，",
+          "page": "白雪歌送武判官歸京"
+        },
+        {
+          "ours": "百丈",
+          "other": "千尺",
+          "context": "控，都護鐵衣冷难著。瀚海闌干百丈冰，愁雲慘澹萬里凝。中軍置酒飲歸客，胡琴琵琶與羌笛。紛",
+          "page": "白雪歌送武判官歸京"
+        }
+      ]
+    },
+    {
+      "id": "pozhenzi",
+      "title": "破阵子",
+      "author": "辛弃疾",
+      "stage": "初中",
+      "page": "破陣子 (辛棄疾)",
+      "url": "https://zh.wikisource.org/wiki/%E7%A0%B4%E9%99%A3%E5%AD%90%20%28%E8%BE%9B%E6%A3%84%E7%96%BE%29",
+      "lines": 6,
+      "hit": 6,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -997,30 +896,50 @@
       "variants": []
     },
     {
-      "id": "yueyanglouji",
-      "title": "岳阳楼记",
-      "author": "范仲淹",
+      "id": "shizhuisai",
+      "title": "使至塞上",
+      "author": "王维",
       "stage": "初中",
-      "page": "岳陽樓記",
-      "url": "https://zh.wikisource.org/wiki/%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98",
+      "page": "使至塞上",
+      "url": "https://zh.wikisource.org/wiki/%E4%BD%BF%E8%87%B3%E5%A1%9E%E4%B8%8A",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "chunwang",
+      "title": "春望",
+      "author": "杜甫",
+      "stage": "初中",
+      "page": "春望",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%9C%9B",
       "lines": 4,
       "hit": 4,
       "miss": [],
       "variantNotes": [],
       "variants": [
         {
-          "ours": "曜",
-          "other": "耀",
-          "context": "不開；陰風怒號，濁浪排空；日星隱曜，山岳潛形；商旅不行，檣傾楫摧；薄暮冥冥，虎嘯猿啼。登",
-          "page": "岳陽樓記"
-        },
-        {
-          "ours": "欤",
-          "other": "乎",
-          "context": "先天下之憂而憂，後天下之樂而樂」欤！噫！微斯人，吾誰與歸？時九月十五日。Category",
-          "page": "岳陽樓記"
+          "ours": "春",
+          "other": "荒",
+          "context": "國破山河在，城春草木深。感時花濺淚，恨別鳥驚心。烽火連三月，家書抵萬金",
+          "page": "春望"
         }
       ]
+    },
+    {
+      "id": "huanxisha-yanque",
+      "title": "浣溪沙",
+      "author": "晏殊",
+      "stage": "初中",
+      "page": "浣溪沙 (晏殊)",
+      "url": "https://zh.wikisource.org/wiki/%E6%B5%A3%E6%BA%AA%E6%B2%99%20%28%E6%99%8F%E6%AE%8A%29",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "daxiezhongshu",
@@ -1056,22 +975,94 @@
       ]
     },
     {
-      "id": "zuigongtingji",
-      "title": "醉翁亭记",
-      "author": "欧阳修",
+      "id": "chibi-du",
+      "title": "赤壁",
+      "author": "杜牧",
       "stage": "初中",
-      "page": "醉翁亭記",
-      "url": "https://zh.wikisource.org/wiki/%E9%86%89%E7%BF%81%E4%BA%AD%E8%A8%98",
+      "page": "赤壁",
+      "url": "https://zh.wikisource.org/wiki/%E8%B5%A4%E5%A3%81",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "未",
+          "other": "半",
+          "context": "折戟沉沙鐵未銷，自將磨洗認前朝。東風不與周郎便，銅雀春深鎖二喬《三",
+          "page": "赤壁"
+        }
+      ]
+    },
+    {
+      "id": "qiantanghuchunxing",
+      "title": "钱塘湖春行",
+      "author": "白居易",
+      "stage": "初中",
+      "page": "錢塘湖春行",
+      "url": "https://zh.wikisource.org/wiki/%E9%8C%A2%E5%A1%98%E6%B9%96%E6%98%A5%E8%A1%8C",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "yanmenshiweixing",
+      "title": "雁门太守行",
+      "author": "李贺",
+      "stage": "初中",
+      "page": "雁門太守行",
+      "url": "https://zh.wikisource.org/wiki/%E9%9B%81%E9%96%80%E5%A4%AA%E5%AE%88%E8%A1%8C",
       "lines": 3,
       "hit": 3,
       "miss": [],
       "variantNotes": [],
       "variants": [
         {
-          "ours": "让",
-          "other": "酿",
-          "context": "",
-          "page": "醉翁亭記"
+          "ours": "日",
+          "other": "月",
+          "context": "黑雲壓城城欲摧，甲光向日金鱗開。角聲滿天秋色裏，塞上燕脂凝夜紫。半卷紅旗臨",
+          "page": "雁門太守行"
+        },
+        {
+          "ours": "上",
+          "other": "土",
+          "context": "日金鱗開。角聲滿天秋色裏，塞上燕脂凝夜紫。半卷紅旗臨易水，霜重鼓寒聲不起。報君黃金臺",
+          "page": "雁門太守行"
+        }
+      ]
+    },
+    {
+      "id": "yinjiujiusan",
+      "title": "饮酒",
+      "author": "陶潜",
+      "stage": "初中",
+      "page": "飲酒二十首",
+      "url": "https://zh.wikisource.org/wiki/%E9%A3%B2%E9%85%92%E4%BA%8C%E5%8D%81%E9%A6%96",
+      "lines": 5,
+      "hit": 5,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "huanghelou-cuiheng",
+      "title": "黄鹤楼",
+      "author": "崔颢",
+      "stage": "初中",
+      "page": "黃鶴樓 (崔顥)",
+      "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E9%B6%B4%E6%A8%93%20%28%E5%B4%94%E9%A1%A5%29",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "黄鹤",
+          "other": "白云",
+          "context": "昔人已乘黄鹤去，此地空餘黃鶴樓。黃鶴一去不復返，白雲千載空悠悠。晴",
+          "page": "黃鶴樓 (崔顥)"
         }
       ]
     },
@@ -1121,6 +1112,38 @@
           "other": "春",
           "context": "東皐薄暮望，徙倚欲何依。樹樹皆秋色，山山唯落暉。牧人驅犢返，獵馬帶禽歸。相顧無相識，長",
           "page": "野望 (王績)"
+        }
+      ]
+    },
+    {
+      "id": "guanju",
+      "title": "关雎",
+      "author": "佚名",
+      "stage": "初中",
+      "page": "詩經/關雎",
+      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E9%97%9C%E9%9B%8E",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "逑",
+          "other": "仇",
+          "context": "鳩，在河之洲。:窈窕淑女，君子好逑。:參差荇菜，左右流之。:窈窕淑女，寤寐求之。:求之",
+          "page": "詩經/關雎"
+        },
+        {
+          "ours": "不",
+          "other": "弗",
+          "context": "之。:窈窕淑女，寤寐求之。:求之不得，寤寐思服。:悠哉悠哉，輾轉反側。:參差荇菜，左右采",
+          "page": "詩經/關雎"
+        },
+        {
+          "ours": "芼",
+          "other": "薅",
+          "context": "淑女，琴瑟友之。:參差荇菜，左右芼之。:窈窕淑女，鐘鼓樂之。===注釋===*按王先謙《",
+          "page": "詩經/關雎"
         }
       ]
     },
@@ -1191,6 +1214,19 @@
           "page": "莊子/逍遙遊"
         }
       ]
+    },
+    {
+      "id": "maotanshangwu",
+      "title": "卖炭翁",
+      "author": "白居易",
+      "stage": "初中",
+      "page": "賣炭翁",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%A3%E7%82%AD%E7%BF%81",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "dadaozhixing",
@@ -1344,19 +1380,6 @@
       ]
     },
     {
-      "id": "ailianshuo",
-      "title": "爱莲说",
-      "author": "周敦颐",
-      "stage": "初中",
-      "page": "愛蓮說",
-      "url": "https://zh.wikisource.org/wiki/%E6%84%9B%E8%93%AE%E8%AA%AA",
-      "lines": 4,
-      "hit": 4,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
       "id": "shihaoli",
       "title": "石壕吏",
       "author": "杜甫",
@@ -1368,6 +1391,58 @@
       "miss": [],
       "variantNotes": [],
       "variants": []
+    },
+    {
+      "id": "maowu",
+      "title": "茅屋为秋风所破歌",
+      "author": "杜甫",
+      "stage": "初中",
+      "page": "茅屋為秋風所破歌",
+      "url": "https://zh.wikisource.org/wiki/%E8%8C%85%E5%B1%8B%E7%82%BA%E7%A7%8B%E9%A2%A8%E6%89%80%E7%A0%B4%E6%AD%8C",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "洒",
+          "other": "满",
+          "context": "風怒號，卷我屋上三重茅。茅飛度江洒江郊，高者挂罥長林梢，下者飄轉沈塘坳。南村羣童欺我",
+          "page": "茅屋為秋風所破歌"
+        },
+        {
+          "ours": "塘",
+          "other": "堂",
+          "context": "江郊，高者挂罥長林梢，下者飄轉沈塘坳。南村羣童欺我老無力，忍能對面爲盜賊。公然抱茅入竹去",
+          "page": "茅屋為秋風所破歌"
+        },
+        {
+          "ours": "似",
+          "other": "象",
+          "context": "墨色，秋天漠漠向昏黑。布衾多年冷似鐵，嬌兒惡臥踏裏裂。牀頭屋漏無乾處，雨脚如麻未斷絕。自",
+          "page": "茅屋為秋風所破歌"
+        }
+      ]
+    },
+    {
+      "id": "jianjia",
+      "title": "蒹葭",
+      "author": "佚名",
+      "stage": "初中",
+      "page": "詩經/蒹葭",
+      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E8%92%B9%E8%91%AD",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "萋萋",
+          "other": "凄凄",
+          "context": "長。溯游從之，宛在水中央。:蒹葭萋萋，白露未晞。所謂伊人，在水之湄。溯洄從之，道阻且躋。溯",
+          "page": "詩經/蒹葭"
+        }
+      ]
     },
     {
       "id": "suoyoujiayao",
@@ -1388,19 +1463,6 @@
           }
         }
       ],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "loushiming",
-      "title": "陋室铭",
-      "author": "刘禹锡",
-      "stage": "初中",
-      "page": "陋室銘",
-      "url": "https://zh.wikisource.org/wiki/%E9%99%8B%E5%AE%A4%E9%8A%98",
-      "lines": 5,
-      "hit": 5,
-      "miss": [],
       "variantNotes": [],
       "variants": []
     },
@@ -2249,17 +2311,8 @@
       "page": "己亥雜詩",
       "url": "https://zh.wikisource.org/wiki/%E5%B7%B1%E4%BA%A5%E9%9B%9C%E8%A9%A9",
       "lines": 2,
-      "hit": 1,
-      "miss": [
-        {
-          "line": "我劝天公重抖擞不拘一格降人才",
-          "nearest": {
-            "line": "我劝天公重抖擞不拘一格降人才",
-            "source": "风雷万马齐瘖究可哀我劝天公重抖擞不拘一格降人材〈",
-            "ratio": 0.684
-          }
-        }
-      ],
+      "hit": 2,
+      "miss": [],
       "variantNotes": [
         "又作山中老树"
       ],
@@ -2490,16 +2543,18 @@
       "variants": []
     },
     {
-      "id": "songyuaner",
-      "title": "送元二使安西",
-      "author": "王维",
+      "id": "wenguanjun",
+      "title": "闻官军收河南河北",
+      "author": "杜甫",
       "stage": "小学",
-      "page": "送元二使安西",
-      "url": "https://zh.wikisource.org/wiki/%E9%80%81%E5%85%83%E4%BA%8C%E4%BD%BF%E5%AE%89%E8%A5%BF",
-      "lines": 2,
-      "hit": 2,
+      "page": "聞官軍收河南河北",
+      "url": "https://zh.wikisource.org/wiki/%E8%81%9E%E5%AE%98%E8%BB%8D%E6%94%B6%E6%B2%B3%E5%8D%97%E6%B2%B3%E5%8C%97",
+      "lines": 4,
+      "hit": 4,
       "miss": [],
-      "variantNotes": [],
+      "variantNotes": [
+        "一作收两河"
+      ],
       "variants": []
     },
     {
@@ -2911,6 +2966,19 @@
       "variants": []
     },
     {
+      "id": "songyuaner",
+      "title": "送元二使安西",
+      "author": "王维",
+      "stage": "小学",
+      "page": "送元二使安西",
+      "url": "https://zh.wikisource.org/wiki/%E9%80%81%E5%85%83%E4%BA%8C%E4%BD%BF%E5%AE%89%E8%A5%BF",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "caiwei",
       "title": "采薇",
       "author": "佚名",
@@ -2921,21 +2989,6 @@
       "hit": 4,
       "miss": [],
       "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "wenguanjun",
-      "title": "闻官军收河南河北",
-      "author": "杜甫",
-      "stage": "小学",
-      "page": "聞官軍收河南河北",
-      "url": "https://zh.wikisource.org/wiki/%E8%81%9E%E5%AE%98%E8%BB%8D%E6%94%B6%E6%B2%B3%E5%8D%97%E6%B2%B3%E5%8C%97",
-      "lines": 4,
-      "hit": 4,
-      "miss": [],
-      "variantNotes": [
-        "一作收两河"
-      ],
       "variants": []
     },
     {
@@ -3247,63 +3300,6 @@
       "variants": []
     },
     {
-      "id": "lunyu12",
-      "title": "《论语》十二章",
-      "author": "佚名",
-      "stage": "高中",
-      "page": "論語/學而第一 + 論語/爲政第二 + 論語/雍也第六 + 論語/述而第七 + 論語/子罕第九 + 論語/子張第十九",
-      "url": "https://zh.wikisource.org/wiki/%E8%AB%96%E8%AA%9E/%E5%AD%B8%E8%80%8C%E7%AC%AC%E4%B8%80",
-      "lines": 9,
-      "hit": 9,
-      "miss": [],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "也已",
-          "other": "也已矣",
-          "context": "而愼於言，就有道而正焉：可謂好學也已。」一之十五子貢曰：「貧而無諂，富而無驕，何如？」子曰",
-          "page": "論語/學而第一"
-        },
-        {
-          "ours": "贫而乐",
-          "other": "贫而乐道",
-          "context": "無驕，何如？」子曰：「可也。未若贫而乐，富而好禮者也」。子貢曰：「《詩》云：『如切如磋，如琢",
-          "page": "論語/學而第一"
-        },
-        {
-          "ours": "是亦为政",
-          "other": "是亦为政也",
-          "context": "無法判定引用究竟在何處終止。}}是亦为政，奚其爲爲政？」二之二二子曰：「人而無信，不知其可也。",
-          "page": "論語/爲政第二"
-        },
-        {
-          "ours": "逝",
-          "other": "选",
-          "context": "也？」子曰：「何爲其然也？君子可逝袁金平、李麗珠根據出土文獻與之對應句作「君子可選」，認",
-          "page": "論語/雍也第六"
-        },
-        {
-          "ours": "擧一隅",
-          "other": "擧一隅而示之",
-          "context": "之八子曰：「不憤不啟；不悱不發。擧一隅，不以三隅反，则不复也。」七之九子食於有喪者之側，未嘗飽",
-          "page": "論語/述而第七"
-        },
-        {
-          "ours": "则不复也",
-          "other": "则吾不复也",
-          "context": "；不悱不發。擧一隅，不以三隅反，则不复也。」七之九子食於有喪者之側，未嘗飽也。子於是日哭，則不",
-          "page": "論語/述而第七"
-        },
-        {
-          "ours": "艺",
-          "other": "执",
-          "context": "。」七之十七子所雅言：「詩、書、艺黄尚明根據「執」「埶」二字相混指出這裏的「執」應該讀爲",
-          "page": "論語/述而第七"
-        }
-      ],
-      "override": "本篇是《论语》六章的合选，没有单页收全，必须跨页合并。"
-    },
-    {
       "id": "quanxue",
       "title": "劝学",
       "author": "荀子",
@@ -3401,158 +3397,15 @@
       ]
     },
     {
-      "id": "kezhi",
-      "title": "客至",
-      "author": "杜甫",
+      "id": "shishuo",
+      "title": "师说",
+      "author": "韩愈",
       "stage": "高中",
-      "page": "客至",
-      "url": "https://zh.wikisource.org/wiki/%E5%AE%A2%E8%87%B3",
-      "lines": 3,
-      "hit": 3,
+      "page": "師說",
+      "url": "https://zh.wikisource.org/wiki/%E5%B8%AB%E8%AA%AA",
+      "lines": 5,
+      "hit": 5,
       "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "jiangjinjiu",
-      "title": "将进酒",
-      "author": "李白",
-      "stage": "高中",
-      "page": "將進酒 (李白)",
-      "url": "https://zh.wikisource.org/wiki/%E5%B0%87%E9%80%B2%E9%85%92%20%28%E6%9D%8E%E7%99%BD%29",
-      "lines": 4,
-      "hit": 3,
-      "miss": [
-        {
-          "line": "天生我材必有用千金散尽还复来",
-          "nearest": null
-        }
-      ],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "到",
-          "other": "倒",
-          "context": "君不見，之水天上來，奔流到海不復回！君不見，高堂明鏡悲白髮，朝如青4",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "回",
-          "other": "还",
-          "context": "見，之水天上來，奔流到海不復回！君不見，高堂明鏡悲白髮，朝如青丝暮成雪",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "高堂",
-          "other": "床头",
-          "context": "奔流到海不復回！君不見，高堂明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "青",
-          "other": "春",
-          "context": "！君不見，高堂明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡，莫使金樽空對月。，從",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "丝",
-          "other": "云",
-          "context": "見，高堂明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡，莫使金樽空對月。，從敦煌「",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "成",
-          "other": "如",
-          "context": "明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡，莫使金樽空對月。，從敦煌「伯256",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "千",
-          "other": "黄",
-          "context": "從敦煌「伯2567」唐詩選殘卷。千金散盡還復來。烹羊宰牛且爲樂，會須一飲三百杯。，。（將",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "杯",
-          "other": "君",
-          "context": "，會須一飲三百杯。，。（將）進酒杯莫停。与君歌一曲，請君爲我倾耳聽。敦煌「伯25",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "与",
-          "other": "为",
-          "context": "百杯。，。（將）進酒杯莫停。与君歌一曲，請君爲我倾耳聽。敦煌「伯2567」唐詩選",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "倾",
-          "other": "侧",
-          "context": "莫停。与君歌一曲，請君爲我倾耳聽。敦煌「伯2567」唐詩選殘卷此句作「請君為我傾」",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "圣贤",
-          "other": "贤圣",
-          "context": "」。，但願長醉不复醒。古來圣贤皆寂寞，惟有飲者留其名。昔时宴，斗酒十千恣歡",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "寂寞",
-          "other": "死尽",
-          "context": "長醉不复醒。古來圣贤皆寂寞，惟有飲者留其名。昔时宴，斗酒十千恣歡謔。主人",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "昔时",
-          "other": "昔日",
-          "context": "1皆寂寞，惟有飲者留其名。昔时宴，斗酒十千恣歡謔。主人何为言少錢？径須沽",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "何为",
-          "other": "何用",
-          "context": "昔时宴，斗酒十千恣歡謔。主人何为言少錢？径須沽取对君酌。五花馬，千金裘。",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "径",
-          "other": "且",
-          "context": "十千恣歡謔。主人何为言少錢？径須沽取对君酌。五花馬，千金裘。呼兒將出換美酒，",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "对",
-          "other": "共",
-          "context": "人何为言少錢？径須沽取对君酌。五花馬，千金裘。呼兒將出換美酒，与尔同銷萬",
-          "page": "將進酒 (李白)"
-        },
-        {
-          "ours": "与尔",
-          "other": "为汝",
-          "context": "五花馬，千金裘。呼兒將出換美酒，与尔同銷萬古愁。----Category:酒詩Categ",
-          "page": "將進酒 (李白)"
-        }
-      ]
-    },
-    {
-      "id": "quyuanliezhuan",
-      "title": "屈原列传",
-      "author": "司马迁",
-      "stage": "高中",
-      "page": "屈原列傳",
-      "url": "https://zh.wikisource.org/wiki/%E5%B1%88%E5%8E%9F%E5%88%97%E5%82%B3",
-      "lines": 7,
-      "hit": 6,
-      "miss": [
-        {
-          "line": "博闻强志明于治乱娴于辞令",
-          "nearest": {
-            "line": "博闻强志明于治乱娴于辞令",
-            "source": "闻彊志&91;4&93;明于於治乱娴于辞令入",
-            "ratio": 0.588
-          }
-        }
-      ],
       "variantNotes": [],
       "variants": []
     },
@@ -3779,6 +3632,19 @@
       "variantNotes": [
         "一作别东鲁诸"
       ],
+      "variants": []
+    },
+    {
+      "id": "yongyule",
+      "title": "永遇乐·京口北固亭怀古",
+      "author": "辛弃疾",
+      "stage": "高中",
+      "page": "永遇樂 (辛棄疾)",
+      "url": "https://zh.wikisource.org/wiki/%E6%B0%B8%E9%81%87%E6%A8%82%20%28%E8%BE%9B%E6%A3%84%E7%96%BE%29",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
       "variants": []
     },
     {
@@ -4027,15 +3893,24 @@
       ]
     },
     {
-      "id": "dengyueyanglou",
-      "title": "登岳阳楼",
-      "author": "杜甫",
+      "id": "dengtaishan",
+      "title": "登泰山记",
+      "author": "姚鼐",
       "stage": "高中",
-      "page": "登岳陽樓 (杜甫)",
-      "url": "https://zh.wikisource.org/wiki/%E7%99%BB%E5%B2%B3%E9%99%BD%E6%A8%93%20%28%E6%9D%9C%E7%94%AB%29",
-      "lines": 4,
-      "hit": 4,
-      "miss": [],
+      "page": "登泰山記",
+      "url": "https://zh.wikisource.org/wiki/%E7%99%BB%E6%B3%B0%E5%B1%B1%E8%A8%98",
+      "lines": 6,
+      "hit": 5,
+      "miss": [
+        {
+          "line": "极天云一线异色须臾成五采",
+          "nearest": {
+            "line": "极天云一线异色须臾成五采",
+            "source": "蒱数十立者山也极天云一线缐异色须臾成五彩日上",
+            "ratio": 0.647
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -4085,28 +3960,6 @@
       "variants": []
     },
     {
-      "id": "lisao",
-      "title": "离骚",
-      "author": "屈原",
-      "stage": "高中",
-      "page": "離騷",
-      "url": "https://zh.wikisource.org/wiki/%E9%9B%A2%E9%A8%B7",
-      "lines": 4,
-      "hit": 3,
-      "miss": [
-        {
-          "line": "路漫漫其修远兮吾将上下而求索",
-          "nearest": {
-            "line": "路漫漫其修远兮吾将上下而求索",
-            "source": "望崦嵫而勿迫路曼曼其修脩远兮吾将上下而求索饮余马",
-            "ratio": 0.632
-          }
-        }
-      ],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
       "id": "pusaman-zaoxiang",
       "title": "菩萨蛮·书江西造口壁",
       "author": "辛弃疾",
@@ -4120,12 +3973,12 @@
       "variants": []
     },
     {
-      "id": "shuxiang",
-      "title": "蜀相",
-      "author": "杜甫",
+      "id": "yumeiren",
+      "title": "虞美人",
+      "author": "李煜",
       "stage": "高中",
-      "page": "蜀相",
-      "url": "https://zh.wikisource.org/wiki/%E8%9C%80%E7%9B%B8",
+      "page": "虞美人 (李煜)",
+      "url": "https://zh.wikisource.org/wiki/%E8%99%9E%E7%BE%8E%E4%BA%BA%20%28%E6%9D%8E%E7%85%9C%29",
       "lines": 3,
       "hit": 3,
       "miss": [],
@@ -4133,126 +3986,17 @@
       "variants": []
     },
     {
-      "id": "shudaonan",
-      "title": "蜀道难",
-      "author": "李白",
+      "id": "chibifu",
+      "title": "赤壁赋",
+      "author": "苏轼",
       "stage": "高中",
-      "page": "蜀道難 (李白)",
-      "url": "https://zh.wikisource.org/wiki/%E8%9C%80%E9%81%93%E9%9B%A3%20%28%E6%9D%8E%E7%99%BD%29",
+      "page": "蘇子瞻醉寫赤壁賦",
+      "url": "https://zh.wikisource.org/wiki/%E8%98%87%E5%AD%90%E7%9E%BB%E9%86%89%E5%AF%AB%E8%B5%A4%E5%A3%81%E8%B3%A6",
       "lines": 4,
       "hit": 4,
       "miss": [],
       "variantNotes": [],
-      "variants": [
-        {
-          "ours": "吁嚱",
-          "other": "嚱吁",
-          "context": "噫吁嚱！危乎高哉！道之難，難於上青天！及，開國何茫然！爾來四",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "不",
-          "other": "乃不",
-          "context": "及，開國何茫然！爾來四萬八千歲，不與塞通人煙。西當有鳥道，可以橫絶巅。地崩山摧壯",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "可",
-          "other": "何",
-          "context": "，不與塞通人煙。西當有鳥道，可以橫絶巅。地崩山摧壯士死，然後天梯石棧相鉤連。",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "巅",
-          "other": "颠",
-          "context": "通人煙。西當有鳥道，可以橫絶巅。地崩山摧壯士死，然後天梯石棧相鉤連。上有，下有衝",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "相",
-          "other": "方",
-          "context": "。地崩山摧壯士死，然後天梯石棧相鉤連。上有，下有衝波逆折之回川。黃鶴之飛尚，猿猱欲度愁",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "膺",
-          "other": "心",
-          "context": "折縈巖巒。捫參歷井仰脅息，以手撫膺坐長叹。问君西遊何时還？畏途巉巖不可攀。但",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "问君",
-          "other": "征人",
-          "context": "仰脅息，以手撫膺坐長叹。问君西遊何时還？畏途巉巖不可攀。但見悲鸟號12",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "时",
-          "other": "当",
-          "context": "撫膺坐長叹。问君西遊何时還？畏途巉巖不可攀。但見悲鸟號古木，雄飛繞",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "悲鸟",
-          "other": "鸟",
-          "context": "时還？畏途巉巖不可攀。但見悲鸟號古木，雄飛繞林間。又聞子規啼敦煌殘卷無",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "古",
-          "other": "枯",
-          "context": "？畏途巉巖不可攀。但見悲鸟號古木，雄飛繞林間。又聞子規啼敦煌殘卷無「夜」字。",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "林",
-          "other": "花",
-          "context": "但見悲鸟號古木，雄飛繞林間。又聞子規啼敦煌殘卷無「夜」字。道之難，難於上青天",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "夜月",
-          "other": "月落",
-          "context": "",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "飞",
-          "other": "崩",
-          "context": "！連峯去天不盈尺，枯松倒挂倚絶壁。飞湍瀑流爭喧豗，砯崖轉石萬壑雷。其險也1",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "也",
-          "other": "又玄",
-          "context": "喧豗，砯崖轉石萬壑雷。其險也若此，嗟爾遠道之人胡爲乎來哉？崢嶸而崔嵬，一夫",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "若",
-          "other": "如",
-          "context": "17崖轉石萬壑雷。其險也若此，嗟爾遠道之人胡爲乎來哉？崢嶸而崔嵬，一夫當關，萬",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "夫",
-          "other": "人",
-          "context": "乎來哉？崢嶸而崔嵬，一夫當關，萬夫莫開。所守或匪亲，化爲狼與豺。朝避猛虎，夕避長",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "亲",
-          "other": "人",
-          "context": "夫當關，萬夫莫開。所守或匪亲，化爲狼與豺。朝避猛虎，夕避長蛇。磨牙吮血，殺人如麻",
-          "page": "蜀道難 (李白)"
-        },
-        {
-          "ours": "长咨",
-          "other": "令人",
-          "context": "家。道之難，難於上青天，側身西望长咨嗟！Category:代表作品Category:唐詩",
-          "page": "蜀道難 (李白)"
-        }
-      ]
+      "variants": []
     },
     {
       "id": "qingyu-an",
@@ -4307,14 +4051,52 @@
       "variants": []
     },
     {
-      "id": "shishuo",
-      "title": "师说",
-      "author": "韩愈",
+      "id": "zilu-shizhe",
+      "title": "子路、曾皙、冉有、公西华侍坐",
+      "author": "佚名",
       "stage": "高中",
-      "page": "師說",
-      "url": "https://zh.wikisource.org/wiki/%E5%B8%AB%E8%AA%AA",
-      "lines": 5,
-      "hit": 5,
+      "page": "論語/先進第十一",
+      "url": "https://zh.wikisource.org/wiki/%E8%AB%96%E8%AA%9E/%E5%85%88%E9%80%B2%E7%AC%AC%E5%8D%81%E4%B8%80",
+      "lines": 6,
+      "hit": 6,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "而",
+          "other": "如",
+          "context": "益之。子曰：「非吾徒也！小子鳴鼓而攻之，可也。」十一之十七柴也愚，參也魯，師也辟，由也喭",
+          "page": "論語/先進第十一"
+        },
+        {
+          "ours": "哂",
+          "other": "讯",
+          "context": "三年，可使有勇，且知方也。」夫子哂之。「求，爾何如？」對曰：「方六七十，如五六十，求也爲",
+          "page": "論語/先進第十一"
+        },
+        {
+          "ours": "而",
+          "other": "如",
+          "context": "點，爾何如？」鼓瑟希，鏗爾，舍瑟而作；對曰：「異乎三子者之撰。」子曰：「何傷乎？亦各言其",
+          "page": "論語/先進第十一"
+        },
+        {
+          "ours": "哂",
+          "other": "讯",
+          "context": "亦各言其志也已矣。」曰：「夫子何哂由也？」曰：「爲國以禮，其言不讓，是故哂之。」「唯求則",
+          "page": "論語/先進第十一"
+        }
+      ]
+    },
+    {
+      "id": "niannujiao-gudong",
+      "title": "念奴娇·过洞庭",
+      "author": "张孝祥",
+      "stage": "高中",
+      "page": "念奴嬌 (張孝祥)",
+      "url": "https://zh.wikisource.org/wiki/%E5%BF%B5%E5%A5%B4%E5%AC%8C%20%28%E5%BC%B5%E5%AD%9D%E7%A5%A5%29",
+      "lines": 4,
+      "hit": 4,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -4364,27 +4146,14 @@
       ]
     },
     {
-      "id": "yongyule",
-      "title": "永遇乐·京口北固亭怀古",
-      "author": "辛弃疾",
+      "id": "dengyueyanglou",
+      "title": "登岳阳楼",
+      "author": "杜甫",
       "stage": "高中",
-      "page": "永遇樂 (辛棄疾)",
-      "url": "https://zh.wikisource.org/wiki/%E6%B0%B8%E9%81%87%E6%A8%82%20%28%E8%BE%9B%E6%A3%84%E7%96%BE%29",
+      "page": "登岳陽樓 (杜甫)",
+      "url": "https://zh.wikisource.org/wiki/%E7%99%BB%E5%B2%B3%E9%99%BD%E6%A8%93%20%28%E6%9D%9C%E7%94%AB%29",
       "lines": 4,
       "hit": 4,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "jiangchengzi-yimao",
-      "title": "江城子",
-      "author": "苏轼",
-      "stage": "高中",
-      "page": "江城子 (蘇軾)/江城子 (乙卯正月二十日夜記夢)",
-      "url": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E8%98%87%E8%BB%BE%29/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E4%B9%99%E5%8D%AF%E6%AD%A3%E6%9C%88%E4%BA%8C%E5%8D%81%E6%97%A5%E5%A4%9C%E8%A8%98%E5%A4%A2%29",
-      "lines": 3,
-      "hit": 3,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -4414,50 +4183,37 @@
       "variants": []
     },
     {
-      "id": "yumeiren",
-      "title": "虞美人",
-      "author": "李煜",
-      "stage": "高中",
-      "page": "虞美人 (李煜)",
-      "url": "https://zh.wikisource.org/wiki/%E8%99%9E%E7%BE%8E%E4%BA%BA%20%28%E6%9D%8E%E7%85%9C%29",
-      "lines": 3,
-      "hit": 3,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
       "id": "jiantaishisi",
       "title": "谏太宗十思疏",
       "author": "魏征",
       "stage": "高中",
-      "page": "唐史演義/017",
-      "url": "https://zh.wikisource.org/wiki/%E5%94%90%E5%8F%B2%E6%BC%94%E7%BE%A9/017",
+      "page": "厯代名臣奏議 (四庫全書本)/卷027",
+      "url": "https://zh.wikisource.org/wiki/%E5%8E%AF%E4%BB%A3%E5%90%8D%E8%87%A3%E5%A5%8F%E8%AD%B0%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7027",
       "lines": 5,
-      "hit": 1,
+      "hit": 2,
       "miss": [
         {
           "line": "臣闻求木之长者必固其根本欲流之远者必浚其泉源思国之安者必积其德义",
-          "nearest": null
-        },
-        {
-          "line": "源不深而望流之远根不固而求木之长德不厚而思国之治",
-          "nearest": null
-        },
-        {
-          "line": "怨不在大可畏惟人载舟覆舟所宜深慎",
           "nearest": {
-            "line": "怨不在大可畏惟人载舟覆舟所宜深慎",
-            "source": "恭而不心服怨不在大所畏惟人载舟覆复舟所宜审慎诚能见可",
-            "ratio": 0.667
+            "line": "臣闻求木之长者必固其根本欲流之远者必浚其泉源思国之安者必积其德义",
+            "source": "徵陈得失疏曰臣闻求木之长者必固其根本欲流之逺者必浚其泉源思国之安者必积其徳义源不深而",
+            "ratio": 0.811
           }
         },
         {
-          "line": "忧懈怠则思慎始而敬终虑壅蔽则思虚心以纳下",
+          "line": "源不深而望流之远根不固而求木之长德不厚而思国之治",
           "nearest": {
-            "line": "忧懈怠则思慎始而敬终虑壅蔽则思虚心以纳下",
-            "source": "盘游则思三驱以为度懮懈怠则思慎始而敬终虑壅蔽则思虚心以纳下惧",
-            "ratio": 0.76
+            "line": "源不深而望流之远根不固而求木之长德不厚而思国之治",
+            "source": "积其徳义源不深而望流之逺根不固而求木之长徳不厚而思国之理臣虽下愚知其",
+            "ratio": 0.724
+          }
+        },
+        {
+          "line": "总此十思宏兹九德简能而任之择善而从之",
+          "nearest": {
+            "line": "总此十思宏兹九德简能而任之择善而从之",
+            "source": "则思无以怒而滥刑緫此十思𢎞兹九徳简能而任之择善而从之则智",
+            "ratio": 0.652
           }
         }
       ],
@@ -4465,16 +4221,20 @@
       "variants": []
     },
     {
-      "id": "chibifu",
-      "title": "赤壁赋",
-      "author": "苏轼",
+      "id": "jianzhukeshu",
+      "title": "谏逐客书",
+      "author": "李斯",
       "stage": "高中",
-      "page": "蘇子瞻醉寫赤壁賦",
-      "url": "https://zh.wikisource.org/wiki/%E8%98%87%E5%AD%90%E7%9E%BB%E9%86%89%E5%AF%AB%E8%B5%A4%E5%A3%81%E8%B3%A6",
-      "lines": 4,
-      "hit": 4,
+      "page": "全秦文",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E7%A7%A6%E6%96%87",
+      "lines": 3,
+      "hit": 3,
       "miss": [],
-      "variantNotes": [],
+      "variantNotes": [
+        "一作修使",
+        "一作分",
+        "一作福"
+      ],
       "variants": []
     },
     {
@@ -4516,31 +4276,6 @@
       ]
     },
     {
-      "id": "xiangjixuanzhi",
-      "title": "项脊轩志",
-      "author": "归有光",
-      "stage": "高中",
-      "page": "項脊軒志",
-      "url": "https://zh.wikisource.org/wiki/%E9%A0%85%E8%84%8A%E8%BB%92%E5%BF%97",
-      "lines": 6,
-      "hit": 5,
-      "miss": [
-        {
-          "line": "项脊轩旧南阁子也",
-          "nearest": null
-        }
-      ],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "遂",
-          "other": "逐",
-          "context": "又雜植蘭桂竹木於庭，舊時欄楯，亦遂增勝。借書滿架，偃仰嘯歌，冥然兀坐，萬籟有聲；而庭階寂",
-          "page": "項脊軒志"
-        }
-      ]
-    },
-    {
       "id": "mengziyize",
       "title": "《孟子》一则",
       "author": "孟子",
@@ -4551,32 +4286,6 @@
       "hit": 7,
       "miss": [],
       "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "laozi8",
-      "title": "《老子》八章",
-      "author": "老子",
-      "stage": "高中",
-      "page": "老子翼 (四庫全書本)/全覽",
-      "url": "https://zh.wikisource.org/wiki/%E8%80%81%E5%AD%90%E7%BF%BC%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%85%A8%E8%A6%BD",
-      "lines": 5,
-      "hit": 5,
-      "miss": [],
-      "variantNotes": [
-        "一作下知有之",
-        "一作纯小明为",
-        "一作失本一作",
-        "一作掩袭之袭",
-        "一作扔夫音符",
-        "一作财货盗竽",
-        "一作国汉人避",
-        "一作嗌不嗄黄",
-        "一作复柢一作",
-        "一作伤人以下",
-        "一作破成一作",
-        "一作辅非既曰"
-      ],
       "variants": []
     },
     {
@@ -4613,35 +4322,6 @@
       "variants": []
     },
     {
-      "id": "lantingjixu",
-      "title": "兰亭集序",
-      "author": "王羲之",
-      "stage": "高中",
-      "page": "蘭亭集序",
-      "url": "https://zh.wikisource.org/wiki/%E8%98%AD%E4%BA%AD%E9%9B%86%E5%BA%8F",
-      "lines": 4,
-      "hit": 3,
-      "miss": [
-        {
-          "line": "后之览者亦将有感于斯文",
-          "nearest": {
-            "line": "后之览者亦将有感于斯文",
-            "source": "以兴懐其致一也后之揽〈览〉者亦将有感扵斯文",
-            "ratio": 0.625
-          }
-        }
-      ],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "怏",
-          "other": "快",
-          "context": "躁不同，當其欣扵所遇，暫得扵己，怏然自足，不知老之将至。及其所之既惓，情随事遷，感慨係之",
-          "page": "蘭亭集序"
-        }
-      ]
-    },
-    {
       "id": "gudaishilun",
       "title": "古代文论选段",
       "author": "佚名",
@@ -4657,19 +4337,6 @@
       ],
       "variants": [],
       "override": "六段来自六种文论，必须跨页合并。"
-    },
-    {
-      "id": "daxue",
-      "title": "大学",
-      "author": "佚名",
-      "stage": "高中",
-      "page": "中庸九經衍義/總論爲治之道",
-      "url": "https://zh.wikisource.org/wiki/%E4%B8%AD%E5%BA%B8%E4%B9%9D%E7%B6%93%E8%A1%8D%E7%BE%A9/%E7%B8%BD%E8%AB%96%E7%88%B2%E6%B2%BB%E4%B9%8B%E9%81%93",
-      "lines": 3,
-      "hit": 3,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
     },
     {
       "id": "jishi-jiangfanjueyu",
@@ -4955,23 +4622,6 @@
       ]
     },
     {
-      "id": "jianzhukeshu",
-      "title": "谏逐客书",
-      "author": "李斯",
-      "stage": "高中",
-      "page": "全秦文",
-      "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E7%A7%A6%E6%96%87",
-      "lines": 3,
-      "hit": 3,
-      "miss": [],
-      "variantNotes": [
-        "一作修使",
-        "一作分",
-        "一作福"
-      ],
-      "variants": []
-    },
-    {
       "id": "xiaoyaoyou",
       "title": "逍遥游",
       "author": "庄子",
@@ -5062,40 +4712,219 @@
       "variants": []
     },
     {
-      "id": "zilu-shizhe",
-      "title": "子路、曾皙、冉有、公西华侍坐",
+      "id": "laozi8",
+      "title": "《老子》八章",
+      "author": "老子",
+      "stage": "高中",
+      "page": "老子翼 (四庫全書本)/全覽",
+      "url": "https://zh.wikisource.org/wiki/%E8%80%81%E5%AD%90%E7%BF%BC%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%85%A8%E8%A6%BD",
+      "lines": 5,
+      "hit": 5,
+      "miss": [],
+      "variantNotes": [
+        "一作下知有之",
+        "一作纯小明为",
+        "一作失本一作",
+        "一作掩袭之袭",
+        "一作扔夫音符",
+        "一作财货盗竽",
+        "一作国汉人避",
+        "一作嗌不嗄黄",
+        "一作复柢一作",
+        "一作伤人以下",
+        "一作破成一作",
+        "一作辅非既曰"
+      ],
+      "variants": []
+    },
+    {
+      "id": "lunyu12",
+      "title": "《论语》十二章",
       "author": "佚名",
       "stage": "高中",
-      "page": "論語/先進第十一",
-      "url": "https://zh.wikisource.org/wiki/%E8%AB%96%E8%AA%9E/%E5%85%88%E9%80%B2%E7%AC%AC%E5%8D%81%E4%B8%80",
-      "lines": 6,
-      "hit": 6,
+      "page": "論語/學而第一 + 論語/爲政第二 + 論語/雍也第六 + 論語/述而第七 + 論語/子罕第九 + 論語/子張第十九",
+      "url": "https://zh.wikisource.org/wiki/%E8%AB%96%E8%AA%9E/%E5%AD%B8%E8%80%8C%E7%AC%AC%E4%B8%80",
+      "lines": 12,
+      "hit": 4,
       "miss": [],
       "variantNotes": [],
       "variants": [
         {
-          "ours": "而",
+          "ours": "也已",
+          "other": "也已矣",
+          "context": "而愼於言，就有道而正焉：可謂好學也已。」一之十五子貢曰：「貧而無諂，富而無驕，何如？」子曰",
+          "page": "論語/學而第一"
+        },
+        {
+          "ours": "贫而乐",
+          "other": "贫而乐道",
+          "context": "無驕，何如？」子曰：「可也。未若贫而乐，富而好禮者也」。子貢曰：「《詩》云：『如切如磋，如琢",
+          "page": "論語/學而第一"
+        },
+        {
+          "ours": "是亦为政",
+          "other": "是亦为政也",
+          "context": "無法判定引用究竟在何處終止。}}是亦为政，奚其爲爲政？」二之二二子曰：「人而無信，不知其可也。",
+          "page": "論語/爲政第二"
+        },
+        {
+          "ours": "逝",
+          "other": "选",
+          "context": "也？」子曰：「何爲其然也？君子可逝袁金平、李麗珠根據出土文獻與之對應句作「君子可選」，認",
+          "page": "論語/雍也第六"
+        },
+        {
+          "ours": "擧一隅",
+          "other": "擧一隅而示之",
+          "context": "之八子曰：「不憤不啟；不悱不發。擧一隅，不以三隅反，则不复也。」七之九子食於有喪者之側，未嘗飽",
+          "page": "論語/述而第七"
+        },
+        {
+          "ours": "则不复也",
+          "other": "则吾不复也",
+          "context": "；不悱不發。擧一隅，不以三隅反，则不复也。」七之九子食於有喪者之側，未嘗飽也。子於是日哭，則不",
+          "page": "論語/述而第七"
+        },
+        {
+          "ours": "艺",
+          "other": "执",
+          "context": "。」七之十七子所雅言：「詩、書、艺黄尚明根據「執」「埶」二字相混指出這裏的「執」應該讀爲",
+          "page": "論語/述而第七"
+        }
+      ],
+      "override": "本篇是《论语》六章的合选，没有单页收全，必须跨页合并。"
+    },
+    {
+      "id": "daxue",
+      "title": "大学",
+      "author": "佚名",
+      "stage": "高中",
+      "page": "中庸九經衍義/總論爲治之道",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%AD%E5%BA%B8%E4%B9%9D%E7%B6%93%E8%A1%8D%E7%BE%A9/%E7%B8%BD%E8%AB%96%E7%88%B2%E6%B2%BB%E4%B9%8B%E9%81%93",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "jiangjinjiu",
+      "title": "将进酒",
+      "author": "李白",
+      "stage": "高中",
+      "page": "將進酒 (李白)",
+      "url": "https://zh.wikisource.org/wiki/%E5%B0%87%E9%80%B2%E9%85%92%20%28%E6%9D%8E%E7%99%BD%29",
+      "lines": 4,
+      "hit": 3,
+      "miss": [
+        {
+          "line": "天生我材必有用千金散尽还复来",
+          "nearest": null
+        }
+      ],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "到",
+          "other": "倒",
+          "context": "君不見，之水天上來，奔流到海不復回！君不見，高堂明鏡悲白髮，朝如青4",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "回",
+          "other": "还",
+          "context": "見，之水天上來，奔流到海不復回！君不見，高堂明鏡悲白髮，朝如青丝暮成雪",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "高堂",
+          "other": "床头",
+          "context": "奔流到海不復回！君不見，高堂明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "青",
+          "other": "春",
+          "context": "！君不見，高堂明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡，莫使金樽空對月。，從",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "丝",
+          "other": "云",
+          "context": "見，高堂明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡，莫使金樽空對月。，從敦煌「",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "成",
           "other": "如",
-          "context": "益之。子曰：「非吾徒也！小子鳴鼓而攻之，可也。」十一之十七柴也愚，參也魯，師也辟，由也喭",
-          "page": "論語/先進第十一"
+          "context": "明鏡悲白髮，朝如青丝暮成雪！人生得意須盡歡，莫使金樽空對月。，從敦煌「伯256",
+          "page": "將進酒 (李白)"
         },
         {
-          "ours": "哂",
-          "other": "讯",
-          "context": "三年，可使有勇，且知方也。」夫子哂之。「求，爾何如？」對曰：「方六七十，如五六十，求也爲",
-          "page": "論語/先進第十一"
+          "ours": "千",
+          "other": "黄",
+          "context": "從敦煌「伯2567」唐詩選殘卷。千金散盡還復來。烹羊宰牛且爲樂，會須一飲三百杯。，。（將",
+          "page": "將進酒 (李白)"
         },
         {
-          "ours": "而",
-          "other": "如",
-          "context": "點，爾何如？」鼓瑟希，鏗爾，舍瑟而作；對曰：「異乎三子者之撰。」子曰：「何傷乎？亦各言其",
-          "page": "論語/先進第十一"
+          "ours": "杯",
+          "other": "君",
+          "context": "，會須一飲三百杯。，。（將）進酒杯莫停。与君歌一曲，請君爲我倾耳聽。敦煌「伯25",
+          "page": "將進酒 (李白)"
         },
         {
-          "ours": "哂",
-          "other": "讯",
-          "context": "亦各言其志也已矣。」曰：「夫子何哂由也？」曰：「爲國以禮，其言不讓，是故哂之。」「唯求則",
-          "page": "論語/先進第十一"
+          "ours": "与",
+          "other": "为",
+          "context": "百杯。，。（將）進酒杯莫停。与君歌一曲，請君爲我倾耳聽。敦煌「伯2567」唐詩選",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "倾",
+          "other": "侧",
+          "context": "莫停。与君歌一曲，請君爲我倾耳聽。敦煌「伯2567」唐詩選殘卷此句作「請君為我傾」",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "圣贤",
+          "other": "贤圣",
+          "context": "」。，但願長醉不复醒。古來圣贤皆寂寞，惟有飲者留其名。昔时宴，斗酒十千恣歡",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "寂寞",
+          "other": "死尽",
+          "context": "長醉不复醒。古來圣贤皆寂寞，惟有飲者留其名。昔时宴，斗酒十千恣歡謔。主人",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "昔时",
+          "other": "昔日",
+          "context": "1皆寂寞，惟有飲者留其名。昔时宴，斗酒十千恣歡謔。主人何为言少錢？径須沽",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "何为",
+          "other": "何用",
+          "context": "昔时宴，斗酒十千恣歡謔。主人何为言少錢？径須沽取对君酌。五花馬，千金裘。",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "径",
+          "other": "且",
+          "context": "十千恣歡謔。主人何为言少錢？径須沽取对君酌。五花馬，千金裘。呼兒將出換美酒，",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "对",
+          "other": "共",
+          "context": "人何为言少錢？径須沽取对君酌。五花馬，千金裘。呼兒將出換美酒，与尔同銷萬",
+          "page": "將進酒 (李白)"
+        },
+        {
+          "ours": "与尔",
+          "other": "为汝",
+          "context": "五花馬，千金裘。呼兒將出換美酒，与尔同銷萬古愁。----Category:酒詩Categ",
+          "page": "將進酒 (李白)"
         }
       ]
     },
@@ -5106,6 +4935,56 @@
       "stage": "高中",
       "page": "詩經/無衣 (秦風)",
       "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E7%84%A1%E8%A1%A3%20%28%E7%A7%A6%E9%A2%A8%29",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "chunjianghuayue",
+      "title": "春江花月夜",
+      "author": "张若虚",
+      "stage": "高中",
+      "page": "春江花月夜 (張若虛)",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C%20%28%E5%BC%B5%E8%8B%A5%E8%99%9B%29",
+      "lines": 3,
+      "hit": 2,
+      "miss": [
+        {
+          "line": "今人不见古时月今月曾经照古人",
+          "nearest": null
+        }
+      ],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "里",
+          "other": "顷",
+          "context": "平，海上明月共潮生。灩灩隨波千萬里，何處春江無月明？江流宛轉遶芳甸，月照花林皆似霰。空裏",
+          "page": "春江花月夜 (張若虛)"
+        },
+        {
+          "ours": "妆",
+          "other": "玉",
+          "context": "明月樓？可憐樓上月徘徊，應照離人妆鏡臺。玉戶簾中卷不去，擣衣砧上拂還來。此時相望不相",
+          "page": "春江花月夜 (張若虛)"
+        },
+        {
+          "ours": "玉",
+          "other": "遮",
+          "context": "樓上月徘徊，應照離人妆鏡臺。玉戶簾中卷不去，擣衣砧上拂還來。此時相望不相聞，願逐月華",
+          "page": "春江花月夜 (張若虛)"
+        }
+      ]
+    },
+    {
+      "id": "jiangchengzi-yimao",
+      "title": "江城子",
+      "author": "苏轼",
+      "stage": "高中",
+      "page": "江城子 (蘇軾)/江城子 (乙卯正月二十日夜記夢)",
+      "url": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E8%98%87%E8%BB%BE%29/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E4%B9%99%E5%8D%AF%E6%AD%A3%E6%9C%88%E4%BA%8C%E5%8D%81%E6%97%A5%E5%A4%9C%E8%A8%98%E5%A4%A2%29",
       "lines": 3,
       "hit": 3,
       "miss": [],
@@ -5139,19 +5018,6 @@
       ]
     },
     {
-      "id": "guoqinlun",
-      "title": "过秦论",
-      "author": "贾谊",
-      "stage": "高中",
-      "page": "過秦論",
-      "url": "https://zh.wikisource.org/wiki/%E9%81%8E%E7%A7%A6%E8%AB%96",
-      "lines": 6,
-      "hit": 6,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
       "id": "linanchunyu",
       "title": "临安春雨初霁",
       "author": "陆游",
@@ -5165,34 +5031,43 @@
       "variants": []
     },
     {
-      "id": "shufen",
-      "title": "书愤",
-      "author": "陆游",
+      "id": "lantingjixu",
+      "title": "兰亭集序",
+      "author": "王羲之",
       "stage": "高中",
-      "page": "書憤 (陸游)",
-      "url": "https://zh.wikisource.org/wiki/%E6%9B%B8%E6%86%A4%20%28%E9%99%B8%E6%B8%B8%29",
-      "lines": 3,
+      "page": "蘭亭集序",
+      "url": "https://zh.wikisource.org/wiki/%E8%98%AD%E4%BA%AD%E9%9B%86%E5%BA%8F",
+      "lines": 4,
       "hit": 3,
-      "miss": [],
+      "miss": [
+        {
+          "line": "后之览者亦将有感于斯文",
+          "nearest": {
+            "line": "后之览者亦将有感于斯文",
+            "source": "以兴懐其致一也后之揽〈览〉者亦将有感扵斯文",
+            "ratio": 0.625
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [
         {
-          "ours": "洲",
-          "other": "州",
-          "context": "作囏}}中原北望氣如山樓船夜雪瓜洲渡鐵馬秋風大散關塞上長城空自許鏡中衰鬢已先斑《出師》一",
-          "page": "書憤 (陸游)"
+          "ours": "怏",
+          "other": "快",
+          "context": "躁不同，當其欣扵所遇，暫得扵己，怏然自足，不知老之将至。及其所之既惓，情随事遷，感慨係之",
+          "page": "蘭亭集序"
         }
       ]
     },
     {
-      "id": "wudailingguan",
-      "title": "五代史伶官传序",
-      "author": "欧阳修",
+      "id": "kezhi",
+      "title": "客至",
+      "author": "杜甫",
       "stage": "高中",
-      "page": "五代史伶官傳序",
-      "url": "https://zh.wikisource.org/wiki/%E4%BA%94%E4%BB%A3%E5%8F%B2%E4%BC%B6%E5%AE%98%E5%82%B3%E5%BA%8F",
-      "lines": 6,
-      "hit": 6,
+      "page": "客至",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%A2%E8%87%B3",
+      "lines": 3,
+      "hit": 3,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -5204,19 +5079,6 @@
       "stage": "高中",
       "page": "全晉文/卷一百十一",
       "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E6%99%89%E6%96%87/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%8D%81%E4%B8%80",
-      "lines": 4,
-      "hit": 4,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "niannujiao-gudong",
-      "title": "念奴娇·过洞庭",
-      "author": "张孝祥",
-      "stage": "高中",
-      "page": "念奴嬌 (張孝祥)",
-      "url": "https://zh.wikisource.org/wiki/%E5%BF%B5%E5%A5%B4%E5%AC%8C%20%28%E5%BC%B5%E5%AD%9D%E7%A5%A5%29",
       "lines": 4,
       "hit": 4,
       "miss": [],
@@ -5473,43 +5335,6 @@
       ]
     },
     {
-      "id": "chunjianghuayue",
-      "title": "春江花月夜",
-      "author": "张若虚",
-      "stage": "高中",
-      "page": "春江花月夜 (張若虛)",
-      "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C%20%28%E5%BC%B5%E8%8B%A5%E8%99%9B%29",
-      "lines": 3,
-      "hit": 2,
-      "miss": [
-        {
-          "line": "今人不见古时月今月曾经照古人",
-          "nearest": null
-        }
-      ],
-      "variantNotes": [],
-      "variants": [
-        {
-          "ours": "里",
-          "other": "顷",
-          "context": "平，海上明月共潮生。灩灩隨波千萬里，何處春江無月明？江流宛轉遶芳甸，月照花林皆似霰。空裏",
-          "page": "春江花月夜 (張若虛)"
-        },
-        {
-          "ours": "妆",
-          "other": "玉",
-          "context": "明月樓？可憐樓上月徘徊，應照離人妆鏡臺。玉戶簾中卷不去，擣衣砧上拂還來。此時相望不相",
-          "page": "春江花月夜 (張若虛)"
-        },
-        {
-          "ours": "玉",
-          "other": "遮",
-          "context": "樓上月徘徊，應照離人妆鏡臺。玉戶簾中卷不去，擣衣砧上拂還來。此時相望不相聞，願逐月華",
-          "page": "春江花月夜 (張若虛)"
-        }
-      ]
-    },
-    {
       "id": "wanghaichao",
       "title": "望海潮",
       "author": "柳永",
@@ -5598,28 +5423,6 @@
       "variants": []
     },
     {
-      "id": "dengtaishan",
-      "title": "登泰山记",
-      "author": "姚鼐",
-      "stage": "高中",
-      "page": "登泰山記",
-      "url": "https://zh.wikisource.org/wiki/%E7%99%BB%E6%B3%B0%E5%B1%B1%E8%A8%98",
-      "lines": 6,
-      "hit": 5,
-      "miss": [
-        {
-          "line": "极天云一线异色须臾成五采",
-          "nearest": {
-            "line": "极天云一线异色须臾成五采",
-            "source": "蒱数十立者山也极天云一线缐异色须臾成五彩日上",
-            "ratio": 0.647
-          }
-        }
-      ],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
       "id": "shizhongshan",
       "title": "石钟山记",
       "author": "苏轼",
@@ -5629,6 +5432,28 @@
       "lines": 6,
       "hit": 6,
       "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "lisao",
+      "title": "离骚",
+      "author": "屈原",
+      "stage": "高中",
+      "page": "離騷",
+      "url": "https://zh.wikisource.org/wiki/%E9%9B%A2%E9%A8%B7",
+      "lines": 4,
+      "hit": 3,
+      "miss": [
+        {
+          "line": "路漫漫其修远兮吾将上下而求索",
+          "nearest": {
+            "line": "路漫漫其修远兮吾将上下而求索",
+            "source": "望崦嵫而勿迫路曼曼其修脩远兮吾将上下而求索饮余马",
+            "ratio": 0.632
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -5672,6 +5497,141 @@
       "variants": []
     },
     {
+      "id": "shuxiang",
+      "title": "蜀相",
+      "author": "杜甫",
+      "stage": "高中",
+      "page": "蜀相",
+      "url": "https://zh.wikisource.org/wiki/%E8%9C%80%E7%9B%B8",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "shudaonan",
+      "title": "蜀道难",
+      "author": "李白",
+      "stage": "高中",
+      "page": "蜀道難 (李白)",
+      "url": "https://zh.wikisource.org/wiki/%E8%9C%80%E9%81%93%E9%9B%A3%20%28%E6%9D%8E%E7%99%BD%29",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "吁嚱",
+          "other": "嚱吁",
+          "context": "噫吁嚱！危乎高哉！道之難，難於上青天！及，開國何茫然！爾來四",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "不",
+          "other": "乃不",
+          "context": "及，開國何茫然！爾來四萬八千歲，不與塞通人煙。西當有鳥道，可以橫絶巅。地崩山摧壯",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "可",
+          "other": "何",
+          "context": "，不與塞通人煙。西當有鳥道，可以橫絶巅。地崩山摧壯士死，然後天梯石棧相鉤連。",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "巅",
+          "other": "颠",
+          "context": "通人煙。西當有鳥道，可以橫絶巅。地崩山摧壯士死，然後天梯石棧相鉤連。上有，下有衝",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "相",
+          "other": "方",
+          "context": "。地崩山摧壯士死，然後天梯石棧相鉤連。上有，下有衝波逆折之回川。黃鶴之飛尚，猿猱欲度愁",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "膺",
+          "other": "心",
+          "context": "折縈巖巒。捫參歷井仰脅息，以手撫膺坐長叹。问君西遊何时還？畏途巉巖不可攀。但",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "问君",
+          "other": "征人",
+          "context": "仰脅息，以手撫膺坐長叹。问君西遊何时還？畏途巉巖不可攀。但見悲鸟號12",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "时",
+          "other": "当",
+          "context": "撫膺坐長叹。问君西遊何时還？畏途巉巖不可攀。但見悲鸟號古木，雄飛繞",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "悲鸟",
+          "other": "鸟",
+          "context": "时還？畏途巉巖不可攀。但見悲鸟號古木，雄飛繞林間。又聞子規啼敦煌殘卷無",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "古",
+          "other": "枯",
+          "context": "？畏途巉巖不可攀。但見悲鸟號古木，雄飛繞林間。又聞子規啼敦煌殘卷無「夜」字。",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "林",
+          "other": "花",
+          "context": "但見悲鸟號古木，雄飛繞林間。又聞子規啼敦煌殘卷無「夜」字。道之難，難於上青天",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "夜月",
+          "other": "月落",
+          "context": "",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "飞",
+          "other": "崩",
+          "context": "！連峯去天不盈尺，枯松倒挂倚絶壁。飞湍瀑流爭喧豗，砯崖轉石萬壑雷。其險也1",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "也",
+          "other": "又玄",
+          "context": "喧豗，砯崖轉石萬壑雷。其險也若此，嗟爾遠道之人胡爲乎來哉？崢嶸而崔嵬，一夫",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "若",
+          "other": "如",
+          "context": "17崖轉石萬壑雷。其險也若此，嗟爾遠道之人胡爲乎來哉？崢嶸而崔嵬，一夫當關，萬",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "夫",
+          "other": "人",
+          "context": "乎來哉？崢嶸而崔嵬，一夫當關，萬夫莫開。所守或匪亲，化爲狼與豺。朝避猛虎，夕避長",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "亲",
+          "other": "人",
+          "context": "夫當關，萬夫莫開。所守或匪亲，化爲狼與豺。朝避猛虎，夕避長蛇。磨牙吮血，殺人如麻",
+          "page": "蜀道難 (李白)"
+        },
+        {
+          "ours": "长咨",
+          "other": "令人",
+          "context": "家。道之難，難於上青天，側身西望长咨嗟！Category:代表作品Category:唐詩",
+          "page": "蜀道難 (李白)"
+        }
+      ]
+    },
+    {
       "id": "hexinlao",
       "title": "贺新郎",
       "author": "刘克庄",
@@ -5680,19 +5640,6 @@
       "url": "https://zh.wikisource.org/wiki/%E8%B3%80%E6%96%B0%E9%83%8E%20%28%E5%8A%89%E5%85%8B%E8%8E%8A%29",
       "lines": 5,
       "hit": 5,
-      "miss": [],
-      "variantNotes": [],
-      "variants": []
-    },
-    {
-      "id": "jinse",
-      "title": "锦瑟",
-      "author": "李商隐",
-      "stage": "高中",
-      "page": "錦瑟",
-      "url": "https://zh.wikisource.org/wiki/%E9%8C%A6%E7%91%9F",
-      "lines": 3,
-      "hit": 3,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -5747,6 +5694,86 @@
           "page": "陳情表 (西晉)"
         }
       ]
+    },
+    {
+      "id": "xiangjixuanzhi",
+      "title": "项脊轩志",
+      "author": "归有光",
+      "stage": "高中",
+      "page": "項脊軒志",
+      "url": "https://zh.wikisource.org/wiki/%E9%A0%85%E8%84%8A%E8%BB%92%E5%BF%97",
+      "lines": 6,
+      "hit": 5,
+      "miss": [
+        {
+          "line": "项脊轩旧南阁子也",
+          "nearest": null
+        }
+      ],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "遂",
+          "other": "逐",
+          "context": "又雜植蘭桂竹木於庭，舊時欄楯，亦遂增勝。借書滿架，偃仰嘯歌，冥然兀坐，萬籟有聲；而庭階寂",
+          "page": "項脊軒志"
+        }
+      ]
+    },
+    {
+      "id": "shufen",
+      "title": "书愤",
+      "author": "陆游",
+      "stage": "高中",
+      "page": "書憤 (陸游)",
+      "url": "https://zh.wikisource.org/wiki/%E6%9B%B8%E6%86%A4%20%28%E9%99%B8%E6%B8%B8%29",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "洲",
+          "other": "州",
+          "context": "作囏}}中原北望氣如山樓船夜雪瓜洲渡鐵馬秋風大散關塞上長城空自許鏡中衰鬢已先斑《出師》一",
+          "page": "書憤 (陸游)"
+        }
+      ]
+    },
+    {
+      "id": "wudailingguan",
+      "title": "五代史伶官传序",
+      "author": "欧阳修",
+      "stage": "高中",
+      "page": "五代史伶官傳序",
+      "url": "https://zh.wikisource.org/wiki/%E4%BA%94%E4%BB%A3%E5%8F%B2%E4%BC%B6%E5%AE%98%E5%82%B3%E5%BA%8F",
+      "lines": 6,
+      "hit": 6,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "quyuanliezhuan",
+      "title": "屈原列传",
+      "author": "司马迁",
+      "stage": "高中",
+      "page": "屈原列傳",
+      "url": "https://zh.wikisource.org/wiki/%E5%B1%88%E5%8E%9F%E5%88%97%E5%82%B3",
+      "lines": 7,
+      "hit": 6,
+      "miss": [
+        {
+          "line": "博闻强志明于治乱娴于辞令",
+          "nearest": {
+            "line": "博闻强志明于治乱娴于辞令",
+            "source": "闻彊志&91;4&93;明于於治乱娴于辞令入",
+            "ratio": 0.588
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "baoranan",
@@ -5885,6 +5912,32 @@
           "page": "燕歌行 (高適)"
         }
       ]
+    },
+    {
+      "id": "guoqinlun",
+      "title": "过秦论",
+      "author": "贾谊",
+      "stage": "高中",
+      "page": "過秦論",
+      "url": "https://zh.wikisource.org/wiki/%E9%81%8E%E7%A7%A6%E8%AB%96",
+      "lines": 6,
+      "hit": 6,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "jinse",
+      "title": "锦瑟",
+      "author": "李商隐",
+      "stage": "高中",
+      "page": "錦瑟",
+      "url": "https://zh.wikisource.org/wiki/%E9%8C%A6%E7%91%9F",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
     }
   ]
 }
