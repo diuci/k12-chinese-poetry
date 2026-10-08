@@ -239,6 +239,31 @@ def selftest_glued_heading():
     assert check_glued_heading(Path('x.md'), '# 一级标题') == [], '坏例5：行首 # 被误报'
 
 
+def check_duplicate_sections(path, text):
+    """同一篇里不许有两个同名小节。站点按名字取小节，重复了只认第一份——
+    新写的内容会被整段丢掉，页面上一个字都看不见，而台账两边都在数它。"""
+    errs = []
+    seen = {}
+    for line in text.splitlines():
+        if line.startswith('## '):
+            name = line[3:].strip()
+            seen[name] = seen.get(name, 0) + 1
+    for name, n in sorted(seen.items()):
+        if n > 1:
+            errs.append('%s 小节「%s」在同一篇里出现 %d 次——站点按名字取小节，只认第一份，其余会被丢掉' % (path.name, name, n))
+    return errs
+
+def selftest_duplicate_sections():
+    ok = '## 异文\n- 甲\n\n## 注释\n- 乙\n'
+    assert not check_duplicate_sections(Path('t.md'), ok), '坏例1：正常小节被误报'
+    dup = '## 异文\n- 甲\n\n## 注释\n- 乙\n\n## 异文\n- 丙\n'
+    assert len(check_duplicate_sections(Path('t.md'), dup)) == 1, '坏例2：同名小节重复没被抓到'
+    near = '## 收录范围\n- 甲\n\n## 收录范围（第六段）\n- 乙\n'
+    assert not check_duplicate_sections(Path('t.md'), near), '坏例3：名字不同的近名小节被误报'
+    triple = '## 全文\n甲\n\n## 全文\n乙\n\n## 全文\n丙\n'
+    assert len(check_duplicate_sections(Path('t.md'), triple)) == 1, '坏例4：出现三次只报一次是对的，但必须报'
+    print('[ok] 同名小节重复自检通（4 个坏例子全部试到）')
+
 def load_poems():
     """复用 build.py 的解析逻辑，避免两处对frontmatter 的理解不一致。"""
     sys.path.insert(0, str(ROOT / 'tools'))
@@ -409,6 +434,7 @@ def selftest_match():
 
 def selftest():
     selftest_glued_heading()
+    selftest_duplicate_sections()
     """这条校验自己会不会漏：坏样本必须被抓到，好样本不能误报。"""
     year = 2026
     problems = []
@@ -485,7 +511,7 @@ def selftest():
           '佚名走年代上限、公元前卒年放行、词牌顶替被抓、同名不同作者被抓、缺全文被抓、'
           '好样本不误报、重复收录被抓、课标共用不误报缺失、篇名对照生效且点名、'
           '别名不许替作者不符开后门、背诵要求缺失被拒、背诵要求取值非法被拒、'
-          '背诵要求合法不误报、玩法悬案被拒、玩法可用作出不误报、登记表缺字段被拒、登记表阶段非法被拒、登记表 key 重复被拒、登记表写全不误报、背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报——都试到了')
+          '背诵要求合法不误报、玩法悬案被拒、玩法可用作出不误报、登记表缺字段被拒、登记表阶段非法被拒、登记表 key 重复被拒、登记表写全不误报、背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报、同名小节重复被抓——都试到了')
     return 0
 
 
@@ -534,7 +560,10 @@ def main():
     for md in sorted(POEMS_DIR.rglob('*.md')):
         if md.name == '索引.md':
             continue
-        for msg in check_glued_heading(md, md.read_text(encoding='utf-8')):
+        _txt = md.read_text(encoding='utf-8')
+        for msg in check_glued_heading(md, _txt):
+            err(msg)
+        for msg in check_duplicate_sections(md, _txt):
             err(msg)
 
     # -------------------------------------------------- 2. id 唯一
