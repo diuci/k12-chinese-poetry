@@ -206,6 +206,14 @@ def audit_trad(corpus, trad, trad_md, rows):
     out.append(('繁体派生覆盖每一篇', not miss and not extra,
                 '台账 %d 篇，繁体 %d 篇；没派生 %d 篇，多出来 %d 篇'
                 % (len(ids_ledger), len(ids_trad), len(miss), len(extra))))
+
+    # 标题与作者也是页面上要显示的字：缺了就是繁体页顶上写着简体
+    no_label = [r['title'] for r in (trad.get('rows') or [])
+                if not (r.get('labels_trad') or {}).get('title')
+                or not (r.get('labels_trad') or {}).get('author')]
+    out.append(('繁体版有繁体标题与繁体作者', not no_label,
+                '缺繁体标题或作者的 %d 篇%s'
+                % (len(no_label), ('：' + '、'.join(no_label[:5])) if no_label else '')))
     counts = trad.get('counts') or {}
     out.append(('繁体「一简对多繁」没有一处静默择一', counts.get('pending', -1) == 0,
                 '待定 %d 处' % counts.get('pending', -1)))
@@ -608,8 +616,10 @@ def selftest():
     TRAD_GOOD = {'counts': {'page': 2, 'table': 1, 'rule': 0, 'keep': 0, 'identity': 3,
                             'variant': 0, 'pending': 0},
                  'reversal': [],
-                 'rows': [{'id': 'a', 'title': '甲', 'text_trad': ['床前明月光，'], 'lines_trad': []},
-                          {'id': 'b', 'title': '乙', 'text_trad': ['處處聞啼鳥，'], 'lines_trad': []}]}
+                 'rows': [{'id': 'a', 'title': '甲', 'text_trad': ['床前明月光，'], 'lines_trad': [],
+                           'labels_trad': {'title': '甲', 'author': '李'}},
+                          {'id': 'b', 'title': '乙', 'text_trad': ['處處聞啼鳥，'], 'lines_trad': [],
+                           'labels_trad': {'title': '乙', 'author': '孟浩然'}}]}
     MD_GOOD = '| pending | 0 | 没依据 —— 待定，不许当成已定 |'
 
     def fails(corpus, ledger_, tsrc_, defects_, names):
@@ -736,6 +746,12 @@ def selftest():
     t12b['rows'][1]['sections_trad'] = {'注释': ['處處聞啼鳥。']}
     if '繁体版覆盖台账里有的每一节注释译文赏析' not in {nm for nm, ok, _ in audit(c0, led2, tsrc, [], t12b, MD_GOOD) if not ok}:
         print('坏例12b：繁体漏了译文这一节没被报'); bad += 1
+    # 12c) 繁体页顶上写着简体标题/作者，必须被报
+    t12c = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
+            'rows': [dict(r) for r in TRAD_GOOD['rows']]}
+    t12c['rows'][1]['labels_trad'] = {'title': '乙'}
+    if '繁体版有繁体标题与繁体作者' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12c, MD_GOOD) if not ok}:
+        print('坏例12c：繁体缺作者没被报'); bad += 1
     # 13) 页上写的待定数与实际不符，必须被报
     if '繁体页面上的待定数与实际一致' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t11, MD_GOOD) if not ok}:
         print('坏例13：页上 pending 0、实际 3，没被报'); bad += 1
@@ -763,7 +779,7 @@ def selftest():
 
         return 1
 
-    print('[ok] audit-content --selftest 通（17 个坏例子全部试到）')
+    print('[ok] audit-content --selftest 通（18 个坏例子全部试到）')
 
     return 0
 
