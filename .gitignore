@@ -35,3 +35,7 @@ Thumbs.db
 
 # 教材课文页的本地缓存：统编教材是版权作品，整页镜像不许进仓（只允许引用它证明某字）
 data/textbook-cache/
+
+# 来源页本地缓存（公有领域原文，可重新取，不入仓）
+data/page-cache/
+data/page-cache-selftest/

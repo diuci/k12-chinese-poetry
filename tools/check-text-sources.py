@@ -27,6 +27,7 @@ import json
 import re
 import sys
 import time
+import hashlib
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -45,6 +46,12 @@ API = 'https://zh.wikisource.org/w/api.php'
 UA = {'User-Agent': 'diuci-content-check/1.0 (contact: hi@diuci.com)'}
 OUT = ROOT / 'data' / 'text-sources.json'
 T2S = ROOT / 'data' / 'opencc' / 'TSCharacters.txt'
+# 来源页本地缓存（data/page-cache/，已 gitignore）。
+# 为什么要有：一轮全仓核对 5 秒/篇，几乎全花在取页上；改比对口径这种重跑本来不该再联网。
+# 有了缓存，来源站不可达时也能把「同一批页、不同比法」重跑完——缓存只存公有领域的原文。
+CACHE = ROOT / 'data' / 'page-cache'
+REFRESH_PAGES = '--refresh-pages' in sys.argv
+CACHE_HITS = [0, 0]  # [命中, 取页]
 
 # 同名不同物的页面特征：维基文库也收现代文书，标题撞车的不在少数。
 JUNK_HINTS = ('判决书', '纠纷', '有限公司', '通知', '人民政府', '方案', '集团',
@@ -114,7 +121,39 @@ def ensure_dict():
     print('  已存 %s（%d 字节）' % (T2S, len(blob)))
 
 
+def _cache_file(title):
+    return CACHE / (re.sub(r'[^0-9A-Za-z\u4e00-\u9fff_-]', '_', title)[:100]
+                    + '-' + hashlib.md5(title.encode('utf-8')).hexdigest()[:12] + '.json')
+
+
+def _cache_get(title, kind):
+    """缓存里已经有这一项就直接用；没有返回 None。缓存坏掉就当没有，不许把核对带崩。"""
+    if REFRESH_PAGES:
+        return None
+    try:
+        rec = json.loads(_cache_file(title).read_text(encoding='utf-8'))
+    except Exception:
+        return None
+    val = rec.get(kind)
+    if val is None:
+        return None
+    CACHE_HITS[0] += 1
+    return rec
+
+
+def _cache_put(title, rec):
+    try:
+        CACHE.mkdir(parents=True, exist_ok=True)
+        _cache_file(title).write_text(json.dumps(rec, ensure_ascii=False), encoding='utf-8')
+    except Exception:
+        pass
+
+
 def page_text(title):
+    hit = _cache_get(title, 'text')
+    if hit:
+        return hit.get('title', title), hit['text']
+    CACHE_HITS[1] += 1
     d = http_json({'action': 'parse', 'page': title, 'prop': 'text',
                    'format': 'json', 'redirects': 1})
     parse = d.get('parse') or {}
@@ -125,14 +164,35 @@ def page_text(title):
     html = re.sub(r'<span[^>]*class="[^"]*(?:mw-editsection|noprint)[^"]*"[^>]*>.*?</span>', '', html, flags=re.S)
     txt = re.sub(r'<[^>]+>', ' ', html)
     txt = re.sub(r'&[a-z]+;', ' ', txt)
-    return parse.get('title', title), txt
+    real = parse.get('title', title)
+    old = {}
+    try:
+        old = json.loads(_cache_file(real).read_text(encoding='utf-8'))
+    except Exception:
+        old = {}
+    old.update({'title': real, 'text': txt, 'fetched': time.strftime('%Y-%m-%d')})
+    _cache_put(real, old)
+    return real, txt
 
 
 def page_wikitext(title):
+    hit = _cache_get(title, 'wikitext')
+    if hit:
+        return hit.get('title', title), hit['wikitext']
+    CACHE_HITS[1] += 1
     d = http_json({'action': 'parse', 'page': title, 'prop': 'wikitext',
                    'format': 'json', 'redirects': 1})
     parse = d.get('parse') or {}
-    return parse.get('title', title), parse.get('wikitext', {}).get('*', '')
+    real = parse.get('title', title)
+    wt = parse.get('wikitext', {}).get('*', '')
+    old = {}
+    try:
+        old = json.loads(_cache_file(real).read_text(encoding='utf-8'))
+    except Exception:
+        old = {}
+    old.update({'title': real, 'wikitext': wt, 'fetched': time.strftime('%Y-%m-%d')})
+    _cache_put(real, old)
+    return real, wt
 
 
 # 维基文库的异文夹注：{{另|三|吳}} = 正文作「三」，另一本作「吳」。
@@ -521,6 +581,8 @@ def main():
         }, ensure_ascii=False, indent=2), encoding='utf-8')
 
     print()
+    print('取页：缓存命中 %d 次 / 真的联网取页 %d 次%s'
+          % (CACHE_HITS[0], CACHE_HITS[1], '（--refresh-pages：全部重取）' if REFRESH_PAGES else ''))
     print('出处核对：%d 全对上 / %d 部分对上 / %d 一句都对不上 / %d 找不到来源页'
           % (stats['attested'], stats['partial'], stats['notfound'], stats['nosource']))
     print('带 {{另}} 夹注异文的篇目：%d 篇' % stats['withVariants'])
