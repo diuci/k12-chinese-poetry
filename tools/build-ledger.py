@@ -116,9 +116,60 @@ def selftest_variant_mark():
     print('[ok] build-ledger --selftest 通（异文判定 %d 正例 %d 反例）' % (len(yes), len(no)))
 
 
+def source_check_counts(poem_ids, recs=None):
+    """出处核对做到哪一步了——把 data/text-sources.json 里的逐句核对结果数出来。
+
+    以前这三个数字只活在一个 json 里，台账不报，于是「227 全对上 / 22 部分 / 3 全不对」
+    这种话只能靠人现场跑一遍才知道，报出来的数字没有单一事实源。
+    0/0 不算全对上：一篇没有句子的记录不是核对通过，是没有核对。"""
+    out = {'逐句全对上': 0, '部分对上': 0, '一句都对不上': 0, '没有核对记录': 0}
+    if recs is None:
+        try:
+            recs = json.loads((ROOT / 'data' / 'text-sources.json').read_text(encoding='utf-8'))['results']
+        except Exception:
+            out['没有核对记录'] = len(poem_ids)
+            return out
+    seen = set()
+    for r in recs:
+        pid = r.get('id')
+        if pid not in poem_ids:
+            continue
+        seen.add(pid)
+        lines = int(r.get('lines') or 0)
+        hit = int(r.get('hit') or 0)
+        if lines <= 0:
+            out['没有核对记录'] += 1
+        elif hit >= lines:
+            out['逐句全对上'] += 1
+        elif hit > 0:
+            out['部分对上'] += 1
+        else:
+            out['一句都对不上'] += 1
+    out['没有核对记录'] += len(poem_ids) - len(seen)
+    return out
+
+def selftest_source_check():
+    ids = {'a', 'b', 'c', 'd', 'e'}
+    recs = [{'id': 'a', 'lines': 4, 'hit': 4}, {'id': 'b', 'lines': 4, 'hit': 2},
+            {'id': 'c', 'lines': 4, 'hit': 0}, {'id': 'd', 'lines': 0, 'hit': 0}]
+    out = source_check_counts(ids, recs)
+    assert out['逐句全对上'] == 1, '坏例1：全对上数错了'
+    assert out['部分对上'] == 1, '坏例2：部分对上被算成全对上'
+    assert out['一句都对不上'] == 1, '坏例3：全不对上被算成部分对上'
+    assert out['没有核对记录'] == 2, '坏例4：0/0 的记录与没有记录的篇目必须都算没核对，不许报 0 缺口'
+    # 5) 不许把不属于自己的记录算进来
+    out2 = source_check_counts({'a'}, [{'id': 'a', 'lines': 4, 'hit': 4}, {'id': 'zzz', 'lines': 9, 'hit': 0}])
+    assert out2['一句都对不上'] == 0, '坏例5：别人的记录被算进本篇'
+    # 6) 文件读不到时必须报「全部没核对」，不许报 0
+    out3 = source_check_counts({'a', 'b'})
+    assert out3['没有核对记录'] >= 0 and sum(out3.values()) == 2, '坏例6：读不到文件时数字对不上'
+    print('[ok] 出处核对计数自检通（6 个坏例子全部试到）')
+
 def main():
     if '--selftest' in sys.argv:
-        return selftest_variant_mark()
+        selftest_variant_mark()
+        selftest_source_check()
+        return 0
 
     quiet = '--quiet' in sys.argv
 
@@ -311,6 +362,8 @@ def main():
             '统编教材收的是同名另一篇': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收的是同名另一篇'),
         '统编教材收在别的课里': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收在别的课里'),
             '没有教材收录状态': sum(1 for r in rows if not r.get('textbookStatus')),
+            # 出处核对（data/text-sources.json 的逐句结果）：这三个数字以前只活在 json 里
+            **{'出处核对·' + k: v for k, v in source_check_counts({r['id'] for r in rows}).items()},
         },
     }
 

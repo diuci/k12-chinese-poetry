@@ -509,8 +509,8 @@
       "stage": "初中",
       "page": "呂氏春秋/卷十四 + 吕氏春秋 (四庫全書本)/卷14",
       "url": "https://zh.wikisource.org/wiki/%E5%91%82%E6%B0%8F%E6%98%A5%E7%A7%8B/%E5%8D%B7%E5%8D%81%E5%9B%9B",
-      "lines": 5,
-      "hit": 5,
+      "lines": 4,
+      "hit": 4,
       "miss": [],
       "variantNotes": [
         "一作三月下同",
@@ -1581,17 +1581,8 @@
       "page": "禮記/學記",
       "url": "https://zh.wikisource.org/wiki/%E7%A6%AE%E8%A8%98/%E5%AD%B8%E8%A8%98",
       "lines": 5,
-      "hit": 4,
-      "miss": [
-        {
-          "line": "兑命曰\"学学半\"其此之谓乎",
-          "nearest": {
-            "line": "兑命曰\"学学半\"其此之谓乎",
-            "source": "自强也故曰教学相长也兑命曰学学半其此之谓乎古之",
-            "ratio": 0.611
-          }
-        }
-      ],
+      "hit": 5,
+      "miss": [],
       "variantNotes": [],
       "variants": []
     },
@@ -1629,13 +1620,8 @@
       "page": "詩經/式微",
       "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E5%BC%8F%E5%BE%AE",
       "lines": 2,
-      "hit": 1,
-      "miss": [
-        {
-          "line": "微君之故不能以容",
-          "nearest": null
-        }
-      ],
+      "hit": 2,
+      "miss": [],
       "variantNotes": [],
       "variants": []
     },
@@ -4317,38 +4303,14 @@
       "title": "谏太宗十思疏",
       "author": "魏征",
       "stage": "高中",
-      "page": "厯代名臣奏議 (四庫全書本)/卷027",
-      "url": "https://zh.wikisource.org/wiki/%E5%8E%AF%E4%BB%A3%E5%90%8D%E8%87%A3%E5%A5%8F%E8%AD%B0%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7027",
+      "page": "諫太宗十思疏 + 全唐文/卷0139 + 貞觀政要/卷01 + 厯代名臣奏議 (四庫全書本)/卷027",
+      "url": "https://zh.wikisource.org/wiki/%E8%AB%AB%E5%A4%AA%E5%AE%97%E5%8D%81%E6%80%9D%E7%96%8F",
       "lines": 5,
-      "hit": 2,
-      "miss": [
-        {
-          "line": "臣闻求木之长者必固其根本欲流之远者必浚其泉源思国之安者必积其德义",
-          "nearest": {
-            "line": "臣闻求木之长者必固其根本欲流之远者必浚其泉源思国之安者必积其德义",
-            "source": "徵陈得失疏曰臣闻求木之长者必固其根本欲流之逺者必浚其泉源思国之安者必积其徳义源不深而",
-            "ratio": 0.811
-          }
-        },
-        {
-          "line": "源不深而望流之远根不固而求木之长德不厚而思国之治",
-          "nearest": {
-            "line": "源不深而望流之远根不固而求木之长德不厚而思国之治",
-            "source": "积其徳义源不深而望流之逺根不固而求木之长徳不厚而思国之理臣虽下愚知其",
-            "ratio": 0.724
-          }
-        },
-        {
-          "line": "总此十思宏兹九德简能而任之择善而从之",
-          "nearest": {
-            "line": "总此十思宏兹九德简能而任之择善而从之",
-            "source": "则思无以怒而滥刑緫此十思𢎞兹九徳简能而任之择善而从之则智",
-            "ratio": 0.652
-          }
-        }
-      ],
+      "hit": 5,
+      "miss": [],
       "variantNotes": [],
-      "variants": []
+      "variants": [],
+      "override": "比对页必须是这篇文章的真来源。自动选页曾经选中《唐史演義》——明清演义小说，不是魏徵这篇文章的来源；已换成《諫太宗十思疏》单页 + 《全唐文》卷139 + 《貞觀政要》卷1 + 《厯代名臣奏議》卷27。"
     },
     {
       "id": "jianzhukeshu",
@@ -4438,8 +4400,12 @@
       "hit": 3,
       "miss": [
         {
-          "line": "人十能之己千之果能此道矣愚夫愚妇亦能知与知之",
-          "nearest": null
+          "line": "人一能之己百之人十能之己千之",
+          "nearest": {
+            "line": "人一能之己百之人十能之己千之",
+            "source": "行行之弗笃弗措也人一能之已百之人十能之已千之果能",
+            "ratio": 0.632
+          }
         }
       ],
       "variantNotes": [
@@ -5065,13 +5031,8 @@
       "page": "春江花月夜 (張若虛)",
       "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C%20%28%E5%BC%B5%E8%8B%A5%E8%99%9B%29",
       "lines": 3,
-      "hit": 2,
-      "miss": [
-        {
-          "line": "今人不见古时月今月曾经照古人",
-          "nearest": null
-        }
-      ],
+      "hit": 3,
+      "miss": [],
       "variantNotes": [],
       "variants": [
         {
