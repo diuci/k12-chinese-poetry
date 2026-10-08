@@ -32,6 +32,7 @@ def enrich(t, page, url, volume=''):
         return t, 0, 0
     body = m.group(1)
     added = 0
+    relabeled = 0
     out_lines = []
     for ln in body.split('\n'):
         s = ln.rstrip()
@@ -48,11 +49,16 @@ def enrich(t, page, url, volume=''):
                 # 取舍理由是「与教材一致」的，出处写教材哪一册——只许写册次，不许编课号。
                 s = s.rstrip('。') + '。出处：统编教材《语文》%s（frontmatter 记录的册次）' % volume
                 added += 1
+        # 取舍已经写明、只是没写「取舍」两个字的，把话改成台账认得的写法。
+        # 这不是补内容，是把同一句话换个能被数出来的形式——内容一个字不许变。
+        if s.strip().startswith('- ') and '取舍' not in s and '本仓从' in s:
+            s = s.replace('本仓从', '取舍：从', 1)
+            relabeled += 1
         out_lines.append(s)
     new_body = '\n'.join(out_lines)
-    if not added:
+    if not added and not relabeled:
         return t, 0, 0
-    return t[:m.start(1)] + new_body + t[m.end(1):], added, 0
+    return t[:m.start(1)] + new_body + t[m.end(1):], added, relabeled
 
 
 def main():
@@ -67,15 +73,20 @@ def main():
         if not fm:
             continue
         rec = by_id.get(fm.group(1))
+        # 一条必背句都没对上的页，不是这一篇的来源——它只是页名撞上了。
+        # 以前就是这条没守住，把《中國文學批評史》的链接安进了《论语》十二章的异文里。
+        if rec and not rec.get('hit'):
+            print('  跳过 %s：比对页命中 0 句，不能当出处' % md.stem)
+            continue
         if not rec or not rec.get('page') or not rec.get('url'):
             continue
         page = rec['page'].split(' + ')[0]
         mv = re.search(r'^volume:\s*(.+)$', t, re.M)
-        new_t, a, _ = enrich(t, page, rec['url'], (mv.group(1).strip() if mv else ''))
+        new_t, a, c = enrich(t, page, rec['url'], (mv.group(1).strip() if mv else ''))
         total += 1
-        if a:
+        if a or c:
             changed += 1
-            print('  %-28s 补 %d 条出处 ← %s' % (md.stem, a, page))
+            print('  %-28s 补 %d 条出处 / 改写 %d 条取舍 ← %s' % (md.stem, a, c, page))
             if WRITE:
                 md.write_text(new_t, encoding='utf-8')
     print('[异文出处] %d 篇有比对页，其中 %d 篇补了出处' % (total, changed))
@@ -120,7 +131,15 @@ def selftest():
     b9 = '## 异文\n- 「甲」：《乙》作「丙」。出处：仓内所记版本《乙》。\n'
     t9, a9, _ = enrich(b9, page, url, '九年级上册')
     assert a9 == 0, '坏例9：重复补出处'
-    print('[ok] enrich-variants --selftest 通（9 个坏例子全部被拦住）')
+    # 10) 取舍已写明但没写「取舍」二字的：只改形式，不改内容
+    b10 = '## 异文\n- 「但愿人长久」：通行本作「长久」，别本作「长健」。本仓从通行本。\n'
+    t10, a10, c10 = enrich(b10, '', '', '')
+    assert c10 == 1 and '取舍：从通行本' in t10 and '长健' in t10, '坏例10：改写时动了内容或没改成台账认得的写法'
+    # 11) 已经有「取舍」的不再动
+    b11 = '## 异文\n- 「甲」：别本作「乙」。取舍：从「甲」。本仓从甲本。\n'
+    t11, a11, c11 = enrich(b11, '', '', '')
+    assert c11 == 0, '坏例11：已经有取舍还改一遍'
+    print('[ok] enrich-variants --selftest 通（11 个坏例子全部被拦住）')
 
 
 if SELFTEST:

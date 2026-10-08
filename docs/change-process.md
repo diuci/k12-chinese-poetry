@@ -51,6 +51,7 @@ python tools/build-ledger.py
 python tools/build-textbook-table.py
 python tools/fix-meta-lines.py --check
 python tools/enrich-variants.py --selftest
+python tools/check-variant-sources.py
 node tools/check-legal.mjs
 ```
 
@@ -68,6 +69,11 @@ node tools/check-legal.mjs
 URL 取自 `data/text-sources.json` 里这一篇**实际比对过的那一页**；引的是别的书（《白香词谱笺》《四部丛刊》…）的条目一律不补，
 条目里没写「从哪个」的也不替人编一个取舍。它自带 5 个坏例子自检（该补的没补、重复补、把别的书安到维基文库头上、
 没说是哪一页也补、越界改别的小节），跑 `--selftest` 拦不住就等于没有这个检查。
+
+`tools/check-variant-sources.py` 是护栏：篇内每一条「出处：维基文库《某页》」都必须对得上——
+要么这一页就是本篇正文比对过的那一页（合选页算在内），要么它在 `data/variant-sources.json` 里登记过、
+且登记时写明的「这一页上确实有的那个字」今天还在页上。两条都不满足就是可疑：页名写错，或者出处是编的。
+它抓到过的真错：《论语》十二章 被安上《中國文學批評史》的链接（页名撞车）、《老子》八章 引用了一个空页《老子河上公章句/道經》。
 
 任何一条非 0 退出，这次变更就不算完成。
 

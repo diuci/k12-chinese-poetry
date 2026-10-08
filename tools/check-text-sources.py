@@ -331,12 +331,14 @@ def candidates(title, author, dynasty, table, lines=None):
 
 
 def main():
-    limit, stage = 0, None
+    limit, stage, only_ids = 0, None, []
     for i, a in enumerate(sys.argv):
         if a == '--limit':
             limit = int(sys.argv[i + 1])
         if a == '--stage':
             stage = sys.argv[i + 1]
+        if a == '--id':
+            only_ids = [x for x in sys.argv[i + 1].split(',') if x]
 
     ensure_dict()
     overrides = load_overrides()
@@ -345,6 +347,12 @@ def main():
     poems = all_poems
     if stage:
         poems = [p for p in poems if p.get('stage') == stage]
+    if only_ids:
+        # --id 是「重核指定篇目并合并进正式表」，不是试跑：只换掉这几篇的记录，其余原样保留。
+        missing = [x for x in only_ids if x not in {q['id'] for q in all_poems}]
+        if missing:
+            raise SystemExit('--id 里的这些键在仓里不存在（打错了？%s）' % '、'.join(missing))
+        poems = [p for p in poems if p['id'] in only_ids]
     if limit:
         poems = poems[:limit]
 
@@ -461,6 +469,10 @@ def main():
     # 这种覆盖不会报错，只会让后面所有读这张表的检查安静地读到残缺数据。
     filtered = bool(limit) or stage is not None
     target = (ROOT / 'data' / 'text-sources.partial.json') if filtered else OUT
+    merge = bool(only_ids) and not filtered
+    # 旧表必须在写盘之前读。以前写在这之后：--id 先把整张表覆盖成 6 篇，
+    # 再「合并」时读到的旧表就是那 6 篇，252 篇的记录当场没了。
+    old = json.loads(OUT.read_text(encoding='utf-8')) if merge else None
     target.write_text(json.dumps({
         'note': '每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。'
                 '繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。'
@@ -472,12 +484,27 @@ def main():
         'results': results,
     }, ensure_ascii=False, indent=2), encoding='utf-8')
 
+    if merge:
+        # 合并而不是覆盖：--id 只换掉点名的那几篇，其余记录原样留着。
+        by_id2 = {r['id']: r for r in old.get('results', [])}
+        for r in results:
+            by_id2[r['id']] = r
+        merged = list(by_id2.values())
+        OUT.write_text(json.dumps({
+            'note': old.get('note', ''),
+            'generated': time.strftime('%Y-%m-%d'),
+            'stats': old.get('stats', {}),
+            'results': merged,
+        }, ensure_ascii=False, indent=2), encoding='utf-8')
+
     print()
     print('出处核对：%d 全对上 / %d 部分对上 / %d 一句都对不上 / %d 找不到来源页'
           % (stats['attested'], stats['partial'], stats['notfound'], stats['nosource']))
     print('带 {{另}} 夹注异文的篇目：%d 篇' % stats['withVariants'])
     if filtered:
         print('试跑模式：结果写到 data/text-sources.partial.json，正式表 data/text-sources.json 未动')
+    elif merge:
+        print('已合并 %d 篇进 data/text-sources.json（其余 %d 篇记录未动）' % (len(results), len(merged) - len(results)))
     else:
         print('已写 data/text-sources.json')
     return 0
