@@ -329,6 +329,22 @@ def page_char_for(ctx, simp, page, page_s):
     return page[s + mapped], diffs, off
 
 
+APPARATUS = ('必背名句', '注释', '译文', '赏析', '异文')
+
+
+def md_sections(md_path):
+    """把一篇 md 按 ## 切成节。注释译文赏析是我们自己写的现代文字，
+    繁体版也要有，所以它们同样得派生、同样过闸门。"""
+    secs, cur = {}, None
+    for ln in md_path.read_text(encoding='utf-8').splitlines():
+        if ln.startswith('## '):
+            cur = ln[3:].strip()
+            secs.setdefault(cur, [])
+        elif cur is not None:
+            secs[cur].append(ln)
+    return {k: [x for x in v if x.strip()] for k, v in secs.items()}
+
+
 def build():
     s2c = read_table(STC)
     s2p = read_table(STP)
@@ -343,6 +359,8 @@ def build():
         return list(v or [])
 
     counts = {'page': 0, 'table': 0, 'rule': 0, 'keep': 0, 'identity': 0, 'variant': 0, 'pending': 0}
+    # 注释译文赏析（现代文字）单独计数：它们没有来源页可查，只能靠裁定表与表
+    counts2 = {'table': 0, 'rule': 0, 'identity': 0, 'keep': 0, 'pending': 0}
     # 台账里已经记过的异文（md 的「一作 / 另有作」那一行），用来判断页读出来的异文是不是新主张
     md_variant = {}
     if LEDGER.exists():
@@ -375,6 +393,42 @@ def build():
                     x['field'] = field
                     x['line'] = li
                     marks.append(x)
+        # ---- 注释 / 译文 / 赏析 / 必背名句 / 异文：同样派生，同样过闸门 ----
+        sections_trad, app_marks = {}, []
+        md_path = ROOT / c['_path'] if c.get('_path') else None
+        if md_path and md_path.exists():
+            secs = md_sections(md_path)
+            for name in APPARATUS:
+                arr = secs.get(name) or []
+                if not arr:
+                    continue
+                own2 = own | set(''.join(arr))
+                trad_arr, mm = [], []
+                for li, seg in enumerate(arr):
+                    tt, m = convert(seg, s2p, s2c, own2)
+                    trad_arr.append(tt)
+                    for x in m:
+                        x['field'] = 'sec:' + name
+                        x['line'] = li
+                        mm.append(x)
+                apply_rules(mm, rules)
+                vet_table_choices(trad_arr, arr, mm, t2p, t2c, 'sec:' + name)
+                for li in range(len(arr)):
+                    sel = [m for m in mm if m['line'] == li]
+                    if any(m.get('pick') for m in sel):
+                        trad_arr[li] = apply_picks(trad_arr[li], sel)
+                for seg in trad_arr:
+                    for ch in seg:
+                        if ch in s2c and ch not in s2c[ch] and ch not in own2:
+                            raise SystemExit('繁体注释/译文里留下简体字「%s」（%s·%s）：'
+                                             '表要求换成 %s，这一处的裁定必须给出写法'
+                                             % (ch, c['title'], name, s2c[ch][0]))
+                for x in mm:
+                    counts2[x['decision']] = counts2.get(x['decision'], 0) + 1
+                # 只登记说得清依据的那几档：table 的「表只给一个候选」不必逐条存，
+                # 存下来 data/traditional.json 会长到没法读。
+                app_marks += [x for x in mm if x['decision'] in ('pending', 'rule', 'keep')]
+                sections_trad[name] = trad_arr
         page = page_traditional(src.get(c['id']) or {})
         page_s = to_simplified(page, t2p, t2c)
         for x in marks:
@@ -464,13 +518,16 @@ def build():
                                      'basis': '；'.join(dict.fromkeys(basis)),
                                      'unexplained': unexplained})
         out_rows.append({'id': c['id'], 'title': c['title'], 'page': (src.get(c['id']) or {}).get('page', ''),
-                         'text_trad': trad_full, 'lines_trad': trad_lines, 'marks': marks})
+                         'text_trad': trad_full, 'lines_trad': trad_lines,
+                         'sections_trad': sections_trad, 'marks': marks,
+                         'marks_app': app_marks})
 
     JOUT.write_text(json.dumps({'generated': datetime.date.today().isoformat(),
                                 'note': '简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / '
                                         'table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / '
                                         'pending 没依据，留在待定清单。',
-                                'counts': counts, 'reversal': reversal, 'rows': out_rows},
+                                'counts': counts, 'counts_apparatus': counts2,
+                                'reversal': reversal, 'rows': out_rows},
                                ensure_ascii=False, indent=1), encoding='utf-8')
     BT = chr(96)
     L = ['# 繁体版：每一处「一简对多繁」是怎么定的', '',
@@ -485,6 +542,13 @@ def build():
          '| identity | %d | 繁简同形，照抄原字 |' % counts['identity'],
          '| variant | %d | 表要换字，但来源页那一处写的是另一个字 —— 那是异文，正文照抄我们的用字 |' % counts['variant'],
          '| pending | %d | 没依据 —— 待定，不许当成已定 |' % counts['pending'], '',
+         '',
+         '注释、译文、赏析、必背名句、异文这几节（我们自己写的现代文字）另外计数：'
+         'table %d / rule %d / identity %d / keep %d / pending %d。'
+         '这几节没有来源页可查，依据只有裁定表和表；表只给一个候选时照表，'
+         '给多个候选而裁定表没说的，列进下面的待定清单。'
+         % (counts2['table'], counts2['rule'], counts2['identity'],
+            counts2['keep'], counts2['pending']), '',
          '## 可逆性（繁体转回简体必须一字不差）', '',
          '繁体转回简体时，%d 处与我们的正文不一样。每一处单独交代依据：' % len(reversal),
          '',
@@ -534,17 +598,22 @@ def build():
                     m['ctx'].replace('|', '¦')[:34]))
     L += ['', '## 待定清单', '']
     for r in out_rows:
-        pend = [m for m in r['marks'] if m['decision'] == 'pending']
+        pend = [m for m in (r['marks'] + r.get('marks_app', [])) if m['decision'] == 'pending']
         if not pend:
             continue
         L.append('### %s（%d 处）' % (r['title'], len(pend)))
         for m in pend:
-            L.append('- 「%s」候选 %s ｜ 上下文：%s' % (m['simp'], '/'.join(m['cands']), m['ctx']))
+            where = '正文' if m['field'] in ('full', 'lines') else m['field'][4:]
+            L.append('- 「%s」候选 %s ｜ 位置：%s ｜ 上下文：%s'
+                     % (m['simp'], '/'.join(m['cands']), where, m['ctx']))
         L.append('')
     MOUT.write_text('\n'.join(L), encoding='utf-8')
-    print('[繁体派生] %d 篇：page %d / table %d / rule %d / keep %d / identity %d / variant %d / pending %d；可逆性不一致 %d 处 → data/traditional.json 与 docs/traditional.md'
+    print('[繁体派生] %d 篇：正文 page %d / table %d / rule %d / keep %d / identity %d / variant %d / pending %d；'
+          '注释译文等 table %d / rule %d / identity %d / keep %d / pending %d；可逆性不一致 %d 处 → data/traditional.json 与 docs/traditional.md'
           % (len(out_rows), counts['page'], counts['table'], counts['rule'], counts['keep'],
-             counts['identity'], counts['variant'], counts['pending'], len(reversal)))
+             counts['identity'], counts['variant'], counts['pending'],
+             counts2['table'], counts2['rule'], counts2['identity'], counts2['keep'],
+             counts2['pending'], len(reversal)))
     return 0
 
 

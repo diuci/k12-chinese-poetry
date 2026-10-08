@@ -247,6 +247,25 @@ def audit_trad(corpus, trad, trad_md, rows):
                 % (len(rev), copied, ruled, len(unexplained),
                    ('：' + '、'.join(unexplained[:5])) if unexplained else '')))
 
+    # 注释 / 译文 / 赏析：台账说这篇有，繁体版就必须也有这一节
+    need = {'hasNotes': '注释', 'hasTranslation': '译文', 'hasAppreciation': '赏析'}
+    missing_sec = []
+    have_sec = 0
+    for r in (trad.get('rows') or []):
+        row = {x['id']: x for x in rows}.get(r['id'])
+        if not row:
+            continue
+        for k, name in need.items():
+            if not row.get(k):
+                continue
+            if (r.get('sections_trad') or {}).get(name):
+                have_sec += 1
+            else:
+                missing_sec.append('%s·%s' % (r['title'], name))
+    out.append(('繁体版覆盖台账里有的每一节注释译文赏析', not missing_sec,
+                '繁体派生出 %d 节；台账有、繁体没有的 %d 节%s'
+                % (have_sec, len(missing_sec), ('：' + '、'.join(missing_sec[:5])) if missing_sec else '')))
+
     m = re.search(r'[|] pending [|] (\d+) [|]', trad_md or '')
     doc_pending = int(m.group(1)) if m else -1
     out.append(('繁体页面上的待定数与实际一致', doc_pending == counts.get('pending', -2),
@@ -708,6 +727,15 @@ def selftest():
     t12['rows'][1]['lines_trad'] = ['身体。']
     if '繁体正文里没有只有简体才用的字' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12, MD_GOOD) if not ok}:
         print('坏例12：繁体正文里的简体字「体」没被拦'); bad += 1
+    # 12b) 台账说这篇有译文，繁体版却没派生这一节，必须被报
+    t12b = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
+            'rows': [dict(r) for r in TRAD_GOOD['rows']]}
+    led2 = {'rows': [dict(r) for r in ledger['rows']]}
+    led2['rows'][1]['hasTranslation'] = True
+    led2['summary'] = ledger['summary']
+    t12b['rows'][1]['sections_trad'] = {'注释': ['處處聞啼鳥。']}
+    if '繁体版覆盖台账里有的每一节注释译文赏析' not in {nm for nm, ok, _ in audit(c0, led2, tsrc, [], t12b, MD_GOOD) if not ok}:
+        print('坏例12b：繁体漏了译文这一节没被报'); bad += 1
     # 13) 页上写的待定数与实际不符，必须被报
     if '繁体页面上的待定数与实际一致' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t11, MD_GOOD) if not ok}:
         print('坏例13：页上 pending 0、实际 3，没被报'); bad += 1
@@ -735,7 +763,7 @@ def selftest():
 
         return 1
 
-    print('[ok] audit-content --selftest 通（16 个坏例子全部试到）')
+    print('[ok] audit-content --selftest 通（17 个坏例子全部试到）')
 
     return 0
 
