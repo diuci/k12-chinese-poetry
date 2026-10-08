@@ -5753,13 +5753,21 @@
       "emotion": "知音难觅的悲慨",
       "examFreq": 0.9,
       "form": "文言",
-      "fullLines": [],
-      "fullLinesPunct": [],
+      "fullLines": [
+        "伯牙鼓琴锺子期听之方鼓琴而志在太山锺子期曰「善哉乎鼓琴巍巍乎若太山」",
+        "少选之间而志在流水锺子期又曰「善哉乎鼓琴汤汤乎若流水」",
+        "锺子期死伯牙破琴绝弦终身不复鼓琴以为世无足复为鼓琴者"
+      ],
+      "fullLinesPunct": [
+        "伯牙鼓琴，锺子期听之。方鼓琴而志在太山，锺子期曰：「善哉乎鼓琴，巍巍乎若太山。」",
+        "少选之间而志在流水，锺子期又曰：「善哉乎鼓琴，汤汤乎若流水。」",
+        "锺子期死，伯牙破琴绝弦，终身不复鼓琴，以为世无足复为鼓琴者。"
+      ],
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
       "grade": 9,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "id": "lvshi1",
       "irregular": null,
       "license": "public-domain",
@@ -5787,7 +5795,7 @@
           3
         ]
       ],
-      "recite": "section",
+      "recite": "full",
       "render_split": [
         2,
         2,
