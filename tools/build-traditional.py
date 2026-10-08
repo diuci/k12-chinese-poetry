@@ -395,6 +395,41 @@ def build():
                     x['field'] = field
                     x['line'] = li
                     marks.append(x)
+        # ---- 标题 / 作者 / 朝代 / 学段 / 册次 / 体裁 / 标签：页面上要显示的字 ----
+        labels_trad = {}
+        for k in ('title', 'subtitle', 'author', 'dynasty', 'stage', 'volume', 'form', 'recite', 'textbookStatus'):
+            v = c.get(k)
+            if not isinstance(v, str) or not v:
+                continue
+            tt, mm = convert(v, s2p, s2c, own | set(v))
+            for x in mm:
+                x['field'] = 'label:' + k
+                x['line'] = 0
+            apply_rules(mm, rules)
+            vet_table_choices([tt], [v], mm, t2p, t2c, 'label:' + k)
+            if any(m.get('pick') for m in mm):
+                tt = apply_picks(tt, mm)
+            for ch in tt:
+                if ch in s2c and ch not in s2c[ch] and ch not in own and ch not in set(v):
+                    raise SystemExit('繁体标签「%s」里留下简体字「%s」（%s·%s）' % (v, ch, c['title'], k))
+            labels_trad[k] = tt
+        for k in ('theme', 'technique', 'tags'):
+            vs = c.get(k) or []
+            out_list = []
+            for v in vs:
+                if not isinstance(v, str) or not v:
+                    continue
+                tt, mm = convert(v, s2p, s2c, own | set(v))
+                for x in mm:
+                    x['field'] = 'label:' + k
+                    x['line'] = 0
+                apply_rules(mm, rules)
+                vet_table_choices([tt], [v], mm, t2p, t2c, 'label:' + k)
+                if any(m.get('pick') for m in mm):
+                    tt = apply_picks(tt, mm)
+                out_list.append(tt)
+            if out_list:
+                labels_trad[k] = out_list
         page = page_traditional(src.get(c['id']) or {})
         page_s = to_simplified(page, t2p, t2c)
         # ---- 正文之外的每一节：同样派生、同样过页证据、同样过闸门 ----
@@ -540,7 +575,7 @@ def build():
                                      'unexplained': unexplained})
         out_rows.append({'id': c['id'], 'title': c['title'], 'page': (src.get(c['id']) or {}).get('page', ''),
                          'text_trad': trad_full, 'lines_trad': trad_lines,
-                         'sections_trad': sections_trad,
+                         'sections_trad': sections_trad, 'labels_trad': labels_trad,
                          'marks': [m for m in marks if not m['field'].startswith('sec:')],
                          'marks_app': app_marks})
 
