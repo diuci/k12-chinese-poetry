@@ -431,16 +431,38 @@ def build():
                         raise SystemExit('繁体派生留下简体字「%s」（%s·%s）：表要求换成 %s，'
                                          '这一处的裁定必须给出繁体写法' % (ch, c['title'], field, s2c[ch][0]))
         for field, arr, trad in (('full', full, trad_full), ('lines', lines, trad_lines)):
-            for seg, tt in zip(arr, trad):
+            for li, (seg, tt) in enumerate(zip(arr, trad)):
                 back = to_simplified(tt, t2p, t2c)
                 if back != seg:
-                    pairs = []
+                    sel = [m for m in marks if m['field'] == field and m['line'] == li]
+                    pairs, basis, unexplained = [], [], []
                     for k in range(min(len(seg), len(back))):
-                        if seg[k] != back[k]:
-                            pairs.append('%s→%s' % (seg[k], back[k]))
-                    reversal.append({'id': c['id'], 'title': c['title'], 'field': field,
+                        if seg[k] == back[k]:
+                            continue
+                        pairs.append('%s→%s' % (seg[k], back[k]))
+                        if k >= len(tt) or tt[k] == seg[k]:
+                            basis.append('照抄')  # 本篇正文本来就写作这个字
+                            continue
+                        why = ''
+                        for m in sel:
+                            if not (m['at'] <= k < m['at'] + max(1, m['n'])):
+                                continue
+                            if m['decision'] == 'rule' and m.get('why'):
+                                why = '裁定「%s」：%s' % (m['pick'], m['why'])
+                                break
+                            if m['decision'] in ('page', 'variant') and m.get('page_char'):
+                                why = '来源页作「%s」' % m['page_char']
+                                break
+                        if why:
+                            basis.append(why)
+                        else:
+                            basis.append('（说不通）')
+                            unexplained.append('%s·%s' % (c['title'], seg[k]))
+                    reversal.append({'id': c['id'], 'title': c['title'], 'field': field, 'line': li,
                                      'ours': seg, 'trad': tt, 'back': back,
-                                     'chars': '、'.join(pairs) or '（长度不同）'})
+                                     'chars': '、'.join(pairs) or '（长度不同）',
+                                     'basis': '；'.join(dict.fromkeys(basis)),
+                                     'unexplained': unexplained})
         out_rows.append({'id': c['id'], 'title': c['title'], 'page': (src.get(c['id']) or {}).get('page', ''),
                          'text_trad': trad_full, 'lines_trad': trad_lines, 'marks': marks})
 
@@ -464,12 +486,17 @@ def build():
          '| variant | %d | 表要换字，但来源页那一处写的是另一个字 —— 那是异文，正文照抄我们的用字 |' % counts['variant'],
          '| pending | %d | 没依据 —— 待定，不许当成已定 |' % counts['pending'], '',
          '## 可逆性（繁体转回简体必须一字不差）', '',
-         '不一致 %d 处。这一类不是转换错，是**本篇正文本来就写作这个字**' % len(reversal),
-         '（徵、於、覆、藉、巘、騑、纕、锺……），繁体照抄；用表转回简体时表会把它改成另一个字。', '',
-         '| 篇 | 差在哪个字 | 我们写作 | 表转回成 |', '|---|---|---|---|',
+         '繁体转回简体时，%d 处与我们的正文不一样。每一处单独交代依据：' % len(reversal),
+         '',
+         '- **照抄**：本篇正文本来就写作这个字（徵、於、覆、藉、巘、騑、纕、嘑、絀……），'
+         '繁体没动它，是表把它转成了另一个字；',
+         '- **裁定 / 页**：我们有意写作另一个繁体字（锺→鍾、迹→跡 这类），依据见下面的裁定表。', '',
+         '| 篇 | 差在哪个字 | 依据 | 我们写作 | 表转回成 |', '|---|---|---|---|---|',
          '']
     for x in reversal:
-        L.append('| %s | **%s** | %s | %s |' % (x['title'], x['chars'], x['ours'][:26], x['back'][:26]))
+        L.append('| %s | **%s** | %s | %s | %s |' % (
+            x['title'], x['chars'], x['basis'].replace('|', '¦'),
+            x['ours'][:24].replace('|', '¦'), x['back'][:24].replace('|', '¦')))
     L += ['', '## 表被拒用的写法（转不回原字）', '',
           '| 原字 | 表想写成 | 处数 |', '|---|---|---|', '']
     rejected = {}

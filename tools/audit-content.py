@@ -174,7 +174,87 @@ def load_corpus():
 
 
 
-def audit(corpus, ledger, tsrc, defects):
+def s2c_table():
+    """简→繁 表（只用来判断「这个字是不是只有简体才用」）。"""
+    f = ROOT / 'data' / 'opencc' / 'STCharacters.txt'
+    tbl = {}
+    if not f.exists():
+        return tbl
+    for line in f.read_text(encoding='utf-8').splitlines():
+        if not line or line.startswith('#') or '	' not in line:
+            continue
+        k, v = line.split('	', 1)
+        if k.strip():
+            tbl[k.strip()] = v.split()
+    return tbl
+
+
+def audit_trad(corpus, trad, trad_md, rows):
+    """繁体产物的体检。
+
+    不重复 build-traditional.py 的活（它自己会拒绝不合格的输出），
+    这里查的是「繁体有没有覆盖每一篇、有没有把没依据的地方说成有依据」——
+    繁体页面上线以后，这类问题不会再有别的工具发现。
+    """
+    out = []
+    if trad is None:
+        return [('繁体产物存在', False, 'data/traditional.json 不存在：繁体没派生，不许在页面上说有繁体版')]
+    ids_ledger = {r['id'] for r in rows}
+    ids_trad = {r['id'] for r in (trad.get('rows') or [])}
+    miss = sorted(ids_ledger - ids_trad)
+    extra = sorted(ids_trad - ids_ledger)
+    out.append(('繁体派生覆盖每一篇', not miss and not extra,
+                '台账 %d 篇，繁体 %d 篇；没派生 %d 篇，多出来 %d 篇'
+                % (len(ids_ledger), len(ids_trad), len(miss), len(extra))))
+    counts = trad.get('counts') or {}
+    out.append(('繁体「一简对多繁」没有一处静默择一', counts.get('pending', -1) == 0,
+                '待定 %d 处' % counts.get('pending', -1)))
+
+    s2c = s2c_table()
+    bad_chars = []
+    for r in trad.get('rows') or []:
+        c = corpus.get(r['id'])
+        own = set(c['text']) if c else set()
+        for seg in (r.get('text_trad') or []) + (r.get('lines_trad') or []):
+            for ch in seg:
+                if ch in s2c and ch not in s2c[ch] and ch not in own:
+                    bad_chars.append('%s·%s' % (r['title'], ch))
+                    break
+    out.append(('繁体正文里没有只有简体才用的字', not bad_chars,
+                '这样的字 %d 处%s' % (len(bad_chars),
+                                      ('：' + '、'.join(bad_chars[:6])) if bad_chars else '')))
+
+    rev = trad.get('reversal') or []
+    unexplained = []
+    copied = ruled = 0
+    for x in rev:
+        ours, tt, back = x.get('ours', ''), x.get('trad', ''), x.get('back', '')
+        # 依据必须与正文对得上：写「照抄」就得真的没换字
+        for b in (x.get('basis') or '').split('；'):
+            if b == '照抄':
+                copied += 1
+                if len(ours) == len(tt) and len(ours) == len(back):
+                    for k in range(len(ours)):
+                        if ours[k] != back[k] and tt[k] == ours[k]:
+                            break
+                    else:
+                        unexplained.append('%s·声称照抄但繁体换了字' % x.get('title', ''))
+            elif b.startswith('裁定') or b.startswith('来源页'):
+                ruled += 1
+        unexplained += list(x.get('unexplained') or [])
+    out.append(('可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页）', not unexplained,
+                '不一致 %d 处：%d 处照抄本篇原有的字、%d 处有裁定或页依据；说不通的 %d 处%s'
+                % (len(rev), copied, ruled, len(unexplained),
+                   ('：' + '、'.join(unexplained[:5])) if unexplained else '')))
+
+    m = re.search(r'[|] pending [|] (\d+) [|]', trad_md or '')
+    doc_pending = int(m.group(1)) if m else -1
+    out.append(('繁体页面上的待定数与实际一致', doc_pending == counts.get('pending', -2),
+                '页上写 %d 处，实际 %d 处' % (doc_pending, counts.get('pending', -2))))
+    return out
+
+
+def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None):
 
     """返回 [(检查名, 通过?, 说明)]。"""
 
@@ -447,6 +527,7 @@ def audit(corpus, ledger, tsrc, defects):
 
     out.append(('来源不明为零', g['来源不明'] == 0, '来源不明 %d 篇' % g['来源不明']))
 
+    out += audit_trad(corpus, trad, trad_md, ledger['rows'])
     return out
 
 
@@ -505,9 +586,16 @@ def selftest():
 
 
 
+    TRAD_GOOD = {'counts': {'page': 2, 'table': 1, 'rule': 0, 'keep': 0, 'identity': 3,
+                            'variant': 0, 'pending': 0},
+                 'reversal': [],
+                 'rows': [{'id': 'a', 'title': '甲', 'text_trad': ['床前明月光，'], 'lines_trad': []},
+                          {'id': 'b', 'title': '乙', 'text_trad': ['處處聞啼鳥，'], 'lines_trad': []}]}
+    MD_GOOD = '| pending | 0 | 没依据 —— 待定，不许当成已定 |'
+
     def fails(corpus, ledger_, tsrc_, defects_, names):
 
-        res = audit(corpus, ledger_, tsrc_, defects_)
+        res = audit(corpus, ledger_, tsrc_, defects_, TRAD_GOOD, MD_GOOD)
 
         got = {n for n, ok, _ in res if not ok}
 
@@ -601,13 +689,53 @@ def selftest():
 
         print('坏例9：短诗的正文没抽到，被误报成没正文'); bad += 1
 
+    # 10) 繁体漏了篇，必须被报
+    t10 = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
+           'rows': [r for r in TRAD_GOOD['rows'] if r['id'] == 'a']}
+    got10 = {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t10, MD_GOOD) if not ok}
+    if '繁体派生覆盖每一篇' not in got10:
+        print('坏例10：繁体漏篇没被报；实际报的是 ' + ('、'.join(sorted(got10)) or '（什么都没报）')); bad += 1
+    # 11) 繁体有静默择一的待定处，必须被报
+    t11 = {'counts': dict(TRAD_GOOD['counts', ] if False else TRAD_GOOD['counts']), 'reversal': [],
+           'rows': TRAD_GOOD['rows']}
+    t11['counts']['pending'] = 3
+    if '繁体「一简对多繁」没有一处静默择一' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t11, MD_GOOD) if not ok}:
+        print('坏例11：繁体待定 3 处没被报'); bad += 1
+    # 12) 繁体正文里留下只有简体才用的字，必须被报
+    t12 = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
+           'rows': [dict(r) for r in TRAD_GOOD['rows']]}
+    t12['rows'][1]['text_trad'] = ['處處聞啼鳥，體格。']
+    t12['rows'][1]['lines_trad'] = ['身体。']
+    if '繁体正文里没有只有简体才用的字' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12, MD_GOOD) if not ok}:
+        print('坏例12：繁体正文里的简体字「体」没被拦'); bad += 1
+    # 13) 页上写的待定数与实际不符，必须被报
+    if '繁体页面上的待定数与实际一致' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t11, MD_GOOD) if not ok}:
+        print('坏例13：页上 pending 0、实际 3，没被报'); bad += 1
+    # 14) 可逆性不一致却说不通（繁体没照抄我们正文里的字），必须被报
+    t14 = {'counts': dict(TRAD_GOOD['counts']), 'rows': TRAD_GOOD['rows'],
+           'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
+                         'ours': '床前明月光，', 'trad': '床前明山光，', 'back': '床前明山光，',
+                         'chars': '月→山', 'basis': '（说不通）', 'unexplained': ['甲·月']}]}
+    if '可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页）' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14, MD_GOOD) if not ok}:
+        print('坏例14：繁体把正文的字换掉了却没给依据，没被报'); bad += 1
+    # 坏例14b：依据写「照抄」但繁体其实换了字，必须被报
+    t14b = {'counts': dict(TRAD_GOOD['counts']), 'rows': TRAD_GOOD['rows'],
+            'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
+                          'ours': '床前明月光，', 'trad': '床前明山光，', 'back': '床前明山光，',
+                          'chars': '月→山', 'basis': '照抄', 'unexplained': []}]}
+    if '可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页）' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14b, MD_GOOD) if not ok}:
+        print('坏例14b：谎称照抄没被报'); bad += 1
+    # 15) 繁体产物不存在，必须被报（不许「没跑成」长得像「没问题」）
+    if '繁体产物存在' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], None, None) if not ok}:
+        print('坏例15：繁体产物不存在却没被报'); bad += 1
+
     if bad:
 
         print('[!] audit-content --selftest 失败 %d 项' % bad)
 
         return 1
 
-    print('[ok] audit-content --selftest 通（9 个坏例子全部试到）')
+    print('[ok] audit-content --selftest 通（16 个坏例子全部试到）')
 
     return 0
 
@@ -633,7 +761,11 @@ def main():
 
         defects = defects.get('defects', [])
 
-    res = audit(corpus, ledger, tsrc, defects)
+    tj = ROOT / 'data' / 'traditional.json'
+    trad = json.loads(tj.read_text(encoding='utf-8')) if tj.exists() else None
+    mj = ROOT / 'docs' / 'traditional.md'
+    trad_md = mj.read_text(encoding='utf-8') if mj.exists() else ''
+    res = audit(corpus, ledger, tsrc, defects, trad, trad_md)
 
     g = ledger['summary']['gapCounts']
 

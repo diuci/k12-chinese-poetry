@@ -761,6 +761,22 @@
    ]
   },
   {
+   "id": "songshaoshu-wai",
+   "title": "送杜少府之任蜀州",
+   "hit": 3,
+   "lines": 4,
+   "page": "古今詩刪 (四庫全書本)/卷14",
+   "items": [
+    {
+     "line": "海内存知己天涯若比邻",
+     "grade": "B",
+     "note": "页里「隣无为在岐路儿」我们「邻」",
+     "window": "海内存知己天涯若比隣无为在岐路儿",
+     "ratio": 0.69
+    }
+   ]
+  },
+  {
    "id": "zuigongtingji",
    "title": "醉翁亭记",
    "hit": 24,
