@@ -21,6 +21,8 @@ _bl_spec.loader.exec_module(_bl)
 VM = _bl.VARIANT_MARK
 QUOTE = re.compile(r'「([^」]{1,40})」')
 SPEC = importlib.util.spec_from_file_location('cts', ROOT / 'tools' / 'check-text-sources.py')
+_C = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(_C)
 
 
 def np(s):
@@ -67,8 +69,16 @@ def find_claim(claim, texts):
     if not k:
         return -1
     for i, t in enumerate(texts):
-        if k in np(t):
+        jt = np(t)
+        if k in jt:
             return i
+    # 逐字找不到不等于这一页没有：来源页把「一作某」夹在正文里，夹注一插进来就把句子切开了
+    # （《王子安集》《李太白全集》整页几乎没有标点）。这时按「顺序对得上、中间只多不少」再判一次。
+    # 只给 6 字以上的写法用这个兜底：短句在整页无标点的散文里没有区分度，兜底只会造出假命中。
+    if len(k) >= 6:
+        for i, t in enumerate(texts):
+            if _C.subseq_window(k, np(t), 25):
+                return i
     return -1
 
 
@@ -188,7 +198,15 @@ def selftest():
     conv, _ = C.clean('千里共嬋娟', table)
     assert find_claim('婵娟', [conv]) == 0, '坏例6：繁简转换没做，真命中被漏'
     assert find_claim('长健', [conv]) == -1, '坏例7：页上没有的写法被当成核到'
-    print('[ok] verify-variant-claims --selftest 通（9 个坏例子全部被拦住）')
+    # 10) 夹注把句子切开：整页几乎没有标点，逐字找不到，但顺序对得上——必须算核到
+    # 真实流程里 texts 已经是「过完繁简转换的页文本」，这里必须照做，否则繁体探针对简体断言必然 0 命中。
+    _tab = _C.load_t2s()
+    cut = [_C.clean('岑夫子丹丘生将进酒君一作杯莫停与君歌一曲请君为我侧耳听', _tab)[0]]
+    assert find_claim('将进酒杯莫停', cut) == 0, '坏例10：被夹注切开的真命中被判成没核到'
+    # 11) 短句不许用兜底：整页无标点的散文里，4 个字的片段到处都能凑出顺序
+    assert find_claim('长健', cut) == -1, '坏例11：短句用了兜底，造出假命中'
+
+    print('[ok] verify-variant-claims --selftest 通（11 个坏例子全部被拦住）')
     return 0
 
 
