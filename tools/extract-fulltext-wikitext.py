@@ -118,11 +118,13 @@ def resolve(wt):
             # 不认识的模板不能一律丢掉：{{ProperNoun|琅琊}} 的第一个参数就是正文本体。
             # 丢掉它，正文就成了「望之蔚然而深秀者，也。」——专名全没了，句子还是通的，
             # 所以这种错不会被读出来，只会在逐行核里表现为一大片对不上。
-            first = params[1] if len(params) > 1 else ''
-            plain = first.strip()
-            if plain and '=' not in plain and re.match(r'^[\u4e00-\u9fff，、。；！？：（）\s]+$', plain):
-                dropped.append(params[0].strip() + '（取第一个参数）')
-                repl = first
+            # 正文型模板可能有多个并列参数：{{ProperNoun|廬陵|歐陽脩}} 只取第一个，
+            # 末句就成了「太守謂誰？廬陵也。」——人名被吞了，句子还是通的。
+            positional = [x for x in params[1:] if x.strip() and '=' not in x]
+            plain = ''.join(positional).strip()
+            if plain and re.match(r'^[\u4e00-\u9fff，、。；！？：（）\s]+$', plain):
+                dropped.append(params[0].strip() + '（取正文参数）')
+                repl = ''.join(positional)
             else:
                 dropped.append(params[0].strip())
                 repl = ''
@@ -169,7 +171,14 @@ def selftest():
     t, v, d, _ = resolve('{{SomeTemplate|key=value}}乙')
     assert t == '乙', '坏例8b：带 key=value 的模板参数漏进正文：%r' % t
     t, v, d, _ = resolve('{{SomeUnknownTemplate|甲}}乙')
-    assert d == ['SomeUnknownTemplate（取第一个参数）'], '坏例9：丢掉的模板没报出来（或吞正文没标注）：%r' % d
+    assert d == ['SomeUnknownTemplate（取正文参数）'], '坏例9：丢掉的模板没报出来（或吞正文没标注）：%r' % d
+    # {{ProperNoun|廬陵|歐陽脩}}：只取第一个参数会把人名吞掉，末句成了「太守謂誰？廬陵也。」
+    t, v, d, _ = resolve('太守謂誰？{{ProperNoun|廬陵|歐陽脩}}也。')
+    assert t == '太守謂誰？廬陵歐陽脩也。', '坏例13：正文型模板的第二个参数被吞掉：%r' % t
+    # 专名里嵌着夹注：{{ProperNoun|{{另|讓|釀}}泉}} → 本页用字「讓泉」
+    t, v, d, _ = resolve('泻出于两峰之间者，{{ProperNoun|{{另|讓|釀}}泉}}也。')
+    assert t == '泻出于两峰之间者，讓泉也。', '坏例14：专名里的夹注没解：%r' % t
+    assert v == [('讓', '釀')], '坏例15：专名里的夹注没登记成异文：%r' % v
 
     # 专名模板的第一个参数就是正文本体，丢掉它正文就成了「…者，也。」
     t, v, d, _ = resolve('望之蔚然而深秀者，{{ProperNoun|琅琊}}也。山之僧曰{{ProperNoun|智仙}}也。')
@@ -179,7 +188,7 @@ def selftest():
 
     t, v, d, _ = resolve('{{另|甲|乙}}')
     assert t == '甲' and v == [('甲', '乙')], '坏例10：最基本的情况都错了'
-    print('[ok] extract-fulltext-wikitext --selftest 通（12 个坏例子全部被拦住）')
+    print('[ok] extract-fulltext-wikitext --selftest 通（15 个坏例子全部被拦住）')
     return 0
 
 
