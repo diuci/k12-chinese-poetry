@@ -50,10 +50,10 @@
       "缺背诵要求": 0,
       "只有必背名句（节选收录）": 8,
       "仓内有全文正文": 244,
-      "无异文记录": 170,
-      "异文条目总数": 327,
-      "异文条目带出处": 266,
-      "异文条目带取舍": 114,
+      "无异文记录": 167,
+      "异文条目总数": 332,
+      "异文条目带出处": 271,
+      "异文条目带取舍": 119,
       "异文条目缺出处": 61,
       "异文小节里的非异文条目": 201,
       "异文条目写明「仓内没核到」": 52,
@@ -8876,7 +8876,9 @@
       "lineCount": 4,
       "charCount": 56,
       "sections": [
+        "异文",
         "必背名句",
+        "收录范围",
         "注释",
         "译文",
         "赏析"
@@ -8886,17 +8888,15 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 0,
-      "variantWithChoice": 0,
+      "variantWithSource": 2,
+      "variantWithChoice": 2,
       "hasFulltext": false,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修下册/离骚.md"
     },
     {
@@ -9729,7 +9729,9 @@
       "lineCount": 4,
       "charCount": 52,
       "sections": [
+        "异文",
         "必背名句",
+        "收录范围",
         "注释",
         "译文",
         "赏析"
@@ -9739,17 +9741,15 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 0,
-      "variantWithChoice": 0,
+      "variantWithSource": 2,
+      "variantWithChoice": 2,
       "hasFulltext": false,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修上册/将进酒.md"
     },
     {
@@ -11962,7 +11962,9 @@
       "lineCount": 3,
       "charCount": 28,
       "sections": [
+        "异文",
         "必背名句",
+        "收录范围",
         "注释",
         "译文",
         "赏析"
@@ -11972,17 +11974,15 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 0,
-      "variantWithChoice": 0,
+      "variantWithSource": 1,
+      "variantWithChoice": 1,
       "hasFulltext": false,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修下册/长亭送别.md"
     },
     {
