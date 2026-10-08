@@ -48,13 +48,13 @@
     ],
     "gapCounts": {
       "缺背诵要求": 0,
-      "只有必背名句（节选收录）": 20,
-      "仓内有全文正文": 232,
-      "无异文记录": 182,
-      "异文条目总数": 456,
+      "只有必背名句（节选收录）": 15,
+      "仓内有全文正文": 237,
+      "无异文记录": 177,
+      "异文条目总数": 470,
       "异文条目带出处": 61,
-      "异文条目带取舍": 50,
-      "异文条目缺出处": 395,
+      "异文条目带取舍": 64,
+      "异文条目缺出处": 409,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
       "重复副本": 1,
@@ -8956,7 +8956,10 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
+        "旧文本裁定",
         "注释",
         "译文",
         "赏析"
@@ -8966,15 +8969,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 3,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 3,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修上册/春江花月夜.md"
     },
     {
@@ -9181,6 +9182,8 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9191,15 +9194,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 2,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/必修上册/梦游天姥吟留别.md"
     },
     {
@@ -9406,6 +9407,8 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9416,15 +9419,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 4,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 4,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修中册/燕歌行.md"
     },
     {
@@ -9587,6 +9588,8 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9597,15 +9600,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 2,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修下册/客至.md"
     },
     {
@@ -9814,6 +9815,8 @@
       "lineCount": 4,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -9824,15 +9827,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 3,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 3,
+      "hasFulltext": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/必修上册/琵琶行.md"
     },
     {
