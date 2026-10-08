@@ -48,6 +48,9 @@ def body_sections(path):
     return have
 
 
+# 一条合格的异文必须断言「这里有另一种写法」。
+VARIANT_MARK = re.compile(r'一作|别本|他本|另一本|版本作|来源页作|夹注|异体|旧本作|通行本作|误作')
+
 def section_text(path, name):
     """某个 ## 小节的正文（到下一个 ## 为止）。台账要数异文条目的完成度，
     光知道「有没有这个小节」不够，得看见里面的条目。"""
@@ -146,8 +149,12 @@ def main():
         # 只数条目数，不当成错误——现在绝大多数条目还没有出处，这是进度，不是缺陷。
         vtext = section_text(path, '异文').strip()
         ventries = [x.strip() for x in re.split(r'\n(?=- )', vtext) if x.strip().startswith('- ')] if vtext else []
-        v_with_source = sum(1 for x in ventries if '出处' in x)
-        v_with_choice = sum(1 for x in ventries if '取舍' in x)
+        # 只有断言「这里有另一种写法」的条目才是异文。版权说明、校勘待办、通假字解释
+        # 以前也被算进「异文条目总数」，分母是虚的。不静默丢掉：单列一个计数。
+        ventries_variant = [x for x in ventries if VARIANT_MARK.search(x)]
+        v_other = len(ventries) - len(ventries_variant)
+        v_with_source = sum(1 for x in ventries_variant if '出处' in x)
+        v_with_choice = sum(1 for x in ventries_variant if '取舍' in x)
 
         recite = fm.get('recite') or p.get('recite') or ''
         flags = []
@@ -194,7 +201,8 @@ def main():
             'hasFamous': '必背名句' in sec,
             'hasPlay': '玩法数据' in sec,
             'hasVariant': '异文' in sec,
-            'variantEntries': len(ventries),
+            'variantEntries': len(ventries_variant),
+        'variantNonEntries': v_other,
             'variantWithSource': v_with_source,
             'variantWithChoice': v_with_choice,
             # 「有全文」按 build.py 抽出来的全文正文算，不按小节标题叫什么算：
@@ -254,6 +262,7 @@ def main():
             '异文条目带出处': sum(r['variantWithSource'] for r in rows),
             '异文条目带取舍': sum(r['variantWithChoice'] for r in rows),
             '异文条目缺出处': sum(r['variantEntries'] - r['variantWithSource'] for r in rows),
+        '异文小节里的非异文条目': sum(r.get('variantNonEntries', 0) for r in rows),
             # （旧口径：按 flag 数无异文；现改用 hasVariant，与明细列同源）
             '缺全文（课标首句找不到）': sum(1 for x in problem_rows if x['key'].startswith('fulltext:')),
             '课标要求但仓内缺失': sum(1 for x in problem_rows if x['key'].startswith('missing:')),
