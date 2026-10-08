@@ -57,6 +57,8 @@ python tools/build-textbook-table.py
 python tools/fix-meta-lines.py --check
 python tools/enrich-variants.py --selftest
 python tools/check-variant-sources.py
+python tools/check-variant-defaults.py
+python tools/check-variant-defaults.py --selftest
 python tools/extract-fulltext-wikitext.py --selftest
 python tools/verify-variant-claims.py --selftest
 node tools/check-legal.mjs
