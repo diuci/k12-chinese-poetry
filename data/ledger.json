@@ -50,10 +50,10 @@
       "缺背诵要求": 0,
       "只有必背名句（节选收录）": 9,
       "仓内有全文正文": 243,
-      "无异文记录": 172,
-      "异文条目总数": 509,
-      "异文条目带出处": 268,
-      "异文条目带取舍": 102,
+      "无异文记录": 170,
+      "异文条目总数": 513,
+      "异文条目带出处": 272,
+      "异文条目带取舍": 106,
       "异文条目缺出处": 241,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
@@ -2957,7 +2957,9 @@
       "lineCount": 3,
       "charCount": 36,
       "sections": [
+        "异文",
         "必背名句",
+        "收录范围",
         "注释",
         "译文",
         "赏析"
@@ -2967,15 +2969,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
-      "variantWithSource": 0,
-      "variantWithChoice": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
+      "variantWithSource": 2,
+      "variantWithChoice": 2,
       "hasFulltext": false,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级下册/《孟子》三则.md"
     },
     {
@@ -3002,7 +3002,9 @@
       "lineCount": 3,
       "charCount": 23,
       "sections": [
+        "异文",
         "必背名句",
+        "收录范围",
         "注释",
         "译文",
         "赏析"
@@ -3012,15 +3014,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
-      "variantWithSource": 0,
-      "variantWithChoice": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
+      "variantWithSource": 2,
+      "variantWithChoice": 2,
       "hasFulltext": false,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级下册/《庄子》一则.md"
     },
     {
@@ -3094,6 +3094,7 @@
       "charCount": 62,
       "sections": [
         "必背名句",
+        "收录范围",
         "注释",
         "译文",
         "赏析"
