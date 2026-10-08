@@ -58,6 +58,7 @@ python tools/fix-meta-lines.py --check
 python tools/enrich-variants.py --selftest
 python tools/check-variant-sources.py
 python tools/check-variant-defaults.py
+# 按需（跑一次要几百次网络请求，不进链条）：python tools/hunt-variant-sources.py
 python tools/check-variant-defaults.py --selftest
 python tools/verify-variant-claims.py --write --refresh
 python tools/extract-fulltext-wikitext.py --selftest
