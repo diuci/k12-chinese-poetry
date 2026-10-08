@@ -72,6 +72,25 @@ def strip_stale(s):
     s = re.sub(r'\s{2,}', ' ', s)
     return s.rstrip('。 ')
 
+MARK = re.compile(r'一作|又作|别本作|一本作|旧本作|通行本作')
+
+
+def marker_hit(k, jt, window=14):
+    """页里有没有「一作＋这个写法」这种夹注。
+
+    短句（4 字以下）在整页无标点的散文里没有区分度，所以不给它用一般的顺序兜底；
+    但「钟期既一作相遇」「物换星移几度一作度几秋」这种是来源页自己标出来的别本，
+    必须认——不认就是假阴性，把核得到的写成核不到。"""
+    if not k:
+        return False
+    for m in MARK.finditer(jt):
+        # 夹注的写法可以跨在标记两边：「钟锺期既一作相遇」里「钟期」在标记前、「相遇」在标记后。
+        seg = jt[max(0, m.start() - 10): m.end() + window]
+        it = iter(seg)
+        if all(ch in it for ch in k):
+            return True
+    return False
+
 def find_claim(claim, texts):
     """在几份文本里找这个写法（去标点后逐字比对）。返回命中的那份文本的序号。"""
     k = np(claim)
@@ -87,6 +106,11 @@ def find_claim(claim, texts):
     if len(k) >= 6:
         for i, t in enumerate(texts):
             if _C.subseq_window(k, np(t), 25):
+                return i
+    else:
+        # 短句只认「一作＋这个写法」这种页自己标出来的别本夹注。
+        for i, t in enumerate(texts):
+            if marker_hit(k, np(t)):
                 return i
     return -1
 
@@ -224,7 +248,15 @@ def selftest():
     tail = '- 「与尔同销万古愁」：别本作「同消」。出处：仓内没核到——在 X 里找不到。'
     assert strip_stale(tail) == '- 「与尔同销万古愁」：别本作「同消」', '坏例15：末尾的过期结论没清干净'
 
-    print('[ok] verify-variant-claims --selftest 通（15 个坏例子全部被拦住）')
+    # 16) 短句只认页自己标出来的别本夹注：「钟期既一作相遇」里的「钟期相遇」必须认
+    mk = ['抚凌云而自惜钟锺期既一作相遇奏流水以何慙呜呼胜地']
+    assert find_claim('钟期相遇', mk) == 0, '坏例16：页里明写「一作相遇」却被判成没核到'
+    # 17) 没有「一作」标记的短句不许靠顺序兜底蒙对
+    # 页里根本没有「长健」这两个字连在一起，也没有任何「一作」标记——不许靠顺序蒙对
+    nomark = ['长者有疾吾子有疾先问长者后问吾子康宁而已']
+    assert find_claim('长健', nomark) == -1, '坏例17：没有别本标记的短句被当成核到'
+
+    print('[ok] verify-variant-claims --selftest 通（17 个坏例子全部被拦住）')
     return 0
 
 
