@@ -23,37 +23,70 @@ _spec.loader.exec_module(C)
 OUT = ROOT / 'data' / 'fulltext-candidates.json'
 
 
-def strip_templates(w):
-    """去掉 {{模板}}，但保留 {{另|甲|乙}} 的内容（那是异文线索）。"""
-    out, i = [], 0
-    while i < len(w):
-        if w.startswith('{{', i):
-            depth, j = 0, i
-            while j < len(w):
-                if w.startswith('{{', j):
-                    depth += 1
-                    j += 2
-                elif w.startswith('}}', j):
-                    depth -= 1
-                    j += 2
-                    if depth == 0:
-                        break
-                else:
-                    j += 1
-            seg = w[i + 2:j - 2]
-            if seg.startswith('另|'):
-                parts = seg.split('|')[1:]
-                out.append(' '.join(parts))
-            i = j
+def split_params(seg):
+    """按顶层的 | 切模板参数，嵌套的 {{}} 和 [[ ]] 里的 | 不算。"""
+    parts, depth, cur = [], 0, []
+    i = 0
+    while i < len(seg):
+        if seg.startswith('{{', i) or seg.startswith('[[', i):
+            depth += 1
+            cur.append(seg[i])
+            i += 2
             continue
-        out.append(w[i])
+        if seg.startswith('}}', i) or seg.startswith(']]', i):
+            depth -= 1
+            cur.append(seg[i])
+            i += 2
+            continue
+        if seg[i] == '|' and depth == 0:
+            parts.append(''.join(cur))
+            cur = []
+            i += 1
+            continue
+        cur.append(seg[i])
         i += 1
-    return ''.join(out)
+    parts.append(''.join(cur))
+    return parts
 
+
+KEEP_FIRST = {'專', '专', 'YL', 'YL2', '另', '另2', '校', '注', '别', '它'}
+DROP_ALL = {'Header', 'header', 'PD', 'PD-old', 'PD-art', 'CQ', 'YearCat', 'TitleTOC',
+            '北宋作品', '唐詩', 'ProperNoun', 'noinclude', '底', 'Foot', 'notices'}
+
+
+def strip_templates(w):
+    """模板里的正文要留下，模板本身不许漏进正文。
+
+    实测两个方向都踩过：
+    - 整块删掉：岳阳楼记原文写作「{{專|慶曆}}四年，{{專|滕子京}}謫守{{專|巴陵郡}}」，
+      删完变成「春，谪守」，年号人名全没了，看着像缺字，其实是删错了；
+    - 一律留第一个参数：{{PD-old}}、{{ProperNoun}}、{{南梁作品}} 这些装饰模板被当成正文留下，
+      正文里就冒出「Header」「PD-old」「ProperNoun」这种词。
+    规则：只认白名单（專/YL/另/…——第一个参数就是页面正文用的那个字），其余一律丢。
+    嵌套的从最里层往外剥，一层一层来，不然 {{YL|{{專|慶曆}}四年|1044年}} 会把内层整块当参数留下。"""
+    for _ in range(12):
+        if '{{' not in w:
+            break
+        m = re.search(r'\{\{((?:(?!\{\{|\}\}).)*?)\}\}', w, re.S)
+        if not m:
+            break
+        parts = [x.strip() for x in m.group(1).split('|')]
+        name = parts[0]
+        if name == '!':
+            rep = '|'
+        elif name in KEEP_FIRST:
+            unnamed = [x for x in parts[1:] if '=' not in x]
+            rep = unnamed[0] if unnamed else ''
+        else:
+            rep = ''
+        w = w[:m.start()] + rep + w[m.end():]
+    return w
 
 def extract_body(w):
     """从 wikitext 里取正文：优先 <poem> 块；没有就取 Header 之后的正文段。"""
     w = re.sub(r'<!--.*?-->', '', w, flags=re.S)
+    w = re.sub(r'</?onlyinclude>', '', w, flags=re.I)
+    w = re.sub(r'</?noinclude>', '', w, flags=re.I)
     w = re.sub(r'<ref[^>]*/>', '', w)
     w = re.sub(r'<ref[^>]*>.*?</ref>', '', w, flags=re.S)
     w = re.sub(r'<references\s*/>', '', w)

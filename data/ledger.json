@@ -48,13 +48,13 @@
     ],
     "gapCounts": {
       "缺背诵要求": 0,
-      "只有必背名句（节选收录）": 51,
-      "仓内有全文正文": 201,
-      "无异文记录": 198,
-      "异文条目总数": 425,
+      "只有必背名句（节选收录）": 33,
+      "仓内有全文正文": 219,
+      "无异文记录": 192,
+      "异文条目总数": 436,
       "异文条目带出处": 61,
-      "异文条目带取舍": 19,
-      "异文条目缺出处": 364,
+      "异文条目带取舍": 30,
+      "异文条目缺出处": 375,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
       "重复副本": 1,
@@ -882,6 +882,7 @@
       "lineCount": 2,
       "charCount": 28,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -897,7 +898,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -1021,6 +1022,7 @@
       "lineCount": 4,
       "charCount": 53,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "译文",
@@ -1035,7 +1037,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 2,
       "flags": [
         "无异文记录"
@@ -1296,6 +1298,7 @@
       "lineCount": 2,
       "charCount": 16,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -1311,7 +1314,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -1667,6 +1670,7 @@
       "lineCount": 4,
       "charCount": 56,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -1682,7 +1686,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 2,
       "flags": [
         "无异文记录"
@@ -1713,6 +1717,8 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -1724,15 +1730,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": true,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 1,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/八年级上册/雁门太守行.md"
     },
     {
@@ -1943,6 +1947,7 @@
       "lineCount": 4,
       "charCount": 32,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "译文",
@@ -1957,7 +1962,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 2,
       "flags": [
         "无异文记录"
@@ -2169,6 +2174,8 @@
       "lineCount": 4,
       "charCount": 36,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2179,15 +2186,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 4,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 4,
+      "hasFulltext": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/八年级下册/北冥有鱼.md"
     },
     {
@@ -2214,6 +2219,8 @@
       "lineCount": 4,
       "charCount": 33,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2224,14 +2231,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 3,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 3,
+      "hasFulltext": true,
       "pairsCount": 2,
       "flags": [
-        "无异文记录",
         "与另一篇原文完全相同"
       ],
       "path": "poems/初中/八年级下册/大道之行也.md"
@@ -2260,6 +2266,8 @@
       "lineCount": 2,
       "charCount": 20,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2270,15 +2278,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 1,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/八年级下册/石壕吏.md"
     },
     {
@@ -2487,6 +2493,7 @@
       "lineCount": 2,
       "charCount": 17,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "译文",
@@ -2501,7 +2508,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -2578,6 +2585,8 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -2589,15 +2598,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": true,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 1,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级下册/白雪歌送武判官归京.md"
     },
     {
@@ -2624,6 +2631,7 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "译文",
@@ -2638,7 +2646,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -4973,6 +4981,7 @@
       "lineCount": 3,
       "charCount": 27,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "译文",
@@ -4987,7 +4996,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -8897,6 +8906,7 @@
       "lineCount": 3,
       "charCount": 36,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "译文",
@@ -8911,7 +8921,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -9890,6 +9900,7 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "译文",
@@ -9904,7 +9915,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -10621,6 +10632,7 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "译文",
@@ -10635,7 +10647,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -11123,6 +11135,8 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -11133,15 +11147,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 1,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修下册/临安春雨初霁.md"
     },
     {
@@ -11396,6 +11408,7 @@
       "lineCount": 3,
       "charCount": 31,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "译文",
@@ -11410,7 +11423,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
