@@ -50,6 +50,7 @@ python tools/apply-textbook-status.py --write
 python tools/build-ledger.py
 python tools/build-textbook-table.py
 python tools/fix-meta-lines.py --check
+python tools/enrich-variants.py --selftest
 node tools/check-legal.mjs
 ```
 
@@ -62,6 +63,11 @@ node tools/check-legal.mjs
 
 补全文用的 `tools/fetch-fulltext.py` 不是护栏，是取料工具：它只写候选到 `data/fulltext-candidates.json`，
 候选全文进仓之前必须有人逐篇看过——它只证明「仓里的必背句在这一页里找得到」，不证明「这一页整页都是这一篇」。
+
+`tools/enrich-variants.py` 同样是取料工具，不是护栏。它只给「来源页／维基文库」这一类异文条目补 URL，
+URL 取自 `data/text-sources.json` 里这一篇**实际比对过的那一页**；引的是别的书（《白香词谱笺》《四部丛刊》…）的条目一律不补，
+条目里没写「从哪个」的也不替人编一个取舍。它自带 5 个坏例子自检（该补的没补、重复补、把别的书安到维基文库头上、
+没说是哪一页也补、越界改别的小节），跑 `--selftest` 拦不住就等于没有这个检查。
 
 任何一条非 0 退出，这次变更就不算完成。
 
