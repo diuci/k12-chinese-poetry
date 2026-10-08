@@ -49,7 +49,7 @@ def body_sections(path):
 
 
 # 一条合格的异文必须断言「这里有另一种写法」。
-VARIANT_MARK = re.compile(r'一作|别本|他本|另一本|版本作|来源页作|夹注|异体|旧本作|通行本作|误作')
+VARIANT_MARK = re.compile(r'一作|别本|他本|另一本|版本作|来源页作|夹注|异体|旧本作|通行本作|误作|》作')
 
 def section_text(path, name):
     """某个 ## 小节的正文（到下一个 ## 为止）。台账要数异文条目的完成度，

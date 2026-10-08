@@ -19,7 +19,7 @@ URL_RE = re.compile(r'https?://')
 CITE_RE = re.compile(r'来源页|维基文库|維基文庫')
 # 一条合格的异文必须断言「这里有另一种写法」。不这么断言的条目不是异文，
 # 是版权说明、待办登记、通假字解释——以前也被算进「异文条目总数」，把分母撑虚。
-VARIANT_MARK = re.compile(r'一作|别本|他本|另一本|版本作|来源页作|夹注|异体|旧本作|通行本作|误作')
+VARIANT_MARK = re.compile(r'一作|别本|他本|另一本|版本作|来源页作|夹注|异体|旧本作|通行本作|误作|》作')
 BOOK_RE = re.compile(r'《[^》]{2,24}》')
 OTHER_BOOK_RE = re.compile(r'《[^》]{2,20}》')
 PICK_RE = re.compile(r'取舍|本仓从|从「')
