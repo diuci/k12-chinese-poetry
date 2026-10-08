@@ -47,6 +47,10 @@ python tools/check-contamination.py
 python tools/check-text-sources.py
 python tools/build-textbook-lessons.py --report
 python tools/apply-textbook-status.py --write
+> **链条必须一处失败就停。** PowerShell 里一条命令失败不会拦住后面的命令，
+> 最后一条的退出码会把整串盖成 0——上一轮 validate 报出「望海潮.md:106 小节名粘在行末」，
+> 链条却还是绿的、还提交了。所以每一步之后都要 `if ($LASTEXITCODE -ne 0) { exit 1 }`。
+
 python tools/build-ledger.py --selftest
 python tools/build-ledger.py
 python tools/build-textbook-table.py

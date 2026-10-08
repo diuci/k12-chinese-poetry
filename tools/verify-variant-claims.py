@@ -13,7 +13,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / 'data' / 'text-sources.json'
-VM = re.compile(r'一作|别本|他本|另一本|版本作|来源页作|夹注|异体|旧本作|通行本作|误作|》作')
+# 判定口径必须和台账同源：build-ledger 的名单修好了，这里还留着旧的窄名单，
+# 结果 37 条没有出处的异文一条都没被处理，工具报「补上出处 0 条」，看起来像干净，其实是空过。
+_bl_spec = importlib.util.spec_from_file_location('bledger', ROOT / 'tools' / 'build-ledger.py')
+_bl = importlib.util.module_from_spec(_bl_spec)
+_bl_spec.loader.exec_module(_bl)
+VM = _bl.VARIANT_MARK
 QUOTE = re.compile(r'「([^」]{1,40})」')
 SPEC = importlib.util.spec_from_file_location('cts', ROOT / 'tools' / 'check-text-sources.py')
 
@@ -22,9 +27,21 @@ def np(s):
     return re.sub(r'[\W_]+', '', s or '', flags=re.UNICODE)
 
 
+# 别本写法通常紧跟在「本作／一本作／文库作／页作／》作」后面。直接取最后一个引号段会取错：
+# 「《左传》原文与维基文库本作「小惠未徧」（徧、遍同）。本仓作「遍」。」的最后一个引号段是「遍」——
+# 那是仓内用字，不是别本，拿它去整页找必然命中，是假命中。
+ALT_CITE = re.compile(r'(?:本作|一本作|一本无|别本作|来源页作|来源页注|页作|文库作|通行本作|旧本作|他本作|另一本作|误作|》作|原文与[^。]{0,12}作)\s*「([^」]+)」')
+
+
 def claim_of(entry):
-    """条目里断言的「另一种写法」：取最后一个引号段；引号段里带「作」的，取「作」后面那截。"""
+    """条目里断言的「另一种写法」。"""
     qs = [q.replace('*', '') for q in QUOTE.findall(entry)]
+    # 认出来了就直接用，不能再往下走「取最后一个引号段」——
+    # 「本仓作「遍」」那种句子的最后一个引号段是仓内用字，拿它去整页找必然命中。
+    # 有多个时取最后一个：「通行本作「长久」，别本作「长健」」里「长久」是本仓用字，「长健」才是别本。
+    hits = [x.strip('，、。 ') for x in ALT_CITE.findall(entry.replace('*', '')) if x.strip('，、。 ')]
+    if hits:
+        return hits[-1]
     if len(qs) < 2:
         return None
     last = qs[-1]
@@ -139,6 +156,9 @@ def selftest():
     # 3) 核实是真去页上找，不是看条目自己怎么说
     texts = ['明月幾時有把酒問青天不知天上宮闕今夕是何年但愿人长久千里共嬋娟']
     assert find_claim('长健', texts) == -1, '坏例4：页上没有的写法被当成核到'
+    # 别本写法紧跟在「文库作」后面，不是最后一个引号段：最后那段「遍」是仓内用字，拿它去整页找必然命中。
+    assert claim_of('- 「小惠未遍」：《左传》原文与维基文库本作「小惠未徧」（徧、遍同）。本仓作「遍」。') == '小惠未徧', '坏例8：取的是仓内用字而不是别本写法'
+    assert claim_of('- 「黄鹤之飞尚不得过」：《四库全书》本《李太白全集》作「黄鹤之飞尙不得过」。') == '黄鹤之飞尙不得过', '坏例9：》作 后面的别本没认出来'
     assert find_claim('长久', texts) == 0, '坏例5：页上有的写法没被认出来'
     # 4) 仓内自己的用字不能算「别本核到」——那只能证明正文，不能证明别本
     # 页上是繁体，仓内是简体：比对必须过一遍繁简转换，否则真命中会被漏掉。
@@ -148,7 +168,7 @@ def selftest():
     conv, _ = C.clean('千里共嬋娟', table)
     assert find_claim('婵娟', [conv]) == 0, '坏例6：繁简转换没做，真命中被漏'
     assert find_claim('长健', [conv]) == -1, '坏例7：页上没有的写法被当成核到'
-    print('[ok] verify-variant-claims --selftest 通（7 个坏例子全部被拦住）')
+    print('[ok] verify-variant-claims --selftest 通（9 个坏例子全部被拦住）')
     return 0
 
 
