@@ -76,6 +76,31 @@ def author_of(text):
     raise AuthorError('frontmatter 里没有 author 行')
 
 
+def justified(found_line, want, authors):
+    """篇上已经写着的年代上限，满足下面任一条就算有依据，不许被表的通用值覆盖：
+
+      1. 比表里的上限更早（更保守）。《十五从军征》写 220（汉乐府），
+         表里给「佚名」的通用上限是 1900 —— 220 更安全，照表硬写反而把它放宽了。
+      2. 这个年代能在作者表里找到出处。《古代文论选段》收《人间词话》，
+         上限必须是王国维卒年 1927；写 1900 就是编出一句假话。
+
+    两条都不满足的（比表晚、表里又查不到这个年代）照样要报问题。"""
+    if found_line.strip() == want.strip():
+        return True
+    m = re.match(r'^authorEraEnd:\s*(-?\d+)$', found_line.strip())
+    if not m:
+        return False
+    got = int(m.group(1))
+    wm = re.match(r'^author(?:Died|EraEnd):\s*(-?\d+)$', want.strip())
+    if wm and got <= int(wm.group(1)):
+        return True
+    for entry in authors.values():
+        for key in ('died', 'eraEnd'):
+            if entry.get(key) == got:
+                return True
+    return False
+
+
 def inject(text, author, authors):
     """把卒年行写进 frontmatter，返回 (新文本, 是否有改动)。"""
     want, _ = expected_line(author, authors)
@@ -104,7 +129,7 @@ def inject(text, author, authors):
     if anchor is None:
         raise AuthorError('frontmatter 里没有 author/dynasty 行，不知道往哪儿插')
     if found is not None:
-        if lines[found] == want:
+        if justified(lines[found], want, authors):
             return text, False
         lines[found] = want
         return '\n'.join(lines), True
@@ -174,6 +199,26 @@ def selftest():
     except AuthorError:
         pass
 
+    # 坏样本 4：上限比表晚、作者表里又查不到这个年代 —— 必须被纠正
+    bogus = '---\nauthor: 佚名\nauthorEraEnd: 2500\ndynasty: 宋\n---\n'
+    new5, dirty5 = inject(bogus, '佚名', authors)
+    if not dirty5 or 'authorEraEnd: 1300' not in new5:
+        problems.append('没有依据的年代上限（2500）没被纠正')
+
+    # 坏样本 5：比表更保守的上限不许被表的通用值放宽
+    safer = '---\nauthor: 佚名\nauthorEraEnd: 220\ndynasty: 汉\n---\n'
+    new6, dirty6 = inject(safer, '佚名', authors)
+    if dirty6 or 'authorEraEnd: 220' not in new6:
+        problems.append('更保守的上限 220 被表的通用值改掉了')
+
+    # 坏样本 6：作者表里查得到的年代（王国维 1927）就是依据，不许改
+    authors2 = dict(authors)
+    authors2['王国维'] = {'died': 1927}
+    sel = '---\nauthor: 佚名\nauthorEraEnd: 1927\ndynasty: 先秦\n---\n'
+    new7, dirty7 = inject(sel, '佚名', authors2)
+    if dirty7 or 'authorEraEnd: 1927' not in new7:
+        problems.append('作者表里查得到的 1927 被误改')
+
     # 佚名走 eraEnd
     new4, _ = inject('---\nauthor: 佚名\ndynasty: 宋\n---\n', '佚名', authors)
     if 'authorEraEnd: 1300' not in new4:
@@ -185,7 +230,8 @@ def selftest():
             print('  - ' + x, file=sys.stderr)
         return 1
     print('[ok] apply-author-years --selftest 通过（注入、幂等、过期卒年纠正、'
-          '缺作者报错、frontmatter 未闭合报错、佚名走 eraEnd 都试到了）')
+          '缺作者报错、frontmatter 未闭合报错、佚名走 eraEnd、'
+          '无依据上限被纠正、更保守上限被保留、表里查得到的年代被保留 都试到了）')
     return 0
 
 
