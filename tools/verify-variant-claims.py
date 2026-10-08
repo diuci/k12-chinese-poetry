@@ -8,7 +8,7 @@
 
 --selftest 自带坏例子，包括「把仓内自己的用字当成别本」这种假命中。
 """
-import json, re, sys, importlib.util
+import json, os, re, sys, importlib.util
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -19,6 +19,9 @@ _bl_spec = importlib.util.spec_from_file_location('bledger', ROOT / 'tools' / 'b
 _bl = importlib.util.module_from_spec(_bl_spec)
 _bl_spec.loader.exec_module(_bl)
 VM = _bl.VARIANT_MARK
+# 离线开关：DIUCI_OFFLINE=1 时不取来源页。用途只有一个——来源站不可达时链条照样能跑完，
+# 但报告里必须写明这一轮没做联网核实。它不会把「没核到」改成「核到」，也不会改任何正文。
+OFFLINE = os.environ.get('DIUCI_OFFLINE') == '1'
 QUOTE = re.compile(r'「([^」]{1,40})」')
 SPEC = importlib.util.spec_from_file_location('cts', ROOT / 'tools' / 'check-text-sources.py')
 _C = importlib.util.module_from_spec(SPEC)
@@ -120,10 +123,15 @@ def load_records():
 
 
 def main(write=False, refresh=False):
+    if OFFLINE and write:
+        # 离线时没有来源页可比，find_claim 一律报「没核到」；带着 --write 就会把
+        # 本来有出处的条目整批改写成「仓内没核到」——那是拿网络故障去污染内容。
+        print('[!] 离线模式（DIUCI_OFFLINE=1）不写盘：这一轮只读不改动。')
+        write = False
     C = importlib.util.module_from_spec(SPEC)
     SPEC.loader.exec_module(C)
     records = load_records()
-    fixed, unverified, skipped = 0, 0, 0
+    fixed, unverified, skipped, offline = 0, 0, 0, 0
     for md in sorted((ROOT / 'poems').rglob('*.md')):
         t = md.read_text(encoding='utf-8')
         fid = re.search(r'^id:\s*(\S+)', t, re.M)
@@ -152,7 +160,9 @@ def main(write=False, refresh=False):
             return '出处' not in x or (refresh and '出处：仓内没核到' in x)
 
         need = any(needs(x) for x in re.split(r'\n(?=- )', body))
-        if need:
+        if need and OFFLINE:
+            offline += 1
+        if need and not OFFLINE:
             for pg in (rec.get('page') or '').split(' + '):
                 try:
                     real, raw = C.page_text(pg)
@@ -206,6 +216,9 @@ def main(write=False, refresh=False):
             t = t[:m.start(1)] + new_body + t[m.end(1):]
             md.write_text(t, encoding='utf-8')
     print('[异文核实] 补上出处 %d 条 / 写明「仓内没核到」%d 条 / 没有来源页跳过 %d 篇' % (fixed, unverified, skipped))
+    if OFFLINE:
+        print('[异文核实] 离线模式（DIUCI_OFFLINE=1）：%d 篇该核的条目这一轮没有联网核实。'
+              '这一轮不算核过——来源站能连上时必须重跑一遍不带 DIUCI_OFFLINE 的。' % offline)
     return 0
 
 

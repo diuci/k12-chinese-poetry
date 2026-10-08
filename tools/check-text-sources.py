@@ -56,10 +56,22 @@ JUNK_NOTE = re.compile(r'作[饭羹品曲者集者]')  # 只登记，不参与�
 
 
 def http_json(params):
+    """取一次 JSON。被拒连接 / 超时就退避重试。
+
+    为什么必须有：维基文库被连着问几百次会直接拒连接（WinError 10061）。
+    以前一次失败就记「找不到来源页」——那是把「我们问得太快」写成「这篇没有来源」，
+    台账上 20 篇凭空变成没来源，比漏掉更糟。"""
     url = API + '?' + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode('utf-8', 'replace'))
+    last = None
+    for attempt in range(4):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read().decode('utf-8', 'replace'))
+        except Exception as exc:
+            last = exc
+            time.sleep(5 * (attempt + 1))
+    raise last
 
 
 def load_t2s():
@@ -369,8 +381,19 @@ def main():
     for n, p in enumerate(poems, 1):
         title = p['title']
         author = p.get('author') or ''
-        lines = [M.strip_punct(x) for x in (p.get('lines') or [])]
-        lines = [x for x in lines if x]
+        # 核对必须覆盖我们真正发出去的正文。
+        # 长诗的 lines 只是必背名句（离骚 4 句），全文另有 26 联——
+        # 以前那 26 联从没进过这道核对，「逐句全对上」就成了半真半假的话。
+        # 现在 lines 与 fullLines 合并去重一起核：页面只取一次，多出来的只是比对句数。
+        merged = []
+        for x in list(p.get('linesPunct') or []) + list(p.get('fullLinesPunct') or []):
+            # 核对单位是句子。散文的 fullLines 是整段（答司马谏议书 4 段、每段上百字），
+            # 整段比对差一个字就整段不算对上——那是工具在骗人，不是内容有问题。
+            for seg in re.split(r'[。！？；]', x):
+                s = M.strip_punct(seg)
+                if len(s) >= 2 and s not in merged:
+                    merged.append(s)
+        lines = merged
         rec = {'id': p['id'], 'title': title, 'author': author, 'stage': p.get('stage'),
                'page': None, 'url': None, 'lines': len(lines), 'hit': 0,
                'miss': [], 'variantNotes': [], 'variants': []}
