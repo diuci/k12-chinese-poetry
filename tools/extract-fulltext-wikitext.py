@@ -81,6 +81,12 @@ def strip_inline_notes(text):
     return t
 
 
+# 这些模板的内容不是正文：{{注|…}} 是校勘笔记，{{reflist}} 是注释列表，{{Header}} 是页头。
+DROP_TEMPLATES = {'注', 'reflist', 'notes', 'header', 'header2', 'textquality', 'defaultsort',
+                  'academictextquality', 'spoken_wikisource', 'smallrefs', 'noinclude', 'license',
+                  'pd-old', 'pd-old-exact', '北宋作品', '唐朝作品', '唐詩三百首', '清诗', '宋诗'}
+
+
 def resolve(wt):
     """返回 (正文, 异文列表, 丢掉的模板名列表, 丢掉的 ref 数)。"""
     variants, dropped = [], []
@@ -105,14 +111,28 @@ def resolve(wt):
         elif name in ('textquality', 'header', 'header2', '唐朝作品', '唐詩三百首',
                       'spoken_wikisource', 'defaultsort', 'academictextquality'):
             repl = ''
-        else:
+        elif name in DROP_TEMPLATES:
             dropped.append(params[0].strip())
             repl = ''
+        else:
+            # 不认识的模板不能一律丢掉：{{ProperNoun|琅琊}} 的第一个参数就是正文本体。
+            # 丢掉它，正文就成了「望之蔚然而深秀者，也。」——专名全没了，句子还是通的，
+            # 所以这种错不会被读出来，只会在逐行核里表现为一大片对不上。
+            first = params[1] if len(params) > 1 else ''
+            plain = first.strip()
+            if plain and '=' not in plain and re.match(r'^[\u4e00-\u9fff，、。；！？：（）\s]+$', plain):
+                dropped.append(params[0].strip() + '（取第一个参数）')
+                repl = first
+            else:
+                dropped.append(params[0].strip())
+                repl = ''
         wt = wt[:i0] + repl + wt[i1:]
     wt = LINK.sub(lambda x: x.group(2), wt)
     wt = LINK2.sub('', wt)
     wt = CONV.sub(lambda x: x.group(1).split(';')[0].split(':')[-1], wt)
     wt = TAG.sub('\n', wt)
+    # == 注釋 == 这种小节标题可能和正文粘在同一行，得就地切开，不能只按整行判断。
+    wt = re.sub(r'={2,}[^=\n]+={2,}', '\n', wt)
     while find_innermost(wt):
         i0, i1, _ = find_innermost(wt)
         wt = wt[:i0] + wt[i1:]
@@ -120,6 +140,8 @@ def resolve(wt):
     lines = [x for x in lines if x and not x.startswith('Category:')]
     # <templatestyles …/> 与 ---- 这种分隔线不是正文。
     lines = [x for x in lines if '<templatestyles' not in x.lower() and x.strip('-— ') != '']
+    # == 注釋 == 这种小节标题不是正文。
+    lines = [x for x in lines if not re.match(r'^==+[^=]*==+$', x.strip())]
     return '\n'.join(lines), variants, dropped, nref
 
 
@@ -141,12 +163,23 @@ def selftest():
     assert v and '天生吾徒有俊材' in v[0][1], '坏例7：另2 的别本没登记'
 
     t, v, d, _ = resolve('{{SomeUnknownTemplate|甲}}乙[[Category:唐詩]]')
-    assert t == '乙', '坏例8：不认识的模板或分类漏进正文：%r' % t
-    assert d == ['SomeUnknownTemplate'], '坏例9：丢掉的模板没报出来：%r' % d
+    # 不认识的模板：第一个参数是纯正文的，取第一个参数（{{ProperNoun|琅琊}} 那种）；
+    # 带 key=value 的，是模板参数不是正文，丢掉。
+    assert t == '甲乙', '坏例8：纯正文参数的模板被丢掉了：%r' % t
+    t, v, d, _ = resolve('{{SomeTemplate|key=value}}乙')
+    assert t == '乙', '坏例8b：带 key=value 的模板参数漏进正文：%r' % t
+    t, v, d, _ = resolve('{{SomeUnknownTemplate|甲}}乙')
+    assert d == ['SomeUnknownTemplate（取第一个参数）'], '坏例9：丢掉的模板没报出来（或吞正文没标注）：%r' % d
+
+    # 专名模板的第一个参数就是正文本体，丢掉它正文就成了「…者，也。」
+    t, v, d, _ = resolve('望之蔚然而深秀者，{{ProperNoun|琅琊}}也。山之僧曰{{ProperNoun|智仙}}也。')
+    assert t == '望之蔚然而深秀者，琅琊也。山之僧曰智仙也。', '坏例11：专名模板把正文本体吞掉了：%r' % t
+    t, v, d, _ = resolve('酿泉为酒{{注|一本作让泉}}。==注釋==')
+    assert t == '酿泉为酒。', '坏例12：校勘笔记或小节标题漏进正文：%r' % t
 
     t, v, d, _ = resolve('{{另|甲|乙}}')
     assert t == '甲' and v == [('甲', '乙')], '坏例10：最基本的情况都错了'
-    print('[ok] extract-fulltext-wikitext --selftest 通（10 个坏例子全部被拦住）')
+    print('[ok] extract-fulltext-wikitext --selftest 通（12 个坏例子全部被拦住）')
     return 0
 
 
@@ -192,28 +225,35 @@ def main(ids):
             # wikitext 是繁体，第二来源的渲染文本被转成了简体：不比一遍繁简，
             # 「蜀道之難」永远对不上「蜀道之难」，逐行核永远是 0。
             conf = 0
+            units = 0
             unconfirmed = []
             cmp_lines = []
             for ln in lines:
-                try:
-                    sc, _ = C.clean(ln, table)
-                except Exception:
-                    sc = ln
-                cmp_lines.append(np(sc))
-                if cmp_lines[-1] and C.subseq_window(cmp_lines[-1], oj, 25):
-                    conf += 1
-                else:
-                    unconfirmed.append(ln)
+                # 先按句切，再逐句做繁简转换：clean() 会把标点全部剥掉，
+                # 先转换后切句就切不动了——一整段当一个单位，散文页永远核不过。
+                for unit in re.split(r'(?<=[。！？；])', ln):
+                    try:
+                        sc, _ = C.clean(unit, table)
+                    except Exception:
+                        sc = unit
+                    k = np(sc)
+                    if not k:
+                        continue
+                    units += 1
+                    if not C.subseq_window(k, oj, 25):
+                        unconfirmed.append(unit)
+                    else:
+                        conf += 1
             out['candidates'][pid] = {
                 'page': pg, 'url': rec.get('url') or '',
                 'lines': lines, 'chars': sum(len(np(x)) for x in lines),
-                'secondSource': others, 'confirmedBySecond': conf, 'totalLines': len(lines),
+                'secondSource': others, 'confirmedBySecond': conf, 'totalUnits': units, 'totalLines': len(lines),
                 'unconfirmedBySecond': unconfirmed,
                 'variants': [{'main': a, 'alt': b} for a, b in variants],
                 'droppedTemplates': sorted(set(dropped)), 'droppedRefs': nref,
             }
-            print('  %s ← %s：%d 行 / %d 字；第二来源逐行核到 %d/%d；夹注异文 %d 条；丢掉模板 %s / ref %d 条'
-                  % (pid, pg, len(lines), out['candidates'][pid]['chars'], conf, len(lines), len(variants),
+            print('  %s ← %s：%d 行 / %d 字；第二来源按句核到 %d/%d 句；夹注异文 %d 条；丢掉模板 %s / ref %d 条'
+                  % (pid, pg, len(lines), out['candidates'][pid]['chars'], conf, units, len(variants),
                      sorted(set(dropped)) or '无', nref))
             done = True
             break
