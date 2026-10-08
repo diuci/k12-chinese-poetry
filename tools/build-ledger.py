@@ -153,7 +153,9 @@ def main():
         # 以前也被算进「异文条目总数」，分母是虚的。不静默丢掉：单列一个计数。
         ventries_variant = [x for x in ventries if VARIANT_MARK.search(x)]
         v_other = len(ventries) - len(ventries_variant)
-        v_with_source = sum(1 for x in ventries_variant if '出处' in x)
+        # 「出处：仓内没核到」不是出处。把它算进带出处，等于把没核实伪装成已核实。
+        v_unverified = sum(1 for x in ventries_variant if '出处：仓内没核到' in x)
+        v_with_source = sum(1 for x in ventries_variant if '出处' in x and '出处：仓内没核到' not in x)
         v_with_choice = sum(1 for x in ventries_variant if '取舍' in x)
 
         recite = fm.get('recite') or p.get('recite') or ''
@@ -203,6 +205,7 @@ def main():
             'hasVariant': '异文' in sec,
             'variantEntries': len(ventries_variant),
         'variantNonEntries': v_other,
+        'variantUnverified': v_unverified,
             'variantWithSource': v_with_source,
             'variantWithChoice': v_with_choice,
             # 「有全文」按 build.py 抽出来的全文正文算，不按小节标题叫什么算：
@@ -263,6 +266,7 @@ def main():
             '异文条目带取舍': sum(r['variantWithChoice'] for r in rows),
             '异文条目缺出处': sum(r['variantEntries'] - r['variantWithSource'] for r in rows),
         '异文小节里的非异文条目': sum(r.get('variantNonEntries', 0) for r in rows),
+        '异文条目写明「仓内没核到」': sum(r.get('variantUnverified', 0) for r in rows),
             # （旧口径：按 flag 数无异文；现改用 hasVariant，与明细列同源）
             '缺全文（课标首句找不到）': sum(1 for x in problem_rows if x['key'].startswith('fulltext:')),
             '课标要求但仓内缺失': sum(1 for x in problem_rows if x['key'].startswith('missing:')),

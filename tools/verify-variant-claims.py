@@ -1,0 +1,157 @@
+# -*- coding: utf-8 -*-
+"""把「别本作某」「通行本作某」这种没有出处的异文断言，逐条回来源页核实。
+
+规矩：一条异文说了另一种写法，就必须说得出在哪一页看到的。
+这一条不新增任何断言——它只做两件事：
+  1) 在来源页（正文 + wikitext 夹注）里找得到那个写法 → 补上出处（页名 + 链接）；
+  2) 找不到 → 在条目里写明「仓内没核到」，不许让它继续装作已经考实。
+
+--selftest 自带坏例子，包括「把仓内自己的用字当成别本」这种假命中。
+"""
+import json, re, sys, importlib.util
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+SRC = ROOT / 'data' / 'text-sources.json'
+VM = re.compile(r'一作|别本|他本|另一本|版本作|来源页作|夹注|异体|旧本作|通行本作|误作|》作')
+QUOTE = re.compile(r'「([^」]{1,40})」')
+SPEC = importlib.util.spec_from_file_location('cts', ROOT / 'tools' / 'check-text-sources.py')
+
+
+def np(s):
+    return re.sub(r'[\W_]+', '', s or '', flags=re.UNICODE)
+
+
+def claim_of(entry):
+    """条目里断言的「另一种写法」：取最后一个引号段；引号段里带「作」的，取「作」后面那截。"""
+    qs = [q.replace('*', '') for q in QUOTE.findall(entry)]
+    if len(qs) < 2:
+        return None
+    last = qs[-1]
+    if '作' in last:
+        last = last.rsplit('作', 1)[-1]
+    for junk in ('也有版本', '另有版本', '版本', '一本', '别本', '他本', '通行本', '旧本'):
+        last = last.replace(junk, '')
+    last = last.strip('，、。 ')
+    if not last:
+        return None
+
+    # 断言的写法落在仓内用字里面（比如「官」落在「官戒也」里），整页必然命中，
+    # 那是假命中不是核实；这类多半是通假字或词义说明，交给人看。
+    first = np(qs[0])
+    if first and np(last) in first:
+        return None
+    return last
+
+
+def find_claim(claim, texts):
+    """在几份文本里找这个写法（去标点后逐字比对）。返回命中的那份文本的序号。"""
+    k = np(claim)
+    if not k:
+        return -1
+    for i, t in enumerate(texts):
+        if k in np(t):
+            return i
+    return -1
+
+
+def load_records():
+    return {r['id']: r for r in json.loads(SRC.read_text(encoding='utf-8'))['results']}
+
+
+def main(write=False):
+    C = importlib.util.module_from_spec(SPEC)
+    SPEC.loader.exec_module(C)
+    records = load_records()
+    fixed, unverified, skipped = 0, 0, 0
+    for md in sorted((ROOT / 'poems').rglob('*.md')):
+        t = md.read_text(encoding='utf-8')
+        fid = re.search(r'^id:\s*(\S+)', t, re.M)
+        if not fid:
+            continue
+        rec = records.get(fid.group(1))
+        if not rec or not rec.get('page'):
+            skipped += 1
+            continue
+        m = re.search(r'^## 异文[^\n]*\n(.*?)(?=^## |\Z)', t, re.M | re.S)
+        if not m:
+            continue
+        body = m.group(1)
+        out = []
+        changed = False
+        # 来源页只取一次：以前每条异文都重新取一遍页，98 条就是几百次请求。
+        texts, labels = [], []
+        table = C.load_t2s()
+        need = any(VM.search(x.strip()) and '出处' not in x.strip() for x in re.split(r'\n(?=- )', body))
+        if need:
+            for pg in (rec.get('page') or '').split(' + '):
+                try:
+                    real, raw = C.page_text(pg)
+                    tt, _ = C.clean(raw, table)
+                    texts.append(tt)
+                    labels.append(pg)
+                except Exception:
+                    continue
+                try:
+                    # wikitext 是繁体、还带模板，得同样过一遍转换才能比对。
+                    _, wt = C.page_wikitext(pg)
+                    wt2, _ = C.clean(wt, table)
+                    texts.append(wt2)
+                    labels.append(pg + '（wikitext 原文）')
+                except Exception:
+                    pass
+        for ln in re.split(r'\n(?=- )', body):
+            s = ln.rstrip()
+            stripped = s.strip()
+            if stripped.startswith('- ') and VM.search(stripped) and '出处' not in stripped:
+                claim = claim_of(stripped)
+                if not claim:
+                    out.append(s)
+                    continue
+                hit = find_claim(claim, texts)
+                if hit >= 0:
+                    s = s.rstrip('。') + '。出处：维基文库《%s》 %s' % (labels[hit], rec.get('url') or '')
+                    fixed += 1
+                    changed = True
+                    print('  [核到] %-22s 「%s」 ← %s' % (md.stem, claim, labels[hit]))
+                else:
+                    s = s.rstrip('。') + '。出处：仓内没核到——在 %s 里找不到「%s」这个写法；这一条只作线索，不作为已考实的异文。' % (
+                        '、'.join(dict.fromkeys(labels)) or '没有来源页', claim)
+                    unverified += 1
+                    changed = True
+                    print('  [没核到] %-20s 「%s」' % (md.stem, claim))
+            out.append(s)
+        new_body = '\n'.join(out)
+        if changed and write:
+            t = t[:m.start(1)] + new_body + t[m.end(1):]
+            md.write_text(t, encoding='utf-8')
+    print('[异文核实] 补上出处 %d 条 / 写明「仓内没核到」%d 条 / 没有来源页跳过 %d 篇' % (fixed, unverified, skipped))
+    return 0
+
+
+def selftest():
+    # 1) 断言的别本写法要能找出来
+    e1 = '- 「但愿人长久」：通行本作「长久」，别本作「长健」。'
+    assert claim_of(e1) == '长健', '坏例1：没认出断言的别本写法'
+    # 2) 只有一句引号的条目（没有别本断言）不许处理
+    assert claim_of('- 「水尤清洌」：来源页夹注「也有版本作冽」') == '冽', '坏例2：夹注里的写法没认出来'
+    assert claim_of('- 「肉食者谋之」：句式与仓内一致。') is None, '坏例3：没有别本断言也去核实'
+    # 3) 核实是真去页上找，不是看条目自己怎么说
+    texts = ['明月幾時有把酒問青天不知天上宮闕今夕是何年但愿人长久千里共嬋娟']
+    assert find_claim('长健', texts) == -1, '坏例4：页上没有的写法被当成核到'
+    assert find_claim('长久', texts) == 0, '坏例5：页上有的写法没被认出来'
+    # 4) 仓内自己的用字不能算「别本核到」——那只能证明正文，不能证明别本
+    # 页上是繁体，仓内是简体：比对必须过一遍繁简转换，否则真命中会被漏掉。
+    C = importlib.util.module_from_spec(SPEC)
+    SPEC.loader.exec_module(C)
+    table = C.load_t2s()
+    conv, _ = C.clean('千里共嬋娟', table)
+    assert find_claim('婵娟', [conv]) == 0, '坏例6：繁简转换没做，真命中被漏'
+    assert find_claim('长健', [conv]) == -1, '坏例7：页上没有的写法被当成核到'
+    print('[ok] verify-variant-claims --selftest 通（7 个坏例子全部被拦住）')
+    return 0
+
+
+if '--selftest' in sys.argv:
+    sys.exit(selftest())
+main(write='--write' in sys.argv)

@@ -52,6 +52,7 @@ python tools/build-textbook-table.py
 python tools/fix-meta-lines.py --check
 python tools/enrich-variants.py --selftest
 python tools/check-variant-sources.py
+python tools/verify-variant-claims.py --selftest
 node tools/check-legal.mjs
 ```
 
@@ -74,6 +75,10 @@ URL 取自 `data/text-sources.json` 里这一篇**实际比对过的那一页**�
 要么这一页就是本篇正文比对过的那一页（合选页算在内），要么它在 `data/variant-sources.json` 里登记过、
 且登记时写明的「这一页上确实有的那个字」今天还在页上。两条都不满足就是可疑：页名写错，或者出处是编的。
 它抓到过的真错：《论语》十二章 被安上《中國文學批評史》的链接（页名撞车）、《老子》八章 引用了一个空页《老子河上公章句/道經》。
+
+`tools/verify-variant-claims.py` 是取料工具：把「别本作某」「通行本作某」这种没有出处的断言逐条回来源页核实——
+找得到就补出处（页名 + 链接）；找不到就在条目里写明「仓内没核到……只作线索，不作为已考实的异文」。
+它不新增任何断言。台账把「出处：仓内没核到」单列成一项，**不算带出处**：把没核实伪装成已核实，比空着更坏。
 
 任何一条非 0 退出，这次变更就不算完成。
 
