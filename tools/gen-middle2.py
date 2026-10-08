@@ -143,7 +143,7 @@ DATA = [
     dict(id='shiwei', grade=8, volume='八年级下册课外诵读', title='式微', author='佚名', dyn='先秦',
          form='诗经', theme=['挽歌', '哀叹'], emo='对国家衰败的哀叹',
          tech=['比兴', '重章叠句'], diff=4, freq=0.5, recite='line',
-         lines=['式微，式微，胡不归？', '微君之故，不能以容。']),
+         lines=['式微，式微，胡不归？', '微君之故，胡为乎中露？']),
 
     dict(id='zijin', grade=8, volume='八年级下册课外诵读', title='子衿', author='佚名', dyn='先秦',
          form='诗经', theme=['爱情', '思念'], emo='对爱人的思念与愁苦',
