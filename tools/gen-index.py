@@ -34,11 +34,24 @@ def main():
     by_stage = defaultdict(list)
 
     for p in poems:
-        by_stage['小学%s年级' % p.get('grade', '?')].append(p)
+        # 以前这一行把全部 252 篇都塞进「小学N年级」：初中被写成小学7/8/9年级，
+        # 高中全落进「小学None年级」。学段必须从 stage 来，年级只是学段内的细分。
+        stage = p.get('stage') or '未分学段'
+        grade = p.get('grade')
+        if stage in ('小学', '初中') and grade:
+            by_stage['%s%d年级' % (stage, int(grade))].append(p)
+        else:
+            by_stage[stage].append(p)
         for t in p.get('theme') or ['未分类']:
             by_theme[t].append(p)
         by_form[p.get('form') or '未标注'].append(p)
         by_dyn[p.get('dynasty') or '未标注'].append(p)
+
+    # 护栏：分组名里出现 None / ? 就是上面那个 bug 的复发信号，不许生成这种导航页。
+    bad = [k for k in by_stage if 'None' in k or '?' in k]
+    if bad:
+        print('[gen-index] 分组名坏了：%s —— 学段/年级字段没接对，拒绝生成' % '、'.join(bad))
+        raise SystemExit(1)
 
     L = []
     L.append('# 篇目索引\n')
@@ -48,7 +61,8 @@ def main():
 
     # ---- 学段
     L.append('\n## 按学段\n')
-    for stage in sorted(by_stage, key=lambda s: (len(s), s)):
+    order = {'小学': 0, '初中': 1, '高中': 2}
+    for stage in sorted(by_stage, key=lambda s: (order.get(s[:2], 9), s)):
         L.append('\n### %s（%d 篇）\n' % (stage, len(by_stage[stage])))
         for p in sorted(by_stage[stage], key=lambda x: x['title']):
             L.append('- [%s](%s/%s.md) —— %s · %s'

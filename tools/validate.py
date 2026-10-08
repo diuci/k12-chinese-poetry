@@ -211,6 +211,34 @@ def parse_syllabus(path):
 
 
 # ---------------------------------------------------------------- 读篇目
+def check_glued_heading(path, text):
+    """小节名被粘在上一行末尾（…（frontmatter 记录的册次）## 旧文本裁定）。
+
+    这一类错让整节内容被吞进上一节：台账数小节、build.py 找正文、站点渲染都按行首的 ## 判断，
+    粘在行末的 ## 等于这一节不存在。空过的检查比没有检查更危险，所以这条进 validate。"""
+    problems = []
+    for i, line in enumerate(text.splitlines(), 1):
+        if line.lstrip().startswith('#'):
+            continue
+        j = line.find('##')
+        if j > 0 and line[j - 1] != "#":
+            problems.append('%s:%d 小节名粘在行末：%s' % (path.name, i, line[max(0, j - 24):j + 20]))
+    return problems
+
+
+def selftest_glued_heading():
+    """这条护栏自己带坏例子：漏掉一种写法，护栏就是空的。"""
+    bad = '出处：统编教材《语文》必修下册（frontmatter 记录的册次）## 旧文本裁定'
+    good = '出处：统编教材《语文》必修下册（frontmatter 记录的册次）'
+    assert len(check_glued_heading(Path('x.md'), bad)) == 1, '坏例1：小节名粘在行末没被抓到'
+    assert check_glued_heading(Path('x.md'), good) == [], '坏例2：正常行被误报'
+    assert check_glued_heading(Path('x.md'), '### 三级标题在行首') == [], '坏例3：行首的 ### 被误报'
+    # 正文行里出现 ## 一律可疑：markdown 会照原样渲染，读者看到两个井号。
+    assert len(check_glued_heading(Path('x.md'), '正文里出现 ## 号')) == 1, '坏例4：正文行里的 ## 没被抓到'
+    assert check_glued_heading(Path('x.md'), 'https://example.com/a%23b 这种链接不该报') == [], '坏例5：正常链接被误报'
+    assert check_glued_heading(Path('x.md'), '# 一级标题') == [], '坏例5：行首 # 被误报'
+
+
 def load_poems():
     """复用 build.py 的解析逻辑，避免两处对frontmatter 的理解不一致。"""
     sys.path.insert(0, str(ROOT / 'tools'))
@@ -380,6 +408,7 @@ def selftest_match():
 
 
 def selftest():
+    selftest_glued_heading()
     """这条校验自己会不会漏：坏样本必须被抓到，好样本不能误报。"""
     year = 2026
     problems = []
@@ -500,6 +529,13 @@ def main():
         err('解析 poems/ 失败（frontmatter 格式错误？）')
         return report()
     print('仓内篇目：%d 篇\n' % len(poems))
+
+    # -------------------------------------------------- 1.5 小节名必须独占一行
+    for md in sorted(POEMS_DIR.rglob('*.md')):
+        if md.name == '索引.md':
+            continue
+        for msg in check_glued_heading(md, md.read_text(encoding='utf-8')):
+            err(msg)
 
     # -------------------------------------------------- 2. id 唯一
     seen = {}
