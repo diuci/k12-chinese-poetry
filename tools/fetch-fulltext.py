@@ -82,8 +82,42 @@ def strip_templates(w):
         w = w[:m.start()] + rep + w[m.end():]
     return w
 
+def expand_transclusions(w, depth=0):
+    """把 {{:子页面}} 展开成子页面的正文。
+
+    为什么必须展开：维基文库的组诗页只是目录——短歌行、出师表、行路难、无题 这几页
+    正文全在子页面里，页面上只写着 {{:短歌行其一 (曹操)}}、{{:前出師表}}。
+    不展开就抽到 0 行，看起来像「维基文库没有这首诗」，其实是目录页被当成了正文页。"""
+    if depth > 2 or '{{:' not in w:
+        return w
+    def repl(m):
+        title = m.group(1).strip()
+        if not title:
+            return ''
+        try:
+            _u, sub = C.page_wikitext(title)
+        except Exception:
+            return ''
+        if not sub:
+            return ''
+        return expand_transclusions(sub, depth + 1)
+    return re.sub(r'\{\{:([^{}|]+)\}\}', repl, w, flags=re.S)
+
+
 def extract_body(w):
     """从 wikitext 里取正文：优先 <poem> 块；没有就取 Header 之后的正文段。"""
+    w = expand_transclusions(w)
+    # 维基文库的语言转换标记：-{zh-hans:余;zh-hant:余 馀;} 这种，取简体那一支。
+    def _lc(m):
+        body = m.group(1)
+        for part in body.split(';'):
+            if part.startswith('zh-hans:'):
+                return part[7:]
+        return body.split(';')[0].split(':', 1)[-1]
+    w = re.sub(r'-\{([^{}]*?)\}-', _lc, w)
+    # HTML 标签不是正文：过零丁洋那一页整首包在 <poem><CENTER><div class="Kaiti"> 里，
+    # 不剥掉就会把 <templatestyles src="楷体/style.css" /> 这种东西写进课文。
+    w = re.sub(r'</?[A-Za-z][A-Za-z0-9_]*(?:\s[^>]*)?/?>', '', w)
     w = re.sub(r'<!--.*?-->', '', w, flags=re.S)
     w = re.sub(r'</?onlyinclude>', '', w, flags=re.I)
     w = re.sub(r'</?noinclude>', '', w, flags=re.I)

@@ -48,13 +48,13 @@
     ],
     "gapCounts": {
       "缺背诵要求": 0,
-      "只有必背名句（节选收录）": 33,
-      "仓内有全文正文": 219,
-      "无异文记录": 192,
-      "异文条目总数": 436,
+      "只有必背名句（节选收录）": 20,
+      "仓内有全文正文": 232,
+      "无异文记录": 182,
+      "异文条目总数": 456,
       "异文条目带出处": 61,
-      "异文条目带取舍": 30,
-      "异文条目缺出处": 375,
+      "异文条目带取舍": 50,
+      "异文条目缺出处": 395,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
       "重复副本": 1,
@@ -323,6 +323,8 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -334,15 +336,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": true,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 3,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 3,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级上册/行路难.md"
     },
     {
@@ -510,6 +510,8 @@
       "lineCount": 2,
       "charCount": 28,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -521,15 +523,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": true,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 1,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级上册/无题.md"
     },
     {
@@ -742,6 +742,7 @@
       "lineCount": 4,
       "charCount": 56,
       "sections": [
+        "全文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -757,7 +758,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 2,
       "flags": [
         "无异文记录"
@@ -1624,6 +1625,8 @@
       "lineCount": 2,
       "charCount": 28,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -1635,15 +1638,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": true,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 2,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/八年级下册/卖炭翁.md"
     },
     {
@@ -1993,6 +1994,8 @@
       "lineCount": 3,
       "charCount": 32,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2003,15 +2006,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 3,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 3,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/八年级上册/三峡.md"
     },
     {
@@ -2309,9 +2310,11 @@
       "matchStrength": null,
       "recite": "line",
       "lineCount": 2,
-      "charCount": 15,
+      "charCount": 16,
       "sections": [
+        "全文",
         "必背名句",
+        "旧文本裁定",
         "注释",
         "译文",
         "赏析"
@@ -2325,7 +2328,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -2724,6 +2727,8 @@
       "lineCount": 3,
       "charCount": 35,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -2735,15 +2740,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": true,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 2,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级下册/江城子.md"
     },
     {
@@ -2770,6 +2773,8 @@
       "lineCount": 5,
       "charCount": 56,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -2781,15 +2786,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": true,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 1,
+      "hasFulltext": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级下册/南乡子.md"
     },
     {
@@ -3224,6 +3227,8 @@
       "lineCount": 4,
       "charCount": 56,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -3234,15 +3239,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 4,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 4,
+      "hasFulltext": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级上册/岳阳楼记.md"
     },
     {
@@ -4846,6 +4849,8 @@
       "lineCount": 2,
       "charCount": 28,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -4856,15 +4861,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 2,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/小学/三年级下册/江畔独步寻花.md"
     },
     {
@@ -7324,6 +7327,8 @@
       "lineCount": 3,
       "charCount": 30,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -7334,15 +7339,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 1,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/小学/六年级下册/游子吟.md"
     },
     {
@@ -8679,6 +8682,7 @@
       "lineCount": 3,
       "charCount": 48,
       "sections": [
+        "全文",
         "必背名句",
         "收录范围",
         "注释",
@@ -8694,7 +8698,7 @@
       "variantEntries": 0,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
         "无异文记录"
@@ -11043,6 +11047,8 @@
       "lineCount": 3,
       "charCount": 42,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -11053,15 +11059,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 1,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/选择性必修中册/书愤.md"
     },
     {
