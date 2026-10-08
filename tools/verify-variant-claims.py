@@ -63,6 +63,15 @@ def claim_of(entry):
     return last
 
 
+def strip_stale(s):
+    """把过期的「仓内没核到」整句删掉——不管它在条目的开头、中间还是末尾。
+
+    以前只在末尾删（正则锚在 $）。将进酒 的两条目是「…出处：仓内没核到——…只作线索。」在中间、
+    新出处「出处：维基文库《酒顛補/卷下》」在末尾，于是同一条既算带出处又算没核到，台账两边都在数它。"""
+    s = re.sub(r'出处：仓内没核到[^。]*。\s*', '', s)
+    s = re.sub(r'\s{2,}', ' ', s)
+    return s.rstrip('。 ')
+
 def find_claim(claim, texts):
     """在几份文本里找这个写法（去标点后逐字比对）。返回命中的那份文本的序号。"""
     k = np(claim)
@@ -145,7 +154,7 @@ def main(write=False, refresh=False):
             stale = '出处：仓内没核到' in stripped
             if stripped.startswith('- ') and VM.search(stripped) and ('出处' not in stripped or (refresh and stale)):
                 if stale:
-                    s = re.sub(r'\s*出处：仓内没核到[^。]*。?\s*$', '', s).rstrip('。')
+                    s = strip_stale(s)
                 claim = claim_of(stripped)
                 if not claim:
                     out.append(s)
@@ -206,7 +215,16 @@ def selftest():
     # 11) 短句不许用兜底：整页无标点的散文里，4 个字的片段到处都能凑出顺序
     assert find_claim('长健', cut) == -1, '坏例11：短句用了兜底，造出假命中'
 
-    print('[ok] verify-variant-claims --selftest 通（11 个坏例子全部被拦住）')
+    # 12) 过期的「仓内没核到」在条目中间，也必须被清掉（否则同一条既算带出处又算没核到）
+    mid = '- 「径须沽取对君酌」：《酒顛補》作「且须沽酒」。出处：仓内没核到——在 將進酒 (李白) 里找不到这个写法；这一条只作线索，不作为已考实的异文。 取舍：从「径须沽取」。出处：维基文库《酒顛補/卷下》'
+    got = strip_stale(mid)
+    assert '仓内没核到' not in got, '坏例12：写在中间的过期结论没被清掉'
+    assert '酒顛補/卷下' in got, '坏例13：清过期结论时把真出处一起删了'
+    assert '取舍' in got, '坏例14：清过期结论时把取舍一起删了'
+    tail = '- 「与尔同销万古愁」：别本作「同消」。出处：仓内没核到——在 X 里找不到。'
+    assert strip_stale(tail) == '- 「与尔同销万古愁」：别本作「同消」', '坏例15：末尾的过期结论没清干净'
+
+    print('[ok] verify-variant-claims --selftest 通（15 个坏例子全部被拦住）')
     return 0
 
 
