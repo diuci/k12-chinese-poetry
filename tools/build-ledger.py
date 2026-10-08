@@ -263,6 +263,7 @@ def main():
             '统编教材收录': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收录'),
             '统编教材未收（课标要求）': sum(1 for r in rows if r.get('textbookStatus') == '统编教材未收（课标要求）'),
             '统编教材收的是同名另一篇': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收的是同名另一篇'),
+        '统编教材收在别的课里': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收在别的课里'),
             '没有教材收录状态': sum(1 for r in rows if not r.get('textbookStatus')),
         },
     }

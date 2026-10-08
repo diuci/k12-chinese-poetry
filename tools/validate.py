@@ -607,6 +607,7 @@ def main():
     TS_COLLECTED = '统编教材收录'
     TS_NOT = '统编教材未收（课标要求）'
     TS_CLASH = '统编教材收的是同名另一篇'
+    TS_COVERED = '统编教材收在别的课里'
     vf_path = ROOT / 'data' / 'volume-findings.json'
     if not vf_path.exists():
         err('缺 data/volume-findings.json：先跑 python tools/build-textbook-lessons.py --report')
@@ -617,20 +618,27 @@ def main():
             found[x['id']] = 'absent'
         for x in vf.get('titleCollision', []):
             found[x['id']] = 'title-collision'
+        # 覆盖表：教材收了、但收在别的课里（篇名不同）。这张表里的篇目期望值就是 TS_COVERED。
+        cov_path = ROOT / 'data' / 'textbook-coverage.json'
+        covered = set()
+        if cov_path.exists():
+            covered = set(json.loads(cov_path.read_text(encoding='utf-8')).get('coverage', {}))
         no_status, wrong_status, unfixed = [], [], []
         for p in poems:
             st = p.get('textbookStatus')
             if not st:
                 no_status.append(p['title'])
                 continue
-            if st not in (TS_COLLECTED, TS_NOT, TS_CLASH):
+            if st not in (TS_COLLECTED, TS_NOT, TS_CLASH, TS_COVERED):
                 wrong_status.append('%s 的 textbookStatus 取值非法：%r' % (p['title'], st))
                 continue
             status = found.get(p['id'])
             if status == 'volume-mismatch':
                 unfixed.append(p['title'])
                 continue
-            if p.get('volume') == '选修（2026起默写）':
+            if p['id'] in covered:
+                expect = TS_COVERED
+            elif p.get('volume') == '选修（2026起默写）':
                 expect = TS_NOT
             elif status in ('match', 'title-variant', 'claimed-absent-but-present'):
                 expect = TS_COLLECTED
