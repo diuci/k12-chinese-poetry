@@ -302,6 +302,22 @@ def audit_trad(corpus, trad, trad_md, rows):
     return out
 
 
+def split_nopage(recs, ids):
+    """把「没有来源页」拆成两种：搜过并写明的，和没交代的。
+
+    只有 no_page=True、note（override）非空、searched 非空三样凑齐，才算「核过确实没有」。
+    少任何一样都算没交代——空过的检查比没有检查更危险。
+    """
+    all_np = sorted(i for i, r in recs.items() if i in ids and not r.get('page'))
+    unexplained = []
+    for i in all_np:
+        r = recs[i]
+        if r.get('no_page') and (r.get('override') or '').strip() and (r.get('searched') or []):
+            continue
+        unexplained.append(i)
+    return all_np, unexplained
+
+
 def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None):
 
     """返回 [(检查名, 通过?, 说明)]。"""
@@ -455,13 +471,18 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None):
 
     errored = sorted(i for i, r in recs.items() if r.get('error'))
 
-    nopage = sorted(i for i, r in recs.items() if i in ids and not r.get('page'))
+    nopage_all, nopage = split_nopage(recs, ids)
 
     out.append(('每篇都有出处核对记录', not no_rec, '没有记录的篇目：%d' % len(no_rec)))
 
     out.append(('核对记录里没有「跑挂了」的', not errored, '带 error 的记录：%d（网络超时不是内容错误，必须重跑）' % len(errored)))
 
-    out.append(('核对记录都找到了来源页', not nopage, '找不到来源页的篇目：%d' % len(nopage)))
+    # 「没有来源页」有两种，字段看起来一样：一种搜过、确实没有正文页；一种没核到或没去核。
+    # 把两种算成一笔账，等于允许后一种混过去。
+    explained = sorted(set(nopage_all) - set(nopage))
+    out.append(('没有来源页的都必须写明搜过什么', not nopage,
+                '没交代就记「没有来源页」的篇目：%d；搜过并写明的 %d 篇（%s）'
+                % (len(nopage), len(explained), '、'.join(explained) or '无')))
 
 
 
@@ -521,13 +542,14 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None):
 
 
 
-    # 11 台账自洽：出处核对四档相加必须等于篇数
-
-    parts = [g['出处核对·逐句全对上'], g['出处核对·部分对上'], g['出处核对·一句都对不上'], g['出处核对·没有核对记录']]
-
-    out.append(('出处核对四档相加等于篇数', sum(parts) == len(ledger['rows']),
-
-                '%d + %d + %d + %d = %d，篇数 %d' % (parts[0], parts[1], parts[2], parts[3], sum(parts), len(ledger['rows']))))
+    # 11 台账自洽：出处核对各档相加必须等于篇数。
+    # 档名由台账定，这里不许写死档名——台账加一档（比如「核过没有正文页」），
+    # 写死档名的检查就会悄悄少算一档，然后一直「通过」。
+    keys = sorted(k for k in g if k.startswith('出处核对·'))
+    total = sum(g[k] for k in keys)
+    out.append(('出处核对各档相加等于篇数', total == len(ledger['rows']),
+                ' / '.join('%s %d' % (k.split('·', 1)[1], g[k]) for k in keys) +
+                ' = %d，篇数 %d' % (total, len(ledger['rows']))))
 
 
 
@@ -704,11 +726,11 @@ def selftest():
 
         print('坏例5：跑挂的记录被当成正常'); bad += 1
 
-    # 6) 出处核对四档相加不等于篇数，必须被报
+    # 6) 出处核对各档相加不等于篇数，必须被报
 
     l2 = json.loads(json.dumps(ledger)); l2['summary']['gapCounts']['出处核对·逐句全对上'] = 5
 
-    if '出处核对四档相加等于篇数' not in fails(c0, l2, tsrc, [], []):
+    if '出处核对各档相加等于篇数' not in fails(c0, l2, tsrc, [], []):
 
         print('坏例6：台账数字不自洽没被报'); bad += 1
 
@@ -809,6 +831,18 @@ def selftest():
     if '繁体产物存在' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], None, None) if not ok}:
         print('坏例15：繁体产物不存在却没被报'); bad += 1
 
+    # 16) 「没有来源页」必须分两种：搜过并写明的放行，没交代的必须报
+    fake = {'a': {'id': 'a', 'page': None, 'no_page': True, 'override': '搜过六个串都没有',
+                  'searched': ['頭上紅冠不用裁']},
+            'b': {'id': 'b', 'page': None},
+            'c': {'id': 'c', 'page': None, 'no_page': True, 'override': '', 'searched': ['x']},
+            'd': {'id': 'd', 'page': None, 'no_page': True, 'override': '搜过', 'searched': []}}
+    allnp, badnp = split_nopage(fake, {'a', 'b', 'c', 'd'})
+    if allnp != ['a', 'b', 'c', 'd']:
+        print('坏例16：没有来源页的篇目没数全'); bad += 1
+    if badnp != ['b', 'c', 'd']:
+        print('坏例16b：没交代的「没有来源页」被放行了'); bad += 1
+
     if bad:
 
         print('[!] audit-content --selftest 失败 %d 项' % bad)
@@ -869,9 +903,8 @@ def main():
 
               '- 有全文正文：%d；只有必背名句：%d' % (g['仓内有全文正文'], g['只有必背名句（节选收录）']),
 
-              '- 出处核对：逐句全对上 %d / 部分对上 %d / 一句都对不上 %d / 没有核对记录 %d'
-
-              % (g['出处核对·逐句全对上'], g['出处核对·部分对上'], g['出处核对·一句都对不上'], g['出处核对·没有核对记录']),
+              '- 出处核对：' + ' / '.join('%s %d' % (k.split('·', 1)[1], g[k])
+                                          for k in sorted(k for k in g if k.startswith('出处核对·'))),
 
               '- 异文条目：%d（带出处 %d / 带取舍 %d / 缺出处 %d）' % (g['异文条目总数'], g['异文条目带出处'], g['异文条目带取舍'], g['异文条目缺出处']),
 

@@ -144,7 +144,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | chunxiao | 春晓 | 孟浩然 | 唐 | 卒 740 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级下册 |
 | jiangnan | 江南 | 汉乐府 | 汉 | 年代上限 220 | public-domain | S3+S1+S2 | 杂言 | 小学 · 一年级上册 |
 | chishang | 池上 | 白居易 | 唐 | 卒 846 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级下册 |
-| hua | 画 | 王维 | 唐 | 卒 761 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级上册 |
+| hua | 画 | 佚名 | 唐 | 年代上限 1900 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级上册 |
 | huaji | 画鸡 | 唐寅 | 明 | 卒 1524 | public-domain | S3+S1+S2 | 七言 | 小学 · 一年级下册 |
 | xiangsi | 相思 | 王维 | 唐 | 卒 761 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级下册 |
 | zengwanglun | 赠汪伦 | 李白 | 唐 | 卒 762 | public-domain | S3+S1+S2 | 七言 | 小学 · 一年级下册 |

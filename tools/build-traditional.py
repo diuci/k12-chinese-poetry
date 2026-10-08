@@ -960,6 +960,22 @@ def selftest():
     assert (not r22) or len(r22[1]) != 1 or r22[1][0] != r22[2], '坏例22：对歪的窗口被当成了证据 ' + repr(r22)
     assert convert('吞二周而亡诸侯', {'二周': ['二週']}, {'二': ['二'], '周': ['周'], '吞': ['吞'], '诸': ['諸'], '而': ['而'], '亡': ['亡'], '侯': ['侯']}, set())[0] == '吞二周而亡諸侯', \
         '坏例21d：吞二周被派生成二週'
+    # 坏例23：「征」这一支必须两头都站得住——正文照抄「征」，「象征」「魏征」必须转成「徵」。
+    # 不裁定时表的首选项是「徵」：同一篇里正文作「征帆」、注释作「徵帆」就是这么来的。
+    marks23 = [{'at': 3, 'n': 1, 'simp': '征', 'cands': ['徵', '征'], 'decision': 'table', 'kind': 'char', 'ctx': '翠峰如簇征帆去棹残阳'},
+               {'at': 1, 'n': 1, 'simp': '征', 'cands': ['徵', '征'], 'decision': 'table', 'kind': 'char', 'ctx': '明月象征知遇'},
+               {'at': 1, 'n': 1, 'simp': '征', 'cands': ['徵', '征'], 'decision': 'table', 'kind': 'char', 'ctx': '这是魏征的处境'}]
+    apply_rules(marks23, [{'simp': '征', 'pick': '征', 'why': '征伐行旅义照抄「征」', 'apply_to_table': True},
+                          {'simp': '征', 'pick': '徵', 'why': '象征义作「徵」', 'except': True, 'pattern': '象征'},
+                          {'simp': '征', 'pick': '徵', 'why': '人名魏徵', 'except': True, 'pattern': '魏征'}])
+    assert marks23[0]['pick'] == '征' and marks23[0]['decision'] == 'identity', '坏例23：正文那一支没照抄「征」'
+    assert marks23[1]['pick'] == '徵', '坏例23：「象征」没转成「象徵」'
+    assert marks23[2]['pick'] == '徵', '坏例23：「魏征」没转成「魏徵」'
+    # 坏例23b：真实裁定表里这三条必须都在，且例外排在默认之后也能赢（apply_rules 扫完全部规则）
+    _real = load_rules()
+    assert any(r['simp'] == '征' and r['pick'] == '征' and r.get('apply_to_table') for r in _real), '坏例23b：表里没有「征→征」这条'
+    assert any(r['simp'] == '征' and r['pick'] == '徵' and r.get('pattern') == '象征' for r in _real), '坏例23b：表里没有「象征→徵」这条'
+    assert any(r['simp'] == '征' and r['pick'] == '徵' and r.get('pattern') == '魏征' for r in _real), '坏例23b：表里没有「魏征→徵」这条'
     import inspect
     _src = inspect.getsource(selftest)
     print('[ok] build-traditional --selftest 通（%d 处断言全部试到）'

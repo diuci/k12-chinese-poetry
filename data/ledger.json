@@ -50,13 +50,15 @@
       "缺背诵要求": 0,
       "只有必背名句（节选收录）": 0,
       "仓内有全文正文": 252,
-      "无异文记录": 165,
-      "异文条目总数": 423,
-      "异文条目带出处": 403,
-      "异文条目带取舍": 174,
-      "异文条目缺出处": 20,
+      "无异文记录": 164,
+      "full 但名句没盖住全文（篇）": 6,
+      "full 但名句没盖住全文（句）": 86,
+      "异文条目总数": 427,
+      "异文条目带出处": 406,
+      "异文条目带取舍": 175,
+      "异文条目缺出处": 21,
       "异文小节里的非异文条目": 0,
-      "异文条目写明「仓内没核到」": 20,
+      "异文条目写明「仓内没核到」": 21,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
       "重复副本": 1,
@@ -66,9 +68,10 @@
       "统编教材收的是同名另一篇": 3,
       "统编教材收在别的课里": 3,
       "没有教材收录状态": 0,
-      "出处核对·逐句全对上": 213,
-      "出处核对·部分对上": 36,
-      "出处核对·一句都对不上": 3,
+      "出处核对·逐句全对上": 214,
+      "出处核对·部分对上": 37,
+      "出处核对·一句都对不上": 0,
+      "出处核对·核过没有正文页": 1,
       "出处核对·没有核对记录": 0
     }
   },
@@ -96,6 +99,10 @@
       "recite": "full",
       "lineCount": 6,
       "charCount": 48,
+      "mingjuSents": 6,
+      "fullSents": 6,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -145,6 +152,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 62,
+      "mingjuSents": 6,
+      "fullSents": 24,
+      "fullGapSents": 18,
+      "fullGapSample": [
+        "不闻机杼声惟闻女叹息",
+        "问女何所思问女何所忆",
+        "女亦无所思女亦无所忆",
+        "昨夜见军帖可汗大点兵军书十二卷卷卷有爷名"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -194,6 +210,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 22,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -243,6 +263,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -292,6 +316,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -341,6 +369,14 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 6,
+      "fullGapSents": 3,
+      "fullGapSample": [
+        "欲渡黄河冰塞川将登太行雪满山",
+        "闲来垂钓碧溪上忽复乘舟梦日边",
+        "行路难行路难多歧路今安在"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -389,6 +425,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -438,6 +478,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -487,6 +531,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -536,6 +584,13 @@
       "recite": "section",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 4,
+      "fullGapSents": 2,
+      "fullGapSample": [
+        "晓镜但愁云鬓改夜吟应觉月光寒",
+        "蓬山此去无多路青鸟殷勤为探看"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -584,6 +639,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 36,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -633,6 +692,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -682,6 +745,14 @@
       "recite": "section",
       "lineCount": 5,
       "charCount": 58,
+      "mingjuSents": 6,
+      "fullSents": 9,
+      "fullGapSents": 3,
+      "fullGapSample": [
+        "我欲乘风归去又恐琼楼玉宇高处不胜寒",
+        "转朱阁低绮户照无眠",
+        "不应有恨何事长向别时圆"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -731,6 +802,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 56,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -780,6 +855,10 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 56,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "全文",
         "必背名句",
@@ -829,6 +908,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 28,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -878,6 +961,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 44,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "异文",
         "必背全文",
@@ -927,6 +1014,10 @@
       "recite": "section",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "全文",
         "必背名句",
@@ -976,6 +1067,13 @@
       "recite": "full",
       "lineCount": 12,
       "charCount": 237,
+      "mingjuSents": 18,
+      "fullSents": 20,
+      "fullGapSents": 2,
+      "fullGapSample": [
+        "子曰贤哉回也",
+        "贤哉回也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -994,8 +1092,8 @@
       "hasVariant": true,
       "variantEntries": 2,
       "variantNonEntries": 0,
-      "variantUnverified": 0,
-      "variantWithSource": 2,
+      "variantUnverified": 1,
+      "variantWithSource": 1,
       "variantWithChoice": 2,
       "hasFulltext": true,
       "pairsCount": 6,
@@ -1025,6 +1123,10 @@
       "recite": "full",
       "lineCount": 5,
       "charCount": 47,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1073,6 +1175,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 53,
+      "mingjuSents": 4,
+      "fullSents": 10,
+      "fullGapSents": 7,
+      "fullGapSample": [
+        "晋陶渊明独爱菊",
+        "自李唐来世人盛爱牡丹",
+        "予谓菊花之隐逸者也",
+        "牡丹花之富贵者也"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -1121,6 +1232,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1169,6 +1284,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1217,6 +1336,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1265,6 +1388,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1313,6 +1440,15 @@
       "recite": "line",
       "lineCount": 2,
       "charCount": 16,
+      "mingjuSents": 2,
+      "fullSents": 10,
+      "fullGapSents": 8,
+      "fullGapSample": [
+        "参差荇菜左右流之",
+        "窈窕淑女寤寐求之",
+        "求之不得寤寐思服",
+        "悠哉悠哉辗转反侧"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -1361,6 +1497,15 @@
       "recite": "line",
       "lineCount": 2,
       "charCount": 16,
+      "mingjuSents": 2,
+      "fullSents": 12,
+      "fullGapSents": 10,
+      "fullGapSample": [
+        "溯洄从之道阻且长",
+        "溯游从之宛在水中央",
+        "蒹葭萋萋白露未晞",
+        "所谓伊人在水之湄"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -1410,6 +1555,10 @@
       "recite": "full",
       "lineCount": 5,
       "charCount": 50,
+      "mingjuSents": 6,
+      "fullSents": 6,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1459,6 +1608,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1507,6 +1660,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1556,6 +1713,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 56,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1605,6 +1766,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1654,6 +1819,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 69,
+      "mingjuSents": 4,
+      "fullSents": 12,
+      "fullGapSents": 7,
+      "fullGapSample": [
+        "茅飞渡江洒江郊高者挂罥长林梢下者飘转沉塘坳",
+        "南村群童欺我老无力忍能对面为盗贼",
+        "公然抱茅入竹去唇焦口燥呼不得归来倚杖自叹息",
+        "俄顷风定云墨色秋天漠漠向昏黑"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -1703,6 +1877,15 @@
       "recite": "section",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 3,
+      "fullSents": 12,
+      "fullGapSents": 9,
+      "fullGapSample": [
+        "卖炭翁伐薪烧炭南山中",
+        "满面尘灰烟火色两鬓苍苍十指黑",
+        "夜来城外一尺雪晓驾炭车辗冰辙",
+        "牛困人饥日已高市南门外泥中歇"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -1751,6 +1934,10 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 56,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "全文",
         "必背名句",
@@ -1800,6 +1987,12 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 4,
+      "fullGapSents": 1,
+      "fullGapSample": [
+        "报君黄金台上意提携玉龙为君死"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -1848,6 +2041,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1897,6 +2094,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 42,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -1946,6 +2147,10 @@
       "recite": "full",
       "lineCount": 6,
       "charCount": 62,
+      "mingjuSents": 6,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "异文",
         "收录范围",
@@ -1994,6 +2199,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 77,
+      "mingjuSents": 6,
+      "fullSents": 29,
+      "fullGapSents": 23,
+      "fullGapSample": [
+        "晋太元中武陵人捕鱼为业",
+        "缘溪行忘路之远近",
+        "渔人甚异之",
+        "复前行欲穷其林"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2043,6 +2257,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 32,
+      "mingjuSents": 4,
+      "fullSents": 8,
+      "fullGapSents": 4,
+      "fullGapSample": [
+        "晓雾将歇猿鸟乱鸣",
+        "夕日欲颓沉鳞竞跃",
+        "实是欲界之仙都",
+        "自康乐以来未复有能与其奇者"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -2091,6 +2314,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 32,
+      "mingjuSents": 3,
+      "fullSents": 7,
+      "fullGapSents": 4,
+      "fullGapSample": [
+        "至于夏水襄陵沿溯阻绝",
+        "春冬之时则素湍绿潭回清倒影绝多生怪柏悬泉瀑布飞漱其间清荣峻茂良多趣味",
+        "每至晴初霜旦林寒涧肃常有高猿长啸属引凄异空谷传响哀转久绝",
+        "故渔者歌曰巴东三峡巫峡长猿鸣三声泪沾裳"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2138,6 +2370,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 153,
+      "mingjuSents": 10,
+      "fullSents": 10,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "异文",
         "必背全文",
@@ -2187,6 +2423,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 69,
+      "mingjuSents": 6,
+      "fullSents": 12,
+      "fullGapSents": 7,
+      "fullGapSample": [
+        "伐竹取道下见小潭水尤清洌",
+        "全石以为底近岸卷石底以出为坻为屿为嵁为岩",
+        "青树翠蔓蒙络摇缀参差披拂",
+        "其岸势犬牙差互不可知其源"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2236,6 +2481,14 @@
       "recite": "section",
       "lineCount": 2,
       "charCount": 37,
+      "mingjuSents": 4,
+      "fullSents": 7,
+      "fullGapSents": 3,
+      "fullGapSample": [
+        "元丰六年十月十二日夜解衣欲睡月色入户欣然起行",
+        "念无与为乐者遂至承天寺寻张怀民",
+        "怀民亦未寝相与步于中庭"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2283,6 +2536,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 36,
+      "mingjuSents": 4,
+      "fullSents": 14,
+      "fullGapSents": 11,
+      "fullGapSample": [
+        "是鸟也海运则将徙于南冥",
+        "南冥者天池也",
+        "齐谐者志怪者也",
+        "谐之言曰鹏之徙于南冥也水击三千里抟扶摇而上者九万里去以六月息者也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2330,6 +2592,13 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 33,
+      "mingjuSents": 4,
+      "fullSents": 5,
+      "fullGapSents": 2,
+      "fullGapSample": [
+        "货恶其弃于地也不必藏于己",
+        "力恶其不出于身也不必为己"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2379,6 +2648,15 @@
       "recite": "none",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 12,
+      "fullGapSents": 10,
+      "fullGapSample": [
+        "吏呼一何怒妇啼一何苦",
+        "听妇前致词三男邺城戍",
+        "一男附书至二男新战死",
+        "存者且偷生死者长已矣"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2426,6 +2704,12 @@
       "recite": "line",
       "lineCount": 2,
       "charCount": 16,
+      "mingjuSents": 2,
+      "fullSents": 3,
+      "fullGapSents": 1,
+      "fullGapSample": [
+        "微君之躬胡为乎泥中"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -2475,6 +2759,10 @@
       "recite": "full",
       "lineCount": 5,
       "charCount": 74,
+      "mingjuSents": 7,
+      "fullSents": 7,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "异文",
         "必背全文",
@@ -2524,6 +2812,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -2572,6 +2864,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 66,
+      "mingjuSents": 8,
+      "fullSents": 14,
+      "fullGapSents": 6,
+      "fullGapSample": [
+        "从流飘荡任意东西",
+        "自富阳至桐庐一百许里奇山异水天下独绝",
+        "夹岸高山皆生寒树负势竞上互相轩邈争高直指千百成峰",
+        "蝉则千转不穷猿则百叫无绝"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2621,6 +2922,15 @@
       "recite": "line",
       "lineCount": 2,
       "charCount": 17,
+      "mingjuSents": 2,
+      "fullSents": 6,
+      "fullGapSents": 4,
+      "fullGapSample": [
+        "青青子佩悠悠我思",
+        "纵我不往子宁不来",
+        "挑兮达兮在城阙兮",
+        "一日不见如三月兮"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -2669,6 +2979,10 @@
       "recite": "full",
       "lineCount": 8,
       "charCount": 80,
+      "mingjuSents": 8,
+      "fullSents": 8,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "异文",
         "必背全文",
@@ -2719,6 +3033,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 9,
+      "fullGapSents": 6,
+      "fullGapSample": [
+        "散入珠帘湿罗幕狐裘不煖锦衾薄",
+        "将军角弓不得控都护铁衣冷难著",
+        "瀚海阑干百丈冰愁云惨澹万里凝",
+        "中军置酒饮归客胡琴琵琶与羌笛"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2767,6 +3090,12 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 4,
+      "fullGapSents": 1,
+      "fullGapSample": [
+        "今日听君歌一曲暂凭杯酒长精神"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -2815,6 +3144,10 @@
       "recite": "full",
       "lineCount": 5,
       "charCount": 62,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -2864,6 +3197,14 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 35,
+      "mingjuSents": 3,
+      "fullSents": 6,
+      "fullGapSents": 3,
+      "fullGapSample": [
+        "酒酣胸胆尚开张鬓微霜又何妨",
+        "持节云中何日遣冯唐",
+        "会挽雕弓如满月西北望射天狼"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -2912,6 +3253,10 @@
       "recite": "section",
       "lineCount": 5,
       "charCount": 56,
+      "mingjuSents": 9,
+      "fullSents": 9,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "全文",
         "异文",
@@ -2960,6 +3305,10 @@
       "recite": "full",
       "lineCount": 6,
       "charCount": 62,
+      "mingjuSents": 6,
+      "fullSents": 6,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -3009,6 +3358,10 @@
       "recite": "full",
       "lineCount": 8,
       "charCount": 93,
+      "mingjuSents": 10,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "收录范围",
         "注释",
@@ -3057,6 +3410,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 53,
+      "mingjuSents": 6,
+      "fullSents": 29,
+      "fullGapSents": 23,
+      "fullGapSample": [
+        "十年春齐师伐我",
+        "公将战曹刿请见",
+        "其乡人曰肉食者谋之又何间焉",
+        "乃入见"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -3106,6 +3468,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 36,
+      "mingjuSents": 4,
+      "fullSents": 41,
+      "fullGapSents": 37,
+      "fullGapSample": [
+        "鱼我所欲也",
+        "熊掌亦我所欲也",
+        "二者不可得兼舍鱼而取熊掌者也",
+        "二者不可得兼舍生而取义者也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -3154,6 +3525,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 23,
+      "mingjuSents": 3,
+      "fullSents": 20,
+      "fullGapSents": 17,
+      "fullGapSample": [
+        "鲲之大不知其几千里也化而为鸟其名为鹏",
+        "是鸟也海运则将徙于南冥",
+        "南冥者天池也",
+        "齐谐者志怪者也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -3202,6 +3582,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 26,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -3250,6 +3634,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 87,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "全文",
         "异文",
@@ -3298,6 +3686,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 93,
+      "mingjuSents": 8,
+      "fullSents": 26,
+      "fullGapSents": 18,
+      "fullGapSample": [
+        "朝服衣冠窥镜谓其妻曰我孰与城北徐公美",
+        "其妻曰君美甚徐公何能及君也",
+        "城北徐公齐国之美丽者也",
+        "忌不自信而复问其妾曰吾孰与徐公美"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -3347,6 +3744,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 31,
+      "mingjuSents": 3,
+      "fullSents": 28,
+      "fullGapSents": 25,
+      "fullGapSample": [
+        "臣亮言先帝创业未半而中道崩殂今天下三分益州疲敝此诚危急存亡之秋也",
+        "然侍衞之臣不懈于内忠志之士忘身于外者盖追先帝之殊遇欲报之于陛下也",
+        "诚宜开张圣听以光先帝遗德李邕书恢弘志士之气不宜妄自菲薄引喻失义以塞忠谏之路也",
+        "宫中府中俱为一体陟罚臧否不宜异同"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -3394,6 +3800,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 56,
+      "mingjuSents": 4,
+      "fullSents": 28,
+      "fullGapSents": 23,
+      "fullGapSample": [
+        "庆历四年春滕子京谪守巴陵郡",
+        "予观夫巴陵胜状在洞庭一湖",
+        "衔远山吞长江浩浩汤汤横无际涯",
+        "朝晖夕阴气象万千"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -3441,6 +3856,15 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 44,
+      "mingjuSents": 3,
+      "fullSents": 25,
+      "fullGapSents": 22,
+      "fullGapSample": [
+        "环滁皆山也",
+        "其西南诸峰林壑尤美望之蔚然而深秀者琅琊也",
+        "山行六七里渐闻水声潺潺而泻出于两峰之间者酿泉也",
+        "峰回路转有亭翼然临于泉上者醉翁亭也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -3489,6 +3913,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 154,
+      "mingjuSents": 8,
+      "fullSents": 32,
+      "fullGapSents": 23,
+      "fullGapSample": [
+        "天大寒砚冰坚手指不可屈伸弗之怠",
+        "录毕走送之不敢稍逾约",
+        "以是人多以书假余余因得遍观群书",
+        "先达德隆望尊门人弟子填其室未尝稍降辞色"
+      ],
       "sections": [
         "全文",
         "全文（教材节选部分）",
@@ -3538,6 +3971,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 44,
+      "mingjuSents": 3,
+      "fullSents": 10,
+      "fullGapSents": 7,
+      "fullGapSample": [
+        "崇祯五年十二月余住西湖",
+        "大雪三日湖中人鸟声俱绝",
+        "是日更定矣余拏一小舟拥毳衣炉火独往湖心亭看雪",
+        "到亭上有两人铺毡对坐一童子烧酒炉正沸"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -3585,6 +4027,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 35,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -3632,6 +4078,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 18,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -3679,6 +4129,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -3726,6 +4180,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -3773,6 +4231,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -3820,6 +4282,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -3867,6 +4333,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -3914,6 +4384,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -3961,6 +4435,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4008,6 +4486,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4055,6 +4537,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4083,10 +4569,10 @@
       "id": "hua",
       "title": "画",
       "subtitle": null,
-      "author": "王维",
+      "author": "佚名",
       "dynasty": "唐",
-      "authorDied": 761,
-      "authorEraEnd": null,
+      "authorDied": null,
+      "authorEraEnd": 1900,
       "license": "public-domain",
       "source": "S3+S1+S2",
       "stage": "小学",
@@ -4102,8 +4588,13 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "出处核对",
+        "收录范围",
         "注释",
         "译文",
         "赏析"
@@ -4150,6 +4641,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "出处核对",
         "注释",
@@ -4198,6 +4693,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4245,6 +4744,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 27,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4292,6 +4795,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4339,6 +4846,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4386,6 +4897,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4433,6 +4948,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4480,6 +4999,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4527,6 +5050,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4574,6 +5101,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4621,6 +5152,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4668,6 +5203,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4715,6 +5254,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4762,6 +5305,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4809,6 +5356,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4856,6 +5407,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4903,6 +5458,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4950,6 +5509,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -4997,6 +5560,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5044,6 +5611,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5091,6 +5662,10 @@
       "recite": "line",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 2,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "全文",
         "异文",
@@ -5138,6 +5713,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5185,6 +5764,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5232,6 +5815,10 @@
       "recite": "line",
       "lineCount": 3,
       "charCount": 27,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "全文",
         "必背名句",
@@ -5280,6 +5867,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5327,6 +5918,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 3,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5374,6 +5969,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5421,6 +6020,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5468,6 +6071,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5515,6 +6122,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5562,6 +6173,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5609,6 +6224,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5656,6 +6275,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5703,6 +6326,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5750,6 +6377,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5797,6 +6428,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5844,6 +6479,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5891,6 +6530,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5938,6 +6581,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -5985,6 +6632,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6032,6 +6683,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6079,6 +6734,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6126,6 +6785,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6173,6 +6836,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6220,6 +6887,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6267,6 +6938,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6314,6 +6989,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6361,6 +7040,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6408,6 +7091,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6455,6 +7142,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 46,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6502,6 +7193,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6549,6 +7244,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6596,6 +7295,10 @@
       "recite": "full",
       "lineCount": 5,
       "charCount": 50,
+      "mingjuSents": 5,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6643,6 +7346,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "异文",
         "收录范围",
@@ -6691,6 +7398,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6738,6 +7449,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6785,6 +7500,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6832,6 +7551,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 27,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6879,6 +7602,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6926,6 +7653,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -6973,6 +7704,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7020,6 +7755,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7067,6 +7806,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7114,6 +7857,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7161,6 +7908,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "异文",
         "收录范围",
@@ -7209,6 +7960,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 36,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7256,6 +8011,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7303,6 +8062,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7350,6 +8113,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7397,6 +8164,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7444,6 +8215,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 56,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7491,6 +8266,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "出处核对",
         "异文",
@@ -7540,6 +8319,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7587,6 +8370,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7634,6 +8421,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7681,6 +8472,10 @@
       "recite": "line",
       "lineCount": 3,
       "charCount": 30,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "全文",
         "异文",
@@ -7728,6 +8523,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7775,6 +8574,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7822,6 +8625,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7869,6 +8676,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7916,6 +8727,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -7963,6 +8778,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8010,6 +8829,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8057,6 +8880,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8104,6 +8931,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8151,7 +8982,13 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
+        "出处核对",
+        "异文",
         "注释",
         "译文",
         "赏析"
@@ -8161,17 +8998,16 @@
       "hasAppreciation": true,
       "hasFamous": false,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 0,
+      "variantWithSource": 2,
       "variantWithChoice": 0,
       "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
-        "无「必背名句」小节",
-        "无异文记录"
+        "无「必背名句」小节"
       ],
       "path": "poems/小学/六年级下册/石灰吟.md"
     },
@@ -8198,6 +9034,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8245,6 +9085,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 44,
+      "mingjuSents": 5,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8292,6 +9136,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 32,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8339,6 +9187,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8386,6 +9238,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8433,6 +9289,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 42,
+      "mingjuSents": 5,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8480,6 +9340,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8527,6 +9391,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 28,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8574,6 +9442,10 @@
       "recite": "full",
       "lineCount": 2,
       "charCount": 20,
+      "mingjuSents": 2,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8621,6 +9493,10 @@
       "recite": "full",
       "lineCount": 5,
       "charCount": 50,
+      "mingjuSents": 5,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8668,6 +9544,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 50,
+      "mingjuSents": 4,
+      "fullSents": 0,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "注释",
         "译文",
@@ -8715,6 +9595,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 25,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -8763,6 +9647,15 @@
       "recite": "full",
       "lineCount": 12,
       "charCount": 222,
+      "mingjuSents": 21,
+      "fullSents": 28,
+      "fullGapSents": 7,
+      "fullGapSample": [
+        "颜渊问仁",
+        "颜渊曰请问其目",
+        "子曰非礼勿视非礼勿听非礼勿言非礼勿动",
+        "颜渊曰回虽不敏请事斯语矣"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -8812,6 +9705,15 @@
       "recite": "section",
       "lineCount": 5,
       "charCount": 85,
+      "mingjuSents": 6,
+      "fullSents": 24,
+      "fullGapSents": 18,
+      "fullGapSample": [
+        "木直中绳以为轮其曲中规",
+        "虽有槁暴不复挺者使之然也",
+        "吾尝跂而望矣不如登高之博见也",
+        "登高而招臂非加长也而见者远"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -8861,6 +9763,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 24,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -8909,6 +9815,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 56,
+      "mingjuSents": 4,
+      "fullSents": 26,
+      "fullGapSents": 26,
+      "fullGapSample": [
+        "长太息以掩涕兮哀民生之多艰",
+        "余虽好修姱以鞿羁兮謇朝谇而夕替",
+        "既替余以蕙纕兮又申之以揽茝",
+        "亦余心之所善兮虽九死其犹未悔"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -8957,6 +9872,15 @@
       "recite": "section",
       "lineCount": 7,
       "charCount": 107,
+      "mingjuSents": 7,
+      "fullSents": 91,
+      "fullGapSents": 84,
+      "fullGapSample": [
+        "屈原者名平楚之同姓也",
+        "为楚怀王左徒",
+        "入则与王图议国事以出号令",
+        "出则接遇宾客应对诸侯"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9006,6 +9930,15 @@
       "recite": "section",
       "lineCount": 5,
       "charCount": 110,
+      "mingjuSents": 8,
+      "fullSents": 21,
+      "fullGapSents": 13,
+      "fullGapSample": [
+        "人君当神器之重居域中之大将崇极天之峻永保无疆之休",
+        "不念居安思危戒奢以俭德不处其厚情不胜其欲斯亦伐根以求木茂塞源而欲流长也",
+        "凡百元首承天景命莫不殷忧而道著功成而德衰",
+        "有善始者实繁能克终者盖寡"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9055,6 +9988,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 30,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -9103,6 +10040,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 48,
+      "mingjuSents": 6,
+      "fullSents": 17,
+      "fullGapSents": 11,
+      "fullGapSample": [
+        "慨当以慷忧思难忘",
+        "何以解忧",
+        "唯有杜康",
+        "呦呦鹿鸣食野之苹"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -9152,6 +10098,15 @@
       "recite": "section",
       "lineCount": 5,
       "charCount": 91,
+      "mingjuSents": 6,
+      "fullSents": 32,
+      "fullGapSents": 26,
+      "fullGapSample": [
+        "人非生而知之者孰能无惑",
+        "惑而不从师其为惑也终不解矣",
+        "生乎吾前其闻道也固先乎吾吾从而师之",
+        "生乎吾后其闻道也亦先乎吾吾从而师之"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9200,6 +10155,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 39,
+      "mingjuSents": 3,
+      "fullSents": 47,
+      "fullGapSents": 44,
+      "fullGapSample": [
+        "六王毕四海一蜀山兀阿房出",
+        "骊山北构而西折直走咸阳",
+        "二川溶溶流入宫墙",
+        "五步一楼十步一阁"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9248,6 +10212,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -9296,6 +10264,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 117,
+      "mingjuSents": 8,
+      "fullSents": 37,
+      "fullGapSents": 29,
+      "fullGapSample": [
+        "或曰六国互丧率赂秦耶",
+        "曰不赂者以赂者丧",
+        "盖失强援不能独完",
+        "故曰弊在赂秦也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9344,6 +10321,12 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 36,
+      "mingjuSents": 3,
+      "fullSents": 4,
+      "fullGapSents": 1,
+      "fullGapSample": [
+        "心非木石岂无感吞声踯躅不敢言"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -9392,6 +10375,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 4,
+      "fullSents": 19,
+      "fullGapSents": 16,
+      "fullGapSample": [
+        "江流宛转绕芳甸月照花林皆似霰",
+        "空里流霜不觉飞汀上白沙看不见",
+        "江天一色无纤尘皎皎空中孤月轮",
+        "人生代代无穷已江月年年望相似"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9440,6 +10432,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 77,
+      "mingjuSents": 6,
+      "fullSents": 16,
+      "fullGapSents": 10,
+      "fullGapSample": [
+        "虽欲强聒终必不蒙见察故略上报不复一一自辨",
+        "重念蒙君实视遇厚于反覆不宜卤莽故今具道所以冀君实或见恕也",
+        "今君实所以见教者以为侵官生事征利拒谏以致天下怨谤也",
+        "为天下理财不为征利"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9489,6 +10490,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 66,
+      "mingjuSents": 5,
+      "fullSents": 33,
+      "fullGapSents": 28,
+      "fullGapSample": [
+        "壬戌之秋七月既望苏子与客泛舟游于赤壁之下",
+        "清风徐来水波不兴",
+        "举酒属客诵明月之诗歌窈窕之章",
+        "少焉月出于东山之上徘徊于斗牛之间"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9537,6 +10547,15 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 56,
+      "mingjuSents": 5,
+      "fullSents": 25,
+      "fullGapSents": 18,
+      "fullGapSample": [
+        "蚕丛及鱼凫开国何茫然",
+        "尔来四万八千岁不与秦塞通人烟",
+        "上有六龙回日之高标下有冲波逆折之回川",
+        "黄鹤之飞尚不得过猿猱欲度愁攀援"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9585,6 +10604,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 75,
+      "mingjuSents": 7,
+      "fullSents": 43,
+      "fullGapSents": 37,
+      "fullGapSample": [
+        "室仅方丈可容一人居",
+        "百年老屋尘泥渗漉雨泽下注",
+        "每移案顾视无可置者",
+        "又北向不能得日日过午已昏"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9634,6 +10662,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 23,
+      "fullGapSents": 20,
+      "fullGapSample": [
+        "越人语天姥云霞明灭或可覩",
+        "天姥连天向天横势拔五岳掩赤城",
+        "天台四万八千丈对此欲倒东南倾",
+        "湖月照我影送我至剡溪"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9681,6 +10718,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 94,
+      "mingjuSents": 6,
+      "fullSents": 29,
+      "fullGapSents": 23,
+      "fullGapSample": [
+        "子路曾皙冉有公西华侍坐",
+        "子曰以吾一日长乎尔毋吾以也",
+        "居则曰不吾知也",
+        "由也为之比及三年可使有勇且知方也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9730,6 +10776,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 121,
+      "mingjuSents": 8,
+      "fullSents": 16,
+      "fullGapSents": 10,
+      "fullGapSample": [
+        "左丘失明厥有国语",
+        "孙子膑脚兵法修列",
+        "不韦迁蜀世传吕览",
+        "韩非囚秦说难孤愤"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9779,6 +10834,15 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 52,
+      "mingjuSents": 4,
+      "fullSents": 12,
+      "fullGapSents": 8,
+      "fullGapSample": [
+        "君不见高堂明镜悲白发朝如青丝暮成雪",
+        "烹羊宰牛且为乐会须一饮三百杯",
+        "岑夫子丹丘生将进酒杯莫停",
+        "与君歌一曲请君为我倾耳听"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9827,6 +10891,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 105,
+      "mingjuSents": 6,
+      "fullSents": 43,
+      "fullGapSents": 37,
+      "fullGapSample": [
+        "当是时也商君佐之内立法度务耕织修守战之具外连衡而斗诸侯",
+        "于是秦人拱手而取西河之外",
+        "孝公既没惠文武昭襄蒙故业因遗策南取汉中西举巴蜀东割膏腴之地北收要害之郡",
+        "诸侯恐惧会盟而谋弱秦不爱珍器重宝肥饶之地以致天下之士合从缔交相与为一"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9843,10 +10916,10 @@
       "hasFamous": true,
       "hasPlay": false,
       "hasVariant": true,
-      "variantEntries": 8,
+      "variantEntries": 9,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 8,
+      "variantWithSource": 9,
       "variantWithChoice": 3,
       "hasFulltext": true,
       "pairsCount": 3,
@@ -9876,6 +10949,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 15,
+      "fullGapSents": 12,
+      "fullGapSample": [
+        "开元二十六年客有从御史大夫张公出塞而还者作燕歌行以示适感征戍之事因而和焉",
+        "摐金伐鼓下榆关旌旆逶迤碣石间",
+        "校尉羽书飞瀚海单于猎火照狼山",
+        "山川萧条极边土胡骑凭陵杂风雨"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -9890,11 +10972,11 @@
       "hasFamous": true,
       "hasPlay": false,
       "hasVariant": true,
-      "variantEntries": 4,
+      "variantEntries": 5,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 4,
-      "variantWithChoice": 4,
+      "variantWithSource": 5,
+      "variantWithChoice": 5,
       "hasFulltext": true,
       "pairsCount": 1,
       "flags": [],
@@ -9923,6 +11005,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 33,
+      "mingjuSents": 4,
+      "fullSents": 8,
+      "fullGapSents": 4,
+      "fullGapSample": [
+        "男有分女有归",
+        "货恶其弃于地也不必藏于己",
+        "力恶其不出于身也不必为己",
+        "是故谋闭而不兴盗窃乱贼而不作故外户而不闭"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -9973,6 +11064,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -10021,6 +11116,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 64,
+      "mingjuSents": 4,
+      "fullSents": 33,
+      "fullGapSents": 29,
+      "fullGapSample": [
+        "臣密言臣以险衅夙遭闵凶",
+        "行年四岁舅夺母志",
+        "祖母刘愍臣孤弱躬亲抚养",
+        "臣少多疾病九岁不行零丁孤苦至于成立"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10069,6 +11173,13 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 8,
+      "fullGapSents": 2,
+      "fullGapSample": [
+        "盘飧市远无兼味",
+        "樽酒家贫只旧醅"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10116,6 +11227,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 56,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -10164,6 +11279,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 48,
+      "mingjuSents": 4,
+      "fullSents": 48,
+      "fullGapSents": 44,
+      "fullGapSample": [
+        "余家贫耕植不足以自给",
+        "幼稚盈室缾无储粟生生所资未见其术",
+        "亲故多劝余为长吏脱然有怀求之靡途",
+        "会有四方之事诸侯以惠爱为德家叔以余贫苦遂见用于小邑"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10213,6 +11337,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -10261,6 +11389,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 77,
+      "mingjuSents": 7,
+      "fullSents": 33,
+      "fullGapSents": 26,
+      "fullGapSample": [
+        "郭橐驼不知始何名",
+        "病偻隆然伏行有类橐驼者故乡人号之驼",
+        "驼闻之曰甚善",
+        "名我固当"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10310,6 +11447,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 42,
+      "mingjuSents": 4,
+      "fullSents": 40,
+      "fullGapSents": 36,
+      "fullGapSample": [
+        "浔阳江头夜送客枫叶荻花秋瑟瑟",
+        "主人下马客在船举酒欲饮无管弦",
+        "忽闻水上琵琶声主人忘归客不发",
+        "寻声暗问弹者谁琵琶声停欲语迟"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10357,6 +11503,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 71,
+      "mingjuSents": 6,
+      "fullSents": 20,
+      "fullGapSents": 14,
+      "fullGapSample": [
+        "呜呼",
+        "原庄宗之所以得天下与其所以失之者可以知之矣",
+        "世言晋王之将终也以三矢赐庄宗而告之曰梁吾仇也",
+        "燕王吾所立"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10406,6 +11561,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 7,
+      "fullGapSents": 4,
+      "fullGapSample": [
+        "吴丝蜀桐张高秋空山凝云颓不流",
+        "江娥啼竹素女愁李凭中国弹箜篌",
+        "梦入神山教神妪老鱼跳波瘦蛟舞",
+        "吴质不眠倚桂树露脚斜飞湿寒兔"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -10454,6 +11618,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 86,
+      "mingjuSents": 6,
+      "fullSents": 30,
+      "fullGapSents": 24,
+      "fullGapSample": [
+        "水经云彭蠡之口有石钟山焉",
+        "是说也人常疑之",
+        "今以钟磬置水中虽大风浪不能鸣也而况石乎",
+        "至唐李渤始访其遗踪得双石于潭上扣而聆之南声函胡北音清越桴止响腾余韵徐歇"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10503,6 +11676,15 @@
       "recite": "full",
       "lineCount": 6,
       "charCount": 59,
+      "mingjuSents": 6,
+      "fullSents": 35,
+      "fullGapSents": 29,
+      "fullGapSample": [
+        "泰山之阳汶水西流",
+        "其阴济水东流",
+        "阳谷皆入汶阴谷皆入济",
+        "当其南北分者古长城也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10552,6 +11734,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 34,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -10600,6 +11786,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -10648,6 +11838,15 @@
       "recite": "section",
       "lineCount": 5,
       "charCount": 73,
+      "mingjuSents": 7,
+      "fullSents": 39,
+      "fullGapSents": 32,
+      "fullGapSample": [
+        "水善利万物而不争处众人之所恶故几于道",
+        "居善地心善渊与善仁言善信正善治事善能动善时",
+        "夫唯不争故无尤",
+        "五色令人目盲五音令人耳聋五味令人口爽驰骋田猎令人心发狂难得之货令人行妨"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10698,6 +11897,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 81,
+      "mingjuSents": 6,
+      "fullSents": 20,
+      "fullGapSents": 14,
+      "fullGapSample": [
+        "季氏将伐颛臾",
+        "冉有季路见于孔子曰季氏将有事于颛臾",
+        "孔子曰求",
+        "无乃尔是过与"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10747,6 +11955,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 44,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -10795,6 +12007,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 40,
+      "mingjuSents": 4,
+      "fullSents": 13,
+      "fullGapSents": 9,
+      "fullGapSample": [
+        "大学之道在明明德在亲民在止于至善",
+        "知止而后有定定而后能静静而后能安安而后能虑虑而后能得",
+        "物有本末事有终始",
+        "知所先后则近道矣"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10844,6 +12065,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 57,
+      "mingjuSents": 4,
+      "fullSents": 8,
+      "fullGapSents": 4,
+      "fullGapSample": [
+        "烟柳画桥风帘翠幕参差十万人家",
+        "市列珠玑户盈罗绮竞豪奢",
+        "千骑拥高牙乘醉听箫鼓吟赏烟霞",
+        "异日图将好景归去凤池夸"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10893,6 +12123,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 35,
+      "mingjuSents": 3,
+      "fullSents": 8,
+      "fullGapSents": 5,
+      "fullGapSample": [
+        "征帆去棹残阳里背西风酒旗斜矗",
+        "彩舟云淡星河鹭起画图难足",
+        "念往昔繁华竞逐叹门外楼头悲恨相续",
+        "千古凭高对此谩嗟荣辱"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10942,6 +12181,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 65,
+      "mingjuSents": 7,
+      "fullSents": 14,
+      "fullGapSents": 7,
+      "fullGapSample": [
+        "致中和天地位焉万物育焉",
+        "有弗学学之弗能弗措也",
+        "有弗问问之弗知弗措也",
+        "有弗思思之弗得弗措也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -10991,6 +12239,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 35,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -11039,6 +12291,15 @@
       "recite": "section",
       "lineCount": 7,
       "charCount": 75,
+      "mingjuSents": 7,
+      "fullSents": 24,
+      "fullGapSents": 17,
+      "fullGapSample": [
+        "敢问何谓浩然之气",
+        "曰难言也",
+        "其为气也配义与道",
+        "无是馁也"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11088,6 +12349,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 49,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -11136,6 +12401,15 @@
       "recite": "section",
       "lineCount": 7,
       "charCount": 100,
+      "mingjuSents": 7,
+      "fullSents": 15,
+      "fullGapSents": 9,
+      "fullGapSample": [
+        "以盛水浆其坚不能自举也",
+        "剖之以为瓢则瓠落无所容",
+        "非不呺然大也吾为其无用而掊之",
+        "客闻之请买其方百金"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11185,6 +12459,12 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 4,
+      "fullGapSents": 1,
+      "fullGapSample": [
+        "万里归船弄长笛此心吾与白鸥盟"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -11233,6 +12513,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 92,
+      "mingjuSents": 5,
+      "fullSents": 29,
+      "fullGapSents": 24,
+      "fullGapSample": [
+        "臣闻吏议逐客窃以为过矣",
+        "此五子者不产于秦而穆公用之并国二十遂霸西戎",
+        "孝公用商鞅之法移风易俗民以殷盛国以富强百姓乐用诸侯亲服获楚魏之师举地千里至今治强",
+        "惠王用张仪之计拔三川之地西并巴蜀北收上郡南取汉中包九夷制鄢郢东据成皋之险割膏腴之壤遂散六国之从使之西面事秦功施到今"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11281,6 +12570,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 45,
+      "mingjuSents": 4,
+      "fullSents": 21,
+      "fullGapSents": 17,
+      "fullGapSample": [
+        "永和九年岁在癸丑暮春之初会于会稽山阴之兰亭修禊事也",
+        "此地有崇山峻岭茂林修竹又有清流激湍映带左右引以为流觞曲水列坐其次",
+        "虽无丝竹管弦之盛一觞一咏亦足以畅叙幽情",
+        "是日也天朗气清惠风和畅"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11330,6 +12628,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -11378,6 +12680,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 46,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -11426,6 +12732,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 63,
+      "mingjuSents": 6,
+      "fullSents": 79,
+      "fullGapSents": 73,
+      "fullGapSample": [
+        "豫章故郡洪都新府",
+        "星分翼轸地接衡庐",
+        "襟三江而带五湖控蛮荆而引瓯越",
+        "物华天宝龙光射牛斗之墟"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11475,6 +12790,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 77,
+      "mingjuSents": 8,
+      "fullSents": 29,
+      "fullGapSents": 21,
+      "fullGapSample": [
+        "竹工破之刳去其节用代陶瓦",
+        "比屋皆然以其价廉而工省也",
+        "子城西北隅雉堞圮毁蓁莽荒秽",
+        "因作小楼二间与月波楼通"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11524,6 +12848,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 40,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -11572,6 +12900,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 100,
+      "mingjuSents": 6,
+      "fullSents": 24,
+      "fullGapSents": 18,
+      "fullGapSample": [
+        "太尉执事辙生好为文思之至深",
+        "孟子曰我善养吾浩然之气",
+        "今观其文章宽厚宏博充乎天地之间称其气之小大",
+        "太史公行天下周览四海名山大川与燕赵间豪俊交游故其文疏荡颇有奇气"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11621,6 +12958,12 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 4,
+      "fullGapSents": 1,
+      "fullGapSample": [
+        "塞上长城空自许镜中衰鬓已先斑"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11668,6 +13011,15 @@
       "recite": "section",
       "lineCount": 6,
       "charCount": 54,
+      "mingjuSents": 6,
+      "fullSents": 33,
+      "fullGapSents": 27,
+      "fullGapSample": [
+        "在心为志发言为诗",
+        "情动于中而形于言言之不足故嗟叹之嗟叹之不足故永歌之永歌之不足不知手之舞之足之蹈之也",
+        "年寿有时而尽荣乐止乎其身二者必至之常期未若文章之无穷",
+        "是以古之作者寄身于翰墨见意于篇籍不假良史之辞不托飞驰之势而声名自传于后"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11718,6 +13070,12 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 42,
+      "mingjuSents": 3,
+      "fullSents": 4,
+      "fullGapSents": 1,
+      "fullGapSample": [
+        "矮纸斜行闲作草晴窗细乳戏分茶"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11765,6 +13123,15 @@
       "recite": "section",
       "lineCount": 4,
       "charCount": 49,
+      "mingjuSents": 4,
+      "fullSents": 8,
+      "fullGapSents": 4,
+      "fullGapSample": [
+        "应念岭表经年孤光自照肝胆皆冰雪",
+        "短发萧骚襟袖冷稳泛沧浪空阔",
+        "尽挹西江细斟北斗万象为宾客",
+        "扣舷独啸不知今夕何夕"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -11812,6 +13179,10 @@
       "recite": "full",
       "lineCount": 4,
       "charCount": 49,
+      "mingjuSents": 4,
+      "fullSents": 4,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -11860,6 +13231,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 34,
+      "mingjuSents": 3,
+      "fullSents": 3,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -11908,6 +13283,10 @@
       "recite": "full",
       "lineCount": 3,
       "charCount": 53,
+      "mingjuSents": 6,
+      "fullSents": 6,
+      "fullGapSents": 0,
+      "fullGapSample": [],
       "sections": [
         "必背全文",
         "注释",
@@ -11956,6 +13335,15 @@
       "recite": "section",
       "lineCount": 5,
       "charCount": 50,
+      "mingjuSents": 5,
+      "fullSents": 11,
+      "fullGapSents": 6,
+      "fullGapSample": [
+        "试看取当年韩五",
+        "岂有谷城公付授也不干曾遇骊山母",
+        "谈笑起两河路",
+        "少时棋柝曾联句"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -12005,6 +13393,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 31,
+      "mingjuSents": 3,
+      "fullSents": 8,
+      "fullGapSents": 5,
+      "fullGapSample": [
+        "自胡马窥江去后废池乔木犹厌言兵",
+        "渐黄昏清角吹寒都在空城",
+        "杜郎俊赏算而今重到须惊",
+        "纵豆蔻词工青楼梦好难赋深情"
+      ],
       "sections": [
         "全文",
         "必背名句",
@@ -12053,6 +13450,15 @@
       "recite": "section",
       "lineCount": 3,
       "charCount": 28,
+      "mingjuSents": 4,
+      "fullSents": 16,
+      "fullGapSents": 13,
+      "fullGapSample": [
+        "端正好碧云天",
+        "黄花地",
+        "西风紧北雁南飞",
+        "滚绣毬恨相见得迟"
+      ],
       "sections": [
         "全文",
         "异文",
@@ -12101,6 +13507,12 @@
       "recite": "section",
       "lineCount": 5,
       "charCount": 54,
+      "mingjuSents": 5,
+      "fullSents": 5,
+      "fullGapSents": 1,
+      "fullGapSample": [
+        "哪里去辨甚么真共假"
+      ],
       "sections": [
         "全文",
         "异文",

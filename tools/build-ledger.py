@@ -91,6 +91,39 @@ def frontmatter(path):
     return out
 
 
+def split_sentences(arr):
+    """把「必背名句」与「全文」切成句子级单位，用来算两者到底差在哪几句。
+
+    为什么要切到句子：《论语》十二章的名句是章里的一句，全文是整章——
+    按行比会把每一行都算成「差」，那个数字看着吓人，其实是假的。
+    章句标签（「（《学而》）」）与引号先剥掉，只比汉字。
+    """
+    out = []
+    for x in arr or []:
+        x = re.sub(r'[（(][^）)]*[）)]', '', x)
+        x = re.sub(r'[\u201c\u201d"\u300c\u300d\u300e\u300f]', '', x)
+        for seg in re.split(r'[。！？；]', x):
+            s = re.sub(r'[^\u3400-\u4dbf\u4e00-\u9fff]', '', seg)
+            if len(s) >= 2 and s not in out:
+                out.append(s)
+    return out
+
+
+def uncovered_sentences(full_arr, mingju_arr):
+    """全文里、名句没盖住的句子。
+
+    「盖住」= 名句里有一句与它同形，或有一句是它的一部分（名句「学而时习之」
+    在全文「子曰学而时习之」里）。短的（不足四字）只认同形，不许靠子串蒙过去。
+    """
+    mj = split_sentences(mingju_arr)
+    out = []
+    for s in split_sentences(full_arr):
+        if any(f == s or (min(len(f), len(s)) >= 4 and (f in s or s in f)) for f in mj):
+            continue
+        out.append(s)
+    return out
+
+
 def selftest_variant_mark():
     """护栏的护栏：异文判定本身要有坏例子。"""
     yes = [
@@ -122,7 +155,7 @@ def source_check_counts(poem_ids, recs=None):
     以前这三个数字只活在一个 json 里，台账不报，于是「227 全对上 / 22 部分 / 3 全不对」
     这种话只能靠人现场跑一遍才知道，报出来的数字没有单一事实源。
     0/0 不算全对上：一篇没有句子的记录不是核对通过，是没有核对。"""
-    out = {'逐句全对上': 0, '部分对上': 0, '一句都对不上': 0, '没有核对记录': 0}
+    out = {'逐句全对上': 0, '部分对上': 0, '一句都对不上': 0, '核过没有正文页': 0, '没有核对记录': 0}
     if recs is None:
         try:
             recs = json.loads((ROOT / 'data' / 'text-sources.json').read_text(encoding='utf-8'))['results']
@@ -135,6 +168,11 @@ def source_check_counts(poem_ids, recs=None):
         if pid not in poem_ids:
             continue
         seen.add(pid)
+        if r.get('no_page'):
+            # 「搜过、确实没有正文页」不是「一句都对不上」：前者是页不存在，后者是文字对不上。
+            # 混成一笔账，就会有人去改正文，而该改的其实是来源登记。
+            out['核过没有正文页'] += 1
+            continue
         lines = int(r.get('lines') or 0)
         hit = int(r.get('hit') or 0)
         if lines <= 0:
@@ -148,6 +186,25 @@ def source_check_counts(poem_ids, recs=None):
     out['没有核对记录'] += len(poem_ids) - len(seen)
     return out
 
+def selftest_sentence_gap():
+    """句子级差集必须真的会算：切不开、把标签当句子、短句靠子串蒙过去，都得当场露馅。"""
+    got = split_sentences(['子曰：“学而时习之，不亦说乎？”（《学而》）'])
+    assert got == ['子曰学而时习之不亦说乎'], '坏例：章句标签或引号没剥掉 %r' % (got,)
+    # 逗号不切句：切开会把一句劈成两半，差集当场虚报
+    assert split_sentences(['学而时习之，不亦说乎']) == ['学而时习之不亦说乎'], '坏例：逗号把一句切成了两句'
+    assert len(split_sentences(['环滁皆山也。其西南诸峰，林壑尤美。'])) == 2, '坏例：整段没切成两句'
+    assert uncovered_sentences(['醉翁亭也。作亭者谁？山之僧曰智仙也。'],
+                               ['作亭者谁？山之僧曰智仙也。']) == ['醉翁亭也'], '坏例：差集算错'
+    # 名句是全文里的一句：必须认成盖住了
+    assert uncovered_sentences(['子曰学而时习之'], ['学而时习之']) == [], '坏例：名句被漏报成没盖住'
+    # 两字的短句不许靠子串蒙过去——那是「三省」冒充「吾日三省吾身」
+    assert uncovered_sentences(['吾日三省吾身'], ['三省']) == ['吾日三省吾身'], '坏例：短句靠子串蒙成了盖住'
+    assert uncovered_sentences([], []) == [], '坏例：空输入不空输出'
+    import inspect
+    print('[ok] build-ledger --selftest 通（句子级差集 %d 处断言全部试到）'
+          % inspect.getsource(selftest_sentence_gap).count('assert '))
+
+
 def selftest_source_check():
     ids = {'a', 'b', 'c', 'd', 'e'}
     recs = [{'id': 'a', 'lines': 4, 'hit': 4}, {'id': 'b', 'lines': 4, 'hit': 2},
@@ -160,15 +217,22 @@ def selftest_source_check():
     # 5) 不许把不属于自己的记录算进来
     out2 = source_check_counts({'a'}, [{'id': 'a', 'lines': 4, 'hit': 4}, {'id': 'zzz', 'lines': 9, 'hit': 0}])
     assert out2['一句都对不上'] == 0, '坏例5：别人的记录被算进本篇'
+    # 5b) 「搜过、确实没有正文页」不许混进「一句都对不上」
+    out2b = source_check_counts({'a'}, [{'id': 'a', 'lines': 2, 'hit': 0, 'no_page': True}])
+    assert out2b['核过没有正文页'] == 1, '坏例5b：核过没有正文页的没单独计'
+    assert out2b['一句都对不上'] == 0, '坏例5b：没有正文页被算成一句都对不上'
     # 6) 文件读不到时必须报「全部没核对」，不许报 0
     out3 = source_check_counts({'a', 'b'})
     assert out3['没有核对记录'] >= 0 and sum(out3.values()) == 2, '坏例6：读不到文件时数字对不上'
-    print('[ok] 出处核对计数自检通（6 个坏例子全部试到）')
+    import inspect as _ins
+    print('[ok] 出处核对计数自检通（当场数到 %d 个坏例子，全部试到）'
+          % _ins.getsource(selftest_source_check).count('assert '))
 
 def main():
     if '--selftest' in sys.argv:
         selftest_variant_mark()
         selftest_source_check()
+        selftest_sentence_gap()
         return 0
 
     quiet = '--quiet' in sys.argv
@@ -243,6 +307,11 @@ def main():
         v_with_choice = sum(1 for x in ventries_variant if '取舍' in x)
 
         recite = fm.get('recite') or p.get('recite') or ''
+        # 「背诵要求 = full」不能只是一句话：full 到底 full 在哪、名句盖住了全文的哪几句，
+        # 必须当场算出来写进台账。以前台账只记一个字数，六篇 full 里有六篇名句没盖住全文，
+        # 却没有任何地方说得出差的是哪几句。
+        full_gap = uncovered_sentences(p.get('fullLinesPunct') or p.get('fullLines'),
+                                       p.get('linesPunct') or p.get('lines'))
         flags = []
         if not recite:
             flags.append('缺背诵要求 recite')
@@ -280,6 +349,10 @@ def main():
             'recite': recite,
             'lineCount': len(lines),
             'charCount': chars,
+            'mingjuSents': len(split_sentences(p.get('linesPunct') or p.get('lines'))),
+            'fullSents': len(split_sentences(p.get('fullLinesPunct') or p.get('fullLines'))),
+            'fullGapSents': len(full_gap),
+            'fullGapSample': full_gap[:4],
             'sections': sorted(sec.keys()),
             'hasNotes': '注释' in sec,
             'hasTranslation': '译文' in sec,
@@ -344,6 +417,9 @@ def main():
             '只有必背名句（节选收录）': sum(1 for r in rows if not r['hasFulltext']),
             '仓内有全文正文': sum(1 for r in rows if r['hasFulltext']),
             '无异文记录': sum(1 for r in rows if not r['hasVariant']),
+            # 背诵要求写 full、名句却没盖住全文的篇目（句子级，见 docs/ledger.md 那一节）
+            'full 但名句没盖住全文（篇）': sum(1 for r in rows if r['recite'] == 'full' and r['fullGapSents']),
+            'full 但名句没盖住全文（句）': sum(r['fullGapSents'] for r in rows if r['recite'] == 'full'),
             # 异文考证的完成度（docs/variants.md）：条目总数 / 带出处 / 带取舍 / 缺出处
             '异文条目总数': sum(r['variantEntries'] for r in rows),
             '异文条目带出处': sum(r['variantWithSource'] for r in rows),
@@ -433,6 +509,25 @@ def write_markdown(summary, rows, out):
     L.append('|---|---|')
     for k in sorted(summary['gapCounts']):
         L.append('| %s | %d |' % (k, summary['gapCounts'][k]))
+    L.append('')
+    L.append('## 背诵要求写 full 的篇目：名句与全文差在哪几句（当场算的）')
+    L.append('')
+    L.append('| 篇目 | 名句句数 | 全文句数 | 差几句 | 差的第一句（例） |')
+    L.append('|---|---|---|---|---|')
+    shown = 0
+    for r in rows:
+        if r['recite'] != 'full' or not r['fullGapSents']:
+            continue
+        shown += 1
+        L.append('| %s（%s） | %d | %d | %d | %s |' % (
+            r['title'], r['id'], r['mingjuSents'], r['fullSents'], r['fullGapSents'],
+            (r['fullGapSample'][0][:24] if r['fullGapSample'] else '')))
+    if not shown:
+        L.append('| — | — | — | 无 | — |')
+    L.append('')
+    L.append('句子按「。！？；」切分，章句标签（「（《学而》）」）与引号先剥掉，只比汉字；句数按去重后的句子计。')
+    L.append('「盖住」的口径：名句里有一句与它同形，或有一句是它的一部分（名句「学而时习之」在全文「子曰学而时习之」里）；不足四字的短句只认同形，不许靠子串蒙过去。')
+    L.append('这一节存在的理由：以前台账只记「背诵要求=full」和一个字数，看不出 full 到底 full 在哪。')
     L.append('')
     L.append('## 明细')
     L.append('')

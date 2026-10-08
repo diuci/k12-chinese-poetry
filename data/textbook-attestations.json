@@ -1364,7 +1364,7 @@
     {
       "id": "hua",
       "title": "画",
-      "author": "王维",
+      "author": "佚名",
       "stage": "小学",
       "volume": "一年级上册",
       "status": "lesson-not-found",
@@ -4478,26 +4478,10 @@
       "status": "partial",
       "lesson": "燕歌行并序",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30423_langdu.html",
-      "hit": 14,
+      "hit": 15,
       "total": 18,
       "textbookParas": 15,
       "miss": [
-        {
-          "kind": "全文",
-          "line": "大漠穷秋塞草腓，孤城落日鬬兵稀。",
-          "diff": [
-            {
-              "ours": "鬬",
-              "textbook": "斗",
-              "context": "秋塞草腓孤城落日斗兵稀身当恩遇常轻"
-            },
-            {
-              "ours": "",
-              "textbook": "身当恩遇常轻敌力尽关山未解围铁衣远戍辛勤久玉箸应啼别离后少妇城南欲断肠征人蓟北空",
-              "context": "腓孤城落日斗兵稀身当恩遇常轻敌力尽关山未解围铁衣远戍辛勤久玉箸应啼别离后少妇城南欲断肠征人蓟北空"
-            }
-          ]
-        },
         {
           "kind": "全文",
           "line": "身当恩遇恒轻敌，力尽关山未解围。",

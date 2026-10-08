@@ -262,6 +262,27 @@ def search_pages(query):
 OVERRIDES_PATH = ROOT / 'data' / 'source-overrides.json'
 
 
+def override_problems(overrides):
+    """「维基文库没有正文页」这个出口必须带着证据用。
+
+    为什么必须有：没有这道约束，「没有来源页」就会变成偷懒的出口——
+    写一行 no_page 就能让一篇永远不用核。所以它必须交代：搜过哪些句子、为什么判定没有。
+    """
+    problems = []
+    for key in sorted(overrides):
+        ov = overrides[key] or {}
+        if ov.get('no_page'):
+            if ov.get('pages'):
+                problems.append('%s：既说「没有正文页」又给了页名，二者只能留一个' % key)
+            if not (ov.get('note') or '').strip():
+                problems.append('%s：说「没有正文页」却没写为什么' % key)
+            if not (ov.get('searched') or []):
+                problems.append('%s：说「没有正文页」却没写下搜过哪些句子——下次没人能重走这条路' % key)
+        elif not (ov.get('pages') or []):
+            problems.append('%s：既没给页名，也没说「没有正文页」' % key)
+    return problems
+
+
 def load_overrides():
     if not OVERRIDES_PATH.exists():
         return {}
@@ -292,7 +313,10 @@ VARIANT_GLYPHS = {'飮': '饮', '於': '于', '说': '说', '説': '说',
                   '衞': '卫', '戹': '厄', '吿': '告',
                   # 第二批：同样是在来源页上亲眼看到的写法，每一对都过了「两边读音必须相同」那条自检：
                   # 蘭亭集序「山隂」「懐」「舎」、老子翼「乆」、文章辨體彚選「愼」、過秦論「鬬」、滕王閣序「𬴂」。
-                  '隂': '阴', '懐': '怀', '乆': '久', '愼': '慎', '鬬': '斗', '舎': '舍', '𬴂': '騑'}
+                  '隂': '阴', '懐': '怀', '乆': '久', '愼': '慎', '鬬': '斗', '舎': '舍', '𬴂': '騑',
+                  # 第三批：誠齋集 (四庫全書本)/卷011「穉子弄氷」那一行上亲眼看到的写法。
+                  # 没收的：彩/綵/䌽——那一篇页里写作「彩䌽丝」，是页自己的异体夹写，交给按顺序那一档去认，不进这张表。
+                  '穉': '稚', '氷': '冰'}
 # 试过但没收的（不是同一个字的另一种写法，是真异文，留在「没对上」里给读者看）：
 #   阁/合、己/已、又/自、山/峰、弈/奕、爱/映、至/宿、讥/议、鸣/声、纕/𬙋、𫐐/𫐓、
 #   蔽/敝、那/哪、渡/度、歧/岐、欤/与——其中读音不同的那几对直接被自检拦下。
@@ -451,6 +475,9 @@ def main():
     dead = sorted(k for k in overrides if k not in live)
     if dead:
         print('!! source-overrides.json 里有对不上任何篇目的键（过期，必须删）：%s' % '、'.join(dead))
+    bad = override_problems(overrides)
+    if bad:
+        raise SystemExit('!! source-overrides.json 有问题：\n  ' + '\n  '.join(bad))
 
     results = []
     stats = {'attested': 0, 'partial': 0, 'notfound': 0, 'nosource': 0, 'withVariants': 0}
@@ -476,6 +503,20 @@ def main():
         try:
             best = None
             ov = overrides.get(p['id'])
+            if ov and ov.get('no_page'):
+                # 仓内搜过、维基文库确实没有这首诗的正文页：如实记「没有来源页」。
+                # 不许为了台账好看，把一个不含这首诗的页名写进来源页那一栏。
+                stats['nosource'] += 1
+                rec['override'] = ov.get('note', '')
+                # 下游工具不许靠「page 是空的」猜这是哪一种空：
+                # 猜就会把「仓内核过确实没有」和「我们没去核」算成同一件事。
+                rec['no_page'] = True
+                rec['searched'] = list(ov.get('searched') or [])
+                rec['miss'] = [{'line': ln, 'nearest': None} for ln in lines]
+                results.append(rec)
+                print('[%3d/%3d] -- %s %s  0/%d 句对上  仓内核过：维基文库没有正文页（搜过 %d 个串）'
+                      % (n, len(poems), title, author, rec['lines'], len(rec['searched'])))
+                continue
             if ov:
                 pages = ov['pages']
                 if ov.get('union'):
@@ -620,9 +661,15 @@ def main():
 
 def selftest():
     """这张字表必须自带坏例子，否则它就是一张没人验过的表。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
     # 坏例1：页里写作「未甞往也」，我们作「未尝往也」——不认这对，赤壁赋永远算没核到
-    assert line_in('逝者如斯而未尝往也', '客亦知夫水与月乎逝者如斯而未甞往也盈虚者如彼') is not None, \
-        '坏例1：甞/尝 没被认成同一个字'
+    must(line_in('逝者如斯而未尝往也', '客亦知夫水与月乎逝者如斯而未甞往也盈虚者如彼') is not None,
+         '坏例1：甞/尝 没被认成同一个字')
     # 坏例2：髙/高、靑/青、槩/概、顚/颠、衞/卫、戹/厄、吿/告、彊/强 同样必须认
     # 每一对都写成「我们这样写 / 页里那样写」的真句子，不许拿 xx 糊过去
     for a, b, ours, page in (
@@ -633,10 +680,10 @@ def selftest():
             ('卫', '衞', '开关延卫', '于是秦人开关延衞'),
             ('厄', '戹', '此人皆厄', '此人皆戹如此'),
             ('告', '吿', '告与我的事', '吿与我的事')):
-        assert line_in(ours, page) is not None, '坏例2：页里写作「%s」我们写作「%s」，没并成同一个字' % (b, a)
+        must(line_in(ours, page) is not None, '坏例2：页里写作「%s」我们写作「%s」，没并成同一个字' % (b, a))
     # 坏例3：义近字与真异文不许混进这张表（說/悅、知/智、渡/度、蔽/敝、泠/冷）
     for a, b in (('說', '悅'), ('知', '智'), ('渡', '度'), ('蔽', '敝'), ('泠', '冷'), ('岐', '歧')):
-        assert a not in VARIANT_GLYPHS and b not in VARIANT_GLYPHS, '坏例3：%s/%s 被当成同一个字' % (a, b)
+        must(a not in VARIANT_GLYPHS and b not in VARIANT_GLYPHS, '坏例3：%s/%s 被当成同一个字' % (a, b))
     # 表里每一对必须是「同一个字的另一种写法」：两边读音必须相同（拿 Unihan kMandarin 验）
     mand = {}
     with (ROOT / 'data' / 'unihan' / 'Unihan_Readings.txt').open(encoding='utf-8') as f:
@@ -649,14 +696,29 @@ def selftest():
         if a == b:
             continue
         ra, rb = mand.get(a), mand.get(b)
-        assert ra and rb and (ra & rb), '坏例3b：%s(%s) 与 %s(%s) 读音不同，不该当同一个字' % (
-            a, '/'.join(sorted(ra or [])), b, '/'.join(sorted(rb or [])))
+        must(ra and rb and (ra & rb), '坏例3b：%s(%s) 与 %s(%s) 读音不同，不该当同一个字' % (
+             a, '/'.join(sorted(ra or [])), b, '/'.join(sorted(rb or []))))
     # 坏例4：页里明明白白有这句，不许因为窗口太脆判成没对上
-    assert line_in('飘飘乎如遗世独立羽化而登仙', '如冯虚御风而不知其所止飘飘乎如遗世独立羽化而登仙焉') is not None, \
-        '坏例4：页里有的句子被判成没对上'
+    must(line_in('飘飘乎如遗世独立羽化而登仙', '如冯虚御风而不知其所止飘飘乎如遗世独立羽化而登仙焉') is not None,
+         '坏例4：页里有的句子被判成没对上')
     # 坏例5：页里真没有这句，必须报没对上——字表不许把它抹平成「对上了」
-    assert line_in('此四君者皆明智而忠信', '贾谊过秦论云诸侯不测') is None, '坏例5：没有的句子被当成对上了'
-    print('[ok] check-text-sources --selftest 通（5 个坏例子全部试到）')
+    must(line_in('此四君者皆明智而忠信', '贾谊过秦论云诸侯不测') is None, '坏例5：没有的句子被当成对上了')
+    # 坏例6：「维基文库没有正文页」这个出口不许空着用：没写为什么、没写搜过哪些句子、
+    # 又给页名、或干脆两头都不给，都必须当场报错——否则它就会变成让一篇永远不用核的出口
+    must(any('没写为什么' in x for x in override_problems({'某篇': {'no_page': True, 'note': '', 'searched': []}})),
+         '坏例6：no_page 没写理由却没报错')
+    must(any('搜过哪些句子' in x for x in override_problems({'某篇': {'no_page': True, 'note': '搜过', 'searched': []}})),
+         '坏例6：no_page 没写搜过哪些句子却没报错')
+    must(any('二者只能留一个' in x for x in override_problems({'某篇': {
+        'no_page': True, 'note': '搜过两句都没有', 'searched': ['頭上紅冠不用裁'], 'pages': ['題畫 (唐寅)']}})),
+         '坏例6：no_page 又给了页名却没报错')
+    must(any('既没给页名' in x for x in override_problems({'某篇': {'pages': []}})),
+         '坏例6：既没页名也没说没有正文页却没报错')
+    # 坏例6b：带着证据用这个出口，不许误伤
+    must(override_problems({'某篇': {'no_page': True, 'note': '搜过两句都没有',
+                                    'searched': ['頭上紅冠不用裁', '一叫千門萬戶開']}}) == [],
+         '坏例6b：带着证据的 no_page 被误伤')
+    print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
 

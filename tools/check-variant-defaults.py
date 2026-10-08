@@ -79,6 +79,8 @@ def run():
         for e in entries(section_body(text, '异文')):
             if not VM.search(e):
                 continue
+            if '取舍' in e:
+                continue          # 这一条自己写了取舍：不是「做过却没写」，不许报
             alt, info = check_one(e)
             if not alt:
                 continue
@@ -100,6 +102,8 @@ def selftest():
     def one(t):
         body = body_text(t)
         for e in entries(section_body(t, '异文')):
+            if '取舍' in e:
+                continue
             alt, info = check_one(e)
             if alt:
                 a, k = info
@@ -110,7 +114,12 @@ def selftest():
     assert one(bad), '坏例2：其实做过取舍却没写的没被抓到'
     assert not one(coincidence), '坏例3：正文里另有这个字就被报，误报'
     assert not one(plain), '坏例4：没有别本断言的条目被拿去判定'
-    print('[ok] check-variant-defaults --selftest 通（4 个坏例子全部试到）')
+    # 5) 已经写了取舍的条目不许报——这个工具找的是「做过取舍却没写下来」
+    chosen = '## 全文\n\n孤城落日斗兵稀。\n\n## 异文\n- 「孤城落日鬬兵稀」：来源页作「鬬兵稀」。取舍：从教材本作「斗」。出处：X\n'
+    assert not one(chosen), '坏例5：写了取舍的条目被报成没写'
+    import inspect
+    print('[ok] check-variant-defaults --selftest 通（%d 个坏例子全部试到）'
+          % inspect.getsource(selftest).count('assert '))
     return 0
 
 def main():

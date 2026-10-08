@@ -2,10 +2,10 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-09",
   "stats": {
-    "attested": 213,
-    "partial": 36,
-    "notfound": 3,
-    "nosource": 0,
+    "attested": 214,
+    "partial": 37,
+    "notfound": 0,
+    "nosource": 1,
     "withVariants": 60
   },
   "results": [
@@ -1715,14 +1715,21 @@
       "title": "送杜少府之任蜀州",
       "author": "王勃",
       "stage": "初中",
-      "page": "全蜀藝文志 (四庫全書本)/卷20",
-      "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E8%9C%80%E8%97%9D%E6%96%87%E5%BF%97%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B720",
+      "page": "古今詩刪 (四庫全書本)/卷14",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E4%BB%8A%E8%A9%A9%E5%88%AA%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B714",
       "lines": 4,
-      "hit": 4,
-      "miss": [],
-      "variantNotes": [
-        "一作知"
+      "hit": 3,
+      "miss": [
+        {
+          "line": "海内存知己天涯若比邻",
+          "nearest": {
+            "line": "海内存知己天涯若比邻",
+            "source": "与君离别意同是宦游人海内存知己天涯若比隣",
+            "ratio": 0.6
+          }
+        }
       ],
+      "variantNotes": [],
       "variants": []
     },
     {
@@ -1805,25 +1812,14 @@
     {
       "id": "hua",
       "title": "画",
-      "author": "王维",
+      "author": "佚名",
       "stage": "小学",
-      "page": "堯山堂外紀/卷061",
-      "url": "https://zh.wikisource.org/wiki/%E5%A0%AF%E5%B1%B1%E5%A0%82%E5%A4%96%E7%B4%80/%E5%8D%B7061",
+      "page": "画",
+      "url": "https://zh.wikisource.org/wiki/%E7%94%BB",
       "lines": 2,
-      "hit": 0,
-      "miss": [
-        {
-          "line": "远看山有色近听水无声",
-          "nearest": null
-        },
-        {
-          "line": "春去花还在人来鸟不惊",
-          "nearest": null
-        }
-      ],
-      "variantNotes": [
-        "又作两绝云"
-      ],
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
       "variants": []
     },
     {
@@ -1896,8 +1892,8 @@
       "title": "画鸡",
       "author": "唐寅",
       "stage": "小学",
-      "page": "題畫 (唐寅)",
-      "url": "https://zh.wikisource.org/wiki/%E9%A1%8C%E7%95%AB%20%28%E5%94%90%E5%AF%85%29",
+      "page": null,
+      "url": null,
       "lines": 2,
       "hit": 0,
       "miss": [
@@ -1911,7 +1907,17 @@
         }
       ],
       "variantNotes": [],
-      "variants": []
+      "variants": [],
+      "override": "维基文库没有唐寅《画鸡》的正文页：上面六个搜索串（含带引号的精确串）当场搜过，没有一页含这首。撤掉原来那两个假页名——「題畫 (唐寅)」全页 94 字，是另一组题画诗；「御定厯代題畫詩類」卷038 全页 7475 字没有这首（卷094 有别人的题画鸡诗）。石渠宝笈卷38 著录「明沈周畫雞一軸」题诗「絳冠髙幘不須裁，一身潔白〔脱一字〕中來。平生不解多言語，一叫千門萬戸開」，与这首文字相近而不同，只作线索，不作本篇正文来源。",
+      "no_page": true,
+      "searched": [
+        "頭上紅冠不用裁",
+        "紅冠不用裁",
+        "平生不敢輕言語",
+        "滿身雪白",
+        "一叫千門",
+        "畫雞 唐寅"
+      ]
     },
     {
       "id": "xiangsi",
@@ -2723,23 +2729,12 @@
       "title": "稚子弄冰",
       "author": "杨万里",
       "stage": "小学",
-      "page": "誠齋集/卷002",
-      "url": "https://zh.wikisource.org/wiki/%E8%AA%A0%E9%BD%8B%E9%9B%86/%E5%8D%B7002",
+      "page": "誠齋集 (四庫全書本)/卷011",
+      "url": "https://zh.wikisource.org/wiki/%E8%AA%A0%E9%BD%8B%E9%9B%86%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7011",
       "lines": 2,
-      "hit": 0,
-      "miss": [
-        {
-          "line": "稚子金盆脱晓冰彩丝穿取当银钲",
-          "nearest": null
-        },
-        {
-          "line": "敲成玉磬穿林响忽作玻璃碎地声",
-          "nearest": null
-        }
-      ],
-      "variantNotes": [
-        "又作阴"
-      ],
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
       "variants": []
     },
     {
@@ -3118,18 +3113,42 @@
       "title": "石灰吟",
       "author": "于谦",
       "stage": "小学",
-      "page": "堯山堂外紀/卷083",
-      "url": "https://zh.wikisource.org/wiki/%E5%A0%AF%E5%B1%B1%E5%A0%82%E5%A4%96%E7%B4%80/%E5%8D%B7083",
+      "page": "詠石灰 + 元明事類鈔 (四庫全書本)/卷22",
+      "url": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%9F%B3%E7%81%B0",
       "lines": 2,
       "hit": 1,
       "miss": [
         {
-          "line": "千锤万凿出深山烈火焚烧若等闲",
-          "nearest": null
+          "line": "粉骨碎身浑不怕要留清白在人间",
+          "nearest": {
+            "line": "粉骨碎身浑不怕要留清白在人间",
+            "source": "骨碎身一作粉身碎骨全不顾一作怕要留清白在人间此作",
+            "ratio": 0.632
+          }
         }
       ],
       "variantNotes": [],
-      "variants": []
+      "variants": [
+        {
+          "ours": "击",
+          "other": "凿",
+          "context": "千錘萬击出深山，烈火焚燒若等閒。粉骨碎身全不顾，要留清白在人",
+          "page": "詠石灰"
+        },
+        {
+          "ours": "粉骨碎身",
+          "other": "粉身碎骨",
+          "context": "萬击出深山，烈火焚燒若等閒。粉骨碎身全不顾，要留清白在人間。Category:明文",
+          "page": "詠石灰"
+        },
+        {
+          "ours": "顾",
+          "other": "怕",
+          "context": "深山，烈火焚燒若等閒。粉骨碎身全不顾，要留清白在人間。Category:明文",
+          "page": "詠石灰"
+        }
+      ],
+      "override": "自动搜索挑中的是「堯山堂外紀」卷083——那是笔记不是诗集。这首在维基文库的单页题作《詠石灰》（于謙，页注「又名《石灰吟》」）：千錘萬{{另|击|凿}}出深山，烈火焚燒若等閒。{{另|粉骨碎身|粉身碎骨}}全不{{另|顧|怕}}，要留清白在人間。《元明事類鈔》卷22 是第二条独立见证。"
     },
     {
       "id": "zhushi",
