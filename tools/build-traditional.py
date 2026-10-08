@@ -329,7 +329,7 @@ def page_char_for(ctx, simp, page, page_s):
     return page[s + mapped], diffs, off
 
 
-APPARATUS = ('必背名句', '注释', '译文', '赏析', '异文')
+SKIP_SECTIONS = {'玩法数据', '出处核对'}
 
 
 def md_sections(md_path):
@@ -340,7 +340,9 @@ def md_sections(md_path):
         if ln.startswith('## '):
             cur = ln[3:].strip()
             secs.setdefault(cur, [])
-        elif cur is not None:
+        elif cur is not None and not ln.strip().startswith('>'):
+            # 「> 出处：…」「> 收录判断：…」是元信息，站点也不渲染它们；
+            # 把它们当正文派生，「全文」就会多出两行，与正文派生对不上。
             secs[cur].append(ln)
     return {k: [x for x in v if x.strip()] for k, v in secs.items()}
 
@@ -393,12 +395,16 @@ def build():
                     x['field'] = field
                     x['line'] = li
                     marks.append(x)
-        # ---- 注释 / 译文 / 赏析 / 必背名句 / 异文：同样派生，同样过闸门 ----
-        sections_trad, app_marks = {}, []
+        page = page_traditional(src.get(c['id']) or {})
+        page_s = to_simplified(page, t2p, t2c)
+        # ---- 正文之外的每一节：同样派生、同样过页证据、同样过闸门 ----
+        # 注释译文里也引用古籍原句，那些句子同样该由来源页说话，
+        # 否则同一篇里正文写「踏裏裂」、注释写「踏里裂」，一页两种字形。
+        sections_trad, sec_src = {}, {}
         md_path = ROOT / c['_path'] if c.get('_path') else None
         if md_path and md_path.exists():
             secs = md_sections(md_path)
-            for name in APPARATUS:
+            for name in [k for k in secs if k not in SKIP_SECTIONS]:
                 arr = secs.get(name) or []
                 if not arr:
                     continue
@@ -411,26 +417,9 @@ def build():
                         x['field'] = 'sec:' + name
                         x['line'] = li
                         mm.append(x)
-                apply_rules(mm, rules)
-                vet_table_choices(trad_arr, arr, mm, t2p, t2c, 'sec:' + name)
-                for li in range(len(arr)):
-                    sel = [m for m in mm if m['line'] == li]
-                    if any(m.get('pick') for m in sel):
-                        trad_arr[li] = apply_picks(trad_arr[li], sel)
-                for seg in trad_arr:
-                    for ch in seg:
-                        if ch in s2c and ch not in s2c[ch] and ch not in own2:
-                            raise SystemExit('繁体注释/译文里留下简体字「%s」（%s·%s）：'
-                                             '表要求换成 %s，这一处的裁定必须给出写法'
-                                             % (ch, c['title'], name, s2c[ch][0]))
-                for x in mm:
-                    counts2[x['decision']] = counts2.get(x['decision'], 0) + 1
-                # 只登记说得清依据的那几档：table 的「表只给一个候选」不必逐条存，
-                # 存下来 data/traditional.json 会长到没法读。
-                app_marks += [x for x in mm if x['decision'] in ('pending', 'rule', 'keep')]
+                marks += mm
                 sections_trad[name] = trad_arr
-        page = page_traditional(src.get(c['id']) or {})
-        page_s = to_simplified(page, t2p, t2c)
+                sec_src[name] = arr
         for x in marks:
             if x['decision'] not in ('pending', 'table'):
                 continue
@@ -476,7 +465,8 @@ def build():
                     arr[li] = arr[li]
                     trad[li] = apply_picks(trad[li], sel)
         for x in marks:
-            counts[x['decision']] += 1
+            if not x['field'].startswith('sec:'):
+                counts[x['decision']] += 1
         # 闸门：繁体正文里不许留下只有简体才用的字（表把它换掉、我们却没换 = 繁体页上出现简体字）
         for field, trad in (('full', trad_full), ('lines', trad_lines)):
             for seg in trad:
@@ -484,6 +474,37 @@ def build():
                     if ch in s2c and ch not in s2c[ch] and ch not in own:
                         raise SystemExit('繁体派生留下简体字「%s」（%s·%s）：表要求换成 %s，'
                                          '这一处的裁定必须给出繁体写法' % (ch, c['title'], field, s2c[ch][0]))
+        for name, trad_arr in sections_trad.items():
+            arr = sec_src[name]
+            vet_table_choices(trad_arr, arr, marks, t2p, t2c, 'sec:' + name)
+            for li in range(len(arr)):
+                sel = [m for m in marks if m['field'] == 'sec:' + name and m['line'] == li]
+                if any(m.get('pick') for m in sel):
+                    trad_arr[li] = apply_picks(trad_arr[li], sel)
+            own2 = own | set(''.join(arr))
+            for seg in trad_arr:
+                for ch in seg:
+                    if ch in s2c and ch not in s2c[ch] and ch not in own2:
+                        raise SystemExit('繁体「%s」节里留下简体字「%s」（%s）：表要求换成 %s，'
+                                         '这一处的裁定必须给出写法' % (name, ch, c['title'], s2c[ch][0]))
+        # 同一篇不许出现两种繁体：正文派生与「全文 / 必背名句」节的派生必须逐字一致
+        for name, want in (('全文', trad_full), ('必背全文', trad_full), ('必背名句', trad_lines)):
+            got = sections_trad.get(name)
+            if not got or not want:
+                continue
+            a = ''.join(strip_punct(x) for x in got)
+            b = ''.join(strip_punct(x) for x in want)
+            if a != b:
+                raise SystemExit('同一篇里两种繁体对不上：%s「%s」这一节的派生与正文派生不一致'
+                                 % (c['title'], name))
+        # 注释译文那几节只登记说得清依据的档：待定、裁定、退回、异文，
+        # 以及「页推翻了表」的 page（页与表一致的那种确认不存，存下来文件大到没法读）
+        app_marks = [x for x in marks if x['field'].startswith('sec:')
+                     and (x['decision'] in ('pending', 'rule', 'keep', 'variant')
+                          or (x['decision'] == 'page' and x.get('pick')))]
+        for x in marks:
+            if x['field'].startswith('sec:'):
+                counts2[x['decision']] = counts2.get(x['decision'], 0) + 1
         for field, arr, trad in (('full', full, trad_full), ('lines', lines, trad_lines)):
             for li, (seg, tt) in enumerate(zip(arr, trad)):
                 back = to_simplified(tt, t2p, t2c)
@@ -519,7 +540,8 @@ def build():
                                      'unexplained': unexplained})
         out_rows.append({'id': c['id'], 'title': c['title'], 'page': (src.get(c['id']) or {}).get('page', ''),
                          'text_trad': trad_full, 'lines_trad': trad_lines,
-                         'sections_trad': sections_trad, 'marks': marks,
+                         'sections_trad': sections_trad,
+                         'marks': [m for m in marks if not m['field'].startswith('sec:')],
                          'marks_app': app_marks})
 
     JOUT.write_text(json.dumps({'generated': datetime.date.today().isoformat(),
@@ -543,7 +565,7 @@ def build():
          '| variant | %d | 表要换字，但来源页那一处写的是另一个字 —— 那是异文，正文照抄我们的用字 |' % counts['variant'],
          '| pending | %d | 没依据 —— 待定，不许当成已定 |' % counts['pending'], '',
          '',
-         '注释、译文、赏析、必背名句、异文这几节（我们自己写的现代文字）另外计数：'
+         '正文之外的每一节（注释、译文、赏析、全文、异文、收录范围、考点……；玩法数据与出处核对除外）另外计数：'
          'table %d / rule %d / identity %d / keep %d / pending %d。'
          '这几节没有来源页可查，依据只有裁定表和表；表只给一个候选时照表，'
          '给多个候选而裁定表没说的，列进下面的待定清单。'
