@@ -45,6 +45,7 @@ python tools/validate.py --selftest
 python tools/check-duplicates.py
 python tools/check-contamination.py
 python tools/check-text-sources.py
+python tools/build-source-check.py
 python tools/build-textbook-lessons.py --report
 python tools/apply-textbook-status.py --write
 > **链条必须一处失败就停。** PowerShell 里一条命令失败不会拦住后面的命令，
@@ -52,7 +53,6 @@ python tools/apply-textbook-status.py --write
 > 链条却还是绿的、还提交了。所以每一步之后都要 `if ($LASTEXITCODE -ne 0) { exit 1 }`。
 
 python tools/build-ledger.py --selftest
-python tools/build-ledger.py
 python tools/build-textbook-table.py
 python tools/fix-meta-lines.py --check
 python tools/enrich-variants.py --selftest
@@ -63,10 +63,15 @@ python tools/check-variant-defaults.py --selftest
 python tools/verify-variant-claims.py --write --refresh
 python tools/extract-fulltext-wikitext.py --selftest
 python tools/verify-variant-claims.py --selftest
+python tools/build-ledger.py
 node tools/check-legal.mjs
 ```
 
-链条里每一环都是护栏。两个容易踩的坑，都踩过：
+链条里每一环都是护栏。**台账必须排在会写盘的考证之后**：
+`verify-variant-claims.py --write` 会改篇内异文条目，台账若排在它前面，读到的就是改之前的旧数——
+`audit-content.py` 自己重算一遍异文条目数，正是为了把这种错位当场抓出来（踩过一次）。
+
+两个容易踩的坑，都踩过：
 
 - `check-text-sources.py --limit N` 是试跑，**不许覆盖正式表**（现在试跑写到 `data/text-sources.partial.json`）。
   以前 `--limit 3` 跑一次，正式表从 251 篇变成 3 篇，不报错，后面所有读这张表的检查安静地读到残缺数据。
