@@ -48,13 +48,13 @@
     ],
     "gapCounts": {
       "缺背诵要求": 0,
-      "只有必背名句（节选收录）": 15,
-      "仓内有全文正文": 237,
-      "无异文记录": 177,
-      "异文条目总数": 470,
+      "只有必背名句（节选收录）": 9,
+      "仓内有全文正文": 243,
+      "无异文记录": 172,
+      "异文条目总数": 509,
       "异文条目带出处": 61,
-      "异文条目带取舍": 64,
-      "异文条目缺出处": 409,
+      "异文条目带取舍": 102,
+      "异文条目缺出处": 448,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
       "重复副本": 1,
@@ -1253,6 +1253,8 @@
       "lineCount": 2,
       "charCount": 16,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "玩法数据",
@@ -1264,15 +1266,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": true,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantWithSource": 0,
       "variantWithChoice": 0,
-      "hasFulltext": false,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/八年级下册/关雎.md"
     },
     {
@@ -2130,6 +2130,8 @@
       "lineCount": 2,
       "charCount": 37,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -2140,15 +2142,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 2,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/八年级上册/记承天寺夜游.md"
     },
     {
@@ -3182,6 +3182,8 @@
       "lineCount": 3,
       "charCount": 31,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -3192,15 +3194,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 23,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 23,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级下册/出师表.md"
     },
     {
@@ -3317,6 +3317,7 @@
       "lineCount": 6,
       "charCount": 154,
       "sections": [
+        "全文",
         "全文（教材节选部分）",
         "异文",
         "必背名句",
@@ -3330,10 +3331,10 @@
       "hasFamous": true,
       "hasPlay": false,
       "hasVariant": true,
-      "variantEntries": 4,
+      "variantEntries": 12,
       "variantWithSource": 1,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 8,
+      "hasFulltext": true,
       "pairsCount": 3,
       "flags": [],
       "path": "poems/初中/九年级下册/送东阳马生序.md"
@@ -3362,6 +3363,8 @@
       "lineCount": 3,
       "charCount": 44,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -3372,15 +3375,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 2,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 2,
+      "hasFulltext": true,
       "pairsCount": 1,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/九年级上册/湖心亭看雪.md"
     },
     {
@@ -11185,6 +11186,8 @@
       "lineCount": 4,
       "charCount": 49,
       "sections": [
+        "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -11195,15 +11198,13 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 3,
       "variantWithSource": 0,
-      "variantWithChoice": 0,
-      "hasFulltext": false,
+      "variantWithChoice": 3,
+      "hasFulltext": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/高中/必修下册/念奴娇·过洞庭.md"
     },
     {

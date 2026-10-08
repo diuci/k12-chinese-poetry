@@ -49,7 +49,10 @@ def split_params(seg):
     return parts
 
 
-KEEP_FIRST = {'專', '专', 'YL', 'YL2', '另', '另2', '校', '注', '别', '它'}
+KEEP_FIRST = {'專', '专', 'YL', 'YL2', '另', '另2', '校', '别', 'ProperNoun'}
+# 「注」原来也在白名单里，结果把校勘笔记写进了正文：出师表那一页写作
+# 「益州疲敝{{注|《诸葛亮集》作「敝」。}}」，留第一个参数就变成「益州疲敝《诸葛亮集》作「敝」。。」——
+# 注释混进了课文。现在丢掉整个 {{注|…}}；真丢了正文，必背句核验会找不到，宁可不做。
 DROP_ALL = {'Header', 'header', 'PD', 'PD-old', 'PD-art', 'CQ', 'YearCat', 'TitleTOC',
             '北宋作品', '唐詩', 'ProperNoun', 'noinclude', '底', 'Foot', 'notices'}
 
