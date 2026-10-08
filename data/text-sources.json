@@ -231,22 +231,14 @@
       "title": "游山西村",
       "author": "陆游",
       "stage": "初中",
-      "page": "兩宋名賢小集 (四庫全書本)/卷113",
-      "url": "https://zh.wikisource.org/wiki/%E5%85%A9%E5%AE%8B%E5%90%8D%E8%B3%A2%E5%B0%8F%E9%9B%86%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7113",
+      "page": "遊山西村",
+      "url": "https://zh.wikisource.org/wiki/%E9%81%8A%E5%B1%B1%E8%A5%BF%E6%9D%91",
       "lines": 4,
-      "hit": 2,
-      "miss": [
-        {
-          "line": "箫鼓追随春社近衣冠简朴古风存",
-          "nearest": null
-        },
-        {
-          "line": "从今若许闲乘月拄杖无时夜叩门",
-          "nearest": null
-        }
-      ],
+      "hit": 4,
+      "miss": [],
       "variantNotes": [],
-      "variants": []
+      "variants": [],
+      "override": "全仓重跑出处核对时发现原比对页装不下本篇（页缺句 / 页被版权提示截断 / 页里有生僻字残迹）。这一页按句核装得下本篇，加进来当比对页。"
     },
     {
       "id": "ailianshuo",
@@ -1228,29 +1220,14 @@
       "title": "野望",
       "author": "王绩",
       "stage": "初中",
-      "page": "野望 (王績)",
-      "url": "https://zh.wikisource.org/wiki/%E9%87%8E%E6%9C%9B%20%28%E7%8E%8B%E7%B8%BE%29",
+      "page": "唐詩鏡 (四庫全書本)/卷01",
+      "url": "https://zh.wikisource.org/wiki/%E5%94%90%E8%A9%A9%E9%8F%A1%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B701",
       "lines": 4,
-      "hit": 3,
-      "miss": [
-        {
-          "line": "东皋薄暮望徙倚欲何依",
-          "nearest": {
-            "line": "东皋薄暮望徙倚欲何依",
-            "source": "信息姊妹计划:数据项东皐薄暮望徙倚欲何依",
-            "ratio": 0.6
-          }
-        }
-      ],
+      "hit": 4,
+      "miss": [],
       "variantNotes": [],
-      "variants": [
-        {
-          "ours": "秋",
-          "other": "春",
-          "context": "東皐薄暮望，徙倚欲何依。樹樹皆秋色，山山唯落暉。牧人驅犢返，獵馬帶禽歸。相顧無相識，長",
-          "page": "野望 (王績)"
-        }
-      ]
+      "variants": [],
+      "override": "全仓重跑出处核对时发现原比对页装不下本篇（页缺句 / 页被版权提示截断 / 页里有生僻字残迹）。这一页按句核装得下本篇，加进来当比对页。"
     },
     {
       "id": "guanju",
@@ -3067,18 +3044,14 @@
       "title": "迢迢牵牛星",
       "author": "佚名",
       "stage": "小学",
-      "page": "迢迢牽牛星",
-      "url": "https://zh.wikisource.org/wiki/%E8%BF%A2%E8%BF%A2%E7%89%BD%E7%89%9B%E6%98%9F",
+      "page": "古今詩刪 (四庫全書本)/卷06",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E4%BB%8A%E8%A9%A9%E5%88%AA%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B706",
       "lines": 5,
-      "hit": 4,
-      "miss": [
-        {
-          "line": "纤纤擢素手札札弄机杼",
-          "nearest": null
-        }
-      ],
+      "hit": 5,
+      "miss": [],
       "variantNotes": [],
-      "variants": []
+      "variants": [],
+      "override": "全仓重跑出处核对时发现原比对页装不下本篇（页缺句 / 页被版权提示截断 / 页里有生僻字残迹）。这一页按句核装得下本篇，加进来当比对页。"
     },
     {
       "id": "songyuaner",
@@ -5112,20 +5085,11 @@
       "title": "兰亭集序",
       "author": "王羲之",
       "stage": "高中",
-      "page": "蘭亭集序",
+      "page": "蘭亭集序 + 文章辨體彚選 (四庫全書本)/卷331",
       "url": "https://zh.wikisource.org/wiki/%E8%98%AD%E4%BA%AD%E9%9B%86%E5%BA%8F",
       "lines": 4,
-      "hit": 3,
-      "miss": [
-        {
-          "line": "后之览者亦将有感于斯文",
-          "nearest": {
-            "line": "后之览者亦将有感于斯文",
-            "source": "以兴懐其致一也后之揽〈览〉者亦将有感扵斯文",
-            "ratio": 0.625
-          }
-        }
-      ],
+      "hit": 4,
+      "miss": [],
       "variantNotes": [],
       "variants": [
         {
@@ -5134,7 +5098,8 @@
           "context": "躁不同，當其欣扵所遇，暫得扵己，怏然自足，不知老之将至。及其所之既惓，情随事遷，感慨係之",
           "page": "蘭亭集序"
         }
-      ]
+      ],
+      "override": "全仓重跑出处核对时发现原比对页装不下本篇（页缺句 / 页被版权提示截断 / 页里有生僻字残迹）。这一页按句核装得下本篇，加进来当比对页。 本篇自己的单页必须留在比对页里：它是篇内 9 条异文的出处页，加新页不能把它顶掉。"
     },
     {
       "id": "kezhi",
@@ -5518,22 +5483,14 @@
       "title": "离骚",
       "author": "屈原",
       "stage": "高中",
-      "page": "離騷",
+      "page": "離騷 + 經史百家雜鈔/卷3",
       "url": "https://zh.wikisource.org/wiki/%E9%9B%A2%E9%A8%B7",
       "lines": 4,
-      "hit": 3,
-      "miss": [
-        {
-          "line": "路漫漫其修远兮吾将上下而求索",
-          "nearest": {
-            "line": "路漫漫其修远兮吾将上下而求索",
-            "source": "望崦嵫而勿迫路曼曼其修脩远兮吾将上下而求索饮余马",
-            "ratio": 0.632
-          }
-        }
-      ],
+      "hit": 4,
+      "miss": [],
       "variantNotes": [],
-      "variants": []
+      "variants": [],
+      "override": "全仓重跑出处核对时发现原比对页装不下本篇（页缺句 / 页被版权提示截断 / 页里有生僻字残迹）。这一页按句核装得下本篇，加进来当比对页。 本篇自己的单页必须留在比对页里：它是篇内 9 条异文的出处页，加新页不能把它顶掉。"
     },
     {
       "id": "zhongshu-guotuotuo",
