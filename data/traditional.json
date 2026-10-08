@@ -3,20 +3,20 @@
  "note": "简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / pending 没依据，留在待定清单。",
  "counts": {
   "page": 9514,
-  "table": 1168,
-  "rule": 44,
+  "table": 1166,
+  "rule": 46,
   "keep": 0,
-  "identity": 1154,
+  "identity": 1341,
   "variant": 5,
   "pending": 0
  },
  "counts_apparatus": {
-  "table": 34724,
-  "rule": 2028,
-  "identity": 6595,
+  "table": 34824,
+  "rule": 2063,
+  "identity": 8043,
   "keep": 92,
   "pending": 0,
-  "page": 8886,
+  "page": 9774,
   "variant": 5
  },
  "reversal": [
@@ -235,6 +235,380 @@
    "chars": "覆→复",
    "basis": "照抄",
    "unexplained": []
+  }
+ ],
+ "left_behind": [
+  {
+   "id": "lunyu12-cz",
+   "title": "《论语》十二章",
+   "char": "昼",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "shihaoli",
+   "title": "石壕吏",
+   "char": "𢧐",
+   "why": "keep（单字）：戰"
+  },
+  {
+   "id": "yanmenshiweixing",
+   "title": "雁门太守行",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "chushibiao",
+   "title": "出师表",
+   "char": "讬",
+   "why": "keep（单字）：託"
+  },
+  {
+   "id": "chushibiao",
+   "title": "出师表",
+   "char": "谘",
+   "why": "keep（单字）：諮"
+  },
+  {
+   "id": "chushibiao",
+   "title": "出师表",
+   "char": "𪪏",
+   "why": "keep（单字）：廬"
+  },
+  {
+   "id": "chushibiao",
+   "title": "出师表",
+   "char": "𫍝",
+   "why": "keep（单字）：諫"
+  },
+  {
+   "id": "chushibiao",
+   "title": "出师表",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "chushibiao",
+   "title": "出师表",
+   "char": "𫖸",
+   "why": "keep（单字）：願"
+  },
+  {
+   "id": "nangxiangzi",
+   "title": "南乡子",
+   "char": "𢧐",
+   "why": "keep（单字）：戰"
+  },
+  {
+   "id": "yueyanglouji",
+   "title": "岳阳楼记",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "caoguilunzhan",
+   "title": "曹刿论战",
+   "char": "𢧐",
+   "why": "keep（单字）：戰"
+  },
+  {
+   "id": "jiangchengzi-laofeng",
+   "title": "江城子",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "baixuege",
+   "title": "白雪歌送武判官归京",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "zouji",
+   "title": "邹忌讽齐王纳谏",
+   "char": "馀",
+   "why": "keep（单字）：餘"
+  },
+  {
+   "id": "choulitian",
+   "title": "酬乐天扬州初逢席上见赠",
+   "char": "霉",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "dengguanquelou",
+   "title": "登鹳雀楼",
+   "char": "刚",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "suojian",
+   "title": "所见",
+   "char": "刚",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "jiangpan",
+   "title": "江畔独步寻花",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "shuhuyin",
+   "title": "书湖阴先生壁",
+   "char": "刚",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "wanghulou",
+   "title": "六月二十七日望湖楼醉书",
+   "char": "来",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "langtaosha",
+   "title": "浪淘沙",
+   "char": "刚",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "youziyin",
+   "title": "游子吟",
+   "char": "缐",
+   "why": "keep（单字）：線"
+  },
+  {
+   "id": "laozi8",
+   "title": "《老子》八章",
+   "char": "馀",
+   "why": "keep（单字）：餘"
+  },
+  {
+   "id": "lunyu12",
+   "title": "《论语》十二章",
+   "char": "昼",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "linanchunyu",
+   "title": "临安春雨初霁",
+   "char": "𫔮",
+   "why": "keep（单字）：閒"
+  },
+  {
+   "id": "lantingjixu",
+   "title": "兰亭集序",
+   "char": "刚",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "quanxue",
+   "title": "劝学",
+   "char": "讬",
+   "why": "keep（单字）：託"
+  },
+  {
+   "id": "quanxue",
+   "title": "劝学",
+   "char": "𫐎",
+   "why": "keep（单字）：輢"
+  },
+  {
+   "id": "kezhi",
+   "title": "客至",
+   "char": "馀",
+   "why": "keep（单字）：餘"
+  },
+  {
+   "id": "kezhi",
+   "title": "客至",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "jiangjinjiu",
+   "title": "将进酒",
+   "char": "𫖸",
+   "why": "keep（单字）：願"
+  },
+  {
+   "id": "quyuanliezhuan",
+   "title": "屈原列传",
+   "char": "𢧐",
+   "why": "keep（单字）：戰"
+  },
+  {
+   "id": "quyuanliezhuan",
+   "title": "屈原列传",
+   "char": "𫗦",
+   "why": "keep（单字）：餔"
+  },
+  {
+   "id": "quyuanliezhuan",
+   "title": "屈原列传",
+   "char": "𫛳",
+   "why": "keep（单字）：鵩"
+  },
+  {
+   "id": "guiqulaixici",
+   "title": "归去来兮辞",
+   "char": "馀",
+   "why": "keep（单字）：餘"
+  },
+  {
+   "id": "baoranan",
+   "title": "报任安书",
+   "char": "讬",
+   "why": "keep（单字）：託"
+  },
+  {
+   "id": "chunjianghuayue",
+   "title": "春江花月夜",
+   "char": "𢭏",
+   "why": "keep（单字）：擣"
+  },
+  {
+   "id": "chunjianghuayue",
+   "title": "春江花月夜",
+   "char": "𫔮",
+   "why": "keep（单字）：閒"
+  },
+  {
+   "id": "chunjianghuayue",
+   "title": "春江花月夜",
+   "char": "𫖸",
+   "why": "keep（单字）：願"
+  },
+  {
+   "id": "guizhixiang",
+   "title": "桂枝香·金陵怀古",
+   "char": "凭",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "mengyoutianmu",
+   "title": "梦游天姥吟留别",
+   "char": "凭",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "mengyoutianmu",
+   "title": "梦游天姥吟留别",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "tengwanggexu",
+   "title": "滕王阁序",
+   "char": "讬",
+   "why": "keep（单字）：託"
+  },
+  {
+   "id": "yange-xing",
+   "title": "燕歌行",
+   "char": "𢧐",
+   "why": "keep（单字）：戰"
+  },
+  {
+   "id": "yange-xing",
+   "title": "燕歌行",
+   "char": "𪭢",
+   "why": "keep（单字）：摐"
+  },
+  {
+   "id": "yange-xing",
+   "title": "燕歌行",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "pipaxing",
+   "title": "琵琶行",
+   "char": "刚",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "pipaxing",
+   "title": "琵琶行",
+   "char": "𧹒",
+   "why": "keep（单字）：買"
+  },
+  {
+   "id": "pipaxing",
+   "title": "琵琶行",
+   "char": "𫔭",
+   "why": "keep（单字）：開"
+  },
+  {
+   "id": "dengyueyanglou",
+   "title": "登岳阳楼",
+   "char": "刚",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "dengtaishan",
+   "title": "登泰山记",
+   "char": "缐",
+   "why": "keep（单字）：線"
+  },
+  {
+   "id": "dengtaishan",
+   "title": "登泰山记",
+   "char": "馀",
+   "why": "keep（单字）：餘"
+  },
+  {
+   "id": "denggao",
+   "title": "登高",
+   "char": "两",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "shizhongshan",
+   "title": "石钟山记",
+   "char": "馀",
+   "why": "keep（单字）：餘"
+  },
+  {
+   "id": "jiantaishisi",
+   "title": "谏太宗十思疏",
+   "char": "馀",
+   "why": "keep（单字）：餘"
+  },
+  {
+   "id": "hexinlao",
+   "title": "贺新郎",
+   "char": "馀",
+   "why": "keep（单字）：餘"
+  },
+  {
+   "id": "chibifu",
+   "title": "赤壁赋",
+   "char": "𫚥",
+   "why": "keep（单字）：鰕"
+  },
+  {
+   "id": "changting-songbei",
+   "title": "长亭送别",
+   "char": "𩨂",
+   "why": "keep（单字）：驄"
+  },
+  {
+   "id": "epenggongfu",
+   "title": "阿房宫赋",
+   "char": "馀",
+   "why": "keep（单字）：餘"
+  },
+  {
+   "id": "chenqingbiao",
+   "title": "陈情表",
+   "char": "侥",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "chenqingbiao",
+   "title": "陈情表",
+   "char": "馀",
+   "why": "keep（单字）：餘"
   }
  ],
  "rows": [
@@ -1129,6 +1503,20 @@
      "line": 9
     },
     {
+     "at": 13,
+     "n": 4,
+     "simp": "不舍昼夜",
+     "cands": [
+      "不舍昼夜",
+      "不捨晝夜"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "：\"逝者如斯夫，不舍昼夜。\"（《子罕》）",
+     "field": "full",
+     "line": 9
+    },
+    {
      "at": 5,
      "n": 1,
      "simp": "军",
@@ -1896,6 +2284,20 @@
      "line": 9
     },
     {
+     "at": 6,
+     "n": 4,
+     "simp": "不舍昼夜",
+     "cands": [
+      "不舍昼夜",
+      "不捨晝夜"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "逝者如斯夫，不舍昼夜。",
+     "field": "lines",
+     "line": 9
+    },
+    {
      "at": 1,
      "n": 1,
      "simp": "军",
@@ -2299,6 +2701,12 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "昼",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
    ]
   },
   {
@@ -2618,7 +3026,8 @@
      "page_char": "時"
     }
    ],
-   "marks_app": []
+   "marks_app": [],
+   "left_behind": []
   },
   {
    "id": "tianjingsha-qiusi",
@@ -3037,7 +3446,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shanpoyang",
@@ -3332,6 +3742,19 @@
      "page_char": "間"
     },
     {
+     "at": 13,
+     "n": 2,
+     "simp": "做了",
+     "cands": [
+      "做了"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "行处，宫阙万间都做了土。",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 0,
      "n": 1,
      "simp": "兴",
@@ -3558,6 +3981,19 @@
      "page_char": "間"
     },
     {
+     "at": 13,
+     "n": 2,
+     "simp": "做了",
+     "cands": [
+      "做了"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "行处，宫阙万间都做了土。",
+     "field": "lines",
+     "line": 2
+    },
+    {
      "at": 0,
      "n": 1,
      "simp": "兴",
@@ -3657,7 +4093,8 @@
      "pick": "毀",
      "why": "毁坏义作「毀」；「燬」「譭」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jihai-jimao",
@@ -4110,7 +4547,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wuti",
@@ -4954,7 +5392,8 @@
      "pick": "乾",
      "why": "干燥、干涸义作「乾」（泪始干、无干处、干宿雨）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chunyeluocheng",
@@ -5431,7 +5870,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wanchun",
@@ -5856,7 +6296,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wangyue",
@@ -6736,7 +7177,8 @@
      "pick": "歷",
      "why": "经历、历职、庆历都作「歷」；「曆」只用于历法"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "mulanci",
@@ -7158,6 +7600,19 @@
      "decision": "identity",
      "kind": "char",
      "ctx": "大点兵，军书十二卷，卷卷有爷名。阿",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 42,
+     "n": 2,
+     "simp": "卷卷",
+     "cands": [
+      "卷卷"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "兵，军书十二卷，卷卷有爷名。阿爷无大",
      "field": "full",
      "line": 1
     },
@@ -8268,6 +8723,19 @@
      "decision": "table",
      "kind": "char",
      "ctx": "兰不用尚书郎，愿驰千里足，送儿还故",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 40,
+     "n": 3,
+     "simp": "千里足",
+     "cands": [
+      "千里足"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "不用尚书郎，愿驰千里足，送儿还故乡。",
      "field": "full",
      "line": 4
     },
@@ -9439,7 +9907,8 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "cibeigushanxia",
@@ -9996,7 +10465,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shuidiaogetou",
@@ -10533,6 +11003,19 @@
      "page_char": "長"
     },
     {
+     "at": 51,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "全。但愿人长久，千里共婵娟。",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 54,
      "n": 1,
      "simp": "婵",
@@ -10725,6 +11208,19 @@
      "field": "lines",
      "line": 4,
      "page_char": "長"
+    },
+    {
+     "at": 6,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "但愿人长久，千里共婵娟。",
+     "field": "lines",
+     "line": 4
     },
     {
      "at": 9,
@@ -10954,7 +11450,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "boqinhuai",
@@ -11369,7 +11866,8 @@
      "pick": "擺",
      "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "youshanxincun",
@@ -12216,7 +12714,8 @@
      "pick": "並",
      "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "ailianshuo",
@@ -12450,6 +12949,19 @@
      "field": "full",
      "line": 0,
      "page_char": "蓮"
+    },
+    {
+     "at": 38,
+     "n": 6,
+     "simp": "出淤泥而不染",
+     "cands": [
+      "出淤泥而不染"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 47,
@@ -12793,6 +13305,19 @@
      "page_char": "蓮"
     },
     {
+     "at": 5,
+     "n": 6,
+     "simp": "出淤泥而不染",
+     "cands": [
+      "出淤泥而不染"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "予独爱莲之出淤泥而不染，濯清涟而不妖。",
+     "field": "lines",
+     "line": 1
+    },
+    {
      "at": 14,
      "n": 1,
      "simp": "涟",
@@ -13039,7 +13564,8 @@
      "why": "叹息、叹曰义作「嘆」；「歎」是异体",
      "evidence": "来源页 4 处作「嘆」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "dengyouzhoutai",
@@ -13340,7 +13866,8 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "dengfeilaifeng",
@@ -13434,6 +13961,19 @@
      "field": "full",
      "line": 0,
      "page_char": "來"
+    },
+    {
+     "at": 3,
+     "n": 2,
+     "simp": "上千",
+     "cands": [
+      "上千"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "飞来山上千寻塔，闻说鸡鸣见",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 5,
@@ -13603,6 +14143,19 @@
      "field": "lines",
      "line": 0,
      "page_char": "來"
+    },
+    {
+     "at": 3,
+     "n": 2,
+     "simp": "上千",
+     "cands": [
+      "上千"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "飞来山上千寻塔，闻说鸡鸣见",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 5,
@@ -13763,7 +14316,8 @@
      "pick": "擺",
      "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xiangjianhuan",
@@ -14239,7 +14793,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zhuliguan",
@@ -14609,7 +15164,8 @@
      "pick": "別",
      "why": "分别、离别义作「別」；「彆」只用于「别扭」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xinglunan",
@@ -15499,7 +16055,8 @@
      "pick": "閒",
      "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "guancanghai",
@@ -16160,7 +16717,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "guolingyang",
@@ -16704,7 +17262,8 @@
      "why": "叹息、叹曰义作「嘆」；「歎」是异体",
      "evidence": "来源页 4 处作「嘆」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "fengrujinshi",
@@ -16729,13 +17288,13 @@
      "- 故園：故鄉。",
      "- 東望：向東遠望。",
      "- 漫漫：路途漫長。",
-     "- 雙袖龍鍾：两只袖子都被淚水沾溼了。龍鍾，沾溼的樣子。",
+     "- 雙袖龍鍾：兩隻袖子都被淚水沾溼了。龍鍾，沾溼的樣子。",
      "- 憑君：請你。",
      "- 傳語：捎口信。",
      "- 報平安：報告平安。"
     ],
     "译文": [
-     "向東遠望故鄉，路途漫長；两只袖子的淚水都還沒干。",
+     "向東遠望故鄉，路途漫長；兩隻袖子的淚水都還沒干。",
      "在馬上和你相逢卻沒有紙筆，只好請你替我捎個口信，說我一切平安。"
     ],
     "赏析": [
@@ -17239,6 +17798,22 @@
      "why": "「龙钟」是连绵词，作「龍鍾」"
     },
     {
+     "at": 7,
+     "n": 2,
+     "simp": "两只",
+     "cands": [
+      "两只",
+      "兩隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "- 双袖龙钟：两只袖子都被泪水沾湿",
+     "field": "sec:注释",
+     "line": 5,
+     "pick": "兩隻",
+     "why": "现代量词「两只」作「兩隻」。单字表把「只」照抄是文言用法（只＝僅），这里说的是两只袖子，不是「仅仅」"
+    },
+    {
      "at": 20,
      "n": 1,
      "simp": "钟",
@@ -17254,6 +17829,22 @@
      "line": 5,
      "pick": "鍾",
      "why": "「龙钟」是连绵词，作「龍鍾」"
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "两只",
+     "cands": [
+      "两只",
+      "兩隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "故乡，路途漫长；两只袖子的泪水都还没",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "兩隻",
+     "why": "现代量词「两只」作「兩隻」。单字表把「只」照抄是文言用法（只＝僅），这里说的是两只袖子，不是「仅仅」"
     },
     {
      "at": 20,
@@ -17433,7 +18024,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wenwangchangling",
@@ -17601,6 +18193,20 @@
      "page_char": "過"
     },
     {
+     "at": 13,
+     "n": 2,
+     "simp": "五溪",
+     "cands": [
+      "五溪",
+      "五谿"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "规啼，闻道龙标过五溪。",
+     "field": "full",
+     "line": 0
+    },
+    {
      "at": 4,
      "n": 1,
      "simp": "与",
@@ -17728,6 +18334,20 @@
      "page_char": "過"
     },
     {
+     "at": 13,
+     "n": 2,
+     "simp": "五溪",
+     "cands": [
+      "五溪",
+      "五谿"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "规啼，闻道龙标过五溪。",
+     "field": "lines",
+     "line": 0
+    },
+    {
      "at": 4,
      "n": 1,
      "simp": "与",
@@ -17825,7 +18445,8 @@
      "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
      "evidence": "来源页 14 处作「盡」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "loushiming",
@@ -18434,7 +19055,8 @@
      "pick": "證",
      "why": "证据、考证、例证、旁证作「證」；「証」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "sanxia",
@@ -19638,7 +20260,8 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yuzhusianshu",
@@ -21275,7 +21898,8 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shizhuisai",
@@ -22072,7 +22696,8 @@
      "pick": "並",
      "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "guanju",
@@ -22490,7 +23115,8 @@
      "pick": "蕩",
      "why": "放荡、荡涤义作「蕩」；「盪」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "beimingyouyu",
@@ -22525,7 +23151,7 @@
     "译文": [
      "北海有條魚，它的名字叫鯤。",
      "鯤有多大，不知道有幾千里長。",
-     "它變化成了一只鳥，名字叫鵬。",
+     "它變化成了一隻鳥，名字叫鵬。",
      "鵬的背有多寬，不知道有幾千里。"
     ],
     "赏析": [
@@ -22931,6 +23557,19 @@
      "field": "full",
      "line": 0,
      "page_char": "擊"
+    },
+    {
+     "at": 104,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于南冥也，水击三千里，抟扶摇而上者九",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 107,
@@ -23674,6 +24313,22 @@
    ],
    "marks_app": [
     {
+     "at": 5,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "它变化成了一只鸟，名字叫鹏。",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 19,
      "n": 1,
      "simp": "个",
@@ -23916,7 +24571,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "maotanshangwu",
@@ -24921,7 +25577,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "dadaozhixing",
@@ -25081,6 +25738,19 @@
      "field": "full",
      "line": 0,
      "page_char": "講"
+    },
+    {
+     "at": 18,
+     "n": 2,
+     "simp": "修睦",
+     "cands": [
+      "修睦"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "，选贤与能，讲信修睦。",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 3,
@@ -25321,6 +25991,19 @@
      "field": "full",
      "line": 2,
      "page_char": "惡"
+    },
+    {
+     "at": 17,
+     "n": 2,
+     "simp": "不出",
+     "cands": [
+      "不出"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "必藏于己；力恶其不出于身也，不必为己",
+     "field": "full",
+     "line": 2
     },
     {
      "at": 19,
@@ -25574,6 +26257,19 @@
      "field": "lines",
      "line": 1,
      "page_char": "講"
+    },
+    {
+     "at": 7,
+     "n": 2,
+     "simp": "修睦",
+     "cands": [
+      "修睦"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "选贤与能，讲信修睦。",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 3,
@@ -25838,7 +26534,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zijin",
@@ -26212,7 +26909,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xiaoshitan",
@@ -27776,7 +28474,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shiwei",
@@ -28095,7 +28794,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chunwang",
@@ -28716,7 +29416,8 @@
      "pick": "髮",
      "why": "「头发」的繁体是「頭髮」；「發」是出发、发怒"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "taohuayuanji",
@@ -29121,6 +29822,20 @@
      "field": "full",
      "line": 1,
      "page_char": "盡"
+    },
+    {
+     "at": 15,
+     "n": 2,
+     "simp": "仿佛",
+     "cands": [
+      "仿佛",
+      "彷彿"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "一山，山有小口，仿佛若有光。便舍船，",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 22,
@@ -31129,7 +31844,8 @@
      "pick": "鏈",
      "why": "链条、链接作「鏈」；「鍊」是冶炼义"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "huanxisha-yanque",
@@ -31199,6 +31915,19 @@
    },
    "marks": [
     {
+     "at": 0,
+     "n": 2,
+     "simp": "一曲",
+     "cands": [
+      "一曲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "一曲新词酒一杯，去年",
+     "field": "full",
+     "line": 0
+    },
+    {
      "at": 3,
      "n": 1,
      "simp": "词",
@@ -31211,6 +31940,19 @@
      "field": "full",
      "line": 0,
      "page_char": "詞"
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "一杯",
+     "cands": [
+      "一杯"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "一曲新词酒一杯，去年天气旧亭台",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 11,
@@ -31394,6 +32136,19 @@
      "page_char": "獨"
     },
     {
+     "at": 0,
+     "n": 2,
+     "simp": "一曲",
+     "cands": [
+      "一曲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "一曲新词酒一杯，去年",
+     "field": "lines",
+     "line": 0
+    },
+    {
      "at": 3,
      "n": 1,
      "simp": "词",
@@ -31406,6 +32161,19 @@
      "field": "lines",
      "line": 0,
      "page_char": "詞"
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "一杯",
+     "cands": [
+      "一杯"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "一曲新词酒一杯，去年天气旧亭台",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 11,
@@ -31654,7 +32422,8 @@
      "pick": "徑",
      "why": "小路义作「徑」；「逕」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yujiaao-tianjie",
@@ -31670,6 +32439,14 @@
     "風休住，蓬舟吹取三山去！"
    ],
    "sections_trad": {
+    "正文": [
+     "天接雲濤連曉霧，星河欲轉千帆舞。",
+     "仿佛夢魂歸帝所。",
+     "聞天語，殷勤問我歸何處。",
+     "我報路長嗟日暮，學詩謾有驚人句。",
+     "九萬里風鵬正舉。",
+     "風休住，蓬舟吹取三山去！"
+    ],
     "收录范围": [
      "教材位置：統編語文八年級上冊「課外古詩詞誦讀」收本詩；課標（2022）附錄1 初中第 32 條列本篇。出處：統編教材《語文》八年級上冊課外誦讀（frontmatter 記錄的冊次）",
      "  冊次依據教研文獻判定，仍需以教材目錄逐冊復核（見 docs/textbook-contents.md 的核驗狀態）。",
@@ -31814,6 +32591,33 @@
      "field": "lines",
      "line": 0,
      "page_char": "轉"
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "千帆",
+     "cands": [
+      "千帆"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "连晓雾，星河欲转千帆舞。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "仿佛",
+     "cands": [
+      "仿佛",
+      "彷彿"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "仿佛梦魂归帝所。",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 2,
@@ -32246,7 +33050,8 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shihaoli",
@@ -32544,6 +33349,19 @@
      "field": "full",
      "line": 7,
      "page_char": "孫"
+    },
+    {
+     "at": 6,
+     "n": 2,
+     "simp": "出入",
+     "cands": [
+      "出入"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "有孙母未去，出入无完裙。",
+     "field": "full",
+     "line": 7
     },
     {
      "at": 8,
@@ -32965,6 +33783,12 @@
      "line": 0,
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "𢧐",
+     "why": "keep（单字）：戰"
     }
    ]
   },
@@ -33682,7 +34506,8 @@
      "pick": "復",
      "why": "返回、再、恢复义作「復」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "maowu",
@@ -35229,7 +36054,8 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jianjia",
@@ -35761,7 +36587,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "suoyoujiayao",
@@ -36454,7 +37281,8 @@
      "pick": "鏈",
      "why": "链条、链接作「鏈」；「鍊」是冶炼义"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jichengtiansi",
@@ -37228,7 +38056,8 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chibi-du",
@@ -37770,7 +38599,8 @@
      "pick": "並",
      "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "songshaoshu-wai",
@@ -38349,7 +39179,8 @@
      "pick": "煙",
      "why": "烟雾、烟霞义作「煙」；「菸」是烟草后起义"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yewang",
@@ -38395,7 +39226,7 @@
     "赏析": [
      "王績寫這首詩時剛辭官不仕，是隱居生活中最像樣的一首。",
      "前兩句寫得極靜：「樹樹皆秋色，山山唯落暉」。樹有秋色，山有落暉，可就是沒有人。",
-     "中間兩句忽然有了人：牧人驅犢，獵馬帶禽。可這些人只是路過，和詩人沒有关系。",
+     "中間兩句忽然有了人：牧人驅犢，獵馬帶禽。可這些人只是路過，和詩人沒有關係。",
      "「相顧無相識」五個字是全詩的眼。大家都看見了彼此，可誰也不認識誰。",
      "妙在他不寫自己孤獨，反而寫所有人都在忙。每個人都有去處，只有他不知道該歸依何處。",
      "最後「長歌懷采薇」用了一個古老的典故：伯夷、叔齊當年隱居首陽山采薇而食。",
@@ -38973,6 +39804,22 @@
      "why": "得到、俘获义作「獲」"
     },
     {
+     "at": 34,
+     "n": 2,
+     "simp": "关系",
+     "cands": [
+      "关系",
+      "關係"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "路过，和诗人没有关系。",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "關係",
+     "why": "现代词「关系」作「關係」。单字表把「系」照抄是文言用法（「系向牛头充炭直」「系行舟」），这里说的是关系，不是拴住"
+    },
+    {
      "at": 12,
      "n": 1,
      "simp": "个",
@@ -39053,7 +39900,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "qiantanghuchunxing",
@@ -39929,7 +40777,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yanmenshiweixing",
@@ -40051,6 +40900,19 @@
      "decision": "identity",
      "kind": "char",
      "ctx": "黑云压城城欲摧，甲光向日金鳞",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 9,
+     "n": 2,
+     "simp": "光向",
+     "cands": [
+      "光向"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "云压城城欲摧，甲光向日金鳞开。",
      "field": "full",
      "line": 0
     },
@@ -40318,6 +41180,19 @@
      "decision": "identity",
      "kind": "char",
      "ctx": "黑云压城城欲摧，甲光向日金鳞",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 9,
+     "n": 2,
+     "simp": "光向",
+     "cands": [
+      "光向"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "云压城城欲摧，甲光向日金鳞开。",
      "field": "lines",
      "line": 0
     },
@@ -40639,6 +41514,12 @@
      "line": 0,
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
     }
    ]
   },
@@ -41252,7 +42133,8 @@
      "pick": "閒",
      "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "masuo",
@@ -41509,6 +42391,19 @@
      "page_char": "間"
     },
     {
+     "at": 50,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于槽枥之间，不以千里称也。",
+     "field": "full",
+     "line": 0
+    },
+    {
      "at": 52,
      "n": 1,
      "simp": "称",
@@ -41535,6 +42430,19 @@
      "field": "full",
      "line": 1,
      "page_char": "馬"
+    },
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "马之千里者，一食或尽粟一",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 9,
@@ -41566,6 +42474,19 @@
      "page_char": "馬"
     },
     {
+     "at": 21,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "。食马者不知其能千里而食也。是马也，",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 28,
      "n": 1,
      "simp": "马",
@@ -41592,6 +42513,19 @@
      "field": "full",
      "line": 1,
      "page_char": "雖"
+    },
+    {
+     "at": 33,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "也。是马也，虽有千里之能，食不饱，力",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 40,
@@ -41676,6 +42610,19 @@
      "field": "full",
      "line": 1,
      "page_char": "馬"
+    },
+    {
+     "at": 66,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "不可得，安求其能千里也？",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 11,
@@ -42000,6 +42947,19 @@
      "page_char": "間"
     },
     {
+     "at": 50,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于槽枥之间，不以千里称也。",
+     "field": "lines",
+     "line": 0
+    },
+    {
      "at": 52,
      "n": 1,
      "simp": "称",
@@ -42026,6 +42986,19 @@
      "field": "lines",
      "line": 1,
      "page_char": "馬"
+    },
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "马之千里者，一食或尽粟一",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 9,
@@ -42057,6 +43030,19 @@
      "page_char": "馬"
     },
     {
+     "at": 21,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "。食马者不知其能千里而食也。是马也，",
+     "field": "lines",
+     "line": 1
+    },
+    {
      "at": 28,
      "n": 1,
      "simp": "马",
@@ -42083,6 +43069,19 @@
      "field": "lines",
      "line": 1,
      "page_char": "雖"
+    },
+    {
+     "at": 33,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "也。是马也，虽有千里之能，食不饱，力",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 40,
@@ -42167,6 +43166,19 @@
      "field": "lines",
      "line": 1,
      "page_char": "馬"
+    },
+    {
+     "at": 66,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "不可得，安求其能千里也？",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 11,
@@ -42541,7 +43553,8 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "huanghelou-cuiheng",
@@ -43371,7 +44384,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "lvshi1",
@@ -44487,7 +45501,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "mengzi3",
@@ -46782,6 +47797,19 @@
      "page_char": "與"
     },
     {
+     "at": 106,
+     "n": 3,
+     "simp": "不得志",
+     "cands": [
+      "不得志"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "；得志与民由之，不得志，独行其道；富贵",
+     "field": "full",
+     "line": 4
+    },
+    {
      "at": 110,
      "n": 1,
      "simp": "独",
@@ -47191,7 +48219,8 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zhuangzi1",
@@ -47644,6 +48673,19 @@
      "field": "full",
      "line": 0,
      "page_char": "擊"
+    },
+    {
+     "at": 104,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于南冥也，水击三千里，抟扶摇而上者九",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 107,
@@ -48410,7 +49452,8 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "liji1",
@@ -48625,7 +49668,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chushibiao",
@@ -48783,6 +49827,19 @@
      "field": "full",
      "line": 0,
      "page_char": "誠"
+    },
+    {
+     "at": 33,
+     "n": 2,
+     "simp": "之秋",
+     "cands": [
+      "之秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "敝，此诚危急存亡之秋也。然侍衞之臣不",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 44,
@@ -49129,6 +50186,19 @@
      "decision": "identity",
      "kind": "char",
      "ctx": "陟罚臧否，不宜异同。若有作奸犯科及",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 22,
+     "n": 4,
+     "simp": "作奸犯科",
+     "cands": [
+      "作奸犯科"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "，不宜异同。若有作奸犯科及为忠善者，宜付",
      "field": "full",
      "line": 2
     },
@@ -51338,6 +52408,19 @@
      "line": 8
     },
     {
+     "at": 10,
+     "n": 4,
+     "simp": "不知所云",
+     "cands": [
+      "不知所云"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "远离，临表涕泣，不知所云。",
+     "field": "full",
+     "line": 8
+    },
+    {
      "at": 1,
      "n": 2,
      "simp": "任于",
@@ -52449,6 +53532,32 @@
      "line": 22,
      "kept": "谘",
      "table_wanted": "諮"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "讬",
+     "why": "keep（单字）：託"
+    },
+    {
+     "char": "谘",
+     "why": "keep（单字）：諮"
+    },
+    {
+     "char": "𪪏",
+     "why": "keep（单字）：廬"
+    },
+    {
+     "char": "𫍝",
+     "why": "keep（单字）：諫"
+    },
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
+    },
+    {
+     "char": "𫖸",
+     "why": "keep（单字）：願"
     }
    ]
   },
@@ -53596,7 +54705,8 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "nangxiangzi",
@@ -53739,6 +54849,19 @@
      "field": "full",
      "line": 0,
      "page_char": "樓"
+    },
+    {
+     "at": 14,
+     "n": 2,
+     "simp": "千古",
+     "cands": [
+      "千古"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "满眼风光北固楼。千古兴亡多少事？悠悠",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 16,
@@ -54020,6 +55143,19 @@
      "field": "lines",
      "line": 0,
      "page_char": "樓"
+    },
+    {
+     "at": 14,
+     "n": 2,
+     "simp": "千古",
+     "cands": [
+      "千古"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "满眼风光北固楼。千古兴亡多少事？悠悠",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 16,
@@ -54412,6 +55548,12 @@
      "line": 0,
      "kept": "𢧐",
      "table_wanted": "戰"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "𢧐",
+     "why": "keep（单字）：戰"
     }
    ]
   },
@@ -55740,6 +56882,19 @@
      "page_char": "煙"
     },
     {
+     "at": 51,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "或长烟一空，皓月千里，浮光跃金，静影",
+     "field": "full",
+     "line": 3
+    },
+    {
      "at": 56,
      "n": 1,
      "simp": "跃",
@@ -56708,6 +57863,12 @@
      "line": 3,
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
     }
    ]
   },
@@ -58184,6 +59345,12 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "𢧐",
+     "why": "keep（单字）：戰"
+    }
    ]
   },
   {
@@ -59023,6 +60190,12 @@
      "kept": "𫔭",
      "table_wanted": "開"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
+    }
    ]
   },
   {
@@ -59248,6 +60421,19 @@
      "page_char": "連"
     },
     {
+     "at": 0,
+     "n": 2,
+     "simp": "千嶂",
+     "cands": [
+      "千嶂"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千嶂里，长烟落日孤城",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 2,
      "n": 1,
      "simp": "里",
@@ -59319,6 +60505,19 @@
      "field": "full",
      "line": 3,
      "page_char": "濁"
+    },
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "一杯",
+     "cands": [
+      "一杯"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "浊酒一杯家万里，燕然未勒",
+     "field": "full",
+     "line": 3
     },
     {
      "at": 4,
@@ -59632,6 +60831,19 @@
      "page_char": "連"
     },
     {
+     "at": 0,
+     "n": 2,
+     "simp": "千嶂",
+     "cands": [
+      "千嶂"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千嶂里，长烟落日孤城",
+     "field": "lines",
+     "line": 2
+    },
+    {
      "at": 2,
      "n": 1,
      "simp": "里",
@@ -59703,6 +60915,19 @@
      "field": "lines",
      "line": 3,
      "page_char": "濁"
+    },
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "一杯",
+     "cands": [
+      "一杯"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "浊酒一杯家万里，燕然未勒",
+     "field": "lines",
+     "line": 3
     },
     {
      "at": 4,
@@ -60069,7 +61294,8 @@
      "pick": "擺",
      "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "huxinting",
@@ -61210,7 +62436,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "manjianghong-xiaozhujinghua",
@@ -61228,6 +62455,16 @@
     "莽紅塵何處覓知音？青衫溼！"
    ],
    "sections_trad": {
+    "正文": [
+     "小住京華，早又是中秋佳節。",
+     "爲籬下黃花開遍，秋容如拭。",
+     "四面歌殘終破楚，八年風味徒思浙。",
+     "苦將儂強派作蛾眉，殊未屑！",
+     "身不得，男兒列，心卻比，男兒烈。",
+     "算平生肝膽，因人常熱。",
+     "俗子胸襟誰識我？英雄末路當磨折。",
+     "莽紅塵何處覓知音？青衫溼！"
+    ],
     "收录范围": [
      "教材位置：統編語文九年級下冊第三單元第 12 課《詞四首》收本詞；課標（2022）附錄1 初中第 40 條列本篇。出處：倉內所記版本 《詞四首》（按條目原引，未另附鏈接）",
      "本篇正文按統編教材與通行本錄入；逐本異文（如「殊未屑」與「殊不屑」一類）**尚未核對**，不許憑印象寫進這一節。登記爲 P3 校勘待辦。裁定：內容組 AI 校勘，日期 2026-10-07。出處：統編教材《語文》九年級下冊（frontmatter 記錄的冊次）"
@@ -61845,7 +63082,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "baixuege",
@@ -62989,6 +64227,12 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
+    }
    ]
   },
   {
@@ -63825,7 +65069,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "songdongyang",
@@ -64076,6 +65321,19 @@
      "field": "full",
      "line": 0,
      "page_char": "觀"
+    },
+    {
+     "at": 18,
+     "n": 2,
+     "simp": "假借",
+     "cands": [
+      "假借"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "无从致书以观，每假借于藏书之家，手自",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 20,
@@ -67092,6 +68350,19 @@
      "page_char": "觀"
     },
     {
+     "at": 18,
+     "n": 2,
+     "simp": "假借",
+     "cands": [
+      "假借"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "无从致书以观，每假借于藏书之家，手自",
+     "field": "lines",
+     "line": 0
+    },
+    {
      "at": 20,
      "n": 1,
      "simp": "于",
@@ -68840,7 +70111,8 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zouji",
@@ -69471,6 +70743,19 @@
      "page_char": "於"
     },
     {
+     "at": 44,
+     "n": 2,
+     "simp": "于徐",
+     "cands": [
+      "于徐"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "有求于臣，皆以美于徐公。今齐地方千里",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 49,
      "n": 1,
      "simp": "齐",
@@ -69483,6 +70768,19 @@
      "field": "full",
      "line": 1,
      "page_char": "齊"
+    },
+    {
+     "at": 52,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于徐公。今齐地方千里，百二十城，宫妇",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 60,
@@ -70186,6 +71484,19 @@
      "page_char": "齊"
     },
     {
+     "at": 4,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "今齐地方千里，百二十城，宫妇",
+     "field": "lines",
+     "line": 2
+    },
+    {
      "at": 12,
      "n": 1,
      "simp": "宫",
@@ -70564,6 +71875,12 @@
      "pick": "鏈",
      "why": "链条、链接作「鏈」；「鍊」是冶炼义"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
+    }
    ]
   },
   {
@@ -70767,6 +72084,19 @@
      "page_char": "側"
     },
     {
+     "at": 4,
+     "n": 2,
+     "simp": "千帆",
+     "cands": [
+      "千帆"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "沉舟侧畔千帆过，病树前头万木",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 6,
      "n": 1,
      "simp": "过",
@@ -70836,6 +72166,19 @@
      "field": "full",
      "line": 3,
      "page_char": "聽"
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "一曲",
+     "cands": [
+      "一曲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "今日听君歌一曲，暂凭杯酒长精神",
+     "field": "full",
+     "line": 3
     },
     {
      "at": 8,
@@ -71019,6 +72362,19 @@
      "page_char": "側"
     },
     {
+     "at": 4,
+     "n": 2,
+     "simp": "千帆",
+     "cands": [
+      "千帆"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "沉舟侧畔千帆过，病树前头万木",
+     "field": "lines",
+     "line": 2
+    },
+    {
      "at": 6,
      "n": 1,
      "simp": "过",
@@ -71162,6 +72518,12 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "霉",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
    ]
   },
   {
@@ -71254,7 +72616,7 @@
      "- 「弈者勝」：別本（《歐陽修集》本）作「**奕**者勝」。出處：維基文庫《歐陽修集/卷039》 https://zh.wikisource.org/wiki/%E6%AD%90%E9%99%BD%E4%BF%AE%E9%9B%86/%E5%8D%B7039",
      "  取舍：從「弈」，與教材一致。",
      "- 「廬陵歐陽修也」：本頁署名作「歐陽**脩**」。出處：維基文庫《醉翁亭記》 https://zh.wikisource.org/wiki/%E9%86%89%E7%BF%81%E4%BA%AD%E8%A8%98",
-     "  取舍：從「修」。「脩／修」是常見的異體关系，教材作「修」。",
+     "  取舍：從「修」。「脩／修」是常見的異體關係，教材作「修」。",
      "- 「山之僧曰智仙也」：別本無「曰」字（作「山之僧智仙也」）。出處：維基文庫《醉翁亭記》 https://zh.wikisource.org/wiki/%E9%86%89%E7%BF%81%E4%BA%AD%E8%A8%98",
      "  取舍：從有「曰」字，與教材、《歐陽修集》本一致。"
     ],
@@ -71362,6 +72724,19 @@
      "ctx": "之蔚然而深秀者，琅琊也。",
      "field": "full",
      "line": 0
+    },
+    {
+     "at": 3,
+     "n": 2,
+     "simp": "七里",
+     "cands": [
+      "七里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "山行六七里，渐闻水声潺潺，",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 6,
@@ -71963,6 +73338,19 @@
      "field": "full",
      "line": 8,
      "page_char": "時"
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "不同",
+     "cands": [
+      "不同"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "暮而归，四时之景不同，而乐亦无穷也。",
+     "field": "full",
+     "line": 8
     },
     {
      "at": 16,
@@ -73264,6 +74652,22 @@
      "why": "证据、考证、例证、旁证作「證」；「証」是异体"
     },
     {
+     "at": 21,
+     "n": 2,
+     "simp": "关系",
+     "cands": [
+      "关系",
+      "關係"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "修」是常见的异体关系，教材作「修」。",
+     "field": "sec:异文",
+     "line": 9,
+     "pick": "關係",
+     "why": "现代词「关系」作「關係」。单字表把「系」照抄是文言用法（「系向牛头充炭直」「系行舟」），这里说的是关系，不是拴住"
+    },
+    {
      "at": 8,
      "n": 1,
      "simp": "当",
@@ -73363,7 +74767,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "gulangyuexing",
@@ -73377,6 +74782,12 @@
     "白兔搗藥成，問言與誰餐。"
    ],
    "sections_trad": {
+    "正文": [
+     "小時不識月，呼作白玉盤。",
+     "又疑瑤臺鏡，飛在青雲端。",
+     "仙人垂兩足，桂樹何團團。",
+     "白兔搗藥成，問言與誰餐。"
+    ],
     "注释": [
      "- 識：認識。",
      "- 呼作：叫作。",
@@ -73388,7 +74799,7 @@
     "译文": [
      "小時候我不認識月亮，把它叫作白玉做的盤子。",
      "又懷疑它是神仙住處的鏡子，飛到了青天的上面。",
-     "仙人垂下两只腳，桂樹的枝葉長得多麼繁密。",
+     "仙人垂下兩隻腳，桂樹的枝葉長得多麼繁密。",
      "白兔搗好了長生藥，問它是要給誰服用呢。"
     ],
     "赏析": [
@@ -73717,6 +75128,22 @@
      "why": "团聚合义作「團」；「糰」只用于面团"
     },
     {
+     "at": 4,
+     "n": 2,
+     "simp": "两只",
+     "cands": [
+      "两只",
+      "兩隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "仙人垂下两只脚，桂树的枝叶长",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "兩隻",
+     "why": "现代量词「两只」作「兩隻」。单字表把「只」照抄是文言用法（只＝僅），这里说的是两只袖子，不是「仅仅」"
+    },
+    {
      "at": 7,
      "n": 1,
      "simp": "药",
@@ -73812,7 +75239,8 @@
      "pick": "藥",
      "why": "药义作「藥」；「葯」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yonge",
@@ -73824,6 +75252,10 @@
     "白毛浮綠水，紅掌撥清波。"
    ],
    "sections_trad": {
+    "正文": [
+     "鵝，鵝，鵝，曲項向天歌。",
+     "白毛浮綠水，紅掌撥清波。"
+    ],
     "注释": [
      "- 曲項：彎着脖子。項，脖子。",
      "- 歌：這里指鵝朝天鳴叫。",
@@ -73835,7 +75267,7 @@
      "雪白的羽毛漂浮在碧綠的水面上，紅紅的腳掌撥動着清清的水波。"
     ],
     "赏析": [
-     "全詩只有十八個字，卻畫出一只活鵝。開頭連用三個「鵝」，像孩子看見鵝時按捺不住的一聲聲呼喚，也像鵝自己在應答，讀來親切有畫面。",
+     "全詩只有十八個字，卻畫出一隻活鵝。開頭連用三個「鵝」，像孩子看見鵝時按捺不住的一聲聲呼喚，也像鵝自己在應答，讀來親切有畫面。",
      "後兩句是全詩的妙處：詩人沒有寫「鵝很白」「水很綠」這樣直白的話，而是把顏色藏進搭配里——「白毛」對「綠水」、「紅掌」對「清波」，白與綠、紅與清兩兩相映，色彩一下就跳出來了。「浮」字寫鵝的安穩，「撥」字寫鵝的動感，一靜一動，鵝就活了。",
      "詠鵝相傳爲駱賓王七歲時所作。孩子的眼睛最誠實，他先看見顏色、再看見動作，最後連鵝的性格都寫出來了。"
     ]
@@ -73991,7 +75423,25 @@
      "page_char": "撥"
     }
    ],
-   "marks_app": []
+   "marks_app": [
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "十八个字，却画出一只活鹅。开头连用三",
+     "field": "sec:赏析",
+     "line": 0,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    }
+   ],
+   "left_behind": []
   },
   {
    "id": "xunyinzhe",
@@ -74003,6 +75453,10 @@
     "只在此山中，雲深不知處。"
    ],
    "sections_trad": {
+    "正文": [
+     "松下問童子，言師採藥去。",
+     "只在此山中，雲深不知處。"
+    ],
     "注释": [
      "- 隱者：隱居山林、不做官的人。",
      "- 童子：這里指小徒弟。",
@@ -74118,6 +75572,19 @@
      "page_char": "藥"
     },
     {
+     "at": 0,
+     "n": 2,
+     "simp": "只在",
+     "cands": [
+      "只在"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "只在此山中，云深不知",
+     "field": "lines",
+     "line": 1
+    },
+    {
      "at": 6,
      "n": 1,
      "simp": "云",
@@ -74213,7 +75680,8 @@
      "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
      "evidence": "来源页 14 处作「盡」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xiaochi",
@@ -74225,6 +75693,10 @@
     "小荷才露尖尖角，早有蜻蜓立上頭。"
    ],
    "sections_trad": {
+    "正文": [
+     "泉眼無聲惜細流，樹陰照水愛晴柔。",
+     "小荷才露尖尖角，早有蜻蜓立上頭。"
+    ],
     "注释": [
      "- 泉眼：泉水流出的小洞口。",
      "- 惜：愛惜、舍不得。",
@@ -74233,7 +75705,7 @@
     ],
     "译文": [
      "泉眼悄沒聲兒地流着水，好像舍不得那些細細的水流；樹蔭倒映在水面上，喜愛這晴天里柔和的光景。",
-     "小小的荷葉剛剛露出尖尖的角，早就有一只蜻蜓落在上面了。"
+     "小小的荷葉剛剛露出尖尖的角，早就有一隻蜻蜓落在上面了。"
     ],
     "赏析": [
      "全詩四句寫初夏一個小池塘的早晨，安靜里透着生機。",
@@ -74397,6 +75869,22 @@
      "why": "树荫、绿荫、荫凉作「蔭」；「廕」是庇荫、官荫的古义"
     },
     {
+     "at": 17,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "尖尖的角，早就有一只蜻蜓落在上面了。",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 8,
      "n": 1,
      "simp": "个",
@@ -74460,7 +75948,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "minnong2",
@@ -74472,6 +75961,10 @@
     "誰知盤中餐，粒粒皆辛苦。"
    ],
    "sections_trad": {
+    "正文": [
+     "鋤禾日當午，汗滴禾下土。",
+     "誰知盤中餐，粒粒皆辛苦。"
+    ],
     "注释": [
      "- 鋤禾：給禾苗松土除草。",
      "- 日當午：太陽正當中午。",
@@ -74751,7 +76244,8 @@
      "pick": "反覆",
      "why": "一遍又一遍义作「反覆」；「反復」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chunxiao",
@@ -74763,6 +76257,10 @@
     "夜來風雨聲，花落知多少。"
    ],
    "sections_trad": {
+    "正文": [
+     "春眠不覺曉，處處聞啼鳥。",
+     "夜來風雨聲，花落知多少。"
+    ],
     "注释": [
      "- 曉：天亮。",
      "- 不覺曉：不知不覺天就亮了。",
@@ -74963,7 +76461,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jiangnan",
@@ -74977,6 +76476,12 @@
     "魚戲蓮葉南，魚戲蓮葉北。"
    ],
    "sections_trad": {
+    "正文": [
+     "江南可採蓮，蓮葉何田田。",
+     "魚戲蓮葉間。",
+     "魚戲蓮葉東，魚戲蓮葉西。",
+     "魚戲蓮葉南，魚戲蓮葉北。"
+    ],
     "注释": [
      "- 田田：蓮葉茂密相接的樣子。",
      "- 戲：嬉戲、遊玩。"
@@ -75420,7 +76925,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chishang",
@@ -75432,6 +76938,10 @@
     "不解藏蹤跡，浮萍一道開。"
    ],
    "sections_trad": {
+    "正文": [
+     "小娃撐小艇，偷采白蓮回。",
+     "不解藏蹤跡，浮萍一道開。"
+    ],
     "注释": [
      "- 小娃：小孩子。",
      "- 艇：小船。",
@@ -75577,6 +77087,23 @@
    ],
    "marks_app": [
     {
+     "at": 7,
+     "n": 1,
+     "simp": "采",
+     "cands": [
+      "採",
+      "采",
+      "寀"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "小娃撑小艇，偷采白莲回。",
+     "field": "sec:正文",
+     "line": 0,
+     "page_char": "采",
+     "pick": "采"
+    },
+    {
      "at": 1,
      "n": 1,
      "simp": "个",
@@ -75672,7 +77199,8 @@
      "pick": "跡",
      "why": "痕迹、行迹义作「跡」；来源页作「迹」，那是同字异写"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "hua",
@@ -75684,6 +77212,10 @@
     "春去花還在，人來鳥不驚。"
    ],
    "sections_trad": {
+    "正文": [
+     "遠看山有色，近聽水無聲。",
+     "春去花還在，人來鳥不驚。"
+    ],
     "注释": [
      "- 色：顏色。這里指山的顏色。",
      "- 驚：受驚、飛走。",
@@ -75845,7 +77377,8 @@
      "pick": "證",
      "why": "证据、考证、例证、旁证作「證」；「証」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "huaji",
@@ -75857,6 +77390,10 @@
     "平生不敢輕言語，一叫千門萬戶開。"
    ],
    "sections_trad": {
+    "正文": [
+     "頭上紅冠不用裁，滿身雪白走將來。",
+     "平生不敢輕言語，一叫千門萬戶開。"
+    ],
     "注释": [
      "- 紅冠：紅色的雞冠。",
      "- 裁：剪裁。這里指不用修剪就天生好看。",
@@ -75868,7 +77405,7 @@
      "它這輩子不敢隨便開口叫喚，一叫起來，千家萬戶的門都打開了。"
     ],
     "赏析": [
-     "這是一首題畫詩，詠的是一只大公雞。",
+     "這是一首題畫詩，詠的是一隻大公雞。",
      "前兩句寫外形。一個「不用裁」，把紅冠寫得像是天生的藝術品；一個「雪白」，把羽毛的潔淨感寫足了。「走將來」三字更有神，讀者仿佛看見那只白公雞正昂首走過來。",
      "後兩句寫本事，卻先抑後揚：它平時不亂叫，「平生不敢輕言語」；可一旦開口，作用極大——「一叫千門萬戶開」，雞一啼，天就亮了，家家戶戶都該起牀了。",
      "全詩表面在誇雞，其實在誇那種「平時不響、一響驚人」的本事。唐寅畫雞，也是在畫自己心里的那點不肯平庸。"
@@ -76018,6 +77555,22 @@
    ],
    "marks_app": [
     {
+     "at": 11,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "首题画诗，咏的是一只大公鸡。",
+     "field": "sec:赏析",
+     "line": 0,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 8,
      "n": 1,
      "simp": "个",
@@ -76065,7 +77618,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xiangsi",
@@ -76077,6 +77631,10 @@
     "願君多采擷，此物最相思。"
    ],
    "sections_trad": {
+    "正文": [
+     "紅豆生南國，春來發幾枝。",
+     "願君多采擷，此物最相思。"
+    ],
     "注释": [
      "- 紅豆：又名相思子，古人常用來寄托思念。",
      "- 南國：南方。",
@@ -76252,6 +77810,23 @@
     {
      "at": 3,
      "n": 1,
+     "simp": "采",
+     "cands": [
+      "採",
+      "采",
+      "寀"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "愿君多采撷，此物最相思。",
+     "field": "sec:正文",
+     "line": 1,
+     "page_char": "采",
+     "pick": "采"
+    },
+    {
+     "at": 3,
+     "n": 1,
      "simp": "发",
      "cands": [
       "發",
@@ -76281,7 +77856,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zengwanglun",
@@ -76293,6 +77869,10 @@
     "桃花潭水深千尺，不及汪倫送我情。"
    ],
    "sections_trad": {
+    "正文": [
+     "李白乘舟將欲行，忽聞岸上踏歌聲。",
+     "桃花潭水深千尺，不及汪倫送我情。"
+    ],
     "注释": [
      "- 乘舟：坐船。",
      "- 將欲行：正要出發。",
@@ -76467,7 +78047,8 @@
      "pick": "別",
      "why": "分别、离别义作「別」；「彆」只用于「别扭」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jingyesi",
@@ -76479,6 +78060,10 @@
     "舉頭望明月，低頭思故鄉。"
    ],
    "sections_trad": {
+    "正文": [
+     "牀前明月光，疑是地上霜。",
+     "舉頭望明月，低頭思故鄉。"
+    ],
     "注释": [
      "- 疑：好像、仿佛。",
      "- 霜：這里指地上的白霜。",
@@ -76657,7 +78242,8 @@
      "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
      "evidence": "来源页 14 处作「盡」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "feng",
@@ -76669,6 +78255,10 @@
     "過江千尺浪，入竹萬竿斜。"
    ],
    "sections_trad": {
+    "正文": [
+     "解落三秋葉，能開二月花。",
+     "過江千尺浪，入竹萬竿斜。"
+    ],
     "注释": [
      "- 解：能夠、可以。",
      "- 三秋：秋季的三個月，指深秋。",
@@ -76709,6 +78299,19 @@
     ]
    },
    "marks": [
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "三秋",
+     "cands": [
+      "三秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "解落三秋叶，能开二月花。",
+     "field": "lines",
+     "line": 0
+    },
     {
      "at": 4,
      "n": 1,
@@ -76848,7 +78451,8 @@
      "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
      "evidence": "来源页 14 处作「盡」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yongliu",
@@ -76860,6 +78464,10 @@
     "不知細葉誰裁出，二月春風似剪刀。"
    ],
    "sections_trad": {
+    "正文": [
+     "碧玉妝成一樹高，萬條垂下綠絲絛。",
+     "不知細葉誰裁出，二月春風似剪刀。"
+    ],
     "注释": [
      "- 碧玉：青綠色的美玉。這里形容柳樹的顏色。",
      "- 妝成：打扮成。",
@@ -77185,7 +78793,8 @@
      "pick": "並",
      "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yesushansi",
@@ -77197,6 +78806,10 @@
     "不敢高聲語，恐驚天上人。"
    ],
    "sections_trad": {
+    "正文": [
+     "危樓高百尺，手可摘星辰。",
+     "不敢高聲語，恐驚天上人。"
+    ],
     "注释": [
      "- 危樓：高樓。危，高。",
      "- 百尺：形容樓很高，不是實數。",
@@ -77313,7 +78926,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xiaoerchuidiao",
@@ -77325,6 +78939,10 @@
     "路人借問遙招手，怕得魚驚不應人。"
    ],
    "sections_trad": {
+    "正文": [
+     "蓬頭稚子學垂綸，側坐莓苔草映身。",
+     "路人借問遙招手，怕得魚驚不應人。"
+    ],
     "注释": [
      "- 蓬頭：頭髮亂蓬蓬的。",
      "- 稚子：小孩子。",
@@ -77697,7 +79315,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "minnong1",
@@ -77709,6 +79328,10 @@
     "四海無閒田，農夫猶餓死。"
    ],
    "sections_trad": {
+    "正文": [
+     "春種一粒粟，秋收萬顆子。",
+     "四海無閒田，農夫猶餓死。"
+    ],
     "注释": [
      "- 粟：谷子，這里泛指糧食的種子。",
      "- 子：谷粒。",
@@ -78024,7 +79647,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chilege",
@@ -78038,6 +79662,12 @@
     "風吹草低見牛羊。"
    ],
    "sections_trad": {
+    "正文": [
+     "敕勒川，陰山下。",
+     "天似穹廬，籠蓋四野。",
+     "天蒼蒼，野茫茫，",
+     "風吹草低見牛羊。"
+    ],
     "注释": [
      "- 敕勒川：敕勒族生活的大草原。",
      "- 穹廬：遊牧民族住的圓頂帳篷。",
@@ -78245,7 +79875,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jingcisi",
@@ -78257,6 +79888,10 @@
     "接天蓮叶無窮碧，映日荷花別樣紅。"
    ],
    "sections_trad": {
+    "正文": [
+     "畢竟西湖六月中，風光不與四時同。",
+     "接天蓮叶無窮碧，映日荷花別樣紅。"
+    ],
     "注释": [
      "- 畢竟：到底、終究。",
      "- 四時：四季。",
@@ -78448,6 +80083,22 @@
    ],
    "marks_app": [
     {
+     "at": 3,
+     "n": 1,
+     "simp": "叶",
+     "cands": [
+      "葉",
+      "叶"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "接天莲叶无穷碧，映日荷花",
+     "field": "sec:正文",
+     "line": 1,
+     "page_char": "叶",
+     "pick": "叶"
+    },
+    {
      "at": 29,
      "n": 1,
      "simp": "艳",
@@ -78527,7 +80178,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wanglushanpubu",
@@ -78539,6 +80191,10 @@
     "飛流直下三千尺，疑是銀河落九天。"
    ],
    "sections_trad": {
+    "正文": [
+     "日照香爐生紫煙，遙看瀑布挂前川。",
+     "飛流直下三千尺，疑是銀河落九天。"
+    ],
     "注释": [
      "- 香爐：香爐峯，在廬山西北。",
      "- 紫煙：日光照在水汽上呈現的紫色霧氣。",
@@ -78700,6 +80356,38 @@
    ],
    "marks_app": [
     {
+     "at": 6,
+     "n": 1,
+     "simp": "烟",
+     "cands": [
+      "煙",
+      "菸"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "日照香炉生紫烟，遥看瀑布挂前川",
+     "field": "sec:正文",
+     "line": 0,
+     "pick": "煙",
+     "why": "烟雾、烟霞义作「煙」；「菸」是烟草后起义"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "挂",
+     "cands": [
+      "掛",
+      "挂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "生紫烟，遥看瀑布挂前川。",
+     "field": "sec:正文",
+     "line": 0,
+     "page_char": "挂",
+     "pick": "挂"
+    },
+    {
      "at": 3,
      "n": 1,
      "simp": "烟",
@@ -78811,7 +80499,8 @@
      "pick": "擺",
      "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "cunju",
@@ -78823,6 +80512,10 @@
     "兒童散學歸來早，忙趁東風放紙鳶。"
    ],
    "sections_trad": {
+    "正文": [
+     "草長鶯飛二月天，拂堤楊柳醉春煙。",
+     "兒童散學歸來早，忙趁東風放紙鳶。"
+    ],
     "注释": [
      "- 拂堤：輕輕擦過堤岸。",
      "- 醉春煙：像在春天的煙霧里陶醉了一樣。",
@@ -79126,7 +80819,8 @@
      "pick": "煙",
      "why": "烟雾、烟霞义作「煙」；「菸」是烟草后起义"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "meihua",
@@ -79138,6 +80832,10 @@
     "遙知不是雪，爲有暗香來。"
    ],
    "sections_trad": {
+    "正文": [
+     "牆角數枝梅，凌寒獨自開。",
+     "遙知不是雪，爲有暗香來。"
+    ],
     "注释": [
      "- 凌寒：冒着嚴寒。",
      "- 遙知：遠遠地就知道。",
@@ -79371,7 +81069,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jiangxue",
@@ -79383,6 +81082,10 @@
     "孤舟蓑笠翁，獨釣寒江雪。"
    ],
    "sections_trad": {
+    "正文": [
+     "千山鳥飛絕，萬徑人蹤滅。",
+     "孤舟蓑笠翁，獨釣寒江雪。"
+    ],
     "注释": [
      "- 千山：所有的山。",
      "- 絕：斷絕、沒有了。",
@@ -79635,7 +81338,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "dengguanquelou",
@@ -79647,6 +81351,10 @@
     "欲窮千里目，更上一層樓。"
    ],
    "sections_trad": {
+    "正文": [
+     "白日依山盡，黃河入海流。",
+     "欲窮千里目，更上一層樓。"
+    ],
     "注释": [
      "- 依：靠着、挨着。",
      "- 盡：消失。",
@@ -79744,6 +81452,19 @@
      "field": "lines",
      "line": 1,
      "page_char": "窮"
+    },
+    {
+     "at": 2,
+     "n": 3,
+     "simp": "千里目",
+     "cands": [
+      "千里目"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "欲穷千里目，更上一层楼。",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 9,
@@ -79875,6 +81596,12 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "刚",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
    ]
   },
   {
@@ -79887,6 +81614,10 @@
     "窗含西嶺千秋雪，門泊東吳萬里船。"
    ],
    "sections_trad": {
+    "正文": [
+     "兩個黃鸝鳴翠柳，一行白鷺上青天。",
+     "窗含西嶺千秋雪，門泊東吳萬里船。"
+    ],
     "注释": [
      "- 黃鸝：黃鶯。",
      "- 翠柳：青翠的柳樹。",
@@ -79895,7 +81626,7 @@
      "- 泊：停靠。"
     ],
     "译文": [
-     "两只黃鸝在翠綠的柳樹上鳴叫，一行白鷺飛上青天。",
+     "兩隻黃鸝在翠綠的柳樹上鳴叫，一行白鷺飛上青天。",
      "窗口正好框住西嶺上千年不化的積雪，門前停泊着要駛往萬里之外東吳的船。"
     ],
     "赏析": [
@@ -80014,6 +81745,19 @@
      "page_char": "嶺"
     },
     {
+     "at": 4,
+     "n": 2,
+     "simp": "千秋",
+     "cands": [
+      "千秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "窗含西岭千秋雪，门泊东吴万里",
+     "field": "lines",
+     "line": 1
+    },
+    {
      "at": 8,
      "n": 1,
      "simp": "门",
@@ -80070,6 +81814,22 @@
     }
    ],
    "marks_app": [
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "两只",
+     "cands": [
+      "两只",
+      "兩隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "两只黄鹂在翠绿的柳树",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "兩隻",
+     "why": "现代量词「两只」作「兩隻」。单字表把「只」照抄是文言用法（只＝僅），这里说的是两只袖子，不是「仅仅」"
+    },
     {
      "at": 8,
      "n": 1,
@@ -80183,7 +81943,8 @@
      "pick": "蕩",
      "why": "放荡、荡涤义作「蕩」；「盪」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zhouyeshujian",
@@ -80195,6 +81956,10 @@
     "微微風簇浪，散作滿河星。"
    ],
    "sections_trad": {
+    "正文": [
+     "月黑見漁燈，孤光一點螢。",
+     "微微風簇浪，散作滿河星。"
+    ],
     "注释": [
      "- 月黑：沒有月亮的夜晚。",
      "- 見：同「現」，顯現。",
@@ -80208,7 +81973,7 @@
     ],
     "赏析": [
      "前後兩句，寫的是同一個燈，卻從「一點」變成「滿河」。",
-     "前半句極靜。沒有月亮的夜里，只有一盞漁燈孤零零地亮着，小得像一只螢火蟲。這個「小」不是爲了寫燈小，是爲了寫夜大、並且讓讀者也跟着安靜下來。",
+     "前半句極靜。沒有月亮的夜里，只有一盞漁燈孤零零地亮着，小得像一隻螢火蟲。這個「小」不是爲了寫燈小，是爲了寫夜大、並且讓讀者也跟着安靜下來。",
      "後半句忽然活了。一陣微風吹皺水面，燈光碎開，倒映在波浪里，一下子鋪滿了整條河。",
      "這正是這首詩最迷人的地方：滿河的星星並不比那一點漁燈更亮，只是水面把一點光復制成了無數點。詩人沒有說一句感慨，可讀完的人都會在心里輕輕嘆一聲——原來平常的東西，只要遇到對的水面，就能變得這樣好看。"
     ]
@@ -80353,6 +82118,22 @@
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     },
     {
+     "at": 30,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "零地亮着，小得像一只萤火虫。这个「小",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 37,
      "n": 1,
      "simp": "个",
@@ -80419,7 +82200,8 @@
      "why": "叹息、叹曰义作「嘆」；「歎」是异体",
      "evidence": "来源页 4 处作「嘆」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "guyuancao",
@@ -80433,6 +82215,12 @@
     "又送王孫去，萋萋滿別情。"
    ],
    "sections_trad": {
+    "正文": [
+     "離離原上草，一歲一枯榮。",
+     "野火燒不盡，春風吹又生。",
+     "遠芳侵古道，晴翠接荒城。",
+     "又送王孫去，萋萋滿別情。"
+    ],
     "注释": [
      "- 離離：草長得茂盛的樣子。",
      "- 一歲：一年。",
@@ -80713,7 +82501,8 @@
      "pick": "別",
      "why": "分别、离别义作「別」；「彆」只用于「别扭」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "sanqudaozhong",
@@ -80725,6 +82514,10 @@
     "綠陰不減來時路，添得黃鸝四五聲。"
    ],
    "sections_trad": {
+    "正文": [
+     "梅子黃時日日晴，小溪泛盡卻山行。",
+     "綠陰不減來時路，添得黃鸝四五聲。"
+    ],
     "注释": [
      "- 三衢：地名，在今浙江衢州。",
      "- 梅子黃時：梅子成熟的初夏。",
@@ -81116,7 +82909,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jiuyuejiuri",
@@ -81128,6 +82922,10 @@
     "遙知兄弟登高處，遍插茱萸少一人。"
    ],
    "sections_trad": {
+    "正文": [
+     "獨在異鄉爲異客，每逢佳節倍思親。",
+     "遙知兄弟登高處，遍插茱萸少一人。"
+    ],
     "注释": [
      "- 九月九日：重陽節。",
      "- 山東：指華山以東，作者的家鄉在那邊。",
@@ -81346,7 +83144,8 @@
      "pick": "團",
      "why": "团聚合义作「團」；「糰」只用于面团"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yuanri",
@@ -81358,6 +83157,10 @@
     "千門萬戶曈曈日，總把新桃換舊符。"
    ],
    "sections_trad": {
+    "正文": [
+     "爆竹聲中一歲除，春風送暖入屠蘇。",
+     "千門萬戶曈曈日，總把新桃換舊符。"
+    ],
     "注释": [
      "- 元日：農曆正月初一，春節。",
      "- 一歲除：一年過去了。除，去。",
@@ -81582,7 +83385,8 @@
      "pick": "蘇",
      "why": "姓、复苏义作「蘇」；「甦」是后起俗字、「囌」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yeshusuojian",
@@ -81594,6 +83398,10 @@
     "知有兒童挑促織，夜深籬落一燈明。"
    ],
    "sections_trad": {
+    "正文": [
+     "蕭蕭梧葉送寒聲，江上秋風動客情。",
+     "知有兒童挑促織，夜深籬落一燈明。"
+    ],
     "注释": [
      "- 夜書所見：夜里把看到的寫下來。",
      "- 蕭蕭：風吹樹葉的聲音。",
@@ -81840,7 +83648,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "dalinsitaohua",
@@ -81852,6 +83661,10 @@
     "長恨春歸無覓處，不知轉入此中來。"
    ],
    "sections_trad": {
+    "正文": [
+     "人間四月芳菲盡，山寺桃花始盛開。",
+     "長恨春歸無覓處，不知轉入此中來。"
+    ],
     "注释": [
      "- 大林寺：廬山上的寺廟。",
      "- 芳菲：花草的香氣，這里指盛開的花。",
@@ -82135,7 +83948,8 @@
      "pick": "復",
      "why": "返回、再、恢复义作「復」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shanxing",
@@ -82147,6 +83961,10 @@
     "停車坐愛楓林晚，霜葉紅於二月花。"
    ],
    "sections_trad": {
+    "正文": [
+     "遠上寒山石徑斜，白雲生處有人家。",
+     "停車坐愛楓林晚，霜葉紅於二月花。"
+    ],
     "注释": [
      "- 寒山：深秋時的山。",
      "- 石徑：石頭小路。",
@@ -82442,7 +84260,8 @@
      "pick": "艷",
      "why": "艳丽义作「艷」；「豔」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yijiangnan",
@@ -82554,6 +84373,19 @@
      "field": "full",
      "line": 0,
      "page_char": "諳"
+    },
+    {
+     "at": 1,
+     "n": 2,
+     "simp": "出江",
+     "cands": [
+      "出江"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "日出江花红胜火，春来江",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 4,
@@ -82681,6 +84513,19 @@
      "field": "lines",
      "line": 0,
      "page_char": "諳"
+    },
+    {
+     "at": 1,
+     "n": 2,
+     "simp": "出江",
+     "cands": [
+      "出江"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "日出江花红胜火，春来江",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 4,
@@ -82834,7 +84679,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "huichongchunjiang",
@@ -82846,6 +84692,10 @@
     "蔞蒿滿地蘆芽短，正是河豚欲上時。"
    ],
    "sections_trad": {
+    "正文": [
+     "竹外桃花三兩枝，春江水暖鴨先知。",
+     "蔞蒿滿地蘆芽短，正是河豚欲上時。"
+    ],
     "注释": [
      "- 惠崇：北宋一位和尚畫家。",
      "- 春江晚景：春天的江邊傍晚景象。",
@@ -83055,7 +84905,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "suojian",
@@ -83067,6 +84918,10 @@
     "意欲捕鳴蟬，忽然閉口立。"
    ],
    "sections_trad": {
+    "正文": [
+     "牧童騎黃牛，歌聲振林樾。",
+     "意欲捕鳴蟬，忽然閉口立。"
+    ],
     "注释": [
      "- 振：震蕩、回響。",
      "- 林樾：樹林。樾，樹蔭。",
@@ -83079,7 +84934,7 @@
      "他忽然想去捉那只正在鳴叫的知了，於是馬上閉緊了嘴，一動不動地站住。"
     ],
     "赏析": [
-     "二十個字，捕到了一只蟬，也捕住了一個天真孩子。",
+     "二十個字，捕到了一隻蟬，也捕住了一個天真孩子。",
      "前兩句是動的：騎牛、唱歌、聲音震着樹林。後兩句忽然全停了：閉口、立住。一個「忽然」把節奏猛地剎住。",
      "這個轉變之所以好笑又可愛，是因爲讀者能想象出他的小心思——怕一出聲，蟬就跑了。於是刚才那個放開嗓門唱歌的人，立刻變成了屏息凝神的小雕像。",
      "袁枚說「性靈」，這首就是最好的例子。他不寫道理，只把一個孩子心里那點小小的較真記錄下來，讀者自己就笑了。"
@@ -83257,6 +85112,22 @@
      "why": "放荡、荡涤义作「蕩」；「盪」是异体"
     },
     {
+     "at": 8,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "二十个字，捕到了一只蝉，也捕住了一个",
+     "field": "sec:赏析",
+     "line": 0,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 17,
      "n": 1,
      "simp": "个",
@@ -83352,6 +85223,12 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "刚",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
    ]
   },
   {
@@ -83364,6 +85241,10 @@
     "兩岸猿聲啼不住，輕舟已過萬重山。"
    ],
    "sections_trad": {
+    "正文": [
+     "朝辭白帝彩雲間，千里江陵一日還。",
+     "兩岸猿聲啼不住，輕舟已過萬重山。"
+    ],
     "注释": [
      "- 朝：早晨。",
      "- 辭：告別。",
@@ -83463,6 +85344,19 @@
      "field": "lines",
      "line": 0,
      "page_char": "間"
+    },
+    {
+     "at": 8,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "朝辞白帝彩云间，千里江陵一日还。",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 14,
@@ -83581,7 +85475,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wangtianmenshan",
@@ -83593,13 +85488,17 @@
     "兩岸青山相對出，孤帆一片日邊來。"
    ],
    "sections_trad": {
+    "正文": [
+     "天門中斷楚江開，碧水東流至此回。",
+     "兩岸青山相對出，孤帆一片日邊來。"
+    ],
     "注释": [
      "- 天門山：安徽當塗的東梁山與西梁山的合稱。",
      "- 中斷：從中間斷開。",
      "- 楚江：長江流經舊楚地的一段。",
      "- 至此回：到這里打了個旋。",
      "- 相對出：兩邊相對着撲面而來。",
-     "- 孤帆：一只船。"
+     "- 孤帆：一隻船。"
     ],
     "译文": [
      "天門山從中間斷開，長江水從這里衝了過去；碧綠的江水向東流到這里打了個旋。",
@@ -83607,7 +85506,7 @@
     ],
     "赏析": [
      "二十八字，全是動詞，像一組正在播放的畫面。",
-     "「斷」「開」「流」「回」「出」「來」，六個動作一個接一個，讀者還沒讀完，眼前已經是一座山劈開、一條江衝過、一只船迎面駛來了。",
+     "「斷」「開」「流」「回」「出」「來」，六個動作一個接一個，讀者還沒讀完，眼前已經是一座山劈開、一條江衝過、一隻船迎面駛來了。",
      "妙在「兩岸青山相對出」。船其實沒動，是山在動——船往前走，兩邊的山就一路相對着迎上來。這一個「出」字，把靜止的山寫成了迎面撲來的樣子。",
      "李白的詩總有一種撲面而來的氣象。他不告訴你自己在哪兒，光讓你覺得風從臉上過去了。"
     ]
@@ -83812,6 +85711,22 @@
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     },
     {
+     "at": 5,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "- 孤帆：一只船。",
+     "field": "sec:注释",
+     "line": 5,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 33,
      "n": 1,
      "simp": "个",
@@ -83860,6 +85775,22 @@
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     },
     {
+     "at": 53,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "开、一条江冲过、一只船迎面驶来了。",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 45,
      "n": 1,
      "simp": "个",
@@ -83875,7 +85806,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wangdongting",
@@ -83887,6 +85819,10 @@
     "遙望洞庭山水翠，白銀盤裏一青螺。"
    ],
    "sections_trad": {
+    "正文": [
+     "湖光秋月兩相和，潭面無風鏡未磨。",
+     "遙望洞庭山水翠，白銀盤裏一青螺。"
+    ],
     "注释": [
      "- 兩相和：互相映襯、和諧。",
      "- 潭面：湖面。",
@@ -83899,7 +85835,7 @@
     ],
     "赏析": [
      "全詩最著名的，是最後那個比喻。",
-     "「白銀盤里一青螺」：八百里洞庭縮小成一只銀盤，湖中的君山變成了一枚青螺。八百里一下子縮到眼前，讀者才真切感到湖有多大。",
+     "「白銀盤里一青螺」：八百里洞庭縮小成一隻銀盤，湖中的君山變成了一枚青螺。八百里一下子縮到眼前，讀者才真切感到湖有多大。",
      "前兩句也在鋪這個底子。湖面無風，像沒磨過的銅鏡——沒磨的鏡面是朦朧的，朦朧才讓人往遠處想。",
      "劉禹錫被貶途中經過洞庭。別人寫這時多半是愁，他卻在水月之間找到了一個又大又美的畫面。這份把困境看成風景的本事，比任何安慰都有力。"
     ]
@@ -84089,6 +86025,22 @@
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     },
     {
+     "at": 18,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "八百里洞庭缩小成一只银盘，湖中的君山",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 7,
      "n": 1,
      "simp": "个",
@@ -84120,7 +86072,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jiangpan",
@@ -84648,6 +86601,12 @@
      "kept": "𫔭",
      "table_wanted": "開"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
+    }
    ]
   },
   {
@@ -84660,6 +86619,10 @@
     "借問酒家何處有？牧童遙指杏花村。"
    ],
    "sections_trad": {
+    "正文": [
+     "清明時節雨紛紛，路上行人欲斷魂。",
+     "借問酒家何處有？牧童遙指杏花村。"
+    ],
     "注释": [
      "- 清明：清明節，掃墓踏青的日子。",
      "- 紛紛：形容雨下得又細又密。",
@@ -84757,6 +86720,20 @@
      "field": "lines",
      "line": 0,
      "page_char": "紛"
+    },
+    {
+     "at": 11,
+     "n": 2,
+     "simp": "人欲",
+     "cands": [
+      "人欲",
+      "人慾"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "节雨纷纷，路上行人欲断魂。",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 13,
@@ -84942,7 +86919,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chuzhouxijian",
@@ -84954,6 +86932,10 @@
     "春潮帶雨晚來急，野渡無人舟自橫。"
    ],
    "sections_trad": {
+    "正文": [
+     "獨憐幽草澗邊生，上有黃鸝深樹鳴。",
+     "春潮帶雨晚來急，野渡無人舟自橫。"
+    ],
     "注释": [
      "- 滁州：地名，今屬安徽。",
      "- 西澗：西邊的山澗。",
@@ -85183,7 +87165,8 @@
      "pick": "閒",
      "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jueju-chiri",
@@ -85195,6 +87178,10 @@
     "泥融飛燕子，沙暖睡鴛鴦。"
    ],
    "sections_trad": {
+    "正文": [
+     "遲日江山麗，春風花草香。",
+     "泥融飛燕子，沙暖睡鴛鴦。"
+    ],
     "注释": [
      "- 遲日：春天日漸長，所以叫遲日。",
      "- 泥融：凍土化開，泥土變軟。",
@@ -85418,7 +87405,8 @@
      "pick": "歷",
      "why": "经历、历职、庆历都作「歷」；「曆」只用于历法"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zengliujingwen",
@@ -85430,6 +87418,10 @@
     "一年好景君須記，正是橙黃橘綠時。"
    ],
    "sections_trad": {
+    "正文": [
+     "荷盡已無擎雨蓋，菊殘猶有傲霜枝。",
+     "一年好景君須記，正是橙黃橘綠時。"
+    ],
     "注释": [
      "- 擎雨蓋：托住雨珠的荷葉，指荷葉。",
      "- 荷盡：荷花凋謝完了。",
@@ -85617,6 +87609,22 @@
    ],
    "marks_app": [
     {
+     "at": 5,
+     "n": 1,
+     "simp": "须",
+     "cands": [
+      "須",
+      "鬚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "一年好景君须记，正是橙黄橘绿",
+     "field": "sec:正文",
+     "line": 1,
+     "pick": "須",
+     "why": "必须、须臾义作「須」；「鬚」是胡须，仓内没有这种用法"
+    },
+    {
      "at": 3,
      "n": 1,
      "simp": "尽",
@@ -85699,7 +87707,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "cailianqu",
@@ -85711,6 +87720,10 @@
     "亂入池中看不見，聞歌始覺有人來。"
    ],
    "sections_trad": {
+    "正文": [
+     "荷葉羅裙一色裁，芙蓉向臉兩邊開。",
+     "亂入池中看不見，聞歌始覺有人來。"
+    ],
     "注释": [
      "- 采蓮曲：采蓮人唱的歌。",
      "- 羅裙：用絲綢做的裙子。",
@@ -85926,7 +87939,8 @@
      "page_char": "來"
     }
    ],
-   "marks_app": []
+   "marks_app": [],
+   "left_behind": []
   },
   {
    "id": "yinhushang",
@@ -85938,6 +87952,10 @@
     "欲把西湖比西子，淡妝濃抹總相宜。"
    ],
    "sections_trad": {
+    "正文": [
+     "水光瀲灧晴方好，山色空蒙雨亦奇。",
+     "欲把西湖比西子，淡妝濃抹總相宜。"
+    ],
     "注释": [
      "- 瀲灩：水波閃動的樣子。",
      "- 空蒙：迷迷茫茫。",
@@ -86093,6 +88111,22 @@
       "灩",
       "灧"
      ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "水光潋滟晴方好，山色空蒙",
+     "field": "sec:正文",
+     "line": 0,
+     "page_char": "灧",
+     "pick": "灧"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "滟",
+     "cands": [
+      "灩",
+      "灧"
+     ],
      "decision": "rule",
      "kind": "char",
      "ctx": "- 潋滟：水波闪动的样子",
@@ -86215,7 +88249,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "liangzhouci-wanghan",
@@ -86227,6 +88262,10 @@
     "醉臥沙場君莫笑，古來征戰幾人回。"
    ],
    "sections_trad": {
+    "正文": [
+     "葡萄美酒夜光杯，欲飲琵琶馬上催。",
+     "醉臥沙場君莫笑，古來征戰幾人回。"
+    ],
     "注释": [
      "- 夜光杯：用白玉制成的酒杯。",
      "- 欲飲：將要喝。",
@@ -86430,6 +88469,22 @@
    ],
    "marks_app": [
     {
+     "at": 10,
+     "n": 1,
+     "simp": "征",
+     "cands": [
+      "徵",
+      "征"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "沙场君莫笑，古来征战几人回。",
+     "field": "sec:正文",
+     "line": 1,
+     "page_char": "征",
+     "pick": "征"
+    },
+    {
      "at": 27,
      "n": 1,
      "simp": "个",
@@ -86478,7 +88533,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chusai",
@@ -86490,6 +88546,10 @@
     "但使龍城飛將在，不教胡馬度陰山。"
    ],
    "sections_trad": {
+    "正文": [
+     "秦時明月漢時關，萬里長征人未還。",
+     "但使龍城飛將在，不教胡馬度陰山。"
+    ],
     "注释": [
      "- 秦時明月漢時關：互文修辭，指自秦漢以來的明月和關塞。",
      "- 但使：只要。",
@@ -86704,7 +88764,8 @@
      "page_char": "陰"
     }
    ],
-   "marks_app": []
+   "marks_app": [],
+   "left_behind": []
   },
   {
    "id": "biedongda",
@@ -86716,6 +88777,10 @@
     "莫愁前路無知己，天下誰人不識君。"
    ],
    "sections_trad": {
+    "正文": [
+     "千里黃雲白日曛，北風吹雁雪紛紛。",
+     "莫愁前路無知己，天下誰人不識君。"
+    ],
     "注释": [
      "- 董大：琴師董庭蘭的簡稱。",
      "- 曛：昏黃。",
@@ -86758,6 +88823,19 @@
     ]
    },
    "marks": [
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千里黄云白日曛，北风",
+     "field": "lines",
+     "line": 0
+    },
     {
      "at": 2,
      "n": 1,
@@ -86872,7 +88950,8 @@
      "page_char": "識"
     }
    ],
-   "marks_app": []
+   "marks_app": [],
+   "left_behind": []
   },
   {
    "id": "sishitianyuan-25",
@@ -86884,6 +88963,10 @@
     "日長籬落無人過，惟有蜻蜓蛺蝶飛。"
    ],
    "sections_trad": {
+    "正文": [
+     "梅子金黃杏子肥，麥花雪白菜花稀。",
+     "日長籬落無人過，惟有蜻蜓蛺蝶飛。"
+    ],
     "注释": [
      "- 四時田園雜興：寫四季田園生活的組詩。",
      "- 梅子金黃杏子肥：梅子熟了變黃，杏子長得肥大。",
@@ -87058,7 +89141,8 @@
      "pick": "擺",
      "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "saixiaqu",
@@ -87070,6 +89154,10 @@
     "欲將輕騎逐，大雪滿弓刀。"
    ],
    "sections_trad": {
+    "正文": [
+     "月黑雁飛高，單于夜遁逃。",
+     "欲將輕騎逐，大雪滿弓刀。"
+    ],
     "注释": [
      "- 單于：匈奴首領的稱號，這里代指敵軍主帥。",
      "- 遁逃：逃跑。",
@@ -87211,7 +89299,8 @@
      "page_char": "滿"
     }
    ],
-   "marks_app": []
+   "marks_app": [],
+   "left_behind": []
   },
   {
    "id": "momei",
@@ -87223,6 +89312,10 @@
     "不要人誇好顏色，只留清氣滿乾坤。"
    ],
    "sections_trad": {
+    "正文": [
+     "我家洗硯池頭樹，朵朵花開淡墨痕。",
+     "不要人誇好顏色，只留清氣滿乾坤。"
+    ],
     "注释": [
      "- 洗硯池：洗毛筆硯臺的池子。",
      "- 朵朵：一朵朵。",
@@ -87366,6 +89459,19 @@
      "page_char": "顏"
     },
     {
+     "at": 8,
+     "n": 2,
+     "simp": "只留",
+     "cands": [
+      "只留"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "不要人夸好颜色，只留清气满乾坤。",
+     "field": "lines",
+     "line": 1
+    },
+    {
      "at": 11,
      "n": 1,
      "simp": "气",
@@ -87493,7 +89599,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xiarijueju",
@@ -87505,6 +89612,10 @@
     "至今思項羽，不肯過江東。"
    ],
    "sections_trad": {
+    "正文": [
+     "生當作人傑，死亦爲鬼雄。",
+     "至今思項羽，不肯過江東。"
+    ],
     "注释": [
      "- 人傑：人中豪傑。",
      "- 死亦爲鬼雄：死了也要做鬼中的英雄。",
@@ -87698,7 +89809,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "change",
@@ -87710,6 +89822,10 @@
     "嫦娥應悔偷靈藥，碧海青天夜夜心。"
    ],
    "sections_trad": {
+    "正文": [
+     "雲母屏風燭影深，長河漸落曉星沉。",
+     "嫦娥應悔偷靈藥，碧海青天夜夜心。"
+    ],
     "注释": [
      "- 雲母屏風：用雲母石裝飾的屏風。",
      "- 燭影深：燭光的影子越來越暗。",
@@ -87996,7 +90112,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "suxinshi",
@@ -88008,6 +90125,10 @@
     "兒童急走追黃蝶，飛入菜花無處尋。"
    ],
    "sections_trad": {
+    "正文": [
+     "籬落疏疏一逕深，樹頭新綠未成陰。",
+     "兒童急走追黃蝶，飛入菜花無處尋。"
+    ],
     "注释": [
      "- 新市：地名，在今浙江德清。",
      "- 徐公店：姓徐的人開的客店。",
@@ -88352,7 +90473,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "mujiangyin",
@@ -88364,6 +90486,10 @@
     "可憐九月初三夜，露似真珠月似弓。"
    ],
    "sections_trad": {
+    "正文": [
+     "一道殘陽鋪水中，半江瑟瑟半江紅。",
+     "可憐九月初三夜，露似真珠月似弓。"
+    ],
     "注释": [
      "- 殘陽：快要落山的太陽。",
      "- 鋪：鋪展、鋪滿。",
@@ -88513,7 +90639,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "qingpingyue-cunju",
@@ -88527,6 +90654,12 @@
     "最喜小兒亡賴，溪頭臥剝蓮蓬。"
    ],
    "sections_trad": {
+    "正文": [
+     "茅檐低小，溪上青青草。",
+     "醉里吳音相媚好，白髮誰家翁媼。",
+     "大兒鋤豆溪東，中兒正織雞籠。",
+     "最喜小兒亡賴，溪頭臥剝蓮蓬。"
+    ],
     "注释": [
      "- 清平樂：詞牌名。",
      "- 茅檐低小：茅屋又低又小。",
@@ -88905,6 +91038,22 @@
    ],
    "marks_app": [
     {
+     "at": 9,
+     "n": 1,
+     "simp": "发",
+     "cands": [
+      "發",
+      "髮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "里吴音相媚好，白发谁家翁媪。",
+     "field": "sec:正文",
+     "line": 1,
+     "page_char": "髮",
+     "pick": "髮"
+    },
+    {
      "at": 12,
      "n": 1,
      "simp": "锄",
@@ -89034,7 +91183,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "duzuojingting",
@@ -89046,6 +91196,10 @@
     "相看兩不厭，只有敬亭山。"
    ],
    "sections_trad": {
+    "正文": [
+     "衆鳥高飛盡，孤雲獨去閑。",
+     "相看兩不厭，只有敬亭山。"
+    ],
     "注释": [
      "- 盡：沒有了。",
      "- 孤云：孤單的一片云。",
@@ -89218,9 +91372,38 @@
      "field": "lines",
      "line": 1,
      "page_char": "厭"
+    },
+    {
+     "at": 6,
+     "n": 2,
+     "simp": "只有",
+     "cands": [
+      "只有"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "相看两不厌，只有敬亭山。",
+     "field": "lines",
+     "line": 1
     }
    ],
    "marks_app": [
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "闲",
+     "cands": [
+      "閒",
+      "閑"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "高飞尽，孤云独去闲。",
+     "field": "sec:正文",
+     "line": 0,
+     "page_char": "閑",
+     "pick": "閑"
+    },
     {
      "at": 2,
      "n": 1,
@@ -89319,7 +91502,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "furonglou",
@@ -89331,6 +91515,10 @@
     "洛陽親友如相問，一片冰心在玉壺。"
    ],
    "sections_trad": {
+    "正文": [
+     "寒雨連江夜入吳，平明送客楚山孤。",
+     "洛陽親友如相問，一片冰心在玉壺。"
+    ],
     "注释": [
      "- 芙蓉樓：樓名，在今江蘇鎮江。",
      "- 寒雨：秋天的冷雨。",
@@ -89511,7 +91699,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "feng-mi",
@@ -89523,6 +91712,10 @@
     "採得百花成蜜後，爲誰辛苦爲誰甜。"
    ],
    "sections_trad": {
+    "正文": [
+     "不論平地與山尖，無限風光盡被占。",
+     "採得百花成蜜後，爲誰辛苦爲誰甜。"
+    ],
     "注释": [
      "- 山尖：山頂。",
      "- 佔：佔有、佔盡。",
@@ -89740,6 +91933,22 @@
    ],
    "marks_app": [
     {
+     "at": 14,
+     "n": 1,
+     "simp": "占",
+     "cands": [
+      "佔",
+      "占"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "尖，无限风光尽被占。",
+     "field": "sec:正文",
+     "line": 0,
+     "page_char": "占",
+     "pick": "占"
+    },
+    {
      "at": 3,
      "n": 1,
      "simp": "尽",
@@ -89789,7 +91998,8 @@
      "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
      "evidence": "来源页 14 处作「盡」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xuemei",
@@ -89801,6 +92011,10 @@
     "梅須遜雪三分白，雪卻輸梅一段香。"
    ],
    "sections_trad": {
+    "正文": [
+     "梅雪爭春未肯降，騷人擱筆費評章。",
+     "梅須遜雪三分白，雪卻輸梅一段香。"
+    ],
     "注释": [
      "- 降：服輸。",
      "- 騷人：詩人。",
@@ -90053,7 +92267,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "longpo",
@@ -90065,6 +92280,10 @@
     "不識廬山真面目，只緣身在此山中。"
    ],
    "sections_trad": {
+    "正文": [
+     "橫看成嶺側成峯，遠近高低各不同。",
+     "不識廬山真面目，只緣身在此山中。"
+    ],
     "注释": [
      "- 題：書寫、題寫。",
      "- 橫看：從正面看。",
@@ -90179,6 +92398,19 @@
      "page_char": "遠"
     },
     {
+     "at": 13,
+     "n": 2,
+     "simp": "不同",
+     "cands": [
+      "不同"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "成峰，远近高低各不同。",
+     "field": "lines",
+     "line": 0
+    },
+    {
      "at": 1,
      "n": 1,
      "simp": "识",
@@ -90268,7 +92500,8 @@
      "pick": "蘇",
      "why": "姓、复苏义作「蘇」；「甦」是后起俗字、「囌」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "luchai",
@@ -90280,6 +92513,10 @@
     "返景入深林，復照青苔上。"
    ],
    "sections_trad": {
+    "正文": [
+     "空山不見人，但聞人語響。",
+     "返景入深林，復照青苔上。"
+    ],
     "注释": [
      "- 鹿柴：地名。柴，這里讀作「寨」。",
      "- 但聞：只聽見。",
@@ -90459,7 +92696,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "qiqiao",
@@ -90471,6 +92709,10 @@
     "家家乞巧望秋月，穿盡紅絲幾萬條。"
    ],
    "sections_trad": {
+    "正文": [
+     "七夕今宵看碧霄，牽牛織女渡河橋。",
+     "家家乞巧望秋月，穿盡紅絲幾萬條。"
+    ],
     "注释": [
      "- 乞巧：七夕的風俗，姑娘們向織女祈求心靈手巧。",
      "- 今宵：今夜。",
@@ -90685,7 +92927,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xiangcunsiyue",
@@ -90697,6 +92940,10 @@
     "鄉村四月閒人少，才了蠶桑又插田。"
    ],
    "sections_trad": {
+    "正文": [
+     "綠遍山原白滿川，子規聲里雨如煙。",
+     "鄉村四月閒人少，才了蠶桑又插田。"
+    ],
     "注释": [
      "- 綠遍山原：綠色鋪滿了山陵和原野。",
      "- 白滿川：白色的花鋪滿了田地。",
@@ -91045,7 +93292,8 @@
      "pick": "閒",
      "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "congjunxing",
@@ -91057,6 +93305,10 @@
     "黃沙百戰穿金甲，不破樓蘭終不還。"
    ],
    "sections_trad": {
+    "正文": [
+     "青海長雲暗雪山，孤城遙望玉門關。",
+     "黃沙百戰穿金甲，不破樓蘭終不還。"
+    ],
     "注释": [
      "- 青海：指青海湖一帶。",
      "- 長云：連綿的雲層。",
@@ -91292,7 +93544,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "liangzhouci-wangzhihuan",
@@ -91304,6 +93557,10 @@
     "羌笛何須怨楊柳，春風不度玉門關。"
    ],
    "sections_trad": {
+    "正文": [
+     "黃河遠上白雲間，一片孤城萬仞山。",
+     "羌笛何須怨楊柳，春風不度玉門關。"
+    ],
     "收录范围": [
      "教材位置：統編語文五年級下冊《語文園地四》「日積月累」收本詩；課標（2022）附錄1 小學第 8 條列本篇。出處：倉內所記版本 《語文園地四》（按條目原引，未另附鏈接）",
      "  裁定：內容組 AI 校勘，日期 2026-10-07。"
@@ -91659,7 +93916,8 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "sishitianyuan-31",
@@ -91671,6 +93929,10 @@
     "童孫未解供耕織，也傍桑陰學種瓜。"
    ],
    "sections_trad": {
+    "正文": [
+     "晝出耘田夜績麻，村莊兒女各當家。",
+     "童孫未解供耕織，也傍桑陰學種瓜。"
+    ],
     "注释": [
      "- 耘田：在田里除草。",
      "- 績麻：把麻搓成線，用來織布。",
@@ -91986,7 +94248,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shanjuqiuming",
@@ -92000,6 +94263,12 @@
     "隨意春芳歇，王孫自可留。"
    ],
    "sections_trad": {
+    "正文": [
+     "空山新雨後，天氣晚來秋。",
+     "明月松間照，清泉石上流。",
+     "竹喧歸浣女，蓮動下漁舟。",
+     "隨意春芳歇，王孫自可留。"
+    ],
     "注释": [
      "- 暝：日落，天色將晚。",
      "- 空山：空曠幽靜的山。",
@@ -92252,7 +94521,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jihai",
@@ -92264,6 +94534,10 @@
     "我勸天公重抖擻，不拘一格降人材。"
    ],
    "sections_trad": {
+    "正文": [
+     "九州生氣恃風雷，萬馬齊喑究可哀。",
+     "我勸天公重抖擻，不拘一格降人材。"
+    ],
     "注释": [
      "- 己亥：干支紀年，這里指清道光十九年。",
      "- 生氣：生機、活力。",
@@ -92523,7 +94797,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "cunwan",
@@ -92535,6 +94810,10 @@
     "牧童歸去橫牛背，短笛無腔信口吹。"
    ],
    "sections_trad": {
+    "正文": [
+     "草滿池塘水滿陂，山銜落日浸寒漪。",
+     "牧童歸去橫牛背，短笛無腔信口吹。"
+    ],
     "注释": [
      "- 陂：池塘的岸。",
      "- 銜：含着、托着。",
@@ -92745,7 +95024,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "fengqiaoyebo",
@@ -92757,6 +95037,10 @@
     "姑蘇城外寒山寺，夜半鐘聲到客船。"
    ],
    "sections_trad": {
+    "正文": [
+     "月落烏啼霜滿天，江楓漁火對愁眠。",
+     "姑蘇城外寒山寺，夜半鐘聲到客船。"
+    ],
     "注释": [
      "- 泊：停船。",
      "- 月落：月亮西沉。",
@@ -92922,6 +95206,23 @@
     }
    ],
    "marks_app": [
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "钟",
+     "cands": [
+      "鍾",
+      "鐘",
+      "鈡"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "城外寒山寺，夜半钟声到客船。",
+     "field": "sec:正文",
+     "line": 1,
+     "page_char": "鐘",
+     "pick": "鐘"
+    },
     {
      "at": 3,
      "n": 1,
@@ -93106,7 +95407,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yugezi",
@@ -93118,6 +95420,10 @@
     "青箬笠，綠蓑衣，斜風細雨不須歸。"
    ],
    "sections_trad": {
+    "正文": [
+     "西塞山前白鷺飛，桃花流水鱖魚肥。",
+     "青箬笠，綠蓑衣，斜風細雨不須歸。"
+    ],
     "注释": [
      "- 漁歌子：詞牌名。",
      "- 西塞山：地名，在今浙江湖州。",
@@ -93322,7 +95628,8 @@
      "pick": "蘇",
      "why": "姓、复苏义作「蘇」；「甦」是后起俗字、「囌」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shier",
@@ -93334,6 +95641,10 @@
     "王師北定中原日，家祭無忘告乃翁。"
    ],
    "sections_trad": {
+    "正文": [
+     "死去元知萬事空，但悲不見九州同。",
+     "王師北定中原日，家祭無忘告乃翁。"
+    ],
     "注释": [
      "- 示兒：給兒子看，這首詩是陸遊的遺囑。",
      "- 元知：本來就知道。元，同「原」。",
@@ -93580,7 +95891,8 @@
      "pick": "復",
      "why": "返回、再、恢复义作「復」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "qiuyejiangxiao",
@@ -93592,6 +95904,10 @@
     "遺民淚盡胡塵裏，南望王師又一年。"
    ],
    "sections_trad": {
+    "正文": [
+     "三萬里河東入海，五千仞嶽上摩天。",
+     "遺民淚盡胡塵裏，南望王師又一年。"
+    ],
     "注释": [
      "- 三萬里河：指黃河。",
      "- 五千仞嶽：指華山。",
@@ -93682,6 +95998,19 @@
      "field": "lines",
      "line": 0,
      "page_char": "東"
+    },
+    {
+     "at": 8,
+     "n": 2,
+     "simp": "五千",
+     "cands": [
+      "五千"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "三万里河东入海，五千仞岳上摩天。",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 11,
@@ -93804,6 +96133,23 @@
    ],
    "marks_app": [
     {
+     "at": 2,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "三万里河东入海，五千仞",
+     "field": "sec:正文",
+     "line": 0,
+     "page_char": "里",
+     "pick": "里"
+    },
+    {
      "at": 3,
      "n": 1,
      "simp": "里",
@@ -93918,7 +96264,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zhizibing",
@@ -93930,6 +96277,10 @@
     "敲成玉磬穿林響，忽作玻璃碎地聲。"
    ],
    "sections_trad": {
+    "正文": [
+     "稚子金盆脫曉冰，彩絲穿取當銀鉦。",
+     "敲成玉磬穿林響，忽作玻璃碎地聲。"
+    ],
     "收录范围": [
      "統編教材用字尚未逐本核對（P3 待辦）；核對到教材本後按「教材版爲準」再改一次，差異留在本節。出處：統編教材《語文》五年級下冊（frontmatter 記錄的冊次）"
     ],
@@ -94109,6 +96460,23 @@
     }
    ],
    "marks_app": [
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "脱晓冰，彩丝穿取当银钲。",
+     "field": "sec:正文",
+     "line": 0,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
     {
      "at": 77,
      "n": 1,
@@ -94356,7 +96724,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "guanshu",
@@ -94368,6 +96737,10 @@
     "問渠那得清如許，爲有源頭活水來。"
    ],
    "sections_trad": {
+    "正文": [
+     "半畝方塘一鑑開，天光雲影共徘徊。",
+     "問渠那得清如許，爲有源頭活水來。"
+    ],
     "注释": [
      "- 半畝方塘：半畝大的方形池塘。",
      "- 一鑑開：像一面鏡子被打開。",
@@ -94591,7 +96964,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zengwang",
@@ -94606,6 +96980,13 @@
     "少壯不努力，老大徒傷悲。"
    ],
    "sections_trad": {
+    "正文": [
+     "青青園中葵，朝露待日晞。",
+     "陽春布德澤，萬物生光輝。",
+     "常恐秋節至，焜黃華葉衰。",
+     "百川東到海，何時復西歸。",
+     "少壯不努力，老大徒傷悲。"
+    ],
     "注释": [
      "- 長歌行：漢樂府曲調名。",
      "- 葵：一種蔬菜，冬葵。",
@@ -94918,7 +97299,8 @@
      "pick": "復",
      "why": "返回、再、恢复义作「復」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "changxiangsi",
@@ -94930,6 +97312,10 @@
     "風一更，雪一更，聒碎鄉心夢不成，故園無此聲。"
    ],
    "sections_trad": {
+    "正文": [
+     "山一程，水一程，身向榆關那畔行，夜深千帳燈。",
+     "風一更，雪一更，聒碎鄉心夢不成，故園無此聲。"
+    ],
     "注释": [
      "- 長相思：詞牌名。",
      "- 程：一段路程。",
@@ -95166,7 +97552,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wenguanjun",
@@ -95180,6 +97567,12 @@
     "即從巴峽穿巫峽，便下襄陽向洛陽。"
    ],
    "sections_trad": {
+    "正文": [
+     "劍外忽傳收薊北，初聞涕淚滿衣裳。",
+     "卻看妻子愁何在，漫卷詩書喜欲狂。",
+     "白日放歌須縱酒，青春作伴好還鄉。",
+     "即從巴峽穿巫峽，便下襄陽向洛陽。"
+    ],
     "注释": [
      "- 聞官軍收河南河北：聽說朝廷軍隊收復了河南河北。",
      "- 劍外：劍門關以南，指詩人當時所在的四川。",
@@ -95631,7 +98024,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "tilinandi",
@@ -95643,6 +98037,10 @@
     "暖風熏得遊人醉，直把杭州作汴州。"
    ],
    "sections_trad": {
+    "正文": [
+     "山外青山樓外樓，西湖歌舞幾時休。",
+     "暖風熏得遊人醉，直把杭州作汴州。"
+    ],
     "注释": [
      "- 臨安：南宋都城，今浙江杭州。",
      "- 邸：旅店。",
@@ -95780,6 +98178,23 @@
    ],
    "marks_app": [
     {
+     "at": 2,
+     "n": 1,
+     "simp": "熏",
+     "cands": [
+      "燻",
+      "熏",
+      "薰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "暖风熏得游人醉，直把杭",
+     "field": "sec:正文",
+     "line": 1,
+     "page_char": "熏",
+     "pick": "熏"
+    },
+    {
      "at": 16,
      "n": 1,
      "simp": "当",
@@ -95879,7 +98294,8 @@
      "pick": "裏",
      "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "niaomingjian",
@@ -95891,6 +98307,10 @@
     "月出驚山鳥，時鳴春澗中。"
    ],
    "sections_trad": {
+    "正文": [
+     "人閑桂花落，夜靜春山空。",
+     "月出驚山鳥，時鳴春澗中。"
+    ],
     "注释": [
      "- 鳥鳴澗：這里指人閒時才能聽見的那種幽深的鳥鳴。",
      "- 人閒：人的心閒下來。",
@@ -96053,6 +98473,22 @@
    ],
    "marks_app": [
     {
+     "at": 1,
+     "n": 1,
+     "simp": "闲",
+     "cands": [
+      "閒",
+      "閑"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "人闲桂花落，夜静春山",
+     "field": "sec:正文",
+     "line": 0,
+     "page_char": "閑",
+     "pick": "閑"
+    },
+    {
      "at": 10,
      "n": 1,
      "simp": "闲",
@@ -96180,7 +98616,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "huanghelou",
@@ -96192,6 +98629,10 @@
     "孤帆遠影碧空盡，唯見長江天際流。"
    ],
    "sections_trad": {
+    "正文": [
+     "故人西辭黃鶴樓，煙花三月下揚州。",
+     "孤帆遠影碧空盡，唯見長江天際流。"
+    ],
     "注释": [
      "- 黃鶴樓：名樓，在今湖北武漢。",
      "- 故人：老朋友，這里指孟浩然。",
@@ -96560,7 +99001,8 @@
      "pick": "繫",
      "why": "捆绑、悬挂义作「繫」（系颈、系燕、充炭直、难系）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shuhuyin",
@@ -96572,6 +99014,10 @@
     "一水護田將綠繞，兩山排闥送青來。"
    ],
    "sections_trad": {
+    "正文": [
+     "茅檐長掃淨無苔，花木成畦手自栽。",
+     "一水護田將綠繞，兩山排闥送青來。"
+    ],
     "注释": [
      "- 書：書寫，題寫。",
      "- 湖陰先生：楊德逢的別號，王安石罷相後隱居時的鄰居。",
@@ -96836,6 +99282,12 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "刚",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
    ]
   },
   {
@@ -96848,6 +99300,10 @@
     "卷地風來忽吹散，望湖樓下水如天。"
    ],
    "sections_trad": {
+    "正文": [
+     "黑雲翻墨未遮山，白雨跳珠亂入船。",
+     "卷地風來忽吹散，望湖樓下水如天。"
+    ],
     "注释": [
      "- 望湖樓：樓名，在杭州西湖邊。",
      "- 翻墨：像打翻的墨汁一樣。",
@@ -97080,6 +99536,12 @@
      "pick": "蘇",
      "why": "姓、复苏义作「蘇」；「甦」是后起俗字、「囌」是异体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "来",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
    ]
   },
   {
@@ -97092,6 +99554,10 @@
     "今夜月明人盡望，不知秋思落誰家。"
    ],
    "sections_trad": {
+    "正文": [
+     "中庭地白樹棲鴉，冷露無聲溼桂花。",
+     "今夜月明人盡望，不知秋思落誰家。"
+    ],
     "注释": [
      "- 十五夜：農曆八月十五的夜晚。",
      "- 中庭：院子里。",
@@ -97328,7 +99794,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "bosuanzi-song",
@@ -97342,6 +99809,12 @@
     "若到江南趕上春，千萬和春住。"
    ],
    "sections_trad": {
+    "正文": [
+     "水是眼波橫，山是眉峯聚。",
+     "欲問行人去那邊？眉眼盈盈處。",
+     "才始送春歸，又送君歸去。",
+     "若到江南趕上春，千萬和春住。"
+    ],
     "注释": [
      "- 卜算子：詞牌名。",
      "- 眼波橫：形容水流像美人流轉的目光。",
@@ -97596,7 +100069,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "huixiangyoushu",
@@ -97608,6 +100082,10 @@
     "兒童相見不相識，笑問客從何處來。"
    ],
    "sections_trad": {
+    "正文": [
+     "少小離家老大回，鄉音無改鬢毛衰。",
+     "兒童相見不相識，笑問客從何處來。"
+    ],
     "注释": [
      "- 回鄉偶書：回鄉時偶然寫下的詩。",
      "- 少小：年紀很小的時候。",
@@ -97950,7 +100428,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "sujiandejiang",
@@ -97962,6 +100441,10 @@
     "野曠天低樹，江清月近人。"
    ],
    "sections_trad": {
+    "正文": [
+     "移舟泊煙渚，日暮客愁新。",
+     "野曠天低樹，江清月近人。"
+    ],
     "注释": [
      "- 建德江：新安江流經建德的一段。",
      "- 移舟：划動小船。",
@@ -98087,7 +100570,8 @@
      "pick": "煙",
      "why": "烟雾、烟霞义作「煙」；「菸」是烟草后起义"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "hanshi",
@@ -98099,6 +100583,10 @@
     "日暮漢宮傳蠟燭，輕煙散入五侯家。"
    ],
    "sections_trad": {
+    "正文": [
+     "春城無處不飛花，寒食東風御柳斜。",
+     "日暮漢宮傳蠟燭，輕煙散入五侯家。"
+    ],
     "注释": [
      "- 寒食：清明前一兩天的節日，古時這天禁火。",
      "- 飛花：飛舞的花瓣。",
@@ -98489,7 +100977,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zaochun",
@@ -98501,6 +100990,10 @@
     "最是一年春好處，絕勝煙柳滿皇都。"
    ],
    "sections_trad": {
+    "正文": [
+     "天街小雨潤如酥，草色遙看近卻無。",
+     "最是一年春好處，絕勝煙柳滿皇都。"
+    ],
     "注释": [
      "- 水部張十八員外：詩人張籍，在水部任官，家里排行十八。",
      "- 天街：京城的街道。",
@@ -98742,7 +101235,8 @@
      "pick": "別",
      "why": "分别、离别义作「別」；「彆」只用于「别扭」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chunyexiyu",
@@ -98756,6 +101250,12 @@
     "曉看紅溼處，花重錦官城。"
    ],
    "sections_trad": {
+    "正文": [
+     "好雨知時節，當春乃發生。",
+     "隨風潛入夜，潤物細無聲。",
+     "野徑雲俱黑，江船火獨明。",
+     "曉看紅溼處，花重錦官城。"
+    ],
     "注释": [
      "- 知時節：懂得時節，知道什麼時候該下雨。",
      "- 乃：就。",
@@ -99240,7 +101740,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chunri",
@@ -99252,6 +101753,10 @@
     "等閒識得東風面，萬紫千紅總是春。"
    ],
    "sections_trad": {
+    "正文": [
+     "勝日尋芳泗水濱，無邊光景一時新。",
+     "等閒識得東風面，萬紫千紅總是春。"
+    ],
     "注释": [
      "- 勝日：天氣晴朗的好日子。",
      "- 尋芳：遊賞美景。",
@@ -99547,7 +102052,8 @@
      "pick": "閒",
      "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jiangshangyuzhe",
@@ -99559,6 +102065,10 @@
     "君看一葉舟，出沒風波裏。"
    ],
    "sections_trad": {
+    "正文": [
+     "江上往來人，但愛鱸魚美。",
+     "君看一葉舟，出沒風波裏。"
+    ],
     "注释": [
      "- 江上漁者：江上的漁民。",
      "- 但：只。",
@@ -99717,7 +102227,8 @@
      "page_char": "裏"
     }
    ],
-   "marks_app": []
+   "marks_app": [],
+   "left_behind": []
   },
   {
    "id": "jiangnanchun",
@@ -99729,6 +102240,10 @@
     "南朝四百八十寺，多少樓臺煙雨中。"
    ],
    "sections_trad": {
+    "正文": [
+     "千里鶯啼綠映紅，水村山郭酒旗風。",
+     "南朝四百八十寺，多少樓臺煙雨中。"
+    ],
     "注释": [
      "- 千里鶯啼：千里江南到處都能聽到黃鶯啼叫。",
      "- 綠映紅：綠樹映襯着紅花。",
@@ -99776,6 +102291,19 @@
     ]
    },
    "marks": [
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千里莺啼绿映红，水村",
+     "field": "lines",
+     "line": 0
+    },
     {
      "at": 2,
      "n": 1,
@@ -100029,7 +102557,8 @@
      "pick": "煙",
      "why": "烟雾、烟霞义作「煙」；「菸」是烟草后起义"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "bochuanguazhou",
@@ -100041,6 +102570,10 @@
     "春風又綠江南岸，明月何時照我還。"
    ],
    "sections_trad": {
+    "正文": [
+     "京口瓜洲一水間，鐘山只隔數重山。",
+     "春風又綠江南岸，明月何時照我還。"
+    ],
     "注释": [
      "- 泊船：停船。",
      "- 瓜洲：在今江蘇揚州南，長江北岸。",
@@ -100209,6 +102742,23 @@
     {
      "at": 8,
      "n": 1,
+     "simp": "钟",
+     "cands": [
+      "鍾",
+      "鐘",
+      "鈡"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "京口瓜洲一水间，钟山只隔数重山。",
+     "field": "sec:正文",
+     "line": 0,
+     "page_char": "鐘",
+     "pick": "鐘"
+    },
+    {
+     "at": 8,
+     "n": 1,
      "simp": "苏",
      "cands": [
       "蘇",
@@ -100339,7 +102889,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "huanxisha-qishui",
@@ -100353,6 +102904,12 @@
     "休將白髮唱黃雞。"
    ],
    "sections_trad": {
+    "正文": [
+     "山下蘭芽短浸溪，松間沙路淨無泥。",
+     "蕭蕭暮雨子規啼。",
+     "誰道人生無再少？門前流水尚能西！",
+     "休將白髮唱黃雞。"
+    ],
     "注释": [
      "- 浣溪沙：詞牌名。",
      "- 蘭芽：蘭草的嫩芽。",
@@ -100643,6 +103200,22 @@
       "發",
       "髮"
      ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "休将白发唱黄鸡。",
+     "field": "sec:正文",
+     "line": 3,
+     "page_char": "髮",
+     "pick": "髮"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "发",
+     "cands": [
+      "發",
+      "髮"
+     ],
      "decision": "rule",
      "kind": "char",
      "ctx": "- 白发：白头发。",
@@ -100751,7 +103324,8 @@
      "pick": "蘇",
      "why": "姓、复苏义作「蘇」；「甦」是后起俗字、「囌」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "langtaosha",
@@ -100763,6 +103337,10 @@
     "如今直上銀河去，同到牽牛織女家。"
    ],
    "sections_trad": {
+    "正文": [
+     "九曲黃河萬里沙，浪淘風簸自天涯。",
+     "如今直上銀河去，同到牽牛織女家。"
+    ],
     "注释": [
      "- 浪淘沙：詞牌名。",
      "- 九曲：形容黃河彎道極多。",
@@ -100809,6 +103387,19 @@
     ]
    },
    "marks": [
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "九曲",
+     "cands": [
+      "九曲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "九曲黄河万里沙，浪淘",
+     "field": "lines",
+     "line": 0
+    },
     {
      "at": 2,
      "n": 1,
@@ -100987,6 +103578,12 @@
      "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
      "evidence": "来源页 14 处作「盡」"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "刚",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
    ]
   },
   {
@@ -100999,6 +103596,10 @@
     "春色滿園關不住，一枝紅杏出牆來。"
    ],
    "sections_trad": {
+    "正文": [
+     "應憐屐齒印蒼苔，小扣柴扉久不開。",
+     "春色滿園關不住，一枝紅杏出牆來。"
+    ],
     "注释": [
      "- 遊園不值：去遊園卻沒能進門。",
      "- 不值：沒有遇到主人。",
@@ -101258,7 +103859,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "youziyin",
@@ -101746,6 +104348,12 @@
      "kept": "缐",
      "table_wanted": "線"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "缐",
+     "why": "keep（单字）：線"
+    }
    ]
   },
   {
@@ -101758,6 +104366,10 @@
     "粉骨碎身渾不怕，要留清白在人間。"
    ],
    "sections_trad": {
+    "正文": [
+     "千錘萬鑿出深山，烈火焚燒若等閒。",
+     "粉骨碎身渾不怕，要留清白在人間。"
+    ],
     "注释": [
      "- 石灰吟：詠石灰的詩。",
      "- 千錘萬鑿：無數次錘打開鑿。",
@@ -101916,6 +104528,22 @@
    ],
    "marks_app": [
     {
+     "at": 14,
+     "n": 1,
+     "simp": "闲",
+     "cands": [
+      "閒",
+      "閑"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "山，烈火焚烧若等闲。",
+     "field": "sec:正文",
+     "line": 0,
+     "pick": "閒",
+     "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
+    },
+    {
      "at": 4,
      "n": 1,
      "simp": "闲",
@@ -102028,7 +104656,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zhushi",
@@ -102040,6 +104669,10 @@
     "千磨萬擊還堅勁，任爾東西南北風。"
    ],
    "sections_trad": {
+    "正文": [
+     "咬定青山不放松，立根原在破巖中。",
+     "千磨萬擊還堅勁，任爾東西南北風。"
+    ],
     "注释": [
      "- 竹石：竹子和巖石。",
      "- 咬定：緊緊地抓住，指竹根牢牢扎住。",
@@ -102087,6 +104720,20 @@
     ]
    },
    "marks": [
+    {
+     "at": 4,
+     "n": 3,
+     "simp": "不放松",
+     "cands": [
+      "不放松",
+      "不放鬆"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "咬定青山不放松，立根原在破岩中",
+     "field": "lines",
+     "line": 0
+    },
     {
      "at": 13,
      "n": 1,
@@ -102280,7 +104927,8 @@
      "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
      "evidence": "来源页 14 处作「盡」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xijiangyue",
@@ -102294,6 +104942,12 @@
     "舊時茅店社林邊，路轉溪橋忽見。"
    ],
    "sections_trad": {
+    "正文": [
+     "明月別枝驚鵲，清風半夜鳴蟬。",
+     "稻花香里說豐年，聽取蛙聲一片。",
+     "七八個星天外，兩三點雨山前。",
+     "舊時茅店社林邊，路轉溪橋忽見。"
+    ],
     "注释": [
      "- 西江月：詞牌名。",
      "- 別枝驚鵲：斜出的樹枝驚起了喜鵲。",
@@ -102656,7 +105310,8 @@
      "pick": "復",
      "why": "返回、再、恢复义作「復」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "guogurenzhuang",
@@ -102670,6 +105325,12 @@
     "待到重陽日，還來就菊花。"
    ],
    "sections_trad": {
+    "正文": [
+     "故人具雞黍，邀我至田家。",
+     "綠樹村邊合，青山郭外斜。",
+     "開軒面場圃，把酒話桑麻。",
+     "待到重陽日，還來就菊花。"
+    ],
     "注释": [
      "- 過故人莊：到老朋友家做客。",
      "- 具雞黍：備下雞和黃米飯。",
@@ -102690,7 +105351,7 @@
     ],
     "赏析": [
      "這首詩從頭到尾平平淡淡，可它是古詩里最溫暖的一首之一。",
-     "「具雞黍」三個字尤其好。沒有山珍海味，就是一只雞、一鍋黃米飯——這是農家待客最實在的樣子。",
+     "「具雞黍」三個字尤其好。沒有山珍海味，就是一隻雞、一鍋黃米飯——這是農家待客最實在的樣子。",
      "中間兩景很講究：「綠樹村邊合，青山郭外斜」。綠樹在村子四周合攏，青山在村外斜斜地伸過來，一近一遠，把村子圍成了一個又安穩又有靠的地方。",
      "「開軒面場圃，把酒話桑麻」寫的是做客。打開窗子對着谷場菜園，端着酒杯聊莊稼——不談別的，就聊收成。",
      "最有味的是結尾：「待到重陽日，還來就菊花」。今天還沒走，就約好了下次。",
@@ -102932,6 +105593,22 @@
    ],
    "marks_app": [
     {
+     "at": 21,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "有山珍海味，就是一只鸡、一锅黄米饭—",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 56,
      "n": 1,
      "simp": "个",
@@ -102947,7 +105624,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "tiaotiaoqianniuxing",
@@ -102962,6 +105640,13 @@
     "盈盈一水間，脈脈不得語。"
    ],
    "sections_trad": {
+    "正文": [
+     "迢迢牽牛星，皎皎河漢女。",
+     "纖纖擢素手，札札弄機杼。",
+     "終日不成章，泣涕零如雨。",
+     "河漢清且淺，相去復幾許。",
+     "盈盈一水間，脈脈不得語。"
+    ],
     "注释": [
      "- 迢迢：遙遠。",
      "- 牽牛星：織女星在銀河對岸對應的星，即牛郎星。",
@@ -103389,7 +106074,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "songyuaner",
@@ -103401,6 +106087,10 @@
     "勸君更盡一杯酒，西出陽關無故人。"
    ],
    "sections_trad": {
+    "正文": [
+     "渭城朝雨浥輕塵，客舍青青柳色新。",
+     "勸君更盡一杯酒，西出陽關無故人。"
+    ],
     "注释": [
      "- 元二：姓元的，排行老二，詩人的朋友。",
      "- 使：出使。",
@@ -103518,6 +106208,19 @@
      "field": "lines",
      "line": 1,
      "page_char": "盡"
+    },
+    {
+     "at": 4,
+     "n": 2,
+     "simp": "一杯",
+     "cands": [
+      "一杯"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "劝君更尽一杯酒，西出阳关无故",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 9,
@@ -103643,7 +106346,8 @@
      "pick": "別",
      "why": "分别、离别义作「別」；「彆」只用于「别扭」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "caiwei",
@@ -103657,6 +106361,12 @@
     "我心傷悲，莫知我哀。"
    ],
    "sections_trad": {
+    "正文": [
+     "昔我往矣，楊柳依依。",
+     "今我來思，雨雪霏霏。",
+     "行道遲遲，載渴載飢。",
+     "我心傷悲，莫知我哀。"
+    ],
     "注释": [
      "- 采薇：詩經里的名篇，寫一位戍卒歸鄉路上的感受。",
      "- 昔：從前。",
@@ -103938,7 +106648,8 @@
      "pick": "擺",
      "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "mashi",
@@ -103950,6 +106661,10 @@
     "何當金絡腦，快走踏清秋。"
    ],
    "sections_trad": {
+    "正文": [
+     "大漠沙如雪，燕山月似鉤。",
+     "何當金絡腦，快走踏清秋。"
+    ],
     "注释": [
      "- 馬詩：借馬說自己的一組詩，這是第五首。",
      "- 大漠：廣闊的沙漠。",
@@ -104135,7 +106850,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "mengziyize",
@@ -105923,7 +108639,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "laozi8",
@@ -106678,6 +109395,19 @@
      "field": "full",
      "line": 2,
      "page_char": "動"
+    },
+    {
+     "at": 98,
+     "n": 2,
+     "simp": "不欲",
+     "cands": [
+      "不欲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "之徐生？保此道者不欲盈。夫唯不盈，故",
+     "field": "full",
+     "line": 2
     },
     {
      "at": 102,
@@ -108414,6 +111144,12 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
+    }
    ]
   },
   {
@@ -109578,6 +112314,19 @@
      "line": 10
     },
     {
+     "at": 30,
+     "n": 2,
+     "simp": "不欲",
+     "cands": [
+      "不欲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "：\"其恕乎！己所不欲，勿施于人。\"（",
+     "field": "full",
+     "line": 10
+    },
+    {
      "at": 33,
      "n": 4,
      "simp": "勿施于人",
@@ -110430,6 +113179,19 @@
      "page_char": "爲"
     },
     {
+     "at": 2,
+     "n": 2,
+     "simp": "不欲",
+     "cands": [
+      "不欲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "己所不欲，勿施于人。",
+     "field": "lines",
+     "line": 10
+    },
+    {
      "at": 5,
      "n": 4,
      "simp": "勿施于人",
@@ -110715,6 +113477,12 @@
      "line": 1,
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "昼",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
     }
    ]
   },
@@ -112528,6 +115296,19 @@
      "page_char": "來"
     },
     {
+     "at": 23,
+     "n": 2,
+     "simp": "于山",
+     "cands": [
+      "于山"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "何为？辙之来也，于山见终南、嵩、华之",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 25,
      "n": 1,
      "simp": "见",
@@ -113779,7 +116560,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zhongyong",
@@ -114568,7 +117350,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "linanchunyu",
@@ -115302,6 +118085,12 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "𫔮",
+     "why": "keep（单字）：閒"
+    }
    ]
   },
   {
@@ -115589,6 +118378,19 @@
      "line": 3
     },
     {
+     "at": 4,
+     "n": 2,
+     "simp": "一表",
+     "cands": [
+      "一表"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "《出师》一表真名世，千载谁堪",
+     "field": "full",
+     "line": 3
+    },
+    {
      "at": 10,
      "n": 2,
      "simp": "千载",
@@ -115768,6 +118570,19 @@
      "line": 2
     },
     {
+     "at": 2,
+     "n": 2,
+     "simp": "一表",
+     "cands": [
+      "一表"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "出师一表真名世，千载谁堪",
+     "field": "lines",
+     "line": 2
+    },
+    {
      "at": 8,
      "n": 2,
      "simp": "千载",
@@ -115912,7 +118727,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wudailingguan",
@@ -117966,7 +120782,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "liuguolun",
@@ -118705,6 +121522,20 @@
      "page_char": "諸"
     },
     {
+     "at": 156,
+     "n": 2,
+     "simp": "之欲",
+     "cands": [
+      "之欲",
+      "之慾"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "侯之地有限，暴秦之欲无厌，奉之弥繁，",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 158,
      "n": 1,
      "simp": "无",
@@ -118846,6 +121677,19 @@
      "field": "full",
      "line": 1,
      "page_char": "顛"
+    },
+    {
+     "at": 194,
+     "n": 2,
+     "simp": "人云",
+     "cands": [
+      "人云"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "覆，理固宜然。古人云：\"以地事秦，犹",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 203,
@@ -119889,6 +122733,20 @@
      "page_char": "則"
     },
     {
+     "at": 41,
+     "n": 2,
+     "simp": "下咽",
+     "cands": [
+      "下咽",
+      "下嚥"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "吾恐秦人食之不得下咽也。悲夫！有如此",
+     "field": "full",
+     "line": 3
+    },
+    {
      "at": 46,
      "n": 1,
      "simp": "夫",
@@ -120505,6 +123363,20 @@
      "page_char": "則"
     },
     {
+     "at": 41,
+     "n": 2,
+     "simp": "下咽",
+     "cands": [
+      "下咽",
+      "下嚥"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "吾恐秦人食之不得下咽也。",
+     "field": "lines",
+     "line": 4
+    },
+    {
      "at": 6,
      "n": 1,
      "simp": "趋",
@@ -120735,7 +123607,8 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "lantingjixu",
@@ -121028,6 +123901,19 @@
      "decision": "table",
      "kind": "char",
      "ctx": "集。此地有崇山峻岭，茂林修竹，又有",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 50,
+     "n": 2,
+     "simp": "修竹",
+     "cands": [
+      "修竹"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "有崇山峻岭，茂林修竹，又有清流激湍，",
      "field": "full",
      "line": 0
     },
@@ -121534,6 +124420,19 @@
      "line": 1
     },
     {
+     "at": 45,
+     "n": 2,
+     "simp": "不同",
+     "cands": [
+      "不同"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "虽趣舍万殊，静躁不同，当其欣于所遇，",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 48,
      "n": 1,
      "simp": "当",
@@ -121776,6 +124675,19 @@
      "page_char": "況"
     },
     {
+     "at": 115,
+     "n": 2,
+     "simp": "修短",
+     "cands": [
+      "修短"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "能不以之兴怀。况修短随化，终期于尽。",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 117,
      "n": 1,
      "simp": "随",
@@ -121813,6 +124725,19 @@
      "decision": "table",
      "kind": "phrase",
      "ctx": "况修短随化，终期于尽。古人云：\"死生",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 126,
+     "n": 2,
+     "simp": "人云",
+     "cands": [
+      "人云"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "化，终期于尽。古人云：\"死生亦大矣。",
      "field": "full",
      "line": 1
     },
@@ -122872,6 +125797,12 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "刚",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
    ]
   },
   {
@@ -122938,7 +125869,7 @@
      "君子說：學習是不可以停止的。",
      "靛青從藍草中提取出來，卻比藍草的顏色更深；冰由水凝結而成，卻比水更加寒冷。",
      "所以木材經墨線校量就能取直，金屬在磨刀石上磨就會鋒利，君子廣泛學習並且每天檢查反省自己，就能智慧明達、行爲沒有過錯。",
-     "蟹有六條腿和两只鉗，沒有蛇和鱔魚的洞穴可以棲身。",
+     "蟹有六條腿和兩隻鉗，沒有蛇和鱔魚的洞穴可以棲身。",
      "我曾經整天整天地思考，還不如學上一會兒的收獲。"
     ],
     "赏析": [
@@ -123542,6 +126473,19 @@
      "line": 1
     },
     {
+     "at": 77,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "，非利足也，而致千里；假舟楫者，非能",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 91,
      "n": 1,
      "simp": "绝",
@@ -123736,6 +126680,19 @@
      "page_char": "無"
     },
     {
+     "at": 45,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "不积跬步，无以至千里；不积小流，无以",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 49,
      "n": 1,
      "simp": "积",
@@ -123845,6 +126802,20 @@
      "line": 2
     },
     {
+     "at": 76,
+     "n": 2,
+     "simp": "不舍",
+     "cands": [
+      "不舍",
+      "不捨"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "；驽马十驾，功在不舍。锲而舍之，朽木",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 79,
      "n": 1,
      "simp": "锲",
@@ -123872,6 +126843,19 @@
      "line": 2
     },
     {
+     "at": 86,
+     "n": 2,
+     "simp": "不折",
+     "cands": [
+      "不折"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "。锲而舍之，朽木不折；锲而不舍，金石",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 89,
      "n": 1,
      "simp": "锲",
@@ -123884,6 +126868,20 @@
      "field": "full",
      "line": 2,
      "page_char": "鍥"
+    },
+    {
+     "at": 91,
+     "n": 2,
+     "simp": "不舍",
+     "cands": [
+      "不舍",
+      "不捨"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "，朽木不折；锲而不舍，金石可镂。蚓无",
+     "field": "full",
+     "line": 2
     },
     {
      "at": 97,
@@ -124369,6 +127367,22 @@
      "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
     },
     {
+     "at": 6,
+     "n": 2,
+     "simp": "两只",
+     "cands": [
+      "两只",
+      "兩隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "蟹有六条腿和两只钳，没有蛇和鳝鱼",
+     "field": "sec:译文",
+     "line": 3,
+     "pick": "兩隻",
+     "why": "现代量词「两只」作「兩隻」。单字表把「只」照抄是文言用法（只＝僅），这里说的是两只袖子，不是「仅仅」"
+    },
+    {
      "at": 21,
      "n": 1,
      "simp": "获",
@@ -124591,6 +127605,16 @@
      "line": 7,
      "kept": "讬",
      "table_wanted": "託"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "讬",
+     "why": "keep（单字）：託"
+    },
+    {
+     "char": "𫐎",
+     "why": "keep（单字）：輢"
     }
    ]
   },
@@ -125143,6 +128167,20 @@
      "page_char": "辭"
     },
     {
+     "at": 79,
+     "n": 2,
+     "simp": "不托",
+     "cands": [
+      "不托",
+      "不託"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "，不假良史之辞，不托飞驰之势，而声名",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 81,
      "n": 1,
      "simp": "飞",
@@ -125321,6 +128359,19 @@
      "field": "full",
      "line": 2,
      "page_char": "雲"
+    },
+    {
+     "at": 22,
+     "n": 2,
+     "simp": "冬月",
+     "cands": [
+      "冬月"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "秋蝉，夏云暑雨，冬月祁寒，斯四候之感",
+     "field": "full",
+     "line": 2
     },
     {
      "at": 32,
@@ -126376,6 +129427,19 @@
      "field": "full",
      "line": 4,
      "page_char": "畫"
+    },
+    {
+     "at": 109,
+     "n": 2,
+     "simp": "云乎",
+     "cands": [
+      "云乎"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "者，化机也。独画云乎哉！",
+     "field": "full",
+     "line": 4
     },
     {
      "at": 2,
@@ -127440,7 +130504,8 @@
      "pick": "並",
      "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shengshenman",
@@ -127644,6 +130709,19 @@
      "ctx": "清清，凄凄惨惨戚戚。",
      "field": "full",
      "line": 0
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "三杯",
+     "cands": [
+      "三杯"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "三杯两盏淡酒，怎敌他",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 2,
@@ -127899,6 +130977,19 @@
      "ctx": "清清，凄凄惨惨戚戚。",
      "field": "lines",
      "line": 0
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "三杯",
+     "cands": [
+      "三杯"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "三杯两盏淡酒，怎敌他",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 2,
@@ -128234,7 +131325,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "daxue",
@@ -128298,7 +131390,7 @@
      "「欲明明德於天下者，先治其國」——想讓天下變好，先把自己的國家治好。",
      "這不是推諉，恰恰是認真：天下這麼大，你連自己的一塊地都管不好，談什麼天下。",
      "「欲誠其意者，先致其知」把範圍縮到最小的一層。",
-     "妙在「意」和「知」的关系：不是先有真誠再去找知識，是先弄明白，才有真正的誠懇。",
+     "妙在「意」和「知」的關係：不是先有真誠再去找知識，是先弄明白，才有真正的誠懇。",
      "一個人不懂裝懂，他的「真誠」是假的——因爲他不知道自己不知道。",
      "最後三句是完整的鏈條：物格 → 知至 → 意誠。",
      "「格物」兩個字後世吵了一千年。到底怎麼「格」？",
@@ -128548,6 +131640,20 @@
      "field": "full",
      "line": 0,
      "page_char": "則"
+    },
+    {
+     "at": 1,
+     "n": 2,
+     "simp": "之欲",
+     "cands": [
+      "之欲",
+      "之慾"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "古之欲明明德于天下者，",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 6,
@@ -129061,6 +132167,19 @@
      "line": 1
     },
     {
+     "at": 140,
+     "n": 2,
+     "simp": "修身",
+     "cands": [
+      "修身"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于庶人，壹是皆以修身为本。",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 142,
      "n": 1,
      "simp": "为",
@@ -129073,6 +132192,20 @@
      "field": "full",
      "line": 1,
      "page_char": "爲"
+    },
+    {
+     "at": 1,
+     "n": 2,
+     "simp": "之欲",
+     "cands": [
+      "之欲",
+      "之慾"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "古之欲明明德于天下者，",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 6,
@@ -129286,6 +132419,22 @@
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     },
     {
+     "at": 10,
+     "n": 2,
+     "simp": "关系",
+     "cands": [
+      "关系",
+      "關係"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "「意」和「知」的关系：不是先有真诚再",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "關係",
+     "why": "现代词「关系」作「關係」。单字表把「系」照抄是文言用法（「系向牛头充炭直」「系行舟」），这里说的是关系，不是拴住"
+    },
+    {
      "at": 8,
      "n": 1,
      "simp": "链",
@@ -129365,7 +132514,8 @@
      "pick": "鏈",
      "why": "链条、链接作「鏈」；「鍊」是冶炼义"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zilu-shizhe",
@@ -129599,6 +132749,19 @@
      "field": "full",
      "line": 1,
      "page_char": "對"
+    },
+    {
+     "at": 9,
+     "n": 2,
+     "simp": "千乘",
+     "cands": [
+      "千乘"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "路率尔而对曰：\"千乘之国，摄乎大国之",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 12,
@@ -130431,6 +133594,19 @@
      "page_char": "則"
     },
     {
+     "at": 0,
+     "n": 2,
+     "simp": "千乘",
+     "cands": [
+      "千乘"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千乘之国，摄乎大国之",
+     "field": "lines",
+     "line": 1
+    },
+    {
      "at": 3,
      "n": 1,
      "simp": "国",
@@ -131051,7 +134227,8 @@
      "pick": "閒",
      "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jishi-jiangfanjueyu",
@@ -131405,6 +134582,19 @@
      "decision": "identity",
      "kind": "char",
      "ctx": "冉有曰：\"夫子欲之，吾二臣者皆不",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 15,
+     "n": 2,
+     "simp": "不欲",
+     "cands": [
+      "不欲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "欲之，吾二臣者皆不欲也。\"孔子曰：\"",
      "field": "full",
      "line": 1
     },
@@ -131987,6 +135177,19 @@
      "page_char": "則"
     },
     {
+     "at": 99,
+     "n": 2,
+     "simp": "修文",
+     "cands": [
+      "修文"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "，故远人不服，则修文德以来之。既来之",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 103,
      "n": 1,
      "simp": "来",
@@ -132450,6 +135653,19 @@
      "page_char": "則"
     },
     {
+     "at": 6,
+     "n": 2,
+     "simp": "修文",
+     "cands": [
+      "修文"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "远人不服，则修文德以来之。",
+     "field": "lines",
+     "line": 4
+    },
+    {
      "at": 10,
      "n": 1,
      "simp": "来",
@@ -132759,7 +135975,8 @@
      "pick": "閒",
      "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "kezhi",
@@ -133759,6 +136976,16 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
+    },
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
+    }
    ]
   },
   {
@@ -133837,7 +137064,7 @@
      "  出處：維基文庫《御定全唐詩 (四庫全書本)/卷162》 https://zh.wikisource.org/wiki/%E5%BE%A1%E5%AE%9A%E5%85%A8%E5%94%90%E8%A9%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B7162；維基文庫《將進酒 (李白)》 https://zh.wikisource.org/wiki/%E5%B0%87%E9%80%B2%E9%85%92_(%E6%9D%8E%E7%99%BD)",
      "  取舍：從「傾耳聽」，與教材一致。",
      "- 「但願長醉**不復醒**」：《御定全唐詩》本作「但願長醉不**願**醒」，並注「一作復醒」。出處：維基文庫《御定全唐詩 (四庫全書本)/卷162》 https://zh.wikisource.org/wiki/%E5%BE%A1%E5%AE%9A%E5%85%A8%E5%94%90%E8%A9%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B7162",
-     "  取舍：從「不復醒」——教材作「不復醒」，而這一條正好是本子正文與別本的关系，教材取的是別本那一支。",
+     "  取舍：從「不復醒」——教材作「不復醒」，而這一條正好是本子正文與別本的關係，教材取的是別本那一支。",
      "- 「鐘鼓饌玉不足貴」：《御定全唐詩》本注「一作「鐘鼎玉帛豈足貴」」。出處：維基文庫《御定全唐詩 (四庫全書本)/卷162》 https://zh.wikisource.org/wiki/%E5%BE%A1%E5%AE%9A%E5%85%A8%E5%94%90%E8%A9%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B7162",
      "  取舍：從「鐘鼓饌玉不足貴」，與教材一致。",
      "- 「鬥酒十千恣**歡**謔」：《御定全唐詩》本作「恣**讙**謔」。出處：維基文庫《御定全唐詩 (四庫全書本)/卷162》 https://zh.wikisource.org/wiki/%E5%BE%A1%E5%AE%9A%E5%85%A8%E5%94%90%E8%A9%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B7162",
@@ -134108,6 +137335,19 @@
      "page_char": "對"
     },
     {
+     "at": 8,
+     "n": 2,
+     "simp": "千金",
+     "cands": [
+      "千金"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "天生我材必有用，千金散尽还复来。",
+     "field": "full",
+     "line": 3
+    },
+    {
      "at": 11,
      "n": 1,
      "simp": "尽",
@@ -134304,6 +137544,19 @@
      "field": "full",
      "line": 6,
      "page_char": "與"
+    },
+    {
+     "at": 3,
+     "n": 2,
+     "simp": "一曲",
+     "cands": [
+      "一曲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "与君歌一曲，请君为我倾耳听",
+     "field": "full",
+     "line": 6
     },
     {
      "at": 6,
@@ -134688,6 +137941,19 @@
      "page_char": "馬"
     },
     {
+     "at": 4,
+     "n": 3,
+     "simp": "千金裘",
+     "cands": [
+      "千金裘"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "五花马，千金裘，呼儿将出换美酒",
+     "field": "full",
+     "line": 11
+    },
+    {
      "at": 9,
      "n": 1,
      "simp": "儿",
@@ -134938,6 +138204,19 @@
      "field": "lines",
      "line": 1,
      "page_char": "對"
+    },
+    {
+     "at": 8,
+     "n": 2,
+     "simp": "千金",
+     "cands": [
+      "千金"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "天生我材必有用，千金散尽还复来。",
+     "field": "lines",
+     "line": 2
     },
     {
      "at": 11,
@@ -135374,6 +138653,22 @@
      "line": 9,
      "pick": "復",
      "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 37,
+     "n": 2,
+     "simp": "关系",
+     "cands": [
+      "关系",
+      "關係"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "本子正文与别本的关系，教材取的是别本",
+     "field": "sec:异文",
+     "line": 10,
+     "pick": "關係",
+     "why": "现代词「关系」作「關係」。单字表把「系」照抄是文言用法（「系向牛头充炭直」「系行舟」），这里说的是关系，不是拴住"
     },
     {
      "at": 3,
@@ -135885,6 +139180,12 @@
      "pick": "當",
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "𫖸",
+     "why": "keep（单字）：願"
     }
    ]
   },
@@ -138204,6 +141505,19 @@
      "page_char": "約"
     },
     {
+     "at": 101,
+     "n": 2,
+     "simp": "六里",
+     "cands": [
+      "六里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "之曰：\"仪与王约六里，不闻六百里。\"",
+     "field": "full",
+     "line": 3
+    },
+    {
      "at": 105,
      "n": 1,
      "simp": "闻",
@@ -138344,6 +141658,19 @@
      "field": "full",
      "line": 3,
      "page_char": "師"
+    },
+    {
+     "at": 141,
+     "n": 2,
+     "simp": "于丹",
+     "cands": [
+      "于丹"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "兵击之，大破楚师于丹、淅，斩首八万，",
+     "field": "full",
+     "line": 3
     },
     {
      "at": 146,
@@ -139973,6 +143300,19 @@
      "field": "full",
      "line": 8,
      "page_char": "賢"
+    },
+    {
+     "at": 10,
+     "n": 2,
+     "simp": "不欲",
+     "cands": [
+      "不欲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "无愚智贤不肖，莫不欲求忠以自为，举贤",
+     "field": "full",
+     "line": 8
     },
     {
      "at": 16,
@@ -142727,6 +146067,20 @@
      "kept": "𫛳",
      "table_wanted": "鵩"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "𢧐",
+     "why": "keep（单字）：戰"
+    },
+    {
+     "char": "𫗦",
+     "why": "keep（单字）：餔"
+    },
+    {
+     "char": "𫛳",
+     "why": "keep（单字）：鵩"
+    }
    ]
   },
   {
@@ -143322,6 +146676,19 @@
      "field": "full",
      "line": 1,
      "page_char": "聖"
+    },
+    {
+     "at": 27,
+     "n": 2,
+     "simp": "出人",
+     "cands": [
+      "出人"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "矣！古之圣人，其出人也远矣，犹且从师",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 30,
@@ -145244,7 +148611,8 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "guiqulaixici",
@@ -146156,6 +149524,19 @@
      "field": "full",
      "line": 0,
      "page_char": "職"
+    },
+    {
+     "at": 205,
+     "n": 2,
+     "simp": "仲秋",
+     "cands": [
+      "仲秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "骏奔，自免去职。仲秋至冬，在官八十余",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 208,
@@ -148306,6 +151687,12 @@
      "kept": "馀",
      "table_wanted": "餘"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
+    }
    ]
   },
   {
@@ -148898,7 +152285,8 @@
      "pick": "寧",
      "why": "安宁、岂义作「寧」；「甯」只作姓"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "niannujiao-chibi",
@@ -149008,6 +152396,19 @@
      "page_char": "盡"
     },
     {
+     "at": 9,
+     "n": 2,
+     "simp": "千古",
+     "cands": [
+      "千古"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "江东去，浪淘尽，千古风流人物。",
+     "field": "full",
+     "line": 0
+    },
+    {
      "at": 11,
      "n": 1,
      "simp": "风",
@@ -149062,6 +152463,20 @@
      "field": "full",
      "line": 1,
      "page_char": "濤"
+    },
+    {
+     "at": 10,
+     "n": 2,
+     "simp": "卷起",
+     "cands": [
+      "卷起",
+      "捲起"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "穿空，惊涛拍岸，卷起千堆雪。",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 12,
@@ -149277,6 +152692,19 @@
      "page_char": "盡"
     },
     {
+     "at": 9,
+     "n": 2,
+     "simp": "千古",
+     "cands": [
+      "千古"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "江东去，浪淘尽，千古风流人物。",
+     "field": "lines",
+     "line": 0
+    },
+    {
      "at": 11,
      "n": 1,
      "simp": "风",
@@ -149331,6 +152759,20 @@
      "field": "lines",
      "line": 1,
      "page_char": "濤"
+    },
+    {
+     "at": 10,
+     "n": 2,
+     "simp": "卷起",
+     "cands": [
+      "卷起",
+      "捲起"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "穿空，惊涛拍岸，卷起千堆雪。",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 12,
@@ -149717,7 +153159,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "niannujiao-gudong",
@@ -149753,7 +153196,7 @@
      "- 更無一點風色：一點風也沒有。",
      "- 玉鑑瓊田：形容湖面如玉鑑瓊田般明淨。",
      "- 三萬頃：三萬頃，形容湖面廣大。",
-     "- 扁舟一葉：一只小船。",
+     "- 扁舟一葉：一隻小船。",
      "- 素月分輝：明月分出光輝。",
      "- 明河：銀河。",
      "- 表里俱澄澈：內外都澄澈透明。",
@@ -149772,7 +153215,7 @@
      "「洞庭青草，近中秋、更無一點風色」十二個字寫一個靜。",
      "沒有風，水面就不動；水不動，月影就完整。",
      "「玉鑒瓊田三萬頃，着我扁舟一葉」是全詞最漂亮的對比。",
-     "三萬頃的湖，對一只小船。妙在「着」——小船不是漂在湖上，是被湖水「着」着，像被收進去了。",
+     "三萬頃的湖，對一隻小船。妙在「着」——小船不是漂在湖上，是被湖水「着」着，像被收進去了。",
      "「素月分輝，明河共影，表里俱澄澈」更上一層。",
      "月光、銀河、影子、湖面，全都清透。表里俱澄澈的「俱」字，說明連湖水底下的東西都看得見。",
      "可到「妙處難與君說」，他忽然收住了。",
@@ -149810,6 +153253,19 @@
     ]
    },
    "marks": [
+    {
+     "at": 6,
+     "n": 2,
+     "simp": "中秋",
+     "cands": [
+      "中秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "洞庭青草，近中秋、更无一点风色。",
+     "field": "full",
+     "line": 0
+    },
     {
      "at": 10,
      "n": 1,
@@ -150266,6 +153722,19 @@
      "page_char": "細"
     },
     {
+     "at": 7,
+     "n": 2,
+     "simp": "北斗",
+     "cands": [
+      "北斗"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "尽挹西江，细斟北斗，万象为宾客。扣",
+     "field": "full",
+     "line": 3
+    },
+    {
      "at": 10,
      "n": 2,
      "simp": "万象",
@@ -150346,6 +153815,19 @@
      "field": "full",
      "line": 3,
      "page_char": "嘯"
+    },
+    {
+     "at": 6,
+     "n": 2,
+     "simp": "中秋",
+     "cands": [
+      "中秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "洞庭青草，近中秋、更无一点风色。",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 10,
@@ -150670,6 +154152,22 @@
      "why": "镜子、照察义作「鑑」；来源页也作「鑒」，那是异体"
     },
     {
+     "at": 7,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "- 扁舟一叶：一只小船。",
+     "field": "sec:注释",
+     "line": 4,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 2,
      "n": 1,
      "simp": "鉴",
@@ -150718,6 +154216,22 @@
      "pick": "鑒"
     },
     {
+     "at": 7,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "三万顷的湖，对一只小船。妙在「着」",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 12,
      "n": 1,
      "simp": "复",
@@ -150750,7 +154264,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yangzhousman",
@@ -150898,6 +154413,19 @@
      "field": "full",
      "line": 1,
      "page_char": "風"
+    },
+    {
+     "at": 3,
+     "n": 2,
+     "simp": "十里",
+     "cands": [
+      "十里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "过春风十里，尽荠麦青青。",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 6,
@@ -151436,6 +154964,19 @@
      "page_char": "風"
     },
     {
+     "at": 3,
+     "n": 2,
+     "simp": "十里",
+     "cands": [
+      "十里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "过春风十里，尽荠麦青青。",
+     "field": "lines",
+     "line": 1
+    },
+    {
      "at": 6,
      "n": 1,
      "simp": "尽",
@@ -151586,7 +155127,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "baoranan",
@@ -153651,6 +157193,12 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "讬",
+     "why": "keep（单字）：託"
+    }
    ]
   },
   {
@@ -153828,13 +157376,16 @@
      "n": 2,
      "simp": "举杯",
      "cands": [
-      "舉杯"
+      "舉杯",
+      "舉盃"
      ],
-     "decision": "table",
+     "decision": "rule",
      "kind": "phrase",
      "ctx": "酌酒以自宽，举杯断绝歌路难。",
      "field": "full",
-     "line": 2
+     "line": 2,
+     "pick": "舉杯",
+     "why": "「杯」本字不变；「盃」是异体"
     },
     {
      "at": 8,
@@ -154026,13 +157577,16 @@
      "n": 2,
      "simp": "举杯",
      "cands": [
-      "舉杯"
+      "舉杯",
+      "舉盃"
      ],
-     "decision": "table",
+     "decision": "rule",
      "kind": "phrase",
      "ctx": "酌酒以自宽，举杯断绝歌路难。",
      "field": "lines",
-     "line": 2
+     "line": 2,
+     "pick": "舉杯",
+     "why": "「杯」本字不变；「盃」是异体"
     },
     {
      "at": 8,
@@ -154078,6 +157632,38 @@
     }
    ],
    "marks_app": [
+    {
+     "at": 6,
+     "n": 2,
+     "simp": "举杯",
+     "cands": [
+      "舉杯",
+      "舉盃"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "酌酒以自宽，举杯断绝歌路难。",
+     "field": "sec:必背名句",
+     "line": 2,
+     "pick": "舉杯",
+     "why": "「杯」本字不变；「盃」是异体"
+    },
+    {
+     "at": 6,
+     "n": 2,
+     "simp": "举杯",
+     "cands": [
+      "舉杯",
+      "舉盃"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "酌酒以自宽，举杯断绝歌路难。",
+     "field": "sec:全文",
+     "line": 2,
+     "pick": "舉杯",
+     "why": "「杯」本字不变；「盃」是异体"
+    },
     {
      "at": 3,
      "n": 1,
@@ -154179,8 +157765,25 @@
      "pick": "嘆",
      "why": "叹息、叹曰义作「嘆」；「歎」是异体",
      "evidence": "来源页 4 处作「嘆」"
+    },
+    {
+     "at": 3,
+     "n": 2,
+     "simp": "举杯",
+     "cands": [
+      "舉杯",
+      "舉盃"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "末句「举杯断绝歌路难」最耐",
+     "field": "sec:赏析",
+     "line": 7,
+     "pick": "舉杯",
+     "why": "「杯」本字不变；「盃」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "wuyi",
@@ -154596,7 +158199,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chunjianghuayue",
@@ -156188,6 +159792,20 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "𢭏",
+     "why": "keep（单字）：擣"
+    },
+    {
+     "char": "𫔮",
+     "why": "keep（单字）：閒"
+    },
+    {
+     "char": "𫖸",
+     "why": "keep（单字）：願"
+    }
    ]
   },
   {
@@ -156701,6 +160319,32 @@
      "page_char": "疊"
     },
     {
+     "at": 8,
+     "n": 2,
+     "simp": "三秋",
+     "cands": [
+      "三秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "重湖叠巘清嘉，有三秋桂子，十里荷花。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 13,
+     "n": 2,
+     "simp": "十里",
+     "cands": [
+      "十里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "嘉，有三秋桂子，十里荷花。羌管弄晴，",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 25,
      "n": 1,
      "simp": "泛",
@@ -157141,6 +160785,32 @@
      "page_char": "疊"
     },
     {
+     "at": 8,
+     "n": 2,
+     "simp": "三秋",
+     "cands": [
+      "三秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "重湖叠巘清嘉，有三秋桂子，十里荷花。",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 13,
+     "n": 2,
+     "simp": "十里",
+     "cands": [
+      "十里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "嘉，有三秋桂子，十里荷花。",
+     "field": "lines",
+     "line": 2
+    },
+    {
      "at": 7,
      "n": 1,
      "simp": "泛",
@@ -157509,7 +161179,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "chaotianzi",
@@ -157572,7 +161243,7 @@
      "它不是罵喇叭，是罵那些靠喇叭發號施令的人。",
      "它不是罵喇叭，是罵那些靠喇叭發號施令的人。",
      "明代散曲常寫市井小民罵官，王磐寫得好，是因爲他不說理，只用形象。",
-     "他從不直接說「官員剝削百姓」，他只是把一只喇叭的處境寫清楚，",
+     "他從不直接說「官員剝削百姓」，他只是把一隻喇叭的處境寫清楚，",
      "你自然明白是誰把它吹得這麼響的。"
     ],
     "异文": [
@@ -158484,6 +162155,22 @@
      "evidence": "来源页 14 处作「盡」"
     },
     {
+     "at": 19,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "百姓」，他只是把一只喇叭的处境写清楚",
+     "field": "sec:赏析",
+     "line": 10,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 7,
      "n": 1,
      "simp": "尽",
@@ -158551,7 +162238,8 @@
      "pick": "裏",
      "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "lipeng",
@@ -159352,7 +163040,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "guizhixiang",
@@ -159428,7 +163117,7 @@
      "  王安石卒於 1086 年，是北宋；《示兒》寫於南宋紹熙三年（1192），陸遊卒於 1210 年。",
      "  讓一個北宋人交代「南宋朝廷的軍隊北定中原」，時代直接倒過來了。",
      "  本詞真正的收束是「至今商女，時時猶唱，後庭遺曲」，化用杜牧《泊秦淮》《臺城曲》，",
-     "  跟「王師北定」沒有关系。舊賞析還寫「這句話他臨死前又說過一次，在《示兒》里他也說了一遍」——",
+     "  跟「王師北定」沒有關係。舊賞析還寫「這句話他臨死前又說過一次，在《示兒》里他也說了一遍」——",
      "  那是把兩首詩當成一個人寫的。",
      "- 核對來源：維基文庫《桂枝香》（收錄於《白香詞譜箋》，公有領域）出處：維基文庫《桂枝香》 https://zh.wikisource.org/wiki/%E6%A1%82%E6%9E%9D%E9%A6%99",
      "  頁內正文全詞完整，末三句作「至今商女時時猶唱一作歌後庭遺曲」，全篇不見「王師北定」四字。",
@@ -159529,6 +163218,19 @@
      "field": "full",
      "line": 0,
      "page_char": "肅"
+    },
+    {
+     "at": 16,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "晚秋，天气初肃。千里澄江似练，翠峰如",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 18,
@@ -159859,6 +163561,19 @@
      "page_char": "續"
     },
     {
+     "at": 20,
+     "n": 2,
+     "simp": "千古",
+     "cands": [
+      "千古"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "楼头，悲恨相续。千古凭高对此，谩嗟荣",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 22,
      "n": 1,
      "simp": "凭",
@@ -160125,6 +163840,19 @@
      "field": "lines",
      "line": 0,
      "page_char": "肅"
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千里澄江似练，翠峰如",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 2,
@@ -160451,6 +164179,22 @@
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     },
     {
+     "at": 11,
+     "n": 2,
+     "simp": "关系",
+     "cands": [
+      "关系",
+      "關係"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "「王师北定」没有关系。旧赏析还写「这",
+     "field": "sec:旧文本裁定",
+     "line": 6,
+     "pick": "關係",
+     "why": "现代词「关系」作「關係」。单字表把「系」照抄是文言用法（「系向牛头充炭直」「系行舟」），这里说的是关系，不是拴住"
+    },
+    {
      "at": 8,
      "n": 1,
      "simp": "当",
@@ -160482,6 +164226,12 @@
      "line": 8,
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "凭",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
     }
    ]
   },
@@ -162338,6 +166088,16 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "凭",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    },
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
+    }
    ]
   },
   {
@@ -162421,6 +166181,19 @@
     ]
    },
    "marks": [
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "千古",
+     "cands": [
+      "千古"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千古江山，英雄无觅孙",
+     "field": "full",
+     "line": 0
+    },
     {
      "at": 7,
      "n": 1,
@@ -162689,6 +166462,19 @@
      "field": "full",
      "line": 3,
      "page_char": "飯"
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "千古",
+     "cands": [
+      "千古"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千古江山，英雄无觅孙",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 7,
@@ -163147,7 +166933,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jiangchengzi-yimao",
@@ -163250,6 +167037,19 @@
      "field": "full",
      "line": 0,
      "page_char": "難"
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千里孤坟，无处话凄凉",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 3,
@@ -163445,6 +167245,19 @@
      "field": "lines",
      "line": 0,
      "page_char": "難"
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "千里孤坟，无处话凄凉",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 3,
@@ -163797,7 +167610,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shejiang",
@@ -163933,6 +167747,20 @@
      "line": 1,
      "page_char": "采",
      "pick": "采"
+    },
+    {
+     "at": 1,
+     "n": 2,
+     "simp": "之欲",
+     "cands": [
+      "之欲",
+      "之慾"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "采之欲遗谁？所思在远道",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 3,
@@ -164107,6 +167935,20 @@
      "line": 1,
      "page_char": "采",
      "pick": "采"
+    },
+    {
+     "at": 1,
+     "n": 2,
+     "simp": "之欲",
+     "cands": [
+      "之欲",
+      "之慾"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "采之欲遗谁？所思在远道",
+     "field": "lines",
+     "line": 1
     },
     {
      "at": 3,
@@ -164338,7 +168180,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "tengwanggexu",
@@ -164910,6 +168753,19 @@
      "page_char": "雲"
     },
     {
+     "at": 124,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "休假，胜友如云；千里逢迎，高朋满座。",
+     "field": "full",
+     "line": 0
+    },
+    {
      "at": 131,
      "n": 1,
      "simp": "满",
@@ -165050,6 +168906,19 @@
      "line": 0
     },
     {
+     "at": 164,
+     "n": 2,
+     "simp": "出名",
+     "cands": [
+      "出名"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "库。家君作宰，路出名区；童子何知，躬",
+     "field": "full",
+     "line": 0
+    },
+    {
      "at": 166,
      "n": 1,
      "simp": "区",
@@ -165133,6 +169002,19 @@
      "field": "full",
      "line": 1,
      "page_char": "屬"
+    },
+    {
+     "at": 7,
+     "n": 2,
+     "simp": "三秋",
+     "cands": [
+      "三秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "时维九月，序属三秋。潦水尽而寒潭清",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 12,
@@ -169435,6 +173317,12 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "讬",
+     "why": "keep（单字）：託"
+    }
    ]
   },
   {
@@ -169622,6 +173510,19 @@
      "field": "full",
      "line": 0,
      "page_char": "張"
+    },
+    {
+     "at": 15,
+     "n": 2,
+     "simp": "公出",
+     "cands": [
+      "公出"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "客有从御史大夫张公出塞而还者，作《燕",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 19,
@@ -170613,6 +174514,19 @@
      "page_char": "傳"
     },
     {
+     "at": 13,
+     "n": 2,
+     "simp": "刁斗",
+     "cands": [
+      "刁斗"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "阵云，寒声一夜传刁斗。",
+     "field": "full",
+     "line": 12
+    },
+    {
      "at": 5,
      "n": 1,
      "simp": "纷",
@@ -171482,6 +175396,20 @@
      "line": 3,
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "𢧐",
+     "why": "keep（单字）：戰"
+    },
+    {
+     "char": "𪭢",
+     "why": "keep（单字）：摐"
+    },
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
     }
    ]
   },
@@ -173418,6 +177346,19 @@
      "page_char": "頭"
     },
     {
+     "at": 8,
+     "n": 2,
+     "simp": "一曲",
+     "cands": [
+      "一曲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "五陵年少争缠头，一曲红绡不知数。",
+     "field": "full",
+     "line": 23
+    },
+    {
      "at": 10,
      "n": 1,
      "simp": "红",
@@ -175018,6 +178959,20 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "刚",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    },
+    {
+     "char": "𧹒",
+     "why": "keep（单字）：買"
+    },
+    {
+     "char": "𫔭",
+     "why": "keep（单字）：開"
+    }
    ]
   },
   {
@@ -175057,7 +179012,7 @@
     "译文": [
      "從前就聽說洞庭湖水浩大，如今登上了嶽陽樓。",
      "吳越之地在東南兩面分開，天地日月仿佛都在水上浮動。",
-     "親朋之間沒有一封書信相通，年老多病，只有一只孤舟相伴。",
+     "親朋之間沒有一封書信相通，年老多病，只有一隻孤舟相伴。",
      "戰事在關山以北進行，我靠着窗戶，眼淚和鼻涕一起流下來。"
     ],
     "赏析": [
@@ -175456,6 +179411,22 @@
      "pick": "岳"
     },
     {
+     "at": 20,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "，年老多病，只有一只孤舟相伴。",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
      "at": 10,
      "n": 2,
      "simp": "反复",
@@ -175486,6 +179457,12 @@
      "line": 9,
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "刚",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
     }
    ]
   },
@@ -176059,7 +180036,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "dengtaishan",
@@ -176129,7 +180107,7 @@
      "這是登高的一種經驗：站得高了，往下看，原先擋住視線的東西都退了。",
      "山高了，月亮就顯得小；水位落了，石頭就露出來。",
      "表面寫的是冬天的泰山，其實寫的是看事情的角度變了。",
-     "水沒落的時候，水下的石頭跟你沒关系；水落了，它自己就出來了。",
+     "水沒落的時候，水下的石頭跟你沒關係；水落了，它自己就出來了。",
      "很多人一輩子等一個「水落」的時刻——其實那不是等來的，是你站得夠高之後自然看見的。"
     ],
     "异文": [
@@ -176361,6 +180339,19 @@
      "page_char": "長"
     },
     {
+     "at": 53,
+     "n": 2,
+     "simp": "五里",
+     "cands": [
+      "五里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "观峰，在长城南十五里。",
+     "field": "full",
+     "line": 0
+    },
+    {
      "at": 0,
      "n": 1,
      "simp": "余",
@@ -176375,6 +180366,19 @@
      "line": 1,
      "page_char": "余",
      "pick": "余"
+    },
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "乾隆",
+     "cands": [
+      "乾隆"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "余以乾隆三十九年十二月，",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 14,
@@ -176547,6 +180551,19 @@
      "page_char": "潁"
     },
     {
+     "at": 64,
+     "n": 2,
+     "simp": "五里",
+     "cands": [
+      "五里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "颍由南麓登。四十五里，道皆砌石为磴，",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 71,
      "n": 1,
      "simp": "为",
@@ -176574,6 +180591,19 @@
      "page_char": "級"
     },
     {
+     "at": 76,
+     "n": 2,
+     "simp": "七千",
+     "cands": [
+      "七千"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "皆砌石为磴，其级七千有余。泰山正南面",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 79,
      "n": 1,
      "simp": "余",
@@ -176589,6 +180619,19 @@
      "page_char": "餘"
     },
     {
+     "at": 84,
+     "n": 2,
+     "simp": "南面",
+     "cands": [
+      "南面"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "七千有余。泰山正南面有三谷。中谷绕泰",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 88,
      "n": 1,
      "simp": "谷",
@@ -176599,6 +180642,19 @@
      "decision": "identity",
      "kind": "char",
      "ctx": "。泰山正南面有三谷。中谷绕泰安城下",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 90,
+     "n": 2,
+     "simp": "中谷",
+     "cands": [
+      "中谷"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "山正南面有三谷。中谷绕泰安城下，郦道",
      "field": "full",
      "line": 1
     },
@@ -177385,6 +181441,19 @@
      "page_char": "須"
     },
     {
+     "at": 63,
+     "n": 2,
+     "simp": "五采",
+     "cands": [
+      "五采"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "一线异色，须臾成五采。日上，正赤如丹",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 76,
      "n": 1,
      "simp": "红",
@@ -178077,6 +182146,19 @@
      "page_char": "須"
     },
     {
+     "at": 11,
+     "n": 2,
+     "simp": "五采",
+     "cands": [
+      "五采"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "一线异色，须臾成五采。",
+     "field": "lines",
+     "line": 2
+    },
+    {
      "at": 10,
      "n": 1,
      "simp": "红",
@@ -178355,6 +182437,22 @@
      "why": "姓、复苏义作「蘇」；「甦」是后起俗字、「囌」是异体"
     },
     {
+     "at": 15,
+     "n": 2,
+     "simp": "关系",
+     "cands": [
+      "关系",
+      "關係"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "水下的石头跟你没关系；水落了，它自己",
+     "field": "sec:赏析",
+     "line": 8,
+     "pick": "關係",
+     "why": "现代词「关系」作「關係」。单字表把「系」照抄是文言用法（「系向牛头充炭直」「系行舟」），这里说的是关系，不是拴住"
+    },
+    {
      "at": 8,
      "n": 1,
      "simp": "个",
@@ -178447,6 +182545,16 @@
      "line": 4,
      "kept": "缐",
      "table_wanted": "線"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "缐",
+     "why": "keep（单字）：線"
+    },
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
     }
    ]
   },
@@ -179319,6 +183427,12 @@
      "pick": "髮",
      "why": "头发货作「髮」"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "两",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
    ]
   },
   {
@@ -179390,7 +183504,7 @@
     "收录范围": [
      "- 「青青子衿，悠悠我心」與「但爲君故，沉吟至今」：前一句是《詩經·鄭風·子衿》的原句，曹操直接引用，",
      "  不是抄錯。內容重疊檢查（`tools/check-contamination.py`）會把《短歌行》與《子衿》互相點名——",
-     "  這是引用关系，不是串篇。寫在這里，是爲了讓這條點名有一個交代，而不是每次跑完都當噪聲忽略。",
+     "  這是引用關係，不是串篇。寫在這里，是爲了讓這條點名有一個交代，而不是每次跑完都當噪聲忽略。",
      "  引用出處：https://zh.wikisource.org/wiki/詩經/子衿"
     ]
    },
@@ -180069,6 +184183,22 @@
      "evidence": "来源页 12 处作「當」"
     },
     {
+     "at": 6,
+     "n": 2,
+     "simp": "关系",
+     "cands": [
+      "关系",
+      "關係"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "  这是引用关系，不是串篇。写在",
+     "field": "sec:收录范围",
+     "line": 2,
+     "pick": "關係",
+     "why": "现代词「关系」作「關係」。单字表把「系」照抄是文言用法（「系向牛头充炭直」「系行舟」），这里说的是关系，不是拴住"
+    },
+    {
      "at": 29,
      "n": 1,
      "simp": "个",
@@ -180101,7 +184231,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shizhongshan",
@@ -180698,6 +184829,19 @@
      "page_char": "豐"
     },
     {
+     "at": 6,
+     "n": 2,
+     "simp": "丁丑",
+     "cands": [
+      "丁丑"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "元丰七年六月丁丑，余自齐安舟行适",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 9,
      "n": 1,
      "simp": "余",
@@ -181166,6 +185310,19 @@
      "field": "full",
      "line": 1,
      "page_char": "間"
+    },
+    {
+     "at": 141,
+     "n": 2,
+     "simp": "于山",
+     "cands": [
+      "于山"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "又有若老人咳且笑于山谷中者，或曰此鹳",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 143,
@@ -183125,6 +187282,12 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
+    }
    ]
   },
   {
@@ -183287,6 +187450,19 @@
      "field": "full",
      "line": 0,
      "page_char": "講"
+    },
+    {
+     "at": 18,
+     "n": 2,
+     "simp": "修睦",
+     "cands": [
+      "修睦"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "。选贤与能，讲信修睦。故人不独亲其亲",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 24,
@@ -183527,6 +187703,19 @@
      "field": "full",
      "line": 0,
      "page_char": "惡"
+    },
+    {
+     "at": 88,
+     "n": 2,
+     "simp": "不出",
+     "cands": [
+      "不出"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "必藏于己；力恶其不出于身也，不必为己",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 90,
@@ -183781,6 +187970,19 @@
      "page_char": "講"
     },
     {
+     "at": 7,
+     "n": 2,
+     "simp": "修睦",
+     "cands": [
+      "修睦"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "选贤与能，讲信修睦。",
+     "field": "lines",
+     "line": 1
+    },
+    {
      "at": 3,
      "n": 1,
      "simp": "独",
@@ -183979,7 +188181,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "lisao",
@@ -184178,7 +188381,7 @@
      "- 「又申之以攬茝」：維基文庫本頁作「又申之㠯攬茝」，頁內自己注明「㠯」即「以」。",
      "  出處：維基文庫《離騷》 https://zh.wikisource.org/wiki/%E9%9B%A2%E9%A8%B7",
      "  出處：維基文庫《離騷》",
-     "  考證：「㠯」是「以」的古字，頁里直接給了對應关系。",
+     "  考證：「㠯」是「以」的古字，頁里直接給了對應關係。",
      "  取舍：從「以」——這一條不是猜，頁自己寫了「即『以』」。",
      "- 「哀民生之多艱」「終不察夫民心」「民生各有所樂兮」：維基文庫本頁主文作「民生」，頁內夾注「一作『人』」；通行本這三處多作「人生」。",
      "  出處：維基文庫《離騷》 https://zh.wikisource.org/wiki/%E9%9B%A2%E9%A8%B7",
@@ -186519,6 +190722,22 @@
      "why": "证据、考证、例证、旁证作「證」；「証」是异体"
     },
     {
+     "at": 24,
+     "n": 2,
+     "simp": "关系",
+     "cands": [
+      "关系",
+      "關係"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "页里直接给了对应关系。",
+     "field": "sec:异文",
+     "line": 8,
+     "pick": "關係",
+     "why": "现代词「关系」作「關係」。单字表把「系」照抄是文言用法（「系向牛头充炭直」「系行舟」），这里说的是关系，不是拴住"
+    },
+    {
      "at": 44,
      "n": 1,
      "simp": "夹",
@@ -186683,7 +190902,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "zhongshu-guotuotuo",
@@ -187389,6 +191609,19 @@
      "field": "full",
      "line": 2,
      "page_char": "順"
+    },
+    {
+     "at": 25,
+     "n": 2,
+     "simp": "以致",
+     "cands": [
+      "以致"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "也，能顺木之天，以致其性焉尔。凡植木",
+     "field": "full",
+     "line": 2
     },
     {
      "at": 30,
@@ -188488,6 +192721,19 @@
      "page_char": "順"
     },
     {
+     "at": 6,
+     "n": 2,
+     "simp": "以致",
+     "cands": [
+      "以致"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "能顺木之天，以致其性焉尔。",
+     "field": "lines",
+     "line": 0
+    },
+    {
      "at": 11,
      "n": 1,
      "simp": "尔",
@@ -188957,7 +193203,8 @@
      "pick": "鏈",
      "why": "链条、链接作「鏈」；「鍊」是冶炼义"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "dasijianyishu",
@@ -189189,6 +193436,19 @@
      "field": "full",
      "line": 0,
      "page_char": "議"
+    },
+    {
+     "at": 26,
+     "n": 2,
+     "simp": "不合",
+     "cands": [
+      "不合"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "之日久，而议事每不合，所操之术多异故",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 32,
@@ -189598,6 +193858,19 @@
      "decision": "table",
      "kind": "char",
      "ctx": "、生事、征利、拒谏，以致天下怨谤也",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 48,
+     "n": 2,
+     "simp": "以致",
+     "cands": [
+      "以致"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "事、征利、拒谏，以致天下怨谤也。某则",
      "field": "full",
      "line": 1
     },
@@ -190112,6 +194385,19 @@
      "line": 2
     },
     {
+     "at": 44,
+     "n": 2,
+     "simp": "出力",
+     "cands": [
+      "出力"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "不量敌之众寡，欲出力助上以抗之，则众",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 52,
      "n": 1,
      "simp": "则",
@@ -190500,6 +194786,19 @@
      "field": "lines",
      "line": 0,
      "page_char": "議"
+    },
+    {
+     "at": 3,
+     "n": 2,
+     "simp": "不合",
+     "cands": [
+      "不合"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "议事每不合，所操之术多异故",
+     "field": "lines",
+     "line": 0
     },
     {
      "at": 9,
@@ -191121,7 +195420,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "sumuzhe",
@@ -191828,7 +196128,8 @@
      "pick": "蘇",
      "why": "姓、复苏义作「蘇」；「甦」是后起俗字、「囌」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "pusaman-wentingyun",
@@ -192375,7 +196676,8 @@
      "pick": "反覆",
      "why": "一遍又一遍义作「反覆」；「反復」是异体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "pusaman-zaoxiang",
@@ -192765,7 +197067,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "yumeiren",
@@ -192941,6 +197244,19 @@
      "page_char": "國"
     },
     {
+     "at": 10,
+     "n": 4,
+     "simp": "不堪回首",
+     "cands": [
+      "不堪回首"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "昨夜又东风，故国不堪回首月明中。",
+     "field": "full",
+     "line": 1
+    },
+    {
      "at": 0,
      "n": 1,
      "simp": "问",
@@ -193095,6 +197411,19 @@
      "page_char": "國"
     },
     {
+     "at": 10,
+     "n": 4,
+     "simp": "不堪回首",
+     "cands": [
+      "不堪回首"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "昨夜又东风，故国不堪回首月明中。",
+     "field": "lines",
+     "line": 1
+    },
+    {
      "at": 0,
      "n": 1,
      "simp": "问",
@@ -193202,7 +197531,8 @@
      "pick": "擺",
      "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shuxiang",
@@ -193820,7 +198150,8 @@
      "pick": "閒",
      "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "shudaonan",
@@ -194504,6 +198835,19 @@
      "field": "full",
      "line": 7,
      "page_char": "盤"
+    },
+    {
+     "at": 8,
+     "n": 2,
+     "simp": "九折",
+     "cands": [
+      "九折"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "青泥何盘盘！百步九折萦岩峦。",
+     "field": "full",
+     "line": 7
     },
     {
      "at": 10,
@@ -196142,7 +200486,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jiantaishisi",
@@ -196502,6 +200847,19 @@
      "field": "full",
      "line": 0,
      "page_char": "無"
+    },
+    {
+     "at": 110,
+     "n": 2,
+     "simp": "不念",
+     "cands": [
+      "不念"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "，永保无疆之休。不念居安思危，戒奢以",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 120,
@@ -196990,6 +201348,19 @@
      "field": "full",
      "line": 2,
      "page_char": "見"
+    },
+    {
+     "at": 7,
+     "n": 2,
+     "simp": "可欲",
+     "cands": [
+      "可欲"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "君人者，诚能见可欲则思知足以自戒，",
+     "field": "full",
+     "line": 2
     },
     {
      "at": 9,
@@ -198463,6 +202834,12 @@
      "kept": "馀",
      "table_wanted": "餘"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
+    }
    ]
   },
   {
@@ -198565,7 +202942,7 @@
      "  舊名句作「迎蹇叔於宋，來邳豹於吳」，舊注釋還憑空寫「邳豹：春秋時吳國人」；",
      "  舊名句第三條作「棄逐客而國不富，賢者不譯」，舊注釋寫「譯：怨言、非議」。",
      "  爲什麼錯：全文里寫的明明是「求丕豹、公孫支於晉」。丕豹是晉大夫邳鄭之子，邳鄭被晉殺後他逃到秦國，",
-     "  跟吳國沒有关系；公孫支（子桑）也是從晉來的。",
+     "  跟吳國沒有關係；公孫支（子桑）也是從晉來的。",
      "  「賢者不譯」在《史記·李斯列傳》、《全秦文》以及本篇全文里都不存在，「譯」在這個上下文里沒有任何辭例支持——",
      "  它是把別處的字安到了這里。賞析段原本還圍繞「不譯」二字寫了一整段，一併改掉。",
      "  出處：https://zh.wikisource.org/wiki/%E8%AB%BF%E9%80%90%E5%AE%A2%E6%9B%B8 （頁內正文含「求丕豹、公孫支於晉」）。",
@@ -198977,6 +203354,19 @@
      "field": "full",
      "line": 0,
      "page_char": "舉"
+    },
+    {
+     "at": 117,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "获楚魏之师，举地千里，至今治强。惠王",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 123,
@@ -202269,6 +206659,22 @@
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     },
     {
+     "at": 7,
+     "n": 2,
+     "simp": "关系",
+     "cands": [
+      "关系",
+      "關係"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "  跟吴国没有关系；公孙支（子桑）",
+     "field": "sec:异文",
+     "line": 27,
+     "pick": "關係",
+     "why": "现代词「关系」作「關係」。单字表把「系」照抄是文言用法（「系向牛头充炭直」「系行舟」），这里说的是关系，不是拴住"
+    },
+    {
      "at": 41,
      "n": 1,
      "simp": "个",
@@ -202284,7 +206690,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "hexinlao",
@@ -203687,6 +208094,12 @@
      "pick": "證",
      "why": "证据、考证、例证、旁证作「證」；「証」是异体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
+    }
    ]
   },
   {
@@ -203796,6 +208209,19 @@
     ]
    },
    "marks": [
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "之秋",
+     "cands": [
+      "之秋"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "壬戌之秋，七月既望，苏子",
+     "field": "full",
+     "line": 0
+    },
     {
      "at": 10,
      "n": 1,
@@ -204742,6 +209168,19 @@
      "field": "full",
      "line": 2,
      "page_char": "艫"
+    },
+    {
+     "at": 97,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "顺流而东也，舳舻千里，旌旗蔽空，酾酒",
+     "field": "full",
+     "line": 2
     },
     {
      "at": 105,
@@ -206484,6 +210923,12 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "𫚥",
+     "why": "keep（单字）：鰕"
+    }
    ]
   },
   {
@@ -207096,6 +211541,19 @@
      "field": "full",
      "line": 1,
      "page_char": "饒"
+    },
+    {
+     "at": 67,
+     "n": 2,
+     "simp": "以致",
+     "cands": [
+      "以致"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "器重宝肥饶之地，以致天下之士，合从缔",
+     "field": "full",
+     "line": 1
     },
     {
      "at": 74,
@@ -208316,6 +212774,20 @@
      "page_char": "內"
     },
     {
+     "at": 42,
+     "n": 2,
+     "simp": "二周",
+     "cands": [
+      "二周",
+      "二週"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "长策而御宇内，吞二周而亡诸侯，履至尊",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 46,
      "n": 1,
      "simp": "诸",
@@ -208340,6 +212812,19 @@
      "decision": "identity",
      "kind": "char",
      "ctx": "亡诸侯，履至尊而制六合，执敲扑而鞭",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 54,
+     "n": 2,
+     "simp": "六合",
+     "cands": [
+      "六合"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "诸侯，履至尊而制六合，执敲扑而鞭笞天",
      "field": "full",
      "line": 2
     },
@@ -208991,6 +213476,19 @@
      "field": "full",
      "line": 2,
      "page_char": "關"
+    },
+    {
+     "at": 267,
+     "n": 2,
+     "simp": "千里",
+     "cands": [
+      "千里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "为关中之固，金城千里，子孙帝王万世之",
+     "field": "full",
+     "line": 2
     },
     {
      "at": 271,
@@ -210089,6 +214587,19 @@
      "page_char": "後"
     },
     {
+     "at": 175,
+     "n": 2,
+     "simp": "六合",
+     "cands": [
+      "六合"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "有余年矣。然后以六合为家，崤函为宫。",
+     "field": "full",
+     "line": 4
+    },
+    {
      "at": 177,
      "n": 1,
      "simp": "为",
@@ -211004,7 +215515,8 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xiaoyaoyou",
@@ -212332,7 +216844,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jinse",
@@ -212552,6 +217065,19 @@
      "page_char": "憶"
     },
     {
+     "at": 8,
+     "n": 2,
+     "simp": "只是",
+     "cands": [
+      "只是"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "此情可待成追忆，只是当时已惘然。",
+     "field": "full",
+     "line": 2
+    },
+    {
      "at": 10,
      "n": 1,
      "simp": "当",
@@ -212720,6 +217246,19 @@
      "field": "lines",
      "line": 2,
      "page_char": "憶"
+    },
+    {
+     "at": 8,
+     "n": 2,
+     "simp": "只是",
+     "cands": [
+      "只是"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "此情可待成追忆，只是当时已惘然。",
+     "field": "lines",
+     "line": 2
     },
     {
      "at": 10,
@@ -212979,7 +217518,8 @@
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "changting-songbei",
@@ -214151,6 +218691,12 @@
      "pick": "跡",
      "why": "痕迹、行迹义作「跡」；来源页作「迹」，那是同字异写"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "𩨂",
+     "why": "keep（单字）：驄"
+    }
    ]
   },
   {
@@ -214612,6 +219158,19 @@
      "field": "full",
      "line": 0,
      "page_char": "臥"
+    },
+    {
+     "at": 109,
+     "n": 2,
+     "simp": "云何",
+     "cands": [
+      "云何"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "落。长桥卧波，未云何龙？复道行空，不",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 111,
@@ -217010,6 +221569,12 @@
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
+   ],
+   "left_behind": [
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
+    }
    ]
   },
   {
@@ -219162,6 +223727,20 @@
      "page_char": "劉"
     },
     {
+     "at": 93,
+     "n": 2,
+     "simp": "侥幸",
+     "cands": [
+      "侥幸",
+      "僥倖"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "，听臣微志，庶刘侥幸，保卒余年。臣生",
+     "field": "full",
+     "line": 3
+    },
+    {
      "at": 98,
      "n": 2,
      "simp": "余年",
@@ -220027,6 +224606,16 @@
      "line": 6,
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "侥",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    },
+    {
+     "char": "馀",
+     "why": "keep（单字）：餘"
     }
    ]
   },
@@ -220997,7 +225586,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "jingnv",
@@ -221381,7 +225971,8 @@
      "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
      "evidence": "来源页 14 处作「盡」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "xiangjixuanzhi",
@@ -221604,6 +226195,19 @@
      "page_char": "澤"
     },
     {
+     "at": 33,
+     "n": 2,
+     "simp": "下注",
+     "cands": [
+      "下注"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "，尘泥渗漉，雨泽下注；每移案，顾视无",
+     "field": "full",
+     "line": 0
+    },
+    {
      "at": 40,
      "n": 1,
      "simp": "顾",
@@ -221644,6 +226248,19 @@
      "field": "full",
      "line": 0,
      "page_char": "無"
+    },
+    {
+     "at": 48,
+     "n": 2,
+     "simp": "北向",
+     "cands": [
+      "北向"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "顾视无可置者。又北向，不能得日，日过",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 57,
@@ -221688,6 +226305,19 @@
      "field": "full",
      "line": 0,
      "page_char": "爲"
+    },
+    {
+     "at": 65,
+     "n": 2,
+     "simp": "修葺",
+     "cands": [
+      "修葺"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "过午已昏。余稍为修葺，使不上漏。前辟",
+     "field": "full",
+     "line": 0
     },
     {
      "at": 74,
@@ -223928,6 +228558,19 @@
      "page_char": "壞"
     },
     {
+     "at": 71,
+     "n": 2,
+     "simp": "不修",
+     "cands": [
+      "不修"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "年，吾妻死，室坏不修。其后二年，余久",
+     "field": "full",
+     "line": 4
+    },
+    {
      "at": 74,
      "n": 2,
      "simp": "其后",
@@ -224687,7 +229330,8 @@
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "qiqiaoxian",
@@ -225346,7 +229990,8 @@
      "pick": "別",
      "why": "分别、离别义作「別」；「彆」只用于「别扭」"
     }
-   ]
+   ],
+   "left_behind": []
   },
   {
    "id": "huanggangzhulouji",
@@ -225988,6 +230633,19 @@
      "decision": "identity",
      "kind": "char",
      "ctx": "戴华阳巾，手执《周易》一卷，焚香默",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 21,
+     "n": 2,
+     "simp": "一卷",
+     "cands": [
+      "一卷"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "巾，手执《周易》一卷，焚香默坐，消遣",
      "field": "full",
      "line": 2
     },
@@ -227210,7 +231868,8 @@
      "pick": "夾",
      "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
     }
-   ]
+   ],
+   "left_behind": []
   }
  ]
 }

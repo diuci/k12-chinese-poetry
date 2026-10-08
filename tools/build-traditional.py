@@ -19,7 +19,8 @@
 
 --build 写产物；--selftest 自带坏例子。
 """
-import json, re, sys, difflib, datetime
+import json
+import sys, re, sys, difflib, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -106,9 +107,16 @@ def convert(text, s2p, s2c, own_chars):
         if seg is not None:
             raw = s2p[seg]
             cands = [x for x in raw if all(in_basic(y) or y in own_chars for y in x)]
-            cands = [x for x in cands if phrase_ok(seg, x, s2c, own_chars)] or [seg]
+            ok = [x for x in cands if phrase_ok(seg, x, s2c, own_chars)]
+            # 被单字表挡下来的词组候选不许静默丢掉：那是一次真实存在的分歧。
+            # 丢掉它，「两只袖子」就会悄悄留在繁体页上，谁也看不见。
+            rejected = [x for x in cands if x not in ok and x != seg]
+            # 被挡下来的候选仍然留在候选池里（排在后面）：默认值不变，
+            # 但裁定表可以在这一步把它选出来 —— 前提是它写了理由。
+            cands = (ok or [seg]) + [x for x in rejected if x not in ok]
         else:
             cands = char_cands(seg := text[i], s2c, own_chars)
+            rejected = []
         default = cands[0]
         out.append(default)
         others = [x for x in cands if x != default and x != seg]
@@ -124,6 +132,11 @@ def convert(text, s2p, s2c, own_chars):
             # 表说照抄，但还给了别的写法：只有裁定表能在这里改我们的字
             marks.append({'at': i, 'n': len(seg), 'simp': seg, 'cands': cands,
                           'decision': 'identity', 'kind': kind, 'ctx': ctx})
+        elif len(seg) > 1:
+            # 词组表说这个词整个照抄（「倒霉 → 倒霉」）。不记一笔，
+            # 后面那道「残留简体专用字必须带依据」的闸门就找不到它的理由。
+            marks.append({'at': i, 'n': len(seg), 'simp': seg, 'cands': cands,
+                          'decision': 'identity', 'kind': 'phrase', 'ctx': ctx})
         i += len(seg)
     return ''.join(out), marks
 
@@ -333,17 +346,29 @@ SKIP_SECTIONS = {'玩法数据', '出处核对'}
 
 
 def md_sections(md_path):
-    """把一篇 md 按 ## 切成节。注释译文赏析是我们自己写的现代文字，
-    繁体版也要有，所以它们同样得派生、同样过闸门。"""
+    """把一篇 md 按 ## 切成节，与站点 parse_poem 同一套切法。
+    小学结构里 H1 之后没有 H2，正文直接跟着——那一节站点叫「正文」，
+    繁体派生也必须切出同一节，否则简体页有这一节、繁体页没有。"""
     secs, cur = {}, None
+    seen_h1 = False
     for ln in md_path.read_text(encoding='utf-8').splitlines():
-        if ln.startswith('## '):
-            cur = ln[3:].strip()
+        s = ln.strip()
+        if s.startswith('# '):
+            seen_h1 = True
+            cur = None
+            continue
+        if s.startswith('## '):
+            cur = s[3:].strip()
             secs.setdefault(cur, [])
-        elif cur is not None and not ln.strip().startswith('>'):
-            # 「> 出处：…」「> 收录判断：…」是元信息，站点也不渲染它们；
-            # 把它们当正文派生，「全文」就会多出两行，与正文派生对不上。
-            secs[cur].append(ln)
+            continue
+        if s.startswith('>'):
+            # 「> 出处：…」「> 收录判断：…」是元信息，站点也不渲染它们
+            continue
+        if cur is None:
+            if not seen_h1:
+                continue
+            cur = '正文'
+        secs.setdefault(cur, []).append(ln)
     return {k: [x for x in v if x.strip()] for k, v in secs.items()}
 
 
@@ -377,6 +402,8 @@ def build():
             md_variant[row['id']] = '\n'.join(lines)
     rules = load_rules()
     reversal = []
+    left_behind = []
+    AUDIT = [] if '--audit-left' in sys.argv else None
     out_rows = []
     for c in poems:
         full = as_list(c.get('fullLinesPunct') or c.get('fullLines'))
@@ -573,18 +600,109 @@ def build():
                                      'chars': '、'.join(pairs) or '（长度不同）',
                                      'basis': '；'.join(dict.fromkeys(basis)),
                                      'unexplained': unexplained})
+        # ---- 繁体文本里留下的「只有简体才用的字」：每一处都要说得出为什么 ----
+        # 这些字不是漏网：来源页写作这个形、或正文自己就写作这个形（古籍用字，
+        # 词组表不许换它）。说不出为什么的，当场失败，不许留在产物里。
+        # ---- 繁体文本里留下的「只有简体才用的字」：每一处都要说得出为什么 ----
+        def name_of(_ch):
+            for _n, _a in sec_src.items():
+                for _l in _a:
+                    if _ch in _l:
+                        return _n
+            for _l in list(full) + list(lines):
+                if _ch in _l:
+                    return '正文'
+            for _k, _v in labels_trad.items():
+                if _ch in (_v if isinstance(_v, str) else ''.join(_v)):
+                    return 'label:' + _k
+            return '?'
+        pairs = []
+        for _i, _tt in enumerate(trad_full):
+            pairs.append((_tt, full[_i] if _i < len(full) else ''))
+        for _i, _tt in enumerate(trad_lines):
+            pairs.append((_tt, lines[_i] if _i < len(lines) else ''))
+        for _name, _arr in sections_trad.items():
+            _src = sec_src.get(_name) or []
+            for _i, _tt in enumerate(_arr):
+                pairs.append((_tt, _src[_i] if _i < len(_src) else ''))
+        for _k, _v in labels_trad.items():
+            _sv = c.get(_k)
+            if isinstance(_v, list):
+                _ss = c.get(_k) or []
+                for _i, _tt in enumerate(_v):
+                    pairs.append((_tt, _ss[_i] if _i < len(_ss) else ''))
+            else:
+                pairs.append((_v, _sv if isinstance(_sv, str) else ''))
+        QUOTE = re.compile(r'「[^」]*」|“[^”]*”')
+        left = {}
+        for _tt, _st in pairs:
+            quoted = set(''.join(QUOTE.findall(_st)))
+            for ch in _tt:
+                if ch not in s2c or ch in s2c[ch] or ch in left:
+                    continue
+                why = None
+                for x in marks:
+                    hit = None
+                    if x.get('pick') == ch or x.get('kept') == ch:
+                        hit = '单字'
+                    elif len(x['simp']) > 1 and (ch in (x.get('pick') or '') or ch in (x.get('kept') or '')):
+                        hit = '词组'
+                    elif x['simp'] == ch and x['decision'] in ('identity', 'keep'):
+                        hit = '照抄'
+                    elif len(x['simp']) > 1 and x['decision'] == 'identity' and ch in x['simp']:
+                        hit = '词组表说这个词照抄'
+                    if hit:
+                        why = '%s（%s）：%s' % (
+                            x['decision'], hit,
+                            x.get('why') or x.get('page_char') or x.get('table_wanted')
+                            or '表与页都说这个字本来就写作这个形')
+                        break
+                if why is None and ch in page:
+                    # 表把某个字列在简体一侧，来源页却亲眼写作这个形：
+                    # 古籍里的异体字（如「𢧐」）常落在这种位置，照页，不照表
+                    why = '来源页写作这个形：表把它列在简体一侧，页上却是这个字'
+                if why is None and ch in own:
+                    why = '正文自己写作这个形：单字表认为它本来就写作这个字，词组表不许换它'
+                if why is None and ch in quoted:
+                    # 异文一节引的是别本 / 来源页夹注里的写法，带出处，不是我们的用字
+                    why = '引文：这一处引的是别本或来源页夹注的写法，出处已写在同一行'
+                if why is None:
+                    if AUDIT is not None:
+                        AUDIT.append((c['title'], name_of(ch), ch))
+                        why = '（待裁定）'
+                    else:
+                        raise SystemExit('[繁体派生] %s：繁体文本里留下只有简体才用的字「%s」，'
+                                         '却说不出凭什么 —— 不许留在产物里' % (c['title'], ch))
+                left[ch] = why
+
+        left_behind.extend({'id': c['id'], 'title': c['title'], 'char': k, 'why': v}
+                           for k, v in sorted(left.items()))
+
         out_rows.append({'id': c['id'], 'title': c['title'], 'page': (src.get(c['id']) or {}).get('page', ''),
                          'text_trad': trad_full, 'lines_trad': trad_lines,
                          'sections_trad': sections_trad, 'labels_trad': labels_trad,
                          'marks': [m for m in marks if not m['field'].startswith('sec:')],
-                         'marks_app': app_marks})
+                         'marks_app': app_marks,
+                         'left_behind': [{'char': k, 'why': v} for k, v in sorted(left.items())]})
+
+    if AUDIT is not None:
+        import collections
+        cnt = collections.Counter((_w, ch) for _t, _w, ch in AUDIT)
+        ex = {}
+        for _t, _w, ch in AUDIT:
+            ex.setdefault((_w, ch), _t)
+        print('[诊断] 说不出凭据的残留简体专用字：%d 处' % len(AUDIT))
+        for (where, ch), v in sorted(cnt.items(), key=lambda x: -x[1]):
+            print('  %s ×%-4d %-10s 例：%s' % (ch, v, where, ex[(where, ch)]))
+        raise SystemExit(0)
 
     JOUT.write_text(json.dumps({'generated': datetime.date.today().isoformat(),
                                 'note': '简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / '
                                         'table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / '
                                         'pending 没依据，留在待定清单。',
                                 'counts': counts, 'counts_apparatus': counts2,
-                                'reversal': reversal, 'rows': out_rows},
+                                'reversal': reversal, 'left_behind': left_behind,
+                                'rows': out_rows},
                                ensure_ascii=False, indent=1), encoding='utf-8')
     BT = chr(96)
     L = ['# 繁体版：每一处「一简对多繁」是怎么定的', '',
@@ -842,7 +960,10 @@ def selftest():
     assert (not r22) or len(r22[1]) != 1 or r22[1][0] != r22[2], '坏例22：对歪的窗口被当成了证据 ' + repr(r22)
     assert convert('吞二周而亡诸侯', {'二周': ['二週']}, {'二': ['二'], '周': ['周'], '吞': ['吞'], '诸': ['諸'], '而': ['而'], '亡': ['亡'], '侯': ['侯']}, set())[0] == '吞二周而亡諸侯', \
         '坏例21d：吞二周被派生成二週'
-    print('[ok] build-traditional --selftest 通（24 个坏例子全部试到）')
+    import inspect
+    _src = inspect.getsource(selftest)
+    print('[ok] build-traditional --selftest 通（%d 处断言全部试到）'
+          % (_src.count('assert ') + _src.count('try:')))
     return 0
 
 

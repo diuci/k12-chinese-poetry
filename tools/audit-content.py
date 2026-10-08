@@ -232,6 +232,27 @@ def audit_trad(corpus, trad, trad_md, rows):
                 '这样的字 %d 处%s' % (len(bad_chars),
                                       ('：' + '、'.join(bad_chars[:6])) if bad_chars else '')))
 
+    # 繁体文本（正文 + 各节 + 标签）里残留的简体专用字：每一处都要在 left_behind 里说得出凭什么。
+    # 派生工具自己会拦这一处；这里拦的是「产物被人手改过」或「工具换了却没重跑」。
+    simp_only = {k for k, v in s2c.items() if k not in v}
+    unjust = []
+    for r in trad.get('rows') or []:
+        texts = list(r.get('text_trad') or []) + list(r.get('lines_trad') or [])
+        for _v in (r.get('sections_trad') or {}).values():
+            texts.extend(_v)
+        for _v in (r.get('labels_trad') or {}).values():
+            texts.extend(_v if isinstance(_v, list) else [_v])
+        allowed = {x.get('char') for x in (r.get('left_behind') or [])
+                   if isinstance(x, dict) and (x.get('why') or '').strip()}
+        for txt in texts:
+            for ch in txt:
+                if ch in simp_only and ch not in allowed:
+                    unjust.append('%s·%s' % (r.get('title'), ch))
+                    break
+    out.append(('繁体文本残留的简体专用字每一处都写了依据', not unjust,
+                '没说凭什么 %d 处%s' % (len(unjust),
+                                        ('：' + '、'.join(sorted(set(unjust))[:6])) if unjust else '')))
+
     rev = trad.get('reversal') or []
     unexplained = []
     copied = ruled = 0
@@ -617,7 +638,8 @@ def selftest():
                             'variant': 0, 'pending': 0},
                  'reversal': [],
                  'rows': [{'id': 'a', 'title': '甲', 'text_trad': ['床前明月光，'], 'lines_trad': [],
-                           'labels_trad': {'title': '甲', 'author': '李'}},
+                           'labels_trad': {'title': '甲', 'author': '李'},
+                           'left_behind': [{'char': '床', 'why': '正文自己写作这个形'}]},
                           {'id': 'b', 'title': '乙', 'text_trad': ['處處聞啼鳥，'], 'lines_trad': [],
                            'labels_trad': {'title': '乙', 'author': '孟浩然'}}]}
     MD_GOOD = '| pending | 0 | 没依据 —— 待定，不许当成已定 |'
@@ -737,6 +759,20 @@ def selftest():
     t12['rows'][1]['lines_trad'] = ['身体。']
     if '繁体正文里没有只有简体才用的字' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12, MD_GOOD) if not ok}:
         print('坏例12：繁体正文里的简体字「体」没被拦'); bad += 1
+    # 12d) 繁体某一节里留下只有简体才用的字，却没写依据：必须被报
+    t12d = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
+            'rows': [dict(r) for r in TRAD_GOOD['rows']]}
+    t12d['rows'][1]['sections_trad'] = {'译文': ['这个。']}
+    if '繁体文本残留的简体专用字每一处都写了依据' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12d, MD_GOOD) if not ok}:
+        print('坏例12d：繁体译文里的简体字「这」没有依据却没被拦'); bad += 1
+    # 12e) 同一处写了依据，就不许再被报（护栏不许只会喊）
+    t12e = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
+            'rows': [dict(r) for r in TRAD_GOOD['rows']]}
+    t12e['rows'][1]['sections_trad'] = {'译文': ['这个。']}
+    t12e['rows'][1]['left_behind'] = [{'char': '这', 'why': '引文：这一处引的是别本写法'},
+                                 {'char': '个', 'why': '引文：这一处引的是别本写法'}]
+    if '繁体文本残留的简体专用字每一处都写了依据' in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12e, MD_GOOD) if not ok}:
+        print('坏例12e：写了依据还被报'); bad += 1
     # 12b) 台账说这篇有译文，繁体版却没派生这一节，必须被报
     t12b = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
             'rows': [dict(r) for r in TRAD_GOOD['rows']]}
@@ -779,7 +815,9 @@ def selftest():
 
         return 1
 
-    print('[ok] audit-content --selftest 通（18 个坏例子全部试到）')
+    import inspect
+    print('[ok] audit-content --selftest 通（%d 个坏例子全部试到）'
+          % inspect.getsource(selftest).count('bad += 1'))
 
     return 0
 
