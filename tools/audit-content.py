@@ -318,7 +318,23 @@ def split_nopage(recs, ids):
     return all_np, unexplained
 
 
-def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None):
+def doc_number_claims(doc_text, actuals):
+    """文档里写死的数字，必须与当场算出来的对得上。
+
+    写死的数字会过期，而过期的数字比没有数字更危险：它让人以为这一处已经数过了。
+    本轮就是这么抓出来的——accuracy.md 写着「裁定表里有 8 条规则管着『里』」，
+    当场数 `data/s2t-rules.json`：「里」只有 2 条。
+    """
+    bad = []
+    for pat, want in actuals.items():
+        for m in re.finditer(pat, doc_text or ''):
+            got = int(m.group(1))
+            if got != want:
+                bad.append('「%s」写 %d，实际 %d' % (m.group(0).strip(), got, want))
+    return bad
+
+
+def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=None):
 
     """返回 [(检查名, 通过?, 说明)]。"""
 
@@ -597,6 +613,13 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None):
 
     out.append(('来源不明为零', g['来源不明'] == 0, '来源不明 %d 篇' % g['来源不明']))
 
+    # 文档里写死的数字：过期了就是说假话。这一项盯裁定表条数。
+    sp = ROOT / 'data' / 's2t-rules.json'
+    s2t_total = len(json.loads(sp.read_text(encoding='utf-8')).get('rules', [])) if sp.exists() else -1
+    claims = doc_number_claims(accuracy_md or '', {r'裁定表\s*(\d+)\s*条': s2t_total})
+    out.append(('文档里写死的裁定表条数与表一致', not claims,
+                '裁定表实际 %d 条；%s' % (s2t_total, '；'.join(claims) if claims else '文档里的数字对得上')))
+
     out += audit_trad(corpus, trad, trad_md, ledger['rows'])
     return out
 
@@ -843,6 +866,17 @@ def selftest():
     if badnp != ['b', 'c', 'd']:
         print('坏例16b：没交代的「没有来源页」被放行了'); bad += 1
 
+    # 17) 文档里写死的数字过期了必须被报；对得上不许误伤；没写数字也不许报
+    pat = {r'裁定表\s*(\d+)\s*条': 102}
+    if not doc_number_claims('裁定表 99 条规则管着「里」', pat):
+        print('坏例17：文档写「裁定表 99 条」而表是 102 条，没被报'); bad += 1
+    if doc_number_claims('裁定表 102 条规则', pat):
+        print('坏例17b：数字对得上却被报了'); bad += 1
+    if doc_number_claims('条数见 data/s2t-rules.json，不在这里写死', pat):
+        print('坏例17c：文档没写数字却被报了'); bad += 1
+    if len(doc_number_claims('裁定表 99 条，另有裁定表 105 条', pat)) != 2:
+        print('坏例17d：同一份文档里两处过期数字只报了一处'); bad += 1
+
     if bad:
 
         print('[!] audit-content --selftest 失败 %d 项' % bad)
@@ -881,7 +915,9 @@ def main():
     trad = json.loads(tj.read_text(encoding='utf-8')) if tj.exists() else None
     mj = ROOT / 'docs' / 'traditional.md'
     trad_md = mj.read_text(encoding='utf-8') if mj.exists() else ''
-    res = audit(corpus, ledger, tsrc, defects, trad, trad_md)
+    aj = ROOT / 'docs' / 'accuracy.md'
+    accuracy_md = aj.read_text(encoding='utf-8') if aj.exists() else ''
+    res = audit(corpus, ledger, tsrc, defects, trad, trad_md, accuracy_md)
 
     g = ledger['summary']['gapCounts']
 
