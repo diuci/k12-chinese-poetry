@@ -80,6 +80,8 @@ jobs:
         # 重算结果与提交进去的不一样，这里就红：提交进去的产物必须是链条跑出来的，不是手改出来的。
         run: |
           if [ -n "$(git status --porcelain)" ]; then
+            git diff --stat
+            git diff -- data/traditional.json | head -60
             git status --porcelain
             echo '链条重算改了文件：提交进去的产物不是链条跑出来的。先本地重跑、提交，再推。'
             exit 1
