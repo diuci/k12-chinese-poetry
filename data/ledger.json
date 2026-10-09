@@ -6,8 +6,8 @@
     "syllabusSenior": 72,
     "categoryCounts": {
       "课标·义务教育": 135,
-      "教材拓展": 44,
-      "重复副本": 1,
+      "教材拓展": 43,
+      "重复副本": 2,
       "课标·高中": 72
     },
     "stageCounts": {
@@ -33,6 +33,19 @@
     "duplicates": [
       {
         "ids": [
+          "liji1",
+          "suoyoujiayao"
+        ],
+        "title": "《礼记》一则",
+        "key": "duplicate:liji1|suoyoujiayao",
+        "paths": [
+          "poems/初中/九年级下册/《礼记》一则.md",
+          "poems/初中/八年级下册/虽有嘉肴.md"
+        ],
+        "phase": "口径"
+      },
+      {
+        "ids": [
           "dadaozhixing",
           "liyun"
         ],
@@ -49,18 +62,18 @@
       "缺背诵要求": 0,
       "只有必背名句（节选收录）": 0,
       "仓内有全文正文": 252,
-      "无异文记录": 164,
+      "无异文记录": 163,
       "full 但名句没盖住全文（篇）": 6,
       "full 但名句没盖住全文（句）": 86,
-      "异文条目总数": 427,
-      "异文条目带出处": 406,
-      "异文条目带取舍": 175,
+      "异文条目总数": 429,
+      "异文条目带出处": 408,
+      "异文条目带取舍": 176,
       "异文条目缺出处": 21,
-      "异文小节里的非异文条目": 0,
+      "异文小节里的非异文条目": 1,
       "异文条目写明「仓内没核到」": 21,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
-      "重复副本": 1,
+      "重复副本": 2,
       "来源不明": 0,
       "统编教材收录": 188,
       "统编教材未收（课标要求）": 17,
@@ -70,8 +83,8 @@
       "统编教材收了（只有一条来源）": 34,
       "统编教材里没找到这一课": 1,
       "没有教材收录状态": 0,
-      "出处核对·逐句全对上": 214,
-      "出处核对·部分对上": 37,
+      "出处核对·逐句全对上": 221,
+      "出处核对·部分对上": 30,
       "出处核对·一句都对不上": 0,
       "出处核对·核过没有正文页": 1,
       "出处核对·没有核对记录": 0
@@ -2753,8 +2766,8 @@
       "volume": "八年级下册",
       "textbookStatus": "统编教材收录",
       "form": "文言",
-      "category": "教材拓展",
-      "syllabusGroup": "教材拓展",
+      "category": "重复副本",
+      "syllabusGroup": "重复副本",
       "syllabusNo": null,
       "syllabusTitle": "虽有嘉肴",
       "matchStrength": null,
@@ -2787,7 +2800,8 @@
       "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
-        "无「必背名句」小节"
+        "无「必背名句」小节",
+        "与另一篇原文完全相同"
       ],
       "path": "poems/初中/八年级下册/虽有嘉肴.md"
     },
@@ -2891,11 +2905,11 @@
       "hasFamous": true,
       "hasPlay": false,
       "hasVariant": true,
-      "variantEntries": 3,
+      "variantEntries": 4,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 3,
-      "variantWithChoice": 1,
+      "variantWithSource": 4,
+      "variantWithChoice": 2,
       "hasFulltext": true,
       "pairsCount": 3,
       "flags": [],
@@ -3582,13 +3596,14 @@
       "syllabusTitle": "《礼记》一则",
       "matchStrength": 2,
       "recite": "full",
-      "lineCount": 3,
-      "charCount": 26,
-      "mingjuSents": 3,
-      "fullSents": 3,
+      "lineCount": 5,
+      "charCount": 74,
+      "mingjuSents": 7,
+      "fullSents": 7,
       "fullGapSents": 0,
       "fullGapSample": [],
       "sections": [
+        "异文",
         "必背全文",
         "收录范围",
         "注释",
@@ -3600,17 +3615,16 @@
       "hasAppreciation": true,
       "hasFamous": false,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 0,
+      "variantWithSource": 1,
       "variantWithChoice": 0,
       "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
-        "无「必背名句」小节",
-        "无异文记录"
+        "无「必背名句」小节"
       ],
       "path": "poems/初中/九年级下册/《礼记》一则.md"
     },
@@ -12324,7 +12338,7 @@
       "hasPlay": false,
       "hasVariant": true,
       "variantEntries": 5,
-      "variantNonEntries": 0,
+      "variantNonEntries": 1,
       "variantUnverified": 3,
       "variantWithSource": 2,
       "variantWithChoice": 0,

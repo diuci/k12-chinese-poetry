@@ -729,8 +729,70 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
     stamps = run_stamp_problems(trad, ledger, lm.read_text(encoding='utf-8') if lm.exists() else '')
     out.append(('链条重算的产物不带当场日期', not stamps,
                 '产物里不许有生成日期（要时间找 git）' if not stamps else '；'.join(stamps)))
+    stale = stale_rulings(corpus)
+    out.append(('裁定说删掉的旧句不许还在正文里', not stale,
+                '；'.join(stale[:6]) if stale else
+                '异文条目写着「旧版误作 X」的，X 不许还在任何一篇可背的正文里——抓的是「裁定了、没改干净」'))
     out += audit_trad(corpus, trad, trad_md, ledger['rows'])
     return out
+RULING_OLD = re.compile(r'(?:误作|旧版[^。；\n]{0,14}作)\s*((?:「[^」]{2,40}」\s*)+)')
+
+
+
+def stale_rulings(corpus):
+
+    """异文条目里写着「旧版误作 X」的，X 不许还在任何一篇可背的正文里。
+
+    为什么：虽有嘉肴 的异文条目写着旧版误作「善哉，答是」，那一篇正文删了；
+
+    可九年级下册《礼记》一则——同一篇《学记》文字的另一处引用——还留着这一句，
+
+    还给它配了注释「答是：答得对」和译文「好啊，答对了」。台账写着已裁定，正文还在教学生背它。
+
+    只取「误作」之后紧跟的引号：贺新郎 那一行前半引的是本页真实写法，
+
+    连着正文一起报就是误伤。
+    按行比，不按整篇比：贺新郎 正文是「谈笑起，两河路。」换行「少时棋柝曾联句」，
+
+    整篇连起来就含「两河路少」——那是跨行的巧合，不是正文里有这一句。"""
+
+
+    quoted = []
+
+    for c in corpus.values():
+
+        for sec in ('异文', '收录范围'):
+
+            for ln in c['sec'].get(sec, []):
+
+                m = RULING_OLD.search(ln)
+
+                if not m:
+
+                    continue
+
+                for q in re.findall(r'「([^」]{2,40})」', m.group(1)):
+
+                    nq = norm(q)
+
+                    if len(nq) >= 4:
+
+                        quoted.append((c['title'], q, nq))
+
+    bodies = [(d['title'], [norm(x) for x in body_of(d).splitlines() if x.strip()]) for d in corpus.values()]
+
+    bad = []
+
+    for title, q, nq in quoted:
+
+        for other, body in bodies:
+
+            if any(nq == ln or nq in ln for ln in body):
+
+                bad.append('「%s」是 %s 的异文条目里裁定删掉的旧句，却还在 %s 的正文里' % (q, title, other))
+
+    return bad
+
 
 def run_stamp_problems(trad, ledger, ledger_md):
     """链条重算的产物不许带当场日期。
@@ -1080,6 +1142,22 @@ def selftest():
         print('坏例18c：台账文档里的「生成于 日期」没被抓到：%s' % got4); bad += 1
     if run_stamp_problems({}, {}, '> 由 `python tools/build-ledger.py` 生成。**不要手改本文件**：'):
         print('坏例18d：不带日期的台账文档被误伤'); bad += 1
+    # 坏例19：异文条目写着「旧版误作 X」，X 却还在某篇可背正文里——裁定了、没改干净
+    _old_line = '- 明月：一作「明山」，出自《全唐文》，取「明月」。'
+    c19 = corpus_of(good.replace(_old_line, '- 本仓旧版正文曾误作「处处闻啼鸟」，与原文不符，已删。'), good_b)
+    if not stale_rulings(c19):
+        print('坏例19：裁定删掉的旧句还在另一篇正文里，没被抓到'); bad += 1
+    # 19b：正文里确实没有那句，不该报
+    c19b = corpus_of(good.replace(_old_line, '- 本仓旧版正文曾误作「是故无冥明之察」，与原文不符，已删。'), good_b)
+    if stale_rulings(c19b):
+        print('坏例19b：正文里没有的旧句被报了：%s' % stale_rulings(c19b)); bad += 1
+    # 19c：一行里「误作」之前引的是本页真实写法，连着正文一起报就是误伤
+    c19c = corpus_of(good.replace(_old_line, '- 「明月」：本页作「明月」；部分选本误作「明山月」，与句式不合，不采。'), good_b)
+    if stale_rulings(c19c):
+        print('坏例19c：把正文里合法的那一句误报成旧句：%s' % stale_rulings(c19c)); bad += 1
+    # 19d：整条审计项必须真的接在 audit() 里（不是只写了个函数）
+    if '裁定说删掉的旧句不许还在正文里' not in {nm for nm, ok, _ in audit(c19, ledger, tsrc, [], TRAD_GOOD, MD_GOOD) if not ok}:
+        print('坏例19d：审计项没接进 audit()，坏样本没被报'); bad += 1
 
 
     if bad:

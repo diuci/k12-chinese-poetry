@@ -1,7 +1,7 @@
 {
  "note": "data/variant-readings.json 是 check-text-sources.py 里 VARIANT_GLYPHS 那张字表所用字的 Unihan kMandarin 读数快照，由 python tools/check-text-sources.py --export-variant-readings 生成，不许手改。它存在的唯一理由：CI 没有 8MB 的 Unihan，而「异体字表每一对必须读音相同」这条自检必须在 CI 里跑。字表加了新字而这份没重生成，自检会当场报错。",
  "generated": "2026-10-09",
- "chars": 42,
+ "chars": 44,
  "readings": {
   "久": [
    "jiǔ"
@@ -98,6 +98,9 @@
   "隣": [
    "lín"
   ],
+  "雁": [
+   "yàn"
+  ],
   "靑": [
    "qīng"
   ],
@@ -127,6 +130,9 @@
   ],
   "鬬": [
    "dòu"
+  ],
+  "鴈": [
+   "yàn"
   ],
   "𬴂": [
    "fēi"

@@ -40,11 +40,27 @@ try:
 except Exception:
     ok, bad, warn = '[ok]', '[!!]', '[--]'
 
-# 已人工确认的合法异名。不是错别字，是同一段文字在不同教材里的两个名字，
-# 故意留两个条目（各归各册），不再报警。
-KNOWN_ALIASES = {
-    frozenset(['大道之行也', '礼运']): '同一段《礼记·礼运》选文，篇名与通称并存',
-}
+ALIASES_PATH = ROOT / 'data' / 'title-aliases.json'
+
+
+def load_duplicate_aliases():
+    """合法异名对登记在 data/title-aliases.json 的 duplicateTitles 里，不硬编码在这里。
+
+    为什么：那张表自己写着「别名必须显式登记在这里，不许硬编码进匹配器——硬编码的别名没人复核」，
+    而本文件先前是全仓唯一不守这条的地方（表就写在上头几行）。现在读不到文件当场停，
+    不许「表读不出来就当没有、继续跑」。"""
+    if not ALIASES_PATH.exists():
+        raise SystemExit('!! 读不到 %s：别名表不在，不许猜' % ALIASES_PATH)
+    data = json.loads(ALIASES_PATH.read_text(encoding='utf-8'))
+    out = {}
+    for item in data.get('duplicateTitles', []):
+        ts = item.get('titles') or []
+        if len(ts) >= 2:
+            out[frozenset(ts)] = item.get('reason', '')
+    return out
+
+
+KNOWN_ALIASES = load_duplicate_aliases()
 
 # 比对用的「一行」：只留汉字、去掉标点，短于四字的行不参与重叠判定
 # （「子曰」「诗云」这种两三字行到处都有，拿它们比重叠会造出一堆假冲突）。
@@ -210,6 +226,20 @@ def selftest():
     # 坏例8：比对键必须去标点——带标点的行彼此对不上，检查会空过
     must(_line_key('床前明月光，') == _line_key('床前明月光'), '坏例8：去标点这一步没生效')
     must(_line_key('疑是地上霜。') != '疑是地上霜上', '坏例8b：比对键把字也去掉了')
+
+    # 坏例9：合法异名对必须真的从 data/title-aliases.json 读出来，不是写死在本文件里
+    must(len(KNOWN_ALIASES) >= 2, '坏例9：别名表没从 data/title-aliases.json 读出来（读到 %d 对）' % len(KNOWN_ALIASES))
+    must(frozenset(['虽有嘉肴', '《礼记》一则']) in KNOWN_ALIASES,
+         '坏例9b：登记表里那对《礼记》一则 / 虽有嘉肴没读出来')
+    j1 = poem('liji1', '《礼记》一则', '佚名', '先秦', ['虽有嘉肴弗食不知其旨也'], ['虽有嘉肴，弗食，不知其旨也。'])
+    j2 = poem('suoyoujiayao2', '虽有嘉肴', '佚名', '先秦', ['虽有嘉肴弗食不知其旨也'], ['虽有嘉肴，弗食，不知其旨也。'])
+    g9, s9 = exact_groups([j1, j2])
+    must(len(g9) == 1 and not s9, '坏例9c：登记过的异名对还被当成可疑')
+    saved = dict(KNOWN_ALIASES)
+    KNOWN_ALIASES.clear()
+    g10, s10 = exact_groups([j1, j2])
+    must(len(s10) == 1, '坏例10：把别名表清空，这对却没报警——别名表是摆设')
+    KNOWN_ALIASES.update(saved)
 
     print('[ok] check-duplicates --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0

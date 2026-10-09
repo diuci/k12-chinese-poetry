@@ -164,6 +164,9 @@ def page_text(title):
     html = re.sub(r'<span[^>]*class="[^"]*(?:mw-editsection|noprint)[^"]*"[^>]*>.*?</span>', '', html, flags=re.S)
     txt = re.sub(r'<[^>]+>', ' ', html)
     txt = re.sub(r'&[a-z]+;', ' ', txt)
+    # 数字实体（&#91;13&#93; 是注码 [13]）先前没剥：谏逐客书那一页的注码夹在正文里，
+    # 句子被「&91;13&93;」打断，两句被判成页里没找到——那是页里的注码，不是版本差异。
+    txt = re.sub(r'&#\d+;', ' ', txt)
     real = parse.get('title', title)
     old = {}
     try:
@@ -305,12 +308,35 @@ def page_drift(prev_results, new_results):
     return out
 
 
+# 维基文库的页面家具：作者行、「收录于」指针、「姊妹计划」、公有领域脚注、「编辑」链接、Wikidata 的 true/false。
+# 它们不是正文。留在文本里会污染「页里最像的那一段」：种树郭橐驼传「传其事以为官戒也」的相似度
+# 就是被页尾那段公有领域声明压到 0.538（阈值 0.55），从「页里写作别的样子」掉进「页里没找到」。
+BOILERPLATE = (
+    r'姊妹计划[:：]?(?:数据项|百科图册|图册|分类)?',
+    r'本作品收录于',
+    r'此[一-鿿]{0,6}作品在全世界都属于公有领域.{0,90}',
+    # 「此」必须写死：先前写成可选，正则从左边贪吃，把「…传其事以为官戒」里的「官戒」也吃了进去
+    # ——护栏吃掉正文，比不剥更糟。「姊妹计划」后面只认那几个固定标签，不用 \S 贪吃：
+    # 页面上「姊妹计划:数据项」后面紧跟的就是正文，贪吃会把正文一起剥掉。
+    r'本作品在全世界都属于公有领域.{0,90}',
+    r'Public\s*domain',
+    r'\b(?:true|false)\b',
+    r'编辑',
+)
+
 def clean(text, table):
     """繁→简、剥标点空白。返回 (清洗后文本, 夹注列表)。
 
     夹注（「城春一作荒草木深」）只登记、不剥掉：剥掉会把句子切碎，
     反而让真句子判成对不上。打断交给 line_in 的 annotated / near 两档去认。"""
+    # 页里的注码是 HTML 实体（&#91;13&#93; 就是 [13]）。先前只剥字母实体、不剥数字实体，
+    # 而下面那一步又把 # 剥掉——剩下「&91;13&93;」卡在正文里，把句子打断：
+    # 谏逐客书两句在页里明写着，却被判成「页里没找到」。实体是排版噪声，不是版本差异。
+    # 取页那一步也补了同样的剥法；这里再剥一次，是因为缓存里的页文本是旧代码写出来的。
+    text = re.sub(r'&#?[a-zA-Z0-9]+;', ' ', text)
     text = to_simplified(text, table)
+    for pat in BOILERPLATE:
+        text = re.sub(pat, ' ', text)
     notes = VARIANT_NOTE.findall(text)
     for ch in M.PUNCT + '\u3000\xa0↑↓*#':
         text = text.replace(ch, '')
@@ -336,7 +362,10 @@ VARIANT_GLYPHS = {'飮': '饮', '於': '于', '说': '说', '説': '说',
                   # 第四批：送杜少府之任蜀州「海内存知己，天涯若比邻」。四庫全書系页面（古今詩刪 卷14）
                   # 写作「天涯若比隣」——「隣」(U+96A3) 是「邻」的异体字形，OpenCC 的 TSCharacters 里只有
                   # 「鄰→邻」没有这一条，不补就会把这一句判成没对上。Unihan kMandarin 两边都读 lín。
-                  '隣': '邻'}
+                  '隣': '邻',
+                  # 第五批：滕王閣序（四部叢刊本、全唐文/卷0181、文章辨體彚選 三处都）写作「鴈阵惊寒」。
+                  '鴈': '雁'}
+                  # 「鴈」是「雁」的另一个字形，Unihan kMandarin 两边都读 yàn。
 # 试过但没收的（不是同一个字的另一种写法，是真异文，留在「没对上」里给读者看）：
 #   阁/合、己/已、又/自、山/峰、弈/奕、爱/映、至/宿、讥/议、鸣/声、纕/𬙋、𫐐/𫐓、
 #   蔽/敝、那/哪、渡/度、歧/岐、欤/与——其中读音不同的那几对直接被自检拦下。
@@ -431,14 +460,22 @@ def line_in(line, txt):
     # 再退一档：字必须按顺序出现在一个够短的窗口里。
     if len(sl) >= 6 and subseq_window(sl, st, slack=40):
         return 'unpunct-subseq'
-    if len(line) >= 6:
-        head, tail = line[:3], line[-3:]
-        i, j = txt.find(head), txt.rfind(tail)
-        if i >= 0 and j > i and (j - i) <= len(line) + 16:
-            return 'annotated'
+    # head/tail 这一档也必须用去标点的句子：仓里有些正文用 ASCII 引号（"敢问夫子恶乎长？"），
+    # 拿带引号的原文取 head，head 本身就是个引号，页里当然找不到——曹刿论战、邹忌讽齐王纳谏
+    # 就是这么被判成「页里没找到」的，页里明写着那一句。
+    if len(sl) >= 6:
+        head, tail = sl[:3], sl[-3:]
+        # 页里同一个「对曰」出现三次：先前取的是全文最后一个 tail，窗口被拉到别处，
+        # 明明紧挨着的那一段反倒不算。改成逐个 head 往后看，窗口始终按句长封顶。
+        pos = st.find(head)
+        while pos >= 0:
+            j = st.find(tail, pos)
+            if j >= 0 and (j - pos) <= len(sl) + 16:
+                return 'annotated'
+            pos = st.find(head, pos + 1)
     # 夹注很长时（「孤城遥望玉一作「雁」门关」）head/tail 会被夹注本身打断。
     # 再退一档：整句的字必须按顺序出现在一个够短的窗口里——只认顺序，不认连续。
-    if len(line) >= 6 and subseq_window(line, txt):
+    if len(sl) >= 6 and subseq_window(sl, st):
         return 'subseq'
 
     # 先前这里还退到最后一档：difflib 相似度 >= 0.82 就算「对上了」。这一档被撤了。
@@ -486,15 +523,20 @@ def subseq_window(line, txt, slack=28):
 
 def nearest(line, txt):
     """对不上的句子，找出来源里最接近的一段——这就是异文线索，不是噪声。"""
-    L = len(line)
-    if not L or len(txt) < 6:
+    # 比对用剥过标点的两边：仓里有些正文用 ASCII 引号，页里的正文一个标点都不带。
+    # 拿带引号的原文去比，相似度被标点压低，页里明写着的那一段会被当成「没找到」——
+    # 种树郭橐驼传「传其事以为官戒也」就是这么从「页里写作别的样子」掉进「页里没找到」的。
+    sl = _nopunct(line)
+    st = _nopunct(txt)
+    L = len(sl)
+    if not sl or len(st) < 6:
         return None
     best = (0.0, '')
     step = max(1, L // 3)
     span = L + 10
-    for i in range(0, max(1, len(txt) - L + 1), step):
-        w = txt[i:i + span]
-        r = difflib.SequenceMatcher(None, line, w).ratio()
+    for i in range(0, max(1, len(st) - L + 1), step):
+        w = st[i:i + span]
+        r = difflib.SequenceMatcher(None, sl, w).ratio()
         if r > best[0]:
             best = (r, w)
     if best[0] < 0.55:
@@ -588,6 +630,7 @@ def main():
             # 核对单位是句子。散文的 fullLines 是整段（答司马谏议书 4 段、每段上百字），
             # 整段比对差一个字就整段不算对上——那是工具在骗人，不是内容有问题。
             for seg in re.split(r'[。！？；]', x):
+                seg = strip_section_label(seg)
                 s = M.strip_punct(seg)
                 if len(s) >= 2 and s not in merged:
                     merged.append(s)
@@ -595,6 +638,14 @@ def main():
         rec = {'id': p['id'], 'title': title, 'author': author, 'stage': p.get('stage'),
                'page': None, 'url': None, 'lines': len(lines), 'hit': 0,
                'miss': [], 'variantNotes': [], 'variants': []}
+        blanks = blank_fragments(lines)
+        if blanks:
+            # 段尾的引号被切成独立一句：不算对上，也不算没对上，当场报出来。
+            rec['blankFragments'] = len(blanks)
+            rec['lines'] = len(lines) - len(blanks)
+            print('   %s：%d 个碎片只剩标点（切句切出来的，不是内容缺陷）：%s'
+                  % (title, len(blanks), ' '.join(repr(x) for x in blanks[:3])))
+            lines = [s for s in lines if _nopunct(s)]
         try:
             best = None
             ov = overrides.get(p['id'])
@@ -759,6 +810,23 @@ def main():
     return 0
 
 
+def strip_section_label(seg):
+    """剥掉我们自己加的小节标签（【毛诗序】【与元九书】）。
+
+    为什么：标签是我们加的，不是原文。留着它，「【毛诗序】诗者，志之所之也」就成了要核对的一句——
+    来源页明写着「诗者志之所之也」，前面没有「毛诗序」三个字，整句被判成「页里没找到」。
+    古代文论选段六句 C 档里，五句是这么来的。"""
+    return re.sub(r'^【[^】]*】', '', seg or '')
+
+
+def blank_fragments(lines):
+    """切句留下的纯标点碎片：剥掉标点之后什么都不剩。
+
+    为什么单列：这种碎片拿去来源页里找必然找不到，会被算成「页里没找到」——台账里凭空多出一条假缺陷。
+    悄悄丢掉又等于放过真的空句（正文里真有一句是空的，也该看得见）。所以：不当对上、不当没对上，当场报数。"""
+    return [ln for ln in lines if ln and not _nopunct(ln)]
+
+
 def selftest():
     """这张字表必须自带坏例子，否则它就是一张没人验过的表。"""
     tried = [0]
@@ -829,7 +897,53 @@ def selftest():
     must(page_drift([{'id': 'a', 'page': '甲页'}], [{'id': 'a', 'page': '甲页'}]) == [], '坏例9b：页没变也被报（误伤）')
     must(page_drift([], [{'id': 'a', 'page': '甲页'}]) == [], '坏例9c：第一次核也被当成换了页')
     must(page_drift([{'id': 'a', 'page': None}], [{'id': 'a', 'page': '甲页'}]) == [], '坏例9d：以前没有页、现在有了，不算换了页')
+    # 坏例10：页里的注码是数字实体（&#91;13&#93;）。先前只剥字母实体，句子被「&91;13&93;」打断，
+    # 谏逐客书两句在页里明写着却被判成「页里没找到」。
+    txt10, _n10 = clean('惠王&#91;13&#93;用张仪&#91;14&#93;之计拔三川之地', {})
+    must('&#91;' not in txt10 and '&91;' not in txt10 and '之计拔三川之地' in txt10,
+         '坏例10：数字注码没剥掉：%r' % txt10)
+    # 坏例11：仓里有些正文用 ASCII 引号。head 取到引号本身，页里明写着的句子就被判成没找到
+    # （曹刿论战「对曰：小惠未遍，民弗从也」、邹忌讽齐王纳谏「明日徐公来，孰视之」都是这么丢的）。
+    must(line_in('"对曰"小惠未遍民弗从也', '对曰小惠未徧民弗从也') is not None,
+         '坏例11：带 ASCII 引号的句子页里明写着却没被判对上')
+    # 坏例12：切句留下的纯标点碎片——算成「没对上」就是台账里的假缺陷
+    must(len(blank_fragments(['甲乙丙丁', '"\''])) == 1, '坏例12：切句留下的纯标点碎片没被抓到')
+    must(blank_fragments(['甲乙丙丁']) == [], '坏例12b：正常句子被当成碎片（误伤）')
+    must(len(blank_fragments(['，。', '"'])) == 2, '坏例12c：两个碎片只报了 %d 个' % len(blank_fragments(['，。', '"'])))
+    # 坏例13：页里同一个「对曰」出现两次，tail 要贴着 head 找——先前取全文最后一个 tail，
+    # 窗口被拉到别处，紧挨着的那一段反倒不算对上。
+    must(line_in('"对曰"小惠未遍民弗从也',
+               '公曰忠之属也可以一战对曰小惠未徧民弗从也无关文字无关文字无关文字无关文字无关文字无关文字民弗从也') is not None,
+         '坏例13：页里「弗从也」出现两次，tail 取远处那个就没判对上')
+    must(line_in('甲乙丙丁戊己庚辛', '甲乙丙' + '无关文字无关文字无关文字无关文字无关文字无关文字无关文字无关文字' + '己庚辛') is None,
+         '坏例13b：head 与 tail 隔了四十来个字，也被判成对上（窗口没封顶）')
+    # 坏例14：nearest 也得用剥过标点的两边。带引号的原文去比，相似度被标点压低，
+    # 页里明写着的那一段会被当成「没找到」——种树郭橐驼传「传其事以为官戒也」就是这么丢的。
+    _txt14 = '养树得养人术传其事以为官戒此唐朝作品'
+    _plain = nearest('传其事以为官戒也', _txt14)
+    _quote = nearest('"传其事以为官戒也。"', _txt14)
+    must(_plain is not None and _quote is not None and abs(_quote['ratio'] - _plain['ratio']) < 0.02,
+         '坏例14：同一句带不带引号，相似度从 %s 掉到 %s——标点把页里明写着的那一段压到阈值以下' % (
+             _plain and _plain['ratio'], _quote and _quote['ratio']))
+    must(nearest('甲乙丙丁戊己', '完全无关的一段文字内容') is None, '坏例14b：毫不相干的一段被当成最像的')
+    # 坏例15：页尾那段公有领域声明不是正文。留着，「页里最像的那一段」的相似度就被压低——
+    # 种树郭橐驼传「传其事以为官戒也」就是这么从「页里写作别的样子」掉进「页里没找到」的。
+    _t15, _n15 = clean('吾问养树得养人术传其事以为官戒此唐朝作品在全世界都属于公有领域因为作者逝世已经超过100年且作品于1931年1月1日之前出版Publicdomain', {})
+    must('公有领域' not in _t15 and 'Publicdomain' not in _t15 and '传其事以为官戒' in _t15,
+         '坏例15：页尾的公有领域声明没剥掉：%s' % _t15[-40:])
+    _t15b, _n15b = clean('姊妹计划:数据项关雎后妃之德也', {})
+    must('姊妹计划' not in _t15b and '数据项' not in _t15b and '关雎后妃之德也' in _t15b,
+         '坏例15b：页头的「姊妹计划/数据项」没剥掉：%s' % _t15b)
+    must(clean('传其事以为官戒也', {})[0] == '传其事以为官戒也', '坏例15c：正文被页面家具的剥法误伤')
+    _t15d, _n15d = clean('吾问养树得养人术传其事以为官戒此唐朝作品在全世界都属于公有领域因为作者逝世已经超过100年', {})
+    must(nearest('传其事以为官戒也', _t15d) is not None,
+         '坏例15d：页尾声明把相似度压到阈值以下，页里明写着的那一段没报出来（剥完是 %s）' % _t15d)
 
+    # 坏例16：我们自己加的小节标签不许算进句子里核对
+    must(strip_section_label('【毛诗序】诗者志之所之也') == '诗者志之所之也',
+         '坏例16：小节标签没剥掉：%r' % strip_section_label('【毛诗序】诗者志之所之也'))
+    must(strip_section_label('诗者志之所之也') == '诗者志之所之也', '坏例16b：没有标签的句子被误伤')
+    must(strip_section_label('【毛诗序】') == '', '坏例16c：整行只有标签，剥完应当是空的')
     print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
