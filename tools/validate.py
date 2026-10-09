@@ -500,6 +500,7 @@ def selftest():
         if got != should_fail:
             problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
 
+    problems.extend(selftest_attest_status())
     problems.extend(selftest_match())
 
     if problems:
@@ -511,9 +512,110 @@ def selftest():
           '佚名走年代上限、公元前卒年放行、词牌顶替被抓、同名不同作者被抓、缺全文被抓、'
           '好样本不误报、重复收录被抓、课标共用不误报缺失、篇名对照生效且点名、'
           '别名不许替作者不符开后门、背诵要求缺失被拒、背诵要求取值非法被拒、'
-          '背诵要求合法不误报、玩法悬案被拒、玩法可用作出不误报、登记表缺字段被拒、登记表阶段非法被拒、登记表 key 重复被拒、登记表写全不误报、背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报、同名小节重复被抓——都试到了')
+          '背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报、同名小节重复被抓、'
+          '教材核对表结论与篇目状态不一致被抓、核对表缺这一篇被抓、同一册正文不误报、跨册同名另一篇被抓、'
+          '园地证据加同名另一篇不误报、册次对不上没交代被抓、册次对不上有交代不误报、没见过的结论被抓、'
+          '五档标签与 apply-textbook-status 不分叉——都试到了')
     return 0
 
+
+# 教材收录状态的五档：与 tools/apply-textbook-status.py 里的 ALLOWED 是同一套，
+# 两处各写一份迟早会分叉，所以 --selftest 里有一条坏例子盯着这两份是不是一样。
+COLLECTED = '统编教材收录'
+NOT_COLLECTED = '统编教材未收（课标要求）'
+NAME_CLASH = '统编教材收的是同名另一篇'
+COVERED_ELSEWHERE = '统编教材收在别的课里'
+PARTIAL = '统编教材收了一部分（课标要求更多）'
+
+def attest_expect(row, in_coverage, in_collision):
+    """核对表（data/textbook-attestations.json）的一条结论 → 篇目 frontmatter 该写哪个状态。
+
+    返回 None 表示这一条不单独决定状态；返回 'unknown' 表示这张表里出现了没人解释过的结论。
+    两条容易混的：mismatch 在同一册里找到那一课（收了、正文有出入）与在别的册里找到同名课文
+    （那是另一篇）是两件事，靠 declaredVolume 分；园地证据只有一条来源，不改变收录结论，
+    但同名另一篇是另一条独立结论，所以 garden-* 撞上 titleCollision 时写「同名另一篇」是对的。"""
+    st = row.get('status')
+    if st in ('match', 'partial'):
+        return COVERED_ELSEWHERE if in_coverage else COLLECTED
+    if st == 'coverage-override':
+        return COVERED_ELSEWHERE
+    if st == 'coverage-partial':
+        return PARTIAL
+    if st == 'mismatch':
+        return NAME_CLASH if row.get('declaredVolume') else COLLECTED
+    if st in ('lesson-not-found', 'no-textbook', 'garden-mirror-only', 'garden-other-volume'):
+        return NAME_CLASH if in_collision else NOT_COLLECTED
+    if st == 'volume-mismatch':
+        return None
+    return 'unknown'
+
+
+def check_attestation_status(poems, att, coverage_ids, collision_ids):
+    """核对表这张 252 行的结论表必须与每篇 frontmatter 的说法对得上。
+
+    它以前没接进来：核对表说没收、篇目文件说收了，站点照篇目文件显示，学生照着背错。"""
+    drift, dangling = [], []
+    for p in poems:
+        row = att.get(p['id'])
+        if not row:
+            drift.append('%s：核对表里没有这一篇的结论' % p['title'])
+            continue
+        want = attest_expect(row, p['id'] in coverage_ids, p['id'] in collision_ids)
+        if want == 'unknown':
+            drift.append('%s：核对表里出现了没人解释的结论「%s」' % (p['title'], row.get('status')))
+        elif want and p.get('textbookStatus') != want:
+            drift.append('%s：核对表结论「%s」应当写「%s」，篇内写「%s」' %
+                       (p['title'], row.get('status'), want, p.get('textbookStatus')))
+        if row.get('status') == 'volume-mismatch' and p['id'] not in coverage_ids \
+           and p['id'] not in collision_ids and not row.get('hit'):
+            dangling.append('%s：核对表说册次对不上（教材在「%s」），可既没覆盖表交代、也没正文比对' %
+                            (p['title'], row.get('textbookVolume')))
+    return drift, dangling
+
+
+def selftest_attest_status():
+    """接进来的检查必须自己带坏例子：空过的检查比没有检查更危险。"""
+    problems = []
+    def poem(pid, title, st):
+        return {'id': pid, 'title': title, 'textbookStatus': st}
+    def run(att, cov, coll, poems):
+        return check_attestation_status(poems, att, cov, coll)
+    # 坏例1：核对表说收了、篇内写没收——学生照着篇内背，就会漏背
+    d, _g = run({'a': {'status': 'match'}}, set(), set(), [poem('a', '甲', NOT_COLLECTED)])
+    if not d: problems.append('坏例1：核对表说收了、篇内写没收，没被报')
+    # 坏例2：覆盖表收了、篇内写「收录」——那是把「篇名不一样」这一条抹掉了
+    d, _g = run({'a': {'status': 'coverage-override'}}, {'a'}, set(), [poem('a', '甲', COLLECTED)])
+    if not d: problems.append('坏例2：覆盖表收了却被写成「统编教材收录」，没被报')
+    # 坏例3：核对表里根本没有这一篇——结论表与仓脱节没人管
+    d, _g = run({}, set(), set(), [poem('a', '甲', COLLECTED)])
+    if not d: problems.append('坏例3：核对表里没有这一篇，没被报')
+    # 坏例4：同一册里找到那一课、正文一句没对上（mismatch 无 declaredVolume）——那是「收了、正文有出入」
+    d, _g = run({'a': {'status': 'mismatch', 'volume': '七年级上册'}}, set(), set(), [poem('a', '甲', COLLECTED)])
+    if d: problems.append('坏例4：同一册的正文出入被误报成状态不一致：%s' % d[0])
+    # 坏例5：别的册里同名的是另一篇（有 declaredVolume）——篇内写「收录」就是假话
+    d, _g = run({'a': {'status': 'mismatch', 'declaredVolume': '九年级上册', 'textbookVolume': '八年级上册'}},
+                set(), set(), [poem('a', '甲', COLLECTED)])
+    if not d: problems.append('坏例5：跨册同名另一篇被写成「统编教材收录」，没被报')
+    # 坏例6：园地只有一条来源、另有同名另一篇——写「同名另一篇」是对的，不许误报
+    d, _g = run({'a': {'status': 'garden-mirror-only'}}, set(), {'a'}, [poem('a', '甲', NAME_CLASH)])
+    if d: problems.append('坏例6：园地证据 + 同名另一篇被误报：%s' % d[0])
+    # 坏例7：核对表说册次对不上，可既没覆盖表交代也没正文比对——这条结论悬着
+    d, g = run({'a': {'status': 'volume-mismatch', 'textbookVolume': '八年级上册'}}, set(), set(),
+               [poem('a', '甲', COLLECTED)])
+    if not g: problems.append('坏例7：册次对不上没有交代，没被报')
+    # 坏例8：册次对不上但覆盖表里有交代——不许误报
+    d, g = run({'a': {'status': 'volume-mismatch', 'textbookVolume': '八年级下册'}}, {'a'}, set(),
+               [poem('a', '甲', COVERED_ELSEWHERE)])
+    if g: problems.append('坏例8：册次对不上已有覆盖表交代，仍被误报：%s' % g[0])
+    # 坏例9：核对表里出现没人解释的结论——不许默认放行
+    d, _g = run({'a': {'status': 'looks-fine-to-me'}}, set(), set(), [poem('a', '甲', COLLECTED)])
+    if not d: problems.append('坏例9：没见过的结论被默认放行')
+    # 坏例10：五档标签必须与 tools/apply-textbook-status.py 里的 ALLOWED 一字不差（两份各写一份迟早分叉）
+    src = (ROOT / 'tools' / 'apply-textbook-status.py').read_text(encoding='utf-8')
+    for label in (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL):
+        if label not in src:
+            problems.append('坏例10：validate.py 里的「%s」在 apply-textbook-status.py 里找不到，两份分叉了' % label)
+    return problems
 
 def main():
     if '--selftest' in sys.argv:
@@ -669,11 +771,8 @@ def main():
     # data/volume-findings.json 是教材目录核对的结论表。每篇 frontmatter 的 textbookStatus
     # 必须和这张表对得上。没有这一条，核对结论就只是一份没人读的文档：
     # 篇目文件说「这篇教材收了」，核对表说没有，站点照篇目文件显示，学生照着背错。
-    TS_COLLECTED = '统编教材收录'
-    TS_NOT = '统编教材未收（课标要求）'
-    TS_CLASH = '统编教材收的是同名另一篇'
-    TS_COVERED = '统编教材收在别的课里'
-    TS_PARTIAL = '统编教材收了一部分（课标要求更多）'
+    TS_COLLECTED, TS_NOT, TS_CLASH, TS_COVERED, TS_PARTIAL = (
+        COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL)
     vf_path = ROOT / 'data' / 'volume-findings.json'
     if not vf_path.exists():
         err('缺 data/volume-findings.json：先跑 python tools/build-textbook-lessons.py --report')
@@ -725,6 +824,18 @@ def main():
             err('textbookStatus 与教材核对结论不一致：%s' % '；'.join(wrong_status[:8]))
         if unfixed:
             err('教材核对发现册次不一致但还没改：%s' % '、'.join(unfixed[:8]))
+
+        # 核对表（252 行那张）也必须接进来：它说没收、篇目文件说收了，站点照篇目文件显示。
+        att_path = ROOT / 'data' / 'textbook-attestations.json'
+        if not att_path.exists():
+            err('缺 data/textbook-attestations.json：先跑 python tools/check-textbook.py')
+        else:
+            att = {x['id']: x for x in json.loads(att_path.read_text(encoding='utf-8')).get('results', [])}
+            drift, dangling = check_attestation_status(poems, att, set(covered), {i for i in found if found[i] == 'title-collision'})
+            if drift:
+                err('教材核对表的结论与篇目状态对不上：%s' % '；'.join(drift[:8]))
+            if dangling:
+                err('教材核对表里的「册次对不上」没有交代：%s' % '；'.join(dangling[:8]))
 
     assigned_ids = {p['id'] for _e, p, _s in assignments}
     extra_ids = {p['id'] for p in poems if canon_title(p['title']) in extra_titles}

@@ -225,17 +225,43 @@ def load_coverage():
 
 
 def match_lesson(poem, lessons):
-    """按篇名在这一册的课文里找。副标题、带星号的自读课文、带编号都要能对上。"""
-    cands = title_candidates(poem.get('title'), poem.get('subtitle'))
+    """按篇名在这一册的课文里找。副标题、带星号的自读课文、带编号都要能对上。
+
+    包含关系只许「教材名比仓内名长」这一个方向（仓内名少于三字的除外）：教材那边常用
+    「词牌·题目」或「篇名（说明）」，仓内常用「词牌 + 副标题」，《天净沙·秋思》对《天净沙》+「秋思」、
+    《相见欢（金陵城上西楼）》对《相见欢》、《破阵子·为陈同甫赋壮词以寄之》对《破阵子》都是这一类。
+    反方向一律不算对上——教材篇名只是仓内篇名的一部分，那是两篇：
+    「忆江南」与「江南」（白居易 vs 汉乐府）、「舟夜书所见」与「夜书所见」（查慎行 vs 叶绍翁）。
+    先前这条包含规则两头都认，把这两对判成了「同一篇、只是册次写错」。
+    同名不等于同篇：这一关只找候选，是不是同一篇由后面的正文比对定（比得上才是同一篇）。"""
+    cands = [re.sub(r'[《》〈〉（）\s\u3000·]', '', c) for c in title_candidates(poem.get('title'), poem.get('subtitle'))]
     for name, url in lessons:
-        n = re.sub(r'^[\d.\-*（）\s]+', '', name)
-        n = re.sub(r'[《》（）\s]', '', n)
+        head = re.sub(r'^[\d.\-*（）\s]+', '', name)
+        head = re.sub(r'\s*V\s*[\u4e00-\u9fff·]+$', '', head)   # 镜像在课文名后面挂的作者
+        n = re.sub(r'[《》（）\s\u3000·]', '', head)
+        n = re.sub(r'(节选|并序)$', '', n)
         if not n:
             continue
         for c in cands:
-            if n == c or (len(c) >= 3 and (c in n or n in c)):
+            if not c:
+                continue
+            if n == c:
+                return name, url
+            if len(c) >= 3 and n.startswith(c):
                 return name, url
     return None, None
+
+
+def cross_volume_status(paras, hit, total):
+    """跨册同名这一关的结论：是「我们册次写错了」还是「教材那边同名的是另一篇」。
+
+    只有三种说得出口：正文取到且比上了（同一篇，册次要改）；正文取到且本来有可比的句子、
+    却一句都没对上（另一篇）；其余都是没核到，不许下结论。"""
+    if not paras or not total:
+        return 'volume-mismatch', '教材正文没取到或可比对的句子一句都没有，是不是同一篇没核'
+    if hit:
+        return 'volume-mismatch', '同一篇：正文 %d/%d 句对上' % (hit, total)
+    return 'mismatch', '正文 %d 句一句都没对上：那是另一篇' % total
 
 
 def diff_against(line, book):
@@ -328,11 +354,39 @@ def selftest():
     # 坏例6：短篇名不许用子串乱配——「春」配到「春风」就是把两篇课文合成一篇
     must(match_lesson({'title': '春'}, [('春风', 'u')])[0] is None, '坏例6：单字篇名被子串匹配抢走了')
     must(match_lesson({'title': '白鹅'}, [('天鹅', 'u')])[0] is None, '坏例6b：不同篇目被当成同一篇')
-    must(match_lesson({'title': '天上的街市'}, [('天上的街市 V 郭沫若', 'u')])[0] is not None, '坏例6c：正常篇名没对上')
-    # 坏例6d：候选短于三字时子串匹配不启用——这是刻意的严格。代价是可能报「找不到课文」（假缺口），
-    # 好处是不会把两篇课文并成一篇（假对上）。假缺口比假对上便宜。
-    must(match_lesson({'title': '海燕'}, [('海燕 V 高尔基', 'u')])[0] is None,
-         '坏例6d：两字篇名的子串匹配被放开了')
+    must(match_lesson({'title': '天上的街市'}, [('天上的街市 V 郭沫若', 'u')])[0] is not None, '坏例6c：镜像挂在课文名后面的作者妨碍了对上')
+    # 坏例6d：整名相等就算对上，不再按篇名长短放开子串——旧的长度闸门换成了「只认一个方向的包含」。
+    must(match_lesson({'title': '海燕'}, [('海燕 V 高尔基', 'u')])[0] is not None,
+         '坏例6d：整名相等的课文没被对上（两字篇名还被旧的长度闸门拦着）')
+    # 坏例6e：教材篇名只是仓内篇名的一部分，那是两篇，不是「同一篇、册次写错」
+    must(match_lesson({'title': '忆江南', 'subtitle': '江南好'}, [('2 江南', 'u')])[0] is None,
+         '坏例6e：「忆江南」被教材里的「江南」（汉乐府）抢走')
+    must(match_lesson({'title': '舟夜书所见'}, [('夜书所见', 'u')])[0] is None,
+         '坏例6f：「舟夜书所见」（查慎行）被教材里的「夜书所见」（叶绍翁）抢走')
+    must(match_lesson({'title': '相思'}, [('长相思', 'u')])[0] is None,
+         '坏例6g：「相思」被「长相思」抢走')
+    # 坏例6h：教材那边多出来的一截必须是括号里的说明或仓内的副标题，不许是别的词
+    must(match_lesson({'title': '天净沙', 'subtitle': '秋思'}, [('天净沙·秋思', 'u')])[0] is not None,
+         '坏例6h：词牌加副标题的课文没对上')
+    must(match_lesson({'title': '相见欢'}, [('相见欢（金陵城上西楼）', 'u')])[0] is not None,
+         '坏例6i：教材用括号补出题目的课文没对上')
+    must(match_lesson({'title': '离骚'}, [('1.2离骚（节选）', 'u')])[0] is not None,
+         '坏例6j：「（节选）」没剥掉')
+    must(match_lesson({'title': '归去来兮辞'}, [('10.2归去来兮辞并序', 'u')])[0] is not None,
+         '坏例6k：「并序」没剥掉')
+    must(match_lesson({'title': '凉州词'}, [('凉州词', 'u')])[0] is not None,
+         '坏例6l：整名相等的同名课文没对上（同名另一篇要靠正文判，篇名这一关不许先漏）')
+    # 坏例6m：同名只是候选，是不是同一篇不许靠篇名判——分类由正文比对定，这里直接测那个分类。
+    must(cross_volume_status(None, 0, 0)[0] == 'volume-mismatch',
+         '坏例6m：教材正文没取到就被判成「另一篇」（没核到却下了结论）')
+    must(cross_volume_status(['空话'], 0, 0)[0] == 'volume-mismatch',
+         '坏例6m2：可比对的句子一句都没有（全太短），也被判成「另一篇」')
+    must(cross_volume_status(['无言独上西楼月如钩寂寞梧桐深院锁清秋'], 0, 8)[0] == 'mismatch',
+         '坏例6n：教材正文取到了、八句全对不上，却没被判成「另一篇」')
+    must(cross_volume_status(['无言独上西楼月如钩'], 1, 8)[0] == 'volume-mismatch',
+         '坏例6o：正文比上了（同一篇、册次写错）却没被判成册次对不上')
+    must('没核' in cross_volume_status(None, 0, 0)[1],
+         '坏例6p：教材正文没取到时，note 里没写明没核——读者看不出这一条是猜的还是查过的')
 
     # 坏例7：对不上的那句必须说清差在哪个字（不皲手 / 不龟手 那一类）
     d = diff_against('宋人有善为不龟手之药者', '宋人有善为不皲手之药者')
@@ -557,11 +611,20 @@ def main():
             print('[%d/%d] !! %s（%s）教材里没有这篇' % (len(results), len(poems), p['title'], p.get('volume')))
             continue
         if found_vol != vol:
-            entry.update(status='volume-mismatch', lesson=name, url=url,
-                         declaredVolume=p.get('volume'), textbookVolume=found_vol)
+            # 册次对不上有两种，长得一模一样：真是我们这一篇的册次写错了，还是教材那边同名的
+            # 是另一首诗。只看篇名分不出来，必须拿正文比：比得上才是同一篇（册次写错，要改册次）；
+            # 一句都对不上就是另一篇——那一档仓里已有名字（mismatch），不许混进「册次写错」。
+            # 教材正文没取到时不许猜：那一条照旧判册次对不上，但 note 里写明没核。
+            paras = lesson_text(url, refresh)
+            hit, total, skipped, miss = compare(p, paras) if paras else (0, 0, 0, [])
+            status, why = cross_volume_status(paras, hit, total)
+            note = ('仓内写「%s」，教材在「%s」有同名课文：%s' % (vol, found_vol, why)) if status == 'volume-mismatch' \
+                   else ('教材在「%s」有同名课文：%s，不是册次写错' % (found_vol, why))
+            entry.update(status=status, lesson=name, url=url, hit=hit, total=total,
+                         declaredVolume=p.get('volume'), textbookVolume=found_vol, note=note)
             results.append(entry)
-            print('[%d/%d] !! 册次写错：%s 仓内写「%s」，教材在「%s」' % (
-                len(results), len(poems), p['title'], p.get('volume'), found_vol))
+            print('[%d/%d] !! %s：教材在「%s」有同名课文（%s）' % (
+                len(results), len(poems), p['title'], found_vol, note))
             continue
         paras = lesson_text(url, refresh)
         hit, total, skipped, miss = compare(p, paras)

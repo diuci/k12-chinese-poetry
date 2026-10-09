@@ -3,13 +3,12 @@
   "source": "https://yw.suyang123.com",
   "stats": {
     "match": 154,
-    "coverage-override": 6,
-    "partial": 30,
-    "volume-mismatch": 6,
-    "garden-mirror-only": 33,
+    "coverage-override": 7,
+    "partial": 31,
+    "mismatch": 3,
+    "garden-mirror-only": 35,
     "lesson-not-found": 10,
     "garden-other-volume": 3,
-    "mismatch": 1,
     "no-textbook": 8,
     "coverage-partial": 1
   },
@@ -384,11 +383,14 @@
       "author": "李煜",
       "stage": "初中",
       "volume": "九年级上册",
-      "status": "volume-mismatch",
+      "status": "mismatch",
       "lesson": "相见欢（金陵城上西楼）",
       "url": "https://yw.suyang123.com/chuzhong/banianji/20945_langdu.html",
+      "hit": 0,
+      "total": 8,
       "declaredVolume": "九年级上册",
-      "textbookVolume": "八年级上册"
+      "textbookVolume": "八年级上册",
+      "note": "教材在「八年级上册」有同名课文：正文 8 句一句都没对上：那是另一篇，不是册次写错"
     },
     {
       "id": "xinglunan",
@@ -463,11 +465,16 @@
       "author": "佚名",
       "stage": "初中",
       "volume": "九年级下册",
-      "status": "volume-mismatch",
-      "lesson": "1 春",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20001_langdu.html",
-      "declaredVolume": "九年级下册",
-      "textbookVolume": "七年级上册"
+      "status": "coverage-override",
+      "lessons": [
+        {
+          "volume": "六年级上册",
+          "lesson": "自读",
+          "title": "伯牙鼓琴",
+          "url": "https://yw.suyang123.com/xiaoxue/liunianji/1328_langdu.html"
+        }
+      ],
+      "note": "课标初中 46《吕氏春秋》一则（伯牙鼓琴）对应统编六上第 22 课《伯牙鼓琴》。课标列在初中、教材放在小学，是跨学段覆盖。"
     },
     {
       "id": "mengzi3",
@@ -527,11 +534,16 @@
       "author": "佚名",
       "stage": "初中",
       "volume": "九年级下册",
-      "status": "volume-mismatch",
-      "lesson": "虽有嘉肴",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/21028_langdu.html",
-      "declaredVolume": "九年级下册",
-      "textbookVolume": "八年级下册"
+      "status": "coverage-override",
+      "lessons": [
+        {
+          "volume": "八年级下册",
+          "lesson": "自读",
+          "title": "虽有嘉肴",
+          "url": "https://yw.suyang123.com/chuzhong/banianji/21028_langdu.html"
+        }
+      ],
+      "note": "课标初中 45《礼记》一则（虽有嘉肴）对应统编八下第 22 课《〈礼记〉二则》里的《虽有嘉肴》。仓内这篇挂在九下、篇名用课标的「《礼记》一则」，按标题在教材目录里找不到，但教材确实收了。"
     },
     {
       "id": "chushibiao",
@@ -1831,11 +1843,13 @@
       "author": "白居易",
       "stage": "小学",
       "volume": "三年级下册",
-      "status": "volume-mismatch",
-      "lesson": "2 江南",
-      "url": "https://yw.suyang123.com/xiaoxue/yinianji/56_langdu.html",
-      "declaredVolume": "三年级下册",
-      "textbookVolume": "一年级上册"
+      "status": "garden-mirror-only",
+      "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/xiace.html",
+      "gardenVolume": "三年级下册",
+      "gardenTitle": "忆江南",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sannianji/670_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "huichongchunjiang",
@@ -2092,11 +2106,13 @@
       "author": "查慎行",
       "stage": "小学",
       "volume": "二年级下册",
-      "status": "volume-mismatch",
-      "lesson": "夜书所见",
-      "url": "https://yw.suyang123.com/xiaoxue/sannianji/560_langdu.html",
-      "declaredVolume": "二年级下册",
-      "textbookVolume": "三年级上册"
+      "status": "garden-mirror-only",
+      "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/xiace.html",
+      "gardenVolume": "二年级下册",
+      "gardenTitle": "舟夜书所见",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/ernianji/533_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "guyuancao",
@@ -2295,11 +2311,14 @@
       "author": "王之涣",
       "stage": "小学",
       "volume": "五年级下册",
-      "status": "volume-mismatch",
+      "status": "mismatch",
       "lesson": "凉州词",
       "url": "https://yw.suyang123.com/xiaoxue/sinianji/857_langdu.html",
+      "hit": 0,
+      "total": 2,
       "declaredVolume": "五年级下册",
-      "textbookVolume": "四年级上册"
+      "textbookVolume": "四年级上册",
+      "note": "教材在「四年级上册」有同名课文：正文 2 句一句都没对上：那是另一篇，不是册次写错"
     },
     {
       "id": "sishitianyuan-31",
@@ -4459,16 +4478,295 @@
       "author": "屈原",
       "stage": "高中",
       "volume": "选择性必修下册",
-      "status": "coverage-override",
-      "lessons": [
+      "status": "partial",
+      "lesson": "1.2 离骚（节选）",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30502_langdu.html",
+      "hit": 2,
+      "total": 30,
+      "skippedShort": 0,
+      "textbookParas": 12,
+      "miss": [
         {
-          "volume": "选择性必修下册",
-          "lesson": "1.2",
-          "title": "离骚（节选）",
-          "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30502_langdu.html"
+          "kind": "名句",
+          "line": "朝饮木兰之坠露兮，夕餐秋菊之落英。",
+          "diff": [
+            {
+              "ours": "朝饮木兰之坠露兮夕餐秋菊之落英",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "名句",
+          "line": "路漫漫其修远兮，吾将上下而求索。",
+          "diff": [
+            {
+              "ours": "路漫漫其修远兮吾将上下而求索",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "长太息以掩涕兮，哀民生之多艰。",
+          "diff": [
+            {
+              "ours": "长太息以掩涕兮哀民生之多艰",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "余虽好修姱以鞿羁兮，謇朝谇而夕替。",
+          "diff": [
+            {
+              "ours": "余虽好修姱以鞿羁兮謇朝谇而夕替",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "既替余以蕙纕兮，又申之以揽茝。",
+          "diff": [
+            {
+              "ours": "既替余以蕙纕兮又申之以揽茝",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "亦余心之所善兮，虽九死其犹未悔。",
+          "diff": [
+            {
+              "ours": "亦余心之所善兮虽九死其犹未悔",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "怨灵修之浩荡兮，终不察夫民心。",
+          "diff": [
+            {
+              "ours": "怨灵修之浩荡兮终不察夫民心",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "众女嫉余之蛾眉兮，谣诼谓余以善淫。",
+          "diff": [
+            {
+              "ours": "众女嫉余之蛾眉兮谣诼谓余以善淫",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "固时俗之工巧兮，偭规矩而改错。",
+          "diff": [
+            {
+              "ours": "固时俗之工巧兮偭规矩而改错",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "背绳墨以追曲兮，竞周容以为度。",
+          "diff": [
+            {
+              "ours": "背绳墨以追曲兮竞周容以为度",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "忳郁邑余侘傺兮，吾独穷困乎此时也。",
+          "diff": [
+            {
+              "ours": "忳郁邑余侘傺兮吾独穷困乎此时也",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "宁溘死以流亡兮，余不忍为此态也。",
+          "diff": [
+            {
+              "ours": "宁溘死以流亡兮余不忍为此态也",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "鸷鸟之不群兮，自前世而固然。",
+          "diff": [
+            {
+              "ours": "鸷鸟之不群兮自前世而固然",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "何方圜之能周兮，夫孰异道而相安。",
+          "diff": [
+            {
+              "ours": "何方圜之能周兮夫孰异道而相安",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "屈心而抑志兮，忍尤而攘诟。",
+          "diff": [
+            {
+              "ours": "屈心而抑志兮忍尤而攘诟",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "伏清白以死直兮，固前圣之所厚。",
+          "diff": [
+            {
+              "ours": "伏清白以死直兮固前圣之所厚",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "悔相道之不察兮，延伫乎吾将反。",
+          "diff": [
+            {
+              "ours": "悔相道之不察兮延伫乎吾将反",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "回朕车以复路兮，及行迷之未远。",
+          "diff": [
+            {
+              "ours": "回朕车以复路兮及行迷之未远",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "步余马于兰皋兮，驰椒丘且焉止息。",
+          "diff": [
+            {
+              "ours": "步余马于兰皋兮驰椒丘且焉止息",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "进不入以离尤兮，退将复修吾初服。",
+          "diff": [
+            {
+              "ours": "进不入以离尤兮退将复修吾初服",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "制芰荷以为衣兮，集芙蓉以为裳。",
+          "diff": [
+            {
+              "ours": "制芰荷以为衣兮集芙蓉以为裳",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "不吾知其亦已兮，苟余情其信芳。",
+          "diff": [
+            {
+              "ours": "不吾知其亦已兮苟余情其信芳",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "高余冠之岌岌兮，长余佩之陆离。",
+          "diff": [
+            {
+              "ours": "高余冠之岌岌兮长余佩之陆离",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "芳与泽其杂糅兮，唯昭质其犹未亏。",
+          "diff": [
+            {
+              "ours": "芳与泽其杂糅兮唯昭质其犹未亏",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "忽反顾以游目兮，将往观乎四荒。",
+          "diff": [
+            {
+              "ours": "忽反顾以游目兮将往观乎四荒",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "佩缤纷其繁饰兮，芳菲菲其弥章。",
+          "diff": [
+            {
+              "ours": "佩缤纷其繁饰兮芳菲菲其弥章",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "民生各有所乐兮，余独好修以为常。",
+          "diff": [
+            {
+              "ours": "民生各有所乐兮余独好修以为常",
+              "textbook": null
+            }
+          ]
+        },
+        {
+          "kind": "全文",
+          "line": "虽体解吾犹未变兮，岂余心之可惩。",
+          "diff": [
+            {
+              "ours": "虽体解吾犹未变兮岂余心之可惩",
+              "textbook": null
+            }
+          ]
         }
-      ],
-      "note": "课标高中 03《离骚》（默写范围「帝高阳之苗裔兮……来吾道夫先路」）对应统编选择性必修下册第 1.2 课《离骚（节选）》。教材目录原文写「1.2离骚（节选）」，目录表把括号里的「节选」去掉了，所以 indexTitle 记作「离骚」。"
+      ]
     },
     {
       "id": "zhongshu-guotuotuo",
