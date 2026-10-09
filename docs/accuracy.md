@@ -92,11 +92,11 @@
 
 现在 `.github/workflows/verify.yml` 入库，四步：
 
-1. **25 项检查器自检**（每个护栏先证明它抓得住坏例子）；本轮补的六项：`check-duplicates.py`（10 个坏例子，含《寒下曲》/《塞下曲》那一组）、
-   `apply-textbook-status.py`（13 个）、`apply-volume-findings.py`（13 个）——后两个会往 md 里写「统编教材收没收」
+1. **26 项检查器自检**（每个护栏先证明它抓得住坏例子）；本轮补的第七项：`build-textbook-garden.py`（9 个坏例子：园地页抽不出篇名、栏目头被当成篇名、作者串到下一篇、篇名尾巴吃太贪）。先前几轮补的六项：`check-duplicates.py`（10 个坏例子，含《寒下曲》/《塞下曲》那一组）、
+   `apply-textbook-status.py`（现在 24 个）、`apply-volume-findings.py`（13 个）——后两个会往 md 里写「统编教材收没收」
    和册次，写错就是对学生说假话，先前它们连坏例子都没有；`build.py`（27 个：正文抽取、说明小节被当正文、空正文、
    缺公有领域证据、render_split 与句数不匹配）、`inject-annotations.py`（16 个：注入不许动正文、不许跑两遍长出两节、
-   空注释不许算「有内容」）、`check-textbook.py`（28 个：学段判错、篇名子串乱配、对不上却没说清差在哪个字）——
+   空注释不许算「有内容」）、`check-textbook.py`（现在 71 个：学段判错、篇名子串乱配、对不上却没说清差在哪个字、相思≠长相思、《老子》四章≠八章、覆盖表只有一条来源）——
    这三条先前只有「跑一遍真数据」的份，坏例子一个都没有；
 2. **13 项离线检查**（结构、异文、默认口径、污染、重复、截断、教材册次、作者卒年、出处、注音、正文一致性）；
 3. **派生产物重算**（繁体、出处明细、台账、审计、法律护栏）；
@@ -105,7 +105,7 @@
 
 联网的三步不在 CI 跑，写死在 workflow 的说明步里：全量出处核对、`verify-variant-claims.py --refresh`、
 `check-textbook.py` 要读 `data/page-cache/` 与 `data/textbook-cache/`，这两个缓存都不入库
-（统编教材是版权作品，整页镜像不许进仓）。它们只在本地链条里跑：46 步；`check-text-sources.py` 那一轮
+（统编教材是版权作品，整页镜像不许进仓）。它们只在本地链条里跑：48 步；`check-text-sources.py` 那一轮
 当场报「缓存命中 709 次 / 真的联网取页 0 次」。
 
 CI 里没有 8MB 的 `data/unihan/Unihan_Readings.txt`（已 gitignore），而「异体字表每一对必须读音相同」
@@ -123,8 +123,8 @@ CI 里没有 8MB 的 `data/unihan/Unihan_Readings.txt`（已 gitignore），而�
 不一致就报错。自检配了四个坏例子（17 / 17b / 17c / 17d）：过期必须报、对得上不许误伤、
 文档没写数字不许报、同一份文档里两处过期不许只报一处。审计项 26 → 27 项。
 
-本轮又把「**25 项检查器自检**」这个数字本身纳进同一项：它由 `.github/workflows/verify.yml` 里那一行行
-`--selftest` 命令当场数出来（`count_ci_selftests`：说明文字里提到的 `--selftest` 不算），文档写 25 或 27 都报错。
+本轮又把「**26 项检查器自检**」这个数字本身纳进同一项：它由 `.github/workflows/verify.yml` 里那一行行
+`--selftest` 命令当场数出来（`count_ci_selftests`：说明文字里提到的 `--selftest` 不算），文档写 25 或 27 都报错（当场数是 26）。
 理由很直白：「我们加了检查」这句话可以一直写在文档里，而 workflow 里那一行早就被人删了——只有数得出实数才拦得住。
 自检为此多配四个坏例子（17e–17h）。
 这道闸门上线当天就抓到了两处过期：文档里那句自检项数写的是 26，而 workflow 里带 `--selftest` 的命令行是 25 行
