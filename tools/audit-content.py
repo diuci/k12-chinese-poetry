@@ -676,10 +676,19 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
                         r'照表原字\s*(\d+)': ca.get('identity', -1),
                         r'保留\s*(\d+)': ca.get('keep', -1),
                         r'待定\s*(\d+)': ca.get('pending', -1)})
+    # 出处核对的四档数字：文档里那句「N 全对上 / M 部分…」必须与 data/text-sources.json 当场一致。
+    # 这一轮 --refresh 之后有一篇从「全对上」挪进「部分对上」，文档没跟着改，就是靠这一条抓的。
+    tstats = (tsrc or {}).get('stats') or {}
+    if tstats:
+        actuals.update({r'(\d+)\s*全对上': tstats.get('attested', -1),
+                        r'(\d+)\s*部分对上': tstats.get('partial', -1),
+                        r'(\d+)\s*一句都对不上': tstats.get('notfound', -1),
+                        r'(\d+)\s*核过没有正文页': tstats.get('nosource', -1)})
     claims = doc_number_claims(accuracy_md or '', actuals)
     out.append(('文档里写死的数字与产物一致', not claims,
-                '当场数：裁定表 %d 条、CI 自检 %d 项、CI 离线 %d 项、 apparatus %s；%s'
+                '当场数：裁定表 %d 条、CI 自检 %d 项、CI 离线 %d 项、出处核对 %s、apparatus %s；%s'
                 % (s2t_total, ci_selftests, ci_offline,
+                   json.dumps(tstats, ensure_ascii=False) if tstats else '（这次没带出处核对统计）',
                    json.dumps(ca, ensure_ascii=False) if ca else '（这次没带 apparatus）',
                    '；'.join(claims) if claims else '文档里的数字全对得上')))
 
@@ -968,6 +977,14 @@ def selftest():
         print('坏例17l：两个过期的派生计数只报了 %d 个：%s' % (len(got), got)); bad += 1
     if doc_number_claims('当场数：按表 35029 处、按裁定表 2074 处', ca_pat):
         print('坏例17m：派生计数对得上却被报了'); bad += 1
+    # 坏例17n：出处核对的档位数字过期（本轮真的发生过：一篇从「全对上」挪进「部分对上」）
+    t_pat = {r'(\d+)\s*全对上': 214, r'(\d+)\s*部分对上': 37,
+             r'(\d+)\s*一句都对不上': 0, r'(\d+)\s*核过没有正文页': 1}
+    got2 = doc_number_claims('当场数：215 全对上 / 36 部分对上 / 0 一句都对不上 / 1 核过没有正文页', t_pat)
+    if len(got2) != 2:
+        print('坏例17n：过期的是两个档位数字，却只报了 %d 个：%s' % (len(got2), got2)); bad += 1
+    if doc_number_claims('当场数：214 全对上 / 37 部分对上 / 0 一句都对不上 / 1 核过没有正文页', t_pat):
+        print('坏例17o：出处核对数字对得上却被报了'); bad += 1
 
     if bad:
 
