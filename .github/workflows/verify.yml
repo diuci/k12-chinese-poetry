@@ -58,6 +58,7 @@ jobs:
           python3 tools/check-contamination.py
           python3 tools/check-duplicates.py
           python3 tools/check-truncated.py
+          python3 tools/build.py
           python3 tools/apply-textbook-status.py
           python3 tools/apply-volume-findings.py
           python3 tools/apply-author-years.py --check

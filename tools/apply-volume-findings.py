@@ -16,6 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FINDINGS = ROOT / 'data' / 'volume-findings.json'
 POEMS = ROOT / 'data' / 'poems.json'
+GARDEN_RULES = ROOT / 'data' / 'garden-rulings.json'
+GARDEN_TABLE = ROOT / 'data' / 'textbook-garden.json'
 
 GRADE_NUM = {'一': 1, '二': 2, '三': 3, '四': 4, '五': 5, '六': 6, '七': 7, '八': 8, '九': 9}
 
@@ -54,6 +56,39 @@ def patch_file(path, new_vol, new_grade, old_vol):
                  lambda mm: '> ' + mm.group(1).rstrip() + ' · ' + new_vol,
                  out, count=1, flags=re.M)
     return out, None
+
+
+def garden_moves(rules_path, table_path):
+    """语文园地的册次裁定（data/garden-rulings.json）：教材把这一首放在某一册的语文园地日积月累。
+
+    进这张表就是把它从「镜像里看到了」升格成「教材收了」，所以门槛写死在这里：
+    至少两条来源，而且那个镜像目录最多算一条（园地页与目录页同源，同一镜像数两条不算两条）；
+    裁定表说的册次还必须与园地表里那一篇真的在那一册对得上——两张表打脸说明数据错了。"""
+    if not Path(rules_path).exists():
+        return [], []
+    rulings = json.loads(Path(rules_path).read_text(encoding='utf-8')).get('rulings') or {}
+    table = json.loads(Path(table_path).read_text(encoding='utf-8')).get('volumes') or {}
+    moves, bad = [], []
+    for pid, r in rulings.items():
+        srcs = [x for x in (r.get('sources') or []) if x]
+        mirror = [x for x in srcs if 'yw.suyang123.com' in x]
+        if len(srcs) < 2:
+            bad.append('%s：园地裁定表里只有 %d 条来源，不够两条' % (pid, len(srcs)))
+            continue
+        if len(mirror) > 1:
+            bad.append('%s：裁定表里 %d 条来源都出自同一个镜像目录——同源不算两条' % (pid, len(mirror)))
+            continue
+        vol = r.get('volume') or ''
+        key = re.sub(r'（.*?）', '', r.get('title') or '')
+        titles = [(e.get('title') or '') for e in (table.get(vol) or [])]
+        if key not in titles:
+            bad.append('%s：裁定表说在「%s」，园地表里那一册没有「%s」' % (pid, vol, key))
+            continue
+        moves.append({'id': pid, 'title': r.get('title'), 'textbookVolume': vol,
+                      'textbookLesson': r.get('section') or '语文园地',
+                      'evidence': '园地裁定表 %d 条来源' % len(srcs),
+                      'officiallyConfirmed': False})
+    return moves, bad
 
 
 def selftest():
@@ -110,6 +145,34 @@ def selftest():
         out4, err4 = patch_file(p4, '七年级下册', 7, '七年级上册')
         must(out4 is not None and '· 八年级上册' in out4, '坏例8：元信息那行与册次本来就对不上，不许被顺手改成看着顺眼的样子')
 
+    # 坏例9~13：园地裁定表的门槛——进表就是把「镜像里看到了」升格成「教材收了」
+    with tempfile.TemporaryDirectory() as td2:
+        table = Path(td2) / 'garden.json'
+        table.write_text(json.dumps({'volumes': {'四年级下册': [{'title': '江畔独步寻花'}],
+                                          '五年级下册': [{'title': '游子吟'}]}}, ensure_ascii=False), encoding='utf-8')
+        def rules(obj):
+            rp = Path(td2) / 'rules.json'
+            rp.write_text(json.dumps({'rulings': obj}, ensure_ascii=False), encoding='utf-8')
+            return rp
+        mv, bad = garden_moves(rules({'a': {'volume': '四年级下册', 'title': '江畔独步寻花',
+                                           'sources': ['zy.21cnjy.com/24709078 教案']}}), table)
+        if not bad: problems_g = ['坏例9：只有一条来源的裁定被放行了']
+        else: problems_g = []
+        must(not mv, '坏例9：只有一条来源的裁定没被拦下')
+        mv, bad = garden_moves(rules({'a': {'volume': '四年级下册', 'title': '江畔独步寻花', 'sources': [
+            'yw.suyang123.com 园地页', 'yw.suyang123.com 目录页']}}), table)
+        must(not mv and bad, '坏例10：两条来源都出自同一个镜像却没被拦（同源被数成了两条）')
+        mv, bad = garden_moves(rules({'a': {'volume': '三年级下册', 'title': '江畔独步寻花', 'sources': [
+            'yw.suyang123.com 园地页', 'zy.21cnjy.com/24709078 教案']}}), table)
+        must(not mv and bad, '坏例11：裁定表说的册次与园地表打脸却没被拦')
+        mv, bad = garden_moves(rules({'a': {'volume': '四年级下册', 'title': '江畔独步寻花（黄师塔前江水东）',
+                                           'section': '语文园地二·日积月累', 'sources': [
+                                           'yw.suyang123.com 园地页', 'zy.21cnjy.com/24709078 教案']}}), table)
+        must(mv and not bad, '坏例12：两条来源、册次对得上的裁定被误报（%s）' % (bad[0] if bad else '没生成改动'))
+        must(mv and mv[0]['textbookLesson'] == '语文园地二·日积月累', '坏例12b：栏目没带进改动里')
+        mv, bad = garden_moves(Path(td2) / '没有这个文件.json', table)
+        must(mv == [] and bad == [], '坏例13：没有裁定表应当是空改动，不该报错也不该编出改动')
+
     print('[ok] apply-volume-findings --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
@@ -123,6 +186,19 @@ def main():
     # 后者以前被审计直接跳过，假话就藏在里面。
     todo = [x for x in f['findings']
             if x['status'] in ('volume-mismatch', 'claimed-absent-but-present')]
+    gmoves, gbad = garden_moves(GARDEN_RULES, GARDEN_TABLE)
+    if gbad:
+        print('园地裁定表被拦下的条目（不搬）：', file=sys.stderr)
+        for x in gbad:
+            print('  - ' + x, file=sys.stderr)
+        return 1
+    for x in gmoves:
+        p = by_id.get(x['id'])
+        if p is None:
+            print('园地裁定表里的 id 在 poems.json 里没有：%s' % x['id'], file=sys.stderr)
+            return 1
+        x['repoVolume'] = p.get('volume') or ''
+        todo.append(x)
     moved, skipped = [], []
     for x in todo:
         p = by_id.get(x['id'])

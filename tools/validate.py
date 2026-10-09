@@ -543,6 +543,10 @@ def attest_expect(row, in_coverage, in_collision):
         return PARTIAL
     if st == 'mismatch':
         return NAME_CLASH if row.get('declaredVolume') else COLLECTED
+    if st == 'garden-attested':
+        # 语文园地收了、两条独立来源核过：教材确实收了，只是不在课文目录里
+        return COLLECTED
+    # garden-ruling-broken 故意不列在这里：那张裁定表自己坏了，必须报「没人解释的结论」
     if st in ('lesson-not-found', 'no-textbook', 'garden-mirror-only', 'garden-other-volume'):
         return NAME_CLASH if in_collision else NOT_COLLECTED
     if st == 'volume-mismatch':
@@ -610,6 +614,12 @@ def selftest_attest_status():
     # 坏例9：核对表里出现没人解释的结论——不许默认放行
     d, _g = run({'a': {'status': 'looks-fine-to-me'}}, set(), set(), [poem('a', '甲', COLLECTED)])
     if not d: problems.append('坏例9：没见过的结论被默认放行')
+    # 坏例11：园地裁定核过了（两条来源）却写成「未收」——教材明明收了
+    d, _g = run({'a': {'status': 'garden-attested'}}, set(), set(), [poem('a', '甲', NOT_COLLECTED)])
+    if not d: problems.append('坏例11：园地两条来源核过的篇目被写成「未收」，没被报')
+    # 坏例12：裁定表自己坏了（garden-ruling-broken）——不许默认放行
+    d, _g = run({'a': {'status': 'garden-ruling-broken'}}, set(), set(), [poem('a', '甲', COLLECTED)])
+    if not d: problems.append('坏例12：园地裁定表坏了却被默认放行')
     # 坏例10：五档标签必须与 tools/apply-textbook-status.py 里的 ALLOWED 一字不差（两份各写一份迟早分叉）
     src = (ROOT / 'tools' / 'apply-textbook-status.py').read_text(encoding='utf-8')
     for label in (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL):
@@ -789,6 +799,16 @@ def main():
         if cov_path.exists():
             # 要的是整张表（不是只有 id）：partial 标记在这里，抹成 set 就把「收了一部分」这一档丢了
             covered = json.loads(cov_path.read_text(encoding='utf-8')).get('coverage', {})
+        # 园地裁定表（data/garden-rulings.json）：教材把这一首放在某一册的语文园地日积月累。
+        # 教材目录表里没有它（那张表只收课文），所以「absent」在这里不是「教材没收」——但只有
+        # 两条来源、镜像最多一条的条目才有这个效力。
+        gr_path = ROOT / 'data' / 'garden-rulings.json'
+        garden_ok = set()
+        if gr_path.exists():
+            for pid, gr in (json.loads(gr_path.read_text(encoding='utf-8')).get('rulings') or {}).items():
+                srcs = [x for x in (gr.get('sources') or []) if x]
+                if len(srcs) >= 2 and len([x for x in srcs if 'yw.suyang123.com' in x]) <= 1:
+                    garden_ok.add(pid)
         no_status, wrong_status, unfixed = [], [], []
         for p in poems:
             st = p.get('textbookStatus')
@@ -811,6 +831,11 @@ def main():
                 expect = TS_COLLECTED
             elif status == 'title-collision':
                 expect = TS_CLASH
+            elif p['id'] in garden_ok:
+                expect = TS_COLLECTED
+            elif status == 'garden-attested':
+                # 核对表自己已经判过园地这一档（两条来源），期望值就是收录
+                expect = TS_COLLECTED
             elif status == 'absent':
                 expect = TS_NOT
             else:

@@ -150,6 +150,7 @@ def title_candidates(title, subtitle):
 
 
 GARDEN = ROOT / 'data' / 'textbook-garden.json'
+GARDEN_RULES = ROOT / 'data' / 'garden-rulings.json'
 COVERAGE = ROOT / 'data' / 'textbook-coverage.json'
 
 
@@ -222,6 +223,28 @@ def load_coverage():
     if not COVERAGE.exists():
         return {}
     return json.loads(COVERAGE.read_text(encoding='utf-8')).get('coverage') or {}
+
+
+def garden_ruling_status(vol, rule, has_garden_hit):
+    """园地裁定表的一条能不能成立：成立才判「语文园地收了（两条来源）」。
+
+    返回 (status, why)。status='ok' 表示成立；其余是不成立的理由——不许降级成「只有一条来源」糊过去。"""
+    srcs = [x for x in (rule.get('sources') or []) if x]
+    mirror = [x for x in srcs if 'yw.suyang123.com' in x]
+    if rule.get('volume') != vol:
+        return 'broken', '园地裁定表说在「%s」，仓内却挂在「%s」——册次改动没落地或表过期' % (rule.get('volume'), vol)
+    if len(srcs) < 2:
+        return 'broken', '园地裁定表只有 %d 条来源，不够两条' % len(srcs)
+    if len(mirror) > 1:
+        return 'broken', '园地裁定表 %d 条来源里 %d 条出自同一个镜像目录——同源不算两条' % (len(srcs), len(mirror))
+    if not has_garden_hit:
+        return 'broken', '园地裁定表说这一册的园地里收了，园地表里却没有这一篇'
+    return 'ok', ''
+def load_garden_rules():
+    """语文园地的册次裁定表（data/garden-rulings.json）。没有这张表时返回空，不报错。"""
+    if not GARDEN_RULES.exists():
+        return {}
+    return json.loads(GARDEN_RULES.read_text(encoding='utf-8')).get('rulings') or {}
 
 
 def match_lesson(poem, lessons):
@@ -482,6 +505,23 @@ def selftest():
         must('indexTitle' in json.dumps(open(COVERAGE, encoding='utf-8').read()),
              '坏例18b：己亥杂诗 的镜像错字没登记（覆盖表里该有 indexTitle）')
 
+    # 坏例17：园地裁定表的门槛——进表就是把「镜像里看到了」升格成「教材收了」
+    good = {'volume': '四年级下册', 'section': '语文园地二·日积月累',
+            'sources': ['yw.suyang123.com 园地页', 'zy.21cnjy.com/24709078 教案']}
+    must(garden_ruling_status('四年级下册', good, True)[0] == 'ok',
+         '坏例17：册次对、两条来源（镜像一条）的裁定被误报：%s' % garden_ruling_status('四年级下册', good, True)[1])
+    must(garden_ruling_status('三年级下册', good, True)[0] == 'broken',
+         '坏例17b：仓内册次与裁定表不一致却没被拦')
+    must(garden_ruling_status('四年级下册', {'volume': '四年级下册', 'sources': ['zy.21cnjy.com/24709078 教案']}, True)[0] == 'broken',
+         '坏例17c：只有一条来源的裁定被放行')
+    must(garden_ruling_status('四年级下册', {'volume': '四年级下册', 'sources': [
+        'yw.suyang123.com 园地页', 'yw.suyang123.com 目录页']}, True)[0] == 'broken',
+         '坏例17d：两条来源都出自同一个镜像却被放行（同源被数成了两条）')
+    must(garden_ruling_status('四年级下册', good, False)[0] == 'broken',
+         '坏例17e：园地表里其实没有这一篇，裁定却被放行')
+    must('同源' in garden_ruling_status('四年级下册', {'volume': '四年级下册', 'sources': [
+        'yw.suyang123.com a', 'yw.suyang123.com b']}, True)[1],
+         '坏例17f：拦下了却没说清为什么拦')
     print('[ok] check-textbook --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
@@ -509,6 +549,7 @@ def main():
     indexes = {}
     results = []
     garden = load_garden()
+    garden_rules = load_garden_rules()
     coverage = load_coverage()
     if garden is None:
         print('!! 没有 data/textbook-garden.json：语文园地那一档没跑（先跑 tools/build-textbook-garden.py）')
@@ -585,6 +626,27 @@ def main():
                     continue
             hits = list(garden_match(p, garden)) if garden else []
             same = [h for h in hits if h[0] == vol]
+            rule = garden_rules.get(p['id'])
+            if rule:
+                # 进裁定表就是把「镜像里看到了」升格成「教材收了」：册次、来源两条、镜像最多一条，
+                # 三样都要在这一步复核——表与园地表或仓内打脸就是数据错了，不许降级糊过去。
+                srcs = [x for x in (rule.get('sources') or []) if x]
+                state, why = garden_ruling_status(vol, rule, bool(same))
+                if state != 'ok':
+                    problems.append('%s：%s' % (p['id'], why))
+                    entry.update(status='garden-ruling-broken', note=why)
+                    results.append(entry)
+                    print('[%d/%d] !! %s（%s）园地裁定表不成立：%s' % (len(results), len(poems), p['title'], vol, why))
+                    continue
+                entry.update(status='garden-attested', volume_url=BASE + path,
+                             gardenVolume=same[0][0], gardenTitle=same[0][1],
+                             garden=same[0][2], url=same[0][3],
+                             section=rule.get('section') or '语文园地', sources=len(srcs),
+                             note=(rule.get('note') or '') + '（%d 条来源，其中镜像最多一条）' % len(srcs))
+                results.append(entry)
+                print('[%d/%d] == %s（%s）语文园地收了（%s，%d 条来源）' % (
+                    len(results), len(poems), p['title'], vol, rule.get('section') or '语文园地', len(srcs)))
+                continue
             if same:
                 entry.update(status='garden-mirror-only', volume_url=BASE + path,
                              gardenVolume=same[0][0], gardenTitle=same[0][1],

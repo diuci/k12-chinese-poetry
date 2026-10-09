@@ -8,7 +8,7 @@
     "mismatch": 3,
     "garden-mirror-only": 35,
     "lesson-not-found": 10,
-    "garden-other-volume": 3,
+    "garden-attested": 3,
     "no-textbook": 8,
     "coverage-partial": 1
   },
@@ -1867,20 +1867,6 @@
       "miss": []
     },
     {
-      "id": "jiangpan",
-      "title": "江畔独步寻花",
-      "author": "杜甫",
-      "stage": "小学",
-      "volume": "三年级下册",
-      "status": "garden-other-volume",
-      "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/xiace.html",
-      "gardenVolume": "四年级下册",
-      "gardenTitle": "江畔独步寻花",
-      "garden": "语文园地",
-      "url": "https://yw.suyang123.com/xiaoxue/sinianji/910_langdu.html",
-      "note": "同学段所有册的课文目录里都没有；语文园地里有这一篇，但在「四年级下册」——册次要单独查"
-    },
-    {
       "id": "qingming",
       "title": "清明",
       "author": "杜牧",
@@ -2233,20 +2219,6 @@
       "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
-      "id": "zengwang",
-      "title": "长歌行",
-      "author": "汉乐府",
-      "stage": "小学",
-      "volume": "五年级上册",
-      "status": "garden-other-volume",
-      "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/shangce.html",
-      "gardenVolume": "六年级下册",
-      "gardenTitle": "长歌行",
-      "garden": "语文园地",
-      "url": "https://yw.suyang123.com/xiaoxue/liunianji/1370_langdu.html",
-      "note": "同学段所有册的课文目录里都没有；语文园地里有这一篇，但在「六年级下册」——册次要单独查"
-    },
-    {
       "id": "changxiangsi",
       "title": "长相思",
       "author": "纳兰性德",
@@ -2349,6 +2321,22 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": []
+    },
+    {
+      "id": "youziyin",
+      "title": "游子吟",
+      "author": "孟郊",
+      "stage": "小学",
+      "volume": "五年级下册",
+      "status": "garden-attested",
+      "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/xiace.html",
+      "gardenVolume": "五年级下册",
+      "gardenTitle": "游子吟",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/wunianji/1135_langdu.html",
+      "section": "语文园地一·日积月累",
+      "sources": 3,
+      "note": "仓内原先挂六年级下册，没有教材页支撑。教材把它放在五下第一单元语文园地一的日积月累，两条来源一致。（3 条来源，其中镜像最多一条）"
     },
     {
       "id": "qiuyejiangxiao",
@@ -2691,20 +2679,6 @@
       "miss": []
     },
     {
-      "id": "youziyin",
-      "title": "游子吟",
-      "author": "孟郊",
-      "stage": "小学",
-      "volume": "六年级下册",
-      "status": "garden-other-volume",
-      "volume_url": "https://yw.suyang123.com/xiaoxue/liunianji/xiace.html",
-      "gardenVolume": "五年级下册",
-      "gardenTitle": "游子吟",
-      "garden": "语文园地",
-      "url": "https://yw.suyang123.com/xiaoxue/wunianji/1135_langdu.html",
-      "note": "同学段所有册的课文目录里都没有；语文园地里有这一篇，但在「五年级下册」——册次要单独查"
-    },
-    {
       "id": "shihuiyin",
       "title": "石灰吟",
       "author": "于谦",
@@ -2778,6 +2752,22 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": []
+    },
+    {
+      "id": "zengwang",
+      "title": "长歌行",
+      "author": "汉乐府",
+      "stage": "小学",
+      "volume": "六年级下册",
+      "status": "garden-attested",
+      "volume_url": "https://yw.suyang123.com/xiaoxue/liunianji/xiace.html",
+      "gardenVolume": "六年级下册",
+      "gardenTitle": "长歌行",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/liunianji/1370_langdu.html",
+      "section": "语文园地一·日积月累",
+      "sources": 2,
+      "note": "仓内原先挂五年级上册，没有教材页支撑。教材把它放在六下第一单元语文园地一的日积月累，两条来源一致。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "mashi",
@@ -3002,6 +2992,22 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": []
+    },
+    {
+      "id": "jiangpan",
+      "title": "江畔独步寻花",
+      "author": "杜甫",
+      "stage": "小学",
+      "volume": "四年级下册",
+      "status": "garden-attested",
+      "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/xiace.html",
+      "gardenVolume": "四年级下册",
+      "gardenTitle": "江畔独步寻花",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sinianji/910_langdu.html",
+      "section": "语文园地二·日积月累",
+      "sources": 3,
+      "note": "仓内原先挂三年级下册，是按课标篇目排的，没有教材页支撑。教材把它放在四下第二单元语文园地二的日积月累。另有一条来源把同一首放在六年级上册语文园地一（2024 修订教材），两个说法不一致，本表按前两条落四下，不一致记在这里，不当没看见。（3 条来源，其中镜像最多一条）"
     },
     {
       "id": "qingpingyue-cunju",

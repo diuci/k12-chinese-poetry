@@ -176,7 +176,6 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | zaofabaidicheng | 早发白帝城 | 李白 | 唐 | 卒 762 | public-domain | S3+S1+S2 | 七言 | 小学 · 三年级上册 |
 | wangtianmenshan | 望天门山 | 李白 | 唐 | 卒 762 | public-domain | S3+S1+S2 | 七言 | 小学 · 三年级上册 |
 | wangdongting | 望洞庭 | 刘禹锡 | 唐 | 卒 842 | public-domain | S3+S1+S2 | 七言 | 小学 · 三年级上册 |
-| jiangpan | 江畔独步寻花 | 杜甫 | 唐 | 卒 770 | public-domain | S3+S1+S2 | 七言 | 小学 · 三年级下册 |
 | qingming | 清明 | 杜牧 | 唐 | 卒 852 | public-domain | S3+S1+S2 | 七言 | 小学 · 三年级下册 |
 | chuzhouxijian | 滁州西涧 | 韦应物 | 唐 | 卒 792 | public-domain | S3+S1+S2 | 七言 | 小学 · 三年级下册 |
 | jueju-chiri | 绝句 | 杜甫 | 唐 | 卒 770 | public-domain | S3+S1+S2 | 五言 | 小学 · 三年级下册 |
@@ -193,6 +192,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | change | 嫦娥 | 李商隐 | 唐 | 卒 858 | public-domain | S3+S1+S2 | 七言 | 小学 · 四年级上册 |
 | suxinshi | 宿新市徐公店 | 杨万里 | 宋 | 卒 1206 | public-domain | S3+S1+S2 | 七言 | 小学 · 四年级下册 |
 | mujiangyin | 暮江吟 | 白居易 | 唐 | 卒 846 | public-domain | S3+S1+S2 | 七言 | 小学 · 四年级上册 |
+| jiangpan | 江畔独步寻花 | 杜甫 | 唐 | 卒 770 | public-domain | S3+S1+S2 | 七言 | 小学 · 四年级下册 |
 | qingpingyue-cunju | 清平乐 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1+S2 | 词 | 小学 · 四年级下册 |
 | duzuojingting | 独坐敬亭山 | 李白 | 唐 | 卒 762 | public-domain | S3+S1+S2 | 五言 | 小学 · 四年级下册 |
 | furonglou | 芙蓉楼送辛渐 | 王昌龄 | 唐 | 卒 757 | public-domain | S3+S1+S2 | 七言 | 小学 · 四年级下册 |
@@ -210,11 +210,11 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | cunwan | 村晚 | 雷震 | 宋 | 年代上限 1300 | public-domain | S3+S1+S2 | 七言 | 小学 · 五年级下册 |
 | fengqiaoyebo | 枫桥夜泊 | 张继 | 唐 | 年代上限 800 | public-domain | S3+S1+S2 | 七言 | 小学 · 五年级上册 |
 | yugezi | 渔歌子 | 张志和 | 唐 | 卒 810 | public-domain | S3+S1+S2 | 词 | 小学 · 五年级上册 |
+| youziyin | 游子吟 | 孟郊 | 唐 | 卒 814 | public-domain | S3+S1+S2 | 六言 | 小学 · 五年级下册 |
 | shier | 示儿 | 陆游 | 宋 | 卒 1210 | public-domain | S3+S1+S2 | 七言 | 小学 · 五年级上册 |
 | qiuyejiangxiao | 秋夜将晓出篱门迎凉有感 | 陆游 | 宋 | 卒 1210 | public-domain | S3+S1+S2 | 七言 | 小学 · 五年级下册 |
 | zhizibing | 稚子弄冰 | 杨万里 | 宋 | 卒 1206 | public-domain | S3+S1+S2 | 七言 | 小学 · 五年级下册 |
 | guanshu | 观书有感 | 朱熹 | 宋 | 卒 1200 | public-domain | S3+S1+S2 | 七言 | 小学 · 五年级上册 |
-| zengwang | 长歌行 | 汉乐府 | 汉 | 年代上限 220 | public-domain | S3+S1+S2 | 杂言 | 小学 · 五年级上册 |
 | changxiangsi | 长相思 | 纳兰性德 | 清 | 卒 1685 | public-domain | S3+S1+S2 | 词 | 小学 · 五年级上册 |
 | wenguanjun | 闻官军收河南河北 | 杜甫 | 唐 | 卒 770 | public-domain | S3+S1+S2 | 七言 | 小学 · 五年级下册 |
 | tilinandi | 题临安邸 | 林升 | 宋 | 年代上限 1300 | public-domain | S3+S1+S2 | 七言 | 小学 · 五年级上册 |
@@ -236,7 +236,6 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | huanxisha-qishui | 浣溪沙 | 苏轼 | 宋 | 卒 1101 | public-domain | S3+S1+S2 | 词 | 小学 · 六年级下册 |
 | langtaosha | 浪淘沙 | 刘禹锡 | 唐 | 卒 842 | public-domain | S3+S1+S2 | 词 | 小学 · 六年级上册 |
 | youyuanbuzhi | 游园不值 | 叶绍翁 | 宋 | 年代上限 1270 | public-domain | S3+S1+S2 | 七言 | 小学 · 六年级下册 |
-| youziyin | 游子吟 | 孟郊 | 唐 | 卒 814 | public-domain | S3+S1+S2 | 六言 | 小学 · 六年级下册 |
 | shihuiyin | 石灰吟 | 于谦 | 明 | 卒 1457 | public-domain | S3+S1+S2 | 七言 | 小学 · 六年级下册 |
 | zhushi | 竹石 | 郑燮 | 清 | 卒 1765 | public-domain | S3+S1+S2 | 七言 | 小学 · 六年级下册 |
 | xijiangyue | 西江月 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1+S2 | 词 | 小学 · 六年级上册 |
@@ -244,6 +243,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | tiaotiaoqianniuxing | 迢迢牵牛星 | 佚名 | 汉 | 年代上限 1900 | public-domain | S3+S1+S2 | 五言 | 小学 · 六年级下册 |
 | songyuaner | 送元二使安西 | 王维 | 唐 | 卒 761 | public-domain | S3+S1+S2 | 七言 | 小学 · 六年级下册 |
 | caiwei | 采薇 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 四言 | 小学 · 六年级下册 |
+| zengwang | 长歌行 | 汉乐府 | 汉 | 年代上限 220 | public-domain | S3+S1+S2 | 杂言 | 小学 · 六年级下册 |
 | mashi | 马诗 | 李贺 | 唐 | 卒 816 | public-domain | S3+S1+S2 | 五言 | 小学 · 六年级下册 |
 | mengziyize | 《孟子》一则 | 孟子 | 战国 | 卒 公元前 289 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选修（2026起默写） |
 | laozi8 | 《老子》八章 | 老子 | 先秦 | 卒 公元前 470 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修上册 |

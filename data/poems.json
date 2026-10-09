@@ -123,7 +123,6 @@
       "zaofabaidicheng",
       "wangtianmenshan",
       "wangdongting",
-      "jiangpan",
       "qingming",
       "chuzhouxijian",
       "jueju-chiri",
@@ -142,6 +141,7 @@
       "change",
       "suxinshi",
       "mujiangyin",
+      "jiangpan",
       "qingpingyue-cunju",
       "duzuojingting",
       "furonglou",
@@ -161,11 +161,11 @@
       "cunwan",
       "fengqiaoyebo",
       "yugezi",
+      "youziyin",
       "shier",
       "qiuyejiangxiao",
       "zhizibing",
       "guanshu",
-      "zengwang",
       "changxiangsi",
       "wenguanjun",
       "tilinandi",
@@ -189,7 +189,6 @@
       "huanxisha-qishui",
       "langtaosha",
       "youyuanbuzhi",
-      "youziyin",
       "shihuiyin",
       "zhushi",
       "xijiangyue",
@@ -197,6 +196,7 @@
       "tiaotiaoqianniuxing",
       "songyuaner",
       "caiwei",
+      "zengwang",
       "mashi"
     ],
     "高中-": [
@@ -589,9 +589,9 @@
       "sanxia",
       "jueju-huangli",
       "zhouyeshujian",
-      "jiangpan",
       "jueju-chiri",
       "mujiangyin",
+      "jiangpan",
       "wanghulou",
       "zaochun",
       "chunyexiyu",
@@ -711,10 +711,10 @@
       "xuemei",
       "longpo",
       "guanshu",
-      "zengwang",
       "chunri",
       "huanxisha-qishui",
       "youyuanbuzhi",
+      "zengwang",
       "laozi8",
       "lantingjixu",
       "niluonan",
@@ -1009,9 +1009,9 @@
       "dalinsitaohua",
       "yijiangnan",
       "huichongchunjiang",
-      "jiangpan",
       "jueju-chiri",
       "suxinshi",
+      "jiangpan",
       "zaochun",
       "chunyexiyu",
       "chunri",
@@ -10056,77 +10056,6 @@
       "volume": "三年级上册"
     },
     {
-      "_path": "poems/小学/三年级下册/江畔独步寻花.md",
-      "author": "杜甫",
-      "authorDied": 770,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "春日江畔的闲适与对花的偏爱",
-      "examFreq": 0.7,
-      "form": "七言",
-      "fullLines": [
-        "黄师塔前江水东春光懒困倚微风",
-        "桃花一簇开无主可爱深红爱浅红"
-      ],
-      "fullLinesPunct": [
-        "黄师塔前江水东，春光懒困倚微风。",
-        "桃花一簇开无主，可爱深红爱浅红。"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 3,
-      "hasFulltext": true,
-      "id": "jiangpan",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "黄师塔前江水东春光懒困倚微风",
-        "桃花一簇开无主可爱深红爱浅红"
-      ],
-      "linesPunct": [
-        "黄师塔前江水东，春光懒困倚微风。",
-        "桃花一簇开无主，可爱深红爱浅红。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "line",
-      "render_split": [
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "subtitle": null,
-      "syllables": 14,
-      "tags": [
-        "春天",
-        "写景",
-        "唐七言"
-      ],
-      "technique": [
-        "拟人",
-        "对比"
-      ],
-      "textbookStatus": "统编教材未收（课标要求）",
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "春天",
-        "写景"
-      ],
-      "title": "江畔独步寻花",
-      "volume": "三年级下册"
-    },
-    {
       "_path": "poems/小学/三年级下册/清明.md",
       "author": "杜牧",
       "authorDied": 852,
@@ -11159,6 +11088,77 @@
       ],
       "title": "暮江吟",
       "volume": "四年级上册"
+    },
+    {
+      "_path": "poems/小学/四年级下册/江畔独步寻花.md",
+      "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "春日江畔的闲适与对花的偏爱",
+      "examFreq": 0.7,
+      "form": "七言",
+      "fullLines": [
+        "黄师塔前江水东春光懒困倚微风",
+        "桃花一簇开无主可爱深红爱浅红"
+      ],
+      "fullLinesPunct": [
+        "黄师塔前江水东，春光懒困倚微风。",
+        "桃花一簇开无主，可爱深红爱浅红。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 4,
+      "hasFulltext": true,
+      "id": "jiangpan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "黄师塔前江水东春光懒困倚微风",
+        "桃花一簇开无主可爱深红爱浅红"
+      ],
+      "linesPunct": [
+        "黄师塔前江水东，春光懒困倚微风。",
+        "桃花一簇开无主，可爱深红爱浅红。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "line",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "春天",
+        "写景",
+        "唐七言"
+      ],
+      "technique": [
+        "拟人",
+        "对比"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "春天",
+        "写景"
+      ],
+      "title": "江畔独步寻花",
+      "volume": "四年级下册"
     },
     {
       "_path": "poems/小学/四年级下册/清平乐.md",
@@ -12281,6 +12281,82 @@
       "volume": "五年级上册"
     },
     {
+      "_path": "poems/小学/五年级下册/游子吟.md",
+      "author": "孟郊",
+      "authorDied": 814,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "母爱的深挚与游子的感恩",
+      "examFreq": 0.7,
+      "form": "六言",
+      "fullLines": [
+        "慈母手中线游子身上衣",
+        "临行密密缝意恐迟迟归",
+        "谁言寸草心报得三春晖"
+      ],
+      "fullLinesPunct": [
+        "慈母手中线，游子身上衣。",
+        "临行密密缝，意恐迟迟归。",
+        "谁言寸草心，报得三春晖。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 5,
+      "hasFulltext": true,
+      "id": "youziyin",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "慈母手中线游子身上衣",
+        "临行密密缝意恐迟迟归",
+        "谁言寸草心报得三春晖"
+      ],
+      "linesPunct": [
+        "慈母手中线，游子身上衣。",
+        "临行密密缝，意恐迟迟归。",
+        "谁言寸草心，报得三春晖。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "line",
+      "render_split": [
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "亲情",
+        "母爱",
+        "唐六言"
+      ],
+      "technique": [
+        "比喻",
+        "对比"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "亲情",
+        "母爱"
+      ],
+      "title": "游子吟",
+      "volume": "五年级下册"
+    },
+    {
       "_path": "poems/小学/五年级上册/示儿.md",
       "author": "陆游",
       "authorDied": 1210,
@@ -12538,84 +12614,6 @@
         "读书"
       ],
       "title": "观书有感",
-      "volume": "五年级上册"
-    },
-    {
-      "_path": "poems/小学/五年级上册/长歌行.md",
-      "author": "汉乐府",
-      "authorDied": null,
-      "authorEraEnd": 220,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 3,
-      "dynasty": "汉",
-      "emotion": "劝人惜时的恳切",
-      "examFreq": 0.8,
-      "form": "杂言",
-      "fullLines": [],
-      "fullLinesPunct": [],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 5,
-      "hasFulltext": true,
-      "id": "zengwang",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "青青园中葵朝露待日晞",
-        "阳春布德泽万物生光辉",
-        "常恐秋节至焜黄华叶衰",
-        "百川东到海何时复西归",
-        "少壮不努力老大徒伤悲"
-      ],
-      "linesPunct": [
-        "青青园中葵，朝露待日晞。",
-        "阳春布德泽，万物生光辉。",
-        "常恐秋节至，焜黄华叶衰。",
-        "百川东到海，何时复西归。",
-        "少壮不努力，老大徒伤悲。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "full",
-      "render_split": [
-        2,
-        2,
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "惜时",
-        "哲理",
-        "汉杂言"
-      ],
-      "technique": [
-        "比喻",
-        "反复"
-      ],
-      "textbookStatus": "统编教材未收（课标要求）",
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "惜时",
-        "哲理"
-      ],
-      "title": "长歌行",
       "volume": "五年级上册"
     },
     {
@@ -14021,82 +14019,6 @@
       "volume": "六年级下册"
     },
     {
-      "_path": "poems/小学/六年级下册/游子吟.md",
-      "author": "孟郊",
-      "authorDied": 814,
-      "authorEraEnd": null,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "唐",
-      "emotion": "母爱的深挚与游子的感恩",
-      "examFreq": 0.7,
-      "form": "六言",
-      "fullLines": [
-        "慈母手中线游子身上衣",
-        "临行密密缝意恐迟迟归",
-        "谁言寸草心报得三春晖"
-      ],
-      "fullLinesPunct": [
-        "慈母手中线，游子身上衣。",
-        "临行密密缝，意恐迟迟归。",
-        "谁言寸草心，报得三春晖。"
-      ],
-      "gaokaoGroup": null,
-      "gaokaoNo": null,
-      "gaokaoSince": null,
-      "grade": 6,
-      "hasFulltext": true,
-      "id": "youziyin",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "慈母手中线游子身上衣",
-        "临行密密缝意恐迟迟归",
-        "谁言寸草心报得三春晖"
-      ],
-      "linesPunct": [
-        "慈母手中线，游子身上衣。",
-        "临行密密缝，意恐迟迟归。",
-        "谁言寸草心，报得三春晖。"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ]
-      ],
-      "recite": "line",
-      "render_split": [
-        2,
-        2,
-        2
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1+S2",
-      "stage": "小学",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "亲情",
-        "母爱",
-        "唐六言"
-      ],
-      "technique": [
-        "比喻",
-        "对比"
-      ],
-      "textbookStatus": "统编教材未收（课标要求）",
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "亲情",
-        "母爱"
-      ],
-      "title": "游子吟",
-      "volume": "六年级下册"
-    },
-    {
       "_path": "poems/小学/六年级下册/石灰吟.md",
       "author": "于谦",
       "authorDied": 1457,
@@ -14591,6 +14513,84 @@
         "思乡"
       ],
       "title": "采薇",
+      "volume": "六年级下册"
+    },
+    {
+      "_path": "poems/小学/六年级下册/长歌行.md",
+      "author": "汉乐府",
+      "authorDied": null,
+      "authorEraEnd": 220,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "汉",
+      "emotion": "劝人惜时的恳切",
+      "examFreq": 0.8,
+      "form": "杂言",
+      "fullLines": [],
+      "fullLinesPunct": [],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 6,
+      "hasFulltext": true,
+      "id": "zengwang",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "青青园中葵朝露待日晞",
+        "阳春布德泽万物生光辉",
+        "常恐秋节至焜黄华叶衰",
+        "百川东到海何时复西归",
+        "少壮不努力老大徒伤悲"
+      ],
+      "linesPunct": [
+        "青青园中葵，朝露待日晞。",
+        "阳春布德泽，万物生光辉。",
+        "常恐秋节至，焜黄华叶衰。",
+        "百川东到海，何时复西归。",
+        "少壮不努力，老大徒伤悲。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1+S2",
+      "stage": "小学",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "惜时",
+        "哲理",
+        "汉杂言"
+      ],
+      "technique": [
+        "比喻",
+        "反复"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "惜时",
+        "哲理"
+      ],
+      "title": "长歌行",
       "volume": "六年级下册"
     },
     {

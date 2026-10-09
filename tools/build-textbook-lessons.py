@@ -217,6 +217,11 @@ def audit(data):
     所以分歧必须拿正文核验：这篇的句子在候选课文页里出现几句，才算数。
     """
     poems = V.load_poems()
+    # 语文园地裁定表（data/garden-rulings.json）：教材把这一首放在某一册的语文园地日积月累，
+    # 课文目录表里没有它（那张表只收课文）。没有两条来源（镜像最多一条）的条目不生效。
+    rules_path = ROOT / 'data' / 'garden-rulings.json'
+    garden_rules = json.loads(rules_path.read_text(encoding='utf-8')).get('rulings', {}) if rules_path.exists() else {}
+    garden_hits = []
     index = {}
     alle = []
     for vol, blk in data['volumes'].items():
@@ -288,6 +293,18 @@ def audit(data):
                                'evidence': ratio, 'linesHit': hit,
                                'officiallyConfirmed': bool(e.get('confirmed'))})
                 continue
+            gr = garden_rules.get(p['id'])
+            srcs = [x for x in ((gr or {}).get('sources') or []) if x]
+            if gr and gr.get('volume') == raw_vol and len(srcs) >= 2 \
+                    and len([x for x in srcs if 'yw.suyang123.com' in x]) <= 1:
+                findings.append({'id': p['id'], 'title': p['title'], 'author': p.get('author'),
+                               'stage': p.get('stage'), 'status': 'garden-attested',
+                               'repoVolume': raw_vol, 'textbookVolume': gr['volume'],
+                               'textbookLesson': gr.get('section') or '语文园地',
+                               'evidence': '园地裁定表 %d 条来源' % len(srcs), 'linesHit': 0,
+                               'officiallyConfirmed': False})
+                garden_hits.append((p['stage'], raw_vol, p['title'], gr.get('section') or '语文园地'))
+                continue
             absent.append((p['stage'], raw_vol, p['title'], p.get('author')))
             missing.append({'id': p['id'], 'title': p['title'], 'author': p.get('author'),
                           'stage': p.get('stage'), 'repoVolume': raw_vol})
@@ -351,6 +368,7 @@ def audit(data):
                    'title-collision': len(unverified), 'absent': len(absent),
                    'claimed-absent-but-present': len([x for x in findings
                                                       if x['status'] == 'claimed-absent-but-present']),
+                   'garden-attested': len(garden_hits),
                    'title-variant': len([x for x in findings if x['status'] == 'title-variant'])},
         'findings': findings,
         'titleCollision': collisions,
@@ -372,12 +390,16 @@ def audit(data):
               x['stage'], x['title'], x['repoVolume'], x['textbookVolume'],
               x['textbookLesson'], x['linesHit'], '【官方印证】' if x['officiallyConfirmed'] else ''))
     print()
+    print('语文园地收了（两条来源核过）：%d 篇' % len(garden_hits))
+    for stage, vol, title, section in garden_hits:
+        print('  %-4s %-26s 仓内=%-12s %s' % (stage, title, vol, section))
+    print()
     print('同学段里连同名课文都没有：%d 篇' % len(absent))
     for stage, vol, title, author in absent:
         print('  %-4s %-26s %-8s 仓内=%s' % (stage, title, author or '', vol))
     return mism, unverified, absent
 
-def report(mism, collisions, missing, hits, variants, claimed):
+def report(mism, collisions, missing, hits, variants, claimed, garden=None):
     """把核对结论写成文档：数字全部从 findings 里来，不手抄。"""
     out = []
     out.append('# 教材册次核对')
@@ -408,11 +430,27 @@ def report(mism, collisions, missing, hits, variants, claimed):
     out.append('| 册次不一致（正文核验过） | %d |' % len(mism))
     out.append('| 同名不同诗（教材收的是另一首） | %d |' % len(collisions))
     out.append('| 仓内篇名与教材篇名差一两个字、正文核验是同一篇 | %d |' % len(variants))
+    out.append('| 语文园地收了（两条来源核过，不是课文） | %d |' % len(garden or []))
     out.append('| 教材目录里没有这篇 | %d |' % len(missing))
     out.append('| 仓里写着「教材不收」、教材目录里却有这篇 | %d |' % len(claimed))
     out.append('')
-    out.append('每篇 frontmatter 的 `textbookStatus` 就是这张表的结论落进篇目文件，三种取值：')
-    out.append('统编教材收录 / 统编教材未收（课标要求） / 统编教材收的是同名另一篇。')
+    if garden:
+        out.append('')
+        out.append('## 语文园地收了（两条来源核过）')
+        out.append('')
+        out.append('统编教材的「语文园地」里有「日积月累」，那是要求背诵的积累内容，不是课文——')
+        out.append('所以课文目录表里没有它们。只有拿到两条独立来源（那个第三方镜像最多算一条）的篇目才进这一档：')
+        out.append('')
+        out.append('| 学段 | 篇名 | 仓内册次 | 教材位置 |')
+        out.append('|---|---|---|---|')
+        for x in garden:
+            out.append('| %s | %s | %s | %s%s |' % (x['stage'], x['title'], x['repoVolume'], x['textbookVolume'], x['textbookLesson']))
+        out.append('')
+    # 五档标签从 validate.py 的常量里来，不在这里手抄一遍：
+    # 以前这里写的是「三种取值」，而篇目文件实际有五种——文档比产物少两档，读文档的人就少知道两档。
+    out.append('每篇 frontmatter 的 `textbookStatus` 就是这张表的结论落进篇目文件，五档标签（与 validate.py、apply-textbook-status.py 同一份）：')
+    out.append(' / '.join([V.COLLECTED, V.NOT_COLLECTED, V.NAME_CLASH, V.COVERED_ELSEWHERE, V.PARTIAL]) + '。')
+    out.append('「语文园地收了」这一档落进篇目文件时算「' + V.COLLECTED + '」，具体栏目写在 textbookCoveredBy 与篇内「收录范围」里。')
     out.append('校验器会拿这张表逐篇核对篇内写的状态，对不上就报错（validate.py 2.16）。')
     out.append('站点要显示这个状态：「课标要背但教材不教」和「教材收了另一首同名的」都是学生必须知道的事。')
     out.append('')
@@ -486,7 +524,8 @@ def main():
         hits = [x for x in f['findings'] if x['status'] == 'match']
         variants = [x for x in f['findings'] if x['status'] == 'title-variant']
         claimed = [x for x in f['findings'] if x['status'] == 'claimed-absent-but-present']
-        n = report(mism, f['titleCollision'], f['absent'], hits, variants, claimed)
+        garden = [x for x in f['findings'] if x['status'] == 'garden-attested']
+        n = report(mism, f['titleCollision'], f['absent'], hits, variants, claimed, garden)
         print('已写 docs/textbook-audit.md（%d 行）' % n)
         return 0
     if '--audit' in sys.argv:

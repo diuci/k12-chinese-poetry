@@ -31,6 +31,8 @@ COVERED_ELSEWHERE = '统编教材收在别的课里'
 PARTIAL = '统编教材收了一部分（课标要求更多）'
 ALLOWED = (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL)
 COVERAGE_PATH = ROOT / 'data' / 'textbook-coverage.json'
+GARDEN_RULES = ROOT / 'data' / 'garden-rulings.json'
+
 
 
 def status_of(finding, volume):
@@ -43,11 +45,29 @@ def status_of(finding, volume):
         return COLLECTED
     if st == 'title-collision':
         return NAME_CLASH
+    if st == 'garden-attested':
+        # 语文园地收了、两条来源核过：教材确实收了，只是不在课文目录里
+        return COLLECTED
     if st == 'absent':
         return NOT_COLLECTED
     if st == 'volume-mismatch':
         return None
     return None
+
+
+def garden_rule_ok(rule, volume):
+    """语文园地裁定表的一条能不能决定「教材收了」：册次必须与仓内一致、来源两条以上、镜像最多一条。
+
+    返回 (ok, why)。这张表说「收了」就是把一篇从「镜像里看到了」升格，门槛必须在这里复核。"""
+    srcs = [x for x in (rule.get('sources') or []) if x]
+    mirror = [x for x in srcs if 'yw.suyang123.com' in x]
+    if rule.get('volume') != volume:
+        return False, '裁定表说在「%s」，仓内挂在「%s」' % (rule.get('volume'), volume)
+    if len(srcs) < 2:
+        return False, '裁定表只有 %d 条来源，不够两条' % len(srcs)
+    if len(mirror) > 1:
+        return False, '裁定表 %d 条来源里 %d 条出自同一个镜像目录——同源不算两条' % (len(srcs), len(mirror))
+    return True, ''
 
 
 def status_with_coverage(finding, volume, cov_entry):
@@ -62,7 +82,16 @@ def status_with_coverage(finding, volume, cov_entry):
     if cov_entry and st != NAME_CLASH:
         # partial 只许把「收了」降级成「收了一部分」，不许把「收了一部分」升级成「收了」
         return PARTIAL if cov_entry.get('partial') else COVERED_ELSEWHERE
-        return COVERED_ELSEWHERE
+    return st
+
+
+def status_with_garden(st, gr_ok):
+    """园地裁定核过两条来源时，「教材未收」必须改成「教材收录」：教材确实收了，只是不在课文目录里。
+
+    它只改「未收」这一档。不许把「同名另一篇」「收在别的课里」「收了一部分」改成「收录」——
+    那三档说的是别的事，盖过去就是把缺的部分说成没缺。"""
+    if gr_ok and st == NOT_COLLECTED:
+        return COLLECTED
     return st
 
 
@@ -143,6 +172,22 @@ def selftest():
     must(cover_label({'volume': '七年级下册', 'title': '木兰诗'}) == '七年级下册《木兰诗》',
          '坏例15b：不带书名号的篇名没被包上')
 
+    # 坏例16~18：园地裁定的效力——只把「未收」升成「收录」，别的不许动
+    must(status_with_garden(NOT_COLLECTED, True) == COLLECTED, '坏例16：园地两条来源核过了，还写着「教材未收」')
+    must(status_with_garden(NOT_COLLECTED, False) == NOT_COLLECTED, '坏例16b：没有裁定也被升成收录')
+    must(status_with_garden(NAME_CLASH, True) == NAME_CLASH, '坏例17：园地裁定把「同名另一篇」抹成了收录')
+    must(status_with_garden(COVERED_ELSEWHERE, True) == COVERED_ELSEWHERE, '坏例17b：园地裁定把「收在别的课里」抹成了收录')
+    must(status_with_garden(PARTIAL, True) == PARTIAL, '坏例18：园地裁定把「收了一部分」升成了收录')
+    # 坏例19：园地裁定表自己的门槛
+    ok, why = garden_rule_ok({'volume': '五年级下册', 'sources': ['镜像 yw.suyang123.com 园地页', 'zy.21cnjy.com/22255207 教案']}, '五年级下册')
+    must(ok, '坏例19：册次对、两条来源（镜像一条）的裁定被误报：%s' % why)
+    must(not garden_rule_ok({'volume': '五年级下册', 'sources': ['zy.21cnjy.com/22255207 教案']}, '五年级下册')[0],
+         '坏例19b：只有一条来源的裁定被放行')
+    must(not garden_rule_ok({'volume': '五年级下册', 'sources': ['yw.suyang123.com a', 'yw.suyang123.com b']}, '五年级下册')[0],
+         '坏例19c：两条来源都出自同一个镜像却被放行')
+    must(not garden_rule_ok({'volume': '六年级下册', 'sources': ['a', 'b']}, '五年级下册')[0],
+         '坏例19d：裁定表说的册次与仓内不一致却被放行')
+
     print('[ok] apply-textbook-status --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
@@ -165,6 +210,8 @@ def main():
     for vol, v in tl['volumes'].items():
         for l in v['entries']:
             lesson_index.add((vol, l['title']))
+    garden_rules = json.loads(GARDEN_RULES.read_text(encoding='utf-8')).get('rulings', {}) if GARDEN_RULES.exists() else {}
+
     cov_problems = []
     for pid, cv in cov.items():
         if len(cv.get('sources') or []) < 2:
@@ -173,6 +220,11 @@ def main():
             if (l['volume'], l['title']) not in lesson_index and \
                (l['volume'], l.get('indexTitle') or '') not in lesson_index:
                 cov_problems.append('textbook-coverage.json 里 %s 说教材有「%s」（%s），但教材目录表里找不到这一课' % (pid, l['title'], l['volume']))
+    for pid, gr in garden_rules.items():
+        ok, why = garden_rule_ok(gr, gr.get('volume') or '')
+        if not ok and '仓内挂在' not in why:
+            cov_problems.append('garden-rulings.json 里 %s 这条不成立：%s' % (pid, why))
+
     if cov_problems:
         # 以前这里调了一个不存在的 die()：覆盖表一有问题就 NameError 崩掉，
         # 看着像工具坏了，其实是把「哪一条是编的」这句话吞掉了。
@@ -182,7 +234,10 @@ def main():
     plan, unknown = [], []
     for p in poems:
         cv = cov.get(p['id'])
+        gr = garden_rules.get(p['id'])
+        gr_ok = bool(gr) and garden_rule_ok(gr, p.get('volume') or '')[0]
         st = status_with_coverage(by_id.get(p['id']), p.get('volume') or '', cv)
+        st = status_with_garden(st, gr_ok)
         if st is None:
             unknown.append((p['title'], p.get('volume')))
             continue
@@ -197,8 +252,9 @@ def main():
             fm2 = re.sub(r'^textbookStatus:.*$', 'textbookStatus: %s' % st, fm, count=1, flags=re.M)
         else:
             fm2 = fm + '\ntextbookStatus: %s' % st
-        if cv:
-            by = '；'.join(cover_label(l) for l in cv['lessons'])
+        if cv or gr_ok:
+            by = '；'.join(cover_label(l) for l in cv['lessons']) if cv else \
+                 '%s%s' % (gr['volume'], gr.get('section') or '语文园地')
             if re.search(r'^textbookCoveredBy:', fm2, re.M):
                 fm2 = re.sub(r'^textbookCoveredBy:.*$', 'textbookCoveredBy: %s' % by, fm2, count=1, flags=re.M)
             else:

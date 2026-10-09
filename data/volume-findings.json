@@ -1,12 +1,13 @@
 {
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
-  "generated": "2026-10-08",
+  "generated": "2026-10-09",
   "counts": {
     "match": 189,
     "volume-mismatch": 0,
     "title-collision": 3,
-    "absent": 52,
+    "absent": 49,
     "claimed-absent-but-present": 0,
+    "garden-attested": 3,
     "title-variant": 2
   },
   "findings": [
@@ -1019,6 +1020,19 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "youziyin",
+      "title": "游子吟",
+      "author": "孟郊",
+      "stage": "小学",
+      "status": "garden-attested",
+      "repoVolume": "五年级下册",
+      "textbookVolume": "五年级下册",
+      "textbookLesson": "语文园地一·日积月累",
+      "evidence": "园地裁定表 3 条来源",
+      "linesHit": 0,
+      "officiallyConfirmed": false
+    },
+    {
       "id": "qiuyejiangxiao",
       "title": "秋夜将晓出篱门迎凉有感",
       "author": "陆游",
@@ -1249,6 +1263,19 @@
       "textbookLesson": "1"
     },
     {
+      "id": "zengwang",
+      "title": "长歌行",
+      "author": "汉乐府",
+      "stage": "小学",
+      "status": "garden-attested",
+      "repoVolume": "六年级下册",
+      "textbookVolume": "六年级下册",
+      "textbookLesson": "语文园地一·日积月累",
+      "evidence": "园地裁定表 2 条来源",
+      "linesHit": 0,
+      "officiallyConfirmed": false
+    },
+    {
       "id": "mashi",
       "title": "马诗",
       "author": "李贺",
@@ -1357,6 +1384,19 @@
       "volume": "四年级下册",
       "textbookVolume": "四年级下册",
       "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "jiangpan",
+      "title": "江畔独步寻花",
+      "author": "杜甫",
+      "stage": "小学",
+      "status": "garden-attested",
+      "repoVolume": "四年级下册",
+      "textbookVolume": "四年级下册",
+      "textbookLesson": "语文园地二·日积月累",
+      "evidence": "园地裁定表 3 条来源",
+      "linesHit": 0,
+      "officiallyConfirmed": false
     },
     {
       "id": "qingpingyue-cunju",
@@ -1997,7 +2037,7 @@
     {
       "id": "hua",
       "title": "画",
-      "author": "王维",
+      "author": "佚名",
       "stage": "小学",
       "repoVolume": "一年级上册"
     },
@@ -2079,13 +2119,6 @@
       "repoVolume": "三年级下册"
     },
     {
-      "id": "jiangpan",
-      "title": "江畔独步寻花",
-      "author": "杜甫",
-      "stage": "小学",
-      "repoVolume": "三年级下册"
-    },
-    {
       "id": "chuzhouxijian",
       "title": "滁州西涧",
       "author": "韦应物",
@@ -2149,13 +2182,6 @@
       "repoVolume": "五年级上册"
     },
     {
-      "id": "zengwang",
-      "title": "长歌行",
-      "author": "汉乐府",
-      "stage": "小学",
-      "repoVolume": "五年级上册"
-    },
-    {
       "id": "xiangcunsiyue",
       "title": "乡村四月",
       "author": "翁卷",
@@ -2196,13 +2222,6 @@
       "author": "孟浩然",
       "stage": "小学",
       "repoVolume": "六年级上册"
-    },
-    {
-      "id": "youziyin",
-      "title": "游子吟",
-      "author": "孟郊",
-      "stage": "小学",
-      "repoVolume": "六年级下册"
     },
     {
       "id": "biedongda",
