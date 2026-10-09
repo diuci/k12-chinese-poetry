@@ -45,6 +45,8 @@ except Exception:
 
 
 ROOT = Path(__file__).resolve().parents[1]
+REV_EXC = ROOT / 'data' / 'reversal-exceptions.json'
+REV_EXC_TEST = None   # 自检专用：换一份登记表来试坏例子，仓里那份不动
 
 sys.path.insert(0, str(ROOT / 'tools'))
 
@@ -81,6 +83,18 @@ CURRENT_YEAR = 2026
 
 
 
+
+def reversal_registry():
+    """可逆性例外的登记表（data/reversal-exceptions.json）。自检可换一份（REV_EXC_TEST），仓里那份不动。"""
+    p = REV_EXC_TEST or REV_EXC
+    try:
+        entries = json.loads(p.read_text(encoding='utf-8')).get('entries') or []
+    except Exception as e:
+        return set(), '读不到 %s：%s' % (p, e)
+    reg = set()
+    for e in entries:
+        reg.add((e.get('id'), e.get('simp'), e.get('trad'), e.get('back')))
+    return reg, None
 
 def sections(t):
 
@@ -255,26 +269,43 @@ def audit_trad(corpus, trad, trad_md, rows):
 
     rev = trad.get('reversal') or []
     unexplained = []
-    copied = ruled = 0
+    copied = ruled = registered = 0
+    trip = set()
     for x in rev:
         ours, tt, back = x.get('ours', ''), x.get('trad', ''), x.get('back', '')
-        # 依据必须与正文对得上：写「照抄」就得真的没换字
-        for b in (x.get('basis') or '').split('；'):
-            if b == '照抄':
-                copied += 1
-                if len(ours) == len(tt) and len(ours) == len(back):
-                    for k in range(len(ours)):
-                        if ours[k] != back[k] and tt[k] == ours[k]:
-                            break
-                    else:
-                        unexplained.append('%s·声称照抄但繁体换了字' % x.get('title', ''))
-            elif b.startswith('裁定') or b.startswith('来源页'):
-                ruled += 1
+        diff = [k for k in range(min(len(ours), len(back))) if ours[k] != back[k]]
+        for k in diff:
+            trip.add((x.get('id'), ours[k], tt[k] if k < len(tt) else '', back[k]))
+        # 依据必须与正文对得上：说「正文本来就写作这个字」就得真的没换字。
+        # 按「这一行」归类，不按分号切开的片段归类——登记理由里本来就常写「来源页作某字」，
+        # 切片段会把一条登记数成两处依据，数目看着对其实不对。
+        b_all = x.get('basis') or ''
+        if '登记例外' in b_all:
+            registered += 1
+            if '（正文本来就写作这个字）' in b_all:
+                if not any(k < len(tt) and tt[k] == ours[k] for k in diff):
+                    unexplained.append('%s·登记说正文原字，繁体却换了字' % x.get('title', ''))
+            elif not any(k >= len(tt) or tt[k] != ours[k] for k in diff):
+                unexplained.append('%s·登记说有意换字，繁体其实没换' % x.get('title', ''))
+        elif '照抄' in b_all:
+            copied += 1
+            if not any(k < len(tt) and tt[k] == ours[k] for k in diff):
+                unexplained.append('%s·声称照抄但繁体换了字' % x.get('title', ''))
+        elif '裁定' in b_all or '来源页' in b_all:
+            ruled += 1
         unexplained += list(x.get('unexplained') or [])
-    out.append(('可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页）', not unexplained,
-                '不一致 %d 处：%d 处照抄本篇原有的字、%d 处有裁定或页依据；说不通的 %d 处%s'
-                % (len(rev), copied, ruled, len(unexplained),
+    out.append(('可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页 / 登记例外）', not unexplained,
+                '不一致 %d 处：%d 处照抄本篇原有的字、%d 处有裁定或页依据、%d 处登记例外；说不通的 %d 处%s'
+                % (len(rev), copied, ruled, registered, len(unexplained),
                    ('：' + '、'.join(unexplained[:5])) if unexplained else '')))
+    reg, err = reversal_registry()
+    if err:
+        out.append(('可逆性不一致的每一处都在登记表里登记过', False, err))
+    else:
+        gap = sorted('/'.join(str(p) for p in k) for k in (reg - trip) | (trip - reg))
+        out.append(('可逆性不一致的每一处都在登记表里登记过', not gap,
+                    '产物里 %d 处不同、登记表 %d 条；对不上 %d 条%s'
+                    % (len(trip), len(reg), len(gap), ('：' + '、'.join(gap[:6])) if gap else '')))
 
     # 注释 / 译文 / 赏析：台账说这篇有，繁体版就必须也有这一节
     need = {'hasNotes': '注释', 'hasTranslation': '译文', 'hasAppreciation': '赏析'}
@@ -740,6 +771,16 @@ def selftest():
     import tempfile
     tmp = Path(tempfile.mkdtemp(prefix='audit-selftest-'))
 
+    # 可逆性登记表：自检换一份空的（TRAD_GOOD 里没有可逆性不一致），仓里那一份不动
+    global REV_EXC_TEST
+    REV_EXC_TEST = tmp / 'reversal-exceptions-empty.json'
+    REV_EXC_TEST.write_text(json.dumps({'entries': []}, ensure_ascii=False), encoding='utf-8')
+
+    def rev_reg(name, entries):
+        p = tmp / name
+        p.write_text(json.dumps({'entries': entries}, ensure_ascii=False), encoding='utf-8')
+        return p
+
     def corpus_of(a_text, b_text):
         c = {}
         for txt, pid in ((a_text, 'a'), (b_text, 'b')):
@@ -913,15 +954,38 @@ def selftest():
            'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
                          'ours': '床前明月光，', 'trad': '床前明山光，', 'back': '床前明山光，',
                          'chars': '月→山', 'basis': '（说不通）', 'unexplained': ['甲·月']}]}
-    if '可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页）' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14, MD_GOOD) if not ok}:
+    if '可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页 / 登记例外）' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14, MD_GOOD) if not ok}:
         print('坏例14：繁体把正文的字换掉了却没给依据，没被报'); bad += 1
     # 坏例14b：依据写「照抄」但繁体其实换了字，必须被报
     t14b = {'counts': dict(TRAD_GOOD['counts']), 'rows': TRAD_GOOD['rows'],
             'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
                           'ours': '床前明月光，', 'trad': '床前明山光，', 'back': '床前明山光，',
                           'chars': '月→山', 'basis': '照抄', 'unexplained': []}]}
-    if '可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页）' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14b, MD_GOOD) if not ok}:
+    if '可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页 / 登记例外）' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14b, MD_GOOD) if not ok}:
         print('坏例14b：谎称照抄没被报'); bad += 1
+    # 坏例14c：产物里有一处可逆性不一致没登记，必须被报
+    t14c = {'counts': dict(TRAD_GOOD['counts']), 'rows': TRAD_GOOD['rows'],
+            'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
+                          'ours': '床前明月光，', 'trad': '床前明月光，', 'back': '床前明山光，',
+                          'chars': '月→山', 'basis': '登记例外（正文本来就写作这个字）：表有损', 'unexplained': []}]}
+    REV_EXC_TEST = rev_reg('rev-empty.json', [])
+    if '可逆性不一致的每一处都在登记表里登记过' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14c, MD_GOOD) if not ok}:
+        print('坏例14c：可逆性不一致没登记也照样过'); bad += 1
+    # 坏例14d：登记表里多一条这一轮没用上的，必须被报（过期登记比没有登记更误导人）
+    REV_EXC_TEST = rev_reg('rev-extra.json', [
+        {'id': 'a', 'simp': '月', 'trad': '月', 'back': '山', 'why': '表有损', 'basis': '正文原字'}])
+    if '可逆性不一致的每一处都在登记表里登记过' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], TRAD_GOOD, MD_GOOD) if not ok}:
+        print('坏例14d：登记表多一条没用上的也没人管'); bad += 1
+    # 坏例14e：登记与产物严丝合缝——这一处不许误报（好例子被误报也算失败）
+    REV_EXC_TEST = rev_reg('rev-match.json', [
+        {'id': 'a', 'simp': '月', 'trad': '月', 'back': '山', 'why': '表有损', 'basis': '正文原字'}])
+    t14e = {'counts': dict(TRAD_GOOD['counts']), 'rows': TRAD_GOOD['rows'],
+            'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
+                          'ours': '床前明月光，', 'trad': '床前明月光，', 'back': '床前明山光，',
+                          'chars': '月→山', 'basis': '登记例外（正文本来就写作这个字）：表有损', 'unexplained': []}]}
+    if '可逆性不一致的每一处都在登记表里登记过' in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14e, MD_GOOD) if not ok}:
+        print('坏例14e：登记与产物一致却被误报'); bad += 1
+    REV_EXC_TEST = REV_EXC   # 自检换的登记表到此为止
     # 15) 繁体产物不存在，必须被报（不许「没跑成」长得像「没问题」）
     if '繁体产物存在' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], None, None) if not ok}:
         print('坏例15：繁体产物不存在却没被报'); bad += 1

@@ -33,6 +33,7 @@ LEDGER = ROOT / 'data' / 'ledger.json'
 SRC = ROOT / 'data' / 'text-sources.json'
 JOUT = ROOT / 'data' / 'traditional.json'
 RULES = ROOT / 'data' / 's2t-rules.json'
+REVC = ROOT / 'data' / 'reversal-exceptions.json'
 MOUT = ROOT / 'docs' / 'traditional.md'
 PUNCT = '，。！？；：、（）「」『』《》〈〉“”‘’—…·．,.;:!?()[]<>"\'\u3000\xa0'
 MAXPHRASE = 8
@@ -418,6 +419,38 @@ def md_sections(md_path):
     return {k: [x for x in v if x.strip()] for k, v in secs.items()}
 
 
+def load_reversal_exceptions(path=None):
+    """可逆性例外的登记表。缺文件、缺字段、转回与原字相同、重复登记——都直接停，不许含糊。"""
+    path = path or REVC
+    if not path.exists():
+        raise SystemExit('缺 %s：可逆性不一致必须逐条裁定并登记，不许只列出来不裁定' % REVC)
+    entries = (json.loads(path.read_text(encoding='utf-8')).get('entries') or [])
+    table, seen = {}, set()
+    for e in entries:
+        for k in ('id', 'simp', 'trad', 'back', 'why', 'basis'):
+            if not str(e.get(k) or '').strip():
+                raise SystemExit('可逆性例外登记缺「%s」：%s' % (k, json.dumps(e, ensure_ascii=False)[:140]))
+        if e['simp'] == e['back']:
+            raise SystemExit('可逆性例外登记里「%s」转回还是「%s」——这一条不是例外，是废话' % (e['simp'], e['back']))
+        key = (e['id'], e['simp'], e['trad'], e['back'])
+        if key in seen:
+            raise SystemExit('可逆性例外登记重复：%s' % ('/'.join(key),))
+        seen.add(key)
+        table[key] = e
+    return table
+def check_reversal_registration(rev_exc, rev_used, reversal):
+    """登记表两边都要拦：这一轮没用上的登记条目必须删掉（过期登记比没有登记更误导人）；
+    没登记的不一致不许写进产物。"""
+    unused = [k for k in rev_exc if k not in rev_used]
+    if unused:
+        raise SystemExit('[繁体派生] 可逆性例外登记里有 %d 条这一轮没用上（表改了还是正文改了？过期登记必须删）：%s'
+                         % (len(unused), '；'.join('%s %s→%s（转回 %s）' % k for k in sorted(unused))))
+    open_ends = [x for x in reversal if x['unexplained']]
+    if open_ends:
+        raise SystemExit('[繁体派生] 可逆性不一致里有 %d 处说不出凭什么（必须先在 %s 里登记裁定与依据）：%s'
+                         % (len(open_ends), REVC, '、'.join(x['unexplained'][0] for x in open_ends)))
+
+
 def build():
     s2c = read_table(STC)
     s2p = read_table(STP)
@@ -468,6 +501,8 @@ def build():
             md_variant[row['id']] = '\n'.join(lines)
     rules = load_rules()
     reversal = []
+    rev_exc = load_reversal_exceptions()
+    rev_used = set()
     left_behind = []
     AUDIT = [] if '--audit-left' in sys.argv else None
     out_rows = []
@@ -645,6 +680,12 @@ def build():
                         if seg[k] == back[k]:
                             continue
                         pairs.append('%s→%s' % (seg[k], back[k]))
+                        tk = tt[k] if k < len(tt) else ''
+                        ex = rev_exc.get((c['id'], seg[k], tk, back[k]))
+                        if ex:
+                            rev_used.add((c['id'], seg[k], tk, back[k]))
+                            basis.append('登记例外（%s）：%s' % ('正文本来就写作这个字' if tk == seg[k] else '有意写作另一个繁体字', ex['why']))
+                            continue
                         if k >= len(tt) or tt[k] == seg[k]:
                             basis.append('照抄')  # 本篇正文本来就写作这个字
                             continue
@@ -769,6 +810,9 @@ def build():
             print('  %s ×%-4d %-10s 例：%s' % (ch, v, where, ex[(where, ch)]))
         raise SystemExit(0)
 
+    # 登记表两边都要拦：这一轮没用上的登记条目必须删掉（过期登记比没有登记更误导人）；
+    # 没登记的不一致不许写进产物。
+    check_reversal_registration(rev_exc, rev_used, reversal)
     JOUT.write_text(json.dumps({'generated': datetime.date.today().isoformat(),
                                 'note': '简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / '
                                         'table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / '
@@ -798,8 +842,8 @@ def build():
          % (counts2['table'], counts2['rule'], counts2['identity'],
             counts2['keep'], counts2['pending']), '',
          '## 可逆性（繁体转回简体必须一字不差）', '',
-         '繁体转回简体时，%d 处与我们的正文不一样。每一处单独交代依据：' % len(reversal),
-         '',
+          ('繁体转回简体时，%d 处与我们的正文不一样。每一处都在 ' + BT + 'data/reversal-exceptions.json' + BT + ' 里登记了裁定与依据（%d 条）：') % (len(reversal), len(rev_exc)),
+          '没登记的就写不出产物；登记了却这一轮没用上的，也会被闸门拦下。',
          '- **照抄**：本篇正文本来就写作这个字（徵、於、覆、藉、巘、騑、纕、嘑、絀……），'
          '繁体没动它，是表把它转成了另一个字；',
          '- **裁定 / 页**：我们有意写作另一个繁体字（锺→鍾、迹→跡 这类），依据见下面的裁定表。', '',
@@ -809,6 +853,13 @@ def build():
         L.append('| %s | **%s** | %s | %s | %s |' % (
             x['title'], x['chars'], x['basis'].replace('|', '¦'),
             x['ours'][:24].replace('|', '¦'), x['back'][:24].replace('|', '¦')))
+    L += ['', '## 可逆性例外的登记（逐条裁定，来自 data/reversal-exceptions.json）', '',
+          '| 篇 | 正文里的字 | 繁体写作 | 表转回成 | 为什么 | 凭什么 |', '|---|---|---|---|---|---|', '']
+    for k in sorted(rev_exc, key=lambda x: (x[0], x[1])):
+        e = rev_exc[k]
+        L.append('| %s | **%s** | %s | %s | %s | %s |' % (
+            e['id'], e['simp'], e['trad'], e['back'],
+            e['why'].replace('|', '¦'), e['basis'].replace('|', '¦')))
     L += ['', '## 表被拒用的写法（转不回原字）', '',
           '| 原字 | 表想写成 | 处数 |', '|---|---|---|', '']
     rejected = {}
@@ -857,11 +908,11 @@ def build():
         L.append('')
     MOUT.write_text('\n'.join(L), encoding='utf-8')
     print('[繁体派生] %d 篇：正文 page %d / table %d / rule %d / keep %d / identity %d / variant %d / pending %d；'
-          '注释译文等 table %d / rule %d / identity %d / keep %d / pending %d；可逆性不一致 %d 处；沿用已提交页证据 %d 处 → data/traditional.json 与 docs/traditional.md'
+          '注释译文等 table %d / rule %d / identity %d / keep %d / pending %d；可逆性不一致 %d 处（登记裁定 %d 条）；沿用已提交页证据 %d 处 → data/traditional.json 与 docs/traditional.md'
           % (len(out_rows), counts['page'], counts['table'], counts['rule'], counts['keep'],
              counts['identity'], counts['variant'], counts['pending'],
              counts2['table'], counts2['rule'], counts2['identity'], counts2['keep'],
-             counts2['pending'], len(reversal), used_record[0]))
+             counts2['pending'], len(reversal), len(rev_exc), used_record[0]))
     return 0
 
 
@@ -1127,6 +1178,70 @@ def selftest():
         '坏例24i：产物里存的页证据 %d 条，与注释那一档当场数到的 page %d + variant %d 对不上' % (len(_pm), _ca.get('page', 0), _ca.get('variant', 0))
     assert all(t[0].startswith('sec:') and t[6] in ('page', 'variant') for t in _pm), \
         '坏例24i：page_marks 里混进了不该有的条目'
+
+    # 坏例25 系列：可逆性例外的登记表。闸门两边都要拦——没登记的不许写进产物，
+    # 登记了却没用上的也不许留在表里。这一串坏例子全用临时文件，不碰仓里的登记表。
+    import tempfile
+    _tmpdir = tempfile.mkdtemp()
+    def _write_rev(name, obj):
+        p = ROOT / '_selftest-rev-tmp' / name
+        p.parent.mkdir(exist_ok=True)
+        p.write_text(json.dumps(obj, ensure_ascii=False), encoding='utf-8')
+        return p
+    try:
+        # 坏例25：登记表文件不存在也照样往下走
+        try:
+            load_reversal_exceptions(ROOT / '_selftest-rev-tmp' / '没有这个文件.json')
+            raise AssertionError('坏例25：可逆性例外登记表不存在也照样往下走')
+        except SystemExit:
+            pass
+        # 坏例25b：登记缺依据
+        try:
+            load_reversal_exceptions(_write_rev('b.json', {'entries': [
+                {'id': 'x', 'simp': '乾', 'trad': '乾', 'back': '干', 'why': '表有损'}]}))
+            raise AssertionError('坏例25b：登记没写凭什么也收下了')
+        except SystemExit:
+            pass
+        # 坏例25c：转回还是原字，这一条不是例外
+        try:
+            load_reversal_exceptions(_write_rev('c.json', {'entries': [
+                {'id': 'x', 'simp': '後', 'trad': '後', 'back': '後', 'why': '表有损', 'basis': '正文原字'}]}))
+            raise AssertionError('坏例25c：「转回还是原字」的条目也收下了')
+        except SystemExit:
+            pass
+        # 坏例25d：同一条重复登记
+        try:
+            _one = {'id': 'x', 'simp': '乾', 'trad': '乾', 'back': '干', 'why': '表有损', 'basis': '正文原字'}
+            load_reversal_exceptions(_write_rev('d.json', {'entries': [_one, dict(_one)]}))
+            raise AssertionError('坏例25d：同一条登记重复也收下了')
+        except SystemExit:
+            pass
+        # 坏例25e：登记了却这一轮没用上（过期登记）
+        try:
+            check_reversal_registration({('x', '乾', '乾', '干'): _one}, set(), [])
+            raise AssertionError('坏例25e：过期登记留在表里也没人管')
+        except SystemExit:
+            pass
+        # 坏例25f：不一致没登记就写进产物
+        try:
+            check_reversal_registration({}, set(), [{'unexplained': ['某篇·乾']}])
+            raise AssertionError('坏例25f：说不出凭什么的不一致照样进产物')
+        except SystemExit:
+            pass
+        # 坏例25g：登记表必须与产物里那些不一致严丝合缝——多一条、少一条都算失败
+        _trip = set()
+        for _x in _trad.get('reversal', []):
+            _o, _t, _b = _x['ours'], _x['trad'], _x['back']
+            for _k in range(min(len(_o), len(_b))):
+                if _o[_k] != _b[_k]:
+                    _trip.add((_x['id'], _o[_k], _t[_k] if _k < len(_t) else '', _b[_k]))
+        if _trip:
+            _reg = set(load_reversal_exceptions())
+            assert _reg == _trip, ('坏例25g：登记表与产物里的可逆性不一致对不上（登记 %d 条，产物 %d 处不同）：%s'
+                                   % (len(_reg), len(_trip), '、'.join(sorted('/'.join(k) for k in (_reg - _trip) | (_trip - _reg)))))
+    finally:
+        import shutil
+        shutil.rmtree(ROOT / '_selftest-rev-tmp', ignore_errors=True)
 
     import ast, inspect
     # 坏例子个数当场从这份源码数出来：数 assert 语句与「必须抛错」的 try 块本身，
