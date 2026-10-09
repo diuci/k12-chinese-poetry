@@ -288,6 +288,22 @@ def load_overrides():
         return {}
     return json.loads(OVERRIDES_PATH.read_text(encoding='utf-8')).get('overrides', {})
 
+def page_drift(prev_results, new_results):
+    """同一篇的来源页换了地方，必须当场说出来。
+
+    为什么：来源页是按检索排序挑的，检索每次排法不完全一样。今天挑中 A 页（两句全对上），
+    明天挑中 B 页（一句对不上），台账的数就跟着抖，写进文档的数字永远对不上产物。
+    要稳住就在 data/source-overrides.json 钉住——钉住是决定，不是遮掩。"""
+    out = []
+    old = {r['id']: r.get('page') for r in prev_results if r.get('id')}
+    for r in new_results:
+        if not r.get('id'):
+            continue
+        before, now = old.get(r['id']), r.get('page')
+        if before and now and before != now:
+            out.append((r['id'], before, now))
+    return out
+
 
 def clean(text, table):
     """繁→简、剥标点空白。返回 (清洗后文本, 夹注列表)。
@@ -729,6 +745,11 @@ def main():
     print('出处核对：%d 全对上 / %d 部分对上 / %d 一句都对不上 / %d 找不到来源页'
           % (stats['attested'], stats['partial'], stats['notfound'], stats['nosource']))
     print('带 {{另}} 夹注异文的篇目：%d 篇' % stats['withVariants'])
+    drift = page_drift(old.get('results', []) if old else [], results)
+    if drift:
+        print('!! 来源页换了地方 %d 篇（台账的数会跟着动；要稳住就在 data/source-overrides.json 钉住）：' % len(drift))
+        for pid, pa, pb in drift[:12]:
+            print('   %-22s %s → %s' % (pid, pa, pb))
     if filtered:
         print('试跑模式：结果写到 data/text-sources.partial.json，正式表 data/text-sources.json 未动')
     elif merge:
@@ -802,6 +823,13 @@ def selftest():
     must(line_in('城阙辅三秦风烟望五津', '城阙辅三秦风烟望五州') is None,
          '坏例8：只差一个字就被算成对上了（相似度那一档没撤干净）')
     must(line_in('海内存知己天涯若比邻', '海内存知己天涯若比邻') == 'exact', '坏例8b：整句直接命中反而不认了')
+    # 坏例9：来源页换了地方必须说出来——不说，台账的数就在背后抖
+    d9 = page_drift([{'id': 'a', 'page': '甲页'}], [{'id': 'a', 'page': '乙页'}])
+    must(d9 == [('a', '甲页', '乙页')], '坏例9：来源页换了却没报：%s' % d9)
+    must(page_drift([{'id': 'a', 'page': '甲页'}], [{'id': 'a', 'page': '甲页'}]) == [], '坏例9b：页没变也被报（误伤）')
+    must(page_drift([], [{'id': 'a', 'page': '甲页'}]) == [], '坏例9c：第一次核也被当成换了页')
+    must(page_drift([{'id': 'a', 'page': None}], [{'id': 'a', 'page': '甲页'}]) == [], '坏例9d：以前没有页、现在有了，不算换了页')
+
     print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 

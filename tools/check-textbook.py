@@ -150,6 +150,7 @@ def title_candidates(title, subtitle):
 
 
 GARDEN = ROOT / 'data' / 'textbook-garden.json'
+ABSENCE = ROOT / 'data' / 'absence-checks.json'
 GARDEN_RULES = ROOT / 'data' / 'garden-rulings.json'
 COVERAGE = ROOT / 'data' / 'textbook-coverage.json'
 
@@ -240,6 +241,63 @@ def garden_ruling_status(vol, rule, has_garden_hit):
     if not has_garden_hit:
         return 'broken', '园地裁定表说这一册的园地里收了，园地表里却没有这一篇'
     return 'ok', ''
+
+def load_absence_checks():
+    """「查过了、没找到」的登记簿（data/absence-checks.json）。没有这张表时返回空。"""
+    if not ABSENCE.exists():
+        return {}
+    return json.loads(ABSENCE.read_text(encoding='utf-8')).get('checks') or {}
+
+def absence_record_ok(volume, rec):
+    """登记簿的一条能不能撑起「没找到」这句话：册次要对、要写下查了哪些页、要给出结论。
+
+    返回 (ok, why)。这条门槛的意义：谁要说「教材里没找到这一课」，谁就得先说清查了什么。"""
+    if not rec:
+        return False, '没有登记记录'
+    if rec.get('volume') != volume:
+        return False, '登记记录说在「%s」，仓内却挂在「%s」' % (rec.get('volume'), volume)
+    if not [x for x in (rec.get('sources') or []) if x]:
+        return False, '登记记录没写查过哪些页（sources 是空的）'
+    if not (rec.get('gardenPages') or rec.get('lessonIndex')):
+        return False, '登记记录没写查了什么内容'
+    if not (rec.get('conclusion') or '').strip():
+        return False, '登记记录没有结论'
+    return True, ''
+
+def garden_blind():
+    """园地表里「只有栏目头、没列篇名」的页数：{册: 页数}。
+
+    那一类页面镜像只抓到了栏目名（日积月累、字词句运用…），没抓到里面的篇名。数出来是为了让
+    「教材里没有这一课」这句话带上自己的边界：这几页里有什么，我们不知道。"""
+    if not GARDEN.exists():
+        return {}
+    data = json.loads(GARDEN.read_text(encoding='utf-8'))
+    out = {}
+    for vol, rows in (data.get('volumes') or {}).items():
+        out[vol] = sum(1 for r in rows if not (r.get('title') or '').strip())
+    return out
+
+def absence_note(volume, blind_pages, is_syllabus, garden_covered=True, record=None):
+    """「教材里没有这一课」这句话要说清查了什么、边界在哪。
+
+    三件事各自都是边界：园地表只抽了小学 12 册（初中、高中的园地页根本没看过）；
+    小学那 12 册里也有几页只列了栏目头、没列篇名，那几页里有什么我们不知道；
+    不是课标篇目的（教材拓展）连「课标要背」这条依据也没有——以前它顶着
+    「统编教材未收（课标要求）」，等于替课标作了一个课标没作过的声明。"""
+    parts = ['同学段所有册的课文目录里都没有同名课文']
+    if record and (record.get('lessonIndex') or record.get('gardenPages')):
+        parts.append('查过的地方：' + '；'.join([x for x in (record.get('lessonIndex'), record.get('gardenPages')) if x]))
+    if garden_covered:
+        parts.append('这一册的语文园地页面上也没有')
+        if blind_pages:
+            parts.append('但园地表里「%s」有 %d 页只列了栏目头、没列篇名（镜像没写全）——找不到不等于没有'
+                         % (volume, blind_pages))
+    else:
+        parts.append('语文园地那一档只核过小学 12 册，「%s」的园地页没核过——这句话只覆盖课文目录' % volume)
+    if not is_syllabus:
+        parts.append('这一篇在仓里是「教材拓展」（课标附录1里没有它），连「课标要背」这条依据也没有')
+    return '；'.join(parts)
+
 def load_garden_rules():
     """语文园地的册次裁定表（data/garden-rulings.json）。没有这张表时返回空，不报错。"""
     if not GARDEN_RULES.exists():
@@ -522,6 +580,35 @@ def selftest():
     must('同源' in garden_ruling_status('四年级下册', {'volume': '四年级下册', 'sources': [
         'yw.suyang123.com a', 'yw.suyang123.com b']}, True)[1],
          '坏例17f：拦下了却没说清为什么拦')
+    # 坏例19：「教材里没有这一课」必须带上自己的边界——那一册的园地页里有几页只列了栏目头
+    n19 = absence_note('一年级下册', 3, True, True)
+    must('3 页只列了栏目头' in n19, '坏例19：那一册有 3 页只列了栏目头，note 里没说这句话的边界：%s' % n19)
+    n19b = absence_note('一年级上册', 0, True, True)
+    must('只列了栏目头' not in n19b, '坏例19b：没有盲区页却写着盲区（%s）' % n19b)
+    n19c = absence_note('一年级下册', 3, False, True)
+    must('教材拓展' in n19c, '坏例19c：不是课标篇目却没说清依据：%s' % n19c)
+    n19d = absence_note('七年级上册', 0, True, True)
+    must('教材拓展' not in n19d, '坏例19d：课标篇目被写成了教材拓展（%s）' % n19d)
+    must(len(n19) > len(n19b), '坏例19e：盲区没让这句话变长——等于没写')
+    # 坏例19f：园地表只抽了小学 12 册——高中那一册的园地页根本没看过，不许说「园地里也没有」
+    n19f = absence_note('选择性必修下册', 0, True, False)
+    must('园地页没核过' in n19f, '坏例19f：高中册的园地没核过，note 却像核过了：%s' % n19f)
+    must(n19f.index('课文目录') < n19f.index('园地页没核过'), '坏例19g：先说没核过的东西、后说查过的，读起来像反话：%s' % n19f)
+    # 坏例19h：小学那册核过园地，就不许写「没核过」
+    n19h = absence_note('三年级下册', 3, True, True)
+    must('没核过' not in n19h, '坏例19h：小学册的园地明明核过，note 却说没核过：%s' % n19h)
+    # 坏例19i~19m：「没找到」这句话必须由登记簿撑着——查了什么、查了哪几页
+    good19 = {'volume': '一年级下册', 'lessonIndex': '小学 11 册目录里没有', 'gardenPages': '八页园地逐页读过',
+              'sources': ['https://yw.suyang123.com/x/1'], 'conclusion': '没找到'}
+    must(absence_record_ok('一年级下册', good19)[0], '坏例19i：一条完整的登记记录被误报：%s' % absence_record_ok('一年级下册', good19)[1])
+    must(not absence_record_ok('一年级下册', None)[0], '坏例19j：没有登记记录也被当成查过了')
+    must(not absence_record_ok('一年级下册', dict(good19, volume='二年级下册'))[0], '坏例19k：登记记录的册次与仓内不一致却被放行')
+    must(not absence_record_ok('一年级下册', {k: v for k, v in good19.items() if k != 'sources'})[0],
+         '坏例19l：没写查过哪几页的登记记录被放行')
+    n19m = absence_note('一年级下册', 0, False, True, good19)
+    must('查过的地方' in n19m and '八页园地逐页读过' in n19m,
+         '坏例19m：登记簿写了查了什么，note 里却没带上：%s' % n19m)
+
     print('[ok] check-textbook --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
@@ -551,6 +638,11 @@ def main():
     garden = load_garden()
     garden_rules = load_garden_rules()
     coverage = load_coverage()
+    blind = garden_blind()
+    absence_records = load_absence_checks()
+    # 「课标篇目」还是「教材拓展」：口径在 validate.py 的课标表里，不在这里另立一份。
+    _syllabus, extra_titles = V.parse_syllabus(V.SYLLABUS)
+    extra_ids = {p['id'] for p in poems if V.canon_title(p['title']) in extra_titles}
     if garden is None:
         print('!! 没有 data/textbook-garden.json：语文园地那一档没跑（先跑 tools/build-textbook-garden.py）')
     problems = []
@@ -667,8 +759,14 @@ def main():
                 print('[%d/%d] ~~ %s（%s）园地里有，但在别的册（%s）' % (
                     len(results), len(poems), p['title'], p.get('volume'), hits[0][0]))
                 continue
+            rec = absence_records.get(p['id'])
+            ok_rec, why_rec = absence_record_ok(vol, rec)
+            if rec and not ok_rec:
+                problems.append('%s：absence-checks.json 里这条不成立：%s' % (p['id'], why_rec))
             entry.update(status='lesson-not-found', volume_url=BASE + path,
-                         note='同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有')
+                         note=absence_note(vol, blind.get(vol, 0),
+                                           p['id'] not in extra_ids, vol in blind,
+                                           rec if ok_rec else None))
             results.append(entry)
             print('[%d/%d] !! %s（%s）教材里没有这篇' % (len(results), len(poems), p['title'], p.get('volume')))
             continue

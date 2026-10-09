@@ -1,0 +1,24 @@
+{
+  "generated": "2026-10-09",
+  "note": "这张表登记的是「我们查过什么」，不是「教材没有什么」。查过的才写；没写的就是没查。结论词「统编教材里没找到这一课」只在这张表里有记录时才允许出现。",
+  "sourceRule": "来源全部是同一个镜像（yw.suyang123.com）时只能算一条来源——所以这一档永远不写「教材没有」，只写「没找到」。",
+  "checks": {
+    "xiangsi": {
+      "volume": "一年级下册",
+      "lessonIndex": "小学 11 册课文目录（data/textbook-lessons.json，781 条）里没有同名课文；全仓目录里带「相思」的只有五年级上册《长相思》（纳兰性德），是另一篇",
+      "gardenPages": "一年级下册 8 页语文园地逐页读过（2026-10-09）：园地一 春晓、妞妞赶牛；园地二 寻隐者不遇；园地三 赠汪伦；园地四 尊老爱幼其乐融融 等成语；园地五 孙悟空打妖怪；园地六 朝霞不出门晚霞行千里 等气象谚语；园地七 不知则问（荀子）、一日无书百事荒芜（陈寿）、读万卷书行万里路（董其昌）；园地八 画鸡——八页的日积月累里没有王维《相思》",
+      "sources": [
+        "https://yw.suyang123.com/xiaoxue/yinianji/40013_langdu.html",
+        "https://yw.suyang123.com/xiaoxue/yinianji/40014_langdu.html",
+        "https://yw.suyang123.com/xiaoxue/yinianji/40015_langdu.html",
+        "https://yw.suyang123.com/xiaoxue/yinianji/40016_langdu.html",
+        "https://yw.suyang123.com/xiaoxue/yinianji/40017_langdu.html",
+        "https://yw.suyang123.com/xiaoxue/yinianji/40018_langdu.html",
+        "https://yw.suyang123.com/xiaoxue/yinianji/40019_langdu.html",
+        "https://yw.suyang123.com/xiaoxue/yinianji/40020_langdu.html"
+      ],
+      "syllabus": false,
+      "conclusion": "统编教材里没找到这一课（镜像那条来源也没收到；课标附录1 里也没有它）"
+    }
+  }
+}

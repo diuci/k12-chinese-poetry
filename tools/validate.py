@@ -501,6 +501,7 @@ def selftest():
             problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
 
     problems.extend(selftest_attest_status())
+    problems.extend(selftest_absence_records())
     problems.extend(selftest_match())
 
     if problems:
@@ -515,19 +516,28 @@ def selftest():
           '背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报、同名小节重复被抓、'
           '教材核对表结论与篇目状态不一致被抓、核对表缺这一篇被抓、同一册正文不误报、跨册同名另一篇被抓、'
           '园地证据加同名另一篇不误报、册次对不上没交代被抓、册次对不上有交代不误报、没见过的结论被抓、'
-          '五档标签与 apply-textbook-status 不分叉——都试到了')
+          '七档标签与 apply-textbook-status 不分叉、说「没找到」必须有登记簿撑着被抓、登记簿过期被抓——都试到了')
     return 0
 
 
-# 教材收录状态的五档：与 tools/apply-textbook-status.py 里的 ALLOWED 是同一套，
+# 教材收录状态的七档：与 tools/apply-textbook-status.py 里的 ALLOWED 是同一套，
 # 两处各写一份迟早会分叉，所以 --selftest 里有一条坏例子盯着这两份是不是一样。
 COLLECTED = '统编教材收录'
 NOT_COLLECTED = '统编教材未收（课标要求）'
 NAME_CLASH = '统编教材收的是同名另一篇'
 COVERED_ELSEWHERE = '统编教材收在别的课里'
 PARTIAL = '统编教材收了一部分（课标要求更多）'
+# 第六档：语文园地页里有这一篇，可只核到一条来源（那个第三方镜像）。不许并进「统编教材收录」——
+# 一条来源不够；也不许写成「未收」——手上那条来源说的是收了。这一档说的是证据的份数，不是教材有没有。
+ONE_SOURCE = '统编教材收了（只有一条来源）'
+# 第七档：仓里挂着统编教材的册次，可 23 册课文目录与 12 册语文园地页里都没找到这一课，而且它不是
+# 课标篇目（教材拓展）。这一档说的是「我们没找到」，不是「教材没有」——园地表里有几页只列了栏目头、
+# 没列篇名，找不到不等于没有。
+NOT_FOUND = '统编教材里没找到这一课'
 
-def attest_expect(row, in_coverage, in_collision):
+# 七档标签的清单只在这里写一次：apply-textbook-status 的 ALLOWED、台账的计数、审计文档的说明都从这份来。
+TEXTBOOK_LABELS = (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL, ONE_SOURCE, NOT_FOUND)
+def attest_expect(row, in_coverage, in_collision, is_syllabus=True):
     """核对表（data/textbook-attestations.json）的一条结论 → 篇目 frontmatter 该写哪个状态。
 
     返回 None 表示这一条不单独决定状态；返回 'unknown' 表示这张表里出现了没人解释过的结论。
@@ -547,14 +557,20 @@ def attest_expect(row, in_coverage, in_collision):
         # 语文园地收了、两条独立来源核过：教材确实收了，只是不在课文目录里
         return COLLECTED
     # garden-ruling-broken 故意不列在这里：那张裁定表自己坏了，必须报「没人解释的结论」
-    if st in ('lesson-not-found', 'no-textbook', 'garden-mirror-only', 'garden-other-volume'):
-        return NAME_CLASH if in_collision else NOT_COLLECTED
+    if st == 'garden-mirror-only':
+        # 只有一条来源说教材收了：既不升格成「收录」，也不许反过来说没收
+        return NAME_CLASH if in_collision else ONE_SOURCE
+    if st in ('lesson-not-found', 'no-textbook', 'garden-other-volume'):
+        if in_collision:
+            return NAME_CLASH
+        # 课标篇目要说清「课标要背」；不是课标篇目的不许冒领「课标要求」
+        return NOT_COLLECTED if is_syllabus else NOT_FOUND
     if st == 'volume-mismatch':
         return None
     return 'unknown'
 
 
-def check_attestation_status(poems, att, coverage_ids, collision_ids):
+def check_attestation_status(poems, att, coverage_ids, collision_ids, extra_ids=frozenset()):
     """核对表这张 252 行的结论表必须与每篇 frontmatter 的说法对得上。
 
     它以前没接进来：核对表说没收、篇目文件说收了，站点照篇目文件显示，学生照着背错。"""
@@ -564,7 +580,8 @@ def check_attestation_status(poems, att, coverage_ids, collision_ids):
         if not row:
             drift.append('%s：核对表里没有这一篇的结论' % p['title'])
             continue
-        want = attest_expect(row, p['id'] in coverage_ids, p['id'] in collision_ids)
+        want = attest_expect(row, p['id'] in coverage_ids, p['id'] in collision_ids,
+                               p['id'] not in extra_ids)
         if want == 'unknown':
             drift.append('%s：核对表里出现了没人解释的结论「%s」' % (p['title'], row.get('status')))
         elif want and p.get('textbookStatus') != want:
@@ -577,13 +594,65 @@ def check_attestation_status(poems, att, coverage_ids, collision_ids):
     return drift, dangling
 
 
+def absence_record_problems(poems, records):
+    """「统编教材里没找到这一课」这句话，必须由 data/absence-checks.json 撑着。返回问题列表。
+
+    为什么要有这条：这一档说的是「我们查过、没查到」。没有登记簿，它就退化成一句
+    「教材没有」——而教材有没有，我们其实不知道。说没找到，就得先说清查了哪些目录、哪些园地页。"""
+    out = []
+    ids = {p['id'] for p in poems}
+    for p in poems:
+        if p.get('textbookStatus') != NOT_FOUND:
+            continue
+        rec = records.get(p['id']) or {}
+        if not rec:
+            out.append('%s 写着「%s」，absence-checks.json 里却没有记录——说没找到就得先说清查了什么' %
+                       (p['title'], NOT_FOUND))
+            continue
+        if rec.get('volume') != p.get('volume'):
+            out.append('%s 的登记记录说在「%s」，仓内却挂在「%s」' % (p['title'], rec.get('volume'), p.get('volume')))
+        if not [x for x in (rec.get('sources') or []) if x]:
+            out.append('%s 的登记记录没写查过哪些页（sources 是空的）' % p['title'])
+        if not (rec.get('gardenPages') or rec.get('lessonIndex')):
+            out.append('%s 的登记记录没写查了什么内容' % p['title'])
+    for pid in records:
+        if pid not in ids:
+            out.append('absence-checks.json 里的「%s」在仓里找不到这篇——登记簿过期了' % pid)
+    return out
+
+def selftest_absence_records():
+    """这条门槛自己的坏例子。"""
+    problems = []
+    good = {'volume': '一年级下册', 'lessonIndex': '小学 11 册目录里没有', 'gardenPages': '八页园地逐页读过',
+            'sources': ['https://yw.suyang123.com/x/1'], 'conclusion': '没找到'}
+    poem = lambda st: [{'id': 'a', 'title': '甲', 'volume': '一年级下册', 'textbookStatus': st}]
+    # 坏例A：写了「没找到」却没有登记簿
+    if not absence_record_problems(poem(NOT_FOUND), {}):
+        problems.append('坏例A：说「统编教材里没找到这一课」却没登记查了什么，没被报')
+    # 坏例B：登记簿齐的不许误报
+    d = absence_record_problems(poem(NOT_FOUND), {'a': dict(good)})
+    if d: problems.append('坏例B：登记簿齐的篇目被误报：%s' % d[0])
+    # 坏例C：册次对不上
+    if not absence_record_problems(poem(NOT_FOUND), {'a': dict(good, volume='二年级下册')}):
+        problems.append('坏例C：登记记录的册次与仓内不一致，没被报')
+    # 坏例D：没写查过哪些页
+    if not absence_record_problems(poem(NOT_FOUND), {'a': {k: v for k, v in good.items() if k != 'sources'}}):
+        problems.append('坏例D：登记记录没写查过哪些页，没被报')
+    # 坏例E：登记簿里躺着仓内没有的篇目（过期）
+    if not absence_record_problems(poem(COLLECTED), {'zz': dict(good)}):
+        problems.append('坏例E：登记簿里过期的一条没被报')
+    # 坏例F：别的档不需要登记簿，不许被这条误报
+    if absence_record_problems(poem(NOT_COLLECTED), {}):
+        problems.append('坏例F：「课标要求」那一档被这条误报了')
+    return problems
+
 def selftest_attest_status():
     """接进来的检查必须自己带坏例子：空过的检查比没有检查更危险。"""
     problems = []
     def poem(pid, title, st):
         return {'id': pid, 'title': title, 'textbookStatus': st}
-    def run(att, cov, coll, poems):
-        return check_attestation_status(poems, att, cov, coll)
+    def run(att, cov, coll, poems, extra=frozenset()):
+        return check_attestation_status(poems, att, cov, coll, extra)
     # 坏例1：核对表说收了、篇内写没收——学生照着篇内背，就会漏背
     d, _g = run({'a': {'status': 'match'}}, set(), set(), [poem('a', '甲', NOT_COLLECTED)])
     if not d: problems.append('坏例1：核对表说收了、篇内写没收，没被报')
@@ -620,9 +689,30 @@ def selftest_attest_status():
     # 坏例12：裁定表自己坏了（garden-ruling-broken）——不许默认放行
     d, _g = run({'a': {'status': 'garden-ruling-broken'}}, set(), set(), [poem('a', '甲', COLLECTED)])
     if not d: problems.append('坏例12：园地裁定表坏了却被默认放行')
+    # 坏例13：园地只有一条来源，写成「统编教材收录」就是升格——一条来源不够
+    d, _g = run({'a': {'status': 'garden-mirror-only'}}, set(), set(), [poem('a', '甲', COLLECTED)])
+    if not d: problems.append('坏例13：只有一条来源的园地证据被写成「统编教材收录」，没被报')
+    # 坏例14：同一条结论写成「未收（课标要求）」——手上那条来源说的是收了，不能反过来说没收
+    d, _g = run({'a': {'status': 'garden-mirror-only'}}, set(), set(), [poem('a', '甲', NOT_COLLECTED)])
+    if not d: problems.append('坏例14：有一条来源的园地证据被写成「未收（课标要求）」，没被报')
+    # 坏例14b：这一档的正确写法不许被误报（好例子被误报也算失败）
+    d, _g = run({'a': {'status': 'garden-mirror-only'}}, set(), set(), [poem('a', '甲', ONE_SOURCE)])
+    if d: problems.append('坏例14b：「统编教材收了（只有一条来源）」被误报：%s' % d[0])
+    # 坏例15：教材拓展的篇目（课标附录1里没有它）冒领「课标要求」
+    d, _g = run({'a': {'status': 'lesson-not-found'}}, set(), set(), [poem('a', '甲', NOT_COLLECTED)], extra={'a'})
+    if not d: problems.append('坏例15：不是课标篇目却写着「课标要求」，没被报')
+    # 坏例15b：课标篇目不许写成「统编教材里没找到这一课」——那等于把课标要求抹掉
+    d, _g = run({'a': {'status': 'lesson-not-found'}}, set(), set(), [poem('a', '甲', NOT_FOUND)])
+    if not d: problems.append('坏例15b：课标篇目被写成「统编教材里没找到这一课」，没被报')
+    # 坏例15c：教材拓展 + 没找到的正确写法不许被误报
+    d, _g = run({'a': {'status': 'lesson-not-found'}}, set(), set(), [poem('a', '甲', NOT_FOUND)], extra={'a'})
+    if d: problems.append('坏例15c：教材拓展的正确写法被误报：%s' % d[0])
+    # 坏例15d：教材拓展 + 没找到，写成「统编教材收录」必须被报
+    d, _g = run({'a': {'status': 'lesson-not-found'}}, set(), set(), [poem('a', '甲', COLLECTED)], extra={'a'})
+    if not d: problems.append('坏例15d：教材拓展、教材里没找到的篇目被写成「收录」，没被报')
     # 坏例10：五档标签必须与 tools/apply-textbook-status.py 里的 ALLOWED 一字不差（两份各写一份迟早分叉）
     src = (ROOT / 'tools' / 'apply-textbook-status.py').read_text(encoding='utf-8')
-    for label in (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL):
+    for label in (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL, ONE_SOURCE, NOT_FOUND):
         if label not in src:
             problems.append('坏例10：validate.py 里的「%s」在 apply-textbook-status.py 里找不到，两份分叉了' % label)
     return problems
@@ -781,8 +871,8 @@ def main():
     # data/volume-findings.json 是教材目录核对的结论表。每篇 frontmatter 的 textbookStatus
     # 必须和这张表对得上。没有这一条，核对结论就只是一份没人读的文档：
     # 篇目文件说「这篇教材收了」，核对表说没有，站点照篇目文件显示，学生照着背错。
-    TS_COLLECTED, TS_NOT, TS_CLASH, TS_COVERED, TS_PARTIAL = (
-        COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL)
+    TS_COLLECTED, TS_NOT, TS_CLASH, TS_COVERED, TS_PARTIAL, TS_ONE, TS_NOTFOUND = (
+        COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL, ONE_SOURCE, NOT_FOUND)
     vf_path = ROOT / 'data' / 'volume-findings.json'
     if not vf_path.exists():
         err('缺 data/volume-findings.json：先跑 python tools/build-textbook-lessons.py --report')
@@ -802,6 +892,15 @@ def main():
         # 园地裁定表（data/garden-rulings.json）：教材把这一首放在某一册的语文园地日积月累。
         # 教材目录表里没有它（那张表只收课文），所以「absent」在这里不是「教材没收」——但只有
         # 两条来源、镜像最多一条的条目才有这个效力。
+        # 核对表（check-textbook.py 生成的那张）说「同一册的语文园地页里有这一篇」——这就是「只有一条来源说收了」。
+        # 篇名匹配口径只在 check-textbook.py 里有一份（整名对、不许前缀互含），这里不再写第二份：
+        # 「悯农其一」对「悯农（其一）」这种归一化写两遍，迟早一遍认、一遍不认。
+        att_path = ROOT / 'data' / 'textbook-attestations.json'
+        att_rows = {}
+        if att_path.exists():
+            att_rows = {x['id']: x for x in json.loads(att_path.read_text(encoding='utf-8')).get('results', [])}
+        # 「课标篇目」还是「教材拓展」决定期望值长什么样：教材拓展的篇目不许冒领「课标要求」。
+        extra_ids_early = {p['id'] for p in poems if canon_title(p['title']) in extra_titles}
         gr_path = ROOT / 'data' / 'garden-rulings.json'
         garden_ok = set()
         if gr_path.exists():
@@ -815,7 +914,7 @@ def main():
             if not st:
                 no_status.append(p['title'])
                 continue
-            if st not in (TS_COLLECTED, TS_NOT, TS_CLASH, TS_COVERED, TS_PARTIAL):
+            if st not in TEXTBOOK_LABELS:
                 wrong_status.append('%s 的 textbookStatus 取值非法：%r' % (p['title'], st))
                 continue
             status = found.get(p['id'])
@@ -837,7 +936,10 @@ def main():
                 # 核对表自己已经判过园地这一档（两条来源），期望值就是收录
                 expect = TS_COLLECTED
             elif status == 'absent':
-                expect = TS_NOT
+                if (att_rows.get(p['id']) or {}).get('status') == 'garden-mirror-only':
+                    expect = TS_ONE      # 同一册的园地页里有这一篇，但只有一条来源
+                else:
+                    expect = TS_NOT if p['id'] not in extra_ids_early else TS_NOTFOUND
             else:
                 expect = None
             if expect and st != expect:
@@ -851,16 +953,26 @@ def main():
             err('教材核对发现册次不一致但还没改：%s' % '、'.join(unfixed[:8]))
 
         # 核对表（252 行那张）也必须接进来：它说没收、篇目文件说收了，站点照篇目文件显示。
-        att_path = ROOT / 'data' / 'textbook-attestations.json'
-        if not att_path.exists():
+        if not att_rows:
             err('缺 data/textbook-attestations.json：先跑 python tools/check-textbook.py')
         else:
-            att = {x['id']: x for x in json.loads(att_path.read_text(encoding='utf-8')).get('results', [])}
-            drift, dangling = check_attestation_status(poems, att, set(covered), {i for i in found if found[i] == 'title-collision'})
+            att = att_rows
+            drift, dangling = check_attestation_status(poems, att, set(covered),
+                {i for i in found if found[i] == 'title-collision'}, extra_ids_early)
             if drift:
                 err('教材核对表的结论与篇目状态对不上：%s' % '；'.join(drift[:8]))
             if dangling:
                 err('教材核对表里的「册次对不上」没有交代：%s' % '；'.join(dangling[:8]))
+
+        # 2.16b 「统编教材里没找到这一课」这句话必须由登记簿撑着（data/absence-checks.json）：
+        # 说没找到，就得先说清查了哪些课文目录、哪些语文园地页——不然这一档就是「教材没有」的委婉说法。
+        ab_path = ROOT / 'data' / 'absence-checks.json'
+        ab_records = {}
+        if ab_path.exists():
+            ab_records = json.loads(ab_path.read_text(encoding='utf-8')).get('checks') or {}
+        ab_problems = absence_record_problems(poems, ab_records)
+        if ab_problems:
+            err('「统编教材里没找到这一课」没有登记簿撑着：%s' % '；'.join(ab_problems[:8]))
 
     assigned_ids = {p['id'] for _e, p, _s in assignments}
     extra_ids = {p['id'] for p in poems if canon_title(p['title']) in extra_titles}

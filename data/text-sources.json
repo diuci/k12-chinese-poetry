@@ -1,9 +1,9 @@
 {
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
-  "generated": "2026-10-09",
+  "generated": "2026-10-10",
   "stats": {
-    "attested": 215,
-    "partial": 36,
+    "attested": 214,
+    "partial": 37,
     "notfound": 0,
     "nosource": 1,
     "withVariants": 60
@@ -2787,11 +2787,20 @@
       "title": "六月二十七日望湖楼醉书",
       "author": "苏轼",
       "stage": "小学",
-      "page": "御定佩文齋詠物詩選 (四庫全書本)/卷010",
-      "url": "https://zh.wikisource.org/wiki/%E5%BE%A1%E5%AE%9A%E4%BD%A9%E6%96%87%E9%BD%8B%E8%A9%A0%E7%89%A9%E8%A9%A9%E9%81%B8%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7010",
+      "page": "六月二十七日望湖樓醉書五絶",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%AD%E6%9C%88%E4%BA%8C%E5%8D%81%E4%B8%83%E6%97%A5%E6%9C%9B%E6%B9%96%E6%A8%93%E9%86%89%E6%9B%B8%E4%BA%94%E7%B5%B6",
       "lines": 2,
-      "hit": 2,
-      "miss": [],
+      "hit": 1,
+      "miss": [
+        {
+          "line": "黑云翻墨未遮山白雨跳珠乱入船",
+          "nearest": {
+            "line": "黑云翻墨未遮山白雨跳珠乱入船",
+            "source": "33姊妹计划:数据项黑云飜墨未遮山白雨跳珠乱入船",
+            "ratio": 0.684
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },

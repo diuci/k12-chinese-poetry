@@ -11,6 +11,9 @@
   统编教材未收（课标要求）
   统编教材收的是同名另一篇
   统编教材收在别的课里
+  统编教材收了一部分（课标要求更多）
+  统编教材收了（只有一条来源）
+  统编教材里没找到这一课
 
 结论全部从 data/volume-findings.json 来，不许手写。默认空跑，--write 才写盘。
 """
@@ -20,6 +23,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'tools'))
+import validate as V  # noqa: E402  「课标篇目 / 教材拓展」的口径只有一份，在 validate.py 里
 COLLECTED = '统编教材收录'
 NOT_COLLECTED = '统编教材未收（课标要求）'
 NAME_CLASH = '统编教材收的是同名另一篇'
@@ -29,13 +34,19 @@ COVERED_ELSEWHERE = '统编教材收在别的课里'
 # 第五档：教材收了，但只收了课标要求的一部分（课标要《老子》八章，教材那一课只有四章）。
 # 这一档不许并进「收在别的课里」：那等于告诉学生教材全覆盖了，缺的部分就不背了。
 PARTIAL = '统编教材收了一部分（课标要求更多）'
-ALLOWED = (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL)
+# 第六档：语文园地页里有这一篇，可只核到一条来源（那个第三方镜像）。不许升格成「收录」（一条不够），
+# 也不许反过来说「未收」（那条来源说的是收了）。这一档说的是证据的份数，不是教材有没有。
+ONE_SOURCE = '统编教材收了（只有一条来源）'
+# 第七档：仓里挂着统编教材的册次，可 23 册课文目录与 12 册语文园地页里都没找到这一课，而且它不是
+# 课标篇目（教材拓展）。说的是「我们没找到」，不是「教材没有」——园地表里有几页只列了栏目头、没列篇名。
+NOT_FOUND = '统编教材里没找到这一课'
+ALLOWED = (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL, ONE_SOURCE, NOT_FOUND)
 COVERAGE_PATH = ROOT / 'data' / 'textbook-coverage.json'
 GARDEN_RULES = ROOT / 'data' / 'garden-rulings.json'
 
 
 
-def status_of(finding, volume):
+def status_of(finding, volume, garden_hit=False, is_syllabus=True):
     if volume == '选修（2026起默写）':
         return NOT_COLLECTED
     if finding is None:
@@ -49,7 +60,12 @@ def status_of(finding, volume):
         # 语文园地收了、两条来源核过：教材确实收了，只是不在课文目录里
         return COLLECTED
     if st == 'absent':
-        return NOT_COLLECTED
+        # 课文目录里没有，可同一册的语文园地页里有这一篇：手上有一条来源说收了，不能写成「未收」；
+        # 但那条来源只是那个镜像，不够升格成「收录」。
+        if garden_hit:
+            return ONE_SOURCE
+        # 不是课标篇目（教材拓展）的不许冒领「课标要求」——课标附录1里没有它
+        return NOT_COLLECTED if is_syllabus else NOT_FOUND
     if st == 'volume-mismatch':
         return None
     return None
@@ -70,7 +86,7 @@ def garden_rule_ok(rule, volume):
     return True, ''
 
 
-def status_with_coverage(finding, volume, cov_entry):
+def status_with_coverage(finding, volume, cov_entry, garden_hit=False, is_syllabus=True):
     """先按教材目录的核对结论定档，再看覆盖表。
 
     覆盖表只在「按标题找不到这一课」时才有内容：它说的是教材把这篇收在别的课里，
@@ -78,7 +94,7 @@ def status_with_coverage(finding, volume, cov_entry):
     但它不许盖过「教材收的是同名另一篇」：那一篇教材里真有一个同名的是别的内容，
     这一条是给学生认篇名用的，覆盖表说「收在别的课里」并不能把它变成同一篇。
     """
-    st = status_of(finding, volume)
+    st = status_of(finding, volume, garden_hit, is_syllabus)
     if cov_entry and st != NAME_CLASH:
         # partial 只许把「收了」降级成「收了一部分」，不许把「收了一部分」升级成「收了」
         return PARTIAL if cov_entry.get('partial') else COVERED_ELSEWHERE
@@ -90,7 +106,7 @@ def status_with_garden(st, gr_ok):
 
     它只改「未收」这一档。不许把「同名另一篇」「收在别的课里」「收了一部分」改成「收录」——
     那三档说的是别的事，盖过去就是把缺的部分说成没缺。"""
-    if gr_ok and st == NOT_COLLECTED:
+    if gr_ok and st in (NOT_COLLECTED, ONE_SOURCE):
         return COLLECTED
     return st
 
@@ -128,7 +144,7 @@ def selftest():
     # 坏例6：没见过的 status 一律「判不出」，不许默认成收录——默认成收录就是说假话
     must(status_of({'id': 'x', 'status': 'looks-fine-to-me'}, '八年级上册') is None,
          '坏例6：没见过的 status 被默认成有结论')
-    # 坏例7：ALLOWED 四档必须每一档都造得出来，有一档是死的就说明字段与规则脱节了
+    # 坏例7：ALLOWED 每一档都必须造得出来，有一档是死的就说明字段与规则脱节了
     produced = {status_of({'id': 'a', 'status': s}, '七年级上册') for s in
                 ('match', 'title-variant', 'claimed-absent-but-present', 'title-collision', 'absent')}
     produced.add(status_of({'id': 'b', 'status': 'match'}, '选修（2026起默写）'))
@@ -136,6 +152,9 @@ def selftest():
     # 第五档（收了一部分）也得有规则能产出，否则 ALLOWED 里多了一档死的
     produced.add(status_with_coverage({'id': 'e', 'status': 'absent'}, '选择性必修上册',
                                      {'lessons': [{'volume': '选择性必修上册', 'title': '《老子》四章'}], 'partial': True}))
+    # 第六、七档也得有规则能产出——ALLOWED 里有一档是死的，就是字段与规则脱节
+    produced.add(status_of({'id': 'f', 'status': 'absent'}, '一年级下册', True))
+    produced.add(status_of({'id': 'g', 'status': 'absent'}, '一年级下册', False, False))
     for want in ALLOWED:
         must(want in produced, '坏例7：ALLOWED 里的「%s」没有任何规则能产出，字段与规则脱节' % want)
     # 坏例8：覆盖表必须盖过「教材未收」——教材把这篇收在别的课里，说「未收」就是假话
@@ -159,7 +178,7 @@ def selftest():
     must(status_with_coverage({'id': 'x', 'status': 'title-collision'}, '八年级上册',
                              {'lessons': [], 'partial': True}) == NAME_CLASH,
          '坏例13：partial 把「同名另一篇」抹掉了')
-    # 坏例14：ALLOWED 现在五档，每一档都得有规则能产出（有一档是死的就是字段与规则脱节）
+    # 坏例14：ALLOWED 现在七档，每一档都得有规则能产出（有一档是死的就是字段与规则脱节）
     produced2 = set(produced)
     produced2.add(status_with_coverage({'id': 'd', 'status': 'absent'}, '七年级上册',
                                        {'lessons': [{'volume': '七年级上册', 'title': 'x'}], 'partial': True}))
@@ -188,6 +207,28 @@ def selftest():
     must(not garden_rule_ok({'volume': '六年级下册', 'sources': ['a', 'b']}, '五年级下册')[0],
          '坏例19d：裁定表说的册次与仓内不一致却被放行')
 
+    # 坏例20：同一册的园地页里有这一篇，还写「统编教材未收（课标要求）」——手上那条来源说的是收了
+    must(status_of({'id': 'x', 'status': 'absent'}, '三年级下册', True) == ONE_SOURCE,
+         '坏例20：园地有一条来源却还判成「未收」')
+    # 坏例21：只有一条来源不许升格成「统编教材收录」
+    must(status_of({'id': 'x', 'status': 'absent'}, '三年级下册', True) != COLLECTED,
+         '坏例21：一条来源被升格成「统编教材收录」')
+    # 坏例22：教材拓展的篇目（课标附录1里没有它）不许冒领「课标要求」
+    must(status_of({'id': 'x', 'status': 'absent'}, '一年级下册', False, False) == NOT_FOUND,
+         '坏例22：不是课标篇目却写着「课标要求」')
+    # 坏例22b：课标篇目不许写成「统编教材里没找到这一课」——那等于把课标要求抹掉
+    must(status_of({'id': 'x', 'status': 'absent'}, '七年级上册', False, True) == NOT_COLLECTED,
+         '坏例22b：课标篇目被写成「统编教材里没找到这一课」')
+    # 坏例23：园地裁定核过两条来源，「只有一条来源」这一档必须被升格成收录（那三篇就靠这一条落地）
+    must(status_with_garden(ONE_SOURCE, True) == COLLECTED,
+         '坏例23：两条来源核过了还挂着「只有一条来源」')
+    # 坏例23b：裁定表不成立时不许升格
+    must(status_with_garden(ONE_SOURCE, False) == ONE_SOURCE,
+         '坏例23b：没有裁定也被升成收录')
+    # 坏例24：覆盖表不许把「只有一条来源」抹成「收在别的课里」——那是另一件事
+    must(status_with_coverage({'id': 'x', 'status': 'absent'}, '三年级下册', {'lessons': []}, True) == COVERED_ELSEWHERE,
+         '坏例24：覆盖表与园地证据的先后没定下来')
+
     print('[ok] apply-textbook-status --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
@@ -211,6 +252,23 @@ def main():
         for l in v['entries']:
             lesson_index.add((vol, l['title']))
     garden_rules = json.loads(GARDEN_RULES.read_text(encoding='utf-8')).get('rulings', {}) if GARDEN_RULES.exists() else {}
+    # 园地表（语文园地页里列出的篇名）只有一条来源（那个镜像），所以它只能决定「只有一条来源」这一档。
+    # 篇名匹配用 check-textbook.py 的那一份（整名对、不许前缀互含）：归一化写两遍，迟早一遍认「悯农（其一）」一遍不认。
+    import importlib.util
+    _spec = importlib.util.spec_from_file_location('checktextbook', ROOT / 'tools' / 'check-textbook.py')
+    CT = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(CT)
+    garden_tbl = CT.load_garden()
+    garden_same = set()
+    if garden_tbl:
+        for p in poems:
+            for vol, _raw, _gn, _url in CT.garden_match(p, garden_tbl):
+                if vol == p.get('volume'):
+                    garden_same.add(p['id'])
+    # 「课标篇目」还是「教材拓展」决定这一档长什么样：教材拓展的篇目不许冒领「课标要求」。
+    # 口径从 validate.py 来，不在这里再抄一份课标表。
+    _syllabus, extra_titles = V.parse_syllabus(V.SYLLABUS)
+    extra_ids = {p['id'] for p in poems if V.canon_title(p['title']) in extra_titles}
 
     cov_problems = []
     for pid, cv in cov.items():
@@ -236,7 +294,9 @@ def main():
         cv = cov.get(p['id'])
         gr = garden_rules.get(p['id'])
         gr_ok = bool(gr) and garden_rule_ok(gr, p.get('volume') or '')[0]
-        st = status_with_coverage(by_id.get(p['id']), p.get('volume') or '', cv)
+        st = status_with_coverage(by_id.get(p['id']), p.get('volume') or '', cv,
+                                      p['id'] in garden_same,
+                                      p['id'] not in extra_ids)
         st = status_with_garden(st, gr_ok)
         if st is None:
             unknown.append((p['title'], p.get('volume')))

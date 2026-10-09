@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-09",
+ "generated": "2026-10-10",
  "note": "简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / pending 没依据，留在待定清单。",
  "counts": {
   "page": 9537,
@@ -11,9 +11,9 @@
   "pending": 0
  },
  "counts_apparatus": {
-  "table": 35289,
-  "rule": 2076,
-  "identity": 8159,
+  "table": 35385,
+  "rule": 2081,
+  "identity": 8178,
   "keep": 92,
   "pending": 0,
   "page": 9799,
@@ -107946,7 +107946,7 @@
     "volume": "一年級上冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "詠物",
      "想象"
@@ -108587,7 +108587,7 @@
     "volume": "一年級上冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "詠物",
      "童趣"
@@ -108869,7 +108869,7 @@
     "volume": "一年級下冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "山居",
      "訪友"
@@ -109523,7 +109523,7 @@
     "volume": "一年級上冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "田園",
      "勞動"
@@ -109865,7 +109865,7 @@
     "volume": "一年級下冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "春天",
      "惜春"
@@ -111281,7 +111281,7 @@
     "volume": "一年級上冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "詠物",
      "哲理"
@@ -111641,7 +111641,7 @@
     "volume": "一年級下冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "詠物",
      "志趣"
@@ -111858,6 +111858,10 @@
      "紅豆生南國，春來發幾枝。",
      "願君多采擷，此物最相思。"
     ],
+    "收录范围": [
+     "- 不在統編教材的課文目錄里，也不在一年級下冊八頁語文園地的日積月累里；課標附錄 1（135 篇）里也沒有它。倉里掛在一年級下冊是按小學學段的常見位置排的，沒有教材課號支撐。",
+     "統編教材 23 冊課文目錄（`data/textbook-lessons.json`，781 條）里沒有同名課文；全倉目錄里帶「相思」的只有五年級上冊《長相思》（納蘭性德），那是另一篇。一年級下冊八頁語文園地逐頁讀過（2026-10-09）：園地一 春曉、妞妞趕牛；園地二 尋隱者不遇；園地三 贈汪倫；園地四 尊老愛幼其樂融融 等成語；園地五 孫悟空打妖怪；園地六 朝霞不出門晚霞行千里 等氣象諺語；園地七 不知則問（《荀子》）、一日無書百事荒蕪（陳壽）、讀萬卷書行萬里路（董其昌）；園地八 畫雞——八頁的日積月累里沒有王維《相思》。這些頁面出自同一個第三方鏡像（yw.suyang123.com），只算一條來源：所以這一篇寫的是「我們沒找到」，不是「教材沒有」。查過什麼記在 `data/absence-checks.json`。"
+    ],
     "注释": [
      "- 紅豆：又名相思子，古人常用來寄托思念。",
      "- 南國：南方。",
@@ -111883,7 +111887,7 @@
     "volume": "一年級下冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材里沒找到這一課",
     "theme": [
      "詠物",
      "相思"
@@ -112127,6 +112131,86 @@
      "pick": "采"
     },
     {
+     "at": 12,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "统编教材的课文目录里，也不在一年级",
+     "field": "sec:收录范围",
+     "line": 0,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    },
+    {
+     "at": 39,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "积月累里；课标附录 1（135 篇",
+     "field": "sec:收录范围",
+     "line": 0,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": " 23 册课文目录（`data/t",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    },
+    {
+     "at": 60,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "同名课文；全仓目录里带「相思」的只",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    },
+    {
+     "at": 275,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "这些页面出自同一个第三方镜像（yw",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
      "at": 3,
      "n": 1,
      "simp": "发",
@@ -112200,7 +112284,7 @@
     "volume": "一年級下冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "送別",
      "友情"
@@ -112688,7 +112772,7 @@
     "volume": "一年級上冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "詠物",
      "自然"
@@ -113578,7 +113662,7 @@
     "volume": "二年級上冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "童趣",
      "垂釣"
@@ -114058,7 +114142,7 @@
     "volume": "二年級下冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "田園",
      "勞動"
@@ -116264,7 +116348,7 @@
     "volume": "二年級上冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "冬天",
      "山水"
@@ -117385,7 +117469,7 @@
     "volume": "二年級下冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "夜晚",
      "寫景"
@@ -117729,7 +117813,7 @@
     "volume": "二年級下冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "詠物",
      "哲理"
@@ -119719,7 +119803,7 @@
     "volume": "三年級下冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "春天",
      "哲理"
@@ -120556,7 +120640,7 @@
     "volume": "三年級下冊",
     "form": "詞",
     "recite": "line",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "春天",
      "江南"
@@ -121456,7 +121540,7 @@
     "volume": "三年級上冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "童趣",
      "夏天"
@@ -121849,7 +121933,7 @@
     "volume": "三年級上冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "山水",
      "喜悅"
@@ -123366,7 +123450,7 @@
     "volume": "三年級下冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "山水",
      "閒適"
@@ -124424,7 +124508,7 @@
     "volume": "三年級上冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "夏天",
      "勞動"
@@ -125861,7 +125945,7 @@
     "volume": "四年級上冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "送別",
      "豪邁"
@@ -127281,7 +127365,7 @@
     "volume": "四年級上冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "神話",
      "孤獨"
@@ -129920,7 +130004,7 @@
     "volume": "四年級下冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "山水",
      "孤獨"
@@ -130615,7 +130699,7 @@
     "volume": "四年級下冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "詠物",
      "諷喻"
@@ -131752,7 +131836,7 @@
     "volume": "四年級上冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "山水",
      "幽靜"
@@ -132006,7 +132090,7 @@
     "volume": "五年級上冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "節日",
      "七夕"
@@ -132318,7 +132402,7 @@
     "volume": "五年級下冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "田園",
      "農忙"
@@ -135616,7 +135700,7 @@
     "volume": "五年級上冊",
     "form": "詞",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "漁隱",
      "閒適"
@@ -137993,7 +138077,7 @@
     "volume": "五年級上冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "哲理",
      "讀書"
@@ -139673,7 +139757,7 @@
     "volume": "五年級下冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "山水",
      "幽靜"
@@ -140076,7 +140160,7 @@
     "volume": "五年級下冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "送別",
      "友情"
@@ -140984,7 +141068,7 @@
   {
    "id": "wanghulou",
    "title": "六月二十七日望湖楼醉书",
-   "page": "御定佩文齋詠物詩選 (四庫全書本)/卷010",
+   "page": "六月二十七日望湖樓醉書五絶",
    "text_trad": [],
    "lines_trad": [
     "黑雲翻墨未遮山，白雨跳珠亂入船。",
@@ -142044,7 +142128,7 @@
     "volume": "六年級上冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "思鄉",
      "感慨"
@@ -144286,7 +144370,7 @@
     "volume": "六年級上冊",
     "form": "七言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "春天",
      "哲理"
@@ -148483,7 +148567,7 @@
     "volume": "六年級上冊",
     "form": "五言",
     "recite": "full",
-    "textbookStatus": "統編教材未收（課標要求）",
+    "textbookStatus": "統編教材收了（只有一條來源）",
     "theme": [
      "田園",
      "友情"

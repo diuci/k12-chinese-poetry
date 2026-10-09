@@ -448,7 +448,8 @@ def report(mism, collisions, missing, hits, variants, claimed, garden=None):
         out.append('')
     # 五档标签从 validate.py 的常量里来，不在这里手抄一遍：
     # 以前这里写的是「三种取值」，而篇目文件实际有五种——文档比产物少两档，读文档的人就少知道两档。
-    out.append('每篇 frontmatter 的 `textbookStatus` 就是这张表的结论落进篇目文件，五档标签（与 validate.py、apply-textbook-status.py 同一份）：')
+    out.append('每篇 frontmatter 的 `textbookStatus` 就是这张表的结论落进篇目文件，七档标签（与 validate.py、apply-textbook-status.py 同一份）：')
+    out.append(' / '.join(V.TEXTBOOK_LABELS) + '。')
     out.append(' / '.join([V.COLLECTED, V.NOT_COLLECTED, V.NAME_CLASH, V.COVERED_ELSEWHERE, V.PARTIAL]) + '。')
     out.append('「语文园地收了」这一档落进篇目文件时算「' + V.COLLECTED + '」，具体栏目写在 textbookCoveredBy 与篇内「收录范围」里。')
     out.append('校验器会拿这张表逐篇核对篇内写的状态，对不上就报错（validate.py 2.16）。')

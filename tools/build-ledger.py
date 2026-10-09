@@ -434,10 +434,8 @@ def main():
             '重复副本': counts.get('重复副本', 0),
             '来源不明': counts.get('来源不明', 0),
             # 统编教材到底收没收（结论从 data/volume-findings.json 来，见 docs/textbook-audit.md）
-            '统编教材收录': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收录'),
-            '统编教材未收（课标要求）': sum(1 for r in rows if r.get('textbookStatus') == '统编教材未收（课标要求）'),
-            '统编教材收的是同名另一篇': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收的是同名另一篇'),
-        '统编教材收在别的课里': sum(1 for r in rows if r.get('textbookStatus') == '统编教材收在别的课里'),
+            # 七档标签从 validate.py 的清单来，不在这里手抄；手抄的清单漏一档，那一档的篇数就凭空消失
+            **{label: sum(1 for r in rows if r.get('textbookStatus') == label) for label in V.TEXTBOOK_LABELS},
             '没有教材收录状态': sum(1 for r in rows if not r.get('textbookStatus')),
             # 出处核对（data/text-sources.json 的逐句结果）：这三个数字以前只活在 json 里
             **{'出处核对·' + k: v for k, v in source_check_counts({r['id'] for r in rows}).items()},
