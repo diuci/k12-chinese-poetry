@@ -19,7 +19,10 @@ site/
 package.json
 package-lock.json
 tools/build-site.py
-.github/
+# .github/ 先前也在这条里，结果本仓的 CI 被挡在仓外：GitHub 上最后一次跑的是 2026-10-03 的旧 Pages 流程，
+# 四十来步的护栏只活在一台机器的 .ps1 里。本仓是所有站点的唯一事实源，CI 必须入库。
+.github/*
+!.github/workflows/
 
 # Unihan 数据库（约 8MB，解压后 13MB）。
 # 由 python tools/gen-pinyin.py --fetch 下载后生成，属中间产物。

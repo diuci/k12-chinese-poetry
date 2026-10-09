@@ -1,0 +1,84 @@
+name: 校验内容仓
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出
+        uses: actions/checkout@v5
+
+      # 这份 workflow 先前被 .gitignore 里的 .github/ 挡在仓外：四十来步的链条只活在一台机器的 .ps1 里，
+      # GitHub 上最后一次跑的是 2026-10-03 那个旧 Pages 流程。内容仓是所有站点的唯一事实源——
+      # 它没有 CI，等于所有护栏都取决于「有人恰好记得在本地跑一遍」。
+
+      - name: 检查器自检（每个护栏先证明它抓得住坏例子）
+        run: |
+          python3 tools/validate.py --selftest
+          python3 tools/build-ledger.py --selftest
+          python3 tools/verify-variant-claims.py --selftest
+          python3 tools/hunt-variant-sources.py --selftest
+          python3 tools/check-variant-sources.py --selftest
+          python3 tools/check-variant-defaults.py --selftest
+          python3 tools/extract-fulltext-wikitext.py --selftest
+          python3 tools/enrich-variants.py --selftest
+          python3 tools/check-annotation-quotes.py --selftest
+          python3 tools/check-contamination.py --selftest
+          python3 tools/check-truncated.py --selftest
+          python3 tools/selftest-overlap.py
+          python3 tools/apply-author-years.py --selftest
+          python3 tools/gen-provenance.py --selftest
+          python3 tools/fix-meta-lines.py --selftest
+          python3 tools/audit-content.py --selftest
+          python3 tools/build-source-check.py --selftest
+          python3 tools/build-traditional.py --selftest
+          python3 tools/check-text-sources.py --selftest
+          node tools/check-legal.mjs --selftest
+
+      - name: 离线检查
+        run: |
+          python3 tools/validate.py
+          python3 tools/check-variant-sources.py
+          python3 tools/check-variant-defaults.py
+          python3 tools/check-contamination.py
+          python3 tools/check-duplicates.py
+          python3 tools/check-truncated.py
+          python3 tools/apply-textbook-status.py
+          python3 tools/apply-volume-findings.py
+          python3 tools/apply-author-years.py --check
+          python3 tools/gen-provenance.py --check
+          python3 tools/fix-meta-lines.py --check
+          python3 tools/build.py --check
+          python3 tools/inject-annotations.py --check
+
+      - name: 派生产物重算与审计
+        run: |
+          python3 tools/build-traditional.py --build
+          python3 tools/build-source-check.py
+          python3 tools/build-ledger.py
+          python3 tools/audit-content.py
+          node tools/check-legal.mjs
+
+      - name: 可复现闸门：跑完不许改动任何已提交的文件
+        # 上面那三步会写 data/traditional.json、data/source-check.json、data/ledger.json、docs/*.md。
+        # 重算结果与提交进去的不一样，这里就红：提交进去的产物必须是链条跑出来的，不是手改出来的。
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git status --porcelain
+            echo '链条重算改了文件：提交进去的产物不是链条跑出来的。先本地重跑、提交，再推。'
+            exit 1
+          fi
+          echo '[ok] 重算结果与提交进去的产物逐字节一致'
+
+      - name: 联网那三步为什么不在这里跑
+        run: |
+          echo 'check-text-sources.py 全量、verify-variant-claims.py --refresh、check-textbook.py 要读 data/page-cache 与 data/textbook-cache。'
+          echo '这两个缓存都不入库（统编教材是版权作品，整页镜像不许进仓），所以这三步只在本地链条里跑：41 步，见仓库说明与 docs/accuracy.md。'

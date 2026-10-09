@@ -316,13 +316,84 @@ VARIANT_GLYPHS = {'飮': '饮', '於': '于', '说': '说', '説': '说',
                   '隂': '阴', '懐': '怀', '乆': '久', '愼': '慎', '鬬': '斗', '舎': '舍', '𬴂': '騑',
                   # 第三批：誠齋集 (四庫全書本)/卷011「穉子弄氷」那一行上亲眼看到的写法。
                   # 没收的：彩/綵/䌽——那一篇页里写作「彩䌽丝」，是页自己的异体夹写，交给按顺序那一档去认，不进这张表。
-                  '穉': '稚', '氷': '冰'}
+                  '穉': '稚', '氷': '冰',
+                  # 第四批：送杜少府之任蜀州「海内存知己，天涯若比邻」。四庫全書系页面（古今詩刪 卷14）
+                  # 写作「天涯若比隣」——「隣」(U+96A3) 是「邻」的异体字形，OpenCC 的 TSCharacters 里只有
+                  # 「鄰→邻」没有这一条，不补就会把这一句判成没对上。Unihan kMandarin 两边都读 lín。
+                  '隣': '邻'}
 # 试过但没收的（不是同一个字的另一种写法，是真异文，留在「没对上」里给读者看）：
 #   阁/合、己/已、又/自、山/峰、弈/奕、爱/映、至/宿、讥/议、鸣/声、纕/𬙋、𫐐/𫐓、
 #   蔽/敝、那/哪、渡/度、歧/岐、欤/与——其中读音不同的那几对直接被自检拦下。
 # 「彊→强」一度加进来过，被上面那条「两边读音必须相同」的自检拦下：
 # Unihan kMandarin 里 彊 读 jiàng、强 读 qiáng，不能断定是同一个字的另一种写法。
 # 所以 谏逐客书 那一句留在「没对上」里，作为异文登记，不当成已核到。
+
+
+VARIANT_READINGS = ROOT / 'data' / 'variant-readings.json'
+UNIHAN_READINGS = ROOT / 'data' / 'unihan' / 'Unihan_Readings.txt'
+
+
+def _unihan_kmandarin(need):
+    out = {}
+    with UNIHAN_READINGS.open(encoding='utf-8') as f:
+        for line in f:
+            parts = line.rstrip('\n').split('\t')
+            if len(parts) >= 3 and parts[1] == 'kMandarin':
+                ch = chr(int(parts[0][2:], 16))
+                if ch in need:
+                    out[ch] = sorted(set(w.strip(' .') for w in parts[2].split()))
+    return out
+
+
+def _table_chars():
+    need = set()
+    for a, b in VARIANT_GLYPHS.items():
+        need.add(a)
+        need.add(b)
+    return need
+
+
+def export_variant_readings():
+    """把字表里每个字的 Unihan kMandarin 抄成一份小快照（这份要入库）。
+
+    为什么要抄：全量 Unihan 8MB 且已 gitignore，CI 里没有它，「两边读音必须相同」那条自检
+    就在 CI 里跑不了——存在但跑不了的检查等同于没有检查。快照只覆盖字表里的字，几 KB。
+    """
+    if not UNIHAN_READINGS.exists():
+        raise SystemExit('!! 缺 %s：先跑 python tools/gen-pinyin.py --fetch' % UNIHAN_READINGS)
+    need = _table_chars()
+    out = _unihan_kmandarin(need)
+    missing = sorted(need - set(out))
+    if missing:
+        raise SystemExit('!! Unihan 里查不到这些字的 kMandarin：%s' % '、'.join(missing))
+    VARIANT_READINGS.write_text(json.dumps({
+        'note': ('data/variant-readings.json 是 check-text-sources.py 里 VARIANT_GLYPHS 那张字表所用字的 '
+                 'Unihan kMandarin 读数快照，由 python tools/check-text-sources.py --export-variant-readings '
+                 '生成，不许手改。它存在的唯一理由：CI 没有 8MB 的 Unihan，而「异体字表每一对必须读音相同」'
+                 '这条自检必须在 CI 里跑。字表加了新字而这份没重生成，自检会当场报错。'),
+        'generated': __import__('datetime').datetime.now(__import__('datetime').timezone.utc).strftime('%Y-%m-%d'),
+        'chars': len(out),
+        'readings': out}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    print('[ok] 已写 %s（%d 个字）' % (VARIANT_READINGS, len(out)))
+    return 0
+
+
+def load_variant_readings():
+    """字表所用字的读音：有全量 Unihan 就用它，没有就用入库那份快照。两条路都必须覆盖整张表。"""
+    need = _table_chars()
+    if UNIHAN_READINGS.exists():
+        out = _unihan_kmandarin(need)
+    elif VARIANT_READINGS.exists():
+        rec = json.loads(VARIANT_READINGS.read_text(encoding='utf-8'))
+        out = {k: list(v) for k, v in (rec.get('readings') or {}).items()}
+    else:
+        raise SystemExit('!! 既没有 %s 也没有 %s：跑 python tools/check-text-sources.py --export-variant-readings'
+                         % (UNIHAN_READINGS, VARIANT_READINGS))
+    missing = sorted(need - set(out))
+    if missing:
+        raise SystemExit('!! 字表加了新字（%s）而读数快照没重生成：跑 --export-variant-readings'
+                         % '、'.join(missing))
+    return {k: set(v) for k, v in out.items()}
 
 
 def _nopunct(t):
@@ -354,9 +425,17 @@ def line_in(line, txt):
     if len(line) >= 6 and subseq_window(line, txt):
         return 'subseq'
 
-    near = nearest(line, txt)
-    if near and near['ratio'] >= 0.82:
-        return 'near'
+    # 先前这里还退到最后一档：difflib 相似度 >= 0.82 就算「对上了」。这一档被撤了。
+    # 撤它的理由不是「已经骗过了谁」，是它能凭空造出命中：只差一个字的两行相似度 0.9，
+    # 一句页里根本没有的诗就会被算成「全对上」。这种出口留着，早晚会用到不该用的地方。
+    # 撤完全仓重跑一遍：215 全对上 / 36 部分 / 0 都对不上 / 1 没有正文页，与撤之前逐字相同——
+    # 也就是说这一轮没有哪一篇是靠相似度蒙过去的。当场数过，不是推断。
+    # 顺带把起疑的那一篇查干净了：送杜少府之任蜀州 的来源页《全蜀藝文志 (四庫全書本)/卷20》
+    # 当场取页、走同一套 clean 之后数过——页里作「杜少府之任蜀州 王勃 城阙辅三秦 风烟望五津
+    # 与君离别意 同是宦游人 海内存知己 天涯若比邻 无为在岐路 儿女共沾巾」，四句全是 exact。
+    # 我先前直接搜 wikitext 说「页里没有」是搜错了：wikitext 是繁体（城闕輔三秦），简体串当然找不到。
+    # 差得少的句子照样进 miss 列表，nearest 会把页里最像的那行连同相似度一起写出来，给异文登记用——
+    # 但它不再计入「对上」的分子。
     return None
 
 
@@ -685,13 +764,9 @@ def selftest():
     for a, b in (('說', '悅'), ('知', '智'), ('渡', '度'), ('蔽', '敝'), ('泠', '冷'), ('岐', '歧')):
         must(a not in VARIANT_GLYPHS and b not in VARIANT_GLYPHS, '坏例3：%s/%s 被当成同一个字' % (a, b))
     # 表里每一对必须是「同一个字的另一种写法」：两边读音必须相同（拿 Unihan kMandarin 验）
-    mand = {}
-    with (ROOT / 'data' / 'unihan' / 'Unihan_Readings.txt').open(encoding='utf-8') as f:
-        for line in f:
-            parts = line.rstrip('\n').split('\t')
-            if len(parts) >= 3 and parts[1] == 'kMandarin':
-                ch = chr(int(parts[0][2:], 16))
-                mand[ch] = set(w.strip(' .') for w in parts[2].split())
+    # 读数从哪来：本地有全量 Unihan 就用它，CI 里没有就用入库那份快照。
+    # 两条路都必须覆盖整张字表——load_variant_readings 会数，缺字就当场报错。
+    mand = load_variant_readings()
     for a, b in VARIANT_GLYPHS.items():
         if a == b:
             continue
@@ -718,6 +793,15 @@ def selftest():
     must(override_problems({'某篇': {'no_page': True, 'note': '搜过两句都没有',
                                     'searched': ['頭上紅冠不用裁', '一叫千門萬戶開']}}) == [],
          '坏例6b：带着证据的 no_page 被误伤')
+    # 坏例7：四庫全書系页面写作「天涯若比隣」，我们作「比邻」——不认这对，这一篇永远算没核到
+    must(line_in('海内存知己，天涯若比邻', '海内存知己天涯若比隣') is not None,
+         '坏例7：隣/邻 没被认成同一个字')
+    must('隣' in VARIANT_GLYPHS and VARIANT_GLYPHS['隣'] == '邻', '坏例7b：隣 没进字表或映射写错')
+    # 坏例8：只差一个字、相似度 0.9 的句子，不许被当成「对上了」。
+    # 这一条盯的是先前那档 difflib>=0.82 的出口：像不是对上了。
+    must(line_in('城阙辅三秦风烟望五津', '城阙辅三秦风烟望五州') is None,
+         '坏例8：只差一个字就被算成对上了（相似度那一档没撤干净）')
+    must(line_in('海内存知己天涯若比邻', '海内存知己天涯若比邻') == 'exact', '坏例8b：整句直接命中反而不认了')
     print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
@@ -725,4 +809,6 @@ def selftest():
 if __name__ == '__main__':
     if '--selftest' in sys.argv:
         sys.exit(selftest())
+    if '--export-variant-readings' in sys.argv:
+        sys.exit(export_variant_readings())
     sys.exit(main())
