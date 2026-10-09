@@ -673,6 +673,7 @@ def main():
     TS_NOT = '统编教材未收（课标要求）'
     TS_CLASH = '统编教材收的是同名另一篇'
     TS_COVERED = '统编教材收在别的课里'
+    TS_PARTIAL = '统编教材收了一部分（课标要求更多）'
     vf_path = ROOT / 'data' / 'volume-findings.json'
     if not vf_path.exists():
         err('缺 data/volume-findings.json：先跑 python tools/build-textbook-lessons.py --report')
@@ -687,14 +688,15 @@ def main():
         cov_path = ROOT / 'data' / 'textbook-coverage.json'
         covered = set()
         if cov_path.exists():
-            covered = set(json.loads(cov_path.read_text(encoding='utf-8')).get('coverage', {}))
+            # 要的是整张表（不是只有 id）：partial 标记在这里，抹成 set 就把「收了一部分」这一档丢了
+            covered = json.loads(cov_path.read_text(encoding='utf-8')).get('coverage', {})
         no_status, wrong_status, unfixed = [], [], []
         for p in poems:
             st = p.get('textbookStatus')
             if not st:
                 no_status.append(p['title'])
                 continue
-            if st not in (TS_COLLECTED, TS_NOT, TS_CLASH, TS_COVERED):
+            if st not in (TS_COLLECTED, TS_NOT, TS_CLASH, TS_COVERED, TS_PARTIAL):
                 wrong_status.append('%s 的 textbookStatus 取值非法：%r' % (p['title'], st))
                 continue
             status = found.get(p['id'])
@@ -702,7 +704,8 @@ def main():
                 unfixed.append(p['title'])
                 continue
             if p['id'] in covered:
-                expect = TS_COVERED
+                # partial 的条目不许期望成「收在别的课里」——那等于说教材全覆盖了
+                expect = TS_PARTIAL if (covered.get(p['id']) or {}).get('partial') else TS_COVERED
             elif p.get('volume') == '选修（2026起默写）':
                 expect = TS_NOT
             elif status in ('match', 'title-variant', 'claimed-absent-but-present'):

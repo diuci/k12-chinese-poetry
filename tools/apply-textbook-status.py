@@ -26,7 +26,10 @@ NAME_CLASH = '统编教材收的是同名另一篇'
 # 第四种：教材收了，但收在别的课里、篇名不一样（课标叫《孟子》三则，教材叫鱼我所欲也/富贵不能淫/生于忧患死于安乐）。
 # 按标题去教材目录里找不到，以前被判成「教材未收」——那是错的：它告诉学生教材没有这一课，而教材明明有。
 COVERED_ELSEWHERE = '统编教材收在别的课里'
-ALLOWED = (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE)
+# 第五档：教材收了，但只收了课标要求的一部分（课标要《老子》八章，教材那一课只有四章）。
+# 这一档不许并进「收在别的课里」：那等于告诉学生教材全覆盖了，缺的部分就不背了。
+PARTIAL = '统编教材收了一部分（课标要求更多）'
+ALLOWED = (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL)
 COVERAGE_PATH = ROOT / 'data' / 'textbook-coverage.json'
 
 
@@ -57,8 +60,17 @@ def status_with_coverage(finding, volume, cov_entry):
     """
     st = status_of(finding, volume)
     if cov_entry and st != NAME_CLASH:
+        # partial 只许把「收了」降级成「收了一部分」，不许把「收了一部分」升级成「收了」
+        return PARTIAL if cov_entry.get('partial') else COVERED_ELSEWHERE
         return COVERED_ELSEWHERE
     return st
+
+
+def cover_label(lesson):
+    """写进 frontmatter 的「教材收在哪一课」。篇名自己带书名号的不许再套一层——
+    「《《老子》四章》」这种写法在页面上就是错相。"""
+    t = lesson['title']
+    return '%s%s' % (lesson['volume'], t if t.startswith('《') else '《%s》' % t)
 
 
 def selftest():
@@ -92,6 +104,9 @@ def selftest():
                 ('match', 'title-variant', 'claimed-absent-but-present', 'title-collision', 'absent')}
     produced.add(status_of({'id': 'b', 'status': 'match'}, '选修（2026起默写）'))
     produced.add(status_with_coverage({'id': 'c', 'status': 'absent'}, '七年级上册', {'lessons': []}))
+    # 第五档（收了一部分）也得有规则能产出，否则 ALLOWED 里多了一档死的
+    produced.add(status_with_coverage({'id': 'e', 'status': 'absent'}, '选择性必修上册',
+                                     {'lessons': [{'volume': '选择性必修上册', 'title': '《老子》四章'}], 'partial': True}))
     for want in ALLOWED:
         must(want in produced, '坏例7：ALLOWED 里的「%s」没有任何规则能产出，字段与规则脱节' % want)
     # 坏例8：覆盖表必须盖过「教材未收」——教材把这篇收在别的课里，说「未收」就是假话
@@ -102,6 +117,31 @@ def selftest():
          '坏例9：覆盖表把「同名另一篇」抹成了「收在别的课里」')
     # 坏例10：判不出就是判不出，覆盖表救不了它（覆盖表只说教材有这一课，不说这篇是谁）
     must(status_with_coverage(None, '七年级上册', None) is None, '坏例10：没有核对结论却被覆盖表填上了结论')
+
+    # 坏例11：partial 必须单独一档——教材只收四章、课标要八章，写成「收在别的课里」就是全覆盖
+    must(status_with_coverage({'id': 'x', 'status': 'absent'}, '选择性必修上册',
+                             {'lessons': [{'volume': '选择性必修上册', 'title': '《老子》四章'}], 'partial': True}) == PARTIAL,
+         '坏例11：只收了一部分被写成了「收在别的课里」（全覆盖）')
+    # 坏例12：partial 也不许退回「教材未收」——教材确实收了四章
+    must(status_with_coverage({'id': 'x', 'status': 'absent'}, '选择性必修上册',
+                             {'lessons': [{'volume': '选择性必修上册', 'title': '《老子》四章'}], 'partial': True}) != NOT_COLLECTED,
+         '坏例12：教材收了四章被判成教材未收')
+    # 坏例13：partial 不许盖过「同名另一篇」
+    must(status_with_coverage({'id': 'x', 'status': 'title-collision'}, '八年级上册',
+                             {'lessons': [], 'partial': True}) == NAME_CLASH,
+         '坏例13：partial 把「同名另一篇」抹掉了')
+    # 坏例14：ALLOWED 现在五档，每一档都得有规则能产出（有一档是死的就是字段与规则脱节）
+    produced2 = set(produced)
+    produced2.add(status_with_coverage({'id': 'd', 'status': 'absent'}, '七年级上册',
+                                       {'lessons': [{'volume': '七年级上册', 'title': 'x'}], 'partial': True}))
+    for want in ALLOWED:
+        must(want in produced2, '坏例14：ALLOWED 里的「%s」没有任何规则能产出' % want)
+
+    # 坏例15：篇名自己带书名号，不许再套一层
+    must(cover_label({'volume': '选择性必修上册', 'title': '《老子》四章'}) == '选择性必修上册《老子》四章',
+         '坏例15：书名号被套成两层（%s）' % cover_label({'volume': '选择性必修上册', 'title': '《老子》四章'}))
+    must(cover_label({'volume': '七年级下册', 'title': '木兰诗'}) == '七年级下册《木兰诗》',
+         '坏例15b：不带书名号的篇名没被包上')
 
     print('[ok] apply-textbook-status --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
@@ -125,11 +165,20 @@ def main():
     for vol, v in tl['volumes'].items():
         for l in v['entries']:
             lesson_index.add((vol, l['title']))
+    cov_problems = []
     for pid, cv in cov.items():
+        if len(cv.get('sources') or []) < 2:
+            cov_problems.append('%s 覆盖表里没写满两条独立来源' % pid)
         for l in cv['lessons']:
-            if (l['volume'], l['title']) not in lesson_index:
-                die('textbook-coverage.json 里 %s 说教材有「%s」（%s），但教材目录表里找不到这一课' % (pid, l['title'], l['volume']))
-
+            if (l['volume'], l['title']) not in lesson_index and \
+               (l['volume'], l.get('indexTitle') or '') not in lesson_index:
+                cov_problems.append('textbook-coverage.json 里 %s 说教材有「%s」（%s），但教材目录表里找不到这一课' % (pid, l['title'], l['volume']))
+    if cov_problems:
+        # 以前这里调了一个不存在的 die()：覆盖表一有问题就 NameError 崩掉，
+        # 看着像工具坏了，其实是把「哪一条是编的」这句话吞掉了。
+        for x in cov_problems:
+            print('  !! ' + x)
+        return 1
     plan, unknown = [], []
     for p in poems:
         cv = cov.get(p['id'])
@@ -149,7 +198,7 @@ def main():
         else:
             fm2 = fm + '\ntextbookStatus: %s' % st
         if cv:
-            by = '；'.join('%s《%s》' % (l['volume'], l['title']) for l in cv['lessons'])
+            by = '；'.join(cover_label(l) for l in cv['lessons'])
             if re.search(r'^textbookCoveredBy:', fm2, re.M):
                 fm2 = re.sub(r'^textbookCoveredBy:.*$', 'textbookCoveredBy: %s' % by, fm2, count=1, flags=re.M)
             else:

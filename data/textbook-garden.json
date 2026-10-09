@@ -1,0 +1,799 @@
+{
+  "note": "统编教材「语文园地」收录表。园地页与课文目录页同源（第三方镜像），所以这张表只是一条来源：它证明「这一册的语文园地页面上出现了这一篇」，不证明栏目归属，也不单独作为「教材收了」的判定。教材的注释、译文、赏析不进仓。",
+  "generated": "2026-10-09",
+  "source": "https://yw.suyang123.com",
+  "volumes": {
+    "一年级上册": [
+      {
+        "garden": "语文园地一",
+        "title": "咏鹅",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/13_langdu.html",
+        "section": "语文园地一·字词句运用",
+        "authorRaw": "[唐代] 骆宾王"
+      },
+      {
+        "garden": "语文园地一",
+        "title": "剪窗花",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/13_langdu.html",
+        "section": "语文园地一·字词句运用"
+      },
+      {
+        "garden": "语文园地二",
+        "title": "画",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/24_langdu.html",
+        "section": "语文园地二·字词句运用",
+        "authorRaw": "[唐代] 王维"
+      },
+      {
+        "garden": "语文园地二",
+        "title": "小白兔和小灰兔",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/24_langdu.html",
+        "section": "语文园地二·字词句运用"
+      },
+      {
+        "garden": "语文园地三",
+        "title": "谁会飞",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/46_langdu.html",
+        "section": "语文园地四·日积月累"
+      },
+      {
+        "garden": "语文园地四",
+        "title": "悯农（其二）",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/59_langdu.html",
+        "section": "语文园地四·字词句运用",
+        "authorRaw": "[唐代] 李绅"
+      },
+      {
+        "garden": "语文园地四",
+        "title": "小鸟念书",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/59_langdu.html",
+        "section": "语文园地四·字词句运用"
+      },
+      {
+        "garden": "语文园地五",
+        "title": "拔萝卜",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/78_langdu.html",
+        "section": "语文园地五·日积月累"
+      },
+      {
+        "garden": "语文园地六",
+        "title": "古朗月行（节选）",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/94_langdu.html",
+        "section": "语文园地六·字词句运用",
+        "authorRaw": "[唐代] 李白"
+      },
+      {
+        "garden": "语文园地六",
+        "title": "小松鼠找花生",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/94_langdu.html",
+        "section": "语文园地六·字词句运用"
+      },
+      {
+        "garden": "语文园地七",
+        "title": "猴子捞月亮",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/107_langdu.html",
+        "section": "语文园地七·日积月累"
+      },
+      {
+        "garden": "语文园地八",
+        "title": "风",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/119_langdu.html",
+        "section": "语文园地八·字词句运用",
+        "authorRaw": "[唐代] 李峤"
+      },
+      {
+        "garden": "语文园地八",
+        "title": "春节童谣",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/119_langdu.html",
+        "section": "语文园地八·字词句运用"
+      }
+    ],
+    "一年级下册": [
+      {
+        "garden": "语文园地一",
+        "title": "春晓",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/40013_langdu.html",
+        "section": "语文园地一·读一读",
+        "authorRaw": "[唐代] 孟浩然"
+      },
+      {
+        "garden": "语文园地一",
+        "title": "妞妞赶牛",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/40013_langdu.html",
+        "section": "语文园地一·读一读"
+      },
+      {
+        "garden": "语文园地二",
+        "title": "寻隐者不遇",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/40014_langdu.html",
+        "section": "语文园地二·字词句运用",
+        "authorRaw": "[唐代] 贾岛"
+      },
+      {
+        "garden": "语文园地三",
+        "title": "赠汪伦",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/40015_langdu.html",
+        "section": "语文园地三·识字加油站",
+        "authorRaw": "[唐代] 李白"
+      },
+      {
+        "garden": "语文园地四",
+        "status": "sections-only",
+        "sections": [
+          "语文园地四·识字加油站",
+          "语文园地四·字词句运用",
+          "语文园地四·日积月累",
+          "语文园地四·和大人一起读"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/40016_langdu.html"
+      },
+      {
+        "garden": "语文园地五",
+        "title": "孙悟空打妖怪",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/40017_langdu.html",
+        "section": "语文园地五·日积月累"
+      },
+      {
+        "garden": "语文园地六",
+        "status": "sections-only",
+        "sections": [
+          "语文园地六·识字加油站",
+          "语文园地六·字词句运用",
+          "语文园地六·字词句运用",
+          "语文园地六·日积月累",
+          "语文园地六·和大人一起读"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/40018_langdu.html"
+      },
+      {
+        "garden": "语文园地七",
+        "status": "sections-only",
+        "sections": [
+          "语文园地七·识字加油站",
+          "语文园地七·字词句运用",
+          "语文园地七·日积月累",
+          "语文园地七·和大人一起读"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/40019_langdu.html"
+      },
+      {
+        "garden": "语文园地八",
+        "title": "画鸡",
+        "url": "https://yw.suyang123.com/xiaoxue/yinianji/40020_langdu.html",
+        "section": "语文园地八·和大人一起读",
+        "authorRaw": "[明代] 唐寅"
+      }
+    ],
+    "二年级上册": [
+      {
+        "garden": "语文园地",
+        "title": "梅花",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/271_langdu.html",
+        "section": "语文园地一·识字加油站",
+        "authorRaw": "[宋代] 王安石"
+      },
+      {
+        "garden": "语文园地",
+        "title": "企鹅寄冰",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/271_langdu.html",
+        "section": "语文园地一·识字加油站"
+      },
+      {
+        "garden": "语文园地",
+        "title": "十二月花名歌",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/291_langdu.html",
+        "section": "语文园地二·日积月累"
+      },
+      {
+        "garden": "语文园地",
+        "title": "小儿垂钓",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/306_langdu.html",
+        "section": "语文园地三·字词句运用",
+        "authorRaw": "[唐代] 胡令能"
+      },
+      {
+        "garden": "语文园地",
+        "title": "王二小",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/306_langdu.html",
+        "section": "语文园地三·字词句运用"
+      },
+      {
+        "garden": "语文园地",
+        "title": "画家乡",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/329_langdu.html",
+        "section": "语文园地四·日积月累"
+      },
+      {
+        "garden": "语文园地",
+        "title": "江雪",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/347_langdu.html",
+        "authorRaw": "[唐代] 柳宗元"
+      },
+      {
+        "garden": "语文园地",
+        "title": "刻舟求剑",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/347_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "大禹治水",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/361_langdu.html",
+        "section": "语文园地六·日积月累"
+      },
+      {
+        "garden": "语文园地",
+        "title": "数九歌",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/379_langdu.html",
+        "section": "语文园地七·展示台"
+      },
+      {
+        "garden": "语文园地",
+        "title": "分不清是鸭还是霞",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/379_langdu.html",
+        "section": "语文园地七·展示台"
+      },
+      {
+        "garden": "语文园地",
+        "title": "称赞",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/395_langdu.html",
+        "section": "语文园地八·日积月累"
+      }
+    ],
+    "二年级下册": [
+      {
+        "garden": "语文园地",
+        "title": "赋得古原草送别（节选）",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/414_langdu.html",
+        "section": "语文园地一·字词句运用",
+        "authorRaw": "[唐代] 白居易"
+      },
+      {
+        "garden": "语文园地",
+        "title": "笋芽儿",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/414_langdu.html",
+        "section": "语文园地一·字词句运用"
+      },
+      {
+        "garden": "语文园地",
+        "title": "一株紫丁香",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/432_langdu.html",
+        "section": "语文园地二·日积月累"
+      },
+      {
+        "garden": "语文园地",
+        "title": "小柳树和小枣树",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/452_langdu.html",
+        "section": "语文园地三·日积月累"
+      },
+      {
+        "garden": "语文园地",
+        "title": "手影戏",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/467_langdu.html",
+        "section": "语文园地四·日积月累"
+      },
+      {
+        "garden": "语文园地",
+        "title": "弟子规",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/482_langdu.html",
+        "section": "语文园地五·我的发现"
+      },
+      {
+        "garden": "语文园地",
+        "title": "好天气和坏天气",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/482_langdu.html",
+        "section": "语文园地五·我的发现"
+      },
+      {
+        "garden": "语文园地",
+        "title": "悯农（其一）",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/505_langdu.html",
+        "section": "语文园地六·展示台",
+        "authorRaw": "[唐代] 李绅"
+      },
+      {
+        "garden": "语文园地",
+        "title": "最大的“书”",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/505_langdu.html",
+        "section": "语文园地六·展示台"
+      },
+      {
+        "garden": "语文园地",
+        "title": "二十四节气歌",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/520_langdu.html",
+        "section": "语文园地七·字词句运用"
+      },
+      {
+        "garden": "语文园地",
+        "title": "月亮姑娘做衣裳",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/520_langdu.html",
+        "section": "语文园地七·字词句运用"
+      },
+      {
+        "garden": "语文园地",
+        "title": "舟夜书所见",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/533_langdu.html",
+        "section": "语文园地八·我的发现",
+        "authorRaw": "[清代] 查慎行"
+      },
+      {
+        "garden": "语文园地",
+        "title": "李时珍",
+        "url": "https://yw.suyang123.com/xiaoxue/ernianji/533_langdu.html",
+        "section": "语文园地八·我的发现"
+      }
+    ],
+    "三年级上册": [
+      {
+        "garden": "语文园地",
+        "title": "所见",
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/549_langdu.html",
+        "authorRaw": "[清代] 袁枚"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地二·日积月累",
+          "语文园地二·词句段运用",
+          "语文园地二·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/569_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "快乐读书吧",
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/582_langdu.html",
+        "section": "语文园地三·日积月累"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地四·识字加油站",
+          "语文园地四·日积月累",
+          "语文园地四·词句段运用",
+          "语文园地四·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/594_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "早发白帝城",
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/623_langdu.html",
+        "authorRaw": "[唐代] 李白"
+      },
+      {
+        "garden": "语文园地",
+        "title": "采莲曲",
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/637_langdu.html",
+        "authorRaw": "[唐代] 王昌龄"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地八·识字加油站",
+          "语文园地八·日积月累",
+          "语文园地八·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/651_langdu.html"
+      }
+    ],
+    "三年级下册": [
+      {
+        "garden": "语文园地",
+        "title": "忆江南",
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/670_langdu.html",
+        "section": "语文园地一·识字加油站",
+        "authorRaw": "[唐代] 白居易"
+      },
+      {
+        "garden": "语文园地",
+        "title": "快乐读书吧",
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/686_langdu.html",
+        "section": "语文园地二·日积月累"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地三·识字加油站",
+          "语文园地三·词句段运用",
+          "语文园地三·日积月累",
+          "语文园地三·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/706_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "滁州西涧",
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/719_langdu.html",
+        "section": "语文园地四·词句段运用",
+        "authorRaw": "[唐代] 韦应物"
+      },
+      {
+        "garden": "语文园地",
+        "title": "词句段运用",
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/719_langdu.html",
+        "section": "语文园地四·词句段运用"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地六·识字加油站",
+          "语文园地六·日积月累",
+          "语文园地六·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/746_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地七·日积月累",
+          "语文园地七·词句段运用",
+          "语文园地七·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/760_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "大林寺桃花",
+        "url": "https://yw.suyang123.com/xiaoxue/sannianji/773_langdu.html",
+        "authorRaw": "[唐代] 白居易"
+      }
+    ],
+    "四年级上册": [
+      {
+        "garden": "语文园地",
+        "title": "鹿柴",
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/792_langdu.html",
+        "authorRaw": "[唐代] 王维"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地二·识字加油站",
+          "语文园地二·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/803_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地三·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/819_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "嫦娥",
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/830_langdu.html",
+        "section": "语文园地四·识字加油站",
+        "authorRaw": "[唐代] 李商隐"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地六·识字加油站",
+          "语文园地六·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/849_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "别董大",
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/866_langdu.html",
+        "authorRaw": "[唐代] 高适"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地八·识字加油站",
+          "语文园地八·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/878_langdu.html"
+      }
+    ],
+    "四年级下册": [
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "卜算子·咏梅",
+          "语文园地一·词句段运用",
+          "语文园地一·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/897_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "江畔独步寻花",
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/910_langdu.html",
+        "section": "语文园地二·识字加油站",
+        "authorRaw": "[唐代] 杜甫"
+      },
+      {
+        "garden": "语文园地",
+        "title": "快乐读书吧",
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/910_langdu.html",
+        "section": "语文园地二·识字加油站"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地三·识字加油站",
+          "语文园地三·日积月累",
+          "语文园地三·词句段运用",
+          "语文园地三·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/930_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "蜂",
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/945_langdu.html",
+        "section": "语文园地四·识字加油站",
+        "authorRaw": "[唐代] 罗隐"
+      },
+      {
+        "garden": "语文园地",
+        "title": "独坐敬亭山",
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/969_langdu.html",
+        "authorRaw": "[唐代] 李白"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地七·识字加油站",
+          "语文园地七·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/987_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地八·日积月累",
+          "语文园地八·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/sinianji/997_langdu.html"
+      }
+    ],
+    "五年级上册": [
+      {
+        "garden": "语文园地",
+        "title": "蝉",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1011_langdu.html",
+        "section": "语文园地一·词句段运用",
+        "authorRaw": "[唐代] 虞世南"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地二·交流平台",
+          "语文园地二·日积月累",
+          "语文园地二·词句段运用",
+          "语文园地二·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1026_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "乞巧",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1039_langdu.html",
+        "section": "语文园地三·词句段运用",
+        "authorRaw": "[唐代] 林杰"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地四·词句段运用",
+          "语文园地四·词句段运用",
+          "语文园地四·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1060_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地六·词句段运用",
+          "语文园地六·词句段运用",
+          "语文园地六·词句段运用",
+          "语文园地六·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1083_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "渔歌子",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1103_langdu.html",
+        "section": "语文园地七·词句段运用",
+        "authorRaw": "[唐代] 张志和"
+      },
+      {
+        "garden": "语文园地",
+        "title": "观书有感其一",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1116_langdu.html",
+        "section": "语文园地八·词句段运用",
+        "authorRaw": "[宋代] 朱熹"
+      },
+      {
+        "garden": "语文园地",
+        "title": "观书有感其二",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1116_langdu.html",
+        "section": "语文园地八·词句段运用",
+        "authorRaw": "[宋代] 朱熹"
+      }
+    ],
+    "五年级下册": [
+      {
+        "garden": "语文园地",
+        "title": "游子吟",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1135_langdu.html",
+        "section": "语文园地一·词句段运用",
+        "authorRaw": "[唐代] 孟郊"
+      },
+      {
+        "garden": "语文园地",
+        "title": "鸟鸣涧",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1150_langdu.html",
+        "section": "语文园地二·词句段运用",
+        "authorRaw": "[唐代] 王维"
+      },
+      {
+        "garden": "语文园地",
+        "title": "凉州词",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1172_langdu.html",
+        "section": "语文园地四·词句段运用",
+        "authorRaw": "[唐代] 王之涣"
+      },
+      {
+        "garden": "语文园地",
+        "title": "黄鹤楼送孟浩然之广陵",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1172_langdu.html",
+        "section": "语文园地四·词句段运用",
+        "authorRaw": "[唐代] 李白"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地六·词句段运用",
+          "语文园地六·词句段运用",
+          "语文园地六·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1197_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "乡村四月",
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1210_langdu.html",
+        "section": "语文园地七·词句段运用",
+        "authorRaw": "[宋代] 翁卷"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地八·词句段运用",
+          "语文园地八·词句段运用",
+          "语文园地八·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/wunianji/1222_langdu.html"
+      }
+    ],
+    "六年级上册": [
+      {
+        "garden": "语文园地",
+        "title": "过故人庄",
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1244_langdu.html",
+        "authorRaw": "[唐代] 孟浩然"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地二·日积月累",
+          "语文园地二·词句段运用",
+          "语文园地二·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1263_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "title": "春日",
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1274_langdu.html",
+        "authorRaw": "[宋代] 朱熹"
+      },
+      {
+        "garden": "语文园地",
+        "title": "回乡偶书",
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1286_langdu.html",
+        "authorRaw": "[唐代] 贺知章"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地六·词句段运用",
+          "语文园地六·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1322_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地七·日积月累",
+          "语文园地七·词句段运用",
+          "语文园地七·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1335_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地八·日积月累",
+          "语文园地八·词句段运用",
+          "语文园地八·词句段运用"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1351_langdu.html"
+      }
+    ],
+    "六年级下册": [
+      {
+        "garden": "语文园地",
+        "title": "长歌行",
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1370_langdu.html",
+        "section": "语文园地一·词句段运用"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地二·词句段运用",
+          "语文园地二·词句段运用",
+          "语文园地二·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1383_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地四·词句段运用",
+          "语文园地四·词句段运用",
+          "语文园地四·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1416_langdu.html"
+      },
+      {
+        "garden": "语文园地",
+        "status": "sections-only",
+        "sections": [
+          "语文园地五·词句段运用",
+          "语文园地五·词句段运用",
+          "语文园地五·日积月累"
+        ],
+        "url": "https://yw.suyang123.com/xiaoxue/liunianji/1434_langdu.html"
+      }
+    ]
+  },
+  "summary": {
+    "volumesWithGarden": 12,
+    "items": 74,
+    "sectionsOnlyPages": 29
+  }
+}

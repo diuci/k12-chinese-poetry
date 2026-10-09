@@ -35,6 +35,7 @@ jobs:
           python3 tools/check-contamination.py --selftest
           python3 tools/check-duplicates.py --selftest
           python3 tools/check-truncated.py --selftest
+          python3 tools/build-textbook-garden.py --selftest
           python3 tools/check-textbook.py --selftest
           python3 tools/apply-textbook-status.py --selftest
           python3 tools/apply-volume-findings.py --selftest

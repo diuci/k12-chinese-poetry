@@ -3,11 +3,15 @@
   "source": "https://yw.suyang123.com",
   "stats": {
     "match": 154,
-    "lesson-not-found": 53,
+    "coverage-override": 6,
     "partial": 30,
     "volume-mismatch": 6,
+    "garden-mirror-only": 33,
+    "lesson-not-found": 10,
+    "garden-other-volume": 3,
     "mismatch": 1,
-    "no-textbook": 8
+    "no-textbook": 8,
+    "coverage-partial": 1
   },
   "results": [
     {
@@ -136,9 +140,16 @@
       "author": "佚名",
       "stage": "初中",
       "volume": "七年级下册",
-      "status": "lesson-not-found",
-      "volume_url": "https://yw.suyang123.com/chuzhong/qinianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "status": "coverage-override",
+      "lessons": [
+        {
+          "volume": "七年级下册",
+          "lesson": "9",
+          "title": "木兰诗",
+          "url": "https://yw.suyang123.com/chuzhong/qinianji/20088_langdu.html"
+        }
+      ],
+      "note": "课标义务教育 06 作「木兰辞（唧唧复唧唧）」，统编七年级下册第 9 课篇名作《木兰诗》，同一篇（仓内正文与教材 6 句全对上）。仓内沿用课标篇名，教材篇名登记在这里。"
     },
     {
       "id": "boqinhuai",
@@ -464,9 +475,28 @@
       "author": "孟子",
       "stage": "初中",
       "volume": "九年级下册",
-      "status": "lesson-not-found",
-      "volume_url": "https://yw.suyang123.com/chuzhong/jiunianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "status": "coverage-override",
+      "lessons": [
+        {
+          "volume": "九年级下册",
+          "lesson": "9",
+          "title": "鱼我所欲也",
+          "url": "https://yw.suyang123.com/chuzhong/jiunianji/21213_langdu.html"
+        },
+        {
+          "volume": "八年级上册",
+          "lesson": "自读",
+          "title": "生于忧患，死于安乐",
+          "url": "https://yw.suyang123.com/chuzhong/banianji/20935_langdu.html"
+        },
+        {
+          "volume": "八年级上册",
+          "lesson": "自读",
+          "title": "富贵不能淫",
+          "url": "https://yw.suyang123.com/chuzhong/banianji/20934_langdu.html"
+        }
+      ],
+      "note": "课标初中 43《孟子》三则的三则，分别对应统编九下第 9 课《鱼我所欲也》、八上自读《生于忧患，死于安乐》、八上自读《富贵不能淫》。三则分散在三册、篇名与课标不同，按标题找不到，但教材确实收了。"
     },
     {
       "id": "zhuangzi1",
@@ -474,9 +504,22 @@
       "author": "庄子",
       "stage": "初中",
       "volume": "九年级下册",
-      "status": "lesson-not-found",
-      "volume_url": "https://yw.suyang123.com/chuzhong/jiunianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "status": "coverage-override",
+      "lessons": [
+        {
+          "volume": "八年级下册",
+          "lesson": "自读",
+          "title": "北冥有鱼",
+          "url": "https://yw.suyang123.com/chuzhong/banianji/21026_langdu.html"
+        },
+        {
+          "volume": "八年级下册",
+          "lesson": "自读",
+          "title": "庄子与惠子游于濠梁之上",
+          "url": "https://yw.suyang123.com/chuzhong/banianji/21027_langdu.html"
+        }
+      ],
+      "note": "课标初中 44《庄子》一则对应统编八下第 21 课《〈庄子〉二则》（北冥有鱼 / 庄子与惠子游于濠梁之上）。仓里另有一份独立的《北冥有鱼》挂在八下，两份不是重复：一份按课标、一份按教材。"
     },
     {
       "id": "liji1",
@@ -1389,9 +1432,13 @@
       "author": "李白",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "一年级上册",
+      "gardenTitle": "古朗月行（节选）",
+      "garden": "语文园地六",
+      "url": "https://yw.suyang123.com/xiaoxue/yinianji/94_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "yonge",
@@ -1399,9 +1446,13 @@
       "author": "骆宾王",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "一年级上册",
+      "gardenTitle": "咏鹅",
+      "garden": "语文园地一",
+      "url": "https://yw.suyang123.com/xiaoxue/yinianji/13_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "minnong2",
@@ -1409,9 +1460,13 @@
       "author": "李绅",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "一年级上册",
+      "gardenTitle": "悯农（其二）",
+      "garden": "语文园地四",
+      "url": "https://yw.suyang123.com/xiaoxue/yinianji/59_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "jiangnan",
@@ -1434,9 +1489,13 @@
       "author": "佚名",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "一年级上册",
+      "gardenTitle": "画",
+      "garden": "语文园地二",
+      "url": "https://yw.suyang123.com/xiaoxue/yinianji/24_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "feng",
@@ -1444,9 +1503,13 @@
       "author": "李峤",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "一年级上册",
+      "gardenTitle": "风",
+      "garden": "语文园地八",
+      "url": "https://yw.suyang123.com/xiaoxue/yinianji/119_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "xunyinzhe",
@@ -1454,9 +1517,13 @@
       "author": "贾岛",
       "stage": "小学",
       "volume": "一年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "一年级下册",
+      "gardenTitle": "寻隐者不遇",
+      "garden": "语文园地二",
+      "url": "https://yw.suyang123.com/xiaoxue/yinianji/40014_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "xiaochi",
@@ -1479,9 +1546,13 @@
       "author": "孟浩然",
       "stage": "小学",
       "volume": "一年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "一年级下册",
+      "gardenTitle": "春晓",
+      "garden": "语文园地一",
+      "url": "https://yw.suyang123.com/xiaoxue/yinianji/40013_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "chishang",
@@ -1504,9 +1575,13 @@
       "author": "唐寅",
       "stage": "小学",
       "volume": "一年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "一年级下册",
+      "gardenTitle": "画鸡",
+      "garden": "语文园地八",
+      "url": "https://yw.suyang123.com/xiaoxue/yinianji/40020_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "xiangsi",
@@ -1516,7 +1591,7 @@
       "volume": "一年级下册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "zengwanglun",
@@ -1524,9 +1599,13 @@
       "author": "李白",
       "stage": "小学",
       "volume": "一年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "一年级下册",
+      "gardenTitle": "赠汪伦",
+      "garden": "语文园地三",
+      "url": "https://yw.suyang123.com/xiaoxue/yinianji/40015_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "jingyesi",
@@ -1579,9 +1658,13 @@
       "author": "袁枚",
       "stage": "小学",
       "volume": "三年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "三年级上册",
+      "gardenTitle": "所见",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sannianji/549_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "zaofabaidicheng",
@@ -1589,9 +1672,13 @@
       "author": "李白",
       "stage": "小学",
       "volume": "三年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "三年级上册",
+      "gardenTitle": "早发白帝城",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sannianji/623_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "wangtianmenshan",
@@ -1656,9 +1743,13 @@
       "author": "王昌龄",
       "stage": "小学",
       "volume": "三年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "三年级上册",
+      "gardenTitle": "采莲曲",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sannianji/637_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "yinhushang",
@@ -1726,9 +1817,13 @@
       "author": "白居易",
       "stage": "小学",
       "volume": "三年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "三年级下册",
+      "gardenTitle": "大林寺桃花",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sannianji/773_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "yijiangnan",
@@ -1763,9 +1858,13 @@
       "author": "杜甫",
       "stage": "小学",
       "volume": "三年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-other-volume",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "四年级下册",
+      "gardenTitle": "江畔独步寻花",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sinianji/910_langdu.html",
+      "note": "同学段所有册的课文目录里都没有；语文园地里有这一篇，但在「四年级下册」——册次要单独查"
     },
     {
       "id": "qingming",
@@ -1788,9 +1887,13 @@
       "author": "韦应物",
       "stage": "小学",
       "volume": "三年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "三年级下册",
+      "gardenTitle": "滁州西涧",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sannianji/719_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "jueju-chiri",
@@ -1828,9 +1931,13 @@
       "author": "胡令能",
       "stage": "小学",
       "volume": "二年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "二年级上册",
+      "gardenTitle": "小儿垂钓",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/ernianji/306_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "chilege",
@@ -1868,9 +1975,13 @@
       "author": "王安石",
       "stage": "小学",
       "volume": "二年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "二年级上册",
+      "gardenTitle": "梅花",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/ernianji/271_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "jiangxue",
@@ -1878,9 +1989,13 @@
       "author": "柳宗元",
       "stage": "小学",
       "volume": "二年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "二年级上册",
+      "gardenTitle": "江雪",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/ernianji/347_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "dengguanquelou",
@@ -1918,9 +2033,13 @@
       "author": "李绅",
       "stage": "小学",
       "volume": "二年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "二年级下册",
+      "gardenTitle": "悯农（其一）",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/ernianji/505_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "jingcisi",
@@ -1985,9 +2104,13 @@
       "author": "白居易",
       "stage": "小学",
       "volume": "二年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "二年级下册",
+      "gardenTitle": "赋得古原草送别（节选）",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/ernianji/414_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "qiqiao",
@@ -1995,9 +2118,13 @@
       "author": "林杰",
       "stage": "小学",
       "volume": "五年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "五年级上册",
+      "gardenTitle": "乞巧",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/wunianji/1039_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "shanjuqiuming",
@@ -2020,9 +2147,16 @@
       "author": "龚自珍",
       "stage": "小学",
       "volume": "五年级上册",
-      "status": "lesson-not-found",
-      "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "status": "coverage-override",
+      "lessons": [
+        {
+          "volume": "五年级上册",
+          "lesson": "12",
+          "title": "己亥杂诗",
+          "url": "https://yw.suyang123.com/xiaoxue/wunianji/1052_langdu.html"
+        }
+      ],
+      "note": "统编五年级上册第 12 课《古诗三首》含《己亥杂诗》。镜像的目录页把「己」误作「已」（同一课的课文页仍作《己亥杂诗》），所以按仓内篇名在目录表里找不到——indexTitle 记的就是目录表里那个写错的样子，仓内篇名不跟着错。"
     },
     {
       "id": "fengqiaoyebo",
@@ -2045,9 +2179,13 @@
       "author": "张志和",
       "stage": "小学",
       "volume": "五年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "五年级上册",
+      "gardenTitle": "渔歌子",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/wunianji/1103_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "shier",
@@ -2070,9 +2208,13 @@
       "author": "朱熹",
       "stage": "小学",
       "volume": "五年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "五年级上册",
+      "gardenTitle": "观书有感其一",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/wunianji/1116_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "zengwang",
@@ -2080,9 +2222,13 @@
       "author": "汉乐府",
       "stage": "小学",
       "volume": "五年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-other-volume",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "六年级下册",
+      "gardenTitle": "长歌行",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/liunianji/1370_langdu.html",
+      "note": "同学段所有册的课文目录里都没有；语文园地里有这一篇，但在「六年级下册」——册次要单独查"
     },
     {
       "id": "changxiangsi",
@@ -2120,9 +2266,13 @@
       "author": "翁卷",
       "stage": "小学",
       "volume": "五年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "五年级下册",
+      "gardenTitle": "乡村四月",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/wunianji/1210_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "congjunxing",
@@ -2232,9 +2382,13 @@
       "author": "王维",
       "stage": "小学",
       "volume": "五年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "五年级下册",
+      "gardenTitle": "鸟鸣涧",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/wunianji/1150_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "huanghelou",
@@ -2242,9 +2396,13 @@
       "author": "李白",
       "stage": "小学",
       "volume": "五年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "五年级下册",
+      "gardenTitle": "黄鹤楼送孟浩然之广陵",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/wunianji/1172_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "shuhuyin",
@@ -2282,9 +2440,13 @@
       "author": "贺知章",
       "stage": "小学",
       "volume": "六年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/liunianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "六年级上册",
+      "gardenTitle": "回乡偶书",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/liunianji/1286_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "sujiandejiang",
@@ -2307,9 +2469,13 @@
       "author": "朱熹",
       "stage": "小学",
       "volume": "六年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/liunianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "六年级上册",
+      "gardenTitle": "春日",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/liunianji/1274_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "jiangnanchun",
@@ -2362,9 +2528,13 @@
       "author": "孟浩然",
       "stage": "小学",
       "volume": "六年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/liunianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "六年级上册",
+      "gardenTitle": "过故人庄",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/liunianji/1244_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "shiyiwangyue",
@@ -2507,9 +2677,13 @@
       "author": "孟郊",
       "stage": "小学",
       "volume": "六年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-other-volume",
       "volume_url": "https://yw.suyang123.com/xiaoxue/liunianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "五年级下册",
+      "gardenTitle": "游子吟",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/wunianji/1135_langdu.html",
+      "note": "同学段所有册的课文目录里都没有；语文园地里有这一篇，但在「五年级下册」——册次要单独查"
     },
     {
       "id": "shihuiyin",
@@ -2637,9 +2811,13 @@
       "author": "高适",
       "stage": "小学",
       "volume": "四年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "四年级上册",
+      "gardenTitle": "别董大",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sinianji/866_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "xiarijueju",
@@ -2662,9 +2840,13 @@
       "author": "李商隐",
       "stage": "小学",
       "volume": "四年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "四年级上册",
+      "gardenTitle": "嫦娥",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sinianji/830_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "mujiangyin",
@@ -2734,9 +2916,13 @@
       "author": "王维",
       "stage": "小学",
       "volume": "四年级上册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/shangce.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "四年级上册",
+      "gardenTitle": "鹿柴",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sinianji/792_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "sishitianyuan-25",
@@ -2819,9 +3005,13 @@
       "author": "李白",
       "stage": "小学",
       "volume": "四年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "四年级下册",
+      "gardenTitle": "独坐敬亭山",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sinianji/969_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "furonglou",
@@ -2844,9 +3034,13 @@
       "author": "罗隐",
       "stage": "小学",
       "volume": "四年级下册",
-      "status": "lesson-not-found",
+      "status": "garden-mirror-only",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/xiace.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "gardenVolume": "四年级下册",
+      "gardenTitle": "蜂",
+      "garden": "语文园地",
+      "url": "https://yw.suyang123.com/xiaoxue/sinianji/945_langdu.html",
+      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
     },
     {
       "id": "quanxue",
@@ -3296,7 +3490,7 @@
       "volume": "必修上册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/gaozhong/bixiushang.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "yumeiren",
@@ -3336,7 +3530,7 @@
       "volume": "必修上册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/gaozhong/bixiushang.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "jingnv",
@@ -3896,9 +4090,16 @@
       "author": "老子",
       "stage": "高中",
       "volume": "选择性必修上册",
-      "status": "lesson-not-found",
-      "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiushang.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "status": "coverage-partial",
+      "lessons": [
+        {
+          "volume": "选择性必修上册",
+          "lesson": "6.1",
+          "title": "《老子》四章",
+          "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30309_langdu.html"
+        }
+      ],
+      "note": "课标高中 21 要求《老子》八章（八章章号写在仓内篇名里），统编选择性必修上册第 6.1 课只收《老子》四章。这是「教材收了一部分」，不是「教材收了」，也不是「教材未收」：缺的几章仍按课标要背，不许拿教材目录当「不用背」。"
     },
     {
       "id": "lunyu12",
@@ -3921,9 +4122,16 @@
       "author": "佚名",
       "stage": "高中",
       "volume": "选择性必修上册",
-      "status": "lesson-not-found",
-      "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiushang.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "status": "coverage-override",
+      "lessons": [
+        {
+          "volume": "选择性必修上册",
+          "lesson": "5.2",
+          "title": "大学之道",
+          "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30307_langdu.html"
+        }
+      ],
+      "note": "课标高中 23《大学》（默写范围「古之欲明明德于天下者……壹是皆以修身为本」）即统编选择性必修上册第 5.2 课《大学之道》——教材用《大学》首章的原句作篇名。"
     },
     {
       "id": "jiangjinjiu",
@@ -4027,7 +4235,7 @@
       "volume": "选择性必修上册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiushang.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "linanchunyu",
@@ -4196,7 +4404,7 @@
       "volume": "选择性必修下册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiuxia.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "dengkuai-ge",
@@ -4251,9 +4459,16 @@
       "author": "屈原",
       "stage": "高中",
       "volume": "选择性必修下册",
-      "status": "lesson-not-found",
-      "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiuxia.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "status": "coverage-override",
+      "lessons": [
+        {
+          "volume": "选择性必修下册",
+          "lesson": "1.2",
+          "title": "离骚（节选）",
+          "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30502_langdu.html"
+        }
+      ],
+      "note": "课标高中 03《离骚》（默写范围「帝高阳之苗裔兮……来吾道夫先路」）对应统编选择性必修下册第 1.2 课《离骚（节选）》。教材目录原文写「1.2离骚（节选）」，目录表把括号里的「节选」去掉了，所以 indexTitle 记作「离骚」。"
     },
     {
       "id": "zhongshu-guotuotuo",
@@ -4311,7 +4526,7 @@
       "volume": "选择性必修下册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiuxia.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "pusaman-wentingyun",
@@ -4321,7 +4536,7 @@
       "volume": "选择性必修下册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiuxia.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "shuxiang",
@@ -4378,7 +4593,7 @@
       "volume": "选择性必修下册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiuxia.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "changting-songbei",
@@ -4388,7 +4603,7 @@
       "volume": "选择性必修下册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiuxia.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "chenqingbiao",
@@ -4634,7 +4849,7 @@
       "volume": "选择性必修中册",
       "status": "lesson-not-found",
       "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong.html",
-      "note": "同学段所有册的课文目录里都没有同名课文"
+      "note": "同学段所有册的课文目录里都没有同名课文，语文园地页面上也没有"
     },
     {
       "id": "lipeng",
@@ -4762,5 +4977,6 @@
       "textbookParas": 4,
       "miss": []
     }
-  ]
+  ],
+  "problems": []
 }
