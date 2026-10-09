@@ -401,7 +401,6 @@ def main():
     unregistered = [x for x in problem_rows if x['phase'] == '未登记']
 
     summary = {
-        'generated': date.today().isoformat(),
         'poemCount': len(rows),
         'syllabusCount': len(syllabus),
         'syllabusPrimary': len(syll_o),
@@ -475,7 +474,8 @@ def write_markdown(summary, rows, out):
     L = []
     L.append('# 内容台账（自动生成）')
     L.append('')
-    L.append('> 由 `python tools/build-ledger.py` 生成于 %s。**不要手改本文件**：' % summary['generated'])
+    L.append('> 由 `python tools/build-ledger.py` 生成。**不要手改本文件**：产物里不写当场日期——') 
+    L.append('> 可复现闸门比的是逐字节，日期取决于跑它的那台机器；要时间找 git。')
     L.append('> 要改台账就改 poems/ 里的篇目、两份课标契约或 data/known-defects.json，然后重新生成。')
     L.append('> 机器版在 data/ledger.json。匹配口径与 tools/validate.py 同源（tools/match.py）。')
     L.append('')

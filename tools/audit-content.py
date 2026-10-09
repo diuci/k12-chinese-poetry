@@ -723,7 +723,27 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
                    json.dumps(ca, ensure_ascii=False) if ca else '（这次没带 apparatus）',
                    '；'.join(claims) if claims else '文档里的数字全对得上')))
 
+    # 链条重算的产物里不许有「当场日期」：可复现闸门比的是逐字节，而日期取决于跑它的那台机器。
+    # 本轮 CI 就是这么红的：本地 UTC+8 的深夜写 2026-10-10，CI 的 UTC 写 2026-10-09，同一份输入两份产物。
+    lm = ROOT / 'docs' / 'ledger.md'
+    stamps = run_stamp_problems(trad, ledger, lm.read_text(encoding='utf-8') if lm.exists() else '')
+    out.append(('链条重算的产物不带当场日期', not stamps,
+                '产物里不许有生成日期（要时间找 git）' if not stamps else '；'.join(stamps)))
     out += audit_trad(corpus, trad, trad_md, ledger['rows'])
+    return out
+
+def run_stamp_problems(trad, ledger, ledger_md):
+    """链条重算的产物不许带当场日期。
+
+    为什么：闸门比的是逐字节。当场日期取决于跑它的那台机器的时区与当天——
+    本地 UTC+8 的深夜与 CI 的 UTC 差一天，同一份输入就会写出两份产物。
+    产物要带时间，交给 git；文件里那个日期只会让闸门莫名其妙地红，以及让人以为产物比 git 更可信。"""
+    out = []
+    for name, obj in (('data/traditional.json', trad), ('data/ledger.json', ledger)):
+        if isinstance(obj, dict) and obj.get('generated'):
+            out.append('%s 还带 generated 日期（%s）' % (name, obj['generated']))
+    if ledger_md and re.search(r'生成于\s*\d{4}-\d{2}-\d{2}', ledger_md):
+        out.append('docs/ledger.md 里写着「生成于 某年-某月-某日」')
     return out
 
 
@@ -1049,6 +1069,18 @@ def selftest():
         print('坏例17n：过期的是两个档位数字，却只报了 %d 个：%s' % (len(got2), got2)); bad += 1
     if doc_number_claims('当场数：214 全对上 / 37 部分对上 / 0 一句都对不上 / 1 核过没有正文页', t_pat):
         print('坏例17o：出处核对数字对得上却被报了'); bad += 1
+    # 坏例18：产物带当场日期——同一份输入在本地和 CI 写出两份产物，闸门必红（本轮真的红过）
+    got3 = run_stamp_problems({'generated': '2026-10-10'}, {'generated': '2026-10-10'}, '')
+    if len(got3) != 2:
+        print('坏例18：两份产物都带当场日期，只报了 %d 处：%s' % (len(got3), got3)); bad += 1
+    if run_stamp_problems({'counts': {}}, {'rows': []}, ''):
+        print('坏例18b：不带日期的产物被误伤'); bad += 1
+    got4 = run_stamp_problems({}, {}, '> 由 `python tools/build-ledger.py` 生成于 2026-10-10。**不要手改本文件**：')
+    if len(got4) != 1 or 'ledger.md' not in got4[0]:
+        print('坏例18c：台账文档里的「生成于 日期」没被抓到：%s' % got4); bad += 1
+    if run_stamp_problems({}, {}, '> 由 `python tools/build-ledger.py` 生成。**不要手改本文件**：'):
+        print('坏例18d：不带日期的台账文档被误伤'); bad += 1
+
 
     if bad:
 

@@ -1,6 +1,7 @@
 # 内容台账（自动生成）
 
-> 由 `python tools/build-ledger.py` 生成于 2026-10-10。**不要手改本文件**：
+> 由 `python tools/build-ledger.py` 生成。**不要手改本文件**：产物里不写当场日期——
+> 可复现闸门比的是逐字节，日期取决于跑它的那台机器；要时间找 git。
 > 要改台账就改 poems/ 里的篇目、两份课标契约或 data/known-defects.json，然后重新生成。
 > 机器版在 data/ledger.json。匹配口径与 tools/validate.py 同源（tools/match.py）。
 

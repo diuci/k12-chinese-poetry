@@ -97,7 +97,7 @@
 现在 `.github/workflows/verify.yml` 入库，四步：
 
 1. **26 项检查器自检**（每个护栏先证明它抓得住坏例子）；本轮补的第七项：`build-textbook-garden.py`（9 个坏例子：园地页抽不出篇名、栏目头被当成篇名、作者串到下一篇、篇名尾巴吃太贪）。先前几轮补的六项：`check-duplicates.py`（10 个坏例子，含《寒下曲》/《塞下曲》那一组）、
-   `apply-textbook-status.py`（现在 24 个）、`apply-volume-findings.py`（13 个）——后两个会往 md 里写「统编教材收没收」
+   `apply-textbook-status.py`（现在 44 个）、`apply-volume-findings.py`（13 个）——后两个会往 md 里写「统编教材收没收」
    和册次，写错就是对学生说假话，先前它们连坏例子都没有；`build.py`（27 个：正文抽取、说明小节被当正文、空正文、
    缺公有领域证据、render_split 与句数不匹配）、`inject-annotations.py`（16 个：注入不许动正文、不许跑两遍长出两节、
    空注释不许算「有内容」）、`check-textbook.py`（现在 106 个：学段判错、篇名子串乱配、对不上却没说清差在哪个字、相思≠长相思、《老子》四章≠八章、覆盖表只有一条来源、园地裁定表来源不够两条、园地盲区没交代、高中园地没核过却说核过、说「没找到」却没登记查过哪些页）——
@@ -106,6 +106,10 @@
 3. **派生产物重算**（繁体、出处明细、台账、审计、法律护栏）；
 4. **可复现闸门**：跑完 `git status --porcelain` 必须为空——提交进去的产物必须是链条跑出来的，
    不是手改出来的。这一条本轮就抓到过一次：提交进去的台账与繁体表确实和重算结果不一致。
+   同一轮它又抓到一次，而且抓的是它自己：产物里写着 `"generated": "2026-10-10"`——本地 UTC+8 的深夜与 CI 的 UTC
+   差一天，同一份输入写出两份产物，闸门红的是日期不是内容。现在 `data/traditional.json`、`data/ledger.json`、
+   `docs/ledger.md` 都不写当场日期，`audit-content.py` 新增一项盯着它（自检配坏例 18–18d；把 `run_stamp_problems`
+   改成永远不报，自检当场失败）。产物要带时间，交给 git。审计项 28 → 29 项。
 
 联网的三步不在 CI 跑，写死在 workflow 的说明步里：全量出处核对、`verify-variant-claims.py --refresh`、
 `check-textbook.py` 要读 `data/page-cache/` 与 `data/textbook-cache/`，这两个缓存都不入库

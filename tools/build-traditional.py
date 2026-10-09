@@ -813,7 +813,9 @@ def build():
     # 登记表两边都要拦：这一轮没用上的登记条目必须删掉（过期登记比没有登记更误导人）；
     # 没登记的不一致不许写进产物。
     check_reversal_registration(rev_exc, rev_used, reversal)
-    JOUT.write_text(json.dumps({'generated': datetime.date.today().isoformat(),
+    # 产物里不写当场日期：闸门比的是逐字节，而日期取决于跑它的那台机器的时区与当天——
+    # 本地 UTC+8 的深夜写 2026-10-10、CI 的 UTC 写 2026-10-09，同一份输入两份产物。要时间找 git。
+    JOUT.write_text(json.dumps({
                                 'note': '简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / '
                                         'table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / '
                                         'pending 没依据，留在待定清单。',
