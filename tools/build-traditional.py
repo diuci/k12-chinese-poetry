@@ -274,6 +274,11 @@ def page_traditional(rec):
     spec = importlib.util.spec_from_file_location('cts_srccheck', ROOT / 'tools' / 'check-text-sources.py')
     C = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(C)
+    if not C.CACHE.exists():
+        # CI 里没有页缓存。当场联网取页也不行：取回来的页与本地那份不是同一份
+        # （页改过、抓一半失败、只抓到半页都会发生），同一份简体正文就会给出不同的繁体字。
+        # 这一档的页证据只有一条路：沿用上一份已提交产物里同一处的记录（见 apply_recorded）。
+        return ''
     txts = []
     for pg in (rec.get('page') or '').split(' + '):
         if not pg:
@@ -284,6 +289,29 @@ def page_traditional(rec):
             continue
         txts.append(strip_punct(strip_notes(raw)))
     return ''.join(txts)
+
+
+def apply_recorded(x, ctx, rec):
+    """这一轮这一处没有页可查时，沿用上一份已提交产物里同一处的页证据。
+    页说话优先：有页可查且页给出了答案，永远不会走到这里（调用方只在 res 为空时才调）。
+    沿用必须同一处：篇、字段、行、位置、问的字、上下文逐字相同，差一个字符就不沿用——
+    正文改过之后把旧证据贴到新位置上，比没有证据更危险。"""
+    if not rec:
+        return False
+    if rec.get('decision') not in ('page', 'variant'):
+        return False
+    if strip_punct(rec.get('ctx') or '') != ctx or rec.get('simp') != x['simp'] or rec.get('at') != x['at']:
+        return False
+    if rec.get('field') != x.get('field') or rec.get('line') != x.get('line'):
+        return False
+    x['decision'] = rec['decision']
+    x['page_char'] = rec.get('page_char')
+    x['from_record'] = True
+    if rec.get('pick'):
+        x['pick'] = rec['pick']
+    if 'in_ledger' in rec:
+        x['in_ledger'] = rec['in_ledger']
+    return True
 
 
 def page_char_for(ctx, simp, page, page_s):
@@ -379,6 +407,26 @@ def build():
     t2p = read_table(TSP)
     poems = json.loads(POEMS.read_text(encoding='utf-8'))['poems']
     src = {x['id']: x for x in json.loads(SRC.read_text(encoding='utf-8'))['results']}
+    # 页证据要么来自 data/page-cache（不入库：统编教材是版权作品），要么当场联网取页。
+    # CI 里两者都没有：那一轮这些位置就退回表，产物不再是同一份产物——
+    # 同一份简体正文，两次构建给出不同的繁体字，这是最坏的一种不一致。
+    # 所以没有页可查的那些处沿用上一份已提交产物里的记录（逐字同一处才沿用）。
+    recorded = {}
+    if JOUT.exists():
+        try:
+            prev = json.loads(JOUT.read_text(encoding='utf-8'))
+        except Exception:
+            prev = {}
+        for row in prev.get('rows', []):
+            for m in (row.get('marks') or []):
+                if m.get('decision') in ('page', 'variant'):
+                    recorded[(row['id'], m.get('field'), m.get('line'), m.get('at'), m.get('simp'))] = m
+            for t in (row.get('page_marks') or []):
+                recorded[(row['id'], t[0], t[1], t[2], t[3])] = {'field': t[0], 'line': t[1], 'at': t[2],
+                    'simp': t[3], 'ctx': t[4], 'page_char': t[5], 'decision': t[6], 'pick': t[7] or None}
+                if t[8] is not None:
+                    recorded[(row['id'], t[0], t[1], t[2], t[3])]['in_ledger'] = t[8]
+    used_record = [0]
 
     def as_list(v):
         if isinstance(v, str):
@@ -490,6 +538,8 @@ def build():
                 continue            # 只认单字：词组在页里只对得上半个字，那种错位见过
             res = page_char_for(ctx, x['simp'], page, page_s)
             if not res:
+                if apply_recorded(x, ctx, recorded.get((c['id'], x.get('field'), x.get('line'), x['at'], x['simp']))):
+                    used_record[0] += 1
                 continue
             got, diffs, off = res
             # 上下文少于三个字不足以定位。页与我们的差异只有两种合法形状：
@@ -681,8 +731,13 @@ def build():
         out_rows.append({'id': c['id'], 'title': c['title'], 'page': (src.get(c['id']) or {}).get('page', ''),
                          'text_trad': trad_full, 'lines_trad': trad_lines,
                          'sections_trad': sections_trad, 'labels_trad': labels_trad,
-                         'marks': [m for m in marks if not m['field'].startswith('sec:')],
-                         'marks_app': app_marks,
+                         'marks': [{k: v for k, v in m.items() if k != 'from_record'}
+                                   for m in marks if not m['field'].startswith('sec:')],
+            'page_marks': [[m['field'], m['line'], m['at'], m['simp'], m['ctx'], m.get('page_char'),
+                            m['decision'], m.get('pick') or '', m.get('in_ledger')]
+                           for m in marks if m['field'].startswith('sec:')
+                           and m['decision'] in ('page', 'variant')],
+                         'marks_app': [{k: v for k, v in m.items() if k != 'from_record'} for m in app_marks],
                          'left_behind': [{'char': k, 'why': v} for k, v in sorted(left.items())]})
 
     if AUDIT is not None:
@@ -784,11 +839,11 @@ def build():
         L.append('')
     MOUT.write_text('\n'.join(L), encoding='utf-8')
     print('[繁体派生] %d 篇：正文 page %d / table %d / rule %d / keep %d / identity %d / variant %d / pending %d；'
-          '注释译文等 table %d / rule %d / identity %d / keep %d / pending %d；可逆性不一致 %d 处 → data/traditional.json 与 docs/traditional.md'
+          '注释译文等 table %d / rule %d / identity %d / keep %d / pending %d；可逆性不一致 %d 处；沿用已提交页证据 %d 处 → data/traditional.json 与 docs/traditional.md'
           % (len(out_rows), counts['page'], counts['table'], counts['rule'], counts['keep'],
              counts['identity'], counts['variant'], counts['pending'],
              counts2['table'], counts2['rule'], counts2['identity'], counts2['keep'],
-             counts2['pending'], len(reversal)))
+             counts2['pending'], len(reversal), used_record[0]))
     return 0
 
 
@@ -976,6 +1031,59 @@ def selftest():
     assert any(r['simp'] == '征' and r['pick'] == '征' and r.get('apply_to_table') for r in _real), '坏例23b：表里没有「征→征」这条'
     assert any(r['simp'] == '征' and r['pick'] == '徵' and r.get('pattern') == '象征' for r in _real), '坏例23b：表里没有「象征→徵」这条'
     assert any(r['simp'] == '征' and r['pick'] == '徵' and r.get('pattern') == '魏征' for r in _real), '坏例23b：表里没有「魏征→徵」这条'
+    # 坏例24：这一轮没有页可查时沿用已提交的记录——只许沿用「同一处」的记录。
+    # CI 里没有页缓存也不许联网；不沿用就退回表：同一份简体正文两次构建给出不同的繁体字。
+    _rec = {'id': 'x', 'field': 'full', 'line': 0, 'at': 4, 'simp': '云', 'ctx': '吾闻竹工云', 'decision': 'page', 'page_char': '云'}
+    def _fresh():
+        return {'at': 4, 'n': 1, 'simp': '云', 'cands': ['雲', '云'], 'decision': 'table', 'kind': 'char', 'ctx': '吾闻竹工云', 'field': 'full', 'line': 0}
+    _m = _fresh()
+    ok24 = apply_recorded(_m, '吾闻竹工云', _rec)
+    assert ok24 and _m['decision'] == 'page' and _m['page_char'] == '云' and _m.get('from_record'), '坏例24：同一处的页证据没沿用'
+    _m = _fresh()
+    assert (not apply_recorded(_m, '吾闻竹工云云', _rec)) and _m['decision'] == 'table' and not _m.get('page_char'), '坏例24b：正文改过（上下文不同）还把旧页证据贴到新位置'
+    # 坏例24h：产物里存的上下文带标点，查询用的是剥过标点的上下文——同一处必须认出来。
+    # 先前就是漏在这一条上：认不出同一处，「沿用」等于没做，CI 里那些位置照样退回表。
+    _m = _fresh()
+    _rec_punct = dict(_rec)
+    _rec_punct['ctx'] = '吾闻竹工云，'
+    assert apply_recorded(_m, '吾闻竹工云', _rec_punct) is True and _m.get('from_record'), \
+        '坏例24h：产物里带标点的上下文认不出同一处，沿用等于没做'
+    _m = _fresh()
+    _rec_far = dict(_rec)
+    _rec_far['ctx'] = '吾闻竹工云，木兰'
+    assert not apply_recorded(_m, '吾闻竹工云', _rec_far), '坏例24h2：窗口更长（多出一截正文）却当成了同一处'
+    _m = _fresh()
+    _m['at'] = 5
+    assert not apply_recorded(_m, '吾闻竹工云', _rec), '坏例24c：位置挪了一位也照抄旧记录（正文加过字，下标会串位）'
+    _m = _fresh()
+    _m['field'] = 'lines'
+    assert not apply_recorded(_m, '吾闻竹工云', _rec), '坏例24d：正文那一档的记录被贴到了必背名句那一档上'
+    _m = _fresh()
+    _bad_rec = dict(_rec)
+    _bad_rec['decision'] = 'table'
+    assert (not apply_recorded(_m, '吾闻竹工云', _bad_rec)) and _m['decision'] == 'table', '坏例24e：表的结论被当成了页证据'
+    _m = _fresh()
+    assert (not apply_recorded(_m, '吾闻竹工云', None)) and _m['decision'] == 'table', '坏例24f：既没有页也没有记录，却被判成有页证据'
+    _m = _fresh()
+    assert apply_recorded(_m, '吾闻竹工云', _rec) and 'in_ledger' not in _m, \
+        '坏例24j：沿用给这一处添了一个本地没有的键——产物就不是同一份产物了'
+    _trad = json.loads(JOUT.read_text(encoding='utf-8')) if JOUT.exists() else {}
+    # 坏例24g：产物里不许留下「这一轮没有页可查」这种只有这一轮才有的标记。
+    # CI 那一轮没有页缓存、本地那一轮有：留下标记，同一份简体正文就会生成两份不一样的产物。
+    assert not any(m.get('from_record') for _r in _trad.get('rows', []) for m in (_r.get('marks') or [])), \
+        '坏例24g：产物里留下了 from_record 标记'
+    assert not any(len(t) > 9 for _r in _trad.get('rows', []) for t in (_r.get('page_marks') or [])), \
+        '坏例24g：page_marks 里留下了这一轮特有的标记'
+    assert 'page_from_record' not in _trad, '坏例24g：沿用处数写进了产物（那一轮才有意义，产物必须是同一份）'
+    # 坏例24i：注释/全文/必背名句那一档的页证据也必须存进产物。只存正文那一半，
+    # CI 里那一档就没有记录可用，退回表，正文与「全文」两档当场对不上。
+    _pm = [t for _r in _trad.get('rows', []) for t in (_r.get('page_marks') or [])]
+    _ca = _trad.get('counts_apparatus', {})
+    assert len(_pm) == _ca.get('page', 0) + _ca.get('variant', 0), \
+        '坏例24i：产物里存的页证据 %d 条，与注释那一档当场数到的 page %d + variant %d 对不上' % (len(_pm), _ca.get('page', 0), _ca.get('variant', 0))
+    assert all(t[0].startswith('sec:') and t[6] in ('page', 'variant') for t in _pm), \
+        '坏例24i：page_marks 里混进了不该有的条目'
+
     import ast, inspect
     # 坏例子个数当场从这份源码数出来：数 assert 语句与「必须抛错」的 try 块本身，
     # 先前数的是源码文本里 'assert ' 与 'try:' 出现几次——把计数那一行自己也数了进去。

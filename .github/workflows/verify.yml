@@ -88,4 +88,4 @@ jobs:
       - name: 联网那三步为什么不在这里跑
         run: |
           echo 'check-text-sources.py 全量、verify-variant-claims.py --refresh、check-textbook.py 要读 data/page-cache 与 data/textbook-cache。'
-          echo '这两个缓存都不入库（统编教材是版权作品，整页镜像不许进仓），所以这三步只在本地链条里跑：41 步，见仓库说明与 docs/accuracy.md。'
+          echo '这两个缓存都不入库（统编教材是版权作品，整页镜像不许进仓），所以这三步只在本地链条里跑：48 步，见仓库说明与 docs/accuracy.md。'
