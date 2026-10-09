@@ -13,11 +13,18 @@ import re
 import sys
 from pathlib import Path
 
+
 ROOT = Path(__file__).resolve().parents[1]
 FINDINGS = ROOT / 'data' / 'volume-findings.json'
 POEMS = ROOT / 'data' / 'poems.json'
 GARDEN_RULES = ROOT / 'data' / 'garden-rulings.json'
 GARDEN_TABLE = ROOT / 'data' / 'textbook-garden.json'
+
+# 篇名对齐口径只在 check-textbook.py 里有一份，这里按路径加载它，不另写一份。
+import importlib.util  # noqa: E402
+_spec = importlib.util.spec_from_file_location('checktextbook', ROOT / 'tools' / 'check-textbook.py')
+CT = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(CT)
 
 GRADE_NUM = {'一': 1, '二': 2, '三': 3, '四': 4, '五': 5, '六': 6, '七': 7, '八': 8, '九': 9}
 
@@ -79,8 +86,10 @@ def garden_moves(rules_path, table_path):
             bad.append('%s：裁定表里 %d 条来源都出自同一个镜像目录——同源不算两条' % (pid, len(mirror)))
             continue
         vol = r.get('volume') or ''
-        key = re.sub(r'（.*?）', '', r.get('title') or '')
-        titles = [(e.get('title') or '') for e in (table.get(vol) or [])]
+        # 篇名对齐只用 check-textbook.py 的 garden_name（整名对、编号留在篇名里、「节选」剥掉）：
+        # 这里再写一份剥括号，迟早一张表认「悯农（其二）」、另一张不认。
+        key = CT.garden_name(r.get('title') or '')
+        titles = [CT.garden_name(e.get('title') or '') for e in (table.get(vol) or [])]
         if key not in titles:
             bad.append('%s：裁定表说在「%s」，园地表里那一册没有「%s」' % (pid, vol, key))
             continue
@@ -170,6 +179,20 @@ def selftest():
                                            'yw.suyang123.com 园地页', 'zy.21cnjy.com/24709078 教案']}}), table)
         must(mv and not bad, '坏例12：两条来源、册次对得上的裁定被误报（%s）' % (bad[0] if bad else '没生成改动'))
         must(mv and mv[0]['textbookLesson'] == '语文园地二·日积月累', '坏例12b：栏目没带进改动里')
+        # 坏例14~15：编号是篇名的一部分——「悯农（其二）」不许认成「悯农（其一）」，
+        # 也不许被剥成「悯农」就认（对齐只用 check-textbook 的 garden_name，两张表才可能认得一样）
+        table2 = Path(td2) / 'garden2.json'
+        table2.write_text(json.dumps({'volumes': {'一年级上册': [{'title': '悯农（其一）'},
+                                          {'title': '悯农（其二）'}]}}, ensure_ascii=False), encoding='utf-8')
+        mv, bad = garden_moves(rules({'a': {'volume': '一年级上册', 'title': '悯农（其一）',
+                                           'sources': ['yw.suyang123.com 园地页', 'zy.21cnjy.com/x 教案']}}), table2)
+        must(bool(mv) and not bad, '坏例14：悯农（其一）对悯农（其一）没认出来')
+        mv, bad = garden_moves(rules({'a': {'volume': '一年级上册', 'title': '悯农（其二）',
+                                           'sources': ['yw.suyang123.com 园地页', 'zy.21cnjy.com/x 教案']}}), table2)
+        must(bool(mv) and not bad, '坏例15：悯农（其二）对悯农（其二）没认出来（%s）' % (bad[0] if bad else ''))
+        mv, bad = garden_moves(rules({'a': {'volume': '一年级上册', 'title': '悯农',
+                                           'sources': ['yw.suyang123.com 园地页', 'zy.21cnjy.com/x 教案']}}), table2)
+        must(not mv and bad, '坏例16：篇名被剥成「悯农」也能对上——编号被抹平了')
         mv, bad = garden_moves(Path(td2) / '没有这个文件.json', table)
         must(mv == [] and bad == [], '坏例13：没有裁定表应当是空改动，不该报错也不该编出改动')
 

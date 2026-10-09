@@ -735,7 +735,7 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
                 '异文条目写着「旧版误作 X」的，X 不许还在任何一篇可背的正文里——抓的是「裁定了、没改干净」'))
     out += audit_trad(corpus, trad, trad_md, ledger['rows'])
     return out
-RULING_OLD = re.compile(r'(?:误作|旧版[^。；\n]{0,14}作)\s*((?:「[^」]{2,40}」\s*)+)')
+RULING_OLD = re.compile(r'(?:误作|凭空写|旧[^。；\n]{0,14}?[作写])\s*((?:「[^」]{2,40}」\s*)+)')
 
 
 
@@ -754,7 +754,8 @@ def stale_rulings(corpus):
     连着正文一起报就是误伤。
     按行比，不按整篇比：贺新郎 正文是「谈笑起，两河路。」换行「少时棋柝曾联句」，
 
-    整篇连起来就含「两河路少」——那是跨行的巧合，不是正文里有这一句。"""
+    整篇连起来就含「两河路少」——那是跨行的巧合，不是正文里有这一句。
+    被裁定否掉的旧句也不许还留在注释、译文里：那两处是学生真正读进去的东西。"""
 
 
     quoted = []
@@ -779,7 +780,15 @@ def stale_rulings(corpus):
 
                         quoted.append((c['title'], q, nq))
 
-    bodies = [(d['title'], [norm(x) for x in body_of(d).splitlines() if x.strip()]) for d in corpus.values()]
+    bodies = []
+    for d in corpus.values():
+        # 正文之外还得看注释与译文：谏逐客书 裁定「贤者不译」是凭空安上来的，正文改了，
+        # 译文里却还留着「贤人也不会说闲话」、注释里还留着「邳豹：春秋时吴国人」——
+        # 学生背的是正文，读的是注释译文，裁定只落到正文上等于没落到教学上。
+        taught = [norm(x) for x in body_of(d).splitlines() if x.strip()]
+        for sec in ('译文', '注释'):
+            taught += [norm(x) for x in d['sec'].get(sec, []) if x.strip()]
+        bodies.append((d['title'], taught))
 
     bad = []
 
@@ -1158,6 +1167,16 @@ def selftest():
     # 19d：整条审计项必须真的接在 audit() 里（不是只写了个函数）
     if '裁定说删掉的旧句不许还在正文里' not in {nm for nm, ok, _ in audit(c19, ledger, tsrc, [], TRAD_GOOD, MD_GOOD) if not ok}:
         print('坏例19d：审计项没接进 audit()，坏样本没被报'); bad += 1
+    # 19e：裁定否掉的旧句留在注释里，一样要报（谏逐客书 就是这么漏的）
+    c19e = corpus_of(good.replace(_old_line, '- 旧注释还凭空写「译：怨言、非议」，本篇没有这一句。')
+                       .replace('- 明月：明亮的月亮。', '- 译：怨言、非议。'), good_b)
+    if not stale_rulings(c19e):
+        print('坏例19e：被裁定否掉的旧句还留在注释里，没被抓到'); bad += 1
+    # 19f：注释里长得像但不是同一句的，不许误伤
+    c19f = corpus_of(good.replace(_old_line, '- 旧注释曾凭空写「明月：明亮的月光」，已删。')
+                       .replace('- 明月：明亮的月亮。', '- 译：怨言、非议。'), good_b)
+    if stale_rulings(c19f):
+        print('坏例19f：注释里不是同一句却被报了：%s' % stale_rulings(c19f)); bad += 1
 
 
     if bad:

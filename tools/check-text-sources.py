@@ -532,13 +532,28 @@ def nearest(line, txt):
     if not sl or len(st) < 6:
         return None
     best = (0.0, '')
-    step = max(1, L // 3)
-    span = L + 10
-    for i in range(0, max(1, len(st) - L + 1), step):
-        w = st[i:i + span]
-        r = difflib.SequenceMatcher(None, sl, w).ratio()
-        if r > best[0]:
-            best = (r, w)
+    # 先按句首字锚窗口，窗口只比句子长一点点。先前只有固定网格 + span=L+10：
+    # 在四库那种长页上，窗口里塞进十个字的公有领域声明，相似度被稀释到 0.54——
+    # 「传其事以为官戒」明明在页里（只差一个「也」字），却被写成「页里没找到」；
+    # 「泉水激石冷冷作响」「夫子哂一作讯之」同理。那是对来源页说的假话，不是我们的口径。
+    i = st.find(sl[0])
+    while i >= 0:
+        for span in (L + 2, L + 4, L + 6):
+            w = st[i:i + span]
+            r = difflib.SequenceMatcher(None, sl, w).ratio()
+            if r > best[0]:
+                best = (r, w)
+        i = st.find(sl[0], i + 1)
+    # 句首字在页里一次都没出现（编者补的主语、我们这边多出来的字）：退回网格扫，
+    # 让页里别的位置也有机会被指出来。
+    if best[0] < 0.55:
+        step = max(1, L // 3)
+        span = L + 10
+        for i in range(0, max(1, len(st) - L + 1), step):
+            w = st[i:i + span]
+            r = difflib.SequenceMatcher(None, sl, w).ratio()
+            if r > best[0]:
+                best = (r, w)
     if best[0] < 0.55:
         return None
     return {'line': line, 'source': best[1], 'ratio': round(best[0], 3)}
@@ -944,6 +959,22 @@ def selftest():
          '坏例16：小节标签没剥掉：%r' % strip_section_label('【毛诗序】诗者志之所之也'))
     must(strip_section_label('诗者志之所之也') == '诗者志之所之也', '坏例16b：没有标签的句子被误伤')
     must(strip_section_label('【毛诗序】') == '', '坏例16c：整行只有标签，剥完应当是空的')
+    # 坏例17：窗口不能只有固定网格那一条路——长页上窗口里塞进别的内容，相似度被稀释，
+    # 页里明写着的那一段就被写成「页里没找到」。下面三句都是当场从真页里发现的。
+    _t17a = ('皆生寒树负势竞上互相轩邈争高直指千百成峰泉水激石冷冷作响好鸟相鸣嘤嘤成韵'
+             '蝉则千转不穷猿则百叫无绝鸢飞戾天者望峰息心经纶世务者窥谷忘反')
+    must(nearest('泉水激石泠泠作响', _t17a) is not None,
+         '坏例17：页里作「冷冷」、我们作「泠泠」，这一句被说成「页里没找到」（其实是版本差异）')
+    _t17b = ('千乘之国摄乎大国之闲加之以师旅因之以饥馑由也为之比及三年可使有勇且知方也'
+             '夫子哂一作讯之求尔何如对曰方六七十如五六十求也为之')
+    must(nearest('夫子哂之', _t17b) is not None,
+         '坏例17b：页里「夫子哂」与「之」之间夹着「一作讯」，这一句被说成「页里没找到」')
+    _t17c = ('吾问养树得养人术传其事以为官戒'
+             '此唐朝作品在全世界都属于公有领域因为作者逝世已经超过100年且作品于1931年1月1日之前出版')
+    must(nearest('传其事以为官戒也', _t17c) is not None,
+         '坏例17c：页尾声明把窗口撑长，页里明写着的那一段（只差一个「也」）没报出来')
+    must(nearest('江畔独步寻花黄四娘家花满蹊', _t17a + _t17b + _t17c) is None,
+         '坏例17d：把窗口找松了以后，页里真没有的句子也该给个「最像的」——不许造出来')
     print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 

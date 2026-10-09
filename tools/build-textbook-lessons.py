@@ -205,6 +205,16 @@ def similar(a, b):
     return a[:-1] == b or a[1:] == b or b[:-1] == a or b[1:] == a
 
 
+def exact_same_title(title, entries):
+    """「教材里那篇同名的是另一首」是一句很强的话，只有整名对才许说。
+
+    前缀候选（仓内「梅花」/目录「梅花魂」）只是候选：正文验不上就什么都不是。
+    把它写成「同名另一篇」，等于把「我们没找到这一课」说成「教材收了另一首」——
+    学生照这句话去找，找到的是另一篇课文，回头以为我们仓里的《梅花》是错的。
+    前缀匹配照旧留给 candidates() 当候选、由正文定夺，这里只把住那句结论。"""
+    return [(v, e) for v, e in entries if norm_title(e['title']) == title]
+
+
 def audit(data):
     """仓内每篇的 volume 字段 vs 教材目录表。
 
@@ -262,6 +272,25 @@ def audit(data):
         hit = sum(1 for ln in lines if ln in txt)
         return hit / len(lines), hit
 
+    def garden_or_absent(poem, raw_volume):
+        """没有整名对、正文又验不上时怎么落档：有两条来源的园地裁定就记「园地收了」，
+        否则记「教材目录里没有这一课」。两条路都不许写成「同名另一篇」。"""
+        gr = garden_rules.get(poem['id'])
+        srcs = [x for x in ((gr or {}).get('sources') or []) if x]
+        if gr and gr.get('volume') == raw_volume and len(srcs) >= 2 \
+                and len([x for x in srcs if 'yw.suyang123.com' in x]) <= 1:
+            findings.append({'id': poem['id'], 'title': poem['title'], 'author': poem.get('author'),
+                           'stage': poem.get('stage'), 'status': 'garden-attested',
+                           'repoVolume': raw_volume, 'textbookVolume': gr['volume'],
+                           'textbookLesson': gr.get('section') or '语文园地',
+                           'evidence': '园地裁定表 %d 条来源' % len(srcs), 'linesHit': 0,
+                           'officiallyConfirmed': False})
+            garden_hits.append((poem['stage'], raw_volume, poem['title'], gr.get('section') or '语文园地'))
+            return
+        absent.append((poem['stage'], raw_volume, poem['title'], poem.get('author')))
+        missing.append({'id': poem['id'], 'title': poem['title'], 'author': poem.get('author'),
+                      'stage': poem.get('stage'), 'repoVolume': raw_volume})
+
     for p in poems:
         raw_vol = p.get('volume') or ''
         if raw_vol == T.NO_TEXTBOOK_VOLUME:
@@ -293,21 +322,7 @@ def audit(data):
                                'evidence': ratio, 'linesHit': hit,
                                'officiallyConfirmed': bool(e.get('confirmed'))})
                 continue
-            gr = garden_rules.get(p['id'])
-            srcs = [x for x in ((gr or {}).get('sources') or []) if x]
-            if gr and gr.get('volume') == raw_vol and len(srcs) >= 2 \
-                    and len([x for x in srcs if 'yw.suyang123.com' in x]) <= 1:
-                findings.append({'id': p['id'], 'title': p['title'], 'author': p.get('author'),
-                               'stage': p.get('stage'), 'status': 'garden-attested',
-                               'repoVolume': raw_vol, 'textbookVolume': gr['volume'],
-                               'textbookLesson': gr.get('section') or '语文园地',
-                               'evidence': '园地裁定表 %d 条来源' % len(srcs), 'linesHit': 0,
-                               'officiallyConfirmed': False})
-                garden_hits.append((p['stage'], raw_vol, p['title'], gr.get('section') or '语文园地'))
-                continue
-            absent.append((p['stage'], raw_vol, p['title'], p.get('author')))
-            missing.append({'id': p['id'], 'title': p['title'], 'author': p.get('author'),
-                          'stage': p.get('stage'), 'repoVolume': raw_vol})
+            garden_or_absent(p, raw_vol)
             continue
         in_repo = [x for x in same_stage if x[0] == vol]
         if in_repo:
@@ -338,12 +353,18 @@ def audit(data):
                            'officiallyConfirmed': bool(e.get('confirmed')),
                            'textbookUrl': e.get('url', '')})
         else:
+            exact = exact_same_title(title, same_stage)
+            if not exact:
+                # 前缀候选没一个整名对、正文又验不上：不许判「同名另一篇」，
+                # 退回与「同名没有」同一条落档路（园地裁定或「目录里没有」）。
+                garden_or_absent(p, raw_vol)
+                continue
             evi = ('最高只有 %d/%d 句对上' % (best[3], len([x for x in (p.get('lines') or []) if len(T.norm(x)) >= 4]))) if best else '没有课文页可核'
             unverified.append((p['stage'], p['title'], p.get('author'), raw_vol,
-                               '/'.join(sorted({v for v, _ in same_stage})), evi))
+                               '/'.join(sorted({v for v, _ in exact})), evi))
             collisions.append({'id': p['id'], 'title': p['title'], 'author': p.get('author'),
                                'stage': p.get('stage'), 'repoVolume': raw_vol,
-                               'sameTitleVolumes': sorted({v for v, _ in same_stage}),
+                               'sameTitleVolumes': sorted({v for v, _ in exact}),
                                'evidence': evi})
     print('教材目录表：%d 册 / %d 条课文（其中 %d 条有人教社官方课号印证）'
           % (data['summary']['volumes'], data['summary']['entries'], data['summary']['confirmed']))
@@ -514,7 +535,47 @@ def report(mism, collisions, missing, hits, variants, claimed, garden=None):
     return len(out)
 
 
+def selftest():
+    """护栏自己得先被抓到才行：每一条都配一个「如果它漏了会怎样」。"""
+    bad = 0
+
+    def must(ok, why):
+        nonlocal bad
+        if not ok:
+            print('  !! ' + why)
+            bad += 1
+
+    # 坏例1：前缀同名不许判成「同名另一篇」（梅花 / 梅花魂 就是这么错的）
+    must(exact_same_title('梅花', [('五年级下册', {'title': '梅花魂'})]) == [],
+         '坏例1：前缀同名（梅花 / 梅花魂）被算成同名另一篇')
+    # 坏例2、3：真同名不许被误杀（相见欢 / 凉州词 是教材里另一首）
+    must(len(exact_same_title('相见欢', [('八年级上册', {'title': '相见欢'})])) == 1,
+         '坏例2：真同名（相见欢）没被算出来')
+    must(len(exact_same_title('凉州词', [('四年级上册', {'title': '凉州词'})])) == 1,
+         '坏例3：真同名（凉州词）没被算出来')
+    # 坏例4：北冥 / 北冥有鱼 也不许靠标题定同名——那要靠正文
+    must(exact_same_title('北冥', [('八年级上册', {'title': '北冥有鱼'})]) == [],
+         '坏例4：前缀同名（北冥 / 北冥有鱼）被算成同名另一篇')
+    # 坏例5、6：课号、自读星号、括号、节选剥不干净，整名对就形同虚设
+    must(len(exact_same_title('咏鹅', [('一年级上册', {'title': '4*咏鹅'})])) == 1,
+         '坏例5：课号与自读星号没剥掉（4*咏鹅）')
+    must(len(exact_same_title('古朗月行', [('一年级上册', {'title': '古朗月行（节选）'})])) == 1,
+         '坏例6：「（节选）」没剥掉，整名对认不出同一篇')
+    # 坏例7：函数挂在文件里却没接进核对——存在但没用的检查等同于没有检查
+    src = (ROOT / 'tools' / 'build-textbook-lessons.py').read_text(encoding='utf-8')
+    body = src[src.index('def audit(data):'):src.index('def main():')]
+    must('exact_same_title(' in body and 'garden_or_absent(' in body,
+         '坏例7：exact_same_title / garden_or_absent 没接进 audit()')
+    if bad:
+        print('[!] build-textbook-lessons --selftest 失败 %d 项' % bad)
+        return 1
+    print('[ok] build-textbook-lessons --selftest 通（当场数到 7 个坏例子，全部试到）')
+    return 0
+
+
 def main():
+    if '--selftest' in sys.argv:
+        return selftest()
     if '--report' in sys.argv:
         data = build()
         audit(data)

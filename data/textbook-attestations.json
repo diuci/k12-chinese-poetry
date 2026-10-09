@@ -4,11 +4,10 @@
   "stats": {
     "match": 154,
     "coverage-override": 7,
-    "partial": 31,
-    "mismatch": 3,
-    "garden-mirror-only": 35,
+    "partial": 32,
+    "mismatch": 2,
+    "garden-attested": 38,
     "lesson-not-found": 10,
-    "garden-attested": 3,
     "no-textbook": 8,
     "coverage-partial": 1
   },
@@ -1444,13 +1443,15 @@
       "author": "李白",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
       "gardenVolume": "一年级上册",
       "gardenTitle": "古朗月行（节选）",
       "garden": "语文园地六",
       "url": "https://yw.suyang123.com/xiaoxue/yinianji/94_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地六",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《古朗月行（节选）》放在一上园地六；另一份独立来源把「小时不识月」四句列在一上的日积月累里。仓内收的正是这四句节选。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "yonge",
@@ -1458,13 +1459,15 @@
       "author": "骆宾王",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
       "gardenVolume": "一年级上册",
       "gardenTitle": "咏鹅",
       "garden": "语文园地一",
       "url": "https://yw.suyang123.com/xiaoxue/yinianji/13_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地一",
+      "sources": 2,
+      "note": "仓内挂一年级上册，课文目录里没有这一课，园地里出现了。两条来源一致：镜像园地页与另一份独立来源都把这一首放在一上的语文园地内容里（栏目名两份写法不同，见 sources）。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "minnong2",
@@ -1472,13 +1475,15 @@
       "author": "李绅",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
       "gardenVolume": "一年级上册",
       "gardenTitle": "悯农（其二）",
       "garden": "语文园地四",
       "url": "https://yw.suyang123.com/xiaoxue/yinianji/59_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地四",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《悯农（其二）》放在一上园地四；另一份独立来源把「锄禾日当午」这一首列在一上的日积月累里。仓内篇名「悯农其二」与镜像篇名「悯农（其二）」同一首。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "jiangnan",
@@ -1501,13 +1506,15 @@
       "author": "佚名",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
       "gardenVolume": "一年级上册",
       "gardenTitle": "画",
       "garden": "语文园地二",
       "url": "https://yw.suyang123.com/xiaoxue/yinianji/24_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地二",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页与另一份独立来源都把《画》放在一上的语文园地内容里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "feng",
@@ -1515,13 +1522,15 @@
       "author": "李峤",
       "stage": "小学",
       "volume": "一年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/shangce.html",
       "gardenVolume": "一年级上册",
       "gardenTitle": "风",
       "garden": "语文园地八",
       "url": "https://yw.suyang123.com/xiaoxue/yinianji/119_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地八",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《风》放在一上园地八；另一份独立来源把这一首列在一上的日积月累里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "xunyinzhe",
@@ -1529,13 +1538,15 @@
       "author": "贾岛",
       "stage": "小学",
       "volume": "一年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/xiace.html",
       "gardenVolume": "一年级下册",
       "gardenTitle": "寻隐者不遇",
       "garden": "语文园地二",
       "url": "https://yw.suyang123.com/xiaoxue/yinianji/40014_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地二",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《寻隐者不遇》放在一下园地二；另一份独立来源把它列在一下第一单元（语文园地二）的必背内容里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "xiaochi",
@@ -1558,13 +1569,15 @@
       "author": "孟浩然",
       "stage": "小学",
       "volume": "一年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/xiace.html",
       "gardenVolume": "一年级下册",
       "gardenTitle": "春晓",
       "garden": "语文园地一",
       "url": "https://yw.suyang123.com/xiaoxue/yinianji/40013_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地一",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《春晓》放在一下园地一；另一份独立来源把这一首列在一下第一单元（语文园地一）的必背内容里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "chishang",
@@ -1587,13 +1600,15 @@
       "author": "唐寅",
       "stage": "小学",
       "volume": "一年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/xiace.html",
       "gardenVolume": "一年级下册",
       "gardenTitle": "画鸡",
       "garden": "语文园地八",
       "url": "https://yw.suyang123.com/xiaoxue/yinianji/40020_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地八",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《画鸡》放在一下园地八；另一份独立来源把它列在一下第七单元（语文园地八）的必背内容里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "xiangsi",
@@ -1611,13 +1626,15 @@
       "author": "李白",
       "stage": "小学",
       "volume": "一年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/yinianji/xiace.html",
       "gardenVolume": "一年级下册",
       "gardenTitle": "赠汪伦",
       "garden": "语文园地三",
       "url": "https://yw.suyang123.com/xiaoxue/yinianji/40015_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地三",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《赠汪伦》放在一下园地三；另一份独立来源把它列在一下第二单元（语文园地三）的必背内容里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "jingyesi",
@@ -1670,13 +1687,15 @@
       "author": "袁枚",
       "stage": "小学",
       "volume": "三年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/shangce.html",
       "gardenVolume": "三年级上册",
       "gardenTitle": "所见",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sannianji/549_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《所见》列在三上的园地页里（栏目名没抽出来）；另一份独立来源把它列为三上必背古诗文第 1 条。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "zaofabaidicheng",
@@ -1684,13 +1703,15 @@
       "author": "李白",
       "stage": "小学",
       "volume": "三年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/shangce.html",
       "gardenVolume": "三年级上册",
       "gardenTitle": "早发白帝城",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sannianji/623_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《早发白帝城》列在三上的园地页里；另一份独立来源把它列为三上必背古诗文第 9 条。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "wangtianmenshan",
@@ -1755,13 +1776,15 @@
       "author": "王昌龄",
       "stage": "小学",
       "volume": "三年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/shangce.html",
       "gardenVolume": "三年级上册",
       "gardenTitle": "采莲曲",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sannianji/637_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《采莲曲》列在三上的园地页里；另一份独立来源把它列为三上必背古诗文第 8 条。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "yinhushang",
@@ -1829,13 +1852,15 @@
       "author": "白居易",
       "stage": "小学",
       "volume": "三年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/xiace.html",
       "gardenVolume": "三年级下册",
       "gardenTitle": "大林寺桃花",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sannianji/773_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《大林寺桃花》列在三下的园地页里；另一份独立来源把它列在三下的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "yijiangnan",
@@ -1843,13 +1868,15 @@
       "author": "白居易",
       "stage": "小学",
       "volume": "三年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/xiace.html",
       "gardenVolume": "三年级下册",
       "gardenTitle": "忆江南",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sannianji/670_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地一",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《忆江南》放在三下园地一；另一份独立来源把它列在三下的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "huichongchunjiang",
@@ -1887,13 +1914,15 @@
       "author": "韦应物",
       "stage": "小学",
       "volume": "三年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sannianji/xiace.html",
       "gardenVolume": "三年级下册",
       "gardenTitle": "滁州西涧",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sannianji/719_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地四",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《滁州西涧》放在三下园地四；另一份独立来源把它列在三下的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "jueju-chiri",
@@ -1931,13 +1960,15 @@
       "author": "胡令能",
       "stage": "小学",
       "volume": "二年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/shangce.html",
       "gardenVolume": "二年级上册",
       "gardenTitle": "小儿垂钓",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/ernianji/306_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地三",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《小儿垂钓》放在二上园地三；另一份独立来源把它列在二上的必背古诗里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "chilege",
@@ -1975,13 +2006,15 @@
       "author": "王安石",
       "stage": "小学",
       "volume": "二年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/shangce.html",
       "gardenVolume": "二年级上册",
       "gardenTitle": "梅花",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/ernianji/271_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地一",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《梅花》放在二上园地一；另一份独立来源把这一首列在二上的必背古诗里。作者两份都作宋代王安石。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "jiangxue",
@@ -1989,13 +2022,15 @@
       "author": "柳宗元",
       "stage": "小学",
       "volume": "二年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/shangce.html",
       "gardenVolume": "二年级上册",
       "gardenTitle": "江雪",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/ernianji/347_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《江雪》列在二上的园地页里（栏目名没抽出来）；另一份独立来源把它列在二上的必背古诗里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "dengguanquelou",
@@ -2033,13 +2068,15 @@
       "author": "李绅",
       "stage": "小学",
       "volume": "二年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/xiace.html",
       "gardenVolume": "二年级下册",
       "gardenTitle": "悯农（其一）",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/ernianji/505_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地六",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《悯农（其一）》放在二下园地六；另一份独立来源把「春种一粒粟」这一首列在二下的必背古诗文里。仓内篇名「悯农其一」与镜像篇名「悯农（其一）」同一首。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "jingcisi",
@@ -2092,13 +2129,15 @@
       "author": "查慎行",
       "stage": "小学",
       "volume": "二年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/xiace.html",
       "gardenVolume": "二年级下册",
       "gardenTitle": "舟夜书所见",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/ernianji/533_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地八",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《舟夜书所见》放在二下园地八；另一份独立来源把它列在二下的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "guyuancao",
@@ -2106,13 +2145,15 @@
       "author": "白居易",
       "stage": "小学",
       "volume": "二年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/ernianji/xiace.html",
       "gardenVolume": "二年级下册",
       "gardenTitle": "赋得古原草送别（节选）",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/ernianji/414_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地一",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《赋得古原草送别（节选）》放在二下园地一；另一份独立来源把同一首（并注明「余诗」）列在二下的必背古诗文里。仓内收的是节选四句。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "qiqiao",
@@ -2120,13 +2161,15 @@
       "author": "林杰",
       "stage": "小学",
       "volume": "五年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/shangce.html",
       "gardenVolume": "五年级上册",
       "gardenTitle": "乞巧",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/wunianji/1039_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地三",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《乞巧》放在五上园地三；另一份独立来源把它列在五上的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "shanjuqiuming",
@@ -2181,13 +2224,15 @@
       "author": "张志和",
       "stage": "小学",
       "volume": "五年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/shangce.html",
       "gardenVolume": "五年级上册",
       "gardenTitle": "渔歌子",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/wunianji/1103_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地七",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《渔歌子》放在五上园地七；另一份独立来源把它列在五上的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "shier",
@@ -2210,13 +2255,15 @@
       "author": "朱熹",
       "stage": "小学",
       "volume": "五年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/shangce.html",
       "gardenVolume": "五年级上册",
       "gardenTitle": "观书有感其一",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/wunianji/1116_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地八",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《观书有感其一》《观书有感其二》放在五上园地八；另一份独立来源把两首一起列在五上的必背古诗文里。仓内一份收两首，裁定表篇名按园地表的第一条写（对齐用整名对）。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "changxiangsi",
@@ -2254,13 +2301,15 @@
       "author": "翁卷",
       "stage": "小学",
       "volume": "五年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/xiace.html",
       "gardenVolume": "五年级下册",
       "gardenTitle": "乡村四月",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/wunianji/1210_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地七",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《乡村四月》放在五下园地七；另一份独立来源把它列在五下的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "congjunxing",
@@ -2389,13 +2438,15 @@
       "author": "王维",
       "stage": "小学",
       "volume": "五年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/xiace.html",
       "gardenVolume": "五年级下册",
       "gardenTitle": "鸟鸣涧",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/wunianji/1150_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地二",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《鸟鸣涧》放在五下园地二；另一份独立来源把它列在五下的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "huanghelou",
@@ -2403,13 +2454,15 @@
       "author": "李白",
       "stage": "小学",
       "volume": "五年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/wunianji/xiace.html",
       "gardenVolume": "五年级下册",
       "gardenTitle": "黄鹤楼送孟浩然之广陵",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/wunianji/1172_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地四",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把这一首放在五下园地四；另一份独立来源把它列在五下的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "shuhuyin",
@@ -2447,13 +2500,15 @@
       "author": "贺知章",
       "stage": "小学",
       "volume": "六年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/liunianji/shangce.html",
       "gardenVolume": "六年级上册",
       "gardenTitle": "回乡偶书",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/liunianji/1286_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《回乡偶书》列在六上的园地页里；另一份独立来源把它列为六上必背「回乡偶书（其一）」。仓内收的正是其一，裁定表篇名按园地表的写法。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "sujiandejiang",
@@ -2476,13 +2531,15 @@
       "author": "朱熹",
       "stage": "小学",
       "volume": "六年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/liunianji/shangce.html",
       "gardenVolume": "六年级上册",
       "gardenTitle": "春日",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/liunianji/1274_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《春日》列在六上的园地页里；另一份独立来源把它列在六上的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "jiangnanchun",
@@ -2535,13 +2592,15 @@
       "author": "孟浩然",
       "stage": "小学",
       "volume": "六年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/liunianji/shangce.html",
       "gardenVolume": "六年级上册",
       "gardenTitle": "过故人庄",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/liunianji/1244_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《过故人庄》列在六上的园地页里；另一份独立来源把它列在六上的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "shiyiwangyue",
@@ -2820,13 +2879,15 @@
       "author": "高适",
       "stage": "小学",
       "volume": "四年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/shangce.html",
       "gardenVolume": "四年级上册",
       "gardenTitle": "别董大",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sinianji/866_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《别董大》列在四上的园地页里；另一份独立来源把它列在四上的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "xiarijueju",
@@ -2849,13 +2910,15 @@
       "author": "李商隐",
       "stage": "小学",
       "volume": "四年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/shangce.html",
       "gardenVolume": "四年级上册",
       "gardenTitle": "嫦娥",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sinianji/830_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地四",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《嫦娥》放在四上园地四；另一份独立来源把它列在四上的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "mujiangyin",
@@ -2925,13 +2988,15 @@
       "author": "王维",
       "stage": "小学",
       "volume": "四年级上册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/shangce.html",
       "gardenVolume": "四年级上册",
       "gardenTitle": "鹿柴",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sinianji/792_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《鹿柴》列在四上的园地页里；另一份独立来源把它列为四上必背第 3 条。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "sishitianyuan-25",
@@ -3030,13 +3095,15 @@
       "author": "李白",
       "stage": "小学",
       "volume": "四年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/xiace.html",
       "gardenVolume": "四年级下册",
       "gardenTitle": "独坐敬亭山",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sinianji/969_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地（镜像页未标栏目）",
+      "sources": 2,
+      "note": "两条来源一致：镜像把《独坐敬亭山》列在四下的园地页里（栏目名没抽出来）；另一份独立来源把它列在四下的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "furonglou",
@@ -3059,13 +3126,15 @@
       "author": "罗隐",
       "stage": "小学",
       "volume": "四年级下册",
-      "status": "garden-mirror-only",
+      "status": "garden-attested",
       "volume_url": "https://yw.suyang123.com/xiaoxue/sinianji/xiace.html",
       "gardenVolume": "四年级下册",
       "gardenTitle": "蜂",
       "garden": "语文园地",
       "url": "https://yw.suyang123.com/xiaoxue/sinianji/945_langdu.html",
-      "note": "课文目录里没有这一课，但同一册的语文园地页面上出现了这一篇；园地页与目录页同源（同一镜像），只算一条来源——登记为「镜像收了、第二条独立来源没核到」，不判成教材收了"
+      "section": "语文园地四",
+      "sources": 2,
+      "note": "两条来源一致：镜像园地页把《蜂》放在四下园地四；另一份独立来源把它列在四下的必背古诗文里。（2 条来源，其中镜像最多一条）"
     },
     {
       "id": "quanxue",
@@ -3848,88 +3917,14 @@
       "author": "李斯",
       "stage": "高中",
       "volume": "必修下册",
-      "status": "mismatch",
+      "status": "partial",
       "lesson": "11.1 谏逐客书",
       "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30215_langdu.html",
-      "hit": 0,
+      "hit": 6,
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [
-        {
-          "kind": "名句",
-          "line": "西取由余于戎，东得百里奚于宛，迎蹇叔于宋，求丕豹、公孙支于晋。",
-          "diff": [
-            {
-              "ours": "求",
-              "textbook": "来",
-              "context": "奚于宛迎蹇叔于宋来丕豹公孙支于晋此"
-            },
-            {
-              "ours": "",
-              "textbook": "此五子者不产于秦而缪公用之并国二十遂霸西戎孝公用商鞅之法移风易俗民以殷盛国以富强",
-              "context": "来丕豹公孙支于晋此五子者不产于秦而缪公用之并国二十遂霸西戎孝公用商鞅之法移风易俗民以殷盛国以富强"
-            }
-          ]
-        },
-        {
-          "kind": "名句",
-          "line": "是以泰山不让土壤，故能成其大；河海不择细流，故能就其深；王者不却众庶，故能明其德。",
-          "diff": [
-            {
-              "ours": "泰",
-              "textbook": "太",
-              "context": "是以太山不让土壤故能成"
-            },
-            {
-              "ours": "",
-              "textbook": "是以地无四方民无异国四时充美鬼神降福此五帝三王之所以无敌也今乃弃黔首以资敌国却宾",
-              "context": "却众庶故能明其德是以地无四方民无异国四时充美鬼神降福此五帝三王之所以无敌也今乃弃黔首以资敌国却宾"
-            }
-          ]
-        },
-        {
-          "kind": "名句",
-          "line": "今逐客以资敌国，损民以益雠，内自虚而外树怨于诸侯，求国之无危，不可得也。",
-          "diff": [
-            {
-              "ours": "雠",
-              "textbook": "仇",
-              "context": "以资敌国损民以益仇内自虚而外树怨于"
-            },
-            {
-              "ours": "之",
-              "textbook": "",
-              "context": "外树怨于诸侯求国无危不可得也"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "臣闻吏议逐客，窃以为过矣。昔穆公求士，西取由余于戎，东得百里奚于宛，迎蹇叔于宋，求丕豹、公孙支于晋。此五子者，不产于秦，而穆公用之，并国二十，遂霸西戎。孝公用商鞅之法，移风易俗，民以殷盛，国以富强，百姓乐用，诸侯亲服，获楚魏之师，举地千里，至今治强。惠王用张仪之计，拔三川之地，西并巴蜀，北收上郡，南取汉中，包九夷，制鄢郢，东据成皋之险，割膏腴之壤，遂散六国之从，使之西面事秦，功施到今。昭王得范雎，废穰侯，逐华阳，强公室，杜私门，蚕食诸侯，使秦成帝业。此四君者，皆以客之功。由此观之，客何负于秦哉！向使四君却客而不内，疏士而不用，是使国无富利之实而秦无强大之名也。",
-          "diff": [
-            {
-              "ours": "穆",
-              "textbook": "缪",
-              "context": "逐客窃以为过矣昔缪公求士西取由余于"
-            },
-            {
-              "ours": "求",
-              "textbook": "来",
-              "context": "奚于宛迎蹇叔于宋来丕豹公孙支于晋此"
-            },
-            {
-              "ours": "穆",
-              "textbook": "缪",
-              "context": "五子者不产于秦而缪公用之并国二十遂"
-            },
-            {
-              "ours": "",
-              "textbook": "今陛下致昆山之玉有随和之宝垂明月之珠服太阿之剑乘纤离之马建翠凤之旗树灵鼍之鼓此数",
-              "context": "而秦无强大之名也今陛下致昆山之玉有随和之宝垂明月之珠服太阿之剑乘纤离之马建翠凤之旗树灵鼍之鼓此数"
-            }
-          ]
-        },
         {
           "kind": "全文",
           "line": "今陛下致昆山之玉，有随和之宝，垂明月之珠，服太阿之剑，乘纤离之马，建翠凤之旗，树灵鼍之鼓。此数宝者，秦不生一焉，而陛下说之，何也？必秦国之所生然后可，则是夜光之璧不饰朝廷，犀象之器不为玩好，郑卫之女不充后宫，而骏良𫘝𫘨不实外厩，江南金锡不为用，西蜀丹青不为采。所以饰后宫、充下陈、娱心意、说耳目者，必出于秦然后可，则是宛珠之簪、傅玑之珥、阿缟之衣、锦绣之饰不进于前，而随俗雅化、佳冶窈窕赵女不立于侧也。夫击瓮叩缶，弹筝搏髀，而歌呼呜呜快耳目者，真秦之声也；郑卫桑间、韶虞武象者，异国之乐也。今弃击瓮而就郑卫，退弹筝而取韶虞，若是者何也？快意当前，适观而已矣。今取人则不然，不问可否，不论曲直，非秦者去，为客者逐。然则是所重者在乎色乐珠玉，而所轻者在乎人民也。此非所以跨海内、制诸侯之术也。",
@@ -3968,38 +3963,6 @@
               "ours": "",
               "textbook": "臣闻地广者粟多国大者人众兵强则士勇是以太山不让土壤故能成其大河海不择细流故能就",
               "context": "海内制诸侯之术也臣闻地广者粟多国大者人众兵强则士勇是以太山不让土壤故能成其大河海不择细流故能就"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "臣闻地广者粟多，国大者人众，兵强则士勇。是以泰山不让土壤，故能成其大；河海不择细流，故能就其深；王者不却众庶，故能明其德。是以地无四方，民无异国，四时充美，鬼神降福，此五帝三王之所以无敌也。今乃弃黔首以资敌国，却宾客以业诸侯，使天下之士退而不敢西向，裹足不入秦，此所谓藉寇兵而赍盗粮者也。",
-          "diff": [
-            {
-              "ours": "泰",
-              "textbook": "太",
-              "context": "众兵强则士勇是以太山不让土壤故能成"
-            },
-            {
-              "ours": "",
-              "textbook": "夫物不产于秦可宝者多士不产于秦而愿忠者众今逐客以资敌国损民以益仇内自虚而外树怨于",
-              "context": "寇兵而赍盗粮者也夫物不产于秦可宝者多士不产于秦而愿忠者众今逐客以资敌国损民以益仇内自虚而外树怨于"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "夫物不产于秦，可宝者多；士不产于秦，而愿忠者众。今逐客以资敌国，损民以益雠，内自虚而外树怨于诸侯，求国之无危，不可得也。",
-          "diff": [
-            {
-              "ours": "雠",
-              "textbook": "仇",
-              "context": "以资敌国损民以益仇内自虚而外树怨于"
-            },
-            {
-              "ours": "之",
-              "textbook": "",
-              "context": "外树怨于诸侯求国无危不可得也"
             }
           ]
         }
@@ -4783,7 +4746,7 @@
       "status": "partial",
       "lesson": "11* 种树郭橐驼传",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30519_langdu.html",
-      "hit": 9,
+      "hit": 10,
       "total": 11,
       "skippedShort": 0,
       "textbookParas": 5,
@@ -4806,17 +4769,6 @@
               "ours": "",
               "textbook": "问者曰嘻不亦善夫吾问养树得养人术传其事以为官戒",
               "context": "吾业者其亦有类乎问者曰嘻不亦善夫吾问养树得养人术传其事以为官戒"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "问者曰：\"嘻，不亦善夫！吾问养树，得养人术。\"传其事以为官戒也。",
-          "diff": [
-            {
-              "ours": "也",
-              "textbook": "",
-              "context": "术传其事以为官戒"
             }
           ]
         }

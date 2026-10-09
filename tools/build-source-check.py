@@ -25,11 +25,20 @@ def loader():
 
 
 def best_window(ours, txt):
-    """锚在句首字上找最像的一段：四库全书那种十几万字的页，逐位扫跑不完。"""
+    """锚在句首字上找最像的一段：四库全书那种十几万字的页，逐位扫跑不完。
+
+    锚点必须是第一个真正的字：仓里有些正文以 ASCII 引号开头（"传其事以为官戒也），
+    拿引号当锚点，页里那个字符当然找不到——窗口是空的，这一句就被写成「页里没找到」，
+    而页里明写着那一句（只差一个「也」字）。种树郭橐驼传 就是这么掉进 C 的。"""
     best, br = None, -1.0
-    if not ours or not txt:
+    anchor = ''
+    for ch in ours:
+        if ch.isalnum() or '\u4e00' <= ch <= '\u9fff':
+            anchor = ch
+            break
+    if not anchor or not txt:
         return None, 0.0
-    i = txt.find(ours[0])
+    i = txt.find(anchor)
     while i >= 0:
         w = txt[i:i + len(ours) + 6]
         s = difflib.SequenceMatcher(None, ours, w).ratio()
@@ -104,7 +113,14 @@ def build():
         items = []
         for mm in (r.get('miss') or []):
             ours = mm['line']
-            w, ratio = best_window(ours, txt)
+            # 核对那一步已经算过「页里最像的一段」（check-text-sources.nearest）。
+            # 这里再算一遍就是第二份口径——两份口径迟早给出两个答案，
+            # 而写进文档的是后一份。现成的先用，没有才自己找。
+            near = mm.get('nearest') or None
+            if near:
+                w, ratio = near['source'], near['ratio']
+            else:
+                w, ratio = best_window(ours, txt)
             grade, note = classify(ours, w if ratio >= 0.55 else None)
             counts[grade] += 1
             L.append('- 没对上：' + BT + ours + BT)
@@ -161,7 +177,19 @@ def selftest():
     # 坏例6：每一句都必须落到某一档，不许出现「没分类」的句子
     txt = OUT.read_text(encoding='utf-8')
     assert txt.count('- **A**') + txt.count('- **B**') + txt.count('- **C**') == want_lines, '坏例6：有句子没落到档'
-    print('[ok] build-source-check --selftest 通（6 个坏例子全部试到）')
+    # 坏例7：以引号开头的句子，锚点不许是那个引号——页里没有引号字符，窗口就是空的，
+    # 这一句会被写成「页里没找到」，而页里明写着它（只差一个「也」字）。
+    _t7 = ('吾问养树得养人术传其事以为官戒此唐朝作品在全世界都属于公有领域因为作者逝世已经超过100年')
+    _w7, _r7 = best_window('"传其事以为官戒也', _t7)
+    assert _w7 and _r7 >= 0.55, '坏例7：引号当锚点，页里明写着的那一段没找出来（窗口=%r）' % _w7
+    assert classify('"传其事以为官戒也', _w7)[0] == 'B', '坏例7b：页里少一个「也」字没被判成版本差异'
+    # 坏例8：核对那一步算好的「页里最像的一段」必须被用上——自己再算一遍就是第二份口径
+    _near = {'source': '人复起必从吾言矣宰我子贡善为说辞冉牛闵子颜渊善言德行孔子兼之曰我', 'ratio': 0.667}
+    _g8 = classify('"公孙丑曰"宰我子贡善为说辞冉牛闵子颜渊善言德行', _near['source'])[0]
+    assert _g8 == 'B', '坏例8：页里有这一段（我们多一个主语）却没落到 B（判成 %s）' % _g8
+    # 坏例9：真没有的句子必须落到 C，不许因为窗口找松了就含糊
+    assert best_window('此四君者皆明智而忠信', _t7)[1] < 0.55, '坏例9：毫不相干的窗口被当成页里有这句'
+    print('[ok] build-source-check --selftest 通（9 个坏例子全部试到）')
 
 
 if __name__ == '__main__':
