@@ -85,6 +85,81 @@ def replace_section(body, sec, new_text):
     return body.rstrip() + '\n\n' + block, True
 
 
+def render_value(val):
+    """注释是列表（一行一条），译文赏析是字符串。渲染规则只许有一份。"""
+    return val if isinstance(val, str) else '\n'.join('- ' + x for x in val)
+
+
+def missing_fields(a):
+    """这一篇的注释内容缺哪几样。空字符串、空列表都算缺——不许「有键」就算有内容。"""
+    return [FIELD[k] for k in ORDER if not a.get(k)]
+
+
+def count_section(body, sec):
+    """body 里 '## <sec>' 出现几次。注入必须幂等：跑两遍不许长出第二个小节。"""
+    return len(re.findall(r'^##\s*' + re.escape(sec) + r'\s*$', body, re.M))
+
+
+def selftest():
+    """注入器直接改 252 个 md。它一旦把正文覆盖掉、或者跑两遍长出两节，
+    下游四个仓读到的就是坏数据，而构建、链接检查全都照样绿。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
+    body0 = ('# 测试篇\n\n> 佚名 · 先秦\n\n床前明月光，疑是地上霜。\n\n'
+             '## 注释\n\n- （待补：字词注释）\n\n## 译文\n\n（待补：白话译文）\n\n'
+             '## 赏析\n\n（待补：文学常识与赏析）\n')
+
+    # 坏例1：替换已有的注释节，正文与别的小节一个字不许动
+    b1, ok1 = replace_section(body0, '注释', '- 床：卧具。')
+    must(ok1 and '床：卧具。' in b1 and '（待补：字词注释）' not in b1, '坏例1：注释节没被替换')
+    must('床前明月光，疑是地上霜。' in b1, '坏例1b：正文被注入器动了')
+    must('## 译文' in b1 and '## 赏析' in b1, '坏例1c：别的小节被弄丢了')
+
+    # 坏例2：小节不存在时插入，不许插到正文之前（正文起点护栏会拦，但注入器自己不许造）
+    body_no_sec = '# 测试篇\n\n床前明月光。\n\n## 注释\n\n- 床：卧具。\n'
+    b2, ok2 = replace_section(body_no_sec, '译文', '月光洒在床前。')
+    must(ok2 and '## 译文' in b2, '坏例2：缺失的小节没被插入')
+    must(b2.index('床前明月光') < b2.index('## 译文'), '坏例2b：新小节插到了正文之前')
+
+    # 坏例3：完全没有小节时追加，不许报错
+    b3, ok3 = replace_section('# 测试篇\n\n床前明月光。\n', '注释', '- 床：卧具。')
+    must(ok3 and '## 注释' in b3 and '床前明月光' in b3, '坏例3：没有小节时追加失败')
+
+    # 坏例4：幂等——同一份内容注入两遍，不许长出第二个同名小节
+    b4a, _ = replace_section(body0, '注释', '- 床：卧具。')
+    b4b, _ = replace_section(b4a, '注释', '- 床：卧具。')
+    must(count_section(b4b, '注释') == 1, '坏例4：注入两遍长出两个「## 注释」（实际 %d 个）' % count_section(b4b, '注释'))
+    must(count_section(b4b, '译文') == 1, '坏例4b：注入注释把「## 译文」挤成了两个')
+
+    # 坏例5：替换不许越界吃掉下一节
+    b5, _ = replace_section(body0, '注释', '- 床：卧具。')
+    must(b5.index('## 译文') > b5.index('## 注释'), '坏例5：替换吃掉了下一节的起点')
+    must('（待补：白话译文）' in b5, '坏例5b：下一节的内容被顺手改掉了')
+
+    # 坏例6：空字符串、空列表都算「缺内容」，不许「有键」就算有内容
+    must(missing_fields({'note': [], 'trans': '', 'appr': '有'}) == ['注释', '译文'],
+         '坏例6：空的注释/译文没被算成缺内容')
+    must(missing_fields({'note': ['床：卧具。'], 'trans': '译文', 'appr': '赏析'}) == [],
+         '坏例6b：三样齐全却被报了')
+
+    # 坏例7：渲染规则——注释一行一条，译文原样
+    must(render_value(['床：卧具。', '疑：好像。']) == '- 床：卧具。\n- 疑：好像。',
+         '坏例7：注释列表没渲染成一行一条')
+    must(render_value('月光洒在床前。') == '月光洒在床前。', '坏例7b：字符串被改动了')
+
+    # 坏例8：frontmatter 读不出来必须返回 None（不许静默当成「没有正文」）
+    must(read_parts('# 没有 frontmatter\n\n正文。\n') is None, '坏例8：没有 frontmatter 却没报错')
+    parts = read_parts('---\nid: a\n---\n# 测试篇\n\n正文。\n')
+    must(parts and parts[1].startswith('# 测试篇'), '坏例8b：frontmatter 与正文没切开')
+
+    print('[ok] inject-annotations --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
+    return 0
+
+
 def main():
     check = '--check' in sys.argv
     ann = load_annotations()
@@ -118,12 +193,13 @@ def main():
         for k in ORDER:
             val = a.get(k)
             if not val:
-                problems.append('%s(%s): %s 缺内容' % (pid, pf.name, FIELD[k]))
                 continue
-            txt = val if isinstance(val, str) else '\n'.join('- ' + x for x in val)
+            txt = render_value(val)
             if PLACEHOLDER[k] in body and txt not in body:
                 changed = True
             body, _ = replace_section(body, FIELD[k], txt)
+        for name in missing_fields(a):
+            problems.append('%s(%s): %s 缺内容' % (pid, pf.name, name))
         if changed or (not check and PLACEHOLDER['note'] not in body):
             if not check:
                 pf.write_text(head + body, encoding='utf-8')
@@ -143,4 +219,6 @@ def main():
 
 
 if __name__ == '__main__':
+    if '--selftest' in sys.argv:
+        sys.exit(selftest())
     main()

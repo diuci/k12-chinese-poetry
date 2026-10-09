@@ -200,9 +200,9 @@ def selftest_sentence_gap():
     # 两字的短句不许靠子串蒙过去——那是「三省」冒充「吾日三省吾身」
     assert uncovered_sentences(['吾日三省吾身'], ['三省']) == ['吾日三省吾身'], '坏例：短句靠子串蒙成了盖住'
     assert uncovered_sentences([], []) == [], '坏例：空输入不空输出'
-    import inspect
-    print('[ok] build-ledger --selftest 通（句子级差集 %d 处断言全部试到）'
-          % inspect.getsource(selftest_sentence_gap).count('assert '))
+    import ast, inspect
+    _n = sum(1 for _x in ast.walk(ast.parse(inspect.getsource(selftest_sentence_gap))) if isinstance(_x, ast.Assert))
+    print('[ok] build-ledger --selftest 通（句子级差集 %d 处断言全部试到）' % _n)
 
 
 def selftest_source_check():
@@ -224,9 +224,10 @@ def selftest_source_check():
     # 6) 文件读不到时必须报「全部没核对」，不许报 0
     out3 = source_check_counts({'a', 'b'})
     assert out3['没有核对记录'] >= 0 and sum(out3.values()) == 2, '坏例6：读不到文件时数字对不上'
-    import inspect as _ins
-    print('[ok] 出处核对计数自检通（当场数到 %d 个坏例子，全部试到）'
-          % _ins.getsource(selftest_source_check).count('assert '))
+    import ast, inspect as _ins
+    # 坏例子个数当场从这份源码数出来（数 assert 语句本身），先前数的是文本里 'assert ' 出现几次。
+    _n2 = sum(1 for _x in ast.walk(_ins.getsource(selftest_source_check) and __import__('ast').parse(_ins.getsource(selftest_source_check))) if isinstance(_x, ast.Assert))
+    print('[ok] 出处核对计数自检通（当场数到 %d 个坏例子，全部试到）' % _n2)
 
 def main():
     if '--selftest' in sys.argv:

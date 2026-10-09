@@ -188,23 +188,109 @@ def diff_against(line, book):
 
 
 def compare(poem, paras):
-    """仓内每一句（名句 + 全文）去教材原文里找。"""
+    """仓内每一句（名句 + 全文）去教材原文里找。
+
+    返回 (对上的句数, 参与比对的句数, 太短没参与的句数, 没对上的明细)。
+    先前分母用的是「所有句子」，可短于四字的句子从来没参与过比对——
+    那样一篇正文与教材逐字相同的诗也会被判成 partial（《咏鹅》头一句「鹅鹅鹅」就是这种），
+    假缺口比假对上便宜，但它是假的就该说清楚。
+    """
     book = norm(''.join(paras))
     ours = []
     for ln in (poem.get('linesPunct') or []):
         ours.append(('名句', ln))
     for ln in (poem.get('fullLinesPunct') or []):
         ours.append(('全文', ln))
-    hit, miss = 0, []
+    hit, skipped, miss = 0, 0, []
     for kind, ln in ours:
         key = norm(ln)
         if len(key) < 4:
+            skipped += 1
             continue
         if key in book:
             hit += 1
         else:
             miss.append({'kind': kind, 'line': ln.strip(), 'diff': diff_against(ln, book)})
-    return hit, len(ours), miss
+    return hit, hit + len(miss), skipped, miss
+
+
+def selftest():
+    """教材核对这条腿自己也得有坏例子。它比对的是「考试真会考的那份正文」，
+    判错一次就可能把学生的背诵范围指错。这里只测判定逻辑，不联网。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
+    # 坏例1：norm 去标点；None 不许崩
+    must(norm('床前明月光，疑是地上霜。') == '床前明月光疑是地上霜', '坏例1：标点没去掉')
+    must(norm(None) == '', '坏例1b：None 没变成空串')
+    must(norm('') == '', '坏例1c：空串没保持空')
+
+    # 坏例2：strip_tags 把标签换成空格，内容一个字不许丢
+    must('明月光' in strip_tags('<div class="t">明月光</div>'), '坏例2：剥标签把正文剥掉了')
+
+    # 坏例3：学段判错就会跨学段乱配课文
+    must(stage_of('必修上册') == '高中', '坏例3：必修上册不是高中')
+    must(stage_of('选择性必修中册') == '高中', '坏例3b：选择性必修不是高中')
+    must(stage_of('七年级下册') == '初中', '坏例3c：七年级不是初中')
+    must(stage_of('一年级上册') == '小学', '坏例3d：一年级不是小学')
+    must(same_stage('七年级上册', '七年级下册') is True, '坏例3e：同学段不同册被判成不同学段')
+    must(same_stage('七年级上册', '必修上册') is False, '坏例3f：初中课文被允许配到高中篇目')
+
+    # 坏例4：篇名候选——《》、副标题的两种写法都要能对上
+    cands = title_candidates('《论语》十二章', '（十二则）')
+    must('论语十二章' in cands and '论语十二章十二则' in cands, '坏例4：篇名候选没造出来：%s' % cands)
+    must(title_candidates(None, None) == [''], '坏例4b：没有篇名却没返回空候选')
+
+    # 坏例5：课文名里的编号、星号、括号必须能剥掉
+    name, url = match_lesson({'title': '观沧海'}, [('1. 观沧海', 'u1')])
+    must(name == '1. 观沧海' and url == 'u1', '坏例5：带编号的课文没对上')
+    name2, _ = match_lesson({'title': '天上的街市'}, [('* 天上的街市', 'u2')])
+    must(name2 is not None, '坏例5b：自读星号课文没对上')
+
+    # 坏例6：短篇名不许用子串乱配——「春」配到「春风」就是把两篇课文合成一篇
+    must(match_lesson({'title': '春'}, [('春风', 'u')])[0] is None, '坏例6：单字篇名被子串匹配抢走了')
+    must(match_lesson({'title': '白鹅'}, [('天鹅', 'u')])[0] is None, '坏例6b：不同篇目被当成同一篇')
+    must(match_lesson({'title': '天上的街市'}, [('天上的街市 V 郭沫若', 'u')])[0] is not None, '坏例6c：正常篇名没对上')
+    # 坏例6d：候选短于三字时子串匹配不启用——这是刻意的严格。代价是可能报「找不到课文」（假缺口），
+    # 好处是不会把两篇课文并成一篇（假对上）。假缺口比假对上便宜。
+    must(match_lesson({'title': '海燕'}, [('海燕 V 高尔基', 'u')])[0] is None,
+         '坏例6d：两字篇名的子串匹配被放开了')
+
+    # 坏例7：对不上的那句必须说清差在哪个字（不皲手 / 不龟手 那一类）
+    d = diff_against('宋人有善为不龟手之药者', '宋人有善为不皲手之药者')
+    must(d and any(x.get('ours') and x.get('textbook') for x in d),
+         '坏例7：一字之差没被指出差在哪：%s' % d)
+    # 坏例8：完全找不到必须明说「没找到」，不许返回空列表假装没问题
+    must(diff_against('床前明月光', '枯藤老树昏鸦小桥流水') == [{'ours': '床前明月光', 'textbook': None}],
+         '坏例8：找不到时返回了空列表：%s' % diff_against('床前明月光', '枯藤老树昏鸦小桥流水'))
+    must(diff_against('', '任何教材文字') == [], '坏例8b：空句子被当成一次比对')
+    must(diff_against('床前明月光', '') == [], '坏例8c：教材那边是空的却没报错')
+
+    # 坏例9：compare 的口径是严格包含——教材写作别的样子就是没对上，不许按相似度放行
+    hit, total, skipped, miss = compare({'linesPunct': ['海内存知己，天涯若比邻'], 'fullLinesPunct': []},
+                                        ['海内存知己，天涯若比隣。'])
+    must(hit == 0 and total == 1 and len(miss) == 1,
+         '坏例9：邻/隣 一字之差被当成对上了（hit=%d miss=%d）' % (hit, len(miss)))
+    must(miss[0]['diff'] and miss[0]['diff'][0].get('textbook'), '坏例9b：没对上却没说清教材怎么写')
+    hit2, total2, skipped2, miss2 = compare({'linesPunct': ['海内存知己，天涯若比邻'], 'fullLinesPunct': []},
+                                            ['海内存知己，天涯若比邻。'])
+    must(hit2 == 1 and not miss2, '坏例9c：逐字对上的句子被报了')
+    # 坏例10：短于四字的句子不参与比对（《咏鹅》头一句「鹅鹅鹅」这种，比对只会造噪音）
+    hit3, total3, skipped3, miss3 = compare({'linesPunct': ['鹅鹅鹅'], 'fullLinesPunct': []}, ['完全无关的教材文字'])
+    must(total3 == 0 and skipped3 == 1 and not miss3,
+         '坏例10：三字短句没被单独登记（total=%d skipped=%d）——它从来没参与比对，不许进分母' % (total3, skipped3))
+    hit3b, total3b, skipped3b, _ = compare({'linesPunct': ['不亦说乎'], 'fullLinesPunct': []}, ['完全无关的教材文字'])
+    must(total3b == 1 and skipped3b == 0, '坏例10b：四字句子被漏掉，边界不在了')
+    # 坏例11：全文与名句都要算，只算名句会把「教材收了全文」这件事漏掉
+    hit4, total4, skipped4, _ = compare({'linesPunct': ['床前明月光'], 'fullLinesPunct': ['举头望明月']},
+                                        ['床前明月光，举头望明月。'])
+    must(total4 == 2 and hit4 == 2, '坏例11：全文那一遍没参与比对（total=%d hit=%d）' % (total4, hit4))
+
+    print('[ok] check-textbook --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
+    return 0
 
 
 def main():
@@ -275,9 +361,10 @@ def main():
                 len(results), len(poems), p['title'], p.get('volume'), found_vol))
             continue
         paras = lesson_text(url, refresh)
-        hit, total, miss = compare(p, paras)
+        hit, total, skipped, miss = compare(p, paras)
         status = 'match' if (total and hit == total) else ('partial' if hit else 'mismatch')
         entry.update(status=status, lesson=name, url=url, hit=hit, total=total,
+                     skippedShort=skipped,
                      textbookParas=len(paras), miss=miss)
         results.append(entry)
         for mm in miss:
@@ -304,4 +391,6 @@ def main():
 
 
 if __name__ == '__main__':
+    if '--selftest' in sys.argv:
+        sys.exit(selftest())
     sys.exit(main())

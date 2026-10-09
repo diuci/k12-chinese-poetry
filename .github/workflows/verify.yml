@@ -23,6 +23,7 @@ jobs:
       - name: 检查器自检（每个护栏先证明它抓得住坏例子）
         run: |
           python3 tools/validate.py --selftest
+          python3 tools/build.py --selftest
           python3 tools/build-ledger.py --selftest
           python3 tools/verify-variant-claims.py --selftest
           python3 tools/hunt-variant-sources.py --selftest
@@ -34,8 +35,10 @@ jobs:
           python3 tools/check-contamination.py --selftest
           python3 tools/check-duplicates.py --selftest
           python3 tools/check-truncated.py --selftest
+          python3 tools/check-textbook.py --selftest
           python3 tools/apply-textbook-status.py --selftest
           python3 tools/apply-volume-findings.py --selftest
+          python3 tools/inject-annotations.py --selftest
           python3 tools/selftest-overlap.py
           python3 tools/apply-author-years.py --selftest
           python3 tools/gen-provenance.py --selftest

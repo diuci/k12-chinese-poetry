@@ -381,6 +381,104 @@ def apply_gaokao_groups(records):
             % '、'.join(unmatched))
 
 
+def compare_committed(blob, existing, sums_blob, existing_sums):
+    """`--check` 到底该检查什么：提交进去的产物必须等于当场构建出来的产物。
+
+    先前 --check 只是「在内存里构建一遍不写盘」——它能抓住结构错误，
+    却抓不住「md 改过了却没重跑 build.py」。那种情况下 poems.json 是旧的，
+    下游（台账、繁体、站点、两个游戏）全都读这份旧产物，而 CI 里 git status 照样干净。
+    """
+    problems = []
+    if existing is None:
+        problems.append('data/poems.json 不存在：--check 不许把「没跑过」当成「没问题」')
+    elif existing != blob:
+        problems.append('data/poems.json 与当场构建结果不一致（提交进去 %d 字符，当场算出 %d 字符）：' 'md 改过了却没重跑 build.py' % (len(existing), len(blob)))
+    if existing_sums is None:
+        problems.append('data/checksums.json 不存在')
+    elif existing_sums != sums_blob:
+        problems.append('data/checksums.json 与当场算出的不一致：篇目内容哈希是旧的')
+    return problems
+
+
+def selftest():
+    """构建器自己也得有坏例子：它一旦静默少抽一段正文，下游四个仓全都跟着错。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
+    def dies(fn, *a, **kw):
+        try:
+            fn(*a, **kw)
+            return False
+        except SystemExit:
+            return True
+
+    head = '---\nid: test1\ntitle: 测试篇\nauthor: 佚名\ndynasty: 先秦\nstage: 小学\n'
+    tail = 'grade: 1\nauthorEraEnd: -1\nform: 五言\n---\n# 测试篇\n\n> 佚名 · 先秦\n\n'
+    body_txt = '床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n'
+    good_md = head + tail + body_txt
+    fake = Path(str(ROOT / 'poems' / '测试篇.md'))
+    fm, body = parse_frontmatter(good_md, Path('测试篇.md'))
+    rec = build_record(fake, fm, body)
+    must(rec['lines'] == ['床前明月光疑是地上霜', '举头望明月低头思故乡'],
+         '坏例1：正文抽取或去标点结果不对（lines=%s）' % rec['lines'])
+    must(rec['render_split'] == [1] * 2, '坏例1b：render_split 默认值与句数不匹配')
+    must(rec['syllables'] == 10, '坏例1c：五言一联 10 字没算出来')
+
+    # 坏例2：说明小节写在正文之前——说明文字会被当成正文，必须拦下
+    bad_order = head + tail.replace('> 佚名 · 先秦\n\n', '> 佚名 · 先秦\n\n## 收录范围\n\n本篇收录前四句。\n\n') + body_txt
+    fm2, body2 = parse_frontmatter(bad_order, Path('x.md'))
+    must(body_start_section(body2) == '收录范围', '坏例2：正文起点小节没认出来')
+    must(dies(build_record, fake, fm2, body2), '坏例2b：说明小节排在正文前却没拦下')
+
+    # 坏例3：正文里全是标点——剥离后为空，必须拦下（否则构建出一篇空诗）
+    fm3, body3 = parse_frontmatter(head + tail + '，。！？；', Path('x.md'))
+    must(dies(build_record, fake, fm3, body3), '坏例3：正文剥离标点后为空却没拦下')
+
+    # 坏例4：缺公有领域证据（authorDied / authorEraEnd）必须拦下
+    fm4, body4 = parse_frontmatter(good_md.replace('authorEraEnd: -1\n', ''), Path('x.md'))
+    must(dies(build_record, fake, fm4, body4), '坏例4：没有卒年/年代上限也照样构建')
+
+    # 坏例5：render_split 项数与句数不匹配必须拦下（地面贴花会错位）
+    fm5, body5 = parse_frontmatter(good_md.replace('form: 五言\n', 'form: 五言\nrender_split: [1, 2, 3]\n'), Path('x.md'))
+    must(dies(build_record, fake, fm5, body5), '坏例5：render_split 与句数不匹配却没拦下')
+    fm5b, body5b = parse_frontmatter(good_md.replace('form: 五言\n', 'form: 五言\nrender_split: [2, 2]\n'), Path('x.md'))
+    must(not dies(build_record, fake, fm5b, body5b), '坏例5b：项数对得上的 render_split 被误杀')
+
+    # 坏例6：frontmatter 未闭合 / 没有 frontmatter 必须拦下
+    must(dies(parse_frontmatter, '---\nid: a\n# 没闭合\n', Path('x.md')), '坏例6：frontmatter 未闭合没拦下')
+    must(dies(parse_frontmatter, '# 没有 frontmatter\n', Path('x.md')), '坏例6b：没有 frontmatter 没拦下')
+
+    # 坏例7：scalar 的类型转换——不许把 'true' 当字符串、不许把 '600' 当字符串
+    must(scalar({'a': 'true'}, 'a') is True, '坏例7：true 没转成布尔')
+    must(scalar({'a': '600'}, 'a') == 600, '坏例7b：数字没转成整数')
+    must(scalar({'a': '[甲, 乙]'}, 'a') == ['甲', '乙'], '坏例7c：行内列表没转开')
+    must(scalar({'a': 'null'}, 'a') is None, '坏例7d：null 没转成 None')
+    must(dies(scalar, {}, 'id', required=True, path='x.md'), '坏例7e：缺必填字段没拦下')
+
+    # 坏例8：「这篇有没有全文」的三档口径——只有必背名句 = 节选
+    must(has_full_text('## 必背名句\n\n床前明月光\n') is False, '坏例8：只有必背名句被当成有全文')
+    must(has_full_text('## 必背全文\n\n床前明月光\n') is True, '坏例8b：有必背全文却被当成没有')
+    must(has_full_text('床前明月光\n') is True, '坏例8c：短篇正文写在篇名下被当成没有全文')
+
+    # 坏例9：strip_punct 只去句读与破折号省略号，不许去汉字
+    must(strip_punct('鱼戏莲叶间，') == '鱼戏莲叶间', '坏例9：句末逗号没去掉')
+    must(strip_punct('——…') == '', '坏例9b：破折号省略号没去掉')
+    must(strip_punct('一二三') == '一二三', '坏例9c：汉字被去掉了')
+
+    # 坏例10：--check 的核心——提交进去的产物必须等于当场构建结果
+    must(compare_committed('AAA', 'AAA', 'S', 'S') == [], '坏例10：产物一致却被报了')
+    must(len(compare_committed('AAA', 'AAB', 'S', 'S')) == 1, '坏例10b：poems.json 过期却没被报')
+    must(len(compare_committed('AAA', 'AAA', 'S1', 'S2')) == 1, '坏例10c：checksums.json 过期却没被报')
+    must(len(compare_committed('AAA', None, 'S', 'S')) == 1, '坏例10d：产物不存在被当成了没问题')
+    must(len(compare_committed('AAA', None, 'S', None)) == 2, '坏例10e：两份产物都不存在只报了一处')
+
+    print('[ok] build --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
+    return 0
+
+
 def main():
     check_only = '--check' in sys.argv
 
@@ -446,10 +544,24 @@ def main():
     print('[build] 索引：学段组%d / 主题 %d' % (len(by_grade), len(by_theme)))
 
     if check_only:
-        print('[build] --check：仅校验，未写入')
+        out = DATA_DIR / 'poems.json'
+        csum = DATA_DIR / 'checksums.json'
+        problems = compare_committed(
+            blob, out.read_text(encoding='utf-8') if out.exists() else None,
+            json.dumps({'contentVersion': payload['contentVersion'], 'sums': {
+                r['id']: hashlib.sha256(json.dumps(r, ensure_ascii=False, sort_keys=True).encode('utf-8')).hexdigest()[:16]
+                for r in records}}, ensure_ascii=False, indent=2, sort_keys=True),
+            csum.read_text(encoding='utf-8') if csum.exists() else None)
+        if problems:
+            for p in problems:
+                print('[build] --check 失败：%s' % p, file=sys.stderr)
+            die('--check 不许绿着过去：%d 处产物与当场构建结果不一致' % len(problems))
+        print('[build] --check：产物与当场构建结果逐字一致，未写入')
         for r in records:
             print('  - %-22s %s' % (r['id'], r['title']))
 
 
 if __name__ == '__main__':
+    if '--selftest' in sys.argv:
+        sys.exit(selftest())
     main()

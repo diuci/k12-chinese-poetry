@@ -976,10 +976,14 @@ def selftest():
     assert any(r['simp'] == '征' and r['pick'] == '征' and r.get('apply_to_table') for r in _real), '坏例23b：表里没有「征→征」这条'
     assert any(r['simp'] == '征' and r['pick'] == '徵' and r.get('pattern') == '象征' for r in _real), '坏例23b：表里没有「象征→徵」这条'
     assert any(r['simp'] == '征' and r['pick'] == '徵' and r.get('pattern') == '魏征' for r in _real), '坏例23b：表里没有「魏征→徵」这条'
-    import inspect
-    _src = inspect.getsource(selftest)
-    print('[ok] build-traditional --selftest 通（%d 处断言全部试到）'
-          % (_src.count('assert ') + _src.count('try:')))
+    import ast, inspect
+    # 坏例子个数当场从这份源码数出来：数 assert 语句与「必须抛错」的 try 块本身，
+    # 先前数的是源码文本里 'assert ' 与 'try:' 出现几次——把计数那一行自己也数了进去。
+    _tree = ast.parse(inspect.getsource(selftest))
+    _n = sum(1 for _x in ast.walk(_tree) if isinstance(_x, ast.Assert))
+    _n += sum(1 for _x in ast.walk(_tree)
+              if isinstance(_x, ast.Try) and any(isinstance(_s, ast.Raise) for _s in _x.body))
+    print('[ok] build-traditional --selftest 通（%d 处断言全部试到）' % _n)
     return 0
 
 

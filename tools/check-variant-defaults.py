@@ -117,9 +117,10 @@ def selftest():
     # 5) 已经写了取舍的条目不许报——这个工具找的是「做过取舍却没写下来」
     chosen = '## 全文\n\n孤城落日斗兵稀。\n\n## 异文\n- 「孤城落日鬬兵稀」：来源页作「鬬兵稀」。取舍：从教材本作「斗」。出处：X\n'
     assert not one(chosen), '坏例5：写了取舍的条目被报成没写'
-    import inspect
-    print('[ok] check-variant-defaults --selftest 通（%d 个坏例子全部试到）'
-          % inspect.getsource(selftest).count('assert '))
+    import ast, inspect
+    # 先前数的是源码文本里 'assert ' 出现几次——把计数那一行自己也数了进去，多报一个。
+    _n = sum(1 for _x in ast.walk(ast.parse(inspect.getsource(selftest))) if isinstance(_x, ast.Assert))
+    print('[ok] check-variant-defaults --selftest 通（%d 个坏例子全部试到）' % _n)
     return 0
 
 def main():

@@ -334,7 +334,55 @@ def doc_number_claims(doc_text, actuals):
     return bad
 
 
-def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=None):
+def count_ci_selftests(yml_text):
+    """CI 里真正跑了多少项自检：只数 workflow 里那一行行命令，不数说明文字里提到的 `--selftest`。
+
+    文档写「CI 有 N 项自检」时，N 必须由这份 workflow 当场数出来——
+    否则「加了检查」这句话可以一直写在文档里，而 workflow 里那一行早就被人删了。
+    """
+    n = 0
+    for ln in (yml_text or '').splitlines():
+        if re.match(r'^\s+(python3|node) tools/\S+ --selftest\s*$', ln):
+            n += 1
+    return n
+
+
+def count_ci_block(yml_text, name_prefix):
+    """数 workflow 里某个 `run: |` 块真正执行的命令行数（注释与空行不算）。
+
+    文档写「CI 有 N 项离线检查」时，N 必须由这份 workflow 数出来——
+    否则有人从块里删掉一行，文档里那句「13 项」还能再活一年。
+    """
+    lines = (yml_text or '').splitlines()
+    i = 0
+    while i < len(lines):
+        if re.match(r'^\s*- name:\s*' + re.escape(name_prefix), lines[i]):
+            j = i + 1
+            while j < len(lines) and not re.match(r'^\s*run:\s*\|', lines[j]):
+                if re.match(r'^\s*- name:', lines[j]):
+                    return 0
+                j += 1
+            if j >= len(lines) or not re.match(r'^\s*run:\s*\|', lines[j]):
+                return 0
+            base = len(lines[j]) - len(lines[j].lstrip())
+            n = 0
+            k = j + 1
+            while k < len(lines):
+                cur = lines[k]
+                if not cur.strip():
+                    k += 1
+                    continue
+                if len(cur) - len(cur.lstrip()) <= base:
+                    break
+                if not cur.lstrip().startswith('#'):
+                    n += 1
+                k += 1
+            return n
+        i += 1
+    return 0
+
+
+def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=None, verify_yml=None):
 
     """返回 [(检查名, 通过?, 说明)]。"""
 
@@ -613,12 +661,27 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
 
     out.append(('来源不明为零', g['来源不明'] == 0, '来源不明 %d 篇' % g['来源不明']))
 
-    # 文档里写死的数字：过期了就是说假话。这一项盯裁定表条数。
+    # 文档里写死的数字：过期了就是说假话。这一项盯裁定表条数、CI 的两块命令数、派生计数的四个数。
     sp = ROOT / 'data' / 's2t-rules.json'
     s2t_total = len(json.loads(sp.read_text(encoding='utf-8')).get('rules', [])) if sp.exists() else -1
-    claims = doc_number_claims(accuracy_md or '', {r'裁定表\s*(\d+)\s*条': s2t_total})
-    out.append(('文档里写死的裁定表条数与表一致', not claims,
-                '裁定表实际 %d 条；%s' % (s2t_total, '；'.join(claims) if claims else '文档里的数字对得上')))
+    ci_selftests = count_ci_selftests(verify_yml)
+    ci_offline = count_ci_block(verify_yml, '离线检查')
+    actuals = {r'裁定表\s*(\d+)\s*条': s2t_total,
+               r'(\d+)\s*项检查器自检': ci_selftests,
+               r'(\d+)\s*项离线检查': ci_offline}
+    ca = (trad or {}).get('counts_apparatus') or {}
+    if ca:
+        actuals.update({r'按表\s*(\d+)': ca.get('table', -1),
+                        r'按裁定表\s*(\d+)': ca.get('rule', -1),
+                        r'照表原字\s*(\d+)': ca.get('identity', -1),
+                        r'保留\s*(\d+)': ca.get('keep', -1),
+                        r'待定\s*(\d+)': ca.get('pending', -1)})
+    claims = doc_number_claims(accuracy_md or '', actuals)
+    out.append(('文档里写死的数字与产物一致', not claims,
+                '当场数：裁定表 %d 条、CI 自检 %d 项、CI 离线 %d 项、 apparatus %s；%s'
+                % (s2t_total, ci_selftests, ci_offline,
+                   json.dumps(ca, ensure_ascii=False) if ca else '（这次没带 apparatus）',
+                   '；'.join(claims) if claims else '文档里的数字全对得上')))
 
     out += audit_trad(corpus, trad, trad_md, ledger['rows'])
     return out
@@ -876,6 +939,35 @@ def selftest():
         print('坏例17c：文档没写数字却被报了'); bad += 1
     if len(doc_number_claims('裁定表 99 条，另有裁定表 105 条', pat)) != 2:
         print('坏例17d：同一份文档里两处过期数字只报了一处'); bad += 1
+    # 坏例17e：文档写「CI 有 N 项自检」，N 必须由 workflow 当场数出来
+    yml = ('        run: |\n          python3 tools/validate.py --selftest\n'
+           '          node tools/check-legal.mjs --selftest\n'
+           '      - name: 说明\n        run: echo "上面每一项都带 --selftest"\n')
+    if count_ci_selftests(yml) != 2:
+        print('坏例17e：CI 自检项数数错了（算出 %d，应当 2——说明文字里提到的不算）' % count_ci_selftests(yml)); bad += 1
+    if count_ci_selftests('') != 0:
+        print('坏例17f：没有 workflow 却被数出了自检项'); bad += 1
+    if not doc_number_claims('CI 有 3 项检查器自检', {r'(\d+)\s*项检查器自检': count_ci_selftests(yml)}):
+        print('坏例17g：文档写「3 项」而 workflow 里只有 2 项，没被报'); bad += 1
+    if doc_number_claims('CI 有 2 项检查器自检', {r'(\d+)\s*项检查器自检': count_ci_selftests(yml)}):
+        print('坏例17h：文档数字对得上却被报了'); bad += 1
+    # 坏例17i：CI 块里删掉一行，文档那句「N 项离线检查」必须当场过期
+    if count_ci_block(yml, '离线检查') != 0:
+        print('坏例17i：没有那个块却被数出了命令行（算出 %d）' % count_ci_block(yml, '离线检查')); bad += 1
+    yml2 = ('      - name: 离线检查\n        run: |\n          python3 tools/a.py\n'
+            '          # 注释不许被数成一项检查\n          python3 tools/b.py\n\n'
+            '      - name: 下一步\n        run: python3 tools/c.py\n')
+    if count_ci_block(yml2, '离线检查') != 2:
+        print('坏例17j：离线块实际 2 行命令，却数出 %d（注释/下一块不许算进来）' % count_ci_block(yml2, '离线检查')); bad += 1
+    if not doc_number_claims('CI 有 3 项离线检查', {r'(\d+)\s*项离线检查': count_ci_block(yml2, '离线检查')}):
+        print('坏例17k：文档写「3 项离线检查」而块里只有 2 行，没被报'); bad += 1
+    # 坏例17l：派生计数写进文档后过期，必须当场报（本轮真的发生过：--refresh 之后 apparatus 少了一处）
+    ca_pat = {r'按表\s*(\d+)': 35029, r'按裁定表\s*(\d+)': 2074}
+    got = doc_number_claims('当场数：按表 35030 处、按裁定表 2075 处', ca_pat)
+    if len(got) != 2:
+        print('坏例17l：两个过期的派生计数只报了 %d 个：%s' % (len(got), got)); bad += 1
+    if doc_number_claims('当场数：按表 35029 处、按裁定表 2074 处', ca_pat):
+        print('坏例17m：派生计数对得上却被报了'); bad += 1
 
     if bad:
 
@@ -883,9 +975,12 @@ def selftest():
 
         return 1
 
-    import inspect
-    print('[ok] audit-content --selftest 通（%d 个坏例子全部试到）'
-          % inspect.getsource(selftest).count('bad += 1'))
+    import ast, inspect
+    # 坏例子个数当场从这份源码数出来（数 `bad += 1` 这个语句本身）。
+    # 先前数的是源码文本里 'bad += 1' 出现几次——把计数那一行自己也数了进去，多报一个。
+    _n = sum(1 for _x in ast.walk(ast.parse(inspect.getsource(selftest)))
+             if isinstance(_x, ast.AugAssign) and isinstance(_x.value, ast.Constant) and _x.value.value == 1)
+    print('[ok] audit-content --selftest 通（%d 个坏例子全部试到）' % _n)
 
     return 0
 
@@ -917,7 +1012,9 @@ def main():
     trad_md = mj.read_text(encoding='utf-8') if mj.exists() else ''
     aj = ROOT / 'docs' / 'accuracy.md'
     accuracy_md = aj.read_text(encoding='utf-8') if aj.exists() else ''
-    res = audit(corpus, ledger, tsrc, defects, trad, trad_md, accuracy_md)
+    vy = ROOT / '.github' / 'workflows' / 'verify.yml'
+    verify_yml = vy.read_text(encoding='utf-8') if vy.exists() else ''
+    res = audit(corpus, ledger, tsrc, defects, trad, trad_md, accuracy_md, verify_yml)
 
     g = ledger['summary']['gapCounts']
 
