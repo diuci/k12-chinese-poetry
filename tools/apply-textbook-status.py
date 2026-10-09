@@ -6,10 +6,11 @@
 3 篇是「教材里那篇同名的是另一首诗」。这两件事以前只写在 data/volume-findings.json 里，
 篇目文件自己不说，站点也就没法告诉学生「这篇教材不教，但课标要背」。
 
-取值只有三种：
+取值只有四种（`ALLOWED` 就是这个清单，多一档少一档 --selftest 都会当场报错）：
   统编教材收录
   统编教材未收（课标要求）
   统编教材收的是同名另一篇
+  统编教材收在别的课里
 
 结论全部从 data/volume-findings.json 来，不许手写。默认空跑，--write 才写盘。
 """
@@ -46,6 +47,66 @@ def status_of(finding, volume):
     return None
 
 
+def status_with_coverage(finding, volume, cov_entry):
+    """先按教材目录的核对结论定档，再看覆盖表。
+
+    覆盖表只在「按标题找不到这一课」时才有内容：它说的是教材把这篇收在别的课里，
+    所以它必须盖过「教材未收」——否则就告诉学生教材没有这一课，而教材明明有。
+    但它不许盖过「教材收的是同名另一篇」：那一篇教材里真有一个同名的是别的内容，
+    这一条是给学生认篇名用的，覆盖表说「收在别的课里」并不能把它变成同一篇。
+    """
+    st = status_of(finding, volume)
+    if cov_entry and st != NAME_CLASH:
+        return COVERED_ELSEWHERE
+    return st
+
+
+def selftest():
+    """这个脚本会往每篇 md 的 frontmatter 里写「统编教材收没收」，写错了就是对学生说假话。
+    所以它必须自带坏例子。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
+    # 坏例1：选修册（2026 起默写）教材里没有这一课，哪怕目录里撞见同名也必须判「未收」
+    must(status_of({'id': 'x', 'status': 'match'}, '选修（2026起默写）') == NOT_COLLECTED,
+         '坏例1：选修册被判成教材收录')
+    # 坏例2：没有核对结论就是「判不出」，不许默认成收录，也不许默认成未收
+    must(status_of(None, '七年级上册') is None, '坏例2：没有核对结论却有默认结论')
+    # 坏例3：册次对不上（volume-mismatch）不是「收没收」的问题，不许顺手判成未收
+    must(status_of({'id': 'x', 'status': 'volume-mismatch'}, '七年级上册') is None,
+         '坏例3：册次问题被当成教材未收')
+    # 坏例4：同名撞车必须单独一档——它告诉学生「教材里那篇同名的是另一首诗」
+    must(status_of({'id': 'x', 'status': 'title-collision'}, '八年级上册') == NAME_CLASH,
+         '坏例4：同名撞车没被单独登记')
+    # 坏例5：仓里写着没收、教材目录里却有——必须判收录，这是以前判错的那一类
+    must(status_of({'id': 'x', 'status': 'claimed-absent-but-present'}, '八年级上册') == COLLECTED,
+         '坏例5：教材明明收了却被判未收')
+    # 坏例6：没见过的 status 一律「判不出」，不许默认成收录——默认成收录就是说假话
+    must(status_of({'id': 'x', 'status': 'looks-fine-to-me'}, '八年级上册') is None,
+         '坏例6：没见过的 status 被默认成有结论')
+    # 坏例7：ALLOWED 四档必须每一档都造得出来，有一档是死的就说明字段与规则脱节了
+    produced = {status_of({'id': 'a', 'status': s}, '七年级上册') for s in
+                ('match', 'title-variant', 'claimed-absent-but-present', 'title-collision', 'absent')}
+    produced.add(status_of({'id': 'b', 'status': 'match'}, '选修（2026起默写）'))
+    produced.add(status_with_coverage({'id': 'c', 'status': 'absent'}, '七年级上册', {'lessons': []}))
+    for want in ALLOWED:
+        must(want in produced, '坏例7：ALLOWED 里的「%s」没有任何规则能产出，字段与规则脱节' % want)
+    # 坏例8：覆盖表必须盖过「教材未收」——教材把这篇收在别的课里，说「未收」就是假话
+    must(status_with_coverage({'id': 'x', 'status': 'absent'}, '七年级上册', {'lessons': [{'volume': '七年级上册', 'title': '鱼我所欲也'}]}) == COVERED_ELSEWHERE,
+         '坏例8：覆盖表没盖过「教材未收」')
+    # 坏例9：覆盖表不许盖过「同名另一篇」——那一条是给学生认篇名用的
+    must(status_with_coverage({'id': 'x', 'status': 'title-collision'}, '八年级上册', {'lessons': []}) == NAME_CLASH,
+         '坏例9：覆盖表把「同名另一篇」抹成了「收在别的课里」')
+    # 坏例10：判不出就是判不出，覆盖表救不了它（覆盖表只说教材有这一课，不说这篇是谁）
+    must(status_with_coverage(None, '七年级上册', None) is None, '坏例10：没有核对结论却被覆盖表填上了结论')
+
+    print('[ok] apply-textbook-status --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
+    return 0
+
+
 def main():
     write = '--write' in sys.argv
     poems = json.loads((ROOT / 'data' / 'poems.json').read_text(encoding='utf-8'))['poems']
@@ -71,10 +132,8 @@ def main():
 
     plan, unknown = [], []
     for p in poems:
-        st = status_of(by_id.get(p['id']), p.get('volume') or '')
         cv = cov.get(p['id'])
-        if cv:
-            st = COVERED_ELSEWHERE
+        st = status_with_coverage(by_id.get(p['id']), p.get('volume') or '', cv)
         if st is None:
             unknown.append((p['title'], p.get('volume')))
             continue
@@ -117,4 +176,6 @@ def main():
 
 
 if __name__ == '__main__':
+    if '--selftest' in sys.argv:
+        sys.exit(selftest())
     sys.exit(main())

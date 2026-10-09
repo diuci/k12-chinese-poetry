@@ -90,7 +90,9 @@
 
 现在 `.github/workflows/verify.yml` 入库，四步：
 
-1. **20 项检查器自检**（每个护栏先证明它抓得住坏例子）；
+1. **23 项检查器自检**（每个护栏先证明它抓得住坏例子）；本轮补的三项：`check-duplicates.py`（10 个坏例子，含《寒下曲》/《塞下曲》那一组）、
+   `apply-textbook-status.py`（13 个）、`apply-volume-findings.py`（13 个）——后两个会往 md 里写「统编教材收没收」
+   和册次，写错就是对学生说假话，先前它们连坏例子都没有；
 2. **13 项离线检查**（结构、异文、默认口径、污染、重复、截断、教材册次、作者卒年、出处、注音、正文一致性）；
 3. **派生产物重算**（繁体、出处明细、台账、审计、法律护栏）；
 4. **可复现闸门**：跑完 `git status --porcelain` 必须为空——提交进去的产物必须是链条跑出来的，
@@ -98,7 +100,7 @@
 
 联网的三步不在 CI 跑，写死在 workflow 的说明步里：全量出处核对、`verify-variant-claims.py --refresh`、
 `check-textbook.py` 要读 `data/page-cache/` 与 `data/textbook-cache/`，这两个缓存都不入库
-（统编教材是版权作品，整页镜像不许进仓）。它们只在本地链条里跑：41 步；`check-text-sources.py` 那一轮
+（统编教材是版权作品，整页镜像不许进仓）。它们只在本地链条里跑：44 步；`check-text-sources.py` 那一轮
 当场报「缓存命中 709 次 / 真的联网取页 0 次」。
 
 CI 里没有 8MB 的 `data/unihan/Unihan_Readings.txt`（已 gitignore），而「异体字表每一对必须读音相同」

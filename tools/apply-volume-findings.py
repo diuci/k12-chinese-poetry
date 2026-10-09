@@ -30,7 +30,9 @@ def new_volume(finding):
     仓里原来带「课外诵读」后缀的，保留后缀——去掉它会把「课外古诗词诵读」这个位置信息丢掉。
     """
     vol = finding['textbookVolume']
-    if finding['repoVolume'].endswith('课外诵读'):
+    # 教材目录自己就写着「课外诵读」时不许再叠一次：叠出来的是「七年级下册课外诵读课外诵读」，
+    # 一个不存在的册次，站点按目录浏览会直接把它当成一个新册次。
+    if finding['repoVolume'].endswith('课外诵读') and not vol.endswith('课外诵读'):
         vol += '课外诵读'
     return vol
 
@@ -52,6 +54,64 @@ def patch_file(path, new_vol, new_grade, old_vol):
                  lambda mm: '> ' + mm.group(1).rstrip() + ' · ' + new_vol,
                  out, count=1, flags=re.M)
     return out, None
+
+
+def selftest():
+    """这个脚本会改 frontmatter 的册次/年级，还会把 md 文件搬到另一个目录（站点按目录浏览）。
+    它默认空跑，加 --write 才动手——所以它的错只在写盘那一刻显形。坏例子必须提前跑。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
+    # 坏例1：年级从册次名里取，取不到必须是 None，不许蒙一个数
+    must(grade_of('九年级下册') == 9, '坏例1：九年级读不出年级')
+    must(grade_of('选修（2026起默写）') is None, '坏例1b：选修册被蒙成了一个年级')
+    must(grade_of(None) is None, '坏例1c：册次是空的却没报错也没返回 None')
+
+    # 坏例2：仓里带「课外诵读」后缀的必须保留——去掉它就把「课外古诗词诵读」这个位置信息丢了
+    must(new_volume({'textbookVolume': '七年级下册', 'repoVolume': '七年级下册课外诵读'}) == '七年级下册课外诵读',
+         '坏例2：课外诵读后缀被丢了')
+    # 坏例3：教材目录自己就写着「诵读」时不许再叠一次（七年级下册课外诵读课外诵读 是假册次）
+    must(new_volume({'textbookVolume': '七年级下册课外诵读', 'repoVolume': '七年级下册课外诵读'}) == '七年级下册课外诵读',
+         '坏例3：后缀叠了两次')
+    # 坏例4：仓里没后缀、教材有后缀——按教材落，后缀必须带上
+    must(new_volume({'textbookVolume': '八年级上册课外诵读', 'repoVolume': '八年级上册'}) == '八年级上册课外诵读',
+         '坏例4：教材写的后缀被丢了')
+
+    # 坏例5/6/7：patch_file 只许动 frontmatter 的 volume/grade 与篇名下面那行元信息
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        p = Path(td) / '测试篇.md'
+        p.write_text(('---\ntitle: 测试篇\nvolume: 七年级上册\ngrade: 7\n---\n'
+                      '> 佚名 · 先秦 · 古诗 · 初中 · 七年级上册\n\n'
+                      '正文里也有一句「七年级上册」不该被改。\n'), encoding='utf-8')
+        out, err = patch_file(p, '七年级下册', 7, '七年级上册')
+        must(err is None and out is not None, '坏例5：能改的却没改成')
+        must('volume: 七年级下册' in out, '坏例5b：frontmatter 的册次没换')
+        must('> 佚名 · 先秦 · 古诗 · 初中 · 七年级下册' in out, '坏例5c：元信息那行册次没换')
+        must('正文里也有一句「七年级上册」不该被改。' in out, '坏例5d：正文被动了')
+
+        p2 = Path(td) / '无年级.md'
+        p2.write_text(('---\ntitle: 无年级\nvolume: 七年级上册\n---\n'
+                       '> 佚名 · 先秦 · 古诗 · 初中 · 七年级上册\n\n正文。\n'), encoding='utf-8')
+        out2, err2 = patch_file(p2, '七年级下册', None, '七年级上册')
+        must(err2 is None and 'grade:' not in out2, '坏例6：没有 grade 字段却被凭空加了一个')
+
+        p3 = Path(td) / '坏frontmatter.md'
+        p3.write_text('# 没有 frontmatter\n\n正文。\n', encoding='utf-8')
+        out3, err3 = patch_file(p3, '七年级下册', 7, '七年级上册')
+        must(out3 is None and err3, '坏例7：frontmatter 读不出来却没报错')
+
+        p4 = Path(td) / '元信息不匹配.md'
+        p4.write_text(('---\ntitle: 甲\nvolume: 七年级上册\ngrade: 7\n---\n'
+                       '> 佚名 · 先秦 · 古诗 · 初中 · 八年级上册\n\n正文。\n'), encoding='utf-8')
+        out4, err4 = patch_file(p4, '七年级下册', 7, '七年级上册')
+        must(out4 is not None and '· 八年级上册' in out4, '坏例8：元信息那行与册次本来就对不上，不许被顺手改成看着顺眼的样子')
+
+    print('[ok] apply-volume-findings --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
+    return 0
 
 
 def main():
@@ -102,4 +162,6 @@ def main():
 
 
 if __name__ == '__main__':
+    if '--selftest' in sys.argv:
+        sys.exit(selftest())
     sys.exit(main())

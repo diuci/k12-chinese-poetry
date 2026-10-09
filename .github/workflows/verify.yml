@@ -32,7 +32,10 @@ jobs:
           python3 tools/enrich-variants.py --selftest
           python3 tools/check-annotation-quotes.py --selftest
           python3 tools/check-contamination.py --selftest
+          python3 tools/check-duplicates.py --selftest
           python3 tools/check-truncated.py --selftest
+          python3 tools/apply-textbook-status.py --selftest
+          python3 tools/apply-volume-findings.py --selftest
           python3 tools/selftest-overlap.py
           python3 tools/apply-author-years.py --selftest
           python3 tools/gen-provenance.py --selftest

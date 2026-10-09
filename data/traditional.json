@@ -2,21 +2,21 @@
  "generated": "2026-10-09",
  "note": "简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / pending 没依据，留在待定清单。",
  "counts": {
-  "page": 9537,
-  "table": 1146,
-  "rule": 42,
+  "page": 9533,
+  "table": 1148,
+  "rule": 44,
   "keep": 0,
   "identity": 1342,
   "variant": 6,
   "pending": 0
  },
  "counts_apparatus": {
-  "table": 35029,
-  "rule": 2074,
+  "table": 35030,
+  "rule": 2075,
   "identity": 8118,
   "keep": 92,
   "pending": 0,
-  "page": 9799,
+  "page": 9797,
   "variant": 6
  },
  "reversal": [
@@ -38623,7 +38623,7 @@
   {
    "id": "songshaoshu-wai",
    "title": "送杜少府之任蜀州",
-   "page": "全蜀藝文志 (四庫全書本)/卷20",
+   "page": "古今詩刪 (四庫全書本)/卷14",
    "text_trad": [
     "城闕輔三秦，風煙望五津。",
     "與君離別意，同是宦遊人。",
@@ -38747,12 +38747,13 @@
       "煙",
       "菸"
      ],
-     "decision": "page",
+     "decision": "rule",
      "kind": "char",
      "ctx": "城阙辅三秦，风烟望五津。",
      "field": "full",
      "line": 0,
-     "page_char": "煙"
+     "pick": "煙",
+     "why": "烟雾、烟霞义作「煙」；「菸」是烟草后起义"
     },
     {
      "at": 0,
@@ -38844,12 +38845,11 @@
      "cands": [
       "鄰"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "存知己，天涯若比邻。",
      "field": "full",
-     "line": 2,
-     "page_char": "鄰"
+     "line": 2
     },
     {
      "at": 0,
@@ -38956,12 +38956,13 @@
       "煙",
       "菸"
      ],
-     "decision": "page",
+     "decision": "rule",
      "kind": "char",
      "ctx": "城阙辅三秦，风烟望五津。",
      "field": "lines",
      "line": 0,
-     "page_char": "煙"
+     "pick": "煙",
+     "why": "烟雾、烟霞义作「煙」；「菸」是烟草后起义"
     },
     {
      "at": 0,
@@ -39053,12 +39054,11 @@
      "cands": [
       "鄰"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "存知己，天涯若比邻。",
      "field": "lines",
-     "line": 2,
-     "page_char": "鄰"
+     "line": 2
     },
     {
      "at": 0,
@@ -39117,6 +39117,22 @@
     }
    ],
    "marks_app": [
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "烟",
+     "cands": [
+      "煙",
+      "菸"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "城阙辅三秦，风烟望五津。",
+     "field": "sec:必背全文",
+     "line": 0,
+     "pick": "煙",
+     "why": "烟雾、烟霞义作「煙」；「菸」是烟草后起义"
+    },
     {
      "at": 16,
      "n": 1,
