@@ -268,24 +268,35 @@ def strip_notes(text):
     return NOTE_RE.sub(' ', text)
 
 
+def page_from_cache(C, title):
+    """只认缓存里已有的页：缓存里没有这一页就返回 None，不许当场取页。"""
+    try:
+        if not C._cache_file(title).exists():
+            return None
+    except Exception:
+        return None
+    try:
+        _, raw = C.page_text(title)
+    except Exception:
+        return None
+    return raw
+
+
 def page_traditional(rec):
     """本篇比对页的繁体文本（剥标点，不转简体）。"""
     import importlib.util
     spec = importlib.util.spec_from_file_location('cts_srccheck', ROOT / 'tools' / 'check-text-sources.py')
     C = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(C)
-    if not C.CACHE.exists():
-        # CI 里没有页缓存。当场联网取页也不行：取回来的页与本地那份不是同一份
-        # （页改过、抓一半失败、只抓到半页都会发生），同一份简体正文就会给出不同的繁体字。
-        # 这一档的页证据只有一条路：沿用上一份已提交产物里同一处的记录（见 apply_recorded）。
-        return ''
+    # 页证据只认缓存里已有的页。缓存里没有就不取——CI 里当场抓回来的页与本地那份不是同一份
+    # （页改过、抓一半失败、只抓到半页都会发生），拿它当证据就是拿运气当证据。
+    # 判据不能是「缓存目录在不在」：CI 里别的工具会把空目录建出来。
     txts = []
     for pg in (rec.get('page') or '').split(' + '):
         if not pg:
             continue
-        try:
-            _, raw = C.page_text(pg)
-        except Exception:
+        raw = page_from_cache(C, pg)
+        if raw is None:
             continue
         txts.append(strip_punct(strip_notes(raw)))
     return ''.join(txts)
@@ -1067,6 +1078,25 @@ def selftest():
     _m = _fresh()
     assert apply_recorded(_m, '吾闻竹工云', _rec) and 'in_ledger' not in _m, \
         '坏例24j：沿用给这一处添了一个本地没有的键——产物就不是同一份产物了'
+    # 坏例24k / 24l：页证据只认缓存里已有的页。缓存里没有这一页还不许去取——
+    # CI 里当场抓回来的页与本地那份不是同一份，同一份简体正文就会生成两份繁体产物。
+    class _FakeSrc:
+        def __init__(self, has):
+            self.has = has
+            self.fetched = 0
+        def _cache_file(self, title):
+            if self.has:
+                return ROOT / 'data' / 'opencc' / 'STCharacters.txt'
+            return ROOT / 'data' / '这一页不在缓存里.json'
+        def page_text(self, title):
+            self.fetched += 1
+            return (title, '頁裡的内容')
+    _no = _FakeSrc(False)
+    assert page_from_cache(_no, '某页') is None and _no.fetched == 0, \
+        '坏例24k：缓存里没有这一页还是去取了页'
+    _yes = _FakeSrc(True)
+    assert page_from_cache(_yes, '某页') == '頁裡的内容' and _yes.fetched == 1, \
+        '坏例24l：缓存里已有这一页却没用到'
     _trad = json.loads(JOUT.read_text(encoding='utf-8')) if JOUT.exists() else {}
     # 坏例24g：产物里不许留下「这一轮没有页可查」这种只有这一轮才有的标记。
     # CI 那一轮没有页缓存、本地那一轮有：留下标记，同一份简体正文就会生成两份不一样的产物。
