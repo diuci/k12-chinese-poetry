@@ -17,7 +17,7 @@
      繁简表把「願」转成「𫖸」、「開」转成「𫔭」这类扩展区残迹一律拒收——那是表的脆，不是繁体字。
   4. 可逆性：派生出的繁体用 T→S 表转回去，必须一字不差等于原简体正文。回不去就是转换有问题。
 
---build 写产物；--selftest 自带坏例子。
+--build 写产物；--selftest 自带坏例子；--allow-pages 显式许可当场取页（只有本地链条给）。
 """
 import json
 import sys, re, sys, difflib, datetime
@@ -268,8 +268,15 @@ def strip_notes(text):
     return NOTE_RE.sub(' ', text)
 
 
+# 取页这件事必须显式许可。CI 里前一步的自检（check-text-sources --selftest、check-variant-sources --selftest 等）
+# 会把当场抓回来的页写进 data/page-cache——那一轮 build-traditional 要是照用这些页，产物就不是同一份产物：
+# 同一个提交连着红了两轮，三套档位数字都是这么来的。默认不取页，只有 --allow-pages 才取。
+ALLOW_PAGES = '--allow-pages' in sys.argv
+
 def page_from_cache(C, title):
     """只认缓存里已有的页：缓存里没有这一页就返回 None，不许当场取页。"""
+    if not ALLOW_PAGES:
+        return None
     try:
         if not C._cache_file(title).exists():
             return None
@@ -1091,12 +1098,19 @@ def selftest():
         def page_text(self, title):
             self.fetched += 1
             return (title, '頁裡的内容')
+    global ALLOW_PAGES
+    ALLOW_PAGES = True
     _no = _FakeSrc(False)
     assert page_from_cache(_no, '某页') is None and _no.fetched == 0, \
         '坏例24k：缓存里没有这一页还是去取了页'
     _yes = _FakeSrc(True)
     assert page_from_cache(_yes, '某页') == '頁裡的内容' and _yes.fetched == 1, \
         '坏例24l：缓存里已有这一页却没用到'
+    # 坏例24m：默认不许取页。CI 里前一步的自检会把当场抓回来的页写进 data/page-cache，
+    # 那一轮照用这些页，同一个提交就会生成另一套档位数字（连着红两轮就是这么来的）。
+    ALLOW_PAGES = False
+    assert page_from_cache(_yes, '某页') is None and _yes.fetched == 1, \
+        '坏例24m：没给 --allow-pages 也去取页——CI 里那些页是前一步自检当场抓的，不是同一份证据'
     _trad = json.loads(JOUT.read_text(encoding='utf-8')) if JOUT.exists() else {}
     # 坏例24g：产物里不许留下「这一轮没有页可查」这种只有这一轮才有的标记。
     # CI 那一轮没有页缓存、本地那一轮有：留下标记，同一份简体正文就会生成两份不一样的产物。
@@ -1130,5 +1144,5 @@ if __name__ == '__main__':
         sys.exit(selftest())
     if '--build' in sys.argv:
         sys.exit(build())
-    print('用法：--build / --selftest')
+    print('用法：--build [--allow-pages] / --selftest（默认不取页：页证据沿用已提交产物里同一处的记录）')
     sys.exit(2)
