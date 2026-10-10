@@ -165,7 +165,8 @@ def parse_syllabus(path):
     义务教育（syllabus-2022.md）与高中（syllabus-2017.md）用同一套表格格式：
         | 1 | 江南（江南可采莲） | 汉乐府 |
         | 1 | 劝学（学不可以已……用心躁也） | 《荀子》 |
-    高中文档没有「教材拓展」附表，故extra 恒为空集。
+    两份文档都有「教材内但不在课标」附表：义务教育那张收小学/初中的教材拓展，
+    高中这张收统编必修/选择性必修里有、课标 72 篇里没有的文言课文。两边的 extra 合并使用。
     """
     text = path.read_text(encoding='utf-8')
     section = None
@@ -594,6 +595,16 @@ def canon_title(s):
     return TITLE_ALIAS.get(n, n)
 
 
+def hs_extra_needs_lesson_no(poem, text):
+    """高中教材拓展篇目（统编教材有这一课、课标 72 篇里没有）必须在「收录范围」里写明教材课号。
+
+    这一档没有课标兜底：唯一的凭据就是教材目录与课号。不写课号，
+    「统编教材里有这一课」就成了一句没法交代的话。
+    """
+    if poem.get('stage') != '高中' or not poem.get('gaokaoExtra'):
+        return False
+    return '## 收录范围' not in text or not re.search(r'第 ?[\d.]+ ?课', text)
+
 REQUIRED = ['id', 'title', 'author', 'lines', 'linesPunct',
             'theme', 'form', 'dynasty', 'stage',
             'source', 'license', 'difficulty']
@@ -788,6 +799,20 @@ def selftest():
         got = bool(defect_schema_problems(ds))
         if got != should_fail:
             problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
+
+    hs_extra_cases = [
+        ('高中教材拓展篇目没写教材课号应当被拒',
+         {'stage': '高中', 'gaokaoExtra': '必修下册'}, '# 甲\n\n## 收录范围\n统编教材里有这一课。\n', True),
+        ('写了教材课号的应当放行',
+         {'stage': '高中', 'gaokaoExtra': '必修下册'}, '# 甲\n\n## 收录范围\n教材位置：统编语文必修下册第 1.3 课。\n', False),
+        ('课标篇目（不是教材拓展）不适用这条',
+         {'stage': '高中', 'gaokaoGroup': '必修'}, '# 甲\n\n## 收录范围\n课标必修篇目。\n', False),
+        ('初中篇目不适用这条',
+         {'stage': '初中', 'gaokaoExtra': '七年级上'}, '# 甲\n\n## 收录范围\n统编语文七年级上册。\n', False),
+    ]
+    for label, pm, txt, should_fail in hs_extra_cases:
+        if hs_extra_needs_lesson_no(pm, txt) != should_fail:
+            problems.append('%s（实得：%s）' % (label, '报错' if hs_extra_needs_lesson_no(pm, txt) else '放行'))
 
     problems.extend(selftest_attest_status())
     problems.extend(selftest_absence_records())
@@ -1033,12 +1058,13 @@ def main():
              sum(1 for s in syllabus if s[0] == '初中'), len(syllabus)))
 
     if SYLLABUS_HS.exists():
-        hs, _ = parse_syllabus(SYLLABUS_HS)
+        hs, extra_hs = parse_syllabus(SYLLABUS_HS)
         print('高中课标：%d 篇' % len(hs))
         syllabus += hs
     else:
         notes.append('尚未建 docs/syllabus-2017.md（高中课标契约），'
                      '高中篇目暂不参与完整性比对')
+        extra_titles = extra_titles | extra_hs
     print('课标合计：%d 篇' % len(syllabus))
     print('教材拓展：%d 篇（不在课标内，但统编教材有）' % len(extra_titles))
 
@@ -1141,7 +1167,8 @@ def main():
     until2025 = sum(1 for _g, _n in gg.values() if _g != '选修')
     if until2025 != 60:
         err('2025 及以前的高考默写范围按课标分组算出 %d 篇，应为 60 篇' % until2025)
-    no_since = [p['title'] for p in poems if p.get('stage') == '高中' and not p.get('gaokaoSince')]
+    no_since = [p['title'] for p in poems if p.get('stage') == '高中' and not p.get('gaokaoSince')
+                  and not p.get('gaokaoExtra')]  # 教材拓展的高中篇目不在默写范围里，本来就没有 gaokaoSince
     if no_since:
         err('高中篇目缺 gaokaoSince（从哪一届起在默写范围内）：%s' % '、'.join(no_since[:6]))
     bad_since = [p['title'] for p in poems if p.get('gaokaoSince') not in (None, 2023, 2026)]
@@ -1161,6 +1188,13 @@ def main():
             unsourced.append(p['title'])
     if unsourced:
         err('这几篇挂着统编教材的册次，篇内却没写教材课号出处：%s' % '、'.join(unsourced))
+
+    # 高中教材拓展篇目（统编教材有这一课、课标 72 篇里没有）没有课标兜底，
+    # 唯一的凭据就是教材目录与课号：篇内「收录范围」必须写出教材课号，不许空口说。
+    hs_extra_missing = [p['title'] for p in poems
+                            if hs_extra_needs_lesson_no(p, (ROOT / p['_path']).read_text(encoding='utf-8'))]
+    if hs_extra_missing:
+        err('高中教材拓展篇目没在「收录范围」里写教材课号：%s' % '、'.join(hs_extra_missing[:6]))
 
     # -------------------------------------------------- 2.16 教材收录状态必须和核对结论一致
     # data/volume-findings.json 是教材目录核对的结论表。每篇 frontmatter 的 textbookStatus

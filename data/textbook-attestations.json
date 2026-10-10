@@ -2,7 +2,7 @@
   "generated": "2026-10-11",
   "source": "https://yw.suyang123.com",
   "stats": {
-    "match": 219,
+    "match": 222,
     "coverage-override": 7,
     "mismatch": 2,
     "partial": 16,
@@ -4408,6 +4408,23 @@
       "ghostDiffs": 0
     },
     {
+      "id": "paodingjienu",
+      "title": "庖丁解牛",
+      "author": "庄子",
+      "stage": "高中",
+      "volume": "必修下册",
+      "status": "match",
+      "lesson": "1.3 庖丁解牛",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30203_langdu.html",
+      "hit": 19,
+      "total": 19,
+      "skippedShort": 0,
+      "textbookParas": 4,
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
+    },
+    {
       "id": "niannujiao-gudong",
       "title": "念奴娇·过洞庭",
       "author": "张孝祥",
@@ -4437,6 +4454,23 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 2,
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
+    },
+    {
+      "id": "zhihuwutuiqinshi",
+      "title": "烛之武退秦师",
+      "author": "左丘明",
+      "stage": "高中",
+      "volume": "必修下册",
+      "status": "match",
+      "lesson": "2 烛之武退秦师",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30204_langdu.html",
+      "hit": 25,
+      "total": 25,
+      "skippedShort": 3,
+      "textbookParas": 4,
       "miss": [],
       "charDiffs": [],
       "ghostDiffs": 0
@@ -4754,6 +4788,23 @@
           "context": "望幸焉有不见者三十六年燕赵"
         }
       ],
+      "ghostDiffs": 0
+    },
+    {
+      "id": "qihuanjinwen",
+      "title": "齐桓晋文之事",
+      "author": "孟子",
+      "stage": "高中",
+      "volume": "必修下册",
+      "status": "match",
+      "lesson": "1.2* 齐桓晋文之事",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30202_langdu.html",
+      "hit": 103,
+      "total": 103,
+      "skippedShort": 3,
+      "textbookParas": 35,
+      "miss": [],
+      "charDiffs": [],
       "ghostDiffs": 0
     },
     {

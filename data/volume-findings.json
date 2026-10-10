@@ -2,7 +2,7 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-11",
   "counts": {
-    "match": 238,
+    "match": 241,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -2548,6 +2548,16 @@
       "textbookLesson": "1.1"
     },
     {
+      "id": "paodingjienu",
+      "title": "庖丁解牛",
+      "author": "庄子",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修下册",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "1.3"
+    },
+    {
       "id": "niannujiao-gudong",
       "title": "念奴娇·过洞庭",
       "author": "张孝祥",
@@ -2566,6 +2576,16 @@
       "volume": "必修下册",
       "textbookVolume": "必修下册",
       "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "zhihuwutuiqinshi",
+      "title": "烛之武退秦师",
+      "author": "左丘明",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修下册",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "2"
     },
     {
       "id": "dengyueyanglou",
@@ -2616,6 +2636,16 @@
       "volume": "必修下册",
       "textbookVolume": "必修下册",
       "textbookLesson": "16.1"
+    },
+    {
+      "id": "qihuanjinwen",
+      "title": "齐桓晋文之事",
+      "author": "孟子",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修下册",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "1.2"
     },
     {
       "id": "lunyu12",

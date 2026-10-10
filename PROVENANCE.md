@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 300 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 303 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -314,6 +314,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | jiangjinjiu | 将进酒 | 李白 | 唐 | 卒 762 | public-domain | S3+S1b+S2 | 乐府 | 高中 · 选择性必修上册 |
 | quyuanliezhuan | 屈原列传 | 司马迁 | 西汉 | 卒 公元前 86 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修中册 |
 | shishuo | 师说 | 韩愈 | 唐 | 卒 824 | public-domain | S3+S1b+S2 | 文言 | 高中 · 必修上册 |
+| paodingjienu | 庖丁解牛 | 庄子 | 战国 | 卒 公元前 286 | public-domain | S10+S9+S3 | 文言 | 高中 · 必修下册 |
 | guiqulaixici | 归去来兮辞 | 陶潜 | 晋 | 卒 427 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修下册 |
 | guiyuantianju | 归园田居 | 陶潜 | 晋 | 卒 427 | public-domain | S3+S1b+S2 | 五言 | 高中 · 必修上册 |
 | niannujiao-chibi | 念奴娇·赤壁怀古 | 苏轼 | 宋 | 卒 1101 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |
@@ -331,6 +332,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | jiangchengzi-yimao | 江城子 | 苏轼 | 宋 | 卒 1101 | public-domain | S3+S1b+S2 | 词 | 高中 · 选择性必修上册 |
 | shejiang | 涉江采芙蓉 | 佚名 | 汉 | 年代上限 1900 | public-domain | S3+S1b+S2 | 古诗 | 高中 · 必修上册 |
 | tengwanggexu | 滕王阁序 | 王勃 | 唐 | 卒 676 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选修（2026起默写） |
+| zhihuwutuiqinshi | 烛之武退秦师 | 左丘明 | 先秦 | 卒 公元前 422 | public-domain | S10+S9+S3 | 文言 | 高中 · 必修下册 |
 | yange-xing | 燕歌行 | 高适 | 唐 | 卒 765 | public-domain | S3+S1b+S2 | 乐府 | 高中 · 选择性必修中册 |
 | pipaxing | 琵琶行 | 白居易 | 唐 | 卒 846 | public-domain | S3+S1b+S2 | 乐府 | 高中 · 必修上册 |
 | dengyueyanglou | 登岳阳楼 | 杜甫 | 唐 | 卒 770 | public-domain | S3+S1b+S2 | 五言 | 高中 · 必修下册 |
@@ -364,6 +366,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | xiangjixuanzhi | 项脊轩志 | 归有光 | 明 | 卒 1571 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修下册 |
 | qiqiaoxian | 鹊桥仙 | 秦观 | 宋 | 卒 1100 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |
 | huanggangzhulouji | 黄冈竹楼记 | 王禹偁 | 宋 | 卒 1001 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选修（2026起默写） |
+| qihuanjinwen | 齐桓晋文之事 | 孟子 | 战国 | 卒 公元前 289 | public-domain | S10+S9+S3 | 文言 | 高中 · 必修下册 |
 
 <!-- 台账结束 -->
 

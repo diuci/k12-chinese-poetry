@@ -269,6 +269,7 @@
       "jiangjinjiu",
       "quyuanliezhuan",
       "shishuo",
+      "paodingjienu",
       "guiqulaixici",
       "guiyuantianju",
       "niannujiao-chibi",
@@ -286,6 +287,7 @@
       "jiangchengzi-yimao",
       "shejiang",
       "tengwanggexu",
+      "zhihuwutuiqinshi",
       "yange-xing",
       "pipaxing",
       "dengyueyanglou",
@@ -318,7 +320,8 @@
       "jingnv",
       "xiangjixuanzhi",
       "qiqiaoxian",
-      "huanggangzhulouji"
+      "huanggangzhulouji",
+      "qihuanjinwen"
     ]
   },
   "byId": {
@@ -483,11 +486,13 @@
     "niannujiao-gudong": "niannujiao-gudong",
     "niaomingjian": "niaomingjian",
     "niluonan": "niluonan",
+    "paodingjienu": "paodingjienu",
     "pipaxing": "pipaxing",
     "pozhenzi": "pozhenzi",
     "pusaman-wentingyun": "pusaman-wentingyun",
     "pusaman-zaoxiang": "pusaman-zaoxiang",
     "qiantanghuchunxing": "qiantanghuchunxing",
+    "qihuanjinwen": "qihuanjinwen",
     "qingming": "qingming",
     "qingpingyue-cunju": "qingpingyue-cunju",
     "qingyu-an": "qingyu-an",
@@ -608,6 +613,7 @@
     "zengliujingwen": "zengliujingwen",
     "zengwang": "zengwang",
     "zengwanglun": "zengwanglun",
+    "zhihuwutuiqinshi": "zhihuwutuiqinshi",
     "zhizibing": "zhizibing",
     "zhongshu-guotuotuo": "zhongshu-guotuotuo",
     "zhongyong": "zhongyong",
@@ -657,7 +663,8 @@
       "masuo"
     ],
     "仁政": [
-      "dedaoduozhu"
+      "dedaoduozhu",
+      "qihuanjinwen"
     ],
     "传闻": [
       "chuanjingdeyiren"
@@ -769,7 +776,8 @@
     ],
     "史传": [
       "zhouyafujunxiliu",
-      "chensheshijia"
+      "chensheshijia",
+      "zhihuwutuiqinshi"
     ],
     "同情": [
       "shanpoyang",
@@ -841,6 +849,7 @@
       "zengwang",
       "laozi8",
       "lantingjixu",
+      "paodingjienu",
       "niluonan",
       "chunjianghuayue",
       "chibifu",
@@ -870,7 +879,8 @@
       "cailianqu"
     ],
     "外交": [
-      "tangju"
+      "tangju",
+      "zhihuwutuiqinshi"
     ],
     "夜晚": [
       "zhouyeshujian"
@@ -1144,7 +1154,8 @@
     "技艺": [
       "maiyouweng",
       "huoban",
-      "hezhouji"
+      "hezhouji",
+      "paodingjienu"
     ],
     "抒怀": [
       "xinglunan",
@@ -1473,7 +1484,8 @@
       "jishi-jiangfanjueyu"
     ],
     "论辩": [
-      "zhuangzihuizi"
+      "zhuangzihuizi",
+      "qihuanjinwen"
     ],
     "讽今": [
       "guoqinlun"
@@ -1646,7 +1658,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 300,
+  "count": 303,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/《论语》十二章.md",
@@ -1687,6 +1699,7 @@
         "子曰：\"三军可夺帅也，匹夫不可夺志也。\"（《子罕》）",
         "子夏曰：\"博学而笃志，切问而近思，仁在其中矣。\"（《子张》）"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -1809,6 +1822,7 @@
         "僵卧孤村不自哀，尚思为国戍轮台。",
         "夜阑卧听风吹雨，铁马冰河入梦来。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -1890,6 +1904,7 @@
         "乃取一葫芦置于地，以钱覆其口，徐以杓酌油沥之，自钱孔入，而钱不湿。",
         "因曰：“我亦无他，惟手熟尔。”康肃笑而遣之。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -1993,6 +2008,7 @@
         "公大笑乐。",
         "即公大兄无奕女，左将军王凝之妻也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2085,6 +2101,7 @@
         "回乐烽前沙似雪，受降城外月如霜。",
         "不知何处吹芦管，一夜征人尽望乡。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2156,6 +2173,7 @@
         "君问归期未有期，巴山夜雨涨秋池。",
         "何当共剪西窗烛，却话巴山夜雨时。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2229,6 +2247,7 @@
         "古道西风瘦马，夕阳西下。",
         "断肠人在天涯。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2311,6 +2330,7 @@
         "蒙曰：“士别三日，即更刮目相待，大兄何见事之晚乎！”",
         "肃遂拜蒙母，结友而别。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2407,6 +2427,7 @@
         "伤心秦汉经行处，宫阙万间都做了土。",
         "兴，百姓苦；亡，百姓苦。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2488,6 +2509,7 @@
         "峨眉山月半轮秋，影入平羌江水流。",
         "夜发清溪向三峡，思君不见下渝州。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2559,6 +2581,7 @@
         "浩荡离愁白日斜，吟鞭东指即天涯。",
         "落红不是无情物，化作春泥更护花。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2634,6 +2657,7 @@
         "晓镜但愁云鬓改，夜吟应觉月光寒。",
         "蓬山此去无多路，青鸟殷勤为探看。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2705,6 +2729,7 @@
         "谁家玉笛暗飞声，散入春风满洛城。",
         "此夜曲中闻折柳，何人不起故园情。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2776,6 +2801,7 @@
         "草树知春不久归，百般红紫斗芳菲。",
         "杨花榆荚无才思，惟解漫天作雪飞。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2851,6 +2877,7 @@
         "荡胸生曾云，决眦入归鸟。",
         "会当凌绝顶，一览众山小。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -2942,6 +2969,7 @@
         "爷娘闻女来，出郭相扶将；阿姊闻妹来，当户理红妆；小弟闻姊来，磨刀霍霍向猪羊。开我东阁门，坐我西阁床。脱我战时袍，著我旧时裳。当窗理云鬓，对镜帖花黄。出门看火伴，火伴皆惊忙：同行十二年，不知木兰是女郎。",
         "雄兔脚扑朔，雌兔眼迷离；双兔傍地走，安能辨我是雄雌？"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3043,6 +3071,7 @@
         "晓之者曰：“地，积块耳，充塞四虚，亡处亡块。若躇步跐蹈，终日在地上行止，奈何忧其坏？”",
         "其人舍然大喜，晓之者亦舍然大喜。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3142,6 +3171,7 @@
         "海日生残夜，江春入旧年。",
         "乡书何处达？归雁洛阳边。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3223,6 +3253,7 @@
         "明月几时有？把酒问青天。不知天上宫阙，今夕是何年。我欲乘风归去，又恐琼楼玉宇，高处不胜寒。起舞弄清影，何似在人间。",
         "转朱阁，低绮户，照无眠。不应有恨，何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3307,6 +3338,7 @@
         "岐王宅里寻常见，崔九堂前几度闻。",
         "正是江南好风景，落花时节又逢君。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3378,6 +3410,7 @@
         "烟笼寒水月笼沙，夜泊秦淮近酒家。",
         "商女不知亡国恨，隔江犹唱后庭花。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3457,6 +3490,7 @@
         "不用，则以纸帖之，每韵为一帖，木格贮之。有奇字素无备者，旋刻之，以草火烧，瞬息可成。不以木为之者，木理有疏密，沾水则高下不平，兼与药相粘，不可取；不若燔土，用讫再火令药镕，以手拂之，其印自落，殊不沾污。",
         "昇死，其印为余群从所得，至今宝藏。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3553,6 +3587,7 @@
         "箫鼓追随春社近，衣冠简朴古风存。",
         "从今若许闲乘月，拄杖无时夜叩门。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3634,6 +3669,7 @@
         "终古高云簇此城，秋风吹散马蹄声。",
         "河流大野犹嫌束，山入潼关不解平。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3705,6 +3741,7 @@
         "水陆草木之花，可爱者甚蕃。晋陶渊明独爱菊。自李唐来，世人甚爱牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。",
         "予谓菊，花之隐逸者也；牡丹，花之富贵者也；莲，花之君子者也。噫！菊之爱，陶后鲜有闻。莲之爱，同予者何人？牡丹之爱，宜乎众矣。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3794,6 +3831,7 @@
         "方欲行，转视积薪后，一狼洞其中，意将隧入以攻其后也。身已半入，止露尻尾。屠自后断其股，亦毙之。乃悟前狼假寐，盖以诱敌。",
         "狼亦黠矣，而顷刻两毙，禽兽之变诈几何哉？止增笑耳。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3886,6 +3924,7 @@
         "前不见古人，后不见来者。",
         "念天地之悠悠，独怆然而涕下。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -3957,6 +3996,7 @@
         "飞来山上千寻塔，闻说鸡鸣见日升。",
         "不畏浮云遮望眼，自缘身在最高层。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4032,6 +4072,7 @@
         "剪不断，理还乱，是离愁。",
         "别是一般滋味在心头。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4112,6 +4153,7 @@
         "自古逢秋悲寂寥，我言秋日胜春朝。",
         "晴空一鹤排云上，便引诗情到碧霄。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4189,6 +4231,7 @@
         "宋君令人问之于丁氏，丁氏对曰：“得一人之使，非得一人于井中也。”",
         "求闻之若此，不若无闻也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4274,6 +4317,7 @@
         "独坐幽篁里，弹琴复长啸。",
         "深林人不知，明月来相照。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4345,6 +4389,7 @@
         "黄梅时节家家雨，青草池塘处处蛙。",
         "有约不来过夜半，闲敲棋子落灯花。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4416,6 +4461,7 @@
         "强欲登高去，无人送酒来。",
         "遥怜故园菊，应傍战场开。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4495,6 +4541,7 @@
         "行路难，行路难，多歧路，今安在？",
         "长风破浪会有时，直挂云帆济沧海。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4577,6 +4624,7 @@
         "日月之行，若出其中。",
         "星汉灿烂，若出其里。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4674,6 +4722,7 @@
         "淫慢则不能励精，险躁则不能治性。",
         "年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4759,6 +4808,7 @@
         "宣室求贤访逐臣，贾生才调更无伦。",
         "可怜夜半虚前席，不问苍生问鬼神。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4830,6 +4880,7 @@
         "莫言下岭便无难，赚得行人错喜欢。",
         "正入万山围子里，一山放出一山拦。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4905,6 +4956,7 @@
         "惶恐滩头说惶恐，零丁洋里叹零丁。",
         "人生自古谁无死？留取丹心照汗青。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -4986,6 +5038,7 @@
         "故园东望路漫漫，双袖龙钟泪不干。",
         "马上相逢无纸笔，凭君传语报平安。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5057,6 +5110,7 @@
         "杨花落尽子规啼，闻道龙标过五溪。",
         "我寄愁心与明月，随君直到夜郎西。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5136,6 +5190,7 @@
         "元方曰：“君与家君期日中。日中不至，则是无信；对子骂父，则是无礼。”",
         "友人惭，下车引之。元方入门不顾。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5234,6 +5289,7 @@
         "无丝竹之乱耳，无案牍之劳形。",
         "孔子云：何陋之有？"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5323,6 +5379,7 @@
         "春冬之时，则素湍绿潭，回清倒影，绝𪩘多生怪柏，悬泉瀑布，飞漱其间，清荣峻茂，良多趣味。",
         "每至晴初霜旦，林寒涧肃，常有高猿长啸，属引凄异，空谷传响，哀转久绝。故渔者歌曰：「巴东三峡巫峡长，猿鸣三声泪沾裳。」"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5399,6 +5456,7 @@
         "水皆缥碧，千丈见底。游鱼细石，直视无碍。急湍甚箭，猛浪若奔。",
         "夹岸高山，皆生寒树，负势竞上，互相轩邈，争高直指，千百成峰。泉水激石，泠泠作响；好鸟相鸣，嘤嘤成韵。蝉则千转不穷，猿则百叫无绝。鸢飞戾天者，望峰息心；经纶世务者，窥谷忘反。横柯上蔽，在昼犹昏；疏条交映，有时见日。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5494,6 +5552,7 @@
         "大漠孤烟直，长河落日圆。",
         "萧关逢候骑，都护在燕然。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5577,6 +5636,7 @@
         "参差荇菜，左右流之。窈窕淑女，寤寐求之。求之不得，寤寐思服。悠哉悠哉，辗转反侧。",
         "参差荇菜，左右采之。窈窕淑女，琴瑟友之。参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5646,6 +5706,7 @@
       "fullLinesPunct": [
         "北冥有鱼，其名为鲲。鲲之大，不知其几千里也，化而为鸟，其名为鹏。鹏之背，不知其几千里也，怒而飞，其翼若垂天之云。是鸟也，海运，则将徙于南冥。南冥者，天池也。齐谐者，志怪者也。谐之言曰：「鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里，去以六月息者也。」野马也，尘埃也，生物之以息相吹也。天之苍苍，其正色邪？其远而无所至极邪？其视下也，亦若是则已矣。且夫水之积也不厚，则负大舟也无力。覆杯水于坳堂之上，则芥为之舟，置杯焉则胶，水浅而舟大也。风之积也不厚，则其负大翼也无力，故九万里，则风斯在下矣，而后乃今，培风背，负青天，而莫之夭阏者，而后乃今将图南。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5743,6 +5804,7 @@
         "一车炭，千余斤，宫使驱将惜不得。",
         "半匹红纱一丈绫，系向牛头充炭直。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5818,6 +5880,7 @@
         "无意苦争春，一任群芳妒。",
         "零落成泥碾作尘，只有香如故。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5903,6 +5966,7 @@
         "惊起却回头，有恨无人省。",
         "拣尽寒枝不肯栖，寂寞沙洲冷。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -5986,6 +6050,7 @@
         "上自劳军。至霸上及棘门军，直驰入，将以下骑送迎。已而之细柳军，军士吏被甲，锐兵刃，彀弓弩，持满。天子先驱至，不得入。先驱曰：“天子且至！”军门都尉曰：“将军令曰：‘军中闻将军令，不闻天子之诏。’”居无何，上至，又不得入。于是上乃使使持节诏将军：“吾欲入劳军。”亚夫乃传言开壁门。壁门士吏谓从属车骑曰：“将军约，军中不得驱驰。”于是天子乃按辔徐行。至营，将军亚夫持兵揖曰：“介胄之士不拜，请以军礼见。”天子为动，改容式车。使人称谢：“皇帝敬劳将军。”成礼而去。",
         "既出军门，群臣皆惊。文帝曰：“嗟呼，此真将军矣！曩者霸上、棘门军，若儿戏耳，其将固可袭而虏也。至于亚夫，可得而犯邪！”称善者久之。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6065,6 +6130,7 @@
         "货恶其弃于地也，不必藏于己；力恶其不出于身也，不必为己。",
         "是故谋闭而不兴，盗窃乱贼而不作，故外户而不闭，是谓大同。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6148,6 +6214,7 @@
         "兴尽晚回舟，误入藕花深处。",
         "争渡，争渡，惊起一滩鸥鹭。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6224,6 +6291,7 @@
         "青青子佩，悠悠我思。纵我不往，子宁不来。",
         "挑兮达兮，在城阙兮。一日不见，如三月兮。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6301,6 +6369,7 @@
         "坐潭上，四面竹树环合，寂寥无人，凄神寒骨，悄怆幽邃。以其境过清，不可久居，乃记之而去。",
         "同游者：吴武陵，龚古，余弟宗玄。隶而从者，崔氏二小生，曰恕己，曰奉壹。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6400,6 +6469,7 @@
         "惠子曰：“我非子，固不知子矣；子固非鱼也，子之不知鱼之乐全矣！”",
         "庄子曰：“请循其本。子曰‘汝安知鱼乐’云者，既已知吾知之而问我。我知之濠上也。”"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6491,6 +6561,7 @@
         "馨香盈怀袖，路远莫致之。",
         "此物何足贵，但感别经时。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6572,6 +6643,7 @@
         "式微式微，胡不归？微君之故，胡为乎中露？",
         "式微式微，胡不归？微君之躬，胡为乎泥中？"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6647,6 +6719,7 @@
         "城非不高也，池非不深也，兵革非不坚利也，米粟非不多也；委而去之，是地利不如人和也。",
         "故曰：域民不以封疆之界，固国不以山溪之险，威天下不以兵革之利。得道者多助，失道者寡助。寡助之至，亲戚畔之；多助之至，天下顺之。以天下之所顺，攻亲戚之所畔，故君子有不战，战必胜矣。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6733,6 +6806,7 @@
         "河曲智叟笑而止之曰：“甚矣，汝之不惠！以残年余力，曾不能毁山之一毛，其如土石何？”北山愚公长息曰：“汝心之固，固不可彻，曾不若孀妻弱子。虽我之死，有子存焉。子又生孙，孙又生子；子又有子，子又有孙；子子孙孙无穷匮也，而山不加增，何苦而不平？”河曲智叟亡以应。",
         "操蛇之神闻之，惧其不已也，告之于帝。帝感其诚，命夸娥氏二子负二山，一厝朔东，一厝雍南。自此，冀之南，汉之阴，无陇断焉。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6819,6 +6893,7 @@
         "烽火连三月，家书抵万金。",
         "白头搔更短，浑欲不胜簪。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6904,6 +6979,7 @@
         "欲济无舟楫，端居耻圣明。",
         "坐观垂钓者，徒有羡鱼情。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -6993,6 +7069,7 @@
         "其船背稍夷，则题名其上，文曰“天启壬戌秋日，虞山王毅叔远甫刻”，细若蚊足，钩画了了，其色墨。又用篆章一，文曰“初平山人”，其色丹。",
         "通计一舟，为人五；为窗八；为箬篷，为楫，为炉，为壶，为手卷，为念珠各一；对联、题名并篆文，为字共三十有四。而计其长曾不盈寸。盖简桃核修狭者为之。嘻，技亦灵怪矣哉！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7091,6 +7168,7 @@
         "既出，得其船，便扶向路，处处志之。及郡下，诣太守，说如此。太守即遣人随其往，寻向所志，遂迷，不复得路。",
         "南阳刘子骥，高尚士也，闻之，欣然规往。未果，寻病终。后遂无问津者。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7186,6 +7264,7 @@
         "妻子象禽兽，行止依林阻。",
         "柴门何萧条，狐兔翔我宇。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7267,6 +7346,7 @@
         "一曲新词酒一杯，去年天气旧亭台。夕阳西下几时回？",
         "无可奈何花落去，似曾相识燕归来。小园香径独徘徊。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7331,6 +7411,7 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7426,6 +7507,7 @@
         "月下飞天镜，云生结海楼。",
         "仍怜故乡水，万里送行舟。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7528,6 +7610,7 @@
         "夜久语声绝，如闻泣幽咽。",
         "天明登前途，独与老翁别。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7597,6 +7680,7 @@
       "fullLinesPunct": [
         "山川之美，古来共谈。高峰入云，清流见底。两岸石壁，五色交辉。青林翠竹，四时俱备。晓雾将歇，猿鸟乱鸣；夕日欲颓，沉鳞竞跃。实是欲界之仙都。自康乐以来，未复有能与其奇者。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7682,6 +7766,7 @@
         "俄顷风定云墨色，秋天漠漠向昏黑。布衾多年冷似铁，娇儿恶卧踏里裂。床头屋漏无干处，雨脚如麻未断绝。自经丧乱少睡眠，长夜沾湿何由彻！",
         "安得广厦千万间，大庇天下寒士俱欢颜！风雨不动安如山。呜呼！何时眼前突兀见此屋，吾庐独破受冻死亦足！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7765,6 +7850,7 @@
         "蒹葭萋萋，白露未晞。所谓伊人，在水之湄。溯洄从之，道阻且跻。溯游从之，宛在水中坻。",
         "蒹葭采采，白露未已。所谓伊人，在水之涘。溯洄从之，道阻且右。溯游从之，宛在水中沚。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7842,6 +7928,7 @@
         "故曰：教学相长也。",
         "《兑命》曰\"学学半\"，其此之谓乎！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7922,6 +8009,7 @@
         "元丰六年十月十二日夜，解衣欲睡，月色入户，欣然起行。念无与为乐者，遂至承天寺寻张怀民。怀民亦未寝，相与步于中庭。",
         "庭下如积水空明，水中藻荇交横，盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -7997,6 +8085,7 @@
         "冰霜正惨凄，终岁常端正。",
         "岂不罹凝寒？松柏有本性。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8078,6 +8167,7 @@
         "折戟沉沙铁未销，自将磨洗认前朝。",
         "东风不与周郎便，铜雀春深锁二乔。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8153,6 +8243,7 @@
         "浮云游子意，落日故人情。",
         "挥手自兹去，萧萧班马鸣。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8239,6 +8330,7 @@
         "海内存知己，天涯若比邻。",
         "无为在歧路，儿女共沾巾。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8320,6 +8412,7 @@
         "轻舟短棹西湖好，绿水逶迤。芳草长堤，隐隐笙歌处处随。",
         "无风水面琉璃滑，不觉船移。微动涟漪，惊起沙禽掠岸飞。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8395,6 +8488,7 @@
         "牧人驱犊返，猎马带禽归。",
         "相顾无相识，长歌怀采薇。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8480,6 +8574,7 @@
         "乱花渐欲迷人眼，浅草才能没马蹄。",
         "最爱湖东行不足，绿杨阴里白沙堤。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8565,6 +8660,7 @@
         "半卷红旗临易水，霜重鼓寒声不起。",
         "报君黄金台上意，提携玉龙为君死！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8643,6 +8739,7 @@
         "山光悦鸟性，潭影空人心。",
         "万籁此都寂，但余钟磬音。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8730,6 +8827,7 @@
         "山气日夕佳，飞鸟相与还。",
         "此中有真意，欲辨已忘言。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8816,6 +8914,7 @@
         "马之千里者，一食或尽粟一石。食马者不知其能千里而食也。是马也，虽有千里之能，食不饱，力不足，才美不外见，且欲与常马等不可得，安求其能千里也？",
         "策之不以其道，食之不能尽其材，鸣之而不能通其意，执策而临之，曰：\"天下无马！\"呜呼！其真无马邪？其真不知马也！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8894,6 +8993,7 @@
         "晴川历历汉阳树，芳草萋萋鹦鹉洲。",
         "日暮乡关何处是？烟波江上使人愁。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -8985,6 +9085,7 @@
         "养怡之福，可得永年。",
         "幸甚至哉，歌以咏志。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9082,6 +9183,7 @@
         "少选之间而志在流水，锺子期又曰：「善哉乎鼓琴，汤汤乎若流水。」",
         "锺子期死，伯牙破琴绝弦，终身不复鼓琴，以为世无足复为鼓琴者。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9169,6 +9271,7 @@
         "景春 景春曰：「公孙衍、张仪岂不诚大丈夫哉？一怒而诸侯惧，安居而天下熄。",
         "孟子曰：「是焉得为大丈夫乎？子未学礼乎？丈夫之冠也，父命之；女子之嫁也，母命之，往送之门，戒之曰：『往之女家，必敬必戒，无违夫子。』以顺为正者，妾妇之道也。居天下之广居，立天下之正位，行天下之大道；得志与民由之，不得志，独行其道；富贵不能淫，贫贱不能移，威武不能屈──此之谓大丈夫。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9243,6 +9346,7 @@
         "北冥有鱼，其名为鲲。鲲之大，不知其几千里也，化而为鸟，其名为鹏。鹏之背，不知其几千里也，怒而飞，其翼若垂天之云。是鸟也，海运，则将徙于南冥。南冥者，天池也。齐谐者，志怪者也。谐之言曰：「鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里，去以六月息者也。」野马也，尘埃也，生物之以息相吹也。天之苍苍，其正色邪？其远而无所至极邪？其视下也，亦若是则已矣。",
         "庄子与惠子游于濠梁之上。庄子曰：「鯈鱼出游从容，是鱼乐也。」惠子曰：「子非鱼，安知鱼之乐？」庄子曰：「子非我，安知我不知鱼之乐？」惠子曰：「我非子，固不知子矣。子固非鱼也，子之不知鱼之乐，全矣！」庄子曰：「请循其本。子曰『汝安知鱼乐』云者，既已知吾知之，而问我。我知之濠上也。」"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9323,6 +9427,7 @@
         "故曰：教学相长也。",
         "《兑命》曰\"学学半\"，其此之谓乎！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9403,6 +9508,7 @@
         "少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。",
         "而今识尽愁滋味，欲说还休。欲说还休，却道“天凉好个秋”！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9488,6 +9594,7 @@
         "愿陛下托臣以讨贼兴复之效，不效，则治臣之罪，以告先帝之灵。若无兴德之言，则责攸之、祎、允等之慢，以彰其咎。陛下亦宜自谋，以咨诹善道，察纳雅言，深追先帝遗诏。臣不胜受恩感激。",
         "今当远离，临表涕零，不知所言。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9566,6 +9673,7 @@
         "已知泉路近，欲别故乡难。",
         "毅魄归来日，灵旗空际看。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9659,6 +9767,7 @@
         "羹饭一时熟，不知贻阿谁。",
         "出门东向看，泪落沾我衣。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9760,6 +9869,7 @@
         "何处望神州？满眼风光北固楼。千古兴亡多少事？悠悠。不尽长江滚滚流。",
         "年少万兜鍪，坐断东南战未休。天下英雄谁敌手？曹刘。生子当如孙仲谋。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9848,6 +9958,7 @@
         "山河千古在，城郭一时非。",
         "饿死真吾志，梦中行采薇。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -9934,6 +10045,7 @@
         "鸟下绿芜秦苑夕，蝉鸣黄叶汉宫秋。",
         "行人莫问当年事，故国东来渭水流。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10020,6 +10132,7 @@
         "秦王怫然怒，谓唐雎曰：“公亦尝闻天子之怒乎？”唐雎对曰：“臣未尝闻也。”秦王曰：“天子之怒，伏尸百万，流血千里。”唐雎曰：“大王尝闻布衣之怒乎？”秦王曰：“布衣之怒，亦免冠徒跣，以头抢地耳。”唐雎曰：“此庸夫之怒也，非士之怒也。夫专诸之刺王僚也，彗星袭月；聂政之刺韩傀也，白虹贯日；要离之刺庆忌也，仓鹰击于殿上。此三子者，皆布衣之士也，怀怒未发，休祲降于天，与臣而将四矣。若士必怒，伏尸二人，流血五步，天下缟素，今日是也。”挺剑而起。",
         "秦王色挠，长跪而谢之曰：“先生坐！何至于此！寡人谕矣：夫韩、魏灭亡，而安陵以五十里之地存者，徒以有先生也。”"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10106,6 +10219,7 @@
         "槲叶落山路，枳花明驿墙。",
         "因思杜陵梦，凫雁满回塘。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10194,6 +10308,7 @@
         "列国周齐秦汉楚。",
         "赢，都变做了土；输，都变做了土。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10287,6 +10402,7 @@
         "嗟夫！予尝求古仁人之心，或异二者之为，何哉？不以物喜，不以己悲；居庙堂之高则忧其民；处江湖之远则忧其君。是进亦忧，退亦忧。然则何时而乐耶？其必曰「先天下之忧而忧，后天下之乐而乐」乎！噫！微斯人，吾谁与归？",
         "时六年九月十五日。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10373,6 +10489,7 @@
         "云横秦岭家何在？雪拥蓝关马不前。",
         "知汝远来应有意，好收吾骨瘴江边。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10457,6 +10574,7 @@
         "公与之乘，战于长勺。公将鼓之。刿曰：\"未可。\"齐人三鼓。刿曰：\"可矣。\"齐师败绩。公将驰之。刿曰：\"未可。\"下视其辙，登轼而望之，曰：\"可矣。\"遂逐齐师。",
         "既克，公问其故。对曰：\"夫战，勇气也。一鼓作气，再而衰，三而竭。彼竭我盈，故克之。夫大国，难测也，惧有伏焉。吾视其辙乱，望其旗靡，故逐之。\""
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10552,6 +10670,7 @@
         "有弟皆分散，无家问死生。",
         "寄书长不达，况乃未休兵。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10632,6 +10751,7 @@
       "fullLinesPunct": [
         "喇叭，唢呐，曲儿小腔儿大。官船来往乱如麻，全仗你抬声价。军听了军愁，民听了民怕。哪里去辨甚么真共假？眼见的吹翻了这家，吹伤了那家，只吹的水尽鹅飞罢！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10724,6 +10844,7 @@
         "持节云中，何日遣冯唐。",
         "会挽雕弓如满月，西北望，射天狼。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10804,6 +10925,7 @@
         "浊酒一杯家万里，燕然未勒归无计。",
         "羌管悠悠霜满地，人不寐，将军白发征夫泪。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10892,6 +11014,7 @@
         "到亭上，有两人铺毡对坐，一童子烧酒，炉正沸。见余大喜曰：「湖中焉得更有此人！」拉余同饮，余强饮三大白而别。问其姓氏，是金陵人，客此。",
         "及下船，舟子喃喃曰：「莫说相公痴，更有痴似相公者。」"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -10960,6 +11083,7 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11075,6 +11199,7 @@
         "轮台东门送君去，去时雪满天山路。",
         "山回路转不见君，雪上空留马行处。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11157,6 +11282,7 @@
         "了却君王天下事，赢得生前身后名。",
         "可怜白发生！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11248,6 +11374,7 @@
         "树绕村庄，水满陂塘。倚东风，豪兴徜徉。小园几许，收尽春光。有桃花红，李花白，菜花黄。",
         "远远围墙，隐隐茅堂。飏青旗，流水桥旁。偶然乘兴，步过东冈。正莺儿啼，燕儿舞，蝶儿忙。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11324,6 +11451,7 @@
         "今诸生学于太学，县官日有廪稍之供，父母岁有裘葛之遗，无冻馁之患矣；坐大厦之下而诵《诗》《书》，无奔走之劳矣；有司业、博士为之师，未有问而不告、求而不得者也；凡所宜有之书，皆集于此，不必若余之手录、假诸人而后见也。其业有不精、德有不成者，非天质之卑，则心不若余之专耳，岂他人之过哉！",
         "东阳马生君则，在太学已二年，流辈甚称其贤。余朝京师，生以乡人子谒余，撰长书以为贽，辞甚畅达；与之论辨，言和而色夷。自谓少时用心于学甚劳，是可谓善学者矣。其将归见其亲也，余故道为学之难以告之。谓余勉乡人以学者，余之志也；诋我夸际遇之盛而骄乡人者，岂知予者哉！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11417,6 +11545,7 @@
         "于是入朝见威王，曰：\"臣诚知不如徐公美。臣之妻私臣，臣之妾畏臣，臣之客欲有求于臣，皆以美于徐公。今齐地方千里，百二十城，宫妇左右莫不私王，朝廷之臣莫不畏王，四境之内莫不有求于王。由此观之，王之蔽甚矣。\"",
         "王曰：\"善。\"乃下令：\"群臣吏民能面刺寡人之过者，受上赏；上书谏寡人者，受中赏；能谤讥于市朝，闻寡人之耳者，受下赏。\"令初下，群臣进谏，门庭若市；数月之后，时时而间进；期年之后，虽欲言，无可进者。燕、赵、韩、魏闻之，皆朝于齐。此所谓战胜于朝廷。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11513,6 +11642,7 @@
         "沉舟侧畔千帆过，病树前头万木春。",
         "今日听君歌一曲，暂凭杯酒长精神。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11618,6 +11748,7 @@
         "然而禽鸟知山林之乐，而不知人之乐；人知从太守游而乐，而不知太守之乐其乐也。",
         "醉能同其乐，醒能述以文者，太守也。太守谓谁？庐陵欧阳修也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11696,6 +11827,7 @@
         "汉文有道恩犹薄，湘水无情吊岂知。",
         "寂寂江山摇落处，怜君何事到天涯。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11784,6 +11916,7 @@
         "召令徒属曰：“公等遇雨，皆已失期，失期当斩。藉第令毋斩，而戍死者固十六七。且壮士不死即已，死即举大名耳，王侯将相宁有种乎！”徒属皆曰：“敬受命。”乃诈称公子扶苏、项燕，从民欲也。袒右，称大楚。为坛而盟，祭以尉首。陈胜自立为将军，吴广为都尉。攻大泽乡，收而攻蕲。蕲下，乃令符离人葛婴将兵徇蕲以东。攻铚、酂、苦、柘、谯皆下之。行收兵。比至陈，车六七百乘，骑千余，卒数万人。攻陈，陈守令皆不在，独守丞与战谯门中。弗胜，守丞死，乃入据陈。数日，号令召三老、豪杰与皆来会计事。三老、豪杰皆曰：“将军身被坚执锐，伐无道，诛暴秦，复立楚国之社稷，功宜为王。”陈涉乃立为王，号为张楚。",
         "当此时，诸郡县苦秦吏者，皆刑其长吏，杀之以应陈涉。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11863,6 +11996,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -11938,6 +12072,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12002,6 +12137,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12066,6 +12202,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12131,6 +12268,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12195,6 +12333,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12259,6 +12398,7 @@
       "form": "杂言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12334,6 +12474,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12398,6 +12539,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12463,6 +12605,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12528,6 +12671,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12592,6 +12736,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12656,6 +12801,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12721,6 +12867,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12786,6 +12933,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12851,6 +12999,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12915,6 +13064,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -12979,6 +13129,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13043,6 +13194,7 @@
       "form": "杂言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13118,6 +13270,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13182,6 +13335,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13247,6 +13401,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13311,6 +13466,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13376,6 +13532,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13441,6 +13598,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13505,6 +13663,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13569,6 +13728,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13633,6 +13793,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13708,6 +13869,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13772,6 +13934,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13836,6 +13999,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13901,6 +14065,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -13965,6 +14130,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14029,6 +14195,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14101,6 +14268,7 @@
         "日出江花红胜火，春来江水绿如蓝。",
         "能不忆江南。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14169,6 +14337,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14233,6 +14402,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14297,6 +14467,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14361,6 +14532,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14426,6 +14598,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14491,6 +14664,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14555,6 +14729,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14619,6 +14794,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14683,6 +14859,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14748,6 +14925,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14813,6 +14991,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14878,6 +15057,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -14943,6 +15123,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15008,6 +15189,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15073,6 +15255,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15137,6 +15320,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15202,6 +15386,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15266,6 +15451,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15331,6 +15517,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15395,6 +15582,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15460,6 +15648,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15531,6 +15720,7 @@
         "黄师塔前江水东，春光懒困倚微风。",
         "桃花一簇开无主，可爱深红爱浅红。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15596,6 +15786,7 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15670,6 +15861,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15735,6 +15927,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15800,6 +15993,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15865,6 +16059,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15930,6 +16125,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -15995,6 +16191,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16060,6 +16257,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16124,6 +16322,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16188,6 +16387,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16253,6 +16453,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16318,6 +16519,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16382,6 +16584,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16457,6 +16660,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16521,6 +16725,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16586,6 +16791,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16651,6 +16857,7 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16724,6 +16931,7 @@
         "临行密密缝，意恐迟迟归。",
         "谁言寸草心，报得三春晖。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16792,6 +17000,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16857,6 +17066,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16922,6 +17132,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -16987,6 +17198,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17052,6 +17264,7 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17116,6 +17329,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17191,6 +17405,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17256,6 +17471,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17321,6 +17537,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17386,6 +17603,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17451,6 +17669,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17516,6 +17735,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17580,6 +17800,7 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17655,6 +17876,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17720,6 +17942,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17785,6 +18008,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17849,6 +18073,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17914,6 +18139,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -17989,6 +18215,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18054,6 +18281,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18119,6 +18347,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18184,6 +18413,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18249,6 +18479,7 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18324,6 +18555,7 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18389,6 +18621,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18454,6 +18687,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18519,6 +18753,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18584,6 +18819,7 @@
       "form": "词",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18659,6 +18895,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18733,6 +18970,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18811,6 +19049,7 @@
       "form": "七言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18876,6 +19115,7 @@
       "form": "四言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -18951,6 +19191,7 @@
       "form": "杂言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -19029,6 +19270,7 @@
       "form": "五言",
       "fullLines": [],
       "fullLinesPunct": [],
+      "gaokaoExtra": null,
       "gaokaoGroup": null,
       "gaokaoNo": null,
       "gaokaoSince": null,
@@ -19102,6 +19344,7 @@
         "\"敢问何谓浩然之气？\"曰：\"难言也。其为气也，至大至刚，以直养而无害，则塞于天地之间。其为气也，配义与道；无是，馁也。是集义所生者，非义袭而取之也。行有不慊于心，则馁矣。我故曰，告子未尝知义，以其外之也。必有事焉，而勿正，心勿忘，勿助长也。无若宋人然：宋人有闵其苗之不长而揠之者，芒芒然归，谓其人曰：'今日病矣！予助苗长矣！'其子趋而往视之，苗则槁矣。天下之不助苗长者寡矣。以为无益而舍之者，不耘苗者也；助之长者，揠苗者也——非徒无益，而又害之。\"",
         "\"何谓知言？\"曰：\"诐辞知其所蔽，淫辞知其所陷，邪辞知其所离，遁辞知其所穷。生于其心，害于其政；发于其政，害于其事。圣人复起，必从吾言矣。\"（公孙丑曰：）\"宰我、子贡善为说辞，冉牛、闵子、颜渊善言德行。孔子兼之，曰：'我于辞命，则不能也。'\""
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 25,
       "gaokaoSince": 2026,
@@ -19209,6 +19452,7 @@
         "知人者智，自知者明。胜人者有力，自胜者强。知足者富，强行者有志。不失其所者久，死而不亡者寿。（第三十三章）",
         "信言不美，美言不信。善者不辩，辩者不善。知者不博，博者不知。圣人不积，既以为人己愈有，既以与人己愈多。天之道，利而不害；圣人之道，为而不争。（第八十一章）"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 21,
       "gaokaoSince": 2026,
@@ -19314,6 +19558,7 @@
         "子贡问曰：\"有一言而可以终身行之者乎？\"子曰：\"其恕乎！己所不欲，勿施于人。\"（《卫灵公》）",
         "子曰：\"小子何莫学夫《诗》？《诗》可以兴，可以观，可以群，可以怨。迩之事父，远之事君。多识于鸟兽草木之名。\"（《阳货》）"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 1,
       "gaokaoSince": 2023,
@@ -19440,6 +19685,7 @@
         "且夫人之学也，不志其大，虽多而何为？辙之来也，于山见终南、嵩、华之高，于水见黄河之大且深，于人见欧阳公，而犹以为未见太尉也。故愿得观贤人之光耀，闻一言以自壮，然后可以尽天下之大观而无憾者矣。",
         "辙年少，未能通习吏事。向之来，非有取于斗升之禄，偶然得之，非其所乐。然幸得赐归待选，使得优游数年之间，将归益治其文，且学为政。太尉苟以为可教而辱教之，又幸矣！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 31,
       "gaokaoSince": 2026,
@@ -19531,6 +19777,7 @@
         "喜怒哀乐之未发，谓之中；发而皆中节，谓之和。中也者，天下之大本也；和也者，天下之达道也。致中和，天地位焉，万物育焉。",
         "博学之，审问之，慎思之，明辨之，笃行之。有弗学，学之弗能，弗措也；有弗问，问之弗知，弗措也；有弗思，思之弗得，弗措也；有弗辨，辨之弗明，弗措也；有弗行，行之弗笃，弗措也。人一能之，己百之；人十能之，己千之。果能此道矣，虽愚必明，虽柔必强。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 24,
       "gaokaoSince": 2026,
@@ -19617,6 +19864,7 @@
         "矮纸斜行闲作草，晴窗细乳戏分茶。",
         "素衣莫起风尘叹，犹及清明可到家。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 32,
       "gaokaoSince": 2023,
@@ -19695,6 +19943,7 @@
         "塞上长城空自许，镜中衰鬓已先斑。",
         "《出师》一表真名世，千载谁堪伯仲间。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 31,
       "gaokaoSince": 2023,
@@ -19775,6 +20024,7 @@
         "故方其盛也，举天下之豪杰，莫能与之争；及其衰也，数十伶人困之，而身死国灭，为天下笑。夫祸患常积于忽微，而智勇多困于所溺，岂独伶人也哉！",
         "作《伶官传》。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 18,
       "gaokaoSince": 2023,
@@ -19872,6 +20122,7 @@
         "呜呼！以赂秦之地封天下之谋臣，以事秦之心礼天下之奇才，并力西向，则吾恐秦人食之不得下咽也。悲夫！有如此之势，而为秦人积威之所劫，日削月割，以趋于亡。为国者无使为积威之所劫哉！",
         "夫六国与秦皆诸侯，其势弱于秦，而犹有可以不赂而胜之之势。苟以天下之大，下而从六国破亡之故事，是又在六国下矣！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 7,
       "gaokaoSince": 2023,
@@ -19965,6 +20216,7 @@
         "夫人之相与，俯仰一世。或取诸怀抱，悟言一室之内；或因寄所托，放浪形骸之外。虽趣舍万殊，静躁不同，当其欣于所遇，暂得于己，快然自足，不知老之将至。及其所之既倦，情随事迁，感慨系之矣。向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀。况修短随化，终期于尽。古人云：\"死生亦大矣。\"岂不痛哉！",
         "每览昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。固知一死生为虚诞，齐彭殇为妄作。后之视今，亦犹今之视昔。悲夫！故列叙时人，录其所述，虽世殊事异，所以兴怀，其致一也。后之览者，亦将有感于斯文。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 28,
       "gaokaoSince": 2026,
@@ -20049,6 +20301,7 @@
         "吾尝终日而思矣，不如须臾之所学也；吾尝跂而望矣，不如登高之博见也。登高而招，臂非加长也，而见者远；顺风而呼，声非加疾也，而闻者彰。假舆马者，非利足也，而致千里；假舟楫者，非能水也，而绝江河。君子生非异也，善假于物也。",
         "积土成山，风雨兴焉；积水成渊，蛟龙生焉；积善成德，而神明自得，圣心备焉。故不积跬步，无以至千里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而舍之，朽木不折；锲而不舍，金石可镂。蚓无爪牙之利，筋骨之强，上食埃土，下饮黄泉，用心一也。蟹六跪而二螯，非蛇鳝之穴无可寄托者，用心躁也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 2,
       "gaokaoSince": 2023,
@@ -20144,6 +20397,7 @@
         "【人间词话】一、词以境界为最上。有境界则自成高格，自有名句。五代北宋之词所以独绝者在此。",
         "【人间词话】二六、古今之成大事业、大学问者，必经过三种之境界：\"昨夜西风凋碧树，独上高楼，望尽天涯路。\"此第一境也。\"衣带渐宽终不悔，为伊消得人憔悴。\"此第二境也。\"众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。\"此第三境也。此等语皆非大词人不能道。然遽以此意解释诸词，恐为晏欧诸公所不许也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 32,
       "gaokaoSince": 2026,
@@ -20234,6 +20488,7 @@
         "三杯两盏淡酒，怎敌他、晚来风急？",
         "梧桐更兼细雨，到黄昏、点点滴滴。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 30,
       "gaokaoSince": 2023,
@@ -20308,6 +20563,7 @@
         "大学之道，在明明德，在亲民，在止于至善。知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。物有本末，事有终始。知所先后，则近道矣。",
         "古之欲明明德于天下者，先治其国；欲治其国者，先齐其家；欲齐其家者，先修其身；欲修其身者，先正其心；欲正其心者，先诚其意；欲诚其意者，先致其知；致知在格物。物格而后知至，知至而后意诚，意诚而后心正，心正而后身修，身修而后家齐，家齐而后国治，国治而后天下平。自天子以至于庶人，壹是皆以修身为本。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 23,
       "gaokaoSince": 2026,
@@ -20384,6 +20640,7 @@
         "子路率尔而对曰：\"千乘之国，摄乎大国之间，加之以师旅，因之以饥馑；由也为之，比及三年，可使有勇，且知方也。\"夫子哂之。\"求，尔何如？\"对曰：\"方六七十，如五六十，求也为之，比及三年，可使足民。如其礼乐，以俟君子。\" \"赤，尔何如？\"对曰：\"非曰能之，愿学焉。宗庙之事，如会同，端章甫，愿为小相焉。\" \"点，尔何如？\"鼓瑟希，铿尔，舍瑟而作，对曰：\"异乎三子者之撰。\"子曰：\"何伤乎？亦各言其志也！\"曰：\"莫春者，春服既成，冠者五六人，童子六七人，浴乎沂，风乎舞雩，咏而归。\"夫子喟然叹曰：\"吾与点也！\"",
         "三子者出，曾皙后。曾皙曰：\"夫三子者之言何如？\"子曰：\"亦各言其志也已矣。\"曰：\"夫子何哂由也？\"曰：\"为国以礼，其言不让，是故哂之。唯求则非邦也与？安见方六七十如五六十而非邦也者？唯赤则非邦也与？宗庙会同，非诸侯而何？赤也为之小，孰能为之大？\""
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 11,
       "gaokaoSince": 2023,
@@ -20478,6 +20735,7 @@
         "冉有曰：\"夫子欲之，吾二臣者皆不欲也。\"孔子曰：\"求！周任有言曰：'陈力就列，不能者止。'危而不持，颠而不扶，则将焉用彼相矣？且尔言过矣。虎兕出于柙，龟玉毁于椟中，是谁之过与？\"",
         "冉有曰：\"今夫颛臾，固而近于费。今不取，后世必为子孙忧。\"孔子曰：\"求！君子疾夫舍曰欲之而必为之辞。丘也闻有国有家者，不患寡而患不均，不患贫而患不安。盖均无贫，和无寡，安无倾。夫如是，故远人不服，则修文德以来之。既来之，则安之。今由与求也，相夫子，远人不服而不能来也，邦分崩离析而不能守也，而谋动干戈于邦内。吾恐季孙之忧，不在颛臾，而在萧墙之内也。\""
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 22,
       "gaokaoSince": 2026,
@@ -20582,6 +20840,7 @@
         "肯与邻翁相对饮，",
         "隔篱呼取尽余杯。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 15,
       "gaokaoSince": 2023,
@@ -20676,6 +20935,7 @@
         "主人何为言少钱，径须沽取对君酌。",
         "五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 12,
       "gaokaoSince": 2023,
@@ -20779,6 +21039,7 @@
         "屈原既死之后，楚有宋玉、唐勒、景差之徒者，皆好辞而以赋见称；然皆祖屈原之从容辞令，终莫敢直谏。其后楚日以削，数十年竟为秦所灭。自屈原沉汨罗后百有余年，汉有贾生，为长沙王太傅，过湘水，投书以吊屈原。",
         "太史公曰：余读《离骚》、《天问》、《招魂》、《哀郢》，悲其志。适长沙，观屈原所自沉渊，未尝不垂涕，想见其为人。及见贾生吊之，又怪屈原以彼其材，游诸侯，何国不容，而自令若是。读《鵩鸟赋》，同死生，轻去就，又爽然自失矣。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 3,
       "gaokaoSince": 2023,
@@ -20879,6 +21140,7 @@
         "圣人无常师。孔子师郯子、苌弘、师襄、老聃。郯子之徒，其贤不及孔子。孔子曰：三人行，则必有我师。是故弟子不必不如师，师不必贤于弟子，闻道有先后，术业有专攻，如是而已。",
         "李氏子蟠，年十七，好古文，六艺经传皆通习之，不拘于时，学于余。余嘉其能行古道，作《师说》以贻之。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 5,
       "gaokaoSince": 2023,
@@ -20946,6 +21208,86 @@
       "volume": "必修上册"
     },
     {
+      "_path": "poems/高中/必修下册/庖丁解牛.md",
+      "author": "庄子",
+      "authorDied": -286,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "战国",
+      "emotion": "一把刀用了十九年还像新磨的",
+      "examFreq": 0.8,
+      "form": "文言",
+      "fullLines": [
+        "庖丁为文惠君解牛手之所触肩之所倚足之所履膝之所踦砉然向然奏刀騞然莫不中音合于《桑林》之舞乃中《经首》之会",
+        "文惠君曰“嘻善哉技盖至此乎”",
+        "庖丁释刀对曰“臣之所好者道也进乎技矣始臣之解牛之时所见无非牛者三年之后未尝见全牛也方今之时臣以神遇而不以目视官知止而神欲行依乎天理批大郤导大窾因其固然技经肯綮之未尝而况大軱乎良庖岁更刀割也族庖月更刀折也今臣之刀十九年矣所解数千牛矣而刀刃若新发于硎彼节者有间而刀刃者无厚以无厚入有间恢恢乎其于游刃必有余地矣是以十九年而刀刃若新发于硎虽然每至于族吾见其难为怵然为戒视为止行为迟动刀甚微謋然已解如土委地提刀而立为之四顾为之踌躇满志善刀而藏之”",
+        "文惠君曰“善哉吾闻庖丁之言得养生焉”"
+      ],
+      "fullLinesPunct": [
+        "庖丁为文惠君解牛，手之所触，肩之所倚，足之所履，膝之所踦，砉然向然，奏刀騞然，莫不中音。合于《桑林》之舞，乃中《经首》之会。",
+        "文惠君曰：“嘻，善哉！技盖至此乎？”",
+        "庖丁释刀对曰：“臣之所好者，道也，进乎技矣。始臣之解牛之时，所见无非牛者。三年之后，未尝见全牛也。方今之时，臣以神遇而不以目视，官知止而神欲行。依乎天理，批大郤，导大窾，因其固然，技经肯綮之未尝，而况大軱乎！良庖岁更刀，割也；族庖月更刀，折也。今臣之刀十九年矣，所解数千牛矣，而刀刃若新发于硎。彼节者有间，而刀刃者无厚；以无厚入有间，恢恢乎其于游刃必有余地矣，是以十九年而刀刃若新发于硎。虽然，每至于族，吾见其难为，怵然为戒，视为止，行为迟。动刀甚微，謋然已解，如土委地。提刀而立，为之四顾，为之踌躇满志，善刀而藏之。”",
+        "文惠君曰：“善哉！吾闻庖丁之言，得养生焉。”"
+      ],
+      "gaokaoExtra": "必修下册",
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": null,
+      "hasFulltext": true,
+      "id": "paodingjienu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "方今之时臣以神遇而不以目视官知止而神欲行",
+        "依乎天理批大郤导大窾因其固然技经肯綮之未尝而况大軱乎",
+        "提刀而立为之四顾为之踌躇满志善刀而藏之"
+      ],
+      "linesPunct": [
+        "方今之时，臣以神遇而不以目视，官知止而神欲行。",
+        "依乎天理，批大郤，导大窾，因其固然，技经肯綮之未尝，而况大軱乎！",
+        "提刀而立，为之四顾，为之踌躇满志，善刀而藏之。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        3,
+        6,
+        4
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "庄子",
+        "寓言",
+        "战国文言"
+      ],
+      "technique": [
+        "寓言",
+        "描写",
+        "比喻"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "哲理",
+        "技艺"
+      ],
+      "title": "庖丁解牛",
+      "volume": "必修下册"
+    },
+    {
       "_path": "poems/高中/选择性必修下册/归去来兮辞.md",
       "author": "陶潜",
       "authorDied": 427,
@@ -20970,6 +21312,7 @@
         "归去来兮，请息交以绝游。世与我而相违，复驾言兮焉求？悦亲戚之情话，乐琴书以消忧。农人告余以春及，将有事于西畴。或命巾车，或棹孤舟。既窈窕以寻壑，亦崎岖而经丘。木欣欣以向荣，泉涓涓而始流。善万物之得时，感吾生之行休。",
         "已矣乎！寓形宇内复几时？曷不委心任去留？胡为乎遑遑欲何之？富贵非吾愿，帝乡不可期。怀良辰以孤往，或植杖而耘耔。登东皋以舒啸，临清流而赋诗。聊乘化以归尽，乐夫天命复奚疑！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 16,
       "gaokaoSince": 2023,
@@ -21056,6 +21399,7 @@
         "羁鸟恋旧林，池鱼思故渊。",
         "开荒南野际，守拙归园田。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 6,
       "gaokaoSince": 2023,
@@ -21141,6 +21485,7 @@
         "江山如画，一时多少豪杰。",
         "羽扇纶巾，谈笑间，樯橹灰飞烟灭。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 26,
       "gaokaoSince": 2023,
@@ -21226,6 +21571,7 @@
         "应念岭海经年，孤光自照，肝肺皆冰雪。短发萧骚襟袖冷，稳泛沧浪空阔。",
         "尽挹西江，细斟北斗，万象为宾客。扣舷独啸，不知今夕何夕。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 33,
       "gaokaoSince": 2023,
@@ -21319,6 +21665,7 @@
         "二十四桥仍在，波心荡、冷月无声。",
         "念桥边红药，年年知为谁生？"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 38,
       "gaokaoSince": 2023,
@@ -21393,6 +21740,7 @@
         "古者富贵而名摩灭，不可胜记，唯倜傥非常之人称焉。盖文王拘而演《周易》；仲尼厄而作《春秋》；屈原放逐，乃赋《离骚》；左丘失明，厥有《国语》；孙子膑脚，《兵法》修列；不韦迁蜀，世传《吕览》；韩非囚秦，《说难》《孤愤》；《诗》三百篇，大底圣贤发愤之所为作也。此人皆意有所郁结，不得通其道，故述往事、思来者。乃如左丘无目，孙子断足，终不可用，退而论书策，以舒其愤，思垂空文以自见。",
         "仆窃不逊，近自托于无能之辞，网罗天下放失旧闻，略考其行事，综其终始，稽其成败兴坏之纪，上计轩辕，下至于兹，为十表、本纪十二、书八章、世家三十、列传七十，凡百三十篇。亦欲以究天人之际，通古今之变，成一家之言。草创未就，会遭此祸，惜其不成，是以就极刑而无愠色。仆诚以著此书，藏之名山，传之其人，通邑大都，则仆偿前辱之责，虽万被戮，岂有悔哉！然此可为智者道，难为俗人言也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 12,
       "gaokaoSince": 2023,
@@ -21489,6 +21837,7 @@
         "酌酒以自宽，举杯断绝歌路难。",
         "心非木石岂无感，吞声踯躅不敢言。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 7,
       "gaokaoSince": 2023,
@@ -21565,6 +21914,7 @@
         "岂曰无衣？与子同裳。",
         "王于兴师，修我戈矛。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 2,
       "gaokaoSince": 2023,
@@ -21671,6 +22021,7 @@
         "斜月沉沉藏海雾，碣石潇湘无限路。",
         "不知乘月几人归，落月摇情满江树。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 8,
       "gaokaoSince": 2023,
@@ -21745,6 +22096,7 @@
         "东南形胜，三吴都会，钱塘自古繁华。烟柳画桥，风帘翠幕，参差十万人家。云树绕堤沙，怒涛卷霜雪，天堑无涯。市列珠玑，户盈罗绮，竞豪奢。",
         "重湖叠巘清嘉，有三秋桂子，十里荷花。羌管弄晴，菱歌泛夜，嬉嬉钓叟莲娃。千骑拥高牙，乘醉听箫鼓，吟赏烟霞。异日图将好景，归去凤池夸。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 23,
       "gaokaoSince": 2023,
@@ -21836,6 +22188,7 @@
         "梦入神山教神妪，老鱼跳波瘦蛟舞。",
         "吴质不眠倚桂树，露脚斜飞湿寒兔。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 19,
       "gaokaoSince": 2023,
@@ -21910,6 +22263,7 @@
         "登临送目，正故国晚秋，天气初肃。千里澄江似练，翠峰如簇。归帆去棹残阳里，背西风、酒旗斜矗。彩舟云淡，星河鹭起，画图难足。",
         "念往昔、繁华竞逐，叹门外楼头，悲恨相续。千古凭高对此，谩嗟荣辱。六朝旧事随流水，但寒烟衰草凝绿。至今商女，时时犹唱，后庭遗曲。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 24,
       "gaokaoSince": 2023,
@@ -22025,6 +22379,7 @@
         "别君去兮何时还？且放白鹿青崖间，须行即骑访名山。",
         "安能摧眉折腰事权贵，使我不得开心颜。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 11,
       "gaokaoSince": 2023,
@@ -22103,6 +22458,7 @@
         "想当年，金戈铁马，气吞万里如虎。",
         "凭谁问：廉颇老矣，尚能饭否？"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 34,
       "gaokaoSince": 2023,
@@ -22186,6 +22542,7 @@
         "千里孤坟，无处话凄凉。",
         "纵使相逢应不识，尘满面，鬓如霜。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 25,
       "gaokaoSince": 2023,
@@ -22262,6 +22619,7 @@
         "采之欲遗谁？所思在远道。",
         "还顾望旧乡，长路漫浩浩。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 4,
       "gaokaoSince": 2023,
@@ -22348,6 +22706,7 @@
         "呜呼！胜地不常，盛筵难再。兰亭已矣，梓泽丘墟。临别赠言，幸承恩于伟饯；登高作赋，是所望于群公。敢竭鄙怀，恭疏短引。一言均赋，四韵俱成。请洒潘江，各倾陆海云尔。",
         "滕王高阁临江渚，佩玉鸣鸾罢歌舞。画栋朝飞南浦云，珠帘暮卷西山雨。闲云潭影日悠悠，物换星移几度秋。阁中帝子今何在？槛外长江空自流。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 29,
       "gaokaoSince": 2026,
@@ -22412,6 +22771,86 @@
       "volume": "选修（2026起默写）"
     },
     {
+      "_path": "poems/高中/必修下册/烛之武退秦师.md",
+      "author": "左丘明",
+      "authorDied": -422,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "先秦",
+      "emotion": "一夜之间说退一支联军",
+      "examFreq": 0.9,
+      "form": "文言",
+      "fullLines": [
+        "晋侯秦伯围郑以其无礼于晋且贰于楚也晋军函陵秦军氾南",
+        "佚之狐言于郑伯曰“国危矣若使烛之武见秦君师必退”公从之辞曰“臣之壮也犹不如人今老矣无能为也已”公曰“吾不能早用子今急而求子是寡人之过也然郑亡子亦有不利焉”许之",
+        "夜缒而出见秦伯曰“秦晋围郑郑既知亡矣若亡郑而有益于君敢以烦执事越国以鄙远君知其难也焉用亡郑以陪邻邻之厚君之薄也若舍郑以为东道主行李之往来共其乏困君亦无所害且君尝为晋君赐矣许君焦瑕朝济而夕设版焉君之所知也夫晋何厌之有既东封郑又欲肆其西封若不阙秦将焉取之阙秦以利晋唯君图之”秦伯说与郑人盟使杞子逢孙杨孙戍之乃还",
+        "子犯请击之公曰“不可微夫人之力不及此因人之力而敝之不仁失其所与不知以乱易整不武吾其还也”亦去之"
+      ],
+      "fullLinesPunct": [
+        "晋侯、秦伯围郑，以其无礼于晋，且贰于楚也。晋军函陵，秦军氾南。",
+        "佚之狐言于郑伯曰：“国危矣，若使烛之武见秦君，师必退。”公从之。辞曰：“臣之壮也，犹不如人；今老矣，无能为也已。”公曰：“吾不能早用子，今急而求子，是寡人之过也。然郑亡，子亦有不利焉！”许之。",
+        "夜缒而出，见秦伯，曰：“秦、晋围郑，郑既知亡矣。若亡郑而有益于君，敢以烦执事。越国以鄙远，君知其难也，焉用亡郑以陪邻？邻之厚，君之薄也。若舍郑以为东道主，行李之往来，共其乏困，君亦无所害。且君尝为晋君赐矣，许君焦、瑕，朝济而夕设版焉，君之所知也。夫晋，何厌之有？既东封郑，又欲肆其西封，若不阙秦，将焉取之？阙秦以利晋，唯君图之。”秦伯说，与郑人盟。使杞子、逢孙、杨孙戍之，乃还。",
+        "子犯请击之。公曰：“不可。微夫人之力不及此。因人之力而敝之，不仁；失其所与，不知；以乱易整，不武。吾其还也。”亦去之。"
+      ],
+      "gaokaoExtra": "必修下册",
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": null,
+      "hasFulltext": true,
+      "id": "zhihuwutuiqinshi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "越国以鄙远君知其难也焉用亡郑以陪邻邻之厚君之薄也",
+        "夫晋何厌之有既东封郑又欲肆其西封若不阙秦将焉取之",
+        "因人之力而敝之不仁失其所与不知以乱易整不武"
+      ],
+      "linesPunct": [
+        "越国以鄙远，君知其难也，焉用亡郑以陪邻？邻之厚，君之薄也。",
+        "夫晋，何厌之有？既东封郑，又欲肆其西封，若不阙秦，将焉取之？",
+        "因人之力而敝之，不仁；失其所与，不知；以乱易整，不武。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        4,
+        5,
+        4
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "左传",
+        "外交",
+        "先秦文言"
+      ],
+      "technique": [
+        "对话",
+        "利害分析",
+        "史传笔法"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "外交",
+        "史传"
+      ],
+      "title": "烛之武退秦师",
+      "volume": "必修下册"
+    },
+    {
       "_path": "poems/高中/选择性必修中册/燕歌行.md",
       "author": "高适",
       "authorDied": 765,
@@ -22456,6 +22895,7 @@
         "相看白刃血纷纷，死节从来岂顾勋。",
         "君不见沙场征战苦，至今犹忆李将军。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 13,
       "gaokaoSince": 2023,
@@ -22614,6 +23054,7 @@
         "凄凄不似向前声，满座重闻皆掩泣。",
         "座中泣下谁最多？江州司马青衫湿。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 18,
       "gaokaoSince": 2023,
@@ -22699,6 +23140,7 @@
         "亲朋无一字，老病有孤舟。",
         "戎马关山北，凭轩涕泗流。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 17,
       "gaokaoSince": 2023,
@@ -22784,6 +23226,7 @@
         "朱弦已为佳人绝，青眼聊因美酒横。",
         "万里归船弄长笛，此心吾与白鸥盟。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 27,
       "gaokaoSince": 2023,
@@ -22866,6 +23309,7 @@
         "山多石，少土。石苍黑色，多平方，少圜。少杂树，多松，生石罅，皆平顶。冰雪，无瀑水，无鸟兽音迹。至日观数里内无树，而雪与人膝齐。",
         "桐城姚鼐记。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 20,
       "gaokaoSince": 2023,
@@ -22961,6 +23405,7 @@
         "万里悲秋常作客，百年多病独登台。",
         "艰难苦恨繁霜鬓，潦倒新停浊酒杯。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 16,
       "gaokaoSince": 2023,
@@ -23054,6 +23499,7 @@
         "月明星稀，乌鹊南飞。绕树三匝，何枝可依？",
         "山不厌高，海不厌深。周公吐哺，天下归心。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 5,
       "gaokaoSince": 2023,
@@ -23130,6 +23576,7 @@
         "元丰七年六月丁丑，余自齐安舟行适临汝，而长子迈将赴饶之德兴尉，送之至湖口，因得观所谓石钟者。寺僧使小童持斧，于乱石间择其一二扣之，硿硿焉。余固笑而不信也。至莫夜月明，独与迈乘小舟，至绝壁下。大石侧立千尺，如猛兽奇鬼，森然欲搏人；而山上栖鹘，闻人声亦惊起，磔磔云霄间；又有若老人咳且笑于山谷中者，或曰此鹳鹤也。余方心动欲还，而大声发于水上，噌吰如钟鼓不绝。舟人大恐。徐而察之，则山下皆石穴罅，不知其浅深，微波入焉，涵澹澎湃而为此也。舟回至两山间，将入港口，有大石当中流，可坐百人，空中而多窍，与风水相吞吐，有窾坎镗鞳之声，与向之噌吰者相应，如乐作焉。因笑谓迈曰：\"汝识之乎？噌吰者，周景王之无射也；窾坎镗鞳者，魏庄子之歌钟也。古之人不余欺也！\"",
         "事不目见耳闻，而臆断其有无，可乎？郦元之所见闻，殆与余同，而言之不详；士大夫终不肯以小舟夜泊绝壁之下，故莫能知；而渔工水师虽知而不能言。此世所以不传也。而陋者乃以斧斤考击而求之，自以为得其实。余是以记之，盖叹郦元之简，而笑李渤之陋也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 19,
       "gaokaoSince": 2023,
@@ -23220,6 +23667,7 @@
       "fullLinesPunct": [
         "大道之行也，天下为公。选贤与能，讲信修睦。故人不独亲其亲，不独子其子，使老有所终，壮有所用，幼有所长，矜寡孤独废疾者皆有所养。男有分，女有归。货恶其弃于地也，不必藏于己；力恶其不出于身也，不必为己。是故谋闭而不兴，盗窃乱贼而不作，故外户而不闭。是谓大同。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 14,
       "gaokaoSince": 2023,
@@ -23373,6 +23821,7 @@
         "民生各有所乐兮，余独好修以为常。",
         "虽体解吾犹未变兮，岂余心之可惩。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 3,
       "gaokaoSince": 2023,
@@ -23460,6 +23909,7 @@
         "问者曰：\"以子之道，移之官理，可乎？\"驼曰：\"我知种树而已，官理，非吾业也。然吾居乡，见长人者好烦其令，若甚怜焉，而卒以祸。旦暮吏来而呼曰：'官命促尔耕，勖尔植，督尔获，早缫而绪，早织而缕，字而幼孩，遂而鸡豚。'鸣鼓而聚之，击木而召之。吾小人辍飧饔以劳吏者，且不得暇，又何以蕃吾生而安吾性耶？故病且怠。若是，则与吾业者其亦有类乎？\"",
         "问者曰：\"嘻，不亦善夫！吾问养树，得养人术。\"传其事以为官戒。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 17,
       "gaokaoSince": 2023,
@@ -23555,6 +24005,7 @@
         "人习于苟且非一日，士大夫多以不恤国事、同俗自媚于众为善，上乃欲变此，而某不量敌之众寡，欲出力助上以抗之，则众何为而不汹汹然？盘庚之迁，胥怨者民也，非特朝廷士大夫而已。盘庚不为怨者故改其度，度义而后动，是而不见可悔故也。如君实责我以在位久，未能助上大有为，以膏泽斯民，则某知罪矣；如曰今日当一切不事事，守前所为而已，则非某之所敢知。",
         "无由会晤，不任区区向往之至！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 8,
       "gaokaoSince": 2023,
@@ -23649,6 +24100,7 @@
         "叶上初阳干宿雨，水面清圆，一一风荷举。",
         "故乡遥，何日去？家住吴门，久作长安旅。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 29,
       "gaokaoSince": 2023,
@@ -23725,6 +24177,7 @@
         "懒起画蛾眉，弄妆梳洗迟。",
         "照花前后镜，花面交相映。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 20,
       "gaokaoSince": 2023,
@@ -23801,6 +24254,7 @@
         "西北望长安，可怜无数山。",
         "青山遮不住，毕竟东流去。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 35,
       "gaokaoSince": 2023,
@@ -23877,6 +24331,7 @@
         "小楼昨夜又东风，故国不堪回首月明中。",
         "问君能有几多愁？恰似一江春水向东流。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 22,
       "gaokaoSince": 2023,
@@ -23953,6 +24408,7 @@
         "三顾频烦天下计，两朝开济老臣心。",
         "出师未捷身先死，长使英雄泪满襟。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 14,
       "gaokaoSince": 2023,
@@ -24067,6 +24523,7 @@
         "锦城虽云乐，不如早还家。",
         "蜀道之难，难于上青天，侧身西望长咨嗟！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 10,
       "gaokaoSince": 2023,
@@ -24150,6 +24607,7 @@
         "凡百元首，承天景命，莫不殷忧而道著，功成而德衰。有善始者实繁，能克终者盖寡。岂其取之易守之难乎？昔取之而有余，今守之而不足，何也？夫在殷忧，必竭诚以待下；既得志，则纵情以傲物。竭诚则胡越为一体，傲物则骨肉为行路。虽董之以严刑，振之以威怒，终苟免而不怀仁，貌恭而不心服。怨不在大，可畏惟人；载舟覆舟，所宜深慎；奔车朽索，其可忽乎！",
         "君人者，诚能见可欲则思知足以自戒，将有作则思知止以安人，念高危则思谦冲而自牧，惧满溢则思江海下百川，乐盘游则思三驱以为度，忧懈怠则思慎始而敬终，虑壅蔽则思虚心以纳下，想谗邪则思正身以黜恶，恩所加则思无因喜以谬赏，罚所及则思无以怒而滥刑。总此十思，弘兹九德，简能而任之，择善而从之，则智者尽其谋，勇者竭其力，仁者播其惠，信者效其忠。文武争驰，君臣无事，可以尽豫游之乐，可以养松乔之寿，鸣琴垂拱，不言而化。何必劳神苦思，代下司职，役聪明之耳目，亏无为之大道哉！"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 4,
       "gaokaoSince": 2023,
@@ -24239,6 +24697,7 @@
         "臣闻地广者粟多，国大者人众，兵强则士勇。是以太山不让土壤，故能成其大；河海不择细流，故能就其深；王者不却众庶，故能明其德。是以地无四方，民无异国，四时充美，鬼神降福，此五帝三王之所以无敌也。今乃弃黔首以资敌国，却宾客以业诸侯，使天下之士退而不敢西向，裹足不入秦，此所谓藉寇兵而赍盗粮者也。",
         "夫物不产于秦，可宝者多；士不产于秦，而愿忠者众。今逐客以资敌国，损民以益仇，内自虚而外树怨于诸侯，求国无危，不可得也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 27,
       "gaokaoSince": 2026,
@@ -24314,6 +24773,7 @@
         "国脉微如缕。问长缨何时入手，缚将戎主？未必人间无好汉，谁与宽些尺度？试看取当年韩五。岂有谷城公付授，也不干曾遇骊山母。谈笑起，两河路。",
         "少时棋柝曾联句。叹而今登楼揽镜，事机频误。闻说北风吹面急，边上冲梯屡舞。君莫道投鞭虚语，自古一贤能制难，有金汤便可无张许？快投笔，莫题柱。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 37,
       "gaokaoSince": 2023,
@@ -24405,6 +24865,7 @@
         "苏子曰：\"客亦知夫水与月乎？逝者如斯，而未尝往也；盈虚者如彼，而卒莫消长也。盖将自其变者而观之，则天地曾不能以一瞬；自其不变者而观之，则物与我皆无尽也，而又何羡乎！且夫天地之间，物各有主，苟非吾之所有，虽一毫而莫取。惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭，是造物者之无尽藏也，而吾与子之所共适。\"",
         "客喜而笑，洗盏更酌。肴核既尽，杯盘狼籍。相与枕藉乎舟中，不知东方之既白。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 9,
       "gaokaoSince": 2023,
@@ -24493,6 +24954,7 @@
         "始皇既没，余威震于殊俗。然陈涉瓮牖绳枢之子，氓隶之人，而迁徙之徒也；才能不及中人，非有仲尼、墨翟之贤，陶朱、猗顿之富；蹑足行伍之间，而倔起阡陌之中，率疲弊之卒，将数百之众，转而攻秦。斩木为兵，揭竿为旗，天下云集响应，赢粮而景从。山东豪俊遂并起而亡秦族矣。",
         "且夫天下非小弱也，雍州之地，崤函之固，自若也。陈涉之位，非尊于齐、楚、燕、赵、韩、魏、宋、卫、中山之君也；锄耰棘矜，非铦于钩戟长铩也；谪戍之众，非抗于九国之师也；深谋远虑，行军用兵之道，非及向时之士也。然而成败异变，功业相反，何也？试使山东之国与陈涉度长絜大，比权量力，则不可同年而语矣。然秦以区区之地，致万乘之势，序八州而朝同列，百有余年矣。然后以六合为家，崤函为宫。一夫作难而七庙隳，身死人手，为天下笑者，何也？仁义不施而攻守之势异也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 13,
       "gaokaoSince": 2023,
@@ -24583,6 +25045,7 @@
       "fullLinesPunct": [
         "惠子谓庄子曰：\"魏王贻我大瓠之种，我树之成而实五石。以盛水浆，其坚不能自举也。剖之以为瓢，则瓠落无所容。非不呺然大也，吾为其无用而掊之。\"庄子曰：\"夫子固拙于用大矣。宋人有善为不龟手之药者，世世以洴澼絖为事。客闻之，请买其方百金。聚族而谋曰：'我世世为洴澼絖，不过数金；今一朝而鬻技百金，请与之。'客得之，以说吴王。越有难，吴王使之将。冬，与越人水战，大败越人，裂地而封之。能不龟手一也，或以封，或不免于洴澼絖，则所用之异也。今子有五石之瓠，何不虑以为大樽而浮乎江湖，而忧其瓠落无所容？则夫子犹有蓬之心也夫！\""
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 26,
       "gaokaoSince": 2026,
@@ -24680,6 +25143,7 @@
         "沧海月明珠有泪，蓝田日暖玉生烟。",
         "此情可待成追忆，只是当时已惘然。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 21,
       "gaokaoSince": 2023,
@@ -24754,6 +25218,7 @@
         "【端正好】碧云天。黄花地。西风紧北雁南飞。晓来谁染霜林醉。总是离人泪。",
         "【滚绣毬】恨相见得迟。怨归去得疾。柳丝长玉骢难系。恨不得倩疏林挂住斜晖。马儿迍迍行。车儿快快随。却告了相思回避。破题儿又早别离。听得一声去也松了金钏。遥望见十里长亭减了玉肌。此恨谁知。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 39,
       "gaokaoSince": 2023,
@@ -24832,6 +25297,7 @@
         "嗟乎！一人之心，千万人之心也。秦爱纷奢，人亦念其家。奈何取之尽锱铢，用之如泥沙？使负栋之柱，多于南亩之农夫；架梁之椽，多于机上之工女；钉头磷磷，多于在庾之粟粒；瓦缝参差，多于周身之帛缕；直栏横槛，多于九土之城郭；管弦呕哑，多于市人之言语。使天下之人，不敢言而敢怒。独夫之心，日益骄固。戍卒叫，函谷举，楚人一炬，可怜焦土！",
         "呜呼！灭六国者六国也，非秦也；族秦者秦也，非天下也。嗟乎！使六国各爱其人，则足以拒秦；使秦复爱六国之人，则递三世可至万世而为君，谁得而族灭也？秦人不暇自哀，而后人哀之；后人哀之而不鉴之，亦使后人而复哀后人也。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 6,
       "gaokaoSince": 2023,
@@ -24911,6 +25377,7 @@
         "伏惟圣朝以孝治天下，凡在故老，犹蒙矜育，况臣孤苦，特为尤甚。且臣少仕伪朝，历职郎署，本图宦达，不矜名节。今臣亡国贱俘，至微至陋，过蒙拔擢，宠命优渥，岂敢盘桓，有所希冀！但以刘日薄西山，气息奄奄，人命危浅，朝不虑夕。臣无祖母，无以至今日；祖母无臣，无以终余年。母孙二人，更相为命，是以区区不能废远。",
         "臣密今年四十有四，祖母刘今年九十有六，是臣尽节于陛下之日长，报养刘之日短也。乌鸟私情，愿乞终养。臣之辛苦，非独蜀之人士及二州牧伯所见明知，皇天后土实所共鉴。愿陛下矜愍愚诚，听臣微志，庶刘侥幸，保卒余年。臣生当陨首，死当结草。臣不胜犬马怖惧之情，谨拜表以闻。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选择性必修",
       "gaokaoNo": 15,
       "gaokaoSince": 2023,
@@ -24988,6 +25455,7 @@
         "宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。",
         "众里寻他千百度。蓦然回首，那人却在，灯火阑珊处。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 36,
       "gaokaoSince": 2023,
@@ -25064,6 +25532,7 @@
         "爱而不见，搔首踟蹰。",
         "静女其娈，贻我彤管。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 1,
       "gaokaoSince": 2023,
@@ -25146,6 +25615,7 @@
         "余既为此志，后五年，吾妻来归，时至轩中，从余问古事，或凭几学书。吾妻归宁，述诸小妹语曰：\"闻姊家有阁子，且何谓阁子也？\"其后六年，吾妻死，室坏不修。其后二年，余久卧病无聊，乃使人复葺南阁子，其制稍异于前。然自后余多在外，不常居。",
         "庭有枇杷树，吾妻死之年所手植也，今已亭亭如盖矣。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "必修",
       "gaokaoNo": 10,
       "gaokaoSince": 2023,
@@ -25240,6 +25710,7 @@
         "金风玉露一相逢，便胜却人间无数。",
         "两情若是久长时，又岂在朝朝暮暮。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "诗词曲",
       "gaokaoNo": 28,
       "gaokaoSince": 2023,
@@ -25320,6 +25791,7 @@
         "吾闻竹工云：\"竹之为瓦，仅十稔；若重覆之，得二十稔。\"噫！吾以至道乙未岁，自翰林出滁上；丙申，移广陵；丁酉，又入西掖；戊戌岁除日，有齐安之命；己亥闰三月到郡。四年之间，奔走不暇，未知明年又在何处，岂惧竹楼之易朽乎！幸后之人与我同志，嗣而葺之，庶斯楼之不朽也。",
         "咸平二年八月十五日记。"
       ],
+      "gaokaoExtra": null,
       "gaokaoGroup": "选修",
       "gaokaoNo": 30,
       "gaokaoSince": 2026,
@@ -25392,6 +25864,148 @@
       ],
       "title": "黄冈竹楼记",
       "volume": "选修（2026起默写）"
+    },
+    {
+      "_path": "poems/高中/必修下册/齐桓晋文之事.md",
+      "author": "孟子",
+      "authorDied": -289,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "战国",
+      "emotion": "把一场问话引到「保民」上",
+      "examFreq": 0.85,
+      "form": "文言",
+      "fullLines": [
+        "齐宣王问曰“齐桓晋文之事可得闻乎”",
+        "孟子对曰“仲尼之徒无道桓文之事者是以后世无传焉臣未之闻也无以则王乎”",
+        "曰“德何如则可以王矣”",
+        "曰“保民而王莫之能御也”",
+        "曰“若寡人者可以保民乎哉”",
+        "曰“可”",
+        "曰“何由知吾可也”",
+        "曰“臣闻之胡龁曰王坐于堂上有牵牛而过堂下者王见之曰‘牛何之’对曰‘将以衅钟’王曰‘舍之吾不忍其觳觫若无罪而就死地’对曰‘然则废衅钟与’曰‘何可废也以羊易之’不识有诸”",
+        "曰“有之”",
+        "曰“是心足以王矣百姓皆以王为爱也臣固知王之不忍也”",
+        "王曰“然诚有百姓者齐国虽褊小吾何爱一牛即不忍其觳觫若无罪而就死地故以羊易之也”",
+        "曰“王无异于百姓之以王为爱也以小易大彼恶知之王若隐其无罪而就死地则牛羊何择焉”",
+        "王笑曰“是诚何心哉我非爱其财而易之以羊也宜乎百姓之谓我爱也”",
+        "曰“无伤也是乃仁术也见牛未见羊也君子之于禽兽也见其生不忍见其死闻其声不忍食其肉是以君子远庖厨也”",
+        "王说曰“《诗》云‘他人有心予忖度之’夫子之谓也夫我乃行之反而求之不得吾心夫子言之于我心有戚戚焉此心之所以合于王者何也”",
+        "曰“有复于王者曰‘吾力足以举百钧而不足以举一羽明足以察秋毫之末而不见舆薪’则王许之乎”",
+        "曰“否”",
+        "“今恩足以及禽兽而功不至于百姓者独何与然则一羽之不举为不用力焉舆薪之不见为不用明焉百姓之不见保为不用恩焉故王之不王不为也非不能也”",
+        "曰“不为者与不能者之形何以异”",
+        "曰“挟太山以超北海语人曰‘我不能’是诚不能也为长者折枝语人曰‘我不能’是不为也非不能也故王之不王非挟太山以超北海之类也王之不王是折枝之类也老吾老以及人之老幼吾幼以及人之幼天下可运于掌《诗》云‘刑于寡妻至于兄弟以御于家邦’言举斯心加诸彼而已故推恩足以保四海不推恩无以保妻子古之人所以大过人者无他焉善推其所为而已矣今恩足以及禽兽而功不至于百姓者独何与权然后知轻重度然后知长短物皆然心为甚王请度之",
+        "“抑王兴甲兵危士臣构怨于诸侯然后快于心与”",
+        "王曰“否吾何快于是将以求吾所大欲也”",
+        "曰“王之所大欲可得闻与”",
+        "王笑而不言",
+        "曰“为肥甘不足于口与轻暖不足于体与抑为采色不足视于目与声音不足听于耳与便嬖不足使令于前与王之诸臣皆足以供之而王岂为是哉”",
+        "曰“否吾不为是也”",
+        "曰“然则王之所大欲可知已欲辟土地朝秦楚莅中国而抚四夷也以若所为求若所欲犹缘木而求鱼也”",
+        "王曰“若是其甚与”",
+        "曰“殆有甚焉缘木求鱼虽不得鱼无后灾以若所为求若所欲尽心力而为之后必有灾”",
+        "曰“可得闻与”",
+        "曰“邹人与楚人战则王以为孰胜”",
+        "曰“楚人胜”",
+        "曰“然则小固不可以敌大寡固不可以敌众弱固不可以敌强海内之地方千里者九齐集有其一以一服八何以异于邹敌楚哉盍亦反其本矣今王发政施仁使天下仕者皆欲立于王之朝耕者皆欲耕于王之野商贾皆欲藏于王之市行旅皆欲出于王之涂天下之欲疾其君者皆欲赴愬于王其若是孰能御之”",
+        "王曰“吾惛不能进于是矣愿夫子辅吾志明以教我我虽不敏请尝试之”",
+        "曰“无恒产而有恒心者惟士为能若民则无恒产因无恒心苟无恒心放辟邪侈无不为已及陷于罪然后从而刑之是罔民也焉有仁人在位罔民而可为也是故明君制民之产必使仰足以事父母俯足以畜妻子乐岁终身饱凶年免于死亡然后驱而之善故民之从之也轻今也制民之产仰不足以事父母俯不足以畜妻子乐岁终身苦凶年不免于死亡此惟救死而恐不赡奚暇治礼义哉王欲行之则盍反其本矣五亩之宅树之以桑五十者可以衣帛矣鸡豚狗彘之畜无失其时七十者可以食肉矣百亩之田勿夺其时八口之家可以无饥矣谨庠序之教申之以孝悌之义颁白者不负戴于道路矣老者衣帛食肉黎民不饥不寒然而不王者未之有也”"
+      ],
+      "fullLinesPunct": [
+        "齐宣王问曰：“齐桓、晋文之事可得闻乎？”",
+        "孟子对曰：“仲尼之徒无道桓文之事者，是以后世无传焉，臣未之闻也。无以，则王乎？”",
+        "曰：“德何如则可以王矣？”",
+        "曰：“保民而王，莫之能御也。”",
+        "曰：“若寡人者，可以保民乎哉？”",
+        "曰：“可。”",
+        "曰：“何由知吾可也？”",
+        "曰：“臣闻之胡龁曰：王坐于堂上，有牵牛而过堂下者，王见之，曰：‘牛何之？’对曰：‘将以衅钟。’王曰：‘舍之！吾不忍其觳觫，若无罪而就死地。’对曰：‘然则废衅钟与？’曰：‘何可废也，以羊易之。’不识有诸？”",
+        "曰：“有之。”",
+        "曰：“是心足以王矣。百姓皆以王为爱也，臣固知王之不忍也。”",
+        "王曰：“然，诚有百姓者。齐国虽褊小，吾何爱一牛？即不忍其觳觫，若无罪而就死地，故以羊易之也。”",
+        "曰：“王无异于百姓之以王为爱也。以小易大，彼恶知之？王若隐其无罪而就死地，则牛羊何择焉？”",
+        "王笑曰：“是诚何心哉？我非爱其财而易之以羊也，宜乎百姓之谓我爱也。”",
+        "曰：“无伤也，是乃仁术也，见牛未见羊也。君子之于禽兽也，见其生，不忍见其死；闻其声，不忍食其肉。是以君子远庖厨也。”",
+        "王说，曰：“《诗》云：‘他人有心，予忖度之。’夫子之谓也。夫我乃行之，反而求之，不得吾心；夫子言之，于我心有戚戚焉。此心之所以合于王者，何也？”",
+        "曰：“有复于王者曰：‘吾力足以举百钧，而不足以举一羽；明足以察秋毫之末，而不见舆薪。’则王许之乎？”",
+        "曰：“否！”",
+        "“今恩足以及禽兽，而功不至于百姓者，独何与？然则一羽之不举，为不用力焉；舆薪之不见，为不用明焉；百姓之不见保，为不用恩焉。故王之不王，不为也，非不能也。”",
+        "曰：“不为者与不能者之形，何以异？”",
+        "曰：“挟太山以超北海，语人曰：‘我不能。’是诚不能也。为长者折枝，语人曰：‘我不能。’是不为也，非不能也。故王之不王，非挟太山以超北海之类也；王之不王，是折枝之类也。老吾老，以及人之老；幼吾幼，以及人之幼：天下可运于掌。《诗》云：‘刑于寡妻，至于兄弟，以御于家邦。’言举斯心加诸彼而已。故推恩足以保四海，不推恩无以保妻子。古之人所以大过人者，无他焉，善推其所为而已矣。今恩足以及禽兽，而功不至于百姓者，独何与？权，然后知轻重；度，然后知长短。物皆然，心为甚。王请度之！",
+        "“抑王兴甲兵，危士臣，构怨于诸侯，然后快于心与？”",
+        "王曰：“否，吾何快于是？将以求吾所大欲也。”",
+        "曰：“王之所大欲，可得闻与？”",
+        "王笑而不言。",
+        "曰：“为肥甘不足于口与？轻暖不足于体与？抑为采色不足视于目与？声音不足听于耳与？便嬖不足使令于前与？王之诸臣皆足以供之，而王岂为是哉？”",
+        "曰：“否，吾不为是也。”",
+        "曰：“然则王之所大欲可知已：欲辟土地，朝秦楚，莅中国而抚四夷也。以若所为，求若所欲，犹缘木而求鱼也。”",
+        "王曰：“若是其甚与？”",
+        "曰：“殆有甚焉。缘木求鱼，虽不得鱼，无后灾；以若所为，求若所欲，尽心力而为之，后必有灾。”",
+        "曰：“可得闻与？”",
+        "曰：“邹人与楚人战，则王以为孰胜？”",
+        "曰：“楚人胜。”",
+        "曰：“然则小固不可以敌大，寡固不可以敌众，弱固不可以敌强。海内之地，方千里者九，齐集有其一。以一服八，何以异于邹敌楚哉？盍亦反其本矣？今王发政施仁，使天下仕者皆欲立于王之朝，耕者皆欲耕于王之野，商贾皆欲藏于王之市，行旅皆欲出于王之涂，天下之欲疾其君者皆欲赴愬于王。其若是，孰能御之？”",
+        "王曰：“吾惛，不能进于是矣。愿夫子辅吾志，明以教我。我虽不敏，请尝试之。”",
+        "曰：“无恒产而有恒心者，惟士为能。若民，则无恒产，因无恒心。苟无恒心，放辟邪侈，无不为已。及陷于罪，然后从而刑之，是罔民也。焉有仁人在位，罔民而可为也？是故明君制民之产，必使仰足以事父母，俯足以畜妻子，乐岁终身饱，凶年免于死亡；然后驱而之善，故民之从之也轻。今也制民之产，仰不足以事父母，俯不足以畜妻子，乐岁终身苦，凶年不免于死亡。此惟救死而恐不赡，奚暇治礼义哉？王欲行之，则盍反其本矣；五亩之宅，树之以桑，五十者可以衣帛矣；鸡、豚、狗、彘之畜，无失其时，七十者可以食肉矣；百亩之田，勿夺其时，八口之家可以无饥矣；谨庠序之教，申之以孝悌之义，颁白者不负戴于道路矣。老者衣帛食肉，黎民不饥不寒，然而不王者，未之有也。”"
+      ],
+      "gaokaoExtra": "必修下册",
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": null,
+      "hasFulltext": true,
+      "id": "qihuanjinwen",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "老吾老以及人之老幼吾幼以及人之幼天下可运于掌",
+        "权然后知轻重度然后知长短物皆然心为甚王请度之",
+        "老者衣帛食肉黎民不饥不寒然而不王者未之有也"
+      ],
+      "linesPunct": [
+        "老吾老，以及人之老；幼吾幼，以及人之幼：天下可运于掌。",
+        "权，然后知轻重；度，然后知长短。物皆然，心为甚。王请度之！",
+        "老者衣帛食肉，黎民不饥不寒，然而不王者，未之有也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        3,
+        4,
+        4
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "孟子",
+        "仁政",
+        "战国文言"
+      ],
+      "technique": [
+        "比喻",
+        "类推",
+        "层层追问"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "仁政",
+        "论辩"
+      ],
+      "title": "齐桓晋文之事",
+      "volume": "必修下册"
     }
   ]
 }

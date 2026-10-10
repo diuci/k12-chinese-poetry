@@ -2,11 +2,11 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-11",
   "stats": {
-    "attested": 230,
-    "partial": 69,
+    "attested": 231,
+    "partial": 71,
     "notfound": 0,
     "nosource": 1,
-    "withVariants": 86
+    "withVariants": 87
   },
   "results": [
     {
@@ -5768,6 +5768,49 @@
       ]
     },
     {
+      "id": "paodingjienu",
+      "title": "庖丁解牛",
+      "author": "庄子",
+      "stage": "高中",
+      "page": "莊子/養生主",
+      "url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90/%E9%A4%8A%E7%94%9F%E4%B8%BB",
+      "lines": 19,
+      "hit": 17,
+      "miss": [
+        {
+          "line": "庖丁为文惠君解牛手之所触肩之所倚足之所履膝之所踦砉然向然奏刀騞然莫不中音",
+          "nearest": {
+            "line": "庖丁为文惠君解牛手之所触肩之所倚足之所履膝之所踦砉然向然奏刀騞然莫不中音",
+            "source": "庖丁为文惠君解牛手之所触肩之所倚足之所履膝之所踦砉然向然奏刀騞然莫不中音合于",
+            "ratio": 0.973
+          }
+        },
+        {
+          "line": "文惠君曰嘻善哉",
+          "nearest": {
+            "line": "文惠君曰嘻善哉",
+            "source": "文惠君曰譆善哉技盖",
+            "ratio": 0.75
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "刃",
+          "other": "刀",
+          "context": "无厚，以无厚入有間，恢恢乎其於遊刃必有餘地矣，是以十九年而刀刃若新發於硎。雖然，每至於族",
+          "page": "莊子/養生主"
+        },
+        {
+          "ours": "遟",
+          "other": "迟",
+          "context": "見其難爲，怵然爲戒，視爲止，行爲遟，動刀甚微，謋然已解，如土委地，提刀而立，爲之四顧，爲",
+          "page": "莊子/養生主"
+        }
+      ]
+    },
+    {
       "id": "niannujiao-gudong",
       "title": "念奴娇·过洞庭",
       "author": "张孝祥",
@@ -5841,6 +5884,19 @@
         }
       ],
       "override": "《詞-桂枝香》是同一词调的另一抄本。 加这一页是因为它本来就是本篇自动选中的比对页——加新页不能把旧页顶掉。"
+    },
+    {
+      "id": "zhihuwutuiqinshi",
+      "title": "烛之武退秦师",
+      "author": "左丘明",
+      "stage": "高中",
+      "page": "燭之武退秦師",
+      "url": "https://zh.wikisource.org/wiki/%E7%87%AD%E4%B9%8B%E6%AD%A6%E9%80%80%E7%A7%A6%E5%B8%AB",
+      "lines": 28,
+      "hit": 28,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "dengyueyanglou",
@@ -6015,6 +6071,52 @@
           "page": "阿房宮賦"
         }
       ]
+    },
+    {
+      "id": "qihuanjinwen",
+      "title": "齐桓晋文之事",
+      "author": "孟子",
+      "stage": "高中",
+      "page": "孟子/梁惠王上",
+      "url": "https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90/%E6%A2%81%E6%83%A0%E7%8E%8B%E4%B8%8A",
+      "lines": 106,
+      "hit": 102,
+      "miss": [
+        {
+          "line": "曰然则王之所大欲可知已欲辟土地朝秦楚莅中国而抚四夷也",
+          "nearest": {
+            "line": "曰然则王之所大欲可知已欲辟土地朝秦楚莅中国而抚四夷也",
+            "source": "曰然则王之大欲可知已欲辟土地朝秦楚莅中国而抚四夷也以若所",
+            "ratio": 0.926
+          }
+        },
+        {
+          "line": "盍亦反其本矣",
+          "nearest": {
+            "line": "盍亦反其本矣",
+            "source": "盍反其本矣五亩之",
+            "ratio": 0.714
+          }
+        },
+        {
+          "line": "今王发政施仁使天下仕者皆欲立于王之朝耕者皆欲耕于王之野商贾皆欲藏于王之市行旅皆欲出于王之涂天下之欲疾其君者皆欲赴愬于王",
+          "nearest": {
+            "line": "今王发政施仁使天下仕者皆欲立于王之朝耕者皆欲耕于王之野商贾皆欲藏于王之市行旅皆欲出于王之涂天下之欲疾其君者皆欲赴愬于王",
+            "source": "今王发政施仁使天下仕者皆欲立于王之朝耕者皆欲耕于王之野商贾皆欲藏于王之市行旅皆欲出于王之途天下之欲疾其君者皆欲赴愬于王其若",
+            "ratio": 0.967
+          }
+        },
+        {
+          "line": "今也制民之产仰不足以事父母俯不足以畜妻子乐岁终身苦凶年不免于死亡",
+          "nearest": {
+            "line": "今也制民之产仰不足以事父母俯不足以畜妻子乐岁终身苦凶年不免于死亡",
+            "source": "今之制民之产仰不足以事父母俯不足以畜妻子乐岁终身苦凶年不免于死亡此惟",
+            "ratio": 0.939
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "mengziyize",

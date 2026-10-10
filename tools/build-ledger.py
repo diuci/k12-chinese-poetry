@@ -240,7 +240,8 @@ def main():
 
     poems = V.load_poems()
     syll_o, extra = V.parse_syllabus(V.SYLLABUS)
-    syll_h, _ = V.parse_syllabus(V.SYLLABUS_HS)
+    syll_h, extra_h = V.parse_syllabus(V.SYLLABUS_HS)
+    extra = extra | extra_h  # 高中那张「教材内但不在课标」附表也算教材拓展
     syllabus = syll_o + syll_h
 
     assignments, problems = M.match_syllabus(poems, syllabus)

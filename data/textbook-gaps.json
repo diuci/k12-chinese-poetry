@@ -3,11 +3,11 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 210,
+    "total": 207,
     "modern": 39,
     "lessonEntries": 781,
-    "poems": 300,
-    "reciteGaps": 92,
+    "poems": 303,
+    "reciteGaps": 91,
     "primaryGaps": 337
   },
   "rows": [
@@ -1168,30 +1168,6 @@
       "lesson": "15",
       "title": "我与地坛",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30124_langdu.html",
-      "looksModern": false,
-      "recite": false
-    },
-    {
-      "volume": "必修下册",
-      "lesson": "1.2",
-      "title": "齐桓晋文之事",
-      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30202_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "必修下册",
-      "lesson": "1.3",
-      "title": "庖丁解牛",
-      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30203_langdu.html",
-      "looksModern": false,
-      "recite": false
-    },
-    {
-      "volume": "必修下册",
-      "lesson": "2",
-      "title": "烛之武退秦师",
-      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30204_langdu.html",
       "looksModern": false,
       "recite": false
     },

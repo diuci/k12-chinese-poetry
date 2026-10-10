@@ -268,6 +268,8 @@ def main():
     # 「课标篇目」还是「教材拓展」决定这一档长什么样：教材拓展的篇目不许冒领「课标要求」。
     # 口径从 validate.py 来，不在这里再抄一份课标表。
     _syllabus, extra_titles = V.parse_syllabus(V.SYLLABUS)
+    _syll_h, extra_h = V.parse_syllabus(V.SYLLABUS_HS)  # 高中那张「教材内但不在课标」附表
+    extra_titles = extra_titles | extra_h
     extra_ids = {p['id'] for p in poems if V.canon_title(p['title']) in extra_titles}
 
     cov_problems = []

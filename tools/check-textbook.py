@@ -936,6 +936,8 @@ def main():
     absence_records = load_absence_checks()
     # 「课标篇目」还是「教材拓展」：口径在 validate.py 的课标表里，不在这里另立一份。
     _syllabus, extra_titles = V.parse_syllabus(V.SYLLABUS)
+    _syll_h, extra_h = V.parse_syllabus(V.SYLLABUS_HS)  # 高中那张「教材内但不在课标」附表
+    extra_titles = extra_titles | extra_h
     extra_ids = {p['id'] for p in poems if V.canon_title(p['title']) in extra_titles}
     if garden is None:
         print('!! 没有 data/textbook-garden.json：语文园地那一档没跑（先跑 tools/build-textbook-garden.py）')

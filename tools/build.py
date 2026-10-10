@@ -318,6 +318,7 @@ def build_record(md_path, fm, body):
         'gaokaoGroup': None,
         'gaokaoNo': None,
         'gaokaoSince': None,
+        'gaokaoExtra': None,
         'irregular': scalar(fm, 'irregular'),
         '_path': str(rel).replace('\\', '/'),
     }
@@ -355,6 +356,32 @@ def load_gaokao_groups():
     return out
 
 
+def load_gaokao_extras():
+    """读 docs/syllabus-2017.md 的「教材内但不在课标」附表。
+
+    统编教材里有这一课、课标 72 篇里没有它——这一档在仓里叫教材拓展。
+    这张表是高中篇目唯一的「不是课标篇目」登记处：没登记的高中篇目一律拦下，
+    不然「标题写歪了的高中篇目」就变成一篇没人认领的教材拓展。
+    返回 {规范化标题: (册次, 教材课号)}。标题规范化与 load_gaokao_groups 用同一条规则。
+    """
+    in_extra = False
+    out = {}
+    for line in (ROOT / 'docs' / 'syllabus-2017.md').read_text(encoding='utf-8').splitlines():
+        if line.startswith('## '):
+            in_extra = '教材内但不在课标' in line
+            continue
+        if not in_extra:
+            continue
+        m = re.match(r'^\|\s*([^\|]+?)\s*\|\s*([^\|]+?)\s*\|\s*([^\|]+?)\s*\|\s*$', line)
+        if not m:
+            continue
+        title = re.sub(r'（[^）]*）', '', m.group(1)).strip()
+        if title in ('篇目', '') or set(title) <= set('-: '):
+            continue
+        out[title] = (m.group(2).strip(), m.group(3).strip())
+    return out
+
+
 def apply_gaokao_groups(records):
     """给高中篇目回填 gaokaoGroup / gaokaoNo / gaokaoSince。
 
@@ -362,6 +389,7 @@ def apply_gaokao_groups(records):
     build.main 与 validate.load_poems 都调这一个函数，两边不许各写一份。
     """
     groups = load_gaokao_groups()
+    extras = load_gaokao_extras()
     unmatched = []
     for r in records:
         if r.get('stage') != '高中':
@@ -372,7 +400,12 @@ def apply_gaokao_groups(records):
             keys.append(r['title'] + r['subtitle'])
         hit = next((groups[k] for k in keys if k in groups), None)
         if hit is None:
-            unmatched.append('%s（%s）' % (r['title'], r['_path']))
+            ex = next((extras[k] for k in keys if k in extras), None)
+            if ex is None:
+                unmatched.append('%s（%s）' % (r['title'], r['_path']))
+                continue
+            r['gaokaoGroup'], r['gaokaoNo'], r['gaokaoSince'] = None, None, None
+            r['gaokaoExtra'] = ex[0]
             continue
         r['gaokaoGroup'], r['gaokaoNo'] = hit
         r['gaokaoSince'] = GAOKAO_SINCE[hit[0]]
@@ -467,6 +500,20 @@ def selftest():
     must(strip_punct('鱼戏莲叶间，') == '鱼戏莲叶间', '坏例9：句末逗号没去掉')
     must(strip_punct('——…') == '', '坏例9b：破折号省略号没去掉')
     must(strip_punct('一二三') == '一二三', '坏例9c：汉字被去掉了')
+
+    # 坏例11：高中篇目只认两张表——课标 72 篇，或「教材内但不在课标」那张拓展附表。
+    # 两边都没有就必须拦下：不然一篇标题写歪的高中篇目会悄悄变成没人认领的教材拓展。
+    ex = load_gaokao_extras()
+    must(len(ex) >= 3, '坏例11：教材拓展附表没读到（统编有、课标没有的那几篇）')
+    must(all(v[0] and v[1] for v in ex.values()), '坏例11b：教材拓展附表里有哪一行没写册次或教材课号')
+    must(len(load_gaokao_groups()) == 72, '坏例11c：加了拓展附表之后课标 72 篇计数被搅了')
+    fake_hs = {'stage': '高中', 'title': '齐桓晋文之', 'subtitle': None, '_path': 'x.md',
+               'gaokaoGroup': '必修', 'gaokaoNo': 1, 'gaokaoSince': 2023}
+    must(dies(apply_gaokao_groups, [dict(fake_hs)]), '坏例11d：两张表都没有的高中篇目没被拦下')
+    ok_hs = dict(fake_hs, title='庖丁解牛')
+    apply_gaokao_groups([ok_hs])
+    must(ok_hs['gaokaoExtra'] == '必修下册' and ok_hs['gaokaoGroup'] is None and ok_hs['gaokaoSince'] is None,
+         '坏例11e：登记在拓展附表里的高中篇目没被认出来（册次回填不对）')
 
     # 坏例10：--check 的核心——提交进去的产物必须等于当场构建结果
     must(compare_committed('AAA', 'AAA', 'S', 'S') == [], '坏例10：产物一致却被报了')
