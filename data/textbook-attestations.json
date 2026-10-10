@@ -2,10 +2,10 @@
   "generated": "2026-10-10",
   "source": "https://yw.suyang123.com",
   "stats": {
-    "match": 162,
+    "match": 166,
     "coverage-override": 7,
     "mismatch": 2,
-    "partial": 24,
+    "partial": 20,
     "garden-attested": 38,
     "lesson-not-found": 10,
     "no-textbook": 8,
@@ -2971,58 +2971,14 @@
       "author": "李白",
       "stage": "高中",
       "volume": "必修上册",
-      "status": "partial",
+      "status": "match",
       "lesson": "8.1 梦游天姥吟留别",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30113_langdu.html",
-      "hit": 22,
+      "hit": 25,
       "total": 25,
       "skippedShort": 0,
       "textbookParas": 23,
-      "miss": [
-        {
-          "kind": "全文",
-          "line": "越人语天姥，云霞明灭或可覩。",
-          "diff": [
-            {
-              "ours": "覩",
-              "textbook": "睹天姥连天向天横势拔五岳掩赤城天台四万八千丈对此欲倒东南倾我欲因之梦吴越一夜飞度镜",
-              "context": "天姥云霞明灭或可睹天姥连天向天横势拔五岳掩赤城天台四万八千丈对此欲倒东南倾我欲因之梦吴越一夜飞度镜"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "谢公宿处今尚在，渌水荡漾清猨啼。",
-          "diff": [
-            {
-              "ours": "猨",
-              "textbook": "猿",
-              "context": "今尚在渌水荡漾清猿啼脚著谢公屐身登"
-            },
-            {
-              "ours": "",
-              "textbook": "脚著谢公屐身登青云梯半壁见海日空中闻天鸡千岩万转路不定迷花倚石忽已暝熊咆龙吟殷岩",
-              "context": "在渌水荡漾清猿啼脚著谢公屐身登青云梯半壁见海日空中闻天鸡千岩万转路不定迷花倚石忽已暝熊咆龙吟殷岩"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "忽魂悸以魄动，怳惊起而长嗟。",
-          "diff": [
-            {
-              "ours": "怳",
-              "textbook": "恍",
-              "context": "忽魂悸以魄动恍惊起而长嗟惟觉时"
-            },
-            {
-              "ours": "",
-              "textbook": "惟觉时之枕席失向来之烟霞世间行乐亦如此古来万事东流水别君去兮何时还且放白鹿青崖间",
-              "context": "魄动恍惊起而长嗟惟觉时之枕席失向来之烟霞世间行乐亦如此古来万事东流水别君去兮何时还且放白鹿青崖间"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "yongyule",
@@ -3274,36 +3230,14 @@
       "author": "张孝祥",
       "stage": "高中",
       "volume": "必修下册",
-      "status": "partial",
+      "status": "match",
       "lesson": "念奴娇·过洞庭",
       "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30228_langdu.html",
-      "hit": 7,
+      "hit": 8,
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": [
-        {
-          "kind": "全文",
-          "line": "应念岭表经年，孤光自照，肝胆皆冰雪。短发萧骚襟袖冷，稳泛沧浪空阔。",
-          "diff": [
-            {
-              "ours": "表",
-              "textbook": "海",
-              "context": "应念岭海经年孤光自照肝肺"
-            },
-            {
-              "ours": "胆",
-              "textbook": "肺",
-              "context": "海经年孤光自照肝肺皆冰雪短发萧骚襟"
-            },
-            {
-              "ours": "",
-              "textbook": "尽挹西江细斟北斗万象为宾客扣舷独啸不知今夕何夕",
-              "context": "袖冷稳泛沧浪空阔尽挹西江细斟北斗万象为宾客扣舷独啸不知今夕何夕"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "guizhixiang",
@@ -3311,31 +3245,14 @@
       "author": "王安石",
       "stage": "高中",
       "volume": "必修下册",
-      "status": "partial",
+      "status": "match",
       "lesson": "桂枝香·金陵怀古",
       "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30227_langdu.html",
-      "hit": 4,
+      "hit": 5,
       "total": 5,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": [
-        {
-          "kind": "全文",
-          "line": "登临送目，正故国晚秋，天气初肃。千里澄江似练，翠峰如簇。征帆去棹残阳里，背西风、酒旗斜矗。彩舟云淡，星河鹭起，画图难足。",
-          "diff": [
-            {
-              "ours": "征",
-              "textbook": "归",
-              "context": "澄江似练翠峰如簇归帆去棹残阳里背西"
-            },
-            {
-              "ours": "",
-              "textbook": "念往昔繁华竞逐叹门外楼头悲恨相续千古凭高对此谩嗟荣辱六朝旧事随流水但寒烟衰草凝绿",
-              "context": "星河鹭起画图难足念往昔繁华竞逐叹门外楼头悲恨相续千古凭高对此谩嗟荣辱六朝旧事随流水但寒烟衰草凝绿"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "dengyueyanglou",
@@ -4710,63 +4627,14 @@
       "author": "高适",
       "stage": "高中",
       "volume": "选择性必修中册",
-      "status": "partial",
+      "status": "match",
       "lesson": "燕歌行并序",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30423_langdu.html",
-      "hit": 15,
+      "hit": 18,
       "total": 18,
       "skippedShort": 0,
       "textbookParas": 15,
-      "miss": [
-        {
-          "kind": "全文",
-          "line": "身当恩遇恒轻敌，力尽关山未解围。",
-          "diff": [
-            {
-              "ours": "恒",
-              "textbook": "常",
-              "context": "身当恩遇常轻敌力尽关山未解"
-            },
-            {
-              "ours": "",
-              "textbook": "铁衣远戍辛勤久玉箸应啼别离后少妇城南欲断肠征人蓟北空回首边庭飘飖那可度绝域苍茫无",
-              "context": "敌力尽关山未解围铁衣远戍辛勤久玉箸应啼别离后少妇城南欲断肠征人蓟北空回首边庭飘飖那可度绝域苍茫无"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "铁衣远戍辛勤久，玉筯应啼别离后。",
-          "diff": [
-            {
-              "ours": "筯",
-              "textbook": "箸",
-              "context": "铁衣远戍辛勤久玉箸应啼别离后少妇城"
-            },
-            {
-              "ours": "",
-              "textbook": "少妇城南欲断肠征人蓟北空回首边庭飘飖那可度绝域苍茫无所有杀气三时作阵云寒声一夜传",
-              "context": "久玉箸应啼别离后少妇城南欲断肠征人蓟北空回首边庭飘飖那可度绝域苍茫无所有杀气三时作阵云寒声一夜传"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "边庭飘飖那可度，绝域苍茫更何有。",
-          "diff": [
-            {
-              "ours": "更何",
-              "textbook": "无所",
-              "context": "飖那可度绝域苍茫无所有杀气三时作阵云"
-            },
-            {
-              "ours": "",
-              "textbook": "杀气三时作阵云寒声一夜传刁斗相看白刃血纷纷死节从来岂顾勋君不见沙场征战苦至今犹忆",
-              "context": "度绝域苍茫无所有杀气三时作阵云寒声一夜传刁斗相看白刃血纷纷死节从来岂顾勋君不见沙场征战苦至今犹忆"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "guoqinlun",

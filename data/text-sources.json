@@ -2,8 +2,8 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-10",
   "stats": {
-    "attested": 218,
-    "partial": 33,
+    "attested": 216,
+    "partial": 35,
     "notfound": 0,
     "nosource": 1,
     "withVariants": 60
@@ -3825,8 +3825,25 @@
       "page": "夢遊天姥吟留別",
       "url": "https://zh.wikisource.org/wiki/%E5%A4%A2%E9%81%8A%E5%A4%A9%E5%A7%A5%E5%90%9F%E7%95%99%E5%88%A5",
       "lines": 23,
-      "hit": 23,
-      "miss": [],
+      "hit": 21,
+      "miss": [
+        {
+          "line": "越人语天姥云霞明灭或可睹",
+          "nearest": {
+            "line": "越人语天姥云霞明灭或可睹",
+            "source": "越人语天姥云霞明灭或可覩天姥",
+            "ratio": 0.846
+          }
+        },
+        {
+          "line": "谢公宿处今尚在渌水荡漾清猿啼",
+          "nearest": {
+            "line": "谢公宿处今尚在渌水荡漾清猿啼",
+            "source": "谢公宿处今尚在渌水荡漾清猨啼脚著",
+            "ratio": 0.867
+          }
+        }
+      ],
       "variantNotes": [
         "一作别东鲁诸"
       ],
@@ -6202,8 +6219,17 @@
       "page": "燕歌行 (高適)",
       "url": "https://zh.wikisource.org/wiki/%E7%87%95%E6%AD%8C%E8%A1%8C%20%28%E9%AB%98%E9%81%A9%29",
       "lines": 15,
-      "hit": 15,
-      "miss": [],
+      "hit": 14,
+      "miss": [
+        {
+          "line": "边庭飘飖那可度绝域苍茫无所有",
+          "nearest": {
+            "line": "边庭飘飖那可度绝域苍茫无所有",
+            "source": "边庭一作风飘飖那可度一作越绝域苍茫一",
+            "ratio": 0.688
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [
         {
