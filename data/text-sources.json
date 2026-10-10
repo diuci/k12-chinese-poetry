@@ -2,8 +2,8 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-10",
   "stats": {
-    "attested": 216,
-    "partial": 35,
+    "attested": 214,
+    "partial": 37,
     "notfound": 0,
     "nosource": 1,
     "withVariants": 60
@@ -4475,7 +4475,7 @@
       "page": "諫逐客書",
       "url": "https://zh.wikisource.org/wiki/%E8%AB%AB%E9%80%90%E5%AE%A2%E6%9B%B8",
       "lines": 30,
-      "hit": 27,
+      "hit": 26,
       "miss": [
         {
           "line": "西取由余于戎东得百里奚于宛迎蹇叔于宋来丕豹公孙支于晋",
@@ -4499,6 +4499,14 @@
             "line": "昔缪公求士西取由余于戎东得百里奚于宛迎蹇叔于宋来丕豹公孙支于晋",
             "source": "昔穆公3求士西取由余4于戎东得百里奚5于宛6迎蹇叔7于宋8求丕豹9公孙支于",
             "ratio": 0.824
+          }
+        },
+        {
+          "line": "郑卫桑间昭虞武象者异国之乐也",
+          "nearest": {
+            "line": "郑卫桑间昭虞武象者异国之乐也",
+            "source": "桑间38韶虞39武象40者异国之乐也",
+            "ratio": 0.688
           }
         }
       ],
@@ -5268,8 +5276,17 @@
       "page": "春江花月夜 (張若虛)",
       "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C%20%28%E5%BC%B5%E8%8B%A5%E8%99%9B%29",
       "lines": 21,
-      "hit": 21,
-      "miss": [],
+      "hit": 20,
+      "miss": [
+        {
+          "line": "可怜楼上月裴回应照离人妆镜台",
+          "nearest": {
+            "line": "可怜楼上月裴回应照离人妆镜台",
+            "source": "可怜楼上月徘徊应照离人妆一作玉镜台玉",
+            "ratio": 0.75
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [
         {
@@ -6014,8 +6031,17 @@
       "page": "陳情表 (西晉)",
       "url": "https://zh.wikisource.org/wiki/%E9%99%B3%E6%83%85%E8%A1%A8%20%28%E8%A5%BF%E6%99%89%29",
       "lines": 35,
-      "hit": 35,
-      "miss": [],
+      "hit": 34,
+      "miss": [
+        {
+          "line": "愿陛下矜愍愚诚听臣微志庶刘侥幸保卒余年",
+          "nearest": {
+            "line": "愿陛下矜愍愚诚听臣微志庶刘侥幸保卒余年",
+            "source": "陛下矜悯愚诚听臣微志庶刘侥幸保卒餘年臣生当",
+            "ratio": 0.8
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [
         {
