@@ -2,7 +2,7 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-11",
   "counts": {
-    "match": 227,
+    "match": 230,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -202,6 +202,26 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "maiyouweng",
+      "title": "卖油翁",
+      "author": "欧阳修",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级下册",
+      "textbookVolume": "七年级下册",
+      "textbookLesson": "13"
+    },
+    {
+      "id": "sunquananquanxue",
+      "title": "孙权劝学",
+      "author": "司马光",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级下册",
+      "textbookVolume": "七年级下册",
+      "textbookLesson": "4"
+    },
+    {
       "id": "jihai-jimao",
       "title": "己亥杂诗",
       "author": "龚自珍",
@@ -244,6 +264,16 @@
       "volume": "七年级下册",
       "textbookVolume": "七年级下册",
       "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "huoban",
+      "title": "活板",
+      "author": "沈括",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级下册",
+      "textbookVolume": "七年级下册",
+      "textbookLesson": "25"
     },
     {
       "id": "youshanxincun",

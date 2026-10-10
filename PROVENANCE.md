@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 289 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 292 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -66,10 +66,12 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 |---|---|---|---|---|---|---|---|---|
 | lunyu12-cz | 《论语》十二章 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S9+S1+S2+S10 | 文言 | 初中 · 七年级上册 |
 | shiyiyuesirifengyudazuo | 十一月四日风雨大作 | 陆游 | 宋 | 卒 1210 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
+| maiyouweng | 卖油翁 | 欧阳修 | 宋 | 卒 1072 | public-domain | S10+S9+S3 | 文言 | 初中 · 七年级下册 |
 | yongxue | 咏雪 | 刘义庆 | 南朝宋 | 卒 444 | public-domain | S10+S9+S3 | 文言 | 初中 · 七年级上册 |
 | yeshangshouxiangchengwendi | 夜上受降城闻笛 | 李益 | 唐 | 卒 829 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
 | yeyujibei | 夜雨寄北 | 李商隐 | 唐 | 卒 858 | public-domain | S3+S1+S2 | 七言 | 初中 · 七年级上册 |
 | tianjingsha-qiusi | 天净沙 | 马致远 | 元 | 卒 1321 | public-domain | S3+S1+S2 | 曲 | 初中 · 七年级上册 |
+| sunquananquanxue | 孙权劝学 | 司马光 | 宋 | 卒 1086 | public-domain | S10+S9+S3 | 文言 | 初中 · 七年级下册 |
 | shanpoyang | 山坡羊 | 张养浩 | 元 | 卒 1329 | public-domain | S3+S1+S2 | 曲 | 初中 · 九年级下册 |
 | emeishanyuege | 峨眉山月歌 | 李白 | 唐 | 卒 762 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
 | jihai-jimao | 己亥杂诗 | 龚自珍 | 清 | 卒 1841 | public-domain | S3+S1+S2 | 七言 | 初中 · 七年级下册 |
@@ -83,6 +85,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | shuidiaogetou | 水调歌头 | 苏轼 | 宋 | 卒 1101 | public-domain | S3+S1+S2 | 词 | 初中 · 九年级上册 |
 | jiangnanfengligunian | 江南逢李龟年 | 杜甫 | 唐 | 卒 770 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
 | boqinhuai | 泊秦淮 | 杜牧 | 唐 | 卒 852 | public-domain | S3+S1+S2 | 七言 | 初中 · 七年级下册 |
+| huoban | 活板 | 沈括 | 宋 | 卒 1097 | public-domain | S10+S9+S3 | 文言 | 初中 · 七年级下册 |
 | youshanxincun | 游山西村 | 陆游 | 宋 | 卒 1210 | public-domain | S3+S1+S2 | 七言 | 初中 · 七年级下册 |
 | tongguan | 潼关 | 谭嗣同 | 清 | 卒 1898 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
 | ailianshuo | 爱莲说 | 周敦颐 | 宋 | 卒 1073 | public-domain | S3+S1+S2 | 文言 | 初中 · 七年级下册 |

@@ -2,11 +2,11 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-11",
   "stats": {
-    "attested": 226,
-    "partial": 62,
+    "attested": 228,
+    "partial": 63,
     "notfound": 0,
     "nosource": 1,
-    "withVariants": 83
+    "withVariants": 84
   },
   "results": [
     {
@@ -397,6 +397,32 @@
       "variants": []
     },
     {
+      "id": "maiyouweng",
+      "title": "卖油翁",
+      "author": "欧阳修",
+      "stage": "初中",
+      "page": "賣油翁",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%A3%E6%B2%B9%E7%BF%81",
+      "lines": 11,
+      "hit": 11,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "sunquananquanxue",
+      "title": "孙权劝学",
+      "author": "司马光",
+      "stage": "初中",
+      "page": "資治通鑑/卷066",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7066",
+      "lines": 10,
+      "hit": 10,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "jihai-jimao",
       "title": "己亥杂诗",
       "author": "龚自珍",
@@ -489,6 +515,82 @@
       "miss": [],
       "variantNotes": [],
       "variants": []
+    },
+    {
+      "id": "huoban",
+      "title": "活板",
+      "author": "沈括",
+      "stage": "初中",
+      "page": "夢溪筆談/卷18 + 事實類苑/卷52",
+      "url": "https://zh.wikisource.org/wiki/%E5%A4%A2%E6%BA%AA%E7%AD%86%E8%AB%87/%E5%8D%B718",
+      "lines": 15,
+      "hit": 12,
+      "miss": [
+        {
+          "line": "先设一铁板其上以松脂蜡和纸灰之类冒之",
+          "nearest": {
+            "line": "先设一铁板其上以松脂蜡和纸灰之类冒之",
+            "source": "先设一铁版其上以松脂腊和纸灰之类冒之欲印",
+            "ratio": 0.842
+          }
+        },
+        {
+          "line": "不用则以纸帖之每韵为一帖木格贮之",
+          "nearest": {
+            "line": "不用则以纸帖之每韵为一帖木格贮之",
+            "source": "不用则以纸贴之每韵为一贴木格贮之有奇",
+            "ratio": 0.824
+          }
+        },
+        {
+          "line": "昇死其印为余群从所得至今宝藏",
+          "nearest": {
+            "line": "昇死其印为余群从所得至今宝藏",
+            "source": "昇死其印为余群从所得至今保藏淮南",
+            "ratio": 0.867
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "营",
+          "other": "造",
+          "context": "可以勢屈，況其以道義自任者乎。」营舍之法，謂之《木經》，或云喻皓所撰。凡屋有三分：自梁以",
+          "page": "夢溪筆談/卷18"
+        },
+        {
+          "ours": "幂",
+          "other": "幕",
+          "context": "古法：凡算方積之物，有立方，謂六幂皆方者。其法再自乘則得之。有塹堵，謂如土墻者，兩邊殺，",
+          "page": "夢溪筆談/卷18"
+        },
+        {
+          "ours": "勾",
+          "other": "股",
+          "context": "以為之廣，以直高乘之，又以直高為勾，以上廣減下廣，余 馀者为股。勾股乘弦，以為斜高。有芻童",
+          "page": "夢溪筆談/卷18"
+        },
+        {
+          "ours": "乘",
+          "other": "求",
+          "context": "2，以上廣減下廣，余 馀者为股。勾股乘弦，以為斜高。有芻童，謂如覆㪷者，四面皆殺。其法倍上長",
+          "page": "夢溪筆談/卷18"
+        },
+        {
+          "ours": "行",
+          "other": "位",
+          "context": "之，餘者以高乘之，六而一，併入上行。履畝之法，方圓曲直盡矣，未有會圓之術。凡圓田，既能拆",
+          "page": "夢溪筆談/卷18"
+        },
+        {
+          "ours": "五十二",
+          "other": "四十三",
+          "context": "",
+          "page": "夢溪筆談/卷18"
+        }
+      ],
+      "override": "《梦溪笔谈》在维基文库另有四库全书本的扫描页（那一页没有可核对的正文），本篇钉在有正文的《夢溪筆談/卷18》。该页作「版印書籍」「活版」「鐵版」（版/板）、「松脂臘」（作「臘」，与统编「蜡」不同字）、「以紙貼之，每韻為一貼」（帖/貼）、「纔畢」「沾汙」（异体）。另有一条独立第二证：《事實類苑》卷五十二引这一条，作「板印書籍」「松柏臘」「數千百本」「予羣從」「沾汚」——类书引文只作核对与线索，不作为定正文的依据。"
     },
     {
       "id": "youshanxincun",

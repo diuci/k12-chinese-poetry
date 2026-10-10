@@ -394,6 +394,16 @@
       "died": 232,
       "note": "曹植（192—232，一说 192—232.12.27），字子建，沛国谯县人。维基百科 https://zh.wikipedia.org/wiki/%E6%9B%B9%E6%A4%8D 作「曹植（192年—232年12月27日）」；百度百科 https://wapbaike.baidu.com/item/%E6%9B%B9%E6%A4%8D 出生信息「192年」、逝世日期「232年12月27日」，两处一致。"
     },
+    "司马光": {
+      "died": 1086,
+      "eraEnd": null,
+      "note": "司马光（1019—1086），字君实，《资治通鉴》主持编纂者。维基百科 https://zh.wikipedia.org/wiki/%E5%8F%B8%E9%A9%AC%E5%85%89 作「司馬光（1019年11月17日—1086年10月11日）」；维基文库作者页 Author:司馬光 https://zh.wikisource.org/wiki/Author:%E5%8F%B8%E9%A6%AC%E5%85%89 记 birthyear=1019、deathyear=1086，notes 另记「生於宋真宗天禧三年，卒於宋哲宗元祐元年，享年68歲」。两处一致。"
+    },
+    "沈括": {
+      "died": 1097,
+      "eraEnd": null,
+      "note": "沈括卒年三说：维基百科 https://zh.wikipedia.org/wiki/%E6%B2%88%E6%8B%AC 作「沈括（1032年—1096年）」；维基文库作者页 Author:沈括 https://zh.wikisource.org/wiki/Author:%E6%B2%88%E6%8B%AC 字段记 birthyear=1033、deathyear=1097，同页 notes 又作「約1031年～1095年」。按「两说取较晚一说」取 1097，生卒区间各说不同只在此写明，不硬定生年。"
+    },
     "刘义庆": {
       "died": 444,
       "eraEnd": null,

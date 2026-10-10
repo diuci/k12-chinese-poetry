@@ -3,10 +3,12 @@
     "初中-7": [
       "lunyu12-cz",
       "shiyiyuesirifengyudazuo",
+      "maiyouweng",
       "yongxue",
       "yeshangshouxiangchengwendi",
       "yeyujibei",
       "tianjingsha-qiusi",
+      "sunquananquanxue",
       "shanpoyang",
       "emeishanyuege",
       "jihai-jimao",
@@ -20,6 +22,7 @@
       "shuidiaogetou",
       "jiangnanfengligunian",
       "boqinhuai",
+      "huoban",
       "youshanxincun",
       "tongguan",
       "ailianshuo",
@@ -400,6 +403,7 @@
     "huanxisha-yanque": "huanxisha-yanque",
     "huichongchunjiang": "huichongchunjiang",
     "huixiangyoushu": "huixiangyoushu",
+    "huoban": "huoban",
     "huxinting": "huxinting",
     "jiangchengzi-laofeng": "jiangchengzi-laofeng",
     "jiangchengzi-yimao": "jiangchengzi-yimao",
@@ -446,6 +450,7 @@
     "lunyu12": "lunyu12",
     "lunyu12-cz": "lunyu12-cz",
     "lvshi1": "lvshi1",
+    "maiyouweng": "maiyouweng",
     "manjianghong-xiaozhujinghua": "manjianghong-xiaozhujinghua",
     "maotanshangwu": "maotanshangwu",
     "maowu": "maowu",
@@ -515,6 +520,7 @@
     "songyuaner": "songyuaner",
     "sujiandejiang": "sujiandejiang",
     "sumuzhe": "sumuzhe",
+    "sunquananquanxue": "sunquananquanxue",
     "suojian": "suojian",
     "suoyoujiayao": "suoyoujiayao",
     "suxinshi": "suxinshi",
@@ -698,6 +704,7 @@
       "sanqudaozhong"
     ],
     "劝学": [
+      "sunquananquanxue",
       "jiezishu"
     ],
     "励志": [
@@ -896,6 +903,7 @@
       "lang"
     ],
     "寓言": [
+      "maiyouweng",
       "qirenyoutian",
       "chuanjingdeyiren"
     ],
@@ -1085,6 +1093,9 @@
     "慵懒": [
       "pusaman-wentingyun"
     ],
+    "成长": [
+      "sunquananquanxue"
+    ],
     "战乱": [
       "xingjunjiuri",
       "shihaoli",
@@ -1099,6 +1110,10 @@
     ],
     "执着": [
       "wuti"
+    ],
+    "技艺": [
+      "maiyouweng",
+      "huoban"
     ],
     "抒怀": [
       "xinglunan",
@@ -1449,6 +1464,9 @@
     "诚信": [
       "chentaiqiyuyouqixing"
     ],
+    "说明": [
+      "huoban"
+    ],
     "说理": [
       "qirenyoutian"
     ],
@@ -1582,7 +1600,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 289,
+  "count": 292,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/《论语》十二章.md",
@@ -1796,6 +1814,111 @@
       ],
       "title": "十一月四日风雨大作",
       "volume": "七年级上册课外诵读"
+    },
+    {
+      "_path": "poems/初中/七年级下册/卖油翁.md",
+      "author": "欧阳修",
+      "authorDied": 1072,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "宋",
+      "emotion": "一个卖油老人把神射手点破的那点从容",
+      "examFreq": 0.85,
+      "form": "文言",
+      "fullLines": [
+        "陈康肃公善射当世无双公亦以此自矜",
+        "尝射于家圃有卖油翁释担而立睨之久而不去",
+        "见其发矢十中八九但微颔之",
+        "康肃问曰“汝亦知射乎吾射不亦精乎”翁曰“无他但手熟尔”",
+        "康肃忿然曰“尔安敢轻吾射”翁曰“以我酌油知之”",
+        "乃取一葫芦置于地以钱覆其口徐以杓酌油沥之自钱孔入而钱不湿",
+        "因曰“我亦无他惟手熟尔”康肃笑而遣之"
+      ],
+      "fullLinesPunct": [
+        "陈康肃公善射，当世无双，公亦以此自矜。",
+        "尝射于家圃，有卖油翁释担而立，睨之久而不去。",
+        "见其发矢十中八九，但微颔之。",
+        "康肃问曰：“汝亦知射乎？吾射不亦精乎？”翁曰：“无他，但手熟尔。”",
+        "康肃忿然曰：“尔安敢轻吾射！”翁曰：“以我酌油知之。”",
+        "乃取一葫芦置于地，以钱覆其口，徐以杓酌油沥之，自钱孔入，而钱不湿。",
+        "因曰：“我亦无他，惟手熟尔。”康肃笑而遣之。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "maiyouweng",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "陈康肃公善射当世无双公亦以此自矜",
+        "尝射于家圃有卖油翁释担而立睨之久而不去",
+        "见其发矢十中八九但微颔之",
+        "康肃问曰“汝亦知射乎吾射不亦精乎”翁曰“无他但手熟尔”",
+        "康肃忿然曰“尔安敢轻吾射”翁曰“以我酌油知之”",
+        "乃取一葫芦置于地以钱覆其口徐以杓酌油沥之自钱孔入而钱不湿",
+        "因曰“我亦无他惟手熟尔”康肃笑而遣之"
+      ],
+      "linesPunct": [
+        "陈康肃公善射，当世无双，公亦以此自矜。",
+        "尝射于家圃，有卖油翁释担而立，睨之久而不去。",
+        "见其发矢十中八九，但微颔之。",
+        "康肃问曰：“汝亦知射乎？吾射不亦精乎？”翁曰：“无他，但手熟尔。”",
+        "康肃忿然曰：“尔安敢轻吾射！”翁曰：“以我酌油知之。”",
+        "乃取一葫芦置于地，以钱覆其口，徐以杓酌油沥之，自钱孔入，而钱不湿。",
+        "因曰：“我亦无他，惟手熟尔。”康肃笑而遣之。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        3,
+        3,
+        2,
+        2,
+        1,
+        5,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "技艺",
+        "寓言",
+        "宋文言"
+      ],
+      "technique": [
+        "动作描写",
+        "对比",
+        "寓理"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "技艺",
+        "寓言"
+      ],
+      "title": "卖油翁",
+      "volume": "七年级下册"
     },
     {
       "_path": "poems/初中/七年级上册/咏雪.md",
@@ -2114,6 +2237,106 @@
       ],
       "title": "天净沙",
       "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/孙权劝学.md",
+      "author": "司马光",
+      "authorDied": 1086,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "宋",
+      "emotion": "一句「士别三日」背后的那点进步",
+      "examFreq": 0.85,
+      "form": "文言",
+      "fullLines": [
+        "初权谓吕蒙曰“卿今当涂掌事不可不学”蒙辞以军中多务",
+        "权曰“孤岂欲卿治经为博士邪但当涉猎见往事耳卿言多务孰若孤孤常读书自以为大有所益”",
+        "蒙乃始就学",
+        "及鲁肃过寻阳与蒙论议大惊曰“卿今者才略非复吴下阿蒙”",
+        "蒙曰“士别三日即更刮目相待大兄何见事之晚乎”",
+        "肃遂拜蒙母结友而别"
+      ],
+      "fullLinesPunct": [
+        "初，权谓吕蒙曰：“卿今当涂掌事，不可不学！”蒙辞以军中多务。",
+        "权曰：“孤岂欲卿治经为博士邪！但当涉猎，见往事耳。卿言多务，孰若孤？孤常读书，自以为大有所益。”",
+        "蒙乃始就学。",
+        "及鲁肃过寻阳，与蒙论议，大惊曰：“卿今者才略，非复吴下阿蒙！”",
+        "蒙曰：“士别三日，即更刮目相待，大兄何见事之晚乎！”",
+        "肃遂拜蒙母，结友而别。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "sunquananquanxue",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "初权谓吕蒙曰“卿今当涂掌事不可不学”蒙辞以军中多务",
+        "权曰“孤岂欲卿治经为博士邪但当涉猎见往事耳卿言多务孰若孤孤常读书自以为大有所益”",
+        "蒙乃始就学",
+        "及鲁肃过寻阳与蒙论议大惊曰“卿今者才略非复吴下阿蒙”",
+        "蒙曰“士别三日即更刮目相待大兄何见事之晚乎”",
+        "肃遂拜蒙母结友而别"
+      ],
+      "linesPunct": [
+        "初，权谓吕蒙曰：“卿今当涂掌事，不可不学！”蒙辞以军中多务。",
+        "权曰：“孤岂欲卿治经为博士邪！但当涉猎，见往事耳。卿言多务，孰若孤？孤常读书，自以为大有所益。”",
+        "蒙乃始就学。",
+        "及鲁肃过寻阳，与蒙论议，大惊曰：“卿今者才略，非复吴下阿蒙！”",
+        "蒙曰：“士别三日，即更刮目相待，大兄何见事之晚乎！”",
+        "肃遂拜蒙母，结友而别。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        3,
+        4,
+        1,
+        4,
+        3,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "劝学",
+        "成长",
+        "宋文言"
+      ],
+      "technique": [
+        "对话描写",
+        "侧面描写",
+        "对比"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "劝学",
+        "成长"
+      ],
+      "title": "孙权劝学",
+      "volume": "七年级下册"
     },
     {
       "_path": "poems/初中/九年级下册/山坡羊.md",
@@ -3159,6 +3382,106 @@
         "讽喻"
       ],
       "title": "泊秦淮",
+      "volume": "七年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级下册/活板.md",
+      "author": "沈括",
+      "authorDied": 1097,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "把一门手艺写清楚的耐心",
+      "examFreq": 0.8,
+      "form": "文言",
+      "fullLines": [
+        "板印书籍唐人尚未盛为之自冯瀛王始印五经已后典籍皆为板本",
+        "庆历中有布衣毕昇又为活板其法用胶泥刻字薄如钱唇每字为一印火烧令坚先设一铁板其上以松脂蜡和纸灰之类冒之",
+        "欲印则以一铁范置铁板上乃密布字印满铁范为一板持就火炀之药稍镕则以一平板按其面则字平如砥若止印三二本未为简易若印数十百千本则极为神速",
+        "常作二铁板一板印刷一板已自布字此印者才毕则第二板已具更互用之瞬息可就每一字皆有数印如“之”“也”等字每字有二十余印以备一板内有重复者",
+        "不用则以纸帖之每韵为一帖木格贮之有奇字素无备者旋刻之以草火烧瞬息可成不以木为之者木理有疏密沾水则高下不平兼与药相粘不可取不若燔土用讫再火令药镕以手拂之其印自落殊不沾污",
+        "昇死其印为余群从所得至今宝藏"
+      ],
+      "fullLinesPunct": [
+        "板印书籍，唐人尚未盛为之。自冯瀛王始印五经，已后典籍皆为板本。",
+        "庆历中，有布衣毕昇，又为活板。其法：用胶泥刻字，薄如钱唇，每字为一印，火烧令坚。先设一铁板，其上以松脂、蜡和纸灰之类冒之。",
+        "欲印，则以一铁范置铁板上，乃密布字印，满铁范为一板，持就火炀之，药稍镕，则以一平板按其面，则字平如砥。若止印三二本，未为简易；若印数十百千本，则极为神速。",
+        "常作二铁板，一板印刷，一板已自布字，此印者才毕，则第二板已具，更互用之，瞬息可就。每一字皆有数印，如“之”“也”等字，每字有二十余印，以备一板内有重复者。",
+        "不用，则以纸帖之，每韵为一帖，木格贮之。有奇字素无备者，旋刻之，以草火烧，瞬息可成。不以木为之者，木理有疏密，沾水则高下不平，兼与药相粘，不可取；不若燔土，用讫再火令药镕，以手拂之，其印自落，殊不沾污。",
+        "昇死，其印为余群从所得，至今宝藏。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "huoban",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "板印书籍唐人尚未盛为之自冯瀛王始印五经已后典籍皆为板本",
+        "庆历中有布衣毕昇又为活板其法用胶泥刻字薄如钱唇每字为一印火烧令坚先设一铁板其上以松脂蜡和纸灰之类冒之",
+        "欲印则以一铁范置铁板上乃密布字印满铁范为一板持就火炀之药稍镕则以一平板按其面则字平如砥若止印三二本未为简易若印数十百千本则极为神速",
+        "常作二铁板一板印刷一板已自布字此印者才毕则第二板已具更互用之瞬息可就每一字皆有数印如“之”“也”等字每字有二十余印以备一板内有重复者",
+        "不用则以纸帖之每韵为一帖木格贮之有奇字素无备者旋刻之以草火烧瞬息可成不以木为之者木理有疏密沾水则高下不平兼与药相粘不可取不若燔土用讫再火令药镕以手拂之其印自落殊不沾污",
+        "昇死其印为余群从所得至今宝藏"
+      ],
+      "linesPunct": [
+        "板印书籍，唐人尚未盛为之。自冯瀛王始印五经，已后典籍皆为板本。",
+        "庆历中，有布衣毕昇，又为活板。其法：用胶泥刻字，薄如钱唇，每字为一印，火烧令坚。先设一铁板，其上以松脂、蜡和纸灰之类冒之。",
+        "欲印，则以一铁范置铁板上，乃密布字印，满铁范为一板，持就火炀之，药稍镕，则以一平板按其面，则字平如砥。若止印三二本，未为简易；若印数十百千本，则极为神速。",
+        "常作二铁板，一板印刷，一板已自布字，此印者才毕，则第二板已具，更互用之，瞬息可就。每一字皆有数印，如“之”“也”等字，每字有二十余印，以备一板内有重复者。",
+        "不用，则以纸帖之，每韵为一帖，木格贮之。有奇字素无备者，旋刻之，以草火烧，瞬息可成。不以木为之者，木理有疏密，沾水则高下不平，兼与药相粘，不可取；不若燔土，用讫再火令药镕，以手拂之，其印自落，殊不沾污。",
+        "昇死，其印为余群从所得，至今宝藏。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        3,
+        7,
+        10,
+        10,
+        15,
+        3
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "说明",
+        "技艺",
+        "宋文言"
+      ],
+      "technique": [
+        "说明顺序",
+        "作比较",
+        "列数字"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "说明",
+        "技艺"
+      ],
+      "title": "活板",
       "volume": "七年级下册"
     },
     {

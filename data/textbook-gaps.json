@@ -3,10 +3,10 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 221,
+    "total": 218,
     "modern": 40,
     "lessonEntries": 781,
-    "poems": 289,
+    "poems": 292,
     "reciteGaps": 99,
     "primaryGaps": 337
   },
@@ -205,14 +205,6 @@
     },
     {
       "volume": "七年级下册",
-      "lesson": "4",
-      "title": "孙权劝学",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20083_langdu.html",
-      "looksModern": false,
-      "recite": false
-    },
-    {
-      "volume": "七年级下册",
       "lesson": "5",
       "title": "黄河颂",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20084_langdu.html",
@@ -274,14 +266,6 @@
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20878_langdu.html",
       "looksModern": false,
       "recite": true
-    },
-    {
-      "volume": "七年级下册",
-      "lesson": "13",
-      "title": "卖油翁",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20877_langdu.html",
-      "looksModern": false,
-      "recite": false
     },
     {
       "volume": "七年级下册",
@@ -362,14 +346,6 @@
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20855_langdu.html",
       "looksModern": false,
       "recite": true
-    },
-    {
-      "volume": "七年级下册",
-      "lesson": "25",
-      "title": "活板",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20854_langdu.html",
-      "looksModern": false,
-      "recite": false
     },
     {
       "volume": "八年级上册",
