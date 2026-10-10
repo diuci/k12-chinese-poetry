@@ -831,8 +831,10 @@ def attest_expect(row, in_coverage, in_collision, is_syllabus=True):
 
     返回 None 表示这一条不单独决定状态；返回 'unknown' 表示这张表里出现了没人解释过的结论。
     两条容易混的：mismatch 在同一册里找到那一课（收了、正文有出入）与在别的册里找到同名课文
-    （那是另一篇）是两件事，靠 declaredVolume 分；园地证据只有一条来源，不改变收录结论，
-    但同名另一篇是另一条独立结论，所以 garden-* 撞上 titleCollision 时写「同名另一篇」是对的。"""
+    （那是另一篇）是两件事，靠 declaredVolume 分。同名另一篇是另一条独立结论，但它只在
+    「这一篇到底收没收」还没定的时候才接管状态（garden-mirror-only、garden-other-volume、
+    lesson-not-found、no-textbook）；garden-attested 是园地收了、两条独立来源核过——收录已经坐实，
+    同名的另一篇改不了它，照写「统编教材收录」。"""
     st = row.get('status')
     if st in ('match', 'partial'):
         return COVERED_ELSEWHERE if in_coverage else COLLECTED

@@ -2,7 +2,7 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-10",
   "counts": {
-    "match": 190,
+    "match": 196,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -68,6 +68,56 @@
       "stage": "初中",
       "status": "match",
       "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "shiyiyuesirifengyudazuo",
+      "title": "十一月四日风雨大作",
+      "author": "陆游",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册课外诵读",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "emeishanyuege",
+      "title": "峨眉山月歌",
+      "author": "李白",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册课外诵读",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "jiangnanfengligunian",
+      "title": "江南逢李龟年",
+      "author": "杜甫",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册课外诵读",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "qiuci",
+      "title": "秋词",
+      "author": "刘禹锡",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册课外诵读",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "xingjunjiuri",
+      "title": "行军九日思长安故园",
+      "author": "岑参",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册课外诵读",
       "textbookVolume": "七年级上册",
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
@@ -189,6 +239,16 @@
       "id": "zhuliguan",
       "title": "竹里馆",
       "author": "王维",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级下册课外诵读",
+      "textbookVolume": "七年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "guosongyuan",
+      "title": "过松源晨炊漆公店",
+      "author": "杨万里",
       "stage": "初中",
       "status": "match",
       "volume": "七年级下册课外诵读",

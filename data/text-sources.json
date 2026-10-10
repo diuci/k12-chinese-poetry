@@ -2,8 +2,8 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-10",
   "stats": {
-    "attested": 214,
-    "partial": 37,
+    "attested": 202,
+    "partial": 55,
     "notfound": 0,
     "nosource": 1,
     "withVariants": 60
@@ -166,6 +166,71 @@
       ]
     },
     {
+      "id": "shiyiyuesirifengyudazuo",
+      "title": "十一月四日风雨大作",
+      "author": "陆游",
+      "stage": "初中",
+      "page": "十一月四日風雨大作",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%81%E4%B8%80%E6%9C%88%E5%9B%9B%E6%97%A5%E9%A2%A8%E9%9B%A8%E5%A4%A7%E4%BD%9C",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "emeishanyuege",
+      "title": "峨眉山月歌",
+      "author": "李白",
+      "stage": "初中",
+      "page": "峨眉山月歌",
+      "url": "https://zh.wikisource.org/wiki/%E5%B3%A8%E7%9C%89%E5%B1%B1%E6%9C%88%E6%AD%8C",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "jiangnanfengligunian",
+      "title": "江南逢李龟年",
+      "author": "杜甫",
+      "stage": "初中",
+      "page": "唐人萬首絶句選 (四庫全書本)/卷3",
+      "url": "https://zh.wikisource.org/wiki/%E5%94%90%E4%BA%BA%E8%90%AC%E9%A6%96%E7%B5%B6%E5%8F%A5%E9%81%B8%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B73",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "qiuci",
+      "title": "秋词",
+      "author": "刘禹锡",
+      "stage": "初中",
+      "page": "秋詞 (劉禹錫)",
+      "url": "https://zh.wikisource.org/wiki/%E7%A7%8B%E8%A9%9E%20%28%E5%8A%89%E7%A6%B9%E9%8C%AB%29",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "xingjunjiuri",
+      "title": "行军九日思长安故园",
+      "author": "岑参",
+      "stage": "初中",
+      "page": "行軍九日思長安故園",
+      "url": "https://zh.wikisource.org/wiki/%E8%A1%8C%E8%BB%8D%E4%B9%9D%E6%97%A5%E6%80%9D%E9%95%B7%E5%AE%89%E6%95%85%E5%9C%92",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "jihai-jimao",
       "title": "己亥杂诗",
       "author": "龚自珍",
@@ -208,14 +273,38 @@
       "page": "國語文學史/第一編 漢魏六朝的平民文學",
       "url": "https://zh.wikisource.org/wiki/%E5%9C%8B%E8%AA%9E%E6%96%87%E5%AD%B8%E5%8F%B2/%E7%AC%AC%E4%B8%80%E7%B7%A8%20%E6%BC%A2%E9%AD%8F%E5%85%AD%E6%9C%9D%E7%9A%84%E5%B9%B3%E6%B0%91%E6%96%87%E5%AD%B8",
       "lines": 24,
-      "hit": 23,
+      "hit": 20,
       "miss": [
+        {
+          "line": "旦辞爷娘去暮宿黄河边不闻爷娘唤女声但闻黄河流水鸣溅溅",
+          "nearest": {
+            "line": "旦辞爷娘去暮宿黄河边不闻爷娘唤女声但闻黄河流水鸣溅溅",
+            "source": "旦辞爷娘去慕宿黄河边不闻爷娘唤女声但闻黄河流水鸣溅溅旦辞",
+            "ratio": 0.926
+          }
+        },
         {
           "line": "旦辞黄河去暮至黑山头不闻爷娘唤女声但闻燕山胡骑鸣啾啾",
           "nearest": {
             "line": "旦辞黄河去暮至黑山头不闻爷娘唤女声但闻燕山胡骑鸣啾啾",
             "source": "旦辞黄河去暮宿黑山头不闻爷娘唤女声但闻燕山胡骑声啾啾万里",
             "ratio": 0.889
+          }
+        },
+        {
+          "line": "可汗问所欲木兰不用尚书郎愿驰千里足送儿还故乡",
+          "nearest": {
+            "line": "可汗问所欲木兰不用尚书郎愿驰千里足送儿还故乡",
+            "source": "可汗问所欲木兰不用尚书郎願借明驼千里足送儿还故乡",
+            "ratio": 0.87
+          }
+        },
+        {
+          "line": "出门看火伴火伴皆惊忙同行十二年不知木兰是女郎",
+          "nearest": {
+            "line": "出门看火伴火伴皆惊忙同行十二年不知木兰是女郎",
+            "source": "出门看夥伴夥伴始惊惶同行十二年不知木兰是女郎雄兔",
+            "ratio": 0.783
           }
         }
       ],
@@ -257,8 +346,17 @@
       "page": "愛蓮說",
       "url": "https://zh.wikisource.org/wiki/%E6%84%9B%E8%93%AE%E8%AA%AA",
       "lines": 12,
-      "hit": 12,
-      "miss": [],
+      "hit": 11,
+      "miss": [
+        {
+          "line": "自李唐来世人甚爱牡丹",
+          "nearest": {
+            "line": "自李唐来世人甚爱牡丹",
+            "source": "自李唐来世人盛爱牡丹3予",
+            "ratio": 0.818
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -280,8 +378,8 @@
       "title": "登飞来峰",
       "author": "王安石",
       "stage": "初中",
-      "page": "登飛來峰",
-      "url": "https://zh.wikisource.org/wiki/%E7%99%BB%E9%A3%9B%E4%BE%86%E5%B3%B0",
+      "page": "堯山堂外紀/卷062",
+      "url": "https://zh.wikisource.org/wiki/%E5%A0%AF%E5%B1%B1%E5%A0%82%E5%A4%96%E7%B4%80/%E5%8D%B7062",
       "lines": 2,
       "hit": 1,
       "miss": [
@@ -294,7 +392,9 @@
           }
         }
       ],
-      "variantNotes": [],
+      "variantNotes": [
+        "又作诗云"
+      ],
       "variants": []
     },
     {
@@ -353,6 +453,28 @@
       "lines": 2,
       "hit": 2,
       "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "guosongyuan",
+      "title": "过松源晨炊漆公店",
+      "author": "杨万里",
+      "stage": "初中",
+      "page": "宋元詩㑹 (四庫全書本)/卷041",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%85%83%E8%A9%A9%E3%91%B9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7041",
+      "lines": 2,
+      "hit": 1,
+      "miss": [
+        {
+          "line": "正入万山围子里一山放出一山拦",
+          "nearest": {
+            "line": "正入万山围子里一山放出一山拦",
+            "source": "正入万山圈子里一山放出一山拦闷歌",
+            "ratio": 0.867
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -497,8 +619,17 @@
       "page": "醉翁亭記 + 歐陽修集/卷039 + 崇古文訣 (四庫全書本)/卷18",
       "url": "https://zh.wikisource.org/wiki/%E9%86%89%E7%BF%81%E4%BA%AD%E8%A8%98",
       "lines": 25,
-      "hit": 25,
-      "miss": [],
+      "hit": 24,
+      "miss": [
+        {
+          "line": "宴酣之乐非丝非竹射者中弈者胜觥筹交错起坐而喧哗者众宾欢也",
+          "nearest": {
+            "line": "宴酣之乐非丝非竹射者中弈者胜觥筹交错起坐而喧哗者众宾欢也",
+            "source": "宴也宴酣之乐非丝非竹射者中奕者胜觥筹交错起坐而喧哗者众宾欢也",
+            "ratio": 0.931
+          }
+        }
+      ],
       "variantNotes": [
         "一作破"
       ],
@@ -808,8 +939,17 @@
       "page": "出師表",
       "url": "https://zh.wikisource.org/wiki/%E5%87%BA%E5%B8%AB%E8%A1%A8",
       "lines": 29,
-      "hit": 29,
-      "miss": [],
+      "hit": 28,
+      "miss": [
+        {
+          "line": "侍中尚书长史参军此悉贞良死节之臣愿陛下亲之信之则汉室之隆可计日而待也",
+          "nearest": {
+            "line": "侍中尚书长史参军此悉贞良死节之臣愿陛下亲之信之则汉室之隆可计日而待也",
+            "source": "侍中尚书长史参军此悉贞亮死节之臣也6願陛下亲之信之则汉室之隆可计日而待也",
+            "ratio": 0.914
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -961,7 +1101,7 @@
       "page": "白雪歌送武判官歸京",
       "url": "https://zh.wikisource.org/wiki/%E7%99%BD%E9%9B%AA%E6%AD%8C%E9%80%81%E6%AD%A6%E5%88%A4%E5%AE%98%E6%AD%B8%E4%BA%AC",
       "lines": 9,
-      "hit": 8,
+      "hit": 7,
       "miss": [
         {
           "line": "将军角弓不得控都护铁衣冷难着",
@@ -969,6 +1109,14 @@
             "line": "将军角弓不得控都护铁衣冷难着",
             "source": "将军角一作雕弓不得控都护铁衣冷难",
             "ratio": 0.867
+          }
+        },
+        {
+          "line": "瀚海阑干百丈冰愁云惨淡万里凝",
+          "nearest": {
+            "line": "瀚海阑干百丈冰愁云惨淡万里凝",
+            "source": "瀚海阑干百丈一作千尺冰愁云惨澹万里凝",
+            "ratio": 0.812
           }
         }
       ],
@@ -1047,8 +1195,25 @@
       "page": "送東陽馬生序",
       "url": "https://zh.wikisource.org/wiki/%E9%80%81%E6%9D%B1%E9%99%BD%E9%A6%AC%E7%94%9F%E5%BA%8F",
       "lines": 35,
-      "hit": 35,
-      "miss": [],
+      "hit": 33,
+      "miss": [
+        {
+          "line": "同舍生皆被绮绣戴朱缨宝饰之帽腰白玉之环左佩刀右备容臭烨然若神人",
+          "nearest": {
+            "line": "同舍生皆被绮绣戴朱缨宝饰之帽腰白玉之环左佩刀右备容臭烨然若神人",
+            "source": "同舍生皆被绮绣戴珠缨宝饰之帽腰白玉之环左佩刀右备容臭烨然若神人余则",
+            "ratio": 0.938
+          }
+        },
+        {
+          "line": "与之论辨言和而色夷",
+          "nearest": {
+            "line": "与之论辨言和而色夷",
+            "source": "与之论辩言和而色夷自谓",
+            "ratio": 0.8
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -1060,7 +1225,7 @@
       "page": "鄒忌諷齊王納諫",
       "url": "https://zh.wikisource.org/wiki/%E9%84%92%E5%BF%8C%E8%AB%B7%E9%BD%8A%E7%8E%8B%E7%B4%8D%E8%AB%AB",
       "lines": 30,
-      "hit": 28,
+      "hit": 27,
       "miss": [
         {
           "line": "由此观之王之蔽甚矣",
@@ -1068,6 +1233,14 @@
             "line": "由此观之王之蔽甚矣",
             "source": "由此观之王之敝甚矣王曰",
             "ratio": 0.8
+          }
+        },
+        {
+          "line": "\"明日徐公来孰视之自以为不如",
+          "nearest": {
+            "line": "\"明日徐公来孰视之自以为不如",
+            "source": "明日徐公来熟视之自以为不如窥镜",
+            "ratio": 0.857
           }
         },
         {
@@ -1090,8 +1263,17 @@
       "page": "三峽",
       "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%B3%BD",
       "lines": 9,
-      "hit": 9,
-      "miss": [],
+      "hit": 8,
+      "miss": [
+        {
+          "line": "春冬之时则素湍绿潭回清倒影绝𪩘多生怪柏悬泉瀑布飞漱其间清荣峻茂良多趣味",
+          "nearest": {
+            "line": "春冬之时则素湍绿潭回清倒影绝𪩘多生怪柏悬泉瀑布飞漱其间清荣峻茂良多趣味",
+            "source": "春冬之时则素湍绿潭回清倒影绝𪩘多生柽柏悬泉瀑布飞漱其间清荣峻茂良多趣味每至",
+            "ratio": 0.944
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -1266,8 +1448,17 @@
       "page": "飲酒二十首",
       "url": "https://zh.wikisource.org/wiki/%E9%A3%B2%E9%85%92%E4%BA%8C%E5%8D%81%E9%A6%96",
       "lines": 6,
-      "hit": 6,
-      "miss": [],
+      "hit": 5,
+      "miss": [
+        {
+          "line": "此中有真意欲辨已忘言",
+          "nearest": {
+            "line": "此中有真意欲辨已忘言",
+            "source": "此中有真意欲辩已忘言其六",
+            "ratio": 0.818
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -1731,8 +1922,17 @@
       "page": "全蜀藝文志 (四庫全書本)/卷20",
       "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E8%9C%80%E8%97%9D%E6%96%87%E5%BF%97%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B720",
       "lines": 4,
-      "hit": 4,
-      "miss": [],
+      "hit": 3,
+      "miss": [
+        {
+          "line": "无为在歧路儿女共沾巾",
+          "nearest": {
+            "line": "无为在歧路儿女共沾巾",
+            "source": "无为在岐路儿女共沾巾重别",
+            "ratio": 0.818
+          }
+        }
+      ],
       "variantNotes": [
         "一作知"
       ],
@@ -1797,8 +1997,17 @@
       "page": "憫農 (李紳)",
       "url": "https://zh.wikisource.org/wiki/%E6%86%AB%E8%BE%B2%20%28%E6%9D%8E%E7%B4%B3%29",
       "lines": 2,
-      "hit": 2,
-      "miss": [],
+      "hit": 1,
+      "miss": [
+        {
+          "line": "谁知盘中餐粒粒皆辛苦",
+          "nearest": {
+            "line": "谁知盘中餐粒粒皆辛苦",
+            "source": "谁知盘中飧粒粒皆辛苦其二",
+            "ratio": 0.818
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -2122,8 +2331,17 @@
       "page": "三衢道中",
       "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E8%A1%A2%E9%81%93%E4%B8%AD",
       "lines": 2,
-      "hit": 2,
-      "miss": [],
+      "hit": 1,
+      "miss": [
+        {
+          "line": "梅子黄时日日晴小溪泛尽却山行",
+          "nearest": {
+            "line": "梅子黄时日日晴小溪泛尽却山行",
+            "source": "梅子黄时日日晴小溪汛尽却山行绿阴",
+            "ratio": 0.867
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -2707,8 +2925,8 @@
       "title": "秋夜将晓出篱门迎凉有感",
       "author": "陆游",
       "stage": "小学",
-      "page": "劎南詩槀 (四庫全書本)/卷25",
-      "url": "https://zh.wikisource.org/wiki/%E5%8A%8E%E5%8D%97%E8%A9%A9%E6%A7%80%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B725",
+      "page": "秋夜將曉出籬門迎涼有感",
+      "url": "https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C%E5%B0%87%E6%9B%89%E5%87%BA%E7%B1%AC%E9%96%80%E8%BF%8E%E6%B6%BC%E6%9C%89%E6%84%9F",
       "lines": 2,
       "hit": 2,
       "miss": [],
@@ -3084,8 +3302,8 @@
       "title": "游园不值",
       "author": "叶绍翁",
       "stage": "小学",
-      "page": "遊園不值",
-      "url": "https://zh.wikisource.org/wiki/%E9%81%8A%E5%9C%92%E4%B8%8D%E5%80%BC",
+      "page": "兩宋名賢小集 (四庫全書本)/卷260",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%A9%E5%AE%8B%E5%90%8D%E8%B3%A2%E5%B0%8F%E9%9B%86%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7260",
       "lines": 2,
       "hit": 2,
       "miss": [],
@@ -3100,8 +3318,17 @@
       "page": "詠石灰 + 元明事類鈔 (四庫全書本)/卷22",
       "url": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%9F%B3%E7%81%B0",
       "lines": 2,
-      "hit": 2,
-      "miss": [],
+      "hit": 1,
+      "miss": [
+        {
+          "line": "粉骨碎身浑不怕要留清白在人间",
+          "nearest": {
+            "line": "粉骨碎身浑不怕要留清白在人间",
+            "source": "粉骨碎身皆不顾要留清白在人间此诗",
+            "ratio": 0.8
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [
         {
@@ -3334,8 +3561,17 @@
       "page": "雪梅 (盧梅坡)",
       "url": "https://zh.wikisource.org/wiki/%E9%9B%AA%E6%A2%85%20%28%E7%9B%A7%E6%A2%85%E5%9D%A1%29",
       "lines": 2,
-      "hit": 2,
-      "miss": [],
+      "hit": 1,
+      "miss": [
+        {
+          "line": "梅雪争春未肯降骚人阁笔费评章",
+          "nearest": {
+            "line": "梅雪争春未肯降骚人阁笔费评章",
+            "source": "梅雪争春未肯降骚人搁笔费评章搁一",
+            "ratio": 0.867
+          }
+        }
+      ],
       "variantNotes": [
         "一作阁"
       ],
@@ -3379,8 +3615,8 @@
       "title": "四时田园杂兴",
       "author": "范成大",
       "stage": "小学",
-      "page": "四時田園雜興",
-      "url": "https://zh.wikisource.org/wiki/%E5%9B%9B%E6%99%82%E7%94%B0%E5%9C%92%E9%9B%9C%E8%88%88",
+      "page": "古今事文類聚 (四庫全書本)/後集卷22",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E4%BB%8A%E4%BA%8B%E6%96%87%E9%A1%9E%E8%81%9A%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%BE%8C%E9%9B%86%E5%8D%B722",
       "lines": 2,
       "hit": 2,
       "miss": [],
@@ -3475,8 +3711,17 @@
       "page": "清平樂 (辛棄疾)",
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%B9%B3%E6%A8%82%20%28%E8%BE%9B%E6%A3%84%E7%96%BE%29",
       "lines": 4,
-      "hit": 4,
-      "miss": [],
+      "hit": 3,
+      "miss": [
+        {
+          "line": "最喜小儿亡赖溪头卧剥莲蓬",
+          "nearest": {
+            "line": "最喜小儿亡赖溪头卧剥莲蓬",
+            "source": "最喜小儿无赖溪头卧剥莲蓬清平",
+            "ratio": 0.846
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -3527,8 +3772,24 @@
       "page": "荀子/勸學篇",
       "url": "https://zh.wikisource.org/wiki/%E8%8D%80%E5%AD%90/%E5%8B%B8%E5%AD%B8%E7%AF%87",
       "lines": 25,
-      "hit": 24,
+      "hit": 22,
       "miss": [
+        {
+          "line": "木直中绳𫐐以为轮其曲中规",
+          "nearest": {
+            "line": "木直中绳𫐐以为轮其曲中规",
+            "source": "木直中绳輮以为轮其曲中规虽有",
+            "ratio": 0.846
+          }
+        },
+        {
+          "line": "虽有槁暴不复挺者𫐐使之然也",
+          "nearest": {
+            "line": "虽有槁暴不复挺者𫐐使之然也",
+            "source": "虽有槁暴不复挺者輮使之然也輮屈",
+            "ratio": 0.857
+          }
+        },
         {
           "line": "骐骥一跃不能十步",
           "nearest": {
@@ -4154,7 +4415,7 @@
       "page": "登泰山記",
       "url": "https://zh.wikisource.org/wiki/%E7%99%BB%E6%B3%B0%E5%B1%B1%E8%A8%98",
       "lines": 39,
-      "hit": 38,
+      "hit": 36,
       "miss": [
         {
           "line": "极天云一线异色须臾成五采",
@@ -4162,6 +4423,22 @@
             "line": "极天云一线异色须臾成五采",
             "source": "极天云一線异色须臾成五彩日上",
             "ratio": 0.769
+          }
+        },
+        {
+          "line": "戊申晦五鼓与子颍坐日观亭待日出",
+          "nearest": {
+            "line": "戊申晦五鼓与子颍坐日观亭待日出",
+            "source": "戊申晦五鼓与子颖坐日观亭待日出大风",
+            "ratio": 0.875
+          }
+        },
+        {
+          "line": "稍见云中白若樗蒱数十立者山也",
+          "nearest": {
+            "line": "稍见云中白若樗蒱数十立者山也",
+            "source": "稍见云中白若摴蒱数十立者山也极天",
+            "ratio": 0.867
           }
         }
       ],
@@ -4339,8 +4616,17 @@
       "page": "六國論 (蘇洵)",
       "url": "https://zh.wikisource.org/wiki/%E5%85%AD%E5%9C%8B%E8%AB%96%20%28%E8%98%87%E6%B4%B5%29",
       "lines": 39,
-      "hit": 39,
-      "miss": [],
+      "hit": 38,
+      "miss": [
+        {
+          "line": "苟以天下之大下而从六国破亡之故事是又在六国下矣",
+          "nearest": {
+            "line": "苟以天下之大下而从六国破亡之故事是又在六国下矣",
+            "source": "苟以天下之大而从六国破亡之故事16是又在六国下矣1",
+            "ratio": 0.917
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -4352,8 +4638,24 @@
       "page": "論語/先進第十一",
       "url": "https://zh.wikisource.org/wiki/%E8%AB%96%E8%AA%9E/%E5%85%88%E9%80%B2%E7%AC%AC%E5%8D%81%E4%B8%80",
       "lines": 34,
-      "hit": 33,
+      "hit": 31,
       "miss": [
+        {
+          "line": "千乘之国摄乎大国之间加之以师旅因之以饥馑",
+          "nearest": {
+            "line": "千乘之国摄乎大国之间加之以师旅因之以饥馑",
+            "source": "千乘之国摄乎大国之閒加之以师旅因之以饥馑由也",
+            "ratio": 0.905
+          }
+        },
+        {
+          "line": "子路率尔而对曰\"千乘之国摄乎大国之间加之以师旅因之以饥馑",
+          "nearest": {
+            "line": "子路率尔而对曰\"千乘之国摄乎大国之间加之以师旅因之以饥馑",
+            "source": "子路率尔而对曰千乘之国摄乎大国之閒加之以师旅因之以饥馑由也",
+            "ratio": 0.929
+          }
+        },
         {
           "line": "\"夫子哂之",
           "nearest": {
@@ -4399,8 +4701,25 @@
       "page": "念奴嬌 (張孝祥)",
       "url": "https://zh.wikisource.org/wiki/%E5%BF%B5%E5%A5%B4%E5%AC%8C%20%28%E5%BC%B5%E5%AD%9D%E7%A5%A5%29",
       "lines": 8,
-      "hit": 8,
-      "miss": [],
+      "hit": 6,
+      "miss": [
+        {
+          "line": "玉鉴琼田三万顷着我扁舟一叶",
+          "nearest": {
+            "line": "玉鉴琼田三万顷着我扁舟一叶",
+            "source": "玉鉴琼田三万顷著我扁舟一叶素月",
+            "ratio": 0.857
+          }
+        },
+        {
+          "line": "应念岭海经年孤光自照肝肺皆冰雪",
+          "nearest": {
+            "line": "应念岭海经年孤光自照肝肺皆冰雪",
+            "source": "应念岭表经年孤光自照肝胆皆冰雪短发",
+            "ratio": 0.812
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -4470,8 +4789,17 @@
       "page": "答司馬諫議書",
       "url": "https://zh.wikisource.org/wiki/%E7%AD%94%E5%8F%B8%E9%A6%AC%E8%AB%AB%E8%AD%B0%E6%9B%B8",
       "lines": 20,
-      "hit": 20,
-      "miss": [],
+      "hit": 19,
+      "miss": [
+        {
+          "line": "盖儒者所争尤在于名实名实已明而天下之理得矣",
+          "nearest": {
+            "line": "盖儒者所争尤在于名实名实已明而天下之理得矣",
+            "source": "盖儒者所争尤在名实名实已明而天下之理得矣今君实",
+            "ratio": 0.909
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -4483,8 +4811,25 @@
       "page": "諫太宗十思疏 + 全唐文/卷0139 + 貞觀政要/卷01 + 厯代名臣奏議 (四庫全書本)/卷027",
       "url": "https://zh.wikisource.org/wiki/%E8%AB%AB%E5%A4%AA%E5%AE%97%E5%8D%81%E6%80%9D%E7%96%8F",
       "lines": 24,
-      "hit": 24,
-      "miss": [],
+      "hit": 22,
+      "miss": [
+        {
+          "line": "虽董之以严刑振之以威怒终苟免而不怀仁貌恭而不心服",
+          "nearest": {
+            "line": "虽董之以严刑振之以威怒终苟免而不怀仁貌恭而不心服",
+            "source": "虽董之以严刑震之以威怒终苟免而不怀仁貌恭而不心服怨不",
+            "ratio": 0.92
+          }
+        },
+        {
+          "line": "君人者诚能见可欲则思知足以自戒将有作则思知止以安人念高危则思谦冲而自牧惧满溢则思江海下百川乐盘游则思三驱以为度忧懈怠则思慎始而敬终虑壅蔽则思虚心以纳下想谗邪则思正身以黜恶恩所加则思无因喜以谬赏罚所及则思无以怒而滥刑",
+          "nearest": {
+            "line": "君人者诚能见可欲则思知足以自戒将有作则思知止以安人念高危则思谦冲而自牧惧满溢则思江海下百川乐盘游则思三驱以为度忧懈怠则思慎始而敬终虑壅蔽则思虚心以纳下想谗邪则思正身以黜恶恩所加则思无因喜以谬赏罚所及则思无以怒而滥刑",
+            "source": "君人者诚能见可欲则思知足以自戒将有作则思知止以安人念高危则思谦冲而自牧惧满溢则思江海下百川乐盘游则思三驱以为度忧懈怠则思慎始而敬终虑壅蔽则思虚心以纳下惧谗邪则思正身以黜恶恩所加则思无因喜以谬赏罚所及则思无以怒而滥刑总此",
+            "ratio": 0.981
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [],
       "override": "比对页必须是这篇文章的真来源。自动选页曾经选中《唐史演義》——明清演义小说，不是魏徵这篇文章的来源；已换成《諫太宗十思疏》单页 + 《全唐文》卷139 + 《貞觀政要》卷1 + 《厯代名臣奏議》卷27。"
@@ -4497,7 +4842,7 @@
       "page": "諫逐客書",
       "url": "https://zh.wikisource.org/wiki/%E8%AB%AB%E9%80%90%E5%AE%A2%E6%9B%B8",
       "lines": 30,
-      "hit": 26,
+      "hit": 22,
       "miss": [
         {
           "line": "西取由余于戎东得百里奚于宛迎蹇叔于宋来丕豹公孙支于晋",
@@ -4524,11 +4869,43 @@
           }
         },
         {
+          "line": "此五子者不产于秦而缪公用之并国二十遂霸西戎",
+          "nearest": {
+            "line": "此五子者不产于秦而缪公用之并国二十遂霸西戎",
+            "source": "此五子者不产于秦而穆公用之并国二十遂霸西戎10",
+            "ratio": 0.909
+          }
+        },
+        {
+          "line": "昭王得范雎废穰侯逐华阳强公室杜私门蚕食诸侯使秦成帝业",
+          "nearest": {
+            "line": "昭王得范雎废穰侯逐华阳强公室杜私门蚕食诸侯使秦成帝业",
+            "source": "昭王得范雎21废穰侯22逐华阳23彊公室杜私门蚕食诸侯使秦成帝业",
+            "ratio": 0.862
+          }
+        },
+        {
           "line": "郑卫桑间昭虞武象者异国之乐也",
           "nearest": {
             "line": "郑卫桑间昭虞武象者异国之乐也",
             "source": "桑间38韶虞39武象40者异国之乐也",
             "ratio": 0.688
+          }
+        },
+        {
+          "line": "今弃击瓮而就郑卫退弹筝而取昭虞若是者何也",
+          "nearest": {
+            "line": "今弃击瓮而就郑卫退弹筝而取昭虞若是者何也",
+            "source": "今弃击瓮而就郑卫退弹筝而取韶虞若是者何也快意",
+            "ratio": 0.905
+          }
+        },
+        {
+          "line": "臣闻地广者粟多国大者人众兵强则士勇",
+          "nearest": {
+            "line": "臣闻地广者粟多国大者人众兵强则士勇",
+            "source": "臣闻地广者粟多国大者人众兵疆者则士勇是",
+            "ratio": 0.889
           }
         }
       ],
@@ -4543,17 +4920,8 @@
       "page": "阿房宮賦",
       "url": "https://zh.wikisource.org/wiki/%E9%98%BF%E6%88%BF%E5%AE%AE%E8%B3%A6",
       "lines": 47,
-      "hit": 46,
-      "miss": [
-        {
-          "line": "明星荧荧开妆镜也",
-          "nearest": {
-            "line": "明星荧荧开妆镜也",
-            "source": "明星荧荧開粧镜也绿云",
-            "ratio": 0.667
-          }
-        }
-      ],
+      "hit": 47,
+      "miss": [],
       "variantNotes": [],
       "variants": [
         {
@@ -4708,8 +5076,17 @@
       "page": "滕王閣序 + 王子安集 (四部叢刊本)/卷第五 + 王子安集 (四庫全書本)/卷05 + 文章辨體彚選 (四庫全書本)/卷354 + 全唐文/卷0181",
       "url": "https://zh.wikisource.org/wiki/%E6%BB%95%E7%8E%8B%E9%96%A3%E5%BA%8F",
       "lines": 79,
-      "hit": 79,
-      "miss": [],
+      "hit": 78,
+      "miss": [
+        {
+          "line": "桂殿兰宫即冈峦之体势",
+          "nearest": {
+            "line": "桂殿兰宫即冈峦之体势",
+            "source": "桂殿兰宫即岗峦之体势披绣",
+            "ratio": 0.818
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [
         {
@@ -5053,14 +5430,46 @@
       "page": "老子翼 (四庫全書本)/全覽 + 老子道徳經 (四庫全書本) + 老子翼 (四庫全書本)/卷3 + 道德真經取善集/卷四",
       "url": "https://zh.wikisource.org/wiki/%E8%80%81%E5%AD%90%E7%BF%BC%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%85%A8%E8%A6%BD",
       "lines": 48,
-      "hit": 47,
+      "hit": 43,
       "miss": [
+        {
+          "line": "五色令人目盲五音令人耳聋五味令人口爽驰骋田猎令人心发狂难得之货令人行妨",
+          "nearest": {
+            "line": "五色令人目盲五音令人耳聋五味令人口爽驰骋田猎令人心发狂难得之货令人行妨",
+            "source": "五色令人目盲五音令人耳聋五味令人口爽驰骋畋猎令人心发狂难得之货令人行妨是以",
+            "ratio": 0.944
+          }
+        },
         {
           "line": "第十二章",
           "nearest": {
             "line": "第十二章",
             "source": "第五十二章然",
             "ratio": 0.8
+          }
+        },
+        {
+          "line": "古之善为士者微妙玄通深不可识",
+          "nearest": {
+            "line": "古之善为士者微妙玄通深不可识",
+            "source": "古之善为士者微妙𤣥通深不可识夫唯",
+            "ratio": 0.867
+          }
+        },
+        {
+          "line": "夫唯不可识故强为之容豫兮若冬涉川犹兮若畏四邻俨兮其若客涣兮若冰之将释敦兮其若朴旷兮其若谷浑兮其若浊",
+          "nearest": {
+            "line": "夫唯不可识故强为之容豫兮若冬涉川犹兮若畏四邻俨兮其若客涣兮若冰之将释敦兮其若朴旷兮其若谷浑兮其若浊",
+            "source": "夫唯不可识故强为之容豫若冬涉川犹若畏四邻俨若客涣若冰将释敦兮其若朴旷兮其若谷浑兮其若浊孰能浊以静之徐清",
+            "ratio": 0.86
+          }
+        },
+        {
+          "line": "善行无辙迹善言无瑕谪善计不用筹策善闭无关楗而不可开善结无绳约而不可解",
+          "nearest": {
+            "line": "善行无辙迹善言无瑕谪善计不用筹策善闭无关楗而不可开善结无绳约而不可解",
+            "source": "善行无辙迹善言无瑕谪善计不用筹策善闭无闗楗而不可開善结无绳约而不可解是以",
+            "ratio": 0.914
           }
         }
       ],
@@ -5391,8 +5800,16 @@
       "page": "蘭亭集序 + 文章辨體彚選 (四庫全書本)/卷331",
       "url": "https://zh.wikisource.org/wiki/%E8%98%AD%E4%BA%AD%E9%9B%86%E5%BA%8F",
       "lines": 22,
-      "hit": 21,
+      "hit": 20,
       "miss": [
+        {
+          "line": "虽趣舍万殊静躁不同当其欣于所遇暂得于己快然自足不知老之将至",
+          "nearest": {
+            "line": "虽趣舍万殊静躁不同当其欣于所遇暂得于己快然自足不知老之将至",
+            "source": "虽趣舍万殊静躁不同当其欣于所遇暂得于已快然自足曽不知老之将至及",
+            "ratio": 0.933
+          }
+        },
         {
           "line": "每览昔人兴感之由若合一契未尝不临文嗟悼不能喻之于怀",
           "nearest": {
@@ -5434,14 +5851,38 @@
       "page": "全晉文/卷一百十一",
       "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E6%99%89%E6%96%87/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%8D%81%E4%B8%80",
       "lines": 48,
-      "hit": 47,
+      "hit": 44,
       "miss": [
+        {
+          "line": "既自以心为形役奚惆怅而独悲",
+          "nearest": {
+            "line": "既自以心为形役奚惆怅而独悲",
+            "source": "既自以心为形役奚惆帐而独悲悟已",
+            "ratio": 0.857
+          }
+        },
         {
           "line": "及少日眷然有归欤之情",
           "nearest": {
             "line": "及少日眷然有归欤之情",
             "source": "及少日眷然有归与之情何则",
             "ratio": 0.818
+          }
+        },
+        {
+          "line": "倚南窗以寄傲审容膝之易安",
+          "nearest": {
+            "line": "倚南窗以寄傲审容膝之易安",
+            "source": "倚南窗以奇傲审容膝之易安园日",
+            "ratio": 0.846
+          }
+        },
+        {
+          "line": "云无心以出岫鸟倦飞而知还",
+          "nearest": {
+            "line": "云无心以出岫鸟倦飞而知还",
+            "source": "云无心而出岫鸟倦飞而知还景翳",
+            "ratio": 0.846
           }
         }
       ],
@@ -5705,8 +6146,17 @@
       "page": "望海潮 (柳永)",
       "url": "https://zh.wikisource.org/wiki/%E6%9C%9B%E6%B5%B7%E6%BD%AE%20%28%E6%9F%B3%E6%B0%B8%29",
       "lines": 8,
-      "hit": 8,
-      "miss": [],
+      "hit": 7,
+      "miss": [
+        {
+          "line": "重湖叠巘清嘉有三秋桂子十里荷花",
+          "nearest": {
+            "line": "重湖叠巘清嘉有三秋桂子十里荷花",
+            "source": "重湖叠巘清嘉一作佳有三秋桂子十里荷花羌",
+            "ratio": 0.882
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [
         {
@@ -5794,7 +6244,7 @@
       "page": "離騷 + 經史百家雜鈔/卷3",
       "url": "https://zh.wikisource.org/wiki/%E9%9B%A2%E9%A8%B7",
       "lines": 40,
-      "hit": 39,
+      "hit": 38,
       "miss": [
         {
           "line": "汨余若将不及兮恐年岁之不吾与",
@@ -5802,6 +6252,14 @@
             "line": "汨余若将不及兮恐年岁之不吾与",
             "source": "余若将不及兮恐年岁之不吾与朝搴阰",
             "ratio": 0.867
+          }
+        },
+        {
+          "line": "既替余以蕙纕兮又申之以揽茝",
+          "nearest": {
+            "line": "既替余以蕙纕兮又申之以揽茝",
+            "source": "既替余以蕙纕兮又申之以揽茝亦余",
+            "ratio": 0.929
           }
         }
       ],
@@ -6158,7 +6616,7 @@
       "page": "屈原列傳 + 史記/卷084",
       "url": "https://zh.wikisource.org/wiki/%E5%B1%88%E5%8E%9F%E5%88%97%E5%82%B3",
       "lines": 93,
-      "hit": 90,
+      "hit": 87,
       "miss": [
         {
           "line": "博闻强志明于治乱娴于辞令",
@@ -6174,6 +6632,30 @@
             "line": "举世皆浊而我独清众人皆醉而我独醒",
             "source": "举世混浊而我独清众人皆醉而我独醒是以",
             "ratio": 0.882
+          }
+        },
+        {
+          "line": "惠王患之乃令张仪佯去秦厚币委质事楚曰\"秦甚憎齐齐与楚从亲楚诚能绝齐秦愿献商於之地六百里",
+          "nearest": {
+            "line": "惠王患之乃令张仪佯去秦厚币委质事楚曰\"秦甚憎齐齐与楚从亲楚诚能绝齐秦愿献商於之地六百里",
+            "source": "惠王患之乃令张仪详去秦厚币委质事楚曰秦甚憎齐齐与楚从亲楚诚能绝齐秦願献商于之地六百里楚怀",
+            "ratio": 0.93
+          }
+        },
+        {
+          "line": "屈平既嫉之虽放流眷顾楚国系心怀王不忘欲反冀幸君之一悟俗之一改也",
+          "nearest": {
+            "line": "屈平既嫉之虽放流眷顾楚国系心怀王不忘欲反冀幸君之一悟俗之一改也",
+            "source": "屈平既嫉之虽放流睠23顾楚国系心怀王不忘欲反冀幸君之一悟俗之一改也",
+            "ratio": 0.938
+          }
+        },
+        {
+          "line": "\"屈原曰\"举世皆浊而我独清众人皆醉而我独醒是以见放",
+          "nearest": {
+            "line": "\"屈原曰\"举世皆浊而我独清众人皆醉而我独醒是以见放",
+            "source": "屈原曰举世混浊而我独清众人皆醉而我独醒是以见放渔父",
+            "ratio": 0.917
           }
         },
         {

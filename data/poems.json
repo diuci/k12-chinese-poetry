@@ -2,9 +2,11 @@
   "byGrade": {
     "初中-7": [
       "lunyu12-cz",
+      "shiyiyuesirifengyudazuo",
       "yeyujibei",
       "tianjingsha-qiusi",
       "shanpoyang",
+      "emeishanyuege",
       "jihai-jimao",
       "wuti",
       "chunyeluocheng",
@@ -13,15 +15,19 @@
       "mulanci",
       "cibeigushanxia",
       "shuidiaogetou",
+      "jiangnanfengligunian",
       "boqinhuai",
       "youshanxincun",
       "ailianshuo",
       "dengyouzhoutai",
       "dengfeilaifeng",
       "xiangjianhuan",
+      "qiuci",
       "zhuliguan",
+      "xingjunjiuri",
       "xinglunan",
       "guancanghai",
+      "guosongyuan",
       "guolingyang",
       "fengrujinshi",
       "wenwangchangling",
@@ -322,6 +328,7 @@
     "dengyueyanglou": "dengyueyanglou",
     "duange": "duange",
     "duzuojingting": "duzuojingting",
+    "emeishanyuege": "emeishanyuege",
     "epenggongfu": "epenggongfu",
     "feng": "feng",
     "feng-mi": "feng-mi",
@@ -339,6 +346,7 @@
     "guogurenzhuang": "guogurenzhuang",
     "guolingyang": "guolingyang",
     "guoqinlun": "guoqinlun",
+    "guosongyuan": "guosongyuan",
     "guyuancao": "guyuancao",
     "hanshi": "hanshi",
     "hexinlao": "hexinlao",
@@ -357,6 +365,7 @@
     "jiangjinjiu": "jiangjinjiu",
     "jiangnan": "jiangnan",
     "jiangnanchun": "jiangnanchun",
+    "jiangnanfengligunian": "jiangnanfengligunian",
     "jiangpan": "jiangpan",
     "jiangshangyuzhe": "jiangshangyuzhe",
     "jiangxue": "jiangxue",
@@ -421,6 +430,7 @@
     "qingyu-an": "qingyu-an",
     "qiqiao": "qiqiao",
     "qiqiaoxian": "qiqiaoxian",
+    "qiuci": "qiuci",
     "qiuyejiangxiao": "qiuyejiangxiao",
     "quanxue": "quanxue",
     "quyuanliezhuan": "quyuanliezhuan",
@@ -440,6 +450,7 @@
     "shiwei": "shiwei",
     "shiwucongjunzheng": "shiwucongjunzheng",
     "shiyiwangyue": "shiyiwangyue",
+    "shiyiyuesirifengyudazuo": "shiyiyuesirifengyudazuo",
     "shizhongshan": "shizhongshan",
     "shizhuisai": "shizhuisai",
     "shudaonan": "shudaonan",
@@ -484,6 +495,7 @@
     "xiaoyaoyou": "xiaoyaoyou",
     "xiarijueju": "xiarijueju",
     "xijiangyue": "xijiangyue",
+    "xingjunjiuri": "xingjunjiuri",
     "xinglunan": "xinglunan",
     "xuemei": "xuemei",
     "xunyinzhe": "xunyinzhe",
@@ -545,6 +557,9 @@
     ],
     "书法": [
       "lantingjixu"
+    ],
+    "乱世": [
+      "jiangnanfengligunian"
     ],
     "亡国": [
       "xiangjianhuan",
@@ -698,6 +713,7 @@
       "cibeigushanxia",
       "youshanxincun",
       "dengfeilaifeng",
+      "guosongyuan",
       "beimingyouyu",
       "suoyoujiayao",
       "chibi-du",
@@ -822,6 +838,9 @@
     "师道": [
       "shishuo"
     ],
+    "年老": [
+      "shiyiyuesirifengyudazuo"
+    ],
     "幽静": [
       "luchai",
       "niaomingjian"
@@ -872,8 +891,10 @@
     ],
     "思乡": [
       "yeyujibei",
+      "emeishanyuege",
       "chunyeluocheng",
       "cibeigushanxia",
+      "xingjunjiuri",
       "fengrujinshi",
       "huanghelou-cuiheng",
       "shiwucongjunzheng",
@@ -949,6 +970,7 @@
       "pusaman-wentingyun"
     ],
     "战乱": [
+      "xingjunjiuri",
       "shihaoli"
     ],
     "战争": [
@@ -998,6 +1020,9 @@
       "huanxisha-qishui",
       "niannujiao-gudong",
       "chibifu"
+    ],
+    "昂扬": [
+      "qiuci"
     ],
     "春天": [
       "wanchun",
@@ -1085,6 +1110,7 @@
       "bochuanguazhou"
     ],
     "爱国": [
+      "shiyiyuesirifengyudazuo",
       "guolingyang",
       "nangxiangzi",
       "jiangchengzi-laofeng",
@@ -1181,6 +1207,7 @@
       "changting-songbei"
     ],
     "秋天": [
+      "qiuci",
       "yeshusuojian",
       "shanxing",
       "zengliujingwen",
@@ -1233,6 +1260,10 @@
     "荷": [
       "xiaochi",
       "jingcisi"
+    ],
+    "行旅": [
+      "emeishanyuege",
+      "guosongyuan"
     ],
     "西湖": [
       "qiantanghuchunxing",
@@ -1301,6 +1332,9 @@
     ],
     "赞主人": [
       "shuhuyin"
+    ],
+    "身世": [
+      "jiangnanfengligunian"
     ],
     "边塞": [
       "fengrujinshi",
@@ -1392,7 +1426,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 252,
+  "count": 258,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/《论语》十二章.md",
@@ -1535,6 +1569,77 @@
       ],
       "title": "《论语》十二章",
       "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级上册课外诵读/十一月四日风雨大作.md",
+      "author": "陆游",
+      "authorDied": 1210,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "年老不肯冷下去的心",
+      "examFreq": 0.6,
+      "form": "七言",
+      "fullLines": [
+        "僵卧孤村不自哀尚思为国戍轮台",
+        "夜阑卧听风吹雨铁马冰河入梦来"
+      ],
+      "fullLinesPunct": [
+        "僵卧孤村不自哀，尚思为国戍轮台。",
+        "夜阑卧听风吹雨，铁马冰河入梦来。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "shiyiyuesirifengyudazuo",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "僵卧孤村不自哀尚思为国戍轮台",
+        "夜阑卧听风吹雨铁马冰河入梦来"
+      ],
+      "linesPunct": [
+        "僵卧孤村不自哀，尚思为国戍轮台。",
+        "夜阑卧听风吹雨，铁马冰河入梦来。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "爱国",
+        "年老",
+        "宋七言"
+      ],
+      "technique": [
+        "对比",
+        "梦境"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱国",
+        "年老"
+      ],
+      "title": "十一月四日风雨大作",
+      "volume": "七年级上册课外诵读"
     },
     {
       "_path": "poems/初中/七年级上册/夜雨寄北.md",
@@ -1767,6 +1872,77 @@
       ],
       "title": "山坡羊",
       "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/七年级上册课外诵读/峨眉山月歌.md",
+      "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "离乡那晚的依恋",
+      "examFreq": 0.5,
+      "form": "七言",
+      "fullLines": [
+        "峨眉山月半轮秋影入平羌江水流",
+        "夜发清溪向三峡思君不见下渝州"
+      ],
+      "fullLinesPunct": [
+        "峨眉山月半轮秋，影入平羌江水流。",
+        "夜发清溪向三峡，思君不见下渝州。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "emeishanyuege",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "峨眉山月半轮秋影入平羌江水流",
+        "夜发清溪向三峡思君不见下渝州"
+      ],
+      "linesPunct": [
+        "峨眉山月半轮秋，影入平羌江水流。",
+        "夜发清溪向三峡，思君不见下渝州。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "思乡",
+        "行旅",
+        "唐七言"
+      ],
+      "technique": [
+        "借景抒情",
+        "地名连缀"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "思乡",
+        "行旅"
+      ],
+      "title": "峨眉山月歌",
+      "volume": "七年级上册课外诵读"
     },
     {
       "_path": "poems/初中/七年级下册/己亥杂诗.md",
@@ -2412,6 +2588,77 @@
       "volume": "九年级上册"
     },
     {
+      "_path": "poems/初中/七年级上册课外诵读/江南逢李龟年.md",
+      "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "繁华散尽后的相逢",
+      "examFreq": 0.6,
+      "form": "七言",
+      "fullLines": [
+        "岐王宅里寻常见崔九堂前几度闻",
+        "正是江南好风景落花时节又逢君"
+      ],
+      "fullLinesPunct": [
+        "岐王宅里寻常见，崔九堂前几度闻。",
+        "正是江南好风景，落花时节又逢君。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "jiangnanfengligunian",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "岐王宅里寻常见崔九堂前几度闻",
+        "正是江南好风景落花时节又逢君"
+      ],
+      "linesPunct": [
+        "岐王宅里寻常见，崔九堂前几度闻。",
+        "正是江南好风景，落花时节又逢君。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "乱世",
+        "身世",
+        "唐七言"
+      ],
+      "technique": [
+        "对比",
+        "以景收束"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "乱世",
+        "身世"
+      ],
+      "title": "江南逢李龟年",
+      "volume": "七年级上册课外诵读"
+    },
+    {
       "_path": "poems/初中/七年级下册/泊秦淮.md",
       "author": "杜牧",
       "authorDied": 852,
@@ -2875,6 +3122,77 @@
       "volume": "九年级上册"
     },
     {
+      "_path": "poems/初中/七年级上册课外诵读/秋词.md",
+      "author": "刘禹锡",
+      "authorDied": 842,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "不服输的开朗",
+      "examFreq": 0.5,
+      "form": "七言",
+      "fullLines": [
+        "自古逢秋悲寂寥我言秋日胜春朝",
+        "晴空一鹤排云上便引诗情到碧霄"
+      ],
+      "fullLinesPunct": [
+        "自古逢秋悲寂寥，我言秋日胜春朝。",
+        "晴空一鹤排云上，便引诗情到碧霄。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "qiuci",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "自古逢秋悲寂寥我言秋日胜春朝",
+        "晴空一鹤排云上便引诗情到碧霄"
+      ],
+      "linesPunct": [
+        "自古逢秋悲寂寥，我言秋日胜春朝。",
+        "晴空一鹤排云上，便引诗情到碧霄。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": "其一",
+      "syllables": 14,
+      "tags": [
+        "秋天",
+        "昂扬",
+        "唐七言"
+      ],
+      "technique": [
+        "对比",
+        "议论"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "秋天",
+        "昂扬"
+      ],
+      "title": "秋词",
+      "volume": "七年级上册课外诵读"
+    },
+    {
       "_path": "poems/初中/七年级下册课外诵读/竹里馆.md",
       "author": "王维",
       "authorDied": 761,
@@ -2944,6 +3262,77 @@
       ],
       "title": "竹里馆",
       "volume": "七年级下册课外诵读"
+    },
+    {
+      "_path": "poems/初中/七年级上册课外诵读/行军九日思长安故园.md",
+      "author": "岑参",
+      "authorDied": 770,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "战场上的思乡",
+      "examFreq": 0.5,
+      "form": "五言",
+      "fullLines": [
+        "强欲登高去无人送酒来",
+        "遥怜故园菊应傍战场开"
+      ],
+      "fullLinesPunct": [
+        "强欲登高去，无人送酒来。",
+        "遥怜故园菊，应傍战场开。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "xingjunjiuri",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "强欲登高去无人送酒来",
+        "遥怜故园菊应傍战场开"
+      ],
+      "linesPunct": [
+        "强欲登高去，无人送酒来。",
+        "遥怜故园菊，应傍战场开。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "战乱",
+        "思乡",
+        "唐五言"
+      ],
+      "technique": [
+        "用典",
+        "想象"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "战乱",
+        "思乡"
+      ],
+      "title": "行军九日思长安故园",
+      "volume": "七年级上册课外诵读"
     },
     {
       "_path": "poems/初中/九年级上册/行路难.md",
@@ -3125,6 +3514,77 @@
       ],
       "title": "观沧海",
       "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级下册课外诵读/过松源晨炊漆公店.md",
+      "author": "杨万里",
+      "authorDied": 1206,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "下山才知道的教训",
+      "examFreq": 0.5,
+      "form": "七言",
+      "fullLines": [
+        "莫言下岭便无难赚得行人错喜欢",
+        "正入万山围子里一山放出一山拦"
+      ],
+      "fullLinesPunct": [
+        "莫言下岭便无难，赚得行人错喜欢。",
+        "正入万山围子里，一山放出一山拦。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "guosongyuan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "莫言下岭便无难赚得行人错喜欢",
+        "正入万山围子里一山放出一山拦"
+      ],
+      "linesPunct": [
+        "莫言下岭便无难，赚得行人错喜欢。",
+        "正入万山围子里，一山放出一山拦。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "哲理",
+        "行旅",
+        "宋七言"
+      ],
+      "technique": [
+        "议论",
+        "拟物"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "哲理",
+        "行旅"
+      ],
+      "title": "过松源晨炊漆公店",
+      "volume": "七年级下册课外诵读"
     },
     {
       "_path": "poems/初中/九年级下册/过零丁洋.md",

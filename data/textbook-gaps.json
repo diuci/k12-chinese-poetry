@@ -3,11 +3,11 @@
   "generated": "2026-10-10",
   "counts": {
     "generated": "2026-10-10",
-    "total": 258,
+    "total": 252,
     "modern": 40,
     "lessonEntries": 781,
-    "poems": 252,
-    "reciteGaps": 134,
+    "poems": 258,
+    "reciteGaps": 128,
     "primaryGaps": 337
   },
   "rows": [
@@ -104,30 +104,6 @@
       "lesson": "11",
       "title": "再塑生命的人",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20013_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "峨眉山月歌",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20015_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "江南逢李龟年",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20016_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "行军九日思长安故园",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20017_langdu.html",
       "looksModern": false,
       "recite": true
     },
@@ -256,22 +232,6 @@
       "lesson": "自读",
       "title": "杞人忧天",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20032_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "秋词",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20033_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "十一月四日风雨大作",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/200035_langdu.html",
       "looksModern": false,
       "recite": true
     },
@@ -480,14 +440,6 @@
       "lesson": "自读",
       "title": "贾生",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20852_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级下册",
-      "lesson": "自读",
-      "title": "过松源晨炊漆公店",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20851_langdu.html",
       "looksModern": false,
       "recite": true
     },

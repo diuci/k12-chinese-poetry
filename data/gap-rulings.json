@@ -108,30 +108,6 @@
     },
     {
       "volume": "七年级上册",
-      "title": "峨眉山月歌",
-      "kind": "add",
-      "reason": "唐·李白七言绝句，统编七上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20015_langdu.html"
-    },
-    {
-      "volume": "七年级上册",
-      "title": "江南逢李龟年",
-      "kind": "add",
-      "reason": "唐·杜甫七言绝句，统编七上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20016_langdu.html"
-    },
-    {
-      "volume": "七年级上册",
-      "title": "行军九日思长安故园",
-      "kind": "add",
-      "reason": "唐·岑参五言绝句，统编七上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20017_langdu.html"
-    },
-    {
-      "volume": "七年级上册",
       "title": "夜上受降城闻笛",
       "kind": "add",
       "reason": "唐·李益七言绝句，统编七上课外诵读",
@@ -249,22 +225,6 @@
       "reason": "《列子》文言寓言，统编七上课外诵读",
       "poem": null,
       "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20032_langdu.html"
-    },
-    {
-      "volume": "七年级上册",
-      "title": "秋词",
-      "kind": "add",
-      "reason": "唐·刘禹锡七言绝句，统编七上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20033_langdu.html"
-    },
-    {
-      "volume": "七年级上册",
-      "title": "十一月四日风雨大作",
-      "kind": "add",
-      "reason": "南宋·陆游七言绝句，统编七上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200035_langdu.html"
     },
     {
       "volume": "七年级上册",
@@ -473,14 +433,6 @@
       "reason": "唐·李商隐七言绝句，统编七下课外诵读",
       "poem": null,
       "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20852_langdu.html"
-    },
-    {
-      "volume": "七年级下册",
-      "title": "过松源晨炊漆公店",
-      "kind": "add",
-      "reason": "南宋·杨万里七言绝句，统编七下课外诵读（仓内 vendor 有《诚斋集》）",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20851_langdu.html"
     },
     {
       "volume": "七年级下册",
@@ -2074,5 +2026,6 @@
       "poem": null,
       "textbookUrl": ""
     }
-  ]
+  ],
+  "补收记录": "2026-10-10：以下 6 条已补进仓，裁定随之删除（护栏会把「缺口已经没了、裁定还留着」报成过期）：峨眉山月歌、江南逢李龟年、行军九日思长安故园、秋词（其一）、十一月四日风雨大作（其二）、过松源晨炊漆公店（其五）。"
 }

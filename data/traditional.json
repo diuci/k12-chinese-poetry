@@ -1,21 +1,21 @@
 {
  "note": "简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / pending 没依据，留在待定清单。",
  "counts": {
-  "page": 9586,
-  "table": 1164,
+  "page": 9651,
+  "table": 1197,
   "rule": 43,
   "keep": 0,
-  "identity": 1360,
+  "identity": 1374,
   "variant": 5,
   "pending": 0
  },
  "counts_apparatus": {
-  "table": 38472,
-  "rule": 2105,
-  "identity": 8686,
+  "table": 39376,
+  "rule": 2142,
+  "identity": 8877,
   "keep": 80,
   "pending": 0,
-  "page": 9781,
+  "page": 9812,
   "variant": 5
  },
  "reversal": [
@@ -3589,6 +3589,723 @@
    ]
   },
   {
+   "id": "shiyiyuesirifengyudazuo",
+   "title": "十一月四日风雨大作",
+   "page": "十一月四日風雨大作",
+   "text_trad": [
+    "僵臥孤村不自哀，尚思爲國戍輪臺。",
+    "夜闌臥聽風吹雨，鐵馬冰河入夢來。"
+   ],
+   "lines_trad": [
+    "僵臥孤村不自哀，尚思爲國戍輪臺。",
+    "夜闌臥聽風吹雨，鐵馬冰河入夢來。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "僵臥孤村不自哀，尚思爲國戍輪臺。",
+     "夜闌臥聽風吹雨，鐵馬冰河入夢來。"
+    ],
+    "注释": [
+     "- 十一月四日風雨大作：這一題共兩首，統編收的是第二首（其一爲「風卷江湖雨暗村」）。大作，指風雨來得猛烈。",
+     "- 僵臥：硬挺挺地躺着，寫年老體衰、久臥不起。",
+     "- 孤村：冷落的村子。",
+     "- 不自哀：不爲自己感到悲哀。",
+     "- 尚思：還想着。",
+     "- 戍（shù）輪臺：守衛邊疆。輪臺，漢唐時西域的駐軍之地，這里代指邊塞。陸遊此時在山陰（今浙江紹興）家中，並未戍邊。",
+     "- 夜闌（lán）：夜將盡，深夜。",
+     "- 鐵馬冰河：披着鐵甲的戰馬、冰封的河流，夢里的戰場。"
+    ],
+    "译文": [
+     "我僵臥在冷落的村子里，並不爲自己悲哀；心里還想着替國家守衛邊疆。",
+     "深夜里躺着聽外面猛烈的風雨聲，那聲音化作鐵馬冰河，闖進我的夢里。"
+    ],
+    "赏析": [
+     "這首詩寫的是一個人躺着的樣子，和他在夢里站着的樣子。",
+     "「僵臥」是現實：年老、病、住在冷村子里，動不了。第二句立刻頂一句「不自哀」——他不爲自己難過。",
+     "「尚思爲國戍輪臺」里的「尚」字最重。還。都到這個境地了，還在想。",
+     "後兩句把現實和夢接起來：他聽見的是風雨，夢里卻是「鐵馬冰河」。風雨聲成了戰場聲。",
+     "陸遊寫這首詩時已六十八歲，閒居山陰，早已不上前線。所以夢不是願望的實現，是現實不給他的東西，夢替他拿回來。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊「課外古詩詞誦讀」收本詩，用的是《十一月四日風雨大作》二首中的第二首；其一（「風卷江湖雨暗村，四山聲作海濤翻」）未收。",
+     "課標（2022）附錄1 未列本篇，屬教材拓展。",
+     "統編教材用字已逐句核過：本篇 2 句可比，2 句與統編七年級上冊課外誦讀「十一月四日風雨大作」一致，沒有字面出入。出處：統編課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/200035_langdu.html",
+     "出處：統編七年級上冊課外誦讀課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/200035_langdu.html；",
+     "維基文庫《十一月四日風雨大作》 https://zh.wikisource.org/wiki/十一月四日風雨大作 （頁標 1192 年，出《劍南詩稿》卷二十六）；《劎南詩槀》卷二十六（四庫全書本） https://zh.wikisource.org/wiki/劎南詩槀_(四庫全書本)/卷26 。"
+    ]
+   },
+   "labels_trad": {
+    "title": "十一月四日風雨大作",
+    "author": "陸遊",
+    "dynasty": "宋",
+    "stage": "初中",
+    "volume": "七年級上冊課外誦讀",
+    "form": "七言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "愛國",
+     "年老"
+    ],
+    "technique": [
+     "對比",
+     "夢境"
+    ],
+    "tags": [
+     "愛國",
+     "年老",
+     "宋七言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "僵卧",
+     "cands": [
+      "僵臥"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "僵卧孤村不自哀，尚思",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "孤村不自哀，尚思为国戍轮台。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "国",
+     "cands": [
+      "國"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "村不自哀，尚思为国戍轮台。",
+     "field": "full",
+     "line": 0,
+     "page_char": "國"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "轮",
+     "cands": [
+      "輪"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "自哀，尚思为国戍轮台。",
+     "field": "full",
+     "line": 0,
+     "page_char": "輪"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "台",
+     "cands": [
+      "臺",
+      "檯",
+      "颱",
+      "台"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "哀，尚思为国戍轮台。",
+     "field": "full",
+     "line": 0,
+     "page_char": "臺"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "阑",
+     "cands": [
+      "闌"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马",
+     "field": "full",
+     "line": 1,
+     "page_char": "闌"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "卧",
+     "cands": [
+      "臥"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马冰",
+     "field": "full",
+     "line": 1,
+     "page_char": "臥"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "听",
+     "cands": [
+      "聽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马冰河",
+     "field": "full",
+     "line": 1,
+     "page_char": "聽"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "风",
+     "cands": [
+      "風"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马冰河入",
+     "field": "full",
+     "line": 1,
+     "page_char": "風"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "铁",
+     "cands": [
+      "鐵"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马冰河入梦来。",
+     "field": "full",
+     "line": 1,
+     "page_char": "鐵"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "马",
+     "cands": [
+      "馬"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "阑卧听风吹雨，铁马冰河入梦来。",
+     "field": "full",
+     "line": 1,
+     "page_char": "馬"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "梦",
+     "cands": [
+      "夢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "吹雨，铁马冰河入梦来。",
+     "field": "full",
+     "line": 1,
+     "page_char": "夢"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "雨，铁马冰河入梦来。",
+     "field": "full",
+     "line": 1,
+     "page_char": "來"
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "僵卧",
+     "cands": [
+      "僵臥"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "僵卧孤村不自哀，尚思",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "孤村不自哀，尚思为国戍轮台。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "国",
+     "cands": [
+      "國"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "村不自哀，尚思为国戍轮台。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "國"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "轮",
+     "cands": [
+      "輪"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "自哀，尚思为国戍轮台。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "輪"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "台",
+     "cands": [
+      "臺",
+      "檯",
+      "颱",
+      "台"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "哀，尚思为国戍轮台。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "臺"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "阑",
+     "cands": [
+      "闌"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马",
+     "field": "lines",
+     "line": 1,
+     "page_char": "闌"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "卧",
+     "cands": [
+      "臥"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马冰",
+     "field": "lines",
+     "line": 1,
+     "page_char": "臥"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "听",
+     "cands": [
+      "聽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马冰河",
+     "field": "lines",
+     "line": 1,
+     "page_char": "聽"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "风",
+     "cands": [
+      "風"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马冰河入",
+     "field": "lines",
+     "line": 1,
+     "page_char": "風"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "铁",
+     "cands": [
+      "鐵"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜阑卧听风吹雨，铁马冰河入梦来。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "鐵"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "马",
+     "cands": [
+      "馬"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "阑卧听风吹雨，铁马冰河入梦来。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "馬"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "梦",
+     "cands": [
+      "夢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "吹雨，铁马冰河入梦来。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "夢"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "雨，铁马冰河入梦来。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "來"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     11,
+     "国",
+     "村不自哀，尚思为国戍轮台。",
+     "國",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     13,
+     "轮",
+     "自哀，尚思为国戍轮台。",
+     "輪",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     14,
+     "台",
+     "哀，尚思为国戍轮台。",
+     "臺",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     1,
+     "阑",
+     "夜阑卧听风吹雨，铁马",
+     "闌",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     2,
+     "卧",
+     "夜阑卧听风吹雨，铁马冰",
+     "臥",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     3,
+     "听",
+     "夜阑卧听风吹雨，铁马冰河",
+     "聽",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     4,
+     "风",
+     "夜阑卧听风吹雨，铁马冰河入",
+     "風",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     8,
+     "铁",
+     "夜阑卧听风吹雨，铁马冰河入梦来。",
+     "鐵",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     9,
+     "马",
+     "阑卧听风吹雨，铁马冰河入梦来。",
+     "馬",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     13,
+     "梦",
+     "吹雨，铁马冰河入梦来。",
+     "夢",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     14,
+     "来",
+     "雨，铁马冰河入梦来。",
+     "來",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "台",
+     "cands": [
+      "臺",
+      "檯",
+      "颱",
+      "台"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": " 戍（shù）轮台：守卫边疆。轮台",
+     "field": "sec:注释",
+     "line": 5,
+     "pick": "臺",
+     "why": "楼台、镜台、瑶台、台隍都作「臺」；「檯」是桌子、「颱」是台风"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "台",
+     "cands": [
+      "臺",
+      "檯",
+      "颱",
+      "台"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "台：守卫边疆。轮台，汉唐时西域的驻",
+     "field": "sec:注释",
+     "line": 5,
+     "pick": "臺",
+     "why": "楼台、镜台、瑶台、台隍都作「臺」；「檯」是桌子、「颱」是台风"
+    },
+    {
+     "at": 54,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "浙江绍兴）家中，并未戍边。",
+     "field": "sec:注释",
+     "line": 5,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "（lán）：夜将尽，深夜。",
+     "field": "sec:注释",
+     "line": 6,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "在冷落的村子里，并不为自己悲哀；心",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "台",
+     "cands": [
+      "臺",
+      "檯",
+      "颱",
+      "台"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "「尚思为国戍轮台」里的「尚」字最",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "臺",
+     "why": "楼台、镜台、瑶台、台隍都作「臺」；「檯」是桌子、「颱」是台风"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "最重。还。都到这个境地了，还在想。",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "闲",
+     "cands": [
+      "閒",
+      "閑"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "诗时已六十八岁，闲居山阴，早已不上",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "閒",
+     "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
    "id": "yeyujibei",
    "title": "夜雨寄北",
    "page": "夜雨寄北",
@@ -5329,6 +6046,407 @@
      "line": 3,
      "pick": "毀",
      "why": "毁坏义作「毀」；「燬」「譭」是异体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
+   "id": "emeishanyuege",
+   "title": "峨眉山月歌",
+   "page": "峨眉山月歌",
+   "text_trad": [
+    "峨眉山月半輪秋，影入平羌江水流。",
+    "夜發清溪向三峽，思君不見下渝州。"
+   ],
+   "lines_trad": [
+    "峨眉山月半輪秋，影入平羌江水流。",
+    "夜發清溪向三峽，思君不見下渝州。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "峨眉山月半輪秋，影入平羌江水流。",
+     "夜發清溪向三峽，思君不見下渝州。"
+    ],
+    "注释": [
+     "- 峨眉山月歌：一般認爲這是李白早年初次出蜀時所作。峨眉山，在今四川峨眉山市西南。",
+     "- 半輪秋：半圓的秋月。秋，這里指秋月。",
+     "- 平羌江：即青衣江，從峨眉山旁流過，在樂山一帶匯入岷江。",
+     "- 夜發：夜里開船。",
+     "- 清溪：指清溪驛一帶，在峨眉山附近。",
+     "- 三峽：指長江三峽。",
+     "- 思君不見下渝州：想念你卻見不到你，船已順流下到渝州。渝州，今重慶一帶。"
+    ],
+    "译文": [
+     "峨眉山上掛着半輪秋月，月影落進平羌江的水里，隨江水一起流。",
+     "夜里我從清溪出發，要向三峽去；想着你卻再也見不到，船已經順流下到渝州了。"
+    ],
+    "赏析": [
+     "這首詩最特別的地方是地名：二十八個字里放了五個地方——峨眉山、平羌江、清溪、三峽、渝州。",
+     "寫詩通常怕地名堆砌，李白偏偏不怕。因爲他不是在列地圖，他是在寫「離開」。",
+     "第一句人還在山上看月；第二句月影已經落進江里、跟着水走；第三句人出發了；第四句船已經下到渝州。",
+     "地名一個換過一個，詩就變成一段水路。",
+     "全程只有月沒換地方。山上看它，江里看它，走了很遠還在看它——可它留在原地，越走越見不着。",
+     "所以「思君不見」才成立：不是沒人可想，是想的人和那輪月，都留在了身後那些地名里。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊「課外古詩詞誦讀」收本詩；課標（2022）附錄1 未列本篇，屬教材拓展。",
+     "統編教材用字已逐句核過：本篇 2 句可比，2 句與統編七年級上冊課外誦讀「峨眉山月歌」一致，沒有字面出入。出處：統編課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20015_langdu.html",
+     "出處：統編七年級上冊課外誦讀課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20015_langdu.html；",
+     "維基文庫《峨眉山月歌》 https://zh.wikisource.org/wiki/峨眉山月歌 ；《全唐詩》卷一六七 https://zh.wikisource.org/wiki/全唐詩/卷167 ；《欽定唐人萬首絕句選》卷三（四庫全書本）。"
+    ]
+   },
+   "labels_trad": {
+    "title": "峨眉山月歌",
+    "author": "李白",
+    "dynasty": "唐",
+    "stage": "初中",
+    "volume": "七年級上冊課外誦讀",
+    "form": "七言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "思鄉",
+     "行旅"
+    ],
+    "technique": [
+     "借景抒情",
+     "地名連綴"
+    ],
+    "tags": [
+     "思鄉",
+     "行旅",
+     "唐七言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "轮",
+     "cands": [
+      "輪"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "峨眉山月半轮秋，影入平羌江水",
+     "field": "full",
+     "line": 0,
+     "page_char": "輪"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "秋",
+     "cands": [
+      "秋",
+      "鞦"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "峨眉山月半轮秋，影入平羌江水流",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "发",
+     "cands": [
+      "發",
+      "髮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜发清溪向三峡，思君",
+     "field": "full",
+     "line": 1,
+     "page_char": "發"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "溪",
+     "cands": [
+      "溪",
+      "谿"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夜发清溪向三峡，思君不见",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "向",
+     "cands": [
+      "向",
+      "嚮",
+      "曏"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夜发清溪向三峡，思君不见下",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "峡",
+     "cands": [
+      "峽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜发清溪向三峡，思君不见下渝州",
+     "field": "full",
+     "line": 1,
+     "page_char": "峽"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "溪向三峡，思君不见下渝州。",
+     "field": "full",
+     "line": 1,
+     "page_char": "見"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "轮",
+     "cands": [
+      "輪"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "峨眉山月半轮秋，影入平羌江水",
+     "field": "lines",
+     "line": 0,
+     "page_char": "輪"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "秋",
+     "cands": [
+      "秋",
+      "鞦"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "峨眉山月半轮秋，影入平羌江水流",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "发",
+     "cands": [
+      "發",
+      "髮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜发清溪向三峡，思君",
+     "field": "lines",
+     "line": 1,
+     "page_char": "發"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "溪",
+     "cands": [
+      "溪",
+      "谿"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夜发清溪向三峡，思君不见",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "向",
+     "cands": [
+      "向",
+      "嚮",
+      "曏"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夜发清溪向三峡，思君不见下",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "峡",
+     "cands": [
+      "峽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夜发清溪向三峡，思君不见下渝州",
+     "field": "lines",
+     "line": 1,
+     "page_char": "峽"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "溪向三峡，思君不见下渝州。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "見"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     5,
+     "轮",
+     "峨眉山月半轮秋，影入平羌江水",
+     "輪",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     1,
+     "发",
+     "夜发清溪向三峡，思君",
+     "發",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     6,
+     "峡",
+     "夜发清溪向三峡，思君不见下渝州",
+     "峽",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     11,
+     "见",
+     "溪向三峡，思君不见下渝州。",
+     "見",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 24,
+     "n": 1,
+     "simp": "汇",
+     "cands": [
+      "匯",
+      "彙",
+      "滙"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "流过，在乐山一带汇入岷江。",
+     "field": "sec:注释",
+     "line": 2,
+     "pick": "匯",
+     "why": "汇合、汇聚作「匯」；「彙」是词汇、汇报"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "发",
+     "cands": [
+      "發",
+      "髮"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 夜发：夜里开船。",
+     "field": "sec:注释",
+     "line": 3,
+     "pick": "發",
+     "why": "发出、兴起、发作义作「發」"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "地名一个换过一个，诗就变",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "地名一个换过一个，诗就变成一段水",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 0,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
     }
    ],
    "left_behind": []
@@ -15865,6 +16983,519 @@
    "left_behind": []
   },
   {
+   "id": "jiangnanfengligunian",
+   "title": "江南逢李龟年",
+   "page": "唐人萬首絶句選 (四庫全書本)/卷3",
+   "text_trad": [
+    "岐王宅裏尋常見，崔九堂前幾度聞。",
+    "正是江南好風景，落花時節又逢君。"
+   ],
+   "lines_trad": [
+    "岐王宅裏尋常見，崔九堂前幾度聞。",
+    "正是江南好風景，落花時節又逢君。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "岐王宅裏尋常見，崔九堂前幾度聞。",
+     "正是江南好風景，落花時節又逢君。"
+    ],
+    "异文": [
+     "- 「正是」：統編作「正是」；維基文庫《江南逢李龜年》頁正文作「正是」，並夾注「一作值」。取舍：從統編作「正是」。出處：維基文庫《江南逢李龜年》 https://zh.wikisource.org/wiki/江南逢李龜年",
+     "- 「幾度聞」：維基文庫那一頁作「㡬度聞」。「㡬」是「幾」的異體字，屬字形差異，不算文字分歧。出處：同上。"
+    ],
+    "注释": [
+     "- 李龜年：唐代著名的宮廷歌唱家，安史之亂後流落江南。",
+     "- 岐王：唐玄宗的弟弟李範，封岐王。",
+     "- 崔九：崔滌，排行第九，玄宗近臣。",
+     "- 尋常見：常常見到。",
+     "- 幾度聞：多次聽到（他的歌唱）。",
+     "- 落花時節：暮春時節；也暗指彼此的飄零。"
+    ],
+    "译文": [
+     "當年在岐王宅里，常常見到你演唱；在崔九堂前，也多次聽到你的歌。",
+     "如今正是江南風景最好的時候，落花時節，我們又相逢了。"
+    ],
+    "赏析": [
+     "這首詩只有四句，前兩句是幾十年前，後兩句是現在。中間那段日子——安史之亂、長安失守、宮廷流散——一個字都沒寫。",
+     "「尋常見」「幾度聞」寫得極輕：那時候見一位大歌唱家是家常事。輕，是因爲當時不覺得珍貴。",
+     "「正是江南好風景」看着是誇江南，其實是最狠的一句。風景好，人老了；花開了，落下了。",
+     "最後「又逢君」的「又」字，把前面那個盛世又拽了回來：能再遇見，恰恰說明當年那種場合再也沒有了。",
+     "杜甫寫亂世從不寫刀兵，他寫一次重逢。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊「課外古詩詞誦讀」收本詩；課標（2022）附錄1 未列本篇，屬教材拓展。",
+     "統編教材用字已逐句核過：本篇 2 句可比，2 句與統編七年級上冊課外誦讀「江南逢李龜年」一致，沒有字面出入。出處：統編課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20016_langdu.html",
+     "出處：統編七年級上冊課外誦讀課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20016_langdu.html；",
+     "維基文庫《江南逢李龜年》 https://zh.wikisource.org/wiki/江南逢李龜年 ；《欽定唐人萬首絕句選》卷三（四庫全書本）。"
+    ]
+   },
+   "labels_trad": {
+    "title": "江南逢李龜年",
+    "author": "杜甫",
+    "dynasty": "唐",
+    "stage": "初中",
+    "volume": "七年級上冊課外誦讀",
+    "form": "七言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "亂世",
+     "身世"
+    ],
+    "technique": [
+     "對比",
+     "以景收束"
+    ],
+    "tags": [
+     "亂世",
+     "身世",
+     "唐七言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "岐王宅里寻常见，崔九堂前",
+     "field": "full",
+     "line": 0,
+     "page_char": "裏"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "寻",
+     "cands": [
+      "尋"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "岐王宅里寻常见，崔九堂前几",
+     "field": "full",
+     "line": 0,
+     "page_char": "尋"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "岐王宅里寻常见，崔九堂前几度闻",
+     "field": "full",
+     "line": 0,
+     "page_char": "見"
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "几度",
+     "cands": [
+      "幾度"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "寻常见，崔九堂前几度闻。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "见，崔九堂前几度闻。",
+     "field": "full",
+     "line": 0,
+     "page_char": "聞"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "风",
+     "cands": [
+      "風"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "正是江南好风景，落花时节又逢",
+     "field": "full",
+     "line": 1,
+     "page_char": "風"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "江南好风景，落花时节又逢君。",
+     "field": "full",
+     "line": 1,
+     "page_char": "時"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "节",
+     "cands": [
+      "節"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "南好风景，落花时节又逢君。",
+     "field": "full",
+     "line": 1,
+     "page_char": "節"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "岐王宅里寻常见，崔九堂前",
+     "field": "lines",
+     "line": 0,
+     "page_char": "裏"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "寻",
+     "cands": [
+      "尋"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "岐王宅里寻常见，崔九堂前几",
+     "field": "lines",
+     "line": 0,
+     "page_char": "尋"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "岐王宅里寻常见，崔九堂前几度闻",
+     "field": "lines",
+     "line": 0,
+     "page_char": "見"
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "几度",
+     "cands": [
+      "幾度"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "寻常见，崔九堂前几度闻。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "见，崔九堂前几度闻。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "聞"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "风",
+     "cands": [
+      "風"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "正是江南好风景，落花时节又逢",
+     "field": "lines",
+     "line": 1,
+     "page_char": "風"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "江南好风景，落花时节又逢君。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "時"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "节",
+     "cands": [
+      "節"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "南好风景，落花时节又逢君。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "節"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     3,
+     "里",
+     "岐王宅里寻常见，崔九堂前",
+     "裏",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     4,
+     "寻",
+     "岐王宅里寻常见，崔九堂前几",
+     "尋",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     6,
+     "见",
+     "岐王宅里寻常见，崔九堂前几度闻",
+     "見",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     14,
+     "闻",
+     "见，崔九堂前几度闻。",
+     "聞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     5,
+     "风",
+     "正是江南好风景，落花时节又逢",
+     "風",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     10,
+     "时",
+     "江南好风景，落花时节又逢君。",
+     "時",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     11,
+     "节",
+     "南好风景，落花时节又逢君。",
+     "節",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "正文作「正是」，并夹注「一作值」。",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "夹",
+     "cands": [
+      "夾",
+      "袷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "文作「正是」，并夹注「一作值」。取",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "夾",
+     "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "当年在岐王宅里，常",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 49,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "、宫廷流散——一个字都没写。",
+     "field": "sec:赏析",
+     "line": 0,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 35,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "常事。轻，是因为当时不觉得珍贵。",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "又」字，把前面那个盛世又拽了回来：",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 35,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "再遇见，恰恰说明当年那种场合再也没",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 0,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
    "id": "boqinhuai",
    "title": "泊秦淮",
    "page": "泊秦淮",
@@ -18907,19 +20538,19 @@
   {
    "id": "dengfeilaifeng",
    "title": "登飞来峰",
-   "page": "登飛來峰",
+   "page": "堯山堂外紀/卷062",
    "text_trad": [
     "飛來山上千尋塔，聞說雞鳴見日升。",
-    "不畏浮雲遮望眼，自緣身在最高層。"
+    "不畏浮云遮望眼，自緣身在最高層。"
    ],
    "lines_trad": [
     "飛來山上千尋塔，聞說雞鳴見日升。",
-    "不畏浮雲遮望眼，自緣身在最高層。"
+    "不畏浮云遮望眼，自緣身在最高層。"
    ],
    "sections_trad": {
     "必背全文": [
      "飛來山上千尋塔，聞說雞鳴見日升。",
-     "不畏浮雲遮望眼，自緣身在最高層。"
+     "不畏浮云遮望眼，自緣身在最高層。"
     ],
     "注释": [
      "- 飛來峯：有兩處，這里指浙江紹興的飛來峯。",
@@ -18976,12 +20607,11 @@
      "cands": [
       "飛"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "飞来山上千寻塔，闻",
      "field": "full",
-     "line": 0,
-     "page_char": "飛"
+     "line": 0
     },
     {
      "at": 1,
@@ -18990,12 +20620,11 @@
      "cands": [
       "來"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "飞来山上千寻塔，闻说",
      "field": "full",
-     "line": 0,
-     "page_char": "來"
+     "line": 0
     },
     {
      "at": 3,
@@ -19017,12 +20646,11 @@
      "cands": [
       "尋"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "飞来山上千寻塔，闻说鸡鸣见日",
      "field": "full",
-     "line": 0,
-     "page_char": "尋"
+     "line": 0
     },
     {
      "at": 8,
@@ -19031,12 +20659,11 @@
      "cands": [
       "聞"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "飞来山上千寻塔，闻说鸡鸣见日升。",
      "field": "full",
-     "line": 0,
-     "page_char": "聞"
+     "line": 0
     },
     {
      "at": 9,
@@ -19045,12 +20672,11 @@
      "cands": [
       "說"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "来山上千寻塔，闻说鸡鸣见日升。",
      "field": "full",
-     "line": 0,
-     "page_char": "說"
+     "line": 0
     },
     {
      "at": 10,
@@ -19059,12 +20685,11 @@
      "cands": [
       "雞"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "山上千寻塔，闻说鸡鸣见日升。",
      "field": "full",
-     "line": 0,
-     "page_char": "雞"
+     "line": 0
     },
     {
      "at": 11,
@@ -19073,12 +20698,11 @@
      "cands": [
       "鳴"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "上千寻塔，闻说鸡鸣见日升。",
      "field": "full",
-     "line": 0,
-     "page_char": "鳴"
+     "line": 0
     },
     {
      "at": 12,
@@ -19087,12 +20711,11 @@
      "cands": [
       "見"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "千寻塔，闻说鸡鸣见日升。",
      "field": "full",
-     "line": 0,
-     "page_char": "見"
+     "line": 0
     },
     {
      "at": 14,
@@ -19121,7 +20744,8 @@
      "ctx": "不畏浮云遮望眼，自缘身在",
      "field": "full",
      "line": 1,
-     "page_char": "雲"
+     "page_char": "云",
+     "pick": "云"
     },
     {
      "at": 9,
@@ -19130,12 +20754,11 @@
      "cands": [
       "緣"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "畏浮云遮望眼，自缘身在最高层。",
      "field": "full",
-     "line": 1,
-     "page_char": "緣"
+     "line": 1
     },
     {
      "at": 14,
@@ -19144,12 +20767,11 @@
      "cands": [
       "層"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "眼，自缘身在最高层。",
      "field": "full",
-     "line": 1,
-     "page_char": "層"
+     "line": 1
     },
     {
      "at": 0,
@@ -19158,12 +20780,11 @@
      "cands": [
       "飛"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "飞来山上千寻塔，闻",
      "field": "lines",
-     "line": 0,
-     "page_char": "飛"
+     "line": 0
     },
     {
      "at": 1,
@@ -19172,12 +20793,11 @@
      "cands": [
       "來"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "飞来山上千寻塔，闻说",
      "field": "lines",
-     "line": 0,
-     "page_char": "來"
+     "line": 0
     },
     {
      "at": 3,
@@ -19199,12 +20819,11 @@
      "cands": [
       "尋"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "飞来山上千寻塔，闻说鸡鸣见日",
      "field": "lines",
-     "line": 0,
-     "page_char": "尋"
+     "line": 0
     },
     {
      "at": 8,
@@ -19213,12 +20832,11 @@
      "cands": [
       "聞"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "飞来山上千寻塔，闻说鸡鸣见日升。",
      "field": "lines",
-     "line": 0,
-     "page_char": "聞"
+     "line": 0
     },
     {
      "at": 9,
@@ -19227,12 +20845,11 @@
      "cands": [
       "說"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "来山上千寻塔，闻说鸡鸣见日升。",
      "field": "lines",
-     "line": 0,
-     "page_char": "說"
+     "line": 0
     },
     {
      "at": 10,
@@ -19241,12 +20858,11 @@
      "cands": [
       "雞"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "山上千寻塔，闻说鸡鸣见日升。",
      "field": "lines",
-     "line": 0,
-     "page_char": "雞"
+     "line": 0
     },
     {
      "at": 11,
@@ -19255,12 +20871,11 @@
      "cands": [
       "鳴"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "上千寻塔，闻说鸡鸣见日升。",
      "field": "lines",
-     "line": 0,
-     "page_char": "鳴"
+     "line": 0
     },
     {
      "at": 12,
@@ -19269,12 +20884,11 @@
      "cands": [
       "見"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "千寻塔，闻说鸡鸣见日升。",
      "field": "lines",
-     "line": 0,
-     "page_char": "見"
+     "line": 0
     },
     {
      "at": 14,
@@ -19303,7 +20917,8 @@
      "ctx": "不畏浮云遮望眼，自缘身在",
      "field": "lines",
      "line": 1,
-     "page_char": "雲"
+     "page_char": "云",
+     "pick": "云"
     },
     {
      "at": 9,
@@ -19312,12 +20927,11 @@
      "cands": [
       "緣"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "畏浮云遮望眼，自缘身在最高层。",
      "field": "lines",
-     "line": 1,
-     "page_char": "緣"
+     "line": 1
     },
     {
      "at": 14,
@@ -19326,160 +20940,43 @@
      "cands": [
       "層"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "眼，自缘身在最高层。",
      "field": "lines",
-     "line": 1,
-     "page_char": "層"
+     "line": 1
     }
    ],
    "page_marks": [
-    [
-     "sec:必背全文",
-     0,
-     0,
-     "飞",
-     "飞来山上千寻塔，闻",
-     "飛",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背全文",
-     0,
-     1,
-     "来",
-     "飞来山上千寻塔，闻说",
-     "來",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背全文",
-     0,
-     5,
-     "寻",
-     "飞来山上千寻塔，闻说鸡鸣见日",
-     "尋",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背全文",
-     0,
-     8,
-     "闻",
-     "飞来山上千寻塔，闻说鸡鸣见日升。",
-     "聞",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背全文",
-     0,
-     9,
-     "说",
-     "来山上千寻塔，闻说鸡鸣见日升。",
-     "說",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背全文",
-     0,
-     10,
-     "鸡",
-     "山上千寻塔，闻说鸡鸣见日升。",
-     "雞",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背全文",
-     0,
-     11,
-     "鸣",
-     "上千寻塔，闻说鸡鸣见日升。",
-     "鳴",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背全文",
-     0,
-     12,
-     "见",
-     "千寻塔，闻说鸡鸣见日升。",
-     "見",
-     "page",
-     "",
-     null
-    ],
     [
      "sec:必背全文",
      1,
      3,
      "云",
      "不畏浮云遮望眼，自缘身在",
-     "雲",
+     "云",
      "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背全文",
-     1,
-     9,
-     "缘",
-     "畏浮云遮望眼，自缘身在最高层。",
-     "緣",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背全文",
-     1,
-     14,
-     "层",
-     "眼，自缘身在最高层。",
-     "層",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:赏析",
-     2,
-     1,
-     "闻",
-     "「闻说鸡鸣见日升」用",
-     "聞",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:赏析",
-     2,
-     2,
-     "说",
-     "「闻说鸡鸣见日升」用「",
-     "說",
-     "page",
-     "",
+     "云",
      null
     ]
    ],
    "marks_app": [
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "云",
+     "cands": [
+      "雲",
+      "云"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "不畏浮云遮望眼，自缘身在",
+     "field": "sec:必背全文",
+     "line": 1,
+     "page_char": "云",
+     "pick": "云"
+    },
     {
      "at": 10,
      "n": 1,
@@ -20203,6 +21700,426 @@
    "left_behind": []
   },
   {
+   "id": "qiuci",
+   "title": "秋词",
+   "page": "秋詞 (劉禹錫)",
+   "text_trad": [
+    "自古逢秋悲寂寥，我言秋日勝春朝。",
+    "晴空一鶴排雲上，便引詩情到碧霄。"
+   ],
+   "lines_trad": [
+    "自古逢秋悲寂寥，我言秋日勝春朝。",
+    "晴空一鶴排雲上，便引詩情到碧霄。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "自古逢秋悲寂寥，我言秋日勝春朝。",
+     "晴空一鶴排雲上，便引詩情到碧霄。"
+    ],
+    "注释": [
+     "- 秋詞：寫秋天的詩，共兩首，七言絕句。統編收的是第一首。",
+     "- 寂寥（jì liáo）：冷清、空闊。",
+     "- 春朝：春天。朝，時候。",
+     "- 排云：推開雲層往上衝。排，推開。",
+     "- 碧霄：青天。霄，天空。"
+    ],
+    "译文": [
+     "自古以來，文人一到秋天就悲嘆冷清；我卻說秋天勝過春天。",
+     "晴高的天上一隻鶴推開雲層往上衝，把我的詩情一併帶到青天。"
+    ],
+    "赏析": [
+     "中國詩寫秋天，幾乎默認「悲」：宋玉「悲哉秋之爲氣也」之後，悲秋是一千多年的老規矩。",
+     "劉禹錫第一句先把規矩擺出來（「自古」），第二句直接頂回去（「我言」）。這不是寫景，是先立論。",
+     "第三句給出證據：「晴空一鶴排雲上」。秋天確實沒有花、沒有綠葉，可它有一樣春天沒有的東西——天特別高、特別清，一隻鶴能推雲往上衝。",
+     "「排」字最要緊。不是飛，是推開。向上是有阻力的，鶴在頂開什麼。",
+     "劉禹錫寫這首詩時正被貶在外。他不是在教人欣賞秋天，他是在說：被貶的人也可以往上看。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊「課外古詩詞誦讀」收本詩，用的是《秋詞二首》的第一首；其二（「山明水淨夜來霜，數樹深紅出淺黃」）未收。",
+     "課標（2022）附錄1 未列本篇，屬教材拓展。",
+     "統編教材用字已逐句核過：本篇 2 句可比，2 句與統編七年級上冊課外誦讀「秋詞（其一）」一致，沒有字面出入。出處：統編課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20033_langdu.html",
+     "出處：統編七年級上冊課外誦讀課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20033_langdu.html；",
+     "維基文庫《秋詞 (劉禹錫)》 https://zh.wikisource.org/wiki/秋詞_(劉禹錫) ；《秋詞二首》 https://zh.wikisource.org/wiki/秋詞二首 。"
+    ]
+   },
+   "labels_trad": {
+    "title": "秋詞",
+    "subtitle": "其一",
+    "author": "劉禹錫",
+    "dynasty": "唐",
+    "stage": "初中",
+    "volume": "七年級上冊課外誦讀",
+    "form": "七言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "秋天",
+     "昂揚"
+    ],
+    "technique": [
+     "對比",
+     "議論"
+    ],
+    "tags": [
+     "秋天",
+     "昂揚",
+     "唐七言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "秋",
+     "cands": [
+      "秋",
+      "鞦"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "自古逢秋悲寂寥，我言秋日",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "秋",
+     "cands": [
+      "秋",
+      "鞦"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "逢秋悲寂寥，我言秋日胜春朝。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "胜",
+     "cands": [
+      "勝",
+      "胜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "悲寂寥，我言秋日胜春朝。",
+     "field": "full",
+     "line": 0,
+     "page_char": "勝"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "鹤",
+     "cands": [
+      "鶴"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晴空一鹤排云上，便引诗情",
+     "field": "full",
+     "line": 1,
+     "page_char": "鶴"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "云",
+     "cands": [
+      "雲",
+      "云"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晴空一鹤排云上，便引诗情到碧",
+     "field": "full",
+     "line": 1,
+     "page_char": "雲"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "诗",
+     "cands": [
+      "詩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "一鹤排云上，便引诗情到碧霄。",
+     "field": "full",
+     "line": 1,
+     "page_char": "詩"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "秋",
+     "cands": [
+      "秋",
+      "鞦"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "自古逢秋悲寂寥，我言秋日",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "秋",
+     "cands": [
+      "秋",
+      "鞦"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "逢秋悲寂寥，我言秋日胜春朝。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "胜",
+     "cands": [
+      "勝",
+      "胜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "悲寂寥，我言秋日胜春朝。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "勝"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "鹤",
+     "cands": [
+      "鶴"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晴空一鹤排云上，便引诗情",
+     "field": "lines",
+     "line": 1,
+     "page_char": "鶴"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "云",
+     "cands": [
+      "雲",
+      "云"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晴空一鹤排云上，便引诗情到碧",
+     "field": "lines",
+     "line": 1,
+     "page_char": "雲"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "诗",
+     "cands": [
+      "詩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "一鹤排云上，便引诗情到碧霄。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "詩"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     12,
+     "胜",
+     "悲寂寥，我言秋日胜春朝。",
+     "勝",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     3,
+     "鹤",
+     "晴空一鹤排云上，便引诗情",
+     "鶴",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     5,
+     "云",
+     "晴空一鹤排云上，便引诗情到碧",
+     "雲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     10,
+     "诗",
+     "一鹤排云上，便引诗情到碧霄。",
+     "詩",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "叹",
+     "cands": [
+      "嘆",
+      "歎"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "文人一到秋天就悲叹冷清；我却说秋天",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "嘆",
+     "why": "叹息、叹曰义作「嘆」；「歎」是异体",
+     "evidence": "来源页 4 处作「嘆」"
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "晴高的天上一只鹤推开云层往上冲",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "摆",
+     "cands": [
+      "擺",
+      "襬"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "锡第一句先把规矩摆出来（「自古」）",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "擺",
+     "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "证",
+     "cands": [
+      "證",
+      "証"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "第三句给出证据：「晴空一鹤排",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "證",
+     "why": "证据、考证、例证、旁证作「證」；「証」是异体"
+    },
+    {
+     "at": 47,
+     "n": 1,
+     "simp": "别",
+     "cands": [
+      "別",
+      "彆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "有的东西——天特别高、特别清，一只",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "別",
+     "why": "分别、离别义作「別」；「彆」只用于「别扭」"
+    },
+    {
+     "at": 51,
+     "n": 1,
+     "simp": "别",
+     "cands": [
+      "別",
+      "彆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "——天特别高、特别清，一只鹤能推云",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "別",
+     "why": "分别、离别义作「別」；「彆」只用于「别扭」"
+    },
+    {
+     "at": 54,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "特别高、特别清，一只鹤能推云往上冲。",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
    "id": "zhuliguan",
    "title": "竹里馆",
    "page": "輞川集 (王維)/竹里館",
@@ -20675,6 +22592,563 @@
      "line": 3,
      "pick": "別",
      "why": "分别、离别义作「別」；「彆」只用于「别扭」"
+    }
+   ],
+   "left_behind": []
+  },
+  {
+   "id": "xingjunjiuri",
+   "title": "行军九日思长安故园",
+   "page": "行軍九日思長安故園",
+   "text_trad": [
+    "強欲登高去，無人送酒來。",
+    "遙憐故園菊，應傍戰場開。"
+   ],
+   "lines_trad": [
+    "強欲登高去，無人送酒來。",
+    "遙憐故園菊，應傍戰場開。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "強欲登高去，無人送酒來。",
+     "遙憐故園菊，應傍戰場開。"
+    ],
+    "注释": [
+     "- 九日：指九月九日重陽節，有登高、飲菊花酒的習俗。",
+     "- 行軍：在行旅途中，指隨軍在外。",
+     "- 強欲：勉強想要。強，勉強。",
+     "- 無人送酒來：用陶淵明的故事。陶淵明重陽無酒，王弘送酒來，才得一醉。這里說沒人送酒，是反用這個典故。",
+     "- 遙憐：遠遠地憐惜。",
+     "- 故園：指長安。",
+     "- 傍（bàng）：靠近、挨着。"
+    ],
+    "译文": [
+     "勉強想按習俗去登高，卻沒有人送酒來。",
+     "遠遠地憐惜長安的菊花，它們此刻應該正開在戰場旁邊。"
+    ],
+    "赏析": [
+     "題目里有兩件事：行軍（在外打仗）和九日（該過節的日子）。這首詩就寫這兩件事撞在一起。",
+     "第一句「強欲」兩個字最誠實。不是興致勃勃去登高，是勉強——節日到了，習俗還在，人卻沒那個心情。",
+     "第二句用典用得反。陶淵明重陽缺酒，有人送來；岑參缺酒，沒人送。戰亂里連這點小事都沒人管。",
+     "後兩句跳到長安：「遙憐故園菊，應傍戰場開。」他不寫城牆、不寫死人，只寫菊花。",
+     "菊花是重陽的標配，戰場是行軍的現實。兩者開在同一處，詩就狠了：節日的花長在打仗的地方。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊「課外古詩詞誦讀」收本詩；課標（2022）附錄1 未列本篇，屬教材拓展。",
+     "統編教材用字已逐句核過：本篇 2 句可比，2 句與統編七年級上冊課外誦讀「行軍九日思長安故園」一致，沒有字面出入。出處：統編課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20017_langdu.html",
+     "出處：統編七年級上冊課外誦讀課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20017_langdu.html；",
+     "維基文庫《行軍九日思長安故園》 https://zh.wikisource.org/wiki/行軍九日思長安故園 ；《全唐詩》卷二〇一 https://zh.wikisource.org/wiki/全唐詩/卷201 ；《千家詩》卷一 https://zh.wikisource.org/wiki/千家詩/卷一 。"
+    ]
+   },
+   "labels_trad": {
+    "title": "行軍九日思長安故園",
+    "author": "岑參",
+    "dynasty": "唐",
+    "stage": "初中",
+    "volume": "七年級上冊課外誦讀",
+    "form": "五言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "戰亂",
+     "思鄉"
+    ],
+    "technique": [
+     "用典",
+     "想象"
+    ],
+    "tags": [
+     "戰亂",
+     "思鄉",
+     "唐五言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "强",
+     "cands": [
+      "強"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "强欲登高去，无人送",
+     "field": "full",
+     "line": 0,
+     "page_char": "強"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "欲",
+     "cands": [
+      "欲",
+      "慾"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "强欲登高去，无人送酒",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "强欲登高去，无人送酒来。",
+     "field": "full",
+     "line": 0,
+     "page_char": "無"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "登高去，无人送酒来。",
+     "field": "full",
+     "line": 0,
+     "page_char": "來"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "遥",
+     "cands": [
+      "遙"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战",
+     "field": "full",
+     "line": 1,
+     "page_char": "遙"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "怜",
+     "cands": [
+      "憐"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战场",
+     "field": "full",
+     "line": 1,
+     "page_char": "憐"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "园",
+     "cands": [
+      "園"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战场开。",
+     "field": "full",
+     "line": 1,
+     "page_char": "園"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "应",
+     "cands": [
+      "應"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战场开。",
+     "field": "full",
+     "line": 1,
+     "page_char": "應"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "战",
+     "cands": [
+      "戰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战场开。",
+     "field": "full",
+     "line": 1,
+     "page_char": "戰"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "场",
+     "cands": [
+      "場"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "怜故园菊，应傍战场开。",
+     "field": "full",
+     "line": 1,
+     "page_char": "場"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "开",
+     "cands": [
+      "開"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "故园菊，应傍战场开。",
+     "field": "full",
+     "line": 1,
+     "page_char": "開"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "强",
+     "cands": [
+      "強"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "强欲登高去，无人送",
+     "field": "lines",
+     "line": 0,
+     "page_char": "強"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "欲",
+     "cands": [
+      "欲",
+      "慾"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "强欲登高去，无人送酒",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "强欲登高去，无人送酒来。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "無"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "登高去，无人送酒来。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "來"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "遥",
+     "cands": [
+      "遙"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战",
+     "field": "lines",
+     "line": 1,
+     "page_char": "遙"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "怜",
+     "cands": [
+      "憐"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战场",
+     "field": "lines",
+     "line": 1,
+     "page_char": "憐"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "园",
+     "cands": [
+      "園"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战场开。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "園"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "应",
+     "cands": [
+      "應"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战场开。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "應"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "战",
+     "cands": [
+      "戰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "遥怜故园菊，应傍战场开。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "戰"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "场",
+     "cands": [
+      "場"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "怜故园菊，应傍战场开。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "場"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "开",
+     "cands": [
+      "開"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "故园菊，应傍战场开。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "開"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     0,
+     "强",
+     "强欲登高去，无人送",
+     "強",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     6,
+     "无",
+     "强欲登高去，无人送酒来。",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     10,
+     "来",
+     "登高去，无人送酒来。",
+     "來",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     0,
+     "遥",
+     "遥怜故园菊，应傍战",
+     "遙",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     1,
+     "怜",
+     "遥怜故园菊，应傍战场",
+     "憐",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     3,
+     "园",
+     "遥怜故园菊，应傍战场开。",
+     "園",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     6,
+     "应",
+     "遥怜故园菊，应傍战场开。",
+     "應",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     8,
+     "战",
+     "遥怜故园菊，应傍战场开。",
+     "戰",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     9,
+     "场",
+     "怜故园菊，应傍战场开。",
+     "場",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     10,
+     "开",
+     "故园菊，应傍战场开。",
+     "開",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 47,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "人送酒，是反用这个典故。",
+     "field": "sec:注释",
+     "line": 3,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 43,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "俗还在，人却没那个心情。",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "参",
+     "cands": [
+      "參",
+      "蔘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "酒，有人送来；岑参缺酒，没人送。战",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "參",
+     "why": "「扪参历井」的参是星宿，作「參」；「蔘」是人参"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 0,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
     }
    ],
    "left_behind": []
@@ -22892,6 +25366,553 @@
      "pick": "當",
      "why": "对着、正值、应当义作「當」；「噹」是象声词",
      "evidence": "来源页 12 处作「當」"
+    }
+   ],
+   "left_behind": []
+  },
+  {
+   "id": "guosongyuan",
+   "title": "过松源晨炊漆公店",
+   "page": "宋元詩㑹 (四庫全書本)/卷041",
+   "text_trad": [
+    "莫言下嶺便無難，賺得行人錯喜歡。",
+    "正入萬山圍子裏，一山放出一山攔。"
+   ],
+   "lines_trad": [
+    "莫言下嶺便無難，賺得行人錯喜歡。",
+    "正入萬山圍子裏，一山放出一山攔。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "莫言下嶺便無難，賺得行人錯喜歡。",
+     "正入萬山圍子裏，一山放出一山攔。"
+    ],
+    "异文": [
+     "- 「萬山圍子」：統編作「正入萬山圍子里」；維基文庫《過松源晨炊漆公店》頁作「正入萬山圈子里」，四庫《宋元詩㑹》卷四十一亦作「圈子」。取舍：正文照統編作「圍子」，通行本作「圈子」。出處：維基文庫《過松源晨炊漆公店》 https://zh.wikisource.org/wiki/過松源晨炊漆公店 ；《宋元詩㑹》卷四十一（四庫全書本） https://zh.wikisource.org/wiki/宋元詩㑹_(四庫全書本)/卷041",
+     "- 「錯喜歡」：統編作「賺得行人錯喜歡」；維基文庫那一頁作「空喜歡」，四庫《宋元詩㑹》卷四十一作「錯喜歡」。取舍：從統編作「錯喜歡」。出處：同上。"
+    ],
+    "注释": [
+     "- 過松源晨炊漆公店：這一題共五首，統編收的是第五首。過，經過。松源、漆公店，都是地名。晨炊，早晨做飯。",
+     "- 莫言：不要說。",
+     "- 下嶺：從山嶺上下來。",
+     "- 賺得：騙得。賺，哄、騙。",
+     "- 行人：出行的人。",
+     "- 錯喜歡：白白歡喜一場。",
+     "- 萬山圍子：一座連一座、把人圍在里面的山。統編作「圍子」，通行本作「圈子」。",
+     "- 放出：放出來。"
+    ],
+    "译文": [
+     "不要說從山嶺上下來就沒有困難了——那只是騙得趕路的人白白歡喜一場。",
+     "你正走在一座圍一座的萬山里面，一座山剛放你出去，另一座山就攔在前面。"
+    ],
+    "赏析": [
+     "這首詩專門反駁一個錯覺：上山難，下山應該容易吧。",
+     "楊萬里說：下山才更難。難不在坡度，在心態——你以爲結束了。",
+     "「賺得行人錯喜歡」的「賺」字很妙。山是騙子，它讓你以爲到了，其實是騙你歡喜一場。",
+     "後兩句把山寫成有意志的東西：「放」和「攔」都是人的動作。山像一圈關卡，你出一座，另一座等着。",
+     "楊萬里寫哲理從不擺面孔，他寫一次下山。道理藏在腿酸里。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級下冊「課外古詩詞誦讀」收本詩，用的是《過松源晨炊漆公店》五首中的第五首；其一至其四未收。",
+     "課標（2022）附錄1 未列本篇，屬教材拓展。",
+     "統編教材用字已逐句核過：本篇 2 句可比，2 句與統編七年級下冊課外誦讀「過松源晨炊漆公店（其五）」一致，沒有字面出入。出處：統編課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20851_langdu.html",
+     "出處：統編七年級下冊課外誦讀課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20851_langdu.html；",
+     "維基文庫《過松源晨炊漆公店》 https://zh.wikisource.org/wiki/過松源晨炊漆公店 （頁列其一至其五）；《宋元詩㑹》卷四十一（四庫全書本） https://zh.wikisource.org/wiki/宋元詩㑹_(四庫全書本)/卷041 。"
+    ]
+   },
+   "labels_trad": {
+    "title": "過松源晨炊漆公店",
+    "author": "楊萬里",
+    "dynasty": "宋",
+    "stage": "初中",
+    "volume": "七年級下冊課外誦讀",
+    "form": "七言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "哲理",
+     "行旅"
+    ],
+    "technique": [
+     "議論",
+     "擬物"
+    ],
+    "tags": [
+     "哲理",
+     "行旅",
+     "宋七言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "岭",
+     "cands": [
+      "嶺"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "莫言下岭便无难，赚得行人",
+     "field": "full",
+     "line": 0,
+     "page_char": "嶺"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "莫言下岭便无难，赚得行人错喜",
+     "field": "full",
+     "line": 0,
+     "page_char": "無"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "难",
+     "cands": [
+      "難"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "莫言下岭便无难，赚得行人错喜欢",
+     "field": "full",
+     "line": 0,
+     "page_char": "難"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "赚",
+     "cands": [
+      "賺"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "莫言下岭便无难，赚得行人错喜欢。",
+     "field": "full",
+     "line": 0,
+     "page_char": "賺"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "错",
+     "cands": [
+      "錯"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "便无难，赚得行人错喜欢。",
+     "field": "full",
+     "line": 0,
+     "page_char": "錯"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "欢",
+     "cands": [
+      "歡"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "难，赚得行人错喜欢。",
+     "field": "full",
+     "line": 0,
+     "page_char": "歡"
+    },
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "万山",
+     "cands": [
+      "萬山"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "正入万山围子里，一山放出",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "围",
+     "cands": [
+      "圍"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "正入万山围子里，一山放出一",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "正入万山围子里，一山放出一山拦",
+     "field": "full",
+     "line": 1,
+     "page_char": "裏"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "出",
+     "cands": [
+      "出",
+      "齣"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "山围子里，一山放出一山拦。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "拦",
+     "cands": [
+      "攔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "里，一山放出一山拦。",
+     "field": "full",
+     "line": 1,
+     "page_char": "攔"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "岭",
+     "cands": [
+      "嶺"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "莫言下岭便无难，赚得行人",
+     "field": "lines",
+     "line": 0,
+     "page_char": "嶺"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "莫言下岭便无难，赚得行人错喜",
+     "field": "lines",
+     "line": 0,
+     "page_char": "無"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "难",
+     "cands": [
+      "難"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "莫言下岭便无难，赚得行人错喜欢",
+     "field": "lines",
+     "line": 0,
+     "page_char": "難"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "赚",
+     "cands": [
+      "賺"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "莫言下岭便无难，赚得行人错喜欢。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "賺"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "错",
+     "cands": [
+      "錯"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "便无难，赚得行人错喜欢。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "錯"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "欢",
+     "cands": [
+      "歡"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "难，赚得行人错喜欢。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "歡"
+    },
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "万山",
+     "cands": [
+      "萬山"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "正入万山围子里，一山放出",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "围",
+     "cands": [
+      "圍"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "正入万山围子里，一山放出一",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "正入万山围子里，一山放出一山拦",
+     "field": "lines",
+     "line": 1,
+     "page_char": "裏"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "出",
+     "cands": [
+      "出",
+      "齣"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "山围子里，一山放出一山拦。",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "拦",
+     "cands": [
+      "攔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "里，一山放出一山拦。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "攔"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     3,
+     "岭",
+     "莫言下岭便无难，赚得行人",
+     "嶺",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     5,
+     "无",
+     "莫言下岭便无难，赚得行人错喜",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     6,
+     "难",
+     "莫言下岭便无难，赚得行人错喜欢",
+     "難",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     8,
+     "赚",
+     "莫言下岭便无难，赚得行人错喜欢。",
+     "賺",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     12,
+     "错",
+     "便无难，赚得行人错喜欢。",
+     "錯",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     14,
+     "欢",
+     "难，赚得行人错喜欢。",
+     "歡",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     6,
+     "里",
+     "正入万山围子里，一山放出一山拦",
+     "裏",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     14,
+     "拦",
+     "里，一山放出一山拦。",
+     "攔",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:注释",
+     0,
+     2,
+     "过",
+     "- 过松源晨炊漆公店：",
+     "過",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     2,
+     1,
+     "赚",
+     "「赚得行人错喜欢」的",
+     "賺",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "这首诗专门反驳一个错觉：上山难，下",
+     "field": "sec:赏析",
+     "line": 0,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "摆",
+     "cands": [
+      "擺",
+      "襬"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "杨万里写哲理从不摆面孔，他写一次下",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "擺",
+     "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
     }
    ],
    "left_behind": []
@@ -126630,7 +129651,7 @@
   {
    "id": "sishitianyuan-25",
    "title": "四时田园杂兴",
-   "page": "四時田園雜興",
+   "page": "古今事文類聚 (四庫全書本)/後集卷22",
    "text_trad": [],
    "lines_trad": [
     "梅子金黃杏子肥，麥花雪白菜花稀。",
@@ -126692,12 +129713,11 @@
      "cands": [
       "黃"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "梅子金黄杏子肥，麦花雪白",
      "field": "lines",
-     "line": 0,
-     "page_char": "黃"
+     "line": 0
     },
     {
      "at": 8,
@@ -126776,12 +129796,11 @@
      "cands": [
       "蛺"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "无人过，惟有蜻蜓蛱蝶飞。",
      "field": "lines",
-     "line": 1,
-     "page_char": "蛺"
+     "line": 1
     },
     {
      "at": 14,
@@ -126799,17 +129818,6 @@
     }
    ],
    "page_marks": [
-    [
-     "sec:正文",
-     0,
-     3,
-     "黄",
-     "梅子金黄杏子肥，麦花雪白",
-     "黃",
-     "page",
-     "",
-     null
-    ],
     [
      "sec:正文",
      0,
@@ -126861,17 +129869,6 @@
      "过",
      "日长篱落无人过，惟有蜻蜓蛱蝶飞",
      "過",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:正文",
-     1,
-     12,
-     "蛱",
-     "无人过，惟有蜻蜓蛱蝶飞。",
-     "蛺",
      "page",
      "",
      null
@@ -137544,7 +140541,7 @@
   {
    "id": "qiuyejiangxiao",
    "title": "秋夜将晓出篱门迎凉有感",
-   "page": "劎南詩槀 (四庫全書本)/卷25",
+   "page": "秋夜將曉出籬門迎涼有感",
    "text_trad": [],
    "lines_trad": [
     "三萬里河東入海，五千仞嶽上摩天。",
@@ -137695,12 +140692,11 @@
      "cands": [
       "淚"
      ],
-     "decision": "page",
+     "decision": "table",
      "kind": "char",
      "ctx": "遗民泪尽胡尘里，南望王",
      "field": "lines",
-     "line": 1,
-     "page_char": "淚"
+     "line": 1
     },
     {
      "at": 3,
@@ -137819,17 +140815,6 @@
      "遗",
      "遗民泪尽胡尘里，南",
      "遺",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:正文",
-     1,
-     2,
-     "泪",
-     "遗民泪尽胡尘里，南望王",
-     "淚",
      "page",
      "",
      null
@@ -147304,7 +150289,7 @@
   {
    "id": "youyuanbuzhi",
    "title": "游园不值",
-   "page": "遊園不值",
+   "page": "兩宋名賢小集 (四庫全書本)/卷260",
    "text_trad": [],
    "lines_trad": [
     "應憐屐齒印蒼苔，小扣柴扉久不開。",
