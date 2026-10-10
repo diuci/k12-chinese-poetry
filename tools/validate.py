@@ -351,6 +351,102 @@ def selftest_collision_note():
     return tried[0]
 
 
+def _note_sections(text):
+    """篇内负责校勘的两节：「异文」与「收录范围」。校勘的话只许写在这里。"""
+    out = []
+    for name in ('异文', '收录范围'):
+        i = text.find('## ' + name)
+        if i < 0:
+            continue
+        j = text.find('\n## ', i + 3)
+        out.append(text[i:j] if j > 0 else text[i:])
+    return '\n'.join(out)
+
+
+def check_char_diff_notes(title, text, char_diffs):
+    """教材与本集每一处单字出入，篇内必须有一句话交代。
+    「19/20 句对上」只说对上多少，没说差在哪个字；差在哪个字不写，
+    学生背的就是我们替他挑的那一份，而他不知道教材写的是另一个字。"""
+    problems = []
+    if not char_diffs:
+        return problems
+    note = _note_sections(text)
+    for d in char_diffs:
+        ours = (d.get('ours') or '').strip()
+        book = (d.get('textbook') or '').strip()
+        if not ours or not book:
+            continue
+        covered = False
+        for line in note.split('\n'):
+            if ours in line and book in line and any(k in line for k in ('作', '同', '取舍', '正文', '异体', '旧写')):
+                covered = True
+                break
+        if not covered:
+            problems.append('%s：仓内「%s」／教材「%s」这一处没有交代' % (title, ours, book))
+    return problems
+
+
+def selftest_char_diff_notes():
+    """坏例子：这一条管的是「每一处字面分歧有没有话交代」。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
+    ok = '# 过秦论\n\n## 必背全文\n\n孝公既没。\n\n## 异文\n\n- 「甯越」：统编作「甯」，仓内作「宁」。正文不动。\n'
+    must(check_char_diff_notes('过秦论', ok, [{'ours': '宁', 'textbook': '甯'}]) == [], '坏例1：交代过的被误报')
+    bad1 = '# 过秦论\n\n## 必背全文\n\n孝公既没。\n'
+    must(len(check_char_diff_notes('过秦论', bad1, [{'ours': '宁', 'textbook': '甯'}])) == 1, '坏例2：没交代却没被抓')
+    ok2 = '# 劝学\n\n## 收录范围\n\n「𫐐以为轮」：统编作「輮」，正文不动。\n'
+    must(check_char_diff_notes('劝学', ok2, [{'ours': '𫐐', 'textbook': '輮'}]) == [], '坏例3：写在「收录范围」里也算交代，却被误报')
+    bad3 = '# 劝学\n\n## 必背全文\n\n木直中绳，𫐐以为轮。\n\n## 注释\n\n- 𫐐：读 yì。统编作「輮」。\n'
+    must(len(check_char_diff_notes('劝学', bad3, [{'ours': '𫐐', 'textbook': '輮'}])) == 1, '坏例4：把交代写进「注释」也被当成说清了')
+    bad4 = '# 劝学\n\n## 异文\n\n- 「𫐐以为轮」：读 yì。\n'
+    must(len(check_char_diff_notes('劝学', bad4, [{'ours': '𫐐', 'textbook': '輮'}])) == 1, '坏例5：只提仓内那个字、不提教材那个字，也算没交代')
+    bad5 = '# 过秦论\n\n## 异文\n\n- 甯越。\n'
+    must(len(check_char_diff_notes('过秦论', bad5, [{'ours': '宁', 'textbook': '甯'}])) == 1, '坏例6：教材那个字单独出现也被当成交代了')
+    must(check_char_diff_notes('过秦论', bad1, []) == [], '坏例7：没有单字出入时被误报')
+    must(check_char_diff_notes('过秦论', bad1, [{'ours': '', 'textbook': '一大段'}]) == [], '坏例8：残影被当成单字出入来要交代')
+    ok3 = '# 屈原列传\n\n## 异文\n\n- 「杀其将唐眛」：统编作「唐眜」，异体字出入，正文不动。\n'
+    must(check_char_diff_notes('屈原列传', ok3, [{'ours': '眛', 'textbook': '眜'}]) == [], '坏例9：说成异体字出入的交代被误报')
+    return tried[0]
+
+
+STALE_TODO = ('P3 待办', '尚未逐本核对')
+
+
+def check_stale_todo(path, text):
+    """内容已冻结：篇内不许再写「教材用字还没逐本核对」这类话。
+    教材核对早就把每一句比过了，这句话留着就是假的——它让读者以为这一篇没查。
+    真没做完的事（满江红那种「逐本异文尚未核对」）另说：那种句子点名登记在哪，不算过期。"""
+    out = []
+    for n, line in enumerate(text.split('\n')):
+        for k in STALE_TODO:
+            if k in line:
+                out.append('%s 第 %d 行写着「%s」——教材核对已经跑过，这句话过期了' % (path.name, n + 1, line.strip()[:36]))
+                break
+    return out
+
+
+def selftest_stale_todo():
+    """坏例子。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
+    bad = '# 甲\n\n## 收录范围\n\n统编教材用字尚未逐本核对（P3 待办）。\n'
+    must(len(check_stale_todo(Path('t.md'), bad)) == 1, '坏例1：过期待办没被抓到')
+    good = '# 甲\n\n## 收录范围\n\n统编教材用字已逐句核过：本篇 7 句可比，7 句一致。\n'
+    must(check_stale_todo(Path('t.md'), good) == [], '坏例2：已经核过的句子被误报')
+    honest = '# 满江红\n\n## 异文\n\n逐本异文**尚未核对**，登记为 data/known-defects.json。\n'
+    must(check_stale_todo(Path('t.md'), honest) == [], '坏例3：诚实登记的真待办被误报')
+    must(len(check_stale_todo(Path('t.md'), '# 甲\n\nP3 待办\n')) == 1, '坏例4：只写 P3 待办 也被放过')
+    return tried[0]
+
+
 def load_poems():
     """复用 build.py 的解析逻辑，避免两处对frontmatter 的理解不一致。"""
     sys.path.insert(0, str(ROOT / 'tools'))
@@ -525,6 +621,8 @@ def selftest():
     selftest_apparatus_in_body()
     """这条校验自己会不会漏：坏样本必须被抓到，好样本不能误报。"""
     n_collision = selftest_collision_note()
+    n_chardiff = selftest_char_diff_notes()
+    n_stale = selftest_stale_todo()
     year = 2026
     problems = []
 
@@ -605,7 +703,7 @@ def selftest():
           '背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报、同名小节重复被抓、'
           '教材核对表结论与篇目状态不一致被抓、核对表缺这一篇被抓、同一册正文不误报、跨册同名另一篇被抓、'
           '园地证据加同名另一篇不误报、册次对不上没交代被抓、册次对不上有交代不误报、没见过的结论被抓、'
-          '七档标签与 apply-textbook-status 不分叉、说「没找到」必须有登记簿撑着被抓、登记簿过期被抓——同名撞车没在「收录范围」里交代被抓、核对表没写撞在哪一册被抓、册次写在别的小节里不算说清被抓——都试到了')
+          '七档标签与 apply-textbook-status 不分叉、说「没找到」必须有登记簿撑着被抓、登记簿过期被抓——同名撞车没在「收录范围」里交代被抓、核对表没写撞在哪一册被抓、册次写在别的小节里不算说清被抓——单字出入没交代被抓、交代写进注释不算被抓、只提一边的字不算被抓——都试到了')
     return 0
 
 
@@ -858,6 +956,8 @@ def main():
             err(msg)
         for msg in check_duplicate_sections(md, _txt):
             err(msg)
+        for msg in check_stale_todo(md, _txt):
+            err(msg)
 
     # -------------------------------------------------- 2. id 唯一
     seen = {}
@@ -1068,6 +1168,22 @@ def main():
                                                    c.get('sameTitleVolumes') or [])
         if clash_problems:
             err('同名撞车那几篇没在「收录范围」里说清教材那边那篇：%s' % '；'.join(clash_problems[:8]))
+
+        # 2.16d 教材与本集每一处单字出入，篇内必须有一句话交代（异文 / 收录范围 两节里）。
+        # 「13/20 句对上」只说对上多少；差在哪个字不写，学生背的就是我们替他挑的那一份。
+        cd_problems = []
+        for a in att_rows.values():
+            if not a.get('charDiffs'):
+                continue
+            p3 = next((q for q in poems if q['id'] == a['id']), None)
+            if not p3:
+                cd_problems.append('%s：核对表记了单字出入，仓里却没有这篇' % a['id'])
+                continue
+            cd_problems += check_char_diff_notes(p3['title'],
+                                                  (ROOT / p3['_path']).read_text(encoding='utf-8'),
+                                                  a['charDiffs'])
+        if cd_problems:
+            err('教材与本集的字面出入有没交代的：%s' % '；'.join(cd_problems[:12]))
 
         # 2.16b 「统编教材里没找到这一课」这句话必须由登记簿撑着（data/absence-checks.json）：
         # 说没找到，就得先说清查了哪些课文目录、哪些语文园地页——不然这一档就是「教材没有」的委婉说法。

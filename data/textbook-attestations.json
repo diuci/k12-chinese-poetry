@@ -25,7 +25,9 @@
       "total": 24,
       "skippedShort": 0,
       "textbookParas": 12,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yeyujibei",
@@ -40,7 +42,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "tianjingsha-qiusi",
@@ -55,7 +59,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 5,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "cibeigushanxia",
@@ -70,7 +76,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "guancanghai",
@@ -85,7 +93,9 @@
       "total": 12,
       "skippedShort": 0,
       "textbookParas": 7,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wenwangchangling",
@@ -100,7 +110,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jihai-jimao",
@@ -115,7 +127,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wangyue",
@@ -130,7 +144,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "mulanci",
@@ -162,7 +178,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "youshanxincun",
@@ -177,7 +195,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "ailianshuo",
@@ -192,7 +212,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "dengyouzhoutai",
@@ -207,7 +229,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "dengfeilaifeng",
@@ -222,7 +246,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "loushiming",
@@ -237,7 +263,9 @@
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 1,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chunyeluocheng",
@@ -252,7 +280,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wanchun",
@@ -267,7 +297,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zhuliguan",
@@ -282,7 +314,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "fengrujinshi",
@@ -297,7 +331,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yueyanglouji",
@@ -312,7 +348,9 @@
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 6,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wuti",
@@ -327,7 +365,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shuidiaogetou",
@@ -342,7 +382,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "huxinting",
@@ -357,7 +399,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "xiangjianhuan",
@@ -387,7 +431,9 @@
       "total": 9,
       "skippedShort": 0,
       "textbookParas": 6,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "choulitian",
@@ -402,7 +448,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zuigongtingji",
@@ -425,21 +473,26 @@
             {
               "ours": "",
               "textbook": "也",
-              "context": "也作亭者谁山之僧智"
+              "context": "也作亭者谁山之僧智",
+              "diffKind": "textbook-extra"
             },
             {
               "ours": "曰",
               "textbook": "",
-              "context": "也作亭者谁山之僧智仙也名之者谁太"
+              "context": "也作亭者谁山之僧智仙也名之者谁太",
+              "diffKind": "ours-extra"
             },
             {
               "ours": "",
               "textbook": "太守与客来饮于此饮少辄醉而年又最高故自号曰醉翁也醉翁之意不在酒在乎山水之间也山水",
-              "context": "之者谁太守自谓也太守与客来饮于此饮少辄醉而年又最高故自号曰醉翁也醉翁之意不在酒在乎山水之间也山水"
+              "context": "之者谁太守自谓也太守与客来饮于此饮少辄醉而年又最高故自号曰醉翁也醉翁之意不在酒在乎山水之间也山水",
+              "diffKind": "textbook-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [],
+      "ghostDiffs": 3
     },
     {
       "id": "lvshi1",
@@ -540,7 +593,9 @@
       "total": 12,
       "skippedShort": 0,
       "textbookParas": 9,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shiwucongjunzheng",
@@ -555,7 +610,9 @@
       "total": 16,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "nangxiangzi",
@@ -570,7 +627,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shanpoyang",
@@ -585,7 +644,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 1,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "caoguilunzhan",
@@ -600,7 +661,9 @@
       "total": 9,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chaotianzi",
@@ -615,7 +678,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 7,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jiangchengzi-laofeng",
@@ -630,7 +695,9 @@
       "total": 9,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yujiaao-qiusi",
@@ -645,7 +712,9 @@
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "manjianghong-xiaozhujinghua",
@@ -660,7 +729,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "baixuege",
@@ -675,7 +746,9 @@
       "total": 12,
       "skippedShort": 0,
       "textbookParas": 9,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "pozhenzi",
@@ -690,7 +763,9 @@
       "total": 12,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "guolingyang",
@@ -705,7 +780,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "songdongyang",
@@ -720,7 +797,9 @@
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zouji",
@@ -743,16 +822,20 @@
             {
               "ours": "",
               "textbook": "客曰",
-              "context": "从外来与坐谈问之客曰吾与徐公孰美客曰"
+              "context": "从外来与坐谈问之客曰吾与徐公孰美客曰",
+              "diffKind": "textbook-extra"
             },
             {
               "ours": "",
               "textbook": "于是入朝见威王曰臣诚知不如徐公美臣之妻私臣臣之妾畏臣臣之客欲有求于臣皆以美于",
-              "context": "我者欲有求于我也于是入朝见威王曰臣诚知不如徐公美臣之妻私臣臣之妾畏臣臣之客欲有求于臣皆以美于"
+              "context": "我者欲有求于我也于是入朝见威王曰臣诚知不如徐公美臣之妻私臣臣之妾畏臣臣之客欲有求于臣皆以美于",
+              "diffKind": "textbook-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [],
+      "ghostDiffs": 2
     },
     {
       "id": "sanxia",
@@ -773,23 +856,31 @@
           "line": "春冬之时，则素湍绿潭，回清倒影，绝𪩘多生怪柏，悬泉瀑布，飞漱其间，清荣峻茂，良多趣味。",
           "diff": [
             {
-              "ours": "春",
-              "textbook": "",
-              "context": "冬之时则素湍绿潭"
-            },
-            {
-              "ours": "",
+              "ours": "𪩘",
               "textbook": "巘",
-              "context": "湍绿潭回清倒影绝巘多生怪柏悬泉瀑布"
+              "context": "湍绿潭回清倒影绝巘多生怪柏悬泉瀑布",
+              "diffKind": "char",
+              "oursChar": "𪩘",
+              "textbookChar": "巘"
             },
             {
               "ours": "",
               "textbook": "每至晴初霜旦林寒涧肃常有高猿长啸属引凄异空谷传响哀转久绝故渔者歌曰巴东三峡巫峡长",
-              "context": "清荣峻茂良多趣味每至晴初霜旦林寒涧肃常有高猿长啸属引凄异空谷传响哀转久绝故渔者歌曰巴东三峡巫峡长"
+              "context": "清荣峻茂良多趣味每至晴初霜旦林寒涧肃常有高猿长啸属引凄异空谷传响哀转久绝故渔者歌曰巴东三峡巫峡长",
+              "diffKind": "textbook-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [
+        {
+          "ours": "𪩘",
+          "textbook": "巘",
+          "line": "春冬之时，则素湍绿潭，回清倒影，绝𪩘多生怪柏，悬泉瀑布，飞漱其间，清荣峻茂，良多趣味。",
+          "context": "湍绿潭回清倒影绝巘多生怪柏悬泉瀑布"
+        }
+      ],
+      "ghostDiffs": 1
     },
     {
       "id": "yuzhusianshu",
@@ -804,7 +895,9 @@
       "total": 9,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shizhuisai",
@@ -819,7 +912,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chunwang",
@@ -834,7 +929,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "huanxisha-yanque",
@@ -849,7 +946,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "daxiezhongshu",
@@ -864,7 +963,9 @@
       "total": 5,
       "skippedShort": 0,
       "textbookParas": 1,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jichengtiansi",
@@ -879,7 +980,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 1,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chibi-du",
@@ -894,7 +997,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "qiantanghuchunxing",
@@ -909,7 +1014,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yanmenshiweixing",
@@ -924,7 +1031,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yinjiujiusan",
@@ -939,7 +1048,9 @@
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 10,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "huanghelou-cuiheng",
@@ -954,7 +1065,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yujiaao-tianjie",
@@ -969,7 +1082,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yewang",
@@ -984,7 +1099,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "guanju",
@@ -999,7 +1116,9 @@
       "total": 5,
       "skippedShort": 0,
       "textbookParas": 10,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "beimingyouyu",
@@ -1022,11 +1141,14 @@
             {
               "ours": "且夫水之积也不厚则负大舟也无力覆杯水于坳堂之上则芥为之舟置杯焉则胶水浅而舟大也风之积也不厚则其负大翼也无力故九万里则风斯在下矣而后乃今培风背负青天而莫之夭阏者而后乃今将图南",
               "textbook": "",
-              "context": "下也亦若是则已矣"
+              "context": "下也亦若是则已矣",
+              "diffKind": "ours-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [],
+      "ghostDiffs": 1
     },
     {
       "id": "maotanshangwu",
@@ -1041,7 +1163,9 @@
       "total": 12,
       "skippedShort": 0,
       "textbookParas": 10,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "dadaozhixing",
@@ -1056,7 +1180,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "xiaoshitan",
@@ -1071,7 +1197,9 @@
       "total": 11,
       "skippedShort": 0,
       "textbookParas": 5,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "taohuayuanji",
@@ -1086,7 +1214,9 @@
       "total": 11,
       "skippedShort": 0,
       "textbookParas": 5,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shihaoli",
@@ -1101,7 +1231,9 @@
       "total": 14,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "maowu",
@@ -1116,7 +1248,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jianjia",
@@ -1131,7 +1265,9 @@
       "total": 5,
       "skippedShort": 0,
       "textbookParas": 12,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "suoyoujiayao",
@@ -1146,7 +1282,9 @@
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "masuo",
@@ -1161,7 +1299,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zijin",
@@ -1176,7 +1316,9 @@
       "total": 5,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shiwei",
@@ -1191,7 +1333,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "songshaoshu-wai",
@@ -1206,7 +1350,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "gulangyuexing",
@@ -1269,7 +1415,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 7,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "hua",
@@ -1332,7 +1480,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chunxiao",
@@ -1363,7 +1513,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "huaji",
@@ -1420,7 +1572,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yeshusuojian",
@@ -1435,7 +1589,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shanxing",
@@ -1450,7 +1606,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "suojian",
@@ -1497,7 +1655,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wangdongting",
@@ -1512,7 +1672,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zengliujingwen",
@@ -1527,7 +1689,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "cailianqu",
@@ -1558,7 +1722,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "sanqudaozhong",
@@ -1573,7 +1739,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jiuyuejiuri",
@@ -1588,7 +1756,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yuanri",
@@ -1603,7 +1773,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "dalinsitaohua",
@@ -1650,7 +1822,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "qingming",
@@ -1665,7 +1839,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chuzhouxijian",
@@ -1696,7 +1872,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yesushansi",
@@ -1711,7 +1889,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "xiaoerchuidiao",
@@ -1742,7 +1922,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wanglushanpubu",
@@ -1757,7 +1939,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "meihua",
@@ -1804,7 +1988,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yongliu",
@@ -1819,7 +2005,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "minnong1",
@@ -1850,7 +2038,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "cunju",
@@ -1865,7 +2055,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jueju-huangli",
@@ -1880,7 +2072,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zhouyeshujian",
@@ -1943,7 +2137,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jihai",
@@ -1975,7 +2171,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yugezi",
@@ -2006,7 +2204,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "guanshu",
@@ -2037,7 +2237,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "tilinandi",
@@ -2052,7 +2254,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "xiangcunsiyue",
@@ -2083,7 +2287,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "liangzhouci-wangzhihuan",
@@ -2117,7 +2323,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "cunwan",
@@ -2132,7 +2340,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "youziyin",
@@ -2163,7 +2373,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zhizibing",
@@ -2178,7 +2390,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wenguanjun",
@@ -2193,7 +2407,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "niaomingjian",
@@ -2240,7 +2456,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wanghulou",
@@ -2255,7 +2473,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "huixiangyoushu",
@@ -2286,7 +2506,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chunri",
@@ -2317,7 +2539,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "langtaosha",
@@ -2332,7 +2556,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "xijiangyue",
@@ -2347,7 +2573,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "guogurenzhuang",
@@ -2378,7 +2606,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "bosuanzi-song",
@@ -2393,7 +2623,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "hanshi",
@@ -2408,7 +2640,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zaochun",
@@ -2423,7 +2657,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chunyexiyu",
@@ -2438,7 +2674,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jiangshangyuzhe",
@@ -2453,7 +2691,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "bochuanguazhou",
@@ -2468,7 +2708,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "huanxisha-qishui",
@@ -2483,7 +2725,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "youyuanbuzhi",
@@ -2498,7 +2742,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shihuiyin",
@@ -2513,7 +2759,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zhushi",
@@ -2528,7 +2776,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "tiaotiaoqianniuxing",
@@ -2543,7 +2793,9 @@
       "total": 5,
       "skippedShort": 0,
       "textbookParas": 10,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "songyuaner",
@@ -2558,7 +2810,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "caiwei",
@@ -2573,7 +2827,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 8,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zengwang",
@@ -2604,7 +2860,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "liangzhouci-wanghan",
@@ -2619,7 +2877,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chusai",
@@ -2634,7 +2894,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "biedongda",
@@ -2665,7 +2927,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "change",
@@ -2696,7 +2960,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "xuemei",
@@ -2711,7 +2977,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "longpo",
@@ -2726,7 +2994,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "luchai",
@@ -2757,7 +3027,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "saixiaqu",
@@ -2772,7 +3044,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "momei",
@@ -2787,7 +3061,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "suxinshi",
@@ -2802,7 +3078,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jiangpan",
@@ -2833,7 +3111,9 @@
       "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "duzuojingting",
@@ -2864,7 +3144,9 @@
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "feng-mi",
@@ -2901,28 +3183,45 @@
           "line": "君子曰：学不可以已。青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，𫐐以为轮，其曲中规。虽有槁暴，不复挺者，𫐐使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。",
           "diff": [
             {
-              "ours": "君子",
-              "textbook": "",
-              "context": "曰学不可以已青取"
+              "ours": "𫐐",
+              "textbook": "輮",
+              "context": "而寒于水木直中绳輮以为轮其曲中规虽",
+              "diffKind": "char",
+              "oursChar": "𫐐",
+              "textbookChar": "輮"
             },
             {
-              "ours": "",
+              "ours": "𫐐",
               "textbook": "輮",
-              "context": "而寒于水木直中绳輮以为轮其曲中规虽"
-            },
-            {
-              "ours": "",
-              "textbook": "輮",
-              "context": "虽有槁暴不复挺者輮使之然也故木受绳"
+              "context": "虽有槁暴不复挺者輮使之然也故木受绳",
+              "diffKind": "char",
+              "oursChar": "𫐐",
+              "textbookChar": "輮"
             },
             {
               "ours": "",
               "textbook": "故不登高山不知天之高也不临深溪不知地之厚也不闻先王之遗言不知学问之大也干越夷貉之",
-              "context": "则知明而行无过矣故不登高山不知天之高也不临深溪不知地之厚也不闻先王之遗言不知学问之大也干越夷貉之"
+              "context": "则知明而行无过矣故不登高山不知天之高也不临深溪不知地之厚也不闻先王之遗言不知学问之大也干越夷貉之",
+              "diffKind": "textbook-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [
+        {
+          "ours": "𫐐",
+          "textbook": "輮",
+          "line": "君子曰：学不可以已。青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，𫐐以为轮，其曲中规。虽有槁暴，不复挺者，𫐐使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。",
+          "context": "而寒于水木直中绳輮以为轮其曲中规虽"
+        },
+        {
+          "ours": "𫐐",
+          "textbook": "輮",
+          "line": "君子曰：学不可以已。青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，𫐐以为轮，其曲中规。虽有槁暴，不复挺者，𫐐使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。",
+          "context": "虽有槁暴不复挺者輮使之然也故木受绳"
+        }
+      ],
+      "ghostDiffs": 1
     },
     {
       "id": "shengshenman",
@@ -2937,7 +3236,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shishuo",
@@ -2952,7 +3253,9 @@
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "guiyuantianju",
@@ -2967,7 +3270,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 10,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "niannujiao-chibi",
@@ -2982,7 +3287,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "mengyoutianmu",
@@ -2997,7 +3304,9 @@
       "total": 25,
       "skippedShort": 0,
       "textbookParas": 23,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yongyule",
@@ -3012,7 +3321,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shejiang",
@@ -3027,7 +3338,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "pipaxing",
@@ -3042,7 +3355,9 @@
       "total": 48,
       "skippedShort": 0,
       "textbookParas": 24,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "dengtaishan",
@@ -3064,11 +3379,14 @@
           "diff": [
             {
               "ours": "桐城姚鼐记",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [],
+      "ghostDiffs": 1
     },
     {
       "id": "denggao",
@@ -3083,7 +3401,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "duange",
@@ -3104,18 +3424,31 @@
           "line": "越陌度阡，枉用相存。契阔谈䜩，心念旧恩。",
           "diff": [
             {
-              "ours": "",
+              "ours": "䜩",
               "textbook": "讌",
-              "context": "阡枉用相存契阔谈讌心念旧恩月明星稀"
+              "context": "阡枉用相存契阔谈讌心念旧恩月明星稀",
+              "diffKind": "char",
+              "oursChar": "䜩",
+              "textbookChar": "讌"
             },
             {
               "ours": "",
               "textbook": "月明星稀乌鹊南飞绕树三匝何枝可依山不厌高海不厌深周公吐哺天下归心",
-              "context": "契阔谈讌心念旧恩月明星稀乌鹊南飞绕树三匝何枝可依山不厌高海不厌深周公吐哺天下归心"
+              "context": "契阔谈讌心念旧恩月明星稀乌鹊南飞绕树三匝何枝可依山不厌高海不厌深周公吐哺天下归心",
+              "diffKind": "textbook-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [
+        {
+          "ours": "䜩",
+          "textbook": "讌",
+          "line": "越陌度阡，枉用相存。契阔谈䜩，心念旧恩。",
+          "context": "阡枉用相存契阔谈讌心念旧恩月明星稀"
+        }
+      ],
+      "ghostDiffs": 1
     },
     {
       "id": "pusaman-zaoxiang",
@@ -3140,7 +3473,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chibifu",
@@ -3155,7 +3490,9 @@
       "total": 9,
       "skippedShort": 0,
       "textbookParas": 5,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "qingyu-an",
@@ -3180,7 +3517,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "qiqiaoxian",
@@ -3195,7 +3534,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "liuguolun",
@@ -3210,7 +3551,9 @@
       "total": 11,
       "skippedShort": 0,
       "textbookParas": 5,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "zilu-shizhe",
@@ -3225,7 +3568,9 @@
       "total": 9,
       "skippedShort": 0,
       "textbookParas": 21,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "niannujiao-gudong",
@@ -3240,7 +3585,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "guizhixiang",
@@ -3255,7 +3602,9 @@
       "total": 5,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "dengyueyanglou",
@@ -3270,7 +3619,9 @@
       "total": 8,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "dasijianyishu",
@@ -3285,7 +3636,9 @@
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jiantaishisi",
@@ -3308,7 +3661,10 @@
             {
               "ours": "治",
               "textbook": "理臣虽下愚知其不可而况于明哲乎人君当神器之重居域中之大将崇极天之峻永保无疆之休不念",
-              "context": "长德不厚而思国之理臣虽下愚知其不可而况于明哲乎人君当神器之重居域中之大将崇极天之峻永保无疆之休不念"
+              "context": "长德不厚而思国之理臣虽下愚知其不可而况于明哲乎人君当神器之重居域中之大将崇极天之峻永保无疆之休不念",
+              "diffKind": "char",
+              "oursChar": "治",
+              "textbookChar": "理"
             }
           ]
         },
@@ -3319,17 +3675,22 @@
             {
               "ours": "治",
               "textbook": "理",
-              "context": "长德不厚而思国之理臣虽下愚知其不可"
+              "context": "长德不厚而思国之理臣虽下愚知其不可",
+              "diffKind": "char",
+              "oursChar": "治",
+              "textbookChar": "理"
             },
             {
               "ours": "",
               "textbook": "者",
-              "context": "木茂塞源而欲流长者也凡百元首承天景"
+              "context": "木茂塞源而欲流长者也凡百元首承天景",
+              "diffKind": "textbook-extra"
             },
             {
               "ours": "",
               "textbook": "凡百元首承天景命莫不殷忧而道著功成而德衰有善始者实繁能克终者盖寡岂取之易而守之",
-              "context": "塞源而欲流长者也凡百元首承天景命莫不殷忧而道著功成而德衰有善始者实繁能克终者盖寡岂取之易而守之"
+              "context": "塞源而欲流长者也凡百元首承天景命莫不殷忧而道著功成而德衰有善始者实繁能克终者盖寡岂取之易而守之",
+              "diffKind": "textbook-extra"
             }
           ]
         },
@@ -3340,17 +3701,20 @@
             {
               "ours": "其",
               "textbook": "",
-              "context": "繁能克终者盖寡岂取之易而守之难乎"
+              "context": "繁能克终者盖寡岂取之易而守之难乎",
+              "diffKind": "ours-extra"
             },
             {
               "ours": "",
               "textbook": "而",
-              "context": "终者盖寡岂取之易而守之难乎昔取之而"
+              "context": "终者盖寡岂取之易而守之难乎昔取之而",
+              "diffKind": "textbook-extra"
             },
             {
               "ours": "",
               "textbook": "君人者诚能见可欲则思知足以自戒将有作则思知止以安人念高危则思谦冲而自牧惧满溢则思",
-              "context": "奔车朽索其可忽乎君人者诚能见可欲则思知足以自戒将有作则思知止以安人念高危则思谦冲而自牧惧满溢则思"
+              "context": "奔车朽索其可忽乎君人者诚能见可欲则思知足以自戒将有作则思知止以安人念高危则思谦冲而自牧惧满溢则思",
+              "diffKind": "textbook-extra"
             }
           ]
         },
@@ -3361,21 +3725,47 @@
             {
               "ours": "以",
               "textbook": "因",
-              "context": "谬赏罚所及则思无因怒而滥刑总此十思"
+              "context": "谬赏罚所及则思无因怒而滥刑总此十思",
+              "diffKind": "char",
+              "oursChar": "以",
+              "textbookChar": "因"
             },
             {
               "ours": "",
               "textbook": "在",
-              "context": "者效其忠文武争驰在君无事可以尽豫游"
+              "context": "者效其忠文武争驰在君无事可以尽豫游",
+              "diffKind": "textbook-extra"
             },
             {
               "ours": "臣",
               "textbook": "",
-              "context": "其忠文武争驰在君无事可以尽豫游之"
+              "context": "其忠文武争驰在君无事可以尽豫游之",
+              "diffKind": "ours-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [
+        {
+          "ours": "治",
+          "textbook": "理",
+          "line": "源不深而望流之远，根不固而求木之长，德不厚而思国之治。",
+          "context": "长德不厚而思国之理臣虽下愚知其不可而况于明哲乎人君当神器之重居域中之大将崇极天之"
+        },
+        {
+          "ours": "治",
+          "textbook": "理",
+          "line": "臣闻求木之长者，必固其根本；欲流之远者，必浚其泉源；思国之安者，必积其德义。源不深而望流之远，根不固而求木之长，德不厚而思国之治，臣虽下愚，知其不可，而况于明哲乎！人君当神器之重，居域中之大，将崇极天之峻，永保无疆之休。不念居安思危，戒奢以俭，德不处其厚，情不胜其欲，斯亦伐根以求木茂，塞源而欲流长也。",
+          "context": "长德不厚而思国之理臣虽下愚知其不可"
+        },
+        {
+          "ours": "以",
+          "textbook": "因",
+          "line": "君人者，诚能见可欲则思知足以自戒，将有作则思知止以安人，念高危则思谦冲而自牧，惧满溢则思江海下百川，乐盘游则思三驱以为度，忧懈怠则思慎始而敬终，虑壅蔽则思虚心以纳下，想谗邪则思正身以黜恶，恩所加则思无因喜以谬赏，罚所及则思无以怒而滥刑。总此十思，弘兹九德，简能而任之，择善而从之，则智者尽其谋，勇者竭其力，仁者播其惠，信者效其忠。文武争驰，君臣无事，可以尽豫游之乐，可以养松乔之寿，鸣琴垂拱，不言而化。何必劳神苦思，代下司职，役聪明之耳目，亏无为之大道哉！",
+          "context": "谬赏罚所及则思无因怒而滥刑总此十思"
+        }
+      ],
+      "ghostDiffs": 7
     },
     {
       "id": "jianzhukeshu",
@@ -3396,33 +3786,43 @@
           "line": "今陛下致昆山之玉，有随和之宝，垂明月之珠，服太阿之剑，乘纤离之马，建翠凤之旗，树灵鼍之鼓。此数宝者，秦不生一焉，而陛下说之，何也？必秦国之所生然后可，则是夜光之璧不饰朝廷，犀象之器不为玩好，郑卫之女不充后宫，而骏良𫘝𫘨不实外厩，江南金锡不为用，西蜀丹青不为采。所以饰后宫、充下陈、娱心意、说耳目者，必出于秦然后可，则是宛珠之簪、傅玑之珥、阿缟之衣、锦绣之饰不进于前，而随俗雅化、佳冶窈窕赵女不立于侧也。夫击瓮叩缶，弹筝搏髀，而歌呼呜呜快耳目者，真秦之声也；郑卫桑间、昭虞武象者，异国之乐也。今弃击瓮而就郑卫，退弹筝而取昭虞，若是者何也？快意当前，适观而已矣。今取人则不然，不问可否，不论曲直，非秦者去，为客者逐。然则是所重者在乎色乐珠玉，而所轻者在乎人民也。此非所以跨海内、制诸侯之术也。",
           "diff": [
             {
-              "ours": "今陛",
-              "textbook": "",
-              "context": "下致昆山之玉有随"
-            },
-            {
-              "ours": "",
+              "ours": "𫘝𫘨",
               "textbook": "駃騠",
-              "context": "女不充后宫而骏良駃騠不实外厩江南金锡"
+              "context": "女不充后宫而骏良駃騠不实外厩江南金锡",
+              "diffKind": "char",
+              "oursChar": "𫘝𫘨",
+              "textbookChar": "駃騠"
             },
             {
               "ours": "目",
               "textbook": "",
-              "context": "髀而歌呼呜呜快耳者真秦之声也郑卫"
+              "context": "髀而歌呼呜呜快耳者真秦之声也郑卫",
+              "diffKind": "ours-extra"
             },
             {
               "ours": "",
               "textbook": "叩缶",
-              "context": "国之乐也今弃击瓮叩缶而就郑卫退弹筝而"
+              "context": "国之乐也今弃击瓮叩缶而就郑卫退弹筝而",
+              "diffKind": "textbook-extra"
             },
             {
               "ours": "",
               "textbook": "臣闻地广者粟多国大者人众兵强则士勇是以太山不让土壤故能成其大河海不择细流故能就",
-              "context": "海内制诸侯之术也臣闻地广者粟多国大者人众兵强则士勇是以太山不让土壤故能成其大河海不择细流故能就"
+              "context": "海内制诸侯之术也臣闻地广者粟多国大者人众兵强则士勇是以太山不让土壤故能成其大河海不择细流故能就",
+              "diffKind": "textbook-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [
+        {
+          "ours": "𫘝𫘨",
+          "textbook": "駃騠",
+          "line": "今陛下致昆山之玉，有随和之宝，垂明月之珠，服太阿之剑，乘纤离之马，建翠凤之旗，树灵鼍之鼓。此数宝者，秦不生一焉，而陛下说之，何也？必秦国之所生然后可，则是夜光之璧不饰朝廷，犀象之器不为玩好，郑卫之女不充后宫，而骏良𫘝𫘨不实外厩，江南金锡不为用，西蜀丹青不为采。所以饰后宫、充下陈、娱心意、说耳目者，必出于秦然后可，则是宛珠之簪、傅玑之珥、阿缟之衣、锦绣之饰不进于前，而随俗雅化、佳冶窈窕赵女不立于侧也。夫击瓮叩缶，弹筝搏髀，而歌呼呜呜快耳目者，真秦之声也；郑卫桑间、昭虞武象者，异国之乐也。今弃击瓮而就郑卫，退弹筝而取昭虞，若是者何也？快意当前，适观而已矣。今取人则不然，不问可否，不论曲直，非秦者去，为客者逐。然则是所重者在乎色乐珠玉，而所轻者在乎人民也。此非所以跨海内、制诸侯之术也。",
+          "context": "女不充后宫而骏良駃騠不实外厩江南金锡"
+        }
+      ],
+      "ghostDiffs": 3
     },
     {
       "id": "epenggongfu",
@@ -3445,16 +3845,20 @@
             {
               "ours": "得",
               "textbook": "",
-              "context": "远视而望幸焉有不见者三十六年燕赵"
+              "context": "远视而望幸焉有不见者三十六年燕赵",
+              "diffKind": "ours-extra"
             },
             {
               "ours": "",
               "textbook": "有不见者一作有不得见者嗟乎一人之心千万人之心也秦爱纷奢人亦念其家奈何取之尽锱铢用之",
-              "context": "秦人视之亦不甚惜有不见者一作有不得见者嗟乎一人之心千万人之心也秦爱纷奢人亦念其家奈何取之尽锱铢用之"
+              "context": "秦人视之亦不甚惜有不见者一作有不得见者嗟乎一人之心千万人之心也秦爱纷奢人亦念其家奈何取之尽锱铢用之",
+              "diffKind": "textbook-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [],
+      "ghostDiffs": 2
     },
     {
       "id": "mengziyize",
@@ -3558,7 +3962,9 @@
       "total": 24,
       "skippedShort": 0,
       "textbookParas": 14,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "daxue",
@@ -3590,7 +3996,9 @@
       "total": 16,
       "skippedShort": 0,
       "textbookParas": 6,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wuyi",
@@ -3605,7 +4013,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 6,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "chunjianghuayue",
@@ -3620,7 +4030,9 @@
       "total": 21,
       "skippedShort": 0,
       "textbookParas": 9,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "jiangchengzi-yimao",
@@ -3635,7 +4047,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "liyun",
@@ -3660,7 +4074,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "lantingjixu",
@@ -3675,7 +4091,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "kezhi",
@@ -3690,7 +4108,9 @@
       "total": 11,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "guiqulaixici",
@@ -3713,17 +4133,24 @@
             {
               "ours": "游",
               "textbook": "遊",
-              "context": "去来兮请息交以绝遊世与我而相违复驾"
+              "context": "去来兮请息交以绝遊世与我而相违复驾",
+              "diffKind": "char",
+              "oursChar": "游",
+              "textbookChar": "遊"
             },
             {
               "ours": "丘",
               "textbook": "邱",
-              "context": "以寻壑亦崎岖而经邱木欣欣以向荣泉涓"
+              "context": "以寻壑亦崎岖而经邱木欣欣以向荣泉涓",
+              "diffKind": "char",
+              "oursChar": "丘",
+              "textbookChar": "邱"
             },
             {
               "ours": "",
               "textbook": "已矣乎寓形宇内复几时曷不委心任去留胡为乎遑遑欲何之富贵非吾愿帝乡不可期怀良辰以孤",
-              "context": "得时感吾生之行休已矣乎寓形宇内复几时曷不委心任去留胡为乎遑遑欲何之富贵非吾愿帝乡不可期怀良辰以孤"
+              "context": "得时感吾生之行休已矣乎寓形宇内复几时曷不委心任去留胡为乎遑遑欲何之富贵非吾愿帝乡不可期怀良辰以孤",
+              "diffKind": "textbook-extra"
             }
           ]
         },
@@ -3734,16 +4161,33 @@
             {
               "ours": "",
               "textbook": "天",
-              "context": "诗聊乘化以归尽乐天夫命复奚疑"
+              "context": "诗聊乘化以归尽乐天夫命复奚疑",
+              "diffKind": "textbook-extra"
             },
             {
               "ours": "天",
               "textbook": "",
-              "context": "乘化以归尽乐天夫命复奚疑"
+              "context": "乘化以归尽乐天夫命复奚疑",
+              "diffKind": "ours-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [
+        {
+          "ours": "游",
+          "textbook": "遊",
+          "line": "归去来兮，请息交以绝游。世与我而相违，复驾言兮焉求？悦亲戚之情话，乐琴书以消忧。农人告余以春及，将有事于西畴。或命巾车，或棹孤舟。既窈窕以寻壑，亦崎岖而经丘。木欣欣以向荣，泉涓涓而始流。善万物之得时，感吾生之行休。",
+          "context": "去来兮请息交以绝遊世与我而相违复驾"
+        },
+        {
+          "ours": "丘",
+          "textbook": "邱",
+          "line": "归去来兮，请息交以绝游。世与我而相违，复驾言兮焉求？悦亲戚之情话，乐琴书以消忧。农人告余以春及，将有事于西畴。或命巾车，或棹孤舟。既窈窕以寻壑，亦崎岖而经丘。木欣欣以向荣，泉涓涓而始流。善万物之得时，感吾生之行休。",
+          "context": "以寻壑亦崎岖而经邱木欣欣以向荣泉涓"
+        }
+      ],
+      "ghostDiffs": 3
     },
     {
       "id": "yangzhousman",
@@ -3758,7 +4202,9 @@
       "total": 11,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "niluonan",
@@ -3773,7 +4219,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wanghaichao",
@@ -3788,7 +4236,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "dengkuai-ge",
@@ -3803,7 +4253,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shizhongshan",
@@ -3818,7 +4270,9 @@
       "total": 9,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "lisao",
@@ -3840,7 +4294,8 @@
           "diff": [
             {
               "ours": "朝饮木兰之坠露兮夕餐秋菊之落英",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3850,7 +4305,8 @@
           "diff": [
             {
               "ours": "路漫漫其修远兮吾将上下而求索",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3860,7 +4316,8 @@
           "diff": [
             {
               "ours": "长太息以掩涕兮哀民生之多艰",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3870,7 +4327,8 @@
           "diff": [
             {
               "ours": "余虽好修姱以鞿羁兮謇朝谇而夕替",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3880,7 +4338,8 @@
           "diff": [
             {
               "ours": "既替余以蕙纕兮又申之以揽茝",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3890,7 +4349,8 @@
           "diff": [
             {
               "ours": "亦余心之所善兮虽九死其犹未悔",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3900,7 +4360,8 @@
           "diff": [
             {
               "ours": "怨灵修之浩荡兮终不察夫民心",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3910,7 +4371,8 @@
           "diff": [
             {
               "ours": "众女嫉余之蛾眉兮谣诼谓余以善淫",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3920,7 +4382,8 @@
           "diff": [
             {
               "ours": "固时俗之工巧兮偭规矩而改错",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3930,7 +4393,8 @@
           "diff": [
             {
               "ours": "背绳墨以追曲兮竞周容以为度",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3940,7 +4404,8 @@
           "diff": [
             {
               "ours": "忳郁邑余侘傺兮吾独穷困乎此时也",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3950,7 +4415,8 @@
           "diff": [
             {
               "ours": "宁溘死以流亡兮余不忍为此态也",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3960,7 +4426,8 @@
           "diff": [
             {
               "ours": "鸷鸟之不群兮自前世而固然",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3970,7 +4437,8 @@
           "diff": [
             {
               "ours": "何方圜之能周兮夫孰异道而相安",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3980,7 +4448,8 @@
           "diff": [
             {
               "ours": "屈心而抑志兮忍尤而攘诟",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -3990,7 +4459,8 @@
           "diff": [
             {
               "ours": "伏清白以死直兮固前圣之所厚",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4000,7 +4470,8 @@
           "diff": [
             {
               "ours": "悔相道之不察兮延伫乎吾将反",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4010,7 +4481,8 @@
           "diff": [
             {
               "ours": "回朕车以复路兮及行迷之未远",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4020,7 +4492,8 @@
           "diff": [
             {
               "ours": "步余马于兰皋兮驰椒丘且焉止息",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4030,7 +4503,8 @@
           "diff": [
             {
               "ours": "进不入以离尤兮退将复修吾初服",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4040,7 +4514,8 @@
           "diff": [
             {
               "ours": "制芰荷以为衣兮集芙蓉以为裳",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4050,7 +4525,8 @@
           "diff": [
             {
               "ours": "不吾知其亦已兮苟余情其信芳",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4060,7 +4536,8 @@
           "diff": [
             {
               "ours": "高余冠之岌岌兮长余佩之陆离",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4070,7 +4547,8 @@
           "diff": [
             {
               "ours": "芳与泽其杂糅兮唯昭质其犹未亏",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4080,7 +4558,8 @@
           "diff": [
             {
               "ours": "忽反顾以游目兮将往观乎四荒",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4090,7 +4569,8 @@
           "diff": [
             {
               "ours": "佩缤纷其繁饰兮芳菲菲其弥章",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4100,7 +4580,8 @@
           "diff": [
             {
               "ours": "民生各有所乐兮余独好修以为常",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         },
@@ -4110,11 +4591,14 @@
           "diff": [
             {
               "ours": "虽体解吾犹未变兮岂余心之可惩",
-              "textbook": null
+              "textbook": null,
+              "diffKind": "ours-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [],
+      "ghostDiffs": 28
     },
     {
       "id": "zhongshu-guotuotuo",
@@ -4137,21 +4621,26 @@
             {
               "ours": "",
               "textbook": "哉",
-              "context": "哉问者曰以子之道移"
+              "context": "哉问者曰以子之道移",
+              "diffKind": "textbook-extra"
             },
             {
               "ours": "官",
               "textbook": "",
-              "context": "驼曰我知种树而已理非吾业也然吾居"
+              "context": "驼曰我知种树而已理非吾业也然吾居",
+              "diffKind": "ours-extra"
             },
             {
               "ours": "",
               "textbook": "问者曰嘻不亦善夫吾问养树得养人术传其事以为官戒",
-              "context": "吾业者其亦有类乎问者曰嘻不亦善夫吾问养树得养人术传其事以为官戒"
+              "context": "吾业者其亦有类乎问者曰嘻不亦善夫吾问养树得养人术传其事以为官戒",
+              "diffKind": "textbook-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [],
+      "ghostDiffs": 3
     },
     {
       "id": "sumuzhe",
@@ -4186,7 +4675,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shudaonan",
@@ -4201,7 +4692,9 @@
       "total": 26,
       "skippedShort": 0,
       "textbookParas": 22,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "hexinlao",
@@ -4244,16 +4737,20 @@
             {
               "ours": "",
               "textbook": "远",
-              "context": "远臣密今年四十有四"
+              "context": "远臣密今年四十有四",
+              "diffKind": "textbook-extra"
             },
             {
               "ours": "刘",
               "textbook": "",
-              "context": "今年四十有四祖母今年九十有六是臣"
+              "context": "今年四十有四祖母今年九十有六是臣",
+              "diffKind": "ours-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [],
+      "ghostDiffs": 2
     },
     {
       "id": "xiangjixuanzhi",
@@ -4268,7 +4765,9 @@
       "total": 12,
       "skippedShort": 0,
       "textbookParas": 6,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "shufen",
@@ -4283,7 +4782,9 @@
       "total": 7,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "wudailingguan",
@@ -4298,7 +4799,9 @@
       "total": 11,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "quyuanliezhuan",
@@ -4321,12 +4824,16 @@
             {
               "ours": "平",
               "textbook": "原",
-              "context": "屈原既绌其后秦欲伐齐"
+              "context": "屈原既绌其后秦欲伐齐",
+              "diffKind": "char",
+              "oursChar": "平",
+              "textbookChar": "原"
             },
             {
               "ours": "",
               "textbook": "明年秦割汉中地与楚以和楚王曰不愿得地愿得张仪而甘心焉张仪闻乃曰以一仪而当汉中地臣",
-              "context": "竟怒不救楚楚大困明年秦割汉中地与楚以和楚王曰不愿得地愿得张仪而甘心焉张仪闻乃曰以一仪而当汉中地臣"
+              "context": "竟怒不救楚楚大困明年秦割汉中地与楚以和楚王曰不愿得地愿得张仪而甘心焉张仪闻乃曰以一仪而当汉中地臣",
+              "diffKind": "textbook-extra"
             }
           ]
         },
@@ -4337,12 +4844,16 @@
             {
               "ours": "平",
               "textbook": "原",
-              "context": "复释去张仪是时屈原既疏不复在位使于"
+              "context": "复释去张仪是时屈原既疏不复在位使于",
+              "diffKind": "char",
+              "oursChar": "平",
+              "textbookChar": "原"
             },
             {
               "ours": "",
               "textbook": "其后诸侯共击楚大破之杀其将唐眜时秦昭王与楚婚欲与怀王会怀王欲行屈平曰秦虎狼之国不",
-              "context": "怀王悔追张仪不及其后诸侯共击楚大破之杀其将唐眜时秦昭王与楚婚欲与怀王会怀王欲行屈平曰秦虎狼之国不"
+              "context": "怀王悔追张仪不及其后诸侯共击楚大破之杀其将唐眜时秦昭王与楚婚欲与怀王会怀王欲行屈平曰秦虎狼之国不",
+              "diffKind": "textbook-extra"
             }
           ]
         },
@@ -4353,7 +4864,10 @@
             {
               "ours": "眛",
               "textbook": "眜时秦昭王与楚婚欲与怀王会怀王欲行屈平曰秦虎狼之国不可信不如毋行怀王稚子子兰劝王行",
-              "context": "楚大破之杀其将唐眜时秦昭王与楚婚欲与怀王会怀王欲行屈平曰秦虎狼之国不可信不如毋行怀王稚子子兰劝王行"
+              "context": "楚大破之杀其将唐眜时秦昭王与楚婚欲与怀王会怀王欲行屈平曰秦虎狼之国不可信不如毋行怀王稚子子兰劝王行",
+              "diffKind": "char",
+              "oursChar": "眛",
+              "textbookChar": "眜"
             }
           ]
         },
@@ -4364,12 +4878,16 @@
             {
               "ours": "覆",
               "textbook": "复",
-              "context": "其存君兴国而欲反复之一篇之中三致志"
+              "context": "其存君兴国而欲反复之一篇之中三致志",
+              "diffKind": "char",
+              "oursChar": "覆",
+              "textbookChar": "复"
             },
             {
               "ours": "",
               "textbook": "人君无愚智贤不肖莫不欲求忠以自为举贤以自佐然亡国破家相随属而圣君治国累世而不见者",
-              "context": "见怀王之终不悟也人君无愚智贤不肖莫不欲求忠以自为举贤以自佐然亡国破家相随属而圣君治国累世而不见者"
+              "context": "见怀王之终不悟也人君无愚智贤不肖莫不欲求忠以自为举贤以自佐然亡国破家相随属而圣君治国累世而不见者",
+              "diffKind": "textbook-extra"
             }
           ]
         },
@@ -4380,12 +4898,16 @@
             {
               "ours": "混",
               "textbook": "皆",
-              "context": "而能与世推移举世皆浊何不随其流而扬"
+              "context": "而能与世推移举世皆浊何不随其流而扬",
+              "diffKind": "char",
+              "oursChar": "混",
+              "textbookChar": "皆"
             },
             {
               "ours": "",
               "textbook": "屈原既死之后楚有宋玉唐勒景差之徒者皆好辞而以赋见称然皆祖屈原之从容辞令终莫敢直谏",
-              "context": "石遂自投汨罗以死屈原既死之后楚有宋玉唐勒景差之徒者皆好辞而以赋见称然皆祖屈原之从容辞令终莫敢直谏"
+              "context": "石遂自投汨罗以死屈原既死之后楚有宋玉唐勒景差之徒者皆好辞而以赋见称然皆祖屈原之从容辞令终莫敢直谏",
+              "diffKind": "textbook-extra"
             }
           ]
         },
@@ -4396,12 +4918,16 @@
             {
               "ours": "余",
               "textbook": "馀",
-              "context": "屈原沉汨罗后百有馀年汉有贾生为长沙"
+              "context": "屈原沉汨罗后百有馀年汉有贾生为长沙",
+              "diffKind": "char",
+              "oursChar": "余",
+              "textbookChar": "馀"
             },
             {
               "ours": "",
               "textbook": "太史公曰余读离骚天问招魂哀郢悲其志适长沙过屈原所自沉渊未尝不垂涕想见其为人及见贾",
-              "context": "湘水投书以吊屈原太史公曰余读离骚天问招魂哀郢悲其志适长沙过屈原所自沉渊未尝不垂涕想见其为人及见贾"
+              "context": "湘水投书以吊屈原太史公曰余读离骚天问招魂哀郢悲其志适长沙过屈原所自沉渊未尝不垂涕想见其为人及见贾",
+              "diffKind": "textbook-extra"
             }
           ]
         },
@@ -4412,11 +4938,59 @@
             {
               "ours": "观",
               "textbook": "过",
-              "context": "哀郢悲其志适长沙过屈原所自沉渊未尝"
+              "context": "哀郢悲其志适长沙过屈原所自沉渊未尝",
+              "diffKind": "char",
+              "oursChar": "观",
+              "textbookChar": "过"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [
+        {
+          "ours": "平",
+          "textbook": "原",
+          "line": "屈平既绌，其后秦欲伐齐，齐与楚从亲。惠王患之，乃令张仪佯去秦，厚币委质事楚，曰：\"秦甚憎齐，齐与楚从亲，楚诚能绝齐，秦愿献商於之地六百里。\"楚怀王贪而信张仪，遂绝齐，使使如秦受地。张仪诈之曰：\"仪与王约六里，不闻六百里。\"楚使怒去，归告怀王。怀王怒，大兴师伐秦。秦发兵击之，大破楚师于丹、淅，斩首八万，虏楚将屈匄，遂取楚之汉中地。怀王乃悉发国中兵以深入击秦，战于蓝田。魏闻之，袭楚至邓。楚兵惧，自秦归。而齐竟怒不救楚，楚大困。",
+          "context": "屈原既绌其后秦欲伐齐"
+        },
+        {
+          "ours": "平",
+          "textbook": "原",
+          "line": "明年，秦割汉中地与楚以和。楚王曰：\"不愿得地，愿得张仪而甘心焉。\"张仪闻，乃曰：\"以一仪而当汉中地，臣请往如楚。如楚，又因厚币用事者臣靳尚，而设诡辩于怀王之宠姬郑袖。\"怀王竟听郑袖，复释去张仪。是时屈平既疏，不复在位，使于齐，顾反，谏怀王曰：\"何不杀张仪？\"怀王悔，追张仪不及。",
+          "context": "复释去张仪是时屈原既疏不复在位使于"
+        },
+        {
+          "ours": "眛",
+          "textbook": "眜",
+          "line": "其后诸侯共击楚，大破之，杀其将唐眛。",
+          "context": "楚大破之杀其将唐眜时秦昭王与楚婚欲与怀王会怀王欲行屈平曰秦虎狼之国不可信不如毋行"
+        },
+        {
+          "ours": "覆",
+          "textbook": "复",
+          "line": "长子顷襄王立，以其弟子兰为令尹。楚人既咎子兰以劝怀王入秦而不反也。屈平既嫉之，虽放流，眷顾楚国，系心怀王，不忘欲反，冀幸君之一悟，俗之一改也。其存君兴国而欲反覆之，一篇之中三致志焉。然终无可奈何，故不可以反。卒以此见怀王之终不悟也。",
+          "context": "其存君兴国而欲反复之一篇之中三致志"
+        },
+        {
+          "ours": "混",
+          "textbook": "皆",
+          "line": "屈原至于江滨，被发行吟泽畔。颜色憔悴，形容枯槁。渔父见而问之曰：\"子非三闾大夫欤？何故而至此？\"屈原曰：\"举世皆浊而我独清，众人皆醉而我独醒，是以见放。\"渔父曰：\"夫圣人者，不凝滞于物而能与世推移。举世混浊，何不随其流而扬其波？众人皆醉，何不餔其糟而啜其醨？何故怀瑾握瑜而自令见放为？\"屈原曰：\"吾闻之，新沐者必弹冠，新浴者必振衣，人又谁能以身之察察，受物之汶汶者乎！宁赴常流而葬乎江鱼腹中耳，又安能以皓皓之白而蒙世之温蠖乎！\"乃作《怀沙》之赋。于是怀石遂自投汨罗以死。",
+          "context": "而能与世推移举世皆浊何不随其流而扬"
+        },
+        {
+          "ours": "余",
+          "textbook": "馀",
+          "line": "屈原既死之后，楚有宋玉、唐勒、景差之徒者，皆好辞而以赋见称；然皆祖屈原之从容辞令，终莫敢直谏。其后楚日以削，数十年竟为秦所灭。自屈原沉汨罗后百有余年，汉有贾生，为长沙王太傅，过湘水，投书以吊屈原。",
+          "context": "屈原沉汨罗后百有馀年汉有贾生为长沙"
+        },
+        {
+          "ours": "观",
+          "textbook": "过",
+          "line": "太史公曰：余读《离骚》、《天问》、《招魂》、《哀郢》，悲其志。适长沙，观屈原所自沉渊，未尝不垂涕，想见其为人。及见贾生吊之，又怪屈原以彼其材，游诸侯，何国不容，而自令若是。读《鵩鸟赋》，同死生，轻去就，又爽然自失矣。",
+          "context": "哀郢悲其志适长沙过屈原所自沉渊未尝"
+        }
+      ],
+      "ghostDiffs": 5
     },
     {
       "id": "baoranan",
@@ -4441,7 +5015,9 @@
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 7,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "yange-xing",
@@ -4456,7 +5032,9 @@
       "total": 18,
       "skippedShort": 0,
       "textbookParas": 15,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     },
     {
       "id": "guoqinlun",
@@ -4479,16 +5057,29 @@
             {
               "ours": "宁",
               "textbook": "甯",
-              "context": "众于是六国之士有甯越徐尚苏秦杜赫之"
+              "context": "众于是六国之士有甯越徐尚苏秦杜赫之",
+              "diffKind": "char",
+              "oursChar": "宁",
+              "textbookChar": "甯"
             },
             {
               "ours": "",
               "textbook": "延及孝文王庄襄王享国之日浅国家无事及至始皇奋六世之余烈振长策而御宇内吞二周而亡诸",
-              "context": "强国请服弱国入朝延及孝文王庄襄王享国之日浅国家无事及至始皇奋六世之余烈振长策而御宇内吞二周而亡诸"
+              "context": "强国请服弱国入朝延及孝文王庄襄王享国之日浅国家无事及至始皇奋六世之余烈振长策而御宇内吞二周而亡诸",
+              "diffKind": "textbook-extra"
             }
           ]
         }
-      ]
+      ],
+      "charDiffs": [
+        {
+          "ours": "宁",
+          "textbook": "甯",
+          "line": "孝公既没，惠文、武、昭襄蒙故业，因遗策，南取汉中，西举巴蜀，东割膏腴之地，北收要害之郡。诸侯恐惧，会盟而谋弱秦，不爱珍器重宝肥饶之地，以致天下之士，合从缔交，相与为一。当此之时，齐有孟尝，赵有平原，楚有春申，魏有信陵。此四君者，皆明智而忠信，宽厚而爱人，尊贤而重士，约从离衡，兼韩、魏、燕、楚、齐、赵、宋、卫、中山之众。于是六国之士，有宁越、徐尚、苏秦、杜赫之属为之谋，齐明、周最、陈轸、召滑、楼缓、翟景、苏厉、乐毅之徒通其意，吴起、孙膑、带佗、倪良、王廖、田忌、廉颇、赵奢之伦制其兵。尝以十倍之地，百万之众，叩关而攻秦。秦人开关延敌，九国之师，逡巡而不敢进。秦无亡矢遗镞之费，而天下诸侯已困矣。于是从散约败，争割地而赂秦。秦有余力而制其弊，追亡逐北，伏尸百万，流血漂橹。因利乘便，宰割天下，分裂山河。强国请服，弱国入朝。",
+          "context": "众于是六国之士有甯越徐尚苏秦杜赫之"
+        }
+      ],
+      "ghostDiffs": 1
     },
     {
       "id": "jinse",
@@ -4503,7 +5094,9 @@
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": []
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
     }
   ],
   "problems": []

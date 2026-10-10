@@ -69,7 +69,13 @@ NO_TEXTBOOK_VOLUME = '选修（2026起默写）'
 
 TEXT_WRAP = re.compile(r'<p class="text-wrap[^"]*"[^>]*>([\s\S]*?)</p>')
 TAG = re.compile(r'<[^>]+>')
-PUNCT = re.compile(r'[^一-鿿]')
+# 比对时只留汉字，但「只留汉字」这件事两次都出过事：
+#   旧表 [^一-鿿] 只保 U+4E00–U+9FFF，把「䜩」(U+4729)、「𫐐」(U+2B510)、「𪩘」(U+2A658)、「𫘝𫘨」
+#     从仓内这一侧抹掉——真差异被说成「教材那边多出一个字」；
+#   换成 \W 又把教材页注音里的拉丁字母（yǒng、xī、ēng、tuó）留了下来——比对锚在拼音上，
+#     「永和九年」对不上「yǒng 和九年」。所以这里只认汉字区：基本块 + 扩展 A–H + 兼容表意文字。
+_CJK = '\u3400-\u4DBF\u4E00-\u9FFF\uf900-\ufaff\u3007\U00020000-\U0003134F'
+PUNCT = re.compile('[^' + _CJK + ']')
 # 目录页有两种写法：锚文本在 > 之后（可能换行缩进），也可能只在 title="…课文朗读" 属性里。
 # 只认锚文本会漏掉整批课文——漏了就会把「工具没抓到」误报成「教材里没有这篇」。
 TITLE_ATTR = re.compile(r'href="(/[^"]+?_langdu\.html)"[^>]*?title="([^"]{1,60}?)课文朗读"')
@@ -432,6 +438,53 @@ def diff_against(line, book):
     return out
 
 
+def minimal_pair(ours, textbook):
+    """把一对差异缩到真正差的那几个字：先剥公共前缀，再剥公共后缀。
+    「唐眜时秦昭王与楚婚…」对「唐眛」剥完只剩「眜」对「眛」——不剥的话，一处单字出入
+    会被记成「教材那边多出一大段」，台账里读起来像正文差了很多。"""
+    o = ours or ''
+    b = textbook or ''
+    i = 0
+    while i < len(o) and i < len(b) and o[i] == b[i]:
+        i += 1
+    o, b = o[i:], b[i:]
+    j = 0
+    while j < len(o) and j < len(b) and o[len(o) - 1 - j] == b[len(b) - 1 - j]:
+        j += 1
+    if j:
+        o, b = o[:len(o) - j], b[:len(b) - j]
+    return o, b
+
+
+def diff_kind(ours, textbook):
+    """差异分四类：单字出入 / 教材那边多出一段 / 我们这篇教材里没有 / 说不清的一大段。
+    分错类，台账里的话就错：把残影报成字面分歧，读者以为正文差了很多；
+    把单字出入报成残影，那一处就没人交代。返回 (类别, 仓内侧, 教材侧)。
+    剥完公共前后缀还剩一长条时，看第一处真正不同的地方——「杀其将唐眛」对
+    「杀其将唐眜时秦昭王与楚婚」差的是眛／眜这一个字，不是后面那一大段。"""
+    o, b = minimal_pair(ours, textbook)
+    if not o and not b:
+        return 'same', '', ''
+    if not o:
+        return 'textbook-extra', '', b
+    if not b:
+        return 'ours-extra', o, ''
+    # 两边都有内容：从左边数第一处连续不同的地方。剥完公共前后缀后，
+    # 「眛」对「眜时秦昭王与楚婚」差的就是第一个字；后面那截是教材那边多出来的段落，
+    # 由 ghostDiffs 单独记账，不许把一处单字出入说成一大段分歧。
+    n = min(len(o), len(b))
+    k = 0
+    while k < n and o[k] != b[k]:
+        k += 1
+    if k == 0:
+        return 'mixed', o, b
+    ro, rb = o[:k], b[:k]
+    if len(ro) <= 4 and len(rb) <= 4:
+        return 'char', ro, rb
+    return 'mixed', ro, rb
+
+
+
 def compare(poem, paras):
     """仓内每一句（名句 + 全文）去教材原文里找。
 
@@ -455,7 +508,14 @@ def compare(poem, paras):
         if key in book:
             hit += 1
         else:
-            miss.append({'kind': kind, 'line': ln.strip(), 'diff': diff_against(ln, book)})
+            d = diff_against(ln, book)
+            for piece in d:
+                k, o_side, b_side = diff_kind(piece.get('ours'), piece.get('textbook'))
+                piece['diffKind'] = k
+                if k == 'char':
+                    piece['oursChar'] = o_side
+                    piece['textbookChar'] = b_side
+            miss.append({'kind': kind, 'line': ln.strip(), 'diff': d})
     return hit, hit + len(miss), skipped, miss
 
 
@@ -702,6 +762,38 @@ def selftest():
     must(garden_author_match({'author': '王之涣'}, '[唐代] 王之涣'), '坏例20e：朝代前缀没剥掉，同一位作者被判成两个人')
     must(not garden_author_match({'author': '王之涣'}, ''), '坏例20f：空作者也被当成对上')
 
+    # 坏例21：单字出入不许被记成「教材那边多出一大段」
+    k21, o21, b21 = diff_kind('唐眛', '唐眜时秦昭王与楚婚')
+    must(k21 == 'char' and (o21, b21) == ('眛', '眜'), '坏例21：单字出入没缩出来：%s %r %r' % (k21, o21, b21))
+    k21b, o21b, b21b = diff_kind('杀其将唐眛', '杀其将唐眜时秦昭王与楚婚')
+    must(k21b == 'char' and (o21b, b21b) == ('眛', '眜'), '坏例21b：公共前后缀没剥干净：%s %r vs %r' % (k21b, o21b, b21b))
+    must(diff_kind('', '于是入朝见威王曰臣诚知不如徐公美')[0] == 'textbook-extra',
+         '坏例21c：教材那边多出一段没被这样分类')
+    must(diff_kind('桐城姚鼐记', None)[0] == 'ours-extra', '坏例21d：我们这篇教材里没有，却没被这样分类')
+    must(diff_kind('举世混浊何不随其流', '举世皆浊何不随其流') == ('char', '混', '皆'),
+         '坏例21e：整句里只差一个字，没被判成单字出入')
+    must(diff_kind('ABCD', 'ABCD')[0] == 'same', '坏例21f：完全一样的两段被当成差异')
+    must(diff_kind('契阔谈䜩心念旧恩', '契阔谈讌心念旧恩') == ('char', '䜩', '讌'),
+         '坏例21g：短歌行那一处的真实形状没被算对')
+    # 坏例22：扩展区汉字不许在比对里被抹掉
+    must('䜩' in norm('契阔谈䜩，心念旧恩'), '坏例22：䜩（扩展 A 区）被 norm 抹掉了')
+    must('𪩘' in norm('绝𪩘多生怪柏'), '坏例22a：𪩘（扩展 C 区）被 norm 抹掉了')
+    must('𫐐' in norm('木直中绳，𫐐以为轮'), '坏例22b：𫐐（扩展 B 区）被 norm 抹掉了')
+    must('𫘝𫘨' in norm('骏良𫘝𫘨不实外厩'), '坏例22c：𫘝𫘨 被 norm 抹掉了')
+    must(norm('黄河远上白云间，一片孤城万仞山。') == '黄河远上白云间一片孤城万仞山', '坏例22d：标点没被剥掉或汉字被多剥了')
+    must(norm('）（《》「」·、；：！？') == '', '坏例22e：纯标点没被剥干净')
+    d22 = diff_against('契阔谈䜩，心念旧恩', '越陌度阡枉用相存契阔谈讌心念旧恩月明星稀')
+    must(d22 and diff_kind(d22[0].get('ours'), d22[0].get('textbook'))[0] == 'char',
+         '坏例22f：䜩／讌 这一处没被判成单字出入：%s' % json.dumps(d22[:2], ensure_ascii=False))
+    # 坏例23：教材页里的注音（拉丁字母）不许留在比对里当锚
+    must(norm('永和九年，岁在癸丑（yǒng）') == '永和九年岁在癸丑', '坏例23：注音字母没被剥掉：%r' % norm('永和九年，岁在癸丑（yǒng）'))
+    must(norm('噫吁嚱（xī）') == '噫吁嚱', '坏例23a：拼音留在比对里了：%r' % norm('噫吁嚱（xī）'))
+    must(norm('郭橐驼（tuó）') == '郭橐驼', '坏例23b：带声调的拼音没被剥掉：%r' % norm('郭橐驼（tuó）'))
+    must('〇' in norm('二〇二一年'), '坏例23c：〇 被当成非汉字剥掉了')
+
+
+
+
     print('[ok] check-textbook --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
@@ -896,6 +988,17 @@ def main():
         entry.update(status=status, lesson=name, url=url, hit=hit, total=total,
                      skippedShort=skipped,
                      textbookParas=len(paras), miss=miss)
+        # 单字出入与残影分开数：前者是「这一处字不一样」，后者是段落边界/教材夹注/节选范围造成的，
+        # 不是文字分歧。混在一个数里，台账就说不清「到底差在哪」。
+        chars, ghosts = [], 0
+        for mm in miss:
+            for piece in (mm.get('diff') or []):
+                if piece.get('diffKind') == 'char':
+                    chars.append({'ours': piece.get('oursChar'), 'textbook': piece.get('textbookChar'),
+                                  'line': mm.get('line'), 'context': (piece.get('context') or '')[:40]})
+                else:
+                    ghosts += 1
+        entry.update(charDiffs=chars, ghostDiffs=ghosts)
         results.append(entry)
         for mm in miss:
             d = mm['diff'] or [{'ours': norm(mm['line']), 'textbook': None}]
