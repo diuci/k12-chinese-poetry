@@ -3,11 +3,11 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 207,
+    "total": 202,
     "modern": 39,
     "lessonEntries": 781,
-    "poems": 303,
-    "reciteGaps": 91,
+    "poems": 308,
+    "reciteGaps": 89,
     "primaryGaps": 337
   },
   "rows": [
@@ -1101,22 +1101,6 @@
     },
     {
       "volume": "必修上册",
-      "lesson": "6.1",
-      "title": "芣苢",
-      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30111_langdu.html",
-      "looksModern": false,
-      "recite": false
-    },
-    {
-      "volume": "必修上册",
-      "lesson": "6.2",
-      "title": "插秧歌",
-      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30112_langdu.html",
-      "looksModern": false,
-      "recite": false
-    },
-    {
-      "volume": "必修上册",
       "lesson": "11",
       "title": "反对党八股",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30119_langdu.html",
@@ -1300,14 +1284,6 @@
       "recite": true
     },
     {
-      "volume": "必修下册",
-      "lesson": "自读",
-      "title": "游园",
-      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30229_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
       "volume": "选择性必修上册",
       "lesson": "1",
       "title": "中国人民站起来了",
@@ -1357,14 +1333,6 @@
     },
     {
       "volume": "选择性必修上册",
-      "lesson": "5.3",
-      "title": "人皆有不忍人之心",
-      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30308_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "选择性必修上册",
       "lesson": "6.1",
       "title": "《老子》四章",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30309_langdu.html",
@@ -1378,14 +1346,6 @@
       "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30310_langdu.html",
       "looksModern": false,
       "recite": true
-    },
-    {
-      "volume": "选择性必修上册",
-      "lesson": "7",
-      "title": "兼爱",
-      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30311_langdu.html",
-      "looksModern": false,
-      "recite": false
     },
     {
       "volume": "选择性必修上册",

@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 303 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 308 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -302,8 +302,10 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | linanchunyu | 临安春雨初霁 | 陆游 | 宋 | 卒 1210 | public-domain | S3+S1b+S2 | 七言 | 高中 · 选择性必修下册 |
 | shufen | 书愤 | 陆游 | 宋 | 卒 1210 | public-domain | S3+S1b+S2 | 七言 | 高中 · 选择性必修中册 |
 | wudailingguan | 五代史伶官传序 | 欧阳修 | 宋 | 卒 1072 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修中册 |
+| renjieburenrenzhixin | 人皆有不忍人之心 | 孟子 | 战国 | 卒 公元前 289 | public-domain | S10+S9+S3 | 文言 | 高中 · 选择性必修上册 |
 | liuguolun | 六国论 | 苏洵 | 宋 | 卒 1066 | public-domain | S3+S1b+S2 | 文言 | 高中 · 必修下册 |
 | lantingjixu | 兰亭集序 | 王羲之 | 晋 | 卒 361 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修下册 |
+| jianai | 兼爱 | 墨子 | 战国 | 年代上限 公元前 376 | public-domain | S10+S9+S3 | 文言 | 高中 · 选择性必修上册 |
 | quanxue | 劝学 | 荀子 | 战国 | 卒 公元前 238 | public-domain | S3+S1b+S2 | 文言 | 高中 · 必修上册 |
 | gudaishilun | 古代文论选段 | 佚名 | 先秦 | 年代上限 1927 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选修（2026起默写） |
 | shengshenman | 声声慢 | 李清照 | 宋 | 卒 1155 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |
@@ -322,6 +324,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | yangzhousman | 扬州慢 | 姜夔 | 宋 | 卒 1221 | public-domain | S3+S1b+S2 | 词 | 高中 · 选择性必修下册 |
 | baoranan | 报任安书 | 司马迁 | 西汉 | 卒 公元前 86 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修中册 |
 | niluonan | 拟行路难 | 鲍照 | 南朝宋 | 卒 466 | public-domain | S3+S1b+S2 | 杂言 | 高中 · 选择性必修下册 |
+| chayangge | 插秧歌 | 杨万里 | 宋 | 卒 1206 | public-domain | S10+S9+S3 | 七言绝句 | 高中 · 必修上册 |
 | wuyi | 无衣 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 诗经 | 高中 · 选择性必修上册 |
 | chunjianghuayue | 春江花月夜 | 张若虚 | 唐 | 卒 720 | public-domain | S3+S1b+S2 | 七言 | 高中 · 选择性必修上册 |
 | wanghaichao | 望海潮 | 柳永 | 宋 | 卒 1053 | public-domain | S3+S1b+S2+S10 | 词 | 高中 · 选择性必修下册 |
@@ -331,6 +334,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | yongyule | 永遇乐·京口北固亭怀古 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |
 | jiangchengzi-yimao | 江城子 | 苏轼 | 宋 | 卒 1101 | public-domain | S3+S1b+S2 | 词 | 高中 · 选择性必修上册 |
 | shejiang | 涉江采芙蓉 | 佚名 | 汉 | 年代上限 1900 | public-domain | S3+S1b+S2 | 古诗 | 高中 · 必修上册 |
+| youyuan | 游园 | 汤显祖 | 明 | 卒 1616 | public-domain | S10+S9+S3 | 曲 | 高中 · 必修下册 |
 | tengwanggexu | 滕王阁序 | 王勃 | 唐 | 卒 676 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选修（2026起默写） |
 | zhihuwutuiqinshi | 烛之武退秦师 | 左丘明 | 先秦 | 卒 公元前 422 | public-domain | S10+S9+S3 | 文言 | 高中 · 必修下册 |
 | yange-xing | 燕歌行 | 高适 | 唐 | 卒 765 | public-domain | S3+S1b+S2 | 乐府 | 高中 · 选择性必修中册 |
@@ -345,6 +349,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | lisao | 离骚 | 屈原 | 战国 | 卒 公元前 278 | public-domain | S3+S1b+S2 | 骚体 | 高中 · 选择性必修下册 |
 | zhongshu-guotuotuo | 种树郭橐驼传 | 柳宗元 | 唐 | 卒 819 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修下册 |
 | dasijianyishu | 答司马谏议书 | 王安石 | 宋 | 卒 1086 | public-domain | S3+S1b+S2 | 文言 | 高中 · 必修下册 |
+| fuyi | 芣苢 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S10+S9+S3 | 诗经 | 高中 · 必修上册 |
 | sumuzhe | 苏幕遮 | 周邦彦 | 宋 | 卒 1121 | public-domain | S3+S1b+S2 | 词 | 高中 · 选择性必修下册 |
 | pusaman-wentingyun | 菩萨蛮 | 温庭筠 | 唐 | 卒 866 | public-domain | S3+S1b+S2 | 词 | 高中 · 选择性必修下册 |
 | pusaman-zaoxiang | 菩萨蛮·书江西造口壁 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |

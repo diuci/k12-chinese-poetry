@@ -387,9 +387,9 @@ def match_lesson(poem, lessons):
     cands = [re.sub(r'[《》〈〉（）\s\u3000·\u2022\uff65，,、]', '', c) for c in title_candidates(poem.get('title'), poem.get('subtitle'))]
     prefix_hit = None   # 前缀候选先攒着：整名对上的必须赢过先出现的前缀候选
     for name, url in lessons:
-        head = re.sub(r'^[\d.\-*（）\s]+', '', name)
+        head = re.sub(r'^[\d.\-*（）()\[\]\s]+', '', name)
         head = re.sub(r'\s*V\s*[\u4e00-\u9fff·]+$', '', head)   # 镜像在课文名后面挂的作者
-        n = re.sub(r'[《》（）\s\u3000·\u2022\uff65，,、]', '', head)
+        n = re.sub(r'[《》（）()\[\]\s\u3000·\u2022\uff65，,、]', '', head)
         n = re.sub(r'(节选|并序)$', '', n)
         if not n:
             continue
@@ -594,6 +594,8 @@ def textbook_units(paras):
     """
     units = []
     for para in paras:
+        # 曲牌标记（【皂罗袍】）是唱段名，不是课文里的句子
+        para = re.sub(r'【[^】]{1,12}】', '', para)
         for frag in SENT_SPLIT2.split(para):
             key = norm(frag)
             if len(key) < 4:
@@ -711,6 +713,13 @@ def selftest():
     # 坏例6l3：仓内只写词牌时，前缀候选这一支还得管用（教材那边写「词牌·题目」）
     must(match_lesson({'title': '卜算子'}, [('卜算子\u2022黄州定慧院寓居作', 'u1')])[1] == 'u1',
          '坏例6l3：只写词牌时前缀候选这一支失效了')
+    # 坏例6r：镜像在课文名后面用半角括号加方括号挂曲牌（「游园([皂罗袍])」），仓内是「游园」+副标题「皂罗袍」。
+    # 先前剥分隔符那一档只认全角括号，半角括号和方括号留下了，整名不相等；篇名两字又不许走前缀候选，
+    # 这一课就被判成「教材里没有」。半角括号与方括号一并剥。
+    must(match_lesson({'title': '游园', 'subtitle': '皂罗袍'}, [('游园([皂罗袍])', 'u')])[0] == '游园([皂罗袍])',
+         '坏例6r：镜像用半角括号和方括号挂曲牌，仓内「游园」+副标题「皂罗袍」没对上')
+    must(match_lesson({'title': '游园'}, [('游园([皂罗袍])', 'u')])[0] is None,
+         '坏例6r2：仓内只写两字篇名时走了前缀候选——没写副标题的「游园」被教材那串带曲牌的名字抢走')
     # 坏例6m：同名只是候选，是不是同一篇不许靠篇名判——分类由正文比对定，这里直接测那个分类。
     must(cross_volume_status(None, 0, 0)[0] == 'volume-mismatch',
          '坏例6m：教材正文没取到就被判成「另一篇」（没核到却下了结论）')
@@ -1004,6 +1013,9 @@ def selftest():
     must(fulltext_shortfalls({'linesPunct': ['渐闻水声潺潺而泻出于两峰之间者，酿泉也。'], 'fullLinesPunct': []},
                              ['渐闻水声潺潺，而泻出于两峰之间者，酿泉也。']) == [],
          '坏例20j：教材在逗号处换行、仓内一行装两句，被报成缺句')
+    must(fulltext_shortfalls({'linesPunct': ['原来姹紫嫣红开遍，似这般都付与断井颓垣。'], 'fullLinesPunct': []},
+                             ['【皂罗袍】原来姹紫嫣红开遍，似这般都付与断井颓垣。']) == [],
+         '坏例20l：教材段首的曲牌标记【皂罗袍】被当成课文里的一句')
     must(fulltext_shortfalls({'linesPunct': ['孤岂欲卿治经为博士邪！但当涉猎，见往事耳。'], 'fullLinesPunct': []},
                              ['权曰：“孤岂欲卿治经为博士邪!但当涉猎，见往事耳。”']) == [],
          '坏例20k：镜像页用半角感叹号，切开后就对不上了')

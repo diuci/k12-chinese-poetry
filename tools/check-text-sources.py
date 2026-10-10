@@ -774,6 +774,16 @@ def main():
 
     results = []
     stats = {'attested': 0, 'partial': 0, 'notfound': 0, 'nosource': 0, 'withVariants': 0}
+    # 旧表必须在循环开始前读：取页失败时要靠它沿用上次记录（写盘之后再读就读到自己刚写的了）。
+    prev_by_id = {}
+    if OUT.exists():
+        try:
+            prev_by_id = {r['id']: r for r in json.loads(OUT.read_text(encoding='utf-8')).get('results', [])
+                          if r.get('id')}
+        except Exception:
+            prev_by_id = {}
+    carried, hard_fail = [], []
+    streak = 0  # 连着多少篇取页失败：连着失败说明整站问不到，不是这一篇没出处
     for n, p in enumerate(poems, 1):
         title = p['title']
         author = p.get('author') or ''
@@ -908,8 +918,21 @@ def main():
             else:
                 stats['nosource'] += 1
         except Exception as exc:
-            rec['error'] = '%s: %s' % (type(exc).__name__, exc)
-            stats['nosource'] += 1
+            kept = carry_after_fetch_error(prev_by_id.get(p['id']), type(exc).__name__)
+            if kept is None:
+                rec['error'] = '%s: %s' % (type(exc).__name__, exc)
+                stats['nosource'] += 1
+                hard_fail.append('%s（%s）' % (title, type(exc).__name__))
+            else:
+                rec = kept
+                carried.append(p['id'])
+            streak += 1
+            if should_abort_run(streak):
+                print('!! 连着 %d 篇取页失败：来源站现在问不到（不是这些篇没有出处）。' % streak)
+                print('   这一跑停在这里，台账不写；等来源站通了重跑。旧表 data/text-sources.json 原样未动。')
+                return 1
+        if not rec.get('carried') and not rec.get('error'):
+            streak = 0
         if rec.get('variants'):
             stats['withVariants'] += 1
         results.append(rec)
@@ -924,6 +947,13 @@ def main():
     # 后面那句 withVariants 计数根本没跑到——48 条 override 里 13 篇带异文的就这么没被算进去，
     # 台账上「有异文的篇目」当场少 13 篇，而且没有任何一处报错。
     stats = stats_from_records(results)
+    if carried:
+        print('取页失败但沿用上次记录：%d 篇（网络问题，不写成「找不到来源页」）' % len(carried))
+    if hard_fail:
+        print('!! 取页失败、又没有可沿用的旧记录：%d 篇 —— %s' % (len(hard_fail), '、'.join(hard_fail[:12])))
+        print('   台账不写：一次网络抖动不许把「我们问不到」写成「这篇没有来源」。'
+              '（旧表 data/text-sources.json 保持原样，等网络通了重跑）')
+        return 1
 
     # --limit / --stage 是试跑用的，试跑不许覆盖正式表。
     # 刚才顺手跑了个 --limit 3，data/text-sources.json 当场从 252 篇变成 3 篇——
@@ -1026,6 +1056,31 @@ def stats_from_records(records):
         if r.get('variants'):
             s['withVariants'] += 1
     return s
+
+
+def should_abort_run(streak, limit=8):
+    """连着这么多篇都取页失败，就该停下来，不许再一篇一篇试下去。
+
+    一次全仓核对有 300 多篇。维基文库整站问不到的时候，每篇要试 4 次、退避 30 秒，
+    整跑要十几个小时，而且每一篇都只靠「沿用旧记录」撑着——那不是核对，那是空转。
+    """
+    return streak >= limit
+
+
+def carry_after_fetch_error(prev, exc_name):
+    """取页失败时这一篇怎么办：有旧记录就沿用旧记录，没有就返回 None（让主流程停下来报错）。
+
+    为什么必须有：一次网络抖动（维基文库 TLS 握手超时）会让 300 多篇全部走进「取页失败」这一支，
+    旧代码把它们一律记成「找不到来源页」——台账当场从 231 篇全对上变成一片没来源，
+    那是把「我们问不到」写成「这篇没有出处」。沿用旧记录 + 写明原因，才是诚实的写法。
+    """
+    if prev and prev.get('page'):
+        kept = dict(prev)
+        kept.pop('error', None)
+        kept['carried'] = True
+        kept['carryNote'] = '本次取页失败（%s），沿用上次核对记录——网络问题不是「这篇没有来源」' % exc_name
+        return kept
+    return None
 
 
 def selftest():
@@ -1271,6 +1326,22 @@ def selftest():
          '坏例21g：带异文的记录没被算进 withVariants')
     must(stats_from_records([{'id': 'a', 'page': '甲页 + 乙页', 'hit': 3, 'lines': 3, 'variants': [{'ours': '甲'}]}, {'id': 'b', 'page': '丙页', 'hit': 1, 'lines': 2}])['withVariants'] == 1,
          '坏例21h：跨页合并的记录算错了 withVariants')
+    # 坏例24：取页失败不许把「本来有来源页」的篇目写成「找不到来源页」——一次 TLS 超时会把整张台账打花
+    kept = carry_after_fetch_error({'id': 'a', 'page': '甲页', 'hit': 6, 'lines': 6, 'variants': [{'ours': '甲'}]}, 'URLError')
+    must(kept and kept['page'] == '甲页' and kept['hit'] == 6 and kept.get('carried'),
+         '坏例24a：取页失败时旧记录没被沿用')
+    must(stats_from_records([kept])['attested'] == 1 and stats_from_records([kept])['nosource'] == 0,
+         '坏例24b：沿用旧记录的篇目还是被算成「找不到来源页」')
+    must(carry_after_fetch_error(None, 'URLError') is None,
+         '坏例24c：没有旧记录时凭空造了一条——那种必须让主流程停下来报错')
+    must(carry_after_fetch_error({'id': 'b', 'page': None, 'hit': 0, 'lines': 3}, 'URLError') is None,
+         '坏例24d：旧记录本来就是「没有来源页」，沿用等于替一篇没出处的篇目造假')
+    must(carry_after_fetch_error({'id': 'c', 'page': '丙页', 'hit': 2, 'lines': 5, 'error': 'URLError'}, 'URLError').get('error') is None,
+         '坏例24e：沿用时旧记录里那条 error 没清掉，四档还是把它算成没来源')
+    # 坏例25：连着失败必须早停——整站问不到时不许空转十几个小时
+    must(should_abort_run(7) is False, '坏例25a：才连着 7 篇就停了，一篇偶发超时也会打断整跑')
+    must(should_abort_run(8) is True, '坏例25b：连着 8 篇失败没早停')
+    must(should_abort_run(0) is False, '坏例25c：一篇都没失败却报「来源站问不到」')
     print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 

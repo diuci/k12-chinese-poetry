@@ -2,7 +2,7 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-11",
   "counts": {
-    "match": 241,
+    "match": 246,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -2418,6 +2418,16 @@
       "textbookLesson": "9.1"
     },
     {
+      "id": "chayangge",
+      "title": "插秧歌",
+      "author": "杨万里",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修上册",
+      "textbookVolume": "必修上册",
+      "textbookLesson": "6.2"
+    },
+    {
       "id": "mengyoutianmu",
       "title": "梦游天姥吟留别",
       "author": "李白",
@@ -2486,6 +2496,16 @@
       "volume": "必修上册",
       "textbookVolume": "必修上册",
       "textbookLesson": "7.1"
+    },
+    {
+      "id": "fuyi",
+      "title": "芣苢",
+      "author": "佚名",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修上册",
+      "textbookVolume": "必修上册",
+      "textbookLesson": "6.1"
     },
     {
       "id": "yumeiren",
@@ -2578,6 +2598,16 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "youyuan",
+      "title": "游园",
+      "author": "汤显祖",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修下册",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "zhihuwutuiqinshi",
       "title": "烛之武退秦师",
       "author": "左丘明",
@@ -2656,6 +2686,26 @@
       "volume": "选择性必修上册",
       "textbookVolume": "选择性必修上册",
       "textbookLesson": "5.1"
+    },
+    {
+      "id": "renjieburenrenzhixin",
+      "title": "人皆有不忍人之心",
+      "author": "孟子",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修上册",
+      "textbookVolume": "选择性必修上册",
+      "textbookLesson": "5.3"
+    },
+    {
+      "id": "jianai",
+      "title": "兼爱",
+      "author": "墨子",
+      "stage": "高中",
+      "status": "match",
+      "volume": "选择性必修上册",
+      "textbookVolume": "选择性必修上册",
+      "textbookLesson": "7"
     },
     {
       "id": "daxue",

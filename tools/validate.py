@@ -159,6 +159,14 @@ def find_missing_recite(poems):
 
 
 # ---------------------------------------------------------------- 课标解析
+def merge_extra_titles(base, hs_extra):
+    """两张「教材内但不在课标」附表并成一份：义务教育一张、高中一张。
+
+    并集必须在高中那张表存在时做；表不在时不许把 None 并进去。
+    """
+    return set(base) | set(hs_extra or set())
+
+
 def parse_syllabus(path):
     """从一份课标文档抽出 (分组, 编号, 标题, 作者) 列表。
 
@@ -603,7 +611,13 @@ def hs_extra_needs_lesson_no(poem, text):
     """
     if poem.get('stage') != '高中' or not poem.get('gaokaoExtra'):
         return False
-    return '## 收录范围' not in text or not re.search(r'第 ?[\d.]+ ?课', text)
+    if '## 收录范围' not in text:
+        return True
+    if re.search(r'第 ?[\d.]+ ?课', text):
+        return False
+    # 统编有一档不给课号：册末的「古诗词诵读」（必修下：登岳阳楼、桂枝香·金陵怀古、
+    # 念奴娇·过洞庭、游园）。这一档的凭据是「古诗词诵读」加第几首，不是课号。
+    return '古诗词诵读' not in text
 
 REQUIRED = ['id', 'title', 'author', 'lines', 'linesPunct',
             'theme', 'form', 'dynasty', 'stage',
@@ -800,6 +814,14 @@ def selftest():
         if got != should_fail:
             problems.append('%s（实得：%s）' % (label, '报错' if got else '放行'))
 
+    merge_cases = [
+        ({'甲'}, {'乙'}, {'甲', '乙'}),
+        ({'甲'}, None, {'甲'}),
+        (set(), {'统编教材拓展'}, {'统编教材拓展'}),
+    ]
+    for base, hs, want in merge_cases:
+        if merge_extra_titles(base, hs) != want:
+            problems.append('两张教材拓展附表并集错了（%s + %s 实得 %s）' % (base, hs, merge_extra_titles(base, hs)))
     hs_extra_cases = [
         ('高中教材拓展篇目没写教材课号应当被拒',
          {'stage': '高中', 'gaokaoExtra': '必修下册'}, '# 甲\n\n## 收录范围\n统编教材里有这一课。\n', True),
@@ -807,6 +829,8 @@ def selftest():
          {'stage': '高中', 'gaokaoExtra': '必修下册'}, '# 甲\n\n## 收录范围\n教材位置：统编语文必修下册第 1.3 课。\n', False),
         ('课标篇目（不是教材拓展）不适用这条',
          {'stage': '高中', 'gaokaoGroup': '必修'}, '# 甲\n\n## 收录范围\n课标必修篇目。\n', False),
+        ('统编册末「古诗词诵读」那一档不给课号，写明这一档即放行',
+         {'stage': '高中', 'gaokaoExtra': '必修下册'}, '# 甲\n\n## 收录范围\n教材位置：统编语文必修下册「古诗词诵读」第四首。\n', False),
         ('初中篇目不适用这条',
          {'stage': '初中', 'gaokaoExtra': '七年级上'}, '# 甲\n\n## 收录范围\n统编语文七年级上册。\n', False),
     ]
@@ -1061,10 +1085,13 @@ def main():
         hs, extra_hs = parse_syllabus(SYLLABUS_HS)
         print('高中课标：%d 篇' % len(hs))
         syllabus += hs
+        # 高中那张「教材内但不在课标」附表也得并进来：先前这一行写在 else 分支里，
+        # 于是高中那 8 条拓展从来没进 extra_titles——课标篇目靠「《孟子》一则」那一类行兜住了，
+        # 真正的教材拓展（统编有这一课、课标 72 篇里没有）就被报成「来源不明」。
+        extra_titles = merge_extra_titles(extra_titles, extra_hs)
     else:
         notes.append('尚未建 docs/syllabus-2017.md（高中课标契约），'
                      '高中篇目暂不参与完整性比对')
-        extra_titles = extra_titles | extra_hs
     print('课标合计：%d 篇' % len(syllabus))
     print('教材拓展：%d 篇（不在课标内，但统编教材有）' % len(extra_titles))
 

@@ -257,8 +257,10 @@
       "linanchunyu",
       "shufen",
       "wudailingguan",
+      "renjieburenrenzhixin",
       "liuguolun",
       "lantingjixu",
+      "jianai",
       "quanxue",
       "gudaishilun",
       "shengshenman",
@@ -277,6 +279,7 @@
       "yangzhousman",
       "baoranan",
       "niluonan",
+      "chayangge",
       "wuyi",
       "chunjianghuayue",
       "wanghaichao",
@@ -286,6 +289,7 @@
       "yongyule",
       "jiangchengzi-yimao",
       "shejiang",
+      "youyuan",
       "tengwanggexu",
       "zhihuwutuiqinshi",
       "yange-xing",
@@ -300,6 +304,7 @@
       "lisao",
       "zhongshu-guotuotuo",
       "dasijianyishu",
+      "fuyi",
       "sumuzhe",
       "pusaman-wentingyun",
       "pusaman-zaoxiang",
@@ -345,6 +350,7 @@
     "changting-songbei": "changting-songbei",
     "changxiangsi": "changxiangsi",
     "chaotianzi": "chaotianzi",
+    "chayangge": "chayangge",
     "chenqingbiao": "chenqingbiao",
     "chensheshijia": "chensheshijia",
     "chentaiqiyuyouqixing": "chentaiqiyuyouqixing",
@@ -391,6 +397,7 @@
     "fengqiaoyebo": "fengqiaoyebo",
     "fengrujinshi": "fengrujinshi",
     "furonglou": "furonglou",
+    "fuyi": "fuyi",
     "guancanghai": "guancanghai",
     "guanju": "guanju",
     "guanshu": "guanshu",
@@ -419,6 +426,7 @@
     "huixiangyoushu": "huixiangyoushu",
     "huoban": "huoban",
     "huxinting": "huxinting",
+    "jianai": "jianai",
     "jiangchengzi-laofeng": "jiangchengzi-laofeng",
     "jiangchengzi-yimao": "jiangchengzi-yimao",
     "jiangjinjiu": "jiangjinjiu",
@@ -503,6 +511,7 @@
     "qiuyejiangxiao": "qiuyejiangxiao",
     "quanxue": "quanxue",
     "quyuanliezhuan": "quyuanliezhuan",
+    "renjieburenrenzhixin": "renjieburenrenzhixin",
     "rumengling": "rumengling",
     "saixiaqu": "saixiaqu",
     "sanqudaozhong": "sanqudaozhong",
@@ -595,6 +604,7 @@
     "yongxue": "yongxue",
     "yongyule": "yongyule",
     "youshanxincun": "youshanxincun",
+    "youyuan": "youyuan",
     "youyuanbuzhi": "youyuanbuzhi",
     "youziyin": "youziyin",
     "yuanri": "yuanri",
@@ -664,10 +674,14 @@
     ],
     "仁政": [
       "dedaoduozhu",
+      "renjieburenrenzhixin",
       "qihuanjinwen"
     ],
     "传闻": [
       "chuanjingdeyiren"
+    ],
+    "伤春": [
+      "youyuan"
     ],
     "修身": [
       "lunyu12-cz",
@@ -697,6 +711,9 @@
     "养生": [
       "zhongshu-guotuotuo"
     ],
+    "兼爱": [
+      "jianai"
+    ],
     "写景": [
       "guancanghai",
       "sanxia",
@@ -714,6 +731,9 @@
       "dengtaishan",
       "sumuzhe",
       "huanggangzhulouji"
+    ],
+    "农事": [
+      "chayangge"
     ],
     "农忙": [
       "xiangcunsiyue"
@@ -744,7 +764,9 @@
       "minnong1",
       "cailianqu",
       "sishitianyuan-25",
-      "sishitianyuan-31"
+      "sishitianyuan-31",
+      "chayangge",
+      "fuyi"
     ],
     "勉励": [
       "zengliujingwen"
@@ -1076,6 +1098,9 @@
       "shiyiwangyue",
       "tiaotiaoqianniuxing",
       "jiangchengzi-yimao"
+    ],
+    "性善": [
+      "renjieburenrenzhixin"
     ],
     "悲愁": [
       "denggao"
@@ -1483,6 +1508,9 @@
       "zilu-shizhe",
       "jishi-jiangfanjueyu"
     ],
+    "论说": [
+      "jianai"
+    ],
     "论辩": [
       "zhuangzihuizi",
       "qihuanjinwen"
@@ -1608,6 +1636,9 @@
     "避世": [
       "taohuayuanji"
     ],
+    "采集": [
+      "fuyi"
+    ],
     "闲趣": [
       "yueke",
       "rumengling"
@@ -1621,6 +1652,7 @@
     ],
     "闺情": [
       "huanxisha-yanque",
+      "youyuan",
       "pusaman-wentingyun"
     ],
     "陋室": [
@@ -1658,7 +1690,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 303,
+  "count": 308,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/《论语》十二章.md",
@@ -20134,6 +20166,80 @@
       "volume": "选择性必修中册"
     },
     {
+      "_path": "poems/高中/选择性必修上册/人皆有不忍人之心.md",
+      "author": "孟子",
+      "authorDied": -289,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "战国",
+      "emotion": "把人心底那点不忍放大成政治",
+      "examFreq": 0.7,
+      "form": "文言",
+      "fullLines": [
+        "孟子曰“人皆有不忍人之心先王有不忍人之心斯有不忍人之政矣以不忍人之心行不忍人之政治天下可运之掌上所以谓人皆有不忍人之心者今人乍见孺子将入于井皆有怵惕恻隐之心非所以内交于孺子之父母也非所以要誉于乡党朋友也非恶其声而然也由是观之无恻隐之心非人也无羞恶之心非人也无辞让之心非人也无是非之心非人也恻隐之心仁之端也羞恶之心义之端也辞让之心礼之端也是非之心智之端也人之有是四端也犹其有四体也有是四端而自谓不能者自贼者也谓其君不能者贼其君者也凡有四端于我者知皆扩而充之矣若火之始然泉之始达苟能充之足以保四海苟不充之不足以事父母”"
+      ],
+      "fullLinesPunct": [
+        "孟子曰：“人皆有不忍人之心。先王有不忍人之心，斯有不忍人之政矣。以不忍人之心，行不忍人之政，治天下可运之掌上。所以谓人皆有不忍人之心者，今人乍见孺子将入于井，皆有怵惕恻隐之心；非所以内交于孺子之父母也，非所以要誉于乡党朋友也，非恶其声而然也。由是观之，无恻隐之心，非人也；无羞恶之心，非人也；无辞让之心，非人也；无是非之心，非人也。恻隐之心，仁之端也；羞恶之心，义之端也；辞让之心，礼之端也；是非之心，智之端也。人之有是四端也，犹其有四体也。有是四端而自谓不能者，自贼者也；谓其君不能者，贼其君者也。凡有四端于我者，知皆扩而充之矣，若火之始然，泉之始达。苟能充之，足以保四海；苟不充之，不足以事父母。”"
+      ],
+      "gaokaoExtra": "选择性必修上册",
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": null,
+      "hasFulltext": true,
+      "id": "renjieburenrenzhixin",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "人皆有不忍人之心先王有不忍人之心斯有不忍人之政矣",
+        "无恻隐之心非人也无羞恶之心非人也无辞让之心非人也无是非之心非人也",
+        "恻隐之心仁之端也羞恶之心义之端也辞让之心礼之端也是非之心智之端也"
+      ],
+      "linesPunct": [
+        "人皆有不忍人之心。先王有不忍人之心，斯有不忍人之政矣。",
+        "无恻隐之心，非人也；无羞恶之心，非人也；无辞让之心，非人也；无是非之心，非人也。",
+        "恻隐之心，仁之端也；羞恶之心，义之端也；辞让之心，礼之端也；是非之心，智之端也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        5,
+        5
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "孟子",
+        "性善",
+        "战国文言"
+      ],
+      "technique": [
+        "举例",
+        "排比",
+        "比喻"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "性善",
+        "仁政"
+      ],
+      "title": "人皆有不忍人之心",
+      "volume": "选择性必修上册"
+    },
+    {
       "_path": "poems/高中/必修下册/六国论.md",
       "author": "苏洵",
       "authorDied": 1066,
@@ -20315,6 +20421,86 @@
       ],
       "title": "兰亭集序",
       "volume": "选择性必修下册"
+    },
+    {
+      "_path": "poems/高中/选择性必修上册/兼爱.md",
+      "author": "墨子",
+      "authorDied": null,
+      "authorEraEnd": -376,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "战国",
+      "emotion": "把天下之乱归到「不相爱」上",
+      "examFreq": 0.65,
+      "form": "文言",
+      "fullLines": [
+        "圣人以治天下为事者也必知乱之所自起焉能治之不知乱之所自起则不能治譬之如医之攻人之疾者然必知疾之所自起焉能攻之不知疾之所自起则弗能攻治乱者何独不然必知乱之所自起焉能治之不知乱之所自起则弗能治",
+        "圣人以治天下为事者也不可不察乱之所自起当察乱何自起起不相爱臣子之不孝君父所谓乱也子自爱不爱父故亏父而自利弟自爱不爱兄故亏兄而自利臣自爱不爱君故亏君而自利此所谓乱也虽父之不慈子兄之不慈弟君之不慈臣此亦天下之所谓乱也父自爱也不爱子故亏子而自利兄自爱也不爱弟故亏弟而自利君自爱也不爱臣故亏臣而自利是何也皆起不相爱虽至天下之为盗贼者亦然盗爱其室不爱异室故窃异室以利其室贼爱其身不爱人故贼人以利其身此何也皆起不相爱虽至大夫之相乱家诸侯之相攻国者亦然大夫各爱其家不爱异家故乱异家以利其家诸侯各爱其国不爱异国故攻异国以利其国天下之乱物具此而已矣",
+        "察此何自起皆起不相爱若使天下兼相爱爱人若爱其身犹有不孝者乎视父兄与君若其身恶施不孝犹有不慈者乎视弟子与臣若其身恶施不慈故不孝不慈亡犹有盗贼乎视人之室若其室谁窃视人身若其身谁贼故盗贼有亡犹有大夫之相乱家诸侯之相攻国者乎视人家若其家谁乱视人国若其国谁攻故大夫之相乱家诸侯之相攻国者有亡若使天下兼相爱国与国不相攻家与家不相乱盗贼无有君臣父子皆能孝慈若此则天下治",
+        "故圣人以治天下为事者恶得不禁恶而劝爱故天下兼相爱则治交相恶则乱故子墨子曰不可以不劝爱人者此也"
+      ],
+      "fullLinesPunct": [
+        "圣人以治天下为事者也，必知乱之所自起，焉能治之；不知乱之所自起，则不能治。譬之如医之攻人之疾者然，必知疾之所自起，焉能攻之；不知疾之所自起，则弗能攻。治乱者何独不然？必知乱之所自起，焉能治之；不知乱之所自起，则弗能治。",
+        "圣人以治天下为事者也，不可不察乱之所自起。当察乱何自起？起不相爱。臣子之不孝君父，所谓乱也。子自爱，不爱父，故亏父而自利；弟自爱，不爱兄，故亏兄而自利；臣自爱，不爱君，故亏君而自利。此所谓乱也。虽父之不慈子，兄之不慈弟，君之不慈臣，此亦天下之所谓乱也。父自爱也，不爱子，故亏子而自利；兄自爱也，不爱弟，故亏弟而自利；君自爱也，不爱臣，故亏臣而自利。是何也？皆起不相爱。虽至天下之为盗贼者，亦然。盗爱其室，不爱异室，故窃异室以利其室；贼爱其身，不爱人，故贼人以利其身。此何也？皆起不相爱。虽至大夫之相乱家、诸侯之相攻国者，亦然。大夫各爱其家，不爱异家，故乱异家以利其家；诸侯各爱其国，不爱异国，故攻异国以利其国。天下之乱物，具此而已矣。",
+        "察此何自起？皆起不相爱。若使天下兼相爱，爱人若爱其身，犹有不孝者乎？视父兄与君若其身，恶施不孝？犹有不慈者乎？视弟子与臣若其身，恶施不慈？故不孝不慈亡。犹有盗贼乎？视人之室若其室，谁窃？视人身若其身，谁贼？故盗贼有亡。犹有大夫之相乱家、诸侯之相攻国者乎？视人家若其家，谁乱？视人国若其国，谁攻？故大夫之相乱家、诸侯之相攻国者有亡。若使天下兼相爱，国与国不相攻，家与家不相乱，盗贼无有，君臣父子皆能孝慈，若此则天下治。",
+        "故圣人以治天下为事者，恶得不禁恶而劝爱？故天下兼相爱则治，交相恶则乱。故子墨子曰不可以不劝爱人者，此也。"
+      ],
+      "gaokaoExtra": "选择性必修上册",
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": null,
+      "hasFulltext": true,
+      "id": "jianai",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "圣人以治天下为事者也不可不察乱之所自起",
+        "若使天下兼相爱爱人若爱其身犹有不孝者乎",
+        "故天下兼相爱则治交相恶则乱"
+      ],
+      "linesPunct": [
+        "圣人以治天下为事者也，不可不察乱之所自起。",
+        "若使天下兼相爱，爱人若爱其身，犹有不孝者乎？",
+        "故天下兼相爱则治，交相恶则乱。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        2,
+        3,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "墨子",
+        "兼爱",
+        "战国文言"
+      ],
+      "technique": [
+        "类比",
+        "排比",
+        "层层追问"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "兼爱",
+        "论说"
+      ],
+      "title": "兼爱",
+      "volume": "选择性必修上册"
     },
     {
       "_path": "poems/高中/必修上册/劝学.md",
@@ -22037,6 +22223,93 @@
       "volume": "选择性必修下册"
     },
     {
+      "_path": "poems/高中/必修上册/插秧歌.md",
+      "author": "杨万里",
+      "authorDied": 1206,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "抢种时全家上阵的紧张和热乎劲",
+      "examFreq": 0.6,
+      "form": "七言绝句",
+      "fullLines": [
+        "田夫抛秧田妇接小儿拔秧大儿插",
+        "笠是兜鍪蓑是甲雨从头上湿到胛",
+        "唤渠朝餐歇半霎低头折腰只不答",
+        "秧根未牢莳未匝照管鹅儿与雏鸭"
+      ],
+      "fullLinesPunct": [
+        "田夫抛秧田妇接，小儿拔秧大儿插。",
+        "笠是兜鍪蓑是甲，雨从头上湿到胛。",
+        "唤渠朝餐歇半霎，低头折腰只不答。",
+        "秧根未牢莳未匝，照管鹅儿与雏鸭。"
+      ],
+      "gaokaoExtra": "必修上册",
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": null,
+      "hasFulltext": true,
+      "id": "chayangge",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "田夫抛秧田妇接小儿拔秧大儿插",
+        "笠是兜鍪蓑是甲雨从头上湿到胛",
+        "唤渠朝餐歇半霎低头折腰只不答",
+        "秧根未牢莳未匝照管鹅儿与雏鸭"
+      ],
+      "linesPunct": [
+        "田夫抛秧田妇接，小儿拔秧大儿插。",
+        "笠是兜鍪蓑是甲，雨从头上湿到胛。",
+        "唤渠朝餐歇半霎，低头折腰只不答。",
+        "秧根未牢莳未匝，照管鹅儿与雏鸭。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "农事",
+        "宋诗",
+        "诚斋体"
+      ],
+      "technique": [
+        "比喻",
+        "白描",
+        "口语"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "农事",
+        "劳动"
+      ],
+      "title": "插秧歌",
+      "volume": "必修上册"
+    },
+    {
       "_path": "poems/高中/选择性必修上册/无衣.md",
       "author": "佚名",
       "authorDied": null,
@@ -22900,6 +23173,83 @@
       ],
       "title": "涉江采芙蓉",
       "volume": "必修上册"
+    },
+    {
+      "_path": "poems/高中/必修下册/游园.md",
+      "author": "汤显祖",
+      "authorDied": 1616,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "明",
+      "emotion": "这么好的春光没人看",
+      "examFreq": 0.7,
+      "form": "曲",
+      "fullLines": [
+        "原来姹紫嫣红开遍似这般都付与断井颓垣",
+        "良辰美景奈何天赏心乐事谁家院",
+        "朝飞暮卷云霞翠轩雨丝风片烟波画船锦屏人忒看的这韶光贱"
+      ],
+      "fullLinesPunct": [
+        "原来姹紫嫣红开遍，似这般都付与断井颓垣。",
+        "良辰美景奈何天，赏心乐事谁家院！",
+        "朝飞暮卷，云霞翠轩；雨丝风片，烟波画船——锦屏人忒看的这韶光贱！"
+      ],
+      "gaokaoExtra": "必修下册",
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": null,
+      "hasFulltext": true,
+      "id": "youyuan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "原来姹紫嫣红开遍似这般都付与断井颓垣",
+        "良辰美景奈何天赏心乐事谁家院",
+        "朝飞暮卷云霞翠轩雨丝风片烟波画船锦屏人忒看的这韶光贱"
+      ],
+      "linesPunct": [
+        "原来姹紫嫣红开遍，似这般都付与断井颓垣。",
+        "良辰美景奈何天，赏心乐事谁家院！",
+        "朝飞暮卷，云霞翠轩；雨丝风片，烟波画船——锦屏人忒看的这韶光贱！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        3
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "高中",
+      "subtitle": "皂罗袍",
+      "syllables": null,
+      "tags": [
+        "牡丹亭",
+        "昆曲",
+        "明曲"
+      ],
+      "technique": [
+        "反衬",
+        "借景抒情"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "伤春",
+        "闺情"
+      ],
+      "title": "游园",
+      "volume": "必修下册"
     },
     {
       "_path": "poems/高中/选修（2026起默写）/滕王阁序.md",
@@ -24304,6 +24654,106 @@
       ],
       "title": "答司马谏议书",
       "volume": "必修下册"
+    },
+    {
+      "_path": "poems/高中/必修上册/芣苢.md",
+      "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "先秦",
+      "emotion": "一群人一边采一边唱的轻快",
+      "examFreq": 0.7,
+      "form": "诗经",
+      "fullLines": [
+        "采采芣苢薄言采之",
+        "采采芣苢薄言有之",
+        "采采芣苢薄言掇之",
+        "采采芣苢薄言捋之",
+        "采采芣苢薄言袺之",
+        "采采芣苢薄言襭之"
+      ],
+      "fullLinesPunct": [
+        "采采芣苢，薄言采之。",
+        "采采芣苢，薄言有之。",
+        "采采芣苢，薄言掇之。",
+        "采采芣苢，薄言捋之。",
+        "采采芣苢，薄言袺之。",
+        "采采芣苢，薄言襭之。"
+      ],
+      "gaokaoExtra": "必修上册",
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": null,
+      "hasFulltext": true,
+      "id": "fuyi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "采采芣苢薄言采之",
+        "采采芣苢薄言有之",
+        "采采芣苢薄言掇之",
+        "采采芣苢薄言捋之",
+        "采采芣苢薄言袺之",
+        "采采芣苢薄言襭之"
+      ],
+      "linesPunct": [
+        "采采芣苢，薄言采之。",
+        "采采芣苢，薄言有之。",
+        "采采芣苢，薄言掇之。",
+        "采采芣苢，薄言捋之。",
+        "采采芣苢，薄言袺之。",
+        "采采芣苢，薄言襭之。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "高中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "劳动",
+        "采集",
+        "先秦诗经"
+      ],
+      "technique": [
+        "重章叠句",
+        "叠词"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "劳动",
+        "采集"
+      ],
+      "title": "芣苢",
+      "volume": "必修上册"
     },
     {
       "_path": "poems/高中/选择性必修下册/苏幕遮.md",

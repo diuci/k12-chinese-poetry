@@ -2,11 +2,11 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-11",
   "stats": {
-    "attested": 229,
-    "partial": 73,
+    "attested": 231,
+    "partial": 76,
     "notfound": 0,
     "nosource": 1,
-    "withVariants": 87
+    "withVariants": 88
   },
   "results": [
     {
@@ -7994,6 +7994,135 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "chayangge",
+      "title": "插秧歌",
+      "author": "杨万里",
+      "stage": "高中",
+      "page": "國語文學史/第三編 兩宋的白話文學",
+      "url": "https://zh.wikisource.org/wiki/%E5%9C%8B%E8%AA%9E%E6%96%87%E5%AD%B8%E5%8F%B2/%E7%AC%AC%E4%B8%89%E7%B7%A8%20%E5%85%A9%E5%AE%8B%E7%9A%84%E7%99%BD%E8%A9%B1%E6%96%87%E5%AD%B8",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "fuyi",
+      "title": "芣苢",
+      "author": "佚名",
+      "stage": "高中",
+      "page": "詩經/芣苢",
+      "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E8%8A%A3%E8%8B%A2",
+      "lines": 6,
+      "hit": 6,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "苢",
+          "other": "苡",
+          "context": "有子矣。===詩文===:采采芣苢，薄言采之，采采芣苢，薄言有之。:采采芣苢，薄",
+          "page": "詩經/芣苢"
+        },
+        {
+          "ours": "苢",
+          "other": "苡",
+          "context": ":采采芣苢，薄言采之，采采芣苢，薄言有之。:采采芣苢，薄言掇之，采采芣苢，薄",
+          "page": "詩經/芣苢"
+        },
+        {
+          "ours": "苢",
+          "other": "苡",
+          "context": "采采芣苢，薄言有之。:采采芣苢，薄言掇之，采采芣苢，薄言捋之。:采采芣苢，薄",
+          "page": "詩經/芣苢"
+        },
+        {
+          "ours": "苢",
+          "other": "苡",
+          "context": ":采采芣苢，薄言掇之，采采芣苢，薄言捋之。:采采芣苢，薄言袺之，采采芣苢，薄",
+          "page": "詩經/芣苢"
+        },
+        {
+          "ours": "苢",
+          "other": "苡",
+          "context": "采采芣苢，薄言捋之。:采采芣苢，薄言袺之，采采芣苢，薄言襭之。:《芣苢》，三",
+          "page": "詩經/芣苢"
+        },
+        {
+          "ours": "苢",
+          "other": "苡",
+          "context": ":采采芣苢，薄言袺之，采采芣苢，薄言襭之。:《芣苢》，三章，章四句。===註解=",
+          "page": "詩經/芣苢"
+        }
+      ]
+    },
+    {
+      "id": "youyuan",
+      "title": "游园",
+      "author": "汤显祖",
+      "stage": "高中",
+      "page": "皂羅袍（湯顯祖）",
+      "url": "https://zh.wikisource.org/wiki/%E7%9A%82%E7%BE%85%E8%A2%8D%EF%BC%88%E6%B9%AF%E9%A1%AF%E7%A5%96%EF%BC%89",
+      "lines": 4,
+      "hit": 3,
+      "miss": [
+        {
+          "line": "雨丝风片烟波画船锦屏人忒看的这韶光贱",
+          "nearest": {
+            "line": "雨丝风片烟波画船锦屏人忒看的这韶光贱",
+            "source": "雨丝风片烟波畫船锦屏人忒看得这韶光贱",
+            "ratio": 0.889
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "renjieburenrenzhixin",
+      "title": "人皆有不忍人之心",
+      "author": "孟子",
+      "stage": "高中",
+      "page": "孟子注疏 (四庫全書本)/卷03下",
+      "url": "https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90%E6%B3%A8%E7%96%8F%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B703%E4%B8%8B",
+      "lines": 21,
+      "hit": 20,
+      "miss": [
+        {
+          "line": "非所以内交于孺子之父母也非所以要誉于乡党朋友也非恶其声而然也",
+          "nearest": {
+            "line": "非所以内交于孺子之父母也非所以要誉于乡党朋友也非恶其声而然也",
+            "source": "非所以内交于孺子之父母也非所以要誉于鄕党朋友也非恶其声而然也注乍",
+            "ratio": 0.935
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "jianai",
+      "title": "兼爱",
+      "author": "墨子",
+      "stage": "高中",
+      "page": "墨子/兼愛上",
+      "url": "https://zh.wikisource.org/wiki/%E5%A2%A8%E5%AD%90/%E5%85%BC%E6%84%9B%E4%B8%8A",
+      "lines": 47,
+      "hit": 46,
+      "miss": [
+        {
+          "line": "故不孝不慈亡",
+          "nearest": {
+            "line": "故不孝不慈亡",
+            "source": "故不慈不孝亡犹有",
+            "ratio": 0.571
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     }
