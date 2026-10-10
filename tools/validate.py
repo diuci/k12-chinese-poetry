@@ -263,6 +263,51 @@ def selftest_duplicate_sections():
     triple = '## 全文\n甲\n\n## 全文\n乙\n\n## 全文\n丙\n'
     assert len(check_duplicate_sections(Path('t.md'), triple)) == 1, '坏例4：出现三次只报一次是对的，但必须报'
     print('[ok] 同名小节重复自检通（4 个坏例子全部试到）')
+# 校勘的话只许写在「异文」那一节。正文里出现这些字样，基本就是注记被塞进了正文。
+APPARATUS_RE = re.compile(r'一本作|又作|别本作|旧本作|通行本作|亦作|》作|出处：|核对日期|夹注|无「|原无|一作「')
+BODY_SECTIONS = ('全文', '必背全文', '必背名句')
+
+
+def check_apparatus_in_body(path, text):
+    """正文小节（全文 / 必背全文 / 必背名句）里不许混进校勘的话。
+
+    出师表的正文里曾写着「以昭陛下平明之治又《册府元龟·卷四百十三》亦作「治」。」和
+    「此悉贞亮死节之臣也《诸葛亮集》无「也」字。」——抄写时把注记直接塞进了正文。
+    学生背的就是这一串，站点把它和正文一个字大地渲染出来，台账那边还在数「全文有几句」。
+    （同一篇正文里还有一处「以光先帝遗德李邕书」——那种没有关键词的残字这条抓不到，
+    它是教材比对（partial）抓到的。护栏只说自己抓得住什么。）"""
+    problems = []
+    for sec in BODY_SECTIONS:
+        m = re.search(r'^## ' + sec + r'[^\n]*\n(.*?)(?=^## |\Z)', text, re.M | re.S)
+        if not m:
+            continue
+        for line in m.group(1).splitlines():
+            s = line.strip()
+            if not s or s.startswith('>'):
+                continue
+            hit = APPARATUS_RE.search(s)
+            if hit:
+                problems.append('%s [%s] 正文里混进了校勘的话「%s」：…%s' % (path.name, sec, hit.group(0), s[:56]))
+    return problems
+
+
+def selftest_apparatus_in_body():
+    bad1 = '## 全文\n侍中、尚书、长史、参军，此悉贞亮死节之臣也《诸葛亮集》无「也」字。，愿陛下亲之信之。\n\n## 异文\n- 甲\n'
+    bad2 = '## 全文\n宜付有司论其刑赏，以昭陛下平明之治又《册府元龟·卷四百十三》亦作「治」。，不宜偏私。\n'
+    bad3 = '## 必背名句\n路漫漫其修远兮（一本作「路曼曼其修远兮」）。\n'
+    good1 = '## 全文\n侍中、尚书、长史、参军，此悉贞良死节之臣也，愿陛下亲之信之。\n'
+    good2 = '## 异文\n- 「平明之治」：一本作「平明之理」。出处：维基文库《前出師表》\n'
+    good3 = '## 全文\n白日放歌须纵酒，青春作伴好还乡。\n'
+    good4 = '## 全文\n安得广厦千万间，大庇天下寒士俱欢颜！\n> 出处：维基文库《茅屋為秋風所破歌》 https://x\n'
+    assert len(check_apparatus_in_body(Path('t.md'), bad1)) == 1, '坏例1：正文里的「无「也」字」注记没被抓到'
+    assert len(check_apparatus_in_body(Path('t.md'), bad2)) == 1, '坏例2：正文里的「亦作」注记没被抓到'
+    assert len(check_apparatus_in_body(Path('t.md'), bad3)) == 1, '坏例3：必背名句里的「一本作」没被抓到'
+    assert check_apparatus_in_body(Path('t.md'), good1) == [], '坏例4：正常正文被误报'
+    assert check_apparatus_in_body(Path('t.md'), good2) == [], '坏例5：异文小节里的校勘话被误报'
+    assert check_apparatus_in_body(Path('t.md'), good3) == [], '坏例6：正文里正常的「作」字被误报'
+    assert check_apparatus_in_body(Path('t.md'), good4) == [], '坏例7：正文后面的出处引用行被误报'
+    print('[ok] 正文混进校勘话自检通（7 个坏例子全部试到）')
+
 
 def load_poems():
     """复用 build.py 的解析逻辑，避免两处对frontmatter 的理解不一致。"""
@@ -435,6 +480,7 @@ def selftest_match():
 def selftest():
     selftest_glued_heading()
     selftest_duplicate_sections()
+    selftest_apparatus_in_body()
     """这条校验自己会不会漏：坏样本必须被抓到，好样本不能误报。"""
     year = 2026
     problems = []
@@ -764,6 +810,8 @@ def main():
             continue
         _txt = md.read_text(encoding='utf-8')
         for msg in check_glued_heading(md, _txt):
+            err(msg)
+        for msg in check_apparatus_in_body(md, _txt):
             err(msg)
         for msg in check_duplicate_sections(md, _txt):
             err(msg)
