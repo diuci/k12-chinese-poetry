@@ -10,9 +10,9 @@
   "pending": 0
  },
  "counts_apparatus": {
-  "table": 37617,
+  "table": 37650,
   "rule": 2112,
-  "identity": 8525,
+  "identity": 8532,
   "keep": 80,
   "pending": 0,
   "page": 9768,
@@ -84200,6 +84200,1475 @@
      "line": 5,
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
+   "id": "chaotianzi",
+   "title": "朝天子·咏喇叭",
+   "page": "朝天子·詠喇叭",
+   "text_trad": [
+    "喇叭，嗩吶，曲兒小腔兒大。官船來往亂如麻，全仗你抬聲價。軍聽了軍愁，民聽了民怕。哪裏去辨甚麼真共假？眼見的吹翻了這家，吹傷了那家，只吹的水盡鵝飛罷！"
+   ],
+   "lines_trad": [
+    "喇叭，嗩吶，曲兒小腔兒大。",
+    "官船來往亂如麻，全仗你抬聲價。",
+    "軍聽了軍愁，民聽了民怕。",
+    "眼見的吹翻了這家，吹傷了那家。",
+    "只吹的水盡鵝飛罷！"
+   ],
+   "sections_trad": {
+    "必背名句": [
+     "喇叭，嗩吶，曲兒小腔兒大。",
+     "官船來往亂如麻，全仗你抬聲價。",
+     "軍聽了軍愁，民聽了民怕。",
+     "眼見的吹翻了這家，吹傷了那家。",
+     "只吹的水盡鵝飛罷！"
+    ],
+    "全文": [
+     "喇叭，嗩吶，曲兒小腔兒大。官船來往亂如麻，全仗你抬聲價。軍聽了軍愁，民聽了民怕。哪裏去辨甚麼真共假？眼見的吹翻了這家，吹傷了那家，只吹的水盡鵝飛罷！"
+    ],
+    "收录范围": [
+     "統編教材把這一篇放在九年級下冊第六單元「課外古詩詞誦讀」，不在選擇性必修下冊——倉內此前掛在高中，是按課標的高中 40 首掛的。兩條來源：統編課文頁（鏡像）與一份部編版九下的同步練習卷（標題直接寫着「第六單元 課外古詩詞誦讀 朝天子·詠喇叭」）。出處：https://yw.suyang123.com/chuzhong/jiunianji/21240_langdu.html ；https://www.jyeoo.com/sj/ad6d077e-dae7-4574-b8b1-3b8c9d629e63"
+    ],
+    "旧文本裁定": [
+     "- **舊文本裁定**：本文件此前的「必背名句」含「眼中釘，肉中刺」一句——本篇沒有這句，",
+     "  它是一句俗語，判爲誤文，已刪；全文按來源補齊。",
+     "  出處：https://zh.wikisource.org/wiki/朝天子·詠喇叭 。裁定：內容組 AI 校勘，日期 2026-10-07。"
+    ],
+    "注释": [
+     "- 朝天子：曲牌名。",
+     "- 詠喇叭：以喇叭爲題的歌。",
+     "- 嗩吶：一種管樂器。",
+     "- 曲兒小腔兒大：曲子很短，腔調卻拉得很長。",
+     "- 官船：官府的水船。",
+     "- 來往亂如麻：來往密集雜亂如麻。",
+     "- 全仗你：全靠你。",
+     "- 抬身價：抬高自己的價值、地位。",
+     "- 水盡鵝飛：鵝都飛光了，形容被搜刮得一點不剩。"
+    ],
+    "译文": [
+     "喇叭，嗩吶，曲子很短，腔調卻拉得很長。",
+     "官船來來往往雜亂如麻，全靠你抬高身價。",
+     "軍人聽了軍人發愁，百姓聽了百姓害怕。",
+     "哪裏去分辨什麼是真的、什麼是假的？",
+     "眼看着吹翻了這一家，吹傷了那一家，只吹得水干了、鵝也飛光了才罷休！"
+    ],
+    "赏析": [
+     "這是一首用喇叭諷官的散曲，寫得非常尖刻。",
+     "「曲兒小腔兒大」五個字就畫出了喇叭的嘴臉。",
+     "曲子其實很短，腔調卻能拖得極長。王磐一開口就抓住了這個特點。",
+     "可喇叭爲什麼會這樣？因爲「官船來往亂如麻，全仗你抬聲價」。",
+     "船多、稅多、來往頻繁，全靠喇叭大聲報官、報稅、報威風。",
+     "所以喇叭自己並不重要，是官府給了它這個本事。",
+     "「只吹的水盡鵝飛罷」六個字結尾最狠。",
+     "它不是罵喇叭，是罵那些靠喇叭發號施令的人。",
+     "明代散曲常寫市井小民罵官，王磐寫得好，是因爲他不說理，只用形象。",
+     "他從不直接說「官員剝削百姓」，他只是把一隻喇叭的處境寫清楚，",
+     "你自然明白是誰把它吹得這麼響的。"
+    ],
+    "异文": [
+     "- 「只吹的水盡鵝飛罷」：來源頁作「只吹的水盡鵝飛罷」，別本作「只吹得水盡鵝飛罷」。出處：維基文庫《朝天子·詠喇叭》 https://zh.wikisource.org/wiki/%E6%9C%9D%E5%A4%A9%E5%AD%90%C2%B7%E8%A9%A0%E5%96%87%E5%8F%AD",
+     "- 「哪裏去辨甚麼真共假」：來源頁作「那里去辨甚麼真共假」（那、里通用）。出處：維基文庫《朝天子·詠喇叭》 https://zh.wikisource.org/wiki/%E6%9C%9D%E5%A4%A9%E5%AD%90%C2%B7%E8%A9%A0%E5%96%87%E5%8F%AD"
+    ]
+   },
+   "labels_trad": {
+    "title": "朝天子·詠喇叭",
+    "author": "王磐",
+    "dynasty": "明",
+    "stage": "初中",
+    "volume": "九年級下冊",
+    "form": "曲",
+    "recite": "section",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "諷喻",
+     "諷刺"
+    ],
+    "technique": [
+     "比喻",
+     "白描"
+    ],
+    "tags": [
+     "諷喻",
+     "諷刺",
+     "明曲"
+    ]
+   },
+   "marks": [
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "唢",
+     "cands": [
+      "嗩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "喇叭，唢呐，曲儿小腔儿大",
+     "field": "full",
+     "line": 0,
+     "page_char": "嗩"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "呐",
+     "cands": [
+      "吶"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "喇叭，唢呐，曲儿小腔儿大。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "曲",
+     "cands": [
+      "曲",
+      "麴"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "喇叭，唢呐，曲儿小腔儿大。官船",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "喇叭，唢呐，曲儿小腔儿大。官船来",
+     "field": "full",
+     "line": 0,
+     "page_char": "兒"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，唢呐，曲儿小腔儿大。官船来往乱如",
+     "field": "full",
+     "line": 0,
+     "page_char": "兒"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "儿小腔儿大。官船来往乱如麻，全仗你",
+     "field": "full",
+     "line": 0,
+     "page_char": "來"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "乱",
+     "cands": [
+      "亂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "腔儿大。官船来往乱如麻，全仗你抬声",
+     "field": "full",
+     "line": 0,
+     "page_char": "亂"
+    },
+    {
+     "at": 25,
+     "n": 1,
+     "simp": "声",
+     "cands": [
+      "聲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "乱如麻，全仗你抬声价。军听了军愁，",
+     "field": "full",
+     "line": 0,
+     "page_char": "聲"
+    },
+    {
+     "at": 26,
+     "n": 1,
+     "simp": "价",
+     "cands": [
+      "價",
+      "价"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "如麻，全仗你抬声价。军听了军愁，民",
+     "field": "full",
+     "line": 0,
+     "page_char": "價"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，全仗你抬声价。军听了军愁，民听了",
+     "field": "full",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 29,
+     "n": 1,
+     "simp": "听",
+     "cands": [
+      "聽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "全仗你抬声价。军听了军愁，民听了民",
+     "field": "full",
+     "line": 0,
+     "page_char": "聽"
+    },
+    {
+     "at": 30,
+     "n": 1,
+     "simp": "了",
+     "cands": [
+      "了",
+      "瞭"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "仗你抬声价。军听了军愁，民听了民怕",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "你抬声价。军听了军愁，民听了民怕。",
+     "field": "full",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 35,
+     "n": 1,
+     "simp": "听",
+     "cands": [
+      "聽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。军听了军愁，民听了民怕。哪里去辨",
+     "field": "full",
+     "line": 0,
+     "page_char": "聽"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "了",
+     "cands": [
+      "了",
+      "瞭"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "军听了军愁，民听了民怕。哪里去辨甚",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 41,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "，民听了民怕。哪里去辨甚么真共假？",
+     "field": "full",
+     "line": 0,
+     "pick": "裏",
+     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
+    },
+    {
+     "at": 45,
+     "n": 1,
+     "simp": "么",
+     "cands": [
+      "麼"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "民怕。哪里去辨甚么真共假？眼见的吹",
+     "field": "full",
+     "line": 0,
+     "page_char": "麼"
+    },
+    {
+     "at": 51,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "辨甚么真共假？眼见的吹翻了这家，吹",
+     "field": "full",
+     "line": 0,
+     "page_char": "見"
+    },
+    {
+     "at": 55,
+     "n": 1,
+     "simp": "了",
+     "cands": [
+      "了",
+      "瞭"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "共假？眼见的吹翻了这家，吹伤了那家",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 56,
+     "n": 1,
+     "simp": "这",
+     "cands": [
+      "這"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "假？眼见的吹翻了这家，吹伤了那家，",
+     "field": "full",
+     "line": 0,
+     "page_char": "這"
+    },
+    {
+     "at": 57,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "？眼见的吹翻了这家，吹伤了那家，只",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 60,
+     "n": 2,
+     "simp": "伤了",
+     "cands": [
+      "傷了"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "的吹翻了这家，吹伤了那家，只吹的水尽",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 63,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "了这家，吹伤了那家，只吹的水尽鹅飞",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 65,
+     "n": 1,
+     "simp": "只",
+     "cands": [
+      "只",
+      "隻",
+      "祇"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "家，吹伤了那家，只吹的水尽鹅飞罢！",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 69,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "了那家，只吹的水尽鹅飞罢！",
+     "field": "full",
+     "line": 0,
+     "page_char": "盡"
+    },
+    {
+     "at": 70,
+     "n": 1,
+     "simp": "鹅",
+     "cands": [
+      "鵝"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "那家，只吹的水尽鹅飞罢！",
+     "field": "full",
+     "line": 0,
+     "page_char": "鵝"
+    },
+    {
+     "at": 71,
+     "n": 1,
+     "simp": "飞",
+     "cands": [
+      "飛"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "家，只吹的水尽鹅飞罢！",
+     "field": "full",
+     "line": 0,
+     "page_char": "飛"
+    },
+    {
+     "at": 72,
+     "n": 1,
+     "simp": "罢",
+     "cands": [
+      "罷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，只吹的水尽鹅飞罢！",
+     "field": "full",
+     "line": 0,
+     "page_char": "罷"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "唢",
+     "cands": [
+      "嗩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "喇叭，唢呐，曲儿小腔儿大",
+     "field": "lines",
+     "line": 0,
+     "page_char": "嗩"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "呐",
+     "cands": [
+      "吶"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "喇叭，唢呐，曲儿小腔儿大。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "曲",
+     "cands": [
+      "曲",
+      "麴"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "喇叭，唢呐，曲儿小腔儿大。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "喇叭，唢呐，曲儿小腔儿大。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "兒"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，唢呐，曲儿小腔儿大。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "兒"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "官船来往乱如麻，全仗你",
+     "field": "lines",
+     "line": 1,
+     "page_char": "來"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "乱",
+     "cands": [
+      "亂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "官船来往乱如麻，全仗你抬声",
+     "field": "lines",
+     "line": 1,
+     "page_char": "亂"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "声",
+     "cands": [
+      "聲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "乱如麻，全仗你抬声价。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "聲"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "价",
+     "cands": [
+      "價",
+      "价"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "如麻，全仗你抬声价。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "價"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军听了军愁，民听了",
+     "field": "lines",
+     "line": 2,
+     "page_char": "軍"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "听",
+     "cands": [
+      "聽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军听了军愁，民听了民",
+     "field": "lines",
+     "line": 2,
+     "page_char": "聽"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "了",
+     "cands": [
+      "了",
+      "瞭"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "军听了军愁，民听了民怕",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军听了军愁，民听了民怕。",
+     "field": "lines",
+     "line": 2,
+     "page_char": "軍"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "听",
+     "cands": [
+      "聽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军听了军愁，民听了民怕。",
+     "field": "lines",
+     "line": 2,
+     "page_char": "聽"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "了",
+     "cands": [
+      "了",
+      "瞭"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "军听了军愁，民听了民怕。",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "眼见的吹翻了这家，吹",
+     "field": "lines",
+     "line": 3,
+     "page_char": "見"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "了",
+     "cands": [
+      "了",
+      "瞭"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "眼见的吹翻了这家，吹伤了那家",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "这",
+     "cands": [
+      "這"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "眼见的吹翻了这家，吹伤了那家。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "這"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "眼见的吹翻了这家，吹伤了那家。",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 10,
+     "n": 2,
+     "simp": "伤了",
+     "cands": [
+      "傷了"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "的吹翻了这家，吹伤了那家。",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "了这家，吹伤了那家。",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "只",
+     "cands": [
+      "只",
+      "隻",
+      "祇"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "只吹的水尽鹅飞罢！",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "只吹的水尽鹅飞罢！",
+     "field": "lines",
+     "line": 4,
+     "page_char": "盡"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "鹅",
+     "cands": [
+      "鵝"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "只吹的水尽鹅飞罢！",
+     "field": "lines",
+     "line": 4,
+     "page_char": "鵝"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "飞",
+     "cands": [
+      "飛"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "只吹的水尽鹅飞罢！",
+     "field": "lines",
+     "line": 4,
+     "page_char": "飛"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "罢",
+     "cands": [
+      "罷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "只吹的水尽鹅飞罢！",
+     "field": "lines",
+     "line": 4,
+     "page_char": "罷"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背名句",
+     0,
+     3,
+     "唢",
+     "喇叭，唢呐，曲儿小腔儿大",
+     "嗩",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     0,
+     7,
+     "儿",
+     "喇叭，唢呐，曲儿小腔儿大。",
+     "兒",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     0,
+     10,
+     "儿",
+     "，唢呐，曲儿小腔儿大。",
+     "兒",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     1,
+     2,
+     "来",
+     "官船来往乱如麻，全仗你",
+     "來",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     1,
+     4,
+     "乱",
+     "官船来往乱如麻，全仗你抬声",
+     "亂",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     1,
+     12,
+     "声",
+     "乱如麻，全仗你抬声价。",
+     "聲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     1,
+     13,
+     "价",
+     "如麻，全仗你抬声价。",
+     "價",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     2,
+     0,
+     "军",
+     "军听了军愁，民听了",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     2,
+     1,
+     "听",
+     "军听了军愁，民听了民",
+     "聽",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     2,
+     3,
+     "军",
+     "军听了军愁，民听了民怕。",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     2,
+     7,
+     "听",
+     "军听了军愁，民听了民怕。",
+     "聽",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     3,
+     1,
+     "见",
+     "眼见的吹翻了这家，吹",
+     "見",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     3,
+     6,
+     "这",
+     "眼见的吹翻了这家，吹伤了那家。",
+     "這",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     4,
+     4,
+     "尽",
+     "只吹的水尽鹅飞罢！",
+     "盡",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     4,
+     5,
+     "鹅",
+     "只吹的水尽鹅飞罢！",
+     "鵝",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     4,
+     6,
+     "飞",
+     "只吹的水尽鹅飞罢！",
+     "飛",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背名句",
+     4,
+     7,
+     "罢",
+     "只吹的水尽鹅飞罢！",
+     "罷",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     3,
+     "唢",
+     "喇叭，唢呐，曲儿小腔儿大",
+     "嗩",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     7,
+     "儿",
+     "喇叭，唢呐，曲儿小腔儿大。官船来",
+     "兒",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     10,
+     "儿",
+     "，唢呐，曲儿小腔儿大。官船来往乱如",
+     "兒",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     15,
+     "来",
+     "儿小腔儿大。官船来往乱如麻，全仗你",
+     "來",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     17,
+     "乱",
+     "腔儿大。官船来往乱如麻，全仗你抬声",
+     "亂",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     25,
+     "声",
+     "乱如麻，全仗你抬声价。军听了军愁，",
+     "聲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     26,
+     "价",
+     "如麻，全仗你抬声价。军听了军愁，民",
+     "價",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     28,
+     "军",
+     "，全仗你抬声价。军听了军愁，民听了",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     29,
+     "听",
+     "全仗你抬声价。军听了军愁，民听了民",
+     "聽",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     31,
+     "军",
+     "你抬声价。军听了军愁，民听了民怕。",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     35,
+     "听",
+     "。军听了军愁，民听了民怕。哪里去辨",
+     "聽",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     45,
+     "么",
+     "民怕。哪里去辨甚么真共假？眼见的吹",
+     "麼",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     51,
+     "见",
+     "辨甚么真共假？眼见的吹翻了这家，吹",
+     "見",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     56,
+     "这",
+     "假？眼见的吹翻了这家，吹伤了那家，",
+     "這",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     69,
+     "尽",
+     "了那家，只吹的水尽鹅飞罢！",
+     "盡",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     70,
+     "鹅",
+     "那家，只吹的水尽鹅飞罢！",
+     "鵝",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     71,
+     "飞",
+     "家，只吹的水尽鹅飞罢！",
+     "飛",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:全文",
+     0,
+     72,
+     "罢",
+     "，只吹的水尽鹅飞罢！",
+     "罷",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     3,
+     25,
+     "声",
+     "乱如麻，全仗你抬声价」。",
+     "聲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     3,
+     26,
+     "价",
+     "如麻，全仗你抬声价」。",
+     "價",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 41,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "，民听了民怕。哪里去辨甚么真共假？",
+     "field": "sec:全文",
+     "line": 0,
+     "pick": "裏",
+     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 水尽鹅飞：鹅都飞光了",
+     "field": "sec:注释",
+     "line": 8,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "哪里去分辨什么是真的",
+     "field": "sec:译文",
+     "line": 3,
+     "pick": "裏",
+     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
+    },
+    {
+     "at": 26,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "一开口就抓住了这个特点。",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "所以喇叭自己并不重要，是官府给",
+     "field": "sec:赏析",
+     "line": 5,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "，是官府给了它这个本事。",
+     "field": "sec:赏析",
+     "line": 5,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "「只吹的水尽鹅飞罢」六个字结",
+     "field": "sec:赏析",
+     "line": 6,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 19,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "百姓」，他只是把一只喇叭的处境写清楚",
+     "field": "sec:赏析",
+     "line": 9,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 「只吹的水尽鹅飞罢」：来源页",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "源页作「只吹的水尽鹅飞罢」，别本作",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "别本作「只吹得水尽鹅飞罢」。出处：",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 「哪里去辨甚么真共假」",
+     "field": "sec:异文",
+     "line": 1,
+     "pick": "裏",
+     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
     }
    ],
    "left_behind": []
@@ -232819,1474 +234288,6 @@
      "line": 14,
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
-    }
-   ],
-   "left_behind": []
-  },
-  {
-   "id": "chaotianzi",
-   "title": "朝天子·咏喇叭",
-   "page": "朝天子·詠喇叭",
-   "text_trad": [
-    "喇叭，嗩吶，曲兒小腔兒大。官船來往亂如麻，全仗你抬聲價。軍聽了軍愁，民聽了民怕。哪裏去辨甚麼真共假？眼見的吹翻了這家，吹傷了那家，只吹的水盡鵝飛罷！"
-   ],
-   "lines_trad": [
-    "喇叭，嗩吶，曲兒小腔兒大。",
-    "官船來往亂如麻，全仗你抬聲價。",
-    "軍聽了軍愁，民聽了民怕。",
-    "眼見的吹翻了這家，吹傷了那家。",
-    "只吹的水盡鵝飛罷！"
-   ],
-   "sections_trad": {
-    "必背名句": [
-     "喇叭，嗩吶，曲兒小腔兒大。",
-     "官船來往亂如麻，全仗你抬聲價。",
-     "軍聽了軍愁，民聽了民怕。",
-     "眼見的吹翻了這家，吹傷了那家。",
-     "只吹的水盡鵝飛罷！"
-    ],
-    "全文": [
-     "喇叭，嗩吶，曲兒小腔兒大。官船來往亂如麻，全仗你抬聲價。軍聽了軍愁，民聽了民怕。哪裏去辨甚麼真共假？眼見的吹翻了這家，吹傷了那家，只吹的水盡鵝飛罷！"
-    ],
-    "收录范围": [
-     "統編教材用字尚未逐本核對（P3 待辦）；核對到教材本後按「教材版爲準」再改一次，差異留在本節。出處：統編教材《語文》選擇性必修下冊（frontmatter 記錄的冊次）"
-    ],
-    "旧文本裁定": [
-     "- **舊文本裁定**：本文件此前的「必背名句」含「眼中釘，肉中刺」一句——本篇沒有這句，",
-     "  它是一句俗語，判爲誤文，已刪；全文按來源補齊。",
-     "  出處：https://zh.wikisource.org/wiki/朝天子·詠喇叭 。裁定：內容組 AI 校勘，日期 2026-10-07。"
-    ],
-    "注释": [
-     "- 朝天子：曲牌名。",
-     "- 詠喇叭：以喇叭爲題的歌。",
-     "- 嗩吶：一種管樂器。",
-     "- 曲兒小腔兒大：曲子很短，腔調卻拉得很長。",
-     "- 官船：官府的水船。",
-     "- 來往亂如麻：來往密集雜亂如麻。",
-     "- 全仗你：全靠你。",
-     "- 抬身價：抬高自己的價值、地位。",
-     "- 水盡鵝飛：鵝都飛光了，形容被搜刮得一點不剩。",
-     "- 肉中刺：肉里的刺，比喻痛處。"
-    ],
-    "译文": [
-     "喇叭，嗩吶，曲子很短腔調卻很大。",
-     "官府的水船來來往往雜亂如麻，全靠你抬身價。",
-     "你是眼中的釘、肉里的刺。"
-    ],
-    "赏析": [
-     "這是一首用喇叭諷官的散曲，寫得非常尖刻。",
-     "「曲兒小腔兒大」五個字就畫出了喇叭的嘴臉。",
-     "曲子其實很短，腔調卻能拖得極長。王磐一開口就抓住了這個特點。",
-     "可喇叭爲什麼會這樣？因爲「官船來往亂如麻，全仗你抬聲價」。",
-     "船多、稅多、來往頻繁，全靠喇叭大聲報官、報稅、報威風。",
-     "所以喇叭自己並不重要，是官府給了它這個本事。",
-     "「只吹的水盡鵝飛罷」六個字結尾最狠。",
-     "它不是罵喇叭，是罵那些靠喇叭發號施令的人。",
-     "它不是罵喇叭，是罵那些靠喇叭發號施令的人。",
-     "明代散曲常寫市井小民罵官，王磐寫得好，是因爲他不說理，只用形象。",
-     "他從不直接說「官員剝削百姓」，他只是把一隻喇叭的處境寫清楚，",
-     "你自然明白是誰把它吹得這麼響的。"
-    ],
-    "异文": [
-     "- 「只吹的水盡鵝飛罷」：來源頁作「只吹的水盡鵝飛罷」，別本作「只吹得水盡鵝飛罷」。出處：維基文庫《朝天子·詠喇叭》 https://zh.wikisource.org/wiki/%E6%9C%9D%E5%A4%A9%E5%AD%90%C2%B7%E8%A9%A0%E5%96%87%E5%8F%AD",
-     "- 「哪裏去辨甚麼真共假」：來源頁作「那里去辨甚麼真共假」（那、里通用）。出處：維基文庫《朝天子·詠喇叭》 https://zh.wikisource.org/wiki/%E6%9C%9D%E5%A4%A9%E5%AD%90%C2%B7%E8%A9%A0%E5%96%87%E5%8F%AD"
-    ]
-   },
-   "labels_trad": {
-    "title": "朝天子·詠喇叭",
-    "author": "王磐",
-    "dynasty": "明",
-    "stage": "高中",
-    "volume": "選擇性必修下冊",
-    "form": "曲",
-    "recite": "section",
-    "textbookStatus": "統編教材未收（課標要求）",
-    "theme": [
-     "諷喻",
-     "諷刺"
-    ],
-    "technique": [
-     "比喻",
-     "白描"
-    ],
-    "tags": [
-     "諷喻",
-     "諷刺",
-     "明曲"
-    ]
-   },
-   "marks": [
-    {
-     "at": 3,
-     "n": 1,
-     "simp": "唢",
-     "cands": [
-      "嗩"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "喇叭，唢呐，曲儿小腔儿大",
-     "field": "full",
-     "line": 0,
-     "page_char": "嗩"
-    },
-    {
-     "at": 4,
-     "n": 1,
-     "simp": "呐",
-     "cands": [
-      "吶"
-     ],
-     "decision": "table",
-     "kind": "char",
-     "ctx": "喇叭，唢呐，曲儿小腔儿大。",
-     "field": "full",
-     "line": 0
-    },
-    {
-     "at": 6,
-     "n": 1,
-     "simp": "曲",
-     "cands": [
-      "曲",
-      "麴"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "喇叭，唢呐，曲儿小腔儿大。官船",
-     "field": "full",
-     "line": 0
-    },
-    {
-     "at": 7,
-     "n": 1,
-     "simp": "儿",
-     "cands": [
-      "兒"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "喇叭，唢呐，曲儿小腔儿大。官船来",
-     "field": "full",
-     "line": 0,
-     "page_char": "兒"
-    },
-    {
-     "at": 10,
-     "n": 1,
-     "simp": "儿",
-     "cands": [
-      "兒"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "，唢呐，曲儿小腔儿大。官船来往乱如",
-     "field": "full",
-     "line": 0,
-     "page_char": "兒"
-    },
-    {
-     "at": 15,
-     "n": 1,
-     "simp": "来",
-     "cands": [
-      "來"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "儿小腔儿大。官船来往乱如麻，全仗你",
-     "field": "full",
-     "line": 0,
-     "page_char": "來"
-    },
-    {
-     "at": 17,
-     "n": 1,
-     "simp": "乱",
-     "cands": [
-      "亂"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "腔儿大。官船来往乱如麻，全仗你抬声",
-     "field": "full",
-     "line": 0,
-     "page_char": "亂"
-    },
-    {
-     "at": 25,
-     "n": 1,
-     "simp": "声",
-     "cands": [
-      "聲"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "乱如麻，全仗你抬声价。军听了军愁，",
-     "field": "full",
-     "line": 0,
-     "page_char": "聲"
-    },
-    {
-     "at": 26,
-     "n": 1,
-     "simp": "价",
-     "cands": [
-      "價",
-      "价"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "如麻，全仗你抬声价。军听了军愁，民",
-     "field": "full",
-     "line": 0,
-     "page_char": "價"
-    },
-    {
-     "at": 28,
-     "n": 1,
-     "simp": "军",
-     "cands": [
-      "軍"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "，全仗你抬声价。军听了军愁，民听了",
-     "field": "full",
-     "line": 0,
-     "page_char": "軍"
-    },
-    {
-     "at": 29,
-     "n": 1,
-     "simp": "听",
-     "cands": [
-      "聽"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "全仗你抬声价。军听了军愁，民听了民",
-     "field": "full",
-     "line": 0,
-     "page_char": "聽"
-    },
-    {
-     "at": 30,
-     "n": 1,
-     "simp": "了",
-     "cands": [
-      "了",
-      "瞭"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "仗你抬声价。军听了军愁，民听了民怕",
-     "field": "full",
-     "line": 0
-    },
-    {
-     "at": 31,
-     "n": 1,
-     "simp": "军",
-     "cands": [
-      "軍"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "你抬声价。军听了军愁，民听了民怕。",
-     "field": "full",
-     "line": 0,
-     "page_char": "軍"
-    },
-    {
-     "at": 35,
-     "n": 1,
-     "simp": "听",
-     "cands": [
-      "聽"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "。军听了军愁，民听了民怕。哪里去辨",
-     "field": "full",
-     "line": 0,
-     "page_char": "聽"
-    },
-    {
-     "at": 36,
-     "n": 1,
-     "simp": "了",
-     "cands": [
-      "了",
-      "瞭"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "军听了军愁，民听了民怕。哪里去辨甚",
-     "field": "full",
-     "line": 0
-    },
-    {
-     "at": 41,
-     "n": 1,
-     "simp": "里",
-     "cands": [
-      "裏",
-      "里",
-      "哩"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "，民听了民怕。哪里去辨甚么真共假？",
-     "field": "full",
-     "line": 0,
-     "pick": "裏",
-     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
-    },
-    {
-     "at": 45,
-     "n": 1,
-     "simp": "么",
-     "cands": [
-      "麼"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "民怕。哪里去辨甚么真共假？眼见的吹",
-     "field": "full",
-     "line": 0,
-     "page_char": "麼"
-    },
-    {
-     "at": 51,
-     "n": 1,
-     "simp": "见",
-     "cands": [
-      "見"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "辨甚么真共假？眼见的吹翻了这家，吹",
-     "field": "full",
-     "line": 0,
-     "page_char": "見"
-    },
-    {
-     "at": 55,
-     "n": 1,
-     "simp": "了",
-     "cands": [
-      "了",
-      "瞭"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "共假？眼见的吹翻了这家，吹伤了那家",
-     "field": "full",
-     "line": 0
-    },
-    {
-     "at": 56,
-     "n": 1,
-     "simp": "这",
-     "cands": [
-      "這"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "假？眼见的吹翻了这家，吹伤了那家，",
-     "field": "full",
-     "line": 0,
-     "page_char": "這"
-    },
-    {
-     "at": 57,
-     "n": 1,
-     "simp": "家",
-     "cands": [
-      "家",
-      "傢"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "？眼见的吹翻了这家，吹伤了那家，只",
-     "field": "full",
-     "line": 0
-    },
-    {
-     "at": 60,
-     "n": 2,
-     "simp": "伤了",
-     "cands": [
-      "傷了"
-     ],
-     "decision": "table",
-     "kind": "phrase",
-     "ctx": "的吹翻了这家，吹伤了那家，只吹的水尽",
-     "field": "full",
-     "line": 0
-    },
-    {
-     "at": 63,
-     "n": 1,
-     "simp": "家",
-     "cands": [
-      "家",
-      "傢"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "了这家，吹伤了那家，只吹的水尽鹅飞",
-     "field": "full",
-     "line": 0
-    },
-    {
-     "at": 65,
-     "n": 1,
-     "simp": "只",
-     "cands": [
-      "只",
-      "隻",
-      "祇"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "家，吹伤了那家，只吹的水尽鹅飞罢！",
-     "field": "full",
-     "line": 0
-    },
-    {
-     "at": 69,
-     "n": 1,
-     "simp": "尽",
-     "cands": [
-      "盡",
-      "儘"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "了那家，只吹的水尽鹅飞罢！",
-     "field": "full",
-     "line": 0,
-     "page_char": "盡"
-    },
-    {
-     "at": 70,
-     "n": 1,
-     "simp": "鹅",
-     "cands": [
-      "鵝"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "那家，只吹的水尽鹅飞罢！",
-     "field": "full",
-     "line": 0,
-     "page_char": "鵝"
-    },
-    {
-     "at": 71,
-     "n": 1,
-     "simp": "飞",
-     "cands": [
-      "飛"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "家，只吹的水尽鹅飞罢！",
-     "field": "full",
-     "line": 0,
-     "page_char": "飛"
-    },
-    {
-     "at": 72,
-     "n": 1,
-     "simp": "罢",
-     "cands": [
-      "罷"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "，只吹的水尽鹅飞罢！",
-     "field": "full",
-     "line": 0,
-     "page_char": "罷"
-    },
-    {
-     "at": 3,
-     "n": 1,
-     "simp": "唢",
-     "cands": [
-      "嗩"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "喇叭，唢呐，曲儿小腔儿大",
-     "field": "lines",
-     "line": 0,
-     "page_char": "嗩"
-    },
-    {
-     "at": 4,
-     "n": 1,
-     "simp": "呐",
-     "cands": [
-      "吶"
-     ],
-     "decision": "table",
-     "kind": "char",
-     "ctx": "喇叭，唢呐，曲儿小腔儿大。",
-     "field": "lines",
-     "line": 0
-    },
-    {
-     "at": 6,
-     "n": 1,
-     "simp": "曲",
-     "cands": [
-      "曲",
-      "麴"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "喇叭，唢呐，曲儿小腔儿大。",
-     "field": "lines",
-     "line": 0
-    },
-    {
-     "at": 7,
-     "n": 1,
-     "simp": "儿",
-     "cands": [
-      "兒"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "喇叭，唢呐，曲儿小腔儿大。",
-     "field": "lines",
-     "line": 0,
-     "page_char": "兒"
-    },
-    {
-     "at": 10,
-     "n": 1,
-     "simp": "儿",
-     "cands": [
-      "兒"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "，唢呐，曲儿小腔儿大。",
-     "field": "lines",
-     "line": 0,
-     "page_char": "兒"
-    },
-    {
-     "at": 2,
-     "n": 1,
-     "simp": "来",
-     "cands": [
-      "來"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "官船来往乱如麻，全仗你",
-     "field": "lines",
-     "line": 1,
-     "page_char": "來"
-    },
-    {
-     "at": 4,
-     "n": 1,
-     "simp": "乱",
-     "cands": [
-      "亂"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "官船来往乱如麻，全仗你抬声",
-     "field": "lines",
-     "line": 1,
-     "page_char": "亂"
-    },
-    {
-     "at": 12,
-     "n": 1,
-     "simp": "声",
-     "cands": [
-      "聲"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "乱如麻，全仗你抬声价。",
-     "field": "lines",
-     "line": 1,
-     "page_char": "聲"
-    },
-    {
-     "at": 13,
-     "n": 1,
-     "simp": "价",
-     "cands": [
-      "價",
-      "价"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "如麻，全仗你抬声价。",
-     "field": "lines",
-     "line": 1,
-     "page_char": "價"
-    },
-    {
-     "at": 0,
-     "n": 1,
-     "simp": "军",
-     "cands": [
-      "軍"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "军听了军愁，民听了",
-     "field": "lines",
-     "line": 2,
-     "page_char": "軍"
-    },
-    {
-     "at": 1,
-     "n": 1,
-     "simp": "听",
-     "cands": [
-      "聽"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "军听了军愁，民听了民",
-     "field": "lines",
-     "line": 2,
-     "page_char": "聽"
-    },
-    {
-     "at": 2,
-     "n": 1,
-     "simp": "了",
-     "cands": [
-      "了",
-      "瞭"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "军听了军愁，民听了民怕",
-     "field": "lines",
-     "line": 2
-    },
-    {
-     "at": 3,
-     "n": 1,
-     "simp": "军",
-     "cands": [
-      "軍"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "军听了军愁，民听了民怕。",
-     "field": "lines",
-     "line": 2,
-     "page_char": "軍"
-    },
-    {
-     "at": 7,
-     "n": 1,
-     "simp": "听",
-     "cands": [
-      "聽"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "军听了军愁，民听了民怕。",
-     "field": "lines",
-     "line": 2,
-     "page_char": "聽"
-    },
-    {
-     "at": 8,
-     "n": 1,
-     "simp": "了",
-     "cands": [
-      "了",
-      "瞭"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "军听了军愁，民听了民怕。",
-     "field": "lines",
-     "line": 2
-    },
-    {
-     "at": 1,
-     "n": 1,
-     "simp": "见",
-     "cands": [
-      "見"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "眼见的吹翻了这家，吹",
-     "field": "lines",
-     "line": 3,
-     "page_char": "見"
-    },
-    {
-     "at": 5,
-     "n": 1,
-     "simp": "了",
-     "cands": [
-      "了",
-      "瞭"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "眼见的吹翻了这家，吹伤了那家",
-     "field": "lines",
-     "line": 3
-    },
-    {
-     "at": 6,
-     "n": 1,
-     "simp": "这",
-     "cands": [
-      "這"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "眼见的吹翻了这家，吹伤了那家。",
-     "field": "lines",
-     "line": 3,
-     "page_char": "這"
-    },
-    {
-     "at": 7,
-     "n": 1,
-     "simp": "家",
-     "cands": [
-      "家",
-      "傢"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "眼见的吹翻了这家，吹伤了那家。",
-     "field": "lines",
-     "line": 3
-    },
-    {
-     "at": 10,
-     "n": 2,
-     "simp": "伤了",
-     "cands": [
-      "傷了"
-     ],
-     "decision": "table",
-     "kind": "phrase",
-     "ctx": "的吹翻了这家，吹伤了那家。",
-     "field": "lines",
-     "line": 3
-    },
-    {
-     "at": 13,
-     "n": 1,
-     "simp": "家",
-     "cands": [
-      "家",
-      "傢"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "了这家，吹伤了那家。",
-     "field": "lines",
-     "line": 3
-    },
-    {
-     "at": 0,
-     "n": 1,
-     "simp": "只",
-     "cands": [
-      "只",
-      "隻",
-      "祇"
-     ],
-     "decision": "identity",
-     "kind": "char",
-     "ctx": "只吹的水尽鹅飞罢！",
-     "field": "lines",
-     "line": 4
-    },
-    {
-     "at": 4,
-     "n": 1,
-     "simp": "尽",
-     "cands": [
-      "盡",
-      "儘"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "只吹的水尽鹅飞罢！",
-     "field": "lines",
-     "line": 4,
-     "page_char": "盡"
-    },
-    {
-     "at": 5,
-     "n": 1,
-     "simp": "鹅",
-     "cands": [
-      "鵝"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "只吹的水尽鹅飞罢！",
-     "field": "lines",
-     "line": 4,
-     "page_char": "鵝"
-    },
-    {
-     "at": 6,
-     "n": 1,
-     "simp": "飞",
-     "cands": [
-      "飛"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "只吹的水尽鹅飞罢！",
-     "field": "lines",
-     "line": 4,
-     "page_char": "飛"
-    },
-    {
-     "at": 7,
-     "n": 1,
-     "simp": "罢",
-     "cands": [
-      "罷"
-     ],
-     "decision": "page",
-     "kind": "char",
-     "ctx": "只吹的水尽鹅飞罢！",
-     "field": "lines",
-     "line": 4,
-     "page_char": "罷"
-    }
-   ],
-   "page_marks": [
-    [
-     "sec:必背名句",
-     0,
-     3,
-     "唢",
-     "喇叭，唢呐，曲儿小腔儿大",
-     "嗩",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     0,
-     7,
-     "儿",
-     "喇叭，唢呐，曲儿小腔儿大。",
-     "兒",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     0,
-     10,
-     "儿",
-     "，唢呐，曲儿小腔儿大。",
-     "兒",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     1,
-     2,
-     "来",
-     "官船来往乱如麻，全仗你",
-     "來",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     1,
-     4,
-     "乱",
-     "官船来往乱如麻，全仗你抬声",
-     "亂",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     1,
-     12,
-     "声",
-     "乱如麻，全仗你抬声价。",
-     "聲",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     1,
-     13,
-     "价",
-     "如麻，全仗你抬声价。",
-     "價",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     2,
-     0,
-     "军",
-     "军听了军愁，民听了",
-     "軍",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     2,
-     1,
-     "听",
-     "军听了军愁，民听了民",
-     "聽",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     2,
-     3,
-     "军",
-     "军听了军愁，民听了民怕。",
-     "軍",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     2,
-     7,
-     "听",
-     "军听了军愁，民听了民怕。",
-     "聽",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     3,
-     1,
-     "见",
-     "眼见的吹翻了这家，吹",
-     "見",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     3,
-     6,
-     "这",
-     "眼见的吹翻了这家，吹伤了那家。",
-     "這",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     4,
-     4,
-     "尽",
-     "只吹的水尽鹅飞罢！",
-     "盡",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     4,
-     5,
-     "鹅",
-     "只吹的水尽鹅飞罢！",
-     "鵝",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     4,
-     6,
-     "飞",
-     "只吹的水尽鹅飞罢！",
-     "飛",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:必背名句",
-     4,
-     7,
-     "罢",
-     "只吹的水尽鹅飞罢！",
-     "罷",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     3,
-     "唢",
-     "喇叭，唢呐，曲儿小腔儿大",
-     "嗩",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     7,
-     "儿",
-     "喇叭，唢呐，曲儿小腔儿大。官船来",
-     "兒",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     10,
-     "儿",
-     "，唢呐，曲儿小腔儿大。官船来往乱如",
-     "兒",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     15,
-     "来",
-     "儿小腔儿大。官船来往乱如麻，全仗你",
-     "來",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     17,
-     "乱",
-     "腔儿大。官船来往乱如麻，全仗你抬声",
-     "亂",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     25,
-     "声",
-     "乱如麻，全仗你抬声价。军听了军愁，",
-     "聲",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     26,
-     "价",
-     "如麻，全仗你抬声价。军听了军愁，民",
-     "價",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     28,
-     "军",
-     "，全仗你抬声价。军听了军愁，民听了",
-     "軍",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     29,
-     "听",
-     "全仗你抬声价。军听了军愁，民听了民",
-     "聽",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     31,
-     "军",
-     "你抬声价。军听了军愁，民听了民怕。",
-     "軍",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     35,
-     "听",
-     "。军听了军愁，民听了民怕。哪里去辨",
-     "聽",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     45,
-     "么",
-     "民怕。哪里去辨甚么真共假？眼见的吹",
-     "麼",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     51,
-     "见",
-     "辨甚么真共假？眼见的吹翻了这家，吹",
-     "見",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     56,
-     "这",
-     "假？眼见的吹翻了这家，吹伤了那家，",
-     "這",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     69,
-     "尽",
-     "了那家，只吹的水尽鹅飞罢！",
-     "盡",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     70,
-     "鹅",
-     "那家，只吹的水尽鹅飞罢！",
-     "鵝",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     71,
-     "飞",
-     "家，只吹的水尽鹅飞罢！",
-     "飛",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:全文",
-     0,
-     72,
-     "罢",
-     "，只吹的水尽鹅飞罢！",
-     "罷",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:赏析",
-     3,
-     25,
-     "声",
-     "乱如麻，全仗你抬声价」。",
-     "聲",
-     "page",
-     "",
-     null
-    ],
-    [
-     "sec:赏析",
-     3,
-     26,
-     "价",
-     "如麻，全仗你抬声价」。",
-     "價",
-     "page",
-     "",
-     null
-    ]
-   ],
-   "marks_app": [
-    {
-     "at": 41,
-     "n": 1,
-     "simp": "里",
-     "cands": [
-      "裏",
-      "里",
-      "哩"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "，民听了民怕。哪里去辨甚么真共假？",
-     "field": "sec:全文",
-     "line": 0,
-     "pick": "裏",
-     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
-    },
-    {
-     "at": 79,
-     "n": 1,
-     "simp": "录",
-     "cands": [
-      "錄",
-      "彔"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "matter 记录的册次）",
-     "field": "sec:收录范围",
-     "line": 0,
-     "pick": "錄",
-     "why": "记录义作「錄」；「彔」是异体"
-    },
-    {
-     "at": 3,
-     "n": 1,
-     "simp": "尽",
-     "cands": [
-      "盡",
-      "儘"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "- 水尽鹅飞：鹅都飞光了",
-     "field": "sec:注释",
-     "line": 8,
-     "pick": "盡",
-     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
-     "evidence": "来源页 14 处作「盡」"
-    },
-    {
-     "at": 26,
-     "n": 1,
-     "simp": "个",
-     "cands": [
-      "個",
-      "箇"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "一开口就抓住了这个特点。",
-     "field": "sec:赏析",
-     "line": 2,
-     "pick": "個",
-     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
-    },
-    {
-     "at": 6,
-     "n": 1,
-     "simp": "并",
-     "cands": [
-      "並",
-      "併",
-      "幷"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "所以喇叭自己并不重要，是官府给",
-     "field": "sec:赏析",
-     "line": 5,
-     "pick": "並",
-     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
-    },
-    {
-     "at": 18,
-     "n": 1,
-     "simp": "个",
-     "cands": [
-      "個",
-      "箇"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "，是官府给了它这个本事。",
-     "field": "sec:赏析",
-     "line": 5,
-     "pick": "個",
-     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
-    },
-    {
-     "at": 5,
-     "n": 1,
-     "simp": "尽",
-     "cands": [
-      "盡",
-      "儘"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "「只吹的水尽鹅飞罢」六个字结",
-     "field": "sec:赏析",
-     "line": 6,
-     "pick": "盡",
-     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
-     "evidence": "来源页 14 处作「盡」"
-    },
-    {
-     "at": 19,
-     "n": 2,
-     "simp": "一只",
-     "cands": [
-      "一只",
-      "一隻"
-     ],
-     "decision": "rule",
-     "kind": "phrase",
-     "ctx": "百姓」，他只是把一只喇叭的处境写清楚",
-     "field": "sec:赏析",
-     "line": 10,
-     "pick": "一隻",
-     "why": "同上：现代量词作「隻」"
-    },
-    {
-     "at": 7,
-     "n": 1,
-     "simp": "尽",
-     "cands": [
-      "盡",
-      "儘"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "- 「只吹的水尽鹅飞罢」：来源页",
-     "field": "sec:异文",
-     "line": 0,
-     "pick": "盡",
-     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
-     "evidence": "来源页 14 处作「盡」"
-    },
-    {
-     "at": 22,
-     "n": 1,
-     "simp": "尽",
-     "cands": [
-      "盡",
-      "儘"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "源页作「只吹的水尽鹅飞罢」，别本作",
-     "field": "sec:异文",
-     "line": 0,
-     "pick": "盡",
-     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
-     "evidence": "来源页 14 处作「盡」"
-    },
-    {
-     "at": 36,
-     "n": 1,
-     "simp": "尽",
-     "cands": [
-      "盡",
-      "儘"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "别本作「只吹得水尽鹅飞罢」。出处：",
-     "field": "sec:异文",
-     "line": 0,
-     "pick": "盡",
-     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
-     "evidence": "来源页 14 处作「盡」"
-    },
-    {
-     "at": 4,
-     "n": 1,
-     "simp": "里",
-     "cands": [
-      "裏",
-      "里",
-      "哩"
-     ],
-     "decision": "rule",
-     "kind": "char",
-     "ctx": "- 「哪里去辨甚么真共假」",
-     "field": "sec:异文",
-     "line": 1,
-     "pick": "裏",
-     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
     }
    ],
    "left_behind": []

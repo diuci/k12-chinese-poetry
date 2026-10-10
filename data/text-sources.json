@@ -893,6 +893,28 @@
       "override": "以前用的是《左氏博議 (四庫全書本)/卷06》——那是真德秀的评论集，不是《左传》本文，六句里只有四句对得上。维基文库有单页《曹劌論戰》（题下标「魯莊公十年」，页头标明所据为《左传》与《古文观止》），这才是本文。 本篇自己的单页排在最前（它是篇内异文的出处页，不能被顶掉）；后一页按句核装得下本篇，加进来当第二条见证。"
     },
     {
+      "id": "chaotianzi",
+      "title": "朝天子·咏喇叭",
+      "author": "王磐",
+      "stage": "初中",
+      "page": "朝天子·詠喇叭",
+      "url": "https://zh.wikisource.org/wiki/%E6%9C%9D%E5%A4%A9%E5%AD%90%C2%B7%E8%A9%A0%E5%96%87%E5%8F%AD",
+      "lines": 7,
+      "hit": 6,
+      "miss": [
+        {
+          "line": "哪里去辨甚么真共假",
+          "nearest": {
+            "line": "哪里去辨甚么真共假",
+            "source": "里去辨甚麼真共假眼见的",
+            "ratio": 0.7
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "jiangchengzi-laofeng",
       "title": "江城子",
       "author": "苏轼",
@@ -5736,28 +5758,6 @@
           "page": "望海潮 (柳永)"
         }
       ]
-    },
-    {
-      "id": "chaotianzi",
-      "title": "朝天子·咏喇叭",
-      "author": "王磐",
-      "stage": "高中",
-      "page": "朝天子·詠喇叭",
-      "url": "https://zh.wikisource.org/wiki/%E6%9C%9D%E5%A4%A9%E5%AD%90%C2%B7%E8%A9%A0%E5%96%87%E5%8F%AD",
-      "lines": 7,
-      "hit": 6,
-      "miss": [
-        {
-          "line": "哪里去辨甚么真共假",
-          "nearest": {
-            "line": "哪里去辨甚么真共假",
-            "source": "里去辨甚麼真共假眼见的",
-            "ratio": 0.7
-          }
-        }
-      ],
-      "variantNotes": [],
-      "variants": []
     },
     {
       "id": "dengkuai-ge",

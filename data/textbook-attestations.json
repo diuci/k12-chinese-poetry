@@ -2,12 +2,12 @@
   "generated": "2026-10-10",
   "source": "https://yw.suyang123.com",
   "stats": {
-    "match": 170,
+    "match": 171,
     "coverage-override": 7,
     "mismatch": 2,
     "partial": 16,
     "garden-attested": 38,
-    "lesson-not-found": 10,
+    "lesson-not-found": 9,
     "no-textbook": 8,
     "coverage-partial": 1
   },
@@ -600,6 +600,21 @@
       "total": 9,
       "skippedShort": 0,
       "textbookParas": 3,
+      "miss": []
+    },
+    {
+      "id": "chaotianzi",
+      "title": "朝天子·咏喇叭",
+      "author": "王磐",
+      "stage": "初中",
+      "volume": "九年级下册",
+      "status": "match",
+      "lesson": "朝天子·咏喇叭",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21240_langdu.html",
+      "hit": 6,
+      "total": 6,
+      "skippedShort": 0,
+      "textbookParas": 7,
       "miss": []
     },
     {
@@ -3770,16 +3785,6 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": []
-    },
-    {
-      "id": "chaotianzi",
-      "title": "朝天子·咏喇叭",
-      "author": "王磐",
-      "stage": "高中",
-      "volume": "选择性必修下册",
-      "status": "lesson-not-found",
-      "volume_url": "https://yw.suyang123.com/gaozhong/xuanxiuxia.html",
-      "note": "同学段所有册的课文目录里都没有同名课文；语文园地那一档只核过小学 12 册，「选择性必修下册」的园地页没核过——这句话只覆盖课文目录"
     },
     {
       "id": "dengkuai-ge",

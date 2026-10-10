@@ -126,6 +126,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | nangxiangzi | 南乡子 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1+S2 | 词 | 初中 · 九年级下册 |
 | yueyanglouji | 岳阳楼记 | 范仲淹 | 宋 | 卒 1052 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级上册 |
 | caoguilunzhan | 曹刿论战 | 左丘明 | 先秦 | 卒 公元前 422 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
+| chaotianzi | 朝天子·咏喇叭 | 王磐 | 明 | 年代上限 1530 | public-domain | S3+S1b+S2 | 曲 | 初中 · 九年级下册 |
 | jiangchengzi-laofeng | 江城子 | 苏轼 | 宋 | 卒 1101 | public-domain | S3+S1+S2 | 词 | 初中 · 九年级下册 |
 | yujiaao-qiusi | 渔家傲 | 范仲淹 | 宋 | 卒 1052 | public-domain | S3+S1+S2 | 词 | 初中 · 九年级下册 |
 | huxinting | 湖心亭看雪 | 张岱 | 明 | 卒 1679 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级上册 |
@@ -275,7 +276,6 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | wuyi | 无衣 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 诗经 | 高中 · 选择性必修上册 |
 | chunjianghuayue | 春江花月夜 | 张若虚 | 唐 | 卒 720 | public-domain | S3+S1b+S2 | 七言 | 高中 · 选择性必修上册 |
 | wanghaichao | 望海潮 | 柳永 | 宋 | 卒 1053 | public-domain | S3+S1b+S2+S10 | 词 | 高中 · 选择性必修下册 |
-| chaotianzi | 朝天子·咏喇叭 | 王磐 | 明 | 年代上限 1530 | public-domain | S3+S1b+S2 | 曲 | 高中 · 选择性必修下册 |
 | lipeng | 李凭箜篌引 | 李贺 | 唐 | 卒 816 | public-domain | S3+S1b+S2 | 七言 | 高中 · 选择性必修中册 |
 | guizhixiang | 桂枝香·金陵怀古 | 王安石 | 宋 | 卒 1086 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修下册 |
 | mengyoutianmu | 梦游天姥吟留别 | 李白 | 唐 | 卒 762 | public-domain | S3+S1b+S2 | 乐府 | 高中 · 必修上册 |

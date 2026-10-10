@@ -67,6 +67,7 @@
       "nangxiangzi",
       "yueyanglouji",
       "caoguilunzhan",
+      "chaotianzi",
       "jiangchengzi-laofeng",
       "yujiaao-qiusi",
       "huxinting",
@@ -230,7 +231,6 @@
       "wuyi",
       "chunjianghuayue",
       "wanghaichao",
-      "chaotianzi",
       "lipeng",
       "guizhixiang",
       "mengyoutianmu",
@@ -1251,8 +1251,8 @@
       "guoqinlun"
     ],
     "讽刺": [
-      "tilinandi",
       "chaotianzi",
+      "tilinandi",
       "yange-xing",
       "shizhongshan"
     ],
@@ -1260,9 +1260,9 @@
       "boqinhuai",
       "maotanshangwu",
       "masuo",
+      "chaotianzi",
       "zouji",
       "feng-mi",
-      "chaotianzi",
       "zhongshu-guotuotuo",
       "epenggongfu"
     ],
@@ -6531,6 +6531,88 @@
         "谋略"
       ],
       "title": "曹刿论战",
+      "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级下册/朝天子·咏喇叭.md",
+      "author": "王磐",
+      "authorDied": null,
+      "authorEraEnd": 1530,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "明",
+      "emotion": "对仗势欺人者的讽刺",
+      "examFreq": 0.8,
+      "form": "曲",
+      "fullLines": [
+        "喇叭唢呐曲儿小腔儿大官船来往乱如麻全仗你抬声价军听了军愁民听了民怕哪里去辨甚么真共假眼见的吹翻了这家吹伤了那家只吹的水尽鹅飞罢"
+      ],
+      "fullLinesPunct": [
+        "喇叭，唢呐，曲儿小腔儿大。官船来往乱如麻，全仗你抬声价。军听了军愁，民听了民怕。哪里去辨甚么真共假？眼见的吹翻了这家，吹伤了那家，只吹的水尽鹅飞罢！"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "chaotianzi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "喇叭唢呐曲儿小腔儿大",
+        "官船来往乱如麻全仗你抬声价",
+        "军听了军愁民听了民怕",
+        "眼见的吹翻了这家吹伤了那家",
+        "只吹的水尽鹅飞罢"
+      ],
+      "linesPunct": [
+        "喇叭，唢呐，曲儿小腔儿大。",
+        "官船来往乱如麻，全仗你抬声价。",
+        "军听了军愁，民听了民怕。",
+        "眼见的吹翻了这家，吹伤了那家。",
+        "只吹的水尽鹅飞罢！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "section",
+      "render_split": [
+        3,
+        2,
+        2,
+        2,
+        1
+      ],
+      "render_split_reason": null,
+      "source": "S3+S1b+S2",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "讽喻",
+        "讽刺",
+        "明曲"
+      ],
+      "technique": [
+        "比喻",
+        "白描"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "讽喻",
+        "讽刺"
+      ],
+      "title": "朝天子·咏喇叭",
       "volume": "九年级下册"
     },
     {
@@ -17392,88 +17474,6 @@
         "繁华"
       ],
       "title": "望海潮",
-      "volume": "选择性必修下册"
-    },
-    {
-      "_path": "poems/高中/选择性必修下册/朝天子·咏喇叭.md",
-      "author": "王磐",
-      "authorDied": null,
-      "authorEraEnd": 1530,
-      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
-      "difficulty": 4,
-      "dynasty": "明",
-      "emotion": "对仗势欺人者的讽刺",
-      "examFreq": 0.8,
-      "form": "曲",
-      "fullLines": [
-        "喇叭唢呐曲儿小腔儿大官船来往乱如麻全仗你抬声价军听了军愁民听了民怕哪里去辨甚么真共假眼见的吹翻了这家吹伤了那家只吹的水尽鹅飞罢"
-      ],
-      "fullLinesPunct": [
-        "喇叭，唢呐，曲儿小腔儿大。官船来往乱如麻，全仗你抬声价。军听了军愁，民听了民怕。哪里去辨甚么真共假？眼见的吹翻了这家，吹伤了那家，只吹的水尽鹅飞罢！"
-      ],
-      "gaokaoGroup": "诗词曲",
-      "gaokaoNo": 40,
-      "gaokaoSince": 2023,
-      "grade": null,
-      "hasFulltext": true,
-      "id": "chaotianzi",
-      "irregular": null,
-      "license": "public-domain",
-      "lines": [
-        "喇叭唢呐曲儿小腔儿大",
-        "官船来往乱如麻全仗你抬声价",
-        "军听了军愁民听了民怕",
-        "眼见的吹翻了这家吹伤了那家",
-        "只吹的水尽鹅飞罢"
-      ],
-      "linesPunct": [
-        "喇叭，唢呐，曲儿小腔儿大。",
-        "官船来往乱如麻，全仗你抬声价。",
-        "军听了军愁，民听了民怕。",
-        "眼见的吹翻了这家，吹伤了那家。",
-        "只吹的水尽鹅飞罢！"
-      ],
-      "pairs": [
-        [
-          0,
-          1
-        ],
-        [
-          2,
-          3
-        ]
-      ],
-      "recite": "section",
-      "render_split": [
-        3,
-        2,
-        2,
-        2,
-        1
-      ],
-      "render_split_reason": null,
-      "source": "S3+S1b+S2",
-      "stage": "高中",
-      "subtitle": null,
-      "syllables": null,
-      "tags": [
-        "讽喻",
-        "讽刺",
-        "明曲"
-      ],
-      "technique": [
-        "比喻",
-        "白描"
-      ],
-      "textbookStatus": "统编教材未收（课标要求）",
-      "textbooks": [
-        "统编"
-      ],
-      "theme": [
-        "讽喻",
-        "讽刺"
-      ],
-      "title": "朝天子·咏喇叭",
       "volume": "选择性必修下册"
     },
     {
