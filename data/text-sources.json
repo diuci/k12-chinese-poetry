@@ -2,8 +2,8 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-11",
   "stats": {
-    "attested": 231,
-    "partial": 71,
+    "attested": 229,
+    "partial": 73,
     "notfound": 0,
     "nosource": 1,
     "withVariants": 87
@@ -201,8 +201,8 @@
       "stage": "初中",
       "page": "觀滄海",
       "url": "https://zh.wikisource.org/wiki/%E8%A7%80%E6%BB%84%E6%B5%B7",
-      "lines": 6,
-      "hit": 6,
+      "lines": 7,
+      "hit": 7,
       "miss": [],
       "variantNotes": [],
       "variants": [
@@ -672,8 +672,8 @@
       "stage": "初中",
       "page": "陋室銘",
       "url": "https://zh.wikisource.org/wiki/%E9%99%8B%E5%AE%A4%E9%8A%98",
-      "lines": 5,
-      "hit": 5,
+      "lines": 9,
+      "hit": 9,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -4380,8 +4380,8 @@
       "stage": "小学",
       "page": "浣溪沙 (蘇軾)",
       "url": "https://zh.wikisource.org/wiki/%E6%B5%A3%E6%BA%AA%E6%B2%99%20%28%E8%98%87%E8%BB%BE%29",
-      "lines": 5,
-      "hit": 5,
+      "lines": 6,
+      "hit": 6,
       "miss": [],
       "variantNotes": [
         "又作二首"
@@ -4905,9 +4905,18 @@
       "stage": "高中",
       "page": "聲聲慢 (李清照)",
       "url": "https://zh.wikisource.org/wiki/%E8%81%B2%E8%81%B2%E6%85%A2%20%28%E6%9D%8E%E6%B8%85%E7%85%A7%29",
-      "lines": 3,
-      "hit": 3,
-      "miss": [],
+      "lines": 8,
+      "hit": 7,
+      "miss": [
+        {
+          "line": "守着窗儿独自怎生得黑",
+          "nearest": {
+            "line": "守着窗儿独自怎生得黑",
+            "source": "守著一作定窗儿独自怎生得黑梧",
+            "ratio": 0.75
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [
         {
@@ -4980,8 +4989,8 @@
       "stage": "高中",
       "page": "歸園田居",
       "url": "https://zh.wikisource.org/wiki/%E6%AD%B8%E5%9C%92%E7%94%B0%E5%B1%85",
-      "lines": 4,
-      "hit": 4,
+      "lines": 10,
+      "hit": 10,
       "miss": [],
       "variantNotes": [
         "一作树木残根"
@@ -5170,8 +5179,8 @@
       "stage": "高中",
       "page": "念奴嬌 (蘇軾)",
       "url": "https://zh.wikisource.org/wiki/%E5%BF%B5%E5%A5%B4%E5%AC%8C%20%28%E8%98%87%E8%BB%BE%29",
-      "lines": 4,
-      "hit": 4,
+      "lines": 8,
+      "hit": 8,
       "miss": [],
       "variantNotes": [],
       "variants": [
@@ -5222,8 +5231,8 @@
       "stage": "高中",
       "page": "永遇樂 (辛棄疾)",
       "url": "https://zh.wikisource.org/wiki/%E6%B0%B8%E9%81%87%E6%A8%82%20%28%E8%BE%9B%E6%A3%84%E7%96%BE%29",
-      "lines": 4,
-      "hit": 4,
+      "lines": 8,
+      "hit": 8,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -5235,8 +5244,8 @@
       "stage": "高中",
       "page": "涉江採芙蓉",
       "url": "https://zh.wikisource.org/wiki/%E6%B6%89%E6%B1%9F%E6%8E%A1%E8%8A%99%E8%93%89",
-      "lines": 4,
-      "hit": 4,
+      "lines": 5,
+      "hit": 5,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -5593,9 +5602,18 @@
       "stage": "高中",
       "page": "虞美人 (李煜)",
       "url": "https://zh.wikisource.org/wiki/%E8%99%9E%E7%BE%8E%E4%BA%BA%20%28%E6%9D%8E%E7%85%9C%29",
-      "lines": 5,
+      "lines": 6,
       "hit": 5,
-      "miss": [],
+      "miss": [
+        {
+          "line": "雕栏玉砌应犹在只是朱颜改",
+          "nearest": {
+            "line": "雕栏玉砌应犹在只是朱颜改",
+            "source": "雕阑玉砌应犹在只是朱颜改问君",
+            "ratio": 0.846
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -5663,8 +5681,8 @@
       "stage": "高中",
       "page": "詩經/靜女",
       "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E9%9D%9C%E5%A5%B3",
-      "lines": 3,
-      "hit": 3,
+      "lines": 6,
+      "hit": 6,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -5676,8 +5694,8 @@
       "stage": "高中",
       "page": "鵲橋仙 (秦觀)",
       "url": "https://zh.wikisource.org/wiki/%E9%B5%B2%E6%A9%8B%E4%BB%99%20%28%E7%A7%A6%E8%A7%80%29",
-      "lines": 3,
-      "hit": 3,
+      "lines": 4,
+      "hit": 4,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -6845,8 +6863,8 @@
       "stage": "高中",
       "page": "詩經/無衣 (秦風)",
       "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E7%84%A1%E8%A1%A3%20%28%E7%A7%A6%E9%A2%A8%29",
-      "lines": 4,
-      "hit": 4,
+      "lines": 10,
+      "hit": 10,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -6899,8 +6917,8 @@
       "stage": "高中",
       "page": "江城子 (蘇軾)/江城子 (乙卯正月二十日夜記夢)",
       "url": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E8%98%87%E8%BB%BE%29/%E6%B1%9F%E5%9F%8E%E5%AD%90%20%28%E4%B9%99%E5%8D%AF%E6%AD%A3%E6%9C%88%E4%BA%8C%E5%8D%81%E6%97%A5%E5%A4%9C%E8%A8%98%E5%A4%A2%29",
-      "lines": 3,
-      "hit": 3,
+      "lines": 6,
+      "hit": 6,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -7448,8 +7466,8 @@
       "stage": "高中",
       "page": "蜀相",
       "url": "https://zh.wikisource.org/wiki/%E8%9C%80%E7%9B%B8",
-      "lines": 3,
-      "hit": 3,
+      "lines": 4,
+      "hit": 4,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -7973,8 +7991,8 @@
       "stage": "高中",
       "page": "錦瑟",
       "url": "https://zh.wikisource.org/wiki/%E9%8C%A6%E7%91%9F",
-      "lines": 3,
-      "hit": 3,
+      "lines": 4,
+      "hit": 4,
       "miss": [],
       "variantNotes": [],
       "variants": []

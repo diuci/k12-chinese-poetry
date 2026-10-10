@@ -522,6 +522,9 @@ def diff_kind(ours, textbook):
 
 
 SENT_SPLIT = re.compile('[。？！；]')
+# 反向核对用的刀：除了句读，连冒号和引号也切开。教材页把「道逢乡里人：“家中有阿谁？」
+# 排成一行，不切引号就会得到「道逢乡里人家中有阿谁」这么个仓内根本没有的片段。
+SENT_SPLIT2 = re.compile(r'[。？！；，、：﹑“”‘’「」『』!?;,]')
 
 
 def sentence_units(poem):
@@ -571,6 +574,73 @@ def compare(poem, paras):
                     piece['textbookChar'] = b_side
             miss.append({'kind': kind, 'line': ln.strip(), 'diff': d})
     return hit, hit + len(miss), skipped, miss
+
+
+def is_textbook_note(frag):
+    """教材页里那一行不是课文，是页里的注释话。
+
+    「不知其一作不知乎」「愍一作悯」「冯通凭」这种是镜像页夹的校勘注，
+    不是课文正文。把它当课文句，就会报出一堆「仓内缺句」的假缺口。
+    """
+    return bool(re.search(r'一作|通“|同“|，通|，一作|，同', frag))
+
+
+def textbook_units(paras):
+    """教材课文拆成句。
+
+    镜像页爱在逗号处换行（春望八行、每行一句），仓内一行装两句。
+    两边都用同一把带逗号的刀切开，不然「国破山河在」对不上「国破山河在城春草木深」，
+    一篇齐的《春望》会被报成缺八句。页里的注释话（「X 一作 Y」）不是课文。
+    """
+    units = []
+    for para in paras:
+        for frag in SENT_SPLIT2.split(para):
+            key = norm(frag)
+            if len(key) < 4:
+                continue
+            if is_textbook_note(frag):
+                continue
+            units.append((frag.strip(), key))
+    return units
+
+
+def near_covered(key, body):
+    """整段找不到，再看一眼是不是异文：仓内这一小段与教材那句只差一两个字。
+
+    拿教材那句的头两个字当锚，在仓内正文里试同样长（±两个字）的窗口。
+    「山之僧智仙也」对仓内「山之僧曰智仙也」差一个「曰」——是异文，不是缺句；
+    「与子同仇」对仓内别处的「与子同袍」差一个字，但窗口只有八个字长，
+    凑不到 0.8 的相似度——那才是真缺。
+    """
+    for m in re.finditer(re.escape(key[:2]), body):
+        for ln in (len(key), len(key) + 1, len(key) + 2):   # 只许教材那边多字，不许窗口比这句短
+            w = body[m.start():m.start() + ln]
+            if difflib.SequenceMatcher(None, key, w, autojunk=False).ratio() >= 0.8:
+                return True
+    return False
+
+
+def fulltext_shortfalls(poem, paras):
+    """反方向再比一遍：教材课文里的句子，仓内这篇有没有。
+
+    正方向（仓内每一句去教材里找）只能证明「我们写的这几句教材里有」，
+    它证明不了「教材要求背的我们都写了」。《锦瑟》就是这么漏掉首联的：
+    仓内三联句句对上、台账判 match，可学生照着背就少一联。
+
+    比法是拿教材当问句、仓内整篇正文当 haystack：教材那边爱在逗号处换行，
+    仓内一行常装两句（醉翁亭记「渐闻水声潺潺而泻出于两峰之间者」），
+    所以不许把两边切成同样的片段再配对——那样《醉翁亭记》会被报成缺句。
+    """
+    body = norm(''.join(poem.get('linesPunct') or []) + ''.join(poem.get('fullLinesPunct') or []))
+    missing, seen = [], set()
+    for frag, key in textbook_units(paras):
+        if key in seen:
+            continue
+        seen.add(key)
+        if key in body or near_covered(key, body):
+            continue
+        missing.append(frag)
+    return missing
 
 
 def selftest():
@@ -897,6 +967,46 @@ def selftest():
     must(norm('噫吁嚱（xī）') == '噫吁嚱', '坏例23a：拼音留在比对里了：%r' % norm('噫吁嚱（xī）'))
     must(norm('郭橐驼（tuó）') == '郭橐驼', '坏例23b：带声调的拼音没被剥掉：%r' % norm('郭橐驼（tuó）'))
     must('〇' in norm('二〇二一年'), '坏例23c：〇 被当成非汉字剥掉了')
+    # 坏例20：反方向核对——教材课文里有、仓内没有的句子。
+    # 正方向只能证明「我们写的教材里有」，证明不了「教材要背的我们都写了」。
+    p20 = {'linesPunct': ['庄生晓梦迷蝴蝶，望帝春心托杜鹃。', '沧海月明珠有泪，蓝田日暖玉生烟。',
+                      '此情可待成追忆？只是当时已惘然。'], 'fullLinesPunct': []}
+    paras20 = ['锦瑟无端五十弦，一弦一柱思华年。', '庄生晓梦迷蝴蝶，望帝春心托杜鹃。',
+               '沧海月明珠有泪，蓝田日暖玉生烟。', '此情可待成追忆？只是当时已惘然。']
+    must(fulltext_shortfalls(p20, paras20) == ['锦瑟无端五十弦', '一弦一柱思华年'],
+         '坏例20：教材有、仓内没有的一联没被报出来（标全文背诵却少一联）')
+    must(fulltext_shortfalls(dict(p20, linesPunct=p20['linesPunct'] + ['锦瑟无端五十弦，一弦一柱思华年。']), paras20) == [],
+         '坏例20b：齐了的篇目被误报')
+    must(fulltext_shortfalls(p20, ['沧海月明珠有泪，蓝田日暖玉生烟。'] + paras20[2:]) == [],
+         '坏例20c：整句都在却被报了')
+    must(fulltext_shortfalls({'linesPunct': ['锦瑟无端五十弦，一弦一柱思华年。', '庄生晓梦迷蝴蝶，望帝春心托杜鹃。',
+                                          '沧海月明珠有泪，蓝田日暖玉升烟。', '此情可待成追忆？只是当时已惘然。'],
+                              'fullLinesPunct': []}, paras20) == [],
+         '坏例20d：只差一个字被当成缺句（那是异文，正方向那条腿管）')
+    must(fulltext_shortfalls(p20, paras20 + ['不知其一作不知乎', '愍一作悯']) == ['锦瑟无端五十弦', '一弦一柱思华年'],
+         '坏例20e：教材页里的注释话被当成课文句')
+    must(textbook_units(['上篇', '中篇', '锦瑟无端五十弦，一弦一柱思华年。']) == [('锦瑟无端五十弦', '锦瑟无端五十弦'),
+                                                                                  ('一弦一柱思华年', '一弦一柱思华年')],
+         '坏例20f：「上篇」这种短标签被当成课文句')
+    must(fulltext_shortfalls({'linesPunct': ['岂曰无衣？与子同袍。', '岂曰无衣？与子同裳。', '王于兴师，修我戈矛。'],
+                              'fullLinesPunct': []},
+                             ['岂曰无衣？与子同袍。', '王于兴师，修我戈矛。与子同仇！',
+                              '岂曰无衣？与子同泽。', '王于兴师，修我矛戟。与子偕作！',
+                              '岂曰无衣？与子同裳。', '王于兴师，修我甲兵。与子偕行！']) != [],
+         '坏例20g：《无衣》缺的两章没被报出来（别处有「与子同袍」「与子同裳」，短片段只许整段相等）')
+    must(fulltext_shortfalls({'linesPunct': ['环滁皆山也。其西南诸峰，林壑尤美，望之蔚然而深秀者，山之僧曰智仙也。'],
+                              'fullLinesPunct': []},
+                             ['环滁皆山也。其西南诸峰，林壑尤美，望之蔚然而深秀者，山之僧智仙也。']) == [],
+         '坏例20h：教材少一个「曰」被当成缺句（那是异文，窗口里字全落位）')
+    must(fulltext_shortfalls({'linesPunct': ['岂曰无衣？与子同袍。'], 'fullLinesPunct': []},
+                             ['岂曰无衣？与子同仇。']) == ['与子同仇'],
+         '坏例20i：别处有「与子同袍」，不许把缺的「与子同仇」蒙混成有')
+    must(fulltext_shortfalls({'linesPunct': ['渐闻水声潺潺而泻出于两峰之间者，酿泉也。'], 'fullLinesPunct': []},
+                             ['渐闻水声潺潺，而泻出于两峰之间者，酿泉也。']) == [],
+         '坏例20j：教材在逗号处换行、仓内一行装两句，被报成缺句')
+    must(fulltext_shortfalls({'linesPunct': ['孤岂欲卿治经为博士邪！但当涉猎，见往事耳。'], 'fullLinesPunct': []},
+                             ['权曰：“孤岂欲卿治经为博士邪!但当涉猎，见往事耳。”']) == [],
+         '坏例20k：镜像页用半角感叹号，切开后就对不上了')
 
 
 
@@ -1097,6 +1207,14 @@ def main():
         entry.update(status=status, lesson=name, url=url, hit=hit, total=total,
                      skippedShort=skipped,
                      textbookParas=len(paras), miss=miss)
+        # 反方向再比一遍：教材课文里有、仓内没有的句子。标为「全文背诵」的篇目这就是缺句。
+        short = fulltext_shortfalls(p, paras)
+        entry['fullShortfall'] = short
+        if short and p.get('recite') == 'full':
+            problems.append('%s（%s）标为全文背诵，教材课文里却有 %d 句仓内没有：%s' % (
+                p['title'], vol, len(short), '、'.join(short[:4])))
+        elif short:
+            entry['note'] = (entry.get('note') or '') + ('；教材课文里另有 %d 句没收（节选收录）' % len(short))
         # 单字出入与残影分开数：前者是「这一处字不一样」，后者是段落边界/教材夹注/节选范围造成的，
         # 不是文字分歧。混在一个数里，台账就说不清「到底差在哪」。
         chars, ghosts = [], 0

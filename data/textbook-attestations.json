@@ -26,6 +26,7 @@
       "skippedShort": 6,
       "textbookParas": 12,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -43,6 +44,7 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -60,6 +62,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -77,6 +80,7 @@
       "skippedShort": 0,
       "textbookParas": 5,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -94,6 +98,7 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -111,6 +116,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -128,6 +134,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -145,6 +152,7 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -157,11 +165,12 @@
       "status": "match",
       "lesson": "观沧海",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/13093_langdu.html",
-      "hit": 6,
-      "total": 6,
+      "hit": 7,
+      "total": 7,
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -179,6 +188,7 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -196,6 +206,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -213,6 +224,7 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -230,6 +242,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -247,6 +260,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -264,6 +278,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -281,6 +296,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -298,6 +314,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -315,6 +332,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -332,6 +350,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -349,6 +368,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -366,6 +386,7 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -383,6 +404,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -400,6 +422,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -434,6 +457,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -451,6 +475,7 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -468,6 +493,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -485,6 +511,7 @@
       "skippedShort": 1,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -502,6 +529,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -519,6 +547,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -531,11 +560,12 @@
       "status": "match",
       "lesson": "陋室铭",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20861_langdu.html",
-      "hit": 5,
-      "total": 5,
+      "hit": 9,
+      "total": 9,
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -553,6 +583,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -570,6 +601,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -587,6 +619,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -604,6 +637,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -621,6 +655,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -638,6 +673,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -655,6 +691,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -672,6 +709,7 @@
       "skippedShort": 2,
       "textbookParas": 6,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -689,6 +727,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -706,6 +745,12 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [
+        "丙辰中秋",
+        "欢饮达旦",
+        "兼怀子由"
+      ],
+      "note": "；教材课文里另有 3 句没收（节选收录）",
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -723,6 +768,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -755,6 +801,7 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -772,6 +819,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -802,6 +850,7 @@
           ]
         }
       ],
+      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -827,6 +876,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -844,6 +894,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -861,6 +912,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -878,6 +930,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -895,6 +948,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -912,6 +966,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -929,6 +984,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1032,6 +1088,7 @@
       "skippedShort": 0,
       "textbookParas": 9,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1049,6 +1106,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1066,6 +1124,7 @@
       "skippedShort": 2,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1083,6 +1142,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1100,6 +1160,7 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1117,6 +1178,7 @@
       "skippedShort": 0,
       "textbookParas": 5,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1134,6 +1196,7 @@
       "skippedShort": 1,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1151,6 +1214,7 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1168,6 +1232,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1185,6 +1250,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1202,6 +1268,7 @@
       "skippedShort": 1,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1219,6 +1286,7 @@
       "skippedShort": 0,
       "textbookParas": 9,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1236,6 +1304,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1253,6 +1322,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1270,6 +1340,7 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1300,6 +1371,10 @@
           ]
         }
       ],
+      "fullShortfall": [
+        "问之客曰"
+      ],
+      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "missing",
@@ -1325,6 +1400,7 @@
       "skippedShort": 2,
       "textbookParas": 6,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1342,6 +1418,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1359,6 +1436,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1391,6 +1469,10 @@
           ]
         }
       ],
+      "fullShortfall": [
+        "绝巘多生怪柏"
+      ],
+      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -1416,6 +1498,7 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1433,6 +1516,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1450,6 +1534,7 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1467,6 +1552,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1484,6 +1570,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1501,6 +1588,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1518,6 +1606,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1535,6 +1624,7 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1552,6 +1642,7 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1569,6 +1660,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1586,6 +1678,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1603,6 +1696,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1620,6 +1714,7 @@
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1637,6 +1732,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1654,6 +1750,7 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1671,6 +1768,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1688,6 +1786,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1705,6 +1804,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1722,6 +1822,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1739,6 +1840,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1756,6 +1858,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1773,6 +1876,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1790,6 +1894,7 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1807,6 +1912,7 @@
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1858,6 +1964,7 @@
           ]
         }
       ],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 3
     },
@@ -1875,6 +1982,7 @@
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1892,6 +2000,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1909,6 +2018,7 @@
       "skippedShort": 0,
       "textbookParas": 5,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1926,6 +2036,7 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1943,6 +2054,7 @@
       "skippedShort": 1,
       "textbookParas": 7,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1960,6 +2072,7 @@
       "skippedShort": 1,
       "textbookParas": 5,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1977,6 +2090,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -1994,6 +2108,7 @@
       "skippedShort": 1,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2011,6 +2126,7 @@
       "skippedShort": 0,
       "textbookParas": 12,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2028,6 +2144,7 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2045,6 +2162,7 @@
       "skippedShort": 1,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2062,6 +2180,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2079,6 +2198,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2096,6 +2216,7 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2113,6 +2234,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2130,6 +2252,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2147,6 +2270,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2164,6 +2288,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2181,6 +2306,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2246,6 +2372,7 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2311,6 +2438,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2344,6 +2472,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2403,6 +2532,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2420,6 +2550,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2437,6 +2568,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2486,6 +2618,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2503,6 +2636,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2520,6 +2654,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2553,6 +2688,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2570,6 +2706,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2587,6 +2724,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2604,6 +2742,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2653,6 +2792,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2670,6 +2810,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2703,6 +2844,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2720,6 +2862,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2753,6 +2896,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2770,6 +2914,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2819,6 +2964,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2836,6 +2982,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2869,6 +3016,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2886,6 +3034,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2903,6 +3052,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -2968,6 +3118,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3002,6 +3153,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3035,6 +3187,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3068,6 +3221,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3085,6 +3239,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3118,6 +3273,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3154,6 +3310,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3171,6 +3328,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3204,6 +3362,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3221,6 +3380,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3238,6 +3398,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3287,6 +3448,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3304,6 +3466,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3337,6 +3500,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3370,6 +3534,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3387,6 +3552,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3404,6 +3570,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3437,6 +3604,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3454,6 +3622,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3471,6 +3640,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3488,6 +3658,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3505,6 +3676,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3522,6 +3694,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3539,6 +3712,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3551,11 +3725,12 @@
       "status": "match",
       "lesson": "9 浣溪沙（游蕲水清泉寺）",
       "url": "https://yw.suyang123.com/xiaoxue/liunianji/1463_langdu.html",
-      "hit": 5,
-      "total": 5,
+      "hit": 6,
+      "total": 6,
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3573,6 +3748,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3590,6 +3766,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3607,6 +3784,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3624,6 +3802,7 @@
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3641,6 +3820,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3658,6 +3838,7 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3691,6 +3872,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3708,6 +3890,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3725,6 +3908,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3758,6 +3942,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3791,6 +3976,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3808,6 +3994,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3825,6 +4012,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3858,6 +4046,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3875,6 +4064,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3892,6 +4082,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3909,6 +4100,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3942,6 +4134,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -3975,6 +4168,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4037,6 +4231,229 @@
           ]
         }
       ],
+      "fullShortfall": [
+        "輮以为轮",
+        "輮使之然也",
+        "故不登高山",
+        "不知天之高也",
+        "不临深溪",
+        "不知地之厚也",
+        "不闻先王之遗言",
+        "不知学问之大也",
+        "生而同声",
+        "长而异俗",
+        "教使之然也",
+        "嗟尔君子",
+        "无恒安息",
+        "靖共尔位",
+        "好是正直",
+        "神之听之",
+        "介尔景福",
+        "神莫大于化道",
+        "福莫长于无祸",
+        "(君子生 通",
+        "南方有鸟焉",
+        "名曰蒙鸠",
+        "以羽为巢",
+        "而编之以发",
+        "系之苇苕",
+        "风至苕折",
+        "卵破子死",
+        "巢非不完也",
+        "所系者然也",
+        "西方有木焉",
+        "名曰射干",
+        "茎长四寸",
+        "生于高山之上",
+        "而临百仞之渊",
+        "木茎非能长也",
+        "所立者然也",
+        "蓬生麻中",
+        "不扶而直",
+        "白沙在涅",
+        "与之俱黑",
+        "兰槐之根是为芷",
+        "其渐之滫",
+        "君子不近",
+        "庶人不服",
+        "其质非不美也",
+        "所渐者然也",
+        "故君子居必择乡",
+        "游必就士",
+        "所以防邪辟而近中正也",
+        "物类之起",
+        "必有所始",
+        "荣辱之来",
+        "必象其德",
+        "肉腐出虫",
+        "鱼枯生蠹",
+        "怠慢忘身",
+        "祸灾乃作",
+        "强自取柱",
+        "柔自取束",
+        "邪秽在身",
+        "怨之所构",
+        "施薪若一",
+        "火就燥也",
+        "平地若一",
+        "水就湿也",
+        "草木畴生",
+        "禽兽群焉",
+        "物各从其类也",
+        "是故质的张",
+        "而弓矢至焉",
+        "而斧斤至焉",
+        "而众鸟息焉",
+        "而蜹聚焉",
+        "故言有招祸也",
+        "行有招辱也",
+        "君子慎其所立乎",
+        "是故无冥冥之志者",
+        "无昭昭之明",
+        "无惛惛之事者",
+        "无赫赫之功",
+        "行衢道者不至",
+        "事两君者不容",
+        "目不能两视而明",
+        "耳不能两听而聪",
+        "螣蛇无足而飞",
+        "鼫鼠五技而穷",
+        "尸鸠在桑",
+        "其子七兮",
+        "淑人君子",
+        "其仪一兮",
+        "心如结兮",
+        "故君子结于一也",
+        "昔者瓠巴鼓瑟",
+        "而流鱼出听",
+        "伯牙鼓琴",
+        "而六马仰秣",
+        "故声无小而不闻",
+        "行无隐而不形",
+        "玉在山而草木润",
+        "渊生珠而崖不枯",
+        "为善不积邪",
+        "安有不闻者乎",
+        "学恶乎始",
+        "其数则始乎诵经",
+        "终乎读礼",
+        "其义则始乎为士",
+        "终乎为圣人",
+        "真积力久则入",
+        "学至乎没而后止也",
+        "故学数有终",
+        "若其义则不可须臾舍也",
+        "政事之纪也",
+        "中声之所止也",
+        "法之大分",
+        "类之纲纪也",
+        "故学至乎礼而止矣",
+        "夫是之谓道德之极",
+        "礼之敬文也",
+        "乐之中和也",
+        "诗书之博也",
+        "春秋之微 也",
+        "在天地之间者毕矣",
+        "君子之学也",
+        "布乎四体",
+        "形乎动静",
+        "一可以为法则",
+        "小人之学也",
+        "口耳之间",
+        "则四寸耳",
+        "曷足以美七尺之躯哉",
+        "古之学者为己",
+        "今之学者为人",
+        "以美其身",
+        "以为禽犊",
+        "故不问而告谓之傲",
+        "问一而告二谓之囋",
+        "君子如向矣",
+        "学莫便乎近其人",
+        "礼乐法而不说",
+        "诗书故而不切",
+        "春秋约而不速",
+        "方其人之习君子之说",
+        "则尊以遍矣",
+        "周于世矣",
+        "学之经莫速乎好其人",
+        "隆礼次之",
+        "上不能好其人",
+        "下不能隆礼",
+        "安特将学杂识志",
+        "顺诗书而已耳",
+        "则末世穷年",
+        "不免为陋儒而已",
+        "将原先王",
+        "则礼正其经纬蹊径也",
+        "若挈裘领",
+        "诎五指而顿之",
+        "顺者不可胜数也",
+        "不道礼宪",
+        "以诗书为之",
+        "譬之犹以指测河也",
+        "以戈舂黍也",
+        "以锥餐壶也",
+        "不可以得之矣",
+        "有争气者",
+        "勿与辩也",
+        "故必由其道至",
+        "然后接之",
+        "非其道则避之",
+        "而后可与言道之方",
+        "而后可与言道之理",
+        "色从而后可与言道之致",
+        "故未可与言而言",
+        "可与言而不言",
+        "不观气色而言",
+        "故君子不傲",
+        "谨顺其身",
+        "匪交匪舒",
+        "天子所予",
+        "此之谓也",
+        "百发失一",
+        "不足谓善射",
+        "千里蹞步不至",
+        "不足谓善御",
+        "伦类不通",
+        "仁义不一",
+        "不足谓善学",
+        "固学一之也",
+        "涂巷之人也",
+        "其善者少",
+        "不善者多",
+        "桀纣盗跖也",
+        "全之尽之",
+        "然后学者也",
+        "君子知夫不全不粹之不足以为美也",
+        "故诵数以贯之",
+        "思索以通之",
+        "为其人以处之",
+        "除其害者以持养之",
+        "使目非是无欲见也",
+        "使耳非是无欲闻也",
+        "使口非是无欲言也",
+        "使心非是无欲虑也",
+        "及至其致好之也",
+        "目好之五色",
+        "耳好之五声",
+        "口好之五味",
+        "心利之有天下",
+        "是故权利不能倾也",
+        "群众不能移也",
+        "天下不能荡也",
+        "生乎由是",
+        "死乎由是",
+        "夫是之谓德操",
+        "德操然后能定",
+        "能定然后能应",
+        "能定能应",
+        "夫是之谓成人",
+        "天见其明",
+        "地见其光",
+        "君子贵其全也"
+      ],
+      "note": "；教材课文里另有 220 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -4064,11 +4481,12 @@
       "status": "match",
       "lesson": "9.3* 声声慢（寻寻觅觅）",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30135_langdu.html",
-      "hit": 3,
-      "total": 3,
+      "hit": 8,
+      "total": 8,
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4086,6 +4504,7 @@
       "skippedShort": 2,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4098,11 +4517,12 @@
       "status": "match",
       "lesson": "7.2* 归园田居（其一）",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30133_langdu.html",
-      "hit": 4,
-      "total": 4,
+      "hit": 10,
+      "total": 10,
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4115,11 +4535,12 @@
       "status": "match",
       "lesson": "9.1 念奴娇·赤壁怀古",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30115_langdu.html",
-      "hit": 4,
-      "total": 4,
+      "hit": 8,
+      "total": 8,
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4137,6 +4558,7 @@
       "skippedShort": 0,
       "textbookParas": 23,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4149,11 +4571,12 @@
       "status": "match",
       "lesson": "9.2* 永遇乐·京口北固亭怀古",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30116_langdu.html",
-      "hit": 4,
-      "total": 4,
+      "hit": 8,
+      "total": 8,
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4166,11 +4589,12 @@
       "status": "match",
       "lesson": "涉江采芙蓉",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30128_langdu.html",
-      "hit": 4,
-      "total": 4,
+      "hit": 5,
+      "total": 5,
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4188,6 +4612,32 @@
       "skippedShort": 0,
       "textbookParas": 24,
       "miss": [],
+      "fullShortfall": [
+        "元和十年",
+        "予左迁九江郡司马",
+        "送客湓浦口",
+        "闻舟中夜弹琵琶者",
+        "铮铮然有京都声",
+        "本长安倡女",
+        "尝学琵琶于穆",
+        "曹二善才",
+        "年长色衰",
+        "委身为贾人妇",
+        "使快弹数曲",
+        "曲罢悯然",
+        "自叙少小时欢乐事",
+        "今漂沦憔悴",
+        "转徙于江湖间",
+        "予出官二年",
+        "恬然自安",
+        "感斯人言",
+        "是夕始觉有迁谪意",
+        "因为长句",
+        "歌以赠之",
+        "凡六百一十二言",
+        "命曰《琵琶行》"
+      ],
+      "note": "；教材课文里另有 23 句没收（节选收录）",
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4217,6 +4667,7 @@
           ]
         }
       ],
+      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -4242,6 +4693,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4274,6 +4726,10 @@
           ]
         }
       ],
+      "fullShortfall": [
+        "契阔谈讌"
+      ],
+      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -4304,11 +4760,12 @@
       "status": "match",
       "lesson": "虞美人",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30136_langdu.html",
-      "hit": 5,
-      "total": 5,
+      "hit": 6,
+      "total": 6,
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4326,6 +4783,7 @@
       "skippedShort": 0,
       "textbookParas": 5,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4348,11 +4806,12 @@
       "status": "match",
       "lesson": "静女",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30127_langdu.html",
-      "hit": 3,
-      "total": 3,
+      "hit": 6,
+      "total": 6,
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4365,11 +4824,12 @@
       "status": "match",
       "lesson": "鹊桥仙（纤云弄巧）",
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30137_langdu.html",
-      "hit": 3,
-      "total": 3,
+      "hit": 4,
+      "total": 4,
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4387,6 +4847,7 @@
       "skippedShort": 2,
       "textbookParas": 5,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4404,6 +4865,7 @@
       "skippedShort": 0,
       "textbookParas": 21,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4421,6 +4883,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4438,6 +4901,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4455,6 +4919,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4472,6 +4937,7 @@
       "skippedShort": 3,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4489,6 +4955,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4506,6 +4973,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4614,6 +5082,11 @@
           ]
         }
       ],
+      "fullShortfall": [
+        "岂取之易而守之难乎",
+        "在君无事"
+      ],
+      "note": "；教材课文里另有 2 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -4727,6 +5200,10 @@
           ]
         }
       ],
+      "fullShortfall": [
+        "而骏良駃騠不实外厩"
+      ],
+      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -4779,6 +5256,7 @@
           ]
         }
       ],
+      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -4804,6 +5282,7 @@
       "skippedShort": 3,
       "textbookParas": 35,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4910,6 +5389,7 @@
       "skippedShort": 9,
       "textbookParas": 14,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4944,6 +5424,7 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4956,11 +5437,12 @@
       "status": "match",
       "lesson": "无衣",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/13038_langdu.html",
-      "hit": 4,
-      "total": 4,
+      "hit": 10,
+      "total": 10,
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4978,6 +5460,7 @@
       "skippedShort": 0,
       "textbookParas": 9,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -4990,11 +5473,12 @@
       "status": "match",
       "lesson": "江城子·乙卯正月二十日夜记梦",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30319_langdu.html",
-      "hit": 3,
-      "total": 3,
+      "hit": 6,
+      "total": 6,
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5022,6 +5506,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5039,6 +5524,7 @@
       "skippedShort": 1,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5056,6 +5542,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5120,6 +5607,10 @@
           ]
         }
       ],
+      "fullShortfall": [
+        "乐天夫命复奚疑"
+      ],
+      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -5166,6 +5657,21 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [
+        "淳熙丙申至日",
+        "予过维扬",
+        "夜雪初霁",
+        "荠麦弥望",
+        "则四顾萧条",
+        "寒水自碧",
+        "暮色渐起",
+        "戍角悲吟",
+        "予怀怆然",
+        "感慨今昔",
+        "因自度此曲",
+        "千岩老人以为有《黍离》之悲也"
+      ],
+      "note": "；教材课文里另有 12 句没收（节选收录）",
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5183,6 +5689,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5200,6 +5707,7 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5217,6 +5725,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5234,6 +5743,7 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5560,6 +6070,7 @@
           ]
         }
       ],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 28
     },
@@ -5590,6 +6101,7 @@
           ]
         }
       ],
+      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -5630,11 +6142,12 @@
       "status": "match",
       "lesson": "3.2* 蜀相",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30505_langdu.html",
-      "hit": 3,
-      "total": 3,
+      "hit": 4,
+      "total": 4,
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5652,6 +6165,7 @@
       "skippedShort": 0,
       "textbookParas": 22,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5702,6 +6216,7 @@
           ]
         }
       ],
+      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -5727,6 +6242,7 @@
       "skippedShort": 2,
       "textbookParas": 6,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5744,6 +6260,7 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5761,6 +6278,7 @@
       "skippedShort": 1,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5875,6 +6393,11 @@
           ]
         }
       ],
+      "fullShortfall": [
+        "屈原既绌（chù）",
+        "过屈原所自沉渊"
+      ],
+      "note": "；教材课文里另有 2 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "missing",
@@ -5952,6 +6475,7 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -5969,6 +6493,7 @@
       "skippedShort": 0,
       "textbookParas": 15,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     },
@@ -6001,6 +6526,240 @@
           ]
         }
       ],
+      "fullShortfall": [
+        "秦灭周祀",
+        "南面称帝",
+        "以养四海",
+        "斐然向风",
+        "近古之无王者久矣",
+        "周室卑微",
+        "五霸既灭",
+        "令不行于天下",
+        "是以诸侯力政",
+        "兵革不休",
+        "士民罢弊",
+        "今秦南面而王天下",
+        "是上有天子也",
+        "既元元之民冀得安其性命",
+        "莫不虚心而仰上",
+        "专威定功",
+        "安危之本",
+        "在于此矣",
+        "秦王怀贪鄙之心",
+        "行自奋之智",
+        "不信功臣",
+        "不亲士民",
+        "废王道而立私爱",
+        "焚文书而酷刑法",
+        "先诈力而后仁义",
+        "以暴虐为天下始",
+        "夫兼并者高诈力",
+        "安危者贵顺权",
+        "此言取与守不同术也",
+        "秦离战国而王天下",
+        "其道不易",
+        "其政不改",
+        "是其所以取之守之者无异也",
+        "孤独而有之",
+        "故其亡可立而待也",
+        "借使秦王论上世之事",
+        "以制御其政",
+        "后虽有淫骄之主",
+        "犹未有倾危之患也",
+        "故三王之建天下",
+        "名号显美",
+        "功业长久",
+        "今秦二世立",
+        "天下莫不引领而观其政",
+        "夫寒者利裋（shù）褐（hè）",
+        "而饥者甘糟糠",
+        "天下嚣嚣",
+        "新主之资也",
+        "此言劳民之易为仁也",
+        "向使二世有庸主之行而任忠贤",
+        "臣主一心而忧海内之患",
+        "缟素而正先帝之过",
+        "裂地分民以封功臣之后",
+        "建国立君以礼天下",
+        "虚囹圄而免刑戮",
+        "去收孥（nú）污秽之罪",
+        "使各反其乡里",
+        "以振孤独穷困之士",
+        "轻赋少事",
+        "以佐百姓之急",
+        "约法省刑",
+        "以持其后",
+        "使天下之人皆得自新",
+        "更节修行",
+        "各慎其身",
+        "塞万民之望",
+        "而以盛德与天下",
+        "天下息矣",
+        "即四海之内皆欢然各自安乐其处",
+        "惟恐有变",
+        "虽有狡害之民",
+        "无离上之心",
+        "则不轨之臣无以饰其智",
+        "而暴乱之奸弭矣",
+        "二世不行此术",
+        "而重以无道",
+        "坏宗庙与民",
+        "更始作阿房之宫",
+        "繁刑严诛",
+        "吏治刻深",
+        "赏罚不当",
+        "赋敛无度",
+        "天下多事",
+        "吏不能纪",
+        "百姓困穷",
+        "而主不收恤",
+        "然后奸伪并起",
+        "而上下相遁（dùn）",
+        "蒙罪者众",
+        "刑戮（lù）相望于道",
+        "而天下苦之",
+        "自群卿以下至于众庶",
+        "人怀自危之心",
+        "亲处穷苦之实",
+        "咸不安其位",
+        "故易动也",
+        "是以陈涉不用汤",
+        "不借公侯之尊",
+        "奋臂于大泽",
+        "而天下响应者",
+        "其民危也",
+        "故先王者",
+        "见终始不变",
+        "知存亡之由",
+        "是以牧民之道",
+        "务在安之而已矣",
+        "下虽有逆行之臣",
+        "必无响应之助",
+        "安民可与为义",
+        "而危民易与为非",
+        "此之谓也",
+        "贵为天子",
+        "富有四海",
+        "身在于戮者",
+        "正之非也",
+        "是二世之过也",
+        "秦兼诸侯山东三十余郡",
+        "缮甲兵而守之",
+        "然陈涉率散乱之众数百",
+        "奋臂大呼",
+        "不用弓戟之兵",
+        "鉏（chú）耰（yōu）白梃（tǐng）",
+        "望屋而食",
+        "横行天下",
+        "秦人阻险不守",
+        "关梁不闭",
+        "长戟不刺",
+        "强弩不射",
+        "楚师深入",
+        "战于鸿门",
+        "曾无藩篱之难",
+        "于是山东诸侯并起",
+        "豪俊相立",
+        "秦使章邯（hán）将而东征",
+        "章邯因其三军之众",
+        "要市于外",
+        "以谋其上",
+        "群臣之不相信",
+        "可见于此矣",
+        "借使子婴有庸主之材而仅得中佐",
+        "山东虽乱",
+        "三秦之地可全而有",
+        "宗庙之祀宜未绝也",
+        "秦地被山带河以为固",
+        "四塞之国也",
+        "自缪公以来",
+        "至于秦王",
+        "二十余君",
+        "常为诸侯雄",
+        "此岂世贤哉",
+        "其势居然也",
+        "且天下尝同心并力攻秦矣",
+        "当此之世",
+        "贤智并列",
+        "良将行其师",
+        "贤相通其谋",
+        "然困于阻险而不能进",
+        "秦乃延入战而为之开关",
+        "百万之徒逃北而遂坏",
+        "岂勇力智慧不足哉",
+        "势不便也",
+        "秦小邑并大城",
+        "守险塞而军",
+        "高垒（lěi）毋（wú）战",
+        "闭关据厄（ě）",
+        "荷戟（jǐ）而守之",
+        "诸侯起于匹夫",
+        "非有素王之行也",
+        "其交未亲",
+        "其下未附",
+        "名曰亡秦",
+        "其实利之也",
+        "彼见秦阻之难犯也",
+        "案土息民",
+        "以待其敝",
+        "收弱扶罢",
+        "以令大国之君",
+        "不患不得意于海内",
+        "而身为禽者",
+        "其救败非也",
+        "秦王足己而不问",
+        "遂过而不变",
+        "二世受之",
+        "因而不改",
+        "暴虐以重祸",
+        "子婴孤立无亲",
+        "危弱无辅",
+        "三主之惑",
+        "终身不悟",
+        "亡不亦宜乎",
+        "当此时也",
+        "也非无深谋远虑知化之士也",
+        "然所以不敢尽忠指过者",
+        "秦俗多忌讳之禁也",
+        "——忠言未卒于口而身糜没矣",
+        "故使天下之士倾耳而听",
+        "重足而立",
+        "阖（hé）口而不言",
+        "是以三主失道",
+        "而忠臣不谏",
+        "智士不谋也",
+        "天下已乱",
+        "奸不上闻",
+        "岂不悲哉",
+        "先王知壅蔽之伤国也",
+        "故置公卿",
+        "以饰法设刑而天下治",
+        "禁暴诛乱而天下服",
+        "五伯征而诸侯从",
+        "内守外附而社稷存",
+        "故秦之盛也",
+        "繁法严刑而天下震",
+        "及其衰也",
+        "百姓怨而海内叛矣",
+        "故周王序得其道",
+        "千余载不绝",
+        "秦本末并失",
+        "故不能长",
+        "由是观之",
+        "安危之统相去远矣",
+        "前事之不忘",
+        "后事之师也",
+        "是以君子为国",
+        "观之上古",
+        "验之当世",
+        "参之人事",
+        "察盛衰之理",
+        "审权势之宜",
+        "去就有序",
+        "变化因时",
+        "故旷日长久而社稷安矣"
+      ],
+      "note": "；教材课文里另有 231 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -6021,11 +6780,12 @@
       "status": "match",
       "lesson": "锦瑟",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30425_langdu.html",
-      "hit": 3,
-      "total": 3,
+      "hit": 4,
+      "total": 4,
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
+      "fullShortfall": [],
       "charDiffs": [],
       "ghostDiffs": 0
     }
