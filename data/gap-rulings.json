@@ -108,14 +108,6 @@
     },
     {
       "volume": "七年级上册",
-      "title": "夜上受降城闻笛",
-      "kind": "add",
-      "reason": "唐·李益七言绝句，统编七上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20018_langdu.html"
-    },
-    {
-      "volume": "七年级上册",
       "title": "纪念白求恩",
       "kind": "modern",
       "reason": "毛泽东现代政论",
@@ -225,14 +217,6 @@
       "reason": "《列子》文言寓言，统编七上课外诵读",
       "poem": null,
       "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20032_langdu.html"
-    },
-    {
-      "volume": "七年级上册",
-      "title": "潼关",
-      "kind": "add",
-      "reason": "清·谭嗣同七言绝句，统编七上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20036_langdu.html"
     },
     {
       "volume": "七年级下册",
@@ -435,14 +419,6 @@
       "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20852_langdu.html"
     },
     {
-      "volume": "七年级下册",
-      "title": "约客",
-      "kind": "add",
-      "reason": "南宋·赵师秀七言绝句，统编七下课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20850_langdu.html"
-    },
-    {
       "volume": "八年级上册",
       "title": "我三十万大军胜利南渡长江",
       "kind": "modern",
@@ -545,14 +521,6 @@
       "reason": "三国·曹操四言乐府，统编八上课外诵读",
       "poem": null,
       "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/13089_langdu.html"
-    },
-    {
-      "volume": "八年级上册",
-      "title": "赠从弟",
-      "kind": "add",
-      "reason": "东汉·刘桢五言诗，统编八上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20921_langdu.html"
     },
     {
       "volume": "八年级上册",
@@ -988,14 +956,6 @@
     },
     {
       "volume": "九年级上册",
-      "title": "长沙过贾谊宅",
-      "kind": "add",
-      "reason": "唐·刘长卿七言律诗，统编九上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21118_langdu.html"
-    },
-    {
-      "volume": "九年级上册",
       "title": "左迁至蓝关示侄孙湘",
       "kind": "add",
       "reason": "唐·韩愈七言律诗，统编九上课外诵读",
@@ -1105,14 +1065,6 @@
       "reason": "北宋·秦观词，统编九上课外诵读",
       "poem": null,
       "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21134_langdu.html"
-    },
-    {
-      "volume": "九年级上册",
-      "title": "咸阳城东楼",
-      "kind": "add",
-      "reason": "唐·许浑七言律诗，统编九上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21132_langdu.html"
     },
     {
       "volume": "九年级下册",
@@ -1321,14 +1273,6 @@
       "reason": "南宋·文天祥五言律诗，统编九下课外诵读",
       "poem": null,
       "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21237_langdu.html"
-    },
-    {
-      "volume": "九年级下册",
-      "title": "别云间",
-      "kind": "add",
-      "reason": "明·夏完淳五言律诗，统编九下课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21238_langdu.html"
     },
     {
       "volume": "九年级下册",
@@ -2027,5 +1971,5 @@
       "textbookUrl": ""
     }
   ],
-  "补收记录": "2026-10-10：以下 6 条已补进仓，裁定随之删除（护栏会把「缺口已经没了、裁定还留着」报成过期）：峨眉山月歌、江南逢李龟年、行军九日思长安故园、秋词（其一）、十一月四日风雨大作（其二）、过松源晨炊漆公店（其五）。"
+  "补收记录": "2026-10-10：以下 6 条已补进仓，裁定随之删除（护栏会把「缺口已经没了、裁定还留着」报成过期）：峨眉山月歌、江南逢李龟年、行军九日思长安故园、秋词（其一）、十一月四日风雨大作（其二）、过松源晨炊漆公店（其五）。\n2026-10-10：以下 7 条已补进仓，裁定随之删除：夜上受降城闻笛（李益）、潼关（谭嗣同）、约客（赵师秀）、赠从弟（其二，刘桢）、长沙过贾谊宅（刘长卿）、咸阳城东楼（许浑）、别云间（夏完淳）。这 7 篇先前卡在「作者表里没有卒年」，本轮先把七位作者的卒年补进 data/authors.json（每人两条独立来源）再补收。"
 }

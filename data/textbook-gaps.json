@@ -3,11 +3,11 @@
   "generated": "2026-10-10",
   "counts": {
     "generated": "2026-10-10",
-    "total": 252,
+    "total": 245,
     "modern": 40,
     "lessonEntries": 781,
-    "poems": 258,
-    "reciteGaps": 128,
+    "poems": 265,
+    "reciteGaps": 121,
     "primaryGaps": 337
   },
   "rows": [
@@ -104,14 +104,6 @@
       "lesson": "11",
       "title": "再塑生命的人",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20013_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "夜上受降城闻笛",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20018_langdu.html",
       "looksModern": false,
       "recite": true
     },
@@ -232,14 +224,6 @@
       "lesson": "自读",
       "title": "杞人忧天",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20032_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "潼关",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20036_langdu.html",
       "looksModern": false,
       "recite": true
     },
@@ -444,14 +428,6 @@
       "recite": true
     },
     {
-      "volume": "七年级下册",
-      "lesson": "自读",
-      "title": "约客",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20850_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
       "volume": "八年级上册",
       "lesson": "自读",
       "title": "我三十万大军胜利南渡长江",
@@ -552,14 +528,6 @@
       "lesson": "自读",
       "title": "龟虽寿",
       "url": "https://yw.suyang123.com/chuzhong/banianji/13089_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "自读",
-      "title": "赠从弟",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/20921_langdu.html",
       "looksModern": false,
       "recite": true
     },
@@ -998,14 +966,6 @@
     {
       "volume": "九年级上册",
       "lesson": "自读",
-      "title": "长沙过贾谊宅",
-      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21118_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "九年级上册",
-      "lesson": "自读",
       "title": "左迁至蓝关示侄孙湘",
       "url": "https://yw.suyang123.com/chuzhong/jiunianji/21119_langdu.html",
       "looksModern": false,
@@ -1112,14 +1072,6 @@
       "lesson": "自读",
       "title": "行香子",
       "url": "https://yw.suyang123.com/chuzhong/jiunianji/21134_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "九年级上册",
-      "lesson": "自读",
-      "title": "咸阳城东楼",
-      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21132_langdu.html",
       "looksModern": false,
       "recite": true
     },
@@ -1328,14 +1280,6 @@
       "lesson": "自读",
       "title": "南安军",
       "url": "https://yw.suyang123.com/chuzhong/jiunianji/21237_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "九年级下册",
-      "lesson": "自读",
-      "title": "别云间",
-      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21238_langdu.html",
       "looksModern": false,
       "recite": true
     },

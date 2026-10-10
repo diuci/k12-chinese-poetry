@@ -2,7 +2,7 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-10",
   "counts": {
-    "match": 196,
+    "match": 203,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -82,6 +82,16 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "yeshangshouxiangchengwendi",
+      "title": "夜上受降城闻笛",
+      "author": "李益",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册课外诵读",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "emeishanyuege",
       "title": "峨眉山月歌",
       "author": "李白",
@@ -95,6 +105,16 @@
       "id": "jiangnanfengligunian",
       "title": "江南逢李龟年",
       "author": "杜甫",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册课外诵读",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "tongguan",
+      "title": "潼关",
+      "author": "谭嗣同",
       "stage": "初中",
       "status": "match",
       "volume": "七年级上册课外诵读",
@@ -246,6 +266,16 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "yueke",
+      "title": "约客",
+      "author": "赵师秀",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级下册课外诵读",
+      "textbookVolume": "七年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "guosongyuan",
       "title": "过松源晨炊漆公店",
       "author": "杨万里",
@@ -334,6 +364,26 @@
       "volume": "九年级上册",
       "textbookVolume": "九年级上册",
       "textbookLesson": "12"
+    },
+    {
+      "id": "xianyangchengdonglou",
+      "title": "咸阳城东楼",
+      "author": "许浑",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级上册课外诵读",
+      "textbookVolume": "九年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "changshaguojiayizhai",
+      "title": "长沙过贾谊宅",
+      "author": "刘长卿",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级上册课外诵读",
+      "textbookVolume": "九年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "chushibiao",
@@ -476,6 +526,16 @@
       "textbookLesson": "21"
     },
     {
+      "id": "bieyunjian",
+      "title": "别云间",
+      "author": "夏完淳",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级下册课外诵读",
+      "textbookVolume": "九年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "sanxia",
       "title": "三峡",
       "author": "郦道元",
@@ -599,6 +659,16 @@
       "id": "yujiaao-tianjie",
       "title": "渔家傲",
       "author": "李清照",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册课外诵读",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "zengcongdi",
+      "title": "赠从弟",
+      "author": "刘桢",
       "stage": "初中",
       "status": "match",
       "volume": "八年级上册课外诵读",

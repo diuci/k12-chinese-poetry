@@ -149,6 +149,21 @@ def _cache_put(title, rec):
         pass
 
 
+def strip_page_furniture(html):
+    """页面上的家具不许留在正文里：样式、脚本、注码、编辑链接。"""
+    html = re.sub(r'<style[^>]*>.*?</style>', '', html, flags=re.S)
+    html = re.sub(r'<script[^>]*>.*?</script>', '', html, flags=re.S)
+    # 注码。MediaWiki 现在渲染成 <sup id="cite_ref-1" class="reference">[1]</sup>。
+    # 先前这条只认 class 里带大写 Reference 的，小写 reference 整个漏过去：
+    # 江南逢李龟年 那一页被剥成「岐王1宅里寻常见」，全仓 13 条记录的「页里最像的一段」带着注码数字，
+    # 它从「全对上」掉成「1/2 句对上」。别人改了页面 markup，台账的数就跟着抖，而且没人报错。
+    html = re.sub(r'<sup[^>]*class="[^"]*(?:reference|noprint)[^"]*"[^>]*>.*?</sup>', '', html, flags=re.S | re.I)
+    html = re.sub(r'<sup[^>]*id="cite[^"]*"[^>]*>.*?</sup>', '', html, flags=re.S | re.I)
+    html = re.sub(r'<span[^>]*class="[^"]*(?:mw-editsection|noprint)[^"]*"[^>]*>.*?</span>', '', html, flags=re.S)
+    return html
+
+
+
 def page_text(title):
     hit = _cache_get(title, 'text')
     if hit:
@@ -158,10 +173,7 @@ def page_text(title):
                    'format': 'json', 'redirects': 1})
     parse = d.get('parse') or {}
     html = parse.get('text', {}).get('*', '')
-    html = re.sub(r'<style[^>]*>.*?</style>', '', html, flags=re.S)
-    html = re.sub(r'<script[^>]*>.*?</script>', '', html, flags=re.S)
-    html = re.sub(r'<sup[^>]*class="[^"]*(?:Reference|noprint)[^"]*"[^>]*>.*?</sup>', '', html, flags=re.S)
-    html = re.sub(r'<span[^>]*class="[^"]*(?:mw-editsection|noprint)[^"]*"[^>]*>.*?</span>', '', html, flags=re.S)
+    html = strip_page_furniture(html)
     txt = re.sub(r'<[^>]+>', ' ', html)
     txt = re.sub(r'&[a-z]+;', ' ', txt)
     # 数字实体（&#91;13&#93; 是注码 [13]）先前没剥：谏逐客书那一页的注码夹在正文里，
@@ -907,6 +919,12 @@ def main():
             len(rec.get('variants') or []), rec['page'] or '找不到来源页'))
         time.sleep(0.10)
 
+    # 四档一律从记录本身重算，不用循环里攒的那份。
+    # 循环里攒的会漏：「跨页合并」（override 带 union）那一支 append 完就 continue，
+    # 后面那句 withVariants 计数根本没跑到——48 条 override 里 13 篇带异文的就这么没被算进去，
+    # 台账上「有异文的篇目」当场少 13 篇，而且没有任何一处报错。
+    stats = stats_from_records(results)
+
     # --limit / --stage 是试跑用的，试跑不许覆盖正式表。
     # 刚才顺手跑了个 --limit 3，data/text-sources.json 当场从 252 篇变成 3 篇——
     # 这种覆盖不会报错，只会让后面所有读这张表的检查安静地读到残缺数据。
@@ -933,10 +951,16 @@ def main():
         for r in results:
             by_id2[r['id']] = r
         merged = list(by_id2.values())
+        # 合并之后 stats 必须按合并后的记录重算。以前这里照搬旧表的 stats：
+        # --id 补收几篇，记录数涨了，四档的数却还是旧的——文档里的数字照样「对得上」，
+        # 对的是那张旧账。台账的数在背后抖，比数字错了更难发现。
+        new_stats = stats_from_records(merged)
+        if new_stats != old.get('stats', {}):
+            print('台账四档按记录重算：%s → %s' % (old.get('stats', {}), new_stats))
         OUT.write_text(json.dumps({
             'note': old.get('note', ''),
             'generated': time.strftime('%Y-%m-%d'),
-            'stats': old.get('stats', {}),
+            'stats': stats_from_records(merged),
             'results': merged,
         }, ensure_ascii=False, indent=2), encoding='utf-8')
 
@@ -985,6 +1009,23 @@ def blank_fragments(lines):
     为什么单列：这种碎片拿去来源页里找必然找不到，会被算成「页里没找到」——台账里凭空多出一条假缺陷。
     悄悄丢掉又等于放过真的空句（正文里真有一句是空的，也该看得见）。所以：不当对上、不当没对上，当场报数。"""
     return [ln for ln in lines if ln and not _nopunct(ln)]
+
+
+def stats_from_records(records):
+    """四档从记录本身重算，不靠跑的时候攒。合并模式必须用它。"""
+    s = {'attested': 0, 'partial': 0, 'notfound': 0, 'nosource': 0, 'withVariants': 0}
+    for r in records:
+        if r.get('no_page') or r.get('error') or not r.get('page'):
+            s['nosource'] += 1
+        elif r.get('hit') == r.get('lines'):
+            s['attested'] += 1
+        elif r.get('hit'):
+            s['partial'] += 1
+        else:
+            s['notfound'] += 1
+        if r.get('variants'):
+            s['withVariants'] += 1
+    return s
 
 
 def selftest():
@@ -1184,6 +1225,52 @@ def selftest():
                                              'nearest': {'source': '甲乙丙丁一作某无此字'}}]}}
     _g20e = apparatus_gaps(_recs20e, [('甲', '甲', _md20)], _pg20e)
     must(_g20e == [], '坏例20e：页里别处有的字被当成出入：%s' % _g20e)
+    # 坏例21：合并之后照搬旧 stats——记录涨了、四档没涨，台账的数就在背后抖。
+    # 这一条是本轮真实踩过的：--id 补收 7 篇，记录从 258 涨到 265，四档却还是 205/52/0/1，
+    # 文档里的数字与产物「当场一致」，对的是那张旧账。
+    _old21 = [{'id': 'a', 'page': '甲页', 'hit': 3, 'lines': 3}, {'id': 'b', 'page': '乙页', 'hit': 1, 'lines': 4}]
+    must(stats_from_records(_old21) == {'attested': 1, 'partial': 1, 'notfound': 0, 'nosource': 0, 'withVariants': 0},
+         '坏例21：四档本身算错：%s' % stats_from_records(_old21))
+    must(stats_from_records(_old21 + [{'id': 'c', 'page': '丙页', 'hit': 2, 'lines': 2}])['attested'] == 2,
+         '坏例21b：合并进来的那一篇没被算进四档')
+    # 坏例21c：「没有来源页」的三种写法（核过确实没有 / 取页失败 / 连页名都没有）必须都落进 nosource
+    _21c = [{'id': 'd', 'no_page': True, 'hit': 0, 'lines': 5}, {'id': 'e', 'error': 'URLError: x', 'hit': 0, 'lines': 2},
+            {'id': 'f', 'hit': 0, 'lines': 3}]
+    must(stats_from_records(_21c)['nosource'] == 3, '坏例21c：没有来源页的三种写法没都算进 nosource：%s' % stats_from_records(_21c))
+    # 坏例21d：有页却一句都对不上是 notfound，不许并进 nosource——那是两回事
+    must(stats_from_records([{'id': 'g', 'page': '丁页', 'hit': 0, 'lines': 6}])['notfound'] == 1,
+         '坏例21d：有页没对上被算成找不到来源页')
+    # 坏例21e：四档加起来必须等于记录数，不等就是漏了一档
+    _21e = _old21 + _21c + [{'id': 'g', 'page': '丁页', 'hit': 0, 'lines': 6}]
+    _s21 = stats_from_records(_21e)
+    _sum21 = _s21['attested'] + _s21['partial'] + _s21['notfound'] + _s21['nosource']
+    must(_sum21 == len(_21e), '坏例21e：四档加起来 %d，记录 %d 篇，漏了一档' % (_sum21, len(_21e)))
+    # 坏例21f：误伤检查——一篇正常的表重算后必须一篇不差
+    must(stats_from_records([{'id': x, 'page': '页', 'hit': 2, 'lines': 2} for x in 'abcdef'])['attested'] == 6,
+         '坏例21f：正常表被重算误伤')
+    # 坏例22：注码必须剥掉。MediaWiki 现在渲染成 <sup id="cite_ref-1" class="reference">[1]</sup>，
+    # 先前只认大写 Reference，小写漏过去——江南逢李龟年 从「全对上」掉成「1/2 句对上」，
+    # 全仓 13 条记录的「页里最像的一段」里夹着注码数字。页面 markup 一变，台账的数就跟着抖。
+    _h22 = '岐王<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>宅裏尋常見'
+    _f22 = strip_page_furniture(_h22)
+    must('1' not in _f22, '坏例22：小写 reference 的注码没剥掉：%r' % _f22)
+    must('岐王' in _f22 and '宅裏尋常見' in _f22, '坏例22b：剥注码把正文也弄坏了：%r' % _f22)
+    # 坏例22c：旧写法（大写 Reference）不许被改坏
+    must('1' not in strip_page_furniture('甲<sup class="Reference">1</sup>乙'), '坏例22c：大写 Reference 的注码没剥掉')
+    # 坏例22d：只有 id、没有 class 的注码 sup 也要剥
+    must('2' not in strip_page_furniture('甲<sup id="cite_ref-2">2</sup>乙'), '坏例22d：只有 id 的注码 sup 没剥掉')
+    # 坏例22e：正文里真的带数字的句子不许被误剥
+    must('三十年' in strip_page_furniture('金戈铁马气吞万里如虎三十年后'), '坏例22e：正文里的数字被误剥')
+    # 坏例22f：样式块（{{另}} 模板带 CSS）不许留在正文里
+    _f22f = strip_page_furniture('正<style data-mw-deduplicate="TemplateStyles:r1">.mw-parser-output .variant-text{color:red}</style>江南')
+    must('color' not in _f22f and '江南' in _f22f, '坏例22f：内联样式没剥掉：%r' % _f22f)
+
+    # 坏例21g：带异文的记录必须算进「有异文」，不管它是正常那一支还是跨页合并那一支写出来的
+    # （真实漏点：跨页合并 append 完就 continue，循环里的 withVariants 计数没跑到，13 篇就这么没了）
+    must(stats_from_records([{'id': 'a', 'page': '页', 'hit': 2, 'lines': 2, 'variants': [{'ours': '甲', 'other': '乙'}]}])['withVariants'] == 1,
+         '坏例21g：带异文的记录没被算进 withVariants')
+    must(stats_from_records([{'id': 'a', 'page': '甲页 + 乙页', 'hit': 3, 'lines': 3, 'variants': [{'ours': '甲'}]}, {'id': 'b', 'page': '丙页', 'hit': 1, 'lines': 2}])['withVariants'] == 1,
+         '坏例21h：跨页合并的记录算错了 withVariants')
     print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 

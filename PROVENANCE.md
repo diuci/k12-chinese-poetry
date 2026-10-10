@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 258 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 265 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -66,6 +66,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 |---|---|---|---|---|---|---|---|---|
 | lunyu12-cz | 《论语》十二章 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S9+S1+S2+S10 | 文言 | 初中 · 七年级上册 |
 | shiyiyuesirifengyudazuo | 十一月四日风雨大作 | 陆游 | 宋 | 卒 1210 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
+| yeshangshouxiangchengwendi | 夜上受降城闻笛 | 李益 | 唐 | 卒 829 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
 | yeyujibei | 夜雨寄北 | 李商隐 | 唐 | 卒 858 | public-domain | S3+S1+S2 | 七言 | 初中 · 七年级上册 |
 | tianjingsha-qiusi | 天净沙 | 马致远 | 元 | 卒 1321 | public-domain | S3+S1+S2 | 曲 | 初中 · 七年级上册 |
 | shanpoyang | 山坡羊 | 张养浩 | 元 | 卒 1329 | public-domain | S3+S1+S2 | 曲 | 初中 · 九年级下册 |
@@ -81,12 +82,14 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | jiangnanfengligunian | 江南逢李龟年 | 杜甫 | 唐 | 卒 770 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
 | boqinhuai | 泊秦淮 | 杜牧 | 唐 | 卒 852 | public-domain | S3+S1+S2 | 七言 | 初中 · 七年级下册 |
 | youshanxincun | 游山西村 | 陆游 | 宋 | 卒 1210 | public-domain | S3+S1+S2 | 七言 | 初中 · 七年级下册 |
+| tongguan | 潼关 | 谭嗣同 | 清 | 卒 1898 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
 | ailianshuo | 爱莲说 | 周敦颐 | 宋 | 卒 1073 | public-domain | S3+S1+S2 | 文言 | 初中 · 七年级下册 |
 | dengyouzhoutai | 登幽州台歌 | 陈子昂 | 唐 | 卒 702 | public-domain | S3+S1+S2 | 杂言 | 初中 · 七年级下册 |
 | dengfeilaifeng | 登飞来峰 | 王安石 | 宋 | 卒 1086 | public-domain | S3+S1+S2 | 七言 | 初中 · 七年级下册 |
 | xiangjianhuan | 相见欢 | 李煜 | 南唐 | 卒 978 | public-domain | S3+S1+S2 | 词 | 初中 · 九年级上册 |
 | qiuci | 秋词 | 刘禹锡 | 唐 | 卒 842 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级上册课外诵读 |
 | zhuliguan | 竹里馆 | 王维 | 唐 | 卒 761 | public-domain | S3+S1+S2 | 五言 | 初中 · 七年级下册课外诵读 |
+| yueke | 约客 | 赵师秀 | 宋 | 卒 1220 | public-domain | S10+S9+S3 | 七言 | 初中 · 七年级下册课外诵读 |
 | xingjunjiuri | 行军九日思长安故园 | 岑参 | 唐 | 卒 770 | public-domain | S10+S9+S3 | 五言 | 初中 · 七年级上册课外诵读 |
 | xinglunan | 行路难 | 李白 | 唐 | 卒 762 | public-domain | S3+S1+S2 | 杂言 | 初中 · 九年级上册 |
 | guancanghai | 观沧海 | 曹操 | 汉 | 卒 220 | public-domain | S3+S1+S2 | 乐府 | 初中 · 七年级上册 |
@@ -115,6 +118,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | jianjia | 蒹葭 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 诗经 | 初中 · 八年级下册 |
 | suoyoujiayao | 虽有嘉肴 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 文言 | 初中 · 八年级下册 |
 | jichengtiansi | 记承天寺夜游 | 苏轼 | 宋 | 卒 1101 | public-domain | S3+S1+S2 | 文言 | 初中 · 八年级上册 |
+| zengcongdi | 赠从弟 | 刘桢 | 汉 | 卒 217 | public-domain | S10+S9+S3 | 五言 | 初中 · 八年级上册课外诵读 |
 | chibi-du | 赤壁 | 杜牧 | 唐 | 卒 852 | public-domain | S3+S1+S2 | 七言 | 初中 · 八年级上册 |
 | songshaoshu-wai | 送杜少府之任蜀州 | 王勃 | 唐 | 卒 676 | public-domain | S3+S1+S2 | 五言 | 初中 · 八年级下册课外诵读 |
 | yewang | 野望 | 王绩 | 唐 | 卒 644 | public-domain | S3+S1+S2 | 五言 | 初中 · 八年级上册课外诵读 |
@@ -128,8 +132,10 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | zhuangzi1 | 《庄子》一则 | 庄子 | 战国 | 卒 公元前 286 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | liji1 | 《礼记》一则 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | chushibiao | 出师表 | 诸葛亮 | 三国 | 卒 234 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
+| bieyunjian | 别云间 | 夏完淳 | 明 | 卒 1647 | public-domain | S10+S9+S3 | 五言 | 初中 · 九年级下册课外诵读 |
 | shiwucongjunzheng | 十五从军征 | 佚名 | 汉 | 年代上限 220 | public-domain | S1+S2+S3 | 乐府 | 初中 · 九年级下册 |
 | nangxiangzi | 南乡子 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1+S2 | 词 | 初中 · 九年级下册 |
+| xianyangchengdonglou | 咸阳城东楼 | 许浑 | 唐 | 卒 858 | public-domain | S10+S9+S3 | 七言 | 初中 · 九年级上册课外诵读 |
 | yueyanglouji | 岳阳楼记 | 范仲淹 | 宋 | 卒 1052 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级上册 |
 | caoguilunzhan | 曹刿论战 | 左丘明 | 先秦 | 卒 公元前 422 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | chaotianzi | 朝天子·咏喇叭 | 王磐 | 明 | 年代上限 1530 | public-domain | S3+S1b+S2 | 曲 | 初中 · 九年级下册 |
@@ -143,6 +149,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | zouji | 邹忌讽齐王纳谏 | 佚名 | 战国 | 年代上限 1900 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | choulitian | 酬乐天扬州初逢席上见赠 | 刘禹锡 | 唐 | 卒 842 | public-domain | S3+S1+S2 | 七言 | 初中 · 九年级上册 |
 | zuigongtingji | 醉翁亭记 | 欧阳修 | 宋 | 卒 1072 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级上册 |
+| changshaguojiayizhai | 长沙过贾谊宅 | 刘长卿 | 唐 | 卒 790 | public-domain | S10+S9+S3 | 七言 | 初中 · 九年级上册课外诵读 |
 | gulangyuexing | 古朗月行 | 李白 | 唐 | 卒 762 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级上册 |
 | yonge | 咏鹅 | 骆宾王 | 唐 | 卒 684 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级上册 |
 | xunyinzhe | 寻隐者不遇 | 贾岛 | 唐 | 卒 843 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级下册 |

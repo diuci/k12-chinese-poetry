@@ -72,6 +72,11 @@ _bl_spec.loader.exec_module(_bl)
 
 VM = _bl.VARIANT_MARK  # 「这条是不是异文」的唯一口径
 
+_ts_spec = importlib.util.spec_from_file_location('audit_sources', ROOT / 'tools' / 'check-text-sources.py')
+_ts = importlib.util.module_from_spec(_ts_spec)
+_ts_spec.loader.exec_module(_ts)
+source_stats = _ts.stats_from_records  # 四档的唯一算法：审计里不许再抄一遍
+
 
 
 SEC = ('全文', '必背全文')
@@ -743,6 +748,13 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
                    json.dumps(tstats, ensure_ascii=False) if tstats else '（这次没带出处核对统计）',
                    json.dumps(ca, ensure_ascii=False) if ca else '（这次没带 apparatus）',
                    '；'.join(claims) if claims else '文档里的数字全对得上')))
+    # 出处核对的四档必须与记录本身重算一致。本轮真实漏点：跨页合并（override 带 union）那一支
+    # append 完就 continue，循环里攒的 withVariants 少算 13 篇。而「文档数字」那一项是拿表里的 stats
+    # 比文档里的数字——两边一起错就什么都看不出来。这一项是拿记录比 stats。
+    if tsrc and tsrc.get('results') and tstats:
+        _rs = source_stats(tsrc['results'])
+        out.append(('出处核对四档与记录本身一致', _rs == tstats,
+                    '重算 %s vs 表里 %s' % (json.dumps(_rs, ensure_ascii=False), json.dumps(tstats, ensure_ascii=False))))
 
     # 链条重算的产物里不许有「当场日期」：可复现闸门比的是逐字节，而日期取决于跑它的那台机器。
     # 本轮 CI 就是这么红的：本地 UTC+8 的深夜写 2026-10-10，CI 的 UTC 写 2026-10-09，同一份输入两份产物。
@@ -1200,6 +1212,20 @@ def selftest():
         print('坏例19f：注释里不是同一句却被报了：%s' % stale_rulings(c19f)); bad += 1
 
 
+    # 23：出处核对的 stats 与记录本身不一致，必须被这一项抓到。
+    # 真实漏点：跨页合并（override 带 union）那一支 append 完就 continue，循环里攒的 withVariants
+    # 少算 13 篇；而「文档数字」那一项是拿表里的 stats 比文档，两边一起错就看不出来。
+    _tsrc_bad = {'results': [{'id': 'a', 'page': 'X', 'hit': 2, 'lines': 2, 'variants': [{'ours': '甲', 'other': '乙'}]},
+                             {'id': 'b', 'page': 'Y', 'hit': 1, 'lines': 1}],
+                 'stats': {'attested': 2, 'partial': 0, 'notfound': 0, 'nosource': 0, 'withVariants': 0}}
+    _got23 = {nm for nm, ok, _ in audit(c0, ledger, _tsrc_bad, [], TRAD_GOOD, MD_GOOD) if not ok}
+    if '出处核对四档与记录本身一致' not in _got23:
+        print('坏例23：stats 少算异文却没被这一项抓到：%s' % sorted(_got23)); bad += 1
+    # 23b：四档与记录一致就不许报（否则这一项天天红，等于没有）
+    _tsrc_ok = {'results': _tsrc_bad['results'], 'stats': source_stats(_tsrc_bad['results'])}
+    _got23b = {nm for nm, ok, _ in audit(c0, ledger, _tsrc_ok, [], TRAD_GOOD, MD_GOOD) if not ok}
+    if '出处核对四档与记录本身一致' in _got23b:
+        print('坏例23b：四档与记录一致却被报了：%s' % sorted(_got23b)); bad += 1
     if bad:
 
         print('[!] audit-content --selftest 失败 %d 项' % bad)

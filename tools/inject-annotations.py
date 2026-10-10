@@ -169,6 +169,16 @@ def selftest():
     _e9c = {'note': ['眷顾：眷恋牵挂。'], 'trans': '', 'appr': '二十字。'}
     must('月光洒在床前。' in injected_body(_b9, _e9c), '坏例9c：内容库里的空译文把 md 的译文清掉了')
 
+    # 坏例10：内容库里的值带 \r——从 md 抽小节时只按 \n 切，行尾回车就留在值里。
+    # 本轮真实踩过：把 md 的小节抽回内容库，四篇的值全带 \r，注入会把整节行尾改掉；
+    # 内容一个字没变，文件却被重写。这种改动 diff 里全是行尾，最容易看漏。
+    must(store_problems({'a': {'note': ['甲\r乙'], 'trans': '丙', 'appr': '丁'}}) != [],
+         '坏例10：内容库带 \\r 却没报错')
+    must(store_problems({'a': {'note': ['甲'], 'trans': '丙', 'appr': '丁'}}) == [],
+         '坏例10b：干净的内容库被误伤')
+    _n10 = len(store_problems({'a': {'note': ['甲\r'], 'trans': '丙\r', 'appr': '丁'}}))
+    must(_n10 == 2, '坏例10c：两处带 \\r 只报了 %d 处' % _n10)
+    must(len(store_problems({'a': {'note': ['甲\r']}, 'b': {'appr': '丁\r'}})) == 2, '坏例10d：跨篇的 \\r 只报了 %d 处' % len(store_problems({'a': {'note': ['甲\r']}, 'b': {'appr': '丁\r'}})))
     print('[ok] inject-annotations --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
@@ -202,6 +212,17 @@ def injected_body(body, entry):
     return out
 
 
+def store_problems(ann):
+    """内容库自己得先过一遍：值里不许带 \\r。"""
+    out = []
+    for pid in sorted(ann):
+        for k, val in (ann[pid] or {}).items():
+            txt = '\n'.join(val) if isinstance(val, list) else (val or '')
+            if '\r' in txt:
+                out.append('%s: 内容库里的 %s 带 \\r（从 md 抽小节时只按 \\n 切，行尾回车留在了值里），注入会把整节的行尾改掉' % (pid, FIELD.get(k, k)))
+    return out
+
+
 def main():
     check = '--check' in sys.argv
     verify = '--verify' in sys.argv
@@ -214,6 +235,7 @@ def main():
     covered = 0
     missing = []
     problems = []
+    problems.extend(store_problems(ann))
 
     for pf in poem_files():
         text = pf.read_text(encoding='utf-8')
@@ -235,9 +257,6 @@ def main():
         body_before = body
         body = injected_body(body_before, a)
         changed = (body != body_before)
-        # --verify：内容库与 md 不一致时当场报红。本轮真实踩过——内容库里存的是旧注释，
-        # 注入把 屈原列传 的注释改回旧版，把已经裁定删掉的「睠顾楚国」放回正文，审计当场报红。
-        # 没有这一条，注入就是一只随时能把正文改回旧文本的手，而且改完没人知道。
         # --verify：内容库与 md 不一致时当场报红。本轮真实踩过——内容库里存的是旧注释，
         # 注入把 屈原列传 的注释改回旧版，把已经裁定删掉的「睠顾楚国」放回正文，审计当场报红。
         # 没有这一条，注入就是一只随时能把正文改回旧文本的手，而且改完没人知道。
