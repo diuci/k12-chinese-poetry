@@ -84,13 +84,16 @@
       "mengzi3",
       "zhuangzi1",
       "liji1",
+      "chounuer-shuboshandaozhongbi",
       "chushibiao",
       "bieyunjian",
       "shiwucongjunzheng",
       "nangxiangzi",
+      "nananjun",
       "xianyangchengdonglou",
       "shangshanxiaoxing",
       "yueyanglouji",
+      "zuoqianzhilanguanshizhisunxiang",
       "caoguilunzhan",
       "yueyeyisheidi",
       "chaotianzi",
@@ -100,6 +103,7 @@
       "manjianghong-xiaozhujinghua",
       "baixuege",
       "pozhenzi",
+      "xingxiangzi",
       "songdongyang",
       "zouji",
       "choulitian",
@@ -327,6 +331,7 @@
     "chilege": "chilege",
     "chishang": "chishang",
     "choulitian": "choulitian",
+    "chounuer-shuboshandaozhongbi": "chounuer-shuboshandaozhongbi",
     "chunjianghuayue": "chunjianghuayue",
     "chunri": "chunri",
     "chunwang": "chunwang",
@@ -445,6 +450,7 @@
     "momei": "momei",
     "mujiangyin": "mujiangyin",
     "mulanci": "mulanci",
+    "nananjun": "nananjun",
     "nangxiangzi": "nangxiangzi",
     "niannujiao-chibi": "niannujiao-chibi",
     "niannujiao-gudong": "niannujiao-gudong",
@@ -535,6 +541,7 @@
     "xijiangyue": "xijiangyue",
     "xingjunjiuri": "xingjunjiuri",
     "xinglunan": "xinglunan",
+    "xingxiangzi": "xingxiangzi",
     "xuemei": "xuemei",
     "xunyinzhe": "xunyinzhe",
     "yange-xing": "yange-xing",
@@ -579,7 +586,8 @@
     "zijin": "zijin",
     "zilu-shizhe": "zilu-shizhe",
     "zouji": "zouji",
-    "zuigongtingji": "zuigongtingji"
+    "zuigongtingji": "zuigongtingji",
+    "zuoqianzhilanguanshizhisunxiang": "zuoqianzhilanguanshizhisunxiang"
   },
   "byTheme": {
     "war": [
@@ -644,6 +652,7 @@
     "写景": [
       "guancanghai",
       "sanxia",
+      "xingxiangzi",
       "jueju-huangli",
       "zhouyeshujian",
       "jueju-chiri",
@@ -1028,6 +1037,8 @@
     ],
     "感怀": [
       "dengyouzhoutai",
+      "chounuer-shuboshandaozhongbi",
+      "zuoqianzhilanguanshizhisunxiang",
       "linanchunyu"
     ],
     "感恩": [
@@ -1099,6 +1110,9 @@
     ],
     "昂扬": [
       "qiuci"
+    ],
+    "明志": [
+      "nananjun"
     ],
     "春天": [
       "wanchun",
@@ -1190,6 +1204,7 @@
       "shiyiyuesirifengyudazuo",
       "guolingyang",
       "nangxiangzi",
+      "nananjun",
       "jiangchengzi-laofeng",
       "pozhenzi",
       "xiarijueju",
@@ -1237,6 +1252,7 @@
       "taohuayuanji",
       "yewang",
       "yinjiujiusan",
+      "xingxiangzi",
       "minnong2",
       "jiangnan",
       "minnong1",
@@ -1360,7 +1376,9 @@
       "bosuanzi-yongmei",
       "bosuanzi-huangzhou",
       "zengcongdi",
-      "guisuishou"
+      "guisuishou",
+      "chounuer-shuboshandaozhongbi",
+      "zuoqianzhilanguanshizhisunxiang"
     ],
     "议论文": [
       "wudailingguan",
@@ -1528,7 +1546,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 279,
+  "count": 283,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/《论语》十二章.md",
@@ -7931,6 +7949,77 @@
       "volume": "九年级下册"
     },
     {
+      "_path": "poems/初中/九年级上册课外诵读/丑奴儿·书博山道中壁.md",
+      "author": "辛弃疾",
+      "authorDied": 1207,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "真愁说出来也没用的那种闭嘴",
+      "examFreq": 0.8,
+      "form": "词",
+      "fullLines": [
+        "少年不识愁滋味爱上层楼爱上层楼为赋新词强说愁",
+        "而今识尽愁滋味欲说还休欲说还休却道“天凉好个秋”"
+      ],
+      "fullLinesPunct": [
+        "少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。",
+        "而今识尽愁滋味，欲说还休。欲说还休，却道“天凉好个秋”！"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "chounuer-shuboshandaozhongbi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "少年不识愁滋味爱上层楼爱上层楼为赋新词强说愁",
+        "而今识尽愁滋味欲说还休欲说还休却道“天凉好个秋”"
+      ],
+      "linesPunct": [
+        "少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。",
+        "而今识尽愁滋味，欲说还休。欲说还休，却道“天凉好个秋”！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        3,
+        3
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": "书博山道中壁",
+      "syllables": null,
+      "tags": [
+        "感怀",
+        "言志",
+        "宋词"
+      ],
+      "technique": [
+        "对比",
+        "反复"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "感怀",
+        "言志"
+      ],
+      "title": "丑奴儿",
+      "volume": "九年级上册课外诵读"
+    },
+    {
       "_path": "poems/初中/九年级下册/出师表.md",
       "author": "诸葛亮",
       "authorDied": 234,
@@ -8301,6 +8390,92 @@
       "volume": "九年级下册"
     },
     {
+      "_path": "poems/初中/九年级下册课外诵读/南安军.md",
+      "author": "文天祥",
+      "authorDied": 1283,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "押解路上决定饿死的那一夜",
+      "examFreq": 0.7,
+      "form": "五言",
+      "fullLines": [
+        "梅花南北路风雨湿征衣",
+        "出岭同谁出归乡如此归",
+        "山河千古在城郭一时非",
+        "饿死真吾志梦中行采薇"
+      ],
+      "fullLinesPunct": [
+        "梅花南北路，风雨湿征衣。",
+        "出岭同谁出？归乡如此归！",
+        "山河千古在，城郭一时非。",
+        "饿死真吾志，梦中行采薇。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "nananjun",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "梅花南北路风雨湿征衣",
+        "出岭同谁出归乡如此归",
+        "山河千古在城郭一时非",
+        "饿死真吾志梦中行采薇"
+      ],
+      "linesPunct": [
+        "梅花南北路，风雨湿征衣。",
+        "出岭同谁出？归乡如此归！",
+        "山河千古在，城郭一时非。",
+        "饿死真吾志，梦中行采薇。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": "第2句「出岭同谁出？归乡如此归！」中间是问号不是逗号，按逗号只能算 1 段；但它是五言一联，游戏要按两句贴地渲染，所以记 2。写在这里，不让生成脚本靠猜。",
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "爱国",
+        "明志",
+        "宋五言"
+      ],
+      "technique": [
+        "用典",
+        "对比",
+        "直抒"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "爱国",
+        "明志"
+      ],
+      "title": "南安军",
+      "volume": "九年级下册课外诵读"
+    },
+    {
       "_path": "poems/初中/九年级上册课外诵读/咸阳城东楼.md",
       "author": "许浑",
       "authorDied": 858,
@@ -8561,6 +8736,92 @@
       ],
       "title": "岳阳楼记",
       "volume": "九年级上册"
+    },
+    {
+      "_path": "poems/初中/九年级上册课外诵读/左迁至蓝关示侄孙湘.md",
+      "author": "韩愈",
+      "authorDied": 824,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "唐",
+      "emotion": "明知要死也不改口的那口气",
+      "examFreq": 0.8,
+      "form": "七言",
+      "fullLines": [
+        "一封朝奏九重天夕贬潮州路八千",
+        "欲为圣明除弊事肯将衰朽惜残年",
+        "云横秦岭家何在雪拥蓝关马不前",
+        "知汝远来应有意好收吾骨瘴江边"
+      ],
+      "fullLinesPunct": [
+        "一封朝奏九重天，夕贬潮州路八千。",
+        "欲为圣明除弊事，肯将衰朽惜残年！",
+        "云横秦岭家何在？雪拥蓝关马不前。",
+        "知汝远来应有意，好收吾骨瘴江边。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "zuoqianzhilanguanshizhisunxiang",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "一封朝奏九重天夕贬潮州路八千",
+        "欲为圣明除弊事肯将衰朽惜残年",
+        "云横秦岭家何在雪拥蓝关马不前",
+        "知汝远来应有意好收吾骨瘴江边"
+      ],
+      "linesPunct": [
+        "一封朝奏九重天，夕贬潮州路八千。",
+        "欲为圣明除弊事，肯将衰朽惜残年！",
+        "云横秦岭家何在？雪拥蓝关马不前。",
+        "知汝远来应有意，好收吾骨瘴江边。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": "第3句「云横秦岭家何在？雪拥蓝关马不前。」中间是问号不是逗号，按逗号只能算 1 段；但它是七言一联，游戏要按两句贴地渲染，所以记 2。写在这里，不让生成脚本靠猜。",
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "言志",
+        "感怀",
+        "唐七言"
+      ],
+      "technique": [
+        "直抒",
+        "借景抒情",
+        "用典"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "言志",
+        "感怀"
+      ],
+      "title": "左迁至蓝关示侄孙湘",
+      "volume": "九年级上册课外诵读"
     },
     {
       "_path": "poems/初中/九年级下册/曹刿论战.md",
@@ -9354,6 +9615,78 @@
       ],
       "title": "破阵子",
       "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级上册课外诵读/行香子.md",
+      "author": "秦观",
+      "authorDied": 1100,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "宋",
+      "emotion": "春天里随便走走的那种高兴",
+      "examFreq": 0.6,
+      "form": "词",
+      "fullLines": [
+        "树绕村庄水满陂塘倚东风豪兴徜徉小园几许收尽春光有桃花红李花白菜花黄",
+        "远远围墙隐隐茅堂飏青旗流水桥旁偶然乘兴步过东冈正莺儿啼燕儿舞蝶儿忙"
+      ],
+      "fullLinesPunct": [
+        "树绕村庄，水满陂塘。倚东风，豪兴徜徉。小园几许，收尽春光。有桃花红，李花白，菜花黄。",
+        "远远围墙，隐隐茅堂。飏青旗，流水桥旁。偶然乘兴，步过东冈。正莺儿啼，燕儿舞，蝶儿忙。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "xingxiangzi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "树绕村庄水满陂塘倚东风豪兴徜徉小园几许收尽春光有桃花红李花白菜花黄",
+        "远远围墙隐隐茅堂飏青旗流水桥旁偶然乘兴步过东冈正莺儿啼燕儿舞蝶儿忙"
+      ],
+      "linesPunct": [
+        "树绕村庄，水满陂塘。倚东风，豪兴徜徉。小园几许，收尽春光。有桃花红，李花白，菜花黄。",
+        "远远围墙，隐隐茅堂。飏青旗，流水桥旁。偶然乘兴，步过东冈。正莺儿啼，燕儿舞，蝶儿忙。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        6,
+        6
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "田园",
+        "写景",
+        "宋词"
+      ],
+      "technique": [
+        "铺陈",
+        "白描",
+        "对偶"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "田园",
+        "写景"
+      ],
+      "title": "行香子",
+      "volume": "九年级上册课外诵读"
     },
     {
       "_path": "poems/初中/九年级下册/送东阳马生序.md",

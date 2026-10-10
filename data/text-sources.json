@@ -1,12 +1,12 @@
 {
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
-  "generated": "2026-10-10",
+  "generated": "2026-10-11",
   "stats": {
-    "attested": 223,
-    "partial": 55,
+    "attested": 225,
+    "partial": 57,
     "notfound": 0,
     "nosource": 1,
-    "withVariants": 82
+    "withVariants": 83
   },
   "results": [
     {
@@ -709,6 +709,19 @@
       "override": "上一轮写「找不到第二条来源」是因为探针用了繁体字、而比对文本已被转成简体，全部探针 0 命中——那是探针的错。重测：单页《醉翁亭記》618 字本身就是全篇（结尾「太守谓谁，庐陵欧阳修也」），《歐陽修集/卷039》与《崇古文訣 (四庫全書本)/卷18》都完整收录这一篇，三条来源都逐字对上三句必背。"
     },
     {
+      "id": "chounuer-shuboshandaozhongbi",
+      "title": "丑奴儿",
+      "author": "辛弃疾",
+      "stage": "初中",
+      "page": "醜奴兒·書博山道中壁",
+      "url": "https://zh.wikisource.org/wiki/%E9%86%9C%E5%A5%B4%E5%85%92%C2%B7%E6%9B%B8%E5%8D%9A%E5%B1%B1%E9%81%93%E4%B8%AD%E5%A3%81",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "xianyangchengdonglou",
       "title": "咸阳城东楼",
       "author": "许浑",
@@ -755,6 +768,32 @@
       ]
     },
     {
+      "id": "zuoqianzhilanguanshizhisunxiang",
+      "title": "左迁至蓝关示侄孙湘",
+      "author": "韩愈",
+      "stage": "初中",
+      "page": "千家詩/卷四",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%83%E5%AE%B6%E8%A9%A9/%E5%8D%B7%E5%9B%9B",
+      "lines": 5,
+      "hit": 5,
+      "miss": [],
+      "variantNotes": [
+        "一作已",
+        "一作粟",
+        "一作不",
+        "一作门户",
+        "一作添",
+        "一作艇",
+        "一作路",
+        "一作对",
+        "一作篱南",
+        "一作阳",
+        "又作岂于",
+        "一作计"
+      ],
+      "variants": []
+    },
+    {
       "id": "yueyeyisheidi",
       "title": "月夜忆舍弟",
       "author": "杜甫",
@@ -764,6 +803,28 @@
       "lines": 4,
       "hit": 4,
       "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "xingxiangzi",
+      "title": "行香子",
+      "author": "秦观",
+      "stage": "初中",
+      "page": "行香子 (樹繞村莊)",
+      "url": "https://zh.wikisource.org/wiki/%E8%A1%8C%E9%A6%99%E5%AD%90%20%28%E6%A8%B9%E7%B9%9E%E6%9D%91%E8%8E%8A%29",
+      "lines": 8,
+      "hit": 7,
+      "miss": [
+        {
+          "line": "树绕村庄水满陂塘",
+          "nearest": {
+            "line": "树绕村庄水满陂塘",
+            "source": "树绕村庄水满坡塘倚东",
+            "ratio": 0.778
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -1423,6 +1484,51 @@
       "miss": [],
       "variantNotes": [],
       "variants": []
+    },
+    {
+      "id": "nananjun",
+      "title": "南安军",
+      "author": "文天祥",
+      "stage": "初中",
+      "page": "南安軍",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%AE%89%E8%BB%8D",
+      "lines": 5,
+      "hit": 2,
+      "miss": [
+        {
+          "line": "出岭同谁出",
+          "nearest": {
+            "line": "出岭同谁出",
+            "source": "出岭谁同出归乡",
+            "ratio": 0.667
+          }
+        },
+        {
+          "line": "归乡如此归",
+          "nearest": {
+            "line": "归乡如此归",
+            "source": "归乡如不一作此归山",
+            "ratio": 0.714
+          }
+        },
+        {
+          "line": "饿死真吾志梦中行采薇",
+          "nearest": {
+            "line": "饿死真吾志梦中行采薇",
+            "source": "死真吾志梦中行采薇此南宋",
+            "ratio": 0.818
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "不",
+          "other": "此",
+          "context": "，風雨濕征衣。出嶺誰同出？歸鄉如不歸。山河千古在，城郭一時非。饑死真吾志，夢中行采薇。",
+          "page": "南安軍"
+        }
+      ]
     },
     {
       "id": "sanxia",

@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 279 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 283 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -143,13 +143,16 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | mengzi3 | 《孟子》三则 | 孟子 | 战国 | 卒 公元前 289 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | zhuangzi1 | 《庄子》一则 | 庄子 | 战国 | 卒 公元前 286 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | liji1 | 《礼记》一则 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
+| chounuer-shuboshandaozhongbi | 丑奴儿 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S10+S9+S3 | 词 | 初中 · 九年级上册课外诵读 |
 | chushibiao | 出师表 | 诸葛亮 | 三国 | 卒 234 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | bieyunjian | 别云间 | 夏完淳 | 明 | 卒 1647 | public-domain | S10+S9+S3 | 五言 | 初中 · 九年级下册课外诵读 |
 | shiwucongjunzheng | 十五从军征 | 佚名 | 汉 | 年代上限 220 | public-domain | S1+S2+S3 | 乐府 | 初中 · 九年级下册 |
 | nangxiangzi | 南乡子 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1+S2 | 词 | 初中 · 九年级下册 |
+| nananjun | 南安军 | 文天祥 | 宋 | 卒 1283 | public-domain | S10+S9+S3 | 五言 | 初中 · 九年级下册课外诵读 |
 | xianyangchengdonglou | 咸阳城东楼 | 许浑 | 唐 | 卒 858 | public-domain | S10+S9+S3 | 七言 | 初中 · 九年级上册课外诵读 |
 | shangshanxiaoxing | 商山早行 | 温庭筠 | 唐 | 卒 866 | public-domain | S10+S9+S3 | 五言 | 初中 · 九年级上册课外诵读 |
 | yueyanglouji | 岳阳楼记 | 范仲淹 | 宋 | 卒 1052 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级上册 |
+| zuoqianzhilanguanshizhisunxiang | 左迁至蓝关示侄孙湘 | 韩愈 | 唐 | 卒 824 | public-domain | S10+S9+S3 | 七言 | 初中 · 九年级上册课外诵读 |
 | caoguilunzhan | 曹刿论战 | 左丘明 | 先秦 | 卒 公元前 422 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | yueyeyisheidi | 月夜忆舍弟 | 杜甫 | 唐 | 卒 770 | public-domain | S10+S9+S3 | 五言 | 初中 · 九年级上册课外诵读 |
 | chaotianzi | 朝天子·咏喇叭 | 王磐 | 明 | 年代上限 1530 | public-domain | S3+S1b+S2 | 曲 | 初中 · 九年级下册 |
@@ -159,6 +162,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | manjianghong-xiaozhujinghua | 满江红 | 秋瑾 | 清 | 卒 1907 | public-domain | S1+S2+S9 | 词 | 初中 · 九年级下册 |
 | baixuege | 白雪歌送武判官归京 | 岑参 | 唐 | 卒 770 | public-domain | S3+S1+S2 | 七言 | 初中 · 九年级下册 |
 | pozhenzi | 破阵子 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1+S2 | 词 | 初中 · 九年级下册 |
+| xingxiangzi | 行香子 | 秦观 | 宋 | 卒 1100 | public-domain | S10+S9+S3 | 词 | 初中 · 九年级上册课外诵读 |
 | songdongyang | 送东阳马生序 | 宋濂 | 明 | 卒 1381 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | zouji | 邹忌讽齐王纳谏 | 佚名 | 战国 | 年代上限 1900 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |
 | choulitian | 酬乐天扬州初逢席上见赠 | 刘禹锡 | 唐 | 卒 842 | public-domain | S3+S1+S2 | 七言 | 初中 · 九年级上册 |
