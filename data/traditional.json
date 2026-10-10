@@ -1,21 +1,21 @@
 {
  "note": "简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / pending 没依据，留在待定清单。",
  "counts": {
-  "page": 10894,
-  "table": 1242,
+  "page": 11218,
+  "table": 1274,
   "rule": 44,
   "keep": 0,
-  "identity": 1577,
+  "identity": 1609,
   "variant": 5,
   "pending": 0
  },
  "counts_apparatus": {
-  "table": 45949,
-  "rule": 2501,
-  "identity": 10272,
+  "table": 47319,
+  "rule": 2551,
+  "identity": 10488,
   "keep": 80,
   "pending": 0,
-  "page": 10547,
+  "page": 10736,
   "variant": 6
  },
  "reversal": [
@@ -271,6 +271,12 @@
    "id": "yongxue",
    "title": "咏雪",
    "char": "凭",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "zhouyafujunxiliu",
+   "title": "周亚夫军细柳",
+   "char": "发",
    "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
   },
   {
@@ -58887,6 +58893,4654 @@
    "left_behind": []
   },
   {
+   "id": "zhouyafujunxiliu",
+   "title": "周亚夫军细柳",
+   "page": "史記/卷057",
+   "text_trad": [
+    "文帝之後六年，匈奴大入邊。乃以宗正劉禮爲將軍，軍霸上；祝茲侯徐厲爲將軍，軍棘門；以河內守亞夫爲將軍，軍細柳：以備胡。",
+    "上自勞軍。至霸上及棘門軍，直馳入，將以下騎送迎。已而之細柳軍，軍士吏被甲，銳兵刃，彀弓弩，持滿。天子先驅至，不得入。先驅曰：“天子且至！”軍門都尉曰：“將軍令曰：‘軍中聞將軍令，不聞天子之詔。’”居無何，上至，又不得入。於是上乃使使持節詔將軍：“吾欲入勞軍。”亞夫乃傳言開壁門。壁門士吏謂從屬車騎曰：“將軍約，軍中不得驅馳。”於是天子乃按轡徐行。至營，將軍亞夫持兵揖曰：“介胄之士不拜，請以軍禮見。”天子爲動，改容式車。使人稱謝：“皇帝敬勞將軍。”成禮而去。",
+    "既出軍門，羣臣皆驚。文帝曰：“嗟呼，此真將軍矣！曩者霸上、棘門軍，若兒戲耳，其將固可襲而虜也。至於亞夫，可得而犯邪！”稱善者久之。"
+   ],
+   "lines_trad": [
+    "文帝之後六年，匈奴大入邊。乃以宗正劉禮爲將軍，軍霸上；祝茲侯徐厲爲將軍，軍棘門；以河內守亞夫爲將軍，軍細柳：以備胡。",
+    "上自勞軍。至霸上及棘門軍，直馳入，將以下騎送迎。已而之細柳軍，軍士吏被甲，銳兵刃，彀弓弩，持滿。天子先驅至，不得入。先驅曰：“天子且至！”軍門都尉曰：“將軍令曰：‘軍中聞將軍令，不聞天子之詔。’”居無何，上至，又不得入。於是上乃使使持節詔將軍：“吾欲入勞軍。”亞夫乃傳言開壁門。壁門士吏謂從屬車騎曰：“將軍約，軍中不得驅馳。”於是天子乃按轡徐行。至營，將軍亞夫持兵揖曰：“介胄之士不拜，請以軍禮見。”天子爲動，改容式車。使人稱謝：“皇帝敬勞將軍。”成禮而去。",
+    "既出軍門，羣臣皆驚。文帝曰：“嗟呼，此真將軍矣！曩者霸上、棘門軍，若兒戲耳，其將固可襲而虜也。至於亞夫，可得而犯邪！”稱善者久之。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "文帝之後六年，匈奴大入邊。乃以宗正劉禮爲將軍，軍霸上；祝茲侯徐厲爲將軍，軍棘門；以河內守亞夫爲將軍，軍細柳：以備胡。",
+     "上自勞軍。至霸上及棘門軍，直馳入，將以下騎送迎。已而之細柳軍，軍士吏被甲，銳兵刃，彀弓弩，持滿。天子先驅至，不得入。先驅曰：“天子且至！”軍門都尉曰：“將軍令曰：‘軍中聞將軍令，不聞天子之詔。’”居無何，上至，又不得入。於是上乃使使持節詔將軍：“吾欲入勞軍。”亞夫乃傳言開壁門。壁門士吏謂從屬車騎曰：“將軍約，軍中不得驅馳。”於是天子乃按轡徐行。至營，將軍亞夫持兵揖曰：“介胄之士不拜，請以軍禮見。”天子爲動，改容式車。使人稱謝：“皇帝敬勞將軍。”成禮而去。",
+     "既出軍門，羣臣皆驚。文帝曰：“嗟呼，此真將軍矣！曩者霸上、棘門軍，若兒戲耳，其將固可襲而虜也。至於亞夫，可得而犯邪！”稱善者久之。"
+    ],
+    "异文": [
+     "- 「嗟呼，此真將軍矣」：統編作「嗟呼」；維基文庫《史記/卷057》作「嗟乎」。",
+     "  取舍：正文照統編作「呼」，「乎」登記爲異文，不改正文。",
+     "  出處：統編教材八年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/banianji/20937_langdu.html ；維基文庫《史記/卷057》 https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7057",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 「將軍令曰：‘軍中聞將軍令，不聞天子之詔。’」：該頁作「將軍令曰『軍中聞將軍令，不聞天子之詔』。」，引號層級與句末位置不同。標點差異不算文字分歧。",
+     "  取舍：正文照統編。",
+     "  出處：統編教材八年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/banianji/20937_langdu.html ；維基文庫《史記/卷057》 https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7057",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 結尾與篇名：該頁在「稱善者久之」之後還有「月餘，三軍皆罷。乃拜亞夫為中尉。」，教材沒收這一句；篇名《周亞夫軍細柳》是教材加的，該頁這一節的標題作「條侯亞夫」。",
+     "  取舍：正文照統編；這兩處只登記，作爲上下文的一條線索。",
+     "  出處：統編教材八年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/banianji/20937_langdu.html ；維基文庫《史記/卷057》 https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7057",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。"
+    ],
+    "注释": [
+     "- 選自《史記·絳侯周勃世家》，標題是教材加的。司馬遷，西漢史學家，《史記》作者。周亞夫，西漢名將，絳侯周勃之子，封條侯。",
+     "- 文帝之後六年：漢文帝後元六年（前 158）。文帝，漢文帝劉恆。",
+     "- 匈奴大入邊：匈奴大規模侵入漢朝邊境。",
+     "- 宗正劉禮：宗正（掌管皇族事務的官員）劉禮。",
+     "- 軍霸上：駐軍霸上。軍，駐軍，作動詞。霸上，今陝西西安東。",
+     "- 祝茲侯徐厲：祝茲侯（爵名）徐厲。",
+     "- 軍棘門：駐軍棘門。棘門，故址在今陝西鹹陽市北。",
+     "- 河內守亞夫：河內郡太守周亞夫。守，郡守，漢代一郡的最高行政長官。",
+     "- 以備胡：用來防備匈奴。胡，這里指匈奴。",
+     "- 上自勞軍：皇上親自去慰勞軍隊。上，皇上。勞，慰勞。",
+     "- 直馳入：（車馬）徑直驅馳進入。",
+     "- 將以下騎送迎：將領以下都騎馬迎送。",
+     "- 已而之細柳軍：不久來到細柳軍營。已而，不久。之，到、往。",
+     "- 軍士吏被（pī）甲：官兵都披戴盔甲。被，同「披」。",
+     "- 銳兵刃：使兵器鋒利。",
+     "- 彀（gòu）弓弩，持滿：張滿弓弩。彀，張滿弓弩。持滿，把弓拉滿。",
+     "- 天子先驅至：天子的先行衛隊到了。先驅，先行的人員。",
+     "- 天子且至：天子將要到。且，將要。",
+     "- 軍門都尉：守衛軍營大門的軍官。都尉，武官名。",
+     "- 聞將軍令：聽從將軍的命令。聞，聽。",
+     "- 不聞天子之詔：不聽從天子的詔令。詔，皇帝发布的命令。",
+     "- 居無何：過了不久。居，經過。無何，不久。",
+     "- 使使持節：派使者拿符節。使使，派使者。節，符節，君王使者憑證。",
+     "- 傳言開壁門：傳令打開營門。壁門，軍營的門。",
+     "- 從屬車騎：跟隨（皇上）的車騎。",
+     "- 將軍約，軍中不得驅馳：將軍規定，軍營中不準驅馬奔馳。約，規定。",
+     "- 按轡（pèi）徐行：拉住繮繩慢慢走。轡，繮繩。",
+     "- 持兵揖：手持兵器行禮。揖，拱手行禮。",
+     "- 介胄（zhòu）之士不拜：穿戴盔甲的將士不行跪拜禮。介胄，鎧甲和頭盔，這里作動詞，指穿戴盔甲。",
+     "- 請以軍禮見：請允許我用軍禮參見。",
+     "- 天子爲動：皇上被感動。",
+     "- 改容式車：神情變得嚴肅，俯身靠在車前的橫木上（表示敬意）。式，同「軾」，車前的橫木，這里作動詞，扶軾致敬。",
+     "- 稱謝：向人致意，表示問候。",
+     "- 成禮而去：勞軍的禮儀完成後離去。",
+     "- 曩（nǎng）者：先前。",
+     "- 若兒戲耳：簡直像兒戲一樣。",
+     "- 其將固可襲而虜也：那里的將軍是完全可以通過偷襲而俘虜的。固，本來、完全。虜，俘虜。",
+     "- 可得而犯邪：能夠被侵犯嗎。",
+     "- 稱善者久之：長時間稱讚周亞夫。稱善，稱讚。久之，很久。"
+    ],
+    "译文": [
+     "漢文帝後元六年，匈奴大規模侵入漢朝邊境。於是朝廷任命宗正劉禮爲將軍，駐軍霸上；祝茲侯徐厲爲將軍，駐軍棘門；河內郡太守周亞夫爲將軍，駐軍細柳：用來防備匈奴。",
+     "皇上親自去慰勞軍隊。到了霸上和棘門的軍營，車馬徑直馳入，將領以下都騎馬迎送。隨後來到細柳軍營，只見官兵都披着盔甲、兵器磨得鋒利、弓弩張滿。天子的先行衛隊到了營前，不能進去。先行衛隊說：“天子將要到了。”軍門都尉說：“將軍有令：軍中只聽從將軍的命令，不聽天子的詔令。”過了不久，皇上到了，也不能進去。於是皇上派使者持符節詔告將軍：“我要進營慰勞軍隊。”周亞夫這才傳令打開營門。守營門的官兵對跟隨皇上的車騎說：“將軍規定，軍營中不準驅馳。”於是皇上也只好拉住繮繩慢慢走。到了中軍帳，將軍周亞夫手持兵器拱手說：“穿戴盔甲的將士不行跪拜禮，請允許我以軍禮參見。”皇上深受感動，神情變得嚴肅，俯身扶着車前橫木。派人致意說：“皇帝敬重地慰勞將軍。”勞軍禮成後離去。",
+     "出了營門，羣臣都很驚訝。文帝說：“啊，這才是真正的將軍！先前霸上、棘門的軍營，簡直像兒戲，那里的將軍本來就可能被偷襲而俘虜。至於周亞夫，怎麼可能被侵犯呢！”長時間稱讚周亞夫。"
+    ],
+    "赏析": [
+     "這一篇的寫法是把同一件事做三遍：霸上、棘門、細柳。前兩處只有一句「直馳入，將以下騎送迎」，第三處寫了四道關卡——先驅不得入、上至又不得入、持節詔將軍才開門、開門後還得按轡徐行。",
+     "真正立住的是那句軍門都尉的話：「軍中聞將軍令，不聞天子之詔。」它不是周亞夫說的，是守門軍官說的。命令已經變成營里的規矩，不需要將軍在場維持。",
+     "「介胄之士不拜，請以軍禮見」是全篇最硬的一句：他不是在拒絕皇帝，是在按同一套規矩見皇帝。",
+     "文帝反應寫得很克制：「爲動」「改容式車」「使人稱謝」，最後才說「此真將軍矣」。羣臣「皆驚」和文帝「稱善者久之」放在一起——皇帝懂，羣臣不懂。",
+     "《史記》原文在這一段之後還有一句「月餘，三軍皆罷。乃拜亞夫為中尉」，教材刪掉了。刪掉之後這一篇就停在評價上，不再交代周亞夫後來的升遷。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文八年級上冊第 25 課（自讀），選自《史記·絳侯周勃世家》，篇名是教材加的。",
+     "倉內已有司馬遷《報任安書》《屈原列傳》（選擇性必修中冊），是另外的篇目。",
+     "課標（2022）附錄1 未單列本篇，屬教材拓展。"
+    ]
+   },
+   "labels_trad": {
+    "title": "周亞夫軍細柳",
+    "author": "司馬遷",
+    "dynasty": "西漢",
+    "stage": "初中",
+    "volume": "八年級上冊",
+    "form": "文言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "史傳",
+     "治軍"
+    ],
+    "technique": [
+     "對比",
+     "側面描寫",
+     "細節"
+    ],
+    "tags": [
+     "史記",
+     "治軍",
+     "西漢文言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "之后",
+     "cands": [
+      "之後"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "文帝之后六年，匈奴大入边",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "边",
+     "cands": [
+      "邊"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "后六年，匈奴大入边。乃以宗正刘礼为",
+     "field": "full",
+     "line": 0,
+     "page_char": "邊"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "刘",
+     "cands": [
+      "劉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "大入边。乃以宗正刘礼为将军，军霸上",
+     "field": "full",
+     "line": 0,
+     "page_char": "劉"
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "礼",
+     "cands": [
+      "禮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "入边。乃以宗正刘礼为将军，军霸上；",
+     "field": "full",
+     "line": 0,
+     "page_char": "禮"
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "边。乃以宗正刘礼为将军，军霸上；祝",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。乃以宗正刘礼为将军，军霸上；祝兹",
+     "field": "full",
+     "line": 0,
+     "page_char": "將"
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "乃以宗正刘礼为将军，军霸上；祝兹侯",
+     "field": "full",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "宗正刘礼为将军，军霸上；祝兹侯徐厉",
+     "field": "full",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "兹",
+     "cands": [
+      "茲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军，军霸上；祝兹侯徐厉为将军，军",
+     "field": "full",
+     "line": 0,
+     "page_char": "茲"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "厉",
+     "cands": [
+      "厲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军霸上；祝兹侯徐厉为将军，军棘门；",
+     "field": "full",
+     "line": 0,
+     "page_char": "厲"
+    },
+    {
+     "at": 32,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "霸上；祝兹侯徐厉为将军，军棘门；以",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 33,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上；祝兹侯徐厉为将军，军棘门；以河",
+     "field": "full",
+     "line": 0,
+     "page_char": "將"
+    },
+    {
+     "at": 34,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "；祝兹侯徐厉为将军，军棘门；以河内",
+     "field": "full",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "兹侯徐厉为将军，军棘门；以河内守亚",
+     "field": "full",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 38,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "徐厉为将军，军棘门；以河内守亚夫为",
+     "field": "full",
+     "line": 0,
+     "page_char": "門"
+    },
+    {
+     "at": 42,
+     "n": 1,
+     "simp": "内",
+     "cands": [
+      "內"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军，军棘门；以河内守亚夫为将军，军",
+     "field": "full",
+     "line": 0,
+     "page_char": "內"
+    },
+    {
+     "at": 44,
+     "n": 1,
+     "simp": "亚",
+     "cands": [
+      "亞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军棘门；以河内守亚夫为将军，军细柳",
+     "field": "full",
+     "line": 0,
+     "page_char": "亞"
+    },
+    {
+     "at": 45,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "棘门；以河内守亚夫为将军，军细柳：",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 46,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "门；以河内守亚夫为将军，军细柳：以",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 47,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "；以河内守亚夫为将军，军细柳：以备",
+     "field": "full",
+     "line": 0,
+     "page_char": "將"
+    },
+    {
+     "at": 48,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "以河内守亚夫为将军，军细柳：以备胡",
+     "field": "full",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "内守亚夫为将军，军细柳：以备胡。",
+     "field": "full",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 51,
+     "n": 1,
+     "simp": "细",
+     "cands": [
+      "細"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "守亚夫为将军，军细柳：以备胡。",
+     "field": "full",
+     "line": 0,
+     "page_char": "細"
+    },
+    {
+     "at": 55,
+     "n": 1,
+     "simp": "备",
+     "cands": [
+      "備"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军，军细柳：以备胡。",
+     "field": "full",
+     "line": 0,
+     "page_char": "備"
+    },
+    {
+     "at": 56,
+     "n": 1,
+     "simp": "胡",
+     "cands": [
+      "胡",
+      "鬍",
+      "衚"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "军，军细柳：以备胡。",
+     "field": "full",
+     "line": 0,
+     "pick": "胡"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "劳",
+     "cands": [
+      "勞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上自劳军。至霸上及棘门",
+     "field": "full",
+     "line": 1,
+     "page_char": "勞"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上自劳军。至霸上及棘门军",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "劳军。至霸上及棘门军，直驰入，将以",
+     "field": "full",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军。至霸上及棘门军，直驰入，将以下",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "驰",
+     "cands": [
+      "馳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "霸上及棘门军，直驰入，将以下骑送迎",
+     "field": "full",
+     "line": 1,
+     "page_char": "馳"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "棘门军，直驰入，将以下骑送迎。已而",
+     "field": "full",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "骑",
+     "cands": [
+      "騎"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，直驰入，将以下骑送迎。已而之细柳",
+     "field": "full",
+     "line": 1,
+     "page_char": "騎"
+    },
+    {
+     "at": 27,
+     "n": 1,
+     "simp": "细",
+     "cands": [
+      "細"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "下骑送迎。已而之细柳军，军士吏被甲",
+     "field": "full",
+     "line": 1,
+     "page_char": "細"
+    },
+    {
+     "at": 29,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "送迎。已而之细柳军，军士吏被甲，锐",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。已而之细柳军，军士吏被甲，锐兵刃",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "锐",
+     "cands": [
+      "銳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军，军士吏被甲，锐兵刃，彀弓弩，持",
+     "field": "full",
+     "line": 1,
+     "page_char": "銳"
+    },
+    {
+     "at": 46,
+     "n": 1,
+     "simp": "满",
+     "cands": [
+      "滿"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "兵刃，彀弓弩，持满。天子先驱至，不",
+     "field": "full",
+     "line": 1,
+     "page_char": "滿"
+    },
+    {
+     "at": 51,
+     "n": 1,
+     "simp": "驱",
+     "cands": [
+      "驅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "弩，持满。天子先驱至，不得入。先驱",
+     "field": "full",
+     "line": 1,
+     "page_char": "驅"
+    },
+    {
+     "at": 59,
+     "n": 1,
+     "simp": "驱",
+     "cands": [
+      "驅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "驱至，不得入。先驱曰：“天子且至！",
+     "field": "full",
+     "line": 1,
+     "page_char": "驅"
+    },
+    {
+     "at": 69,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“天子且至！”军门都尉曰：“将军",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 70,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“天子且至！”军门都尉曰：“将军令",
+     "field": "full",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 76,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "”军门都尉曰：“将军令曰：‘军中闻",
+     "field": "full",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 77,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军门都尉曰：“将军令曰：‘军中闻将",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 82,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“将军令曰：‘军中闻将军令，不闻",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 84,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军令曰：‘军中闻将军令，不闻天子",
+     "field": "full",
+     "line": 1,
+     "page_char": "聞"
+    },
+    {
+     "at": 85,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军令曰：‘军中闻将军令，不闻天子之",
+     "field": "full",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 86,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "令曰：‘军中闻将军令，不闻天子之诏",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 90,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军中闻将军令，不闻天子之诏。’”居",
+     "field": "full",
+     "line": 1,
+     "page_char": "聞"
+    },
+    {
+     "at": 94,
+     "n": 1,
+     "simp": "诏",
+     "cands": [
+      "詔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军令，不闻天子之诏。’”居无何，上",
+     "field": "full",
+     "line": 1,
+     "page_char": "詔"
+    },
+    {
+     "at": 99,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "天子之诏。’”居无何，上至，又不得",
+     "field": "full",
+     "line": 1,
+     "page_char": "無"
+    },
+    {
+     "at": 110,
+     "n": 2,
+     "simp": "于是",
+     "cands": [
+      "於是"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "上至，又不得入。于是上乃使使持节诏将",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 117,
+     "n": 1,
+     "simp": "节",
+     "cands": [
+      "節"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。于是上乃使使持节诏将军：“吾欲入",
+     "field": "full",
+     "line": 1,
+     "page_char": "節"
+    },
+    {
+     "at": 118,
+     "n": 1,
+     "simp": "诏",
+     "cands": [
+      "詔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "于是上乃使使持节诏将军：“吾欲入劳",
+     "field": "full",
+     "line": 1,
+     "page_char": "詔"
+    },
+    {
+     "at": 119,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "是上乃使使持节诏将军：“吾欲入劳军",
+     "field": "full",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 120,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上乃使使持节诏将军：“吾欲入劳军。",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 124,
+     "n": 1,
+     "simp": "欲",
+     "cands": [
+      "欲",
+      "慾"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "持节诏将军：“吾欲入劳军。”亚夫乃",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 126,
+     "n": 1,
+     "simp": "劳",
+     "cands": [
+      "勞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "诏将军：“吾欲入劳军。”亚夫乃传言",
+     "field": "full",
+     "line": 1,
+     "page_char": "勞"
+    },
+    {
+     "at": 127,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军：“吾欲入劳军。”亚夫乃传言开",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 130,
+     "n": 1,
+     "simp": "亚",
+     "cands": [
+      "亞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“吾欲入劳军。”亚夫乃传言开壁门。",
+     "field": "full",
+     "line": 1,
+     "page_char": "亞"
+    },
+    {
+     "at": 131,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "吾欲入劳军。”亚夫乃传言开壁门。壁",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 133,
+     "n": 1,
+     "simp": "传",
+     "cands": [
+      "傳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "入劳军。”亚夫乃传言开壁门。壁门士",
+     "field": "full",
+     "line": 1,
+     "page_char": "傳"
+    },
+    {
+     "at": 135,
+     "n": 1,
+     "simp": "开",
+     "cands": [
+      "開"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军。”亚夫乃传言开壁门。壁门士吏谓",
+     "field": "full",
+     "line": 1,
+     "page_char": "開"
+    },
+    {
+     "at": 137,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "”亚夫乃传言开壁门。壁门士吏谓从属",
+     "field": "full",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 140,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "乃传言开壁门。壁门士吏谓从属车骑曰",
+     "field": "full",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 143,
+     "n": 1,
+     "simp": "谓",
+     "cands": [
+      "謂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "开壁门。壁门士吏谓从属车骑曰：“将",
+     "field": "full",
+     "line": 1,
+     "page_char": "謂"
+    },
+    {
+     "at": 144,
+     "n": 1,
+     "simp": "从",
+     "cands": [
+      "從"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "壁门。壁门士吏谓从属车骑曰：“将军",
+     "field": "full",
+     "line": 1,
+     "page_char": "從"
+    },
+    {
+     "at": 145,
+     "n": 1,
+     "simp": "属",
+     "cands": [
+      "屬"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "门。壁门士吏谓从属车骑曰：“将军约",
+     "field": "full",
+     "line": 1,
+     "page_char": "屬"
+    },
+    {
+     "at": 146,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。壁门士吏谓从属车骑曰：“将军约，",
+     "field": "full",
+     "line": 1,
+     "page_char": "車"
+    },
+    {
+     "at": 147,
+     "n": 1,
+     "simp": "骑",
+     "cands": [
+      "騎"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "壁门士吏谓从属车骑曰：“将军约，军",
+     "field": "full",
+     "line": 1,
+     "page_char": "騎"
+    },
+    {
+     "at": 151,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "谓从属车骑曰：“将军约，军中不得驱",
+     "field": "full",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 152,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "从属车骑曰：“将军约，军中不得驱驰",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 153,
+     "n": 1,
+     "simp": "约",
+     "cands": [
+      "約"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "属车骑曰：“将军约，军中不得驱驰。",
+     "field": "full",
+     "line": 1,
+     "page_char": "約"
+    },
+    {
+     "at": 155,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "骑曰：“将军约，军中不得驱驰。”于",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 159,
+     "n": 1,
+     "simp": "驱",
+     "cands": [
+      "驅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军约，军中不得驱驰。”于是天子乃",
+     "field": "full",
+     "line": 1,
+     "page_char": "驅"
+    },
+    {
+     "at": 160,
+     "n": 1,
+     "simp": "驰",
+     "cands": [
+      "馳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军约，军中不得驱驰。”于是天子乃按",
+     "field": "full",
+     "line": 1,
+     "page_char": "馳"
+    },
+    {
+     "at": 163,
+     "n": 2,
+     "simp": "于是",
+     "cands": [
+      "於是"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "军中不得驱驰。”于是天子乃按辔徐行。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 169,
+     "n": 1,
+     "simp": "辔",
+     "cands": [
+      "轡"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。”于是天子乃按辔徐行。至营，将军",
+     "field": "full",
+     "line": 1,
+     "page_char": "轡"
+    },
+    {
+     "at": 174,
+     "n": 1,
+     "simp": "营",
+     "cands": [
+      "營"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "子乃按辔徐行。至营，将军亚夫持兵揖",
+     "field": "full",
+     "line": 1,
+     "page_char": "營"
+    },
+    {
+     "at": 176,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "按辔徐行。至营，将军亚夫持兵揖曰：",
+     "field": "full",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 177,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "辔徐行。至营，将军亚夫持兵揖曰：“",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 178,
+     "n": 1,
+     "simp": "亚",
+     "cands": [
+      "亞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "徐行。至营，将军亚夫持兵揖曰：“介",
+     "field": "full",
+     "line": 1,
+     "page_char": "亞"
+    },
+    {
+     "at": 179,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "行。至营，将军亚夫持兵揖曰：“介胄",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 186,
+     "n": 2,
+     "simp": "介胄",
+     "cands": [
+      "介胄",
+      "介冑"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "亚夫持兵揖曰：“介胄之士不拜，请以军",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 193,
+     "n": 1,
+     "simp": "请",
+     "cands": [
+      "請"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“介胄之士不拜，请以军礼见。”天子",
+     "field": "full",
+     "line": 1,
+     "page_char": "請"
+    },
+    {
+     "at": 195,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "胄之士不拜，请以军礼见。”天子为动",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 196,
+     "n": 1,
+     "simp": "礼",
+     "cands": [
+      "禮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之士不拜，请以军礼见。”天子为动，",
+     "field": "full",
+     "line": 1,
+     "page_char": "禮"
+    },
+    {
+     "at": 197,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "士不拜，请以军礼见。”天子为动，改",
+     "field": "full",
+     "line": 1,
+     "page_char": "見"
+    },
+    {
+     "at": 202,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以军礼见。”天子为动，改容式车。使",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 203,
+     "n": 1,
+     "simp": "动",
+     "cands": [
+      "動"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军礼见。”天子为动，改容式车。使人",
+     "field": "full",
+     "line": 1,
+     "page_char": "動"
+    },
+    {
+     "at": 208,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "天子为动，改容式车。使人称谢：“皇",
+     "field": "full",
+     "line": 1,
+     "page_char": "車"
+    },
+    {
+     "at": 212,
+     "n": 1,
+     "simp": "称",
+     "cands": [
+      "稱"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，改容式车。使人称谢：“皇帝敬劳将",
+     "field": "full",
+     "line": 1,
+     "page_char": "稱"
+    },
+    {
+     "at": 213,
+     "n": 1,
+     "simp": "谢",
+     "cands": [
+      "謝"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "改容式车。使人称谢：“皇帝敬劳将军",
+     "field": "full",
+     "line": 1,
+     "page_char": "謝"
+    },
+    {
+     "at": 219,
+     "n": 1,
+     "simp": "劳",
+     "cands": [
+      "勞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "人称谢：“皇帝敬劳将军。”成礼而去",
+     "field": "full",
+     "line": 1,
+     "page_char": "勞"
+    },
+    {
+     "at": 220,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "称谢：“皇帝敬劳将军。”成礼而去。",
+     "field": "full",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 221,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "谢：“皇帝敬劳将军。”成礼而去。",
+     "field": "full",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 225,
+     "n": 1,
+     "simp": "礼",
+     "cands": [
+      "禮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "帝敬劳将军。”成礼而去。",
+     "field": "full",
+     "line": 1,
+     "page_char": "禮"
+    },
+    {
+     "at": 1,
+     "n": 2,
+     "simp": "出军",
+     "cands": [
+      "出軍"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "既出军门，群臣皆惊。文",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "既出军门，群臣皆惊。文帝",
+     "field": "full",
+     "line": 2,
+     "page_char": "門"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "群",
+     "cands": [
+      "羣"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既出军门，群臣皆惊。文帝曰：",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "惊",
+     "cands": [
+      "驚"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "既出军门，群臣皆惊。文帝曰：“嗟呼",
+     "field": "full",
+     "line": 2,
+     "page_char": "驚"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "曰：“嗟呼，此真将军矣！曩者霸上、",
+     "field": "full",
+     "line": 2,
+     "page_char": "將"
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“嗟呼，此真将军矣！曩者霸上、棘",
+     "field": "full",
+     "line": 2,
+     "page_char": "軍"
+    },
+    {
+     "at": 30,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "矣！曩者霸上、棘门军，若儿戏耳，其",
+     "field": "full",
+     "line": 2,
+     "page_char": "門"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "！曩者霸上、棘门军，若儿戏耳，其将",
+     "field": "full",
+     "line": 2,
+     "page_char": "軍"
+    },
+    {
+     "at": 34,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "霸上、棘门军，若儿戏耳，其将固可袭",
+     "field": "full",
+     "line": 2,
+     "page_char": "兒"
+    },
+    {
+     "at": 35,
+     "n": 1,
+     "simp": "戏",
+     "cands": [
+      "戲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上、棘门军，若儿戏耳，其将固可袭而",
+     "field": "full",
+     "line": 2,
+     "page_char": "戲"
+    },
+    {
+     "at": 39,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军，若儿戏耳，其将固可袭而虏也。至",
+     "field": "full",
+     "line": 2,
+     "page_char": "將"
+    },
+    {
+     "at": 42,
+     "n": 1,
+     "simp": "袭",
+     "cands": [
+      "襲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "儿戏耳，其将固可袭而虏也。至于亚夫",
+     "field": "full",
+     "line": 2,
+     "page_char": "襲"
+    },
+    {
+     "at": 44,
+     "n": 1,
+     "simp": "虏",
+     "cands": [
+      "虜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "耳，其将固可袭而虏也。至于亚夫，可",
+     "field": "full",
+     "line": 2,
+     "page_char": "虜"
+    },
+    {
+     "at": 48,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "固可袭而虏也。至于亚夫，可得而犯邪",
+     "field": "full",
+     "line": 2,
+     "page_char": "於"
+    },
+    {
+     "at": 49,
+     "n": 1,
+     "simp": "亚",
+     "cands": [
+      "亞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "可袭而虏也。至于亚夫，可得而犯邪！",
+     "field": "full",
+     "line": 2,
+     "page_char": "亞"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "袭而虏也。至于亚夫，可得而犯邪！”",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 59,
+     "n": 1,
+     "simp": "称",
+     "cands": [
+      "稱"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，可得而犯邪！”称善者久之。",
+     "field": "full",
+     "line": 2,
+     "page_char": "稱"
+    },
+    {
+     "at": 2,
+     "n": 2,
+     "simp": "之后",
+     "cands": [
+      "之後"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "文帝之后六年，匈奴大入边",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "边",
+     "cands": [
+      "邊"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "后六年，匈奴大入边。乃以宗正刘礼为",
+     "field": "lines",
+     "line": 0,
+     "page_char": "邊"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "刘",
+     "cands": [
+      "劉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "大入边。乃以宗正刘礼为将军，军霸上",
+     "field": "lines",
+     "line": 0,
+     "page_char": "劉"
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "礼",
+     "cands": [
+      "禮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "入边。乃以宗正刘礼为将军，军霸上；",
+     "field": "lines",
+     "line": 0,
+     "page_char": "禮"
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "边。乃以宗正刘礼为将军，军霸上；祝",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。乃以宗正刘礼为将军，军霸上；祝兹",
+     "field": "lines",
+     "line": 0,
+     "page_char": "將"
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "乃以宗正刘礼为将军，军霸上；祝兹侯",
+     "field": "lines",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "宗正刘礼为将军，军霸上；祝兹侯徐厉",
+     "field": "lines",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "兹",
+     "cands": [
+      "茲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军，军霸上；祝兹侯徐厉为将军，军",
+     "field": "lines",
+     "line": 0,
+     "page_char": "茲"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "厉",
+     "cands": [
+      "厲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军霸上；祝兹侯徐厉为将军，军棘门；",
+     "field": "lines",
+     "line": 0,
+     "page_char": "厲"
+    },
+    {
+     "at": 32,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "霸上；祝兹侯徐厉为将军，军棘门；以",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 33,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上；祝兹侯徐厉为将军，军棘门；以河",
+     "field": "lines",
+     "line": 0,
+     "page_char": "將"
+    },
+    {
+     "at": 34,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "；祝兹侯徐厉为将军，军棘门；以河内",
+     "field": "lines",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "兹侯徐厉为将军，军棘门；以河内守亚",
+     "field": "lines",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 38,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "徐厉为将军，军棘门；以河内守亚夫为",
+     "field": "lines",
+     "line": 0,
+     "page_char": "門"
+    },
+    {
+     "at": 42,
+     "n": 1,
+     "simp": "内",
+     "cands": [
+      "內"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军，军棘门；以河内守亚夫为将军，军",
+     "field": "lines",
+     "line": 0,
+     "page_char": "內"
+    },
+    {
+     "at": 44,
+     "n": 1,
+     "simp": "亚",
+     "cands": [
+      "亞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军棘门；以河内守亚夫为将军，军细柳",
+     "field": "lines",
+     "line": 0,
+     "page_char": "亞"
+    },
+    {
+     "at": 45,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "棘门；以河内守亚夫为将军，军细柳：",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 46,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "门；以河内守亚夫为将军，军细柳：以",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 47,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "；以河内守亚夫为将军，军细柳：以备",
+     "field": "lines",
+     "line": 0,
+     "page_char": "將"
+    },
+    {
+     "at": 48,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "以河内守亚夫为将军，军细柳：以备胡",
+     "field": "lines",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "内守亚夫为将军，军细柳：以备胡。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "軍"
+    },
+    {
+     "at": 51,
+     "n": 1,
+     "simp": "细",
+     "cands": [
+      "細"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "守亚夫为将军，军细柳：以备胡。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "細"
+    },
+    {
+     "at": 55,
+     "n": 1,
+     "simp": "备",
+     "cands": [
+      "備"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军，军细柳：以备胡。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "備"
+    },
+    {
+     "at": 56,
+     "n": 1,
+     "simp": "胡",
+     "cands": [
+      "胡",
+      "鬍",
+      "衚"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "军，军细柳：以备胡。",
+     "field": "lines",
+     "line": 0,
+     "pick": "胡"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "劳",
+     "cands": [
+      "勞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上自劳军。至霸上及棘门",
+     "field": "lines",
+     "line": 1,
+     "page_char": "勞"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上自劳军。至霸上及棘门军",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "劳军。至霸上及棘门军，直驰入，将以",
+     "field": "lines",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军。至霸上及棘门军，直驰入，将以下",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "驰",
+     "cands": [
+      "馳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "霸上及棘门军，直驰入，将以下骑送迎",
+     "field": "lines",
+     "line": 1,
+     "page_char": "馳"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "棘门军，直驰入，将以下骑送迎。已而",
+     "field": "lines",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "骑",
+     "cands": [
+      "騎"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，直驰入，将以下骑送迎。已而之细柳",
+     "field": "lines",
+     "line": 1,
+     "page_char": "騎"
+    },
+    {
+     "at": 27,
+     "n": 1,
+     "simp": "细",
+     "cands": [
+      "細"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "下骑送迎。已而之细柳军，军士吏被甲",
+     "field": "lines",
+     "line": 1,
+     "page_char": "細"
+    },
+    {
+     "at": 29,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "送迎。已而之细柳军，军士吏被甲，锐",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。已而之细柳军，军士吏被甲，锐兵刃",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "锐",
+     "cands": [
+      "銳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军，军士吏被甲，锐兵刃，彀弓弩，持",
+     "field": "lines",
+     "line": 1,
+     "page_char": "銳"
+    },
+    {
+     "at": 46,
+     "n": 1,
+     "simp": "满",
+     "cands": [
+      "滿"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "兵刃，彀弓弩，持满。天子先驱至，不",
+     "field": "lines",
+     "line": 1,
+     "page_char": "滿"
+    },
+    {
+     "at": 51,
+     "n": 1,
+     "simp": "驱",
+     "cands": [
+      "驅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "弩，持满。天子先驱至，不得入。先驱",
+     "field": "lines",
+     "line": 1,
+     "page_char": "驅"
+    },
+    {
+     "at": 59,
+     "n": 1,
+     "simp": "驱",
+     "cands": [
+      "驅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "驱至，不得入。先驱曰：“天子且至！",
+     "field": "lines",
+     "line": 1,
+     "page_char": "驅"
+    },
+    {
+     "at": 69,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“天子且至！”军门都尉曰：“将军",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 70,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“天子且至！”军门都尉曰：“将军令",
+     "field": "lines",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 76,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "”军门都尉曰：“将军令曰：‘军中闻",
+     "field": "lines",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 77,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军门都尉曰：“将军令曰：‘军中闻将",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 82,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“将军令曰：‘军中闻将军令，不闻",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 84,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军令曰：‘军中闻将军令，不闻天子",
+     "field": "lines",
+     "line": 1,
+     "page_char": "聞"
+    },
+    {
+     "at": 85,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军令曰：‘军中闻将军令，不闻天子之",
+     "field": "lines",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 86,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "令曰：‘军中闻将军令，不闻天子之诏",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 90,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军中闻将军令，不闻天子之诏。’”居",
+     "field": "lines",
+     "line": 1,
+     "page_char": "聞"
+    },
+    {
+     "at": 94,
+     "n": 1,
+     "simp": "诏",
+     "cands": [
+      "詔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军令，不闻天子之诏。’”居无何，上",
+     "field": "lines",
+     "line": 1,
+     "page_char": "詔"
+    },
+    {
+     "at": 99,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "天子之诏。’”居无何，上至，又不得",
+     "field": "lines",
+     "line": 1,
+     "page_char": "無"
+    },
+    {
+     "at": 110,
+     "n": 2,
+     "simp": "于是",
+     "cands": [
+      "於是"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "上至，又不得入。于是上乃使使持节诏将",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 117,
+     "n": 1,
+     "simp": "节",
+     "cands": [
+      "節"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。于是上乃使使持节诏将军：“吾欲入",
+     "field": "lines",
+     "line": 1,
+     "page_char": "節"
+    },
+    {
+     "at": 118,
+     "n": 1,
+     "simp": "诏",
+     "cands": [
+      "詔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "于是上乃使使持节诏将军：“吾欲入劳",
+     "field": "lines",
+     "line": 1,
+     "page_char": "詔"
+    },
+    {
+     "at": 119,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "是上乃使使持节诏将军：“吾欲入劳军",
+     "field": "lines",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 120,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上乃使使持节诏将军：“吾欲入劳军。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 124,
+     "n": 1,
+     "simp": "欲",
+     "cands": [
+      "欲",
+      "慾"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "持节诏将军：“吾欲入劳军。”亚夫乃",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 126,
+     "n": 1,
+     "simp": "劳",
+     "cands": [
+      "勞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "诏将军：“吾欲入劳军。”亚夫乃传言",
+     "field": "lines",
+     "line": 1,
+     "page_char": "勞"
+    },
+    {
+     "at": 127,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军：“吾欲入劳军。”亚夫乃传言开",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 130,
+     "n": 1,
+     "simp": "亚",
+     "cands": [
+      "亞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“吾欲入劳军。”亚夫乃传言开壁门。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "亞"
+    },
+    {
+     "at": 131,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "吾欲入劳军。”亚夫乃传言开壁门。壁",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 133,
+     "n": 1,
+     "simp": "传",
+     "cands": [
+      "傳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "入劳军。”亚夫乃传言开壁门。壁门士",
+     "field": "lines",
+     "line": 1,
+     "page_char": "傳"
+    },
+    {
+     "at": 135,
+     "n": 1,
+     "simp": "开",
+     "cands": [
+      "開"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军。”亚夫乃传言开壁门。壁门士吏谓",
+     "field": "lines",
+     "line": 1,
+     "page_char": "開"
+    },
+    {
+     "at": 137,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "”亚夫乃传言开壁门。壁门士吏谓从属",
+     "field": "lines",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 140,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "乃传言开壁门。壁门士吏谓从属车骑曰",
+     "field": "lines",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 143,
+     "n": 1,
+     "simp": "谓",
+     "cands": [
+      "謂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "开壁门。壁门士吏谓从属车骑曰：“将",
+     "field": "lines",
+     "line": 1,
+     "page_char": "謂"
+    },
+    {
+     "at": 144,
+     "n": 1,
+     "simp": "从",
+     "cands": [
+      "從"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "壁门。壁门士吏谓从属车骑曰：“将军",
+     "field": "lines",
+     "line": 1,
+     "page_char": "從"
+    },
+    {
+     "at": 145,
+     "n": 1,
+     "simp": "属",
+     "cands": [
+      "屬"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "门。壁门士吏谓从属车骑曰：“将军约",
+     "field": "lines",
+     "line": 1,
+     "page_char": "屬"
+    },
+    {
+     "at": 146,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。壁门士吏谓从属车骑曰：“将军约，",
+     "field": "lines",
+     "line": 1,
+     "page_char": "車"
+    },
+    {
+     "at": 147,
+     "n": 1,
+     "simp": "骑",
+     "cands": [
+      "騎"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "壁门士吏谓从属车骑曰：“将军约，军",
+     "field": "lines",
+     "line": 1,
+     "page_char": "騎"
+    },
+    {
+     "at": 151,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "谓从属车骑曰：“将军约，军中不得驱",
+     "field": "lines",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 152,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "从属车骑曰：“将军约，军中不得驱驰",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 153,
+     "n": 1,
+     "simp": "约",
+     "cands": [
+      "約"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "属车骑曰：“将军约，军中不得驱驰。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "約"
+    },
+    {
+     "at": 155,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "骑曰：“将军约，军中不得驱驰。”于",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 159,
+     "n": 1,
+     "simp": "驱",
+     "cands": [
+      "驅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "将军约，军中不得驱驰。”于是天子乃",
+     "field": "lines",
+     "line": 1,
+     "page_char": "驅"
+    },
+    {
+     "at": 160,
+     "n": 1,
+     "simp": "驰",
+     "cands": [
+      "馳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军约，军中不得驱驰。”于是天子乃按",
+     "field": "lines",
+     "line": 1,
+     "page_char": "馳"
+    },
+    {
+     "at": 163,
+     "n": 2,
+     "simp": "于是",
+     "cands": [
+      "於是"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "军中不得驱驰。”于是天子乃按辔徐行。",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 169,
+     "n": 1,
+     "simp": "辔",
+     "cands": [
+      "轡"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。”于是天子乃按辔徐行。至营，将军",
+     "field": "lines",
+     "line": 1,
+     "page_char": "轡"
+    },
+    {
+     "at": 174,
+     "n": 1,
+     "simp": "营",
+     "cands": [
+      "營"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "子乃按辔徐行。至营，将军亚夫持兵揖",
+     "field": "lines",
+     "line": 1,
+     "page_char": "營"
+    },
+    {
+     "at": 176,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "按辔徐行。至营，将军亚夫持兵揖曰：",
+     "field": "lines",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 177,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "辔徐行。至营，将军亚夫持兵揖曰：“",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 178,
+     "n": 1,
+     "simp": "亚",
+     "cands": [
+      "亞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "徐行。至营，将军亚夫持兵揖曰：“介",
+     "field": "lines",
+     "line": 1,
+     "page_char": "亞"
+    },
+    {
+     "at": 179,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "行。至营，将军亚夫持兵揖曰：“介胄",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 186,
+     "n": 2,
+     "simp": "介胄",
+     "cands": [
+      "介胄",
+      "介冑"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "亚夫持兵揖曰：“介胄之士不拜，请以军",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 193,
+     "n": 1,
+     "simp": "请",
+     "cands": [
+      "請"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“介胄之士不拜，请以军礼见。”天子",
+     "field": "lines",
+     "line": 1,
+     "page_char": "請"
+    },
+    {
+     "at": 195,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "胄之士不拜，请以军礼见。”天子为动",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 196,
+     "n": 1,
+     "simp": "礼",
+     "cands": [
+      "禮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之士不拜，请以军礼见。”天子为动，",
+     "field": "lines",
+     "line": 1,
+     "page_char": "禮"
+    },
+    {
+     "at": 197,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "士不拜，请以军礼见。”天子为动，改",
+     "field": "lines",
+     "line": 1,
+     "page_char": "見"
+    },
+    {
+     "at": 202,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以军礼见。”天子为动，改容式车。使",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 203,
+     "n": 1,
+     "simp": "动",
+     "cands": [
+      "動"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军礼见。”天子为动，改容式车。使人",
+     "field": "lines",
+     "line": 1,
+     "page_char": "動"
+    },
+    {
+     "at": 208,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "天子为动，改容式车。使人称谢：“皇",
+     "field": "lines",
+     "line": 1,
+     "page_char": "車"
+    },
+    {
+     "at": 212,
+     "n": 1,
+     "simp": "称",
+     "cands": [
+      "稱"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，改容式车。使人称谢：“皇帝敬劳将",
+     "field": "lines",
+     "line": 1,
+     "page_char": "稱"
+    },
+    {
+     "at": 213,
+     "n": 1,
+     "simp": "谢",
+     "cands": [
+      "謝"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "改容式车。使人称谢：“皇帝敬劳将军",
+     "field": "lines",
+     "line": 1,
+     "page_char": "謝"
+    },
+    {
+     "at": 219,
+     "n": 1,
+     "simp": "劳",
+     "cands": [
+      "勞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "人称谢：“皇帝敬劳将军。”成礼而去",
+     "field": "lines",
+     "line": 1,
+     "page_char": "勞"
+    },
+    {
+     "at": 220,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "称谢：“皇帝敬劳将军。”成礼而去。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "將"
+    },
+    {
+     "at": 221,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "谢：“皇帝敬劳将军。”成礼而去。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "軍"
+    },
+    {
+     "at": 225,
+     "n": 1,
+     "simp": "礼",
+     "cands": [
+      "禮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "帝敬劳将军。”成礼而去。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "禮"
+    },
+    {
+     "at": 1,
+     "n": 2,
+     "simp": "出军",
+     "cands": [
+      "出軍"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "既出军门，群臣皆惊。文",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "既出军门，群臣皆惊。文帝",
+     "field": "lines",
+     "line": 2,
+     "page_char": "門"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "群",
+     "cands": [
+      "羣"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既出军门，群臣皆惊。文帝曰：",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "惊",
+     "cands": [
+      "驚"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "既出军门，群臣皆惊。文帝曰：“嗟呼",
+     "field": "lines",
+     "line": 2,
+     "page_char": "驚"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "曰：“嗟呼，此真将军矣！曩者霸上、",
+     "field": "lines",
+     "line": 2,
+     "page_char": "將"
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“嗟呼，此真将军矣！曩者霸上、棘",
+     "field": "lines",
+     "line": 2,
+     "page_char": "軍"
+    },
+    {
+     "at": 30,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "矣！曩者霸上、棘门军，若儿戏耳，其",
+     "field": "lines",
+     "line": 2,
+     "page_char": "門"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "！曩者霸上、棘门军，若儿戏耳，其将",
+     "field": "lines",
+     "line": 2,
+     "page_char": "軍"
+    },
+    {
+     "at": 34,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "霸上、棘门军，若儿戏耳，其将固可袭",
+     "field": "lines",
+     "line": 2,
+     "page_char": "兒"
+    },
+    {
+     "at": 35,
+     "n": 1,
+     "simp": "戏",
+     "cands": [
+      "戲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上、棘门军，若儿戏耳，其将固可袭而",
+     "field": "lines",
+     "line": 2,
+     "page_char": "戲"
+    },
+    {
+     "at": 39,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "军，若儿戏耳，其将固可袭而虏也。至",
+     "field": "lines",
+     "line": 2,
+     "page_char": "將"
+    },
+    {
+     "at": 42,
+     "n": 1,
+     "simp": "袭",
+     "cands": [
+      "襲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "儿戏耳，其将固可袭而虏也。至于亚夫",
+     "field": "lines",
+     "line": 2,
+     "page_char": "襲"
+    },
+    {
+     "at": 44,
+     "n": 1,
+     "simp": "虏",
+     "cands": [
+      "虜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "耳，其将固可袭而虏也。至于亚夫，可",
+     "field": "lines",
+     "line": 2,
+     "page_char": "虜"
+    },
+    {
+     "at": 48,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "固可袭而虏也。至于亚夫，可得而犯邪",
+     "field": "lines",
+     "line": 2,
+     "page_char": "於"
+    },
+    {
+     "at": 49,
+     "n": 1,
+     "simp": "亚",
+     "cands": [
+      "亞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "可袭而虏也。至于亚夫，可得而犯邪！",
+     "field": "lines",
+     "line": 2,
+     "page_char": "亞"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "袭而虏也。至于亚夫，可得而犯邪！”",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 59,
+     "n": 1,
+     "simp": "称",
+     "cands": [
+      "稱"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，可得而犯邪！”称善者久之。",
+     "field": "lines",
+     "line": 2,
+     "page_char": "稱"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     11,
+     "边",
+     "后六年，匈奴大入边。乃以宗正刘礼为",
+     "邊",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     17,
+     "刘",
+     "大入边。乃以宗正刘礼为将军，军霸上",
+     "劉",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     18,
+     "礼",
+     "入边。乃以宗正刘礼为将军，军霸上；",
+     "禮",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     20,
+     "将",
+     "。乃以宗正刘礼为将军，军霸上；祝兹",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     21,
+     "军",
+     "乃以宗正刘礼为将军，军霸上；祝兹侯",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     23,
+     "军",
+     "宗正刘礼为将军，军霸上；祝兹侯徐厉",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     28,
+     "兹",
+     "将军，军霸上；祝兹侯徐厉为将军，军",
+     "茲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     31,
+     "厉",
+     "军霸上；祝兹侯徐厉为将军，军棘门；",
+     "厲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     33,
+     "将",
+     "上；祝兹侯徐厉为将军，军棘门；以河",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     34,
+     "军",
+     "；祝兹侯徐厉为将军，军棘门；以河内",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     36,
+     "军",
+     "兹侯徐厉为将军，军棘门；以河内守亚",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     38,
+     "门",
+     "徐厉为将军，军棘门；以河内守亚夫为",
+     "門",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     42,
+     "内",
+     "军，军棘门；以河内守亚夫为将军，军",
+     "內",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     44,
+     "亚",
+     "军棘门；以河内守亚夫为将军，军细柳",
+     "亞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     47,
+     "将",
+     "；以河内守亚夫为将军，军细柳：以备",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     48,
+     "军",
+     "以河内守亚夫为将军，军细柳：以备胡",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     50,
+     "军",
+     "内守亚夫为将军，军细柳：以备胡。",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     51,
+     "细",
+     "守亚夫为将军，军细柳：以备胡。",
+     "細",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     55,
+     "备",
+     "将军，军细柳：以备胡。",
+     "備",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     2,
+     "劳",
+     "上自劳军。至霸上及棘门",
+     "勞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     3,
+     "军",
+     "上自劳军。至霸上及棘门军",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     10,
+     "门",
+     "劳军。至霸上及棘门军，直驰入，将以",
+     "門",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     11,
+     "军",
+     "军。至霸上及棘门军，直驰入，将以下",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     14,
+     "驰",
+     "霸上及棘门军，直驰入，将以下骑送迎",
+     "馳",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     17,
+     "将",
+     "棘门军，直驰入，将以下骑送迎。已而",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     20,
+     "骑",
+     "，直驰入，将以下骑送迎。已而之细柳",
+     "騎",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     27,
+     "细",
+     "下骑送迎。已而之细柳军，军士吏被甲",
+     "細",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     29,
+     "军",
+     "送迎。已而之细柳军，军士吏被甲，锐",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     31,
+     "军",
+     "。已而之细柳军，军士吏被甲，锐兵刃",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     37,
+     "锐",
+     "军，军士吏被甲，锐兵刃，彀弓弩，持",
+     "銳",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     46,
+     "满",
+     "兵刃，彀弓弩，持满。天子先驱至，不",
+     "滿",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     51,
+     "驱",
+     "弩，持满。天子先驱至，不得入。先驱",
+     "驅",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     59,
+     "驱",
+     "驱至，不得入。先驱曰：“天子且至！",
+     "驅",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     69,
+     "军",
+     "：“天子且至！”军门都尉曰：“将军",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     70,
+     "门",
+     "“天子且至！”军门都尉曰：“将军令",
+     "門",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     76,
+     "将",
+     "”军门都尉曰：“将军令曰：‘军中闻",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     77,
+     "军",
+     "军门都尉曰：“将军令曰：‘军中闻将",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     82,
+     "军",
+     "：“将军令曰：‘军中闻将军令，不闻",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     84,
+     "闻",
+     "将军令曰：‘军中闻将军令，不闻天子",
+     "聞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     85,
+     "将",
+     "军令曰：‘军中闻将军令，不闻天子之",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     86,
+     "军",
+     "令曰：‘军中闻将军令，不闻天子之诏",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     90,
+     "闻",
+     "军中闻将军令，不闻天子之诏。’”居",
+     "聞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     94,
+     "诏",
+     "军令，不闻天子之诏。’”居无何，上",
+     "詔",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     99,
+     "无",
+     "天子之诏。’”居无何，上至，又不得",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     117,
+     "节",
+     "。于是上乃使使持节诏将军：“吾欲入",
+     "節",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     118,
+     "诏",
+     "于是上乃使使持节诏将军：“吾欲入劳",
+     "詔",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     119,
+     "将",
+     "是上乃使使持节诏将军：“吾欲入劳军",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     120,
+     "军",
+     "上乃使使持节诏将军：“吾欲入劳军。",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     126,
+     "劳",
+     "诏将军：“吾欲入劳军。”亚夫乃传言",
+     "勞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     127,
+     "军",
+     "将军：“吾欲入劳军。”亚夫乃传言开",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     130,
+     "亚",
+     "“吾欲入劳军。”亚夫乃传言开壁门。",
+     "亞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     133,
+     "传",
+     "入劳军。”亚夫乃传言开壁门。壁门士",
+     "傳",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     135,
+     "开",
+     "军。”亚夫乃传言开壁门。壁门士吏谓",
+     "開",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     137,
+     "门",
+     "”亚夫乃传言开壁门。壁门士吏谓从属",
+     "門",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     140,
+     "门",
+     "乃传言开壁门。壁门士吏谓从属车骑曰",
+     "門",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     143,
+     "谓",
+     "开壁门。壁门士吏谓从属车骑曰：“将",
+     "謂",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     144,
+     "从",
+     "壁门。壁门士吏谓从属车骑曰：“将军",
+     "從",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     145,
+     "属",
+     "门。壁门士吏谓从属车骑曰：“将军约",
+     "屬",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     146,
+     "车",
+     "。壁门士吏谓从属车骑曰：“将军约，",
+     "車",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     147,
+     "骑",
+     "壁门士吏谓从属车骑曰：“将军约，军",
+     "騎",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     151,
+     "将",
+     "谓从属车骑曰：“将军约，军中不得驱",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     152,
+     "军",
+     "从属车骑曰：“将军约，军中不得驱驰",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     153,
+     "约",
+     "属车骑曰：“将军约，军中不得驱驰。",
+     "約",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     155,
+     "军",
+     "骑曰：“将军约，军中不得驱驰。”于",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     159,
+     "驱",
+     "将军约，军中不得驱驰。”于是天子乃",
+     "驅",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     160,
+     "驰",
+     "军约，军中不得驱驰。”于是天子乃按",
+     "馳",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     169,
+     "辔",
+     "。”于是天子乃按辔徐行。至营，将军",
+     "轡",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     174,
+     "营",
+     "子乃按辔徐行。至营，将军亚夫持兵揖",
+     "營",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     176,
+     "将",
+     "按辔徐行。至营，将军亚夫持兵揖曰：",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     177,
+     "军",
+     "辔徐行。至营，将军亚夫持兵揖曰：“",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     178,
+     "亚",
+     "徐行。至营，将军亚夫持兵揖曰：“介",
+     "亞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     193,
+     "请",
+     "“介胄之士不拜，请以军礼见。”天子",
+     "請",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     195,
+     "军",
+     "胄之士不拜，请以军礼见。”天子为动",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     196,
+     "礼",
+     "之士不拜，请以军礼见。”天子为动，",
+     "禮",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     197,
+     "见",
+     "士不拜，请以军礼见。”天子为动，改",
+     "見",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     203,
+     "动",
+     "军礼见。”天子为动，改容式车。使人",
+     "動",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     208,
+     "车",
+     "天子为动，改容式车。使人称谢：“皇",
+     "車",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     212,
+     "称",
+     "，改容式车。使人称谢：“皇帝敬劳将",
+     "稱",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     213,
+     "谢",
+     "改容式车。使人称谢：“皇帝敬劳将军",
+     "謝",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     219,
+     "劳",
+     "人称谢：“皇帝敬劳将军。”成礼而去",
+     "勞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     220,
+     "将",
+     "称谢：“皇帝敬劳将军。”成礼而去。",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     221,
+     "军",
+     "谢：“皇帝敬劳将军。”成礼而去。",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     225,
+     "礼",
+     "帝敬劳将军。”成礼而去。",
+     "禮",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     3,
+     "门",
+     "既出军门，群臣皆惊。文帝",
+     "門",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     8,
+     "惊",
+     "既出军门，群臣皆惊。文帝曰：“嗟呼",
+     "驚",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     20,
+     "将",
+     "曰：“嗟呼，此真将军矣！曩者霸上、",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     21,
+     "军",
+     "：“嗟呼，此真将军矣！曩者霸上、棘",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     30,
+     "门",
+     "矣！曩者霸上、棘门军，若儿戏耳，其",
+     "門",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     31,
+     "军",
+     "！曩者霸上、棘门军，若儿戏耳，其将",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     34,
+     "儿",
+     "霸上、棘门军，若儿戏耳，其将固可袭",
+     "兒",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     35,
+     "戏",
+     "上、棘门军，若儿戏耳，其将固可袭而",
+     "戲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     39,
+     "将",
+     "军，若儿戏耳，其将固可袭而虏也。至",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     42,
+     "袭",
+     "儿戏耳，其将固可袭而虏也。至于亚夫",
+     "襲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     44,
+     "虏",
+     "耳，其将固可袭而虏也。至于亚夫，可",
+     "虜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     48,
+     "于",
+     "固可袭而虏也。至于亚夫，可得而犯邪",
+     "於",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     49,
+     "亚",
+     "可袭而虏也。至于亚夫，可得而犯邪！",
+     "亞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     59,
+     "称",
+     "，可得而犯邪！”称善者久之。",
+     "稱",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:异文",
+     4,
+     3,
+     "将",
+     "- 「将军令曰：‘军中闻",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:异文",
+     4,
+     4,
+     "军",
+     "- 「将军令曰：‘军中闻将",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:异文",
+     4,
+     9,
+     "军",
+     " 「将军令曰：‘军中闻将军令，不闻",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:异文",
+     4,
+     11,
+     "闻",
+     "将军令曰：‘军中闻将军令，不闻天子",
+     "聞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:异文",
+     4,
+     12,
+     "将",
+     "军令曰：‘军中闻将军令，不闻天子之",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:异文",
+     4,
+     13,
+     "军",
+     "令曰：‘军中闻将军令，不闻天子之诏",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:异文",
+     4,
+     17,
+     "闻",
+     "军中闻将军令，不闻天子之诏。’」：",
+     "聞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:注释",
+     25,
+     2,
+     "将",
+     "- 将军约，军中不得驱",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:注释",
+     25,
+     3,
+     "军",
+     "- 将军约，军中不得驱驰",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:注释",
+     25,
+     4,
+     "约",
+     "- 将军约，军中不得驱驰：",
+     "約",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:注释",
+     25,
+     6,
+     "军",
+     "- 将军约，军中不得驱驰：将军",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:译文",
+     0,
+     35,
+     "军",
+     "正刘礼为将军，驻军霸上；祝兹侯徐厉",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:译文",
+     0,
+     43,
+     "厉",
+     "军霸上；祝兹侯徐厉为将军，驻军棘门",
+     "厲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:译文",
+     0,
+     45,
+     "将",
+     "上；祝兹侯徐厉为将军，驻军棘门；河",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:译文",
+     0,
+     46,
+     "军",
+     "；祝兹侯徐厉为将军，驻军棘门；河内",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     24,
+     "闻",
+     "军中闻将军令，不闻天子之诏。」它不",
+     "聞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     3,
+     18,
+     "车",
+     "「为动」「改容式车」「使人称谢」，",
+     "車",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "直驰入：（车马）径直驱驰进入。",
+     "field": "sec:注释",
+     "line": 10,
+     "pick": "徑",
+     "why": "小路义作「徑」；「逕」是异体"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "证",
+     "cands": [
+      "證",
+      "証"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "符节，君王使者凭证。",
+     "field": "sec:注释",
+     "line": 22,
+     "pick": "證",
+     "why": "证据、考证、例证、旁证作「證」；「証」是异体"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "赞",
+     "cands": [
+      "贊",
+      "讚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "者久之：长时间称赞周亚夫。称善，称",
+     "field": "sec:注释",
+     "line": 38,
+     "pick": "讚",
+     "why": "赞美、赞赏、赞叹、夸赞都是称扬义，现代繁体作「讚」；「贊」用于赞助、贊成（仓内没有这种用法）"
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "赞",
+     "cands": [
+      "贊",
+      "讚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "周亚夫。称善，称赞。久之，很久。",
+     "field": "sec:注释",
+     "line": 38,
+     "pick": "讚",
+     "why": "赞美、赞赏、赞叹、夸赞都是称扬义，现代繁体作「讚」；「贊」用于赞助、贊成（仓内没有这种用法）"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "棘门的军营，车马径直驰入，将领以下",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "徑",
+     "why": "小路义作「徑」；「逕」是异体"
+    },
+    {
+     "at": 82,
+     "n": 1,
+     "simp": "赞",
+     "cands": [
+      "贊",
+      "讚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "犯呢！”长时间称赞周亚夫。",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "讚",
+     "why": "赞美、赞赏、赞叹、夸赞都是称扬义，现代繁体作「讚」；「贊」用于赞助、贊成（仓内没有这种用法）"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未单列本篇，",
+     "field": "sec:收录范围",
+     "line": 2,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "发",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
+   ]
+  },
+  {
    "id": "dadaozhixing",
    "title": "大道之行也",
    "page": "大道之行也",
@@ -64975,6 +69629,4091 @@
      "line": 5,
      "pick": "個",
      "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
+   "id": "dedaoduozhu",
+   "title": "得道多助，失道寡助",
+   "page": "孟子/公孫丑下",
+   "text_trad": [
+    "天時不如地利，地利不如人和。",
+    "三里之城，七里之郭，環而攻之而不勝。夫環而攻之，必有得天時者矣，然而不勝者，是天時不如地利也。",
+    "城非不高也，池非不深也，兵革非不堅利也，米粟非不多也；委而去之，是地利不如人和也。",
+    "故曰：域民不以封疆之界，固國不以山溪之險，威天下不以兵革之利。得道者多助，失道者寡助。寡助之至，親戚畔之；多助之至，天下順之。以天下之所順，攻親戚之所畔，故君子有不戰，戰必勝矣。"
+   ],
+   "lines_trad": [
+    "天時不如地利，地利不如人和。",
+    "三里之城，七里之郭，環而攻之而不勝。夫環而攻之，必有得天時者矣，然而不勝者，是天時不如地利也。",
+    "城非不高也，池非不深也，兵革非不堅利也，米粟非不多也；委而去之，是地利不如人和也。",
+    "故曰：域民不以封疆之界，固國不以山溪之險，威天下不以兵革之利。得道者多助，失道者寡助。寡助之至，親戚畔之；多助之至，天下順之。以天下之所順，攻親戚之所畔，故君子有不戰，戰必勝矣。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "天時不如地利，地利不如人和。",
+     "三里之城，七里之郭，環而攻之而不勝。夫環而攻之，必有得天時者矣，然而不勝者，是天時不如地利也。",
+     "城非不高也，池非不深也，兵革非不堅利也，米粟非不多也；委而去之，是地利不如人和也。",
+     "故曰：域民不以封疆之界，固國不以山溪之險，威天下不以兵革之利。得道者多助，失道者寡助。寡助之至，親戚畔之；多助之至，天下順之。以天下之所順，攻親戚之所畔，故君子有不戰，戰必勝矣。"
+    ],
+    "异文": [
+     "- 這一則的開頭：維基文庫《孟子/公孫醜下》作「孟子曰：『天時不如地利，地利不如人和。……』」，有「孟子曰」三個字；統編沒收這三個字，並加了篇名《得道多助，失道寡助》。",
+     "  取舍：正文照統編，不補「孟子曰」。",
+     "  出處：統編教材八年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/banianji/20933_langdu.html ；維基文庫《孟子/公孫醜下》 https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90%2F%E5%85%AC%E5%AD%AB%E4%B8%91%E4%B8%8B",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 「環而攻之而不勝。夫環而攻之」：該頁作「環而攻之而不勝；夫環而攻之」，用分號；統編用句號。「米粟非不多也；委而去之」統編用分號，該頁作「米粟非不多也，委而去之」，用逗號。兩處都是標點差異，不算文字分歧。",
+     "  取舍：正文照統編。",
+     "  出處：統編教材八年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/banianji/20933_langdu.html ；維基文庫《孟子/公孫醜下》 https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90%2F%E5%85%AC%E5%AD%AB%E4%B8%91%E4%B8%8B",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。"
+    ],
+    "注释": [
+     "- 選自《孟子·公孫丑下》，標題是教材加的。孟子名軻，戰國時鄒國人，儒家代表人物。",
+     "- 天時：指有利於作戰的時令、氣候。地利：指有利於作戰的地理形勢。人和：指人心所向、內部團結。",
+     "- 三里之城，七里之郭：方圓三里的內城，方圓七里的外城。城，內城。郭，外城。",
+     "- 環而攻之：四面包圍起來攻打它。環，包圍。",
+     "- 得天時者：得到有利於作戰的時令氣候（的條件）。",
+     "- 池非不深也：護城河並不是不深。池，護城河。",
+     "- 兵革非不堅利也：武器裝備並不是不精良。兵革，泛指武器裝備。",
+     "- 委而去之：棄城而逃。委，放棄。去，離開。",
+     "- 域民不以封疆之界：使人民定居下來而不遷到別處去，不能靠疆域的邊界。域，限制。封疆之界，劃定的邊疆界線。",
+     "- 固國不以山溪之險：鞏固國防不能靠山河的險要。山溪，山川河流。",
+     "- 威天下不以兵革之利：威懾天下不能靠武器的銳利。",
+     "- 得道者：能行仁政的君主。道，這里指仁政。",
+     "- 寡助之至：幫助支持他的人少到了極點。至，極點。",
+     "- 親戚畔之：內外親屬都會背叛他。畔，同「叛」，背叛。",
+     "- 天下順之：天下人都會歸順他。順，歸順、服從。",
+     "- 君子有不戰，戰必勝矣：能行仁政的君主不戰則已，戰就一定能勝利。君子，指能行仁政的君主。"
+    ],
+    "译文": [
+     "有利於作戰的時令氣候，比不上有利於作戰的地理形勢；有利於作戰的地理形勢，比不上作戰中的人心所向、內部團結。",
+     "方圓三里的小城，只有方圓七里的外城，四面包圍起來攻打它卻不能取勝。采用四面包圍的方式攻城，一定是已經得到有利於作戰的時令氣候了，可是不能取勝，這說明有利於作戰的時令氣候比不上有利於作戰的地理形勢。",
+     "城牆並不是不高啊，護城河並不是不深啊，武器裝備並不是不精良啊，糧食供給並不是不充足啊，但是守城的一方還是棄城而逃，這說明地理形勢再好，也比不上人心所向、內部團結。",
+     "所以說：使人民定居下來而不遷到別處去，不能靠疆域的邊界；鞏固國防，不能靠山河的險要；威懾天下，不能靠武器的銳利。能行仁政的君主，幫助支持他的人就多；不行仁政的君主，幫助支持他的人就少。幫助他的人少到極點，連內外親屬都會背叛他；幫助他的人多到極點，天下人都會歸順他。憑天下人都歸順他的條件，去攻打那連親屬都背叛的君主——所以能行仁政的君主不戰則已，戰就一定能勝利。"
+    ],
+    "赏析": [
+     "這一則的骨架是一句判斷：天時 < 地利 < 人和。全文就是在給這個不等式找證據。",
+     "前兩段各給一格證據：第一段從攻的一方看（有天時卻打不下），第二段從守的一方看（地利齊備卻棄城而逃）。兩段都是「條件都佔了，還是輸」，於是人和被單獨拎出來。",
+     "第三段換成正面說理，連用三個「不以」：域民、固國、威天下，都不靠硬條件。排比在這里不是修辭，是把三條退路一條條堵掉。",
+     "「寡助之至，親戚畔之；多助之至，天下順之」是全篇的轉折點：從軍事算賬轉到人心向背，最後落到「戰必勝矣」。",
+     "教材把這一則和《富貴不能淫》《生於憂患，死於安樂》放在同一課，三則合起來講的是同一件事：政權的底氣在人，不在地形與兵器。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文八年級上冊第 23 課《孟子》三則之一（自讀），選自《孟子·公孫丑下》，篇名是教材加的。",
+     "倉內已有《孟子》三則（九年級下冊），收的是《魚我所欲也》《生於憂患，死於安樂》《富貴不能淫》三則，不含這一則，所以本篇單獨收。",
+     "課標（2022）附錄1 未單列本篇，屬教材拓展。"
+    ]
+   },
+   "labels_trad": {
+    "title": "得道多助，失道寡助",
+    "author": "孟子",
+    "dynasty": "戰國",
+    "stage": "初中",
+    "volume": "八年級上冊",
+    "form": "文言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "仁政",
+     "說理"
+    ],
+    "technique": [
+     "排比",
+     "對比",
+     "層層推進"
+    ],
+    "tags": [
+     "孟子",
+     "仁政",
+     "戰國文言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "天时不如地利，地利不",
+     "field": "full",
+     "line": 0,
+     "page_char": "時"
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "三里",
+     "cands": [
+      "三里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "三里之城，七里之郭，",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "七里",
+     "cands": [
+      "七里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "三里之城，七里之郭，环而攻之而",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "环",
+     "cands": [
+      "環"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之城，七里之郭，环而攻之而不胜。夫",
+     "field": "full",
+     "line": 1,
+     "page_char": "環"
+    },
+    {
+     "at": 15,
+     "n": 2,
+     "simp": "不胜",
+     "cands": [
+      "不勝"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "之郭，环而攻之而不胜。夫环而攻之，必",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "环而攻之而不胜。夫环而攻之，必有得",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "环",
+     "cands": [
+      "環"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "而攻之而不胜。夫环而攻之，必有得天",
+     "field": "full",
+     "line": 1,
+     "page_char": "環"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "而攻之，必有得天时者矣，然而不胜者",
+     "field": "full",
+     "line": 1,
+     "page_char": "時"
+    },
+    {
+     "at": 34,
+     "n": 2,
+     "simp": "不胜",
+     "cands": [
+      "不勝"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "得天时者矣，然而不胜者，是天时不如地",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 40,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "然而不胜者，是天时不如地利也。",
+     "field": "full",
+     "line": 1,
+     "page_char": "時"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "坚",
+     "cands": [
+      "堅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "不深也，兵革非不坚利也，米粟非不多",
+     "field": "full",
+     "line": 2,
+     "page_char": "堅"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "国",
+     "cands": [
+      "國"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "不以封疆之界，固国不以山溪之险，威",
+     "field": "full",
+     "line": 3,
+     "page_char": "國"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "溪",
+     "cands": [
+      "溪",
+      "谿"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "之界，固国不以山溪之险，威天下不以",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "险",
+     "cands": [
+      "險"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，固国不以山溪之险，威天下不以兵革",
+     "field": "full",
+     "line": 3,
+     "page_char": "險"
+    },
+    {
+     "at": 48,
+     "n": 2,
+     "simp": "亲戚",
+     "cands": [
+      "親戚"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "寡助。寡助之至，亲戚畔之；多助之至，",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 60,
+     "n": 1,
+     "simp": "顺",
+     "cands": [
+      "順"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "；多助之至，天下顺之。以天下之所顺",
+     "field": "full",
+     "line": 3,
+     "page_char": "順"
+    },
+    {
+     "at": 68,
+     "n": 1,
+     "simp": "顺",
+     "cands": [
+      "順"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "顺之。以天下之所顺，攻亲戚之所畔，",
+     "field": "full",
+     "line": 3,
+     "page_char": "順"
+    },
+    {
+     "at": 71,
+     "n": 2,
+     "simp": "亲戚",
+     "cands": [
+      "親戚"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "以天下之所顺，攻亲戚之所畔，故君子有",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 82,
+     "n": 1,
+     "simp": "战",
+     "cands": [
+      "戰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "所畔，故君子有不战，战必胜矣。",
+     "field": "full",
+     "line": 3,
+     "page_char": "戰"
+    },
+    {
+     "at": 84,
+     "n": 1,
+     "simp": "战",
+     "cands": [
+      "戰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，故君子有不战，战必胜矣。",
+     "field": "full",
+     "line": 3,
+     "page_char": "戰"
+    },
+    {
+     "at": 86,
+     "n": 1,
+     "simp": "胜",
+     "cands": [
+      "勝",
+      "胜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "君子有不战，战必胜矣。",
+     "field": "full",
+     "line": 3,
+     "page_char": "勝"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "天时不如地利，地利不",
+     "field": "lines",
+     "line": 0,
+     "page_char": "時"
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "三里",
+     "cands": [
+      "三里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "三里之城，七里之郭，",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "七里",
+     "cands": [
+      "七里"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "三里之城，七里之郭，环而攻之而",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "环",
+     "cands": [
+      "環"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之城，七里之郭，环而攻之而不胜。夫",
+     "field": "lines",
+     "line": 1,
+     "page_char": "環"
+    },
+    {
+     "at": 15,
+     "n": 2,
+     "simp": "不胜",
+     "cands": [
+      "不勝"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "之郭，环而攻之而不胜。夫环而攻之，必",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "环而攻之而不胜。夫环而攻之，必有得",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "环",
+     "cands": [
+      "環"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "而攻之而不胜。夫环而攻之，必有得天",
+     "field": "lines",
+     "line": 1,
+     "page_char": "環"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "而攻之，必有得天时者矣，然而不胜者",
+     "field": "lines",
+     "line": 1,
+     "page_char": "時"
+    },
+    {
+     "at": 34,
+     "n": 2,
+     "simp": "不胜",
+     "cands": [
+      "不勝"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "得天时者矣，然而不胜者，是天时不如地",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 40,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "然而不胜者，是天时不如地利也。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "時"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "坚",
+     "cands": [
+      "堅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "不深也，兵革非不坚利也，米粟非不多",
+     "field": "lines",
+     "line": 2,
+     "page_char": "堅"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "国",
+     "cands": [
+      "國"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "不以封疆之界，固国不以山溪之险，威",
+     "field": "lines",
+     "line": 3,
+     "page_char": "國"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "溪",
+     "cands": [
+      "溪",
+      "谿"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "之界，固国不以山溪之险，威天下不以",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "险",
+     "cands": [
+      "險"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，固国不以山溪之险，威天下不以兵革",
+     "field": "lines",
+     "line": 3,
+     "page_char": "險"
+    },
+    {
+     "at": 48,
+     "n": 2,
+     "simp": "亲戚",
+     "cands": [
+      "親戚"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "寡助。寡助之至，亲戚畔之；多助之至，",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 60,
+     "n": 1,
+     "simp": "顺",
+     "cands": [
+      "順"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "；多助之至，天下顺之。以天下之所顺",
+     "field": "lines",
+     "line": 3,
+     "page_char": "順"
+    },
+    {
+     "at": 68,
+     "n": 1,
+     "simp": "顺",
+     "cands": [
+      "順"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "顺之。以天下之所顺，攻亲戚之所畔，",
+     "field": "lines",
+     "line": 3,
+     "page_char": "順"
+    },
+    {
+     "at": 71,
+     "n": 2,
+     "simp": "亲戚",
+     "cands": [
+      "親戚"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "以天下之所顺，攻亲戚之所畔，故君子有",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 82,
+     "n": 1,
+     "simp": "战",
+     "cands": [
+      "戰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "所畔，故君子有不战，战必胜矣。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "戰"
+    },
+    {
+     "at": 84,
+     "n": 1,
+     "simp": "战",
+     "cands": [
+      "戰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，故君子有不战，战必胜矣。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "戰"
+    },
+    {
+     "at": 86,
+     "n": 1,
+     "simp": "胜",
+     "cands": [
+      "勝",
+      "胜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "君子有不战，战必胜矣。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "勝"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     1,
+     "时",
+     "天时不如地利，地利不",
+     "時",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     10,
+     "环",
+     "之城，七里之郭，环而攻之而不胜。夫",
+     "環",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     19,
+     "环",
+     "而攻之而不胜。夫环而攻之，必有得天",
+     "環",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     28,
+     "时",
+     "而攻之，必有得天时者矣，然而不胜者",
+     "時",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     40,
+     "时",
+     "然而不胜者，是天时不如地利也。",
+     "時",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     16,
+     "坚",
+     "不深也，兵革非不坚利也，米粟非不多",
+     "堅",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     13,
+     "国",
+     "不以封疆之界，固国不以山溪之险，威",
+     "國",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     19,
+     "险",
+     "，固国不以山溪之险，威天下不以兵革",
+     "險",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     60,
+     "顺",
+     "；多助之至，天下顺之。以天下之所顺",
+     "順",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     68,
+     "顺",
+     "顺之。以天下之所顺，攻亲戚之所畔，",
+     "順",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     82,
+     "战",
+     "所畔，故君子有不战，战必胜矣。",
+     "戰",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     84,
+     "战",
+     "，故君子有不战，战必胜矣。",
+     "戰",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     86,
+     "胜",
+     "君子有不战，战必胜矣。",
+     "勝",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:异文",
+     4,
+     3,
+     "环",
+     "- 「环而攻之而不胜。夫",
+     "環",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 67,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "编没收这三个字，并加了篇名《得道多",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 44,
+     "n": 1,
+     "simp": "团",
+     "cands": [
+      "團",
+      "糰"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "指人心所向、内部团结。",
+     "field": "sec:注释",
+     "line": 1,
+     "pick": "團",
+     "why": "团聚合义作「團」；「糰」只用于面团"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "非不深也：护城河并不是不深。池，护",
+     "field": "sec:注释",
+     "line": 5,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "坚利也：武器装备并不是不精良。兵革",
+     "field": "sec:注释",
+     "line": 6,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "团",
+     "cands": [
+      "團",
+      "糰"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "的人心所向、内部团结。",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "團",
+     "why": "团聚合义作「團」；「糰」只用于面团"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "城墙并不是不高啊，护城",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "是不高啊，护城河并不是不深啊，武器",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "不深啊，武器装备并不是不精良啊，粮",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 35,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "精良啊，粮食供给并不是不充足啊，但",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 78,
+     "n": 1,
+     "simp": "团",
+     "cands": [
+      "團",
+      "糰"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "上人心所向、内部团结。",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "團",
+     "why": "团聚合义作「團」；「糰」只用于面团"
+    },
+    {
+     "at": 32,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "。全文就是在给这个不等式找证据。",
+     "field": "sec:赏析",
+     "line": 0,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "证",
+     "cands": [
+      "證",
+      "証"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "在给这个不等式找证据。",
+     "field": "sec:赏析",
+     "line": 0,
+     "pick": "證",
+     "why": "证据、考证、例证、旁证作「證」；「証」是异体"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "证",
+     "cands": [
+      "證",
+      "証"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "前两段各给一格证据：第一段从攻的",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "證",
+     "why": "证据、考证、例证、旁证作「證」；「証」是异体"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未单列本篇，",
+     "field": "sec:收录范围",
+     "line": 2,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
+   "id": "yugongyishan",
+   "title": "愚公移山",
+   "page": "列子/湯問篇",
+   "text_trad": [
+    "太行、王屋二山，方七百里，高萬仞，本在冀州之南，河陽之北。",
+    "北山愚公者，年且九十，面山而居。懲山北之塞，出入之迂也，聚室而謀曰：“吾與汝畢力平險，指通豫南，達于漢陰，可乎？”雜然相許。其妻獻疑曰：“以君之力，曾不能損魁父之丘，如太行、王屋何？且焉置土石？”雜曰：“投諸渤海之尾，隱土之北。”遂率子孫荷擔者三夫，叩石墾壤，箕畚運於渤海之尾。鄰人京城氏之孀妻有遺男，始齔，跳往助之。寒暑易節，始一反焉。",
+    "河曲智叟笑而止之曰：“甚矣，汝之不惠！以殘年餘力，曾不能毀山之一毛，其如土石何？”北山愚公長息曰：“汝心之固，固不可徹，曾不若孀妻弱子。雖我之死，有子存焉。子又生孫，孫又生子；子又有子，子又有孫；子子孫孫無窮匱也，而山不加增，何苦而不平？”河曲智叟亡以應。",
+    "操蛇之神聞之，懼其不已也，告之於帝。帝感其誠，命夸娥氏二子負二山，一厝朔東，一厝雍南。自此，冀之南，漢之陰，無隴斷焉。"
+   ],
+   "lines_trad": [
+    "太行、王屋二山，方七百里，高萬仞，本在冀州之南，河陽之北。",
+    "北山愚公者，年且九十，面山而居。懲山北之塞，出入之迂也，聚室而謀曰：“吾與汝畢力平險，指通豫南，達于漢陰，可乎？”雜然相許。其妻獻疑曰：“以君之力，曾不能損魁父之丘，如太行、王屋何？且焉置土石？”雜曰：“投諸渤海之尾，隱土之北。”遂率子孫荷擔者三夫，叩石墾壤，箕畚運於渤海之尾。鄰人京城氏之孀妻有遺男，始齔，跳往助之。寒暑易節，始一反焉。",
+    "河曲智叟笑而止之曰：“甚矣，汝之不惠！以殘年餘力，曾不能毀山之一毛，其如土石何？”北山愚公長息曰：“汝心之固，固不可徹，曾不若孀妻弱子。雖我之死，有子存焉。子又生孫，孫又生子；子又有子，子又有孫；子子孫孫無窮匱也，而山不加增，何苦而不平？”河曲智叟亡以應。",
+    "操蛇之神聞之，懼其不已也，告之於帝。帝感其誠，命夸娥氏二子負二山，一厝朔東，一厝雍南。自此，冀之南，漢之陰，無隴斷焉。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "太行、王屋二山，方七百里，高萬仞，本在冀州之南，河陽之北。",
+     "北山愚公者，年且九十，面山而居。懲山北之塞，出入之迂也，聚室而謀曰：“吾與汝畢力平險，指通豫南，達于漢陰，可乎？”雜然相許。其妻獻疑曰：“以君之力，曾不能損魁父之丘，如太行、王屋何？且焉置土石？”雜曰：“投諸渤海之尾，隱土之北。”遂率子孫荷擔者三夫，叩石墾壤，箕畚運於渤海之尾。鄰人京城氏之孀妻有遺男，始齔，跳往助之。寒暑易節，始一反焉。",
+     "河曲智叟笑而止之曰：“甚矣，汝之不惠！以殘年餘力，曾不能毀山之一毛，其如土石何？”北山愚公長息曰：“汝心之固，固不可徹，曾不若孀妻弱子。雖我之死，有子存焉。子又生孫，孫又生子；子又有子，子又有孫；子子孫孫無窮匱也，而山不加增，何苦而不平？”河曲智叟亡以應。",
+     "操蛇之神聞之，懼其不已也，告之於帝。帝感其誠，命夸娥氏二子負二山，一厝朔東，一厝雍南。自此，冀之南，漢之陰，無隴斷焉。"
+    ],
+    "异文": [
+     "- 「命誇娥氏二子負二山」：統編作「誇娥氏」；維基文庫《列子/湯問篇》作「誇蛾氏」，作「蛾」。兩種寫法都見於傳本。",
+     "  取舍：正文照統編作「娥」，「蛾」登記爲異文，不改正文。",
+     "  出處：統編教材八年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/banianji/20936_langdu.html ；維基文庫《列子/湯問篇》 https://zh.wikisource.org/wiki/%E5%88%97%E5%AD%90%2F%E6%B9%AF%E5%95%8F%E7%AF%87",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 標點幾處：「面山而居。懲山北之塞」該頁作「面山而居，懲山北之塞」；「河曲智叟笑而止之曰」該頁作「笑而止之，曰」；「有子存焉。子又生孫」該頁作「有子存焉；子又生孫」；「子又有孫；子子孫孫無窮匱也」該頁作「子又有孫，子子孫孫無窮匱也」。都是標點差異，不算文字分歧。",
+     "  取舍：正文照統編。",
+     "  出處：統編教材八年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/banianji/20936_langdu.html ；維基文庫《列子/湯問篇》 https://zh.wikisource.org/wiki/%E5%88%97%E5%AD%90%2F%E6%B9%AF%E5%95%8F%E7%AF%87",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。"
+    ],
+    "注释": [
+     "- 選自《列子·湯問》。《列子》舊題列御寇作，先秦道家著作之一，今本經後人整理。",
+     "- 太行、王屋：太行山、王屋山。方七百里：方圓七百里。",
+     "- 高萬仞（rèn）：極高。仞，古代長度單位，七尺或八尺爲一仞。",
+     "- 冀州之南，河陽之北：冀州的南部，河陽的北部。河陽，今河南孟州一帶。",
+     "- 北山愚公者：北山腳下有個叫愚公的人。「愚公」是寓言里取的名字。",
+     "- 年且九十：年紀將近九十。且，將近。",
+     "- 面山而居：對着山住。",
+     "- 懲山北之塞：苦于山北的阻塞。懲，苦於。塞，阻塞。",
+     "- 出入之迂也：進出都要繞道。迂，繞遠。",
+     "- 聚室而謀：集合全家來商量。室，家。",
+     "- 吾與汝畢力平險：我跟你們盡全力削平險峻的大山。汝，你們。畢，盡、全。",
+     "- 指通豫南：直通豫州南部。指，直。",
+     "- 達於漢陰：到達漢水南岸。陰，水的南岸。",
+     "- 雜然相許：紛紛表示讚同。雜然，紛紛地。許，讚同。",
+     "- 獻疑：提出疑問。",
+     "- 曾（céng）不能損魁父之丘：連魁父這樣的小山丘都不能削平。曾，連……都……（加強否定語氣）。魁父，小山名。",
+     "- 如太行、王屋何：能把太行、王屋怎麼樣。如……何，把……怎麼樣。",
+     "- 且焉置土石：再說，挖下來的土和石頭放到哪裏。焉，哪裏。置，放置。",
+     "- 投諸渤海之尾：把它扔到渤海的邊上。諸，之於。尾，邊上。",
+     "- 隱土之北：隱土的北邊。隱土，傳說中的地名。",
+     "- 荷擔者三夫：能挑擔子的幾個人。荷，扛、挑。夫，成年男子。",
+     "- 叩石墾壤：鑿石頭，挖泥土。",
+     "- 箕畚（jī běn）運於渤海之尾：用箕畚裝土石運到渤海邊上。箕畚，一種裝土石的器具，這里作狀語，用箕畚。",
+     "- 京城氏之孀妻：姓京城的寡婦。孀妻，寡婦。",
+     "- 遺男：孤兒。始齔（chèn）：剛到換牙的年紀，七八歲。齔，兒童換牙。",
+     "- 寒暑易節，始一反焉：冬夏換季，才往返一次。易，交換。反，同「返」，返回。",
+     "- 河曲智叟：河灣上的聰明老頭。「智叟」也是寓言里取的名字。",
+     "- 甚矣，汝之不惠：你太不聰明了。惠，同「慧」，聰明。這一句是倒裝，把「甚矣」提前。",
+     "- 殘年餘力：剩下的年歲和力氣。",
+     "- 曾不能毀山之一毛：連山上的一根草都動不了。毛，草木。",
+     "- 長息：長嘆。",
+     "- 汝心之固，固不可徹：你的思想頑固，頑固到沒法改變。徹，通、改變。",
+     "- 曾不若孀妻弱子：連寡婦和小孩都比不上。",
+     "- 雖我之死：即使我死了。雖，即使。",
+     "- 無窮匱（kuì）：無窮無盡。匱，盡。",
+     "- 何苦而不平：還愁挖不平嗎。",
+     "- 亡以應：沒有話用來回答。亡，同「無」。",
+     "- 操蛇之神：手里握着蛇的山神。",
+     "- 懼其不已：怕他不停地干下去。已，停止。",
+     "- 帝感其誠：天帝被他的誠心感動。",
+     "- 誇娥氏二子：神話里大力神誇娥氏的兩個兒子。",
+     "- 負二山：背走兩座山。",
+     "- 一厝（cuò）朔東：一座放在朔方的東邊。厝，放置。朔，朔方，今山西北部一帶。",
+     "- 一厝雍南：一座放在雍州的南邊。雍，雍州，今陝西一帶。",
+     "- 無隴斷焉：再也沒有山岡阻隔了。隴斷，山岡阻隔。隴，同「壟」，高地。"
+    ],
+    "译文": [
+     "太行、王屋兩座山，方圓七百里，高萬仞，本來在冀州的南邊、河陽的北邊。",
+     "北山腳下有個叫愚公的人，年紀將近九十，對着山住。他苦于山北的阻塞，進出都要繞道，就集合全家商量說：“我跟你們盡全力削平險峻的大山，直通豫州南部、到達漢水南岸，可以嗎？”大家紛紛讚同。他的妻子提出疑問說：“憑你的力氣，連魁父那樣的小山丘都削不平，又能把太行、王屋怎麼樣呢？再說，挖下來的土和石頭放到哪裏？”衆人說：“把它扔到渤海的邊上、隱土的北邊。”於是愚公率領兒孫中能挑擔子的幾個人上山，鑿石頭、挖泥土，用箕畚運到渤海邊上。鄰居京城氏的寡婦有個孤兒，剛到換牙的年紀，也蹦蹦跳跳地去幫忙。冬夏換季，才能往返一次。",
+     "河灣上的智叟譏笑愚公、阻止他，說：“你太不聰明了！就憑你剩下的年歲和力氣，連山上的一根草都動不了，又能把泥土石頭怎麼樣呢？”北山愚公長嘆說：“你的思想頑固，頑固到沒法改變，連寡婦和小孩都比不上。即使我死了，還有兒子在呀；兒子又生孫子，孫子又生兒子；兒子又有兒子，兒子又有孫子；子子孫孫沒有窮盡，可是山不會再增高，還愁挖不平嗎？”智叟沒有話回答。",
+     "握着蛇的山神聽說了這件事，怕他不停地干下去，就報告給天帝。天帝被他的誠心感動，命令誇娥氏的兩個兒子背走兩座山，一座放在朔方的東邊，一座放在雍州的南邊。從此以後，冀州的南部直到漢水南岸，再也沒有山岡阻隔了。"
+    ],
+    "赏析": [
+     "寓言的名字先做了判斷：一個叫「愚」，一個叫「智」。全文讀完，誰愚誰智換了位置——這是這一篇最要緊的設計。",
+     "愚公的算法不在一代人身上：「子又生孫，孫又生子……子子孫孫無窮匱也，而山不加增」。他把時間當成變量，山是不變的，人是會續的。智叟的算法只看一代人，所以他說得對，也算錯了。",
+     "文中兩處小細節把這件事寫活：妻子是「獻疑」，問的是「焉置土石」——她問的是操作問題，衆人答了；智叟是「笑而止之」，他要的是這件事本身別做。一個可以商量，一個沒法商量。",
+     "「鄰人京城氏之孀妻有遺男，始齔，跳往助之」——一個剛換牙的孩子來幫忙，「寒暑易節，始一反焉」，一年一個來回。這兩句把工程的慢和人心的熱放在一起。",
+     "結尾靠天帝和誇娥氏二子收場，山是被背走的，不是被挖平的。這一層是寓言的結局，不是對愚公方法的證明；真正的證明在「河曲智叟亡以應」那一句。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文八年級上冊第 24 課，選自《列子·湯問》。",
+     "倉內已有《杞人憂天》（七年級上冊），同出《列子》（天瑞篇），是另一篇。",
+     "課標（2022）附錄1 未單列本篇，屬教材拓展。"
+    ]
+   },
+   "labels_trad": {
+    "title": "愚公移山",
+    "author": "佚名",
+    "dynasty": "先秦",
+    "stage": "初中",
+    "volume": "八年級上冊",
+    "form": "文言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "寓言",
+     "意志"
+    ],
+    "technique": [
+     "寓言",
+     "對比",
+     "對話"
+    ],
+    "tags": [
+     "寓言",
+     "列子",
+     "先秦文言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "王屋二山，方七百里，高万仞，本在冀",
+     "field": "full",
+     "line": 0,
+     "page_char": "里",
+     "pick": "里"
+    },
+    {
+     "at": 14,
+     "n": 2,
+     "simp": "万仞",
+     "cands": [
+      "萬仞"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "山，方七百里，高万仞，本在冀州之南，",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 25,
+     "n": 1,
+     "simp": "阳",
+     "cands": [
+      "陽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "本在冀州之南，河阳之北。",
+     "field": "full",
+     "line": 0,
+     "page_char": "陽"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "面",
+     "cands": [
+      "面",
+      "麪"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "公者，年且九十，面山而居。惩山北之",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "惩",
+     "cands": [
+      "懲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "九十，面山而居。惩山北之塞，出入之",
+     "field": "full",
+     "line": 1,
+     "page_char": "懲"
+    },
+    {
+     "at": 22,
+     "n": 2,
+     "simp": "出入",
+     "cands": [
+      "出入"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "居。惩山北之塞，出入之迂也，聚室而谋",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "谋",
+     "cands": [
+      "謀"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "入之迂也，聚室而谋曰：“吾与汝毕力",
+     "field": "full",
+     "line": 1,
+     "page_char": "謀"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "聚室而谋曰：“吾与汝毕力平险，指通",
+     "field": "full",
+     "line": 1,
+     "page_char": "與"
+    },
+    {
+     "at": 38,
+     "n": 1,
+     "simp": "毕",
+     "cands": [
+      "畢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "而谋曰：“吾与汝毕力平险，指通豫南",
+     "field": "full",
+     "line": 1,
+     "page_char": "畢"
+    },
+    {
+     "at": 41,
+     "n": 1,
+     "simp": "险",
+     "cands": [
+      "險"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“吾与汝毕力平险，指通豫南，达于",
+     "field": "full",
+     "line": 1,
+     "page_char": "險"
+    },
+    {
+     "at": 48,
+     "n": 1,
+     "simp": "达",
+     "cands": [
+      "達"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "平险，指通豫南，达于汉阴，可乎？”",
+     "field": "full",
+     "line": 1,
+     "page_char": "達"
+    },
+    {
+     "at": 49,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "险，指通豫南，达于汉阴，可乎？”杂",
+     "field": "full",
+     "line": 1,
+     "page_char": "于",
+     "pick": "于"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "汉",
+     "cands": [
+      "漢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，指通豫南，达于汉阴，可乎？”杂然",
+     "field": "full",
+     "line": 1,
+     "page_char": "漢"
+    },
+    {
+     "at": 51,
+     "n": 1,
+     "simp": "阴",
+     "cands": [
+      "陰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "指通豫南，达于汉阴，可乎？”杂然相",
+     "field": "full",
+     "line": 1,
+     "page_char": "陰"
+    },
+    {
+     "at": 57,
+     "n": 1,
+     "simp": "杂",
+     "cands": [
+      "雜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "于汉阴，可乎？”杂然相许。其妻献疑",
+     "field": "full",
+     "line": 1,
+     "page_char": "雜"
+    },
+    {
+     "at": 60,
+     "n": 1,
+     "simp": "许",
+     "cands": [
+      "許"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，可乎？”杂然相许。其妻献疑曰：“",
+     "field": "full",
+     "line": 1,
+     "page_char": "許"
+    },
+    {
+     "at": 64,
+     "n": 1,
+     "simp": "献",
+     "cands": [
+      "獻"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "”杂然相许。其妻献疑曰：“以君之力",
+     "field": "full",
+     "line": 1,
+     "page_char": "獻"
+    },
+    {
+     "at": 77,
+     "n": 1,
+     "simp": "损",
+     "cands": [
+      "損"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "以君之力，曾不能损魁父之丘，如太行",
+     "field": "full",
+     "line": 1,
+     "page_char": "損"
+    },
+    {
+     "at": 98,
+     "n": 1,
+     "simp": "杂",
+     "cands": [
+      "雜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "？且焉置土石？”杂曰：“投诸渤海之",
+     "field": "full",
+     "line": 1,
+     "page_char": "雜"
+    },
+    {
+     "at": 103,
+     "n": 1,
+     "simp": "诸",
+     "cands": [
+      "諸"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "石？”杂曰：“投诸渤海之尾，隐土之",
+     "field": "full",
+     "line": 1,
+     "page_char": "諸"
+    },
+    {
+     "at": 109,
+     "n": 1,
+     "simp": "隐",
+     "cands": [
+      "隱"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“投诸渤海之尾，隐土之北。”遂率子",
+     "field": "full",
+     "line": 1,
+     "page_char": "隱"
+    },
+    {
+     "at": 118,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "土之北。”遂率子孙荷担者三夫，叩石",
+     "field": "full",
+     "line": 1,
+     "page_char": "孫"
+    },
+    {
+     "at": 120,
+     "n": 1,
+     "simp": "担",
+     "cands": [
+      "擔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "北。”遂率子孙荷担者三夫，叩石垦壤",
+     "field": "full",
+     "line": 1,
+     "page_char": "擔"
+    },
+    {
+     "at": 123,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "遂率子孙荷担者三夫，叩石垦壤，箕畚",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 127,
+     "n": 1,
+     "simp": "垦",
+     "cands": [
+      "墾"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "荷担者三夫，叩石垦壤，箕畚运于渤海",
+     "field": "full",
+     "line": 1,
+     "page_char": "墾"
+    },
+    {
+     "at": 132,
+     "n": 1,
+     "simp": "运",
+     "cands": [
+      "運"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，叩石垦壤，箕畚运于渤海之尾。邻人",
+     "field": "full",
+     "line": 1,
+     "page_char": "運"
+    },
+    {
+     "at": 133,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "叩石垦壤，箕畚运于渤海之尾。邻人京",
+     "field": "full",
+     "line": 1,
+     "page_char": "於"
+    },
+    {
+     "at": 139,
+     "n": 1,
+     "simp": "邻",
+     "cands": [
+      "鄰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "畚运于渤海之尾。邻人京城氏之孀妻有",
+     "field": "full",
+     "line": 1,
+     "page_char": "鄰"
+    },
+    {
+     "at": 148,
+     "n": 1,
+     "simp": "遗",
+     "cands": [
+      "遺"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "人京城氏之孀妻有遗男，始龀，跳往助",
+     "field": "full",
+     "line": 1,
+     "page_char": "遺"
+    },
+    {
+     "at": 152,
+     "n": 1,
+     "simp": "龀",
+     "cands": [
+      "齔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之孀妻有遗男，始龀，跳往助之。寒暑",
+     "field": "full",
+     "line": 1,
+     "page_char": "齔"
+    },
+    {
+     "at": 162,
+     "n": 1,
+     "simp": "节",
+     "cands": [
+      "節"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "跳往助之。寒暑易节，始一反焉。",
+     "field": "full",
+     "line": 1,
+     "page_char": "節"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "曲",
+     "cands": [
+      "曲",
+      "麴"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "河曲智叟笑而止之曰：",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "残",
+     "cands": [
+      "殘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "矣，汝之不惠！以残年余力，曾不能毁",
+     "field": "full",
+     "line": 2,
+     "page_char": "殘"
+    },
+    {
+     "at": 22,
+     "n": 2,
+     "simp": "余力",
+     "cands": [
+      "餘力"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "汝之不惠！以残年余力，曾不能毁山之一",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "毁",
+     "cands": [
+      "毀",
+      "燬",
+      "譭"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "残年余力，曾不能毁山之一毛，其如土",
+     "field": "full",
+     "line": 2,
+     "page_char": "毀"
+    },
+    {
+     "at": 45,
+     "n": 1,
+     "simp": "长",
+     "cands": [
+      "長"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "石何？”北山愚公长息曰：“汝心之固",
+     "field": "full",
+     "line": 2,
+     "page_char": "長"
+    },
+    {
+     "at": 58,
+     "n": 1,
+     "simp": "彻",
+     "cands": [
+      "徹"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "汝心之固，固不可彻，曾不若孀妻弱子",
+     "field": "full",
+     "line": 2,
+     "page_char": "徹"
+    },
+    {
+     "at": 68,
+     "n": 1,
+     "simp": "虽",
+     "cands": [
+      "雖"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "曾不若孀妻弱子。虽我之死，有子存焉",
+     "field": "full",
+     "line": 2,
+     "page_char": "雖"
+    },
+    {
+     "at": 81,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "有子存焉。子又生孙，孙又生子；子又",
+     "field": "full",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 83,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "存焉。子又生孙，孙又生子；子又有子",
+     "field": "full",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 96,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "子又有子，子又有孙；子子孙孙无穷匮",
+     "field": "full",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 100,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，子又有孙；子子孙孙无穷匮也，而山",
+     "field": "full",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 101,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "子又有孙；子子孙孙无穷匮也，而山不",
+     "field": "full",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 102,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "又有孙；子子孙孙无穷匮也，而山不加",
+     "field": "full",
+     "line": 2,
+     "page_char": "無"
+    },
+    {
+     "at": 103,
+     "n": 1,
+     "simp": "穷",
+     "cands": [
+      "窮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "有孙；子子孙孙无穷匮也，而山不加增",
+     "field": "full",
+     "line": 2,
+     "page_char": "窮"
+    },
+    {
+     "at": 104,
+     "n": 1,
+     "simp": "匮",
+     "cands": [
+      "匱"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "孙；子子孙孙无穷匮也，而山不加增，",
+     "field": "full",
+     "line": 2,
+     "page_char": "匱"
+    },
+    {
+     "at": 121,
+     "n": 1,
+     "simp": "曲",
+     "cands": [
+      "曲",
+      "麴"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "何苦而不平？”河曲智叟亡以应。",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 126,
+     "n": 1,
+     "simp": "应",
+     "cands": [
+      "應"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "？”河曲智叟亡以应。",
+     "field": "full",
+     "line": 2,
+     "page_char": "應"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "操蛇之神闻之，惧其不已也，",
+     "field": "full",
+     "line": 3,
+     "page_char": "聞"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "惧",
+     "cands": [
+      "懼"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "操蛇之神闻之，惧其不已也，告之于",
+     "field": "full",
+     "line": 3,
+     "page_char": "懼"
+    },
+    {
+     "at": 14,
+     "n": 2,
+     "simp": "之于",
+     "cands": [
+      "之於"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "，惧其不已也，告之于帝。帝感其诚，命",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "诚",
+     "cands": [
+      "誠"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "告之于帝。帝感其诚，命夸娥氏二子负",
+     "field": "full",
+     "line": 3,
+     "page_char": "誠"
+    },
+    {
+     "at": 24,
+     "n": 1,
+     "simp": "夸",
+     "cands": [
+      "誇",
+      "夸"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "帝。帝感其诚，命夸娥氏二子负二山，",
+     "field": "full",
+     "line": 3,
+     "page_char": "夸",
+     "pick": "夸"
+    },
+    {
+     "at": 29,
+     "n": 1,
+     "simp": "负",
+     "cands": [
+      "負"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "诚，命夸娥氏二子负二山，一厝朔东，",
+     "field": "full",
+     "line": 3,
+     "page_char": "負"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "东",
+     "cands": [
+      "東"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "子负二山，一厝朔东，一厝雍南。自此",
+     "field": "full",
+     "line": 3,
+     "page_char": "東"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "汉",
+     "cands": [
+      "漢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。自此，冀之南，汉之阴，无陇断焉。",
+     "field": "full",
+     "line": 3,
+     "page_char": "漢"
+    },
+    {
+     "at": 52,
+     "n": 1,
+     "simp": "阴",
+     "cands": [
+      "陰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "此，冀之南，汉之阴，无陇断焉。",
+     "field": "full",
+     "line": 3,
+     "page_char": "陰"
+    },
+    {
+     "at": 54,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "冀之南，汉之阴，无陇断焉。",
+     "field": "full",
+     "line": 3,
+     "page_char": "無"
+    },
+    {
+     "at": 55,
+     "n": 1,
+     "simp": "陇",
+     "cands": [
+      "隴"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之南，汉之阴，无陇断焉。",
+     "field": "full",
+     "line": 3,
+     "page_char": "隴"
+    },
+    {
+     "at": 56,
+     "n": 1,
+     "simp": "断",
+     "cands": [
+      "斷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "南，汉之阴，无陇断焉。",
+     "field": "full",
+     "line": 3,
+     "page_char": "斷"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "王屋二山，方七百里，高万仞，本在冀",
+     "field": "lines",
+     "line": 0,
+     "page_char": "里",
+     "pick": "里"
+    },
+    {
+     "at": 14,
+     "n": 2,
+     "simp": "万仞",
+     "cands": [
+      "萬仞"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "山，方七百里，高万仞，本在冀州之南，",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 25,
+     "n": 1,
+     "simp": "阳",
+     "cands": [
+      "陽"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "本在冀州之南，河阳之北。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "陽"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "面",
+     "cands": [
+      "面",
+      "麪"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "公者，年且九十，面山而居。惩山北之",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "惩",
+     "cands": [
+      "懲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "九十，面山而居。惩山北之塞，出入之",
+     "field": "lines",
+     "line": 1,
+     "page_char": "懲"
+    },
+    {
+     "at": 22,
+     "n": 2,
+     "simp": "出入",
+     "cands": [
+      "出入"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "居。惩山北之塞，出入之迂也，聚室而谋",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "谋",
+     "cands": [
+      "謀"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "入之迂也，聚室而谋曰：“吾与汝毕力",
+     "field": "lines",
+     "line": 1,
+     "page_char": "謀"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "聚室而谋曰：“吾与汝毕力平险，指通",
+     "field": "lines",
+     "line": 1,
+     "page_char": "與"
+    },
+    {
+     "at": 38,
+     "n": 1,
+     "simp": "毕",
+     "cands": [
+      "畢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "而谋曰：“吾与汝毕力平险，指通豫南",
+     "field": "lines",
+     "line": 1,
+     "page_char": "畢"
+    },
+    {
+     "at": 41,
+     "n": 1,
+     "simp": "险",
+     "cands": [
+      "險"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“吾与汝毕力平险，指通豫南，达于",
+     "field": "lines",
+     "line": 1,
+     "page_char": "險"
+    },
+    {
+     "at": 48,
+     "n": 1,
+     "simp": "达",
+     "cands": [
+      "達"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "平险，指通豫南，达于汉阴，可乎？”",
+     "field": "lines",
+     "line": 1,
+     "page_char": "達"
+    },
+    {
+     "at": 49,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "险，指通豫南，达于汉阴，可乎？”杂",
+     "field": "lines",
+     "line": 1,
+     "page_char": "于",
+     "pick": "于"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "汉",
+     "cands": [
+      "漢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，指通豫南，达于汉阴，可乎？”杂然",
+     "field": "lines",
+     "line": 1,
+     "page_char": "漢"
+    },
+    {
+     "at": 51,
+     "n": 1,
+     "simp": "阴",
+     "cands": [
+      "陰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "指通豫南，达于汉阴，可乎？”杂然相",
+     "field": "lines",
+     "line": 1,
+     "page_char": "陰"
+    },
+    {
+     "at": 57,
+     "n": 1,
+     "simp": "杂",
+     "cands": [
+      "雜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "于汉阴，可乎？”杂然相许。其妻献疑",
+     "field": "lines",
+     "line": 1,
+     "page_char": "雜"
+    },
+    {
+     "at": 60,
+     "n": 1,
+     "simp": "许",
+     "cands": [
+      "許"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，可乎？”杂然相许。其妻献疑曰：“",
+     "field": "lines",
+     "line": 1,
+     "page_char": "許"
+    },
+    {
+     "at": 64,
+     "n": 1,
+     "simp": "献",
+     "cands": [
+      "獻"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "”杂然相许。其妻献疑曰：“以君之力",
+     "field": "lines",
+     "line": 1,
+     "page_char": "獻"
+    },
+    {
+     "at": 77,
+     "n": 1,
+     "simp": "损",
+     "cands": [
+      "損"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "以君之力，曾不能损魁父之丘，如太行",
+     "field": "lines",
+     "line": 1,
+     "page_char": "損"
+    },
+    {
+     "at": 98,
+     "n": 1,
+     "simp": "杂",
+     "cands": [
+      "雜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "？且焉置土石？”杂曰：“投诸渤海之",
+     "field": "lines",
+     "line": 1,
+     "page_char": "雜"
+    },
+    {
+     "at": 103,
+     "n": 1,
+     "simp": "诸",
+     "cands": [
+      "諸"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "石？”杂曰：“投诸渤海之尾，隐土之",
+     "field": "lines",
+     "line": 1,
+     "page_char": "諸"
+    },
+    {
+     "at": 109,
+     "n": 1,
+     "simp": "隐",
+     "cands": [
+      "隱"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“投诸渤海之尾，隐土之北。”遂率子",
+     "field": "lines",
+     "line": 1,
+     "page_char": "隱"
+    },
+    {
+     "at": 118,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "土之北。”遂率子孙荷担者三夫，叩石",
+     "field": "lines",
+     "line": 1,
+     "page_char": "孫"
+    },
+    {
+     "at": 120,
+     "n": 1,
+     "simp": "担",
+     "cands": [
+      "擔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "北。”遂率子孙荷担者三夫，叩石垦壤",
+     "field": "lines",
+     "line": 1,
+     "page_char": "擔"
+    },
+    {
+     "at": 123,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "遂率子孙荷担者三夫，叩石垦壤，箕畚",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 127,
+     "n": 1,
+     "simp": "垦",
+     "cands": [
+      "墾"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "荷担者三夫，叩石垦壤，箕畚运于渤海",
+     "field": "lines",
+     "line": 1,
+     "page_char": "墾"
+    },
+    {
+     "at": 132,
+     "n": 1,
+     "simp": "运",
+     "cands": [
+      "運"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，叩石垦壤，箕畚运于渤海之尾。邻人",
+     "field": "lines",
+     "line": 1,
+     "page_char": "運"
+    },
+    {
+     "at": 133,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "叩石垦壤，箕畚运于渤海之尾。邻人京",
+     "field": "lines",
+     "line": 1,
+     "page_char": "於"
+    },
+    {
+     "at": 139,
+     "n": 1,
+     "simp": "邻",
+     "cands": [
+      "鄰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "畚运于渤海之尾。邻人京城氏之孀妻有",
+     "field": "lines",
+     "line": 1,
+     "page_char": "鄰"
+    },
+    {
+     "at": 148,
+     "n": 1,
+     "simp": "遗",
+     "cands": [
+      "遺"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "人京城氏之孀妻有遗男，始龀，跳往助",
+     "field": "lines",
+     "line": 1,
+     "page_char": "遺"
+    },
+    {
+     "at": 152,
+     "n": 1,
+     "simp": "龀",
+     "cands": [
+      "齔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之孀妻有遗男，始龀，跳往助之。寒暑",
+     "field": "lines",
+     "line": 1,
+     "page_char": "齔"
+    },
+    {
+     "at": 162,
+     "n": 1,
+     "simp": "节",
+     "cands": [
+      "節"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "跳往助之。寒暑易节，始一反焉。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "節"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "曲",
+     "cands": [
+      "曲",
+      "麴"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "河曲智叟笑而止之曰：",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "残",
+     "cands": [
+      "殘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "矣，汝之不惠！以残年余力，曾不能毁",
+     "field": "lines",
+     "line": 2,
+     "page_char": "殘"
+    },
+    {
+     "at": 22,
+     "n": 2,
+     "simp": "余力",
+     "cands": [
+      "餘力"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "汝之不惠！以残年余力，曾不能毁山之一",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "毁",
+     "cands": [
+      "毀",
+      "燬",
+      "譭"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "残年余力，曾不能毁山之一毛，其如土",
+     "field": "lines",
+     "line": 2,
+     "page_char": "毀"
+    },
+    {
+     "at": 45,
+     "n": 1,
+     "simp": "长",
+     "cands": [
+      "長"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "石何？”北山愚公长息曰：“汝心之固",
+     "field": "lines",
+     "line": 2,
+     "page_char": "長"
+    },
+    {
+     "at": 58,
+     "n": 1,
+     "simp": "彻",
+     "cands": [
+      "徹"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "汝心之固，固不可彻，曾不若孀妻弱子",
+     "field": "lines",
+     "line": 2,
+     "page_char": "徹"
+    },
+    {
+     "at": 68,
+     "n": 1,
+     "simp": "虽",
+     "cands": [
+      "雖"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "曾不若孀妻弱子。虽我之死，有子存焉",
+     "field": "lines",
+     "line": 2,
+     "page_char": "雖"
+    },
+    {
+     "at": 81,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "有子存焉。子又生孙，孙又生子；子又",
+     "field": "lines",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 83,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "存焉。子又生孙，孙又生子；子又有子",
+     "field": "lines",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 96,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "子又有子，子又有孙；子子孙孙无穷匮",
+     "field": "lines",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 100,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，子又有孙；子子孙孙无穷匮也，而山",
+     "field": "lines",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 101,
+     "n": 1,
+     "simp": "孙",
+     "cands": [
+      "孫"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "子又有孙；子子孙孙无穷匮也，而山不",
+     "field": "lines",
+     "line": 2,
+     "page_char": "孫"
+    },
+    {
+     "at": 102,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "又有孙；子子孙孙无穷匮也，而山不加",
+     "field": "lines",
+     "line": 2,
+     "page_char": "無"
+    },
+    {
+     "at": 103,
+     "n": 1,
+     "simp": "穷",
+     "cands": [
+      "窮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "有孙；子子孙孙无穷匮也，而山不加增",
+     "field": "lines",
+     "line": 2,
+     "page_char": "窮"
+    },
+    {
+     "at": 104,
+     "n": 1,
+     "simp": "匮",
+     "cands": [
+      "匱"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "孙；子子孙孙无穷匮也，而山不加增，",
+     "field": "lines",
+     "line": 2,
+     "page_char": "匱"
+    },
+    {
+     "at": 121,
+     "n": 1,
+     "simp": "曲",
+     "cands": [
+      "曲",
+      "麴"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "何苦而不平？”河曲智叟亡以应。",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 126,
+     "n": 1,
+     "simp": "应",
+     "cands": [
+      "應"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "？”河曲智叟亡以应。",
+     "field": "lines",
+     "line": 2,
+     "page_char": "應"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "操蛇之神闻之，惧其不已也，",
+     "field": "lines",
+     "line": 3,
+     "page_char": "聞"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "惧",
+     "cands": [
+      "懼"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "操蛇之神闻之，惧其不已也，告之于",
+     "field": "lines",
+     "line": 3,
+     "page_char": "懼"
+    },
+    {
+     "at": 14,
+     "n": 2,
+     "simp": "之于",
+     "cands": [
+      "之於"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "，惧其不已也，告之于帝。帝感其诚，命",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "诚",
+     "cands": [
+      "誠"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "告之于帝。帝感其诚，命夸娥氏二子负",
+     "field": "lines",
+     "line": 3,
+     "page_char": "誠"
+    },
+    {
+     "at": 24,
+     "n": 1,
+     "simp": "夸",
+     "cands": [
+      "誇",
+      "夸"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "帝。帝感其诚，命夸娥氏二子负二山，",
+     "field": "lines",
+     "line": 3,
+     "page_char": "夸",
+     "pick": "夸"
+    },
+    {
+     "at": 29,
+     "n": 1,
+     "simp": "负",
+     "cands": [
+      "負"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "诚，命夸娥氏二子负二山，一厝朔东，",
+     "field": "lines",
+     "line": 3,
+     "page_char": "負"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "东",
+     "cands": [
+      "東"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "子负二山，一厝朔东，一厝雍南。自此",
+     "field": "lines",
+     "line": 3,
+     "page_char": "東"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "汉",
+     "cands": [
+      "漢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。自此，冀之南，汉之阴，无陇断焉。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "漢"
+    },
+    {
+     "at": 52,
+     "n": 1,
+     "simp": "阴",
+     "cands": [
+      "陰"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "此，冀之南，汉之阴，无陇断焉。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "陰"
+    },
+    {
+     "at": 54,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "冀之南，汉之阴，无陇断焉。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "無"
+    },
+    {
+     "at": 55,
+     "n": 1,
+     "simp": "陇",
+     "cands": [
+      "隴"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之南，汉之阴，无陇断焉。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "隴"
+    },
+    {
+     "at": 56,
+     "n": 1,
+     "simp": "断",
+     "cands": [
+      "斷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "南，汉之阴，无陇断焉。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "斷"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     11,
+     "里",
+     "王屋二山，方七百里，高万仞，本在冀",
+     "里",
+     "page",
+     "里",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     25,
+     "阳",
+     "本在冀州之南，河阳之北。",
+     "陽",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     16,
+     "惩",
+     "九十，面山而居。惩山北之塞，出入之",
+     "懲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     31,
+     "谋",
+     "入之迂也，聚室而谋曰：“吾与汝毕力",
+     "謀",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     36,
+     "与",
+     "聚室而谋曰：“吾与汝毕力平险，指通",
+     "與",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     38,
+     "毕",
+     "而谋曰：“吾与汝毕力平险，指通豫南",
+     "畢",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     41,
+     "险",
+     "：“吾与汝毕力平险，指通豫南，达于",
+     "險",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     48,
+     "达",
+     "平险，指通豫南，达于汉阴，可乎？”",
+     "達",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     49,
+     "于",
+     "险，指通豫南，达于汉阴，可乎？”杂",
+     "于",
+     "page",
+     "于",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     50,
+     "汉",
+     "，指通豫南，达于汉阴，可乎？”杂然",
+     "漢",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     51,
+     "阴",
+     "指通豫南，达于汉阴，可乎？”杂然相",
+     "陰",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     57,
+     "杂",
+     "于汉阴，可乎？”杂然相许。其妻献疑",
+     "雜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     60,
+     "许",
+     "，可乎？”杂然相许。其妻献疑曰：“",
+     "許",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     64,
+     "献",
+     "”杂然相许。其妻献疑曰：“以君之力",
+     "獻",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     77,
+     "损",
+     "以君之力，曾不能损魁父之丘，如太行",
+     "損",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     98,
+     "杂",
+     "？且焉置土石？”杂曰：“投诸渤海之",
+     "雜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     103,
+     "诸",
+     "石？”杂曰：“投诸渤海之尾，隐土之",
+     "諸",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     109,
+     "隐",
+     "“投诸渤海之尾，隐土之北。”遂率子",
+     "隱",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     118,
+     "孙",
+     "土之北。”遂率子孙荷担者三夫，叩石",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     120,
+     "担",
+     "北。”遂率子孙荷担者三夫，叩石垦壤",
+     "擔",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     127,
+     "垦",
+     "荷担者三夫，叩石垦壤，箕畚运于渤海",
+     "墾",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     132,
+     "运",
+     "，叩石垦壤，箕畚运于渤海之尾。邻人",
+     "運",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     133,
+     "于",
+     "叩石垦壤，箕畚运于渤海之尾。邻人京",
+     "於",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     139,
+     "邻",
+     "畚运于渤海之尾。邻人京城氏之孀妻有",
+     "鄰",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     148,
+     "遗",
+     "人京城氏之孀妻有遗男，始龀，跳往助",
+     "遺",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     152,
+     "龀",
+     "之孀妻有遗男，始龀，跳往助之。寒暑",
+     "齔",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     162,
+     "节",
+     "跳往助之。寒暑易节，始一反焉。",
+     "節",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     20,
+     "残",
+     "矣，汝之不惠！以残年余力，曾不能毁",
+     "殘",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     28,
+     "毁",
+     "残年余力，曾不能毁山之一毛，其如土",
+     "毀",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     45,
+     "长",
+     "石何？”北山愚公长息曰：“汝心之固",
+     "長",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     58,
+     "彻",
+     "汝心之固，固不可彻，曾不若孀妻弱子",
+     "徹",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     68,
+     "虽",
+     "曾不若孀妻弱子。虽我之死，有子存焉",
+     "雖",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     81,
+     "孙",
+     "有子存焉。子又生孙，孙又生子；子又",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     83,
+     "孙",
+     "存焉。子又生孙，孙又生子；子又有子",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     96,
+     "孙",
+     "子又有子，子又有孙；子子孙孙无穷匮",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     100,
+     "孙",
+     "，子又有孙；子子孙孙无穷匮也，而山",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     101,
+     "孙",
+     "子又有孙；子子孙孙无穷匮也，而山不",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     102,
+     "无",
+     "又有孙；子子孙孙无穷匮也，而山不加",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     103,
+     "穷",
+     "有孙；子子孙孙无穷匮也，而山不加增",
+     "窮",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     104,
+     "匮",
+     "孙；子子孙孙无穷匮也，而山不加增，",
+     "匱",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     126,
+     "应",
+     "？”河曲智叟亡以应。",
+     "應",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     4,
+     "闻",
+     "操蛇之神闻之，惧其不已也，",
+     "聞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     7,
+     "惧",
+     "操蛇之神闻之，惧其不已也，告之于",
+     "懼",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     21,
+     "诚",
+     "告之于帝。帝感其诚，命夸娥氏二子负",
+     "誠",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     24,
+     "夸",
+     "帝。帝感其诚，命夸娥氏二子负二山，",
+     "夸",
+     "page",
+     "夸",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     29,
+     "负",
+     "诚，命夸娥氏二子负二山，一厝朔东，",
+     "負",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     36,
+     "东",
+     "子负二山，一厝朔东，一厝雍南。自此",
+     "東",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     50,
+     "汉",
+     "。自此，冀之南，汉之阴，无陇断焉。",
+     "漢",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     52,
+     "阴",
+     "此，冀之南，汉之阴，无陇断焉。",
+     "陰",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     54,
+     "无",
+     "冀之南，汉之阴，无陇断焉。",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     55,
+     "陇",
+     "之南，汉之阴，无陇断焉。",
+     "隴",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     56,
+     "断",
+     "南，汉之阴，无陇断焉。",
+     "斷",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:异文",
+     4,
+     88,
+     "孙",
+     "生孫」；「子又有孙；子子孙孙无穷匮",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     19,
+     "孙",
+     "上：「子又生孙，孙又生子……子子孙",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     27,
+     "孙",
+     "孙又生子……子子孙孙无穷匮也，而山",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     28,
+     "孙",
+     "又生子……子子孙孙无穷匮也，而山不",
+     "孫",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     30,
+     "穷",
+     "子……子子孙孙无穷匮也，而山不加增",
+     "窮",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     31,
+     "匮",
+     "……子子孙孙无穷匮也，而山不加增」",
+     "匱",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     3,
+     1,
+     "邻",
+     "「邻人京城氏之孀妻有",
+     "鄰",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     3,
+     10,
+     "遗",
+     "人京城氏之孀妻有遗男，始龀，跳往助",
+     "遺",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     3,
+     14,
+     "龀",
+     "之孀妻有遗男，始龀，跳往助之」——",
+     "齔",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "王屋二山，方七百里，高万仞，本在冀",
+     "field": "sec:必背全文",
+     "line": 0,
+     "page_char": "里",
+     "pick": "里"
+    },
+    {
+     "at": 49,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "险，指通豫南，达于汉阴，可乎？”杂",
+     "field": "sec:必背全文",
+     "line": 1,
+     "page_char": "于",
+     "pick": "于"
+    },
+    {
+     "at": 24,
+     "n": 1,
+     "simp": "夸",
+     "cands": [
+      "誇",
+      "夸"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "帝。帝感其诚，命夸娥氏二子负二山，",
+     "field": "sec:必背全文",
+     "line": 3,
+     "page_char": "夸",
+     "pick": "夸"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "公者：北山脚下有个叫愚公的人。「愚",
+     "field": "sec:注释",
+     "line": 4,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "力平险：我跟你们尽全力削平险峻的大",
+     "field": "sec:注释",
+     "line": 10,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 32,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "。汝，你们。毕，尽、全。",
+     "field": "sec:注释",
+     "line": 10,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "赞",
+     "cands": [
+      "贊",
+      "讚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "然相许：纷纷表示赞同。杂然，纷纷地",
+     "field": "sec:注释",
+     "line": 13,
+     "pick": "讚",
+     "why": "赞美、赞赏、赞叹、夸赞都是称扬义，现代繁体作「讚」；「贊」用于赞助、贊成（仓内没有这种用法）"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "赞",
+     "cands": [
+      "贊",
+      "讚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "然，纷纷地。许，赞同。",
+     "field": "sec:注释",
+     "line": 13,
+     "pick": "讚",
+     "why": "赞美、赞赏、赞叹、夸赞都是称扬义，现代繁体作「讚」；「贊」用于赞助、贊成（仓内没有这种用法）"
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "的土和石头放到哪里。焉，哪里。置，",
+     "field": "sec:注释",
+     "line": 17,
+     "pick": "裏",
+     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
+    },
+    {
+     "at": 27,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "放到哪里。焉，哪里。置，放置。",
+     "field": "sec:注释",
+     "line": 17,
+     "pick": "裏",
+     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "毁",
+     "cands": [
+      "毀",
+      "燬",
+      "譭"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 曾不能毁山之一毛：连山上",
+     "field": "sec:注释",
+     "line": 29,
+     "pick": "毀",
+     "why": "毁坏义作「毀」；「燬」「譭」是异体"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "叹",
+     "cands": [
+      "嘆",
+      "歎"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 长息：长叹。",
+     "field": "sec:注释",
+     "line": 30,
+     "pick": "嘆",
+     "why": "叹息、叹曰义作「嘆」；「歎」是异体",
+     "evidence": "来源页 4 处作「嘆」"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "kuì）：无穷无尽。匮，尽。",
+     "field": "sec:注释",
+     "line": 34,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "：无穷无尽。匮，尽。",
+     "field": "sec:注释",
+     "line": 34,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "北山脚下有个叫愚公的人，年纪",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 54,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "量说：“我跟你们尽全力削平险峻的大",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 88,
+     "n": 1,
+     "simp": "赞",
+     "cands": [
+      "贊",
+      "讚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "以吗？”大家纷纷赞同。他的妻子提出",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "讚",
+     "why": "赞美、赞赏、赞叹、夸赞都是称扬义，现代繁体作「讚」；「贊」用于赞助、贊成（仓内没有这种用法）"
+    },
+    {
+     "at": 149,
+     "n": 1,
+     "simp": "里",
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "的土和石头放到哪里？”众人说：“把",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "裏",
+     "why": "疑问代词「哪里」在繁体里写作「裏」（通行繁体亦作「裡」；表里的候选是「裏」，不凭空造字）"
+    },
+    {
+     "at": 221,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "居京城氏的寡妇有个孤儿，刚到换牙的",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 67,
+     "n": 1,
+     "simp": "叹",
+     "cands": [
+      "嘆",
+      "歎"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "呢？”北山愚公长叹说：“你的思想顽",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "嘆",
+     "why": "叹息、叹曰义作「嘆」；「歎」是异体",
+     "evidence": "来源页 4 处作「嘆」"
+    },
+    {
+     "at": 145,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "；子子孙孙没有穷尽，可是山不会再增",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "字先做了判断：一个叫「愚」，一个叫",
+     "field": "sec:赏析",
+     "line": 0,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "一个叫「愚」，一个叫「智」。全文读",
+     "field": "sec:赏析",
+     "line": 0,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 45,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "加增」。他把时间当成变量，山是不变",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 66,
+     "n": 1,
+     "simp": "别",
+     "cands": [
+      "別",
+      "彆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "要的是这件事本身别做。一个可以商量",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "別",
+     "why": "分别、离别义作「別」；「彆」只用于「别扭」"
+    },
+    {
+     "at": 70,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "件事本身别做。一个可以商量，一个没",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 77,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "一个可以商量，一个没法商量。",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 24,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "跳往助之」——一个刚换牙的孩子来帮",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 50,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "一反焉」，一年一个来回。这两句把工",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 46,
+     "n": 1,
+     "simp": "证",
+     "cands": [
+      "證",
+      "証"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "不是对愚公方法的证明；真正的证明在",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "證",
+     "why": "证据、考证、例证、旁证作「證」；「証」是异体"
+    },
+    {
+     "at": 52,
+     "n": 1,
+     "simp": "证",
+     "cands": [
+      "證",
+      "証"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "法的证明；真正的证明在「河曲智叟亡",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "證",
+     "why": "证据、考证、例证、旁证作「證」；「証」是异体"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未单列本篇，",
+     "field": "sec:收录范围",
+     "line": 2,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
     }
    ],
    "left_behind": []

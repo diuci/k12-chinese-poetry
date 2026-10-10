@@ -3,11 +3,11 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 218,
+    "total": 215,
     "modern": 40,
     "lessonEntries": 781,
-    "poems": 292,
-    "reciteGaps": 99,
+    "poems": 295,
+    "reciteGaps": 97,
     "primaryGaps": 337
   },
   "rows": [
@@ -510,14 +510,6 @@
     {
       "volume": "八年级上册",
       "lesson": "自读",
-      "title": "得道多助,失道寡助",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/20933_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "自读",
       "title": "生于忧患，死于安乐",
       "url": "https://yw.suyang123.com/chuzhong/banianji/20935_langdu.html",
       "looksModern": false,
@@ -528,22 +520,6 @@
       "lesson": "自读",
       "title": "富贵不能淫",
       "url": "https://yw.suyang123.com/chuzhong/banianji/20934_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "24",
-      "title": "愚公移山",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/20936_langdu.html",
-      "looksModern": false,
-      "recite": false
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "25",
-      "title": "周亚夫军细柳",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/20937_langdu.html",
       "looksModern": false,
       "recite": true
     },

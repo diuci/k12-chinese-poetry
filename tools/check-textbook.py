@@ -384,12 +384,12 @@ def match_lesson(poem, lessons):
     「忆江南」与「江南」（白居易 vs 汉乐府）、「舟夜书所见」与「夜书所见」（查慎行 vs 叶绍翁）。
     先前这条包含规则两头都认，把这两对判成了「同一篇、只是册次写错」。
     同名不等于同篇：这一关只找候选，是不是同一篇由后面的正文比对定（比得上才是同一篇）。"""
-    cands = [re.sub(r'[《》〈〉（）\s\u3000·\u2022\uff65]', '', c) for c in title_candidates(poem.get('title'), poem.get('subtitle'))]
+    cands = [re.sub(r'[《》〈〉（）\s\u3000·\u2022\uff65，,、]', '', c) for c in title_candidates(poem.get('title'), poem.get('subtitle'))]
     prefix_hit = None   # 前缀候选先攒着：整名对上的必须赢过先出现的前缀候选
     for name, url in lessons:
         head = re.sub(r'^[\d.\-*（）\s]+', '', name)
         head = re.sub(r'\s*V\s*[\u4e00-\u9fff·]+$', '', head)   # 镜像在课文名后面挂的作者
-        n = re.sub(r'[《》（）\s\u3000·\u2022\uff65]', '', head)
+        n = re.sub(r'[《》（）\s\u3000·\u2022\uff65，,、]', '', head)
         n = re.sub(r'(节选|并序)$', '', n)
         if not n:
             continue
@@ -652,6 +652,14 @@ def selftest():
          '坏例6o：正文比上了（同一篇、册次写错）却没被判成册次对不上')
     must('没核' in cross_volume_status(None, 0, 0)[1],
          '坏例6p：教材正文没取到时，note 里没写明没核——读者看不出这一条是猜的还是查过的')
+    # 坏例6q：统编目录里「得道多助,失道寡助」挂的是半角逗号，仓内篇名用全角——同一个标点两种写法，
+    # 先前剥分隔符那一档不认逗号，这一课就被判成「教材里没找到」。逗号（全角、半角、顿号）一并剥。
+    must(match_lesson({'title': '得道多助，失道寡助'}, [('得道多助,失道寡助', 'u')])[0] is not None,
+         '坏例6q：仓内全角逗号、目录半角逗号，同一课没对上')
+    must(match_lesson({'title': '得道多助，失道寡助'}, [('23 得道多助，失道寡助', 'u')])[0] is not None,
+         '坏例6q2：带课号的目录项没对上')
+    must(match_lesson({'title': '得道多助，失道寡助'}, [('得道多助，失道寡人', 'u')])[0] is None,
+         '坏例6q3：剥逗号把不同的篇名剥成了同一篇')
 
     # 坏例7：对不上的那句必须说清差在哪个字（不皲手 / 不龟手 那一类）
     d = diff_against('宋人有善为不龟手之药者', '宋人有善为不皲手之药者')

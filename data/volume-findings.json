@@ -2,13 +2,13 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-11",
   "counts": {
-    "match": 230,
+    "match": 233,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
     "claimed-absent-but-present": 0,
     "garden-attested": 38,
-    "title-variant": 2
+    "title-variant": 3
   },
   "findings": [
     {
@@ -724,6 +724,40 @@
       "volume": "八年级上册",
       "textbookVolume": "八年级上册",
       "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "zhouyafujunxiliu",
+      "title": "周亚夫军细柳",
+      "author": "司马迁",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "25"
+    },
+    {
+      "id": "dedaoduozhu",
+      "title": "得道多助，失道寡助",
+      "author": "孟子",
+      "stage": "初中",
+      "status": "title-variant",
+      "repoVolume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookTitle": "得道多助,失道寡助",
+      "textbookLesson": "课号未定（合课或课外诵读）",
+      "evidence": 1.0,
+      "linesHit": 4,
+      "officiallyConfirmed": false
+    },
+    {
+      "id": "yugongyishan",
+      "title": "愚公移山",
+      "author": "佚名",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "24"
     },
     {
       "id": "chunwang",
