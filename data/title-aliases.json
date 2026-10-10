@@ -11,14 +11,70 @@
   ],
   "duplicateTitles": [
     {
-      "titles": ["大道之行也", "礼运"],
+      "titles": [
+        "大道之行也",
+        "礼运"
+      ],
       "reason": "同一段《礼记·礼运》选文，初中篇名叫《大道之行也》，高中篇名叫《礼运》，故意各留一份。",
       "evidence": "统编教材八年级下册第 24 课《〈礼记〉二则》之《大道之行也》；选择性必修上册第 2 课《〈礼记〉一则》通称《礼运》。仓内 data/known-defects.json key duplicate:dadaozhixing|liyun。"
     },
     {
-      "titles": ["虽有嘉肴", "《礼记》一则"],
+      "titles": [
+        "虽有嘉肴",
+        "《礼记》一则"
+      ],
       "reason": "同一段《礼记·学记》选文，教材篇名叫《虽有嘉肴》，课标条目作「《礼记》一则（虽有嘉肴）」，故意各留一份：教材条目挂八下，课标条目挂九下。两份正文必须逐字一致。",
       "evidence": "统编教材八年级下册第 22 课《〈礼记〉二则》之《虽有嘉肴》；义务教育课标附录1 初中第 45 条「《礼记》一则（虽有嘉肴）」。仓内 data/known-defects.json key duplicate:liji1|suoyoujiayao。"
+    }
+  ],
+  "textbookAliases": [
+    {
+      "textbookVolume": "七年级下册",
+      "textbookTitle": "木兰诗",
+      "repoId": "mulanci",
+      "repoTitle": "木兰辞",
+      "reason": "统编七下第 9 课篇名《木兰诗》，课标（2022）附录1 第 6 条作「木兰辞（唧唧复唧唧）」，仓内照课标作「木兰辞」。同一篇北朝乐府。",
+      "evidence": "统编七年级下册目录第 9 课；义务教育语文课程标准（2022年版）附录1 第 6 条。"
+    },
+    {
+      "textbookVolume": "九年级下册",
+      "textbookTitle": "破阵子·为陈同甫赋壮词以寄之",
+      "repoId": "pozhenzi",
+      "repoTitle": "破阵子·为陈同甫赋壮词以寄",
+      "reason": "统编九下课外诵读篇名作「……以寄之」，仓内篇名少一个「之」字（照课标 2022 附录1 第 35 条「破阵子（醉里挑灯看剑）」的通行简称）。同一首辛弃疾词。",
+      "evidence": "统编九年级下册课外古诗词诵读目录；课标（2022）附录1 第 35 条。"
+    },
+    {
+      "textbookVolume": "九年级下册",
+      "textbookTitle": "南乡子·登京口北固亭有怀",
+      "repoId": "nangxiangzi",
+      "repoTitle": "南乡子·何处望神州",
+      "reason": "统编九下课外诵读用词题「登京口北固亭有怀」，仓内用首句作副标题（照课标 2022 附录1 第 34 条「南乡子（何处望神州）」）。同一首辛弃疾词。",
+      "evidence": "统编九年级下册课外古诗词诵读目录；课标（2022）附录1 第 34 条。"
+    },
+    {
+      "textbookVolume": "选择性必修上册",
+      "textbookTitle": "大学之道",
+      "repoId": "daxue",
+      "repoTitle": "大学",
+      "reason": "统编选必上第 5.2 课篇名《大学之道》，是《大学》开篇一段；仓内篇名作「大学」。同一篇《礼记·大学》。",
+      "evidence": "统编选择性必修上册目录 5.2；《礼记·大学》。"
+    },
+    {
+      "textbookVolume": "选择性必修上册",
+      "textbookTitle": "《老子》四章",
+      "repoId": "laozi8",
+      "repoTitle": "《老子》八章",
+      "reason": "统编选必上第 6.1 课收《老子》四章，仓内收八章（多出的四章已登记 coverage-override）。同一部《道德经》的选章，不是两本书。",
+      "evidence": "统编选择性必修上册目录 6.1；仓内 data/textbook-attestations.json 的 coverage-override 记录。"
+    },
+    {
+      "textbookVolume": "选择性必修上册",
+      "textbookTitle": "五石之瓠",
+      "repoId": "xiaoyaoyou",
+      "repoTitle": "逍遥游·五石之瓠",
+      "reason": "统编选必上第 6.2 课篇名《五石之瓠》，是《庄子·逍遥游》末段；仓内挂在「逍遥游·五石之瓠」名下。同一段《庄子》。",
+      "evidence": "统编选择性必修上册目录 6.2；《庄子·逍遥游》。"
     }
   ]
 }

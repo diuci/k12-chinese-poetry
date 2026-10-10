@@ -109,7 +109,7 @@ def render(rows, counts, rulings=None):
     return '\n'.join(lines)
 
 
-def ruling_problems(rows, rulings, poem_ids, kinds=KINDS):
+def ruling_problems(rows, rulings, poem_ids, kinds=KINDS, alias_pairs=None):
     """每一条缺口必须被恰好一条裁定盖住。缺口没裁定＝没人看着；两条裁定盖同一条＝口径分叉；
     裁定指向的缺口已经没了＝过期。"""
     problems = []
@@ -135,6 +135,14 @@ def ruling_problems(rows, rulings, poem_ids, kinds=KINDS):
                     problems.append('裁定说「仓内已收」却没指出是哪一篇：%s／%s' % (row['volume'], row['title']))
                 elif pid not in poem_ids:
                     problems.append('裁定指向的篇目仓里没有（%s）：%s／%s' % (pid, row['volume'], row['title']))
+                elif kind == 'alias':
+                    pair = (alias_pairs or {}).get((row['volume'], row['title']))
+                    if not pair:
+                        problems.append('裁定说「教材篇名与仓内篇名是同一篇」，可 data/title-aliases.json 的 textbookAliases 里没有这一对：%s／%s'
+                                        % (row['volume'], row['title']))
+                    elif pair.get('repoId') != pid:
+                        problems.append('裁定指的篇目（%s）与别名登记指的篇目（%s）不是同一篇：%s／%s'
+                                        % (pid, pair.get('repoId'), row['volume'], row['title']))
     gap_keys = {(r['volume'], r['title']) for r in rows}
     for key in by_key:
         if key not in gap_keys:
@@ -194,6 +202,14 @@ def selftest():
          '坏例18：裁定没写理由没被抓')
     must(any('过期' in p for p in ruling_problems(rows3, ok_rulings + [{'volume': '七年级上册', 'title': '已补的篇目', 'kind': 'add', 'reason': 'x'}], set())),
          '坏例17：缺口已经没了、裁定还留着，没被抓')
+    rows4 = [{'volume': '七年级下册', 'title': '木兰诗'}]
+    r4 = [{'volume': '七年级下册', 'title': '木兰诗', 'kind': 'alias', 'reason': '同一篇', 'poem': 'mulanci'}]
+    must(any('textbookAliases' in p for p in ruling_problems(rows4, r4, {'mulanci'})),
+         '坏例19：说成同一篇却没登记别名，没被抓')
+    must(ruling_problems(rows4, r4, {'mulanci'}, alias_pairs={('七年级下册', '木兰诗'): {'repoId': 'mulanci'}}) == [],
+         '坏例19b：别名登记齐了还被误报')
+    must(any('不是同一篇' in p for p in ruling_problems(rows4, r4, {'mulanci'}, alias_pairs={('七年级下册', '木兰诗'): {'repoId': 'biedepian'}})),
+         '坏例20：裁定指的篇目与别名登记指的篇目不一致，没被抓')
     return tried[0]
 
 
@@ -213,7 +229,10 @@ def main():
         print('[失败] data/gap-rulings.json 不在：缺口一条都没裁定，不许静默放过')
         return 1
     reg = json.loads(RULINGS.read_text(encoding='utf-8'))
-    probs = ruling_problems(rows, reg.get('rulings') or [], {p.get('id') for p in poems})
+    alias_pairs = {}
+    for a in json.loads((ROOT / 'data' / 'title-aliases.json').read_text(encoding='utf-8')).get('textbookAliases') or []:
+        alias_pairs[(a.get('textbookVolume'), a.get('textbookTitle'))] = a
+    probs = ruling_problems(rows, reg.get('rulings') or [], {p.get('id') for p in poems}, alias_pairs=alias_pairs)
     if probs:
         for p in probs[:40]:
             print('  · ' + p)
