@@ -3,11 +3,11 @@
   "generated": "2026-10-10",
   "counts": {
     "generated": "2026-10-10",
-    "total": 245,
+    "total": 238,
     "modern": 40,
     "lessonEntries": 781,
-    "poems": 265,
-    "reciteGaps": 121,
+    "poems": 272,
+    "reciteGaps": 114,
     "primaryGaps": 337
   },
   "rows": [
@@ -420,14 +420,6 @@
       "recite": false
     },
     {
-      "volume": "七年级下册",
-      "lesson": "自读",
-      "title": "贾生",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20852_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
       "volume": "八年级上册",
       "lesson": "自读",
       "title": "我三十万大军胜利南渡长江",
@@ -504,38 +496,6 @@
       "lesson": "9",
       "title": "美丽的颜色",
       "url": "https://yw.suyang123.com/chuzhong/banianji/20910_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "自读",
-      "title": "渡荆门送别",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/20918_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "自读",
-      "title": "庭中有奇树",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/20920_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "自读",
-      "title": "龟虽寿",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/13089_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "自读",
-      "title": "梁甫行",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/20922_langdu.html",
       "looksModern": false,
       "recite": true
     },
@@ -656,22 +616,6 @@
       "lesson": "25",
       "title": "周亚夫军细柳",
       "url": "https://yw.suyang123.com/chuzhong/banianji/20937_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "自读",
-      "title": "采桑子",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/20944_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级上册",
-      "lesson": "自读",
-      "title": "如梦令",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/20946_langdu.html",
       "looksModern": false,
       "recite": true
     },

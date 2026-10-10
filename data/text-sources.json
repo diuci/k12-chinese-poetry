@@ -2,11 +2,11 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-10",
   "stats": {
-    "attested": 211,
-    "partial": 53,
+    "attested": 216,
+    "partial": 55,
     "notfound": 0,
     "nosource": 1,
-    "withVariants": 76
+    "withVariants": 78
   },
   "results": [
     {
@@ -222,13 +222,29 @@
       "title": "江南逢李龟年",
       "author": "杜甫",
       "stage": "初中",
-      "page": "唐人萬首絶句選 (四庫全書本)/卷3",
-      "url": "https://zh.wikisource.org/wiki/%E5%94%90%E4%BA%BA%E8%90%AC%E9%A6%96%E7%B5%B6%E5%8F%A5%E9%81%B8%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B73",
+      "page": "江南逢李龜年",
+      "url": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%8D%97%E9%80%A2%E6%9D%8E%E9%BE%9C%E5%B9%B4",
       "lines": 2,
-      "hit": 2,
-      "miss": [],
+      "hit": 1,
+      "miss": [
+        {
+          "line": "岐王宅里寻常见崔九堂前几度闻",
+          "nearest": {
+            "line": "岐王宅里寻常见崔九堂前几度闻",
+            "source": "岐王宅里寻常见崔九堂前㡬度闻正是",
+            "ratio": 0.867
+          }
+        }
+      ],
       "variantNotes": [],
-      "variants": []
+      "variants": [
+        {
+          "ours": "是",
+          "other": "值",
+          "context": "滌、中書令湜之弟。堂前㡬度聞。正是江南好風景，落花時節又逢君。Category:唐詩Ca",
+          "page": "江南逢李龜年"
+        }
+      ]
     },
     {
       "id": "tongguan",
@@ -502,6 +518,19 @@
       "stage": "初中",
       "page": "約客",
       "url": "https://zh.wikisource.org/wiki/%E7%B4%84%E5%AE%A2",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "jiasheng",
+      "title": "贾生",
+      "author": "李商隐",
+      "stage": "初中",
+      "page": "賈生",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%88%E7%94%9F",
       "lines": 2,
       "hit": 2,
       "miss": [],
@@ -1606,6 +1635,54 @@
       ]
     },
     {
+      "id": "rumengling",
+      "title": "如梦令",
+      "author": "李清照",
+      "stage": "初中",
+      "page": "如夢令 (李清照)/如夢令 (常記溪亭日暮)",
+      "url": "https://zh.wikisource.org/wiki/%E5%A6%82%E5%A4%A2%E4%BB%A4%20%28%E6%9D%8E%E6%B8%85%E7%85%A7%29/%E5%A6%82%E5%A4%A2%E4%BB%A4%20%28%E5%B8%B8%E8%A8%98%E6%BA%AA%E4%BA%AD%E6%97%A5%E6%9A%AE%29",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "tingzhongyouqishu",
+      "title": "庭中有奇树",
+      "author": "佚名",
+      "stage": "初中",
+      "page": "庭中有奇樹",
+      "url": "https://zh.wikisource.org/wiki/%E5%BA%AD%E4%B8%AD%E6%9C%89%E5%A5%87%E6%A8%B9",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "liangfuxing",
+      "title": "梁甫行",
+      "author": "曹植",
+      "stage": "初中",
+      "page": "梁甫行",
+      "url": "https://zh.wikisource.org/wiki/%E6%A2%81%E7%94%AB%E8%A1%8C",
+      "lines": 4,
+      "hit": 3,
+      "miss": [
+        {
+          "line": "剧哉边海民寄身于草野",
+          "nearest": {
+            "line": "剧哉边海民寄身于草野",
+            "source": "剧哉边海民寄身于草墅妻子",
+            "ratio": 0.818
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "yujiaao-tianjie",
       "title": "渔家傲",
       "author": "李清照",
@@ -1624,6 +1701,19 @@
           "page": "漁家傲 (李清照)"
         }
       ]
+    },
+    {
+      "id": "dujingmensongbie",
+      "title": "渡荆门送别",
+      "author": "李白",
+      "stage": "初中",
+      "page": "渡荊門送別",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%A1%E8%8D%8A%E9%96%80%E9%80%81%E5%88%A5",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "zengcongdi",
@@ -1648,6 +1738,19 @@
       "variants": []
     },
     {
+      "id": "caisangzi",
+      "title": "采桑子",
+      "author": "欧阳修",
+      "stage": "初中",
+      "page": "采桑子 (歐陽修)",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%87%E6%A1%91%E5%AD%90%20%28%E6%AD%90%E9%99%BD%E4%BF%AE%29",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "yewang",
       "title": "野望",
       "author": "王绩",
@@ -1660,6 +1763,26 @@
       "variantNotes": [],
       "variants": [],
       "override": "全仓重跑出处核对时发现原比对页装不下本篇（页缺句 / 页被版权提示截断 / 页里有生僻字残迹）。这一页按句核装得下本篇，加进来当比对页。"
+    },
+    {
+      "id": "guisuishou",
+      "title": "龟虽寿",
+      "author": "曹操",
+      "stage": "初中",
+      "page": "龜雖壽",
+      "url": "https://zh.wikisource.org/wiki/%E9%BE%9C%E9%9B%96%E5%A3%BD",
+      "lines": 7,
+      "hit": 7,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "腾",
+          "other": "螣",
+          "context": "神龜雖壽，猶有竟時。腾蛇乘霧，終為土灰。老驥伏櫪，志在千里；烈士暮年，壯心不",
+          "page": "龜雖壽"
+        }
+      ]
     },
     {
       "id": "guanju",

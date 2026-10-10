@@ -30,6 +30,7 @@
       "xingjunjiuri",
       "xinglunan",
       "guancanghai",
+      "jiasheng",
       "guosongyuan",
       "guolingyang",
       "fengrujinshi",
@@ -44,13 +45,17 @@
       "beimingyouyu",
       "maotanshangwu",
       "dadaozhixing",
+      "rumengling",
       "zijin",
       "xiaoshitan",
+      "tingzhongyouqishu",
       "shiwei",
       "chunwang",
       "taohuayuanji",
+      "liangfuxing",
       "huanxisha-yanque",
       "yujiaao-tianjie",
+      "dujingmensongbie",
       "shihaoli",
       "daxiezhongshu",
       "maowu",
@@ -60,12 +65,14 @@
       "zengcongdi",
       "chibi-du",
       "songshaoshu-wai",
+      "caisangzi",
       "yewang",
       "qiantanghuchunxing",
       "yanmenshiweixing",
       "yinjiujiusan",
       "masuo",
-      "huanghelou-cuiheng"
+      "huanghelou-cuiheng",
+      "guisuishou"
     ],
     "初中-9": [
       "lvshi1",
@@ -297,6 +304,7 @@
     "boqinhuai": "boqinhuai",
     "bosuanzi-song": "bosuanzi-song",
     "cailianqu": "cailianqu",
+    "caisangzi": "caisangzi",
     "caiwei": "caiwei",
     "caoguilunzhan": "caoguilunzhan",
     "change": "change",
@@ -336,6 +344,7 @@
     "dengyouzhoutai": "dengyouzhoutai",
     "dengyueyanglou": "dengyueyanglou",
     "duange": "duange",
+    "dujingmensongbie": "dujingmensongbie",
     "duzuojingting": "duzuojingting",
     "emeishanyuege": "emeishanyuege",
     "epenggongfu": "epenggongfu",
@@ -349,6 +358,7 @@
     "guanshu": "guanshu",
     "gudaishilun": "gudaishilun",
     "guiqulaixici": "guiqulaixici",
+    "guisuishou": "guisuishou",
     "guiyuantianju": "guiyuantianju",
     "guizhixiang": "guizhixiang",
     "gulangyuexing": "gulangyuexing",
@@ -381,6 +391,7 @@
     "jianjia": "jianjia",
     "jiantaishisi": "jiantaishisi",
     "jianzhukeshu": "jianzhukeshu",
+    "jiasheng": "jiasheng",
     "jichengtiansi": "jichengtiansi",
     "jihai": "jihai",
     "jihai-jimao": "jihai-jimao",
@@ -396,6 +407,7 @@
     "langtaosha": "langtaosha",
     "lantingjixu": "lantingjixu",
     "laozi8": "laozi8",
+    "liangfuxing": "liangfuxing",
     "liangzhouci-wanghan": "liangzhouci-wanghan",
     "liangzhouci-wangzhihuan": "liangzhouci-wangzhihuan",
     "liji1": "liji1",
@@ -443,6 +455,7 @@
     "qiuyejiangxiao": "qiuyejiangxiao",
     "quanxue": "quanxue",
     "quyuanliezhuan": "quyuanliezhuan",
+    "rumengling": "rumengling",
     "saixiaqu": "saixiaqu",
     "sanqudaozhong": "sanqudaozhong",
     "sanxia": "sanxia",
@@ -482,6 +495,7 @@
     "tianjingsha-qiusi": "tianjingsha-qiusi",
     "tiaotiaoqianniuxing": "tiaotiaoqianniuxing",
     "tilinandi": "tilinandi",
+    "tingzhongyouqishu": "tingzhongyouqishu",
     "tongguan": "tongguan",
     "wanchun": "wanchun",
     "wangdongting": "wangdongting",
@@ -689,6 +703,7 @@
       "pipaxing"
     ],
     "咏史": [
+      "jiasheng",
       "guizhixiang"
     ],
     "咏物": [
@@ -732,6 +747,7 @@
       "beimingyouyu",
       "suoyoujiayao",
       "chibi-du",
+      "guisuishou",
       "zhuangzi1",
       "choulitian",
       "hua",
@@ -837,7 +853,9 @@
       "sanxia",
       "yuzhusianshu",
       "xiaoshitan",
+      "dujingmensongbie",
       "daxiezhongshu",
+      "caisangzi",
       "zuigongtingji",
       "wanglushanpubu",
       "jiangxue",
@@ -922,6 +940,7 @@
       "cibeigushanxia",
       "xingjunjiuri",
       "fengrujinshi",
+      "dujingmensongbie",
       "huanghelou-cuiheng",
       "shiwucongjunzheng",
       "yujiaao-qiusi",
@@ -941,6 +960,7 @@
     ],
     "思念": [
       "zijin",
+      "tingzhongyouqishu",
       "shiyiwangyue",
       "tiaotiaoqianniuxing",
       "jiangchengzi-yimao"
@@ -1099,6 +1119,7 @@
     ],
     "民生": [
       "maotanshangwu",
+      "liangfuxing",
       "shihaoli",
       "maowu",
       "jiangshangyuzhe"
@@ -1233,6 +1254,7 @@
       "jihai-jimao"
     ],
     "离别": [
+      "tingzhongyouqishu",
       "qiqiaoxian"
     ],
     "离愁": [
@@ -1270,6 +1292,7 @@
       "shizhongshan"
     ],
     "自然": [
+      "rumengling",
       "feng"
     ],
     "节日": [
@@ -1303,7 +1326,8 @@
     ],
     "言志": [
       "tongguan",
-      "zengcongdi"
+      "zengcongdi",
+      "guisuishou"
     ],
     "议论文": [
       "wudailingguan",
@@ -1325,7 +1349,9 @@
     ],
     "讽喻": [
       "boqinhuai",
+      "jiasheng",
       "maotanshangwu",
+      "liangfuxing",
       "masuo",
       "chaotianzi",
       "zouji",
@@ -1419,10 +1445,12 @@
       "taohuayuanji"
     ],
     "闲趣": [
-      "yueke"
+      "yueke",
+      "rumengling"
     ],
     "闲适": [
       "jichengtiansi",
+      "caisangzi",
       "chuzhouxijian",
       "yugezi",
       "dengkuai-ge"
@@ -1466,7 +1494,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 265,
+  "count": 272,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/《论语》十二章.md",
@@ -3769,6 +3797,77 @@
       "volume": "七年级上册"
     },
     {
+      "_path": "poems/初中/七年级下册课外诵读/贾生.md",
+      "author": "李商隐",
+      "authorDied": 858,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "咏史：问的不是苍生，是鬼神",
+      "examFreq": 0.5,
+      "form": "七言",
+      "fullLines": [
+        "宣室求贤访逐臣贾生才调更无伦",
+        "可怜夜半虚前席不问苍生问鬼神"
+      ],
+      "fullLinesPunct": [
+        "宣室求贤访逐臣，贾生才调更无伦。",
+        "可怜夜半虚前席，不问苍生问鬼神。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "jiasheng",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "宣室求贤访逐臣贾生才调更无伦",
+        "可怜夜半虚前席不问苍生问鬼神"
+      ],
+      "linesPunct": [
+        "宣室求贤访逐臣，贾生才调更无伦。",
+        "可怜夜半虚前席，不问苍生问鬼神。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 14,
+      "tags": [
+        "咏史",
+        "讽喻",
+        "唐七言"
+      ],
+      "technique": [
+        "对比",
+        "用典"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "咏史",
+        "讽喻"
+      ],
+      "title": "贾生",
+      "volume": "七年级下册课外诵读"
+    },
+    {
       "_path": "poems/初中/七年级下册课外诵读/过松源晨炊漆公店.md",
       "author": "杨万里",
       "authorDied": 1206,
@@ -4738,6 +4837,82 @@
       "volume": "八年级下册"
     },
     {
+      "_path": "poems/初中/八年级上册课外诵读/如梦令.md",
+      "author": "李清照",
+      "authorDied": 1155,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "宋",
+      "emotion": "一次迷路带来的热闹",
+      "examFreq": 0.6,
+      "form": "词",
+      "fullLines": [
+        "常记溪亭日暮沉醉不知归路",
+        "兴尽晚回舟误入藕花深处",
+        "争渡争渡惊起一滩鸥鹭"
+      ],
+      "fullLinesPunct": [
+        "常记溪亭日暮，沉醉不知归路。",
+        "兴尽晚回舟，误入藕花深处。",
+        "争渡，争渡，惊起一滩鸥鹭。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "rumengling",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "常记溪亭日暮沉醉不知归路",
+        "兴尽晚回舟误入藕花深处",
+        "争渡争渡惊起一滩鸥鹭"
+      ],
+      "linesPunct": [
+        "常记溪亭日暮，沉醉不知归路。",
+        "兴尽晚回舟，误入藕花深处。",
+        "争渡，争渡，惊起一滩鸥鹭。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        3
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": "常记溪亭日暮",
+      "syllables": null,
+      "tags": [
+        "闲趣",
+        "自然",
+        "宋词"
+      ],
+      "technique": [
+        "白描",
+        "叠句"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "闲趣",
+        "自然"
+      ],
+      "title": "如梦令",
+      "volume": "八年级上册课外诵读"
+    },
+    {
       "_path": "poems/初中/八年级下册课外诵读/子衿.md",
       "author": "佚名",
       "authorDied": null,
@@ -4906,6 +5081,91 @@
       ],
       "title": "小石潭记",
       "volume": "八年级下册"
+    },
+    {
+      "_path": "poems/初中/八年级上册课外诵读/庭中有奇树.md",
+      "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "汉",
+      "emotion": "一朵送不出去的花",
+      "examFreq": 0.6,
+      "form": "古诗",
+      "fullLines": [
+        "庭中有奇树绿叶发华滋",
+        "攀条折其荣将以遗所思",
+        "馨香盈怀袖路远莫致之",
+        "此物何足贵但感别经时"
+      ],
+      "fullLinesPunct": [
+        "庭中有奇树，绿叶发华滋。",
+        "攀条折其荣，将以遗所思。",
+        "馨香盈怀袖，路远莫致之。",
+        "此物何足贵，但感别经时。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "tingzhongyouqishu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "庭中有奇树绿叶发华滋",
+        "攀条折其荣将以遗所思",
+        "馨香盈怀袖路远莫致之",
+        "此物何足贵但感别经时"
+      ],
+      "linesPunct": [
+        "庭中有奇树，绿叶发华滋。",
+        "攀条折其荣，将以遗所思。",
+        "馨香盈怀袖，路远莫致之。",
+        "此物何足贵，但感别经时。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "思念",
+        "离别",
+        "汉古诗"
+      ],
+      "technique": [
+        "白描",
+        "托物言志"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "思念",
+        "离别"
+      ],
+      "title": "庭中有奇树",
+      "volume": "八年级上册课外诵读"
     },
     {
       "_path": "poems/初中/八年级下册课外诵读/式微.md",
@@ -5161,6 +5421,91 @@
       "volume": "八年级下册"
     },
     {
+      "_path": "poems/初中/八年级上册课外诵读/梁甫行.md",
+      "author": "曹植",
+      "authorDied": 232,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "汉",
+      "emotion": "柴门前那片冷清",
+      "examFreq": 0.5,
+      "form": "五言",
+      "fullLines": [
+        "八方各异气千里殊风雨",
+        "剧哉边海民寄身于草野",
+        "妻子象禽兽行止依林阻",
+        "柴门何萧条狐兔翔我宇"
+      ],
+      "fullLinesPunct": [
+        "八方各异气，千里殊风雨。",
+        "剧哉边海民，寄身于草野。",
+        "妻子象禽兽，行止依林阻。",
+        "柴门何萧条，狐兔翔我宇。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "liangfuxing",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "八方各异气千里殊风雨",
+        "剧哉边海民寄身于草野",
+        "妻子象禽兽行止依林阻",
+        "柴门何萧条狐兔翔我宇"
+      ],
+      "linesPunct": [
+        "八方各异气，千里殊风雨。",
+        "剧哉边海民，寄身于草野。",
+        "妻子象禽兽，行止依林阻。",
+        "柴门何萧条，狐兔翔我宇。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "民生",
+        "讽喻",
+        "汉乐府"
+      ],
+      "technique": [
+        "白描",
+        "烘托"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "民生",
+        "讽喻"
+      ],
+      "title": "梁甫行",
+      "volume": "八年级上册课外诵读"
+    },
+    {
       "_path": "poems/初中/八年级上册/浣溪沙.md",
       "author": "晏殊",
       "authorDied": 1055,
@@ -5313,6 +5658,92 @@
         "豪放"
       ],
       "title": "渔家傲",
+      "volume": "八年级上册课外诵读"
+    },
+    {
+      "_path": "poems/初中/八年级上册课外诵读/渡荆门送别.md",
+      "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "出蜀初见平原的开阔，和一路送行的江水",
+      "examFreq": 0.6,
+      "form": "五言",
+      "fullLines": [
+        "渡远荆门外来从楚国游",
+        "山随平野尽江入大荒流",
+        "月下飞天镜云生结海楼",
+        "仍怜故乡水万里送行舟"
+      ],
+      "fullLinesPunct": [
+        "渡远荆门外，来从楚国游。",
+        "山随平野尽，江入大荒流。",
+        "月下飞天镜，云生结海楼。",
+        "仍怜故乡水，万里送行舟。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "dujingmensongbie",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "渡远荆门外来从楚国游",
+        "山随平野尽江入大荒流",
+        "月下飞天镜云生结海楼",
+        "仍怜故乡水万里送行舟"
+      ],
+      "linesPunct": [
+        "渡远荆门外，来从楚国游。",
+        "山随平野尽，江入大荒流。",
+        "月下飞天镜，云生结海楼。",
+        "仍怜故乡水，万里送行舟。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "山水",
+        "思乡",
+        "唐五言"
+      ],
+      "technique": [
+        "对偶",
+        "比喻",
+        "借景抒情"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "山水",
+        "思乡"
+      ],
+      "title": "渡荆门送别",
       "volume": "八年级上册课外诵读"
     },
     {
@@ -6042,6 +6473,77 @@
       "volume": "八年级下册课外诵读"
     },
     {
+      "_path": "poems/初中/八年级上册课外诵读/采桑子.md",
+      "author": "欧阳修",
+      "authorDied": 1072,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "船在走却觉不出来的那种静",
+      "examFreq": 0.5,
+      "form": "词",
+      "fullLines": [
+        "轻舟短棹西湖好绿水逶迤芳草长堤隐隐笙歌处处随",
+        "无风水面琉璃滑不觉船移微动涟漪惊起沙禽掠岸飞"
+      ],
+      "fullLinesPunct": [
+        "轻舟短棹西湖好，绿水逶迤。芳草长堤，隐隐笙歌处处随。",
+        "无风水面琉璃滑，不觉船移。微动涟漪，惊起沙禽掠岸飞。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "caisangzi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "轻舟短棹西湖好绿水逶迤芳草长堤隐隐笙歌处处随",
+        "无风水面琉璃滑不觉船移微动涟漪惊起沙禽掠岸飞"
+      ],
+      "linesPunct": [
+        "轻舟短棹西湖好，绿水逶迤。芳草长堤，隐隐笙歌处处随。",
+        "无风水面琉璃滑，不觉船移。微动涟漪，惊起沙禽掠岸飞。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        3,
+        3
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": "轻舟短棹西湖好",
+      "syllables": null,
+      "tags": [
+        "山水",
+        "闲适",
+        "宋词"
+      ],
+      "technique": [
+        "衬托",
+        "白描"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "山水",
+        "闲适"
+      ],
+      "title": "采桑子",
+      "volume": "八年级上册课外诵读"
+    },
+    {
       "_path": "poems/初中/八年级上册课外诵读/野望.md",
       "author": "王绩",
       "authorDied": 644,
@@ -6539,6 +7041,111 @@
       ],
       "title": "黄鹤楼",
       "volume": "八年级上册"
+    },
+    {
+      "_path": "poems/初中/八年级上册课外诵读/龟虽寿.md",
+      "author": "曹操",
+      "authorDied": 220,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "汉",
+      "emotion": "晚年不服老的那口气",
+      "examFreq": 0.8,
+      "form": "四言",
+      "fullLines": [
+        "神龟虽寿犹有竟时",
+        "腾蛇乘雾终为土灰",
+        "老骥伏枥志在千里",
+        "烈士暮年壮心不已",
+        "盈缩之期不但在天",
+        "养怡之福可得永年",
+        "幸甚至哉歌以咏志"
+      ],
+      "fullLinesPunct": [
+        "神龟虽寿，犹有竟时。",
+        "腾蛇乘雾，终为土灰。",
+        "老骥伏枥，志在千里。",
+        "烈士暮年，壮心不已。",
+        "盈缩之期，不但在天；",
+        "养怡之福，可得永年。",
+        "幸甚至哉，歌以咏志。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "guisuishou",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "神龟虽寿犹有竟时",
+        "腾蛇乘雾终为土灰",
+        "老骥伏枥志在千里",
+        "烈士暮年壮心不已",
+        "盈缩之期不但在天",
+        "养怡之福可得永年",
+        "幸甚至哉歌以咏志"
+      ],
+      "linesPunct": [
+        "神龟虽寿，犹有竟时。",
+        "腾蛇乘雾，终为土灰。",
+        "老骥伏枥，志在千里。",
+        "烈士暮年，壮心不已。",
+        "盈缩之期，不但在天；",
+        "养怡之福，可得永年。",
+        "幸甚至哉，歌以咏志。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "言志",
+        "哲理",
+        "汉乐府"
+      ],
+      "technique": [
+        "比喻",
+        "对比",
+        "用典"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "言志",
+        "哲理"
+      ],
+      "title": "龟虽寿",
+      "volume": "八年级上册课外诵读"
     },
     {
       "_path": "poems/初中/九年级下册/《吕氏春秋》一则.md",

@@ -411,14 +411,6 @@
       "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20854_langdu.html"
     },
     {
-      "volume": "七年级下册",
-      "title": "贾生",
-      "kind": "add",
-      "reason": "唐·李商隐七言绝句，统编七下课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20852_langdu.html"
-    },
-    {
       "volume": "八年级上册",
       "title": "我三十万大军胜利南渡长江",
       "kind": "modern",
@@ -497,38 +489,6 @@
       "reason": "艾芙·居里（法国）传记译文",
       "poem": null,
       "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20910_langdu.html"
-    },
-    {
-      "volume": "八年级上册",
-      "title": "渡荆门送别",
-      "kind": "add",
-      "reason": "唐·李白五言律诗，统编八上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20918_langdu.html"
-    },
-    {
-      "volume": "八年级上册",
-      "title": "庭中有奇树",
-      "kind": "add",
-      "reason": "《古诗十九首》，统编八上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20920_langdu.html"
-    },
-    {
-      "volume": "八年级上册",
-      "title": "龟虽寿",
-      "kind": "add",
-      "reason": "三国·曹操四言乐府，统编八上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/13089_langdu.html"
-    },
-    {
-      "volume": "八年级上册",
-      "title": "梁甫行",
-      "kind": "add",
-      "reason": "三国·曹植五言诗，统编八上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20922_langdu.html"
     },
     {
       "volume": "八年级上册",
@@ -649,22 +609,6 @@
       "reason": "西汉·司马迁《史记·绛侯周勃世家》文言片段，统编八上文言文课文",
       "poem": null,
       "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20937_langdu.html"
-    },
-    {
-      "volume": "八年级上册",
-      "title": "采桑子",
-      "kind": "add",
-      "reason": "北宋·欧阳修词，统编八上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20944_langdu.html"
-    },
-    {
-      "volume": "八年级上册",
-      "title": "如梦令",
-      "kind": "add",
-      "reason": "南宋·李清照词，统编八上课外诵读",
-      "poem": null,
-      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20946_langdu.html"
     },
     {
       "volume": "八年级下册",
@@ -1971,5 +1915,5 @@
       "textbookUrl": ""
     }
   ],
-  "补收记录": "2026-10-10：以下 6 条已补进仓，裁定随之删除（护栏会把「缺口已经没了、裁定还留着」报成过期）：峨眉山月歌、江南逢李龟年、行军九日思长安故园、秋词（其一）、十一月四日风雨大作（其二）、过松源晨炊漆公店（其五）。\n2026-10-10：以下 7 条已补进仓，裁定随之删除：夜上受降城闻笛（李益）、潼关（谭嗣同）、约客（赵师秀）、赠从弟（其二，刘桢）、长沙过贾谊宅（刘长卿）、咸阳城东楼（许浑）、别云间（夏完淳）。这 7 篇先前卡在「作者表里没有卒年」，本轮先把七位作者的卒年补进 data/authors.json（每人两条独立来源）再补收。"
+  "补收记录": "2026-10-10：以下 6 条已补进仓，裁定随之删除（护栏会把「缺口已经没了、裁定还留着」报成过期）：峨眉山月歌、江南逢李龟年、行军九日思长安故园、秋词（其一）、十一月四日风雨大作（其二）、过松源晨炊漆公店（其五）。\n2026-10-10：以下 7 条已补进仓，裁定随之删除：夜上受降城闻笛（李益）、潼关（谭嗣同）、约客（赵师秀）、赠从弟（其二，刘桢）、长沙过贾谊宅（刘长卿）、咸阳城东楼（许浑）、别云间（夏完淳）。这 7 篇先前卡在「作者表里没有卒年」，本轮先把七位作者的卒年补进 data/authors.json（每人两条独立来源）再补收。\n2026-10-10：以下 7 条已补进仓，裁定随之删除：贾生（李商隐）、渡荆门送别（李白）、庭中有奇树（《古诗十九首》佚名）、龟虽寿（曹操）、梁甫行（曹植）、采桑子（轻舟短棹西湖好，欧阳修）、如梦令（常记溪亭日暮，李清照）。其中曹植是本轮新补进作者表（维基百科与百度百科两处一致作 192—232）。"
 }

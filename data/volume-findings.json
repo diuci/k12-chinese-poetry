@@ -2,7 +2,7 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-10",
   "counts": {
-    "match": 203,
+    "match": 210,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -269,6 +269,16 @@
       "id": "yueke",
       "title": "约客",
       "author": "赵师秀",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级下册课外诵读",
+      "textbookVolume": "七年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "jiasheng",
+      "title": "贾生",
+      "author": "李商隐",
       "stage": "初中",
       "status": "match",
       "volume": "七年级下册课外诵读",
@@ -656,9 +666,49 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "rumengling",
+      "title": "如梦令",
+      "author": "李清照",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册课外诵读",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "tingzhongyouqishu",
+      "title": "庭中有奇树",
+      "author": "佚名",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册课外诵读",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "liangfuxing",
+      "title": "梁甫行",
+      "author": "曹植",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册课外诵读",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "yujiaao-tianjie",
       "title": "渔家傲",
       "author": "李清照",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册课外诵读",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "dujingmensongbie",
+      "title": "渡荆门送别",
+      "author": "李白",
       "stage": "初中",
       "status": "match",
       "volume": "八年级上册课外诵读",
@@ -676,9 +726,29 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "caisangzi",
+      "title": "采桑子",
+      "author": "欧阳修",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册课外诵读",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "yewang",
       "title": "野望",
       "author": "王绩",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级上册课外诵读",
+      "textbookVolume": "八年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "guisuishou",
+      "title": "龟虽寿",
+      "author": "曹操",
       "stage": "初中",
       "status": "match",
       "volume": "八年级上册课外诵读",
