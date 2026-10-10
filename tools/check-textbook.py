@@ -277,10 +277,11 @@ def garden_blind():
         out[vol] = sum(1 for r in rows if not (r.get('title') or '').strip())
     return out
 
-def absence_note(volume, blind_pages, is_syllabus, garden_covered=True, record=None):
+def absence_note(volume, blind_pages, is_syllabus, garden_covered=True, record=None, stage=''):
     """「教材里没有这一课」这句话要说清查了什么、边界在哪。
 
-    三件事各自都是边界：园地表只抽了小学 12 册（初中、高中的园地页根本没看过）；
+    三件事各自都是边界：园地表只抽了小学 12 册（初中、高中的册次没有「语文园地」这一栏，
+    目录表里带「语文园地」的条目全部在小学 12 册里，这一点当场能从目录表数出来）；
     小学那 12 册里也有几页只列了栏目头、没列篇名，那几页里有什么我们不知道；
     不是课标篇目的（教材拓展）连「课标要背」这条依据也没有——以前它顶着
     「统编教材未收（课标要求）」，等于替课标作了一个课标没作过的声明。"""
@@ -293,7 +294,11 @@ def absence_note(volume, blind_pages, is_syllabus, garden_covered=True, record=N
             parts.append('但园地表里「%s」有 %d 页只列了栏目头、没列篇名（镜像没写全）——找不到不等于没有'
                          % (volume, blind_pages))
     else:
-        parts.append('语文园地那一档只核过小学 12 册，「%s」的园地页没核过——这句话只覆盖课文目录' % volume)
+        if stage == '小学':
+            parts.append('语文园地那一档只核过小学 12 册，「%s」的园地页没核过——这句话只覆盖课文目录' % volume)
+        else:
+            parts.append('「语文园地」是小学册的栏目：目录表里带「语文园地」的条目全部在小学 12 册里，'
+                         '初中与高中的册次没有这一栏——这句话覆盖整册课文目录，单元末的诵读篇目也在表里')
     if not is_syllabus:
         parts.append('这一篇在仓里是「教材拓展」（课标附录1里没有它），连「课标要背」这条依据也没有')
     return '；'.join(parts)
@@ -590,10 +595,15 @@ def selftest():
     n19d = absence_note('七年级上册', 0, True, True)
     must('教材拓展' not in n19d, '坏例19d：课标篇目被写成了教材拓展（%s）' % n19d)
     must(len(n19) > len(n19b), '坏例19e：盲区没让这句话变长——等于没写')
-    # 坏例19f：园地表只抽了小学 12 册——高中那一册的园地页根本没看过，不许说「园地里也没有」
-    n19f = absence_note('选择性必修下册', 0, True, False)
-    must('园地页没核过' in n19f, '坏例19f：高中册的园地没核过，note 却像核过了：%s' % n19f)
-    must(n19f.index('课文目录') < n19f.index('园地页没核过'), '坏例19g：先说没核过的东西、后说查过的，读起来像反话：%s' % n19f)
+    # 坏例19f：高中册没有「语文园地」这一栏——note 不许写得好像高中有园地、只是我们没核过
+    n19f = absence_note('选择性必修下册', 0, True, False, None, '高中')
+    must('没有这一栏' in n19f, '坏例19f：高中册的 note 没说明「语文园地」不是高中的栏目：%s' % n19f)
+    must('园地页没核过' not in n19f, '坏例19f2：高中册的 note 还写着「园地页没核过」，等于替高中凭空添了一栏：%s' % n19f)
+    must('诵读篇目也在表里' in n19f, '坏例19f3：高中册的 note 没说清这句话覆盖整册目录（含单元末诵读）：%s' % n19f)
+    # 坏例19g：小学那册没核园地时，先说查过的、后说没核过的，顺序不许反
+    n19f2 = absence_note('三年级下册', 0, True, False, None, '小学')
+    must('园地页没核过' in n19f2, '坏例19g：小学册没核园地却没说：%s' % n19f2)
+    must(n19f2.index('课文目录') < n19f2.index('园地页没核过'), '坏例19g2：先说没核过的东西、后说查过的，读起来像反话：%s' % n19f2)
     # 坏例19h：小学那册核过园地，就不许写「没核过」
     n19h = absence_note('三年级下册', 3, True, True)
     must('没核过' not in n19h, '坏例19h：小学册的园地明明核过，note 却说没核过：%s' % n19h)
@@ -766,7 +776,7 @@ def main():
             entry.update(status='lesson-not-found', volume_url=BASE + path,
                          note=absence_note(vol, blind.get(vol, 0),
                                            p['id'] not in extra_ids, vol in blind,
-                                           rec if ok_rec else None))
+                                            rec if ok_rec else None, p.get('stage') or ''))
             results.append(entry)
             print('[%d/%d] !! %s（%s）教材里没有这篇' % (len(results), len(poems), p['title'], p.get('volume')))
             continue
