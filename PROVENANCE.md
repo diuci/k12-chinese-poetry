@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 298 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 300 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -164,6 +164,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | nangxiangzi | 南乡子 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1+S2 | 词 | 初中 · 九年级下册 |
 | nananjun | 南安军 | 文天祥 | 宋 | 卒 1283 | public-domain | S10+S9+S3 | 五言 | 初中 · 九年级下册课外诵读 |
 | xianyangchengdonglou | 咸阳城东楼 | 许浑 | 唐 | 卒 858 | public-domain | S10+S9+S3 | 七言 | 初中 · 九年级上册课外诵读 |
+| tangju | 唐雎不辱使命 | 佚名 | 战国 | 年代上限 1900 | public-domain | S10+S9+S3 | 文言 | 初中 · 九年级下册 |
 | shangshanxiaoxing | 商山早行 | 温庭筠 | 唐 | 卒 866 | public-domain | S10+S9+S3 | 五言 | 初中 · 九年级上册课外诵读 |
 | lishanhuaigu | 山坡羊 | 张养浩 | 元 | 卒 1329 | public-domain | S10+S9+S3 | 曲 | 初中 · 九年级下册 |
 | yueyanglouji | 岳阳楼记 | 范仲淹 | 宋 | 卒 1052 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级上册 |
@@ -183,6 +184,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | choulitian | 酬乐天扬州初逢席上见赠 | 刘禹锡 | 唐 | 卒 842 | public-domain | S3+S1+S2 | 七言 | 初中 · 九年级上册 |
 | zuigongtingji | 醉翁亭记 | 欧阳修 | 宋 | 卒 1072 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级上册 |
 | changshaguojiayizhai | 长沙过贾谊宅 | 刘长卿 | 唐 | 卒 790 | public-domain | S10+S9+S3 | 七言 | 初中 · 九年级上册课外诵读 |
+| chensheshijia | 陈涉世家 | 司马迁 | 西汉 | 卒 公元前 86 | public-domain | S10+S9+S3 | 文言 | 初中 · 九年级下册 |
 | gulangyuexing | 古朗月行 | 李白 | 唐 | 卒 762 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级上册 |
 | yonge | 咏鹅 | 骆宾王 | 唐 | 卒 684 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级上册 |
 | xunyinzhe | 寻隐者不遇 | 贾岛 | 唐 | 卒 843 | public-domain | S3+S1+S2 | 五言 | 小学 · 一年级下册 |

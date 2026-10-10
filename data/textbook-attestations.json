@@ -2,7 +2,7 @@
   "generated": "2026-10-11",
   "source": "https://yw.suyang123.com",
   "stats": {
-    "match": 217,
+    "match": 219,
     "coverage-override": 7,
     "mismatch": 2,
     "partial": 16,
@@ -1070,6 +1070,23 @@
       "ghostDiffs": 0
     },
     {
+      "id": "tangju",
+      "title": "唐雎不辱使命",
+      "author": "佚名",
+      "stage": "初中",
+      "volume": "九年级下册",
+      "status": "match",
+      "lesson": "10* 唐雎不辱使命",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21214_langdu.html",
+      "hit": 25,
+      "total": 25,
+      "skippedShort": 0,
+      "textbookParas": 4,
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0
+    },
+    {
       "id": "shanpoyang",
       "title": "山坡羊",
       "author": "张养浩",
@@ -1292,6 +1309,23 @@
           "context": "从外来与坐谈问之客曰吾与徐公孰美客曰"
         }
       ],
+      "ghostDiffs": 0
+    },
+    {
+      "id": "chensheshijia",
+      "title": "陈涉世家",
+      "author": "司马迁",
+      "stage": "初中",
+      "volume": "九年级下册",
+      "status": "match",
+      "lesson": "22* 陈涉世家",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21230_langdu.html",
+      "hit": 52,
+      "total": 52,
+      "skippedShort": 2,
+      "textbookParas": 6,
+      "miss": [],
+      "charDiffs": [],
       "ghostDiffs": 0
     },
     {

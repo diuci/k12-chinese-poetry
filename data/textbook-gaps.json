@@ -3,11 +3,11 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 212,
+    "total": 210,
     "modern": 39,
     "lessonEntries": 781,
-    "poems": 298,
-    "reciteGaps": 94,
+    "poems": 300,
+    "reciteGaps": 92,
     "primaryGaps": 337
   },
   "rows": [
@@ -933,14 +933,6 @@
     },
     {
       "volume": "九年级下册",
-      "lesson": "10",
-      "title": "唐雎不辱使命",
-      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21214_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "九年级下册",
       "lesson": "自读",
       "title": "破阵子·为陈同甫赋壮词以寄之",
       "url": "https://yw.suyang123.com/chuzhong/jiunianji/21218_langdu.html",
@@ -1010,14 +1002,6 @@
       "url": "https://yw.suyang123.com/chuzhong/jiunianji/21227_langdu.html",
       "looksModern": true,
       "recite": false
-    },
-    {
-      "volume": "九年级下册",
-      "lesson": "22",
-      "title": "陈涉世家",
-      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21230_langdu.html",
-      "looksModern": false,
-      "recite": true
     },
     {
       "volume": "九年级下册",

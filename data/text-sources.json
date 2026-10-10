@@ -3,10 +3,10 @@
   "generated": "2026-10-11",
   "stats": {
     "attested": 230,
-    "partial": 67,
+    "partial": 69,
     "notfound": 0,
     "nosource": 1,
-    "withVariants": 85
+    "withVariants": 86
   },
   "results": [
     {
@@ -1426,6 +1426,52 @@
       "variants": []
     },
     {
+      "id": "tangju",
+      "title": "唐雎不辱使命",
+      "author": "佚名",
+      "stage": "初中",
+      "page": "唐雎不辱使命",
+      "url": "https://zh.wikisource.org/wiki/%E5%94%90%E9%9B%8E%E4%B8%8D%E8%BE%B1%E4%BD%BF%E5%91%BD",
+      "lines": 25,
+      "hit": 21,
+      "miss": [
+        {
+          "line": "要离之刺庆忌也仓鹰击于殿上",
+          "nearest": {
+            "line": "要离之刺庆忌也仓鹰击于殿上",
+            "source": "要离之刺庆忌也苍鹰击于殿上此三",
+            "ratio": 0.857
+          }
+        },
+        {
+          "line": "此三子者皆布衣之士也怀怒未发休祲降于天与臣而将四矣",
+          "nearest": {
+            "line": "此三子者皆布衣之士也怀怒未发休祲降于天与臣而将四矣",
+            "source": "此三子皆布衣之士也怀怒未发休祲降于天与臣而将四矣若士必",
+            "ratio": 0.923
+          }
+        },
+        {
+          "line": "何至于此",
+          "nearest": {
+            "line": "何至于此",
+            "source": "何至于此寡人",
+            "ratio": 0.8
+          }
+        },
+        {
+          "line": "寡人谕矣夫韩魏灭亡而安陵以五十里之地存者徒以有先生也",
+          "nearest": {
+            "line": "寡人谕矣夫韩魏灭亡而安陵以五十里之地存者徒以有先生也",
+            "source": "寡人喻矣夫韩魏灭亡而安陵以五十里之地存者徒以有先生也注释",
+            "ratio": 0.926
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "shanpoyang",
       "title": "山坡羊",
       "author": "张养浩",
@@ -1713,6 +1759,35 @@
       ],
       "variantNotes": [],
       "variants": []
+    },
+    {
+      "id": "chensheshijia",
+      "title": "陈涉世家",
+      "author": "司马迁",
+      "stage": "初中",
+      "page": "史記/卷048",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98/%E5%8D%B7048",
+      "lines": 54,
+      "hit": 53,
+      "miss": [
+        {
+          "line": "二世元年七月发闾左適戍渔阳九百人屯大泽乡",
+          "nearest": {
+            "line": "二世元年七月发闾左適戍渔阳九百人屯大泽乡",
+            "source": "二世元年七月发闾左适戍渔阳九百人屯大泽乡陈胜",
+            "ratio": 0.905
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "荧",
+          "other": "荥",
+          "context": "軍至，必大敗。不如少遺兵，足以守荧陽，悉精兵迎秦軍。今假王驕，不知兵權，不可與計，非誅之",
+          "page": "史記/卷048"
+        }
+      ]
     },
     {
       "id": "bieyunjian",
