@@ -1,0 +1,2079 @@
+{
+  "note": "统编教材收了、仓里对不上的课文。这张表不判该不该收。",
+  "generated": "2026-10-10",
+  "counts": {
+    "generated": "2026-10-10",
+    "total": 258,
+    "modern": 40,
+    "lessonEntries": 781,
+    "poems": 252,
+    "reciteGaps": 134,
+    "primaryGaps": 337
+  },
+  "rows": [
+    {
+      "volume": "七年级上册",
+      "lesson": "1",
+      "title": "春",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20001_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "2",
+      "title": "济南的冬天",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20002_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "3",
+      "title": "雨的四季",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20003_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "5",
+      "title": "秋天的怀念",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20007_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "6",
+      "title": "散步",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20008_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "金色花",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20009_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "荷叶·母亲",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20010_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "咏雪",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20037_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "陈太丘与友期行",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20011_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "9",
+      "title": "从百草园到三味书屋",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20012_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "10",
+      "title": "往事依依",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200051_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "11",
+      "title": "再塑生命的人",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20013_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "峨眉山月歌",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20015_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "江南逢李龟年",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20016_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "行军九日思长安故园",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20017_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "夜上受降城闻笛",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20018_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "13",
+      "title": "纪念白求恩",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20019_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "14",
+      "title": "回忆我的母亲",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200050_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "15",
+      "title": "梅岭三章",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/21202_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "16",
+      "title": "诫子书",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20022_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "17",
+      "title": "猫",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20023_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "18",
+      "title": "我的白鸽",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200049_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "19",
+      "title": "大雁归来",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200048_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "20",
+      "title": "狼",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20025_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "21",
+      "title": "小圣施恩降大圣",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200047_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "22",
+      "title": "皇帝的新装",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20026_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "23",
+      "title": "女娲造人",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20028_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "赫耳墨斯和雕像者",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20029_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "蚊子和狮子",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20030_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "穿井得一人",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20031_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "杞人忧天",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20032_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "秋词",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20033_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "十一月四日风雨大作",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200035_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级上册",
+      "lesson": "自读",
+      "title": "潼关",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20036_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "1",
+      "title": "邓稼先",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20080_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "2",
+      "title": "说和做——记闻一多先生言行片段",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20081_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "3",
+      "title": "列夫·托尔斯泰",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20909_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "4",
+      "title": "孙权劝学",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20083_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "5",
+      "title": "黄河颂",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20084_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "6",
+      "title": "老山界",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20085_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "7",
+      "title": "谁是最可爱的人",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20086_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "8",
+      "title": "土地的誓言",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20087_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "9",
+      "title": "木兰诗",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20088_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "10",
+      "title": "阿长与《山海经》",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20089_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "11",
+      "title": "山地回忆",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200112_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "12",
+      "title": "台阶",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20878_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "13",
+      "title": "卖油翁",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20877_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "14",
+      "title": "驿路梨花",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20871_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "15",
+      "title": "青春之光",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200113_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "16",
+      "title": "有为有不为",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200114_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "18",
+      "title": "井冈翠竹",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200115_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "19",
+      "title": "紫藤萝瀑布",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20863_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "自读",
+      "title": "假如生活欺骗了你",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20865_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "自读",
+      "title": "未选择的路",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20866_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "22",
+      "title": "太空一日",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20856_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "23",
+      "title": "“蛟龙”探海",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/200116_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "24",
+      "title": "带上她的眼睛",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20855_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "25",
+      "title": "活板",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20854_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "自读",
+      "title": "贾生",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20852_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "自读",
+      "title": "过松源晨炊漆公店",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20851_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "七年级下册",
+      "lesson": "自读",
+      "title": "约客",
+      "url": "https://yw.suyang123.com/chuzhong/qinianji/20850_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "我三十万大军胜利南渡长江",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20901_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "人民解放军百万大军横渡长江",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20902_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "2",
+      "title": "首届诺贝尔奖颁发",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20903_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "3",
+      "title": "“飞天”凌空——跳水姑娘吕伟夺魁记",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20904_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "4",
+      "title": "一着惊海天——目击我国航母舰载战斗机首架次成功着舰",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20905_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "5",
+      "title": "国行公祭，为佑世界和平",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20906_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "6",
+      "title": "藤野先生",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20907_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "7",
+      "title": "回忆我的母亲",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20908_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "8",
+      "title": "列夫·托尔斯泰",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20909_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "9",
+      "title": "美丽的颜色",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20910_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "渡荆门送别",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20918_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "庭中有奇树",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20920_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "龟虽寿",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/13089_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "赠从弟",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20921_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "梁甫行",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20922_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "14",
+      "title": "背影",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20923_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "15",
+      "title": "白杨礼赞",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20924_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "永久的生命",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20925_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "我为什么而活着",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20926_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "17",
+      "title": "昆明的雨",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20927_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "18",
+      "title": "中国石拱桥",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20928_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "19",
+      "title": "苏州园林",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20929_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "20",
+      "title": "人民英雄永垂不朽——瞻仰首都人民英雄纪念碑",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20930_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "21",
+      "title": "蝉",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20931_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "22",
+      "title": "梦回繁华",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20932_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "得道多助,失道寡助",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20933_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "生于忧患，死于安乐",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20935_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "富贵不能淫",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20934_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "24",
+      "title": "愚公移山",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20936_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "25",
+      "title": "周亚夫军细柳",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20937_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "采桑子",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20944_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级上册",
+      "lesson": "自读",
+      "title": "如梦令",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/20946_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "1",
+      "title": "社戏",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21000_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "2",
+      "title": "回延安",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21001_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "3",
+      "title": "安塞腰鼓",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21002_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "4",
+      "title": "灯笼",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21003_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "5",
+      "title": "大自然的语言",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21004_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "自读",
+      "title": "恐龙无处不有",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21005_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "自读",
+      "title": "被压扁的沙子",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21006_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "7",
+      "title": "大雁归来",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21007_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "8",
+      "title": "时间的脚印",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21008_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "11",
+      "title": "核舟记",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21011_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "自读",
+      "title": "望洞庭湖赠张丞相",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21017_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "13",
+      "title": "最后一次讲演",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21018_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "14",
+      "title": "应有格物致知精神",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21019_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "15",
+      "title": "我一生中的重要抉择",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21020_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "16",
+      "title": "庆祝奥林匹克运动复兴25周年",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21021_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "17",
+      "title": "壶口瀑布",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21022_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "18",
+      "title": "在长江源头各拉丹冬",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21023_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "19",
+      "title": "登勃朗峰",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21024_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "20",
+      "title": "一滴水经过丽江",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21025_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "自读",
+      "title": "庄子与惠子游于濠梁之上",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21027_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "自读",
+      "title": "题破山寺后禅院",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21034_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "自读",
+      "title": "送友人",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21035_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "自读",
+      "title": "卜算子•黄州定慧院寓居作",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21036_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "八年级下册",
+      "lesson": "自读",
+      "title": "卜算子•咏梅",
+      "url": "https://yw.suyang123.com/chuzhong/banianji/21037_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "1",
+      "title": "沁园春·雪",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21101_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "2",
+      "title": "周总理，你在哪里",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21102_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "3",
+      "title": "我爱这土地",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21103_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "4",
+      "title": "乡愁",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21104_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "5",
+      "title": "你是人间的四月天",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21105_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "6",
+      "title": "我看",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21106_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "7",
+      "title": "敬业与乐业",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21107_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "8",
+      "title": "就英法联军远征中国致巴特勒上尉的信",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21108_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "9",
+      "title": "论教养",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21109_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "10",
+      "title": "精神的三间小屋",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21110_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "自读",
+      "title": "商山早行",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21120_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "自读",
+      "title": "月夜忆舍弟",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21117_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "自读",
+      "title": "长沙过贾谊宅",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21118_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "自读",
+      "title": "左迁至蓝关示侄孙湘",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21119_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "15",
+      "title": "故乡",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21121_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "16",
+      "title": "我的叔叔于勒",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21122_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "17",
+      "title": "孤独之旅",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21123_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "18",
+      "title": "中国人失掉自信力了吗",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21124_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "19",
+      "title": "怀疑与学问",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21125_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "20",
+      "title": "谈创造性思维",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21126_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "21",
+      "title": "创造宣言",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21127_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "22",
+      "title": "智取生辰纲",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21128_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "23",
+      "title": "范进中举",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21129_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "24",
+      "title": "三顾茅庐",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21130_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "25",
+      "title": "刘姥姥进大观园",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21131_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "自读",
+      "title": "丑奴儿·书博山道中壁",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21135_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "自读",
+      "title": "行香子",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21134_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级上册",
+      "lesson": "自读",
+      "title": "咸阳城东楼",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21132_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "1",
+      "title": "祖国啊，我亲爱的祖国",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21201_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "2",
+      "title": "梅岭三章",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21202_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "月夜",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21203_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "萧红墓畔口占",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21204_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "断章",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21205_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "风雨吟",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21206_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "统一",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21207_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "4",
+      "title": "海燕",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21208_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "5",
+      "title": "孔乙己",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21209_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "6",
+      "title": "变色龙",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21210_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "7",
+      "title": "溜索",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21211_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "8",
+      "title": "蒲柳人家",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21212_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "9",
+      "title": "鱼我所欲也",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21213_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "10",
+      "title": "唐雎不辱使命",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21214_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "破阵子·为陈同甫赋壮词以寄之",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21218_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "谈读书",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21220_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "不求甚解",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21221_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "14",
+      "title": "山水画的意境",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21222_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "15",
+      "title": "无言之美",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21223_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "16",
+      "title": "驱遣我们的想象",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21224_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "17",
+      "title": "屈原",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21225_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "18",
+      "title": "天下第一楼",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21226_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "19",
+      "title": "枣儿",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21227_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "22",
+      "title": "陈涉世家",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21230_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "南乡子·登京口北固亭有怀",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21234_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "南安军",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21237_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "别云间",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21238_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "九年级下册",
+      "lesson": "自读",
+      "title": "山坡羊·骊山怀古",
+      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21239_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "1",
+      "title": "沁园春长沙",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30129_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "2.1",
+      "title": "立在地球边上放号",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30102_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "2.2",
+      "title": "红烛",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30103_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "2.3",
+      "title": "峨日朵雪峰之侧",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30130_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "2.4",
+      "title": "致云雀",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30104_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "3.1",
+      "title": "百合花",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30105_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "3.2",
+      "title": "哦，香雪",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30106_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "4.1",
+      "title": "喜看稻菽千重浪――记首届国家最高科技奖获得者袁隆平",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30107_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "4.2",
+      "title": "心有一团火，温暖众人心",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30131_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "4.3",
+      "title": "“探界者”钟扬",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30108_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "5",
+      "title": "以工匠精神雕琢时代品质",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30109_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "6.1",
+      "title": "芣苢",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30111_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "6.2",
+      "title": "插秧歌",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30112_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "11",
+      "title": "反对党八股",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30119_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "12",
+      "title": "拿来主义",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30120_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "13.1",
+      "title": "读书：目的和前提",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30138_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "13.2",
+      "title": "上图书馆",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30121_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "14.1",
+      "title": "故都的秋",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30122_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "14.2",
+      "title": "荷塘月色",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30123_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修上册",
+      "lesson": "15",
+      "title": "我与地坛",
+      "url": "https://yw.suyang123.com/gaozhong/bixiushang/30124_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "1.2",
+      "title": "齐桓晋文之事",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30202_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "1.3",
+      "title": "庖丁解牛",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30203_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "2",
+      "title": "烛之武退秦师",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30204_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "3",
+      "title": "鸿门宴",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30205_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "4",
+      "title": "窦娥冤",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30206_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "5",
+      "title": "雷雨",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30207_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "6",
+      "title": "哈姆莱特",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30208_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "7.1",
+      "title": "青蒿素：人类征服疾病的一小步",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30209_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "7.2",
+      "title": "一名物理学家的教育历程",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30210_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "8",
+      "title": "中国建筑的特征",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30211_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "9",
+      "title": "说“木叶”",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30212_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "10.1",
+      "title": "在《人民报》创刊纪念会上的演说",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30213_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "10.2",
+      "title": "在马克思墓前的讲话",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30214_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "11.2",
+      "title": "与妻书",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30216_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "12",
+      "title": "祝福",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30217_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "13.1",
+      "title": "林教头风雪山神庙",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30218_langdu.html",
+      "looksModern": true,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "13.2",
+      "title": "装在套子里的人",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30219_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "14.1",
+      "title": "促织",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30220_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "14.2",
+      "title": "变形记",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30221_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "必修下册",
+      "lesson": "自读",
+      "title": "游园",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30229_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "1",
+      "title": "中国人民站起来了",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30301_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "2.1",
+      "title": "长征胜利万岁",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30302_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "2.2",
+      "title": "大战中的插曲",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30303_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "3.1",
+      "title": "别了，“不列颠尼亚“",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30304_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "3.2",
+      "title": "县委书记的榜样——焦裕禄",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30305_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "5.2",
+      "title": "大学之道",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30307_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "5.3",
+      "title": "人皆有不忍人之心",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30308_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "6.1",
+      "title": "《老子》四章",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30309_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "6.2",
+      "title": "五石之瓠",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30310_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "7",
+      "title": "兼爱",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30311_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "8",
+      "title": "大卫·科波菲尔",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30312_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "9",
+      "title": "复活",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30313_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "10",
+      "title": "老人与海",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30314_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修上册",
+      "lesson": "11",
+      "title": "百年孤独",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiushang/30315_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "1",
+      "title": "社会历史的决定性基础",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30401_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "2.1",
+      "title": "改造我们的学习",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30402_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "2.2",
+      "title": "人的正确思想是从哪里来的？",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30403_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "3",
+      "title": "实践是检验真理的唯一标准",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30404_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "4.1",
+      "title": "修辞立其诚",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30405_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "4.2",
+      "title": "怜悯是人的天性",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30406_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "5",
+      "title": "人应当坚持正义",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30407_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "6.1",
+      "title": "记念刘和珍君",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30408_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "6.2",
+      "title": "为了忘却的记念",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30409_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "7",
+      "title": "包身工",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30410_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "8.1",
+      "title": "荷花淀",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30411_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "8.2",
+      "title": "小二黑结婚",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30412_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "8.3",
+      "title": "党费",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30413_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "10",
+      "title": "苏武传",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30415_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "12",
+      "title": "玩偶之家",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30418_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "13.1",
+      "title": "迷娘",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30419_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "13.2",
+      "title": "致大海",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30420_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "13.3",
+      "title": "自己之歌",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30421_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修中册",
+      "lesson": "13.4",
+      "title": "树和天空",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30422_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "1.1",
+      "title": "氓",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30501_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "2",
+      "title": "孔雀东南飞",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30503_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "5.1",
+      "title": "阿Q正传",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30508_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "5.2",
+      "title": "边城",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30509_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "6.1",
+      "title": "大堰河——我的保姆",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30510_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "6.2",
+      "title": "再别康桥",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30511_langdu.html",
+      "looksModern": true,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "7.1",
+      "title": "一个消逝了的山村",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30512_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "7.2",
+      "title": "秦腔",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30513_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "8",
+      "title": "茶馆",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30514_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "13.1",
+      "title": "自然选择的证明",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30521_langdu.html",
+      "looksModern": false,
+      "recite": false
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "13.2",
+      "title": "宇宙的边疆",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30522_langdu.html",
+      "looksModern": false,
+      "recite": true
+    },
+    {
+      "volume": "选择性必修下册",
+      "lesson": "14",
+      "title": "天文学上的旷世之争",
+      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30523_langdu.html",
+      "looksModern": false,
+      "recite": false
+    }
+  ]
+}
