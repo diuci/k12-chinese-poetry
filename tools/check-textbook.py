@@ -414,6 +414,31 @@ def cross_volume_status(paras, hit, total):
     return 'mismatch', '正文 %d 句一句都没对上：那是另一篇' % total
 
 
+def best_window(key, book):
+    """教材里跟这句最贴近的那一段：窗口在教材里滑一遍，只试首尾三字出现过的位置，取最像的那个。
+
+    先前用「最长公共片段」当锚、从锚的位置开窗口，锚一偏整窗就偏：谏逐客书「今弃击瓮而就郑卫」
+    被记成「仓内多了『今弃』」——那是窗口起点错了，不是文字分歧。假的字面出入比没记更坏，
+    它会让人去改一个本来没错的正文。"""
+    cands = set()
+    for pat in (key[:3], key[-3:]):
+        i = book.find(pat)
+        while i >= 0:
+            cands.add(i)
+            i = book.find(pat, i + 1)
+    if not cands:
+        return None
+    best, score = None, -1.0
+    for pos in sorted(cands):
+        for back in (0, 4, 8):
+            s0 = max(0, pos - back)
+            w = book[s0:s0 + len(key) + 12]
+            r = difflib.SequenceMatcher(None, key, w, autojunk=False).ratio()
+            if r > score:
+                score, best = r, w
+    return best
+
+
 def diff_against(line, book):
     """对不上的那句，教材那边到底写的是什么。
 
@@ -423,16 +448,20 @@ def diff_against(line, book):
     key = norm(line)
     if not key or not book:
         return []
-    sm = difflib.SequenceMatcher(None, key, book, autojunk=False)
-    m = sm.find_longest_match(0, len(key), 0, len(book))
-    if m.size < 4:
+    window = best_window(key, book)
+    if window is None:
         return [{'ours': key, 'textbook': None}]
-    start = max(0, m.b - m.a)
-    window = book[start:start + len(key) + 40]
+    ops = [o for o in difflib.SequenceMatcher(None, key, window, autojunk=False).get_opcodes() if o[0] != 'equal']
+    # 窗口两头掉进来的「教材多出一段」不是文字分歧：窗口比这句长，头尾多出来的部分
+    # 全是我们不知道该怎么对齐的教材上下文。中间的差异才是真的。
+    head = 0
+    while head < len(ops) and ops[head][0] == 'insert' and ops[head][1] == 0:
+        head += 1
+    tail = len(ops) - 1
+    while tail >= 0 and ops[tail][0] == 'insert' and ops[tail][2] == len(key):
+        tail -= 1
     out = []
-    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, key, window, autojunk=False).get_opcodes():
-        if tag == 'equal':
-            continue
+    for tag, i1, i2, j1, j2 in ops[head:tail + 1]:
         out.append({'ours': key[i1:i2], 'textbook': window[j1:j2],
                     'context': window[max(0, j1 - 8):j2 + 8]})
     return out
@@ -466,8 +495,14 @@ def diff_kind(ours, textbook):
     if not o and not b:
         return 'same', '', ''
     if not o:
+        # 教材那边多出几个字：这是我们这篇少了那几个字，算字面出入，不算残影
+        if len(b) <= 6:
+            return 'missing', '', b
         return 'textbook-extra', '', b
     if not b:
+        # 仓内多出几个字：同理，算字面出入
+        if len(o) <= 6:
+            return 'missing', o, ''
         return 'ours-extra', o, ''
     # 两边都有内容：从左边数第一处连续不同的地方。剥完公共前后缀后，
     # 「眛」对「眜时秦昭王与楚婚」差的就是第一个字；后面那截是教材那边多出来的段落，
@@ -485,6 +520,30 @@ def diff_kind(ours, textbook):
 
 
 
+SENT_SPLIT = re.compile('[。？！；]')
+
+
+def sentence_units(poem):
+    """把「名句 + 全文」拆成句，并且去重。
+
+    两件事都得做：一是整段当一句比，一处单字出入会把整段判成没对上，差异还被记成
+    「教材那边多出一大段」（醉翁亭记「山之僧曰智仙也」差一个「曰」，先前就被埋在一整段里）；
+    二是名句的句子本来就在全文里，数两遍会把分母撑大一倍（观沧海 12 句其实是 6 句）。
+    """
+    units, seen = [], set()
+    for kind, lines in (('名句', poem.get('linesPunct') or []), ('全文', poem.get('fullLinesPunct') or [])):
+        for ln in lines:
+            for frag in SENT_SPLIT.split(ln):
+                key = norm(frag)
+                if not key:
+                    continue
+                if key in seen:
+                    continue
+                seen.add(key)
+                units.append((kind, frag, key))
+    return units
+
+
 def compare(poem, paras):
     """仓内每一句（名句 + 全文）去教材原文里找。
 
@@ -494,14 +553,8 @@ def compare(poem, paras):
     假缺口比假对上便宜，但它是假的就该说清楚。
     """
     book = norm(''.join(paras))
-    ours = []
-    for ln in (poem.get('linesPunct') or []):
-        ours.append(('名句', ln))
-    for ln in (poem.get('fullLinesPunct') or []):
-        ours.append(('全文', ln))
     hit, skipped, miss = 0, 0, []
-    for kind, ln in ours:
-        key = norm(ln)
+    for kind, ln, key in sentence_units(poem):
         if len(key) < 4:
             skipped += 1
             continue
@@ -769,12 +822,50 @@ def selftest():
     must(k21b == 'char' and (o21b, b21b) == ('眛', '眜'), '坏例21b：公共前后缀没剥干净：%s %r vs %r' % (k21b, o21b, b21b))
     must(diff_kind('', '于是入朝见威王曰臣诚知不如徐公美')[0] == 'textbook-extra',
          '坏例21c：教材那边多出一段没被这样分类')
-    must(diff_kind('桐城姚鼐记', None)[0] == 'ours-extra', '坏例21d：我们这篇教材里没有，却没被这样分类')
+    must(diff_kind('桐城姚鼐记', None)[0] == 'missing', '坏例21d：教材那边没有这几个字，没被当成字面出入')
     must(diff_kind('举世混浊何不随其流', '举世皆浊何不随其流') == ('char', '混', '皆'),
          '坏例21e：整句里只差一个字，没被判成单字出入')
     must(diff_kind('ABCD', 'ABCD')[0] == 'same', '坏例21f：完全一样的两段被当成差异')
     must(diff_kind('契阔谈䜩心念旧恩', '契阔谈讌心念旧恩') == ('char', '䜩', '讌'),
          '坏例21g：短歌行那一处的真实形状没被算对')
+    # 坏例24：按句比对——整段当一句会把一处单字出入埋掉，名句与全文重复会把分母撑大一倍
+    u24 = sentence_units({'linesPunct': ['海内存知己，天涯若比邻'], 'fullLinesPunct': ['海内存知己，天涯若比邻。无为在歧路，儿女共沾巾。']})
+    must(len(u24) == 2, '坏例24a：名句里那句被数了两遍，分母没去重：%d' % len(u24))
+    must(len(sentence_units({'linesPunct': [], 'fullLinesPunct': ['作亭者谁？山之僧曰智仙也。名之者谁？太守自谓也。']})) == 4,
+         '坏例24b：一整段没被拆成句')
+    h24, t24, s24, m24 = compare({'linesPunct': [], 'fullLinesPunct': ['作亭者谁？山之僧曰智仙也。名之者谁？太守自谓也。']},
+                                  ['作亭者谁？山之僧智仙也。名之者谁？太守自谓也。'])
+    must((h24, t24) == (3, 4), '坏例24c：整段里那一处出入把整段判成没对上：%d/%d' % (h24, t24))
+    must(bool(m24) and m24[0]['diff'][0].get('diffKind') == 'missing' and m24[0]['diff'][0].get('ours') == '曰',
+         '坏例24d：差一个「曰」没被记成字面出入：%s' % (m24 and m24[0]['diff'][0].get('diffKind')))
+    must(diff_kind('AB', None)[0] == 'missing' and diff_kind('A' * 20, None)[0] == 'ours-extra',
+         '坏例24e：短的一边没算字面出入，或者长的一边被误算成字面出入')
+    must(diff_kind('', '叩缶')[0] == 'missing', '坏例24f：教材多出「叩缶」两个字没被当成字面出入')
+    must(diff_kind('', '一大段' * 9)[0] == 'textbook-extra', '坏例24g：教材那边多出一大段被误算成字面出入')
+    # 坏例25：窗口不许起点错位——假的字面出入比没记更坏，它会让人去改本来没错的正文
+    book25 = '今弃击瓮叩缶而就郑卫退弹筝而取昭虞若是者何也快意当前适观而已矣'
+    d25 = diff_against('今弃击瓮而就郑卫，退弹筝而取昭虞，若是者何也', book25)
+    must(all((p.get('ours') or '') != '今弃' for p in d25),
+         '坏例25a：窗口起点错了，把没错的正文记成多了「今弃」：%s' % [p.get('ours') for p in d25])
+    must(any((p.get('textbook') or '') == '叩缶' for p in d25),
+         '坏例25b：教材真有「叩缶」而仓内没有，这一处没显形：%s' % [p.get('textbook') for p in d25])
+    must(best_window('完全无关的一句话', book25) is None, '坏例25c：教材里没有的句子也被硬凑了一个窗口')
+    must(diff_against('山之僧曰智仙也', '作亭者谁山之僧智仙也名之者谁')[0].get('ours') == '曰',
+         '坏例25d：差一个「曰」没被缩出来')
+    must(diff_against('', book25) == [] and diff_against('击瓮叩缶而就', '') == [], '坏例25e：空句或空教材崩了')
+    must(best_window('击瓮叩缶', book25) is not None, '坏例25f：教材里有的句子找不到窗口')
+    # 坏例26：窗口比这句长，头尾掉进来的教材文字不是文字分歧
+    book26 = '能克终者盖寡岂取之易而守之难乎昔取之而有余今守之而不足'
+    d26 = diff_against('岂其取之易守之难乎', book26)
+    must(all((p.get('textbook') or '') != '盖寡' for p in d26),
+         '坏例26a：窗口头掉进来的「盖寡」被记成教材多出的字：%s' % [p.get('textbook') for p in d26])
+    must(any((p.get('ours') or '') == '其' for p in d26), '坏例26b：仓内多的「其」这一处真差异被 trim 掉了')
+    d26c = diff_against('旦日客从外来与坐谈问之吾与徐公孰美', '旦日客从外来与坐谈问之客曰吾与徐公孰美客曰徐公不若君之美也')
+    must(any((p.get('textbook') or '') == '客曰' for p in d26c),
+         '坏例26c：句子中间的教材多出的「客曰」被 trim 掉了：%s' % [p.get('textbook') for p in d26c])
+    d26d = diff_against('山之僧曰智仙也', '山之僧智仙也名之者谁太守自谓也太守与客来饮于此')
+    must(all(len(p.get('textbook') or '') <= 6 for p in d26d),
+         '坏例26d：窗口尾巴掉进来的一大段被记成教材多出：%s' % [p.get('textbook') for p in d26d])
     # 坏例22：扩展区汉字不许在比对里被抹掉
     must('䜩' in norm('契阔谈䜩，心念旧恩'), '坏例22：䜩（扩展 A 区）被 norm 抹掉了')
     must('𪩘' in norm('绝𪩘多生怪柏'), '坏例22a：𪩘（扩展 C 区）被 norm 抹掉了')
@@ -994,7 +1085,12 @@ def main():
         for mm in miss:
             for piece in (mm.get('diff') or []):
                 if piece.get('diffKind') == 'char':
-                    chars.append({'ours': piece.get('oursChar'), 'textbook': piece.get('textbookChar'),
+                    chars.append({'kind': 'char', 'ours': piece.get('oursChar'), 'textbook': piece.get('textbookChar'),
+                                  'line': mm.get('line'), 'context': (piece.get('context') or '')[:40]})
+                elif piece.get('diffKind') == 'missing':
+                    # 一边没有这几个字：也是字面出入，也得有话交代
+                    _, o_side, b_side = diff_kind(piece.get('ours'), piece.get('textbook'))
+                    chars.append({'kind': 'missing', 'ours': o_side, 'textbook': b_side,
                                   'line': mm.get('line'), 'context': (piece.get('context') or '')[:40]})
                 else:
                     ghosts += 1

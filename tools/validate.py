@@ -363,6 +363,57 @@ def _note_sections(text):
     return '\n'.join(out)
 
 
+CHAR_NOTE_WORDS = ('作', '同', '取舍', '正文', '异体', '旧写', '没有', '未收', '节选', '署名', '疑误', '镜像')
+
+
+SCOPE_MARK = '统编教材用字已逐句核过'
+SCOPE_NUM = re.compile(r'本篇 (\d+) 句可比，(\d+) 句')
+SCOPE_K = re.compile(r'单字出入 (\d+) 处')
+
+
+def check_scope_numbers(title, text, row):
+    """篇内那句「已逐句核过：本篇 N 句可比，M 句…」里的数字必须跟核对表一致。
+    核对表更新了、篇内那句话没跟着更新，读者读到的就是旧结论——旧结论比没结论更容易被当真。"""
+    problems = []
+    for n, line in enumerate(text.split('\n')):
+        if SCOPE_MARK not in line:
+            continue
+        m = SCOPE_NUM.search(line)
+        if not m:
+            problems.append('%s 第 %d 行说「已逐句核过」却没写句数' % (title, n + 1))
+            continue
+        if row is None:
+            problems.append('%s：篇内写了核对结论，核对表里却没有这篇' % title)
+            continue
+        if (int(m.group(1)), int(m.group(2))) != (row.get('total'), row.get('hit')):
+            problems.append('%s：篇内写 %s/%s 句，核对表是 %s/%s' % (title, m.group(1), m.group(2), row.get('hit'), row.get('total')))
+        k = SCOPE_K.search(line)
+        if k and int(k.group(1)) != len(row.get('charDiffs') or []):
+            problems.append('%s：篇内写单字出入 %s 处，核对表是 %d 处' % (title, k.group(1), len(row.get('charDiffs') or [])))
+    return problems
+
+
+def selftest_scope_numbers():
+    """坏例子。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
+    row = {'total': 44, 'hit': 43, 'charDiffs': [{'kind': 'char'}]}
+    good = '# 过秦论\n\n统编教材用字已逐句核过：本篇 44 句可比，43 句与统编一致；单字出入 1 处。\n'
+    must(check_scope_numbers('过秦论', good, row) == [], '坏例1：数字与核对表一致却被误报')
+    bad = '# 过秦论\n\n统编教材用字已逐句核过：本篇 11 句可比，10 句与统编一致。\n'
+    must(len(check_scope_numbers('过秦论', bad, row)) == 1, '坏例2：篇内句数过期了却没被抓')
+    must(len(check_scope_numbers('过秦论', good, None)) == 1, '坏例3：核对表里没这篇，篇内却写了结论')
+    must(len(check_scope_numbers('甲', '# 甲\n统编教材用字已逐句核过。\n', row)) == 1, '坏例4：说核过却不写句数也被放过')
+    bad2 = '# 过秦论\n\n统编教材用字已逐句核过：本篇 44 句可比，43 句一致；单字出入 5 处。\n'
+    must(len(check_scope_numbers('过秦论', bad2, row)) == 1, '坏例5：单字出入处数对不上却没被抓')
+    must(check_scope_numbers('甲', '# 甲\n本篇正文与教材一致。\n', row) == [], '坏例6：没写核对话的篇被误报')
+    return tried[0]
+
+
 def check_char_diff_notes(title, text, char_diffs):
     """教材与本集每一处单字出入，篇内必须有一句话交代。
     「19/20 句对上」只说对上多少，没说差在哪个字；差在哪个字不写，
@@ -374,11 +425,14 @@ def check_char_diff_notes(title, text, char_diffs):
     for d in char_diffs:
         ours = (d.get('ours') or '').strip()
         book = (d.get('textbook') or '').strip()
-        if not ours or not book:
+        if d.get('kind') not in (None, 'char', 'missing'):
+            continue
+        sides = [x for x in (ours, book) if x]
+        if not sides:
             continue
         covered = False
         for line in note.split('\n'):
-            if ours in line and book in line and any(k in line for k in ('作', '同', '取舍', '正文', '异体', '旧写')):
+            if all(s in line for s in sides) and any(k in line for k in CHAR_NOTE_WORDS):
                 covered = True
                 break
         if not covered:
@@ -407,7 +461,14 @@ def selftest_char_diff_notes():
     bad5 = '# 过秦论\n\n## 异文\n\n- 甯越。\n'
     must(len(check_char_diff_notes('过秦论', bad5, [{'ours': '宁', 'textbook': '甯'}])) == 1, '坏例6：教材那个字单独出现也被当成交代了')
     must(check_char_diff_notes('过秦论', bad1, []) == [], '坏例7：没有单字出入时被误报')
-    must(check_char_diff_notes('过秦论', bad1, [{'ours': '', 'textbook': '一大段'}]) == [], '坏例8：残影被当成单字出入来要交代')
+    must(check_char_diff_notes('过秦论', bad1, [{'kind': 'textbook-extra', 'ours': '', 'textbook': '一大段'}]) == [], '坏例8：残影被当成单字出入来要交代')
+    must(len(check_char_diff_notes('醉翁亭记', bad1, [{'kind': 'missing', 'ours': '曰', 'textbook': ''}])) == 1,
+         '坏例8b：教材那边没有「曰」这一处没被抓')
+    must(check_char_diff_notes('醉翁亭记', '# 甲\n\n## 异文\n\n- 「山之僧曰智仙也」：统编作「山之僧智仙也」，无「曰」。正文不动。\n',
+                               [{'kind': 'missing', 'ours': '曰', 'textbook': ''}]) == [],
+         '坏例8c：交代过的「缺一边」被误报')
+    must(len(check_char_diff_notes('登泰山记', bad1, [{'kind': 'missing', 'ours': '桐城姚鼐记', 'textbook': ''}])) == 1,
+         '坏例8d：署名句教材没有，这一处没被抓')
     ok3 = '# 屈原列传\n\n## 异文\n\n- 「杀其将唐眛」：统编作「唐眜」，异体字出入，正文不动。\n'
     must(check_char_diff_notes('屈原列传', ok3, [{'ours': '眛', 'textbook': '眜'}]) == [], '坏例9：说成异体字出入的交代被误报')
     return tried[0]
@@ -623,6 +684,7 @@ def selftest():
     n_collision = selftest_collision_note()
     n_chardiff = selftest_char_diff_notes()
     n_stale = selftest_stale_todo()
+    n_scope = selftest_scope_numbers()
     year = 2026
     problems = []
 
@@ -1184,6 +1246,16 @@ def main():
                                                   a['charDiffs'])
         if cd_problems:
             err('教材与本集的字面出入有没交代的：%s' % '；'.join(cd_problems[:12]))
+
+        # 2.16e 篇内那句「已逐句核过」的数字必须跟核对表一致（核对表更新后不许留旧数字）
+        sn_problems = []
+        for p4 in poems:
+            txt4 = (ROOT / p4['_path']).read_text(encoding='utf-8')
+            if SCOPE_MARK not in txt4:
+                continue
+            sn_problems += check_scope_numbers(p4['title'], txt4, att_rows.get(p4['id']))
+        if sn_problems:
+            err('「已逐句核过」那句话与核对表不一致（跑 python tools/apply-textbook-scope.py --write）：%s' % '；'.join(sn_problems[:10]))
 
         # 2.16b 「统编教材里没找到这一课」这句话必须由登记簿撑着（data/absence-checks.json）：
         # 说没找到，就得先说清查了哪些课文目录、哪些语文园地页——不然这一档就是「教材没有」的委婉说法。
