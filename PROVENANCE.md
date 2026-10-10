@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 295 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 298 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -121,12 +121,14 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | rumengling | 如梦令 | 李清照 | 宋 | 卒 1155 | public-domain | S10+S9+S3 | 词 | 初中 · 八年级上册课外诵读 |
 | zijin | 子衿 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 诗经 | 初中 · 八年级下册课外诵读 |
 | xiaoshitan | 小石潭记 | 柳宗元 | 唐 | 卒 819 | public-domain | S3+S1+S2 | 文言 | 初中 · 八年级下册 |
+| zhuangzihuizi | 庄子与惠子游于濠梁之上 | 庄子 | 战国 | 卒 公元前 286 | public-domain | S10+S9+S3 | 文言 | 初中 · 八年级下册 |
 | tingzhongyouqishu | 庭中有奇树 | 佚名 | 汉 | 年代上限 1900 | public-domain | S10+S9+S3 | 古诗 | 初中 · 八年级上册课外诵读 |
 | shiwei | 式微 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 诗经 | 初中 · 八年级下册课外诵读 |
 | dedaoduozhu | 得道多助，失道寡助 | 孟子 | 战国 | 卒 公元前 289 | public-domain | S10+S9+S3 | 文言 | 初中 · 八年级上册 |
 | yugongyishan | 愚公移山 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S10+S9+S3 | 文言 | 初中 · 八年级上册 |
 | chunwang | 春望 | 杜甫 | 唐 | 卒 770 | public-domain | S3+S1+S2 | 五言 | 初中 · 八年级上册 |
 | wangdongtinghuzengzhangchengxiang | 望洞庭湖赠张丞相 | 孟浩然 | 唐 | 卒 740 | public-domain | S10+S9+S3 | 五言 | 初中 · 八年级下册课外诵读 |
+| hezhouji | 核舟记 | 魏学洢 | 明 | 卒 1625 | public-domain | S10+S9+S3 | 文言 | 初中 · 八年级下册 |
 | taohuayuanji | 桃花源记 | 陶潜 | 晋 | 卒 427 | public-domain | S3+S1+S2 | 文言 | 初中 · 八年级下册 |
 | liangfuxing | 梁甫行 | 曹植 | 汉 | 卒 232 | public-domain | S10+S9+S3 | 五言 | 初中 · 八年级上册课外诵读 |
 | huanxisha-yanque | 浣溪沙 | 晏殊 | 宋 | 卒 1055 | public-domain | S3+S1+S2 | 词 | 初中 · 八年级上册 |
@@ -163,6 +165,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | nananjun | 南安军 | 文天祥 | 宋 | 卒 1283 | public-domain | S10+S9+S3 | 五言 | 初中 · 九年级下册课外诵读 |
 | xianyangchengdonglou | 咸阳城东楼 | 许浑 | 唐 | 卒 858 | public-domain | S10+S9+S3 | 七言 | 初中 · 九年级上册课外诵读 |
 | shangshanxiaoxing | 商山早行 | 温庭筠 | 唐 | 卒 866 | public-domain | S10+S9+S3 | 五言 | 初中 · 九年级上册课外诵读 |
+| lishanhuaigu | 山坡羊 | 张养浩 | 元 | 卒 1329 | public-domain | S10+S9+S3 | 曲 | 初中 · 九年级下册 |
 | yueyanglouji | 岳阳楼记 | 范仲淹 | 宋 | 卒 1052 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级上册 |
 | zuoqianzhilanguanshizhisunxiang | 左迁至蓝关示侄孙湘 | 韩愈 | 唐 | 卒 824 | public-domain | S10+S9+S3 | 七言 | 初中 · 九年级上册课外诵读 |
 | caoguilunzhan | 曹刿论战 | 左丘明 | 先秦 | 卒 公元前 422 | public-domain | S3+S1+S2 | 文言 | 初中 · 九年级下册 |

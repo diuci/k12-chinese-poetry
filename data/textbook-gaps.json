@@ -3,11 +3,11 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 215,
-    "modern": 40,
+    "total": 212,
+    "modern": 39,
     "lessonEntries": 781,
-    "poems": 295,
-    "reciteGaps": 97,
+    "poems": 298,
+    "reciteGaps": 94,
     "primaryGaps": 337
   },
   "rows": [
@@ -597,14 +597,6 @@
     },
     {
       "volume": "八年级下册",
-      "lesson": "11",
-      "title": "核舟记",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/21011_langdu.html",
-      "looksModern": true,
-      "recite": true
-    },
-    {
-      "volume": "八年级下册",
       "lesson": "13",
       "title": "最后一次讲演",
       "url": "https://yw.suyang123.com/chuzhong/banianji/21018_langdu.html",
@@ -664,14 +656,6 @@
       "lesson": "20",
       "title": "一滴水经过丽江",
       "url": "https://yw.suyang123.com/chuzhong/banianji/21025_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级下册",
-      "lesson": "自读",
-      "title": "庄子与惠子游于濠梁之上",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/21027_langdu.html",
       "looksModern": false,
       "recite": true
     },
@@ -1040,14 +1024,6 @@
       "lesson": "自读",
       "title": "南乡子·登京口北固亭有怀",
       "url": "https://yw.suyang123.com/chuzhong/jiunianji/21234_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "九年级下册",
-      "lesson": "自读",
-      "title": "山坡羊·骊山怀古",
-      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21239_langdu.html",
       "looksModern": false,
       "recite": true
     },

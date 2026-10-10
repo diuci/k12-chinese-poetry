@@ -2,7 +2,7 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-11",
   "counts": {
-    "match": 233,
+    "match": 236,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -576,6 +576,16 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "lishanhuaigu",
+      "title": "山坡羊",
+      "author": "张养浩",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级下册",
+      "textbookVolume": "九年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "caoguilunzhan",
       "title": "曹刿论战",
       "author": "左丘明",
@@ -988,6 +998,26 @@
       "volume": "八年级下册",
       "textbookVolume": "八年级下册",
       "textbookLesson": "10"
+    },
+    {
+      "id": "zhuangzihuizi",
+      "title": "庄子与惠子游于濠梁之上",
+      "author": "庄子",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "hezhouji",
+      "title": "核舟记",
+      "author": "魏学洢",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "11"
     },
     {
       "id": "taohuayuanji",
