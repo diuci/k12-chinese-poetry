@@ -40,6 +40,7 @@ jobs:
           python3 tools/check-textbook.py --selftest
           python3 tools/apply-textbook-status.py --selftest
           python3 tools/apply-volume-findings.py --selftest
+          python3 tools/apply-textbook-scope.py --selftest
           python3 tools/inject-annotations.py --selftest
           python3 tools/selftest-overlap.py
           python3 tools/apply-author-years.py --selftest
@@ -63,6 +64,8 @@ jobs:
           python3 tools/build.py
           python3 tools/apply-textbook-status.py
           python3 tools/apply-volume-findings.py
+          # 空跑：篇内还有过期话或过期数字就红（链条里同一步）
+          python3 tools/apply-textbook-scope.py
           python3 tools/apply-author-years.py --check
           python3 tools/gen-provenance.py --check
           python3 tools/fix-meta-lines.py --check
