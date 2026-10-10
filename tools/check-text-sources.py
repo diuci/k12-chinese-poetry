@@ -343,6 +343,46 @@ def clean(text, table):
     return re.sub(r'\s', '', text), notes
 
 
+def single_table(table):
+    """OpenCC 的歧义条目一个繁体字给两个候选（「藉→藉 借」「鍾→钟 锺」「乾→干 乾」「彷→彷 仿」）。
+    比对时两个候选都要认；引用来源页时不许把两个候选一起写出来——页里只写了一个字。
+    这里把歧义条目改成「照抄页里那个字」：引用不造字。"""
+    out = {}
+    for k, v in table.items():
+        if ' ' in v:
+            out[k] = k  # 歧义条目：照抄页里那个字
+        elif all('\u4e00' <= ch <= '\u9fff' for ch in v):
+            out[k] = v
+        else:
+            # 表把页里的字换成扩展区残迹（「巘→𪩘」）：页面上看不到这个字，是表自己的毛病，引用不许照搬
+            out[k] = k
+    return out
+
+
+def clean_quote(text, table):
+    """给「页里到底怎么写的」用的那份文本：剥 markup、剥标点，但不把歧义字换成另一个候选。
+    比对用 clean()（两个候选都认，宁可宽），引用用这一份（页里写的是什么就是什么）。"""
+    return clean(text, single_table(table))[0]
+
+
+def strip_only(text):
+    """页里原样：剥实体、剥标签、剥模板、剥标点，一个字都不换。
+
+    连「照抄页里那个字」都嫌多：表里「巘→𪩘」这种条目会把页里的字换成页里没写的字。
+    要问「页里到底写了哪些字」，只能用这一份。"""
+    text = re.sub(r'&#?[a-zA-Z0-9]+;', ' ', text)
+    for _ in range(4):
+        new = re.sub(r'\{\{[^{}]*\}\}', ' ', text)
+        if new == text:
+            break
+        text = new
+    text = re.sub(r'\[\[(?:[^\]|]*\|)?([^\]]*)\]\]', r'\1', text)
+    text = re.sub(r'<[^>]+>', ' ', text)
+    for ch in M.PUNCT + '\u3000\xa0↑↓*#':
+        text = text.replace(ch, '')
+    return re.sub(r'\s', '', text)
+
+
 # 同一个字的另一个写法（不是繁简，是异体）：维基文库写作「一瓢飮」「飮水」「于於」，
 # 教材与仓里写作「一瓢饮」「饮水」「于」。比对时必须认这两个是同一个字，否则整句判成找不到。
 # 下面每一对都是这一轮出处核对里在来源页上亲眼看到的写法，不是猜的：
@@ -536,14 +576,21 @@ def nearest(line, txt):
     # 在四库那种长页上，窗口里塞进十个字的公有领域声明，相似度被稀释到 0.54——
     # 「传其事以为官戒」明明在页里（只差一个「也」字），却被写成「页里没找到」；
     # 「泉水激石冷冷作响」「夫子哂一作讯之」同理。那是对来源页说的假话，不是我们的口径。
-    i = st.find(sl[0])
-    while i >= 0:
-        for span in (L + 2, L + 4, L + 6):
-            w = st[i:i + span]
-            r = difflib.SequenceMatcher(None, sl, w).ratio()
-            if r > best[0]:
-                best = (r, w)
-        i = st.find(sl[0], i + 1)
+    # 锚点取句子前三个字各试一遍：页里第一个字可能写作另一个字（我们作「哪里」、
+    # 页作「那里」），只锚第一个字就找不到那段，一句明明写作别的样子会被写成「页里没找到」。
+    anchors = []
+    for ch in sl[:3]:
+        if ch not in anchors:
+            anchors.append(ch)
+    for a in anchors:
+        i = st.find(a)
+        while i >= 0:
+            for span in (L + 2, L + 4, L + 6):
+                w = st[i:i + span]
+                r = difflib.SequenceMatcher(None, sl, w).ratio()
+                if r > best[0]:
+                    best = (r, w)
+            i = st.find(a, i + 1)
     # 句首字在页里一次都没出现（编者补的主语、我们这边多出来的字）：退回网格扫，
     # 让页里别的位置也有机会被指出来。
     if best[0] < 0.55:
@@ -682,6 +729,7 @@ def main():
                 pages = ov['pages']
                 if ov.get('union'):
                     joined = []
+                    joined_q = []
                     vnotes = []
                     valts = []
                     for pg in pages:
@@ -689,6 +737,7 @@ def main():
                             real, raw = page_text(pg)
                             tt, nn = clean(raw, table)
                             joined.append(tt)
+                            joined_q.append(clean_quote(raw, table))
                             vnotes.extend(nn)
                         except Exception:
                             continue
@@ -698,6 +747,7 @@ def main():
                         except Exception:
                             pass
                     txt_all = ''.join(joined)
+                    txtq_all = ''.join(joined_q)
                     hit = sum(1 for ln in lines if ln and line_in(ln, txt_all))
                     best = {'page': ' + '.join(pages), 'hit': hit, 'notes': vnotes, 'len': len(txt_all), 'txt': txt_all}
                     if best['hit'] == len(lines):
@@ -715,7 +765,7 @@ def main():
                     for ln in lines:
                         if not ln or line_in(ln, txt_all):
                             continue
-                        rec['miss'].append({'line': ln, 'nearest': nearest(ln, txt_all)})
+                        rec['miss'].append({'line': ln, 'nearest': nearest(ln, txtq_all)})
                     rec['variantNotes'] = best['notes'][:12]
                     rec['variants'] = valts[:40]
                     rec['override'] = ov.get('note', '')
@@ -731,7 +781,8 @@ def main():
                     continue
                 hit = sum(1 for ln in lines if ln and line_in(ln, txt))
                 if best is None or hit > best['hit']:
-                    best = {'page': real, 'hit': hit, 'notes': notes, 'len': len(txt), 'txt': txt}
+                    best = {'page': real, 'hit': hit, 'notes': notes, 'len': len(txt), 'txt': txt,
+                            'txtq': clean_quote(raw, table)}
                 if hit == len(lines):
                     break
                 time.sleep(0.10)
@@ -746,11 +797,13 @@ def main():
                 except Exception:
                     rec['variants'] = []
                 src_txt = best['txt']
+                # 「页里最像的一段」是给人读的，也是异文条目的依据：用不造字的那一份。
+                src_q = best.get('txtq') or best['txt']
                 rec['miss'] = []
                 for ln in lines:
                     if not ln or line_in(ln, src_txt):
                         continue
-                    near = nearest(ln, src_txt)
+                    near = nearest(ln, src_q)
                     rec['miss'].append({'line': ln, 'nearest': near})
                 if rec['hit'] == rec['lines']:
                     stats['attested'] += 1
@@ -973,8 +1026,32 @@ def selftest():
              '此唐朝作品在全世界都属于公有领域因为作者逝世已经超过100年且作品于1931年1月1日之前出版')
     must(nearest('传其事以为官戒也', _t17c) is not None,
          '坏例17c：页尾声明把窗口撑长，页里明写着的那一段（只差一个「也」）没报出来')
+    # 坏例17e：页里第一个字写作另一个字（我们作「哪里」、页作「那里」），只锚第一个字就找不到那段。
+    _t17e = ('喇叭唢呐曲儿小腔儿大官船来往乱如麻全仗你抬声价军听了军愁民听了民怕那里去辨甚麼真共假'
+             '眼见的吹翻了这家吹伤了那家只吹的水尽鹅飞罢')
+    _n17e = nearest('哪里去辨甚么真共假', _t17e)
+    must(_n17e is not None and '去辨' in _n17e['source'],
+         '坏例17e：页里作「那里去辨甚麼真共假」，这一句被说成「页里没找到」（锚点只有第一个字）')
     must(nearest('江畔独步寻花黄四娘家花满蹊', _t17a + _t17b + _t17c) is None,
          '坏例17d：把窗口找松了以后，页里真没有的句子也该给个「最像的」——不许造出来')
+    # 坏例19：表里「巘→𪩘」是单值条目，照转会写出一个页里根本没有的扩展区字。
+    #          引用文本里必须还是页里那个「巘」。
+    _q19 = clean_quote('重湖疊巘清', load_t2s())
+    must('巘' in _q19 and '𪩘' not in _q19, '坏例19：引用文本把页里的「巘」换成了页里没有的「𪩘」（%s）' % _q19)
+    # 坏例18：OpenCC 的歧义条目一个繁体字给两个候选。比对时两个都认，引用时不许把两个都写出来——
+    # 「来源页作「藉借寇兵」」这种句子就是这么来的：页里只写「藉」，我们把两个候选拼在一起，
+    # 等于对来源页说了一句它自己没写过的话。
+    _t18 = ('此所謂藉寇兵而齎盜糧者也鍾子期死乾隆三十九年彷彿夢魂歸帝所')
+    _q18 = clean_quote(_t18, load_t2s())
+    must('藉借' not in _q18 and '藉' in _q18, '坏例18：引用文本把歧义条目两个候选拼在一起（%s）' % _q18)
+    must('钟锺' not in _q18 and '鍾' in _q18, '坏例18b：页里写作「鍾」，引用文本却写成了别的（%s）' % _q18)
+    must('乾隆' in _q18 and '干隆' not in _q18, '坏例18c：「乾隆」被歧义条目改成了「干隆」')
+    must('彷佛' in _q18 and '仿仿佛' not in _q18 and '彷彷' not in _q18,
+         '坏例18d：页里写作「彷」，引用文本把它换成了另一个候选')
+    # 反向：比对那一份照旧两个候选都认——收紧引用口径不许把已经对上的句子判成没对上。
+    _m18 = clean(_t18, load_t2s())[0]
+    must(line_in('此所谓借寇兵而赍盗粮者也', _m18) is not None,
+         '坏例18e：比对文本不再认歧义条目的另一个候选，已经对上的句子被判成没对上')
     print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
