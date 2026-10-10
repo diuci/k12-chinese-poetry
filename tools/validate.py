@@ -309,6 +309,48 @@ def selftest_apparatus_in_body():
     print('[ok] 正文混进校勘话自检通（7 个坏例子全部试到）')
 
 
+def check_collision_note(title, text, volumes):
+    """同名撞车那几篇必须在篇内「收录范围」里把教材那边那篇说清楚：撞在哪一册。
+    只靠 frontmatter 那七个字，学生看不出教材里的《凉州词》是王翰的、不是他要背的王之涣的。"""
+    if not volumes:
+        return ['%s：核对表说同名撞车却没写撞在哪一册' % title]
+    i = text.find('## 收录范围')
+    if i < 0:
+        return ['%s：同名撞车这一篇没有「收录范围」小节，读者看不出教材里那篇同名的是另一首' % title]
+    j = text.find('\n## ', i + 3)
+    sec = text[i:j] if j > 0 else text[i:]
+    # 只出现在链接里的册次不算说清——链接是给核验用的，学生读的是这一节的正文。
+    sec_read = re.sub(r'https?://\S+', '', sec)
+    missing = [v for v in volumes if v not in sec_read]
+    if missing:
+        return ['%s：「收录范围」没写出教材那篇同名的在哪一册（%s）' % (title, '、'.join(missing))]
+    return []
+
+
+def selftest_collision_note():
+    """坏例子：这一条管的是「学生能不能看出教材里那篇不是他要背的那篇」。"""
+    tried = [0]
+
+    def must(cond, msg):
+        tried[0] += 1
+        assert cond, msg
+
+    ok = '# 凉州词\n\n## 收录范围\n\n统编四年级上册里那首是王翰的。\n出处：x\n\n## 注释\n'
+    must(check_collision_note('凉州词', ok, ['四年级上册']) == [], '坏例1：写清了册次的被误报')
+    bad1 = '# 凉州词\n\n## 注释\n\n- 凉州词：乐府曲名。\n'
+    must(len(check_collision_note('凉州词', bad1, ['四年级上册'])) == 1, '坏例2：没有收录范围小节却没被抓')
+    bad2 = '# 凉州词\n\n## 收录范围\n\n教材里那首是另一篇。\n\n## 注释\n'
+    must(len(check_collision_note('凉州词', bad2, ['四年级上册'])) == 1, '坏例3：收录范围里没写册次却没被抓')
+    must(len(check_collision_note('凉州词', ok, [])) == 1, '坏例4：核对表没写撞在哪一册也被当成没问题')
+    bad6 = '# 凉州词\n\n## 收录范围\n\n教材里那首是另一篇。\n\n## 异文\n\n四年级上册。\n'
+    must(len(check_collision_note('凉州词', bad6, ['四年级上册'])) == 1, '坏例5：册次写在别的小节里也被当成说清了')
+    bad7 = '# 相见欢\n\n## 收录范围\n\n八年级上册那首是朱敦儒的。\n\n## 注释\n'
+    must(len(check_collision_note('相见欢', bad7, ['七年级上册'])) == 1, '坏例6：写的是别的册次也被当成说清了')
+    bad8 = '# 凉州词\n\n## 收录范围\n\n教材里那首是另一篇。\n出处：https://example.com/四年级上册\n\n## 注释\n'
+    must(len(check_collision_note('凉州词', bad8, ['四年级上册'])) == 1, '坏例7：册次只出现在链接里也被当成说清了')
+    return tried[0]
+
+
 def load_poems():
     """复用 build.py 的解析逻辑，避免两处对frontmatter 的理解不一致。"""
     sys.path.insert(0, str(ROOT / 'tools'))
@@ -482,6 +524,7 @@ def selftest():
     selftest_duplicate_sections()
     selftest_apparatus_in_body()
     """这条校验自己会不会漏：坏样本必须被抓到，好样本不能误报。"""
+    n_collision = selftest_collision_note()
     year = 2026
     problems = []
 
@@ -562,7 +605,7 @@ def selftest():
           '背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报、同名小节重复被抓、'
           '教材核对表结论与篇目状态不一致被抓、核对表缺这一篇被抓、同一册正文不误报、跨册同名另一篇被抓、'
           '园地证据加同名另一篇不误报、册次对不上没交代被抓、册次对不上有交代不误报、没见过的结论被抓、'
-          '七档标签与 apply-textbook-status 不分叉、说「没找到」必须有登记簿撑着被抓、登记簿过期被抓——都试到了')
+          '七档标签与 apply-textbook-status 不分叉、说「没找到」必须有登记簿撑着被抓、登记簿过期被抓——同名撞车没在「收录范围」里交代被抓、核对表没写撞在哪一册被抓、册次写在别的小节里不算说清被抓——都试到了')
     return 0
 
 
@@ -1011,6 +1054,20 @@ def main():
                 err('教材核对表的结论与篇目状态对不上：%s' % '；'.join(drift[:8]))
             if dangling:
                 err('教材核对表里的「册次对不上」没有交代：%s' % '；'.join(dangling[:8]))
+
+        # 2.16c 同名撞车那几篇：篇内「收录范围」必须写出教材那边那篇在哪一册。
+        # frontmatter 那七个字「统编教材收的是同名另一篇」是给机器看的，学生读的是正文。
+        clash_problems = []
+        for c in vf.get('titleCollision', []):
+            p2 = next((q for q in poems if q['id'] == c['id']), None)
+            if not p2:
+                clash_problems.append('%s：核对表说同名撞车，仓里却没有这篇' % c['id'])
+                continue
+            clash_problems += check_collision_note(p2['title'],
+                                                   (ROOT / p2['_path']).read_text(encoding='utf-8'),
+                                                   c.get('sameTitleVolumes') or [])
+        if clash_problems:
+            err('同名撞车那几篇没在「收录范围」里说清教材那边那篇：%s' % '；'.join(clash_problems[:8]))
 
         # 2.16b 「统编教材里没找到这一课」这句话必须由登记簿撑着（data/absence-checks.json）：
         # 说没找到，就得先说清查了哪些课文目录、哪些语文园地页——不然这一档就是「教材没有」的委婉说法。

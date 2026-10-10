@@ -196,6 +196,64 @@ def garden_match(poem, garden):
             if name in cands:
                 yield vol, raw, garden_name_raw, url
 
+def garden_authors():
+    """{（册, 对齐篇名): [页面上写的作者]}。园地证据要说「这一篇是谁的」，只看篇名不够——
+    凉州词这个名字下统编有两首：四年级上册课文里是王翰的，五年级下册园地四里是王之涣的。"""
+    if not GARDEN.exists():
+        return {}
+    data = json.loads(GARDEN.read_text(encoding='utf-8'))
+    out = {}
+    for vol, rows in (data.get('volumes') or {}).items():
+        for r in rows:
+            if not r.get('title'):
+                continue
+            out.setdefault((vol, garden_name(r['title'])), []).append((r.get('authorRaw') or '').strip())
+    return out
+
+
+def garden_sections():
+    """{（册, 对齐篇名): 页面上写的栏目}。「语文园地四·词句段运用」与「语文园地四·日积月累」
+    是两栏，学生在不同的地方背——只说「园地收了」不够。"""
+    if not GARDEN.exists():
+        return {}
+    data = json.loads(GARDEN.read_text(encoding='utf-8'))
+    out = {}
+    for vol, rows in (data.get('volumes') or {}).items():
+        for r in rows:
+            if not r.get('title'):
+                continue
+            sec = (r.get('section') or '').strip()
+            if sec:
+                out[(vol, garden_name(r['title']))] = sec
+    return out
+
+
+def garden_author_match(poem, author_raw):
+    """园地页上写的作者与仓内作者对不对得上。「[唐代] 王之涣」→「王之涣」。
+    页面上没写作者就当对不上——猜一次的成本是把另一首诗算到我们这篇头上。"""
+    a = re.sub(r'^\[[^\]]*\]\s*', '', author_raw or '').strip()
+    if not a:
+        return False
+    return a == (poem.get('author') or '').strip()
+
+
+def collision_garden_note(poem, garden_tbl, gauthors, vol, gsections=None):
+    """课文目录里同名的是另一篇时，同一册的语文园地有没有我们这一篇。
+    有就要说出来——以前这条分支直接判「教材收的是同名另一篇」就 continue，
+    园地证据根本没机会说话，王之涣《凉州词》就是这么被说成「教材没收」的。
+    作者对不上、园地在别的册、页面没写作者，都不算。"""
+    if not garden_tbl:
+        return None
+    for v, raw, gname, url in garden_match(poem, garden_tbl):
+        if v != vol:
+            continue
+        for a in gauthors.get((vol, garden_name(raw)), []):
+            if garden_author_match(poem, a):
+                sec = (gsections or {}).get((v, garden_name(raw))) or gname
+                return v, raw, sec, url
+    return None
+
+
 
 def lesson_name(s):
     """覆盖表核验用的整名：去课号、括号、书名号、空白、间隔号，再去掉结尾的「节选/并序」。
@@ -619,6 +677,31 @@ def selftest():
     must('查过的地方' in n19m and '八页园地逐页读过' in n19m,
          '坏例19m：登记簿写了查了什么，note 里却没带上：%s' % n19m)
 
+    # 坏例20：课文目录里同名的是另一篇，同一册的语文园地却收了我们这一篇——证据不许被吞掉
+    fake_g20 = {'五年级下册': [('凉州词', '凉州词', '语文园地四', 'u5d')],
+                '四年级上册': [('凉州词', '凉州词', '课文 21', 'u4a')]}
+    ga20 = {('五年级下册', '凉州词'): ['[唐代] 王之涣'], ('四年级上册', '凉州词'): ['[唐代] 王翰']}
+    got20 = collision_garden_note({'title': '凉州词', 'author': '王之涣'}, fake_g20, ga20, '五年级下册')
+    must(got20 and got20[0] == '五年级下册', '坏例20：同一册园地收了这一篇，碰撞分支却没把证据说出来：%s' % (got20,))
+    must(got20 and got20[2] == '语文园地四', '坏例20a：园地栏目没带出来，读者不知道在哪一栏：%s' % (got20,))
+    # 坏例20g：园地表里写了具体栏目（词句段运用 / 日积月累），note 必须用那一栏，不许糊成「语文园地」
+    got20g = collision_garden_note({'title': '凉州词', 'author': '王之涣'}, fake_g20, ga20, '五年级下册',
+                                   {('五年级下册', '凉州词'): '语文园地四·词句段运用'})
+    must(got20g and got20g[2] == '语文园地四·词句段运用', '坏例20g：栏目写在园地表里却没被带出来：%s' % (got20g,))
+    # 坏例20b：园地那篇作者对不上（王翰 vs 王之涣）——不许当成「我们这篇也收了」
+    must(collision_garden_note({'title': '凉州词', 'author': '王之涣'}, fake_g20, ga20, '四年级上册') is None,
+         '坏例20b：那一册园地写的是王翰的凉州词，也被算成王之涣这一篇')
+    # 坏例20c：园地在别的册——不算「同一册收了」
+    must(collision_garden_note({'title': '凉州词', 'author': '王之涣'}, {'四年级上册': [('凉州词', '凉州词', '语文园地四', 'u4a')]},
+                               {('四年级上册', '凉州词'): ['[唐代] 王之涣']}, '五年级下册') is None,
+         '坏例20c：别的册的园地证据被当成同一册收了')
+    # 坏例20d：园地页没写作者——不许猜是谁的
+    must(collision_garden_note({'title': '凉州词', 'author': '王之涣'}, fake_g20, {}, '五年级下册') is None,
+         '坏例20d：园地表没写作者也被当成对上了')
+    # 坏例20e：作者写法带朝代前缀，比对不许被前缀绊倒
+    must(garden_author_match({'author': '王之涣'}, '[唐代] 王之涣'), '坏例20e：朝代前缀没剥掉，同一位作者被判成两个人')
+    must(not garden_author_match({'author': '王之涣'}, ''), '坏例20f：空作者也被当成对上')
+
     print('[ok] check-textbook --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
@@ -646,6 +729,8 @@ def main():
     indexes = {}
     results = []
     garden = load_garden()
+    gauthors = garden_authors()
+    gsections = garden_sections()
     garden_rules = load_garden_rules()
     coverage = load_coverage()
     blind = garden_blind()
@@ -792,6 +877,15 @@ def main():
                    else ('教材在「%s」有同名课文：%s，不是册次写错' % (found_vol, why))
             entry.update(status=status, lesson=name, url=url, hit=hit, total=total,
                          declaredVolume=p.get('volume'), textbookVolume=found_vol, note=note)
+            # 目录里同名的是另一篇，不等于我们这篇教材没收：同一册的语文园地可能收了它。
+            # 以前这里直接判「教材收的是同名另一篇」就 continue，园地证据根本没机会说话——
+            # 王之涣《凉州词》就是这么被说成「教材那边是另一篇」的，而统编五年级下册
+            # 《语文园地四》词句段运用里收的正是王之涣这一首（作者对得上）。
+            ggot = collision_garden_note(p, garden, gauthors, vol, gsections)
+            if status == 'mismatch' and ggot:
+                entry.update(gardenVolume=ggot[0], gardenTitle=ggot[1], garden=ggot[2], gardenUrl=ggot[3])
+                note += ('；但同一册的语文园地里有这一篇（作者对得上）：%s《%s》·%s——'
+                         '园地页与目录页同源（同一镜像），只算一条来源' % (ggot[0], ggot[1], ggot[2]))
             results.append(entry)
             print('[%d/%d] !! %s：教材在「%s」有同名课文（%s）' % (
                 len(results), len(poems), p['title'], found_vol, note))

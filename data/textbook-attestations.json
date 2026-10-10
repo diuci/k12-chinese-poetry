@@ -2098,7 +2098,11 @@
       "total": 2,
       "declaredVolume": "五年级下册",
       "textbookVolume": "四年级上册",
-      "note": "教材在「四年级上册」有同名课文：正文 2 句一句都没对上：那是另一篇，不是册次写错"
+      "note": "教材在「四年级上册」有同名课文：正文 2 句一句都没对上：那是另一篇，不是册次写错",
+      "gardenVolume": "五年级下册",
+      "gardenTitle": "凉州词",
+      "garden": "语文园地四·词句段运用",
+      "gardenUrl": "https://yw.suyang123.com/xiaoxue/wunianji/1172_langdu.html"
     },
     {
       "id": "sishitianyuan-31",
