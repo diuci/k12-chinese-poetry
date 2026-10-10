@@ -2,11 +2,11 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-10",
   "stats": {
-    "attested": 216,
+    "attested": 223,
     "partial": 55,
     "notfound": 0,
     "nosource": 1,
-    "withVariants": 78
+    "withVariants": 82
   },
   "results": [
     {
@@ -222,29 +222,13 @@
       "title": "江南逢李龟年",
       "author": "杜甫",
       "stage": "初中",
-      "page": "江南逢李龜年",
-      "url": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%8D%97%E9%80%A2%E6%9D%8E%E9%BE%9C%E5%B9%B4",
+      "page": "唐人萬首絶句選 (四庫全書本)/卷3",
+      "url": "https://zh.wikisource.org/wiki/%E5%94%90%E4%BA%BA%E8%90%AC%E9%A6%96%E7%B5%B6%E5%8F%A5%E9%81%B8%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B73",
       "lines": 2,
-      "hit": 1,
-      "miss": [
-        {
-          "line": "岐王宅里寻常见崔九堂前几度闻",
-          "nearest": {
-            "line": "岐王宅里寻常见崔九堂前几度闻",
-            "source": "岐王宅里寻常见崔九堂前㡬度闻正是",
-            "ratio": 0.867
-          }
-        }
-      ],
+      "hit": 2,
+      "miss": [],
       "variantNotes": [],
-      "variants": [
-        {
-          "ours": "是",
-          "other": "值",
-          "context": "滌、中書令湜之弟。堂前㡬度聞。正是江南好風景，落花時節又逢君。Category:唐詩Ca",
-          "page": "江南逢李龜年"
-        }
-      ]
+      "variants": []
     },
     {
       "id": "tongguan",
@@ -749,6 +733,39 @@
           "page": "咸陽城東樓"
         }
       ]
+    },
+    {
+      "id": "shangshanxiaoxing",
+      "title": "商山早行",
+      "author": "温庭筠",
+      "stage": "初中",
+      "page": "商山早行",
+      "url": "https://zh.wikisource.org/wiki/%E5%95%86%E5%B1%B1%E6%97%A9%E8%A1%8C",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "明",
+          "other": "照",
+          "context": "月，人跡板橋霜。槲葉落山路，枳花明驛牆。因思杜陵夢，鳧雁滿回塘。",
+          "page": "商山早行"
+        }
+      ]
+    },
+    {
+      "id": "yueyeyisheidi",
+      "title": "月夜忆舍弟",
+      "author": "杜甫",
+      "stage": "初中",
+      "page": "月夜憶舍弟",
+      "url": "https://zh.wikisource.org/wiki/%E6%9C%88%E5%A4%9C%E6%86%B6%E8%88%8D%E5%BC%9F",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "changshaguojiayizhai",
@@ -2157,6 +2174,55 @@
       ]
     },
     {
+      "id": "bosuanzi-yongmei",
+      "title": "卜算子",
+      "author": "陆游",
+      "stage": "初中",
+      "page": "卜算子 (陸游)",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%9C%E7%AE%97%E5%AD%90%20%28%E9%99%B8%E6%B8%B8%29",
+      "lines": 4,
+      "hit": 3,
+      "miss": [
+        {
+          "line": "已是黄昏独自愁更着风和雨",
+          "nearest": {
+            "line": "已是黄昏独自愁更着风和雨",
+            "source": "已是黄昏独自愁更著风和雨无意",
+            "ratio": 0.846
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "只",
+          "other": "惟",
+          "context": "春，一任群芳妒。零落成泥碾作塵，只有香如故。Category:宋词en:Translat",
+          "page": "卜算子 (陸游)"
+        }
+      ]
+    },
+    {
+      "id": "bosuanzi-huangzhou",
+      "title": "卜算子",
+      "author": "苏轼",
+      "stage": "初中",
+      "page": "卜算子（蘇軾）",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%9C%E7%AE%97%E5%AD%90%EF%BC%88%E8%98%87%E8%BB%BE%EF%BC%89",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "时",
+          "other": "谁",
+          "context": "缺月掛疏桐，漏斷人初靜。时見幽人獨往來，縹緲孤鴻影。驚起卻回頭，有恨無人省。揀盡",
+          "page": "卜算子（蘇軾）"
+        }
+      ]
+    },
+    {
       "id": "zijin",
       "title": "子衿",
       "author": "佚名",
@@ -2178,6 +2244,53 @@
       "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E5%BC%8F%E5%BE%AE",
       "lines": 3,
       "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "wangdongtinghuzengzhangchengxiang",
+      "title": "望洞庭湖赠张丞相",
+      "author": "孟浩然",
+      "stage": "初中",
+      "page": "望洞庭湖贈張丞相",
+      "url": "https://zh.wikisource.org/wiki/%E6%9C%9B%E6%B4%9E%E5%BA%AD%E6%B9%96%E8%B4%88%E5%BC%B5%E4%B8%9E%E7%9B%B8",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [
+        "一作临洞庭"
+      ],
+      "variants": [
+        {
+          "ours": "撼",
+          "other": "动",
+          "context": "水平，涵虛混太清。氣蒸雲夢澤，波撼岳陽城。欲濟無舟楫，端居恥聖明。坐观垂釣者，徒有",
+          "page": "望洞庭湖贈張丞相"
+        },
+        {
+          "ours": "坐观",
+          "other": "徒怜",
+          "context": "岳陽城。欲濟無舟楫，端居恥聖明。坐观垂釣者，徒有羨魚情。==收录==*Page:Sib",
+          "page": "望洞庭湖贈張丞相"
+        },
+        {
+          "ours": "者",
+          "other": "叟",
+          "context": "濟無舟楫，端居恥聖明。坐观垂釣者，徒有羨魚情。==收录==*Page:SibuCong",
+          "page": "望洞庭湖贈張丞相"
+        }
+      ]
+    },
+    {
+      "id": "songyouren",
+      "title": "送友人",
+      "author": "李白",
+      "stage": "初中",
+      "page": "送友人 (李白)",
+      "url": "https://zh.wikisource.org/wiki/%E9%80%81%E5%8F%8B%E4%BA%BA%20%28%E6%9D%8E%E7%99%BD%29",
+      "lines": 4,
+      "hit": 4,
       "miss": [],
       "variantNotes": [],
       "variants": []
@@ -2205,6 +2318,26 @@
         "一作知"
       ],
       "variants": []
+    },
+    {
+      "id": "tiboshansihouzhenyuan",
+      "title": "题破山寺后禅院",
+      "author": "常建",
+      "stage": "初中",
+      "page": "題破山寺後禪院",
+      "url": "https://zh.wikisource.org/wiki/%E9%A1%8C%E7%A0%B4%E5%B1%B1%E5%AF%BA%E5%BE%8C%E7%A6%AA%E9%99%A2",
+      "lines": 4,
+      "hit": 4,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "通",
+          "other": "遇",
+          "context": "清晨入古寺，初日高林。徑通幽處，禪房花木深。山光悅鳥性，潭影空人心。萬籟此俱 具",
+          "page": "題破山寺後禪院"
+        }
+      ]
     },
     {
       "id": "gulangyuexing",

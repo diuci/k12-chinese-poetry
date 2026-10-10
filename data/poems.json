@@ -44,6 +44,8 @@
       "guanju",
       "beimingyouyu",
       "maotanshangwu",
+      "bosuanzi-yongmei",
+      "bosuanzi-huangzhou",
       "dadaozhixing",
       "rumengling",
       "zijin",
@@ -51,6 +53,7 @@
       "tingzhongyouqishu",
       "shiwei",
       "chunwang",
+      "wangdongtinghuzengzhangchengxiang",
       "taohuayuanji",
       "liangfuxing",
       "huanxisha-yanque",
@@ -64,11 +67,13 @@
       "jichengtiansi",
       "zengcongdi",
       "chibi-du",
+      "songyouren",
       "songshaoshu-wai",
       "caisangzi",
       "yewang",
       "qiantanghuchunxing",
       "yanmenshiweixing",
+      "tiboshansihouzhenyuan",
       "yinjiujiusan",
       "masuo",
       "huanghelou-cuiheng",
@@ -84,8 +89,10 @@
       "shiwucongjunzheng",
       "nangxiangzi",
       "xianyangchengdonglou",
+      "shangshanxiaoxing",
       "yueyanglouji",
       "caoguilunzhan",
+      "yueyeyisheidi",
       "chaotianzi",
       "jiangchengzi-laofeng",
       "yujiaao-qiusi",
@@ -302,7 +309,9 @@
     "bieyunjian": "bieyunjian",
     "bochuanguazhou": "bochuanguazhou",
     "boqinhuai": "boqinhuai",
+    "bosuanzi-huangzhou": "bosuanzi-huangzhou",
     "bosuanzi-song": "bosuanzi-song",
+    "bosuanzi-yongmei": "bosuanzi-yongmei",
     "cailianqu": "cailianqu",
     "caisangzi": "caisangzi",
     "caiwei": "caiwei",
@@ -459,6 +468,7 @@
     "saixiaqu": "saixiaqu",
     "sanqudaozhong": "sanqudaozhong",
     "sanxia": "sanxia",
+    "shangshanxiaoxing": "shangshanxiaoxing",
     "shangshumihan": "shangshumihan",
     "shanjuqiuming": "shanjuqiuming",
     "shanpoyang": "shanpoyang",
@@ -484,6 +494,7 @@
     "sishitianyuan-31": "sishitianyuan-31",
     "songdongyang": "songdongyang",
     "songshaoshu-wai": "songshaoshu-wai",
+    "songyouren": "songyouren",
     "songyuaner": "songyuaner",
     "sujiandejiang": "sujiandejiang",
     "sumuzhe": "sumuzhe",
@@ -494,11 +505,13 @@
     "tengwanggexu": "tengwanggexu",
     "tianjingsha-qiusi": "tianjingsha-qiusi",
     "tiaotiaoqianniuxing": "tiaotiaoqianniuxing",
+    "tiboshansihouzhenyuan": "tiboshansihouzhenyuan",
     "tilinandi": "tilinandi",
     "tingzhongyouqishu": "tingzhongyouqishu",
     "tongguan": "tongguan",
     "wanchun": "wanchun",
     "wangdongting": "wangdongting",
+    "wangdongtinghuzengzhangchengxiang": "wangdongtinghuzengzhangchengxiang",
     "wanghaichao": "wanghaichao",
     "wanghulou": "wanghulou",
     "wanglushanpubu": "wanglushanpubu",
@@ -544,6 +557,7 @@
     "yuanri": "yuanri",
     "yueke": "yueke",
     "yueyanglouji": "yueyanglouji",
+    "yueyeyisheidi": "yueyeyisheidi",
     "yugezi": "yugezi",
     "yujiaao-qiusi": "yujiaao-qiusi",
     "yujiaao-tianjie": "yujiaao-tianjie",
@@ -676,6 +690,7 @@
     ],
     "友情": [
       "wenwangchangling",
+      "songyouren",
       "songshaoshu-wai",
       "lvshi1",
       "zengwanglun",
@@ -708,6 +723,7 @@
     ],
     "咏物": [
       "ailianshuo",
+      "bosuanzi-yongmei",
       "zengcongdi",
       "gulangyuexing",
       "yonge",
@@ -817,6 +833,9 @@
       "mengzi3",
       "mengziyize"
     ],
+    "孤寂": [
+      "bosuanzi-huangzhou"
+    ],
     "孤独": [
       "dengyouzhoutai",
       "yewang",
@@ -853,9 +872,11 @@
       "sanxia",
       "yuzhusianshu",
       "xiaoshitan",
+      "wangdongtinghuzengzhangchengxiang",
       "dujingmensongbie",
       "daxiezhongshu",
       "caisangzi",
+      "tiboshansihouzhenyuan",
       "zuigongtingji",
       "wanglushanpubu",
       "jiangxue",
@@ -878,6 +899,9 @@
     ],
     "师道": [
       "shishuo"
+    ],
+    "干谒": [
+      "wangdongtinghuzengzhangchengxiang"
     ],
     "年老": [
       "shiyiyuesirifengyudazuo"
@@ -943,6 +967,7 @@
       "dujingmensongbie",
       "huanghelou-cuiheng",
       "shiwucongjunzheng",
+      "shangshanxiaoxing",
       "yujiaao-qiusi",
       "jingyesi",
       "jiuyuejiuri",
@@ -956,7 +981,8 @@
       "sumuzhe"
     ],
     "思亲": [
-      "shuidiaogetou"
+      "shuidiaogetou",
+      "yueyeyisheidi"
     ],
     "思念": [
       "zijin",
@@ -1020,7 +1046,8 @@
     ],
     "战乱": [
       "xingjunjiuri",
-      "shihaoli"
+      "shihaoli",
+      "yueyeyisheidi"
     ],
     "战争": [
       "mulanci",
@@ -1250,6 +1277,9 @@
       "change",
       "tiaotiaoqianniuxing"
     ],
+    "禅意": [
+      "tiboshansihouzhenyuan"
+    ],
     "离京": [
       "jihai-jimao"
     ],
@@ -1285,6 +1315,7 @@
     ],
     "羁旅": [
       "tianjingsha-qiusi",
+      "shangshanxiaoxing",
       "fengqiaoyebo",
       "sujiandejiang"
     ],
@@ -1326,6 +1357,8 @@
     ],
     "言志": [
       "tongguan",
+      "bosuanzi-yongmei",
+      "bosuanzi-huangzhou",
       "zengcongdi",
       "guisuishou"
     ],
@@ -1425,6 +1458,7 @@
     ],
     "送别": [
       "wenwangchangling",
+      "songyouren",
       "songshaoshu-wai",
       "baixuege",
       "zengwanglun",
@@ -1494,7 +1528,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 272,
+  "count": 279,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/《论语》十二章.md",
@@ -4752,6 +4786,176 @@
       "volume": "八年级下册"
     },
     {
+      "_path": "poems/初中/八年级下册课外诵读/卜算子·咏梅.md",
+      "author": "陆游",
+      "authorDied": 1210,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "宋",
+      "emotion": "被碾成泥也不改的那点香",
+      "examFreq": 0.7,
+      "form": "词",
+      "fullLines": [
+        "驿外断桥边寂寞开无主",
+        "已是黄昏独自愁更着风和雨",
+        "无意苦争春一任群芳妒",
+        "零落成泥碾作尘只有香如故"
+      ],
+      "fullLinesPunct": [
+        "驿外断桥边，寂寞开无主。",
+        "已是黄昏独自愁，更着风和雨。",
+        "无意苦争春，一任群芳妒。",
+        "零落成泥碾作尘，只有香如故。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "bosuanzi-yongmei",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "驿外断桥边寂寞开无主",
+        "已是黄昏独自愁更着风和雨",
+        "无意苦争春一任群芳妒",
+        "零落成泥碾作尘只有香如故"
+      ],
+      "linesPunct": [
+        "驿外断桥边，寂寞开无主。",
+        "已是黄昏独自愁，更着风和雨。",
+        "无意苦争春，一任群芳妒。",
+        "零落成泥碾作尘，只有香如故。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": "咏梅",
+      "syllables": null,
+      "tags": [
+        "咏物",
+        "言志",
+        "宋词"
+      ],
+      "technique": [
+        "托物言志",
+        "衬托"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "咏物",
+        "言志"
+      ],
+      "title": "卜算子",
+      "volume": "八年级下册课外诵读"
+    },
+    {
+      "_path": "poems/初中/八年级下册课外诵读/卜算子·黄州定慧院寓居作.md",
+      "author": "苏轼",
+      "authorDied": 1101,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 5,
+      "dynasty": "宋",
+      "emotion": "一只不肯落脚的雁",
+      "examFreq": 0.7,
+      "form": "词",
+      "fullLines": [
+        "缺月挂疏桐漏断人初静",
+        "谁见幽人独往来缥缈孤鸿影",
+        "惊起却回头有恨无人省",
+        "拣尽寒枝不肯栖寂寞沙洲冷"
+      ],
+      "fullLinesPunct": [
+        "缺月挂疏桐，漏断人初静。",
+        "谁见幽人独往来，缥缈孤鸿影。",
+        "惊起却回头，有恨无人省。",
+        "拣尽寒枝不肯栖，寂寞沙洲冷。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "bosuanzi-huangzhou",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "缺月挂疏桐漏断人初静",
+        "谁见幽人独往来缥缈孤鸿影",
+        "惊起却回头有恨无人省",
+        "拣尽寒枝不肯栖寂寞沙洲冷"
+      ],
+      "linesPunct": [
+        "缺月挂疏桐，漏断人初静。",
+        "谁见幽人独往来，缥缈孤鸿影。",
+        "惊起却回头，有恨无人省。",
+        "拣尽寒枝不肯栖，寂寞沙洲冷。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": "黄州定慧院寓居作",
+      "syllables": null,
+      "tags": [
+        "言志",
+        "孤寂",
+        "宋词"
+      ],
+      "technique": [
+        "比兴",
+        "托物言志"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "言志",
+        "孤寂"
+      ],
+      "title": "卜算子",
+      "volume": "八年级下册课外诵读"
+    },
+    {
       "_path": "poems/初中/八年级下册/大道之行也.md",
       "author": "佚名",
       "authorDied": null,
@@ -5322,6 +5526,91 @@
       ],
       "title": "春望",
       "volume": "八年级上册"
+    },
+    {
+      "_path": "poems/初中/八年级下册课外诵读/望洞庭湖赠张丞相.md",
+      "author": "孟浩然",
+      "authorDied": 740,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "想出来做事却没人引荐的那口气",
+      "examFreq": 0.7,
+      "form": "五言",
+      "fullLines": [
+        "八月湖水平涵虚混太清",
+        "气蒸云梦泽波撼岳阳城",
+        "欲济无舟楫端居耻圣明",
+        "坐观垂钓者徒有羡鱼情"
+      ],
+      "fullLinesPunct": [
+        "八月湖水平，涵虚混太清。",
+        "气蒸云梦泽，波撼岳阳城。",
+        "欲济无舟楫，端居耻圣明。",
+        "坐观垂钓者，徒有羡鱼情。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "wangdongtinghuzengzhangchengxiang",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "八月湖水平涵虚混太清",
+        "气蒸云梦泽波撼岳阳城",
+        "欲济无舟楫端居耻圣明",
+        "坐观垂钓者徒有羡鱼情"
+      ],
+      "linesPunct": [
+        "八月湖水平，涵虚混太清。",
+        "气蒸云梦泽，波撼岳阳城。",
+        "欲济无舟楫，端居耻圣明。",
+        "坐观垂钓者，徒有羡鱼情。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "干谒",
+        "山水",
+        "唐五言"
+      ],
+      "technique": [
+        "借景抒情",
+        "用典"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "干谒",
+        "山水"
+      ],
+      "title": "望洞庭湖赠张丞相",
+      "volume": "八年级下册课外诵读"
     },
     {
       "_path": "poems/初中/八年级下册/桃花源记.md",
@@ -6388,6 +6677,92 @@
       "volume": "八年级上册"
     },
     {
+      "_path": "poems/初中/八年级下册课外诵读/送友人.md",
+      "author": "李白",
+      "authorDied": 762,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "送到城边还不肯回去的那一步",
+      "examFreq": 0.6,
+      "form": "五言",
+      "fullLines": [
+        "青山横北郭白水绕东城",
+        "此地一为别孤蓬万里征",
+        "浮云游子意落日故人情",
+        "挥手自兹去萧萧班马鸣"
+      ],
+      "fullLinesPunct": [
+        "青山横北郭，白水绕东城。",
+        "此地一为别，孤蓬万里征。",
+        "浮云游子意，落日故人情。",
+        "挥手自兹去，萧萧班马鸣。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "songyouren",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "青山横北郭白水绕东城",
+        "此地一为别孤蓬万里征",
+        "浮云游子意落日故人情",
+        "挥手自兹去萧萧班马鸣"
+      ],
+      "linesPunct": [
+        "青山横北郭，白水绕东城。",
+        "此地一为别，孤蓬万里征。",
+        "浮云游子意，落日故人情。",
+        "挥手自兹去，萧萧班马鸣。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "送别",
+        "友情",
+        "唐五言"
+      ],
+      "technique": [
+        "对偶",
+        "比喻",
+        "借景抒情"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "送别",
+        "友情"
+      ],
+      "title": "送友人",
+      "volume": "八年级下册课外诵读"
+    },
+    {
       "_path": "poems/初中/八年级下册课外诵读/送杜少府之任蜀州.md",
       "author": "王勃",
       "authorDied": 676,
@@ -6790,6 +7165,91 @@
       ],
       "title": "雁门太守行",
       "volume": "八年级上册"
+    },
+    {
+      "_path": "poems/初中/八年级下册课外诵读/题破山寺后禅院.md",
+      "author": "常建",
+      "authorDied": null,
+      "authorEraEnd": 780,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "走进深处以后安静下来的那一刻",
+      "examFreq": 0.7,
+      "form": "五言",
+      "fullLines": [
+        "清晨入古寺初日照高林",
+        "曲径通幽处禅房花木深",
+        "山光悦鸟性潭影空人心",
+        "万籁此都寂但余钟磬音"
+      ],
+      "fullLinesPunct": [
+        "清晨入古寺，初日照高林。",
+        "曲径通幽处，禅房花木深。",
+        "山光悦鸟性，潭影空人心。",
+        "万籁此都寂，但余钟磬音。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 8,
+      "hasFulltext": true,
+      "id": "tiboshansihouzhenyuan",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "清晨入古寺初日照高林",
+        "曲径通幽处禅房花木深",
+        "山光悦鸟性潭影空人心",
+        "万籁此都寂但余钟磬音"
+      ],
+      "linesPunct": [
+        "清晨入古寺，初日照高林。",
+        "曲径通幽处，禅房花木深。",
+        "山光悦鸟性，潭影空人心。",
+        "万籁此都寂，但余钟磬音。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "山水",
+        "禅意",
+        "唐五言"
+      ],
+      "technique": [
+        "白描",
+        "衬托"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "山水",
+        "禅意"
+      ],
+      "title": "题破山寺后禅院",
+      "volume": "八年级下册课外诵读"
     },
     {
       "_path": "poems/初中/八年级上册/饮酒.md",
@@ -7927,6 +8387,92 @@
       "volume": "九年级上册课外诵读"
     },
     {
+      "_path": "poems/初中/九年级上册课外诵读/商山早行.md",
+      "author": "温庭筠",
+      "authorDied": 866,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "天没亮就上路的那种冷",
+      "examFreq": 0.8,
+      "form": "五言",
+      "fullLines": [
+        "晨起动征铎客行悲故乡",
+        "鸡声茅店月人迹板桥霜",
+        "槲叶落山路枳花明驿墙",
+        "因思杜陵梦凫雁满回塘"
+      ],
+      "fullLinesPunct": [
+        "晨起动征铎，客行悲故乡。",
+        "鸡声茅店月，人迹板桥霜。",
+        "槲叶落山路，枳花明驿墙。",
+        "因思杜陵梦，凫雁满回塘。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "shangshanxiaoxing",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "晨起动征铎客行悲故乡",
+        "鸡声茅店月人迹板桥霜",
+        "槲叶落山路枳花明驿墙",
+        "因思杜陵梦凫雁满回塘"
+      ],
+      "linesPunct": [
+        "晨起动征铎，客行悲故乡。",
+        "鸡声茅店月，人迹板桥霜。",
+        "槲叶落山路，枳花明驿墙。",
+        "因思杜陵梦，凫雁满回塘。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "羁旅",
+        "思乡",
+        "唐五言"
+      ],
+      "technique": [
+        "白描",
+        "意象叠加",
+        "虚实对照"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "羁旅",
+        "思乡"
+      ],
+      "title": "商山早行",
+      "volume": "九年级上册课外诵读"
+    },
+    {
       "_path": "poems/初中/九年级上册/岳阳楼记.md",
       "author": "范仲淹",
       "authorDied": 1052,
@@ -8108,6 +8654,92 @@
       ],
       "title": "曹刿论战",
       "volume": "九年级下册"
+    },
+    {
+      "_path": "poems/初中/九年级上册课外诵读/月夜忆舍弟.md",
+      "author": "杜甫",
+      "authorDied": 770,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "唐",
+      "emotion": "战乱里连生死都问不到的那种悬",
+      "examFreq": 0.8,
+      "form": "五言",
+      "fullLines": [
+        "戍鼓断人行边秋一雁声",
+        "露从今夜白月是故乡明",
+        "有弟皆分散无家问死生",
+        "寄书长不达况乃未休兵"
+      ],
+      "fullLinesPunct": [
+        "戍鼓断人行，边秋一雁声。",
+        "露从今夜白，月是故乡明。",
+        "有弟皆分散，无家问死生。",
+        "寄书长不达，况乃未休兵。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 9,
+      "hasFulltext": true,
+      "id": "yueyeyisheidi",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "戍鼓断人行边秋一雁声",
+        "露从今夜白月是故乡明",
+        "有弟皆分散无家问死生",
+        "寄书长不达况乃未休兵"
+      ],
+      "linesPunct": [
+        "戍鼓断人行，边秋一雁声。",
+        "露从今夜白，月是故乡明。",
+        "有弟皆分散，无家问死生。",
+        "寄书长不达，况乃未休兵。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": 10,
+      "tags": [
+        "思亲",
+        "战乱",
+        "唐五言"
+      ],
+      "technique": [
+        "借景抒情",
+        "对比",
+        "递进"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "思亲",
+        "战乱"
+      ],
+      "title": "月夜忆舍弟",
+      "volume": "九年级上册课外诵读"
     },
     {
       "_path": "poems/初中/九年级下册/朝天子·咏喇叭.md",

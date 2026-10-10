@@ -384,11 +384,12 @@ def match_lesson(poem, lessons):
     「忆江南」与「江南」（白居易 vs 汉乐府）、「舟夜书所见」与「夜书所见」（查慎行 vs 叶绍翁）。
     先前这条包含规则两头都认，把这两对判成了「同一篇、只是册次写错」。
     同名不等于同篇：这一关只找候选，是不是同一篇由后面的正文比对定（比得上才是同一篇）。"""
-    cands = [re.sub(r'[《》〈〉（）\s\u3000·]', '', c) for c in title_candidates(poem.get('title'), poem.get('subtitle'))]
+    cands = [re.sub(r'[《》〈〉（）\s\u3000·\u2022\uff65]', '', c) for c in title_candidates(poem.get('title'), poem.get('subtitle'))]
+    prefix_hit = None   # 前缀候选先攒着：整名对上的必须赢过先出现的前缀候选
     for name, url in lessons:
         head = re.sub(r'^[\d.\-*（）\s]+', '', name)
         head = re.sub(r'\s*V\s*[\u4e00-\u9fff·]+$', '', head)   # 镜像在课文名后面挂的作者
-        n = re.sub(r'[《》（）\s\u3000·]', '', head)
+        n = re.sub(r'[《》（）\s\u3000·\u2022\uff65]', '', head)
         n = re.sub(r'(节选|并序)$', '', n)
         if not n:
             continue
@@ -397,9 +398,9 @@ def match_lesson(poem, lessons):
                 continue
             if n == c:
                 return name, url
-            if len(c) >= 3 and n.startswith(c):
-                return name, url
-    return None, None
+            if prefix_hit is None and len(c) >= 3 and n.startswith(c):
+                prefix_hit = (name, url)
+    return prefix_hit if prefix_hit else (None, None)
 
 
 def cross_volume_status(paras, hit, total):
@@ -633,6 +634,13 @@ def selftest():
          '坏例6k：「并序」没剥掉')
     must(match_lesson({'title': '凉州词'}, [('凉州词', 'u')])[0] is not None,
          '坏例6l：整名相等的同名课文没对上（同名另一篇要靠正文判，篇名这一关不许先漏）')
+    # 坏例6l2：同一册里有两首同词牌——整名对上的必须赢过目录里先出现的前缀候选
+    must(match_lesson({'title': '卜算子', 'subtitle': '咏梅'},
+                     [('卜算子\u2022黄州定慧院寓居作', 'u1'), ('卜算子\u2022咏梅', 'u2')])[1] == 'u2',
+         '坏例6l2：仓内这首《卜算子（咏梅）》被目录里先出现的《卜算子·黄州定慧院寓居作》抢走')
+    # 坏例6l3：仓内只写词牌时，前缀候选这一支还得管用（教材那边写「词牌·题目」）
+    must(match_lesson({'title': '卜算子'}, [('卜算子\u2022黄州定慧院寓居作', 'u1')])[1] == 'u1',
+         '坏例6l3：只写词牌时前缀候选这一支失效了')
     # 坏例6m：同名只是候选，是不是同一篇不许靠篇名判——分类由正文比对定，这里直接测那个分类。
     must(cross_volume_status(None, 0, 0)[0] == 'volume-mismatch',
          '坏例6m：教材正文没取到就被判成「另一篇」（没核到却下了结论）')

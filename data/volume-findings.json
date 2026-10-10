@@ -2,7 +2,7 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-10",
   "counts": {
-    "match": 210,
+    "match": 217,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -379,6 +379,26 @@
       "id": "xianyangchengdonglou",
       "title": "咸阳城东楼",
       "author": "许浑",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级上册课外诵读",
+      "textbookVolume": "九年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "shangshanxiaoxing",
+      "title": "商山早行",
+      "author": "温庭筠",
+      "stage": "初中",
+      "status": "match",
+      "volume": "九年级上册课外诵读",
+      "textbookVolume": "九年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "yueyeyisheidi",
+      "title": "月夜忆舍弟",
+      "author": "杜甫",
       "stage": "初中",
       "status": "match",
       "volume": "九年级上册课外诵读",
@@ -866,6 +886,26 @@
       "textbookLesson": "23"
     },
     {
+      "id": "bosuanzi-yongmei",
+      "title": "卜算子",
+      "author": "陆游",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册课外诵读",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "bosuanzi-huangzhou",
+      "title": "卜算子",
+      "author": "苏轼",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册课外诵读",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "zijin",
       "title": "子衿",
       "author": "佚名",
@@ -886,9 +926,39 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "wangdongtinghuzengzhangchengxiang",
+      "title": "望洞庭湖赠张丞相",
+      "author": "孟浩然",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册课外诵读",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "songyouren",
+      "title": "送友人",
+      "author": "李白",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册课外诵读",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "songshaoshu-wai",
       "title": "送杜少府之任蜀州",
       "author": "王勃",
+      "stage": "初中",
+      "status": "match",
+      "volume": "八年级下册课外诵读",
+      "textbookVolume": "八年级下册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "tiboshansihouzhenyuan",
+      "title": "题破山寺后禅院",
+      "author": "常建",
       "stage": "初中",
       "status": "match",
       "volume": "八年级下册课外诵读",

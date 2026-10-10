@@ -393,6 +393,11 @@
     "曹植": {
       "died": 232,
       "note": "曹植（192—232，一说 192—232.12.27），字子建，沛国谯县人。维基百科 https://zh.wikipedia.org/wiki/%E6%9B%B9%E6%A4%8D 作「曹植（192年—232年12月27日）」；百度百科 https://wapbaike.baidu.com/item/%E6%9B%B9%E6%A4%8D 出生信息「192年」、逝世日期「232年12月27日」，两处一致。"
+    },
+    "常建": {
+      "died": null,
+      "eraEnd": 780,
+      "note": "常建，卒年不详，两说并存：维基百科 https://zh.wikipedia.org/wiki/%E5%B8%B8%E5%BB%BA 作「常建（？—？）」；百度百科 https://wapbaike.baidu.com/item/%E5%B8%B8%E5%BB%BA 作 708—765（引《辞海》「天宝年间卒」）；识典古籍《唐才子传》 https://www.shidianguji.com/zh/mid-page/7640597818642645019 作「常建，字無考，開元十五年進士，大歷中爲盱眙尉」。按较晚一说与《唐才子传》「大历中为盱眙尉」（大历 766—779）取活动年代上限 780，不硬造卒年。"
     }
   }
 }

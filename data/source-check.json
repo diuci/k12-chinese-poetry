@@ -685,6 +685,22 @@
    ]
   },
   {
+   "id": "bosuanzi-yongmei",
+   "title": "卜算子",
+   "hit": 3,
+   "lines": 4,
+   "page": "卜算子 (陸游)",
+   "items": [
+    {
+     "line": "已是黄昏独自愁更着风和雨",
+     "grade": "B",
+     "note": "页里「著」我们「着」；页里多「无意」",
+     "window": "已是黄昏独自愁更著风和雨无意",
+     "ratio": 0.85
+    }
+   ]
+  },
+  {
    "id": "bosuanzi-song",
    "title": "卜算子",
    "hit": 4,
@@ -825,22 +841,6 @@
      "note": "页里「墅妻子」我们「野」",
      "window": "剧哉边海民寄身于草墅妻子",
      "ratio": 0.82
-    }
-   ]
-  },
-  {
-   "id": "jiangnanfengligunian",
-   "title": "江南逢李龟年",
-   "hit": 1,
-   "lines": 2,
-   "page": "江南逢李龜年",
-   "items": [
-    {
-     "line": "岐王宅里寻常见崔九堂前几度闻",
-     "grade": "B",
-     "note": "页里「㡬」我们「几」；页里多「正是」",
-     "window": "岐王宅里寻常见崔九堂前㡬度闻正是",
-     "ratio": 0.87
     }
    ]
   },

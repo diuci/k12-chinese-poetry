@@ -3,11 +3,11 @@
   "generated": "2026-10-10",
   "counts": {
     "generated": "2026-10-10",
-    "total": 238,
+    "total": 231,
     "modern": 40,
     "lessonEntries": 781,
-    "poems": 272,
-    "reciteGaps": 114,
+    "poems": 279,
+    "reciteGaps": 107,
     "primaryGaps": 337
   },
   "rows": [
@@ -701,14 +701,6 @@
     },
     {
       "volume": "八年级下册",
-      "lesson": "自读",
-      "title": "望洞庭湖赠张丞相",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/21017_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级下册",
       "lesson": "13",
       "title": "最后一次讲演",
       "url": "https://yw.suyang123.com/chuzhong/banianji/21018_langdu.html",
@@ -776,38 +768,6 @@
       "lesson": "自读",
       "title": "庄子与惠子游于濠梁之上",
       "url": "https://yw.suyang123.com/chuzhong/banianji/21027_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级下册",
-      "lesson": "自读",
-      "title": "题破山寺后禅院",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/21034_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级下册",
-      "lesson": "自读",
-      "title": "送友人",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/21035_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级下册",
-      "lesson": "自读",
-      "title": "卜算子•黄州定慧院寓居作",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/21036_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "八年级下册",
-      "lesson": "自读",
-      "title": "卜算子•咏梅",
-      "url": "https://yw.suyang123.com/chuzhong/banianji/21037_langdu.html",
       "looksModern": false,
       "recite": true
     },
@@ -888,22 +848,6 @@
       "lesson": "10",
       "title": "精神的三间小屋",
       "url": "https://yw.suyang123.com/chuzhong/jiunianji/21110_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "九年级上册",
-      "lesson": "自读",
-      "title": "商山早行",
-      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21120_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "九年级上册",
-      "lesson": "自读",
-      "title": "月夜忆舍弟",
-      "url": "https://yw.suyang123.com/chuzhong/jiunianji/21117_langdu.html",
       "looksModern": false,
       "recite": true
     },
