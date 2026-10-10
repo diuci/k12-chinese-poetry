@@ -2,8 +2,8 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-10",
   "stats": {
-    "attested": 220,
-    "partial": 31,
+    "attested": 218,
+    "partial": 33,
     "notfound": 0,
     "nosource": 1,
     "withVariants": 60
@@ -939,8 +939,17 @@
       "page": "白雪歌送武判官歸京",
       "url": "https://zh.wikisource.org/wiki/%E7%99%BD%E9%9B%AA%E6%AD%8C%E9%80%81%E6%AD%A6%E5%88%A4%E5%AE%98%E6%AD%B8%E4%BA%AC",
       "lines": 9,
-      "hit": 9,
-      "miss": [],
+      "hit": 8,
+      "miss": [
+        {
+          "line": "将军角弓不得控都护铁衣冷难着",
+          "nearest": {
+            "line": "将军角弓不得控都护铁衣冷难着",
+            "source": "将军角一作雕弓不得控都护铁衣冷难",
+            "ratio": 0.867
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": [
         {
@@ -1428,8 +1437,17 @@
       "page": "至小丘西小石潭記",
       "url": "https://zh.wikisource.org/wiki/%E8%87%B3%E5%B0%8F%E4%B8%98%E8%A5%BF%E5%B0%8F%E7%9F%B3%E6%BD%AD%E8%A8%98",
       "lines": 17,
-      "hit": 17,
-      "miss": [],
+      "hit": 16,
+      "miss": [
+        {
+          "line": "伐竹取道下见小潭水尤清冽",
+          "nearest": {
+            "line": "伐竹取道下见小潭水尤清冽",
+            "source": "伐竹取道下见小潭水尤清洌1全",
+            "ratio": 0.846
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },

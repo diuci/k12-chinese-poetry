@@ -364,6 +364,35 @@ def doc_number_claims(doc_text, actuals):
                 bad.append('「%s」写 %d，实际 %d' % (m.group(0).strip(), got, want))
     return bad
 
+def doc_number_actuals(trad, tsrc, verify_yml, s2t_path=None):
+    """文档里那些写死的数字，各自对应哪个产物的当场计数。
+
+    匹配器只有这一份：audit-content 用它查，tools/sync-doc-numbers.py 用它改。
+    两边各写一套的话，改的那套以为对了、查的那套以为错了，链条就永远在打自己。
+    产物不在场时给 -1：调用方必须停下来，不许在没有产物的情况下改数字。"""
+    sp = s2t_path or (ROOT / 'data' / 's2t-rules.json')
+    s2t_total = len(json.loads(sp.read_text(encoding='utf-8')).get('rules', [])) if sp.exists() else -1
+    ci_selftests = count_ci_selftests(verify_yml)
+    ci_offline = count_ci_block(verify_yml, '离线检查')
+    actuals = {r'裁定表\s*(\d+)\s*条': s2t_total,
+               r'(\d+)\s*项检查器自检': ci_selftests,
+               r'(\d+)\s*项离线检查': ci_offline}
+    ca = (trad or {}).get('counts_apparatus') or {}
+    if ca:
+        actuals.update({r'按表\s*(\d+)': ca.get('table', -1),
+                        r'按裁定表\s*(\d+)': ca.get('rule', -1),
+                        r'照表原字\s*(\d+)': ca.get('identity', -1),
+                        r'保留\s*(\d+)': ca.get('keep', -1),
+                        r'待定\s*(\d+)': ca.get('pending', -1)})
+    tstats = (tsrc or {}).get('stats') or {}
+    if tstats:
+        actuals.update({r'(\d+)\s*全对上': tstats.get('attested', -1),
+                        r'(\d+)\s*部分对上': tstats.get('partial', -1),
+                        r'(\d+)\s*一句都对不上': tstats.get('notfound', -1),
+                        r'(\d+)\s*核过没有正文页': tstats.get('nosource', -1)})
+    return actuals, {'s2t_total': s2t_total, 'ci_selftests': ci_selftests, 'ci_offline': ci_offline,
+                    'tstats': tstats, 'ca': ca}
+
 
 def count_ci_selftests(yml_text):
     """CI 里真正跑了多少项自检：只数 workflow 里那一行行命令，不数说明文字里提到的 `--selftest`。
@@ -693,20 +722,12 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
     out.append(('来源不明为零', g['来源不明'] == 0, '来源不明 %d 篇' % g['来源不明']))
 
     # 文档里写死的数字：过期了就是说假话。这一项盯裁定表条数、CI 的两块命令数、派生计数的四个数。
-    sp = ROOT / 'data' / 's2t-rules.json'
-    s2t_total = len(json.loads(sp.read_text(encoding='utf-8')).get('rules', [])) if sp.exists() else -1
-    ci_selftests = count_ci_selftests(verify_yml)
-    ci_offline = count_ci_block(verify_yml, '离线检查')
-    actuals = {r'裁定表\s*(\d+)\s*条': s2t_total,
-               r'(\d+)\s*项检查器自检': ci_selftests,
-               r'(\d+)\s*项离线检查': ci_offline}
-    ca = (trad or {}).get('counts_apparatus') or {}
-    if ca:
-        actuals.update({r'按表\s*(\d+)': ca.get('table', -1),
-                        r'按裁定表\s*(\d+)': ca.get('rule', -1),
-                        r'照表原字\s*(\d+)': ca.get('identity', -1),
-                        r'保留\s*(\d+)': ca.get('keep', -1),
-                        r'待定\s*(\d+)': ca.get('pending', -1)})
+    actuals, meta = doc_number_actuals(trad, tsrc, verify_yml)
+    s2t_total = meta['s2t_total']
+    ci_selftests = meta['ci_selftests']
+    ci_offline = meta['ci_offline']
+    ca = meta['ca']
+    tstats = meta['tstats']
     # 出处核对的四档数字：文档里那句「N 全对上 / M 部分…」必须与 data/text-sources.json 当场一致。
     # 这一轮 --refresh 之后有一篇从「全对上」挪进「部分对上」，文档没跟着改，就是靠这一条抓的。
     tstats = (tsrc or {}).get('stats') or {}

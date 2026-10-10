@@ -46,6 +46,7 @@ jobs:
           python3 tools/gen-provenance.py --selftest
           python3 tools/fix-meta-lines.py --selftest
           python3 tools/audit-content.py --selftest
+          python3 tools/sync-doc-numbers.py --selftest
           python3 tools/build-source-check.py --selftest
           python3 tools/build-traditional.py --selftest
           python3 tools/check-text-sources.py --selftest

@@ -2,10 +2,10 @@
   "generated": "2026-10-10",
   "source": "https://yw.suyang123.com",
   "stats": {
-    "match": 156,
+    "match": 162,
     "coverage-override": 7,
-    "partial": 30,
     "mismatch": 2,
+    "partial": 24,
     "garden-attested": 38,
     "lesson-not-found": 10,
     "no-textbook": 8,
@@ -185,31 +185,14 @@
       "author": "周敦颐",
       "stage": "初中",
       "volume": "七年级下册",
-      "status": "partial",
+      "status": "match",
       "lesson": "爱莲说",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20862_langdu.html",
-      "hit": 5,
+      "hit": 6,
       "total": 6,
       "skippedShort": 0,
       "textbookParas": 2,
-      "miss": [
-        {
-          "kind": "全文",
-          "line": "水陆草木之花，可爱者甚蕃。晋陶渊明独爱菊。自李唐来，世人盛爱牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。",
-          "diff": [
-            {
-              "ours": "盛",
-              "textbook": "甚",
-              "context": "爱菊自李唐来世人甚爱牡丹予独爱莲之"
-            },
-            {
-              "ours": "",
-              "textbook": "予谓菊花之隐逸者也牡丹花之富贵者也莲花之君子者也噫菊之爱陶后鲜有闻莲之爱同予者何",
-              "context": "远观而不可亵玩焉予谓菊花之隐逸者也牡丹花之富贵者也莲花之君子者也噫菊之爱陶后鲜有闻莲之爱同予者何"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "dengyouzhoutai",
@@ -670,58 +653,14 @@
       "author": "岑参",
       "stage": "初中",
       "volume": "九年级下册",
-      "status": "partial",
+      "status": "match",
       "lesson": "白雪歌送武判官归京",
       "url": "https://yw.suyang123.com/chuzhong/jiunianji/21233_langdu.html",
-      "hit": 9,
+      "hit": 12,
       "total": 12,
       "skippedShort": 0,
       "textbookParas": 9,
-      "miss": [
-        {
-          "kind": "全文",
-          "line": "散入珠帘湿罗幕，狐裘不煖锦衾薄。",
-          "diff": [
-            {
-              "ours": "煖",
-              "textbook": "暖",
-              "context": "珠帘湿罗幕狐裘不暖锦衾薄将军角弓不"
-            },
-            {
-              "ours": "",
-              "textbook": "将军角弓不得控都护铁衣冷难着瀚海阑干百丈冰愁云惨淡万里凝中军置酒饮归客胡琴琵琶与",
-              "context": "幕狐裘不暖锦衾薄将军角弓不得控都护铁衣冷难着瀚海阑干百丈冰愁云惨淡万里凝中军置酒饮归客胡琴琵琶与"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "将军角弓不得控，都护铁衣冷难著。",
-          "diff": [
-            {
-              "ours": "著",
-              "textbook": "着瀚海阑干百丈冰愁云惨淡万里凝中军置酒饮归客胡琴琵琶与羌笛纷纷暮雪下辕门风掣红旗冻",
-              "context": "得控都护铁衣冷难着瀚海阑干百丈冰愁云惨淡万里凝中军置酒饮归客胡琴琵琶与羌笛纷纷暮雪下辕门风掣红旗冻"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "瀚海阑干百丈冰，愁云惨澹万里凝。",
-          "diff": [
-            {
-              "ours": "澹",
-              "textbook": "淡",
-              "context": "阑干百丈冰愁云惨淡万里凝中军置酒饮"
-            },
-            {
-              "ours": "",
-              "textbook": "中军置酒饮归客胡琴琵琶与羌笛纷纷暮雪下辕门风掣红旗冻不翻轮台东门送君去去时雪满天",
-              "context": "冰愁云惨淡万里凝中军置酒饮归客胡琴琵琶与羌笛纷纷暮雪下辕门风掣红旗冻不翻轮台东门送君去去时雪满天"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "pozhenzi",
@@ -759,47 +698,14 @@
       "author": "宋濂",
       "stage": "初中",
       "volume": "九年级下册",
-      "status": "partial",
+      "status": "match",
       "lesson": "11 送东阳马生序",
       "url": "https://yw.suyang123.com/chuzhong/jiunianji/21215_langdu.html",
-      "hit": 8,
+      "hit": 10,
       "total": 10,
       "skippedShort": 0,
       "textbookParas": 3,
-      "miss": [
-        {
-          "kind": "全文",
-          "line": "当余之从师也，负箧曳屣行深山巨谷中。穷冬烈风，大雪深数尺，足肤皲裂而不知。至舍，四支僵劲不能动，媵人持汤沃灌，以衾拥覆，久而乃和。寓逆旅，主人日再食，无鲜肥滋味之享。同舍生皆被绮绣，戴珠缨宝饰之帽，腰白玉之环，左佩刀，右备容臭，烨然若神人。余则缊袍敝衣处其间，略无慕艳意。以中有足乐者，不知口体之奉不若人也。盖余之勤且艰若此。今虽耄老，未有所成，犹幸预君子之列，而承天子之宠光，缀公卿之后，日侍坐备顾问，四海亦谬称其氏名，况才之过于余者乎？",
-          "diff": [
-            {
-              "ours": "珠",
-              "textbook": "朱",
-              "context": "同舍生皆被绮绣戴朱缨宝饰之帽腰白玉"
-            },
-            {
-              "ours": "",
-              "textbook": "今诸生学于太学县官日有廪稍之供父母岁有裘葛之遗无冻馁之患矣坐大厦之下而诵诗书无奔",
-              "context": "况才之过于余者乎今诸生学于太学县官日有廪稍之供父母岁有裘葛之遗无冻馁之患矣坐大厦之下而诵诗书无奔"
-            }
-          ]
-        },
-        {
-          "kind": "全文",
-          "line": "东阳马生君则，在太学已二年，流辈甚称其贤。余朝京师，生以乡人子谒余，譔长书以为贽，辞甚畅达；与之论辩，言和而色夷。自谓少时用心于学甚劳，是可谓善学者矣。其将归见其亲也，余故道为学之难以告之。谓余勉乡人以学者，余之志也；诋我夸际遇之盛而骄乡人者，岂知予者哉！",
-          "diff": [
-            {
-              "ours": "譔",
-              "textbook": "撰",
-              "context": "师生以乡人子谒余撰长书以为贽辞甚畅"
-            },
-            {
-              "ours": "辩",
-              "textbook": "辨",
-              "context": "贽辞甚畅达与之论辨言和而色夷自谓少"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "zouji",
@@ -1143,31 +1049,14 @@
       "author": "柳宗元",
       "stage": "初中",
       "volume": "八年级下册",
-      "status": "partial",
+      "status": "match",
       "lesson": "10 小石潭记",
       "url": "https://yw.suyang123.com/chuzhong/banianji/21010_langdu.html",
-      "hit": 10,
+      "hit": 11,
       "total": 11,
       "skippedShort": 0,
       "textbookParas": 5,
-      "miss": [
-        {
-          "kind": "全文",
-          "line": "从小丘西行百二十步，隔篁竹，闻水声，如鸣珮环，心乐之。伐竹取道，下见小潭，水尤清洌。全石以为底，近岸，卷石底以出，为坻，为屿，为嵁，为岩。青树翠蔓，蒙络摇缀，参差披拂。",
-          "diff": [
-            {
-              "ours": "洌",
-              "textbook": "冽",
-              "context": "道下见小潭水尤清冽全石以为底近岸卷"
-            },
-            {
-              "ours": "",
-              "textbook": "潭中鱼可百许头皆若空游无所依日光下澈影布石上佁然不动俶尔远逝往来翕忽似与游者相乐",
-              "context": "蒙络摇缀参差披拂潭中鱼可百许头皆若空游无所依日光下澈影布石上佁然不动俶尔远逝往来翕忽似与游者相乐"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "taohuayuanji",
@@ -1616,26 +1505,14 @@
       "author": "苏轼",
       "stage": "小学",
       "volume": "三年级上册",
-      "status": "partial",
+      "status": "match",
       "lesson": "赠刘景文",
       "url": "https://yw.suyang123.com/xiaoxue/sannianji/558_langdu.html",
-      "hit": 1,
+      "hit": 2,
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": [
-        {
-          "kind": "名句",
-          "line": "一年好景君须记，正是橙黄橘绿时。",
-          "diff": [
-            {
-              "ours": "正",
-              "textbook": "最",
-              "context": "一年好景君须记最是橙黄橘绿时"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "cailianqu",
@@ -2808,31 +2685,14 @@
       "author": "卢梅坡",
       "stage": "小学",
       "volume": "四年级上册",
-      "status": "partial",
+      "status": "match",
       "lesson": "雪梅",
       "url": "https://yw.suyang123.com/xiaoxue/sinianji/813_langdu.html",
-      "hit": 1,
+      "hit": 2,
       "total": 2,
       "skippedShort": 0,
       "textbookParas": 4,
-      "miss": [
-        {
-          "kind": "名句",
-          "line": "梅雪争春未肯降，骚人搁笔费评章。",
-          "diff": [
-            {
-              "ours": "搁",
-              "textbook": "阁",
-              "context": "雪争春未肯降骚人阁笔费评章梅须逊雪"
-            },
-            {
-              "ours": "",
-              "textbook": "梅须逊雪三分白雪却输梅一段香",
-              "context": "降骚人阁笔费评章梅须逊雪三分白雪却输梅一段香"
-            }
-          ]
-        }
-      ]
+      "miss": []
     },
     {
       "id": "longpo",

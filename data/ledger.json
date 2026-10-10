@@ -62,12 +62,12 @@
       "缺背诵要求": 0,
       "只有必背名句（节选收录）": 0,
       "仓内有全文正文": 252,
-      "无异文记录": 163,
+      "无异文记录": 160,
       "full 但名句没盖住全文（篇）": 6,
       "full 但名句没盖住全文（句）": 86,
-      "异文条目总数": 435,
-      "异文条目带出处": 413,
-      "异文条目带取舍": 202,
+      "异文条目总数": 445,
+      "异文条目带出处": 423,
+      "异文条目带取舍": 212,
       "异文条目缺出处": 22,
       "异文小节里的非异文条目": 2,
       "异文条目写明「仓内没核到」": 22,
@@ -83,8 +83,8 @@
       "统编教材收了（只有一条来源）": 0,
       "统编教材里没找到这一课": 1,
       "没有教材收录状态": 0,
-      "出处核对·逐句全对上": 220,
-      "出处核对·部分对上": 31,
+      "出处核对·逐句全对上": 218,
+      "出处核对·部分对上": 33,
       "出处核对·一句都对不上": 0,
       "出处核对·核过没有正文页": 1,
       "出处核对·没有核对记录": 0
@@ -1195,12 +1195,13 @@
       "fullGapSents": 7,
       "fullGapSample": [
         "晋陶渊明独爱菊",
-        "自李唐来世人盛爱牡丹",
+        "自李唐来世人甚爱牡丹",
         "予谓菊花之隐逸者也",
         "牡丹花之富贵者也"
       ],
       "sections": [
         "全文",
+        "异文",
         "必背名句",
         "注释",
         "译文",
@@ -1211,17 +1212,15 @@
       "hasAppreciation": true,
       "hasFamous": true,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 0,
-      "variantWithChoice": 0,
+      "variantWithSource": 1,
+      "variantWithChoice": 1,
       "hasFulltext": true,
       "pairsCount": 2,
-      "flags": [
-        "无异文记录"
-      ],
+      "flags": [],
       "path": "poems/初中/七年级下册/爱莲说.md"
     },
     {
@@ -2352,11 +2351,11 @@
       "hasFamous": true,
       "hasPlay": false,
       "hasVariant": true,
-      "variantEntries": 3,
+      "variantEntries": 4,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 3,
-      "variantWithChoice": 3,
+      "variantWithSource": 4,
+      "variantWithChoice": 4,
       "hasFulltext": true,
       "pairsCount": 1,
       "flags": [],
@@ -2442,7 +2441,7 @@
       "fullSents": 12,
       "fullGapSents": 7,
       "fullGapSample": [
-        "伐竹取道下见小潭水尤清洌",
+        "伐竹取道下见小潭水尤清冽",
         "全石以为底近岸卷石底以出为坻为屿为嵁为岩",
         "青树翠蔓蒙络摇缀参差披拂",
         "其岸势犬牙差互不可知其源"
@@ -3053,9 +3052,9 @@
       "fullSents": 9,
       "fullGapSents": 6,
       "fullGapSample": [
-        "散入珠帘湿罗幕狐裘不煖锦衾薄",
-        "将军角弓不得控都护铁衣冷难著",
-        "瀚海阑干百丈冰愁云惨澹万里凝",
+        "散入珠帘湿罗幕狐裘不暖锦衾薄",
+        "将军角弓不得控都护铁衣冷难着",
+        "瀚海阑干百丈冰愁云惨淡万里凝",
         "中军置酒饮归客胡琴琵琶与羌笛"
       ],
       "sections": [
@@ -3073,11 +3072,11 @@
       "hasFamous": true,
       "hasPlay": true,
       "hasVariant": true,
-      "variantEntries": 1,
+      "variantEntries": 4,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 1,
-      "variantWithChoice": 1,
+      "variantWithSource": 4,
+      "variantWithChoice": 4,
       "hasFulltext": true,
       "pairsCount": 1,
       "flags": [],
@@ -3942,7 +3941,6 @@
       ],
       "sections": [
         "全文",
-        "全文（教材节选部分）",
         "异文",
         "必背名句",
         "旧文本裁定",
@@ -3956,11 +3954,11 @@
       "hasFamous": true,
       "hasPlay": false,
       "hasVariant": true,
-      "variantEntries": 11,
+      "variantEntries": 14,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 11,
-      "variantWithChoice": 10,
+      "variantWithSource": 14,
+      "variantWithChoice": 13,
       "hasFulltext": true,
       "pairsCount": 3,
       "flags": [],
@@ -6350,6 +6348,7 @@
       "fullGapSents": 0,
       "fullGapSample": [],
       "sections": [
+        "异文",
         "注释",
         "译文",
         "赏析"
@@ -6359,17 +6358,16 @@
       "hasAppreciation": true,
       "hasFamous": false,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 0,
-      "variantWithChoice": 0,
+      "variantWithSource": 1,
+      "variantWithChoice": 1,
       "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
-        "无「必背名句」小节",
-        "无异文记录"
+        "无「必背名句」小节"
       ],
       "path": "poems/小学/三年级上册/赠刘景文.md"
     },
@@ -7269,6 +7267,7 @@
       "fullGapSents": 0,
       "fullGapSample": [],
       "sections": [
+        "异文",
         "注释",
         "译文",
         "赏析"
@@ -7278,17 +7277,16 @@
       "hasAppreciation": true,
       "hasFamous": false,
       "hasPlay": false,
-      "hasVariant": false,
-      "variantEntries": 0,
+      "hasVariant": true,
+      "variantEntries": 1,
       "variantNonEntries": 0,
       "variantUnverified": 0,
-      "variantWithSource": 0,
-      "variantWithChoice": 0,
+      "variantWithSource": 1,
+      "variantWithChoice": 1,
       "hasFulltext": true,
       "pairsCount": 1,
       "flags": [
-        "无「必背名句」小节",
-        "无异文记录"
+        "无「必背名句」小节"
       ],
       "path": "poems/小学/四年级上册/雪梅.md"
     },
