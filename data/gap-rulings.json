@@ -1,0 +1,2078 @@
+{
+  "说明": "统编教材收了、仓里对不上的课文，逐条裁定。裁定不改变缺口表的事实，只写明这一条我们怎么处理。",
+  "口径": "仓收古诗文与文言短文（诗歌、词、曲、文言诗文）。裁定类别：add=该补进仓；alias=仓内已收、篇名不同；partial=合集里收了片段、统编那一课的全文未收；modern=现当代与外国作品（含保护期未届满的）；fiction=古典章回小说、杂剧的节选（叙事作品，不在诗歌与文言短文的口径内）。",
+  "kinds": [
+    "add",
+    "alias",
+    "partial",
+    "modern",
+    "fiction"
+  ],
+  "generated": "2026-10-10",
+  "rulings": [
+    {
+      "volume": "七年级上册",
+      "title": "春",
+      "kind": "modern",
+      "reason": "朱自清现代散文，不属于仓的古诗文口径",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20001_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "济南的冬天",
+      "kind": "modern",
+      "reason": "老舍现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20002_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "雨的四季",
+      "kind": "modern",
+      "reason": "刘湛秋现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20003_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "秋天的怀念",
+      "kind": "modern",
+      "reason": "史铁生现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20007_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "散步",
+      "kind": "modern",
+      "reason": "莫怀戚现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20008_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "金色花",
+      "kind": "modern",
+      "reason": "泰戈尔（印度）散文诗译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20009_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "荷叶·母亲",
+      "kind": "modern",
+      "reason": "冰心现代散文诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20010_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "咏雪",
+      "kind": "add",
+      "reason": "南朝·刘义庆《世说新语》文言短文，统编七上要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20037_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "陈太丘与友期行",
+      "kind": "add",
+      "reason": "南朝·刘义庆《世说新语》文言短文，统编七上要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20011_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "从百草园到三味书屋",
+      "kind": "modern",
+      "reason": "鲁迅现代散文（公有领域，但不是古诗文）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20012_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "往事依依",
+      "kind": "modern",
+      "reason": "于漪现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200051_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "再塑生命的人",
+      "kind": "modern",
+      "reason": "海伦·凯勒（美国）自述译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20013_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "峨眉山月歌",
+      "kind": "add",
+      "reason": "唐·李白七言绝句，统编七上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20015_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "江南逢李龟年",
+      "kind": "add",
+      "reason": "唐·杜甫七言绝句，统编七上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20016_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "行军九日思长安故园",
+      "kind": "add",
+      "reason": "唐·岑参五言绝句，统编七上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20017_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "夜上受降城闻笛",
+      "kind": "add",
+      "reason": "唐·李益七言绝句，统编七上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20018_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "纪念白求恩",
+      "kind": "modern",
+      "reason": "毛泽东现代政论",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20019_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "回忆我的母亲",
+      "kind": "modern",
+      "reason": "朱德现代回忆录",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200050_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "梅岭三章",
+      "kind": "modern",
+      "reason": "陈毅现代诗（1936，保护期未届满）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/21202_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "诫子书",
+      "kind": "add",
+      "reason": "三国·诸葛亮文言家书，统编七上要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20022_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "猫",
+      "kind": "modern",
+      "reason": "郑振铎现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20023_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "我的白鸽",
+      "kind": "modern",
+      "reason": "陈忠实现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200049_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "大雁归来",
+      "kind": "modern",
+      "reason": "利奥波德（美国）自然随笔译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200048_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "狼",
+      "kind": "add",
+      "reason": "清·蒲松龄《聊斋志异》文言短文，统编七上要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20025_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "小圣施恩降大圣",
+      "kind": "fiction",
+      "reason": "明·吴承恩《西游记》章回小说节选，仓的口径收诗歌与文言短文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200047_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "女娲造人",
+      "kind": "modern",
+      "reason": "袁珂现代神话改写",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20028_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "赫耳墨斯和雕像者",
+      "kind": "modern",
+      "reason": "《伊索寓言》（古希腊）译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20029_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "蚊子和狮子",
+      "kind": "modern",
+      "reason": "《伊索寓言》（古希腊）译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20030_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "穿井得一人",
+      "kind": "add",
+      "reason": "《吕氏春秋·察传》文言短文，统编七上课外诵读（仓内《吕氏春秋》一则是伯牙鼓琴，不是这一篇）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20031_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "杞人忧天",
+      "kind": "add",
+      "reason": "《列子》文言寓言，统编七上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20032_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "秋词",
+      "kind": "add",
+      "reason": "唐·刘禹锡七言绝句，统编七上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20033_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "十一月四日风雨大作",
+      "kind": "add",
+      "reason": "南宋·陆游七言绝句，统编七上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200035_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "潼关",
+      "kind": "add",
+      "reason": "清·谭嗣同七言绝句，统编七上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20036_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "邓稼先",
+      "kind": "modern",
+      "reason": "杨振宁现代回忆散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20080_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "说和做——记闻一多先生言行片段",
+      "kind": "modern",
+      "reason": "臧克家现代回忆散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20081_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "列夫·托尔斯泰",
+      "kind": "modern",
+      "reason": "茨威格（奥地利）传记译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20909_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "孙权劝学",
+      "kind": "add",
+      "reason": "北宋·司马光《资治通鉴》文言片段，统编七下要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20083_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "黄河颂",
+      "kind": "modern",
+      "reason": "光未然现代诗歌",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20084_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "老山界",
+      "kind": "modern",
+      "reason": "陆定一现代回忆录",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20085_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "谁是最可爱的人",
+      "kind": "modern",
+      "reason": "魏巍现代通讯",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20086_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "土地的誓言",
+      "kind": "modern",
+      "reason": "端木蕻良现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20087_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "木兰诗",
+      "kind": "alias",
+      "reason": "仓内已收，篇名照课标作「木兰辞」",
+      "poem": "mulanci",
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20088_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "阿长与《山海经》",
+      "kind": "modern",
+      "reason": "鲁迅现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20089_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "山地回忆",
+      "kind": "modern",
+      "reason": "孙犁现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200112_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "台阶",
+      "kind": "modern",
+      "reason": "李森祥现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20878_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "卖油翁",
+      "kind": "add",
+      "reason": "北宋·欧阳修文言笔记，统编七下要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20877_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "驿路梨花",
+      "kind": "modern",
+      "reason": "彭荆风现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20871_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "青春之光",
+      "kind": "modern",
+      "reason": "现代报告文学",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200113_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "有为有不为",
+      "kind": "modern",
+      "reason": "季羡林现代随笔",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200114_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "井冈翠竹",
+      "kind": "modern",
+      "reason": "袁鹰现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200115_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "紫藤萝瀑布",
+      "kind": "modern",
+      "reason": "宗璞现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20863_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "假如生活欺骗了你",
+      "kind": "modern",
+      "reason": "普希金（俄国）诗歌译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20865_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "未选择的路",
+      "kind": "modern",
+      "reason": "弗罗斯特（美国）诗歌译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20866_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "太空一日",
+      "kind": "modern",
+      "reason": "杨利伟现代自述",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20856_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "“蛟龙”探海",
+      "kind": "modern",
+      "reason": "现代通讯",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/200116_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "带上她的眼睛",
+      "kind": "modern",
+      "reason": "刘慈欣现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20855_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "活板",
+      "kind": "add",
+      "reason": "北宋·沈括《梦溪笔谈》文言说明文，统编七下要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20854_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "贾生",
+      "kind": "add",
+      "reason": "唐·李商隐七言绝句，统编七下课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20852_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "过松源晨炊漆公店",
+      "kind": "add",
+      "reason": "南宋·杨万里七言绝句，统编七下课外诵读（仓内 vendor 有《诚斋集》）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20851_langdu.html"
+    },
+    {
+      "volume": "七年级下册",
+      "title": "约客",
+      "kind": "add",
+      "reason": "南宋·赵师秀七言绝句，统编七下课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/qinianji/20850_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "我三十万大军胜利南渡长江",
+      "kind": "modern",
+      "reason": "毛泽东撰写的现代消息",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20901_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "人民解放军百万大军横渡长江",
+      "kind": "modern",
+      "reason": "毛泽东撰写的现代消息",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20902_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "首届诺贝尔奖颁发",
+      "kind": "modern",
+      "reason": "现代消息",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20903_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "“飞天”凌空——跳水姑娘吕伟夺魁记",
+      "kind": "modern",
+      "reason": "现代新闻特写",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20904_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "一着惊海天——目击我国航母舰载战斗机首架次成功着舰",
+      "kind": "modern",
+      "reason": "现代通讯",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20905_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "国行公祭，为佑世界和平",
+      "kind": "modern",
+      "reason": "现代时评",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20906_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "藤野先生",
+      "kind": "modern",
+      "reason": "鲁迅现代回忆散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20907_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "回忆我的母亲",
+      "kind": "modern",
+      "reason": "朱德现代回忆录",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20908_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "列夫·托尔斯泰",
+      "kind": "modern",
+      "reason": "茨威格（奥地利）传记译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20909_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "美丽的颜色",
+      "kind": "modern",
+      "reason": "艾芙·居里（法国）传记译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20910_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "渡荆门送别",
+      "kind": "add",
+      "reason": "唐·李白五言律诗，统编八上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20918_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "庭中有奇树",
+      "kind": "add",
+      "reason": "《古诗十九首》，统编八上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20920_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "龟虽寿",
+      "kind": "add",
+      "reason": "三国·曹操四言乐府，统编八上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/13089_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "赠从弟",
+      "kind": "add",
+      "reason": "东汉·刘桢五言诗，统编八上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20921_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "梁甫行",
+      "kind": "add",
+      "reason": "三国·曹植五言诗，统编八上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20922_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "背影",
+      "kind": "modern",
+      "reason": "朱自清现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20923_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "白杨礼赞",
+      "kind": "modern",
+      "reason": "茅盾现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20924_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "永久的生命",
+      "kind": "modern",
+      "reason": "严文井现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20925_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "我为什么而活着",
+      "kind": "modern",
+      "reason": "罗素（英国）随笔译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20926_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "昆明的雨",
+      "kind": "modern",
+      "reason": "汪曾祺现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20927_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "中国石拱桥",
+      "kind": "modern",
+      "reason": "茅以升现代说明文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20928_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "苏州园林",
+      "kind": "modern",
+      "reason": "叶圣陶现代说明文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20929_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "人民英雄永垂不朽——瞻仰首都人民英雄纪念碑",
+      "kind": "modern",
+      "reason": "现代说明文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20930_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "蝉",
+      "kind": "modern",
+      "reason": "法布尔（法国）科学小品译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20931_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "梦回繁华",
+      "kind": "modern",
+      "reason": "现代说明文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20932_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "得道多助,失道寡助",
+      "kind": "add",
+      "reason": "《孟子·公孙丑下》文言短文，统编八上要求背诵（仓内《孟子》三则没收这一则）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20933_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "生于忧患，死于安乐",
+      "kind": "partial",
+      "reason": "仓内《孟子》三则收了「天将降大任于是人也」这一段，统编这一课的全文未收",
+      "poem": "mengzi3",
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20935_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "富贵不能淫",
+      "kind": "partial",
+      "reason": "仓内《孟子》三则收了「富贵不能淫」这一段，统编这一课的全文未收",
+      "poem": "mengzi3",
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20934_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "愚公移山",
+      "kind": "add",
+      "reason": "《列子》文言寓言，统编八上文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20936_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "周亚夫军细柳",
+      "kind": "add",
+      "reason": "西汉·司马迁《史记·绛侯周勃世家》文言片段，统编八上文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20937_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "采桑子",
+      "kind": "add",
+      "reason": "北宋·欧阳修词，统编八上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20944_langdu.html"
+    },
+    {
+      "volume": "八年级上册",
+      "title": "如梦令",
+      "kind": "add",
+      "reason": "南宋·李清照词，统编八上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/20946_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "社戏",
+      "kind": "modern",
+      "reason": "鲁迅现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21000_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "回延安",
+      "kind": "modern",
+      "reason": "贺敬之现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21001_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "安塞腰鼓",
+      "kind": "modern",
+      "reason": "刘成秋现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21002_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "灯笼",
+      "kind": "modern",
+      "reason": "吴伯箫现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21003_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "大自然的语言",
+      "kind": "modern",
+      "reason": "竺可桢现代科普",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21004_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "恐龙无处不有",
+      "kind": "modern",
+      "reason": "阿西莫夫（美国）科普译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21005_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "被压扁的沙子",
+      "kind": "modern",
+      "reason": "阿西莫夫（美国）科普译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21006_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "大雁归来",
+      "kind": "modern",
+      "reason": "利奥波德（美国）自然随笔译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21007_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "时间的脚印",
+      "kind": "modern",
+      "reason": "陶世龙现代科普",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21008_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "核舟记",
+      "kind": "add",
+      "reason": "明·魏学洢文言说明文，统编八下文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21011_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "望洞庭湖赠张丞相",
+      "kind": "add",
+      "reason": "唐·孟浩然五言律诗，统编八下课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21017_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "最后一次讲演",
+      "kind": "modern",
+      "reason": "闻一多现代演讲",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21018_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "应有格物致知精神",
+      "kind": "modern",
+      "reason": "丁肇中现代演讲",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21019_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "我一生中的重要抉择",
+      "kind": "modern",
+      "reason": "王选现代演讲",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21020_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "庆祝奥林匹克运动复兴25周年",
+      "kind": "modern",
+      "reason": "顾拜旦（法国）演讲译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21021_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "壶口瀑布",
+      "kind": "modern",
+      "reason": "梁衡现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21022_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "在长江源头各拉丹冬",
+      "kind": "modern",
+      "reason": "马丽华现代游记",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21023_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "登勃朗峰",
+      "kind": "modern",
+      "reason": "马克·吐温（美国）游记译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21024_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "一滴水经过丽江",
+      "kind": "modern",
+      "reason": "阿来现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21025_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "庄子与惠子游于濠梁之上",
+      "kind": "add",
+      "reason": "《庄子·秋水》文言片段，统编八下文言文课文（仓内《庄子》一则是北冥有鱼，不是这一篇）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21027_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "题破山寺后禅院",
+      "kind": "add",
+      "reason": "唐·常建五言律诗，统编八下课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21034_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "送友人",
+      "kind": "add",
+      "reason": "唐·李白五言律诗，统编八下课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21035_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "卜算子•黄州定慧院寓居作",
+      "kind": "add",
+      "reason": "北宋·苏轼词，统编八下课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21036_langdu.html"
+    },
+    {
+      "volume": "八年级下册",
+      "title": "卜算子•咏梅",
+      "kind": "add",
+      "reason": "南宋·陆游词，统编八下课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/banianji/21037_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "沁园春·雪",
+      "kind": "modern",
+      "reason": "毛泽东现代词",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21101_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "周总理，你在哪里",
+      "kind": "modern",
+      "reason": "柯岩现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21102_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "我爱这土地",
+      "kind": "modern",
+      "reason": "艾青现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21103_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "乡愁",
+      "kind": "modern",
+      "reason": "余光中现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21104_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "你是人间的四月天",
+      "kind": "modern",
+      "reason": "林徽因现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21105_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "我看",
+      "kind": "modern",
+      "reason": "穆旦现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21106_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "敬业与乐业",
+      "kind": "modern",
+      "reason": "梁启超现代演讲（公有领域，但不是古诗文）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21107_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "就英法联军远征中国致巴特勒上尉的信",
+      "kind": "modern",
+      "reason": "雨果（法国）书信译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21108_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "论教养",
+      "kind": "modern",
+      "reason": "利哈乔夫（苏联）随笔译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21109_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "精神的三间小屋",
+      "kind": "modern",
+      "reason": "毕淑敏现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21110_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "商山早行",
+      "kind": "add",
+      "reason": "唐·温庭筠五言律诗，统编九上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21120_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "月夜忆舍弟",
+      "kind": "add",
+      "reason": "唐·杜甫五言律诗，统编九上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21117_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "长沙过贾谊宅",
+      "kind": "add",
+      "reason": "唐·刘长卿七言律诗，统编九上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21118_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "左迁至蓝关示侄孙湘",
+      "kind": "add",
+      "reason": "唐·韩愈七言律诗，统编九上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21119_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "故乡",
+      "kind": "modern",
+      "reason": "鲁迅现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21121_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "我的叔叔于勒",
+      "kind": "modern",
+      "reason": "莫泊桑（法国）小说译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21122_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "孤独之旅",
+      "kind": "modern",
+      "reason": "曹文轩现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21123_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "中国人失掉自信力了吗",
+      "kind": "modern",
+      "reason": "鲁迅现代杂文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21124_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "怀疑与学问",
+      "kind": "modern",
+      "reason": "顾颉刚现代议论文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21125_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "谈创造性思维",
+      "kind": "modern",
+      "reason": "现代议论文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21126_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "创造宣言",
+      "kind": "modern",
+      "reason": "陶行知现代演讲",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21127_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "智取生辰纲",
+      "kind": "fiction",
+      "reason": "元末明初·施耐庵《水浒传》章回小说节选",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21128_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "范进中举",
+      "kind": "fiction",
+      "reason": "清·吴敬梓《儒林外史》章回小说节选",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21129_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "三顾茅庐",
+      "kind": "fiction",
+      "reason": "元末明初·罗贯中《三国演义》章回小说节选",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21130_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "刘姥姥进大观园",
+      "kind": "fiction",
+      "reason": "清·曹雪芹《红楼梦》章回小说节选",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21131_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "丑奴儿·书博山道中壁",
+      "kind": "add",
+      "reason": "南宋·辛弃疾词，统编九上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21135_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "行香子",
+      "kind": "add",
+      "reason": "北宋·秦观词，统编九上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21134_langdu.html"
+    },
+    {
+      "volume": "九年级上册",
+      "title": "咸阳城东楼",
+      "kind": "add",
+      "reason": "唐·许浑七言律诗，统编九上课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21132_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "祖国啊，我亲爱的祖国",
+      "kind": "modern",
+      "reason": "舒婷现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21201_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "梅岭三章",
+      "kind": "modern",
+      "reason": "陈毅现代诗（1936，保护期未届满）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21202_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "月夜",
+      "kind": "modern",
+      "reason": "沈尹默现代诗（1917 发表）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21203_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "萧红墓畔口占",
+      "kind": "modern",
+      "reason": "戴望舒现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21204_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "断章",
+      "kind": "modern",
+      "reason": "卞之琳现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21205_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "风雨吟",
+      "kind": "modern",
+      "reason": "芦荻现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21206_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "统一",
+      "kind": "modern",
+      "reason": "聂鲁达（智利）诗歌译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21207_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "海燕",
+      "kind": "modern",
+      "reason": "高尔基（苏联）散文诗译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21208_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "孔乙己",
+      "kind": "modern",
+      "reason": "鲁迅现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21209_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "变色龙",
+      "kind": "modern",
+      "reason": "契诃夫（俄国）小说译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21210_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "溜索",
+      "kind": "modern",
+      "reason": "阿城现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21211_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "蒲柳人家",
+      "kind": "modern",
+      "reason": "刘绍棠现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21212_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "鱼我所欲也",
+      "kind": "partial",
+      "reason": "仓内《孟子》三则收了「生亦我所欲也」这一段，统编这一课的全文未收",
+      "poem": "mengzi3",
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21213_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "唐雎不辱使命",
+      "kind": "add",
+      "reason": "西汉·刘向《战国策·魏策》文言片段，统编九下文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21214_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "破阵子·为陈同甫赋壮词以寄之",
+      "kind": "alias",
+      "reason": "仓内已收作「破阵子·为陈同甫赋壮词以寄」",
+      "poem": "pozhenzi",
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21218_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "谈读书",
+      "kind": "modern",
+      "reason": "培根（英国）随笔译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21220_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "不求甚解",
+      "kind": "modern",
+      "reason": "马南邨（邓拓）现代杂文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21221_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "山水画的意境",
+      "kind": "modern",
+      "reason": "李可染现代美术论",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21222_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "无言之美",
+      "kind": "modern",
+      "reason": "朱光潜现代美学论",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21223_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "驱遣我们的想象",
+      "kind": "modern",
+      "reason": "叶圣陶现代文艺论",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21224_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "屈原",
+      "kind": "modern",
+      "reason": "郭沫若现代话剧",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21225_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "天下第一楼",
+      "kind": "modern",
+      "reason": "何冀平现代话剧",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21226_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "枣儿",
+      "kind": "modern",
+      "reason": "孙鸿现代小品",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21227_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "陈涉世家",
+      "kind": "add",
+      "reason": "西汉·司马迁《史记》文言传记，统编九下文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21230_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "南乡子·登京口北固亭有怀",
+      "kind": "alias",
+      "reason": "仓内已收作「南乡子·何处望神州」",
+      "poem": "nangxiangzi",
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21234_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "南安军",
+      "kind": "add",
+      "reason": "南宋·文天祥五言律诗，统编九下课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21237_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "别云间",
+      "kind": "add",
+      "reason": "明·夏完淳五言律诗，统编九下课外诵读",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21238_langdu.html"
+    },
+    {
+      "volume": "九年级下册",
+      "title": "山坡羊·骊山怀古",
+      "kind": "add",
+      "reason": "元·张养浩散曲，统编九下课外诵读（与仓内《山坡羊·潼关怀古》是两首）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/chuzhong/jiunianji/21239_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "沁园春长沙",
+      "kind": "modern",
+      "reason": "毛泽东现代词",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30129_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "立在地球边上放号",
+      "kind": "modern",
+      "reason": "郭沫若现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30102_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "红烛",
+      "kind": "modern",
+      "reason": "闻一多现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30103_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "峨日朵雪峰之侧",
+      "kind": "modern",
+      "reason": "昌耀现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30130_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "致云雀",
+      "kind": "modern",
+      "reason": "雪莱（英国）诗歌译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30104_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "百合花",
+      "kind": "modern",
+      "reason": "茹志鹃现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30105_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "哦，香雪",
+      "kind": "modern",
+      "reason": "铁凝现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30106_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "喜看稻菽千重浪――记首届国家最高科技奖获得者袁隆平",
+      "kind": "modern",
+      "reason": "现代人物通讯",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30107_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "心有一团火，温暖众人心",
+      "kind": "modern",
+      "reason": "现代人物通讯",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30131_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "“探界者”钟扬",
+      "kind": "modern",
+      "reason": "现代人物通讯",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30108_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "以工匠精神雕琢时代品质",
+      "kind": "modern",
+      "reason": "现代时评",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30109_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "芣苢",
+      "kind": "add",
+      "reason": "《诗经·周南》，统编必修上要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30111_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "插秧歌",
+      "kind": "add",
+      "reason": "南宋·杨万里七言绝句，统编必修上要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30112_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "反对党八股",
+      "kind": "modern",
+      "reason": "毛泽东现代演讲",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30119_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "拿来主义",
+      "kind": "modern",
+      "reason": "鲁迅现代杂文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30120_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "读书：目的和前提",
+      "kind": "modern",
+      "reason": "黑塞（德国）随笔译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30138_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "上图书馆",
+      "kind": "modern",
+      "reason": "王佐良现代随笔",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30121_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "故都的秋",
+      "kind": "modern",
+      "reason": "郁达夫现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30122_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "荷塘月色",
+      "kind": "modern",
+      "reason": "朱自清现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30123_langdu.html"
+    },
+    {
+      "volume": "必修上册",
+      "title": "我与地坛",
+      "kind": "modern",
+      "reason": "史铁生现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiushang/30124_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "齐桓晋文之事",
+      "kind": "add",
+      "reason": "《孟子·梁惠王上》文言片段，统编必修下文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30202_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "庖丁解牛",
+      "kind": "add",
+      "reason": "《庄子·养生主》文言片段，统编必修下文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30203_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "烛之武退秦师",
+      "kind": "add",
+      "reason": "《左传》文言片段，统编必修下要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30204_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "鸿门宴",
+      "kind": "add",
+      "reason": "西汉·司马迁《史记·项羽本纪》文言片段",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30205_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "窦娥冤",
+      "kind": "fiction",
+      "reason": "元·关汉卿杂剧",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30206_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "雷雨",
+      "kind": "modern",
+      "reason": "曹禺现代话剧",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30207_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "哈姆莱特",
+      "kind": "modern",
+      "reason": "莎士比亚（英国）戏剧译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30208_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "青蒿素：人类征服疾病的一小步",
+      "kind": "modern",
+      "reason": "屠呦呦现代演讲",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30209_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "一名物理学家的教育历程",
+      "kind": "modern",
+      "reason": "加来道雄现代自述",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30210_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "中国建筑的特征",
+      "kind": "modern",
+      "reason": "梁思成现代学术论文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30211_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "说“木叶”",
+      "kind": "modern",
+      "reason": "林庚现代诗论",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30212_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "在《人民报》创刊纪念会上的演说",
+      "kind": "modern",
+      "reason": "马克思（德国）演讲译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30213_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "在马克思墓前的讲话",
+      "kind": "modern",
+      "reason": "恩格斯（德国）悼词译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30214_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "与妻书",
+      "kind": "add",
+      "reason": "清末·林觉民文言书信（1911，公有领域）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30216_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "祝福",
+      "kind": "modern",
+      "reason": "鲁迅现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30217_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "林教头风雪山神庙",
+      "kind": "fiction",
+      "reason": "元末明初·施耐庵《水浒传》章回小说节选",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30218_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "装在套子里的人",
+      "kind": "modern",
+      "reason": "契诃夫（俄国）小说译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30219_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "促织",
+      "kind": "fiction",
+      "reason": "清·蒲松龄《聊斋志异》文言小说（篇名与仓内口径不同类）",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30220_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "变形记",
+      "kind": "modern",
+      "reason": "卡夫卡（奥地利）小说译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30221_langdu.html"
+    },
+    {
+      "volume": "必修下册",
+      "title": "游园",
+      "kind": "add",
+      "reason": "明·汤显祖《牡丹亭》曲文，统编必修下要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/bixiuxia/30229_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "中国人民站起来了",
+      "kind": "modern",
+      "reason": "毛泽东现代政论",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30301_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "长征胜利万岁",
+      "kind": "modern",
+      "reason": "杨成武现代回忆录",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30302_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "大战中的插曲",
+      "kind": "modern",
+      "reason": "聂荣臻现代回忆录",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30303_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "别了，“不列颠尼亚“",
+      "kind": "modern",
+      "reason": "现代新闻",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30304_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "县委书记的榜样——焦裕禄",
+      "kind": "modern",
+      "reason": "穆青等现代通讯",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30305_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "大学之道",
+      "kind": "alias",
+      "reason": "仓内已收作《大学》（统编这一课的正文即《大学》开篇）",
+      "poem": "daxue",
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30307_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "人皆有不忍人之心",
+      "kind": "add",
+      "reason": "《孟子·公孙丑上》文言片段，统编选必上文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30308_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "《老子》四章",
+      "kind": "alias",
+      "reason": "仓内已收作《老子》八章（多收的四章已登记 coverage-override）",
+      "poem": "laozi8",
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30309_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "五石之瓠",
+      "kind": "alias",
+      "reason": "仓内已收作「逍遥游·五石之瓠」",
+      "poem": "xiaoyaoyou",
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30310_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "兼爱",
+      "kind": "add",
+      "reason": "《墨子》文言片段，统编选必上文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30311_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "大卫·科波菲尔",
+      "kind": "modern",
+      "reason": "狄更斯（英国）小说译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30312_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "复活",
+      "kind": "modern",
+      "reason": "托尔斯泰（俄国）小说译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30313_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "老人与海",
+      "kind": "modern",
+      "reason": "海明威（美国）小说译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30314_langdu.html"
+    },
+    {
+      "volume": "选择性必修上册",
+      "title": "百年孤独",
+      "kind": "modern",
+      "reason": "马尔克斯（哥伦比亚）小说译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiushang/30315_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "社会历史的决定性基础",
+      "kind": "modern",
+      "reason": "恩格斯（德国）论著译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30401_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "改造我们的学习",
+      "kind": "modern",
+      "reason": "毛泽东现代政论",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30402_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "人的正确思想是从哪里来的？",
+      "kind": "modern",
+      "reason": "毛泽东现代政论",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30403_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "实践是检验真理的唯一标准",
+      "kind": "modern",
+      "reason": "现代时评",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30404_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "修辞立其诚",
+      "kind": "modern",
+      "reason": "张岱年现代学术随笔",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30405_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "怜悯是人的天性",
+      "kind": "modern",
+      "reason": "卢梭（法国）论著译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30406_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "人应当坚持正义",
+      "kind": "modern",
+      "reason": "柏拉图（古希腊）对话译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30407_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "记念刘和珍君",
+      "kind": "modern",
+      "reason": "鲁迅现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30408_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "为了忘却的记念",
+      "kind": "modern",
+      "reason": "鲁迅现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30409_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "包身工",
+      "kind": "modern",
+      "reason": "夏衍现代报告文学",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30410_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "荷花淀",
+      "kind": "modern",
+      "reason": "孙犁现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30411_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "小二黑结婚",
+      "kind": "modern",
+      "reason": "赵树理现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30412_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "党费",
+      "kind": "modern",
+      "reason": "王愿坚现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30413_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "苏武传",
+      "kind": "add",
+      "reason": "东汉·班固《汉书·李广苏建传》文言片段，统编选必中文言文课文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30415_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "玩偶之家",
+      "kind": "modern",
+      "reason": "易卜生（挪威）戏剧译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30418_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "迷娘",
+      "kind": "modern",
+      "reason": "歌德（德国）诗歌译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30419_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "致大海",
+      "kind": "modern",
+      "reason": "普希金（俄国）诗歌译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30420_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "自己之歌",
+      "kind": "modern",
+      "reason": "惠特曼（美国）诗歌译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30421_langdu.html"
+    },
+    {
+      "volume": "选择性必修中册",
+      "title": "树和天空",
+      "kind": "modern",
+      "reason": "特朗斯特罗姆（瑞典）诗歌译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30422_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "氓",
+      "kind": "add",
+      "reason": "《诗经·卫风》，统编选必下要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30501_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "孔雀东南飞",
+      "kind": "add",
+      "reason": "汉乐府叙事长诗，统编选必下要求背诵",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30503_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "阿Q正传",
+      "kind": "modern",
+      "reason": "鲁迅现代中篇小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30508_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "边城",
+      "kind": "modern",
+      "reason": "沈从文现代小说",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30509_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "大堰河——我的保姆",
+      "kind": "modern",
+      "reason": "艾青现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30510_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "再别康桥",
+      "kind": "modern",
+      "reason": "徐志摩现代诗",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30511_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "一个消逝了的山村",
+      "kind": "modern",
+      "reason": "李广田现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30512_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "秦腔",
+      "kind": "modern",
+      "reason": "贾平凹现代散文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30513_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "茶馆",
+      "kind": "modern",
+      "reason": "老舍现代话剧",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30514_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "自然选择的证明",
+      "kind": "modern",
+      "reason": "达尔文（英国）论著译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30521_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "宇宙的边疆",
+      "kind": "modern",
+      "reason": "卡尔·萨根（美国）科普译文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30522_langdu.html"
+    },
+    {
+      "volume": "选择性必修下册",
+      "title": "天文学上的旷世之争",
+      "kind": "modern",
+      "reason": "现代科普文",
+      "poem": null,
+      "textbookUrl": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30523_langdu.html"
+    },
+    {
+      "volume": "七年级上册",
+      "title": "皇帝的新装",
+      "kind": "modern",
+      "reason": "安徒生（丹麦）童话译文",
+      "poem": null,
+      "textbookUrl": ""
+    }
+  ]
+}
