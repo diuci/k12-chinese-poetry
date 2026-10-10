@@ -1,13 +1,13 @@
 {
   "note": "统编教材收了、仓里对不上的课文。这张表不判该不该收。",
-  "generated": "2026-10-10",
+  "generated": "2026-10-11",
   "counts": {
-    "generated": "2026-10-10",
-    "total": 227,
+    "generated": "2026-10-11",
+    "total": 221,
     "modern": 40,
     "lessonEntries": 781,
-    "poems": 283,
-    "reciteGaps": 103,
+    "poems": 289,
+    "reciteGaps": 99,
     "primaryGaps": 337
   },
   "rows": [
@@ -69,22 +69,6 @@
     },
     {
       "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "咏雪",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20037_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "陈太丘与友期行",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20011_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
       "lesson": "9",
       "title": "从百草园到三味书屋",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20012_langdu.html",
@@ -133,14 +117,6 @@
     },
     {
       "volume": "七年级上册",
-      "lesson": "16",
-      "title": "诫子书",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20022_langdu.html",
-      "looksModern": false,
-      "recite": false
-    },
-    {
-      "volume": "七年级上册",
       "lesson": "17",
       "title": "猫",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20023_langdu.html",
@@ -160,14 +136,6 @@
       "lesson": "19",
       "title": "大雁归来",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/200048_langdu.html",
-      "looksModern": false,
-      "recite": false
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "20",
-      "title": "狼",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20025_langdu.html",
       "looksModern": false,
       "recite": false
     },
@@ -208,22 +176,6 @@
       "lesson": "自读",
       "title": "蚊子和狮子",
       "url": "https://yw.suyang123.com/chuzhong/qinianji/20030_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "穿井得一人",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20031_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "七年级上册",
-      "lesson": "自读",
-      "title": "杞人忧天",
-      "url": "https://yw.suyang123.com/chuzhong/qinianji/20032_langdu.html",
       "looksModern": false,
       "recite": true
     },

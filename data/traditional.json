@@ -1,21 +1,21 @@
 {
  "note": "简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / pending 没依据，留在待定清单。",
  "counts": {
-  "page": 10386,
-  "table": 1152,
+  "page": 10674,
+  "table": 1192,
   "rule": 44,
   "keep": 0,
-  "identity": 1467,
+  "identity": 1509,
   "variant": 5,
   "pending": 0
  },
  "counts_apparatus": {
-  "table": 43273,
-  "rule": 2343,
-  "identity": 9644,
+  "table": 44776,
+  "rule": 2419,
+  "identity": 9946,
   "keep": 80,
   "pending": 0,
-  "page": 10265,
+  "page": 10421,
   "variant": 5
  },
  "reversal": [
@@ -241,6 +241,12 @@
    "id": "lunyu12-cz",
    "title": "《论语》十二章",
    "char": "昼",
+   "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+  },
+  {
+   "id": "yongxue",
+   "title": "咏雪",
+   "char": "凭",
    "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
   },
   {
@@ -4310,6 +4316,894 @@
     }
    ],
    "left_behind": []
+  },
+  {
+   "id": "yongxue",
+   "title": "咏雪",
+   "page": "世說新語/言語",
+   "text_trad": [
+    "謝太傅寒雪日內集，與兒女講論文義。",
+    "俄而雪驟，公欣然曰：“白雪紛紛何所似？”",
+    "兄子胡兒曰：“撒鹽空中差可擬。”",
+    "兄女曰：“未若柳絮因風起。”",
+    "公大笑樂。",
+    "即公大兄無奕女，左將軍王凝之妻也。"
+   ],
+   "lines_trad": [
+    "謝太傅寒雪日內集，與兒女講論文義。",
+    "俄而雪驟，公欣然曰：“白雪紛紛何所似？”",
+    "兄子胡兒曰：“撒鹽空中差可擬。”",
+    "兄女曰：“未若柳絮因風起。”",
+    "公大笑樂。",
+    "即公大兄無奕女，左將軍王凝之妻也。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "謝太傅寒雪日內集，與兒女講論文義。",
+     "俄而雪驟，公欣然曰：“白雪紛紛何所似？”",
+     "兄子胡兒曰：“撒鹽空中差可擬。”",
+     "兄女曰：“未若柳絮因風起。”",
+     "公大笑樂。",
+     "即公大兄無奕女，左將軍王凝之妻也。"
+    ],
+    "注释": [
+     "- 謝太傅：謝安（320—385），東晉名士，官至太傅，死後追贈太傅，所以文中稱「謝太傅」。",
+     "- 內集：家庭聚會。兒女：這里指子侄一輩的年輕人，不是專指兒子和女兒。",
+     "- 講論文義：講解、討論詩文的意思。",
+     "- 俄而：不久、一會兒。驟：急，這里雪下得又大又急。",
+     "- 欣然：高興的樣子。何所似：像什麼。",
+     "- 胡兒：謝朗的小字，謝安的侄子。差可擬：大體可以相比。差，大致、差不多。擬，相比。",
+     "- 未若：不如、比不上。因風起：憑着風飄起來。因，凭借。",
+     "- 公大笑樂：謝安聽了大笑，很愉快。",
+     "- 即公大兄無奕女：（謝道韞）就是謝安大哥謝無奕的女兒。無奕，謝無奕。",
+     "- 左將軍王凝之妻也：王凝之的妻子。王凝之是王羲之的兒子，官左將軍。這一句是補敘，交代「兄女」是誰。"
+    ],
+    "译文": [
+     "謝安在一個寒冷下雪的日子把家里人聚在一起，和子侄們講解、討論詩文。",
+     "一會兒雪下得又急又大，謝安高興地問：「這紛紛揚揚的白雪像什麼呢？」",
+     "他哥哥的兒子胡兒說：「差不多可以比作把鹽撒在空中。」",
+     "他哥哥的女兒說：「不如比作柳絮憑風飄起。」謝安聽了大笑，十分愉快。",
+     "（她）就是謝安大哥謝無奕的女兒、左將軍王凝之的妻子謝道韞。"
+    ],
+    "赏析": [
+     "這一篇只有四十幾個字，講的是一次家庭遊戲：下雪，大人出題，孩子接。",
+     "兩個答案放在一起比：「撒鹽空中」是形狀對上了——白的、往下掉；「柳絮因風起」把方向也改了，鹽往下落，柳絮是被風托起來的。雪真正落起來的樣子更接近後者。",
+     "文中沒有評誰好誰差，只寫「公大笑樂」，最後補一句「即公大兄無奕女」，把贏的那個人是誰交代清楚——這是全篇最要緊的一筆。",
+     "後來「詠絮」成了稱讚女子文才的固定說法，出處就在這里。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊課文（教材目錄把這一篇排在「6 散步」條目之後，沒有單獨標課號），選自《世說新語·言語》。",
+     "課標（2022）附錄1 未列本篇，屬教材拓展。"
+    ]
+   },
+   "labels_trad": {
+    "title": "詠雪",
+    "author": "劉義慶",
+    "dynasty": "南朝宋",
+    "stage": "初中",
+    "volume": "七年級上冊",
+    "form": "文言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "詠物",
+     "家庭"
+    ],
+    "technique": [
+     "比喻",
+     "對比",
+     "白描"
+    ],
+    "tags": [
+     "詠物",
+     "家庭",
+     "南朝宋文言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "谢",
+     "cands": [
+      "謝"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "谢太傅寒雪日内集，",
+     "field": "full",
+     "line": 0,
+     "page_char": "謝"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "内",
+     "cands": [
+      "內"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "谢太傅寒雪日内集，与儿女讲论文",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "太傅寒雪日内集，与儿女讲论文义。",
+     "field": "full",
+     "line": 0,
+     "page_char": "與"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "傅寒雪日内集，与儿女讲论文义。",
+     "field": "full",
+     "line": 0,
+     "page_char": "兒"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "讲",
+     "cands": [
+      "講"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "雪日内集，与儿女讲论文义。",
+     "field": "full",
+     "line": 0,
+     "page_char": "講"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "论",
+     "cands": [
+      "論"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "日内集，与儿女讲论文义。",
+     "field": "full",
+     "line": 0,
+     "page_char": "論"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "义",
+     "cands": [
+      "義"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "集，与儿女讲论文义。",
+     "field": "full",
+     "line": 0,
+     "page_char": "義"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "骤",
+     "cands": [
+      "驟"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "俄而雪骤，公欣然曰：“白",
+     "field": "full",
+     "line": 1,
+     "page_char": "驟"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "纷",
+     "cands": [
+      "紛"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "公欣然曰：“白雪纷纷何所似？”",
+     "field": "full",
+     "line": 1,
+     "page_char": "紛"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "纷",
+     "cands": [
+      "紛"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "欣然曰：“白雪纷纷何所似？”",
+     "field": "full",
+     "line": 1,
+     "page_char": "紛"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "胡",
+     "cands": [
+      "胡",
+      "鬍",
+      "衚"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "兄子胡儿曰：“撒盐空中",
+     "field": "full",
+     "line": 2,
+     "pick": "胡"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "兄子胡儿曰：“撒盐空中差",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "盐",
+     "cands": [
+      "鹽"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "兄子胡儿曰：“撒盐空中差可拟。”",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "拟",
+     "cands": [
+      "擬"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“撒盐空中差可拟。”",
+     "field": "full",
+     "line": 2,
+     "page_char": "擬"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "风",
+     "cands": [
+      "風"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "曰：“未若柳絮因风起。”",
+     "field": "full",
+     "line": 3,
+     "page_char": "風"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "乐",
+     "cands": [
+      "樂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "公大笑乐。",
+     "field": "full",
+     "line": 4,
+     "page_char": "樂"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "即公大兄无奕女，左将军王凝",
+     "field": "full",
+     "line": 5,
+     "page_char": "無"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "公大兄无奕女，左将军王凝之妻也。",
+     "field": "full",
+     "line": 5,
+     "page_char": "將"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "大兄无奕女，左将军王凝之妻也。",
+     "field": "full",
+     "line": 5,
+     "page_char": "軍"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "谢",
+     "cands": [
+      "謝"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "谢太傅寒雪日内集，",
+     "field": "lines",
+     "line": 0,
+     "page_char": "謝"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "内",
+     "cands": [
+      "內"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "谢太傅寒雪日内集，与儿女讲论文",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "太傅寒雪日内集，与儿女讲论文义。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "與"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "傅寒雪日内集，与儿女讲论文义。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "兒"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "讲",
+     "cands": [
+      "講"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "雪日内集，与儿女讲论文义。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "講"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "论",
+     "cands": [
+      "論"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "日内集，与儿女讲论文义。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "論"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "义",
+     "cands": [
+      "義"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "集，与儿女讲论文义。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "義"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "骤",
+     "cands": [
+      "驟"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "俄而雪骤，公欣然曰：“白",
+     "field": "lines",
+     "line": 1,
+     "page_char": "驟"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "纷",
+     "cands": [
+      "紛"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "公欣然曰：“白雪纷纷何所似？”",
+     "field": "lines",
+     "line": 1,
+     "page_char": "紛"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "纷",
+     "cands": [
+      "紛"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "欣然曰：“白雪纷纷何所似？”",
+     "field": "lines",
+     "line": 1,
+     "page_char": "紛"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "胡",
+     "cands": [
+      "胡",
+      "鬍",
+      "衚"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "兄子胡儿曰：“撒盐空中",
+     "field": "lines",
+     "line": 2,
+     "pick": "胡"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "儿",
+     "cands": [
+      "兒"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "兄子胡儿曰：“撒盐空中差",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "盐",
+     "cands": [
+      "鹽"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "兄子胡儿曰：“撒盐空中差可拟。”",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "拟",
+     "cands": [
+      "擬"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“撒盐空中差可拟。”",
+     "field": "lines",
+     "line": 2,
+     "page_char": "擬"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "风",
+     "cands": [
+      "風"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "曰：“未若柳絮因风起。”",
+     "field": "lines",
+     "line": 3,
+     "page_char": "風"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "乐",
+     "cands": [
+      "樂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "公大笑乐。",
+     "field": "lines",
+     "line": 4,
+     "page_char": "樂"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "即公大兄无奕女，左将军王凝",
+     "field": "lines",
+     "line": 5,
+     "page_char": "無"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "公大兄无奕女，左将军王凝之妻也。",
+     "field": "lines",
+     "line": 5,
+     "page_char": "將"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "军",
+     "cands": [
+      "軍"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "大兄无奕女，左将军王凝之妻也。",
+     "field": "lines",
+     "line": 5,
+     "page_char": "軍"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     0,
+     "谢",
+     "谢太傅寒雪日内集，",
+     "謝",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     9,
+     "与",
+     "太傅寒雪日内集，与儿女讲论文义。",
+     "與",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     10,
+     "儿",
+     "傅寒雪日内集，与儿女讲论文义。",
+     "兒",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     12,
+     "讲",
+     "雪日内集，与儿女讲论文义。",
+     "講",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     13,
+     "论",
+     "日内集，与儿女讲论文义。",
+     "論",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     15,
+     "义",
+     "集，与儿女讲论文义。",
+     "義",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     3,
+     "骤",
+     "俄而雪骤，公欣然曰：“白",
+     "驟",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     13,
+     "纷",
+     "公欣然曰：“白雪纷纷何所似？”",
+     "紛",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     14,
+     "纷",
+     "欣然曰：“白雪纷纷何所似？”",
+     "紛",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     13,
+     "拟",
+     "：“撒盐空中差可拟。”",
+     "擬",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     10,
+     "风",
+     "曰：“未若柳絮因风起。”",
+     "風",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     3,
+     "乐",
+     "公大笑乐。",
+     "樂",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     4,
+     "无",
+     "即公大兄无奕女，左将军王凝",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     9,
+     "将",
+     "公大兄无奕女，左将军王凝之妻也。",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     10,
+     "军",
+     "大兄无奕女，左将军王凝之妻也。",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:注释",
+     9,
+     3,
+     "将",
+     "- 左将军王凝之妻也：王",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:注释",
+     9,
+     4,
+     "军",
+     "- 左将军王凝之妻也：王凝",
+     "軍",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:收录范围",
+     0,
+     56,
+     "语",
+     "自《世说新语·言语》。",
+     "語",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "谢安在一个寒冷下雪的日子把",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "赞",
+     "cands": [
+      "贊",
+      "讚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "来「咏絮」成了称赞女子文才的固定说",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "讚",
+     "why": "赞美、赞赏、赞叹、夸赞都是称扬义，现代繁体作「讚」；「贊」用于赞助、贊成（仓内没有这种用法）"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "上册课文（教材目录把这一篇排在「6",
+     "field": "sec:收录范围",
+     "line": 0,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": [
+    {
+     "char": "凭",
+     "why": "identity（词组表说这个词照抄）：表与页都说这个字本来就写作这个形"
+    }
+   ]
   },
   {
    "id": "yeshangshouxiangchengwendi",
@@ -15247,6 +16141,1840 @@
    "left_behind": []
   },
   {
+   "id": "qirenyoutian",
+   "title": "杞人忧天",
+   "page": "列子/天瑞篇",
+   "text_trad": [
+    "杞國有人憂天地崩墜，身亡所寄，廢寢食者。",
+    "又有憂彼之所憂者，因往曉之，曰：“天，積氣耳，亡處亡氣。若屈伸呼吸，終日在天中行止，奈何憂崩墜乎？”",
+    "其人曰：“天果積氣，日月星宿，不當墜耶？”",
+    "曉之者曰：“日月星宿，亦積氣中之有光耀者，只使墜，亦不能有所中傷。”",
+    "其人曰：“奈地壞何？”",
+    "曉之者曰：“地，積塊耳，充塞四虛，亡處亡塊。若躇步跐蹈，終日在地上行止，奈何憂其壞？”",
+    "其人舍然大喜，曉之者亦舍然大喜。"
+   ],
+   "lines_trad": [
+    "杞國有人憂天地崩墜，身亡所寄，廢寢食者。",
+    "又有憂彼之所憂者，因往曉之，曰：“天，積氣耳，亡處亡氣。若屈伸呼吸，終日在天中行止，奈何憂崩墜乎？”",
+    "其人曰：“天果積氣，日月星宿，不當墜耶？”",
+    "曉之者曰：“日月星宿，亦積氣中之有光耀者，只使墜，亦不能有所中傷。”",
+    "其人曰：“奈地壞何？”",
+    "曉之者曰：“地，積塊耳，充塞四虛，亡處亡塊。若躇步跐蹈，終日在地上行止，奈何憂其壞？”",
+    "其人舍然大喜，曉之者亦舍然大喜。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "杞國有人憂天地崩墜，身亡所寄，廢寢食者。",
+     "又有憂彼之所憂者，因往曉之，曰：“天，積氣耳，亡處亡氣。若屈伸呼吸，終日在天中行止，奈何憂崩墜乎？”",
+     "其人曰：“天果積氣，日月星宿，不當墜耶？”",
+     "曉之者曰：“日月星宿，亦積氣中之有光耀者，只使墜，亦不能有所中傷。”",
+     "其人曰：“奈地壞何？”",
+     "曉之者曰：“地，積塊耳，充塞四虛，亡處亡塊。若躇步跐蹈，終日在地上行止，奈何憂其壞？”",
+     "其人舍然大喜，曉之者亦舍然大喜。"
+    ],
+    "异文": [
+     "- 「曉之者曰」（第六句）：統編作「曉之者曰」；維基文庫《列子/天瑞篇》這一處作「曉者曰」，少一個「之」字。",
+     "  取舍：正文照統編作「曉之者曰」，「曉者曰」登記爲異文，不改正文。",
+     "  出處：統編教材七年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20032_langdu.html ；維基文庫《列子/天瑞篇》 https://zh.wikisource.org/wiki/%E5%88%97%E5%AD%90%2F%E5%A4%A9%E7%91%9E%E7%AF%87",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 段落劃分：統編把這一篇切成七段；維基文庫《列子/天瑞篇》是一整段，而且後面還接着「長廬子聞而笑之曰：虹蜺也，雲霧也，風雨也……」一段，教材沒收。",
+     "  取舍：正文照統編的分段與收束，不補那一段。",
+     "  出處：同上兩條出處。",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。"
+    ],
+    "注释": [
+     "- 選自《列子·天瑞》。《列子》舊題戰國鄭人列御寇著，今存本一般認爲是魏晉時期編定。",
+     "- 杞（qǐ）：春秋時期國名，在今河南杞縣。",
+     "- 憂天地崩墜：擔心天崩地裂。崩墜，崩塌墜落。",
+     "- 身亡（wú）所寄：自己沒有可以存身的地方。亡，同「無」。寄，依附、依托。",
+     "- 廢寢食者：睡不着、喫不下。廢，停止。",
+     "- 又有憂彼之所憂者：又有一個爲他的憂愁而擔心的人。",
+     "- 因往曉之：就去開導他。因，於是、就。曉，開導、告知。",
+     "- 積氣耳：積聚的氣體罷了。耳，罷了。",
+     "- 亡處亡氣：沒有一個地方沒有氣。",
+     "- 若屈伸呼吸：你一舉一動、一呼一吸。若，你。屈伸，這里指身體活動。",
+     "- 行止：行動、停留。",
+     "- 奈何：爲什麼、怎麼。",
+     "- 天果積氣：天果真是積聚的氣體。果，果真。",
+     "- 日月星宿（xiù）：太陽、月亮、星辰。",
+     "- 不當墜耶：不就會掉下來嗎？當，將會。",
+     "- 只使墜：即使掉下來。只使，縱使、即使。",
+     "- 中（zhòng）傷：打中而受傷。",
+     "- 奈地壞何：地陷下去怎麼辦？",
+     "- 積塊耳：堆積的土塊罷了。",
+     "- 充塞四虛：填滿了四方。四虛，四方。",
+     "- 躇（chú）步跐（cǐ）蹈：都是踩、踏的意思，泛指行走。",
+     "- 舍（shì）然：消除顧慮後放心的樣子。舍，同「釋」。"
+    ],
+    "译文": [
+     "杞國有個人擔心天會崩塌、地會陷落，自己無處存身，以致睡不着覺、喫不下飯。",
+     "另外又有一個人，爲這個杞國人的憂愁而憂愁，就去開導他，說：「天不過是積聚的氣體罷了，沒有哪個地方沒有氣。你一舉一動、一呼一吸，整天都在天空里活動，怎麼還擔心天會塌下來呢？」",
+     "那人說：「天果真是氣體，那日月星辰不就會掉下來嗎？」",
+     "開導他的人說：「日月星辰也是積聚的氣體中那些會發光的，即使掉下來，也不會傷到什麼。」",
+     "那人又說：「地陷下去怎麼辦？」",
+     "開導他的人說：「地不過是堆積的土塊罷了，填滿了四方，沒有哪個地方不是土塊。你踩踏行走，整天都在地上活動，怎麼還擔心它會陷下去呢？」",
+     "那人消除顧慮後非常高興，開導他的人也非常高興。"
+    ],
+    "赏析": [
+     "這一篇的對話是一層壓一層的：憂天 → 憂日月星辰墜 → 憂地壞。每解決一層，對方立刻提出下一層。",
+     "開導者的辦法不是安慰，是給出一個解釋模型：天是積氣，地是積塊。這個模型在戰國是當時能拿出的最好答案。",
+     "「日月星宿，亦積氣中之有光耀者」是全篇最難的一句——它承認星辰會墜，但說墜了也不傷人。它沒有否認對方的擔心，只是把它縮小。",
+     "結尾兩個「舍然大喜」寫得很平衡：憂者放心了，開導者也放心了。《列子》原文在這之後還有一段「長廬子聞而笑之」，反過來又說天地終歸要壞——教材收在這一段結束，本篇的意思就是這一層。",
+     "「杞人憂天」後來成了成語，用來指不必要的擔憂。但教材選它，也留下了另一層意思：那個杞人問的是「我腳下和頭頂的東西會不會塌」，這個問題本身不算荒唐。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊課文（教材目錄把這一篇排在「23*女媧造人」條目下，沒有單獨標課號），選自《列子·天瑞》。",
+     "倉內另有《列子》一則（愚公移山）尚未收，那是同一部書里的另一篇。",
+     "課標（2022）附錄1 未列本篇，屬教材拓展。"
+    ]
+   },
+   "labels_trad": {
+    "title": "杞人憂天",
+    "author": "佚名",
+    "dynasty": "先秦",
+    "stage": "初中",
+    "volume": "七年級上冊",
+    "form": "文言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "寓言",
+     "說理"
+    ],
+    "technique": [
+     "對話",
+     "寓言",
+     "層層遞進"
+    ],
+    "tags": [
+     "寓言",
+     "說理",
+     "先秦文言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "国",
+     "cands": [
+      "國"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "杞国有人忧天地崩坠，",
+     "field": "full",
+     "line": 0,
+     "page_char": "國"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "杞国有人忧天地崩坠，身亡所",
+     "field": "full",
+     "line": 0,
+     "page_char": "憂"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "坠",
+     "cands": [
+      "墜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "杞国有人忧天地崩坠，身亡所寄，废寝",
+     "field": "full",
+     "line": 0,
+     "page_char": "墜"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "废",
+     "cands": [
+      "廢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "崩坠，身亡所寄，废寝食者。",
+     "field": "full",
+     "line": 0,
+     "page_char": "廢"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "寝",
+     "cands": [
+      "寢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "坠，身亡所寄，废寝食者。",
+     "field": "full",
+     "line": 0,
+     "page_char": "寢"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "又有忧彼之所忧者，因往",
+     "field": "full",
+     "line": 1,
+     "page_char": "憂"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "又有忧彼之所忧者，因往晓之，曰",
+     "field": "full",
+     "line": 1,
+     "page_char": "憂"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "晓",
+     "cands": [
+      "曉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "彼之所忧者，因往晓之，曰：“天，积",
+     "field": "full",
+     "line": 1,
+     "page_char": "曉"
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晓之，曰：“天，积气耳，亡处亡气。",
+     "field": "full",
+     "line": 1,
+     "page_char": "積"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "气",
+     "cands": [
+      "氣"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之，曰：“天，积气耳，亡处亡气。若",
+     "field": "full",
+     "line": 1,
+     "page_char": "氣"
+    },
+    {
+     "at": 24,
+     "n": 1,
+     "simp": "处",
+     "cands": [
+      "處"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“天，积气耳，亡处亡气。若屈伸呼吸",
+     "field": "full",
+     "line": 1,
+     "page_char": "處"
+    },
+    {
+     "at": 26,
+     "n": 1,
+     "simp": "气",
+     "cands": [
+      "氣"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，积气耳，亡处亡气。若屈伸呼吸，终",
+     "field": "full",
+     "line": 1,
+     "page_char": "氣"
+    },
+    {
+     "at": 34,
+     "n": 1,
+     "simp": "终",
+     "cands": [
+      "終"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "气。若屈伸呼吸，终日在天中行止，奈",
+     "field": "full",
+     "line": 1,
+     "page_char": "終"
+    },
+    {
+     "at": 44,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "在天中行止，奈何忧崩坠乎？”",
+     "field": "full",
+     "line": 1,
+     "page_char": "憂"
+    },
+    {
+     "at": 46,
+     "n": 1,
+     "simp": "坠",
+     "cands": [
+      "墜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "中行止，奈何忧崩坠乎？”",
+     "field": "full",
+     "line": 1,
+     "page_char": "墜"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "果",
+     "cands": [
+      "果",
+      "菓"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "其人曰：“天果积气，日月星宿，",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "其人曰：“天果积气，日月星宿，不",
+     "field": "full",
+     "line": 2,
+     "page_char": "積"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "气",
+     "cands": [
+      "氣"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "其人曰：“天果积气，日月星宿，不当",
+     "field": "full",
+     "line": 2,
+     "page_char": "氣"
+    },
+    {
+     "at": 15,
+     "n": 2,
+     "simp": "不当",
+     "cands": [
+      "不當"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "积气，日月星宿，不当坠耶？”",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "坠",
+     "cands": [
+      "墜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，日月星宿，不当坠耶？”",
+     "field": "full",
+     "line": 2,
+     "page_char": "墜"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "晓",
+     "cands": [
+      "曉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晓之者曰：“日月星",
+     "field": "full",
+     "line": 3,
+     "page_char": "曉"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“日月星宿，亦积气中之有光耀者，",
+     "field": "full",
+     "line": 3,
+     "page_char": "積"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "气",
+     "cands": [
+      "氣"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“日月星宿，亦积气中之有光耀者，只",
+     "field": "full",
+     "line": 3,
+     "page_char": "氣"
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "只",
+     "cands": [
+      "只",
+      "隻",
+      "祇"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "气中之有光耀者，只使坠，亦不能有所",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "坠",
+     "cands": [
+      "墜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之有光耀者，只使坠，亦不能有所中伤",
+     "field": "full",
+     "line": 3,
+     "page_char": "墜"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "伤",
+     "cands": [
+      "傷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "坠，亦不能有所中伤。”",
+     "field": "full",
+     "line": 3,
+     "page_char": "傷"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "坏",
+     "cands": [
+      "壞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "其人曰：“奈地坏何？”",
+     "field": "full",
+     "line": 4,
+     "page_char": "壞"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "晓",
+     "cands": [
+      "曉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晓之者曰：“地，积",
+     "field": "full",
+     "line": 5,
+     "page_char": "曉"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晓之者曰：“地，积块耳，充塞四虚，",
+     "field": "full",
+     "line": 5,
+     "page_char": "積"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "块",
+     "cands": [
+      "塊"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之者曰：“地，积块耳，充塞四虚，亡",
+     "field": "full",
+     "line": 5,
+     "page_char": "塊"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "虚",
+     "cands": [
+      "虛"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，积块耳，充塞四虚，亡处亡块。若躇",
+     "field": "full",
+     "line": 5,
+     "page_char": "虛"
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "处",
+     "cands": [
+      "處"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "耳，充塞四虚，亡处亡块。若躇步跐蹈",
+     "field": "full",
+     "line": 5,
+     "page_char": "處"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "块",
+     "cands": [
+      "塊"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "充塞四虚，亡处亡块。若躇步跐蹈，终",
+     "field": "full",
+     "line": 5,
+     "page_char": "塊"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "终",
+     "cands": [
+      "終"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "块。若躇步跐蹈，终日在地上行止，奈",
+     "field": "full",
+     "line": 5,
+     "page_char": "終"
+    },
+    {
+     "at": 38,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "在地上行止，奈何忧其坏？”",
+     "field": "full",
+     "line": 5,
+     "page_char": "憂"
+    },
+    {
+     "at": 40,
+     "n": 1,
+     "simp": "坏",
+     "cands": [
+      "壞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上行止，奈何忧其坏？”",
+     "field": "full",
+     "line": 5,
+     "page_char": "壞"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "舍",
+     "cands": [
+      "舍",
+      "捨"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "其人舍然大喜，晓之者亦",
+     "field": "full",
+     "line": 6
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "晓",
+     "cands": [
+      "曉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "其人舍然大喜，晓之者亦舍然大喜。",
+     "field": "full",
+     "line": 6,
+     "page_char": "曉"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "舍",
+     "cands": [
+      "舍",
+      "捨"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "然大喜，晓之者亦舍然大喜。",
+     "field": "full",
+     "line": 6
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "国",
+     "cands": [
+      "國"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "杞国有人忧天地崩坠，",
+     "field": "lines",
+     "line": 0,
+     "page_char": "國"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "杞国有人忧天地崩坠，身亡所",
+     "field": "lines",
+     "line": 0,
+     "page_char": "憂"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "坠",
+     "cands": [
+      "墜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "杞国有人忧天地崩坠，身亡所寄，废寝",
+     "field": "lines",
+     "line": 0,
+     "page_char": "墜"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "废",
+     "cands": [
+      "廢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "崩坠，身亡所寄，废寝食者。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "廢"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "寝",
+     "cands": [
+      "寢"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "坠，身亡所寄，废寝食者。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "寢"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "又有忧彼之所忧者，因往",
+     "field": "lines",
+     "line": 1,
+     "page_char": "憂"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "又有忧彼之所忧者，因往晓之，曰",
+     "field": "lines",
+     "line": 1,
+     "page_char": "憂"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "晓",
+     "cands": [
+      "曉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "彼之所忧者，因往晓之，曰：“天，积",
+     "field": "lines",
+     "line": 1,
+     "page_char": "曉"
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晓之，曰：“天，积气耳，亡处亡气。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "積"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "气",
+     "cands": [
+      "氣"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之，曰：“天，积气耳，亡处亡气。若",
+     "field": "lines",
+     "line": 1,
+     "page_char": "氣"
+    },
+    {
+     "at": 24,
+     "n": 1,
+     "simp": "处",
+     "cands": [
+      "處"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“天，积气耳，亡处亡气。若屈伸呼吸",
+     "field": "lines",
+     "line": 1,
+     "page_char": "處"
+    },
+    {
+     "at": 26,
+     "n": 1,
+     "simp": "气",
+     "cands": [
+      "氣"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，积气耳，亡处亡气。若屈伸呼吸，终",
+     "field": "lines",
+     "line": 1,
+     "page_char": "氣"
+    },
+    {
+     "at": 34,
+     "n": 1,
+     "simp": "终",
+     "cands": [
+      "終"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "气。若屈伸呼吸，终日在天中行止，奈",
+     "field": "lines",
+     "line": 1,
+     "page_char": "終"
+    },
+    {
+     "at": 44,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "在天中行止，奈何忧崩坠乎？”",
+     "field": "lines",
+     "line": 1,
+     "page_char": "憂"
+    },
+    {
+     "at": 46,
+     "n": 1,
+     "simp": "坠",
+     "cands": [
+      "墜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "中行止，奈何忧崩坠乎？”",
+     "field": "lines",
+     "line": 1,
+     "page_char": "墜"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "果",
+     "cands": [
+      "果",
+      "菓"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "其人曰：“天果积气，日月星宿，",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "其人曰：“天果积气，日月星宿，不",
+     "field": "lines",
+     "line": 2,
+     "page_char": "積"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "气",
+     "cands": [
+      "氣"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "其人曰：“天果积气，日月星宿，不当",
+     "field": "lines",
+     "line": 2,
+     "page_char": "氣"
+    },
+    {
+     "at": 15,
+     "n": 2,
+     "simp": "不当",
+     "cands": [
+      "不當"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "积气，日月星宿，不当坠耶？”",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "坠",
+     "cands": [
+      "墜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，日月星宿，不当坠耶？”",
+     "field": "lines",
+     "line": 2,
+     "page_char": "墜"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "晓",
+     "cands": [
+      "曉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晓之者曰：“日月星",
+     "field": "lines",
+     "line": 3,
+     "page_char": "曉"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "：“日月星宿，亦积气中之有光耀者，",
+     "field": "lines",
+     "line": 3,
+     "page_char": "積"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "气",
+     "cands": [
+      "氣"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "“日月星宿，亦积气中之有光耀者，只",
+     "field": "lines",
+     "line": 3,
+     "page_char": "氣"
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "只",
+     "cands": [
+      "只",
+      "隻",
+      "祇"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "气中之有光耀者，只使坠，亦不能有所",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "坠",
+     "cands": [
+      "墜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之有光耀者，只使坠，亦不能有所中伤",
+     "field": "lines",
+     "line": 3,
+     "page_char": "墜"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "伤",
+     "cands": [
+      "傷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "坠，亦不能有所中伤。”",
+     "field": "lines",
+     "line": 3,
+     "page_char": "傷"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "坏",
+     "cands": [
+      "壞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "其人曰：“奈地坏何？”",
+     "field": "lines",
+     "line": 4,
+     "page_char": "壞"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "晓",
+     "cands": [
+      "曉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晓之者曰：“地，积",
+     "field": "lines",
+     "line": 5,
+     "page_char": "曉"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "晓之者曰：“地，积块耳，充塞四虚，",
+     "field": "lines",
+     "line": 5,
+     "page_char": "積"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "块",
+     "cands": [
+      "塊"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之者曰：“地，积块耳，充塞四虚，亡",
+     "field": "lines",
+     "line": 5,
+     "page_char": "塊"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "虚",
+     "cands": [
+      "虛"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，积块耳，充塞四虚，亡处亡块。若躇",
+     "field": "lines",
+     "line": 5,
+     "page_char": "虛"
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "处",
+     "cands": [
+      "處"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "耳，充塞四虚，亡处亡块。若躇步跐蹈",
+     "field": "lines",
+     "line": 5,
+     "page_char": "處"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "块",
+     "cands": [
+      "塊"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "充塞四虚，亡处亡块。若躇步跐蹈，终",
+     "field": "lines",
+     "line": 5,
+     "page_char": "塊"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "终",
+     "cands": [
+      "終"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "块。若躇步跐蹈，终日在地上行止，奈",
+     "field": "lines",
+     "line": 5,
+     "page_char": "終"
+    },
+    {
+     "at": 38,
+     "n": 1,
+     "simp": "忧",
+     "cands": [
+      "憂"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "在地上行止，奈何忧其坏？”",
+     "field": "lines",
+     "line": 5,
+     "page_char": "憂"
+    },
+    {
+     "at": 40,
+     "n": 1,
+     "simp": "坏",
+     "cands": [
+      "壞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "上行止，奈何忧其坏？”",
+     "field": "lines",
+     "line": 5,
+     "page_char": "壞"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "舍",
+     "cands": [
+      "舍",
+      "捨"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "其人舍然大喜，晓之者亦",
+     "field": "lines",
+     "line": 6
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "晓",
+     "cands": [
+      "曉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "其人舍然大喜，晓之者亦舍然大喜。",
+     "field": "lines",
+     "line": 6,
+     "page_char": "曉"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "舍",
+     "cands": [
+      "舍",
+      "捨"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "然大喜，晓之者亦舍然大喜。",
+     "field": "lines",
+     "line": 6
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     1,
+     "国",
+     "杞国有人忧天地崩坠，",
+     "國",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     4,
+     "忧",
+     "杞国有人忧天地崩坠，身亡所",
+     "憂",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     8,
+     "坠",
+     "杞国有人忧天地崩坠，身亡所寄，废寝",
+     "墜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     15,
+     "废",
+     "崩坠，身亡所寄，废寝食者。",
+     "廢",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     16,
+     "寝",
+     "坠，身亡所寄，废寝食者。",
+     "寢",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     2,
+     "忧",
+     "又有忧彼之所忧者，因往",
+     "憂",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     6,
+     "忧",
+     "又有忧彼之所忧者，因往晓之，曰",
+     "憂",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     11,
+     "晓",
+     "彼之所忧者，因往晓之，曰：“天，积",
+     "曉",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     19,
+     "积",
+     "晓之，曰：“天，积气耳，亡处亡气。",
+     "積",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     20,
+     "气",
+     "之，曰：“天，积气耳，亡处亡气。若",
+     "氣",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     24,
+     "处",
+     "“天，积气耳，亡处亡气。若屈伸呼吸",
+     "處",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     26,
+     "气",
+     "，积气耳，亡处亡气。若屈伸呼吸，终",
+     "氣",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     34,
+     "终",
+     "气。若屈伸呼吸，终日在天中行止，奈",
+     "終",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     44,
+     "忧",
+     "在天中行止，奈何忧崩坠乎？”",
+     "憂",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     46,
+     "坠",
+     "中行止，奈何忧崩坠乎？”",
+     "墜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     7,
+     "积",
+     "其人曰：“天果积气，日月星宿，不",
+     "積",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     8,
+     "气",
+     "其人曰：“天果积气，日月星宿，不当",
+     "氣",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     17,
+     "坠",
+     "，日月星宿，不当坠耶？”",
+     "墜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     0,
+     "晓",
+     "晓之者曰：“日月星",
+     "曉",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     12,
+     "积",
+     "：“日月星宿，亦积气中之有光耀者，",
+     "積",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     13,
+     "气",
+     "“日月星宿，亦积气中之有光耀者，只",
+     "氣",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     23,
+     "坠",
+     "之有光耀者，只使坠，亦不能有所中伤",
+     "墜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     31,
+     "伤",
+     "坠，亦不能有所中伤。”",
+     "傷",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     7,
+     "坏",
+     "其人曰：“奈地坏何？”",
+     "壞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     0,
+     "晓",
+     "晓之者曰：“地，积",
+     "曉",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     8,
+     "积",
+     "晓之者曰：“地，积块耳，充塞四虚，",
+     "積",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     9,
+     "块",
+     "之者曰：“地，积块耳，充塞四虚，亡",
+     "塊",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     15,
+     "虚",
+     "，积块耳，充塞四虚，亡处亡块。若躇",
+     "虛",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     18,
+     "处",
+     "耳，充塞四虚，亡处亡块。若躇步跐蹈",
+     "處",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     20,
+     "块",
+     "充塞四虚，亡处亡块。若躇步跐蹈，终",
+     "塊",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     28,
+     "终",
+     "块。若躇步跐蹈，终日在地上行止，奈",
+     "終",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     38,
+     "忧",
+     "在地上行止，奈何忧其坏？”",
+     "憂",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     40,
+     "坏",
+     "上行止，奈何忧其坏？”",
+     "壞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     6,
+     7,
+     "晓",
+     "其人舍然大喜，晓之者亦舍然大喜。",
+     "曉",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     2,
+     7,
+     "积",
+     "「日月星宿，亦积气中之有光耀者」",
+     "積",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     2,
+     8,
+     "气",
+     "「日月星宿，亦积气中之有光耀者」是",
+     "氣",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 48,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "「曉者曰」，少一个「之」字。",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "之所忧者：又有一个为他的忧愁而担心",
+     "field": "sec:注释",
+     "line": 5,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "亡处亡气：没有一个地方没有气。",
+     "field": "sec:注释",
+     "line": 8,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "不就会掉下来吗？当，将会。",
+     "field": "sec:注释",
+     "line": 14,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "又有一个人，为这个杞国人的忧愁而忧",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 45,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "气体罢了，没有哪个地方没有气。你一",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 29,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "满了四方，没有哪个地方不是土块。你",
+     "field": "sec:译文",
+     "line": 5,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "是安慰，是给出一个解释模型：天是积",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 32,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "气，地是积块。这个模型在战国是当时",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 39,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "这个模型在战国是当时能拿出的最好答",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 40,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "了另一层意思：那个杞人问的是「我脚",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 63,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "西会不会塌」，这个问题本身不算荒唐",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "上册课文（教材目录把这一篇排在「2",
+     "field": "sec:收录范围",
+     "line": 0,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 2,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
    "id": "cibeigushanxia",
    "title": "次北固山下",
    "page": "次北固山下",
@@ -21289,6 +24017,2553 @@
    "left_behind": []
   },
   {
+   "id": "lang",
+   "title": "狼",
+   "page": "聊齋志異/第06卷",
+   "text_trad": [
+    "一屠晚歸，擔中肉盡，止有剩骨。途中兩狼，綴行甚遠。",
+    "屠懼，投以骨。一狼得骨止，一狼仍從。復投之，後狼止而前狼又至。骨已盡矣。而兩狼之並驅如故。",
+    "屠大窘，恐前後受其敵。顧野有麥場，場主積薪其中，苫蔽成丘。屠乃奔倚其下，弛擔持刀。狼不敢前，眈眈相向。",
+    "少時，一狼逕去，其一犬坐於前。久之，目似瞑，意暇甚。屠暴起，以刀劈狼首，又數刀斃之。",
+    "方欲行，轉視積薪後，一狼洞其中，意將隧入以攻其後也。身已半入，止露尻尾。屠自後斷其股，亦斃之。乃悟前狼假寐，蓋以誘敵。",
+    "狼亦黠矣，而頃刻兩斃，禽獸之變詐幾何哉？止增笑耳。"
+   ],
+   "lines_trad": [
+    "一屠晚歸，擔中肉盡，止有剩骨。途中兩狼，綴行甚遠。",
+    "屠懼，投以骨。一狼得骨止，一狼仍從。復投之，後狼止而前狼又至。骨已盡矣。而兩狼之並驅如故。",
+    "屠大窘，恐前後受其敵。顧野有麥場，場主積薪其中，苫蔽成丘。屠乃奔倚其下，弛擔持刀。狼不敢前，眈眈相向。",
+    "少時，一狼逕去，其一犬坐於前。久之，目似瞑，意暇甚。屠暴起，以刀劈狼首，又數刀斃之。",
+    "方欲行，轉視積薪後，一狼洞其中，意將隧入以攻其後也。身已半入，止露尻尾。屠自後斷其股，亦斃之。乃悟前狼假寐，蓋以誘敵。",
+    "狼亦黠矣，而頃刻兩斃，禽獸之變詐幾何哉？止增笑耳。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "一屠晚歸，擔中肉盡，止有剩骨。途中兩狼，綴行甚遠。",
+     "屠懼，投以骨。一狼得骨止，一狼仍從。復投之，後狼止而前狼又至。骨已盡矣。而兩狼之並驅如故。",
+     "屠大窘，恐前後受其敵。顧野有麥場，場主積薪其中，苫蔽成丘。屠乃奔倚其下，弛擔持刀。狼不敢前，眈眈相向。",
+     "少時，一狼逕去，其一犬坐於前。久之，目似瞑，意暇甚。屠暴起，以刀劈狼首，又數刀斃之。",
+     "方欲行，轉視積薪後，一狼洞其中，意將隧入以攻其後也。身已半入，止露尻尾。屠自後斷其股，亦斃之。乃悟前狼假寐，蓋以誘敵。",
+     "狼亦黠矣，而頃刻兩斃，禽獸之變詐幾何哉？止增笑耳。"
+    ],
+    "异文": [
+     "- 「骨已盡矣」：統編作「骨已盡矣。而兩狼之並驅如故。」；維基文庫《聊齋志異/第06卷》作「骨已盡，而兩狼之並驅如故」——沒有「矣」字，且兩句連成一句。",
+     "  取舍：正文照統編作「骨已盡矣」，「骨已盡」登記爲異文，不改正文。",
+     "  出處：統編教材七年級上冊第 20 課課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20025_langdu.html ；維基文庫《聊齋志異/第06卷》 https://zh.wikisource.org/wiki/%E8%81%8A%E9%BD%8B%E5%BF%97%E7%95%B0%2F%E7%AC%AC06%E5%8D%B7",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 「一狼徑去」：維基文庫該頁作「一狼逕去」。「逕」是「徑」的異體字，不算文字分歧，正文照統編作「徑」。",
+     "  取舍：正文照統編。",
+     "  出處：同上兩條出處。",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 「狼亦黠矣，而頃刻兩斃」：統編作逗號；維基文庫該頁作「狼亦黠矣！而頃刻兩斃」，用嘆號。標點差異不算文字分歧。",
+     "  取舍：正文照統編。",
+     "  出處：同上兩條出處。",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。"
+    ],
+    "注释": [
+     "- 選自《聊齋志異》卷六《狼三則》，教材收的是第二則。",
+     "- 屠：屠戶，宰牲畜賣肉的人。",
+     "- 止有剩骨：只有剩下的骨頭。止，通「只」，僅僅。",
+     "- 綴行甚遠：緊跟着走了很遠。綴，連接、緊跟。",
+     "- 投以骨：把骨頭扔給狼。這是倒裝，等於「以骨投之」。",
+     "- 仍從：仍然跟從。",
+     "- 並驅如故：像原來一樣一起追趕。並，一起。驅，追趕。如故，跟原來一樣。",
+     "- 大窘（jiǒng）：非常困急、處境危急。",
+     "- 受其敵：受到它們的攻擊。敵，攻擊。",
+     "- 顧：看、往旁邊看。積薪：把柴草堆積起來。苫（shàn）蔽成丘：覆蓋成小山一樣。苫蔽，覆蓋、遮蔽。",
+     "- 弛擔持刀：卸下擔子拿起刀。弛，解除、卸下。",
+     "- 眈眈相向：瞪着眼睛朝着屠戶。",
+     "- 少時：一會兒。徑去：徑直走開。犬坐於前：像狗似的蹲坐在前面。",
+     "- 瞑（míng）：閉眼。意暇甚：神情很悠閒。暇，從容、悠閒。",
+     "- 暴起：突然跳起。",
+     "- 洞其中：在柴草堆里打洞。洞，名詞作動詞，打洞。隧入：從通道進入。隧，名詞作狀語，從通道。",
+     "- 尻（kāo）尾：屁股和尾巴。股：大腿。",
+     "- 假寐：假裝睡覺。寐，睡覺。蓋：原來是，表推測。誘敵：迷惑對方。",
+     "- 黠（xiá）：狡猾。頃刻：一會兒。變詐：巧變詭詐。幾何：多少。止增笑耳：只是增加笑料罷了。"
+    ],
+    "译文": [
+     "一個屠戶晚上回家，擔子里的肉已經賣完，只剩下骨頭。半路上遇到兩隻狼，緊跟着他走了很遠。",
+     "屠戶害怕，把骨頭扔給狼。一隻狼得到骨頭停下，另一隻仍然跟從；再扔骨頭，後得到骨頭的狼停了，先前那只又跟上。骨頭已經扔完了，兩隻狼卻還像原來一樣一起追趕。",
+     "屠戶非常困急，怕前後都挨它們的攻擊。他看見野地里有個麥場，場主把柴草堆在場中，覆蓋成小山一樣。屠戶於是跑過去倚在柴草堆下，卸下擔子拿起刀。狼不敢上前，瞪眼朝着他。",
+     "一會兒，一隻狼徑直走開，另一隻像狗一樣蹲坐在前面。過了很久，那狼的眼睛好像閉上了，神情很悠閒。屠戶突然跳起，用刀砍狼頭，又連砍幾刀把它殺死。",
+     "他正要走，轉身看柴草堆後面，另一隻狼正在柴草堆里打洞，打算從通道鑽進去攻擊他的背後。身子已經鑽進去一半，只露出屁股和尾巴。屠戶從後面砍斷它的大腿，也把它殺死了。",
+     "這才明白前面那只狼假裝睡覺，原來是用來迷惑自己的。",
+     "狼也算狡猾了，可一會兒兩隻都死了，禽獸的詭詐手段能有多少呢？只是增加笑料罷了。"
+    ],
+    "赏析": [
+     "這一篇的動作寫得極細，細到能數出來：扔骨頭三次，狼停兩次、跟兩次；骨頭扔完，追趕照舊。",
+     "中段節奏突然慢下來：「少時，一狼逕去，其一犬坐於前。久之，目似瞑，意暇甚。」慢下來是假的——讀者跟着屠戶一起以爲沒事了。",
+     "「轉視積薪後」是全篇的轉折點。前面那只狼的所有安靜，都是爲了這一句：另一隻正在柴草堆里打洞。",
+     "最後一段是作者自己出來說話：「禽獸之變詐幾何哉？止增笑耳。」《聊齋》每一則後面常有這麼一段評語，這一則的評語把兩隻狼的戰術全部歸零。",
+     "蒲松齡寫這一篇時《聊齋》早已成書，故事本身是寓言：狼的聰明有限，人的判斷不能只看到眼前那一隻。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊第 20 課。",
+     "課標（2022）附錄1 未列本篇，屬教材拓展。"
+    ]
+   },
+   "labels_trad": {
+    "title": "狼",
+    "author": "蒲松齡",
+    "dynasty": "清",
+    "stage": "初中",
+    "volume": "七年級上冊",
+    "form": "文言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "敘事",
+     "寓理"
+    ],
+    "technique": [
+     "動作描寫",
+     "心理描寫",
+     "對比"
+    ],
+    "tags": [
+     "敘事",
+     "寓理",
+     "清文言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "归",
+     "cands": [
+      "歸"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "一屠晚归，担中肉尽，止有",
+     "field": "full",
+     "line": 0,
+     "page_char": "歸"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "担",
+     "cands": [
+      "擔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "一屠晚归，担中肉尽，止有剩骨",
+     "field": "full",
+     "line": 0,
+     "page_char": "擔"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "一屠晚归，担中肉尽，止有剩骨。途中",
+     "field": "full",
+     "line": 0,
+     "page_char": "盡"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "两",
+     "cands": [
+      "兩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，止有剩骨。途中两狼，缀行甚远。",
+     "field": "full",
+     "line": 0,
+     "page_char": "兩"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "缀",
+     "cands": [
+      "綴"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "剩骨。途中两狼，缀行甚远。",
+     "field": "full",
+     "line": 0,
+     "page_char": "綴"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "远",
+     "cands": [
+      "遠"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "途中两狼，缀行甚远。",
+     "field": "full",
+     "line": 0,
+     "page_char": "遠"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "惧",
+     "cands": [
+      "懼"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "屠惧，投以骨。一狼得",
+     "field": "full",
+     "line": 1,
+     "page_char": "懼"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "从",
+     "cands": [
+      "從"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "狼得骨止，一狼仍从。复投之，后狼止",
+     "field": "full",
+     "line": 1,
+     "page_char": "從"
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "骨止，一狼仍从。复投之，后狼止而前",
+     "field": "full",
+     "line": 1,
+     "page_char": "復"
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "后",
+     "cands": [
+      "後",
+      "后"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "狼仍从。复投之，后狼止而前狼又至。",
+     "field": "full",
+     "line": 1,
+     "page_char": "後"
+    },
+    {
+     "at": 33,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "而前狼又至。骨已尽矣。而两狼之并驱",
+     "field": "full",
+     "line": 1,
+     "page_char": "盡"
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "两",
+     "cands": [
+      "兩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "至。骨已尽矣。而两狼之并驱如故。",
+     "field": "full",
+     "line": 1,
+     "page_char": "兩"
+    },
+    {
+     "at": 40,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "已尽矣。而两狼之并驱如故。",
+     "field": "full",
+     "line": 1,
+     "page_char": "並"
+    },
+    {
+     "at": 41,
+     "n": 1,
+     "simp": "驱",
+     "cands": [
+      "驅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "尽矣。而两狼之并驱如故。",
+     "field": "full",
+     "line": 1,
+     "page_char": "驅"
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "前后",
+     "cands": [
+      "前後"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "屠大窘，恐前后受其敌。顾野有麦",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "敌",
+     "cands": [
+      "敵"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "大窘，恐前后受其敌。顾野有麦场，场",
+     "field": "full",
+     "line": 2,
+     "page_char": "敵"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "顾",
+     "cands": [
+      "顧"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，恐前后受其敌。顾野有麦场，场主积",
+     "field": "full",
+     "line": 2,
+     "page_char": "顧"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "麦",
+     "cands": [
+      "麥"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "后受其敌。顾野有麦场，场主积薪其中",
+     "field": "full",
+     "line": 2,
+     "page_char": "麥"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "场",
+     "cands": [
+      "場"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "受其敌。顾野有麦场，场主积薪其中，",
+     "field": "full",
+     "line": 2,
+     "page_char": "場"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "场",
+     "cands": [
+      "場"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "敌。顾野有麦场，场主积薪其中，苫蔽",
+     "field": "full",
+     "line": 2,
+     "page_char": "場"
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "顾野有麦场，场主积薪其中，苫蔽成丘",
+     "field": "full",
+     "line": 2,
+     "page_char": "積"
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "担",
+     "cands": [
+      "擔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "屠乃奔倚其下，弛担持刀。狼不敢前，",
+     "field": "full",
+     "line": 2,
+     "page_char": "擔"
+    },
+    {
+     "at": 49,
+     "n": 1,
+     "simp": "向",
+     "cands": [
+      "向",
+      "嚮",
+      "曏"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "狼不敢前，眈眈相向。",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "少时，一狼径去，其一",
+     "field": "full",
+     "line": 3,
+     "page_char": "時"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "少时，一狼径去，其一犬坐于前",
+     "field": "full",
+     "line": 3,
+     "page_char": "逕",
+     "pick": "逕"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "坐",
+     "cands": [
+      "坐",
+      "座"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "一狼径去，其一犬坐于前。久之，目似",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "于前",
+     "cands": [
+      "於前"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "狼径去，其一犬坐于前。久之，目似瞑，",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "数",
+     "cands": [
+      "數"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，以刀劈狼首，又数刀毙之。",
+     "field": "full",
+     "line": 3,
+     "page_char": "數"
+    },
+    {
+     "at": 39,
+     "n": 1,
+     "simp": "毙",
+     "cands": [
+      "斃"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "刀劈狼首，又数刀毙之。",
+     "field": "full",
+     "line": 3,
+     "page_char": "斃"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "欲",
+     "cands": [
+      "欲",
+      "慾"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "转",
+     "cands": [
+      "轉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，一狼洞",
+     "field": "full",
+     "line": 4,
+     "page_char": "轉"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "视",
+     "cands": [
+      "視"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，一狼洞其",
+     "field": "full",
+     "line": 4,
+     "page_char": "視"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，一狼洞其中",
+     "field": "full",
+     "line": 4,
+     "page_char": "積"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "后",
+     "cands": [
+      "後",
+      "后"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，一狼洞其中，意",
+     "field": "full",
+     "line": 4,
+     "page_char": "後"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，一狼洞其中，意将隧入以攻其后也。",
+     "field": "full",
+     "line": 4,
+     "page_char": "將"
+    },
+    {
+     "at": 22,
+     "n": 2,
+     "simp": "其后",
+     "cands": [
+      "其後"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "中，意将隧入以攻其后也。身已半入，止",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 38,
+     "n": 1,
+     "simp": "后",
+     "cands": [
+      "後",
+      "后"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，止露尻尾。屠自后断其股，亦毙之。",
+     "field": "full",
+     "line": 4,
+     "page_char": "後"
+    },
+    {
+     "at": 39,
+     "n": 1,
+     "simp": "断",
+     "cands": [
+      "斷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "止露尻尾。屠自后断其股，亦毙之。乃",
+     "field": "full",
+     "line": 4,
+     "page_char": "斷"
+    },
+    {
+     "at": 44,
+     "n": 1,
+     "simp": "毙",
+     "cands": [
+      "斃"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "屠自后断其股，亦毙之。乃悟前狼假寐",
+     "field": "full",
+     "line": 4,
+     "page_char": "斃"
+    },
+    {
+     "at": 54,
+     "n": 1,
+     "simp": "盖",
+     "cands": [
+      "蓋"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。乃悟前狼假寐，盖以诱敌。",
+     "field": "full",
+     "line": 4,
+     "page_char": "蓋"
+    },
+    {
+     "at": 56,
+     "n": 1,
+     "simp": "诱",
+     "cands": [
+      "誘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "悟前狼假寐，盖以诱敌。",
+     "field": "full",
+     "line": 4,
+     "page_char": "誘"
+    },
+    {
+     "at": 57,
+     "n": 1,
+     "simp": "敌",
+     "cands": [
+      "敵"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "前狼假寐，盖以诱敌。",
+     "field": "full",
+     "line": 4,
+     "page_char": "敵"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "顷",
+     "cands": [
+      "頃"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "狼亦黠矣，而顷刻两毙，禽兽之变",
+     "field": "full",
+     "line": 5,
+     "page_char": "頃"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "两",
+     "cands": [
+      "兩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "狼亦黠矣，而顷刻两毙，禽兽之变诈几",
+     "field": "full",
+     "line": 5,
+     "page_char": "兩"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "毙",
+     "cands": [
+      "斃"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "亦黠矣，而顷刻两毙，禽兽之变诈几何",
+     "field": "full",
+     "line": 5,
+     "page_char": "斃"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "兽",
+     "cands": [
+      "獸"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，而顷刻两毙，禽兽之变诈几何哉？止",
+     "field": "full",
+     "line": 5,
+     "page_char": "獸"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "变",
+     "cands": [
+      "變"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "顷刻两毙，禽兽之变诈几何哉？止增笑",
+     "field": "full",
+     "line": 5,
+     "page_char": "變"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "诈",
+     "cands": [
+      "詐"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "刻两毙，禽兽之变诈几何哉？止增笑耳",
+     "field": "full",
+     "line": 5,
+     "page_char": "詐"
+    },
+    {
+     "at": 16,
+     "n": 2,
+     "simp": "几何",
+     "cands": [
+      "幾何"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "两毙，禽兽之变诈几何哉？止增笑耳。",
+     "field": "full",
+     "line": 5
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "归",
+     "cands": [
+      "歸"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "一屠晚归，担中肉尽，止有",
+     "field": "lines",
+     "line": 0,
+     "page_char": "歸"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "担",
+     "cands": [
+      "擔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "一屠晚归，担中肉尽，止有剩骨",
+     "field": "lines",
+     "line": 0,
+     "page_char": "擔"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "一屠晚归，担中肉尽，止有剩骨。途中",
+     "field": "lines",
+     "line": 0,
+     "page_char": "盡"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "两",
+     "cands": [
+      "兩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，止有剩骨。途中两狼，缀行甚远。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "兩"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "缀",
+     "cands": [
+      "綴"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "剩骨。途中两狼，缀行甚远。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "綴"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "远",
+     "cands": [
+      "遠"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "途中两狼，缀行甚远。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "遠"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "惧",
+     "cands": [
+      "懼"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "屠惧，投以骨。一狼得",
+     "field": "lines",
+     "line": 1,
+     "page_char": "懼"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "从",
+     "cands": [
+      "從"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "狼得骨止，一狼仍从。复投之，后狼止",
+     "field": "lines",
+     "line": 1,
+     "page_char": "從"
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "骨止，一狼仍从。复投之，后狼止而前",
+     "field": "lines",
+     "line": 1,
+     "page_char": "復"
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "后",
+     "cands": [
+      "後",
+      "后"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "狼仍从。复投之，后狼止而前狼又至。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "後"
+    },
+    {
+     "at": 33,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "而前狼又至。骨已尽矣。而两狼之并驱",
+     "field": "lines",
+     "line": 1,
+     "page_char": "盡"
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "两",
+     "cands": [
+      "兩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "至。骨已尽矣。而两狼之并驱如故。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "兩"
+    },
+    {
+     "at": 40,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "已尽矣。而两狼之并驱如故。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "並"
+    },
+    {
+     "at": 41,
+     "n": 1,
+     "simp": "驱",
+     "cands": [
+      "驅"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "尽矣。而两狼之并驱如故。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "驅"
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "前后",
+     "cands": [
+      "前後"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "屠大窘，恐前后受其敌。顾野有麦",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "敌",
+     "cands": [
+      "敵"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "大窘，恐前后受其敌。顾野有麦场，场",
+     "field": "lines",
+     "line": 2,
+     "page_char": "敵"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "顾",
+     "cands": [
+      "顧"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，恐前后受其敌。顾野有麦场，场主积",
+     "field": "lines",
+     "line": 2,
+     "page_char": "顧"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "麦",
+     "cands": [
+      "麥"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "后受其敌。顾野有麦场，场主积薪其中",
+     "field": "lines",
+     "line": 2,
+     "page_char": "麥"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "场",
+     "cands": [
+      "場"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "受其敌。顾野有麦场，场主积薪其中，",
+     "field": "lines",
+     "line": 2,
+     "page_char": "場"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "场",
+     "cands": [
+      "場"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "敌。顾野有麦场，场主积薪其中，苫蔽",
+     "field": "lines",
+     "line": 2,
+     "page_char": "場"
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "顾野有麦场，场主积薪其中，苫蔽成丘",
+     "field": "lines",
+     "line": 2,
+     "page_char": "積"
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "担",
+     "cands": [
+      "擔"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "屠乃奔倚其下，弛担持刀。狼不敢前，",
+     "field": "lines",
+     "line": 2,
+     "page_char": "擔"
+    },
+    {
+     "at": 49,
+     "n": 1,
+     "simp": "向",
+     "cands": [
+      "向",
+      "嚮",
+      "曏"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "狼不敢前，眈眈相向。",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "少时，一狼径去，其一",
+     "field": "lines",
+     "line": 3,
+     "page_char": "時"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "少时，一狼径去，其一犬坐于前",
+     "field": "lines",
+     "line": 3,
+     "page_char": "逕",
+     "pick": "逕"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "坐",
+     "cands": [
+      "坐",
+      "座"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "一狼径去，其一犬坐于前。久之，目似",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "于前",
+     "cands": [
+      "於前"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "狼径去，其一犬坐于前。久之，目似瞑，",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "数",
+     "cands": [
+      "數"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，以刀劈狼首，又数刀毙之。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "數"
+    },
+    {
+     "at": 39,
+     "n": 1,
+     "simp": "毙",
+     "cands": [
+      "斃"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "刀劈狼首，又数刀毙之。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "斃"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "欲",
+     "cands": [
+      "欲",
+      "慾"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "转",
+     "cands": [
+      "轉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，一狼洞",
+     "field": "lines",
+     "line": 4,
+     "page_char": "轉"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "视",
+     "cands": [
+      "視"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，一狼洞其",
+     "field": "lines",
+     "line": 4,
+     "page_char": "視"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "积",
+     "cands": [
+      "積"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，一狼洞其中",
+     "field": "lines",
+     "line": 4,
+     "page_char": "積"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "后",
+     "cands": [
+      "後",
+      "后"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方欲行，转视积薪后，一狼洞其中，意",
+     "field": "lines",
+     "line": 4,
+     "page_char": "後"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，一狼洞其中，意将隧入以攻其后也。",
+     "field": "lines",
+     "line": 4,
+     "page_char": "將"
+    },
+    {
+     "at": 22,
+     "n": 2,
+     "simp": "其后",
+     "cands": [
+      "其後"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "中，意将隧入以攻其后也。身已半入，止",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 38,
+     "n": 1,
+     "simp": "后",
+     "cands": [
+      "後",
+      "后"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，止露尻尾。屠自后断其股，亦毙之。",
+     "field": "lines",
+     "line": 4,
+     "page_char": "後"
+    },
+    {
+     "at": 39,
+     "n": 1,
+     "simp": "断",
+     "cands": [
+      "斷"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "止露尻尾。屠自后断其股，亦毙之。乃",
+     "field": "lines",
+     "line": 4,
+     "page_char": "斷"
+    },
+    {
+     "at": 44,
+     "n": 1,
+     "simp": "毙",
+     "cands": [
+      "斃"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "屠自后断其股，亦毙之。乃悟前狼假寐",
+     "field": "lines",
+     "line": 4,
+     "page_char": "斃"
+    },
+    {
+     "at": 54,
+     "n": 1,
+     "simp": "盖",
+     "cands": [
+      "蓋"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。乃悟前狼假寐，盖以诱敌。",
+     "field": "lines",
+     "line": 4,
+     "page_char": "蓋"
+    },
+    {
+     "at": 56,
+     "n": 1,
+     "simp": "诱",
+     "cands": [
+      "誘"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "悟前狼假寐，盖以诱敌。",
+     "field": "lines",
+     "line": 4,
+     "page_char": "誘"
+    },
+    {
+     "at": 57,
+     "n": 1,
+     "simp": "敌",
+     "cands": [
+      "敵"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "前狼假寐，盖以诱敌。",
+     "field": "lines",
+     "line": 4,
+     "page_char": "敵"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "顷",
+     "cands": [
+      "頃"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "狼亦黠矣，而顷刻两毙，禽兽之变",
+     "field": "lines",
+     "line": 5,
+     "page_char": "頃"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "两",
+     "cands": [
+      "兩"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "狼亦黠矣，而顷刻两毙，禽兽之变诈几",
+     "field": "lines",
+     "line": 5,
+     "page_char": "兩"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "毙",
+     "cands": [
+      "斃"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "亦黠矣，而顷刻两毙，禽兽之变诈几何",
+     "field": "lines",
+     "line": 5,
+     "page_char": "斃"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "兽",
+     "cands": [
+      "獸"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，而顷刻两毙，禽兽之变诈几何哉？止",
+     "field": "lines",
+     "line": 5,
+     "page_char": "獸"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "变",
+     "cands": [
+      "變"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "顷刻两毙，禽兽之变诈几何哉？止增笑",
+     "field": "lines",
+     "line": 5,
+     "page_char": "變"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "诈",
+     "cands": [
+      "詐"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "刻两毙，禽兽之变诈几何哉？止增笑耳",
+     "field": "lines",
+     "line": 5,
+     "page_char": "詐"
+    },
+    {
+     "at": 16,
+     "n": 2,
+     "simp": "几何",
+     "cands": [
+      "幾何"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "两毙，禽兽之变诈几何哉？止增笑耳。",
+     "field": "lines",
+     "line": 5
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     3,
+     "归",
+     "一屠晚归，担中肉尽，止有",
+     "歸",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     5,
+     "担",
+     "一屠晚归，担中肉尽，止有剩骨",
+     "擔",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     8,
+     "尽",
+     "一屠晚归，担中肉尽，止有剩骨。途中",
+     "盡",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     17,
+     "两",
+     "，止有剩骨。途中两狼，缀行甚远。",
+     "兩",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     20,
+     "缀",
+     "剩骨。途中两狼，缀行甚远。",
+     "綴",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     23,
+     "远",
+     "途中两狼，缀行甚远。",
+     "遠",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     1,
+     "惧",
+     "屠惧，投以骨。一狼得",
+     "懼",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     16,
+     "从",
+     "狼得骨止，一狼仍从。复投之，后狼止",
+     "從",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     18,
+     "复",
+     "骨止，一狼仍从。复投之，后狼止而前",
+     "復",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     22,
+     "后",
+     "狼仍从。复投之，后狼止而前狼又至。",
+     "後",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     33,
+     "尽",
+     "而前狼又至。骨已尽矣。而两狼之并驱",
+     "盡",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     37,
+     "两",
+     "至。骨已尽矣。而两狼之并驱如故。",
+     "兩",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     40,
+     "并",
+     "已尽矣。而两狼之并驱如故。",
+     "並",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     41,
+     "驱",
+     "尽矣。而两狼之并驱如故。",
+     "驅",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     9,
+     "敌",
+     "大窘，恐前后受其敌。顾野有麦场，场",
+     "敵",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     11,
+     "顾",
+     "，恐前后受其敌。顾野有麦场，场主积",
+     "顧",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     14,
+     "麦",
+     "后受其敌。顾野有麦场，场主积薪其中",
+     "麥",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     15,
+     "场",
+     "受其敌。顾野有麦场，场主积薪其中，",
+     "場",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     17,
+     "场",
+     "敌。顾野有麦场，场主积薪其中，苫蔽",
+     "場",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     19,
+     "积",
+     "顾野有麦场，场主积薪其中，苫蔽成丘",
+     "積",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     37,
+     "担",
+     "屠乃奔倚其下，弛担持刀。狼不敢前，",
+     "擔",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     1,
+     "时",
+     "少时，一狼径去，其一",
+     "時",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     5,
+     "径",
+     "少时，一狼径去，其一犬坐于前",
+     "逕",
+     "page",
+     "逕",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     37,
+     "数",
+     "，以刀劈狼首，又数刀毙之。",
+     "數",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     39,
+     "毙",
+     "刀劈狼首，又数刀毙之。",
+     "斃",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     4,
+     "转",
+     "方欲行，转视积薪后，一狼洞",
+     "轉",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     5,
+     "视",
+     "方欲行，转视积薪后，一狼洞其",
+     "視",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     6,
+     "积",
+     "方欲行，转视积薪后，一狼洞其中",
+     "積",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     8,
+     "后",
+     "方欲行，转视积薪后，一狼洞其中，意",
+     "後",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     17,
+     "将",
+     "，一狼洞其中，意将隧入以攻其后也。",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     38,
+     "后",
+     "，止露尻尾。屠自后断其股，亦毙之。",
+     "後",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     39,
+     "断",
+     "止露尻尾。屠自后断其股，亦毙之。乃",
+     "斷",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     44,
+     "毙",
+     "屠自后断其股，亦毙之。乃悟前狼假寐",
+     "斃",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     54,
+     "盖",
+     "。乃悟前狼假寐，盖以诱敌。",
+     "蓋",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     56,
+     "诱",
+     "悟前狼假寐，盖以诱敌。",
+     "誘",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     57,
+     "敌",
+     "前狼假寐，盖以诱敌。",
+     "敵",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     6,
+     "顷",
+     "狼亦黠矣，而顷刻两毙，禽兽之变",
+     "頃",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     8,
+     "两",
+     "狼亦黠矣，而顷刻两毙，禽兽之变诈几",
+     "兩",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     9,
+     "毙",
+     "亦黠矣，而顷刻两毙，禽兽之变诈几何",
+     "斃",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     12,
+     "兽",
+     "，而顷刻两毙，禽兽之变诈几何哉？止",
+     "獸",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     14,
+     "变",
+     "顷刻两毙，禽兽之变诈几何哉？止增笑",
+     "變",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     15,
+     "诈",
+     "刻两毙，禽兽之变诈几何哉？止增笑耳",
+     "詐",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     16,
+     "径",
+     "来：「少时，一狼径去，其一犬坐于前",
+     "逕",
+     "page",
+     "逕",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "少时，一狼径去，其一犬坐于前",
+     "field": "sec:必背全文",
+     "line": 3,
+     "page_char": "逕",
+     "pick": "逕"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 「骨已尽矣」：统编作「骨",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "」：统编作「骨已尽矣。而两狼之并驱",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "已尽矣。而两狼之并驱如故。」；维基",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "文照统编作「骨已尽矣」，「骨已盡」",
+     "field": "sec:异文",
+     "line": 1,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 「一狼径去」：维基文库该",
+     "field": "sec:异文",
+     "line": 4,
+     "pick": "徑",
+     "why": "小路义作「徑」；「逕」是异体"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "去」。「逕」是「径」的异体字，不算",
+     "field": "sec:异文",
+     "line": 4,
+     "pick": "徑",
+     "why": "小路义作「徑」；「逕」是异体"
+    },
+    {
+     "at": 49,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "，正文照统编作「径」。",
+     "field": "sec:异文",
+     "line": 4,
+     "pick": "徑",
+     "why": "小路义作「徑」；「逕」是异体"
+    },
+    {
+     "at": 42,
+     "n": 1,
+     "simp": "叹",
+     "cands": [
+      "嘆",
+      "歎"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "而頃刻兩斃」，用叹号。标点差异不算",
+     "field": "sec:异文",
+     "line": 8,
+     "pick": "嘆",
+     "why": "叹息、叹曰义作「嘆」；「歎」是异体",
+     "evidence": "来源页 4 处作「嘆」"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 并驱如故：像原来一",
+     "field": "sec:注释",
+     "line": 6,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "并",
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "来一样一起追赶。并，一起。驱，追赶",
+     "field": "sec:注释",
+     "line": 6,
+     "pick": "並",
+     "why": "一并、一起义作「並」（遂并起 = 遂並起）；「併」是合并、「幷」是异体"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": " 少时：一会儿。径去：径直走开。犬",
+     "field": "sec:注释",
+     "line": 12,
+     "pick": "徑",
+     "why": "小路义作「徑」；「逕」是异体"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "：一会儿。径去：径直走开。犬坐于前",
+     "field": "sec:注释",
+     "line": 12,
+     "pick": "徑",
+     "why": "小路义作「徑」；「逕」是异体"
+    },
+    {
+     "at": 21,
+     "n": 1,
+     "simp": "闲",
+     "cands": [
+      "閒",
+      "閑"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "意暇甚：神情很悠闲。暇，从容、悠闲",
+     "field": "sec:注释",
+     "line": 13,
+     "pick": "閒",
+     "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
+    },
+    {
+     "at": 29,
+     "n": 1,
+     "simp": "闲",
+     "cands": [
+      "閒",
+      "閑"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "闲。暇，从容、悠闲。",
+     "field": "sec:注释",
+     "line": 13,
+     "pick": "閒",
+     "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "一个屠户晚上回家，担",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 30,
+     "n": 2,
+     "simp": "两只",
+     "cands": [
+      "两只",
+      "兩隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "骨头。半路上遇到两只狼，紧跟着他走了",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "兩隻",
+     "why": "现代量词「两只」作「兩隻」。单字表把「只」照抄是文言用法（只＝僅），这里说的是两只袖子，不是「仅仅」"
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "，把骨头扔给狼。一只狼得到骨头停下，",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 23,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "得到骨头停下，另一只仍然跟从；再扔骨",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 61,
+     "n": 2,
+     "simp": "两只",
+     "cands": [
+      "两只",
+      "兩隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "骨头已经扔完了，两只狼却还像原来一样",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "兩隻",
+     "why": "现代量词「两只」作「兩隻」。单字表把「只」照抄是文言用法（只＝僅），这里说的是两只袖子，不是「仅仅」"
+    },
+    {
+     "at": 25,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "。他看见野地里有个麦场，场主把柴草",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 4,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "一会儿，一只狼径直走开，另一",
+     "field": "sec:译文",
+     "line": 3,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "一会儿，一只狼径直走开，另一只像",
+     "field": "sec:译文",
+     "line": 3,
+     "pick": "徑",
+     "why": "小路义作「徑」；「逕」是异体"
+    },
+    {
+     "at": 13,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "只狼径直走开，另一只像狗一样蹲坐在前",
+     "field": "sec:译文",
+     "line": 3,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 45,
+     "n": 1,
+     "simp": "闲",
+     "cands": [
+      "閒",
+      "閑"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "闭上了，神情很悠闲。屠户突然跳起，",
+     "field": "sec:译文",
+     "line": 3,
+     "pick": "閒",
+     "why": "闲人、闲云、等闲、闲田义作「閒」；「閑」是另一字（栅栏、闲邪）"
+    },
+    {
+     "at": 15,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "看柴草堆后面，另一只狼正在柴草堆里打",
+     "field": "sec:译文",
+     "line": 4,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 32,
+     "n": 1,
+     "simp": "钻",
+     "cands": [
+      "鑽",
+      "鉆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "打洞，打算从通道钻进去攻击他的背后",
+     "field": "sec:译文",
+     "line": 4,
+     "pick": "鑽",
+     "why": "动词「钻（打洞、钻入）」作「鑽」；「鉆」只用于姓氏与「鉆子」（工具），仓内没有这种用法",
+     "evidence": "仓内《狼》译文两处「钻进去」（注释译文这一层没有来源页可查，按字表义项裁定）；正文里没有「钻」字，维基文库《聊齋志異/第06卷》那一处写作「洞其中」「隧入」"
+    },
+    {
+     "at": 46,
+     "n": 1,
+     "simp": "钻",
+     "cands": [
+      "鑽",
+      "鉆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "的背后。身子已经钻进去一半，只露出",
+     "field": "sec:译文",
+     "line": 4,
+     "pick": "鑽",
+     "why": "动词「钻（打洞、钻入）」作「鑽」；「鉆」只用于姓氏与「鉆子」（工具），仓内没有这种用法",
+     "evidence": "仓内《狼》译文两处「钻进去」（注释译文这一层没有来源页可查，按字表义项裁定）；正文里没有「钻」字，维基文库《聊齋志異/第06卷》那一处写作「洞其中」「隧入」"
+    },
+    {
+     "at": 11,
+     "n": 2,
+     "simp": "两只",
+     "cands": [
+      "两只",
+      "兩隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "狡猾了，可一会儿两只都死了，禽兽的诡",
+     "field": "sec:译文",
+     "line": 6,
+     "pick": "兩隻",
+     "why": "现代量词「两只」作「兩隻」。单字表把「只」照抄是文言用法（只＝僅），这里说的是两只袖子，不是「仅仅」"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "径",
+     "cands": [
+      "徑",
+      "逕"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "来：「少时，一狼径去，其一犬坐于前",
+     "field": "sec:赏析",
+     "line": 1,
+     "page_char": "逕",
+     "pick": "逕"
+    },
+    {
+     "at": 35,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "是为了这一句：另一只正在柴草堆里打洞",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 55,
+     "n": 2,
+     "simp": "两只",
+     "cands": [
+      "两只",
+      "兩隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "，这一则的评语把两只狼的战术全部归零",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "兩隻",
+     "why": "现代量词「两只」作「兩隻」。单字表把「只」照抄是文言用法（只＝僅），这里说的是两只袖子，不是「仅仅」"
+    },
+    {
+     "at": 60,
+     "n": 1,
+     "simp": "术",
+     "cands": [
+      "術",
+      "朮"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "评语把两只狼的战术全部归零。",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "術",
+     "why": "技艺、方法义作「術」；「朮」是异体"
+    },
+    {
+     "at": 44,
+     "n": 2,
+     "simp": "一只",
+     "cands": [
+      "一只",
+      "一隻"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "不能只看到眼前那一只。",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "一隻",
+     "why": "同上：现代量词作「隻」"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
    "id": "dengyouzhoutai",
    "title": "登幽州台歌",
    "page": "登幽州臺歌",
@@ -23239,6 +28514,746 @@
      "ctx": "标（2022）附录1 未列本篇，属",
      "field": "sec:收录范围",
      "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
+   "id": "chuanjingdeyiren",
+   "title": "穿井得一人",
+   "page": "呂氏春秋/卷二十二",
+   "text_trad": [
+    "宋之丁氏，家無井而出溉汲，常一人居外。",
+    "及其家穿井，告人曰：“吾穿井得一人。”",
+    "有聞而傳之者：“丁氏穿井得一人。”國人道之，聞之於宋君。",
+    "宋君令人問之於丁氏，丁氏對曰：“得一人之使，非得一人於井中也。”",
+    "求聞之若此，不若無聞也。"
+   ],
+   "lines_trad": [
+    "宋之丁氏，家無井而出溉汲，常一人居外。",
+    "及其家穿井，告人曰：“吾穿井得一人。”",
+    "有聞而傳之者：“丁氏穿井得一人。”國人道之，聞之於宋君。",
+    "宋君令人問之於丁氏，丁氏對曰：“得一人之使，非得一人於井中也。”",
+    "求聞之若此，不若無聞也。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "宋之丁氏，家無井而出溉汲，常一人居外。",
+     "及其家穿井，告人曰：“吾穿井得一人。”",
+     "有聞而傳之者：“丁氏穿井得一人。”國人道之，聞之於宋君。",
+     "宋君令人問之於丁氏，丁氏對曰：“得一人之使，非得一人於井中也。”",
+     "求聞之若此，不若無聞也。"
+    ],
+    "异文": [
+     "- 「有聞而傳之者」：統編作「有聞而傳之者：“丁氏穿井得一人。”」，中間沒有「曰」字；維基文庫《呂氏春秋/卷二十二》作「有聞而傳之者曰：「丁氏穿井得一人。」」，多一個「曰」。",
+     "  取舍：正文照統編，不加「曰」；這一處登記爲異文，不改正文。",
+     "  出處：統編教材七年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20031_langdu.html ；維基文庫《呂氏春秋/卷二十二》 https://zh.wikisource.org/wiki/%E5%91%82%E6%B0%8F%E6%98%A5%E7%A7%8B%2F%E5%8D%B7%E4%BA%8C%E5%8D%81%E4%BA%8C",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 「求聞之若此」：統編作「聞」；維基文庫《呂氏春秋/卷二十二》作「求能之若此，不若無聞也」，作「能」。",
+     "  取舍：正文照統編作「聞」，「能」登記爲異文——「求聞之若此」講得通（聽到消息像這樣），「求能之若此」只有一條來源，不改正文。",
+     "  出處：同上兩條出處。",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。"
+    ],
+    "注释": [
+     "- 選自《呂氏春秋·察傳》。《呂氏春秋》由戰國末年秦相呂不韋召集門客編成。",
+     "- 宋之丁氏：宋國姓丁的人家。",
+     "- 家無井而出溉汲（gài jí）：家里沒有井，要到外面去打水澆田。溉汲，打水澆田。溉，澆灌。汲，從井裏取水。",
+     "- 常一人居外：經常要有一個人在外面（專門管這件事）。",
+     "- 及其家穿井：等到他家挖了一口井。及，等到。穿井，挖井、打井。",
+     "- 告人曰：告訴別人說。",
+     "- 有聞而傳之者：聽到這話又去傳話的人。",
+     "- 國人道之：國都里的人都在說這件事。國人，國都里的人。道，說、講。",
+     "- 聞之於宋君：這件事被傳到宋君那里。聞，使……聽到。",
+     "- 令人問之於丁氏：派人向丁氏問這件事。",
+     "- 對：回答。",
+     "- 得一人之使：得到一個人的勞力（省出一個人在外挑水的勞力），不是從井裏挖出一個人。使，使喚、勞力。",
+     "- 求聞之若此，不若無聞也：像這樣聽到消息，還不如什麼都沒聽到。"
+    ],
+    "译文": [
+     "宋國有一戶姓丁的人家，家里沒有井，得到外面去打水澆田，經常要有一個人在外面專管這事。",
+     "等到他家挖了一口井之後，他告訴別人說：「我家挖井得到了一個人。」",
+     "有人聽了這話就去傳：「丁家挖井挖出了一個人。」國都里的人都在講這件事，一直傳到了宋君那里。",
+     "宋君派人去向丁氏問清楚。丁氏回答說：「（我說的是）得到一個人的勞力，不是在井裏挖出了一個人。」",
+     "像這樣聽信傳聞，還不如什麼都沒聽到。"
+    ],
+    "赏析": [
+     "這一篇寫的是傳聞怎麼變形的，而且變形只發生在一句話上。",
+     "丁氏原話「吾穿井得一人」本身沒問題——他省出了一個勞力。聽的人把「得一人」聽成「從井裏挖出一個人」，意思就翻了。",
+     "中間那一句「有聞而傳之者：“丁氏穿井得一人。”」是全篇最冷的一筆：傳話的人連引號里的話都沒改，只是把它照原樣傳出去——錯不在改字，錯在沒人問。",
+     "最後必須有人去問：「宋君令人問之於丁氏」。一句問話就把整件事收回原樣。",
+     "結尾「求聞之若此，不若無聞也」是《察傳》這一篇的主張：聽到的東西先別信，先去問來源。這一篇被選進教材，就是教這一件事。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊課文（教材目錄把這一篇排在「23*女媧造人」條目下，沒有單獨標課號），選自《呂氏春秋·察傳》。",
+     "倉內另有一篇《呂氏春秋》一則（伯牙鼓琴）收在九年級下冊，那是同一部書里的另一篇，不是這一篇。",
+     "課標（2022）附錄1 未列本篇，屬教材拓展。"
+    ]
+   },
+   "labels_trad": {
+    "title": "穿井得一人",
+    "author": "佚名",
+    "dynasty": "戰國",
+    "stage": "初中",
+    "volume": "七年級上冊",
+    "form": "文言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "寓言",
+     "傳聞"
+    ],
+    "technique": [
+     "敘事",
+     "對話",
+     "寓理"
+    ],
+    "tags": [
+     "寓言",
+     "傳聞",
+     "戰國文言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "宋之丁氏，家无井而出溉汲，常",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "宋之丁氏，家无井而出溉汲，常一",
+     "field": "full",
+     "line": 0,
+     "page_char": "無"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "出",
+     "cands": [
+      "出",
+      "齣"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "之丁氏，家无井而出溉汲，常一人居外",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "及其家穿井，告人曰：“",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "有闻而传之者：“丁氏",
+     "field": "full",
+     "line": 2,
+     "page_char": "聞"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "传",
+     "cands": [
+      "傳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "有闻而传之者：“丁氏穿井",
+     "field": "full",
+     "line": 2,
+     "page_char": "傳"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "国",
+     "cands": [
+      "國"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "氏穿井得一人。”国人道之，闻之于宋",
+     "field": "full",
+     "line": 2,
+     "page_char": "國"
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "人。”国人道之，闻之于宋君。",
+     "field": "full",
+     "line": 2,
+     "page_char": "聞"
+    },
+    {
+     "at": 23,
+     "n": 2,
+     "simp": "之于",
+     "cands": [
+      "之於"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "。”国人道之，闻之于宋君。",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "问",
+     "cands": [
+      "問"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "宋君令人问之于丁氏，丁氏对",
+     "field": "full",
+     "line": 3,
+     "page_char": "問"
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "之于",
+     "cands": [
+      "之於"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "宋君令人问之于丁氏，丁氏对曰：",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "对",
+     "cands": [
+      "對"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "问之于丁氏，丁氏对曰：“得一人之使",
+     "field": "full",
+     "line": 3,
+     "page_char": "對"
+    },
+    {
+     "at": 26,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "人之使，非得一人于井中也。”",
+     "field": "full",
+     "line": 3,
+     "page_char": "於"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "求闻之若此，不若无闻",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "求闻之若此，不若无闻也。",
+     "field": "full",
+     "line": 4,
+     "page_char": "無"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "闻之若此，不若无闻也。",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "宋之丁氏，家无井而出溉汲，常",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "宋之丁氏，家无井而出溉汲，常一",
+     "field": "lines",
+     "line": 0,
+     "page_char": "無"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "出",
+     "cands": [
+      "出",
+      "齣"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "之丁氏，家无井而出溉汲，常一人居外",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "及其家穿井，告人曰：“",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "有闻而传之者：“丁氏",
+     "field": "lines",
+     "line": 2,
+     "page_char": "聞"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "传",
+     "cands": [
+      "傳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "有闻而传之者：“丁氏穿井",
+     "field": "lines",
+     "line": 2,
+     "page_char": "傳"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "国",
+     "cands": [
+      "國"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "氏穿井得一人。”国人道之，闻之于宋",
+     "field": "lines",
+     "line": 2,
+     "page_char": "國"
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "人。”国人道之，闻之于宋君。",
+     "field": "lines",
+     "line": 2,
+     "page_char": "聞"
+    },
+    {
+     "at": 23,
+     "n": 2,
+     "simp": "之于",
+     "cands": [
+      "之於"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "。”国人道之，闻之于宋君。",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "问",
+     "cands": [
+      "問"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "宋君令人问之于丁氏，丁氏对",
+     "field": "lines",
+     "line": 3,
+     "page_char": "問"
+    },
+    {
+     "at": 5,
+     "n": 2,
+     "simp": "之于",
+     "cands": [
+      "之於"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "宋君令人问之于丁氏，丁氏对曰：",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "对",
+     "cands": [
+      "對"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "问之于丁氏，丁氏对曰：“得一人之使",
+     "field": "lines",
+     "line": 3,
+     "page_char": "對"
+    },
+    {
+     "at": 26,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "人之使，非得一人于井中也。”",
+     "field": "lines",
+     "line": 3,
+     "page_char": "於"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "求闻之若此，不若无闻",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "求闻之若此，不若无闻也。",
+     "field": "lines",
+     "line": 4,
+     "page_char": "無"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "闻",
+     "cands": [
+      "聞"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "闻之若此，不若无闻也。",
+     "field": "lines",
+     "line": 4
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     6,
+     "无",
+     "宋之丁氏，家无井而出溉汲，常一",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     1,
+     "闻",
+     "有闻而传之者：“丁氏",
+     "聞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     3,
+     "传",
+     "有闻而传之者：“丁氏穿井",
+     "傳",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     17,
+     "国",
+     "氏穿井得一人。”国人道之，闻之于宋",
+     "國",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     22,
+     "闻",
+     "人。”国人道之，闻之于宋君。",
+     "聞",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     4,
+     "问",
+     "宋君令人问之于丁氏，丁氏对",
+     "問",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     12,
+     "对",
+     "问之于丁氏，丁氏对曰：“得一人之使",
+     "對",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     26,
+     "于",
+     "人之使，非得一人于井中也。”",
+     "於",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     8,
+     "无",
+     "求闻之若此，不若无闻也。",
+     "無",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 82,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "一人。」」，多一个「曰」。",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 24,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "题——他省出了一个劳力。听的人把「",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "须",
+     "cands": [
+      "須",
+      "鬚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "最后必须有人去问：「宋君",
+     "field": "sec:赏析",
+     "line": 3,
+     "pick": "須",
+     "why": "必须、须臾义作「須」；「鬚」是胡须，仓内没有这种用法"
+    },
+    {
+     "at": 33,
+     "n": 1,
+     "simp": "别",
+     "cands": [
+      "別",
+      "彆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "张：听到的东西先别信，先去问来源。",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "別",
+     "why": "分别、离别义作「別」；「彆」只用于「别扭」"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "上册课文（教材目录把这一篇排在「2",
+     "field": "sec:收录范围",
+     "line": 0,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 2,
      "pick": "錄",
      "why": "记录义作「錄」；「彔」是异体"
     }
@@ -27096,6 +33111,1722 @@
    "left_behind": []
   },
   {
+   "id": "jiezishu",
+   "title": "诫子书",
+   "page": "誡子書",
+   "text_trad": [
+    "夫君子之行，靜以修身，儉以養德。",
+    "非淡泊無以明志，非寧靜無以致遠。",
+    "夫學須靜也，才須學也，非學無以廣才，非志無以成學。",
+    "淫慢則不能勵精，險躁則不能治性。",
+    "年與時馳，意與日去，遂成枯落，多不接世，悲守窮廬，將復何及！"
+   ],
+   "lines_trad": [
+    "夫君子之行，靜以修身，儉以養德。",
+    "非淡泊無以明志，非寧靜無以致遠。",
+    "夫學須靜也，才須學也，非學無以廣才，非志無以成學。",
+    "淫慢則不能勵精，險躁則不能治性。",
+    "年與時馳，意與日去，遂成枯落，多不接世，悲守窮廬，將復何及！"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "夫君子之行，靜以修身，儉以養德。",
+     "非淡泊無以明志，非寧靜無以致遠。",
+     "夫學須靜也，才須學也，非學無以廣才，非志無以成學。",
+     "淫慢則不能勵精，險躁則不能治性。",
+     "年與時馳，意與日去，遂成枯落，多不接世，悲守窮廬，將復何及！"
+    ],
+    "异文": [
+     "- 「淫慢則不能勵精」：統編作「淫慢」「勵精」；維基文庫《誡子書》正文作「慆慢則不能勵精」，頁內夾注記「慆，一作「淫」」「勵，一作「研」」。《全三國文》卷59 亦作「慆慢則不……」。",
+     "  取舍：正文照統編作「淫慢」「勵精」，「慆慢」「研精」登記爲異文，不改正文。",
+     "  出處：統編教材七年級上冊第 16 課課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20022_langdu.html ；維基文庫《誡子書》 https://zh.wikisource.org/wiki/%E8%AA%A1%E5%AD%90%E6%9B%B8；《全三國文/卷59》 https://zh.wikisource.org/wiki/%E5%85%A8%E4%B8%89%E5%9C%8B%E6%96%87%2F%E5%8D%B759",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 「險躁則不能治性」：統編作「治性」；維基文庫《誡子書》作「險躁則不能冶性」，夾注記「冶，一作「理」」。",
+     "  取舍：正文照統編作「治性」，「冶性」「理性」登記爲異文。",
+     "  出處：同上三條出處。",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 「意與日去」：統編作「意」「日」；維基文庫《誡子書》作「志與歲去」，夾注記「志，一作「意」」「歲，一作「日」」。",
+     "  取舍：正文照統編作「意與日去」，「志與歲去」登記爲異文。",
+     "  出處：同上三條出處。",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。",
+     "- 「非淡泊無以明志」：統編作「淡泊」；維基文庫《誡子書》作「非澹泊無以明志」。",
+     "  取舍：「澹」「淡」在這里是同一個字的兩種寫法，不算文字分歧；正文照統編作「淡泊」。",
+     "  出處：同上三條出處。",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。"
+    ],
+    "注释": [
+     "- 誡：告誡、勸勉。這一篇是諸葛亮寫給兒子諸葛瞻的家書，諸葛瞻當時八歲。",
+     "- 夫（fú）：發語詞，沒有實義。君子之行：君子的行爲操守。",
+     "- 靜以修身：以寧靜來修養身心。以，用來。",
+     "- 儉以養德：以儉樸來培養品德。",
+     "- 淡泊：內心恬淡，不追求名利。無以：沒有辦法、無法。明志：使志向明確。",
+     "- 寧靜：這里指安靜集中，不分散。致遠：達到遠大的目標。致，達到。",
+     "- 廣才：增長才干。廣，增長。",
+     "- 淫慢：放縱懈怠。淫，放縱。慢，懈怠。勵精：振奮精神。勵，振奮。",
+     "- 險躁：輕薄浮躁。險，輕薄。治性：修養性情。治，修養。",
+     "- 年與時馳：年紀隨時間飛快過去。馳，疾行、逝去。",
+     "- 意與日去：意志隨日子消磨。日，歲月。",
+     "- 枯落：像枯枝落葉一樣零落，比喻人年老志衰、無所作爲。",
+     "- 接世：接觸社會、爲社會所用。",
+     "- 窮廬：破陋的房子。將復何及：又怎麼來得及。何及，怎麼趕得上。"
+    ],
+    "译文": [
+     "君子的行爲操守，是靠寧靜來修養身心，靠儉樸來培養品德。",
+     "不恬淡寡欲就沒法使志向明確，不安靜集中就沒法達到遠大的目標。",
+     "學習必須寧靜，才干來自學習；不學習就沒法增長才干，沒有志向就沒法讓學業有所成就。",
+     "放縱懈怠就不能振奮精神，輕薄浮躁就不能修養性情。",
+     "年紀隨時間飛快過去，意志隨日子消磨，最後像枯枝落葉一樣零落，一輩子爲社會所用不上，只能守着破房子悲哀——那時候又怎麼來得及！"
+    ],
+    "赏析": [
+     "這一篇八十六字，是一封父親寫給八歲兒子的信，全篇沒有一個例子、沒有一件家事。",
+     "它的結構是一路推下來的：靜 → 儉 → 明志 → 致遠 → 學 → 才 → 志 → 學成。每一步都是上一步的條件，讀起來像一條鏈。",
+     "中間「非學無以廣才，非志無以成學」兩句把閉環扣上：才干要學來，學要有志。",
+     "最後四句突然變冷：年與時馳，意與日去，遂成枯落，多不接世。前面講道理，這里講時間——道理講得通的人，最後敗在時間上。",
+     "「悲守窮廬，將復何及」是全篇最重的一句：它不是罵，是替兒子把幾十年後的那個場面先擺出來。諸葛亮寫這封信時 46 歲，五年後去世，諸葛瞻 8 歲。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊第 16 課。",
+     "課標（2022）附錄1 未列本篇，屬教材拓展。"
+    ]
+   },
+   "labels_trad": {
+    "title": "誡子書",
+    "author": "諸葛亮",
+    "dynasty": "三國",
+    "stage": "初中",
+    "volume": "七年級上冊",
+    "form": "文言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "勸學",
+     "修身"
+    ],
+    "technique": [
+     "對偶",
+     "對比",
+     "說理"
+    ],
+    "tags": [
+     "勸學",
+     "修身",
+     "三國文言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夫君子之行，静以修",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "静",
+     "cands": [
+      "靜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫君子之行，静以修身，俭以养德",
+     "field": "full",
+     "line": 0,
+     "page_char": "靜"
+    },
+    {
+     "at": 8,
+     "n": 2,
+     "simp": "修身",
+     "cands": [
+      "修身"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "夫君子之行，静以修身，俭以养德。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "俭",
+     "cands": [
+      "儉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之行，静以修身，俭以养德。",
+     "field": "full",
+     "line": 0,
+     "page_char": "儉"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "养",
+     "cands": [
+      "養"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，静以修身，俭以养德。",
+     "field": "full",
+     "line": 0,
+     "page_char": "養"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "非淡泊无以明志，非宁静无",
+     "field": "full",
+     "line": 1,
+     "page_char": "無"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "志",
+     "cands": [
+      "志",
+      "誌"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "非淡泊无以明志，非宁静无以致远",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "宁",
+     "cands": [
+      "寧",
+      "甯"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "淡泊无以明志，非宁静无以致远。",
+     "field": "full",
+     "line": 1,
+     "page_char": "寧"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "静",
+     "cands": [
+      "靜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "泊无以明志，非宁静无以致远。",
+     "field": "full",
+     "line": 1,
+     "page_char": "靜"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "无以明志，非宁静无以致远。",
+     "field": "full",
+     "line": 1,
+     "page_char": "無"
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "以致",
+     "cands": [
+      "以致"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "以明志，非宁静无以致远。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "远",
+     "cands": [
+      "遠"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "志，非宁静无以致远。",
+     "field": "full",
+     "line": 1,
+     "page_char": "遠"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "学",
+     "cands": [
+      "學"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也",
+     "field": "full",
+     "line": 2,
+     "page_char": "學"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "须",
+     "cands": [
+      "須",
+      "鬚"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，",
+     "field": "full",
+     "line": 2,
+     "page_char": "須"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "静",
+     "cands": [
+      "靜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，非",
+     "field": "full",
+     "line": 2,
+     "page_char": "靜"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "才",
+     "cands": [
+      "才",
+      "纔"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，非学无以",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "须",
+     "cands": [
+      "須",
+      "鬚"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，非学无以广",
+     "field": "full",
+     "line": 2,
+     "page_char": "須"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "学",
+     "cands": [
+      "學"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，非学无以广才",
+     "field": "full",
+     "line": 2,
+     "page_char": "學"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "学",
+     "cands": [
+      "學"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "也，才须学也，非学无以广才，非志无",
+     "field": "full",
+     "line": 2,
+     "page_char": "學"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，才须学也，非学无以广才，非志无以",
+     "field": "full",
+     "line": 2,
+     "page_char": "無"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "广",
+     "cands": [
+      "廣",
+      "广"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "须学也，非学无以广才，非志无以成学",
+     "field": "full",
+     "line": 2,
+     "page_char": "廣"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "才",
+     "cands": [
+      "才",
+      "纔"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "学也，非学无以广才，非志无以成学。",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "志",
+     "cands": [
+      "志",
+      "誌"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "非学无以广才，非志无以成学。",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "学无以广才，非志无以成学。",
+     "field": "full",
+     "line": 2,
+     "page_char": "無"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "学",
+     "cands": [
+      "學"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "广才，非志无以成学。",
+     "field": "full",
+     "line": 2,
+     "page_char": "學"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "淫慢则不能励精，险躁则",
+     "field": "full",
+     "line": 3,
+     "page_char": "則"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "励",
+     "cands": [
+      "勵"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淫慢则不能励精，险躁则不能治",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "险",
+     "cands": [
+      "險"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淫慢则不能励精，险躁则不能治性。",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "则不能励精，险躁则不能治性。",
+     "field": "full",
+     "line": 3,
+     "page_char": "則"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "年与时驰，意与日去，",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "年与时驰，意与日去，遂",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "驰",
+     "cands": [
+      "馳"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "年与时驰，意与日去，遂成",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "年与时驰，意与日去，遂成枯落，",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "穷",
+     "cands": [
+      "窮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，多不接世，悲守穷庐，将复何及！",
+     "field": "full",
+     "line": 4,
+     "page_char": "窮"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "庐",
+     "cands": [
+      "廬"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "多不接世，悲守穷庐，将复何及！",
+     "field": "full",
+     "line": 4,
+     "page_char": "廬"
+    },
+    {
+     "at": 25,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "接世，悲守穷庐，将复何及！",
+     "field": "full",
+     "line": 4,
+     "page_char": "將"
+    },
+    {
+     "at": 26,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "世，悲守穷庐，将复何及！",
+     "field": "full",
+     "line": 4,
+     "page_char": "復"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夫君子之行，静以修",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "静",
+     "cands": [
+      "靜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫君子之行，静以修身，俭以养德",
+     "field": "lines",
+     "line": 0,
+     "page_char": "靜"
+    },
+    {
+     "at": 8,
+     "n": 2,
+     "simp": "修身",
+     "cands": [
+      "修身"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "夫君子之行，静以修身，俭以养德。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "俭",
+     "cands": [
+      "儉"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "之行，静以修身，俭以养德。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "儉"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "养",
+     "cands": [
+      "養"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，静以修身，俭以养德。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "養"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "非淡泊无以明志，非宁静无",
+     "field": "lines",
+     "line": 1,
+     "page_char": "無"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "志",
+     "cands": [
+      "志",
+      "誌"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "非淡泊无以明志，非宁静无以致远",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "宁",
+     "cands": [
+      "寧",
+      "甯"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "淡泊无以明志，非宁静无以致远。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "寧"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "静",
+     "cands": [
+      "靜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "泊无以明志，非宁静无以致远。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "靜"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "无以明志，非宁静无以致远。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "無"
+    },
+    {
+     "at": 12,
+     "n": 2,
+     "simp": "以致",
+     "cands": [
+      "以致"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "以明志，非宁静无以致远。",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "远",
+     "cands": [
+      "遠"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "志，非宁静无以致远。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "遠"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "夫",
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "学",
+     "cands": [
+      "學"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也",
+     "field": "lines",
+     "line": 2,
+     "page_char": "學"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "须",
+     "cands": [
+      "須",
+      "鬚"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，",
+     "field": "lines",
+     "line": 2,
+     "page_char": "須"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "静",
+     "cands": [
+      "靜"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，非",
+     "field": "lines",
+     "line": 2,
+     "page_char": "靜"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "才",
+     "cands": [
+      "才",
+      "纔"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，非学无以",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "须",
+     "cands": [
+      "須",
+      "鬚"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，非学无以广",
+     "field": "lines",
+     "line": 2,
+     "page_char": "須"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "学",
+     "cands": [
+      "學"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "夫学须静也，才须学也，非学无以广才",
+     "field": "lines",
+     "line": 2,
+     "page_char": "學"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "学",
+     "cands": [
+      "學"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "也，才须学也，非学无以广才，非志无",
+     "field": "lines",
+     "line": 2,
+     "page_char": "學"
+    },
+    {
+     "at": 13,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，才须学也，非学无以广才，非志无以",
+     "field": "lines",
+     "line": 2,
+     "page_char": "無"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "广",
+     "cands": [
+      "廣",
+      "广"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "须学也，非学无以广才，非志无以成学",
+     "field": "lines",
+     "line": 2,
+     "page_char": "廣"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "才",
+     "cands": [
+      "才",
+      "纔"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "学也，非学无以广才，非志无以成学。",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "志",
+     "cands": [
+      "志",
+      "誌"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "非学无以广才，非志无以成学。",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "学无以广才，非志无以成学。",
+     "field": "lines",
+     "line": 2,
+     "page_char": "無"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "学",
+     "cands": [
+      "學"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "广才，非志无以成学。",
+     "field": "lines",
+     "line": 2,
+     "page_char": "學"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "淫慢则不能励精，险躁则",
+     "field": "lines",
+     "line": 3,
+     "page_char": "則"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "励",
+     "cands": [
+      "勵"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淫慢则不能励精，险躁则不能治",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "险",
+     "cands": [
+      "險"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淫慢则不能励精，险躁则不能治性。",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "则不能励精，险躁则不能治性。",
+     "field": "lines",
+     "line": 3,
+     "page_char": "則"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "年与时驰，意与日去，",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "年与时驰，意与日去，遂",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "驰",
+     "cands": [
+      "馳"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "年与时驰，意与日去，遂成",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "年与时驰，意与日去，遂成枯落，",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "穷",
+     "cands": [
+      "窮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，多不接世，悲守穷庐，将复何及！",
+     "field": "lines",
+     "line": 4,
+     "page_char": "窮"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "庐",
+     "cands": [
+      "廬"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "多不接世，悲守穷庐，将复何及！",
+     "field": "lines",
+     "line": 4,
+     "page_char": "廬"
+    },
+    {
+     "at": 25,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "接世，悲守穷庐，将复何及！",
+     "field": "lines",
+     "line": 4,
+     "page_char": "將"
+    },
+    {
+     "at": 26,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "世，悲守穷庐，将复何及！",
+     "field": "lines",
+     "line": 4,
+     "page_char": "復"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     6,
+     "静",
+     "夫君子之行，静以修身，俭以养德",
+     "靜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     11,
+     "俭",
+     "之行，静以修身，俭以养德。",
+     "儉",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     13,
+     "养",
+     "，静以修身，俭以养德。",
+     "養",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     3,
+     "无",
+     "非淡泊无以明志，非宁静无",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     9,
+     "宁",
+     "淡泊无以明志，非宁静无以致远。",
+     "寧",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     10,
+     "静",
+     "泊无以明志，非宁静无以致远。",
+     "靜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     11,
+     "无",
+     "无以明志，非宁静无以致远。",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     14,
+     "远",
+     "志，非宁静无以致远。",
+     "遠",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     1,
+     "学",
+     "夫学须静也，才须学也",
+     "學",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     2,
+     "须",
+     "夫学须静也，才须学也，",
+     "須",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     3,
+     "静",
+     "夫学须静也，才须学也，非",
+     "靜",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     7,
+     "须",
+     "夫学须静也，才须学也，非学无以广",
+     "須",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     8,
+     "学",
+     "夫学须静也，才须学也，非学无以广才",
+     "學",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     12,
+     "学",
+     "也，才须学也，非学无以广才，非志无",
+     "學",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     13,
+     "无",
+     "，才须学也，非学无以广才，非志无以",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     15,
+     "广",
+     "须学也，非学无以广才，非志无以成学",
+     "廣",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     20,
+     "无",
+     "学无以广才，非志无以成学。",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     23,
+     "学",
+     "广才，非志无以成学。",
+     "學",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     2,
+     "则",
+     "淫慢则不能励精，险躁则",
+     "則",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     10,
+     "则",
+     "则不能励精，险躁则不能治性。",
+     "則",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     22,
+     "穷",
+     "，多不接世，悲守穷庐，将复何及！",
+     "窮",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     23,
+     "庐",
+     "多不接世，悲守穷庐，将复何及！",
+     "廬",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     25,
+     "将",
+     "接世，悲守穷庐，将复何及！",
+     "將",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     26,
+     "复",
+     "世，悲守穷庐，将复何及！",
+     "復",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     4,
+     3,
+     "穷",
+     "「悲守穷庐，将复何及」是",
+     "窮",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     4,
+     4,
+     "庐",
+     "「悲守穷庐，将复何及」是全",
+     "廬",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 48,
+     "n": 1,
+     "simp": "夹",
+     "cands": [
+      "夾",
+      "袷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "不能勵精」，页内夹注记「慆，一作「",
+     "field": "sec:异文",
+     "line": 0,
+     "pick": "夾",
+     "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
+    },
+    {
+     "at": 40,
+     "n": 1,
+     "simp": "夹",
+     "cands": [
+      "夾",
+      "袷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "躁則不能冶性」，夹注记「冶，一作「",
+     "field": "sec:异文",
+     "line": 4,
+     "pick": "夾",
+     "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "夹",
+     "cands": [
+      "夾",
+      "袷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "作「志與歲去」，夹注记「志，一作「",
+     "field": "sec:异文",
+     "line": 8,
+     "pick": "夾",
+     "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
+    },
+    {
+     "at": 17,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "淡」在这里是同一个字的两种写法，不",
+     "field": "sec:异文",
+     "line": 13,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "瞻的家书，诸葛瞻当时八岁。",
+     "field": "sec:注释",
+     "line": 0,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "宁",
+     "cands": [
+      "寧",
+      "甯"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 静以修身：以宁静来修养身心。以",
+     "field": "sec:注释",
+     "line": 2,
+     "pick": "寧",
+     "why": "安宁、岂义作「寧」；「甯」只作姓"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "宁",
+     "cands": [
+      "寧",
+      "甯"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "- 宁静：这里指安静集",
+     "field": "sec:注释",
+     "line": 5,
+     "pick": "寧",
+     "why": "安宁、岂义作「寧」；「甯」只作姓"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "：破陋的房子。将复何及：又怎么来得",
+     "field": "sec:注释",
+     "line": 13,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "宁",
+     "cands": [
+      "寧",
+      "甯"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "的行为操守，是靠宁静来修养身心，靠",
+     "field": "sec:译文",
+     "line": 0,
+     "pick": "寧",
+     "why": "安宁、岂义作「寧」；「甯」只作姓"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "须",
+     "cands": [
+      "須",
+      "鬚"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "学习必须宁静，才干来自学",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "須",
+     "why": "必须、须臾义作「須」；「鬚」是胡须，仓内没有这种用法"
+    },
+    {
+     "at": 4,
+     "n": 1,
+     "simp": "宁",
+     "cands": [
+      "寧",
+      "甯"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "学习必须宁静，才干来自学习",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "寧",
+     "why": "安宁、岂义作「寧」；「甯」只作姓"
+    },
+    {
+     "at": 63,
+     "n": 1,
+     "simp": "链",
+     "cands": [
+      "鏈",
+      "鍊"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "件，读起来像一条链。",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "鏈",
+     "why": "链条、链接作「鏈」；「鍊」是冶炼义"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "「悲守穷庐，将复何及」是全篇最重",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 36,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "子把几十年后的那个场面先摆出来。诸",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 40,
+     "n": 1,
+     "simp": "摆",
+     "cands": [
+      "擺",
+      "襬"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "年后的那个场面先摆出来。诸葛亮写这",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "擺",
+     "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    }
+   ],
+   "left_behind": []
+  },
+  {
    "id": "jiasheng",
    "title": "贾生",
    "page": "賈生",
@@ -30713,6 +38444,1085 @@
      "pick": "盡",
      "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
      "evidence": "来源页 14 处作「盡」"
+    }
+   ],
+   "left_behind": []
+  },
+  {
+   "id": "chentaiqiyuyouqixing",
+   "title": "陈太丘与友期行",
+   "page": "世說新語/方正",
+   "text_trad": [
+    "陳太丘與友期行，期日中。過中不至，太丘舍去，去後乃至。",
+    "元方時年七歲，門外戲。",
+    "客問元方：“尊君在不？”答曰：“待君久不至，已去。”",
+    "友人便怒曰：“非人哉！與人期行，相委而去。”",
+    "元方曰：“君與家君期日中。日中不至，則是無信；對子罵父，則是無禮。”",
+    "友人慚，下車引之。元方入門不顧。"
+   ],
+   "lines_trad": [
+    "陳太丘與友期行，期日中。過中不至，太丘舍去，去後乃至。",
+    "元方時年七歲，門外戲。",
+    "客問元方：“尊君在不？”答曰：“待君久不至，已去。”",
+    "友人便怒曰：“非人哉！與人期行，相委而去。”",
+    "元方曰：“君與家君期日中。日中不至，則是無信；對子罵父，則是無禮。”",
+    "友人慚，下車引之。元方入門不顧。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "陳太丘與友期行，期日中。過中不至，太丘舍去，去後乃至。",
+     "元方時年七歲，門外戲。",
+     "客問元方：“尊君在不？”答曰：“待君久不至，已去。”",
+     "友人便怒曰：“非人哉！與人期行，相委而去。”",
+     "元方曰：“君與家君期日中。日中不至，則是無信；對子罵父，則是無禮。”",
+     "友人慚，下車引之。元方入門不顧。"
+    ],
+    "异文": [
+     "- 「元方時年七歲」：維基文庫《世說新語/方正》作「元方時年七歳」，用的是「歳」（U+6BCE）。",
+     "  取舍：「歳」是「歲」的異體字形，不算文字分歧，正文照統編作「歲」。",
+     "  出處：統編教材七年級上冊課文頁（鏡像） https://yw.suyang123.com/chuzhong/qinianji/20011_langdu.html ；維基文庫《世說新語/方正》 https://zh.wikisource.org/wiki/%E4%B8%96%E8%AA%AA%E6%96%B0%E8%AA%9E%2F%E6%96%B9%E6%AD%A3",
+     "  裁定：內容組 AI 校勘，日期 2026-10-10。"
+    ],
+    "注释": [
+     "- 陳太丘：陳寔（shí），字仲弓，東漢人，曾任太丘長，所以稱「陳太丘」。",
+     "- 期行：約定同行。期，約定。",
+     "- 期日中：約定的時間是正午。日中，正午時分。",
+     "- 舍去：丟下（他）走了。舍，舍棄、丟下。",
+     "- 去後乃至：（太丘）走了以後（友人）才到。乃，才。",
+     "- 元方：陳寔的兒子陳紀，字元方。",
+     "- 尊君在不（fǒu）：你父親在嗎。尊君，對別人父親的尊稱。不，同「否」。",
+     "- 家君：對人稱自己的父親。",
+     "- 相委而去：丟下我走了。委，舍棄、丟下。",
+     "- 引之：拉他（表示親近、示好）。引，拉。",
+     "- 不顧：不回頭看。顧，回頭看。"
+    ],
+    "译文": [
+     "陳太丘和朋友約定同行，約定的時間是正午。",
+     "過了正午朋友沒到，太丘就丟下他先走了；太丘走後朋友才到。",
+     "元方那年七歲，正在門外玩耍。客人問元方：「你父親在嗎？」元方答：「等您很久您沒到，他已經走了。」",
+     "朋友便生氣地說：「真不是人啊！和別人約好一起走，卻丟下別人自己走了。」",
+     "元方說：「您和我父親約定正午。正午您沒到，就是不講信用；對着兒子罵他的父親，就是沒有禮貌。」",
+     "朋友感到慚愧，下車來拉他。元方走進家門，頭也不回。"
+    ],
+    "赏析": [
+     "全篇一百來字，一場吵架寫完了：誰先錯、錯在哪、誰認錯、認到什麼程度。",
+     "元方那兩句是全文的骨頭：「日中不至，則是無信；對子罵父，則是無禮。」他把對方的怒氣拆成兩件事——遲到是一件事，罵父是另一件事，兩件事各有一條道理。",
+     "結尾兩個動作最見性格：「友人慚，下車引之」是大人讓步；「元方入門不顧」是小孩不讓步。教材選這一篇，歷來爭議也在這里——七歲的孩子該不該「入門不顧」，可以不同意，但文中確實寫的是這個。",
+     "這一篇選自《世說新語·方正》，「方正」一門記的就是這種不肯含糊的人。"
+    ],
+    "收录范围": [
+     "教材位置：統編語文七年級上冊課文（教材目錄把這一篇排在「6 散步」條目之後，沒有單獨標課號），選自《世說新語·方正》。",
+     "課標（2022）附錄1 未列本篇，屬教材拓展。"
+    ]
+   },
+   "labels_trad": {
+    "title": "陳太丘與友期行",
+    "author": "劉義慶",
+    "dynasty": "南朝宋",
+    "stage": "初中",
+    "volume": "七年級上冊",
+    "form": "文言",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "誠信",
+     "家庭"
+    ],
+    "technique": [
+     "對話描寫",
+     "對比",
+     "白描"
+    ],
+    "tags": [
+     "誠信",
+     "家庭",
+     "南朝宋文言"
+    ]
+   },
+   "marks": [
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "陈",
+     "cands": [
+      "陳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "陈太丘与友期行，期",
+     "field": "full",
+     "line": 0,
+     "page_char": "陳"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "陈太丘与友期行，期日中。",
+     "field": "full",
+     "line": 0,
+     "page_char": "與"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "过",
+     "cands": [
+      "過"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "友期行，期日中。过中不至，太丘舍去",
+     "field": "full",
+     "line": 0,
+     "page_char": "過"
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "舍",
+     "cands": [
+      "舍",
+      "捨"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "。过中不至，太丘舍去，去后乃至。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 22,
+     "n": 2,
+     "simp": "去后",
+     "cands": [
+      "去後"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "不至，太丘舍去，去后乃至。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "元方时年七岁，门外戏。",
+     "field": "full",
+     "line": 1,
+     "page_char": "時"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "岁",
+     "cands": [
+      "歲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "元方时年七岁，门外戏。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "元方时年七岁，门外戏。",
+     "field": "full",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "戏",
+     "cands": [
+      "戲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方时年七岁，门外戏。",
+     "field": "full",
+     "line": 1,
+     "page_char": "戲"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "问",
+     "cands": [
+      "問"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "客问元方：“尊君在不",
+     "field": "full",
+     "line": 2,
+     "page_char": "問"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "怒曰：“非人哉！与人期行，相委而去",
+     "field": "full",
+     "line": 3,
+     "page_char": "與"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "元方曰：“君与家君期日中。日中",
+     "field": "full",
+     "line": 4,
+     "page_char": "與"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "元方曰：“君与家君期日中。日中不",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "日中。日中不至，则是无信；对子骂父",
+     "field": "full",
+     "line": 4,
+     "page_char": "則"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。日中不至，则是无信；对子骂父，则",
+     "field": "full",
+     "line": 4,
+     "page_char": "無"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "对",
+     "cands": [
+      "對"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "不至，则是无信；对子骂父，则是无礼",
+     "field": "full",
+     "line": 4,
+     "page_char": "對"
+    },
+    {
+     "at": 25,
+     "n": 1,
+     "simp": "骂",
+     "cands": [
+      "罵"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，则是无信；对子骂父，则是无礼。”",
+     "field": "full",
+     "line": 4,
+     "page_char": "罵"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "无信；对子骂父，则是无礼。”",
+     "field": "full",
+     "line": 4,
+     "page_char": "則"
+    },
+    {
+     "at": 30,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "；对子骂父，则是无礼。”",
+     "field": "full",
+     "line": 4,
+     "page_char": "無"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "礼",
+     "cands": [
+      "禮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "对子骂父，则是无礼。”",
+     "field": "full",
+     "line": 4,
+     "page_char": "禮"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "惭",
+     "cands": [
+      "慚"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "友人惭，下车引之。元方",
+     "field": "full",
+     "line": 5,
+     "page_char": "慚"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "友人惭，下车引之。元方入门不",
+     "field": "full",
+     "line": 5,
+     "page_char": "車"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "下车引之。元方入门不顾。",
+     "field": "full",
+     "line": 5,
+     "page_char": "門"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "顾",
+     "cands": [
+      "顧"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "引之。元方入门不顾。",
+     "field": "full",
+     "line": 5,
+     "page_char": "顧"
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "陈",
+     "cands": [
+      "陳"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "陈太丘与友期行，期",
+     "field": "lines",
+     "line": 0,
+     "page_char": "陳"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "陈太丘与友期行，期日中。",
+     "field": "lines",
+     "line": 0,
+     "page_char": "與"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "过",
+     "cands": [
+      "過"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "友期行，期日中。过中不至，太丘舍去",
+     "field": "lines",
+     "line": 0,
+     "page_char": "過"
+    },
+    {
+     "at": 19,
+     "n": 1,
+     "simp": "舍",
+     "cands": [
+      "舍",
+      "捨"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "。过中不至，太丘舍去，去后乃至。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 22,
+     "n": 2,
+     "simp": "去后",
+     "cands": [
+      "去後"
+     ],
+     "decision": "table",
+     "kind": "phrase",
+     "ctx": "不至，太丘舍去，去后乃至。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "时",
+     "cands": [
+      "時"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "元方时年七岁，门外戏。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "時"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "岁",
+     "cands": [
+      "歲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "元方时年七岁，门外戏。",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "元方时年七岁，门外戏。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "門"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "戏",
+     "cands": [
+      "戲"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "方时年七岁，门外戏。",
+     "field": "lines",
+     "line": 1,
+     "page_char": "戲"
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "问",
+     "cands": [
+      "問"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "客问元方：“尊君在不",
+     "field": "lines",
+     "line": 2,
+     "page_char": "問"
+    },
+    {
+     "at": 11,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "怒曰：“非人哉！与人期行，相委而去",
+     "field": "lines",
+     "line": 3,
+     "page_char": "與"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "元方曰：“君与家君期日中。日中",
+     "field": "lines",
+     "line": 4,
+     "page_char": "與"
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "家",
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "元方曰：“君与家君期日中。日中不",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 18,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "日中。日中不至，则是无信；对子骂父",
+     "field": "lines",
+     "line": 4,
+     "page_char": "則"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "。日中不至，则是无信；对子骂父，则",
+     "field": "lines",
+     "line": 4,
+     "page_char": "無"
+    },
+    {
+     "at": 23,
+     "n": 1,
+     "simp": "对",
+     "cands": [
+      "對"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "不至，则是无信；对子骂父，则是无礼",
+     "field": "lines",
+     "line": 4,
+     "page_char": "對"
+    },
+    {
+     "at": 25,
+     "n": 1,
+     "simp": "骂",
+     "cands": [
+      "罵"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "，则是无信；对子骂父，则是无礼。”",
+     "field": "lines",
+     "line": 4,
+     "page_char": "罵"
+    },
+    {
+     "at": 28,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "无信；对子骂父，则是无礼。”",
+     "field": "lines",
+     "line": 4,
+     "page_char": "則"
+    },
+    {
+     "at": 30,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "；对子骂父，则是无礼。”",
+     "field": "lines",
+     "line": 4,
+     "page_char": "無"
+    },
+    {
+     "at": 31,
+     "n": 1,
+     "simp": "礼",
+     "cands": [
+      "禮"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "对子骂父，则是无礼。”",
+     "field": "lines",
+     "line": 4,
+     "page_char": "禮"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "惭",
+     "cands": [
+      "慚"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "友人惭，下车引之。元方",
+     "field": "lines",
+     "line": 5,
+     "page_char": "慚"
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "友人惭，下车引之。元方入门不",
+     "field": "lines",
+     "line": 5,
+     "page_char": "車"
+    },
+    {
+     "at": 12,
+     "n": 1,
+     "simp": "门",
+     "cands": [
+      "門"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "下车引之。元方入门不顾。",
+     "field": "lines",
+     "line": 5,
+     "page_char": "門"
+    },
+    {
+     "at": 14,
+     "n": 1,
+     "simp": "顾",
+     "cands": [
+      "顧"
+     ],
+     "decision": "page",
+     "kind": "char",
+     "ctx": "引之。元方入门不顾。",
+     "field": "lines",
+     "line": 5,
+     "page_char": "顧"
+    }
+   ],
+   "page_marks": [
+    [
+     "sec:必背全文",
+     0,
+     0,
+     "陈",
+     "陈太丘与友期行，期",
+     "陳",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     3,
+     "与",
+     "陈太丘与友期行，期日中。",
+     "與",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     0,
+     12,
+     "过",
+     "友期行，期日中。过中不至，太丘舍去",
+     "過",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     2,
+     "时",
+     "元方时年七岁，门外戏。",
+     "時",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     7,
+     "门",
+     "元方时年七岁，门外戏。",
+     "門",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     1,
+     9,
+     "戏",
+     "方时年七岁，门外戏。",
+     "戲",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     2,
+     1,
+     "问",
+     "客问元方：“尊君在不",
+     "問",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     3,
+     11,
+     "与",
+     "怒曰：“非人哉！与人期行，相委而去",
+     "與",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     6,
+     "与",
+     "元方曰：“君与家君期日中。日中",
+     "與",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     18,
+     "则",
+     "日中。日中不至，则是无信；对子骂父",
+     "則",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     20,
+     "无",
+     "。日中不至，则是无信；对子骂父，则",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     23,
+     "对",
+     "不至，则是无信；对子骂父，则是无礼",
+     "對",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     25,
+     "骂",
+     "，则是无信；对子骂父，则是无礼。”",
+     "罵",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     28,
+     "则",
+     "无信；对子骂父，则是无礼。”",
+     "則",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     30,
+     "无",
+     "；对子骂父，则是无礼。”",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     4,
+     31,
+     "礼",
+     "对子骂父，则是无礼。”",
+     "禮",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     2,
+     "惭",
+     "友人惭，下车引之。元方",
+     "慚",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     5,
+     "车",
+     "友人惭，下车引之。元方入门不",
+     "車",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     12,
+     "门",
+     "下车引之。元方入门不顾。",
+     "門",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:必背全文",
+     5,
+     14,
+     "顾",
+     "引之。元方入门不顾。",
+     "顧",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     18,
+     "则",
+     "头：「日中不至，则是无信；对子骂父",
+     "則",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     20,
+     "无",
+     "「日中不至，则是无信；对子骂父，则",
+     "無",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     23,
+     "对",
+     "不至，则是无信；对子骂父，则是无礼",
+     "對",
+     "page",
+     "",
+     null
+    ],
+    [
+     "sec:赏析",
+     1,
+     25,
+     "骂",
+     "，则是无信；对子骂父，则是无礼。」",
+     "罵",
+     "page",
+     "",
+     null
+    ]
+   ],
+   "marks_app": [
+    {
+     "at": 89,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "文中确实写的是这个。",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "上册课文（教材目录把这一篇排在「6",
+     "field": "sec:收录范围",
+     "line": 0,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    },
+    {
+     "at": 9,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "标（2022）附录1 未列本篇，属",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
     }
    ],
    "left_behind": []

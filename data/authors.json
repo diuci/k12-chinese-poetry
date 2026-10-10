@@ -394,6 +394,16 @@
       "died": 232,
       "note": "曹植（192—232，一说 192—232.12.27），字子建，沛国谯县人。维基百科 https://zh.wikipedia.org/wiki/%E6%9B%B9%E6%A4%8D 作「曹植（192年—232年12月27日）」；百度百科 https://wapbaike.baidu.com/item/%E6%9B%B9%E6%A4%8D 出生信息「192年」、逝世日期「232年12月27日」，两处一致。"
     },
+    "刘义庆": {
+      "died": 444,
+      "eraEnd": null,
+      "note": "刘义庆（403—444），字季伯，南朝宋文学家，《世说新语》编者。维基百科 https://zh.wikipedia.org/wiki/%E5%88%98%E7%BE%A9%E5%BA%86 作「刘义庆（403年—444年2月26日）」；维基文库作者页 Author:劉義慶 https://zh.wikisource.org/wiki/Author:%E7%82%98%E7%BE%A9%E5%BA%B6 记 birthyear=403、deathyear=444。两处一致。"
+    },
+    "蒲松龄": {
+      "died": 1715,
+      "eraEnd": null,
+      "note": "蒲松龄（1640—1715），字留仙，号柳泉居士，《聊斋志异》作者。维基百科 https://zh.wikipedia.org/wiki/%E8%92%B2%E6%9D%BE%E9%BE%84 作「蒲松齡（1640年6月5日—1715年2月25日）」；维基文库作者页 Author:蒲松齡 https://zh.wikisource.org/wiki/Author:%E8%92%B2%E6%9D%BE%E9%BE%84 记「1640年—1715年」。两处一致。"
+    },
     "常建": {
       "died": null,
       "eraEnd": 780,

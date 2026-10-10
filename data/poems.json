@@ -3,6 +3,7 @@
     "初中-7": [
       "lunyu12-cz",
       "shiyiyuesirifengyudazuo",
+      "yongxue",
       "yeshangshouxiangchengwendi",
       "yeyujibei",
       "tianjingsha-qiusi",
@@ -14,6 +15,7 @@
       "wanchun",
       "wangyue",
       "mulanci",
+      "qirenyoutian",
       "cibeigushanxia",
       "shuidiaogetou",
       "jiangnanfengligunian",
@@ -21,20 +23,24 @@
       "youshanxincun",
       "tongguan",
       "ailianshuo",
+      "lang",
       "dengyouzhoutai",
       "dengfeilaifeng",
       "xiangjianhuan",
       "qiuci",
+      "chuanjingdeyiren",
       "zhuliguan",
       "yueke",
       "xingjunjiuri",
       "xinglunan",
       "guancanghai",
+      "jiezishu",
       "jiasheng",
       "guosongyuan",
       "guolingyang",
       "fengrujinshi",
       "wenwangchangling",
+      "chentaiqiyuyouqixing",
       "loushiming"
     ],
     "初中-8": [
@@ -326,12 +332,14 @@
     "changxiangsi": "changxiangsi",
     "chaotianzi": "chaotianzi",
     "chenqingbiao": "chenqingbiao",
+    "chentaiqiyuyouqixing": "chentaiqiyuyouqixing",
     "chibi-du": "chibi-du",
     "chibifu": "chibifu",
     "chilege": "chilege",
     "chishang": "chishang",
     "choulitian": "choulitian",
     "chounuer-shuboshandaozhongbi": "chounuer-shuboshandaozhongbi",
+    "chuanjingdeyiren": "chuanjingdeyiren",
     "chunjianghuayue": "chunjianghuayue",
     "chunri": "chunri",
     "chunwang": "chunwang",
@@ -407,6 +415,7 @@
     "jianzhukeshu": "jianzhukeshu",
     "jiasheng": "jiasheng",
     "jichengtiansi": "jichengtiansi",
+    "jiezishu": "jiezishu",
     "jihai": "jihai",
     "jihai-jimao": "jihai-jimao",
     "jingcisi": "jingcisi",
@@ -418,6 +427,7 @@
     "jueju-chiri": "jueju-chiri",
     "jueju-huangli": "jueju-huangli",
     "kezhi": "kezhi",
+    "lang": "lang",
     "langtaosha": "langtaosha",
     "lantingjixu": "lantingjixu",
     "laozi8": "laozi8",
@@ -466,6 +476,7 @@
     "qingyu-an": "qingyu-an",
     "qiqiao": "qiqiao",
     "qiqiaoxian": "qiqiaoxian",
+    "qirenyoutian": "qirenyoutian",
     "qiuci": "qiuci",
     "qiuyejiangxiao": "qiuyejiangxiao",
     "quanxue": "quanxue",
@@ -557,6 +568,7 @@
     "yinjiujiusan": "yinjiujiusan",
     "yonge": "yonge",
     "yongliu": "yongliu",
+    "yongxue": "yongxue",
     "yongyule": "yongyule",
     "youshanxincun": "youshanxincun",
     "youyuanbuzhi": "youyuanbuzhi",
@@ -622,8 +634,12 @@
     "人才": [
       "masuo"
     ],
+    "传闻": [
+      "chuanjingdeyiren"
+    ],
     "修身": [
       "lunyu12-cz",
+      "jiezishu",
       "suoyoujiayao",
       "liji1",
       "mengziyize",
@@ -681,6 +697,9 @@
     "初夏": [
       "sanqudaozhong"
     ],
+    "劝学": [
+      "jiezishu"
+    ],
     "励志": [
       "tengwanggexu",
       "shuxiang"
@@ -716,6 +735,7 @@
       "jihai"
     ],
     "叙事": [
+      "lang",
       "pipaxing"
     ],
     "古典": [
@@ -731,6 +751,7 @@
       "guizhixiang"
     ],
     "咏物": [
+      "yongxue",
       "ailianshuo",
       "bosuanzi-yongmei",
       "zengcongdi",
@@ -867,7 +888,16 @@
       "manjianghong-xiaozhujinghua"
     ],
     "家庭": [
+      "yongxue",
+      "chentaiqiyuyouqixing",
       "qingpingyue-cunju"
+    ],
+    "寓理": [
+      "lang"
+    ],
+    "寓言": [
+      "qirenyoutian",
+      "chuanjingdeyiren"
     ],
     "就义": [
       "bieyunjian"
@@ -1416,6 +1446,12 @@
     "评论": [
       "gudaishilun"
     ],
+    "诚信": [
+      "chentaiqiyuyouqixing"
+    ],
+    "说理": [
+      "qirenyoutian"
+    ],
     "读书": [
       "guanshu"
     ],
@@ -1546,7 +1582,7 @@
     ]
   },
   "contentVersion": "2026.10.03",
-  "count": 283,
+  "count": 289,
   "poems": [
     {
       "_path": "poems/初中/七年级上册/《论语》十二章.md",
@@ -1760,6 +1796,106 @@
       ],
       "title": "十一月四日风雨大作",
       "volume": "七年级上册课外诵读"
+    },
+    {
+      "_path": "poems/初中/七年级上册/咏雪.md",
+      "author": "刘义庆",
+      "authorDied": 444,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "南朝宋",
+      "emotion": "一家人围着雪开玩笑的那点聪明",
+      "examFreq": 0.8,
+      "form": "文言",
+      "fullLines": [
+        "谢太傅寒雪日内集与儿女讲论文义",
+        "俄而雪骤公欣然曰“白雪纷纷何所似”",
+        "兄子胡儿曰“撒盐空中差可拟”",
+        "兄女曰“未若柳絮因风起”",
+        "公大笑乐",
+        "即公大兄无奕女左将军王凝之妻也"
+      ],
+      "fullLinesPunct": [
+        "谢太傅寒雪日内集，与儿女讲论文义。",
+        "俄而雪骤，公欣然曰：“白雪纷纷何所似？”",
+        "兄子胡儿曰：“撒盐空中差可拟。”",
+        "兄女曰：“未若柳絮因风起。”",
+        "公大笑乐。",
+        "即公大兄无奕女，左将军王凝之妻也。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "yongxue",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "谢太傅寒雪日内集与儿女讲论文义",
+        "俄而雪骤公欣然曰“白雪纷纷何所似”",
+        "兄子胡儿曰“撒盐空中差可拟”",
+        "兄女曰“未若柳絮因风起”",
+        "公大笑乐",
+        "即公大兄无奕女左将军王凝之妻也"
+      ],
+      "linesPunct": [
+        "谢太傅寒雪日内集，与儿女讲论文义。",
+        "俄而雪骤，公欣然曰：“白雪纷纷何所似？”",
+        "兄子胡儿曰：“撒盐空中差可拟。”",
+        "兄女曰：“未若柳絮因风起。”",
+        "公大笑乐。",
+        "即公大兄无奕女，左将军王凝之妻也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "咏物",
+        "家庭",
+        "南朝宋文言"
+      ],
+      "technique": [
+        "比喻",
+        "对比",
+        "白描"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "咏物",
+        "家庭"
+      ],
+      "title": "咏雪",
+      "volume": "七年级上册"
     },
     {
       "_path": "poems/初中/七年级上册课外诵读/夜上受降城闻笛.md",
@@ -2610,6 +2746,111 @@
       "volume": "七年级下册"
     },
     {
+      "_path": "poems/初中/七年级上册/杞人忧天.md",
+      "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "先秦",
+      "emotion": "一个把天塌当实事的人",
+      "examFreq": 0.7,
+      "form": "文言",
+      "fullLines": [
+        "杞国有人忧天地崩坠身亡所寄废寝食者",
+        "又有忧彼之所忧者因往晓之曰“天积气耳亡处亡气若屈伸呼吸终日在天中行止奈何忧崩坠乎”",
+        "其人曰“天果积气日月星宿不当坠耶”",
+        "晓之者曰“日月星宿亦积气中之有光耀者只使坠亦不能有所中伤”",
+        "其人曰“奈地坏何”",
+        "晓之者曰“地积块耳充塞四虚亡处亡块若躇步跐蹈终日在地上行止奈何忧其坏”",
+        "其人舍然大喜晓之者亦舍然大喜"
+      ],
+      "fullLinesPunct": [
+        "杞国有人忧天地崩坠，身亡所寄，废寝食者。",
+        "又有忧彼之所忧者，因往晓之，曰：“天，积气耳，亡处亡气。若屈伸呼吸，终日在天中行止，奈何忧崩坠乎？”",
+        "其人曰：“天果积气，日月星宿，不当坠耶？”",
+        "晓之者曰：“日月星宿，亦积气中之有光耀者，只使坠，亦不能有所中伤。”",
+        "其人曰：“奈地坏何？”",
+        "晓之者曰：“地，积块耳，充塞四虚，亡处亡块。若躇步跐蹈，终日在地上行止，奈何忧其坏？”",
+        "其人舍然大喜，晓之者亦舍然大喜。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "qirenyoutian",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "杞国有人忧天地崩坠身亡所寄废寝食者",
+        "又有忧彼之所忧者因往晓之曰“天积气耳亡处亡气若屈伸呼吸终日在天中行止奈何忧崩坠乎”",
+        "其人曰“天果积气日月星宿不当坠耶”",
+        "晓之者曰“日月星宿亦积气中之有光耀者只使坠亦不能有所中伤”",
+        "其人曰“奈地坏何”",
+        "晓之者曰“地积块耳充塞四虚亡处亡块若躇步跐蹈终日在地上行止奈何忧其坏”",
+        "其人舍然大喜晓之者亦舍然大喜"
+      ],
+      "linesPunct": [
+        "杞国有人忧天地崩坠，身亡所寄，废寝食者。",
+        "又有忧彼之所忧者，因往晓之，曰：“天，积气耳，亡处亡气。若屈伸呼吸，终日在天中行止，奈何忧崩坠乎？”",
+        "其人曰：“天果积气，日月星宿，不当坠耶？”",
+        "晓之者曰：“日月星宿，亦积气中之有光耀者，只使坠，亦不能有所中伤。”",
+        "其人曰：“奈地坏何？”",
+        "晓之者曰：“地，积块耳，充塞四虚，亡处亡块。若躇步跐蹈，终日在地上行止，奈何忧其坏？”",
+        "其人舍然大喜，晓之者亦舍然大喜。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        3,
+        7,
+        3,
+        4,
+        1,
+        6,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "寓言",
+        "说理",
+        "先秦文言"
+      ],
+      "technique": [
+        "对话",
+        "寓言",
+        "层层递进"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "寓言",
+        "说理"
+      ],
+      "title": "杞人忧天",
+      "volume": "七年级上册"
+    },
+    {
       "_path": "poems/初中/七年级上册/次北固山下.md",
       "author": "王湾",
       "authorDied": 751,
@@ -3158,6 +3399,106 @@
       "volume": "七年级下册"
     },
     {
+      "_path": "poems/初中/七年级上册/狼.md",
+      "author": "蒲松龄",
+      "authorDied": 1715,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "清",
+      "emotion": "骨头扔完那一刻的狠劲",
+      "examFreq": 0.85,
+      "form": "文言",
+      "fullLines": [
+        "一屠晚归担中肉尽止有剩骨途中两狼缀行甚远",
+        "屠惧投以骨一狼得骨止一狼仍从复投之后狼止而前狼又至骨已尽矣而两狼之并驱如故",
+        "屠大窘恐前后受其敌顾野有麦场场主积薪其中苫蔽成丘屠乃奔倚其下弛担持刀狼不敢前眈眈相向",
+        "少时一狼径去其一犬坐于前久之目似瞑意暇甚屠暴起以刀劈狼首又数刀毙之",
+        "方欲行转视积薪后一狼洞其中意将隧入以攻其后也身已半入止露尻尾屠自后断其股亦毙之乃悟前狼假寐盖以诱敌",
+        "狼亦黠矣而顷刻两毙禽兽之变诈几何哉止增笑耳"
+      ],
+      "fullLinesPunct": [
+        "一屠晚归，担中肉尽，止有剩骨。途中两狼，缀行甚远。",
+        "屠惧，投以骨。一狼得骨止，一狼仍从。复投之，后狼止而前狼又至。骨已尽矣。而两狼之并驱如故。",
+        "屠大窘，恐前后受其敌。顾野有麦场，场主积薪其中，苫蔽成丘。屠乃奔倚其下，弛担持刀。狼不敢前，眈眈相向。",
+        "少时，一狼径去，其一犬坐于前。久之，目似瞑，意暇甚。屠暴起，以刀劈狼首，又数刀毙之。",
+        "方欲行，转视积薪后，一狼洞其中，意将隧入以攻其后也。身已半入，止露尻尾。屠自后断其股，亦毙之。乃悟前狼假寐，盖以诱敌。",
+        "狼亦黠矣，而顷刻两毙，禽兽之变诈几何哉？止增笑耳。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "lang",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "一屠晚归担中肉尽止有剩骨途中两狼缀行甚远",
+        "屠惧投以骨一狼得骨止一狼仍从复投之后狼止而前狼又至骨已尽矣而两狼之并驱如故",
+        "屠大窘恐前后受其敌顾野有麦场场主积薪其中苫蔽成丘屠乃奔倚其下弛担持刀狼不敢前眈眈相向",
+        "少时一狼径去其一犬坐于前久之目似瞑意暇甚屠暴起以刀劈狼首又数刀毙之",
+        "方欲行转视积薪后一狼洞其中意将隧入以攻其后也身已半入止露尻尾屠自后断其股亦毙之乃悟前狼假寐盖以诱敌",
+        "狼亦黠矣而顷刻两毙禽兽之变诈几何哉止增笑耳"
+      ],
+      "linesPunct": [
+        "一屠晚归，担中肉尽，止有剩骨。途中两狼，缀行甚远。",
+        "屠惧，投以骨。一狼得骨止，一狼仍从。复投之，后狼止而前狼又至。骨已尽矣。而两狼之并驱如故。",
+        "屠大窘，恐前后受其敌。顾野有麦场，场主积薪其中，苫蔽成丘。屠乃奔倚其下，弛担持刀。狼不敢前，眈眈相向。",
+        "少时，一狼径去，其一犬坐于前。久之，目似瞑，意暇甚。屠暴起，以刀劈狼首，又数刀毙之。",
+        "方欲行，转视积薪后，一狼洞其中，意将隧入以攻其后也。身已半入，止露尻尾。屠自后断其股，亦毙之。乃悟前狼假寐，盖以诱敌。",
+        "狼亦黠矣，而顷刻两毙，禽兽之变诈几何哉？止增笑耳。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        4,
+        4,
+        6,
+        7,
+        7,
+        3
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "叙事",
+        "寓理",
+        "清文言"
+      ],
+      "technique": [
+        "动作描写",
+        "心理描写",
+        "对比"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "叙事",
+        "寓理"
+      ],
+      "title": "狼",
+      "volume": "七年级上册"
+    },
+    {
       "_path": "poems/初中/七年级下册/登幽州台歌.md",
       "author": "陈子昂",
       "authorDied": 702,
@@ -3453,6 +3794,97 @@
       ],
       "title": "秋词",
       "volume": "七年级上册课外诵读"
+    },
+    {
+      "_path": "poems/初中/七年级上册/穿井得一人.md",
+      "author": "佚名",
+      "authorDied": null,
+      "authorEraEnd": 1900,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "战国",
+      "emotion": "一句话被传成另一件事的那股热闹",
+      "examFreq": 0.7,
+      "form": "文言",
+      "fullLines": [
+        "宋之丁氏家无井而出溉汲常一人居外",
+        "及其家穿井告人曰“吾穿井得一人”",
+        "有闻而传之者“丁氏穿井得一人”国人道之闻之于宋君",
+        "宋君令人问之于丁氏丁氏对曰“得一人之使非得一人于井中也”",
+        "求闻之若此不若无闻也"
+      ],
+      "fullLinesPunct": [
+        "宋之丁氏，家无井而出溉汲，常一人居外。",
+        "及其家穿井，告人曰：“吾穿井得一人。”",
+        "有闻而传之者：“丁氏穿井得一人。”国人道之，闻之于宋君。",
+        "宋君令人问之于丁氏，丁氏对曰：“得一人之使，非得一人于井中也。”",
+        "求闻之若此，不若无闻也。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "chuanjingdeyiren",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "宋之丁氏家无井而出溉汲常一人居外",
+        "及其家穿井告人曰“吾穿井得一人”",
+        "有闻而传之者“丁氏穿井得一人”国人道之闻之于宋君",
+        "宋君令人问之于丁氏丁氏对曰“得一人之使非得一人于井中也”",
+        "求闻之若此不若无闻也"
+      ],
+      "linesPunct": [
+        "宋之丁氏，家无井而出溉汲，常一人居外。",
+        "及其家穿井，告人曰：“吾穿井得一人。”",
+        "有闻而传之者：“丁氏穿井得一人。”国人道之，闻之于宋君。",
+        "宋君令人问之于丁氏，丁氏对曰：“得一人之使，非得一人于井中也。”",
+        "求闻之若此，不若无闻也。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "寓言",
+        "传闻",
+        "战国文言"
+      ],
+      "technique": [
+        "叙事",
+        "对话",
+        "寓理"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "寓言",
+        "传闻"
+      ],
+      "title": "穿井得一人",
+      "volume": "七年级上册"
     },
     {
       "_path": "poems/初中/七年级下册课外诵读/竹里馆.md",
@@ -3849,6 +4281,97 @@
       "volume": "七年级上册"
     },
     {
+      "_path": "poems/初中/七年级上册/诫子书.md",
+      "author": "诸葛亮",
+      "authorDied": 234,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 4,
+      "dynasty": "三国",
+      "emotion": "父亲写给八岁儿子的那份克制",
+      "examFreq": 0.9,
+      "form": "文言",
+      "fullLines": [
+        "夫君子之行静以修身俭以养德",
+        "非淡泊无以明志非宁静无以致远",
+        "夫学须静也才须学也非学无以广才非志无以成学",
+        "淫慢则不能励精险躁则不能治性",
+        "年与时驰意与日去遂成枯落多不接世悲守穷庐将复何及"
+      ],
+      "fullLinesPunct": [
+        "夫君子之行，静以修身，俭以养德。",
+        "非淡泊无以明志，非宁静无以致远。",
+        "夫学须静也，才须学也，非学无以广才，非志无以成学。",
+        "淫慢则不能励精，险躁则不能治性。",
+        "年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "jiezishu",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "夫君子之行静以修身俭以养德",
+        "非淡泊无以明志非宁静无以致远",
+        "夫学须静也才须学也非学无以广才非志无以成学",
+        "淫慢则不能励精险躁则不能治性",
+        "年与时驰意与日去遂成枯落多不接世悲守穷庐将复何及"
+      ],
+      "linesPunct": [
+        "夫君子之行，静以修身，俭以养德。",
+        "非淡泊无以明志，非宁静无以致远。",
+        "夫学须静也，才须学也，非学无以广才，非志无以成学。",
+        "淫慢则不能励精，险躁则不能治性。",
+        "年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        3,
+        2,
+        4,
+        2,
+        6
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "劝学",
+        "修身",
+        "三国文言"
+      ],
+      "technique": [
+        "对偶",
+        "对比",
+        "说理"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "劝学",
+        "修身"
+      ],
+      "title": "诫子书",
+      "volume": "七年级上册"
+    },
+    {
       "_path": "poems/初中/七年级下册课外诵读/贾生.md",
       "author": "李商隐",
       "authorDied": 858,
@@ -4215,6 +4738,106 @@
         "友情"
       ],
       "title": "闻王昌龄左迁龙标遥有此寄",
+      "volume": "七年级上册"
+    },
+    {
+      "_path": "poems/初中/七年级上册/陈太丘与友期行.md",
+      "author": "刘义庆",
+      "authorDied": 444,
+      "authorEraEnd": null,
+      "copyright": "{ text: public-domain, annotations: cc-by-4.0 }",
+      "difficulty": 3,
+      "dynasty": "南朝宋",
+      "emotion": "七岁小孩把道理说死的那场对峙",
+      "examFreq": 0.8,
+      "form": "文言",
+      "fullLines": [
+        "陈太丘与友期行期日中过中不至太丘舍去去后乃至",
+        "元方时年七岁门外戏",
+        "客问元方“尊君在不”答曰“待君久不至已去”",
+        "友人便怒曰“非人哉与人期行相委而去”",
+        "元方曰“君与家君期日中日中不至则是无信对子骂父则是无礼”",
+        "友人惭下车引之元方入门不顾"
+      ],
+      "fullLinesPunct": [
+        "陈太丘与友期行，期日中。过中不至，太丘舍去，去后乃至。",
+        "元方时年七岁，门外戏。",
+        "客问元方：“尊君在不？”答曰：“待君久不至，已去。”",
+        "友人便怒曰：“非人哉！与人期行，相委而去。”",
+        "元方曰：“君与家君期日中。日中不至，则是无信；对子骂父，则是无礼。”",
+        "友人惭，下车引之。元方入门不顾。"
+      ],
+      "gaokaoGroup": null,
+      "gaokaoNo": null,
+      "gaokaoSince": null,
+      "grade": 7,
+      "hasFulltext": true,
+      "id": "chentaiqiyuyouqixing",
+      "irregular": null,
+      "license": "public-domain",
+      "lines": [
+        "陈太丘与友期行期日中过中不至太丘舍去去后乃至",
+        "元方时年七岁门外戏",
+        "客问元方“尊君在不”答曰“待君久不至已去”",
+        "友人便怒曰“非人哉与人期行相委而去”",
+        "元方曰“君与家君期日中日中不至则是无信对子骂父则是无礼”",
+        "友人惭下车引之元方入门不顾"
+      ],
+      "linesPunct": [
+        "陈太丘与友期行，期日中。过中不至，太丘舍去，去后乃至。",
+        "元方时年七岁，门外戏。",
+        "客问元方：“尊君在不？”答曰：“待君久不至，已去。”",
+        "友人便怒曰：“非人哉！与人期行，相委而去。”",
+        "元方曰：“君与家君期日中。日中不至，则是无信；对子骂父，则是无礼。”",
+        "友人惭，下车引之。元方入门不顾。"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "recite": "full",
+      "render_split": [
+        4,
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "render_split_reason": null,
+      "source": "S10+S9+S3",
+      "stage": "初中",
+      "subtitle": null,
+      "syllables": null,
+      "tags": [
+        "诚信",
+        "家庭",
+        "南朝宋文言"
+      ],
+      "technique": [
+        "对话描写",
+        "对比",
+        "白描"
+      ],
+      "textbookStatus": "统编教材收录",
+      "textbooks": [
+        "统编"
+      ],
+      "theme": [
+        "诚信",
+        "家庭"
+      ],
+      "title": "陈太丘与友期行",
       "volume": "七年级上册"
     },
     {

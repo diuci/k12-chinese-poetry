@@ -2,8 +2,8 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-11",
   "stats": {
-    "attested": 225,
-    "partial": 57,
+    "attested": 226,
+    "partial": 62,
     "notfound": 0,
     "nosource": 1,
     "withVariants": 83
@@ -67,6 +67,24 @@
       "override": "初中七上的《论语》十二章同样是《论语》六章的合选（学而、为政、雍也、述而、子罕、子张），没有单页收全。此前按篇名搜，命中了《中国文学批评史》那一页，12 句一句都对不上——那是页名撞出来的假来源。"
     },
     {
+      "id": "yongxue",
+      "title": "咏雪",
+      "author": "刘义庆",
+      "stage": "初中",
+      "page": "世說新語/言語",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%96%E8%AA%AA%E6%96%B0%E8%AA%9E/%E8%A8%80%E8%AA%9E",
+      "lines": 6,
+      "hit": 5,
+      "miss": [
+        {
+          "line": "兄子胡儿曰撒盐空中差可拟",
+          "nearest": null
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "yeyujibei",
       "title": "夜雨寄北",
       "author": "李商隐",
@@ -107,6 +125,19 @@
       ]
     },
     {
+      "id": "qirenyoutian",
+      "title": "杞人忧天",
+      "author": "佚名",
+      "stage": "初中",
+      "page": "列子/天瑞篇",
+      "url": "https://zh.wikisource.org/wiki/%E5%88%97%E5%AD%90/%E5%A4%A9%E7%91%9E%E7%AF%87",
+      "lines": 9,
+      "hit": 9,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
       "id": "cibeigushanxia",
       "title": "次北固山下",
       "author": "王湾",
@@ -116,6 +147,50 @@
       "lines": 5,
       "hit": 5,
       "miss": [],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "lang",
+      "title": "狼",
+      "author": "蒲松龄",
+      "stage": "初中",
+      "page": "聊齋志異/第06卷",
+      "url": "https://zh.wikisource.org/wiki/%E8%81%8A%E9%BD%8B%E5%BF%97%E7%95%B0/%E7%AC%AC06%E5%8D%B7",
+      "lines": 20,
+      "hit": 19,
+      "miss": [
+        {
+          "line": "骨已尽矣",
+          "nearest": {
+            "line": "骨已尽矣",
+            "source": "骨已尽而两狼",
+            "ratio": 0.6
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "chuanjingdeyiren",
+      "title": "穿井得一人",
+      "author": "佚名",
+      "stage": "初中",
+      "page": "呂氏春秋/卷二十二",
+      "url": "https://zh.wikisource.org/wiki/%E5%91%82%E6%B0%8F%E6%98%A5%E7%A7%8B/%E5%8D%B7%E4%BA%8C%E5%8D%81%E4%BA%8C",
+      "lines": 6,
+      "hit": 5,
+      "miss": [
+        {
+          "line": "求闻之若此不若无闻也",
+          "nearest": {
+            "line": "求闻之若此不若无闻也",
+            "source": "求能之若此不若无闻也子夏",
+            "ratio": 0.818
+          }
+        }
+      ],
       "variantNotes": [],
       "variants": []
     },
@@ -138,6 +213,36 @@
           "page": "觀滄海"
         }
       ]
+    },
+    {
+      "id": "jiezishu",
+      "title": "诫子书",
+      "author": "诸葛亮",
+      "stage": "初中",
+      "page": "誡子書",
+      "url": "https://zh.wikisource.org/wiki/%E8%AA%A1%E5%AD%90%E6%9B%B8",
+      "lines": 5,
+      "hit": 3,
+      "miss": [
+        {
+          "line": "非淡泊无以明志非宁静无以致远",
+          "nearest": {
+            "line": "非淡泊无以明志非宁静无以致远",
+            "source": "非澹泊无以明志非宁静无以致远夫学",
+            "ratio": 0.867
+          }
+        },
+        {
+          "line": "淫慢则不能励精险躁则不能治性",
+          "nearest": {
+            "line": "淫慢则不能励精险躁则不能治性",
+            "source": "淫慢则不能励一作研精险躁则不能冶",
+            "ratio": 0.8
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "wenwangchangling",
@@ -164,6 +269,28 @@
           "page": "聞王昌齡左遷龍標遙有此寄"
         }
       ]
+    },
+    {
+      "id": "chentaiqiyuyouqixing",
+      "title": "陈太丘与友期行",
+      "author": "刘义庆",
+      "stage": "初中",
+      "page": "世說新語/方正",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%96%E8%AA%AA%E6%96%B0%E8%AA%9E/%E6%96%B9%E6%AD%A3",
+      "lines": 12,
+      "hit": 11,
+      "miss": [
+        {
+          "line": "元方时年七岁门外戏",
+          "nearest": {
+            "line": "元方时年七岁门外戏",
+            "source": "元方时年七歳门外戏陈寔",
+            "ratio": 0.8
+          }
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
     },
     {
       "id": "shiyiyuesirifengyudazuo",

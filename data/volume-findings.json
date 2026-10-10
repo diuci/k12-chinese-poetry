@@ -1,8 +1,8 @@
 {
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
-  "generated": "2026-10-10",
+  "generated": "2026-10-11",
   "counts": {
-    "match": 221,
+    "match": 227,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -20,6 +20,16 @@
       "volume": "七年级上册",
       "textbookVolume": "七年级上册",
       "textbookLesson": "12"
+    },
+    {
+      "id": "yongxue",
+      "title": "咏雪",
+      "author": "刘义庆",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
       "id": "yeyujibei",
@@ -42,9 +52,39 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "qirenyoutian",
+      "title": "杞人忧天",
+      "author": "佚名",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
       "id": "cibeigushanxia",
       "title": "次北固山下",
       "author": "王湾",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "lang",
+      "title": "狼",
+      "author": "蒲松龄",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "20"
+    },
+    {
+      "id": "chuanjingdeyiren",
+      "title": "穿井得一人",
+      "author": "佚名",
       "stage": "初中",
       "status": "match",
       "volume": "七年级上册",
@@ -62,9 +102,29 @@
       "textbookLesson": "课号未定（合课或课外诵读）"
     },
     {
+      "id": "jiezishu",
+      "title": "诫子书",
+      "author": "诸葛亮",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "16"
+    },
+    {
       "id": "wenwangchangling",
       "title": "闻王昌龄左迁龙标遥有此寄",
       "author": "李白",
+      "stage": "初中",
+      "status": "match",
+      "volume": "七年级上册",
+      "textbookVolume": "七年级上册",
+      "textbookLesson": "课号未定（合课或课外诵读）"
+    },
+    {
+      "id": "chentaiqiyuyouqixing",
+      "title": "陈太丘与友期行",
+      "author": "刘义庆",
       "stage": "初中",
       "status": "match",
       "volume": "七年级上册",
