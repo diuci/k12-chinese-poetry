@@ -365,6 +365,23 @@ def _note_sections(text):
 
 CHAR_NOTE_WORDS = ('作', '同', '取舍', '正文', '异体', '旧写', '没有', '未收', '节选', '署名', '疑误', '镜像')
 
+# 交代必须把出入的那个字（或那段）引出来：光在行里出现不算。
+# 「在」这种单字几乎在任何一行里都出现——先前把「统编课文页作「文武争驰，君无事」」当成交代了「在」这一处，
+# 破坏试验一删就漏。引号里的片段先剥标点再比，因为核对表里的片段是剥过标点的（「鸣琴垂拱，不言而化」→ 鸣琴垂拱不言而化）。
+_Q_SPANS = re.compile(r'「([^」]*)」|『([^』]*)』|“([^”]*)”')
+_CJK_ONLY = '\u3400-\u4DBF\u4E00-\u9FFF\uf900-\ufaff\u3007\U00020000-\U0003134F'
+_STRIP_PUNCT = re.compile('[^' + _CJK_ONLY + ']')
+
+
+def _quoted_bits(line):
+    """这一行里被引号引起来的片段（剥掉标点后的样子）。"""
+    out = []
+    for m in _Q_SPANS.finditer(line):
+        for g in m.groups():
+            if g:
+                out.append(_STRIP_PUNCT.sub('', g))
+    return out
+
 
 SCOPE_MARK = '统编教材用字已逐句核过'
 SCOPE_NUM = re.compile(r'本篇 (\d+) 句可比，(\d+) 句')
@@ -432,7 +449,10 @@ def check_char_diff_notes(title, text, char_diffs):
             continue
         covered = False
         for line in note.split('\n'):
-            if all(s in line for s in sides) and any(k in line for k in CHAR_NOTE_WORDS):
+            bits = _quoted_bits(line)
+            if not bits:
+                continue
+            if all(any(x in b for b in bits) for x in sides) and any(k in line for k in CHAR_NOTE_WORDS):
                 covered = True
                 break
         if not covered:
@@ -471,6 +491,26 @@ def selftest_char_diff_notes():
          '坏例8d：署名句教材没有，这一处没被抓')
     ok3 = '# 屈原列传\n\n## 异文\n\n- 「杀其将唐眛」：统编作「唐眜」，异体字出入，正文不动。\n'
     must(check_char_diff_notes('屈原列传', ok3, [{'ours': '眛', 'textbook': '眜'}]) == [], '坏例9：说成异体字出入的交代被误报')
+    # 坏例10：出入的那个字在行里出现了，可没引出来——「在」这种单字哪一行没有？必须报。
+    bad10 = '# 谏太宗十思疏\n\n## 异文\n\n- 君臣无事：教材多一个在字，正文不动。\n'
+    must(len(check_char_diff_notes('谏太宗十思疏', bad10, [{'kind': 'missing', 'ours': '臣', 'textbook': ''}])) == 1,
+         '坏例10：单字只在行里出现、没引出来，也被当成交代了')
+    # 坏例11：把教材那一侧的字从引号里删掉（破坏试验里真删过一次）——必须报。
+    bad11 = '# 谏太宗十思疏\n\n## 异文\n\n- 「文武争驰，君臣无事」：统编课文页作「文武争驰，君无事」。镜像一条来源，正文不动。\n'
+    must(len(check_char_diff_notes('谏太宗十思疏', bad11, [{'kind': 'missing', 'ours': '', 'textbook': '在'}])) == 1,
+         '坏例11：教材那个「在」被删出引号外，这一处没被抓')
+    # 坏例12：核对表里的片段是剥过标点的，引号里带逗号不许被当成「没引出来」。
+    ok12 = '# 谏太宗十思疏\n\n## 异文\n\n- 「鸣琴垂拱，不言而化」：统编作「鸣琴垂拱，不言而化」，仓内同。\n'
+    must(check_char_diff_notes('谏太宗十思疏', ok12, [{'kind': 'char', 'ours': '鸣琴垂拱不言而化', 'textbook': '鸣琴垂拱不言而化'}]) == [],
+         '坏例12：引号里带标点、剥完就一致，却被误报')
+    # 坏例13：话说了、出入的那个片段却没引出来（这里仓内那句署名没进引号）——必须报。
+    bad13 = '# 登泰山记\n\n## 异文\n\n- 桐城姚鼐记：统编课文页没有这句话，正文不动。\n'
+    must(len(check_char_diff_notes('登泰山记', bad13, [{'kind': 'missing', 'ours': '桐城姚鼐记', 'textbook': ''}])) == 1,
+         '坏例13：出入的那一段没被引出来，只写在行里，也被当成交代了')
+    # 坏例14：教材那一侧引出来了、仓内那一侧没引——也算没交代（两侧都得引）。
+    bad14 = '# 醉翁亭记\n\n## 异文\n\n- 山之僧曰智仙也：统编作「山之僧智仙也」，正文不动。\n'
+    must(len(check_char_diff_notes('醉翁亭记', bad14, [{'kind': 'char', 'ours': '曰', 'textbook': '无曰'}])) == 1,
+         '坏例14：仓内那一侧没引出来也被当成交代了')
     return tried[0]
 
 
