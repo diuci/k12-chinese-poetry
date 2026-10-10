@@ -156,12 +156,55 @@ def selftest():
     parts = read_parts('---\nid: a\n---\n# 测试篇\n\n正文。\n')
     must(parts and parts[1].startswith('# 测试篇'), '坏例8b：frontmatter 与正文没切开')
 
+    # 坏例9：内容库比 md 旧——注入必须被看得见（本轮真实踩过：注入把 屈原列传 的注释改回旧版，
+    # 把已经裁定删掉的「睠顾楚国」放回正文，审计当场报红）
+    _b9 = '# 测试篇\n\n床前明月光。\n\n## 注释\n\n- 眷顾：眷恋牵挂。仓内旧作「睠顾」，出入写在「异文」那一节。\n\n## 译文\n\n月光洒在床前。\n\n## 赏析\n\n二十字。\n'
+    _e9 = {'note': ['「睠顾楚国」：睠，同「眷」。'], 'trans': '月光洒在床前。', 'appr': '二十字。'}
+    must(body_would_change(_b9, _e9), '坏例9：内容库与 md 不一致却没被看出来（注入会悄悄把正文改回旧文本）')
+    must('睠顾楚国' in injected_body(_b9, _e9), '坏例9a：没复现出「旧文本被写回正文」这件事')
+    # 坏例9b：一致就不许报（否则 --verify 天天红，等于没有）
+    _e9b = {'note': ['眷顾：眷恋牵挂。仓内旧作「睠顾」，出入写在「异文」那一节。'], 'trans': '月光洒在床前。', 'appr': '二十字。'}
+    must(not body_would_change(_b9, _e9b), '坏例9b：内容库与 md 一致却被判成会改动')
+    # 坏例9c：内容库里某一项是空的，那一节不许被动（不许把已有正文清空）
+    _e9c = {'note': ['眷顾：眷恋牵挂。'], 'trans': '', 'appr': '二十字。'}
+    must('月光洒在床前。' in injected_body(_b9, _e9c), '坏例9c：内容库里的空译文把 md 的译文清掉了')
+
     print('[ok] inject-annotations --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
 
+def body_would_change(body, entry):
+    """注入会不会改动这一篇的正文。只比内容，不比空行。
+
+    为什么不比空行：md 是手改出来的，有的篇目「## 注释」下面多一个空行；注入写的是规范形状。
+    空行差异不是内容差异——把它报成「会改动」，这条检查天天红，等于没有。
+    真正要抓的是：内容库里存的是旧文本，注入把 md 里已经改好的注释、译文、赏析换回旧版。"""
+    def norm(s):
+        return re.sub(r'\n{3,}', '\n\n', (s or '').strip())
+    new = injected_body(body, entry)
+    for sec in FIELD.values():
+        pat = re.compile(r'^##\s*' + re.escape(sec) + r'\s*\n(.*?)(?=^##\s|\Z)', re.M | re.S)
+        a = pat.search(body)
+        b = pat.search(new)
+        if norm(a.group(1) if a else '') != norm(b.group(1) if b else ''):
+            return True
+    return norm(new) != norm(body)
+
+
+def injected_body(body, entry):
+    """按内容库把 注释/译文/赏析 三节写进 body，返回写完之后的样子（不落盘）。"""
+    out = body
+    for k in ORDER:
+        val = entry.get(k)
+        if not val:
+            continue
+        out, _ = replace_section(out, FIELD[k], render_value(val))
+    return out
+
+
 def main():
     check = '--check' in sys.argv
+    verify = '--verify' in sys.argv
     ann = load_annotations()
     print('=== 注释/译文/赏析 注入 ===')
     print('已载入内容 %d 条（来自 %s）' % (len(ann), CONTENT.name if CONTENT.exists() else '缺失'))
@@ -189,15 +232,17 @@ def main():
             continue
 
         a = ann[pid]
-        changed = False
-        for k in ORDER:
-            val = a.get(k)
-            if not val:
-                continue
-            txt = render_value(val)
-            if PLACEHOLDER[k] in body and txt not in body:
-                changed = True
-            body, _ = replace_section(body, FIELD[k], txt)
+        body_before = body
+        body = injected_body(body_before, a)
+        changed = (body != body_before)
+        # --verify：内容库与 md 不一致时当场报红。本轮真实踩过——内容库里存的是旧注释，
+        # 注入把 屈原列传 的注释改回旧版，把已经裁定删掉的「睠顾楚国」放回正文，审计当场报红。
+        # 没有这一条，注入就是一只随时能把正文改回旧文本的手，而且改完没人知道。
+        # --verify：内容库与 md 不一致时当场报红。本轮真实踩过——内容库里存的是旧注释，
+        # 注入把 屈原列传 的注释改回旧版，把已经裁定删掉的「睠顾楚国」放回正文，审计当场报红。
+        # 没有这一条，注入就是一只随时能把正文改回旧文本的手，而且改完没人知道。
+        if verify and body_would_change(body_before, a):
+            problems.append('%s(%s): 注入会改动这一篇——内容库与 md 不一致，注入会把 md 改回内容库里那份' % (pid, pf.name))
         for name in missing_fields(a):
             problems.append('%s(%s): %s 缺内容' % (pid, pf.name, name))
         if changed or (not check and PLACEHOLDER['note'] not in body):

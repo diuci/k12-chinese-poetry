@@ -413,7 +413,12 @@ VARIANT_GLYPHS = {'飮': '饮', '於': '于', '说': '说', '説': '说',
                    # kSemanticVariant 互相指认）：筯/箸、煖/暖、畧/略、譔/撰、潄/漱、粧/妆、瘖/喑、涙/泪、
                    # 怳/恍、罇/樽、簷/檐、踈/疏、疎/疏。按口径「异体字不算文字分歧」，它们不进「异文」。
                    '筯': '箸', '煖': '暖', '畧': '略', '譔': '撰', '潄': '漱', '粧': '妆',
-                   '瘖': '喑', '涙': '泪', '怳': '恍', '罇': '樽', '簷': '檐', '踈': '疏', '疎': '疏'}
+                   '瘖': '喑', '涙': '泪', '怳': '恍', '罇': '樽', '簷': '檐', '踈': '疏', '疎': '疏',
+                   # 第八批：补完第七批之后剩下的「没对上」里，这几对也是同一个字的另一种写法（都在页上亲眼看到，
+                   # Unihan kMandarin 同音）：僊／仙（赤壁赋「羽化而登僊」）、扵／于（兰亭集序「不能喻之扵怀」）、
+                   # 歩／步（劝学「不能十歩」）、飜／翻（六月二十七日望湖楼醉书「黑云飜墨」）、
+                   # 闗／关（老子八章「善闭无闗楗」）。先前把 飜／翻 记成「异文线索」不准确：它不是版本分歧。
+                   '僊': '仙', '扵': '于', '歩': '步', '飜': '翻', '闗': '关'}
                    # 露出来的其余那些是真异文，留在「没对上」里给读者看：暮/慕、火伴/夥伴、甚/盛、围/圈、
                    # 弈/奕、贞良/贞亮、淡/澹、朱/珠、孰/熟、辨/辩、柽/怪、餐/飧、泛/汛、喑/瘖以外的瘖/喑已收、
                    # 浑不怕/皆不顾、阁/搁、无赖/亡赖、輮/𫐐（Unihan 给 𫐐 的读音是 ní，不同音，不收）、
@@ -657,12 +662,39 @@ def _han_only(s):
     return re.sub(r'[^\u4e00-\u9fff\u3400-\u4dbf\uf900-\ufaff]', '', s or '')
 
 
-def apparatus_gaps(records, items):
+_T2S_CACHE = []
+
+
+def _plain(s):
+    """把文本过一遍繁简表，只用来判断「这两个字算不算同一个字」。
+
+    歧义条目（線→线 缐）两个候选都留着：这里不是比对，是问同一个字。"""
+    if not _T2S_CACHE:
+        _T2S_CACHE.append(load_t2s())
+    return to_simplified(s or '', _T2S_CACHE[0])
+
+
+def _page_han(rec):
+    """这一篇来源页的整页文本（剥过标点、过繁简表）。取页走缓存，不额外联网。"""
+    pages = [x.strip() for x in (rec.get('page') or '').split(' + ') if x.strip()]
+    out = []
+    for pg in pages:
+        try:
+            _real, raw = page_text(pg)
+        except Exception:
+            continue
+        out.append(_han_only(_plain(clean(raw, load_t2s())[0])))
+    return ''.join(out)
+
+
+def apparatus_gaps(records, items, page_han_map=None):
     """出处核对里「没对上」的句子，出入的字有没有写进篇内「异文」。
 
-    「出入的字」按最保守的算法数：我们句子里有、而页里最像的那一段里没有的字。
-    页里那一段包含我们全部的字（只是多了一段、或窗口错位）不算字面出入，不数；
-    页里连「最像的一段」都给不出（C 档）也不在这里数——那是另一件事。
+    「出入的字」按最保守的算法数：我们句子里有、而整页来源里一个都没有的字。
+    用整页而不是「页里最像的那一段」：那一段是按句长开的窗口，夹注一插就把窗口撑短，
+    句尾的字掉出窗口会被当成出入——行路难「多岐路，今一作路/道/无此字安在」就是这么被误判的。
+    页里别处出现过的字不算出入（宁可少数，也不把页里的字说成页里没有）。page_han_map 供自检注入。
+    页里连「最像的一段」都给不出（C 档）也不在这里数——那是另一本账。
     这一条只报数、不判红：它是「交代还没写完」的清单，不是新错。每轮都要报，
     不然这几十句就会像没人接着做的缺口一样消失。"""
     out = []
@@ -672,13 +704,15 @@ def apparatus_gaps(records, items):
             continue
         m = re.search(r'^## 异文[^\n]*\n(.*?)(?=^## |\Z)', text, re.M | re.S)
         quoted = ''.join(re.findall(r'[「『]([^」』]*)[」』]', m.group(1))) if m else ''
+        page_han = (page_han_map or {}).get(pid) if page_han_map is not None else _page_han(rec)
+        if not page_han:
+            continue
         for x in (rec.get('miss') or []):
-            near = _han_only((x.get('nearest') or {}).get('source') or '')
-            if not near:
+            if not (x.get('nearest') or {}).get('source'):
                 continue
             seen, ours = set(), []
-            for ch in _han_only(x.get('line')):
-                if ch in near or ch in seen:
+            for ch in _han_only(_plain(x.get('line'))):
+                if ch in page_han or ch in seen:
                     continue
                 seen.add(ch)
                 ours.append(ch)
@@ -916,7 +950,7 @@ def main():
     items = [(p['id'], p['title'], (ROOT / p['_path']).read_text(encoding='utf-8')) for p in all_poems]
     gaps = apparatus_gaps(recs, items)
     print('[异文覆盖] 出处核对没对上、且出入的字没写进篇内「异文」的：%d 句（交代待补，不是新错）' % len(gaps))
-    for pid, title, ours in gaps[:12]:
+    for pid, title, ours in gaps:
         print('   · %s：差在「%s」' % (title, ours))
     drift = page_drift(old.get('results', []) if old else [], results)
     if drift:
@@ -937,8 +971,12 @@ def strip_section_label(seg):
 
     为什么：标签是我们加的，不是原文。留着它，「【毛诗序】诗者，志之所之也」就成了要核对的一句——
     来源页明写着「诗者志之所之也」，前面没有「毛诗序」三个字，整句被判成「页里没找到」。
-    古代文论选段六句 C 档里，五句是这么来的。"""
-    return re.sub(r'^【[^】]*】', '', seg or '')
+    古代文论选段六句 C 档里，五句是这么来的。
+    句末那一头也一样：《老子》八章 的全文每段末尾我们标了出处章次（「…故去彼取此。（第十二章）」），
+    切句之后「第十二章」自己成了一句，拿去页里核对必然找不到——台账里凭空多出一条假「页里没找到」。
+    只认「第…章/节/篇」这种标签；「（其一）」是篇名的一部分，不许剥。"""
+    seg = re.sub(r'^【[^】]*】', '', seg or '')
+    return re.sub(r'（第[一二三四五六七八九十百千零〇\d]+[章节篇]）$', '', seg)
 
 
 def blank_fragments(lines):
@@ -1075,6 +1113,14 @@ def selftest():
          '坏例16：小节标签没剥掉：%r' % strip_section_label('【毛诗序】诗者志之所之也'))
     must(strip_section_label('诗者志之所之也') == '诗者志之所之也', '坏例16b：没有标签的句子被误伤')
     must(strip_section_label('【毛诗序】') == '', '坏例16c：整行只有标签，剥完应当是空的')
+    # 坏例16d：句末我们自己加的章次标签，切句之后自己成了一句，页里必然找不到——台账里的假缺陷
+    must(strip_section_label('（第十二章）') == '', '坏例16d：句末章次标签没剥掉：%r' % strip_section_label('（第十二章）'))
+    must(strip_section_label('五色令人目盲，驰骋田猎令人心发狂（第十二章）') == '五色令人目盲，驰骋田猎令人心发狂',
+         '坏例16e：句末章次标签混在句子里没剥掉：%r' % strip_section_label('五色令人目盲，驰骋田猎令人心发狂（第十二章）'))
+    # 坏例16f：剥标签不许过界——「（其一）」是篇名的一部分
+    must(strip_section_label('秋词（其一）') == '秋词（其一）', '坏例16f：篇名的编号被当成标签剥掉了')
+    must(strip_section_label('（其六）') == '（其六）', '坏例16g：只有编号的一行被误剥')
+    must(strip_section_label('（第12章）') == '', '坏例16h：阿拉伯数字的章次标签没剥掉：%r' % strip_section_label('（第12章）'))
     # 坏例17：窗口不能只有固定网格那一条路——长页上窗口里塞进别的内容，相似度被稀释，
     # 页里明写着的那一段就被写成「页里没找到」。下面三句都是当场从真页里发现的。
     _t17a = ('皆生寒树负势竞上互相轩邈争高直指千百成峰泉水激石冷冷作响好鸟相鸣嘤嘤成韵'
@@ -1119,17 +1165,25 @@ def selftest():
     _recs20 = {'甲': {'id': '甲', 'miss': [{'line': '正入万山围子里一山放出一山拦',
                                           'nearest': {'source': '正入万山圈子里一山放出一山拦闷歌'}}]}}
     _md20 = '# 甲\n\n## 全文\n\n正入万山围子里。\n'
-    must(apparatus_gaps(_recs20, [('甲', '甲', _md20)]) == [('甲', '甲', '围')],
+    _pg20 = {'甲': '正入万山圈子里一山放出一山拦闷歌'}
+    _pg20c = {'甲': '甲乙丙丁戊己庚辛壬'}
+    _pg20e = {'甲': '甲乙丙丁戊己庚辛'}
+    must(apparatus_gaps(_recs20, [('甲', '甲', _md20)], _pg20) == [('甲', '甲', '围')],
          '坏例20：没对上又没写进「异文」的出入没被数出来')
     # 坏例20b：已经写进「异文」的不许再数（误伤会让这条清单失去意义）
     _md20b = '# 甲\n\n## 异文\n\n- 「万山围子」：来源页作「万山圈子」。取舍：从统编作「围子」。\n'
-    must(apparatus_gaps(_recs20, [('甲', '甲', _md20b)]) == [], '坏例20b：已经写进「异文」的出入被重复数出来')
+    must(apparatus_gaps(_recs20, [('甲', '甲', _md20b)], _pg20) == [], '坏例20b：已经写进「异文」的出入被重复数出来')
     # 坏例20c：页里那一段比我们的句子长出一截、我们的字它都有——窗口错位，不是字面出入，不许数
     _recs20c = {'甲': {'id': '甲', 'miss': [{'line': '甲乙丙丁戊己', 'nearest': {'source': '甲乙丙丁戊己庚辛壬'}}]}}
-    must(apparatus_gaps(_recs20c, [('甲', '甲', _md20)]) == [], '坏例20c：窗口错位被当成了字面出入')
+    must(apparatus_gaps(_recs20c, [('甲', '甲', _md20)], _pg20c) == [], '坏例20c：窗口错位被当成了字面出入')
     # 坏例20d：页里给不出「最像的一段」（C 档）不在这里数——那是另一本账
     _recs20d = {'甲': {'id': '甲', 'miss': [{'line': '甲乙丙丁戊己', 'nearest': None}]}}
-    must(apparatus_gaps(_recs20d, [('甲', '甲', _md20)]) == [], '坏例20d：C 档被混进「异文待补」这本账')
+    must(apparatus_gaps(_recs20d, [('甲', '甲', _md20)], _pg20) == [], '坏例20d：C 档被混进「异文待补」这本账')
+    # 坏例20e：页里那段窗口被夹注撑短，句尾的字其实在页里别处——不许当成出入
+    _recs20e = {'甲': {'id': '甲', 'page': '某页', 'miss': [{'line': '甲乙丙丁戊己庚辛',
+                                             'nearest': {'source': '甲乙丙丁一作某无此字'}}]}}
+    _g20e = apparatus_gaps(_recs20e, [('甲', '甲', _md20)], _pg20e)
+    must(_g20e == [], '坏例20e：页里别处有的字被当成出入：%s' % _g20e)
     print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 
