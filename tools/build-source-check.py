@@ -7,7 +7,7 @@
      B 页里写作…  —— 页里有这一句，但多字、少字、或夹着异文（版本差异）。
      C 页里没找到 —— 找不到够像的一段；可能是页选错、版本不同，或我们这边有问题。
 """
-import importlib.util, json, sys, difflib
+import importlib.util, json, re, sys, difflib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -46,6 +46,23 @@ def best_window(ours, txt):
             br, best = s, w
         i = txt.find(ours[0], i + 1)
     return best, br
+
+
+# 来源页自己标出来的夹注：《世说新语》那一页把刘孝标注渲染成 〈…〉。
+NOTE_SPAN = re.compile(r'〈[^〉]{1,600}〉')
+
+
+def strip_inline_notes(txt):
+    """把页自己标成 〈…〉 的夹注摘掉——只用于「找这一句在页里长什么样」，不改仓内正文。
+
+    为什么要有这一步：世说新语/言語 那一页作
+      兄子胡兒曰：〈胡兒，謝朗小字也。《續晉陽秋》曰：…〉「撒鹽空中差可擬。」
+    窗口只有「句子长度 + 6」个字符，撞上这段注相似度只剩 0.33，这一句就被判成「页里没找到」。
+    那是页自己的 markup 把句子切开了，不是版本差异，也不是我们这边有问题——把它算成 C 是核对方法的错。
+    硬边界：摘掉注之后必须仍然在页里找得到这一句才算数。只在注里被引用、正文里没有的句子，
+    摘掉注就没了，照旧算「页里没找到」——不许拿「注里引过」冒充「正文里有」。
+    """
+    return NOTE_SPAN.sub('', txt)
 
 
 def classify(ours, page_line):
@@ -119,9 +136,27 @@ def build():
             near = mm.get('nearest') or None
             if near:
                 w, ratio = near['source'], near['ratio']
+                searched = False
             else:
                 w, ratio = best_window(ours, txt)
+                searched = True
+            split_note = ''
+            # 夹注这一支只作用在「自己找窗口」的那条路上：核对那一步给的窗口是另一套算法算出来的，
+            # 拿它的相似度跟自己重算的相似度比大小，比出来的是算法差、不是页里的差——
+            # 离骚「汨余若将不及兮」与与朱元思书「泉水激石」先前就是这么被误判成「只在夹注里」的。
+            if searched and NOTE_SPAN.search(txt):
+                w2, ratio2 = best_window(ours, strip_inline_notes(txt))
+                if ratio < 0.55 <= ratio2:
+                    # 页里明写着这一句，只是被自己的夹注切开：摘掉夹注才算数
+                    w, ratio, split_note = w2, ratio2, 'split'
+                elif ratio >= 0.55 and ratio2 < 0.55:
+                    # 反过来：这一句只在夹注里被引用，正文里没有——不许算「页里有这句」
+                    w, ratio, split_note = None, ratio2, 'note_only'
             grade, note = classify(ours, w if ratio >= 0.55 else None)
+            if split_note == 'split' and grade != 'C':
+                note += '；页里这一句被夹注〈…〉切开，摘掉夹注才看得见'
+            if split_note == 'note_only':
+                grade, note = 'C', '页里这一句只出现在夹注〈…〉里，正文没有'
             counts[grade] += 1
             L.append('- 没对上：' + BT + ours + BT)
             L.append('  - **%s** %s' % (grade, note))
@@ -189,7 +224,29 @@ def selftest():
     assert _g8 == 'B', '坏例8：页里有这一段（我们多一个主语）却没落到 B（判成 %s）' % _g8
     # 坏例9：真没有的句子必须落到 C，不许因为窗口找松了就含糊
     assert best_window('此四君者皆明智而忠信', _t7)[1] < 0.55, '坏例9：毫不相干的窗口被当成页里有这句'
-    print('[ok] build-source-check --selftest 通（9 个坏例子全部试到）')
+    # 坏例10：页里明写着这一句、只是被页自己的夹注切开——摘掉夹注必须找得到，不许留在 C。
+    # 用的是《世说新语》咏雪那一句的真实形状（维基文库把刘孝标注渲染成 〈…〉）。
+    _t10 = ('谢太傅寒雪日内集与儿女讲论文义兄子胡儿曰：〈胡儿，谢朗小字也。续晋阳秋曰朗字长度'
+            '安次兄据之长子仕至东阳太守。〉「撒盐空中差可拟。」兄女曰未若柳絮因风起')
+    _w10, _r10 = best_window('兄子胡儿曰撒盐空中差可拟', _t10)
+    assert _r10 < 0.55, '坏例10a：夹注本来就该把窗口打散——这条测试的前提变了（相似度 %.2f）' % _r10
+    _w10b, _r10b = best_window('兄子胡儿曰撒盐空中差可拟', strip_inline_notes(_t10))
+    assert _r10b >= 0.55, '坏例10：页里明写着这一句（只被夹注切开），摘掉夹注后仍找不到（相似度 %.2f）' % _r10b
+    assert classify('兄子胡儿曰撒盐空中差可拟', _w10b)[0] in ('A', 'B'), '坏例10b：摘掉夹注后这一句没落到 A/B'
+    # 坏例11：只在夹注里被引用、正文里没有的句子，摘掉夹注后必须落回 C——
+    # 不许拿「注里引过」冒充「正文里有」（那是把二手引用当版本证据）
+    _t11 = ('谢太傅寒雪日内集公欣然曰白雪纷纷何所似〈按某书引作兄子胡儿曰撒盐空中差可拟又见别本〉'
+            '兄女曰未若柳絮因风起')
+    _w11, _r11 = best_window('兄子胡儿曰撒盐空中差可拟', _t11)
+    assert _r11 >= 0.55, '坏例11a：这条测试要的是「不摘注会误判成有」，前提变了'
+    _w11b, _r11b = best_window('兄子胡儿曰撒盐空中差可拟', strip_inline_notes(_t11))
+    assert _r11b < 0.55, '坏例11：摘掉夹注后这一句还在页里——测试用的页文不对'
+    # 坏例12：摘夹注不许把真有版本差异的句子洗成「只差写法」
+    _t12 = '兄子胡儿曰：〈胡儿谢朗小字也〉「撒盐空中差可。」兄女曰'
+    _w12, _r12 = best_window('兄子胡儿曰撒盐空中差可拟', strip_inline_notes(_t12))
+    assert _r12 >= 0.55, '坏例12a：测试用的窗口太弱，换一条页文'
+    assert classify('兄子胡儿曰撒盐空中差可拟', _w12)[0] == 'B', '坏例12：页里少一个「拟」字被摘注洗成了 A'
+    print('[ok] build-source-check --selftest 通（12 个坏例子全部试到）')
 
 
 if __name__ == '__main__':
