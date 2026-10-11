@@ -841,6 +841,7 @@ def selftest():
     problems.extend(selftest_attest_status())
     problems.extend(selftest_absence_records())
     problems.extend(selftest_match())
+    problems.extend(selftest_filing_note())
 
     if problems:
         print('[!!] validate --selftest 失败：', file=sys.stderr)
@@ -854,7 +855,7 @@ def selftest():
           '背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报、同名小节重复被抓、'
           '教材核对表结论与篇目状态不一致被抓、核对表缺这一篇被抓、同一册正文不误报、跨册同名另一篇被抓、'
           '园地证据加同名另一篇不误报、册次对不上没交代被抓、册次对不上有交代不误报、没见过的结论被抓、'
-          '七档标签与 apply-textbook-status 不分叉、说「没找到」必须有登记簿撑着被抓、登记簿过期被抓——同名撞车没在「收录范围」里交代被抓、核对表没写撞在哪一册被抓、册次写在别的小节里不算说清被抓——单字出入没交代被抓、交代写进注释不算被抓、只提一边的字不算被抓——都试到了')
+          '七档标签与 apply-textbook-status 不分叉、课标要背统编没收却挂教材册没交代挂册依据被抓、说「没找到」必须有登记簿撑着被抓、登记簿过期被抓——同名撞车没在「收录范围」里交代被抓、核对表没写撞在哪一册被抓、册次写在别的小节里不算说清被抓——单字出入没交代被抓、交代写进注释不算被抓、只提一边的字不算被抓——都试到了')
     return 0
 
 
@@ -875,6 +876,22 @@ NOT_FOUND = '统编教材里没找到这一课'
 
 # 七档标签的清单只在这里写一次：apply-textbook-status 的 ALLOWED、台账的计数、审计文档的说明都从这份来。
 TEXTBOOK_LABELS = (COLLECTED, NOT_COLLECTED, NAME_CLASH, COVERED_ELSEWHERE, PARTIAL, ONE_SOURCE, NOT_FOUND)
+
+def filing_note_missing(poem, text):
+    """课标要背、统编没收，却挂在统编某一册的篇目：必须在「收录范围」里说清这一册不是教材给的。
+
+    为什么要有这一条：站点按 volume 把篇目排在「选择性必修下册」那一栏下面，读者一看就以为教材有这一课。
+    统编没收、只有课标要背的篇目，册次是我们替它排的——不写这一句，就是替教材造了一课。
+    """
+    if poem.get('textbookStatus') not in (NOT_COLLECTED, NOT_FOUND):
+        return False
+    volume = poem.get('volume') or ''
+    if not volume or volume.startswith('选修'):
+        return False  # 「选修（2026起默写）」这一档本身就写着统编没收
+    if '## 收录范围' not in text:
+        return True
+    section = text.split('## 收录范围', 1)[1].split('\n## ', 1)[0]
+    return not re.search(r'没有教材课号|没有课号|不是教材给的', section)
 def attest_expect(row, in_coverage, in_collision, is_syllabus=True):
     """核对表（data/textbook-attestations.json）的一条结论 → 篇目 frontmatter 该写哪个状态。
 
@@ -959,6 +976,28 @@ def absence_record_problems(poems, records):
         if pid not in ids:
             out.append('absence-checks.json 里的「%s」在仓里找不到这篇——登记簿过期了' % pid)
     return out
+
+def selftest_filing_note():
+    """坏例子：课标要背、统编没收、却挂在教材册上的篇目，没交代挂册依据必须被抓。"""
+    problems = []
+    cases = [
+        ('课标没收却挂教材册、连「收录范围」都没有', {'textbookStatus': NOT_COLLECTED, 'volume': '必修上册'},
+         '# 甲\n\n## 注释\n', True),
+        ('有「收录范围」却没说这一册不是教材给的', {'textbookStatus': NOT_COLLECTED, 'volume': '选择性必修下册'},
+         '# 甲\n\n## 收录范围\n\n课标要求这一篇，统编教材的课文目录与单元末诵读里都没有它。\n\n## 注释\n', True),
+        ('交代了挂册依据不误报', {'textbookStatus': NOT_COLLECTED, 'volume': '必修上册'},
+         '# 甲\n\n## 收录范围\n\n仓里挂必修上册是按学段常见位置排的，没有教材课号支撑。\n\n## 注释\n', False),
+        ('挂「选修（2026起默写）」不误报', {'textbookStatus': NOT_COLLECTED, 'volume': '选修（2026起默写）'},
+         '# 甲\n\n## 注释\n', False),
+        ('教材收了的不该管', {'textbookStatus': COLLECTED, 'volume': '必修下册'}, '# 甲\n\n## 注释\n', False),
+        ('「我们没找到」那一档同样要交代', {'textbookStatus': NOT_FOUND, 'volume': '一年级下册'},
+         '# 甲\n\n## 收录范围\n\n统编教材 23 册课文目录里没有同名课文。\n\n## 注释\n', True),
+    ]
+    for label, pm, txt, want in cases:
+        if filing_note_missing(pm, txt) != want:
+            problems.append('%s（实得：%s）' % (label, '报错' if filing_note_missing(pm, txt) else '放行'))
+    return problems
+
 
 def selftest_absence_records():
     """这条门槛自己的坏例子。"""
@@ -1222,6 +1261,12 @@ def main():
                             if hs_extra_needs_lesson_no(p, (ROOT / p['_path']).read_text(encoding='utf-8'))]
     if hs_extra_missing:
         err('高中教材拓展篇目没在「收录范围」里写教材课号：%s' % '、'.join(hs_extra_missing[:6]))
+
+    # 课标要背、统编没收，却挂在统编某一册的篇目：册次是我们替它排的，篇内必须说清这一册不是教材给的。
+    unfiled = [p['title'] for p in poems
+               if filing_note_missing(p, (ROOT / p['_path']).read_text(encoding='utf-8'))]
+    if unfiled:
+        err('课标要求、统编没收却挂着教材册次，篇内没交代挂册依据：%s' % '、'.join(unfiled[:6]))
 
     # -------------------------------------------------- 2.16 教材收录状态必须和核对结论一致
     # data/volume-findings.json 是教材目录核对的结论表。每篇 frontmatter 的 textbookStatus
