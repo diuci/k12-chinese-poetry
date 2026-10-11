@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 309 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 310 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -311,6 +311,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | shengshenman | 声声慢 | 李清照 | 宋 | 卒 1155 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |
 | daxue | 大学 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修上册 |
 | zilu-shizhe | 子路、曾皙、冉有、公西华侍坐 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1b+S2 | 文言 | 高中 · 必修下册 |
+| kongque | 孔雀东南飞 | 佚名 | 汉 | 年代上限 220 | public-domain | S10+S12 | 乐府 | 高中 · 选择性必修下册 |
 | jishi-jiangfanjueyu | 季氏将伐颛臾 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选修（2026起默写） |
 | kezhi | 客至 | 杜甫 | 唐 | 卒 770 | public-domain | S3+S1b+S2 | 七言 | 高中 · 选择性必修下册 |
 | jiangjinjiu | 将进酒 | 李白 | 唐 | 卒 762 | public-domain | S3+S1b+S2 | 乐府 | 高中 · 选择性必修上册 |

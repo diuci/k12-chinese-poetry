@@ -3,11 +3,11 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 201,
+    "total": 200,
     "modern": 39,
     "lessonEntries": 781,
-    "poems": 309,
-    "reciteGaps": 89,
+    "poems": 310,
+    "reciteGaps": 88,
     "primaryGaps": 337
   },
   "rows": [
@@ -1528,14 +1528,6 @@
       "lesson": "13.4",
       "title": "树和天空",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30422_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "选择性必修下册",
-      "lesson": "2",
-      "title": "孔雀东南飞",
-      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30503_langdu.html",
       "looksModern": false,
       "recite": true
     },
