@@ -49,6 +49,10 @@ def stale_lines(text, row=None):
                 continue
             if (int(m.group(1)), int(m.group(2))) != (row.get('total'), row.get('hit')):
                 out.append((n, line[:len(line) - len(line.lstrip())], line.strip()))
+                continue
+            # 核对表记着「教材那边还有句子」而这句话没交代它们：数字没过期，话也照样过期
+            if (row.get('fullShortfall') or []) and '节选' not in line:
+                out.append((n, line[:len(line) - len(line.lstrip())], line.strip()))
     return out
 
 
@@ -86,10 +90,19 @@ def replacement(row, indent=chr(0)):
             return None
         k = len(row.get('charDiffs') or [])
         g = row.get('ghostDiffs') or 0
+        short = row.get('fullShortfall') or []
         seg = ('单字出入 %d 处逐处写在「异文」那一节' % k) if k else '没有字面出入'
         extra = ('（另有 %d 处是段落边界、教材夹注、节选范围造成的错位，不是文字分歧）' % g) if g else ''
-        return ('%s统编教材用字已逐句核过：本篇 %d 句可比，%d 句与统编%s一致；%s%s。出处：统编课文页（镜像） %s'
-                % (indent, total, hit, _lesson_of(row) or '教材', seg, extra, _url_of(row)))
+        # 教材那边多出来的句子必须在这句话里说清是谁没选：只写「23/25 句一致」，
+        # 读者不知道剩下那 218 句是「统编没选」还是「我们漏了」——后者会让人去补本来不该补的正文。
+        tail = ''
+        if short:
+            tail = (' 另：教材课文页里另有 %d 句仓内没有（统编收的是节选，仓内按统编课文的范围收；'
+                    '节选止点统编没标，我们不下结论）。' % len(short))
+        elif k:
+            tail = ' 另：仓内与教材只差上面那些字，没有缺句。'
+        return ('%s统编教材用字已逐句核过：本篇 %d 句可比，%d 句与统编%s一致；%s%s。%s出处：统编课文页（镜像） %s'
+                % (indent, total, hit, _lesson_of(row) or '教材', seg, extra, tail, _url_of(row)))
     if status == 'coverage-override':
         return ('%s统编教材收了本篇，但篇名与课标不同：收在统编%s。仓内沿用课标篇名，教材篇名登记在 data/textbook-coverage.json。'
                 '出处：统编课文页（镜像） %s' % (indent, _lesson_of(row) or '教材', _url_of(row)))
@@ -159,6 +172,20 @@ def selftest():
     must('没有字面出入' in r2b and '另有' not in r2b, '坏例3c：没有出入的 partial 被写成有出入：%s' % r2b)
     r2c = replacement(dict(partial_row, charDiffs=[], ghostDiffs=5))
     must('没有字面出入' in r2c and '另有 5 处' in r2c, '坏例3d：只有残影的 partial 没说明残影不是分歧：%s' % r2c)
+    # 坏例3e~3g：教材那边多出来的句子必须在这句话里说清是谁没选
+    r2d = replacement(dict(partial_row, fullShortfall=['某句'] * 218), '')
+    must('另有 218 句仓内没有' in r2d and '节选' in r2d, '坏例3e：教材那边多出的句子没在句话里交代：%s' % r2d)
+    r2e = replacement(dict(partial_row, fullShortfall=[]), '')
+    must('没有缺句' in r2e, '坏例3f：只差字、没有缺句的 partial 没把这件事说出来：%s' % r2e)
+    row3g = {'status': 'partial', 'hit': 23, 'total': 25, 'lesson': '10.1 劝学', 'volume': '必修上册',
+             'url': 'https://x/7', 'charDiffs': [{'ours': '𫐐', 'textbook': '輮'}] * 2, 'ghostDiffs': 0,
+             'fullShortfall': ['某句'] * 218}
+    line3g = ('  ' + SCOPE_MARK + '：本篇 25 句可比，23 句与统编必修上册「10.1 劝学」一致；'
+              '单字出入 2 处逐处写在「异文」那一节。出处：统编课文页（镜像） https://x/7')
+    must(len(stale_lines(line3g, row3g)) == 1,
+         '坏例3g：核对表记着教材那边还有 218 句、篇内那句话却没交代，数字没过期就没被认出来要重写')
+    must(stale_lines(line3g + ' 另：教材课文页里另有 218 句仓内没有（统编收的是节选）。', row3g) == [],
+         '坏例3h：已经交代了节选的那句话被误判成过期')
     must('同名另一篇' not in r2, '坏例4：partial 被写成「同名另一篇」')
     ov = {'status': 'coverage-override', 'lessons': [{'volume': '八年级上册', 'lesson': '6.2', 'title': '丑奴儿·说尽心中无限事', 'url': 'https://x/3'}],
           'url': 'https://x/3'}

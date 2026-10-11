@@ -622,7 +622,7 @@ def near_covered(key, body):
     return False
 
 
-def fulltext_shortfalls(poem, paras):
+def fulltext_shortfalls(poem, paras, variant_map=None):
     """反方向再比一遍：教材课文里的句子，仓内这篇有没有。
 
     正方向（仓内每一句去教材里找）只能证明「我们写的这几句教材里有」，
@@ -632,17 +632,46 @@ def fulltext_shortfalls(poem, paras):
     比法是拿教材当问句、仓内整篇正文当 haystack：教材那边爱在逗号处换行，
     仓内一行常装两句（醉翁亭记「渐闻水声潺潺而泻出于两峰之间者」），
     所以不许把两边切成同样的片段再配对——那样《醉翁亭记》会被报成缺句。
+
+    variant_map：正方向已经记下的「教材那个字 ↔ 仓内这个字」（异体字、通假）。
+    同一处出入不许在反方向被再数一遍成「缺句」：仓内「绝𪩘多生怪柏」、教材「绝巘多生怪柏」，
+    差的就是那一个异体字，正方向已经记成单字出入；反方向照报的话，台账会写成
+    「教材课文里另有 1 句没收」——那是把一个字的差别说成一整句没教。
+    这样的片段单独登记成 echo（写清差的是哪两个字），不进缺句、也不进「没收」那个数。
     """
     body = norm(''.join(poem.get('linesPunct') or []) + ''.join(poem.get('fullLinesPunct') or []))
-    missing, seen = [], set()
+    missing, echo, seen = [], [], set()
     for frag, key in textbook_units(paras):
         if key in seen:
             continue
         seen.add(key)
         if key in body or near_covered(key, body):
             continue
+        pairs = []
+        for tb, ours in (variant_map or {}).items():
+            if tb and ours and tb in key:
+                pairs.append([tb, ours])
+        if pairs:
+            alt = key
+            for tb, ours in pairs:
+                alt = alt.replace(tb, ours)
+            if alt != key and alt in body:
+                echo.append({'frag': frag.strip(), 'chars': pairs})
+                continue
         missing.append(frag)
-    return missing
+    return missing, echo
+
+
+def diff_phrase(c):
+    """一处字面出入说成一句人话：谁多、谁少、差的是哪两个字。"""
+    o, b = (c.get('ours') or ''), (c.get('textbook') or '')
+    if o and b:
+        return '教材「%s」仓内「%s」' % (b, o)
+    if o:
+        return '仓内多「%s」' % o
+    if b:
+        return '教材多「%s」' % b
+    return ''
 
 
 def selftest():
@@ -982,17 +1011,17 @@ def selftest():
                       '此情可待成追忆？只是当时已惘然。'], 'fullLinesPunct': []}
     paras20 = ['锦瑟无端五十弦，一弦一柱思华年。', '庄生晓梦迷蝴蝶，望帝春心托杜鹃。',
                '沧海月明珠有泪，蓝田日暖玉生烟。', '此情可待成追忆？只是当时已惘然。']
-    must(fulltext_shortfalls(p20, paras20) == ['锦瑟无端五十弦', '一弦一柱思华年'],
+    must(fulltext_shortfalls(p20, paras20)[0] == ['锦瑟无端五十弦', '一弦一柱思华年'],
          '坏例20：教材有、仓内没有的一联没被报出来（标全文背诵却少一联）')
-    must(fulltext_shortfalls(dict(p20, linesPunct=p20['linesPunct'] + ['锦瑟无端五十弦，一弦一柱思华年。']), paras20) == [],
+    must(fulltext_shortfalls(dict(p20, linesPunct=p20['linesPunct'] + ['锦瑟无端五十弦，一弦一柱思华年。']), paras20)[0] == [],
          '坏例20b：齐了的篇目被误报')
-    must(fulltext_shortfalls(p20, ['沧海月明珠有泪，蓝田日暖玉生烟。'] + paras20[2:]) == [],
+    must(fulltext_shortfalls(p20, ['沧海月明珠有泪，蓝田日暖玉生烟。'] + paras20[2:])[0] == [],
          '坏例20c：整句都在却被报了')
     must(fulltext_shortfalls({'linesPunct': ['锦瑟无端五十弦，一弦一柱思华年。', '庄生晓梦迷蝴蝶，望帝春心托杜鹃。',
                                           '沧海月明珠有泪，蓝田日暖玉升烟。', '此情可待成追忆？只是当时已惘然。'],
-                              'fullLinesPunct': []}, paras20) == [],
+                              'fullLinesPunct': []}, paras20)[0] == [],
          '坏例20d：只差一个字被当成缺句（那是异文，正方向那条腿管）')
-    must(fulltext_shortfalls(p20, paras20 + ['不知其一作不知乎', '愍一作悯']) == ['锦瑟无端五十弦', '一弦一柱思华年'],
+    must(fulltext_shortfalls(p20, paras20 + ['不知其一作不知乎', '愍一作悯'])[0] == ['锦瑟无端五十弦', '一弦一柱思华年'],
          '坏例20e：教材页里的注释话被当成课文句')
     must(textbook_units(['上篇', '中篇', '锦瑟无端五十弦，一弦一柱思华年。']) == [('锦瑟无端五十弦', '锦瑟无端五十弦'),
                                                                                   ('一弦一柱思华年', '一弦一柱思华年')],
@@ -1001,24 +1030,48 @@ def selftest():
                               'fullLinesPunct': []},
                              ['岂曰无衣？与子同袍。', '王于兴师，修我戈矛。与子同仇！',
                               '岂曰无衣？与子同泽。', '王于兴师，修我矛戟。与子偕作！',
-                              '岂曰无衣？与子同裳。', '王于兴师，修我甲兵。与子偕行！']) != [],
+                              '岂曰无衣？与子同裳。', '王于兴师，修我甲兵。与子偕行！'])[0] != [],
          '坏例20g：《无衣》缺的两章没被报出来（别处有「与子同袍」「与子同裳」，短片段只许整段相等）')
     must(fulltext_shortfalls({'linesPunct': ['环滁皆山也。其西南诸峰，林壑尤美，望之蔚然而深秀者，山之僧曰智仙也。'],
                               'fullLinesPunct': []},
-                             ['环滁皆山也。其西南诸峰，林壑尤美，望之蔚然而深秀者，山之僧智仙也。']) == [],
+                             ['环滁皆山也。其西南诸峰，林壑尤美，望之蔚然而深秀者，山之僧智仙也。'])[0] == [],
          '坏例20h：教材少一个「曰」被当成缺句（那是异文，窗口里字全落位）')
     must(fulltext_shortfalls({'linesPunct': ['岂曰无衣？与子同袍。'], 'fullLinesPunct': []},
-                             ['岂曰无衣？与子同仇。']) == ['与子同仇'],
+                             ['岂曰无衣？与子同仇。'])[0] == ['与子同仇'],
          '坏例20i：别处有「与子同袍」，不许把缺的「与子同仇」蒙混成有')
     must(fulltext_shortfalls({'linesPunct': ['渐闻水声潺潺而泻出于两峰之间者，酿泉也。'], 'fullLinesPunct': []},
-                             ['渐闻水声潺潺，而泻出于两峰之间者，酿泉也。']) == [],
+                             ['渐闻水声潺潺，而泻出于两峰之间者，酿泉也。'])[0] == [],
          '坏例20j：教材在逗号处换行、仓内一行装两句，被报成缺句')
     must(fulltext_shortfalls({'linesPunct': ['原来姹紫嫣红开遍，似这般都付与断井颓垣。'], 'fullLinesPunct': []},
-                             ['【皂罗袍】原来姹紫嫣红开遍，似这般都付与断井颓垣。']) == [],
+                             ['【皂罗袍】原来姹紫嫣红开遍，似这般都付与断井颓垣。'])[0] == [],
          '坏例20l：教材段首的曲牌标记【皂罗袍】被当成课文里的一句')
     must(fulltext_shortfalls({'linesPunct': ['孤岂欲卿治经为博士邪！但当涉猎，见往事耳。'], 'fullLinesPunct': []},
-                             ['权曰：“孤岂欲卿治经为博士邪!但当涉猎，见往事耳。”']) == [],
+                             ['权曰：“孤岂欲卿治经为博士邪!但当涉猎，见往事耳。”'])[0] == [],
          '坏例20k：镜像页用半角感叹号，切开后就对不上了')
+
+    # 坏例27：异体字那一处出入不许在反方向被再数一遍成「缺句」（三峡 就是这么被说成「另有 1 句没收」的）
+    _p27 = {'linesPunct': [], 'fullLinesPunct': ['春冬之时，则素湍绿潭，回清倒影，绝𪩘多生怪柏，悬泉瀑布，飞漱其间。']}
+    _b27 = ['春冬之时，则素湍绿潭，回清倒影，绝巘多生怪柏，悬泉瀑布，飞漱其间。']
+    m27, e27 = fulltext_shortfalls(_p27, _b27, {'巘': '𪩘'})
+    must(m27 == [], '坏例27a：只差一个异体字被报成缺句：%s' % m27)
+    must(len(e27) == 1 and e27[0]['chars'] == [['巘', '𪩘']],
+         '坏例27b：这一处没登记成用字残影、或没写清差的是哪两个字：%s' % e27)
+    m27b, e27b = fulltext_shortfalls(_p27, _b27)
+    must(m27b == ['绝巘多生怪柏'] and e27b == [],
+         '坏例27c：不给字对时这一处照旧得算缺句——否则上面那条「消掉」是白给的，闸门形同虚设')
+    m27c, e27c = fulltext_shortfalls({'linesPunct': [], 'fullLinesPunct': ['木直中绳，𫐐以为轮，其曲中规。']},
+                                     ['绝巘多生怪柏'], {'巘': '𪩘'})
+    must(m27c == ['绝巘多生怪柏'] and e27c == [],
+         '坏例27d：拿字对把真没写的句子洗成了有（仓内整篇没有这一句）：%s %s' % (m27c, e27c))
+    m27e, e27e = fulltext_shortfalls(_p27, _b27, {'巘': '巘'})
+    must(m27e == ['绝巘多生怪柏'] and e27e == [],
+         '坏例27e：字对两头是同一个字也被当成换字成功：%s %s' % (m27e, e27e))
+    must(diff_phrase({'kind': 'char', 'ours': '𪩘', 'textbook': '巘'}) == '教材「巘」仓内「𪩘」',
+         '坏例27f：单字出入没写成「谁作哪个字」')
+    must(diff_phrase({'kind': 'missing', 'ours': '曰', 'textbook': ''}) == '仓内多「曰」',
+         '坏例27g：仓内多出来的字没这样交代')
+    must(diff_phrase({'kind': 'missing', 'ours': '', 'textbook': '叩缶'}) == '教材多「叩缶」',
+         '坏例27h：教材多出来的字没这样交代')
 
 
 
@@ -1219,14 +1272,8 @@ def main():
         entry.update(status=status, lesson=name, url=url, hit=hit, total=total,
                      skippedShort=skipped,
                      textbookParas=len(paras), miss=miss)
-        # 反方向再比一遍：教材课文里有、仓内没有的句子。标为「全文背诵」的篇目这就是缺句。
-        short = fulltext_shortfalls(p, paras)
-        entry['fullShortfall'] = short
-        if short and p.get('recite') == 'full':
-            problems.append('%s（%s）标为全文背诵，教材课文里却有 %d 句仓内没有：%s' % (
-                p['title'], vol, len(short), '、'.join(short[:4])))
-        elif short:
-            entry['note'] = (entry.get('note') or '') + ('；教材课文里另有 %d 句没收（节选收录）' % len(short))
+        # 反方向与单字出入的先后次序在这儿是实打实的依赖：反方向要用单字出入记下的字对，
+        # 先跑反方向就会把同一处出入数两遍（见 fulltext_shortfalls 的 variant_map）。
         # 单字出入与残影分开数：前者是「这一处字不一样」，后者是段落边界/教材夹注/节选范围造成的，
         # 不是文字分歧。混在一个数里，台账就说不清「到底差在哪」。
         chars, ghosts = [], 0
@@ -1243,6 +1290,25 @@ def main():
                 else:
                     ghosts += 1
         entry.update(charDiffs=chars, ghostDiffs=ghosts)
+        # 反方向再比一遍：教材课文里有、仓内没有的句子。标为「全文背诵」的篇目这就是缺句。
+        vmap = {}
+        for c in chars:
+            if c.get('kind') == 'char' and len(c.get('textbook') or '') == 1 and len(c.get('ours') or '') == 1:
+                vmap[c['textbook']] = c['ours']
+        short, echo = fulltext_shortfalls(p, paras, vmap)
+        entry['fullShortfall'] = short
+        entry['charEcho'] = echo
+        if short and p.get('recite') == 'full':
+            problems.append('%s（%s）标为全文背诵，教材课文里却有 %d 句仓内没有：%s' % (
+                p['title'], vol, len(short), '、'.join(short[:4])))
+        elif short:
+            entry['note'] = (entry.get('note') or '') + (
+                '；教材课文页里另有 %d 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；'
+                '节选止点统编没标，我们不下结论）' % len(short))
+        elif chars:
+            # 没有缺句、只有字面出入：这一句必须写出来，不然台账上就剩一个说不清的 34/35
+            entry['note'] = (entry.get('note') or '') + ('；仓内与教材只差字面出入 %d 处（%s），没有缺句' % (
+                len(chars), '、'.join(diff_phrase(c) for c in chars[:4])))
         results.append(entry)
         for mm in miss:
             d = mm['diff'] or [{'ours': norm(mm['line']), 'textbook': None}]

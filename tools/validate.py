@@ -901,6 +901,7 @@ def selftest():
     problems.extend(selftest_match())
     problems.extend(selftest_filing_note())
     problems.extend(selftest_ghost_diff())
+    problems.extend(selftest_partial_scope())
     problems.extend(selftest_source_codes())
     problems.extend(selftest_body_links())
 
@@ -967,7 +968,29 @@ def ghost_diff_unexplained(text, ghosts):
         return True
     section = text.split('## 收录范围', 1)[1].split('\n## ', 1)[0]
     return '错位' not in section
-    return not re.search(r'没有教材课号|没有课号|不是教材给的', section)
+
+
+SCOPE_MARK = '统编教材用字已逐句核过'
+
+
+def partial_scope_unexplained(text, row):
+    """核对表判「部分对上」的篇目：篇内必须带上核对表当场数出来的那句话。
+
+    为什么要有这一条：三峡 8/9 句对上，差的是「绝𪩘／绝巘」这一个异体字；陈情表 34/35，
+    差的是「祖母刘／祖母」；劝学 23/25，教材那一页里另有 218 句是《劝学》其余的段落。
+    这三种「差」不是一回事——第一种不用改正文、第二种是教材本少一个字、第三种是收录范围的事，
+    可核对表上它们都只写成「部分对上」。篇内不写那一句，台账上就剩一个说不清的分数。
+    """
+    if not row or row.get('status') != 'partial':
+        return False
+    if '## 收录范围' not in text:
+        return True
+    section = text.split('## 收录范围', 1)[1].split('\n## ', 1)[0]
+    if SCOPE_MARK not in section:
+        return True
+    if row.get('fullShortfall') and '节选' not in section:
+        return True
+    return False
 def attest_expect(row, in_coverage, in_collision, is_syllabus=True):
     """核对表（data/textbook-attestations.json）的一条结论 → 篇目 frontmatter 该写哪个状态。
 
@@ -1066,6 +1089,33 @@ def selftest_ghost_diff():
     for label, txt, ghosts, want in cases:
         if ghost_diff_unexplained(txt, ghosts) != want:
             problems.append('%s（实得：%s）' % (label, '报错' if ghost_diff_unexplained(txt, ghosts) else '放行'))
+    return problems
+
+
+def selftest_partial_scope():
+    """坏例子：核对表判「部分对上」、篇内却没交代差在哪，必须被抓。"""
+    problems = []
+    line = ('统编教材用字已逐句核过：本篇 9 句可比，8 句与统编八年级上册「10 三峡」一致；'
+            '单字出入 1 处逐处写在「异文」那一节。 另：仓内与教材只差上面那些字，没有缺句。')
+    cases = [
+        ('判 partial、连「收录范围」都没有', '# 甲\n\n## 注释\n', {'status': 'partial', 'fullShortfall': []}, True),
+        ('有「收录范围」却没带核对表那句话', '# 甲\n\n## 收录范围\n\n仓内 9 句可比，8 句与教材一致。\n\n## 注释\n',
+         {'status': 'partial', 'fullShortfall': []}, True),
+        ('那句话写在「注释」里不算说清', '# 甲\n\n## 收录范围\n\n仓内收的是全篇。\n\n## 注释\n\n- ' + line + '\n',
+         {'status': 'partial', 'fullShortfall': []}, True),
+        ('只差字、没有缺句的交代齐了不误报', '# 甲\n\n## 收录范围\n\n' + line + '\n\n## 注释\n',
+         {'status': 'partial', 'fullShortfall': []}, False),
+        ('教材那边另有句子却没说节选', '# 甲\n\n## 收录范围\n\n' + line + '\n\n## 注释\n',
+         {'status': 'partial', 'fullShortfall': ['某句'] * 218}, True),
+        ('说清了节选这件事不误报', '# 甲\n\n## 收录范围\n\n' + line +
+         ' 另：教材课文页里另有 218 句仓内没有（统编收的是节选）。\n\n## 注释\n',
+         {'status': 'partial', 'fullShortfall': ['某句'] * 218}, False),
+        ('判 match 的不该管', '# 甲\n\n## 注释\n', {'status': 'match', 'fullShortfall': []}, False),
+        ('没有核对记录的不该管', '# 甲\n\n## 注释\n', None, False),
+    ]
+    for label, txt, row, want in cases:
+        if partial_scope_unexplained(txt, row) != want:
+            problems.append('%s（实得：%s）' % (label, '报错' if partial_scope_unexplained(txt, row) else '放行'))
     return problems
 
 
@@ -1370,6 +1420,12 @@ def main():
                                             (att_early.get(p['id']) or {}).get('ghostDiffs') or 0)]
     if ghost_open:
         err('核对表记着错位（节选范围、段落边界造成的），篇内没交代这些错位是什么：%s' % '、'.join(ghost_open[:6]))
+
+    # 核对表判「部分对上」的篇目：差的是一个字、还是教材那边多出一大段，篇内必须说清（见函数里的三个真例子）。
+    partial_open = [p['title'] for p in poems
+                    if partial_scope_unexplained((ROOT / p['_path']).read_text(encoding='utf-8'), att_early.get(p['id']))]
+    if partial_open:
+        err('核对表判「部分对上」却篇内没交代差在哪：%s' % '、'.join(partial_open[:6]))
 
     # 篇目正文里的相对 markdown 链接：仓内能点、站点上是死链（口径写在 BODY_LINK 上面那段）。
     linked = [p['title'] for p in poems

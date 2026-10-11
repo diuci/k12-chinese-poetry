@@ -26,9 +26,10 @@
       "skippedShort": 6,
       "textbookParas": 12,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yongxue",
@@ -44,9 +45,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yeyujibei",
@@ -62,9 +64,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "tianjingsha-qiusi",
@@ -80,9 +83,10 @@
       "skippedShort": 0,
       "textbookParas": 5,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "qirenyoutian",
@@ -98,9 +102,10 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "cibeigushanxia",
@@ -116,9 +121,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "lang",
@@ -134,9 +140,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chuanjingdeyiren",
@@ -152,9 +159,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guancanghai",
@@ -170,9 +178,10 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jiezishu",
@@ -188,9 +197,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wenwangchangling",
@@ -206,9 +216,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chentaiqiyuyouqixing",
@@ -224,9 +235,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shiyiyuesirifengyudazuo",
@@ -242,9 +254,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yeshangshouxiangchengwendi",
@@ -260,9 +273,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "emeishanyuege",
@@ -278,9 +292,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jiangnanfengligunian",
@@ -296,9 +311,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "tongguan",
@@ -314,9 +330,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "qiuci",
@@ -332,9 +349,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "xingjunjiuri",
@@ -350,9 +368,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "maiyouweng",
@@ -368,9 +387,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "sunquananquanxue",
@@ -386,9 +406,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jihai-jimao",
@@ -404,9 +425,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wangyue",
@@ -422,9 +444,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "mulanci",
@@ -457,9 +480,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "huoban",
@@ -475,9 +499,10 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "youshanxincun",
@@ -493,9 +518,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "ailianshuo",
@@ -511,9 +537,10 @@
       "skippedShort": 1,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "dengyouzhoutai",
@@ -529,9 +556,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "dengfeilaifeng",
@@ -547,9 +575,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "loushiming",
@@ -565,9 +594,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chunyeluocheng",
@@ -583,9 +613,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wanchun",
@@ -601,9 +632,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zhuliguan",
@@ -619,9 +651,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yueke",
@@ -637,9 +670,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jiasheng",
@@ -655,9 +689,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guosongyuan",
@@ -673,9 +708,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "fengrujinshi",
@@ -691,9 +727,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yueyanglouji",
@@ -709,9 +746,10 @@
       "skippedShort": 2,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wuti",
@@ -727,9 +765,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shuidiaogetou",
@@ -745,14 +784,15 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0,
       "fullShortfall": [
         "丙辰中秋",
         "欢饮达旦",
         "兼怀子由"
       ],
-      "note": "；教材课文里另有 3 句没收（节选收录）",
-      "charDiffs": [],
-      "ghostDiffs": 0
+      "charEcho": [],
+      "note": "；教材课文页里另有 3 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "huxinting",
@@ -768,9 +808,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "xiangjianhuan",
@@ -801,9 +842,10 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "choulitian",
@@ -819,9 +861,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zuigongtingji",
@@ -850,7 +893,6 @@
           ]
         }
       ],
-      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -860,7 +902,10 @@
           "context": "山之僧智仙也名之者谁太"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": [],
+      "note": "；仓内与教材只差字面出入 1 处（仓内多「曰」），没有缺句"
     },
     {
       "id": "chounuer-shuboshandaozhongbi",
@@ -876,9 +921,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "xianyangchengdonglou",
@@ -894,9 +940,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shangshanxiaoxing",
@@ -912,9 +959,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zuoqianzhilanguanshizhisunxiang",
@@ -930,9 +978,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yueyeyisheidi",
@@ -948,9 +997,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "xingxiangzi",
@@ -966,9 +1016,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "changshaguojiayizhai",
@@ -984,9 +1035,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "lvshi1",
@@ -1088,9 +1140,10 @@
       "skippedShort": 0,
       "textbookParas": 9,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shiwucongjunzheng",
@@ -1106,9 +1159,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "nangxiangzi",
@@ -1124,9 +1178,10 @@
       "skippedShort": 2,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "tangju",
@@ -1142,9 +1197,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shanpoyang",
@@ -1160,9 +1216,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "lishanhuaigu",
@@ -1178,9 +1235,10 @@
       "skippedShort": 0,
       "textbookParas": 5,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "caoguilunzhan",
@@ -1196,9 +1254,10 @@
       "skippedShort": 1,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chaotianzi",
@@ -1214,9 +1273,10 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jiangchengzi-laofeng",
@@ -1232,9 +1292,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yujiaao-qiusi",
@@ -1250,9 +1311,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "manjianghong-xiaozhujinghua",
@@ -1268,9 +1330,10 @@
       "skippedShort": 1,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "baixuege",
@@ -1286,9 +1349,10 @@
       "skippedShort": 0,
       "textbookParas": 9,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "pozhenzi",
@@ -1304,9 +1368,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guolingyang",
@@ -1322,9 +1387,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "songdongyang",
@@ -1340,9 +1406,10 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zouji",
@@ -1371,10 +1438,6 @@
           ]
         }
       ],
-      "fullShortfall": [
-        "问之客曰"
-      ],
-      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "missing",
@@ -1384,7 +1447,12 @@
           "context": "从外来与坐谈问之客曰吾与徐公孰美客曰"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [
+        "问之客曰"
+      ],
+      "charEcho": [],
+      "note": "；教材课文页里另有 1 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "chensheshijia",
@@ -1400,9 +1468,10 @@
       "skippedShort": 2,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "bieyunjian",
@@ -1418,9 +1487,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "nananjun",
@@ -1436,9 +1506,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "sanxia",
@@ -1469,10 +1540,6 @@
           ]
         }
       ],
-      "fullShortfall": [
-        "绝巘多生怪柏"
-      ],
-      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -1482,7 +1549,20 @@
           "context": "湍绿潭回清倒影绝巘多生怪柏悬泉瀑布"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": [
+        {
+          "frag": "绝巘多生怪柏",
+          "chars": [
+            [
+              "巘",
+              "𪩘"
+            ]
+          ]
+        }
+      ],
+      "note": "；仓内与教材只差字面出入 1 处（教材「巘」仓内「𪩘」），没有缺句"
     },
     {
       "id": "yuzhusianshu",
@@ -1498,9 +1578,10 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shizhuisai",
@@ -1516,9 +1597,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zhouyafujunxiliu",
@@ -1534,9 +1616,10 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "dedaoduozhu",
@@ -1552,9 +1635,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yugongyishan",
@@ -1570,9 +1654,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chunwang",
@@ -1588,9 +1673,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "huanxisha-yanque",
@@ -1606,9 +1692,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "daxiezhongshu",
@@ -1624,9 +1711,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jichengtiansi",
@@ -1642,9 +1730,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chibi-du",
@@ -1660,9 +1749,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "qiantanghuchunxing",
@@ -1678,9 +1768,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yanmenshiweixing",
@@ -1696,9 +1787,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yinjiujiusan",
@@ -1714,9 +1806,10 @@
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "huanghelou-cuiheng",
@@ -1732,9 +1825,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "rumengling",
@@ -1750,9 +1844,10 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "tingzhongyouqishu",
@@ -1768,9 +1863,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "liangfuxing",
@@ -1786,9 +1882,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yujiaao-tianjie",
@@ -1804,9 +1901,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "dujingmensongbie",
@@ -1822,9 +1920,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zengcongdi",
@@ -1840,9 +1939,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "caisangzi",
@@ -1858,9 +1958,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yewang",
@@ -1876,9 +1977,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guisuishou",
@@ -1894,9 +1996,10 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guanju",
@@ -1912,9 +2015,10 @@
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "beimingyouyu",
@@ -1964,9 +2068,10 @@
           ]
         }
       ],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 3
+      "ghostDiffs": 3,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "maotanshangwu",
@@ -1982,9 +2087,10 @@
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "dadaozhixing",
@@ -2000,9 +2106,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "xiaoshitan",
@@ -2018,9 +2125,10 @@
       "skippedShort": 0,
       "textbookParas": 5,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zhuangzihuizi",
@@ -2036,9 +2144,10 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "hezhouji",
@@ -2054,9 +2163,10 @@
       "skippedShort": 1,
       "textbookParas": 7,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "taohuayuanji",
@@ -2072,9 +2182,10 @@
       "skippedShort": 1,
       "textbookParas": 5,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shihaoli",
@@ -2090,9 +2201,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "maowu",
@@ -2108,9 +2220,10 @@
       "skippedShort": 1,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jianjia",
@@ -2126,9 +2239,10 @@
       "skippedShort": 0,
       "textbookParas": 12,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "suoyoujiayao",
@@ -2144,9 +2258,10 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "masuo",
@@ -2162,9 +2277,10 @@
       "skippedShort": 1,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "bosuanzi-yongmei",
@@ -2180,9 +2296,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "bosuanzi-huangzhou",
@@ -2198,9 +2315,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zijin",
@@ -2216,9 +2334,10 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shiwei",
@@ -2234,9 +2353,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wangdongtinghuzengzhangchengxiang",
@@ -2252,9 +2372,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "songyouren",
@@ -2270,9 +2391,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "songshaoshu-wai",
@@ -2288,9 +2410,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "tiboshansihouzhenyuan",
@@ -2306,9 +2429,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "gulangyuexing",
@@ -2372,9 +2496,10 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "hua",
@@ -2438,9 +2563,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chunxiao",
@@ -2472,9 +2598,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "huaji",
@@ -2532,9 +2659,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yeshusuojian",
@@ -2550,9 +2678,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shanxing",
@@ -2568,9 +2697,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "suojian",
@@ -2618,9 +2748,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wangdongting",
@@ -2636,9 +2767,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zengliujingwen",
@@ -2654,9 +2786,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "cailianqu",
@@ -2688,9 +2821,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "sanqudaozhong",
@@ -2706,9 +2840,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jiuyuejiuri",
@@ -2724,9 +2859,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yuanri",
@@ -2742,9 +2878,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "dalinsitaohua",
@@ -2792,9 +2929,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "qingming",
@@ -2810,9 +2948,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chuzhouxijian",
@@ -2844,9 +2983,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yesushansi",
@@ -2862,9 +3002,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "xiaoerchuidiao",
@@ -2896,9 +3037,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wanglushanpubu",
@@ -2914,9 +3056,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "meihua",
@@ -2964,9 +3107,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yongliu",
@@ -2982,9 +3126,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "minnong1",
@@ -3016,9 +3161,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "cunju",
@@ -3034,9 +3180,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jueju-huangli",
@@ -3052,9 +3199,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zhouyeshujian",
@@ -3118,9 +3266,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jihai",
@@ -3153,9 +3302,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yugezi",
@@ -3187,9 +3337,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guanshu",
@@ -3221,9 +3372,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "tilinandi",
@@ -3239,9 +3391,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "xiangcunsiyue",
@@ -3273,9 +3426,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "liangzhouci-wangzhihuan",
@@ -3310,9 +3464,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "cunwan",
@@ -3328,9 +3483,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "youziyin",
@@ -3362,9 +3518,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zhizibing",
@@ -3380,9 +3537,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wenguanjun",
@@ -3398,9 +3556,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "niaomingjian",
@@ -3448,9 +3607,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wanghulou",
@@ -3466,9 +3626,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "huixiangyoushu",
@@ -3500,9 +3661,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chunri",
@@ -3534,9 +3696,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "langtaosha",
@@ -3552,9 +3715,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "xijiangyue",
@@ -3570,9 +3734,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guogurenzhuang",
@@ -3604,9 +3769,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "bosuanzi-song",
@@ -3622,9 +3788,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "hanshi",
@@ -3640,9 +3807,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zaochun",
@@ -3658,9 +3826,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chunyexiyu",
@@ -3676,9 +3845,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jiangshangyuzhe",
@@ -3694,9 +3864,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "bochuanguazhou",
@@ -3712,9 +3883,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "huanxisha-qishui",
@@ -3730,9 +3902,10 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "youyuanbuzhi",
@@ -3748,9 +3921,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shihuiyin",
@@ -3766,9 +3940,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zhushi",
@@ -3784,9 +3959,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "tiaotiaoqianniuxing",
@@ -3802,9 +3978,10 @@
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "songyuaner",
@@ -3820,9 +3997,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "caiwei",
@@ -3838,9 +4016,10 @@
       "skippedShort": 0,
       "textbookParas": 8,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zengwang",
@@ -3872,9 +4051,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "liangzhouci-wanghan",
@@ -3890,9 +4070,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chusai",
@@ -3908,9 +4089,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "biedongda",
@@ -3942,9 +4124,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "change",
@@ -3976,9 +4159,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "xuemei",
@@ -3994,9 +4178,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "longpo",
@@ -4012,9 +4197,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "luchai",
@@ -4046,9 +4232,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "saixiaqu",
@@ -4064,9 +4251,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "momei",
@@ -4082,9 +4270,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "suxinshi",
@@ -4100,9 +4289,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jiangpan",
@@ -4134,9 +4324,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "duzuojingting",
@@ -4168,9 +4359,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "feng-mi",
@@ -4231,9 +4423,24 @@
           ]
         }
       ],
+      "charDiffs": [
+        {
+          "kind": "char",
+          "ours": "𫐐",
+          "textbook": "輮",
+          "line": "木直中绳，𫐐以为轮，其曲中规",
+          "context": "木直中绳輮以为轮其曲中规虽"
+        },
+        {
+          "kind": "char",
+          "ours": "𫐐",
+          "textbook": "輮",
+          "line": "虽有槁暴，不复挺者，𫐐使之然也",
+          "context": "虽有槁暴不复挺者輮使之然也故木受绳"
+        }
+      ],
+      "ghostDiffs": 0,
       "fullShortfall": [
-        "輮以为轮",
-        "輮使之然也",
         "故不登高山",
         "不知天之高也",
         "不临深溪",
@@ -4453,24 +4660,27 @@
         "地见其光",
         "君子贵其全也"
       ],
-      "note": "；教材课文里另有 220 句没收（节选收录）",
-      "charDiffs": [
+      "charEcho": [
         {
-          "kind": "char",
-          "ours": "𫐐",
-          "textbook": "輮",
-          "line": "木直中绳，𫐐以为轮，其曲中规",
-          "context": "木直中绳輮以为轮其曲中规虽"
+          "frag": "輮以为轮",
+          "chars": [
+            [
+              "輮",
+              "𫐐"
+            ]
+          ]
         },
         {
-          "kind": "char",
-          "ours": "𫐐",
-          "textbook": "輮",
-          "line": "虽有槁暴，不复挺者，𫐐使之然也",
-          "context": "虽有槁暴不复挺者輮使之然也故木受绳"
+          "frag": "輮使之然也",
+          "chars": [
+            [
+              "輮",
+              "𫐐"
+            ]
+          ]
         }
       ],
-      "ghostDiffs": 0
+      "note": "；教材课文页里另有 218 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "shengshenman",
@@ -4486,9 +4696,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shishuo",
@@ -4504,9 +4715,10 @@
       "skippedShort": 2,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guiyuantianju",
@@ -4522,9 +4734,10 @@
       "skippedShort": 0,
       "textbookParas": 10,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "niannujiao-chibi",
@@ -4540,9 +4753,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chayangge",
@@ -4558,9 +4772,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "mengyoutianmu",
@@ -4576,9 +4791,10 @@
       "skippedShort": 0,
       "textbookParas": 23,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yongyule",
@@ -4594,9 +4810,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shejiang",
@@ -4612,9 +4829,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "pipaxing",
@@ -4630,6 +4848,8 @@
       "skippedShort": 0,
       "textbookParas": 24,
       "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0,
       "fullShortfall": [
         "元和十年",
         "予左迁九江郡司马",
@@ -4655,9 +4875,8 @@
         "凡六百一十二言",
         "命曰《琵琶行》"
       ],
-      "note": "；教材课文里另有 23 句没收（节选收录）",
-      "charDiffs": [],
-      "ghostDiffs": 0
+      "charEcho": [],
+      "note": "；教材课文页里另有 23 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "dengtaishan",
@@ -4685,7 +4904,6 @@
           ]
         }
       ],
-      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -4695,7 +4913,10 @@
           "context": ""
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": [],
+      "note": "；仓内与教材只差字面出入 1 处（仓内多「桐城姚鼐记」），没有缺句"
     },
     {
       "id": "denggao",
@@ -4711,9 +4932,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "duange",
@@ -4744,10 +4966,6 @@
           ]
         }
       ],
-      "fullShortfall": [
-        "契阔谈讌"
-      ],
-      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -4757,7 +4975,20 @@
           "context": "契阔谈讌心念旧恩月明星稀"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": [
+        {
+          "frag": "契阔谈讌",
+          "chars": [
+            [
+              "讌",
+              "䜩"
+            ]
+          ]
+        }
+      ],
+      "note": "；仓内与教材只差字面出入 1 处（教材「讌」仓内「䜩」），没有缺句"
     },
     {
       "id": "fuyi",
@@ -4773,9 +5004,10 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "pusaman-zaoxiang",
@@ -4801,9 +5033,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chibifu",
@@ -4819,9 +5052,10 @@
       "skippedShort": 0,
       "textbookParas": 5,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "qingyu-an",
@@ -4847,9 +5081,10 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "qiqiaoxian",
@@ -4865,9 +5100,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "liuguolun",
@@ -4883,9 +5119,10 @@
       "skippedShort": 2,
       "textbookParas": 5,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zilu-shizhe",
@@ -4901,9 +5138,10 @@
       "skippedShort": 0,
       "textbookParas": 21,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "paodingjienu",
@@ -4919,9 +5157,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "niannujiao-gudong",
@@ -4937,9 +5176,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guizhixiang",
@@ -4955,9 +5195,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "youyuan",
@@ -4973,9 +5214,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zhihuwutuiqinshi",
@@ -4991,9 +5233,10 @@
       "skippedShort": 3,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "dengyueyanglou",
@@ -5009,9 +5252,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "dasijianyishu",
@@ -5027,9 +5271,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jiantaishisi",
@@ -5136,11 +5381,6 @@
           ]
         }
       ],
-      "fullShortfall": [
-        "岂取之易而守之难乎",
-        "在君无事"
-      ],
-      "note": "；教材课文里另有 2 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -5199,7 +5439,13 @@
           "context": "文武争驰在君无事可以尽豫游之"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [
+        "岂取之易而守之难乎",
+        "在君无事"
+      ],
+      "charEcho": [],
+      "note": "；教材课文页里另有 2 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "jianzhukeshu",
@@ -5254,10 +5500,6 @@
           ]
         }
       ],
-      "fullShortfall": [
-        "而骏良駃騠不实外厩"
-      ],
-      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -5281,7 +5523,12 @@
           "context": "今弃击瓮叩缶而就郑卫退弹筝而"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [
+        "而骏良駃騠不实外厩"
+      ],
+      "charEcho": [],
+      "note": "；教材课文页里另有 1 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "epenggongfu",
@@ -5310,7 +5557,6 @@
           ]
         }
       ],
-      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -5320,7 +5566,10 @@
           "context": "望幸焉有不见者三十六年燕赵"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": [],
+      "note": "；仓内与教材只差字面出入 1 处（仓内多「得」），没有缺句"
     },
     {
       "id": "qihuanjinwen",
@@ -5336,9 +5585,10 @@
       "skippedShort": 3,
       "textbookParas": 35,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "mengziyize",
@@ -5443,9 +5693,10 @@
       "skippedShort": 9,
       "textbookParas": 14,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "renjieburenrenzhixin",
@@ -5461,9 +5712,10 @@
       "skippedShort": 0,
       "textbookParas": 1,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jianai",
@@ -5479,9 +5731,10 @@
       "skippedShort": 2,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "daxue",
@@ -5514,9 +5767,10 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wuyi",
@@ -5532,9 +5786,10 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "chunjianghuayue",
@@ -5550,9 +5805,10 @@
       "skippedShort": 0,
       "textbookParas": 9,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "jiangchengzi-yimao",
@@ -5568,9 +5824,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "liyun",
@@ -5596,9 +5853,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "lantingjixu",
@@ -5614,9 +5872,10 @@
       "skippedShort": 1,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "kezhi",
@@ -5632,9 +5891,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guiqulaixici",
@@ -5697,10 +5957,6 @@
           ]
         }
       ],
-      "fullShortfall": [
-        "乐天夫命复奚疑"
-      ],
-      "note": "；教材课文里另有 1 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "char",
@@ -5731,7 +5987,12 @@
           "context": "乘化以归尽乐天夫命复奚疑"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [
+        "乐天夫命复奚疑"
+      ],
+      "charEcho": [],
+      "note": "；教材课文页里另有 1 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "yangzhousman",
@@ -5747,6 +6008,8 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0,
       "fullShortfall": [
         "淳熙丙申至日",
         "予过维扬",
@@ -5761,9 +6024,8 @@
         "因自度此曲",
         "千岩老人以为有《黍离》之悲也"
       ],
-      "note": "；教材课文里另有 12 句没收（节选收录）",
-      "charDiffs": [],
-      "ghostDiffs": 0
+      "charEcho": [],
+      "note": "；教材课文页里另有 12 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "niluonan",
@@ -5779,9 +6041,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wanghaichao",
@@ -5797,9 +6060,10 @@
       "skippedShort": 0,
       "textbookParas": 2,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "mang",
@@ -5815,9 +6079,10 @@
       "skippedShort": 0,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "dengkuai-ge",
@@ -5833,9 +6098,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shizhongshan",
@@ -5851,9 +6117,10 @@
       "skippedShort": 0,
       "textbookParas": 3,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "lisao",
@@ -6178,9 +6445,10 @@
           ]
         }
       ],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 28
+      "ghostDiffs": 28,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "zhongshu-guotuotuo",
@@ -6209,7 +6477,6 @@
           ]
         }
       ],
-      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -6219,7 +6486,10 @@
           "context": "驼曰我知种树而已理非吾业也然吾居"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": [],
+      "note": "；仓内与教材只差字面出入 1 处（仓内多「官」），没有缺句"
     },
     {
       "id": "sumuzhe",
@@ -6255,9 +6525,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shudaonan",
@@ -6273,9 +6544,10 @@
       "skippedShort": 0,
       "textbookParas": 22,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "hexinlao",
@@ -6324,7 +6596,6 @@
           ]
         }
       ],
-      "fullShortfall": [],
       "charDiffs": [
         {
           "kind": "missing",
@@ -6334,7 +6605,10 @@
           "context": "今年四十有四祖母今年九十有六是臣"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": [],
+      "note": "；仓内与教材只差字面出入 1 处（仓内多「刘」），没有缺句"
     },
     {
       "id": "xiangjixuanzhi",
@@ -6350,9 +6624,10 @@
       "skippedShort": 2,
       "textbookParas": 6,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "shufen",
@@ -6368,9 +6643,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "wudailingguan",
@@ -6386,9 +6662,10 @@
       "skippedShort": 1,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "quyuanliezhuan",
@@ -6501,11 +6778,6 @@
           ]
         }
       ],
-      "fullShortfall": [
-        "屈原既绌（chù）",
-        "过屈原所自沉渊"
-      ],
-      "note": "；教材课文里另有 2 句没收（节选收录）",
       "charDiffs": [
         {
           "kind": "missing",
@@ -6557,7 +6829,22 @@
           "context": "适长沙过屈原所自沉渊未尝"
         }
       ],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [
+        "过屈原所自沉渊"
+      ],
+      "charEcho": [
+        {
+          "frag": "屈原既绌（chù）",
+          "chars": [
+            [
+              "原",
+              "平"
+            ]
+          ]
+        }
+      ],
+      "note": "；教材课文页里另有 1 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "baoranan",
@@ -6583,9 +6870,10 @@
       "skippedShort": 0,
       "textbookParas": 7,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "yange-xing",
@@ -6601,9 +6889,10 @@
       "skippedShort": 0,
       "textbookParas": 15,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "guoqinlun",
@@ -6634,6 +6923,16 @@
           ]
         }
       ],
+      "charDiffs": [
+        {
+          "kind": "char",
+          "ours": "宁",
+          "textbook": "甯",
+          "line": "于是六国之士，有宁越、徐尚、苏秦、杜赫之属为之谋，齐明、周最、陈轸、召滑、楼缓、翟景、苏厉、乐毅之徒通其意，吴起、孙膑、带佗、倪良、王廖、田忌、廉颇、赵奢之伦制其兵",
+          "context": "于是六国之士有甯越徐尚苏秦杜赫之"
+        }
+      ],
+      "ghostDiffs": 0,
       "fullShortfall": [
         "秦灭周祀",
         "南面称帝",
@@ -6867,17 +7166,8 @@
         "变化因时",
         "故旷日长久而社稷安矣"
       ],
-      "note": "；教材课文里另有 231 句没收（节选收录）",
-      "charDiffs": [
-        {
-          "kind": "char",
-          "ours": "宁",
-          "textbook": "甯",
-          "line": "于是六国之士，有宁越、徐尚、苏秦、杜赫之属为之谋，齐明、周最、陈轸、召滑、楼缓、翟景、苏厉、乐毅之徒通其意，吴起、孙膑、带佗、倪良、王廖、田忌、廉颇、赵奢之伦制其兵",
-          "context": "于是六国之士有甯越徐尚苏秦杜赫之"
-        }
-      ],
-      "ghostDiffs": 0
+      "charEcho": [],
+      "note": "；教材课文页里另有 231 句仓内没有（统编收的是节选，仓内按统编课文的节选范围收；节选止点统编没标，我们不下结论）"
     },
     {
       "id": "jinse",
@@ -6893,9 +7183,10 @@
       "skippedShort": 0,
       "textbookParas": 4,
       "miss": [],
-      "fullShortfall": [],
       "charDiffs": [],
-      "ghostDiffs": 0
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     }
   ],
   "problems": []
