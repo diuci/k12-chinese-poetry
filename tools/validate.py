@@ -842,6 +842,7 @@ def selftest():
     problems.extend(selftest_absence_records())
     problems.extend(selftest_match())
     problems.extend(selftest_filing_note())
+    problems.extend(selftest_ghost_diff())
 
     if problems:
         print('[!!] validate --selftest 失败：', file=sys.stderr)
@@ -855,7 +856,7 @@ def selftest():
           '背诵要求与收录范围矛盾被拒、全文齐备不误报、节选配段落不误报、同名小节重复被抓、'
           '教材核对表结论与篇目状态不一致被抓、核对表缺这一篇被抓、同一册正文不误报、跨册同名另一篇被抓、'
           '园地证据加同名另一篇不误报、册次对不上没交代被抓、册次对不上有交代不误报、没见过的结论被抓、'
-          '七档标签与 apply-textbook-status 不分叉、课标要背统编没收却挂教材册没交代挂册依据被抓、说「没找到」必须有登记簿撑着被抓、登记簿过期被抓——同名撞车没在「收录范围」里交代被抓、核对表没写撞在哪一册被抓、册次写在别的小节里不算说清被抓——单字出入没交代被抓、交代写进注释不算被抓、只提一边的字不算被抓——都试到了')
+          '七档标签与 apply-textbook-status 不分叉、课标要背统编没收却挂教材册没交代挂册依据被抓、核对表记着错位篇内没交代被抓、说「没找到」必须有登记簿撑着被抓、登记簿过期被抓——同名撞车没在「收录范围」里交代被抓、核对表没写撞在哪一册被抓、册次写在别的小节里不算说清被抓——单字出入没交代被抓、交代写进注释不算被抓、只提一边的字不算被抓——都试到了')
     return 0
 
 
@@ -891,6 +892,21 @@ def filing_note_missing(poem, text):
     if '## 收录范围' not in text:
         return True
     section = text.split('## 收录范围', 1)[1].split('\n## ', 1)[0]
+    return not re.search(r'没有教材课号|没有课号|不是教材给的', section)
+
+
+def ghost_diff_unexplained(text, ghosts):
+    """核对表记着这一篇有「错位」（段落边界、节选范围造成的，不是文字分歧）：篇内就得说清这些错位是什么。
+
+    为什么要有这一条：核对表上「14/17 句对上」这种数，读者看不出差的那几句是「教材那一课没选」还是「我们漏了」。
+    离骚 差 28 句、北冥有鱼 差 3 句，两边其实都是「仓内比教材长」——可不在篇内写一句，台账上就是一个说不清的缺口。
+    """
+    if not ghosts:
+        return False
+    if '## 收录范围' not in text:
+        return True
+    section = text.split('## 收录范围', 1)[1].split('\n## ', 1)[0]
+    return '错位' not in section
     return not re.search(r'没有教材课号|没有课号|不是教材给的', section)
 def attest_expect(row, in_coverage, in_collision, is_syllabus=True):
     """核对表（data/textbook-attestations.json）的一条结论 → 篇目 frontmatter 该写哪个状态。
@@ -976,6 +992,22 @@ def absence_record_problems(poems, records):
         if pid not in ids:
             out.append('absence-checks.json 里的「%s」在仓里找不到这篇——登记簿过期了' % pid)
     return out
+
+def selftest_ghost_diff():
+    """坏例子：核对表记着错位、篇内却没交代这些错位是什么，必须被抓。"""
+    problems = []
+    cases = [
+        ('有错位、连「收录范围」都没有', '# 甲\n\n## 注释\n', 3, True),
+        ('有「收录范围」却没提这些错位', '# 甲\n\n## 收录范围\n\n仓内 17 句可比，14 句与教材逐字对上。\n\n## 注释\n', 3, True),
+        ('说清了错位不误报', '# 甲\n\n## 收录范围\n\n核对表记着 3 处错位：那三句统编这一课没选。\n\n## 注释\n', 3, False),
+        ('没有错位不该管', '# 甲\n\n## 注释\n', 0, False),
+        ('交代写在「注释」里不算说清', '# 甲\n\n## 收录范围\n\n仓内比教材长。\n\n## 注释\n\n- 错位：教材那一课没选那三句。\n', 3, True),
+    ]
+    for label, txt, ghosts, want in cases:
+        if ghost_diff_unexplained(txt, ghosts) != want:
+            problems.append('%s（实得：%s）' % (label, '报错' if ghost_diff_unexplained(txt, ghosts) else '放行'))
+    return problems
+
 
 def selftest_filing_note():
     """坏例子：课标要背、统编没收、却挂在教材册上的篇目，没交代挂册依据必须被抓。"""
@@ -1267,6 +1299,17 @@ def main():
                if filing_note_missing(p, (ROOT / p['_path']).read_text(encoding='utf-8'))]
     if unfiled:
         err('课标要求、统编没收却挂着教材册次，篇内没交代挂册依据：%s' % '、'.join(unfiled[:6]))
+
+    # 核对表记着「错位」（段落边界、节选范围造成的）的篇目：差在哪、是谁没选，篇内必须说一句。
+    att_early = {}
+    att_early_path = ROOT / 'data' / 'textbook-attestations.json'
+    if att_early_path.exists():
+        att_early = {x['id']: x for x in json.loads(att_early_path.read_text(encoding='utf-8')).get('results', [])}
+    ghost_open = [p['title'] for p in poems
+                  if ghost_diff_unexplained((ROOT / p['_path']).read_text(encoding='utf-8'),
+                                            (att_early.get(p['id']) or {}).get('ghostDiffs') or 0)]
+    if ghost_open:
+        err('核对表记着错位（节选范围、段落边界造成的），篇内没交代这些错位是什么：%s' % '、'.join(ghost_open[:6]))
 
     # -------------------------------------------------- 2.16 教材收录状态必须和核对结论一致
     # data/volume-findings.json 是教材目录核对的结论表。每篇 frontmatter 的 textbookStatus
