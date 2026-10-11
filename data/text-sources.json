@@ -5,8 +5,8 @@
     "attested": 232,
     "partial": 76,
     "notfound": 0,
-    "nosource": 3,
-    "withVariants": 88
+    "nosource": 4,
+    "withVariants": 89
   },
   "results": [
     {
@@ -2065,6 +2065,39 @@
       ],
       "variantNotes": [],
       "variants": []
+    },
+    {
+      "id": "hongmenyan",
+      "title": "鸿门宴",
+      "author": "司马迁",
+      "stage": "高中",
+      "page": null,
+      "url": "https://www.shidianguji.com/book/SK0699/chapter/1l9xmhgd4e9ly",
+      "lines": 112,
+      "hit": 112,
+      "miss": [],
+      "variantNotes": [
+        "卮／巵（四处，两个《史记》本子同字）",
+        "戮／勠、郤／却、参／骖、璧／壁（只有《史记集解》作异字，单证）",
+        "毋／母（两本各一处、位置不同，疑形近误）"
+      ],
+      "variants": [
+        "卮／巵",
+        "戮／勠",
+        "郤／却",
+        "参／骖",
+        "璧／壁",
+        "毋／母"
+      ],
+      "override": "这一篇没有维基文库那一路的页（zh.wikisource.org 当场 TLS 超时）。核对走的是另一条独立路：识典古籍两个《史记》本子——《史记集解》SK0699 卷七、《史记》SK0698 卷七，都有这一段全文。核对方法如实写在这里：那一页正文里夹着集解/索隐/正义注文，切不出干净的句子，所以不是逐句机器比对，而是把统编七段与《史记》本去标点整段用 difflib 对齐——统编去标点 1442 字、《史记集解》1474 字、《史记》SK0698 1603 字（含注文），112 句全部对上，出入只有篇内「异文」列的那几处（含 SK0698 三处缺字）。（这一档按仓里的口径说的是「没有维基文库那一路的页」：`data/text-sources.json` 的核对以有没有可逐句对的页为准，这一篇没有那样的页，所以记 no_page；上面写的是当场实际走过的路与实际做到的核对。）",
+      "searched": [
+        "统编课文页镜像 必修下册 30205（3* 鸿门宴）",
+        "识典古籍《史记集解》SK0699 卷七 项羽本纪第七",
+        "识典古籍《史记》SK0698 卷七",
+        "ctext.org 当场被 Cloudflare 拦，未取用",
+        "zh.wikisource.org 当场不可达（TLS 握手超时），未取到页"
+      ],
+      "no_page": true
     },
     {
       "id": "hua",

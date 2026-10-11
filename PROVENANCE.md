@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 311 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 312 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -372,6 +372,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | qingyu-an | 青玉案·元夕 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |
 | jingnv | 静女 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1+S2 | 诗经 | 高中 · 必修上册 |
 | xiangjixuanzhi | 项脊轩志 | 归有光 | 明 | 卒 1571 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修下册 |
+| hongmenyan | 鸿门宴 | 司马迁 | 汉 | 卒 公元前 86 | public-domain | S10+S12 | 文言 | 高中 · 必修下册 |
 | qiqiaoxian | 鹊桥仙 | 秦观 | 宋 | 卒 1100 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |
 | huanggangzhulouji | 黄冈竹楼记 | 王禹偁 | 宋 | 卒 1001 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选修（2026起默写） |
 | qihuanjinwen | 齐桓晋文之事 | 孟子 | 战国 | 卒 公元前 289 | public-domain | S10+S9+S3 | 文言 | 高中 · 必修下册 |

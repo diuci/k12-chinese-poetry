@@ -2,7 +2,7 @@
   "generated": "2026-10-11",
   "source": "https://yw.suyang123.com",
   "stats": {
-    "match": 230,
+    "match": 231,
     "coverage-override": 7,
     "mismatch": 2,
     "partial": 16,
@@ -5589,6 +5589,25 @@
       "fullShortfall": [],
       "charEcho": [],
       "note": "；仓内与教材只差字面出入 1 处（仓内多「得」），没有缺句"
+    },
+    {
+      "id": "hongmenyan",
+      "title": "鸿门宴",
+      "author": "司马迁",
+      "stage": "高中",
+      "volume": "必修下册",
+      "status": "match",
+      "lesson": "3* 鸿门宴",
+      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30205_langdu.html",
+      "hit": 112,
+      "total": 112,
+      "skippedShort": 1,
+      "textbookParas": 7,
+      "miss": [],
+      "charDiffs": [],
+      "ghostDiffs": 0,
+      "fullShortfall": [],
+      "charEcho": []
     },
     {
       "id": "qihuanjinwen",

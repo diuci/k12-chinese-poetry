@@ -3,11 +3,11 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 199,
+    "total": 198,
     "modern": 39,
     "lessonEntries": 781,
-    "poems": 311,
-    "reciteGaps": 87,
+    "poems": 312,
+    "reciteGaps": 86,
     "primaryGaps": 337
   },
   "rows": [
@@ -1154,14 +1154,6 @@
       "url": "https://yw.suyang123.com/gaozhong/bixiushang/30124_langdu.html",
       "looksModern": false,
       "recite": false
-    },
-    {
-      "volume": "必修下册",
-      "lesson": "3",
-      "title": "鸿门宴",
-      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30205_langdu.html",
-      "looksModern": false,
-      "recite": true
     },
     {
       "volume": "必修下册",

@@ -2,7 +2,7 @@
   "note": "仓内 volume 字段与统编教材目录的逐篇核对结论。status=volume-mismatch 的条目都经过正文核验（这篇的句子在候选课文页里出现几句），不是只看标题。officiallyConfirmed 表示这一课的课号同时出现在人教社官方参考答案里。",
   "generated": "2026-10-11",
   "counts": {
-    "match": 249,
+    "match": 250,
     "volume-mismatch": 0,
     "title-collision": 2,
     "absent": 14,
@@ -2676,6 +2676,16 @@
       "volume": "必修下册",
       "textbookVolume": "必修下册",
       "textbookLesson": "16.1"
+    },
+    {
+      "id": "hongmenyan",
+      "title": "鸿门宴",
+      "author": "司马迁",
+      "stage": "高中",
+      "status": "match",
+      "volume": "必修下册",
+      "textbookVolume": "必修下册",
+      "textbookLesson": "3"
     },
     {
       "id": "qihuanjinwen",
