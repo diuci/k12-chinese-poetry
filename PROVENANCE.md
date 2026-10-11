@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 310 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 311 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -298,6 +298,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | laozi8 | 《老子》八章 | 老子 | 先秦 | 卒 公元前 470 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选择性必修上册 |
 | lunyu12 | 《论语》十二章 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S9+S1b+S2+S10 | 文言 | 高中 · 选择性必修上册 |
 | shangshumihan | 上枢密韩太尉书 | 苏辙 | 宋 | 卒 1112 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选修（2026起默写） |
+| yuqishu | 与妻书 | 林觉民 | 清 | 卒 1911 | public-domain | S10 | 文言 | 高中 · 必修下册 |
 | zhongyong | 中庸 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S3+S1b+S2 | 文言 | 高中 · 选修（2026起默写） |
 | linanchunyu | 临安春雨初霁 | 陆游 | 宋 | 卒 1210 | public-domain | S3+S1b+S2 | 七言 | 高中 · 选择性必修下册 |
 | shufen | 书愤 | 陆游 | 宋 | 卒 1210 | public-domain | S3+S1b+S2 | 七言 | 高中 · 选择性必修中册 |

@@ -3,11 +3,11 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 200,
+    "total": 199,
     "modern": 39,
     "lessonEntries": 781,
-    "poems": 310,
-    "reciteGaps": 88,
+    "poems": 311,
+    "reciteGaps": 87,
     "primaryGaps": 337
   },
   "rows": [
@@ -1234,14 +1234,6 @@
       "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30214_langdu.html",
       "looksModern": false,
       "recite": false
-    },
-    {
-      "volume": "必修下册",
-      "lesson": "11.2",
-      "title": "与妻书",
-      "url": "https://yw.suyang123.com/gaozhong/bixiuxia/30216_langdu.html",
-      "looksModern": false,
-      "recite": true
     },
     {
       "volume": "必修下册",

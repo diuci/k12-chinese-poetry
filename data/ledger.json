@@ -1,19 +1,19 @@
 {
   "summary": {
-    "poemCount": 310,
+    "poemCount": 311,
     "syllabusCount": 207,
     "syllabusPrimary": 135,
     "syllabusSenior": 72,
     "categoryCounts": {
       "课标·义务教育": 135,
-      "教材拓展": 101,
+      "教材拓展": 102,
       "重复副本": 2,
       "课标·高中": 72
     },
     "stageCounts": {
       "初中": 121,
       "小学": 109,
-      "高中": 80
+      "高中": 81
     },
     "matchStrengths": {
       "3": 119,
@@ -61,21 +61,21 @@
     "gapCounts": {
       "缺背诵要求": 0,
       "只有必背名句（节选收录）": 0,
-      "仓内有全文正文": 310,
+      "仓内有全文正文": 311,
       "无异文记录": 167,
       "full 但名句没盖住全文（篇）": 6,
       "full 但名句没盖住全文（句）": 86,
-      "异文条目总数": 606,
-      "异文条目带出处": 590,
+      "异文条目总数": 609,
+      "异文条目带出处": 593,
       "异文条目带取舍": 340,
       "异文条目缺出处": 16,
-      "异文小节里的非异文条目": 16,
+      "异文小节里的非异文条目": 17,
       "异文条目写明「仓内没核到」": 16,
       "缺全文（课标首句找不到）": 0,
       "课标要求但仓内缺失": 0,
       "重复副本": 2,
       "来源不明": 0,
-      "统编教材收录": 282,
+      "统编教材收录": 283,
       "统编教材未收（课标要求）": 16,
       "统编教材收的是同名另一篇": 2,
       "统编教材收在别的课里": 8,
@@ -86,7 +86,7 @@
       "出处核对·逐句全对上": 232,
       "出处核对·部分对上": 76,
       "出处核对·一句都对不上": 0,
-      "出处核对·核过没有正文页": 2,
+      "出处核对·核过没有正文页": 3,
       "出处核对·没有核对记录": 0
     }
   },
@@ -16658,6 +16658,64 @@
         "无「必背名句」小节"
       ],
       "path": "poems/高中/必修下册/游园.md"
+    },
+    {
+      "id": "yuqishu",
+      "title": "与妻书",
+      "subtitle": null,
+      "author": "林觉民",
+      "dynasty": "清",
+      "authorDied": 1911,
+      "authorEraEnd": null,
+      "license": "public-domain",
+      "source": "S10",
+      "stage": "高中",
+      "grade": null,
+      "volume": "必修下册",
+      "textbookStatus": "统编教材收录",
+      "form": "文言",
+      "category": "教材拓展",
+      "syllabusGroup": "教材拓展",
+      "syllabusNo": null,
+      "syllabusTitle": "与妻书",
+      "matchStrength": null,
+      "recite": "section",
+      "lineCount": 8,
+      "charCount": 131,
+      "mingjuSents": 9,
+      "fullSents": 60,
+      "fullGapSents": 51,
+      "fullGapSample": [
+        "吾作此书泪珠和笔墨齐下不能竟书而欲搁笔又恐汝不察吾衷谓吾忍舍汝而死谓吾不知汝之不欲吾死也故遂忍悲为汝言之",
+        "吾自遇汝以来常愿天下有情人都成眷属",
+        "司马青衫吾不能学太上之忘情也",
+        "语云仁者老吾老以及人之老"
+      ],
+      "sections": [
+        "全文",
+        "异文",
+        "必背名句",
+        "收录范围",
+        "注释",
+        "玩法数据",
+        "译文",
+        "赏析"
+      ],
+      "hasNotes": true,
+      "hasTranslation": true,
+      "hasAppreciation": true,
+      "hasFamous": true,
+      "hasPlay": true,
+      "hasVariant": true,
+      "variantEntries": 3,
+      "variantNonEntries": 1,
+      "variantUnverified": 0,
+      "variantWithSource": 3,
+      "variantWithChoice": 0,
+      "hasFulltext": true,
+      "pairsCount": 4,
+      "flags": [],
+      "path": "poems/高中/必修下册/与妻书.md"
     },
     {
       "id": "zhihuwutuiqinshi",

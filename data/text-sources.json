@@ -5,7 +5,7 @@
     "attested": 232,
     "partial": 76,
     "notfound": 0,
-    "nosource": 2,
+    "nosource": 3,
     "withVariants": 88
   },
   "results": [
@@ -7322,6 +7322,29 @@
       ],
       "variantNotes": [],
       "variants": []
+    },
+    {
+      "id": "yuqishu",
+      "title": "与妻书",
+      "author": "林觉民",
+      "stage": "高中",
+      "page": null,
+      "url": null,
+      "lines": 58,
+      "hit": 58,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [],
+      "override": "这一篇没有可逐句核对的维基文库正文页：zh.wikisource.org 当场不可达（TLS 握手 20 余秒超时），所以「没有正文页」这一档说的是「没有维基文库那一路的页」，不是说这篇没有来源。本篇正文逐句核过的是统编课文页（镜像）https://yw.suyang123.com/gaozhong/bixiuxia/30216_langdu.html ——58 句逐句对上（见 data/textbook-attestations.json 里 yuqishu 那一行 hit 58/total 58，charDiffs 0、ghostDiffs 0、fullShortfall 0）。作者生卒年另核了三条当场可达的来源（光明日报《深圳晚报》、中新网、央广网，均作 1887—1911），见 data/authors.json 的 note。",
+      "no_page": true,
+      "searched": [
+        "统编课文页镜像 必修下册 30216（11.2* 与妻书）",
+        "光明日报《深圳晚报》2012-02-01 人物春秋（林觉民 1887—1911）",
+        "中新网 2011-04-10（林觉民 1887-1911、1911 年春回国留下《与妻书》）",
+        "央广网 2015-02-06（林觉民 1887年-1911年）",
+        "百度百科「林觉民」条当场 403 打不开，未取用",
+        "zh.wikisource.org 当场不可达（TLS 握手超时），未取到页"
+      ]
     },
     {
       "id": "yuzhusianshu",
