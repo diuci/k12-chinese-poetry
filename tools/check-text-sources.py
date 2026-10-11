@@ -81,6 +81,70 @@ def http_json(params):
     raise last
 
 
+# ---------------------------------------------------------------- 第二条来源路
+# 维基文库不是唯一一条公有领域全文的路：识典古籍（shidianguji.com）把四库全书本、四部丛刊本、
+# 明刻本、宋刊本做成可检索的全文页。为什么要有这一条：2026-10-11 维基文库整站 TLS 握手超时，
+# 五篇「该补」的教材篇目（氓、孔雀东南飞、鸿门宴、苏武传、与妻书）全卡住——硬补进去就会落成
+# 「核过没有正文页」，等于新开一个口子。口径不变：这一路也只认「这一篇自己的一个本子」，
+# 类书转述、后人引用照旧只作线索，不当正文来源。
+SDGJ_HOST = 'shidianguji'
+SDGJ_PREFIX = 'https://www.shidianguji.com/book/'
+SDGJ_PARA = re.compile(r'<p[^>]*>(.*?)</p>', re.S)
+
+
+def http_html(url):
+    """取一次 HTML。退避重试的口径与 http_json 一样：一次失败不许被写成「这篇没有来源」。"""
+    last = None
+    for attempt in range(4):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode('utf-8', 'replace')
+        except Exception as exc:
+            last = exc
+            time.sleep(5 * (attempt + 1))
+    raise last
+
+
+def shidianguji_paragraphs(html):
+    """只取 <p> 段落：那一页的白话译文、释义、注释不在 <p> 里。
+
+    为什么必须这样抽：白话译文混进「原文」，比对就会拿「那个人老实忠厚」去对「氓之蚩蚩」——
+    命中数好看，内容却是假的。四部丛刊本《诗经》「氓」那一页实测：452,717 字节里 <p> 正好 8 段，
+    第 1 段是诗序、第 2–7 段是六章正文、第 8 段是「氓六章，章十句」。
+    """
+    html = strip_page_furniture(html)
+    out = []
+    for m in SDGJ_PARA.finditer(html):
+        t = re.sub(r'<[^>]+>', '', m.group(1))
+        t = re.sub(r'&[a-z]+;', ' ', t)
+        t = re.sub(r'&#\d+;', ' ', t)
+        t = re.sub(r'\s+', '', t)
+        if t:
+            out.append(t)
+    return out
+
+
+def shidianguji_text(url, label):
+    """取一页识典古籍全文（缓存优先）。返回 (页名, 原文)。抽不出段落就当取页失败——不许静默变成「没有来源」。"""
+    hit = _cache_get(url, 'text')
+    if hit:
+        return hit.get('title', label), hit['text']
+    CACHE_HITS[1] += 1
+    txt = '\n'.join(shidianguji_paragraphs(http_html(url)))
+    if not txt.strip():
+        raise RuntimeError('那一页抽不出任何段落：%s' % url)
+    old = {}
+    try:
+        old = json.loads(_cache_file(url).read_text(encoding='utf-8'))
+    except Exception:
+        old = {}
+    old.update({'title': label, 'text': txt, 'host': SDGJ_HOST, 'url': url,
+                'fetched': time.strftime('%Y-%m-%d')})
+    _cache_put(url, old)
+    return label, txt
+
+
 def load_t2s():
     """繁体 → 简体 单字表。只用来比对，不用来改写仓内正文。"""
     if not T2S.exists():
@@ -286,7 +350,23 @@ def override_problems(overrides):
     problems = []
     for key in sorted(overrides):
         ov = overrides[key] or {}
-        if ov.get('no_page'):
+        host = ov.get('host')
+        if host:
+            # 钉外部全文页这一支同样要交代：钉的是哪一路、哪一页、是什么本子、为什么钉。
+            # 为什么：host 写错却静默退回维基文库，台账上那一行看着有来源，实际核的是另一回事。
+            if host != SDGJ_HOST:
+                problems.append('%s：host 只认「%s」，写的是「%s」——不许静默退回维基文库' % (key, SDGJ_HOST, host))
+            if not (ov.get('url') or '').startswith(SDGJ_PREFIX):
+                problems.append('%s：钉了「%s」却没给 %s 开头的全文页' % (key, host, SDGJ_PREFIX))
+            if not (ov.get('label') or '').strip():
+                problems.append('%s：钉了外部全文页却没写这一页是什么本子（label：哪个丛刊本／刻本）' % key)
+            if not (ov.get('note') or '').strip():
+                problems.append('%s：钉了外部全文页却没写为什么钉它' % key)
+            if ov.get('pages') or ov.get('no_page'):
+                problems.append('%s：既钉了外部全文页、又给了维基文库页名或「没有正文页」，二者只能留一个' % key)
+        elif ov.get('url'):
+            problems.append('%s：给了 url 却没写 host——钉的是哪一路来源必须说明白' % key)
+        elif ov.get('no_page'):
             if ov.get('pages'):
                 problems.append('%s：既说「没有正文页」又给了页名，二者只能留一个' % key)
             if not (ov.get('note') or '').strip():
@@ -815,6 +895,33 @@ def main():
         try:
             best = None
             ov = overrides.get(p['id'])
+            if ov and ov.get('host') == SDGJ_HOST:
+                # 钉在另一条来源路上：这一篇自己的一个本子（四部丛刊本／四库本／明刻本／宋刊本）。
+                real, raw = shidianguji_text(ov['url'], ov['label'])
+                txt, notes = clean(raw, table)
+                hit = sum(1 for ln in lines if ln and line_in(ln, txt))
+                rec['page'] = ov['label']
+                rec['host'] = SDGJ_HOST
+                rec['url'] = ov['url']
+                rec['hit'] = hit
+                rec['variantNotes'] = notes[:12]
+                rec['override'] = ov.get('note', '')
+                src_q = clean_quote(raw, table)
+                rec['miss'] = []
+                for ln in lines:
+                    if not ln or line_in(ln, txt):
+                        continue
+                    rec['miss'].append({'line': ln, 'nearest': nearest(ln, src_q)})
+                if hit == rec['lines']:
+                    stats['attested'] += 1
+                elif hit:
+                    stats['partial'] += 1
+                else:
+                    stats['notfound'] += 1
+                results.append(rec)
+                print('[%3d/%3d] ++ %s %s  %d/%d 句对上  来源页（%s）：%s'
+                      % (n, len(poems), title, author, hit, rec['lines'], SDGJ_HOST, ov['label']))
+                continue
             if ov and ov.get('no_page'):
                 # 仓内搜过、维基文库确实没有这首诗的正文页：如实记「没有来源页」。
                 # 不许为了台账好看，把一个不含这首诗的页名写进来源页那一栏。
@@ -1342,6 +1449,39 @@ def selftest():
     must(should_abort_run(7) is False, '坏例25a：才连着 7 篇就停了，一篇偶发超时也会打断整跑')
     must(should_abort_run(8) is True, '坏例25b：连着 8 篇失败没早停')
     must(should_abort_run(0) is False, '坏例25c：一篇都没失败却报「来源站问不到」')
+    # 坏例26：第二条来源路（识典古籍）只许抽 <p> 段落——白话译文混进「原文」，比对就是假的
+    _html26 = ('<div class="book"><p>氓之蚩蚩，抱布贸丝。匪来贸丝，来即我谋。</p>'
+               '<div class="trans">那个人老实忠厚，怀抱布匹来换丝。</div>'
+               '<p>淇则有岸，隰则有泮。</p></div>')
+    _joined26 = ''.join(shidianguji_paragraphs(_html26))
+    must('氓之蚩蚩' in _joined26 and '淇则有岸' in _joined26, '坏例26a：<p> 里的原文没抽出来')
+    must('老实忠厚' not in _joined26, '坏例26b：白话译文混进了原文——比对会拿译文去对正文')
+    # 坏例27：页里的题注（诗序、「氓六章，章十句」）多出来不算分歧；页里真没有的也不许被题注糊成对上
+    _page27 = '氓刺时也宣公之时礼义消亡' + _joined26.replace('，', '') + '氓六章章十句'
+    must(line_in('氓之蚩蚩抱布贸丝', _page27) is not None, '坏例27a：页里明明的句子被判成没对上')
+    must(line_in('昔我往矣杨柳依依', _page27) is None, '坏例27b：页里没有的句子被页里的题注糊成了对上了')
+    # 坏例28：钉外部全文页必须交代清楚——host 写错、没给 url、没写是什么本子、没写为什么钉、
+    # 既钉外部页又给维基页名、给了 url 却没写 host，六种都要当场报错
+    _bad28 = {
+        'a': {'host': 'wikisource', 'url': SDGJ_PREFIX + 'A', 'label': '甲', 'note': '甲'},
+        'b': {'host': SDGJ_HOST, 'url': 'https://example.com/book/B', 'label': '乙', 'note': '乙'},
+        'c': {'host': SDGJ_HOST, 'url': SDGJ_PREFIX + 'C', 'label': '', 'note': '丙'},
+        'd': {'host': SDGJ_HOST, 'url': SDGJ_PREFIX + 'D', 'label': '丁', 'note': ''},
+        'e': {'host': SDGJ_HOST, 'url': SDGJ_PREFIX + 'E', 'label': '戊', 'note': '戊', 'pages': ['某页']},
+        'f': {'url': SDGJ_PREFIX + 'F'},
+    }
+    _got28 = override_problems(_bad28)
+    for _k28 in 'abcdef':
+        must(any(_k28 in x for x in _got28),
+             '坏例28%s：这种钉法没被报错（%s）' % (_k28, json.dumps(_bad28[_k28], ensure_ascii=False)))
+    # 坏例29：合法的钉法不许报错——报错只该报真问题，不然没人愿意钉
+    must(override_problems({'g': {'host': SDGJ_HOST, 'url': SDGJ_PREFIX + 'G/chapter/1',
+                                   'label': '四部丛刊本《诗经》「氓」',
+                                   'note': '统编选择性必修下册课文；这台机器问不到维基文库，钉这一本宋元一系的丛刊本'}}) == [],
+         '坏例29：合法的钉法被报成问题')
+    # 坏例30：仓里现有的钉法一条都不许被误报（改了校验口径不能把 70 条既有的钉法全打成错）
+    _live29 = override_problems(load_overrides())
+    must(_live29 == [], '坏例30：仓里现有的钉法被误报：%s' % '；'.join(_live29[:3]))
     print('[ok] check-text-sources --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
     return 0
 

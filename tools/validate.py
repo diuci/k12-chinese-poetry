@@ -597,6 +597,41 @@ TITLE_ALIAS = {
 }
 
 
+# 正文来源必须能追到一个可核对的文本库：S3 chinese-poetry、S9 维基文库、
+# S12 识典古籍（四部丛刊本／四库本／明刻本／宋刊本的全文页，见 docs/sources.md）。
+# 先秦与文言长篇 S3 根本没有（《论语》《左传》不在那个库里），只认 S3 会把
+# 有出处的篇目一路报警；报警多了就等于没有报警。
+# 为什么 S12 要进来：2026-10-11 维基文库整站问不到，五篇统编课文（氓、孔雀东南飞、
+# 鸿门宴、苏武传、与妻书）只能靠另一条公有领域全文路才补得进来——不认这一路，
+# 就只能要么不补、要么补一篇没出处的，两个都是坑。
+TEXT_LIBRARY_CODES = ('S3', 'S9', 'S12')
+
+
+def source_code_gap(src):
+    """True = 这一篇的正文追不到可核对的文本库。"""
+    return not any(c in (src or '') for c in TEXT_LIBRARY_CODES)
+
+
+def selftest_source_codes():
+    """坏例子：这条闸门认得太宽等于没闸——只有教材镜像、只有商业站、瞎写的代号都必须报警。"""
+    problems = []
+    cases = [
+        ('四部丛刊本《诗经》那一页加教材课号该放行', 'S12+S10', False),
+        ('老写法不该被报成没出处', 'S3+S1+S2', False),
+        ('只有维基文库也算有出处', 'S9', False),
+        ('只有教材镜像（版权作品、不给全文）必须报警', 'S10', True),
+        ('商业站与教研整理必须报警', 'S5+S6', True),
+        ('不存在的代号不许蒙混', 'S13', True),
+        ('空 source 必须报警', '', True),
+        ('没有 source 必须报警', None, True),
+    ]
+    for label, src, want in cases:
+        if source_code_gap(src) != want:
+            problems.append('正文出处闸门：%s（实得：%s，source=%r）'
+                            % (label, '报警' if source_code_gap(src) else '放行', src))
+    return problems
+
+
 def canon_title(s):
     """归一后再套用别名表。"""
     n = normalize_title(s)
@@ -843,6 +878,7 @@ def selftest():
     problems.extend(selftest_match())
     problems.extend(selftest_filing_note())
     problems.extend(selftest_ghost_diff())
+    problems.extend(selftest_source_codes())
 
     if problems:
         print('[!!] validate --selftest 失败：', file=sys.stderr)
@@ -1691,12 +1727,9 @@ def main():
         src = p.get('source') or ''
         if not src or src == 'null':
             err('%s: 缺 source（台账字段，见 docs/sources.md）' % p['title'])
-        # 正文来源必须能追到一个可核对的文本库。S3 是 chinese-poetry，S9 是维基文库。
-        # 先秦与文言长篇 S3 根本没有（《论语》《左传》不在那个库里），只认 S3 会把
-        # 有出处的篇目一路报警；报警多了就等于没有报警。
-        elif 'S3' not in src and 'S9' not in src:
-            warn('%s: source 为 %r，既未引用 S3(chinese-poetry) 也未引用 S9(维基文库)，'
-                 '请确认正文出处' % (p['title'], src))
+        elif source_code_gap(src):
+            warn('%s: source 为 %r，追不到一个可核对的文本库（%s），请确认正文出处'
+                 % (p['title'], src, '/'.join(TEXT_LIBRARY_CODES)))
 
         # 册次 ⇄ 学段一致性
         vol = (p.get('volume') or '').strip()

@@ -2,17 +2,17 @@
  "note": "简体正文派生的繁体。decision：page 来源页这一处亲眼写作该字（优先于表与裁定表） / table 表只给一个候选 / rule 按裁定表 / variant 页写的是另一个字（异文，不改字） / pending 没依据，留在待定清单。",
  "counts": {
   "page": 12603,
-  "table": 1714,
-  "rule": 60,
+  "table": 1836,
+  "rule": 66,
   "keep": 0,
-  "identity": 1856,
+  "identity": 1866,
   "variant": 6,
   "pending": 0
  },
  "counts_apparatus": {
-  "table": 55965,
-  "rule": 2888,
-  "identity": 12115,
+  "table": 56526,
+  "rule": 2915,
+  "identity": 12202,
   "keep": 81,
   "pending": 0,
   "page": 11748,
@@ -321651,6 +321651,2465 @@
      "why": "keep（单字）：開"
     }
    ]
+  },
+  {
+   "id": "mang",
+   "title": "氓",
+   "page": "四部丛刊本《诗经》「氓」",
+   "text_trad": [
+    "氓之蚩蚩，抱布貿絲。",
+    "匪來貿絲，來即我謀。",
+    "送子涉淇，至於頓丘。",
+    "匪我愆期，子無良媒。",
+    "將子無怒，秋以爲期。",
+    "乘彼垝垣，以望復關。",
+    "不見復關，泣涕漣漣。",
+    "既見復關，載笑載言。",
+    "爾卜爾筮，體無咎言。",
+    "以爾車來，以我賄遷。",
+    "桑之未落，其葉沃若。",
+    "于嗟鳩兮，無食桑葚。",
+    "于嗟女兮，無與士耽。",
+    "士之耽兮，猶可說也。",
+    "女之耽兮，不可說也。",
+    "桑之落矣，其黃而隕。",
+    "自我徂爾，三歲食貧。",
+    "淇水湯湯，漸車帷裳。",
+    "女也不爽，士貳其行。",
+    "士也罔極，二三其德。",
+    "三歲爲婦，靡室勞矣。",
+    "夙興夜寐，靡有朝矣。",
+    "言既遂矣，至於暴矣。",
+    "兄弟不知，咥其笑矣。",
+    "靜言思之，躬自悼矣。",
+    "及爾偕老，老使我怨。",
+    "淇則有岸，隰則有泮。",
+    "總角之宴，言笑晏晏。",
+    "信誓旦旦，不思其反。",
+    "反是不思，亦已焉哉。"
+   ],
+   "lines_trad": [
+    "氓之蚩蚩，抱布貿絲。",
+    "匪來貿絲，來即我謀。",
+    "送子涉淇，至於頓丘。",
+    "匪我愆期，子無良媒。",
+    "將子無怒，秋以爲期。",
+    "乘彼垝垣，以望復關。",
+    "不見復關，泣涕漣漣。",
+    "既見復關，載笑載言。",
+    "爾卜爾筮，體無咎言。",
+    "以爾車來，以我賄遷。",
+    "桑之未落，其葉沃若。",
+    "于嗟鳩兮，無食桑葚。",
+    "于嗟女兮，無與士耽。",
+    "士之耽兮，猶可說也。",
+    "女之耽兮，不可說也。",
+    "桑之落矣，其黃而隕。",
+    "自我徂爾，三歲食貧。",
+    "淇水湯湯，漸車帷裳。",
+    "女也不爽，士貳其行。",
+    "士也罔極，二三其德。",
+    "三歲爲婦，靡室勞矣。",
+    "夙興夜寐，靡有朝矣。",
+    "言既遂矣，至於暴矣。",
+    "兄弟不知，咥其笑矣。",
+    "靜言思之，躬自悼矣。",
+    "及爾偕老，老使我怨。",
+    "淇則有岸，隰則有泮。",
+    "總角之宴，言笑晏晏。",
+    "信誓旦旦，不思其反。",
+    "反是不思，亦已焉哉。"
+   ],
+   "sections_trad": {
+    "必背全文": [
+     "氓之蚩蚩，抱布貿絲。",
+     "匪來貿絲，來即我謀。",
+     "送子涉淇，至於頓丘。",
+     "匪我愆期，子無良媒。",
+     "將子無怒，秋以爲期。",
+     "乘彼垝垣，以望復關。",
+     "不見復關，泣涕漣漣。",
+     "既見復關，載笑載言。",
+     "爾卜爾筮，體無咎言。",
+     "以爾車來，以我賄遷。",
+     "桑之未落，其葉沃若。",
+     "于嗟鳩兮，無食桑葚。",
+     "于嗟女兮，無與士耽。",
+     "士之耽兮，猶可說也。",
+     "女之耽兮，不可說也。",
+     "桑之落矣，其黃而隕。",
+     "自我徂爾，三歲食貧。",
+     "淇水湯湯，漸車帷裳。",
+     "女也不爽，士貳其行。",
+     "士也罔極，二三其德。",
+     "三歲爲婦，靡室勞矣。",
+     "夙興夜寐，靡有朝矣。",
+     "言既遂矣，至於暴矣。",
+     "兄弟不知，咥其笑矣。",
+     "靜言思之，躬自悼矣。",
+     "及爾偕老，老使我怨。",
+     "淇則有岸，隰則有泮。",
+     "總角之宴，言笑晏晏。",
+     "信誓旦旦，不思其反。",
+     "反是不思，亦已焉哉。"
+    ],
+    "收录范围": [
+     "統編教材《語文》選擇性必修下冊**第 1.1 課**《氓》（《詩經·衛風》）。",
+     "- 冊次與課號來自統編課文頁鏡像 https://yw.suyang123.com/gaozhong/xuanxiuxia/30501_langdu.html 。這一課在人教社官方《高中語文學習任務導引》那份表里**沒被印證**（`data/textbook-lessons.json` 里這一條 `confirmed: false`），所以課號目前只算鏡像一條來源。",
+     "- 課標 72 篇（[docs/syllabus-2017.md](syllabus-2017.md)）里**沒有**《氓》——它在這一倉里是「教材拓展」，高考默寫範圍不按它算（frontmatter 的 `syllabus` 兩個都寫 false）。",
+     "- 背誦要求記 `full` 是**倉的判斷**：這一課是講讀課、全篇六章 60 句；教材目錄頁沒給背誦標記（`data/textbook-gaps.json` 里這一條 `recite: false`）。這一條不是教材給的，寫在這里免得以後有人當成教材要求。",
+     "- 正文來源用四部叢刊本《詩經》「氓」那一頁。那一頁首段是〈毛詩序〉「氓，刺時也。宣公之時，禮義消亡，淫風大行……」，末段是「氓六章，章十句」——那是經序與篇制題注，不是正文，不收進正文。"
+    ],
+    "注释": [
+     "- 選自《詩經·衛風》。衛風是《國風》的一部分。這一篇是《詩經》里最有名的棄婦詩。",
+     "- 氓（méng）：民，這里指那個男子。蚩蚩（chī chī）：笑嘻嘻的樣子，一說憨厚老實的樣子。",
+     "- 抱布貿絲：以物易物。貿，交易。匪：非，不是。",
+     "- 即：走近、靠近。謀：商量（婚事）。頓丘：地名。",
+     "- 愆（qiān）期：延誤約定的日期。將（qiāng）：願、請。子無怒：你不要生氣。",
+     "- 垝（guǐ）垣：倒塌的牆。復關：地名，那男子所在之處。泣涕：眼淚。漣漣：淚流不斷的樣子。",
+     "- 爾卜爾筮（shì）：你用龜甲占卜、用蓍草占筮。體：卜筮顯示的兆象。咎言：不吉利的話。",
+     "- 以我賄遷：把我的嫁妝搬過去。賄，財物，這里指嫁妝。",
+     "- 沃若：潤澤的樣子。于嗟（xū jiē）：嘆詞，相當於「唉」。於，讀 xū，通「籲」。",
+     "- 葚（shèn）：桑葚。傳說斑鳩喫多了桑葚會昏醉，這里用來起興。耽：沉溺。說（tuō）：脫身、擺脫。",
+     "- 徂（cú）：往，這里指嫁到你家。三歲：多年。食貧：過着貧苦的日子。",
+     "- 湯湯（shāng shāng）：水勢盛大的樣子。漸（jiān）：浸溼。帷裳：車上的帷幔。",
+     "- 爽：差錯。貳其行：行爲前後不一致。罔極：沒有定準。二三其德：心意一變再變。",
+     "- 靡室勞矣：家里的活兒沒有不幹的。靡，無、沒有。夙興夜寐：早起晚睡。靡有朝矣：沒有一天不是這樣。",
+     "- 言既遂矣：你的心願已經達成。至於暴矣：就對我兇暴起來。咥（xì）：譏笑的樣子。躬自悼矣：獨自傷心。",
+     "- 隰（xí）：低溼的地方。泮：邊、岸。總角：少年時把頭髮梳成兩個髻。宴：歡樂。晏晏：和柔、含笑的樣子。",
+     "- 信誓旦旦：誓言說得誠懇確實。不思其反：沒想到你會違背誓言。亦已焉哉：也就算了吧。已，止、完。"
+    ],
+    "译文": [
+     "那男子笑嘻嘻地抱着布來換絲。其實不是真要換絲，是來找我商量婚事。我送他渡過淇水，一直送到頓丘。不是我要拖延婚期，是他沒有好媒人。請你不要生氣，就把秋天定作婚期。",
+     "登上那堵倒塌的牆，向復關那邊張望。看不到復關，眼淚止不住地流。已經看到復關，又是笑又是說話。你占卜又占筮，兆象上沒有不吉利的話。你用車來迎我，我把嫁妝搬到你家。",
+     "桑樹還沒落葉的時候，葉子潤澤光亮。唉那些斑鳩啊，別貪喫桑葚；唉那些姑娘啊，別和男子沉溺在情愛里。男子沉溺在情愛里，還可以脫身；女子沉溺在情愛里，就脫不開身。",
+     "桑樹落葉了，葉子枯黃紛紛掉下來。自從我嫁到你家，多年過着貧苦的日子。淇水浩浩蕩蕩，打溼了車上的帷幔。我沒有什麼差錯，你的行爲卻前後不一。你的心沒有定準，一變再變。",
+     "婚後多年做你的妻子，家里的活兒沒有不幹的。早起晚睡，沒有一天不是這樣。你的心願已經達成，就對我兇暴起來。兄弟不了解我的處境，見了我都譏笑我。靜下心來想一想，只能獨自傷心。",
+     "當初說要和你一同到老，如今「到老」這兩個字只讓我怨恨。淇水再寬也有岸，溼地再大也有邊。少年時那些歡樂，談笑之間都是和柔的樣子。誓言說得那麼誠懇確實，沒想到你會違背。背盟的事不再想了——也就算了吧。"
+    ],
+    "赏析": [
+     "這是一首被棄女子的自述。全詩六章，從頭到尾是她一個人在說，沒有旁白，也沒有替她說話的人。",
+     "前兩句就把那個男子的樣子寫出來了：「氓之蚩蚩，抱布貿絲」。他抱着布、裝着換絲的樣子來談婚事——「匪來貿絲，來即我謀」六個字把這份小算盤點破，語氣里帶着一點當初覺得好笑的意味。",
+     "第三、四章是全詩的轉折。「桑之未落，其葉沃若」寫的是剛成婚時的好光景，「桑之落矣，其黃而隕」一句就把日子換掉了。中間夾着「于嗟鳩兮，無食桑葚」這個比喻：斑鳩貪喫桑葚會昏醉，女子貪戀情愛就脫不開身。這是《詩經》里最結實的一段比興——它不是裝飾，是把整件事的因果說清楚。",
+     "「女也不爽，士貳其行。士也罔極，二三其德」——她把自己的過錯攤開檢查：我沒有差錯。錯在對方「貳」「二三」。這一句的分量在於，她沒有把被棄寫成命不好，而是寫成對方的背棄。",
+     "末章最見性格。「淇則有岸，隰則有泮」——水再寬也有邊，我的忍耐也有盡頭。「反是不思，亦已焉哉」六個字收束：背盟的事不再想了，就這樣結束。沒有哀求，也沒有詛咒，是一個決絕的收尾。"
+    ],
+    "异文": [
+     "- 本篇六章與統編課文頁（帶拼音朗讀，https://yw.suyang123.com/gaozhong/xuanxiuxia/30501_langdu.html ）逐字一致；與四部叢刊本《詩經》那一頁也沒有字形分歧。出處：四部叢刊本《詩經》 https://www.shidianguji.com/book/SBCK003/chapter/1ktx5p16tzm7d",
+     "- 「于嗟鳩兮」「于嗟女兮」的「於」讀 xū、通「籲」——這是讀音與訓詁，不是版本異文，不進正文。出處：四部叢刊本《詩經》同一頁作「于嗟鳩兮」。",
+     "- 「隰則有泮」的「泮」舊說通「畔」（邊、岸）——同樣是訓詁，不是這一篇的版本異文，不進正文。出處：四部叢刊本《詩經》同一頁作「隰則有泮」。",
+     "- 那一頁正文之前另有〈毛詩序〉「氓，刺時也。宣公之時，禮義消亡，淫風大行……」，正文之後另有「氓六章，章十句」。那是經序與篇制題注，不是這篇的文字，倉里不收進正文，也不登記爲異文。出處：四部叢刊本《詩經》同一頁。"
+    ]
+   },
+   "labels_trad": {
+    "title": "氓",
+    "author": "佚名",
+    "dynasty": "先秦",
+    "stage": "高中",
+    "volume": "選擇性必修下冊",
+    "form": "詩經",
+    "recite": "full",
+    "textbookStatus": "統編教材收錄",
+    "theme": [
+     "愛情",
+     "婚姻"
+    ],
+    "technique": [
+     "賦",
+     "比興",
+     "重章疊句"
+    ],
+    "tags": [
+     "愛情",
+     "婚姻",
+     "先秦詩經"
+    ]
+   },
+   "marks": [
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "布",
+     "cands": [
+      "布",
+      "佈"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "氓之蚩蚩，抱布贸丝。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "贸",
+     "cands": [
+      "貿"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "氓之蚩蚩，抱布贸丝。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "丝",
+     "cands": [
+      "絲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "氓之蚩蚩，抱布贸丝。",
+     "field": "full",
+     "line": 0
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "贸",
+     "cands": [
+      "貿"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "丝",
+     "cands": [
+      "絲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "谋",
+     "cands": [
+      "謀"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "full",
+     "line": 1
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "送子涉淇，至于顿丘。",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "顿",
+     "cands": [
+      "頓"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "送子涉淇，至于顿丘。",
+     "field": "full",
+     "line": 2
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪我愆期，子无良媒。",
+     "field": "full",
+     "line": 3
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "将子无怒，秋以为期",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "将子无怒，秋以为期。",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "秋",
+     "cands": [
+      "秋",
+      "鞦"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "将子无怒，秋以为期。",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "将子无怒，秋以为期。",
+     "field": "full",
+     "line": 4
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "乘彼垝垣，以望复关。",
+     "field": "full",
+     "line": 5,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "关",
+     "cands": [
+      "關"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "乘彼垝垣，以望复关。",
+     "field": "full",
+     "line": 5
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "full",
+     "line": 6
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "full",
+     "line": 6,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "关",
+     "cands": [
+      "關"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "full",
+     "line": 6
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "涟",
+     "cands": [
+      "漣"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "full",
+     "line": 6
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "涟",
+     "cands": [
+      "漣"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "full",
+     "line": 6
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "full",
+     "line": 7
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "full",
+     "line": 7,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "关",
+     "cands": [
+      "關"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "full",
+     "line": 7
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "载",
+     "cands": [
+      "載"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "full",
+     "line": 7
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "载",
+     "cands": [
+      "載"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "full",
+     "line": 7
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言",
+     "field": "full",
+     "line": 8
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "卜",
+     "cands": [
+      "卜",
+      "蔔"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言。",
+     "field": "full",
+     "line": 8
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言。",
+     "field": "full",
+     "line": 8
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "体",
+     "cands": [
+      "體"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言。",
+     "field": "full",
+     "line": 8
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言。",
+     "field": "full",
+     "line": 8
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "full",
+     "line": 9
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "full",
+     "line": 9
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "full",
+     "line": 9
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "贿",
+     "cands": [
+      "賄"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "full",
+     "line": 9
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "迁",
+     "cands": [
+      "遷"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "full",
+     "line": 9
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "叶",
+     "cands": [
+      "葉",
+      "叶"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "桑之未落，其叶沃若。",
+     "field": "full",
+     "line": 10
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "于嗟",
+     "cands": [
+      "于嗟"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于嗟鸠兮，无食桑葚。",
+     "field": "full",
+     "line": 11
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "鸠",
+     "cands": [
+      "鳩"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "于嗟鸠兮，无食桑葚。",
+     "field": "full",
+     "line": 11
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "于嗟鸠兮，无食桑葚。",
+     "field": "full",
+     "line": 11
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "于嗟",
+     "cands": [
+      "于嗟"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于嗟女兮，无与士耽。",
+     "field": "full",
+     "line": 12
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "于嗟女兮，无与士耽。",
+     "field": "full",
+     "line": 12
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "于嗟女兮，无与士耽。",
+     "field": "full",
+     "line": 12
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "犹",
+     "cands": [
+      "猶"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "士之耽兮，犹可说也。",
+     "field": "full",
+     "line": 13
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "说",
+     "cands": [
+      "說"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "士之耽兮，犹可说也。",
+     "field": "full",
+     "line": 13
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "说",
+     "cands": [
+      "說"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "女之耽兮，不可说也。",
+     "field": "full",
+     "line": 14
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "黄",
+     "cands": [
+      "黃"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "桑之落矣，其黄而陨。",
+     "field": "full",
+     "line": 15
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "陨",
+     "cands": [
+      "隕"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "桑之落矣，其黄而陨。",
+     "field": "full",
+     "line": 15
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "自我徂尔，三岁食贫。",
+     "field": "full",
+     "line": 16
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "岁",
+     "cands": [
+      "歲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "自我徂尔，三岁食贫。",
+     "field": "full",
+     "line": 16
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "贫",
+     "cands": [
+      "貧"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "自我徂尔，三岁食贫。",
+     "field": "full",
+     "line": 16
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "汤",
+     "cands": [
+      "湯"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇水汤汤，渐车帷裳。",
+     "field": "full",
+     "line": 17
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "汤",
+     "cands": [
+      "湯"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇水汤汤，渐车帷裳。",
+     "field": "full",
+     "line": 17
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "渐",
+     "cands": [
+      "漸"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇水汤汤，渐车帷裳。",
+     "field": "full",
+     "line": 17
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇水汤汤，渐车帷裳。",
+     "field": "full",
+     "line": 17
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "贰",
+     "cands": [
+      "貳"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "女也不爽，士贰其行。",
+     "field": "full",
+     "line": 18
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "极",
+     "cands": [
+      "極",
+      "极"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "士也罔极，二三其德。",
+     "field": "full",
+     "line": 19
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "岁",
+     "cands": [
+      "歲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "三岁为妇，靡室劳矣。",
+     "field": "full",
+     "line": 20
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "三岁为妇，靡室劳矣。",
+     "field": "full",
+     "line": 20
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "妇",
+     "cands": [
+      "婦"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "三岁为妇，靡室劳矣。",
+     "field": "full",
+     "line": 20
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "劳",
+     "cands": [
+      "勞"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "三岁为妇，靡室劳矣。",
+     "field": "full",
+     "line": 20
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "兴",
+     "cands": [
+      "興"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "夙兴夜寐，靡有朝矣。",
+     "field": "full",
+     "line": 21
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "言既遂矣，至于暴矣。",
+     "field": "full",
+     "line": 22
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "静",
+     "cands": [
+      "靜"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "静言思之，躬自悼矣",
+     "field": "full",
+     "line": 24
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "及尔偕老，老使我怨。",
+     "field": "full",
+     "line": 25
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇则有岸，隰则有泮。",
+     "field": "full",
+     "line": 26
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇则有岸，隰则有泮。",
+     "field": "full",
+     "line": 26
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "总",
+     "cands": [
+      "總"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "总角之宴，言笑晏晏",
+     "field": "full",
+     "line": 27
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "布",
+     "cands": [
+      "布",
+      "佈"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "氓之蚩蚩，抱布贸丝。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "贸",
+     "cands": [
+      "貿"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "氓之蚩蚩，抱布贸丝。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "丝",
+     "cands": [
+      "絲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "氓之蚩蚩，抱布贸丝。",
+     "field": "lines",
+     "line": 0
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "贸",
+     "cands": [
+      "貿"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "丝",
+     "cands": [
+      "絲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "谋",
+     "cands": [
+      "謀"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪来贸丝，来即我谋。",
+     "field": "lines",
+     "line": 1
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "送子涉淇，至于顿丘。",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "顿",
+     "cands": [
+      "頓"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "送子涉淇，至于顿丘。",
+     "field": "lines",
+     "line": 2
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "匪我愆期，子无良媒。",
+     "field": "lines",
+     "line": 3
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "将",
+     "cands": [
+      "將"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "将子无怒，秋以为期",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "将子无怒，秋以为期。",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "秋",
+     "cands": [
+      "秋",
+      "鞦"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "将子无怒，秋以为期。",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "将子无怒，秋以为期。",
+     "field": "lines",
+     "line": 4
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "乘彼垝垣，以望复关。",
+     "field": "lines",
+     "line": 5,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "关",
+     "cands": [
+      "關"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "乘彼垝垣，以望复关。",
+     "field": "lines",
+     "line": 5
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "lines",
+     "line": 6
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "lines",
+     "line": 6,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "关",
+     "cands": [
+      "關"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "lines",
+     "line": 6
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "涟",
+     "cands": [
+      "漣"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "lines",
+     "line": 6
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "涟",
+     "cands": [
+      "漣"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "lines",
+     "line": 6
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "见",
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "lines",
+     "line": 7
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "lines",
+     "line": 7,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "关",
+     "cands": [
+      "關"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "lines",
+     "line": 7
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "载",
+     "cands": [
+      "載"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "lines",
+     "line": 7
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "载",
+     "cands": [
+      "載"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "lines",
+     "line": 7
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言",
+     "field": "lines",
+     "line": 8
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "卜",
+     "cands": [
+      "卜",
+      "蔔"
+     ],
+     "decision": "identity",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言。",
+     "field": "lines",
+     "line": 8
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言。",
+     "field": "lines",
+     "line": 8
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "体",
+     "cands": [
+      "體"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言。",
+     "field": "lines",
+     "line": 8
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "尔卜尔筮，体无咎言。",
+     "field": "lines",
+     "line": 8
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "lines",
+     "line": 9
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "lines",
+     "line": 9
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "来",
+     "cands": [
+      "來"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "lines",
+     "line": 9
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "贿",
+     "cands": [
+      "賄"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "lines",
+     "line": 9
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "迁",
+     "cands": [
+      "遷"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "以尔车来，以我贿迁。",
+     "field": "lines",
+     "line": 9
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "叶",
+     "cands": [
+      "葉",
+      "叶"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "桑之未落，其叶沃若。",
+     "field": "lines",
+     "line": 10
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "于嗟",
+     "cands": [
+      "于嗟"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于嗟鸠兮，无食桑葚。",
+     "field": "lines",
+     "line": 11
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "鸠",
+     "cands": [
+      "鳩"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "于嗟鸠兮，无食桑葚。",
+     "field": "lines",
+     "line": 11
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "于嗟鸠兮，无食桑葚。",
+     "field": "lines",
+     "line": 11
+    },
+    {
+     "at": 0,
+     "n": 2,
+     "simp": "于嗟",
+     "cands": [
+      "于嗟"
+     ],
+     "decision": "identity",
+     "kind": "phrase",
+     "ctx": "于嗟女兮，无与士耽。",
+     "field": "lines",
+     "line": 12
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "无",
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "于嗟女兮，无与士耽。",
+     "field": "lines",
+     "line": 12
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "与",
+     "cands": [
+      "與"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "于嗟女兮，无与士耽。",
+     "field": "lines",
+     "line": 12
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "犹",
+     "cands": [
+      "猶"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "士之耽兮，犹可说也。",
+     "field": "lines",
+     "line": 13
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "说",
+     "cands": [
+      "說"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "士之耽兮，犹可说也。",
+     "field": "lines",
+     "line": 13
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "说",
+     "cands": [
+      "說"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "女之耽兮，不可说也。",
+     "field": "lines",
+     "line": 14
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "黄",
+     "cands": [
+      "黃"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "桑之落矣，其黄而陨。",
+     "field": "lines",
+     "line": 15
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "陨",
+     "cands": [
+      "隕"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "桑之落矣，其黄而陨。",
+     "field": "lines",
+     "line": 15
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "自我徂尔，三岁食贫。",
+     "field": "lines",
+     "line": 16
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "岁",
+     "cands": [
+      "歲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "自我徂尔，三岁食贫。",
+     "field": "lines",
+     "line": 16
+    },
+    {
+     "at": 8,
+     "n": 1,
+     "simp": "贫",
+     "cands": [
+      "貧"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "自我徂尔，三岁食贫。",
+     "field": "lines",
+     "line": 16
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "汤",
+     "cands": [
+      "湯"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇水汤汤，渐车帷裳。",
+     "field": "lines",
+     "line": 17
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "汤",
+     "cands": [
+      "湯"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇水汤汤，渐车帷裳。",
+     "field": "lines",
+     "line": 17
+    },
+    {
+     "at": 5,
+     "n": 1,
+     "simp": "渐",
+     "cands": [
+      "漸"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇水汤汤，渐车帷裳。",
+     "field": "lines",
+     "line": 17
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "车",
+     "cands": [
+      "車"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇水汤汤，渐车帷裳。",
+     "field": "lines",
+     "line": 17
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "贰",
+     "cands": [
+      "貳"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "女也不爽，士贰其行。",
+     "field": "lines",
+     "line": 18
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "极",
+     "cands": [
+      "極",
+      "极"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "士也罔极，二三其德。",
+     "field": "lines",
+     "line": 19
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "岁",
+     "cands": [
+      "歲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "三岁为妇，靡室劳矣。",
+     "field": "lines",
+     "line": 20
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "为",
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "三岁为妇，靡室劳矣。",
+     "field": "lines",
+     "line": 20
+    },
+    {
+     "at": 3,
+     "n": 1,
+     "simp": "妇",
+     "cands": [
+      "婦"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "三岁为妇，靡室劳矣。",
+     "field": "lines",
+     "line": 20
+    },
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "劳",
+     "cands": [
+      "勞"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "三岁为妇，靡室劳矣。",
+     "field": "lines",
+     "line": 20
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "兴",
+     "cands": [
+      "興"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "夙兴夜寐，靡有朝矣。",
+     "field": "lines",
+     "line": 21
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "于",
+     "cands": [
+      "於",
+      "于"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "言既遂矣，至于暴矣。",
+     "field": "lines",
+     "line": 22
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "静",
+     "cands": [
+      "靜"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "静言思之，躬自悼矣",
+     "field": "lines",
+     "line": 24
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "尔",
+     "cands": [
+      "爾"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "及尔偕老，老使我怨。",
+     "field": "lines",
+     "line": 25
+    },
+    {
+     "at": 1,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇则有岸，隰则有泮。",
+     "field": "lines",
+     "line": 26
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "则",
+     "cands": [
+      "則"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "淇则有岸，隰则有泮。",
+     "field": "lines",
+     "line": 26
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "总",
+     "cands": [
+      "總"
+     ],
+     "decision": "table",
+     "kind": "char",
+     "ctx": "总角之宴，言笑晏晏",
+     "field": "lines",
+     "line": 27
+    }
+   ],
+   "page_marks": [],
+   "marks_app": [
+    {
+     "at": 7,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "乘彼垝垣，以望复关。",
+     "field": "sec:必背全文",
+     "line": 5,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "不见复关，泣涕涟涟。",
+     "field": "sec:必背全文",
+     "line": 6,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 2,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "既见复关，载笑载言。",
+     "field": "sec:必背全文",
+     "line": 7,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 111,
+     "n": 1,
+     "simp": "证",
+     "cands": [
+      "證",
+      "証"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "份表里**没被印证**（`data",
+     "field": "sec:收录范围",
+     "line": 1,
+     "pick": "證",
+     "why": "证据、考证、例证、旁证作「證」；「証」是异体"
+    },
+    {
+     "at": 46,
+     "n": 1,
+     "simp": "录",
+     "cands": [
+      "錄",
+      "彔"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "60 句；教材目录页没给背诵标记（",
+     "field": "sec:收录范围",
+     "line": 3,
+     "pick": "錄",
+     "why": "记录义作「錄」；「彔」是异体"
+    },
+    {
+     "at": 123,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "这里免得以后有人当成教材要求。",
+     "field": "sec:收录范围",
+     "line": 3,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 16,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "）：民，这里指那个男子。蚩蚩（ch",
+     "field": "sec:注释",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 15,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "）垣：倒塌的墙。复关：地名，那男子",
+     "field": "sec:注释",
+     "line": 5,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 22,
+     "n": 1,
+     "simp": "叹",
+     "cands": [
+      "嘆",
+      "歎"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "xū jiē）：叹词，相当于「唉」",
+     "field": "sec:注释",
+     "line": 8,
+     "pick": "嘆",
+     "why": "叹息、叹曰义作「嘆」；「歎」是异体",
+     "evidence": "来源页 4 处作「嘆」"
+    },
+    {
+     "at": 26,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "iē）：叹词，相当于「唉」。于，读",
+     "field": "sec:注释",
+     "line": 8,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 48,
+     "n": 1,
+     "simp": "摆",
+     "cands": [
+      "擺",
+      "襬"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "tuō）：脱身、摆脱。",
+     "field": "sec:注释",
+     "line": 9,
+     "pick": "擺",
+     "why": "摆动、摆明、摆在一起作「擺」；「襬」是衣摆"
+    },
+    {
+     "at": 14,
+     "n": 2,
+     "simp": "不干",
+     "cands": [
+      "不幹",
+      "不乾"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "：家里的活儿没有不干的。靡，无、没有",
+     "field": "sec:注释",
+     "line": 13,
+     "pick": "不幹",
+     "why": "按表首选项落档；此处「干」取关涉义，表给的两个候选都不完全贴切，存疑并在页面上注明",
+     "doubt": true
+    },
+    {
+     "at": 10,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "那堵倒塌的墙，向复关那边张望。看不",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 20,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "那边张望。看不到复关，眼泪止不住地",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 35,
+     "n": 1,
+     "simp": "复",
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "住地流。已经看到复关，又是笑又是说",
+     "field": "sec:译文",
+     "line": 1,
+     "pick": "復",
+     "why": "返回、再、恢复义作「復」"
+    },
+    {
+     "at": 24,
+     "n": 1,
+     "simp": "别",
+     "cands": [
+      "別",
+      "彆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "。唉那些斑鸠啊，别贪吃桑葚；唉那些",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "別",
+     "why": "分别、离别义作「別」；「彆」只用于「别扭」"
+    },
+    {
+     "at": 37,
+     "n": 1,
+     "simp": "别",
+     "cands": [
+      "別",
+      "彆"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "；唉那些姑娘啊，别和男子沉溺在情爱",
+     "field": "sec:译文",
+     "line": 2,
+     "pick": "別",
+     "why": "分别、离别义作「別」；「彆」只用于「别扭」"
+    },
+    {
+     "at": 38,
+     "n": 1,
+     "simp": "荡",
+     "cands": [
+      "蕩",
+      "盪"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "的日子。淇水浩浩荡荡，打湿了车上的",
+     "field": "sec:译文",
+     "line": 3,
+     "pick": "蕩",
+     "why": "放荡、荡涤义作「蕩」；「盪」是异体"
+    },
+    {
+     "at": 39,
+     "n": 1,
+     "simp": "荡",
+     "cands": [
+      "蕩",
+      "盪"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "日子。淇水浩浩荡荡，打湿了车上的帷",
+     "field": "sec:译文",
+     "line": 3,
+     "pick": "蕩",
+     "why": "放荡、荡涤义作「蕩」；「盪」是异体"
+    },
+    {
+     "at": 17,
+     "n": 2,
+     "simp": "不干",
+     "cands": [
+      "不幹",
+      "不乾"
+     ],
+     "decision": "rule",
+     "kind": "phrase",
+     "ctx": "，家里的活儿没有不干的。早起晚睡，没",
+     "field": "sec:译文",
+     "line": 4,
+     "pick": "不幹",
+     "why": "按表首选项落档；此处「干」取关涉义，表给的两个候选都不完全贴切，存疑并在页面上注明",
+     "doubt": true
+    },
+    {
+     "at": 0,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "当初说要和你一同到",
+     "field": "sec:译文",
+     "line": 5,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 6,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "前两句就把那个男子的样子写出来",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 77,
+     "n": 1,
+     "simp": "当",
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "，语气里带着一点当初觉得好笑的意味",
+     "field": "sec:赏析",
+     "line": 1,
+     "pick": "當",
+     "why": "对着、正值、应当义作「當」；「噹」是象声词",
+     "evidence": "来源页 12 处作「當」"
+    },
+    {
+     "at": 58,
+     "n": 1,
+     "simp": "夹",
+     "cands": [
+      "夾",
+      "袷"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "日子换掉了。中间夹着「于嗟鸠兮，无",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "夾",
+     "why": "夹岸、夹道义作「夾」；「袷」是夹衣（双层衣）"
+    },
+    {
+     "at": 72,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "兮，无食桑葚」这个比喻：斑鸠贪吃桑",
+     "field": "sec:赏析",
+     "line": 2,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    },
+    {
+     "at": 33,
+     "n": 1,
+     "simp": "尽",
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "边，我的忍耐也有尽头。「反是不思，",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "盡",
+     "why": "穷尽、全部义作「盡」；「儘」是听任、任凭义，仓内没有这种用法",
+     "evidence": "来源页 14 处作「盡」"
+    },
+    {
+     "at": 81,
+     "n": 1,
+     "simp": "个",
+     "cands": [
+      "個",
+      "箇"
+     ],
+     "decision": "rule",
+     "kind": "char",
+     "ctx": "也没有诅咒，是一个决绝的收尾。",
+     "field": "sec:赏析",
+     "line": 4,
+     "pick": "個",
+     "why": "注释译文里的「一个」是量词，现代繁体作「個」；「箇」是古体"
+    }
+   ],
+   "left_behind": []
   },
   {
    "id": "yongyule",

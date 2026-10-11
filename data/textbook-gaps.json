@@ -3,10 +3,10 @@
   "generated": "2026-10-11",
   "counts": {
     "generated": "2026-10-11",
-    "total": 202,
+    "total": 201,
     "modern": 39,
     "lessonEntries": 781,
-    "poems": 308,
+    "poems": 309,
     "reciteGaps": 89,
     "primaryGaps": 337
   },
@@ -1530,14 +1530,6 @@
       "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30422_langdu.html",
       "looksModern": false,
       "recite": true
-    },
-    {
-      "volume": "选择性必修下册",
-      "lesson": "1.1",
-      "title": "氓",
-      "url": "https://yw.suyang123.com/gaozhong/xuanxiuxia/30501_langdu.html",
-      "looksModern": false,
-      "recite": false
     },
     {
       "volume": "选择性必修下册",

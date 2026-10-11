@@ -2,7 +2,7 @@
   "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
   "generated": "2026-10-11",
   "stats": {
-    "attested": 231,
+    "attested": 232,
     "partial": 76,
     "notfound": 0,
     "nosource": 1,
@@ -8125,6 +8125,21 @@
       ],
       "variantNotes": [],
       "variants": []
+    },
+    {
+      "id": "mang",
+      "title": "氓",
+      "author": "佚名",
+      "stage": "高中",
+      "page": "四部丛刊本《诗经》「氓」",
+      "url": "https://www.shidianguji.com/book/SBCK003/chapter/1ktx5p16tzm7d",
+      "lines": 30,
+      "hit": 30,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [],
+      "host": "shidianguji",
+      "override": "统编选择性必修下册第 1.1 课课文。钉在另一条来源路上：这台机器问不到维基文库（TLS 握手超时），而这一篇必须逐句核过才能进仓。四部丛刊本《诗经》是这一篇自己的一个本子（不是类书转述、不是后人引用），六章齐全。同一页首段是〈毛诗序〉、末段是「氓六章，章十句」，抽取时按 <p> 段落取，题注多出来不算分歧。"
     }
   ]
 }

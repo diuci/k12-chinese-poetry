@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 308 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 309 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -331,6 +331,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | lipeng | 李凭箜篌引 | 李贺 | 唐 | 卒 816 | public-domain | S3+S1b+S2 | 七言 | 高中 · 选择性必修中册 |
 | guizhixiang | 桂枝香·金陵怀古 | 王安石 | 宋 | 卒 1086 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修下册 |
 | mengyoutianmu | 梦游天姥吟留别 | 李白 | 唐 | 卒 762 | public-domain | S3+S1b+S2 | 乐府 | 高中 · 必修上册 |
+| mang | 氓 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S12+S10 | 诗经 | 高中 · 选择性必修下册 |
 | yongyule | 永遇乐·京口北固亭怀古 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |
 | jiangchengzi-yimao | 江城子 | 苏轼 | 宋 | 卒 1101 | public-domain | S3+S1b+S2 | 词 | 高中 · 选择性必修上册 |
 | shejiang | 涉江采芙蓉 | 佚名 | 汉 | 年代上限 1900 | public-domain | S3+S1b+S2 | 古诗 | 高中 · 必修上册 |
