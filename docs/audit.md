@@ -25,7 +25,7 @@
 | 没有「只有必背名句」的篇 | 通过 | 这样的篇 0 篇 |
 | 课标要求但仓内缺失为零 | 通过 | 缺失 0 篇 |
 | 来源不明为零 | 通过 | 来源不明 0 篇 |
-| 文档里写死的数字与产物一致 | 通过 | 当场数：裁定表 105 条、CI 自检 30 项、CI 离线 15 项、出处核对 {"attested": 231, "partial": 76, "notfound": 0, "nosource": 1, "withVariants": 88}、apparatus {"table": 55902, "rule": 2885, "identity": 12086, "keep": 80, "pending": 0, "page": 11748, "variant": 7}；文档里的数字全对得上 |
+| 文档里写死的数字与产物一致 | 通过 | 当场数：裁定表 105 条、CI 自检 30 项、CI 离线 15 项、出处核对 {"attested": 231, "partial": 76, "notfound": 0, "nosource": 1, "withVariants": 88}、apparatus {"table": 55965, "rule": 2888, "identity": 12115, "keep": 81, "pending": 0, "page": 11748, "variant": 7}；文档里的数字全对得上 |
 | 出处核对四档与记录本身一致 | 通过 | 重算 {"attested": 231, "partial": 76, "notfound": 0, "nosource": 1, "withVariants": 88} vs 表里 {"attested": 231, "partial": 76, "notfound": 0, "nosource": 1, "withVariants": 88} |
 | 链条重算的产物不带当场日期 | 通过 | 产物里不许有生成日期（要时间找 git） |
 | 裁定说删掉的旧句不许还在正文里 | 通过 | 异文条目写着「旧版误作 X」的，X 不许还在任何一篇可背的正文里——抓的是「裁定了、没改干净」 |
