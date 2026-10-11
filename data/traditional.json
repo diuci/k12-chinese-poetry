@@ -10,9 +10,9 @@
   "pending": 0
  },
  "counts_apparatus": {
-  "table": 56526,
+  "table": 56529,
   "rule": 2915,
-  "identity": 12202,
+  "identity": 12203,
   "keep": 81,
   "pending": 0,
   "page": 11748,
@@ -321756,7 +321756,7 @@
     "收录范围": [
      "統編教材《語文》選擇性必修下冊**第 1.1 課**《氓》（《詩經·衛風》）。",
      "- 冊次與課號來自統編課文頁鏡像 https://yw.suyang123.com/gaozhong/xuanxiuxia/30501_langdu.html 。這一課在人教社官方《高中語文學習任務導引》那份表里**沒被印證**（`data/textbook-lessons.json` 里這一條 `confirmed: false`），所以課號目前只算鏡像一條來源。",
-     "- 課標 72 篇（[docs/syllabus-2017.md](syllabus-2017.md)）里**沒有**《氓》——它在這一倉里是「教材拓展」，高考默寫範圍不按它算（frontmatter 的 `syllabus` 兩個都寫 false）。",
+     "- 課標 72 篇（倉內 docs/syllabus-2017.md 那張表）里**沒有**《氓》——它在這一倉里是「教材拓展」，高考默寫範圍不按它算（frontmatter 的 `syllabus` 兩個都寫 false）。",
      "- 背誦要求記 `full` 是**倉的判斷**：這一課是講讀課、全篇六章 60 句；教材目錄頁沒給背誦標記（`data/textbook-gaps.json` 里這一條 `recite: false`）。這一條不是教材給的，寫在這里免得以後有人當成教材要求。",
      "- 正文來源用四部叢刊本《詩經》「氓」那一頁。那一頁首段是〈毛詩序〉「氓，刺時也。宣公之時，禮義消亡，淫風大行……」，末段是「氓六章，章十句」——那是經序與篇制題注，不是正文，不收進正文。"
     ],

@@ -607,6 +607,29 @@ TITLE_ALIAS = {
 TEXT_LIBRARY_CODES = ('S3', 'S9', 'S12')
 
 
+# 篇目正文里不许有相对 markdown 链接。
+# 为什么：仓内 docs/ 那种相对链接在仓库里能点，在站点上就是死链——2026-10-11 站点构建
+# 就是被《氓》「收录范围」里一句 `[docs/syllabus-2017.md](syllabus-2017.md)` 拦下来的（vitepress 报 2 条 dead link）。
+# 站点链条能抓到，但抓到的时候已经跑到第 11 步了；这一条要在内容仓当场说。
+BODY_LINK = re.compile(r'\[[^\]]*\]\((?!https?:)[^)]+\)')
+
+
+def selftest_body_links():
+    """坏例子：相对链接必须被抓；http 链接与光写路径不许误报。"""
+    problems = []
+    cases = [
+        ('相对链接必须被抓', '# 甲\n\n## 收录范围\n\n课标 72 篇（[docs/syllabus-2017.md](syllabus-2017.md)）里没有它。\n', True),
+        ('篇内互链也必须被抓', '# 甲\n\n## 异文\n\n另见[关雎](../八年级下册/关雎.md)。\n', True),
+        ('光写路径不算链接', '# 甲\n\n## 收录范围\n\n仓内 docs/syllabus-2017.md 那张表里没有它。\n', False),
+        ('外部 http 出处链接不管', '# 甲\n\n## 异文\n\n出处：https://www.shidianguji.com/book/SBCK003 [四部丛刊本《诗经》]\n', False),
+    ]
+    for label, txt, want in cases:
+        got = bool(BODY_LINK.search(txt))
+        if got != want:
+            problems.append('相对链接闸门：%s（实得：%s）' % (label, '报错' if got else '放行'))
+    return problems
+
+
 def source_code_gap(src):
     """True = 这一篇的正文追不到可核对的文本库。"""
     return not any(c in (src or '') for c in TEXT_LIBRARY_CODES)
@@ -879,6 +902,7 @@ def selftest():
     problems.extend(selftest_filing_note())
     problems.extend(selftest_ghost_diff())
     problems.extend(selftest_source_codes())
+    problems.extend(selftest_body_links())
 
     if problems:
         print('[!!] validate --selftest 失败：', file=sys.stderr)
@@ -1346,6 +1370,13 @@ def main():
                                             (att_early.get(p['id']) or {}).get('ghostDiffs') or 0)]
     if ghost_open:
         err('核对表记着错位（节选范围、段落边界造成的），篇内没交代这些错位是什么：%s' % '、'.join(ghost_open[:6]))
+
+    # 篇目正文里的相对 markdown 链接：仓内能点、站点上是死链（口径写在 BODY_LINK 上面那段）。
+    linked = [p['title'] for p in poems
+              if BODY_LINK.search((ROOT / p['_path']).read_text(encoding='utf-8'))]
+    if linked:
+        err('篇目正文里有相对 markdown 链接（站点上是死链）：%s——要指路就光写路径'
+            % '、'.join(linked[:6]))
 
     # -------------------------------------------------- 2.16 教材收录状态必须和核对结论一致
     # data/volume-findings.json 是教材目录核对的结论表。每篇 frontmatter 的 textbookStatus
