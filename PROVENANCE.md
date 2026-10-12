@@ -58,7 +58,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 
 <!-- 逐篇台账：由 tools/gen-provenance.py 生成，勿手改 -->
 
-> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 312 篇。
+> 本表由 `tools/gen-provenance.py` 从 `data/poems.json` 生成，共 313 篇。
 > 改篇目后跑 `python tools/gen-provenance.py` 重新生成，不要手改这张表。
 > 「公有领域证据」一列就是 `validate.py` 第 8 项核验的那个年份。
 
@@ -354,6 +354,7 @@ frontmatter `source` 字段中；本表为汇总视图，由 `tools/validate.py`
 | dasijianyishu | 答司马谏议书 | 王安石 | 宋 | 卒 1086 | public-domain | S3+S1b+S2 | 文言 | 高中 · 必修下册 |
 | fuyi | 芣苢 | 佚名 | 先秦 | 年代上限 1900 | public-domain | S10+S9+S3 | 诗经 | 高中 · 必修上册 |
 | sumuzhe | 苏幕遮 | 周邦彦 | 宋 | 卒 1121 | public-domain | S3+S1b+S2 | 词 | 高中 · 选择性必修下册 |
+| suwuzhuan | 苏武传 | 班固 | 汉 | 卒 92 | public-domain | S10+S12 | 文言 | 高中 · 选择性必修中册 |
 | pusaman-wentingyun | 菩萨蛮 | 温庭筠 | 唐 | 卒 866 | public-domain | S3+S1b+S2 | 词 | 高中 · 选择性必修下册 |
 | pusaman-zaoxiang | 菩萨蛮·书江西造口壁 | 辛弃疾 | 宋 | 卒 1207 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |
 | yumeiren | 虞美人 | 李煜 | 南唐 | 卒 978 | public-domain | S3+S1b+S2 | 词 | 高中 · 必修上册 |

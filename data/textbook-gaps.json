@@ -1,13 +1,13 @@
 {
   "note": "统编教材收了、仓里对不上的课文。这张表不判该不该收。",
-  "generated": "2026-10-11",
+  "generated": "2026-10-12",
   "counts": {
-    "generated": "2026-10-11",
-    "total": 198,
+    "generated": "2026-10-12",
+    "total": 197,
     "modern": 39,
     "lessonEntries": 781,
-    "poems": 312,
-    "reciteGaps": 86,
+    "poems": 313,
+    "reciteGaps": 85,
     "primaryGaps": 337
   },
   "rows": [
@@ -1464,14 +1464,6 @@
       "lesson": "8.3",
       "title": "党费",
       "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30413_langdu.html",
-      "looksModern": false,
-      "recite": true
-    },
-    {
-      "volume": "选择性必修中册",
-      "lesson": "10",
-      "title": "苏武传",
-      "url": "https://yw.suyang123.com/gaozhong/xuanxiuzhong/30415_langdu.html",
       "looksModern": false,
       "recite": true
     },
