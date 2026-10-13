@@ -1,0 +1,141 @@
+{
+  "note": "每篇原文的独立出处核对结果。来源：维基文库 zh.wikisource.org（公有领域文本）。繁体转简体用 OpenCC TSCharacters 字表（Apache-2.0），只用于比对，不改仓内正文。variantNotes 是页面里的「一作某」夹注，是异文线索，不是错误。variants 是从 wikitext 解析的 {{另|甲|乙}} 夹注：ours 是页面正文用字，other 是别本用字，context 是上下文，page 是页名——考证时按页可核。",
+  "generated": "2026-10-13",
+  "stats": {
+    "attested": 4,
+    "partial": 1,
+    "notfound": 0,
+    "nosource": 0,
+    "withVariants": 3
+  },
+  "results": [
+    {
+      "id": "lunyu12-cz",
+      "title": "《论语》十二章",
+      "author": "佚名",
+      "stage": "初中",
+      "page": "論語/學而第一 + 論語/爲政第二 + 論語/雍也第六 + 論語/述而第七 + 論語/子罕第九 + 論語/子張第十九",
+      "url": "https://zh.wikisource.org/wiki/%E8%AB%96%E8%AA%9E/%E5%AD%B8%E8%80%8C%E7%AC%AC%E4%B8%80",
+      "lines": 37,
+      "hit": 37,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "也已",
+          "other": "也已矣",
+          "context": "而愼於言，就有道而正焉：可謂好學也已。」一之十五子貢曰：「貧而無諂，富而無驕，何如？」子曰",
+          "page": "論語/學而第一"
+        },
+        {
+          "ours": "贫而乐",
+          "other": "贫而乐道",
+          "context": "無驕，何如？」子曰：「可也。未若贫而乐，富而好禮者也」。子貢曰：「《詩》云：『如切如磋，如琢",
+          "page": "論語/學而第一"
+        },
+        {
+          "ours": "是亦为政",
+          "other": "是亦为政也",
+          "context": "無法判定引用究竟在何處終止。}}是亦为政，奚其爲爲政？」二之二二子曰：「人而無信，不知其可也。",
+          "page": "論語/爲政第二"
+        },
+        {
+          "ours": "逝",
+          "other": "选",
+          "context": "也？」子曰：「何爲其然也？君子可逝袁金平、李麗珠根據出土文獻與之對應句作「君子可選」，認",
+          "page": "論語/雍也第六"
+        },
+        {
+          "ours": "擧一隅",
+          "other": "擧一隅而示之",
+          "context": "之八子曰：「不憤不啟；不悱不發。擧一隅，不以三隅反，则不复也。」七之九子食於有喪者之側，未嘗飽",
+          "page": "論語/述而第七"
+        },
+        {
+          "ours": "则不复也",
+          "other": "则吾不复也",
+          "context": "；不悱不發。擧一隅，不以三隅反，则不复也。」七之九子食於有喪者之側，未嘗飽也。子於是日哭，則不",
+          "page": "論語/述而第七"
+        },
+        {
+          "ours": "艺",
+          "other": "执",
+          "context": "。」七之十七子所雅言：「詩、書、艺黄尚明根據「執」「埶」二字相混指出這裏的「執」應該讀爲",
+          "page": "論語/述而第七"
+        }
+      ],
+      "override": "初中七上的《论语》十二章同样是《论语》六章的合选（学而、为政、雍也、述而、子罕、子张），没有单页收全。此前按篇名搜，命中了《中国文学批评史》那一页，12 句一句都对不上——那是页名撞出来的假来源。"
+    },
+    {
+      "id": "yongxue",
+      "title": "咏雪",
+      "author": "刘义庆",
+      "stage": "初中",
+      "page": "世說新語/言語",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%96%E8%AA%AA%E6%96%B0%E8%AA%9E/%E8%A8%80%E8%AA%9E",
+      "lines": 6,
+      "hit": 5,
+      "miss": [
+        {
+          "line": "兄子胡儿曰撒盐空中差可拟",
+          "nearest": null
+        }
+      ],
+      "variantNotes": [],
+      "variants": []
+    },
+    {
+      "id": "yeyujibei",
+      "title": "夜雨寄北",
+      "author": "李商隐",
+      "stage": "初中",
+      "page": "夜雨寄北",
+      "url": "https://zh.wikisource.org/wiki/%E5%A4%9C%E9%9B%A8%E5%AF%84%E5%8C%97",
+      "lines": 2,
+      "hit": 2,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "当",
+          "other": "时",
+          "context": "君問歸期未有期巴山夜雨漲秋池何当共剪西窗燭卻話巴山夜雨時君問歸期未有期巴山夜雨漲秋池何",
+          "page": "夜雨寄北"
+        }
+      ]
+    },
+    {
+      "id": "tianjingsha-qiusi",
+      "title": "天净沙",
+      "author": "马致远",
+      "stage": "初中",
+      "page": "天淨沙·秋思",
+      "url": "https://zh.wikisource.org/wiki/%E5%A4%A9%E6%B7%A8%E6%B2%99%C2%B7%E7%A7%8B%E6%80%9D",
+      "lines": 3,
+      "hit": 3,
+      "miss": [],
+      "variantNotes": [],
+      "variants": [
+        {
+          "ours": "人家",
+          "other": "平沙",
+          "context": "枯藤、老樹、昏鴉。小橋、流水、人家。古道、西風、瘦馬。夕陽西下，斷腸人在天涯。Categ",
+          "page": "天淨沙·秋思"
+        }
+      ]
+    },
+    {
+      "id": "qirenyoutian",
+      "title": "杞人忧天",
+      "author": "佚名",
+      "stage": "初中",
+      "page": "列子/天瑞篇",
+      "url": "https://zh.wikisource.org/wiki/%E5%88%97%E5%AD%90/%E5%A4%A9%E7%91%9E%E7%AF%87",
+      "lines": 9,
+      "hit": 9,
+      "miss": [],
+      "variantNotes": [],
+      "variants": []
+    }
+  ]
+}
