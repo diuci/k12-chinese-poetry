@@ -45,8 +45,6 @@ except Exception:
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REV_EXC = ROOT / 'data' / 'reversal-exceptions.json'
-REV_EXC_TEST = None   # 自检专用：换一份登记表来试坏例子，仓里那份不动
 
 sys.path.insert(0, str(ROOT / 'tools'))
 
@@ -88,18 +86,6 @@ CURRENT_YEAR = 2026
 
 
 
-
-def reversal_registry():
-    """可逆性例外的登记表（data/reversal-exceptions.json）。自检可换一份（REV_EXC_TEST），仓里那份不动。"""
-    p = REV_EXC_TEST or REV_EXC
-    try:
-        entries = json.loads(p.read_text(encoding='utf-8')).get('entries') or []
-    except Exception as e:
-        return set(), '读不到 %s：%s' % (p, e)
-    reg = set()
-    for e in entries:
-        reg.add((e.get('id'), e.get('simp'), e.get('trad'), e.get('back')))
-    return reg, None
 
 def sections(t):
 
@@ -193,150 +179,17 @@ def load_corpus():
 
 
 
-def s2c_table():
-    """简→繁 表（只用来判断「这个字是不是只有简体才用」）。"""
-    f = ROOT / 'data' / 'opencc' / 'STCharacters.txt'
-    tbl = {}
-    if not f.exists():
-        return tbl
-    for line in f.read_text(encoding='utf-8').splitlines():
-        if not line or line.startswith('#') or '	' not in line:
-            continue
-        k, v = line.split('	', 1)
-        if k.strip():
-            tbl[k.strip()] = v.split()
-    return tbl
+def audit_trad(trad, trad_md):
+    """繁体派生已退役（v4，2026-10-20）：站点繁体全部下线，内容仓不再派生繁体。
 
-
-def audit_trad(corpus, trad, trad_md, rows):
-    """繁体产物的体检。
-
-    不重复 build-traditional.py 的活（它自己会拒绝不合格的输出），
-    这里查的是「繁体有没有覆盖每一篇、有没有把没依据的地方说成有依据」——
-    繁体页面上线以后，这类问题不会再有别的工具发现。
+    旧引擎 tools/build-traditional.py 与产物 data/traditional.json、docs/traditional.md 已删；
+    这里反过来盯「孤儿产物回流」——谁把这两份产物再提交进来，当场红。
+    裁定表 data/s2t-rules.json 保留：它是内容核对史的证据档案，accuracy.md 的裁定记录仍引用它。
     """
-    out = []
-    if trad is None:
-        return [('繁体产物存在', False, 'data/traditional.json 不存在：繁体没派生，不许在页面上说有繁体版')]
-    ids_ledger = {r['id'] for r in rows}
-    ids_trad = {r['id'] for r in (trad.get('rows') or [])}
-    miss = sorted(ids_ledger - ids_trad)
-    extra = sorted(ids_trad - ids_ledger)
-    out.append(('繁体派生覆盖每一篇', not miss and not extra,
-                '台账 %d 篇，繁体 %d 篇；没派生 %d 篇，多出来 %d 篇'
-                % (len(ids_ledger), len(ids_trad), len(miss), len(extra))))
-
-    # 标题与作者也是页面上要显示的字：缺了就是繁体页顶上写着简体
-    no_label = [r['title'] for r in (trad.get('rows') or [])
-                if not (r.get('labels_trad') or {}).get('title')
-                or not (r.get('labels_trad') or {}).get('author')]
-    out.append(('繁体版有繁体标题与繁体作者', not no_label,
-                '缺繁体标题或作者的 %d 篇%s'
-                % (len(no_label), ('：' + '、'.join(no_label[:5])) if no_label else '')))
-    counts = trad.get('counts') or {}
-    out.append(('繁体「一简对多繁」没有一处静默择一', counts.get('pending', -1) == 0,
-                '待定 %d 处' % counts.get('pending', -1)))
-
-    s2c = s2c_table()
-    bad_chars = []
-    for r in trad.get('rows') or []:
-        c = corpus.get(r['id'])
-        own = set(c['text']) if c else set()
-        for seg in (r.get('text_trad') or []) + (r.get('lines_trad') or []):
-            for ch in seg:
-                if ch in s2c and ch not in s2c[ch] and ch not in own:
-                    bad_chars.append('%s·%s' % (r['title'], ch))
-                    break
-    out.append(('繁体正文里没有只有简体才用的字', not bad_chars,
-                '这样的字 %d 处%s' % (len(bad_chars),
-                                      ('：' + '、'.join(bad_chars[:6])) if bad_chars else '')))
-
-    # 繁体文本（正文 + 各节 + 标签）里残留的简体专用字：每一处都要在 left_behind 里说得出凭什么。
-    # 派生工具自己会拦这一处；这里拦的是「产物被人手改过」或「工具换了却没重跑」。
-    simp_only = {k for k, v in s2c.items() if k not in v}
-    unjust = []
-    for r in trad.get('rows') or []:
-        texts = list(r.get('text_trad') or []) + list(r.get('lines_trad') or [])
-        for _v in (r.get('sections_trad') or {}).values():
-            texts.extend(_v)
-        for _v in (r.get('labels_trad') or {}).values():
-            texts.extend(_v if isinstance(_v, list) else [_v])
-        allowed = {x.get('char') for x in (r.get('left_behind') or [])
-                   if isinstance(x, dict) and (x.get('why') or '').strip()}
-        for txt in texts:
-            for ch in txt:
-                if ch in simp_only and ch not in allowed:
-                    unjust.append('%s·%s' % (r.get('title'), ch))
-                    break
-    out.append(('繁体文本残留的简体专用字每一处都写了依据', not unjust,
-                '没说凭什么 %d 处%s' % (len(unjust),
-                                        ('：' + '、'.join(sorted(set(unjust))[:6])) if unjust else '')))
-
-    rev = trad.get('reversal') or []
-    unexplained = []
-    copied = ruled = registered = 0
-    trip = set()
-    for x in rev:
-        ours, tt, back = x.get('ours', ''), x.get('trad', ''), x.get('back', '')
-        diff = [k for k in range(min(len(ours), len(back))) if ours[k] != back[k]]
-        for k in diff:
-            trip.add((x.get('id'), ours[k], tt[k] if k < len(tt) else '', back[k]))
-        # 依据必须与正文对得上：说「正文本来就写作这个字」就得真的没换字。
-        # 按「这一行」归类，不按分号切开的片段归类——登记理由里本来就常写「来源页作某字」，
-        # 切片段会把一条登记数成两处依据，数目看着对其实不对。
-        b_all = x.get('basis') or ''
-        if '登记例外' in b_all:
-            registered += 1
-            if '（正文本来就写作这个字）' in b_all:
-                if not any(k < len(tt) and tt[k] == ours[k] for k in diff):
-                    unexplained.append('%s·登记说正文原字，繁体却换了字' % x.get('title', ''))
-            elif not any(k >= len(tt) or tt[k] != ours[k] for k in diff):
-                unexplained.append('%s·登记说有意换字，繁体其实没换' % x.get('title', ''))
-        elif '照抄' in b_all:
-            copied += 1
-            if not any(k < len(tt) and tt[k] == ours[k] for k in diff):
-                unexplained.append('%s·声称照抄但繁体换了字' % x.get('title', ''))
-        elif '裁定' in b_all or '来源页' in b_all:
-            ruled += 1
-        unexplained += list(x.get('unexplained') or [])
-    out.append(('可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页 / 登记例外）', not unexplained,
-                '不一致 %d 处：%d 处照抄本篇原有的字、%d 处有裁定或页依据、%d 处登记例外；说不通的 %d 处%s'
-                % (len(rev), copied, ruled, registered, len(unexplained),
-                   ('：' + '、'.join(unexplained[:5])) if unexplained else '')))
-    reg, err = reversal_registry()
-    if err:
-        out.append(('可逆性不一致的每一处都在登记表里登记过', False, err))
-    else:
-        gap = sorted('/'.join(str(p) for p in k) for k in (reg - trip) | (trip - reg))
-        out.append(('可逆性不一致的每一处都在登记表里登记过', not gap,
-                    '产物里 %d 处不同、登记表 %d 条；对不上 %d 条%s'
-                    % (len(trip), len(reg), len(gap), ('：' + '、'.join(gap[:6])) if gap else '')))
-
-    # 注释 / 译文 / 赏析：台账说这篇有，繁体版就必须也有这一节
-    need = {'hasNotes': '注释', 'hasTranslation': '译文', 'hasAppreciation': '赏析'}
-    missing_sec = []
-    have_sec = 0
-    for r in (trad.get('rows') or []):
-        row = {x['id']: x for x in rows}.get(r['id'])
-        if not row:
-            continue
-        for k, name in need.items():
-            if not row.get(k):
-                continue
-            if (r.get('sections_trad') or {}).get(name):
-                have_sec += 1
-            else:
-                missing_sec.append('%s·%s' % (r['title'], name))
-    out.append(('繁体版覆盖台账里有的每一节注释译文赏析', not missing_sec,
-                '繁体派生出 %d 节；台账有、繁体没有的 %d 节%s'
-                % (have_sec, len(missing_sec), ('：' + '、'.join(missing_sec[:5])) if missing_sec else '')))
-
-    m = re.search(r'[|] pending [|] (\d+) [|]', trad_md or '')
-    doc_pending = int(m.group(1)) if m else -1
-    out.append(('繁体页面上的待定数与实际一致', doc_pending == counts.get('pending', -2),
-                '页上写 %d 处，实际 %d 处' % (doc_pending, counts.get('pending', -2))))
-    return out
-
+    gone = trad is None and not (trad_md or '').strip()
+    return [('繁体派生已退役且产物不在场', gone,
+             'data/traditional.json 与 docs/traditional.md 必须都不存在（v4 退役，不许回流）'
+             if not gone else '两份产物均已退场')]
 
 def split_nopage(recs, ids):
     """把「没有来源页」拆成两种：搜过并写明的，和没交代的。
@@ -369,12 +222,13 @@ def doc_number_claims(doc_text, actuals):
                 bad.append('「%s」写 %d，实际 %d' % (m.group(0).strip(), got, want))
     return bad
 
-def doc_number_actuals(trad, tsrc, verify_yml, s2t_path=None):
+def doc_number_actuals(tsrc, verify_yml, s2t_path=None):
     """文档里那些写死的数字，各自对应哪个产物的当场计数。
 
     匹配器只有这一份：audit-content 用它查，tools/sync-doc-numbers.py 用它改。
     两边各写一套的话，改的那套以为对了、查的那套以为错了，链条就永远在打自己。
-    产物不在场时给 -1：调用方必须停下来，不许在没有产物的情况下改数字。"""
+    产物不在场时给 -1：调用方必须停下来，不许在没有产物的情况下改数字。
+    （v4：繁体 apparatus 计数随派生退役，不再进文档数字。）"""
     sp = s2t_path or (ROOT / 'data' / 's2t-rules.json')
     s2t_total = len(json.loads(sp.read_text(encoding='utf-8')).get('rules', [])) if sp.exists() else -1
     ci_selftests = count_ci_selftests(verify_yml)
@@ -382,13 +236,6 @@ def doc_number_actuals(trad, tsrc, verify_yml, s2t_path=None):
     actuals = {r'裁定表\s*(\d+)\s*条': s2t_total,
                r'(\d+)\s*项检查器自检': ci_selftests,
                r'(\d+)\s*项离线检查': ci_offline}
-    ca = (trad or {}).get('counts_apparatus') or {}
-    if ca:
-        actuals.update({r'按表\s*(\d+)': ca.get('table', -1),
-                        r'按裁定表\s*(\d+)': ca.get('rule', -1),
-                        r'照表原字\s*(\d+)': ca.get('identity', -1),
-                        r'保留\s*(\d+)': ca.get('keep', -1),
-                        r'待定\s*(\d+)': ca.get('pending', -1)})
     tstats = (tsrc or {}).get('stats') or {}
     if tstats:
         actuals.update({r'(\d+)\s*全对上': tstats.get('attested', -1),
@@ -396,7 +243,7 @@ def doc_number_actuals(trad, tsrc, verify_yml, s2t_path=None):
                         r'(\d+)\s*一句都对不上': tstats.get('notfound', -1),
                         r'(\d+)\s*核过没有正文页': tstats.get('nosource', -1)})
     return actuals, {'s2t_total': s2t_total, 'ci_selftests': ci_selftests, 'ci_offline': ci_offline,
-                    'tstats': tstats, 'ca': ca}
+                    'tstats': tstats}
 
 
 def count_ci_selftests(yml_text):
@@ -726,12 +573,11 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
 
     out.append(('来源不明为零', g['来源不明'] == 0, '来源不明 %d 篇' % g['来源不明']))
 
-    # 文档里写死的数字：过期了就是说假话。这一项盯裁定表条数、CI 的两块命令数、派生计数的四个数。
-    actuals, meta = doc_number_actuals(trad, tsrc, verify_yml)
+    # 文档里写死的数字：过期了就是说假话。这一项盯裁定表条数、CI 的两块命令数、出处核对的四档数。
+    actuals, meta = doc_number_actuals(tsrc, verify_yml)
     s2t_total = meta['s2t_total']
     ci_selftests = meta['ci_selftests']
     ci_offline = meta['ci_offline']
-    ca = meta['ca']
     tstats = meta['tstats']
     # 出处核对的四档数字：文档里那句「N 全对上 / M 部分…」必须与 data/text-sources.json 当场一致。
     # 这一轮 --refresh 之后有一篇从「全对上」挪进「部分对上」，文档没跟着改，就是靠这一条抓的。
@@ -743,10 +589,9 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
                         r'(\d+)\s*核过没有正文页': tstats.get('nosource', -1)})
     claims = doc_number_claims(accuracy_md or '', actuals)
     out.append(('文档里写死的数字与产物一致', not claims,
-                '当场数：裁定表 %d 条、CI 自检 %d 项、CI 离线 %d 项、出处核对 %s、apparatus %s；%s'
+                '当场数：裁定表 %d 条、CI 自检 %d 项、CI 离线 %d 项、出处核对 %s；%s'
                 % (s2t_total, ci_selftests, ci_offline,
                    json.dumps(tstats, ensure_ascii=False) if tstats else '（这次没带出处核对统计）',
-                   json.dumps(ca, ensure_ascii=False) if ca else '（这次没带 apparatus）',
                    '；'.join(claims) if claims else '文档里的数字全对得上')))
     # 出处核对的四档必须与记录本身重算一致。本轮真实漏点：跨页合并（override 带 union）那一支
     # append 完就 continue，循环里攒的 withVariants 少算 13 篇。而「文档数字」那一项是拿表里的 stats
@@ -759,14 +604,14 @@ def audit(corpus, ledger, tsrc, defects, trad=None, trad_md=None, accuracy_md=No
     # 链条重算的产物里不许有「当场日期」：可复现闸门比的是逐字节，而日期取决于跑它的那台机器。
     # 本轮 CI 就是这么红的：本地 UTC+8 的深夜写 2026-10-10，CI 的 UTC 写 2026-10-09，同一份输入两份产物。
     lm = ROOT / 'docs' / 'ledger.md'
-    stamps = run_stamp_problems(trad, ledger, lm.read_text(encoding='utf-8') if lm.exists() else '')
+    stamps = run_stamp_problems(ledger, lm.read_text(encoding='utf-8') if lm.exists() else '')
     out.append(('链条重算的产物不带当场日期', not stamps,
                 '产物里不许有生成日期（要时间找 git）' if not stamps else '；'.join(stamps)))
     stale = stale_rulings(corpus)
     out.append(('裁定说删掉的旧句不许还在正文里', not stale,
                 '；'.join(stale[:6]) if stale else
                 '异文条目写着「旧版误作 X」的，X 不许还在任何一篇可背的正文里——抓的是「裁定了、没改干净」'))
-    out += audit_trad(corpus, trad, trad_md, ledger['rows'])
+    out += audit_trad(trad, trad_md)
     return out
 RULING_OLD = re.compile(r'(?:误作|凭空写|旧[^。；\n]{0,14}?[作写])\s*((?:「[^」]{2,40}」\s*)+)')
 
@@ -836,16 +681,16 @@ def stale_rulings(corpus):
     return bad
 
 
-def run_stamp_problems(trad, ledger, ledger_md):
+def run_stamp_problems(ledger, ledger_md):
     """链条重算的产物不许带当场日期。
 
     为什么：闸门比的是逐字节。当场日期取决于跑它的那台机器的时区与当天——
     本地 UTC+8 的深夜与 CI 的 UTC 差一天，同一份输入就会写出两份产物。
-    产物要带时间，交给 git；文件里那个日期只会让闸门莫名其妙地红，以及让人以为产物比 git 更可信。"""
+    产物要带时间，交给 git；文件里那个日期只会让闸门莫名其妙地红，以及让人以为产物比 git 更可信。
+    （data/traditional.json 随繁体派生退役，v4 起不再在列。）"""
     out = []
-    for name, obj in (('data/traditional.json', trad), ('data/ledger.json', ledger)):
-        if isinstance(obj, dict) and obj.get('generated'):
-            out.append('%s 还带 generated 日期（%s）' % (name, obj['generated']))
+    if isinstance(ledger, dict) and ledger.get('generated'):
+        out.append('data/ledger.json 还带 generated 日期（%s）' % ledger['generated'])
     if ledger_md and re.search(r'生成于\s*\d{4}-\d{2}-\d{2}', ledger_md):
         out.append('docs/ledger.md 里写着「生成于 某年-某月-某日」')
     return out
@@ -895,16 +740,6 @@ def selftest():
     import tempfile
     tmp = Path(tempfile.mkdtemp(prefix='audit-selftest-'))
 
-    # 可逆性登记表：自检换一份空的（TRAD_GOOD 里没有可逆性不一致），仓里那一份不动
-    global REV_EXC_TEST
-    REV_EXC_TEST = tmp / 'reversal-exceptions-empty.json'
-    REV_EXC_TEST.write_text(json.dumps({'entries': []}, ensure_ascii=False), encoding='utf-8')
-
-    def rev_reg(name, entries):
-        p = tmp / name
-        p.write_text(json.dumps({'entries': entries}, ensure_ascii=False), encoding='utf-8')
-        return p
-
     def corpus_of(a_text, b_text):
         c = {}
         for txt, pid in ((a_text, 'a'), (b_text, 'b')):
@@ -916,6 +751,8 @@ def selftest():
 
 
 
+    # 繁体派生已退役（v4）：TRAD_GOOD/MD_GOOD 现在只当「退役产物回流」的坏例子夹具，
+    # 常规自检（fails()）一律传 None/''——退役世界里这两份产物不许在场。
     TRAD_GOOD = {'counts': {'page': 2, 'table': 1, 'rule': 0, 'keep': 0, 'identity': 3,
                             'variant': 0, 'pending': 0},
                  'reversal': [],
@@ -928,7 +765,7 @@ def selftest():
 
     def fails(corpus, ledger_, tsrc_, defects_, names):
 
-        res = audit(corpus, ledger_, tsrc_, defects_, TRAD_GOOD, MD_GOOD)
+        res = audit(corpus, ledger_, tsrc_, defects_, None, '')
 
         got = {n for n, ok, _ in res if not ok}
 
@@ -1022,97 +859,11 @@ def selftest():
 
         print('坏例9：短诗的正文没抽到，被误报成没正文'); bad += 1
 
-    # 10) 繁体漏了篇，必须被报
-    t10 = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
-           'rows': [r for r in TRAD_GOOD['rows'] if r['id'] == 'a']}
-    got10 = {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t10, MD_GOOD) if not ok}
-    if '繁体派生覆盖每一篇' not in got10:
-        print('坏例10：繁体漏篇没被报；实际报的是 ' + ('、'.join(sorted(got10)) or '（什么都没报）')); bad += 1
-    # 11) 繁体有静默择一的待定处，必须被报
-    t11 = {'counts': dict(TRAD_GOOD['counts', ] if False else TRAD_GOOD['counts']), 'reversal': [],
-           'rows': TRAD_GOOD['rows']}
-    t11['counts']['pending'] = 3
-    if '繁体「一简对多繁」没有一处静默择一' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t11, MD_GOOD) if not ok}:
-        print('坏例11：繁体待定 3 处没被报'); bad += 1
-    # 12) 繁体正文里留下只有简体才用的字，必须被报
-    t12 = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
-           'rows': [dict(r) for r in TRAD_GOOD['rows']]}
-    t12['rows'][1]['text_trad'] = ['處處聞啼鳥，體格。']
-    t12['rows'][1]['lines_trad'] = ['身体。']
-    if '繁体正文里没有只有简体才用的字' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12, MD_GOOD) if not ok}:
-        print('坏例12：繁体正文里的简体字「体」没被拦'); bad += 1
-    # 12d) 繁体某一节里留下只有简体才用的字，却没写依据：必须被报
-    t12d = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
-            'rows': [dict(r) for r in TRAD_GOOD['rows']]}
-    t12d['rows'][1]['sections_trad'] = {'译文': ['这个。']}
-    if '繁体文本残留的简体专用字每一处都写了依据' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12d, MD_GOOD) if not ok}:
-        print('坏例12d：繁体译文里的简体字「这」没有依据却没被拦'); bad += 1
-    # 12e) 同一处写了依据，就不许再被报（护栏不许只会喊）
-    t12e = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
-            'rows': [dict(r) for r in TRAD_GOOD['rows']]}
-    t12e['rows'][1]['sections_trad'] = {'译文': ['这个。']}
-    t12e['rows'][1]['left_behind'] = [{'char': '这', 'why': '引文：这一处引的是别本写法'},
-                                 {'char': '个', 'why': '引文：这一处引的是别本写法'}]
-    if '繁体文本残留的简体专用字每一处都写了依据' in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12e, MD_GOOD) if not ok}:
-        print('坏例12e：写了依据还被报'); bad += 1
-    # 12b) 台账说这篇有译文，繁体版却没派生这一节，必须被报
-    t12b = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
-            'rows': [dict(r) for r in TRAD_GOOD['rows']]}
-    led2 = {'rows': [dict(r) for r in ledger['rows']]}
-    led2['rows'][1]['hasTranslation'] = True
-    led2['summary'] = ledger['summary']
-    t12b['rows'][1]['sections_trad'] = {'注释': ['處處聞啼鳥。']}
-    if '繁体版覆盖台账里有的每一节注释译文赏析' not in {nm for nm, ok, _ in audit(c0, led2, tsrc, [], t12b, MD_GOOD) if not ok}:
-        print('坏例12b：繁体漏了译文这一节没被报'); bad += 1
-    # 12c) 繁体页顶上写着简体标题/作者，必须被报
-    t12c = {'counts': dict(TRAD_GOOD['counts']), 'reversal': [],
-            'rows': [dict(r) for r in TRAD_GOOD['rows']]}
-    t12c['rows'][1]['labels_trad'] = {'title': '乙'}
-    if '繁体版有繁体标题与繁体作者' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t12c, MD_GOOD) if not ok}:
-        print('坏例12c：繁体缺作者没被报'); bad += 1
-    # 13) 页上写的待定数与实际不符，必须被报
-    if '繁体页面上的待定数与实际一致' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t11, MD_GOOD) if not ok}:
-        print('坏例13：页上 pending 0、实际 3，没被报'); bad += 1
-    # 14) 可逆性不一致却说不通（繁体没照抄我们正文里的字），必须被报
-    t14 = {'counts': dict(TRAD_GOOD['counts']), 'rows': TRAD_GOOD['rows'],
-           'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
-                         'ours': '床前明月光，', 'trad': '床前明山光，', 'back': '床前明山光，',
-                         'chars': '月→山', 'basis': '（说不通）', 'unexplained': ['甲·月']}]}
-    if '可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页 / 登记例外）' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14, MD_GOOD) if not ok}:
-        print('坏例14：繁体把正文的字换掉了却没给依据，没被报'); bad += 1
-    # 坏例14b：依据写「照抄」但繁体其实换了字，必须被报
-    t14b = {'counts': dict(TRAD_GOOD['counts']), 'rows': TRAD_GOOD['rows'],
-            'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
-                          'ours': '床前明月光，', 'trad': '床前明山光，', 'back': '床前明山光，',
-                          'chars': '月→山', 'basis': '照抄', 'unexplained': []}]}
-    if '可逆性不一致的每一处都说得出依据（照抄 / 裁定 / 页 / 登记例外）' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14b, MD_GOOD) if not ok}:
-        print('坏例14b：谎称照抄没被报'); bad += 1
-    # 坏例14c：产物里有一处可逆性不一致没登记，必须被报
-    t14c = {'counts': dict(TRAD_GOOD['counts']), 'rows': TRAD_GOOD['rows'],
-            'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
-                          'ours': '床前明月光，', 'trad': '床前明月光，', 'back': '床前明山光，',
-                          'chars': '月→山', 'basis': '登记例外（正文本来就写作这个字）：表有损', 'unexplained': []}]}
-    REV_EXC_TEST = rev_reg('rev-empty.json', [])
-    if '可逆性不一致的每一处都在登记表里登记过' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14c, MD_GOOD) if not ok}:
-        print('坏例14c：可逆性不一致没登记也照样过'); bad += 1
-    # 坏例14d：登记表里多一条这一轮没用上的，必须被报（过期登记比没有登记更误导人）
-    REV_EXC_TEST = rev_reg('rev-extra.json', [
-        {'id': 'a', 'simp': '月', 'trad': '月', 'back': '山', 'why': '表有损', 'basis': '正文原字'}])
-    if '可逆性不一致的每一处都在登记表里登记过' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], TRAD_GOOD, MD_GOOD) if not ok}:
-        print('坏例14d：登记表多一条没用上的也没人管'); bad += 1
-    # 坏例14e：登记与产物严丝合缝——这一处不许误报（好例子被误报也算失败）
-    REV_EXC_TEST = rev_reg('rev-match.json', [
-        {'id': 'a', 'simp': '月', 'trad': '月', 'back': '山', 'why': '表有损', 'basis': '正文原字'}])
-    t14e = {'counts': dict(TRAD_GOOD['counts']), 'rows': TRAD_GOOD['rows'],
-            'reversal': [{'id': 'a', 'title': '甲', 'field': 'full', 'line': 0,
-                          'ours': '床前明月光，', 'trad': '床前明月光，', 'back': '床前明山光，',
-                          'chars': '月→山', 'basis': '登记例外（正文本来就写作这个字）：表有损', 'unexplained': []}]}
-    if '可逆性不一致的每一处都在登记表里登记过' in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], t14e, MD_GOOD) if not ok}:
-        print('坏例14e：登记与产物一致却被误报'); bad += 1
-    REV_EXC_TEST = REV_EXC   # 自检换的登记表到此为止
-    # 15) 繁体产物不存在，必须被报（不许「没跑成」长得像「没问题」）
-    if '繁体产物存在' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], None, None) if not ok}:
-        print('坏例15：繁体产物不存在却没被报'); bad += 1
+    # 10) 繁体派生已退役（v4）：退役产物回流必须被报；退役世界（两份产物都不在）不许误报
+    if '繁体派生已退役且产物不在场' not in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], TRAD_GOOD, MD_GOOD) if not ok}:
+        print('坏例10：退役的繁体产物回流了却没被报'); bad += 1
+    if '繁体派生已退役且产物不在场' in {nm for nm, ok, _ in audit(c0, ledger, tsrc, [], None, '') if not ok}:
+        print('坏例10b：产物已退场却被误报'); bad += 1
 
     # 16) 「没有来源页」必须分两种：搜过并写明的放行，没交代的必须报
     fake = {'a': {'id': 'a', 'page': None, 'no_page': True, 'override': '搜过六个串都没有',
@@ -1174,15 +925,15 @@ def selftest():
     if doc_number_claims('当场数：214 全对上 / 37 部分对上 / 0 一句都对不上 / 1 核过没有正文页', t_pat):
         print('坏例17o：出处核对数字对得上却被报了'); bad += 1
     # 坏例18：产物带当场日期——同一份输入在本地和 CI 写出两份产物，闸门必红（本轮真的红过）
-    got3 = run_stamp_problems({'generated': '2026-10-10'}, {'generated': '2026-10-10'}, '')
-    if len(got3) != 2:
-        print('坏例18：两份产物都带当场日期，只报了 %d 处：%s' % (len(got3), got3)); bad += 1
-    if run_stamp_problems({'counts': {}}, {'rows': []}, ''):
+    got3 = run_stamp_problems({'generated': '2026-10-10'}, '')
+    if len(got3) != 1:
+        print('坏例18：产物带当场日期没被报：%s' % got3); bad += 1
+    if run_stamp_problems({'rows': []}, ''):
         print('坏例18b：不带日期的产物被误伤'); bad += 1
-    got4 = run_stamp_problems({}, {}, '> 由 `python tools/build-ledger.py` 生成于 2026-10-10。**不要手改本文件**：')
+    got4 = run_stamp_problems({}, '> 由 `python tools/build-ledger.py` 生成于 2026-10-10。**不要手改本文件**：')
     if len(got4) != 1 or 'ledger.md' not in got4[0]:
         print('坏例18c：台账文档里的「生成于 日期」没被抓到：%s' % got4); bad += 1
-    if run_stamp_problems({}, {}, '> 由 `python tools/build-ledger.py` 生成。**不要手改本文件**：'):
+    if run_stamp_problems({}, '> 由 `python tools/build-ledger.py` 生成。**不要手改本文件**：'):
         print('坏例18d：不带日期的台账文档被误伤'); bad += 1
     # 坏例19：异文条目写着「旧版误作 X」，X 却还在某篇可背正文里——裁定了、没改干净
     _old_line = '- 明月：一作「明山」，出自《全唐文》，取「明月」。'

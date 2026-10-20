@@ -4,6 +4,13 @@
 站点上那一页（`/accuracy`）由 `k12-site/tools/build-site.py` 从台账当场生成，数字不会写死过期；
 这一页写的是口径与方法，数字以 `data/ledger.json` 与 `docs/audit.md` 为准。
 
+> **繁体派生退役（2026-10-20，v4）**：全站仅简体，站点侧 `/trad/` 页已全部下线，
+> `tools/build-traditional.py` 与产物 `data/traditional.json`、`docs/traditional.md`、
+> `data/reversal-exceptions.json` 一并删除，verify.yml 不再派生繁体。
+> 下文历史章节里的繁体派生计数（按表 / 按裁定表 / 照表原字等）与 `docs/traditional.md`
+> 引用是**退役前的核对记录**，保留作档案，不再随产物更新；
+> 裁定表 `data/s2t-rules.json` 保留（裁定记录的证据档案）。
+
 ## 我们对外承诺的口径
 
 1. **收哪些篇**只认课标；**哪一册第几课、教材用哪个字**只认人教社公开页面；
@@ -190,7 +197,7 @@
 
 现在 `.github/workflows/verify.yml` 入库，四步：
 
-1. **30 项检查器自检**（每个护栏先证明它抓得住坏例子；这个数字跟着 workflow 走，本轮加进 `apply-textbook-scope.py`）；本轮补的第七项：`build-textbook-garden.py`（9 个坏例子：园地页抽不出篇名、栏目头被当成篇名、作者串到下一篇、篇名尾巴吃太贪）。先前几轮补的六项：`check-duplicates.py`（14 个坏例子，含《寒下曲》/《塞下曲》那一组）、
+1. **29 项检查器自检**（每个护栏先证明它抓得住坏例子；这个数字跟着 workflow 走，本轮加进 `apply-textbook-scope.py`）；本轮补的第七项：`build-textbook-garden.py`（9 个坏例子：园地页抽不出篇名、栏目头被当成篇名、作者串到下一篇、篇名尾巴吃太贪）。先前几轮补的六项：`check-duplicates.py`（14 个坏例子，含《寒下曲》/《塞下曲》那一组）、
    `apply-textbook-status.py`（现在 44 个）、`apply-volume-findings.py`（现在 22 个）、`build-textbook-lessons.py`（7 个：前缀同名不许算「同名另一篇」、真同名不许误杀、课号与自读星号与「（节选）」必须剥掉、函数挂在文件里却没接进核对也要报）——后两个会往 md 里写「统编教材收没收」
    和册次，写错就是对学生说假话，先前它们连坏例子都没有；`build.py`（27 个：正文抽取、说明小节被当正文、空正文、
    缺公有领域证据、render_split 与句数不匹配）、`inject-annotations.py`（16 个：注入不许动正文、不许跑两遍长出两节、
@@ -234,7 +241,7 @@ CI 里没有 8MB 的 `data/unihan/Unihan_Readings.txt`（已 gitignore），而�
 不一致就报错。自检配了四个坏例子（17 / 17b / 17c / 17d）：过期必须报、对得上不许误伤、
 文档没写数字不许报、同一份文档里两处过期不许只报一处。审计项从这一轮起又加了一项（当场数见 `docs/audit.md`）。
 
-本轮又把「**30 项检查器自检**」这个数字本身纳进同一项：它由 `.github/workflows/verify.yml` 里那一行行
+本轮又把「**29 项检查器自检**」这个数字本身纳进同一项：它由 `.github/workflows/verify.yml` 里那一行行
 `--selftest` 命令当场数出来（`count_ci_selftests`：说明文字里提到的 `--selftest` 不算），文档写 25 或 27 都报错（当场数是 26）。
 理由很直白：「我们加了检查」这句话可以一直写在文档里，而 workflow 里那一行早就被人删了——只有数得出实数才拦得住。
 自检为此多配四个坏例子（17e–17h）。

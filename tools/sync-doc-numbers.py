@@ -118,15 +118,13 @@ def main():
         selftest()
         return
     A = _load_audit()
-    tj = ROOT / 'data' / 'traditional.json'
     sj = ROOT / 'data' / 'text-sources.json'
     vy = ROOT / '.github' / 'workflows' / 'verify.yml'
-    trad = json.loads(tj.read_text(encoding='utf-8')) if tj.exists() else None
     tsrc = json.loads(sj.read_text(encoding='utf-8')) if sj.exists() else None
     yml = vy.read_text(encoding='utf-8') if vy.exists() else ''
-    if trad is None or tsrc is None:
-        raise SystemExit('[文档数字] 产物不在场（data/traditional.json 或 data/text-sources.json 缺）——先跑构建，再谈改文档')
-    actuals, meta = A.doc_number_actuals(trad, tsrc, yml)
+    if tsrc is None:
+        raise SystemExit('[文档数字] 产物不在场（data/text-sources.json 缺）——先跑构建，再谈改文档')
+    actuals, meta = A.doc_number_actuals(tsrc, yml)
     if not DOC.exists():
         raise SystemExit('[文档数字] 缺 %s' % DOC)
     old = DOC.read_text(encoding='utf-8')
@@ -139,7 +137,7 @@ def main():
         if len(changes) > 12:
             print('  …共 %d 处' % len(changes))
     else:
-        print('[文档数字] 文档里的数字与产物当场一致，没改（当场数：出处核对 %s、apparatus %s）' % (json.dumps(meta['tstats'], ensure_ascii=False), json.dumps(meta['ca'], ensure_ascii=False)))
+        print('[文档数字] 文档里的数字与产物当场一致，没改（当场数：出处核对 %s）' % json.dumps(meta['tstats'], ensure_ascii=False))
 
 
 if __name__ == '__main__':
